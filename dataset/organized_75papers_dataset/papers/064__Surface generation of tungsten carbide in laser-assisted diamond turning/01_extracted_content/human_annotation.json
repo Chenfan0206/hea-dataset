@@ -1,0 +1,494 @@
+{
+  "Paper_Metadata": {
+    "Paper_Title": "Surface generation of tungsten carbide in laser-assisted diamond turning",
+    "DOI": "10.1016/j.ijmachtools.2021.103770"
+  },
+  "items": [
+    {
+      "Sample_ID": "Binderless_WC_Nanoindentation",
+      "Gradient_Material": false,
+      "Gradient_Group_ID": null,
+      "Composition_Info": {
+        "Role": "Target",
+        "Alloy_Name_Raw": "Binderless polycrystalline Tungsten Carbide",
+        "Nominal_Composition": {
+          "Composition_Type": "null",
+          "Elements_Normalized": null
+        },
+        "Measured_Composition": {
+          "Composition_Type": "null",
+          "Elements_Normalized": null,
+          "Measurement_Method": null
+        },
+        "Note": null
+      },
+      "Process_Info": {
+        "Process_Category":null,
+        "Process_Text": {
+          "original": "Binderless polycrystalline tungsten carbide (WC) material is studied.",
+          "simplified": "Binderless polycrystalline WC."
+        },
+        "Equipment": null,
+        "Key_Params": {
+          "Annealing_Temperature_K": null,
+          "Annealing_Time_h": null
+        }
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": null,
+          "simplified": null
+        },
+        "Main_Phase": "WC (Hexagonal Close-Packed)",
+        "Precipitates": [
+          {
+            "Phase_Type": null,
+            "Volume_Fraction_pct": null
+          }
+        ],
+        "Porosity_pct": null,
+        "Relative_Density_pct": null,
+        "Grain_Size_avg_um": null,
+        "Precipitate_Size_avg_nm": null,
+        "Advanced_Quantitative_Features": {
+          "Grain_Count": null
+        }
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Hardness",
+          "Test_Condition": "Nanoindentation",
+          "Value_Numeric": 31.84,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "GPa",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": 1044mN,
+          "Hardness_Dwell_Time_s": 10,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": "Measured at room temperature"
+        },
+        {
+          "Property_Name": "Hardness",
+          "Test_Condition": "Nanoindentation",
+          "Value_Numeric": 30.05,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "GPa",
+          "Test_Temperature_K": 373.15,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": 800mN,
+          "Hardness_Dwell_Time_s": 10,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": "Measured at 100°C"
+        },
+        {
+          "Property_Name": "Hardness",
+          "Test_Condition": "Nanoindentation",
+          "Value_Numeric": 26.77,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "GPa",
+          "Test_Temperature_K": 573.15,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": 786mN,
+          "Hardness_Dwell_Time_s": 10,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": "Measured at 300°C"
+        },
+        {
+          "Property_Name": "Hardness",
+          "Test_Condition": "Nanoindentation",
+          "Value_Numeric": 20.98,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "GPa",
+          "Test_Temperature_K": 773.15,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": 712mN,
+          "Hardness_Dwell_Time_s": 10,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": "Measured at 500°C"
+        },
+        {
+          "Property_Name": "Elastic_Modulus",
+          "Test_Condition": "Nanoindentation",
+          "Value_Numeric": 469.05,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "GPa",
+          "Test_Temperature_K": 296.15,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": "Young's Modulus calculated at 23°C"
+        },
+        {
+          "Property_Name": "Elastic_Modulus",
+          "Test_Condition": "Nanoindentation",
+          "Value_Numeric": 397.43,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "GPa",
+          "Test_Temperature_K": 373.15,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": "Young's Modulus calculated at 100°C"
+        },
+        {
+          "Property_Name": "Elastic_Modulus",
+          "Test_Condition": "Nanoindentation",
+          "Value_Numeric": 315.34,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "GPa",
+          "Test_Temperature_K": 573.15,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": "Young's Modulus calculated at 300°C"
+        },
+        {
+          "Property_Name": "Elastic_Modulus",
+          "Test_Condition": "Nanoindentation",
+          "Value_Numeric": 296.37,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "GPa",
+          "Test_Temperature_K": 773.15,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": "Young's Modulus calculated at 500°C"
+        }
+      ]
+    },
+    {
+      "Sample_ID": "Binderless_WC_In_LAC_MD",
+      "Gradient_Material": false,
+      "Gradient_Group_ID": null,
+      "Composition_Info": {
+        "Role": "Target",
+        "Alloy_Name_Raw": "Binderless polycrystalline Tungsten Carbide (MD Model)",
+        "Nominal_Composition": {
+          "Composition_Type": "null",
+          "Elements_Normalized": null
+        },
+        "Measured_Composition": {
+          "Composition_Type": "null",
+          "Elements_Normalized": null,
+          "Measurement_Method": null
+        },
+        "Note": "Molecular Dynamics Simulation Model"
+      },
+      "Process_Info": {
+        "Process_Category": "Laser-Assisted Diamond Turning (Simulation)",
+        "Process_Text": {
+          "original": "In-LAC MD simulation method is proposed... laser loading condition and the energy intensity are consistent with the experimental conditions... Laser power (P): 5, 10, 15, and 20 W.",
+          "simplified": "MD simulation of In-Process-Heat Laser-Assisted Cutting (In-LAC)."
+        },
+        "Equipment": "LAMMPS (Simulation Software)",
+        "Key_Params": {
+          "Laser_Power_W": "5, 10, 15, 20",
+          "Cutting_Speed_m_s": 100,
+          "Depth_of_Cut_nm": 5
+        }
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": "The polycrystalline workpiece... contains 40 grains... Each WC grain comprises a hexagonal close-packed lattice and random orientation.",
+          "simplified": "MD Model: Polycrystalline structure with 40 grains."
+        },
+        "Main_Phase": "WC (HCP)",
+        "Precipitates": [
+          {
+            "Phase_Type": null,
+            "Volume_Fraction_pct": null
+          }
+        ],
+        "Porosity_pct": null,
+        "Relative_Density_pct": null,
+        "Grain_Size_avg_um": 0.01,
+        "Precipitate_Size_avg_nm": null,
+        "Advanced_Quantitative_Features": {
+          "Atom_Count": 985559
+        }
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Tangential_Cutting_Force",
+          "Test_Condition": null,
+          "Value_Numeric": null,
+          "Value_Range": "Oscillates significantly due to grain random orientation",
+          "Value_StdDev": null,
+          "Unit": "nN",
+          "Test_Temperature_K": null,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": "Values fluctuate; specific mean values depend on Laser Power (0W, 5W, 10W, 15W, 20W)"
+        },
+        {
+          "Property_Name": "Thrust_Cutting_Force",
+          "Test_Condition": null,
+          "Value_Numeric": null,
+          "Value_Range": "Oscillates significantly due to grain random orientation",
+          "Value_StdDev": null,
+          "Unit": "nN",
+          "Test_Temperature_K": null,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": "Values fluctuate; specific mean values depend on Laser Power (0W, 5W, 10W, 15W, 20W)"
+        }
+      ]
+    },
+    {
+      "Sample_ID": "Binderless_WC_Conventional_Taper_Cut",
+      "Gradient_Material": false,
+      "Gradient_Group_ID": null,
+      "Composition_Info": {
+        "Role": "Target",
+        "Alloy_Name_Raw": "Binderless polycrystalline Tungsten Carbide",
+        "Nominal_Composition": {
+          "Composition_Type": "null",
+          "Elements_Normalized": null
+        },
+        "Measured_Composition": {
+          "Composition_Type": "null",
+          "Elements_Normalized": null,
+          "Measurement_Method": null
+        },
+        "Note": null
+      },
+      "Process_Info": {
+        "Process_Category": "Taper Cutting",
+        "Process_Text": {
+          "original": "Rotational taper cutting was adopted with a linear speed of 0.21 m/s, with out laser",
+          "simplified": "Conventional rotational taper cutting without laser."
+        },
+        "Equipment": "Three-axis ultraprecision lathe",
+        "Key_Params": {
+          "Cutting_Speed_m_s": 0.21,
+          "Feed_per_Rev": null
+        }
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": "The subsurface crystalline structure of conventional cutting is disrupted seriously, leaving an average of ~227.9 nm thickness of the affected layer... The surface grains split into a mass of nanocrystals... subsurface crystal presents large deformation and bending.",
+          "simplified": "Severe subsurface damage. Affected layer ~227.9 nm. Nanocrystallization and crystal bending observed."
+        },
+        "Main_Phase": null,
+        "Precipitates": [
+          {
+            "Phase_Type":null,
+            "Volume_Fraction_pct": null
+          }
+        ],
+        "Porosity_pct": null,
+        "Relative_Density_pct": null,
+        "Grain_Size_avg_um": null,
+        "Precipitate_Size_avg_nm": null,
+        "Advanced_Quantitative_Features": {
+          "Affected_Layer_Thickness_nm": 227.9
+        }
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Critical_Depth_No_Surface_Crack",
+          "Test_Condition": null,
+          "Value_Numeric": 26.6,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "nm",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": null
+        },
+        {
+          "Property_Name": "Surface_Roughness",
+          "Test_Condition": null,
+          "Value_Numeric": null,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "nm Sa",
+          "Test_Temperature_K": null,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": "Surface littered with craters and pits due to grain desquamation."
+        }
+      ]
+    },
+    {
+      "Sample_ID": "Binderless_WC_In_LAT_Taper_Cut",
+      "Gradient_Material": false,
+      "Gradient_Group_ID": null,
+      "Composition_Info": {
+        "Role": "Target",
+        "Alloy_Name_Raw": "Binderless polycrystalline Tungsten Carbide",
+        "Nominal_Composition": {
+          "Composition_Type": "null",
+          "Elements_Normalized": null
+        },
+        "Measured_Composition": {
+          "Composition_Type": "null",
+          "Elements_Normalized": null,
+          "Measurement_Method": null
+        },
+        "Note": null
+      },
+      "Process_Info": {
+        "Process_Category": "Laser-Assisted Taper Cutting",
+        "Process_Text": {
+          "original": "In-process-heat laser-assisted taper cutting (In-LATC)... 170 μm-diameter laser beam with 15 W laser power... continuous wave laser with 1064 nm wavelength.",
+          "simplified": "In-LATC with 15W laser power."
+        },
+        "Equipment": "Three-axis ultraprecision lathe with In-LAT system",
+        "Key_Params": {
+          "Laser_Power_W": 15,
+          "Laser_Spot_Diameter_um": 170,
+          "Wavelength_nm": 1064,
+          "Cutting_Speed_m_s": 0.21
+        }
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": "In-LATC-machined sample possesses a smaller machining affected area... averaged 17.8 nm-thick affected layer... uniform thermal affected layer... recrystallization layer.",
+          "simplified": "Minimal subsurface damage. Affected layer ~17.8 nm. Recrystallization observed."
+        },
+        "Main_Phase": null,
+        "Precipitates": [
+          {
+            "Phase_Type": null,
+            "Volume_Fraction_pct": null
+          }
+        ],
+        "Porosity_pct": null,
+        "Relative_Density_pct": null,
+        "Grain_Size_avg_um": null,
+        "Precipitate_Size_avg_nm": null,
+        "Advanced_Quantitative_Features": {
+          "Affected_Layer_Thickness_nm": 17.8
+        }
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Critical_Depth_No_Surface_Crack",
+          "Test_Condition": null,
+          "Value_Numeric": 106.3,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "nm",
+          "Test_Temperature_K": null,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": null
+        }
+      ]
+    },
+    {
+      "Sample_ID": "Binderless_WC_In_LAT_Diamond_Turning",
+      "Gradient_Material": false,
+      "Gradient_Group_ID": null,
+      "Composition_Info": {
+        "Role": "Target",
+        "Alloy_Name_Raw": "Binderless polycrystalline Tungsten Carbide",
+        "Nominal_Composition": {
+          "Composition_Type": "null",
+          "Elements_Normalized": null
+        },
+        "Measured_Composition": {
+          "Composition_Type": "null",
+          "Elements_Normalized": null,
+          "Measurement_Method": null
+        },
+        "Note": null
+      },
+      "Process_Info": {
+        "Process_Category": "Laser-Assisted Diamond Turning",
+        "Process_Text": {
+          "original": "In-process-heat laser-assisted diamond turning... median 12.5 W laser power... rotation speed of 2000 RPM, DoC of 1 μm, and 1 μm/rev feedrate.",
+          "simplified": "In-LAT with 12.5W laser power."
+        },
+        "Equipment": "Three-axis ultraprecision lathe",
+        "Key_Params": {
+          "Laser_Power_W": 12.5,
+          "Spindle_Speed_RPM": 2000,
+          "Depth_of_Cut_um": 1,
+          "Feedrate_um_rev": 1
+        }
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": "The machined surface is free of craters... ideal surface finish.",
+          "simplified": "Homogeneous surface finish, crater-free."
+        },
+        "Main_Phase": null,
+        "Precipitates": [],
+        "Porosity_pct": 0,
+        "Relative_Density_pct": null,
+        "Grain_Size_avg_um": null,
+        "Precipitate_Size_avg_nm": null,
+        "Advanced_Quantitative_Features": null
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Surface_Roughness_Sa",
+          "Test_Condition": null,
+          "Value_Numeric": 4.66,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "nm",
+          "Test_Temperature_K": null,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": "Homogeneous surface finish achieved with 12.5W laser assistance."
+        }
+      ]
+    }
+  ]

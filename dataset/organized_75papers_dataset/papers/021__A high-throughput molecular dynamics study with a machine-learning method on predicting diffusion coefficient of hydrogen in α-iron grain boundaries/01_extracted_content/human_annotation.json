@@ -1,0 +1,62 @@
+{
+  "Paper_Metadata": {
+    "Paper_Title": "A high-throughput molecular dynamics study with a machine-learning method on predicting diffusion coefficient of hydrogen in α-iron grain boundaries",
+    "DOI": "10.1016/j.mtcomm.2025.111997"
+  },
+  "items": [
+    {
+      "Sample_ID": "Alpha-Iron_GB_Hydrogen_Diffusion",
+      "Gradient_Material": false,
+      "Composition_Info": {
+        "Role": "Target",
+        "Alloy_Name_Raw": "α-iron",
+        "Common_Name": "BCC Iron",
+        "Nominal_Composition": {
+          "Fe": 100.0,
+          "Note": "Pure iron lattice used for hydrogen diffusion simulation"
+        }
+      },
+      "Process_Info": {
+        "Process_Category": "High-throughput Molecular Dynamics / Machine Learning",
+        "Process_Text": {
+          "original": "A total of 20,000 grain boundary configurations were generated using Monte-Carlo sampling from the SO(3) group, followed by MD simulations to calculate H diffusion coefficients.",
+          "simplified": "采用SO(3)群蒙特卡洛采样生成2万种晶界配置，通过分子动力学模拟计算氢扩散系数。"
+        },
+        "Parameter_Info": {
+          "Simulation_Temperature_K": 333.0,
+          "Sampling_Method": "Monte-Carlo"
+        }
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": "Grain boundaries (GBs) with diverse orientations generated via random SO(3) rotations.",
+          "simplified": "通过随机SO(3)旋转生成的具有多种取向的晶界。"
+        },
+        "Main_Phase": "BCC",
+        "Note": "Focuses on intergranular regions vs bulk."
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Hydrogen_Diffusion_Coefficient",
+          "Test_Condition": "Grain boundaries at 333 K",
+          "Value_Numeric": null,
+          "Value_Range": "1.0e-7 - 7.37e-5",
+          "Unit": "cm2/s",
+          "Test_Temperature_K": 333.0,
+          "Data_Source": "text",
+          "Note": "The diffusion coefficient in GBs shows a significant decrease (up to 99%) compared to bulk BCC iron."
+        },
+        {
+          "Property_Name": "Hydrogen_Diffusion_Coefficient_Bulk",
+          "Role": "Reference",
+          "Test_Condition": "Bulk BCC iron at 333 K",
+          "Value_Numeric": 7.4e-5,
+          "Unit": "cm2/s",
+          "Test_Temperature_K": 333.0,
+          "Data_Source": "text",
+          "Note": "Reference value for bulk diffusion used as a baseline."
+        }
+      ]
+    }
+  ]
+}

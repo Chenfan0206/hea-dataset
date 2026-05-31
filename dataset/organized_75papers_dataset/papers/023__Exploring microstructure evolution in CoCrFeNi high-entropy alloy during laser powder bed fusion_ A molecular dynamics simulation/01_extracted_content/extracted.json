@@ -1,0 +1,878 @@
+{
+  "Paper_Metadata": {
+    "Paper_Title": "Exploring microstructure evolution in CoCrFeNi high-entropy alloy during laser powder bed fusion: A molecular dynamics simulation",
+    "DOI": "10.1016/j.jallcom.2025.179955"
+  },
+  "Paper_Routing": {
+    "base_material": "Metals",
+    "application": "Structural",
+    "research_paradigm": "Hybrid",
+    "Supplements_Loaded": [
+      "directions/base/Metals.txt",
+      "directions/application/Structural.txt",
+      "directions/paradigm/Hybrid.txt"
+    ],
+    "Patch_Tags": [
+      "High_Entropy",
+      "Additive_Manufacturing"
+    ],
+    "Needs_Mixed_Routing_Check": false,
+    "Mixed_Signals": []
+  },
+  "items": [
+    {
+      "Item_ID": "MD_100eV",
+      "Sample_ID": "MD_100eV",
+      "Role": "Target",
+      "Data_Nature": "Computed",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "High_Entropy",
+        "Additive_Manufacturing"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "To investigate the impact of different laser energy densities on the LPBF-fabricated samples, following heat inputs were set: 100 eV/ps, 300 eV/ps, and 500 eV/ps.",
+        "Fig. 3(a-c) shows a cross-section of a powder bed on a large-scale of powder particles located on a dense substrate. Those particles were exposed with the laser at energy inputs of 100 eV/ps, 300 eV/ps, and 500 eV/ps at three different stages (1500, 3000 and 4500 ps)"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "High-entropy alloy",
+          "Material_Name_Raw": "CoCrFeNi HEA",
+          "Nominal_Composition": {
+            "Co": {
+              "Value": 25.0,
+              "Unit": "at%",
+              "Original_Values": "25 at% Co"
+            },
+            "Cr": {
+              "Value": 25.0,
+              "Unit": "at%",
+              "Original_Values": "25 at% Cr"
+            },
+            "Fe": {
+              "Value": 25.0,
+              "Unit": "at%",
+              "Original_Values": "25 at% Fe"
+            },
+            "Ni": {
+              "Value": 25.0,
+              "Unit": "at%",
+              "Original_Values": "25 at% Ni"
+            }
+          },
+          "Note": "Equiatomic CoCrFeNi HEA. Composition applies uniformly to substrate and powder particles."
+        },
+        "Processing": {
+          "Process_Category": "LPBF simulation via molecular dynamics",
+          "Process_Text": {
+            "original": "MD simulation of LPBF process of CoCrFeNi HEA powder bed on polycrystalline substrate. Laser energy input of 100 eV/ps. Quasi-two-dimensional model with periodic boundary conditions along z-direction.",
+            "simplified": "MD simulation of LPBF at 100 eV/ps laser energy input on CoCrFeNi HEA powder bed/substrate system"
+          },
+          "Simulation_Metadata": {
+            "Method_Category": "Molecular Dynamics",
+            "Software": "LAMMPS",
+            "Potential": "EAM potential for Fe-Ni-Cr-Co-Cu developed by D. Farkas, A. Caro et al.",
+            "Ensemble": "NVE (powder layer, Newtonian layer, boundary layer); NVT (isothermal layer)",
+            "Time_Step_fs": 1.0,
+            "Total_Steps_or_Time": "4500 ps (3 stages: melting, solidification, remelting)",
+            "Boundary_Conditions": "Fixed boundary conditions along x and y directions; periodic boundary conditions along z direction",
+            "Model_Size_Atoms": 477379,
+            "Simulation_Text": "Large-scale MD simulation model including densely packed powder bed and substrate. Laser simulated via 'fix heat' command with moving heated region along x-direction from 0 to 1000 Å. Time step 0.001 ps. Energy minimization followed by 200 ps relaxation at 300 K. Three primary stages: (1) melting, (2) solidification, (3) remelting.",
+            "Substrate_Dimensions": "1000 Å (X) × 150 Å (Y) × 25 Å (Z)",
+            "Powder_Layer_Dimensions": "1000 Å (X) × 100 Å (Y) with width 50 Å in y-direction",
+            "Powder_Particle_Diameter_Range": "30-40 Å",
+            "Powder_Particle_Count": 64,
+            "Molten_Pool_Dimensions": "φ140 × 25 Å",
+            "Lattice_Constant": 3.959,
+            "Lattice_Constant_Unit": "Å"
+          },
+          "Key_Params": [
+            {
+              "Stage": "Laser melting",
+              "Laser_Energy_Input": {
+                "Value": 100.0,
+                "Unit": "eV/ps",
+                "Original_Values": "100 eV/ps"
+              }
+            }
+          ],
+          "Equipment": [
+            {
+              "Name": "LAMMPS",
+              "Category": "Software"
+            },
+            {
+              "Name": "OVITO",
+              "Category": "Software"
+            },
+            {
+              "Name": "Atomsk",
+              "Category": "Software"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "After rapid melting by a laser and subsequent solidification, the resulting solidified microstructure is still composed predominantly Face-Centered Cubic (FCC). At 100 eV/ps, incomplete melting of powder particles occurs, leading to lack of fusion and formation of uneven surface. Defects such as lack of fusion pores are formed.",
+            "simplified": "Predominantly FCC microstructure with incomplete melting defects (lack-of-fusion pores) at low energy density"
+          },
+          "Main_Phase": [
+            {
+              "Phase_Name": "FCC solid solution",
+              "Crystal_Structure": "FCC",
+              "Note": "Predominant phase after solidification"
+            }
+          ],
+          "Relative_Density": {
+            "Value": null,
+            "Original_Values": "~91.3%",
+            "Note": "Approximate relative density at 100 eV/ps; computed from MD model",
+            "Data_Source": "text"
+          },
+          "Advanced_Quantitative_Features": {
+            "Incomplete_Melting": true,
+            "Lack_of_Fusion_Defects": true,
+            "Perfect_Dislocation_Type": "1/2<110>",
+            "Partial_Dislocation_Type": "1/6<112>",
+            "Dislocation_Distribution": "Perfect dislocations primarily at grain boundaries due to misaligned orientations; partial dislocations within grains",
+            "Remelting_Zone_Depth": {
+              "Value": 20.0,
+              "Unit": "Å",
+              "Original_Values": "20 Å deep remelting zone"
+            },
+            "Note": "Low energy density leads to incomplete melting and lack-of-fusion defects. Evaporation is minimal at this energy level."
+          }
+        }
+      }
+    },
+    {
+      "Item_ID": "MD_300eV",
+      "Sample_ID": "MD_300eV",
+      "Role": "Variant",
+      "Data_Nature": "Computed",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "High_Entropy",
+        "Additive_Manufacturing"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "To investigate the impact of different laser energy densities on the LPBF-fabricated samples, following heat inputs were set: 100 eV/ps, 300 eV/ps, and 500 eV/ps.",
+        "When irradiating with a laser beam with higher energy density of 300 eV/ps, the powder particles are fully molten"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "High-entropy alloy",
+          "Material_Name_Raw": "CoCrFeNi HEA",
+          "Nominal_Composition": {
+            "Co": {
+              "Value": 25.0,
+              "Unit": "at%",
+              "Original_Values": "25 at% Co"
+            },
+            "Cr": {
+              "Value": 25.0,
+              "Unit": "at%",
+              "Original_Values": "25 at% Cr"
+            },
+            "Fe": {
+              "Value": 25.0,
+              "Unit": "at%",
+              "Original_Values": "25 at% Fe"
+            },
+            "Ni": {
+              "Value": 25.0,
+              "Unit": "at%",
+              "Original_Values": "25 at% Ni"
+            }
+          },
+          "Note": "Same nominal composition as MD_100eV. Shared across all MD simulation items per model setup."
+        },
+        "Processing": {
+          "Process_Category": "LPBF simulation via molecular dynamics",
+          "Process_Text": {
+            "original": "MD simulation of LPBF process of CoCrFeNi HEA powder bed on polycrystalline substrate. Laser energy input of 300 eV/ps.",
+            "simplified": "MD simulation of LPBF at 300 eV/ps laser energy input on CoCrFeNi HEA powder bed/substrate system"
+          },
+          "Simulation_Metadata": {
+            "Method_Category": "Molecular Dynamics",
+            "Software": "LAMMPS",
+            "Potential": "EAM potential for Fe-Ni-Cr-Co-Cu developed by D. Farkas, A. Caro et al.",
+            "Ensemble": "NVE (powder layer, Newtonian layer, boundary layer); NVT (isothermal layer)",
+            "Time_Step_fs": 1.0,
+            "Total_Steps_or_Time": "4500 ps",
+            "Boundary_Conditions": "Fixed boundary conditions along x and y directions; periodic boundary conditions along z direction",
+            "Model_Size_Atoms": 477379,
+            "Simulation_Text": "Same model configuration as MD_100eV but with 300 eV/ps laser energy input. Shared model setup per Section 2.2.",
+            "Substrate_Dimensions": "1000 Å (X) × 150 Å (Y) × 25 Å (Z)",
+            "Powder_Layer_Dimensions": "1000 Å (X) × 100 Å (Y) with width 50 Å in y-direction",
+            "Powder_Particle_Diameter_Range": "30-40 Å",
+            "Powder_Particle_Count": 64,
+            "Molten_Pool_Dimensions": "φ140 × 25 Å",
+            "Lattice_Constant": 3.959,
+            "Lattice_Constant_Unit": "Å"
+          },
+          "Key_Params": [
+            {
+              "Stage": "Laser melting",
+              "Laser_Energy_Input": {
+                "Value": 300.0,
+                "Unit": "eV/ps",
+                "Original_Values": "300 eV/ps"
+              }
+            }
+          ],
+          "Equipment": [
+            {
+              "Name": "LAMMPS",
+              "Category": "Software"
+            },
+            {
+              "Name": "OVITO",
+              "Category": "Software"
+            },
+            {
+              "Name": "Atomsk",
+              "Category": "Software"
+            }
+          ],
+          "Note": "Simulation parameters shared with MD_100eV and MD_500eV per Section 2.2 description; only laser energy input differs."
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "At 300 eV/ps, the powder particles are fully molten and the laser heats the center of the molten pool to a temperature well above the melting point. Most voids located between the previous particles are filled by the melt resulting in much denser material. The surface of the melt tracks is relatively smooth.",
+            "simplified": "Predominantly FCC microstructure with full melting and dense solidification at 300 eV/ps"
+          },
+          "Main_Phase": [
+            {
+              "Phase_Name": "FCC solid solution",
+              "Crystal_Structure": "FCC"
+            }
+          ],
+          "Relative_Density": {
+            "Value": null,
+            "Original_Values": "~98.9%",
+            "Note": "Approximate relative density at 300 eV/ps; computed from MD model",
+            "Data_Source": "text"
+          },
+          "Advanced_Quantitative_Features": {
+            "Incomplete_Melting": false,
+            "Full_Melting": true,
+            "Marangoni_Flow": true,
+            "Clockwise_Flow_Pattern": true,
+            "Perfect_Dislocation_Type": "1/2<110>",
+            "Partial_Dislocation_Type": "1/6<112>",
+            "Dislocation_Distribution": "Perfect dislocations primarily at grain boundaries due to misaligned orientations; partial dislocations within grains",
+            "Remelting_Zone_Depth": {
+              "Value": 20.0,
+              "Unit": "Å",
+              "Original_Values": "20 Å deep remelting zone"
+            },
+            "Note": "At 300 eV/ps, full melting achieved. Marangoni-driven clockwise flow observed for all atom types (Co, Cr, Fe, Ni) at top, middle, and bottom of molten pool at t = 800 ps."
+          }
+        }
+      }
+    },
+    {
+      "Item_ID": "MD_500eV",
+      "Sample_ID": "MD_500eV",
+      "Role": "Variant",
+      "Data_Nature": "Computed",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "High_Entropy",
+        "Additive_Manufacturing"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "To investigate the impact of different laser energy densities on the LPBF-fabricated samples, following heat inputs were set: 100 eV/ps, 300 eV/ps, and 500 eV/ps.",
+        "With further increasing energy density to 500 eV/ps, the laser heats the center of the molten pool to higher temperatures, enlarging the molten pool size"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "High-entropy alloy",
+          "Material_Name_Raw": "CoCrFeNi HEA",
+          "Nominal_Composition": {
+            "Co": {
+              "Value": 25.0,
+              "Unit": "at%",
+              "Original_Values": "25 at% Co"
+            },
+            "Cr": {
+              "Value": 25.0,
+              "Unit": "at%",
+              "Original_Values": "25 at% Cr"
+            },
+            "Fe": {
+              "Value": 25.0,
+              "Unit": "at%",
+              "Original_Values": "25 at% Fe"
+            },
+            "Ni": {
+              "Value": 25.0,
+              "Unit": "at%",
+              "Original_Values": "25 at% Ni"
+            }
+          },
+          "Note": "Same nominal composition as MD_100eV. Shared across all MD simulation items per model setup."
+        },
+        "Processing": {
+          "Process_Category": "LPBF simulation via molecular dynamics",
+          "Process_Text": {
+            "original": "MD simulation of LPBF process of CoCrFeNi HEA powder bed on polycrystalline substrate. Laser energy input of 500 eV/ps.",
+            "simplified": "MD simulation of LPBF at 500 eV/ps laser energy input on CoCrFeNi HEA powder bed/substrate system"
+          },
+          "Simulation_Metadata": {
+            "Method_Category": "Molecular Dynamics",
+            "Software": "LAMMPS",
+            "Potential": "EAM potential for Fe-Ni-Cr-Co-Cu developed by D. Farkas, A. Caro et al.",
+            "Ensemble": "NVE (powder layer, Newtonian layer, boundary layer); NVT (isothermal layer)",
+            "Time_Step_fs": 1.0,
+            "Total_Steps_or_Time": "4500 ps",
+            "Boundary_Conditions": "Fixed boundary conditions along x and y directions; periodic boundary conditions along z direction",
+            "Model_Size_Atoms": 477379,
+            "Simulation_Text": "Same model configuration as MD_100eV but with 500 eV/ps laser energy input. Shared model setup per Section 2.2.",
+            "Substrate_Dimensions": "1000 Å (X) × 150 Å (Y) × 25 Å (Z)",
+            "Powder_Layer_Dimensions": "1000 Å (X) × 100 Å (Y) with width 50 Å in y-direction",
+            "Powder_Particle_Diameter_Range": "30-40 Å",
+            "Powder_Particle_Count": 64,
+            "Molten_Pool_Dimensions": "φ140 × 25 Å",
+            "Molten_Pool_Dimensions_Note": "Initial model dimensions; pool enlarges at 500 eV/ps but exact final dimensions not specified in text",
+            "Lattice_Constant": 3.959,
+            "Lattice_Constant_Unit": "Å"
+          },
+          "Key_Params": [
+            {
+              "Stage": "Laser melting",
+              "Laser_Energy_Input": {
+                "Value": 500.0,
+                "Unit": "eV/ps",
+                "Original_Values": "500 eV/ps"
+              }
+            }
+          ],
+          "Equipment": [
+            {
+              "Name": "LAMMPS",
+              "Category": "Software"
+            },
+            {
+              "Name": "OVITO",
+              "Category": "Software"
+            },
+            {
+              "Name": "Atomsk",
+              "Category": "Software"
+            }
+          ],
+          "Note": "Simulation parameters shared with MD_100eV and MD_300eV per Section 2.2 description; only laser energy input differs."
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "At 500 eV/ps, the laser heats the center of the molten pool to higher temperatures, enlarging the molten pool size and extending the duration of high-temperature zones. The temperature in the central part of the white atoms region reaches 3500 K, which is the boiling point of the material. A large number of powder particles evaporate, accompanied by spattering phenomena.",
+            "simplified": "Predominantly FCC microstructure with evaporation-induced defects at 500 eV/ps"
+          },
+          "Main_Phase": [
+            {
+              "Phase_Name": "FCC solid solution",
+              "Crystal_Structure": "FCC"
+            }
+          ],
+          "Relative_Density": {
+            "Value": null,
+            "Original_Values": "~97.5%",
+            "Note": "Approximate relative density at 500 eV/ps; computed from MD model. Slightly decreased from peak due to evaporation.",
+            "Data_Source": "text"
+          },
+          "Advanced_Quantitative_Features": {
+            "Incomplete_Melting": false,
+            "Full_Melting": true,
+            "Evaporation": true,
+            "Spattering": true,
+            "Molten_Pool_Center_Temperature": {
+              "Value": 3500.0,
+              "Unit": "K",
+              "Original_Values": "3500 K",
+              "Note": "Described as the boiling point of the material"
+            },
+            "Perfect_Dislocation_Type": "1/2<110>",
+            "Partial_Dislocation_Type": "1/6<112>",
+            "Dislocation_Distribution": "Perfect dislocations primarily at grain boundaries due to misaligned orientations; partial dislocations within grains",
+            "Remelting_Zone_Depth": {
+              "Value": 20.0,
+              "Unit": "Å",
+              "Original_Values": "20 Å deep remelting zone"
+            },
+            "Note": "High energy density causes significant evaporation and spattering, leading to surface irregularities and reduced relative density compared to 300 eV/ps."
+          }
+        }
+      }
+    },
+    {
+      "Item_ID": "EXP_VED47.6",
+      "Sample_ID": "EXP_VED47.6",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "High_Entropy",
+        "Additive_Manufacturing"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "eleven sets of cubic samples with varying laser power and scanning speed were fabricated",
+        "1400 mm/s, 120 W (VED = 47.6 J/mm³)",
+        "the relative density of the samples initially rises from ~86% to ~98%"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "High-entropy alloy",
+          "Material_Name_Raw": "CoCrFeNi HEA",
+          "Nominal_Composition": {
+            "Note": "Spherical atomized CoCrFeNi powder with average particle size of 35 μm used for LPBF. Exact composition not numerically specified in text."
+          }
+        },
+        "Processing": {
+          "Process_Category": "LPBF",
+          "Process_Text": {
+            "original": "Cubic samples fabricated with a custom-built LPBF device (DiMetal-100H). Laser power 120 W, scanning speed 1400 mm/s, laser spot diameter 60 μm, powder layer thickness 30 μm. Consistent orthogonal scanning strategy. VED = 47.6 J/mm³.",
+            "simplified": "LPBF at 120 W, 1400 mm/s, VED = 47.6 J/mm³"
+          },
+          "Key_Params": [
+            {
+              "Stage": "LPBF building",
+              "Laser_Power_W": {
+                "Value": 120.0,
+                "Unit": "W",
+                "Original_Values": "120 W"
+              },
+              "Scanning_Speed_mm_s": {
+                "Value": 1400.0,
+                "Unit": "mm/s",
+                "Original_Values": "1400 mm/s"
+              },
+              "Laser_Spot_Diameter_um": {
+                "Value": 60.0,
+                "Unit": "μm",
+                "Original_Values": "60 μm"
+              },
+              "Powder_Layer_Thickness_um": {
+                "Value": 30.0,
+                "Unit": "μm",
+                "Original_Values": "30 μm"
+              },
+              "Scanning_Strategy": "Orthogonal",
+              "VED_J_mm3": {
+                "Value": 47.6,
+                "Unit": "J/mm³",
+                "Original_Values": "47.6 J/mm³"
+              }
+            }
+          ],
+          "Equipment": [
+            {
+              "Name": "DiMetal-100H LPBF device",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "SD-200L electron density meter",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Keyence VHX-600 optical microscope",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Zeiss Ultra Plus SEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Oxford Instruments AZTEC 2.0 EBSD system",
+              "Category": "Characterization"
+            }
+          ],
+          "Note": "All samples mechanically ground with abrasive papers (#200-5000 grit) and polished to 1.0 μm diamond suspension prior to SEM/EBSD."
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "LPBF-fabricated at 47.6 J/mm³ shows surface morphology characterized by numerous irregular pores. EBSD analysis at VED = 47.6 J/mm³ shows microstructure with average grain size of 16.29 μm and high density of HAGB.",
+            "simplified": "Low VED sample with irregular pores, fine grains (16.29 μm), high HAGB density"
+          },
+          "Main_Phase": [
+            {
+              "Phase_Name": "FCC solid solution",
+              "Crystal_Structure": "FCC"
+            }
+          ],
+          "Grain_Size": {
+            "Value": 16.29,
+            "Unit": "μm",
+            "Original_Values": "16.29 μm",
+            "Dimension_Type": "undefined",
+            "Data_Source": "text"
+          },
+          "Texture_or_Orientation": {
+            "MUD_Max": {
+              "Value": 11.283,
+              "Original_Values": "11.283",
+              "Data_Source": "text"
+            }
+          },
+          "Advanced_Quantitative_Features": {
+            "HAGB_Density": "high",
+            "Irregular_Pores": true,
+            "Lack_of_Fusion_Pores": true,
+            "Note": "Low VED causes lack-of-fusion defects and numerous irregular pores"
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Relative_Density",
+            "Value": null,
+            "Original_Values": "~86%",
+            "Unit": "%",
+            "Test_Condition": {
+              "Laser_Power_W": 120,
+              "Scanning_Speed_mm_s": 1400,
+              "VED_J_mm3": 47.6
+            },
+            "Data_Source": "text",
+            "Note": "Approximate relative density determined by electron density meter (SD-200L)"
+          },
+          {
+            "Property_Name": "GND_Density",
+            "Value": 208000000000000.0,
+            "Unit": "m⁻²",
+            "Original_Values": "2.08 × 10¹⁴ m⁻²",
+            "Test_Condition": {
+              "VED_J_mm3": 47.6,
+              "EBSD_Step_Size_um": 0.2,
+              "Calculation_Method": "ρ_GND = 2θ/(φb) strain gradient model"
+            },
+            "Data_Source": "text"
+          }
+        ]
+      },
+      "Experiment_Link": {
+        "Related_Item_IDs": [
+          "MD_100eV"
+        ],
+        "Description": "Experimental validation of MD simulation at low energy density. Both show incomplete melting and low relative density.",
+        "Validation_Target": "Defect formation mechanisms and relative density trend"
+      }
+    },
+    {
+      "Item_ID": "EXP_VED185.2",
+      "Sample_ID": "EXP_VED185.2",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "High_Entropy",
+        "Additive_Manufacturing"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "600 mm/s, 200 W (VED = 185.2 J/mm³)",
+        "An increase in η to 185.2 J/mm³ yields a surface morphology with no perceivable defects"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "High-entropy alloy",
+          "Material_Name_Raw": "CoCrFeNi HEA",
+          "Nominal_Composition": {
+            "Note": "Same powder as EXP_VED47.6. Spherical atomized CoCrFeNi powder with average particle size of 35 μm."
+          }
+        },
+        "Processing": {
+          "Process_Category": "LPBF",
+          "Process_Text": {
+            "original": "Cubic samples fabricated with a custom-built LPBF device (DiMetal-100H). Laser power 200 W, scanning speed 600 mm/s, laser spot diameter 60 μm, powder layer thickness 30 μm. Consistent orthogonal scanning strategy. VED = 185.2 J/mm³.",
+            "simplified": "LPBF at 200 W, 600 mm/s, VED = 185.2 J/mm³"
+          },
+          "Key_Params": [
+            {
+              "Stage": "LPBF building",
+              "Laser_Power_W": {
+                "Value": 200.0,
+                "Unit": "W",
+                "Original_Values": "200 W"
+              },
+              "Scanning_Speed_mm_s": {
+                "Value": 600.0,
+                "Unit": "mm/s",
+                "Original_Values": "600 mm/s"
+              },
+              "Laser_Spot_Diameter_um": {
+                "Value": 60.0,
+                "Unit": "μm",
+                "Original_Values": "60 μm"
+              },
+              "Powder_Layer_Thickness_um": {
+                "Value": 30.0,
+                "Unit": "μm",
+                "Original_Values": "30 μm"
+              },
+              "Scanning_Strategy": "Orthogonal",
+              "VED_J_mm3": {
+                "Value": 185.2,
+                "Unit": "J/mm³",
+                "Original_Values": "185.2 J/mm³"
+              }
+            }
+          ],
+          "Equipment": [
+            {
+              "Name": "DiMetal-100H LPBF device",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "SD-200L electron density meter",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Keyence VHX-600 optical microscope",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Zeiss Ultra Plus SEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Oxford Instruments AZTEC 2.0 EBSD system",
+              "Category": "Characterization"
+            }
+          ],
+          "Note": "Same device and preparation conditions as EXP_VED47.6 per Section 2.3; only laser power and scanning speed differ."
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "At VED = 185.2 J/mm³, surface morphology with no perceivable defects. EBSD shows decreasing HAGB density and increasing average grain size compared to 47.6 J/mm³ sample.",
+            "simplified": "Near-full density sample with no perceivable defects, coarser grains, reduced HAGB"
+          },
+          "Main_Phase": [
+            {
+              "Phase_Name": "FCC solid solution",
+              "Crystal_Structure": "FCC"
+            }
+          ],
+          "Grain_Size": {
+            "Value": null,
+            "Unit": "μm",
+            "Note": "Text gives grain size range from 16.29 μm (VED=47.6) to 23.85 μm (VED=277.8); value at VED=185.2 shown in Fig. 5(d) but not explicitly stated in text"
+          },
+          "Texture_or_Orientation": {
+            "MUD_Max": {
+              "Value": 16.839,
+              "Original_Values": "16.839",
+              "Data_Source": "text"
+            }
+          },
+          "Advanced_Quantitative_Features": {
+            "HAGB_Density": "decreasing",
+            "No_Perceived_Defects": true,
+            "Note": "Optimal VED condition yielding near-full density"
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Relative_Density",
+            "Value": null,
+            "Original_Values": "~98%",
+            "Unit": "%",
+            "Test_Condition": {
+              "Laser_Power_W": 200,
+              "Scanning_Speed_mm_s": 600,
+              "VED_J_mm3": 185.2
+            },
+            "Data_Source": "text",
+            "Note": "Approximate relative density determined by electron density meter (SD-200L)"
+          },
+          {
+            "Property_Name": "GND_Density",
+            "Value": null,
+            "Unit": "m⁻²",
+            "Test_Condition": {
+              "VED_J_mm3": 185.2,
+              "EBSD_Step_Size_um": 0.2
+            },
+            "Data_Source": "text",
+            "Note": "GND density at VED = 185.2 J/mm³ is between 2.08e14 and 1.46e14 m⁻² but exact value not explicitly stated in text"
+          }
+        ]
+      },
+      "Experiment_Link": {
+        "Related_Item_IDs": [
+          "MD_300eV"
+        ],
+        "Description": "Experimental validation of MD simulation at medium energy density. Both show full melting and highest relative density.",
+        "Validation_Target": "Defect-free microstructure and density peak"
+      }
+    },
+    {
+      "Item_ID": "EXP_VED277.8",
+      "Sample_ID": "EXP_VED277.8",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "High_Entropy",
+        "Additive_Manufacturing"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "400 mm/s, 200 W (VED = 277.8 J/mm³)",
+        "When η is further increased to 277.8 J/mm³, pores are formed in the surface near region due to high-temperature evaporation"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "High-entropy alloy",
+          "Material_Name_Raw": "CoCrFeNi HEA",
+          "Nominal_Composition": {
+            "Note": "Same powder as EXP_VED47.6. Spherical atomized CoCrFeNi powder with average particle size of 35 μm."
+          }
+        },
+        "Processing": {
+          "Process_Category": "LPBF",
+          "Process_Text": {
+            "original": "Cubic samples fabricated with a custom-built LPBF device (DiMetal-100H). Laser power 200 W, scanning speed 400 mm/s, laser spot diameter 60 μm, powder layer thickness 30 μm. Consistent orthogonal scanning strategy. VED = 277.8 J/mm³.",
+            "simplified": "LPBF at 200 W, 400 mm/s, VED = 277.8 J/mm³"
+          },
+          "Key_Params": [
+            {
+              "Stage": "LPBF building",
+              "Laser_Power_W": {
+                "Value": 200.0,
+                "Unit": "W",
+                "Original_Values": "200 W"
+              },
+              "Scanning_Speed_mm_s": {
+                "Value": 400.0,
+                "Unit": "mm/s",
+                "Original_Values": "400 mm/s"
+              },
+              "Laser_Spot_Diameter_um": {
+                "Value": 60.0,
+                "Unit": "μm",
+                "Original_Values": "60 μm"
+              },
+              "Powder_Layer_Thickness_um": {
+                "Value": 30.0,
+                "Unit": "μm",
+                "Original_Values": "30 μm"
+              },
+              "Scanning_Strategy": "Orthogonal",
+              "VED_J_mm3": {
+                "Value": 277.8,
+                "Unit": "J/mm³",
+                "Original_Values": "277.8 J/mm³"
+              }
+            }
+          ],
+          "Equipment": [
+            {
+              "Name": "DiMetal-100H LPBF device",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "SD-200L electron density meter",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Keyence VHX-600 optical microscope",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Zeiss Ultra Plus SEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Oxford Instruments AZTEC 2.0 EBSD system",
+              "Category": "Characterization"
+            }
+          ],
+          "Note": "Same device and preparation conditions as EXP_VED47.6 per Section 2.3; only laser power and scanning speed differ."
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "At VED = 277.8 J/mm³, pores are formed in the surface near region due to high-temperature evaporation. EBSD shows the coarsest grains with significantly decreased HAGB density and highest anisotropy. Average grain size 23.85 μm.",
+            "simplified": "High VED sample with evaporation-induced surface pores, coarsest grains (23.85 μm), lowest HAGB density, highest anisotropy"
+          },
+          "Main_Phase": [
+            {
+              "Phase_Name": "FCC solid solution",
+              "Crystal_Structure": "FCC"
+            }
+          ],
+          "Grain_Size": {
+            "Value": 23.85,
+            "Unit": "μm",
+            "Original_Values": "23.85 μm",
+            "Dimension_Type": "undefined",
+            "Data_Source": "text"
+          },
+          "Texture_or_Orientation": {
+            "MUD_Max": {
+              "Value": 20.918,
+              "Original_Values": "20.918",
+              "Data_Source": "text"
+            }
+          },
+          "Advanced_Quantitative_Features": {
+            "HAGB_Density": "low",
+            "Evaporation_Induced_Pores": true,
+            "Highest_Anisotropy": true,
+            "Note": "Highest VED condition. Coarsest grains with highest anisotropy (MUD = 20.918). Surface pores due to evaporation."
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Relative_Density",
+            "Value": null,
+            "Original_Values": "~96%",
+            "Unit": "%",
+            "Test_Condition": {
+              "Laser_Power_W": 200,
+              "Scanning_Speed_mm_s": 400,
+              "VED_J_mm3": 277.8
+            },
+            "Data_Source": "text",
+            "Note": "Approximate relative density determined by electron density meter (SD-200L). Slightly decreased due to evaporation."
+          },
+          {
+            "Property_Name": "GND_Density",
+            "Value": 146000000000000.0,
+            "Unit": "m⁻²",
+            "Original_Values": "1.46 × 10¹⁴ m⁻²",
+            "Test_Condition": {
+              "VED_J_mm3": 277.8,
+              "EBSD_Step_Size_um": 0.2,
+              "Calculation_Method": "ρ_GND = 2θ/(φb) strain gradient model"
+            },
+            "Data_Source": "text"
+          }
+        ]
+      },
+      "Experiment_Link": {
+        "Related_Item_IDs": [
+          "MD_500eV"
+        ],
+        "Description": "Experimental validation of MD simulation at high energy density. Both show evaporation-induced defects and decreased density.",
+        "Validation_Target": "Evaporation-induced defect formation and density decrease at high energy"
+      }
+    }
+  ]
+}

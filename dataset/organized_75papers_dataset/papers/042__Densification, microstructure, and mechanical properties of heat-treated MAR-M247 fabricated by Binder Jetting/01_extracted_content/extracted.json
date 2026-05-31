@@ -1,0 +1,1798 @@
+{
+  "Paper_Metadata": {
+    "Paper_Title": "Densification, microstructure, and mechanical properties of heat-treated MAR-M247 fabricated by Binder Jetting",
+    "DOI": "10.1016/j.addma.2021.101912"
+  },
+  "Paper_Routing": {
+    "base_material": "Metals",
+    "application": "Structural",
+    "research_paradigm": "Experimental",
+    "Supplements_Loaded": [
+      "directions/base/Metals.txt",
+      "directions/application/Structural.txt",
+      "directions/paradigm/Experimental.txt"
+    ],
+    "Patch_Tags": [
+      "Additive_Manufacturing"
+    ],
+    "Needs_Mixed_Routing_Check": false
+  },
+  "items": [
+    {
+      "Item_ID": "01_AsSintered",
+      "Sample_ID": "As-sintered MAR-M247 (cuboids)",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 2.1 Binder Jetting of MAR-M247",
+        "Section 2.2 Post-processing, HIP, and heat treatments",
+        "Section 3.1 Densification of cuboids",
+        "Section 3.3 Microstructure after sintering and HIP-treatment"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Nickel-based superalloy",
+          "Material_Name_Raw": "MAR-M247",
+          "Measured_Composition": {
+            "Method": "ICP-MS",
+            "Type": "wt%",
+            "Elements": [
+              {
+                "Element": "Ni",
+                "Value": "Balance",
+                "Original_Values": "Bal."
+              },
+              {
+                "Element": "Co",
+                "Value": 10.06,
+                "Unit": "wt%"
+              },
+              {
+                "Element": "W",
+                "Value": 9.98,
+                "Unit": "wt%"
+              },
+              {
+                "Element": "Cr",
+                "Value": 8.53,
+                "Unit": "wt%"
+              },
+              {
+                "Element": "Al",
+                "Value": 5.46,
+                "Unit": "wt%"
+              },
+              {
+                "Element": "Ta",
+                "Value": 3.02,
+                "Unit": "wt%"
+              },
+              {
+                "Element": "Hf",
+                "Value": 1.32,
+                "Unit": "wt%"
+              },
+              {
+                "Element": "Ti",
+                "Value": 1.05,
+                "Unit": "wt%"
+              },
+              {
+                "Element": "Mo",
+                "Value": 0.62,
+                "Unit": "wt%"
+              },
+              {
+                "Element": "C",
+                "Value": 0.15,
+                "Unit": "wt%"
+              },
+              {
+                "Element": "Zr",
+                "Value": 0.05,
+                "Unit": "wt%"
+              },
+              {
+                "Element": "Fe",
+                "Value": 0.03,
+                "Unit": "wt%"
+              },
+              {
+                "Element": "B",
+                "Value": 0.01,
+                "Unit": "wt%"
+              }
+            ],
+            "Note": "Composition of consumed powder measured by ICP-MS (Table 1). Ni normalized ≈ 59.72 wt% (Data_Nature: Computed)",
+            "Data_Source": "table"
+          },
+          "Measured_Carbon_After_Sintering": {
+            "Value": 0.133,
+            "Value_StdDev": 0.044,
+            "Unit": "wt%",
+            "Method": "LECO CS230 elemental analyzer",
+            "Note": "Carbon content after sintering; marginally lower than initial 0.15 wt%",
+            "Data_Source": "text"
+          }
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "Gas-atomized MAR-M247 powder was used as feedstock. Binder Jetting on DMP2500 system with 42 µm layer thickness and ~30 pL droplet volume in ambient atmosphere at room temperature using aqueous binder C20 at Dark 3 saturation (69%). After manufacturing: curing at 200 °C for 8 h, depowdering, thermal debinding at 345 °C for 3 h, sintering at 1320 °C at ~0.1 Pa for 6 h, furnace cooling <20 °C/min.",
+            "simplified": "Binder Jetting (DMP2500) → curing 200°C/8h → debinding 345°C/3h → vacuum sintering 1320°C/~0.1Pa/6h → furnace cooling"
+          },
+          "Stage1_Printing": {
+            "Process_Category": "Binder Jetting",
+            "Equipment_Name": "DMP2500",
+            "Equipment_Manufacturer": "Digital Metal AB, Sweden",
+            "Layer_Thickness": {
+              "Value": 42,
+              "Unit": "µm"
+            },
+            "Droplet_Volume": {
+              "Value": 30,
+              "Unit": "pL",
+              "Note": "approximate"
+            },
+            "Binder_Type": "aqueous C20",
+            "Saturation": "Dark 3 (69% pixels saturated)",
+            "Atmosphere": "ambient air",
+            "Temperature": "room temperature",
+            "Scaling_Factor": {
+              "Volumetric": 1.79,
+              "Horizontal": "21%",
+              "Vertical": "22%",
+              "Note": "to compensate for shrinkage on sintering"
+            }
+          },
+          "Stage2_Curing": {
+            "Temperature": {
+              "Value": 473.15,
+              "Unit": "K",
+              "Original_Values": "200 °C"
+            },
+            "Time": {
+              "Value": 8,
+              "Unit": "h"
+            },
+            "Atmosphere": "ambient air"
+          },
+          "Stage3_Debinding": {
+            "Temperature": {
+              "Value": 618.15,
+              "Unit": "K",
+              "Original_Values": "345 °C"
+            },
+            "Time": {
+              "Value": 3,
+              "Unit": "h"
+            },
+            "Atmosphere": "ambient air"
+          },
+          "Stage4_Sintering": {
+            "Temperature": {
+              "Value": 1593.15,
+              "Unit": "K",
+              "Original_Values": "1320 °C"
+            },
+            "Time": {
+              "Value": 6,
+              "Unit": "h"
+            },
+            "Pressure": {
+              "Value": 0.1,
+              "Unit": "Pa",
+              "Note": "approximately"
+            },
+            "Cooling_Rate": {
+              "Value": null,
+              "Note": "<20 °C/min furnace cooling"
+            },
+            "Atmosphere": "vacuum"
+          },
+          "Equipment": [
+            {
+              "Name": "DMP2500 (Digital Metal AB)",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "H800 SF vacuum furnace (Vacua Therm Ltd.)",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Zeiss Axio Vert.A1",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Zeiss Supra 35 FEG (Carl Zeiss AG)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Thermo-Calc Software version 2019b (Thermo-Calc Software AB)",
+              "Category": "Software"
+            },
+            {
+              "Name": "LECO CS230 elemental analyzer",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Sartorius BP-210S with YDK01 Archimedes kit",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Durascan 70-G5 (Struers ApS)",
+              "Category": "Testing"
+            },
+            {
+              "Name": "Instron 5587 (Illinois Tool Works Inc.)",
+              "Category": "Testing"
+            },
+            {
+              "Name": "Jupiter STA 449 F1 thermal analyzer (Netzsch GmbH)",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "N 7/H furnace (Nabertherm GmbH)",
+              "Category": "Preparation"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Equiaxed grains with average grain size of 11.3 µm. γ-matrix with γ'-precipitates of two size fractions: coarser 1–2 µm and finer <1 µm. MC carbides along grain boundaries (M = Hf, W, Ta, Ti). Remaining porosity with irregularly shaped pores of ~1–20 µm.",
+            "simplified": "Equiaxed γ-matrix grains (11.3 µm), bimodal γ' precipitates (1–2 µm coarse + <1 µm fine), MC carbides at grain boundaries, residual porosity 1–20 µm"
+          },
+          "Main_Phase": {
+            "Phase_Name": "γ-matrix",
+            "Crystal_Structure": "FCC",
+            "Description": "Ni-based solid solution matrix with Co, W, Cr, Mo solid solution strengthening"
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "γ'-phase",
+              "Crystal_Structure": "L1₂",
+              "Description": "Ni₃(Al, Ti) precipitates dispersed in γ-matrix",
+              "Morphology": "bimodal size distribution",
+              "Coarse_Fraction_Size": {
+                "Value_Range": "1–2 µm",
+                "Size_Type": "diameter",
+                "Note": "approximate"
+              },
+              "Fine_Fraction_Size": {
+                "Value": null,
+                "Note": "< 1 µm, approximate"
+              }
+            },
+            {
+              "Phase_Name": "MC carbides",
+              "Crystal_Structure": "FCC (NaCl-type)",
+              "Description": "Primary carbides along grain boundaries; M = Hf, W, Ta, Ti",
+              "Note": "Confirmed by XRD and EDS; assumed HfC, TaC, TiC, WC per Thermo-Calc"
+            }
+          ],
+          "Grain_Size": {
+            "Value": 11.3,
+            "Unit": "µm",
+            "Size_Type": "diameter",
+            "Method": "EBSD line intercept per ISO 643:2012",
+            "Morphology": "equiaxed",
+            "Note": "20 equally spaced vertical and horizontal line intercepts; no significant difference between directions"
+          },
+          "Porosity": {
+            "Pore_Size_Range": {
+              "Value_Range": "1–20 µm",
+              "Size_Type": "diameter",
+              "Note": "approximate, irregularly shaped"
+            },
+            "Relative_Density_Data": {
+              "Specific_Density_Average": {
+                "Value": 8.405,
+                "Unit": "g/cm³",
+                "Data_Source": "table"
+              },
+              "Specific_Density_Std": {
+                "Value": 0.011,
+                "Unit": "g/cm³"
+              },
+              "Individual_Measurements": [
+                {
+                  "ID": "#1",
+                  "Value": 8.401,
+                  "StdDev": 0.013,
+                  "Unit": "g/cm³"
+                },
+                {
+                  "ID": "#2",
+                  "Value": 8.394,
+                  "StdDev": 0.024,
+                  "Unit": "g/cm³"
+                },
+                {
+                  "ID": "#3",
+                  "Value": 8.395,
+                  "StdDev": 0.007,
+                  "Unit": "g/cm³"
+                },
+                {
+                  "ID": "#4",
+                  "Value": 8.423,
+                  "StdDev": 0.007,
+                  "Unit": "g/cm³"
+                },
+                {
+                  "ID": "#5",
+                  "Value": 8.414,
+                  "StdDev": 0.01,
+                  "Unit": "g/cm³"
+                }
+              ],
+              "Method": "Archimedes principle per ISO 3369:2006",
+              "Data_Source": "table"
+            },
+            "Relative_Porosity_Range": {
+              "Value_Range": "2.1–3.3%",
+              "Note": "Remaining porosity range for as-sintered cuboids, stated in Conclusions section",
+              "Data_Source": "text"
+            }
+          },
+          "Texture_or_Orientation": {
+            "Note": "No indications for strong crystallographic texture observed in EBSD pole figures"
+          },
+          "Powder_Characteristics": {
+            "Type": "gas-atomized",
+            "Morphology": "spherical",
+            "D50": {
+              "Value": 15,
+              "Unit": "µm",
+              "Note": "median particle size at 50% of volume distribution"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Type": "Hardness",
+            "Value": null,
+            "Unit": "HV0.1",
+            "Test_Condition": {
+              "Load": {
+                "Value": 100,
+                "Unit": "g"
+              },
+              "Dwell_Time": {
+                "Value": 10,
+                "Unit": "s"
+              },
+              "Standard": "ISO 6507-1:2018",
+              "Specimen": "polished cuboids"
+            },
+            "Note": "Hardness values shown in Fig. 15; specific numerical values for as-sintered condition not reported in text or table. Average increase of ~50 HV0.1 after HIP1 stated.",
+            "Data_Source": "image",
+            "Data_Nature": "Experimental"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "02_HIP1",
+      "Sample_ID": "MAR-M247 HIP1 (cuboids)",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 2.2 Table 2 HIP1 conditions",
+        "Section 3.1 Densification of cuboids",
+        "Section 3.3 Microstructure after sintering and HIP-treatment"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Nickel-based superalloy",
+          "Material_Name_Raw": "MAR-M247",
+          "Note": "Same powder composition as Item 01. Composition shared per Section 2.2: same MAR-M247 powder used for all specimens."
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "HIP1 cycle: 1000 bar, 1120 °C, 4 h holding, ~180 °C/min cooling, in argon. Applied to sintered cuboids.",
+            "simplified": "Sintered → HIP1 (1120°C/1000bar/4h/Ar, ~180°C/min cooling)"
+          },
+          "Stage5_HIP": {
+            "Process_Category": "HIP",
+            "Temperature": {
+              "Value": 1393.15,
+              "Unit": "K",
+              "Original_Values": "1120 °C"
+            },
+            "Pressure": {
+              "Value": 1000,
+              "Unit": "bar"
+            },
+            "Time": {
+              "Value": 4,
+              "Unit": "h"
+            },
+            "Cooling_Rate": {
+              "Value": 180,
+              "Unit": "°C/min",
+              "Note": "approximate"
+            },
+            "Atmosphere": "argon",
+            "Data_Source": "table"
+          },
+          "Note": "Prior processing stages (BJ, curing, debinding, sintering) shared with Item 01 per Section 2.2."
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "After HIP1, γ'-precipitates within γ-grains appear less dense but generally larger. Coarser fraction above 5 µm at expense of finer fraction. Ostwald ripening observed. Average grain size 10.3 µm. Majority of pores removed.",
+            "simplified": "Equiaxed γ grains (10.3 µm), coarsened γ' (>5 µm coarse, reduced fine fraction), MC carbides at grain boundaries, near-full densification"
+          },
+          "Main_Phase": {
+            "Phase_Name": "γ-matrix",
+            "Crystal_Structure": "FCC"
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "γ'-phase",
+              "Crystal_Structure": "L1₂",
+              "Coarse_Fraction_Size": {
+                "Value": null,
+                "Note": ">5 µm; grown at expense of fine fraction (Ostwald ripening)"
+              },
+              "Fine_Fraction_Note": "Reduced density compared to as-sintered"
+            },
+            {
+              "Phase_Name": "MC carbides",
+              "Crystal_Structure": "FCC (NaCl-type)",
+              "Description": "M = Hf, W, Ta, Ti; along grain boundaries and inside/on rim of former pores"
+            }
+          ],
+          "Grain_Size": {
+            "Value": 10.3,
+            "Unit": "µm",
+            "Size_Type": "diameter",
+            "Method": "EBSD line intercept per ISO 643:2012",
+            "Morphology": "equiaxed",
+            "Note": "No noticeable grain growth compared to as-sintered"
+          },
+          "Porosity": {
+            "Relative_Density_Data": {
+              "Specific_Density_Average": {
+                "Value": 8.56,
+                "Unit": "g/cm³",
+                "Data_Source": "table"
+              },
+              "Specific_Density_Std": {
+                "Value": 0.009,
+                "Unit": "g/cm³"
+              },
+              "Individual_Measurements": [
+                {
+                  "ID": "#1",
+                  "Value": 8.569,
+                  "StdDev": 0.017,
+                  "Unit": "g/cm³"
+                },
+                {
+                  "ID": "#2",
+                  "Value": 8.545,
+                  "StdDev": 0.008,
+                  "Unit": "g/cm³"
+                },
+                {
+                  "ID": "#3",
+                  "Value": 8.561,
+                  "StdDev": 0.01,
+                  "Unit": "g/cm³"
+                },
+                {
+                  "ID": "#4",
+                  "Value": 8.571,
+                  "StdDev": 0.022,
+                  "Unit": "g/cm³"
+                },
+                {
+                  "ID": "#5",
+                  "Value": 8.554,
+                  "StdDev": 0.021,
+                  "Unit": "g/cm³"
+                }
+              ],
+              "Density_Increase": {
+                "Value": 1.4,
+                "Unit": "%",
+                "Note": "approximate average increase after HIP1"
+              },
+              "Method": "Archimedes principle per ISO 3369:2006",
+              "Data_Source": "table"
+            }
+          },
+          "Texture_or_Orientation": {
+            "Note": "No indications for strong crystallographic texture observed"
+          }
+        },
+        "Properties": [
+          {
+            "Property_Type": "Hardness",
+            "Value": null,
+            "Unit": "HV0.1",
+            "Test_Condition": {
+              "Load": {
+                "Value": 100,
+                "Unit": "g"
+              },
+              "Dwell_Time": {
+                "Value": 10,
+                "Unit": "s"
+              },
+              "Standard": "ISO 6507-1:2018"
+            },
+            "Note": "Hardness values shown in Fig. 15; specific numerical values not reported in text or table. Average increase of ~50 HV0.1 after HIP1 compared to as-sintered. Variation reduced after HIP.",
+            "Data_Source": "image",
+            "Data_Nature": "Experimental"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "03_HIP2",
+      "Sample_ID": "MAR-M247 HIP2 (hexagonal tensile specimens)",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 2.2 Table 2 HIP2 conditions",
+        "Section 3.2 Densification of hexagonal tensile specimens",
+        "Section 4.3 Relative density and sources of porosity"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Nickel-based superalloy",
+          "Material_Name_Raw": "MAR-M247",
+          "Note": "Same powder composition as Item 01."
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "HIP2 cycle: 1500 bar, 1180 °C, 4 h holding, ~180 °C/min cooling, in argon. Applied to sintered hexagonal tensile specimens.",
+            "simplified": "Sintered → HIP2 (1180°C/1500bar/4h/Ar, ~180°C/min cooling)"
+          },
+          "Stage5_HIP": {
+            "Process_Category": "HIP",
+            "Temperature": {
+              "Value": 1453.15,
+              "Unit": "K",
+              "Original_Values": "1180 °C"
+            },
+            "Pressure": {
+              "Value": 1500,
+              "Unit": "bar"
+            },
+            "Time": {
+              "Value": 4,
+              "Unit": "h"
+            },
+            "Cooling_Rate": {
+              "Value": 180,
+              "Unit": "°C/min",
+              "Note": "approximate"
+            },
+            "Atmosphere": "argon",
+            "Data_Source": "table"
+          },
+          "Note": "Prior processing stages shared with Item 01."
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "HIP2 condition: density of disperse γ'-precipitates within γ-grains reduced further, size of visible γ'-precipitates smaller compared to HIP1. Coarse fraction not grown extensively; finer fraction even smaller, significantly <1 µm. No significant grain growth expected.",
+            "simplified": "γ-matrix, reduced γ' fraction, coarse γ' not grown extensively, fine γ' <1 µm, MC carbides, near-full densification"
+          },
+          "Main_Phase": {
+            "Phase_Name": "γ-matrix",
+            "Crystal_Structure": "FCC"
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "γ'-phase",
+              "Crystal_Structure": "L1₂",
+              "Note": "Reduced mass fraction compared to as-sintered and HIP1; HIP2 temperature (1180 °C) just below γ' stability limit"
+            },
+            {
+              "Phase_Name": "MC carbides",
+              "Crystal_Structure": "FCC (NaCl-type)",
+              "Description": "M = Hf, W, Ta, Ti"
+            }
+          ],
+          "Porosity": {
+            "Relative_Density_Data": {
+              "Specific_Density_Overall_Average": {
+                "Value": 8.579,
+                "Value_StdDev": 0.003,
+                "Unit": "g/cm³",
+                "Data_Source": "text"
+              },
+              "Vertical_Build": {
+                "Specific_Density_Average": null,
+                "Note": "No significant difference between vertical and horizontal build directions; values shown in Fig. 7"
+              },
+              "Horizontal_Build": {
+                "Specific_Density_Average": null,
+                "Note": "See Fig. 7 for individual bar values"
+              },
+              "As_Sintered_Vertical_Average": {
+                "Value": 8.343,
+                "Value_StdDev": 0.046,
+                "Unit": "g/cm³",
+                "Data_Source": "text"
+              },
+              "As_Sintered_Horizontal_Average": {
+                "Value": 8.358,
+                "Value_StdDev": 0.051,
+                "Unit": "g/cm³",
+                "Data_Source": "text"
+              },
+              "Method": "Archimedes principle per ISO 3369:2006",
+              "Note": "As-sintered density values included as pre-HIP2 baseline for comparison; HIP2 density is the primary data for this item."
+            }
+          },
+          "Texture_or_Orientation": {
+            "Build_Directions": [
+              "vertical",
+              "horizontal"
+            ],
+            "Note": "No significant anisotropy in density or tensile properties between build directions"
+          }
+        }
+      }
+    },
+    {
+      "Item_ID": "04_Sintered_HT1",
+      "Sample_ID": "MAR-M247 As-sintered + HT1",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 3 HT1",
+        "Section 3.4 Microstructural evolution through heat treatments HT 1-4"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Nickel-based superalloy",
+          "Material_Name_Raw": "MAR-M247",
+          "Note": "Same powder composition as Item 01."
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "HT1 applied to as-sintered condition: solution treatment 1250 °C for 4 h, age hardening 700 °C for 24 h.",
+            "simplified": "Sintered → solution 1250°C/4h → age 700°C/24h"
+          },
+          "Stage5_HeatTreatment_HT1": {
+            "Process_Category": "Heat Treatment",
+            "Steps": [
+              {
+                "Step": "Solution treatment",
+                "Temperature": {
+                  "Value": 1523.15,
+                  "Unit": "K",
+                  "Original_Values": "1250 °C"
+                },
+                "Time": {
+                  "Value": 4,
+                  "Unit": "h"
+                },
+                "Atmosphere": "argon",
+                "Equipment": "Jupiter STA 449 F1 (Netzsch GmbH)",
+                "Purity": "99.999%"
+              },
+              {
+                "Step": "Age hardening",
+                "Temperature": {
+                  "Value": 973.15,
+                  "Unit": "K",
+                  "Original_Values": "700 °C"
+                },
+                "Time": {
+                  "Value": 24,
+                  "Unit": "h"
+                }
+              }
+            ],
+            "Data_Source": "table"
+          },
+          "Note": "Heat treatment applied to cuboid specimens in Jupiter STA 449 F1 thermal analyzer in argon."
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "HT1 on as-sintered: age hardening at 700 °C after solution heat treatment resulted in finest dispersion of γ'. Occasionally γ'-precipitates still present after solution heat treatment.",
+            "simplified": "Finest dispersion of γ' after solution + single aging"
+          },
+          "Main_Phase": {
+            "Phase_Name": "γ-matrix",
+            "Crystal_Structure": "FCC"
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "γ'-phase",
+              "Crystal_Structure": "L1₂",
+              "Note": "Finest dispersion after HT1; some undissolved γ' occasionally remained after solution treatment"
+            },
+            {
+              "Phase_Name": "MC carbides",
+              "Crystal_Structure": "FCC (NaCl-type)",
+              "Description": "M = Hf, W, Ta, Ti"
+            }
+          ]
+        },
+        "Properties": [
+          {
+            "Property_Type": "Hardness",
+            "Value": null,
+            "Unit": "HV0.1",
+            "Test_Condition": {
+              "Load": {
+                "Value": 100,
+                "Unit": "g"
+              },
+              "Dwell_Time": {
+                "Value": 10,
+                "Unit": "s"
+              },
+              "Standard": "ISO 6507-1:2018"
+            },
+            "Note": "Hardness values shown in Fig. 15; specific numerical values not reported in text or table. HT1 and HT2 have similar hardness.",
+            "Data_Source": "image",
+            "Data_Nature": "Experimental"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "05_Sintered_HT2",
+      "Sample_ID": "MAR-M247 As-sintered + HT2",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 3 HT2",
+        "Section 3.4 Microstructural evolution through heat treatments HT 1-4"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Nickel-based superalloy",
+          "Material_Name_Raw": "MAR-M247",
+          "Note": "Same powder composition as Item 01."
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "HT2 applied to as-sintered condition: solution treatment 1250 °C for 4 h, age hardening 1000 °C for 12 h, age hardening 700 °C for 24 h.",
+            "simplified": "Sintered → solution 1250°C/4h → age 1000°C/12h → age 700°C/24h (double-aging)"
+          },
+          "Stage5_HeatTreatment_HT2": {
+            "Process_Category": "Heat Treatment",
+            "Steps": [
+              {
+                "Step": "Solution treatment",
+                "Temperature": {
+                  "Value": 1523.15,
+                  "Unit": "K",
+                  "Original_Values": "1250 °C"
+                },
+                "Time": {
+                  "Value": 4,
+                  "Unit": "h"
+                },
+                "Atmosphere": "argon"
+              },
+              {
+                "Step": "Age hardening 1st",
+                "Temperature": {
+                  "Value": 1273.15,
+                  "Unit": "K",
+                  "Original_Values": "1000 °C"
+                },
+                "Time": {
+                  "Value": 12,
+                  "Unit": "h"
+                }
+              },
+              {
+                "Step": "Age hardening 2nd",
+                "Temperature": {
+                  "Value": 973.15,
+                  "Unit": "K",
+                  "Original_Values": "700 °C"
+                },
+                "Time": {
+                  "Value": 24,
+                  "Unit": "h"
+                }
+              }
+            ],
+            "Data_Source": "table"
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "HT2 on as-sintered: including double-stage aging, had similar size of γ'-precipitates including a fraction of larger γ'-precipitates. Genuinely bimodal γ'-precipitate distribution.",
+            "simplified": "Bimodal γ' distribution with fraction of larger precipitates after double-aging"
+          },
+          "Main_Phase": {
+            "Phase_Name": "γ-matrix",
+            "Crystal_Structure": "FCC"
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "γ'-phase",
+              "Crystal_Structure": "L1₂",
+              "Note": "Bimodal distribution; coarsest γ' dissolved, resulting in genuinely bimodal distribution"
+            },
+            {
+              "Phase_Name": "MC carbides",
+              "Crystal_Structure": "FCC (NaCl-type)",
+              "Description": "M = Hf, W, Ta, Ti"
+            }
+          ]
+        },
+        "Properties": [
+          {
+            "Property_Type": "Hardness",
+            "Value": null,
+            "Unit": "HV0.1",
+            "Test_Condition": {
+              "Load": {
+                "Value": 100,
+                "Unit": "g"
+              },
+              "Dwell_Time": {
+                "Value": 10,
+                "Unit": "s"
+              },
+              "Standard": "ISO 6507-1:2018"
+            },
+            "Note": "Hardness values shown in Fig. 15; specific numerical values not reported in text or table. Similar hardness to HT1.",
+            "Data_Source": "image",
+            "Data_Nature": "Experimental"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "06_HIP1_HT1",
+      "Sample_ID": "MAR-M247 HIP1 + HT1",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 3 HT1",
+        "Section 3.4 Microstructural evolution through heat treatments HT 1-4",
+        "Fig. 14"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Nickel-based superalloy",
+          "Material_Name_Raw": "MAR-M247",
+          "Note": "Same powder composition as Item 01."
+        },
+        "Processing": {
+          "Process_Text": {
+            "simplified": "Sintered → HIP1 (1120°C/1000bar/4h) → solution 1250°C/4h → age 700°C/24h",
+            "original": "HIP1 + HT1: HIP at 1120 °C, 1000 bar, 4 h in argon. Solution treatment at 1250 °C for 4 h, age hardening at 700 °C for 24 h."
+          },
+          "Stage5_HIP": {
+            "Process_Category": "HIP",
+            "Temperature": {
+              "Value": 1393.15,
+              "Unit": "K",
+              "Original_Values": "1120 °C"
+            },
+            "Pressure": {
+              "Value": 1000,
+              "Unit": "bar"
+            },
+            "Time": {
+              "Value": 4,
+              "Unit": "h"
+            },
+            "Atmosphere": "argon"
+          },
+          "Stage6_HeatTreatment_HT1": {
+            "Process_Category": "Heat Treatment",
+            "Steps": [
+              {
+                "Step": "Solution treatment",
+                "Temperature": {
+                  "Value": 1523.15,
+                  "Unit": "K",
+                  "Original_Values": "1250 °C"
+                },
+                "Time": {
+                  "Value": 4,
+                  "Unit": "h"
+                },
+                "Atmosphere": "argon"
+              },
+              {
+                "Step": "Age hardening",
+                "Temperature": {
+                  "Value": 973.15,
+                  "Unit": "K",
+                  "Original_Values": "700 °C"
+                },
+                "Time": {
+                  "Value": 24,
+                  "Unit": "h"
+                }
+              }
+            ],
+            "Data_Source": "table"
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "HIP1 + HT1: solution treatment dissolved most γ' but some larger precipitates still present. Finest dispersion of γ' after aging at 700 °C.",
+            "simplified": "Finest γ' dispersion after solution + single aging on HIP1 base"
+          },
+          "Main_Phase": {
+            "Phase_Name": "γ-matrix",
+            "Crystal_Structure": "FCC"
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "γ'-phase",
+              "Crystal_Structure": "L1₂",
+              "Note": "Some undissolved larger γ' after solution treatment (HIP1 γ' were larger, slower to dissolve); finest dispersion after 700 °C aging"
+            },
+            {
+              "Phase_Name": "MC carbides",
+              "Crystal_Structure": "FCC (NaCl-type)",
+              "Description": "M = Hf, W, Ta, Ti"
+            }
+          ]
+        },
+        "Properties": [
+          {
+            "Property_Type": "Hardness",
+            "Value": null,
+            "Unit": "HV0.1",
+            "Test_Condition": {
+              "Load": {
+                "Value": 100,
+                "Unit": "g"
+              },
+              "Dwell_Time": {
+                "Value": 10,
+                "Unit": "s"
+              },
+              "Standard": "ISO 6507-1:2018"
+            },
+            "Note": "Hardness values shown in Fig. 15; specific numerical values not reported in text or table.",
+            "Data_Source": "image",
+            "Data_Nature": "Experimental"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "07_HIP1_HT2",
+      "Sample_ID": "MAR-M247 HIP1 + HT2",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 3 HT2",
+        "Section 3.4 Microstructural evolution through heat treatments HT 1-4",
+        "Fig. 14"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Nickel-based superalloy",
+          "Material_Name_Raw": "MAR-M247",
+          "Note": "Same powder composition as Item 01."
+        },
+        "Processing": {
+          "Process_Text": {
+            "simplified": "Sintered → HIP1 (1120°C/1000bar/4h) → solution 1250°C/4h → age 1000°C/12h → age 700°C/24h",
+            "original": "HIP1 + HT2: HIP at 1120 °C, 1000 bar, 4 h in argon. Solution treatment at 1250 °C for 4 h, double-aging at 1000 °C for 12 h and 700 °C for 24 h."
+          },
+          "Stage5_HIP": {
+            "Process_Category": "HIP",
+            "Temperature": {
+              "Value": 1393.15,
+              "Unit": "K",
+              "Original_Values": "1120 °C"
+            },
+            "Pressure": {
+              "Value": 1000,
+              "Unit": "bar"
+            },
+            "Time": {
+              "Value": 4,
+              "Unit": "h"
+            },
+            "Atmosphere": "argon"
+          },
+          "Stage6_HeatTreatment_HT2": {
+            "Process_Category": "Heat Treatment",
+            "Steps": [
+              {
+                "Step": "Solution treatment",
+                "Temperature": {
+                  "Value": 1523.15,
+                  "Unit": "K",
+                  "Original_Values": "1250 °C"
+                },
+                "Time": {
+                  "Value": 4,
+                  "Unit": "h"
+                },
+                "Atmosphere": "argon"
+              },
+              {
+                "Step": "Age hardening 1st",
+                "Temperature": {
+                  "Value": 1273.15,
+                  "Unit": "K",
+                  "Original_Values": "1000 °C"
+                },
+                "Time": {
+                  "Value": 12,
+                  "Unit": "h"
+                }
+              },
+              {
+                "Step": "Age hardening 2nd",
+                "Temperature": {
+                  "Value": 973.15,
+                  "Unit": "K",
+                  "Original_Values": "700 °C"
+                },
+                "Time": {
+                  "Value": 24,
+                  "Unit": "h"
+                }
+              }
+            ],
+            "Data_Source": "table"
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "HIP1 + HT2: combining solution treatment with subsequent double-aging, coarsest γ'-precipitates no longer present, leading to genuinely bimodal γ'-precipitate distribution.",
+            "simplified": "Genuinely bimodal γ' distribution after solution + double-aging on HIP1 base"
+          },
+          "Main_Phase": {
+            "Phase_Name": "γ-matrix",
+            "Crystal_Structure": "FCC"
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "γ'-phase",
+              "Crystal_Structure": "L1₂",
+              "Note": "Genuinely bimodal distribution; coarsest γ' from HIP1 dissolved by solution treatment"
+            },
+            {
+              "Phase_Name": "MC carbides",
+              "Crystal_Structure": "FCC (NaCl-type)",
+              "Description": "M = Hf, W, Ta, Ti"
+            }
+          ]
+        },
+        "Properties": [
+          {
+            "Property_Type": "Hardness",
+            "Value": null,
+            "Unit": "HV0.1",
+            "Test_Condition": {
+              "Load": {
+                "Value": 100,
+                "Unit": "g"
+              },
+              "Dwell_Time": {
+                "Value": 10,
+                "Unit": "s"
+              },
+              "Standard": "ISO 6507-1:2018"
+            },
+            "Note": "Hardness values shown in Fig. 15; specific numerical values not reported in text or table.",
+            "Data_Source": "image",
+            "Data_Nature": "Experimental"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "08_HIP1_HT3",
+      "Sample_ID": "MAR-M247 HIP1 + HT3",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 3 HT3",
+        "Section 3.4 Microstructural evolution through heat treatments HT 1-4",
+        "Fig. 14"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Nickel-based superalloy",
+          "Material_Name_Raw": "MAR-M247",
+          "Note": "Same powder composition as Item 01."
+        },
+        "Processing": {
+          "Process_Text": {
+            "simplified": "Sintered → HIP1 (1120°C/1000bar/4h) → age 700°C/24h (no solution treatment)",
+            "original": "HIP1 + HT3: HIP at 1120 °C, 1000 bar, 4 h in argon. Age hardening at 700 °C for 24 h only (no solution treatment)."
+          },
+          "Stage5_HIP": {
+            "Process_Category": "HIP",
+            "Temperature": {
+              "Value": 1393.15,
+              "Unit": "K",
+              "Original_Values": "1120 °C"
+            },
+            "Pressure": {
+              "Value": 1000,
+              "Unit": "bar"
+            },
+            "Time": {
+              "Value": 4,
+              "Unit": "h"
+            },
+            "Atmosphere": "argon"
+          },
+          "Stage6_HeatTreatment_HT3": {
+            "Process_Category": "Heat Treatment",
+            "Steps": [
+              {
+                "Step": "Age hardening",
+                "Temperature": {
+                  "Value": 973.15,
+                  "Unit": "K",
+                  "Original_Values": "700 °C"
+                },
+                "Time": {
+                  "Value": 24,
+                  "Unit": "h"
+                }
+              }
+            ],
+            "Note": "No solution treatment applied",
+            "Data_Source": "table"
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "HIP1 + HT3: age hardening without prior solution treatment leads to coarsening of undissolved γ'-precipitates. Aging at 700 °C did not influence size distribution.",
+            "simplified": "Coarsened undissolved γ' from HIP1; no change in size distribution from 700°C aging alone"
+          },
+          "Main_Phase": {
+            "Phase_Name": "γ-matrix",
+            "Crystal_Structure": "FCC"
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "γ'-phase",
+              "Crystal_Structure": "L1₂",
+              "Note": "Coarse γ' from HIP1 still present; 700 °C aging did not change size distribution"
+            },
+            {
+              "Phase_Name": "MC carbides",
+              "Crystal_Structure": "FCC (NaCl-type)",
+              "Description": "M = Hf, W, Ta, Ti"
+            }
+          ]
+        },
+        "Properties": [
+          {
+            "Property_Type": "Hardness",
+            "Value": null,
+            "Unit": "HV0.1",
+            "Test_Condition": {
+              "Load": {
+                "Value": 100,
+                "Unit": "g"
+              },
+              "Dwell_Time": {
+                "Value": 10,
+                "Unit": "s"
+              },
+              "Standard": "ISO 6507-1:2018"
+            },
+            "Note": "Hardness values shown in Fig. 15; specific numerical values not reported in text or table.",
+            "Data_Source": "image",
+            "Data_Nature": "Experimental"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "09_HIP1_HT4",
+      "Sample_ID": "MAR-M247 HIP1 + HT4",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 3 HT4",
+        "Section 3.4 Microstructural evolution through heat treatments HT 1-4",
+        "Fig. 14"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Nickel-based superalloy",
+          "Material_Name_Raw": "MAR-M247",
+          "Note": "Same powder composition as Item 01."
+        },
+        "Processing": {
+          "Process_Text": {
+            "simplified": "Sintered → HIP1 (1120°C/1000bar/4h) → age 1000°C/12h → age 700°C/24h (no solution treatment, double-aging)",
+            "original": "HIP1 + HT4: HIP at 1120 °C, 1000 bar, 4 h in argon. Double-aging at 1000 °C for 12 h and 700 °C for 24 h (no solution treatment)."
+          },
+          "Stage5_HIP": {
+            "Process_Category": "HIP",
+            "Temperature": {
+              "Value": 1393.15,
+              "Unit": "K",
+              "Original_Values": "1120 °C"
+            },
+            "Pressure": {
+              "Value": 1000,
+              "Unit": "bar"
+            },
+            "Time": {
+              "Value": 4,
+              "Unit": "h"
+            },
+            "Atmosphere": "argon"
+          },
+          "Stage6_HeatTreatment_HT4": {
+            "Process_Category": "Heat Treatment",
+            "Steps": [
+              {
+                "Step": "Age hardening 1st",
+                "Temperature": {
+                  "Value": 1273.15,
+                  "Unit": "K",
+                  "Original_Values": "1000 °C"
+                },
+                "Time": {
+                  "Value": 12,
+                  "Unit": "h"
+                }
+              },
+              {
+                "Step": "Age hardening 2nd",
+                "Temperature": {
+                  "Value": 973.15,
+                  "Unit": "K",
+                  "Original_Values": "700 °C"
+                },
+                "Time": {
+                  "Value": 24,
+                  "Unit": "h"
+                }
+              }
+            ],
+            "Note": "No solution treatment; double-aging only",
+            "Data_Source": "table"
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "HIP1 + HT4: double-aging without solution treatment resulted in uniformly distributed bi-modal distribution of γ'-precipitates compared to as-sintered condition. Coarse γ' from HIP1 still present, plus two additional size ranges of ~1 µm and submicron.",
+            "simplified": "Bimodal γ' distribution from double-aging without solution treatment; coarse γ' retained, additional ~1 µm and submicron fractions"
+          },
+          "Main_Phase": {
+            "Phase_Name": "γ-matrix",
+            "Crystal_Structure": "FCC"
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "γ'-phase",
+              "Crystal_Structure": "L1₂",
+              "Note": "Coarse γ' from HIP1 retained; two additional size fractions ~1 µm and submicron from double-aging"
+            },
+            {
+              "Phase_Name": "MC carbides",
+              "Crystal_Structure": "FCC (NaCl-type)",
+              "Description": "M = Hf, W, Ta, Ti"
+            }
+          ]
+        },
+        "Properties": [
+          {
+            "Property_Type": "Hardness",
+            "Value": null,
+            "Unit": "HV0.1",
+            "Test_Condition": {
+              "Load": {
+                "Value": 100,
+                "Unit": "g"
+              },
+              "Dwell_Time": {
+                "Value": 10,
+                "Unit": "s"
+              },
+              "Standard": "ISO 6507-1:2018"
+            },
+            "Note": "Hardness values shown in Fig. 15; specific numerical values not reported in text or table. Slightly higher hardness on average than HIP1 alone, similar to HT1-2.",
+            "Data_Source": "image",
+            "Data_Nature": "Experimental"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "10_HIP2_HT2_Tensile",
+      "Sample_ID": "MAR-M247 HIP2 + HT2 (tensile specimens, vertical & horizontal)",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 2.2",
+        "Section 3.5 Mechanical properties",
+        "Section 4.2 Comparison to conventionally manufactured MAR-M247",
+        "Section 5 Conclusions"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Nickel-based superalloy",
+          "Material_Name_Raw": "MAR-M247",
+          "Note": "Same powder composition as Item 01."
+        },
+        "Processing": {
+          "Process_Text": {
+            "simplified": "Sintered → HIP2 (1180°C/1500bar/4h/Ar) → solution 1250°C/4h → age 1000°C/12h → age 700°C/24h",
+            "original": "HIP2 + HT2 for tensile specimens: HIP at 1180 °C, 1500 bar, 4 h in argon. Solution treatment at 1250 °C for 4 h in ambient atmosphere, double-aging at 1000 °C for 12 h and 700 °C for 24 h."
+          },
+          "Stage5_HIP": {
+            "Process_Category": "HIP",
+            "Temperature": {
+              "Value": 1453.15,
+              "Unit": "K",
+              "Original_Values": "1180 °C"
+            },
+            "Pressure": {
+              "Value": 1500,
+              "Unit": "bar"
+            },
+            "Time": {
+              "Value": 4,
+              "Unit": "h"
+            },
+            "Cooling_Rate": {
+              "Value": 180,
+              "Unit": "°C/min",
+              "Note": "approximate"
+            },
+            "Atmosphere": "argon"
+          },
+          "Stage6_HeatTreatment_HT2": {
+            "Process_Category": "Heat Treatment",
+            "Steps": [
+              {
+                "Step": "Solution treatment",
+                "Temperature": {
+                  "Value": 1523.15,
+                  "Unit": "K",
+                  "Original_Values": "1250 °C"
+                },
+                "Time": {
+                  "Value": 4,
+                  "Unit": "h"
+                },
+                "Atmosphere": "ambient air",
+                "Equipment": "N 7/H furnace (Nabertherm GmbH)"
+              },
+              {
+                "Step": "Age hardening 1st",
+                "Temperature": {
+                  "Value": 1273.15,
+                  "Unit": "K",
+                  "Original_Values": "1000 °C"
+                },
+                "Time": {
+                  "Value": 12,
+                  "Unit": "h"
+                }
+              },
+              {
+                "Step": "Age hardening 2nd",
+                "Temperature": {
+                  "Value": 973.15,
+                  "Unit": "K",
+                  "Original_Values": "700 °C"
+                },
+                "Time": {
+                  "Value": 24,
+                  "Unit": "h"
+                }
+              }
+            ],
+            "Note": "Tensile specimens heat-treated in N 7/H furnace in ambient atmosphere",
+            "Data_Source": "table"
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Homogeneously distributed bimodular γ'-structures achieved through solution and double-aging heat treatment (HT2). No significant grain growth expected from HIP2 compared to HIP1 due to grain boundary pinning by carbides.",
+            "simplified": "Bimodal γ' distribution, equiaxed grains, MC carbides at grain boundaries, near-full densification"
+          },
+          "Main_Phase": {
+            "Phase_Name": "γ-matrix",
+            "Crystal_Structure": "FCC"
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "γ'-phase",
+              "Crystal_Structure": "L1₂",
+              "Description": "Homogeneously distributed bimodal γ' after HT2"
+            },
+            {
+              "Phase_Name": "MC carbides",
+              "Crystal_Structure": "FCC (NaCl-type)",
+              "Description": "M = Hf, W, Ta, Ti; strong presence along grain boundaries"
+            }
+          ],
+          "Porosity": {
+            "Relative_Density_Data": {
+              "Specific_Density_HIP2_Overall": {
+                "Value": 8.579,
+                "Value_StdDev": 0.003,
+                "Unit": "g/cm³",
+                "Data_Source": "text"
+              },
+              "Highest_Value": {
+                "Value": 8.581,
+                "Value_StdDev": 0.002,
+                "Unit": "g/cm³",
+                "Note": "one horizontally built tensile specimen"
+              },
+              "Note": "Assumed fully dense after HIP2"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Type": "Yield_Strength",
+            "Value": 1000,
+            "Unit": "MPa",
+            "Test_Condition": {
+              "Test_Temperature_K": 293.15,
+              "Test_Temperature_Original": "room temperature",
+              "Loading_Mode": "tension",
+              "Strain_Rate": "400 MPa/min until 0.2% strain, then 10%/min until rupture",
+              "Standard": "ISO 6892-1:2019",
+              "Specimen_Type": "machined hexagonal tensile bars",
+              "Orientation": "independent of build direction (average of vertical and horizontal)",
+              "Processing_State": "HIP2 + HT2"
+            },
+            "Note": "Average value independent of build direction. No significant anisotropy between vertical and horizontal build orientations. Values shown in Fig. 16 and reported in Conclusions.",
+            "Data_Source": "text",
+            "Data_Nature": "Experimental"
+          },
+          {
+            "Property_Type": "Ultimate_Tensile_Strength",
+            "Value": 1105,
+            "Unit": "MPa",
+            "Test_Condition": {
+              "Test_Temperature_K": 293.15,
+              "Test_Temperature_Original": "room temperature",
+              "Loading_Mode": "tension",
+              "Strain_Rate": "400 MPa/min until 0.2% strain, then 10%/min until rupture",
+              "Standard": "ISO 6892-1:2019",
+              "Specimen_Type": "machined hexagonal tensile bars",
+              "Orientation": "independent of build direction (average of vertical and horizontal)",
+              "Processing_State": "HIP2 + HT2"
+            },
+            "Note": "Average value independent of build direction. No significant anisotropy. Stress-strain curves showed no indications of necking. Brittle fracture observed.",
+            "Data_Source": "text",
+            "Data_Nature": "Experimental"
+          },
+          {
+            "Property_Type": "Elongation_Total",
+            "Value": 3.1,
+            "Unit": "%",
+            "Test_Condition": {
+              "Test_Temperature_K": 293.15,
+              "Test_Temperature_Original": "room temperature",
+              "Loading_Mode": "tension",
+              "Strain_Rate": "400 MPa/min until 0.2% strain, then 10%/min until rupture",
+              "Standard": "ISO 6892-1:2019",
+              "Specimen_Type": "machined hexagonal tensile bars",
+              "Orientation": "independent of build direction (average of vertical and horizontal)",
+              "Processing_State": "HIP2 + HT2"
+            },
+            "Note": "Average elongation independent of build direction. Maximum elongation increased after HIP2, especially for horizontally built specimens. Considerably lower elongation than MIM and VIC. Brittle fracture; no necking observed.",
+            "Data_Source": "text",
+            "Data_Nature": "Experimental"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "11_MIM_MAR_M247_Literature",
+      "Sample_ID": "MAR-M247 (MIM, literature reference)",
+      "Role": "Reference",
+      "Data_Nature": "Literature_Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 4.2 Comparison of resulting microstructure and properties to conventionally manufactured MAR-M247",
+        "Fig. 17"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Nickel-based superalloy",
+          "Material_Name_Raw": "MAR-M247"
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "Metal Injection Molding (MIM). HIP at 1185 °C and approx. 170 MPa for 4 h. Heat treatment: 1230 °C for 2 h, 1280 °C for 2 h, 1080 °C for 4 h, 870 °C for 20 h.",
+            "simplified": "MIM → HIP (1185°C/170 MPa/4h) → multi-step heat treatment"
+          },
+          "Note": "Process parameters from literature [30]; Fig. 17 caption"
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Equiaxed grains with sizes comparable to D50 powder particle size 15–20 µm. γ'-precipitates 0.5–1 µm. Finely distributed carbide structures (MC, M₂₃C₆, M₆C) along grain boundaries. Remaining porosity ~2% before HIP.",
+            "simplified": "Equiaxed grains 15–20 µm, γ' 0.5–1 µm, MC/M₂₃C₆/M₆C carbides at grain boundaries"
+          },
+          "Main_Phase": {
+            "Phase_Name": "γ-matrix",
+            "Crystal_Structure": "FCC"
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "γ'-phase",
+              "Crystal_Structure": "L1₂",
+              "Size_Range": {
+                "Value_Range": "0.5–1 µm"
+              }
+            },
+            {
+              "Phase_Name": "MC carbides",
+              "Crystal_Structure": "FCC (NaCl-type)"
+            },
+            {
+              "Phase_Name": "M₂₃C₆ carbides",
+              "Crystal_Structure": "cubic"
+            },
+            {
+              "Phase_Name": "M₆C carbides",
+              "Crystal_Structure": "cubic"
+            }
+          ],
+          "Grain_Size": {
+            "Value_Range": "15–20 µm",
+            "Size_Type": "diameter",
+            "Morphology": "equiaxed"
+          }
+        },
+        "Properties": [
+          {
+            "Property_Type": "Yield_Strength",
+            "Value": null,
+            "Note": "Tensile properties shown in Fig. 17; specific MIM values not reported in text. BJ specimens show 200 MPa higher YS than MIM. No standard deviation reported for MIM.",
+            "Data_Source": "image",
+            "Data_Nature": "Literature_Experimental"
+          },
+          {
+            "Property_Type": "Ultimate_Tensile_Strength",
+            "Value": null,
+            "Note": "Tensile properties shown in Fig. 17. UTS reduced by ~200 MPa compared to MIM. No standard deviation reported for MIM.",
+            "Data_Source": "image",
+            "Data_Nature": "Literature_Experimental"
+          },
+          {
+            "Property_Type": "Elongation_Total",
+            "Value": null,
+            "Note": "Considerably higher elongation than BJ specimens shown in Fig. 17. No standard deviation reported for MIM.",
+            "Data_Source": "image",
+            "Data_Nature": "Literature_Experimental"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "12_VIC_MAR_M247_Literature",
+      "Sample_ID": "MAR-M247 (Vacuum Investment Casting, literature reference)",
+      "Role": "Reference",
+      "Data_Nature": "Literature_Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 4.2 Comparison of resulting microstructure and properties to conventionally manufactured MAR-M247",
+        "Fig. 17"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Nickel-based superalloy",
+          "Material_Name_Raw": "MAR-M247"
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "Vacuum Investment Casting (VIC). HIP at 1185 °C and approx. 170 MPa for 4 h. Heat treatment: 1185 °C for 2 h and 871 °C for 20 h.",
+            "simplified": "VIC → HIP (1185°C/170 MPa/4h) → heat treatment (1185°C/2h + 871°C/20h)"
+          },
+          "Note": "Process parameters from literature [45]; Fig. 17 caption"
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Dendritic structure with relatively large grains (>200 µm). Thick γ'-plates ~5 µm and sub-micron γ' in eutectic pools. Large script-like MC carbides with high aspect ratios up to 40 µm inside grains; M₂₃C₆ at grain boundaries. Remaining porosity ~0.25%.",
+            "simplified": "Dendritic, grains >200 µm, γ' plates ~5 µm, script-like MC carbides up to 40 µm"
+          },
+          "Main_Phase": {
+            "Phase_Name": "γ-matrix",
+            "Crystal_Structure": "FCC"
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "γ'-phase",
+              "Crystal_Structure": "L1₂",
+              "Description": "Thick γ'-plates ~5 µm and sub-micron γ' in eutectic pools"
+            },
+            {
+              "Phase_Name": "MC carbides",
+              "Crystal_Structure": "FCC (NaCl-type)",
+              "Description": "Script-like, high aspect ratios, up to 40 µm, inside grains"
+            },
+            {
+              "Phase_Name": "M₂₃C₆ carbides",
+              "Crystal_Structure": "cubic",
+              "Description": "At grain boundaries"
+            }
+          ],
+          "Grain_Size": {
+            "Value": null,
+            "Note": ">200 µm",
+            "Size_Type": "diameter",
+            "Morphology": "dendritic"
+          }
+        },
+        "Properties": [
+          {
+            "Property_Type": "Yield_Strength",
+            "Value": null,
+            "Note": "BJ specimens show similar YS and UTS compared to VIC shown in Fig. 17. Specific VIC values not reported in text.",
+            "Data_Source": "image",
+            "Data_Nature": "Literature_Experimental"
+          },
+          {
+            "Property_Type": "Ultimate_Tensile_Strength",
+            "Value": null,
+            "Note": "Similar to BJ shown in Fig. 17.",
+            "Data_Source": "image",
+            "Data_Nature": "Literature_Experimental"
+          },
+          {
+            "Property_Type": "Elongation_Total",
+            "Value": null,
+            "Note": "Considerably higher elongation than BJ shown in Fig. 17.",
+            "Data_Source": "image",
+            "Data_Nature": "Literature_Experimental"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "13_Sintered_HT2_Tensile",
+      "Sample_ID": "MAR-M247 Sintered + HT2 (tensile specimens, vertical & horizontal)",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 3.5 Mechanical properties",
+        "Fig. 16"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Nickel-based superalloy",
+          "Material_Name_Raw": "MAR-M247",
+          "Note": "Same powder composition as Item 01."
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "Sintered at 1320 °C for 6 h. Heat treatment HT2: solution treatment at 1250 °C for 4 h, double-aging at 1000 °C for 12 h and 700 °C for 24 h.",
+            "simplified": "Sintered → solution 1250°C/4h → age 1000°C/12h → age 700°C/24h (no HIP)"
+          },
+          "Note": "Same prior processing stages (BJ, curing, debinding, sintering) as Item 01. No HIP applied."
+        },
+        "Properties": [
+          {
+            "Property_Type": "Yield_Strength",
+            "Value": null,
+            "Test_Condition": {
+              "Test_Temperature_K": 293.15,
+              "Test_Temperature_Original": "room temperature",
+              "Loading_Mode": "tension",
+              "Processing_State": "Sintered + HT2",
+              "Orientation": "vertical"
+            },
+            "Note": "Values shown in Fig. 16; specific numbers not reported in text. YS and UTS increased slightly after HIP2 compared to sintered+HT2 condition.",
+            "Data_Source": "image",
+            "Data_Nature": "Experimental"
+          },
+          {
+            "Property_Type": "Yield_Strength",
+            "Value": null,
+            "Test_Condition": {
+              "Test_Temperature_K": 293.15,
+              "Test_Temperature_Original": "room temperature",
+              "Loading_Mode": "tension",
+              "Processing_State": "Sintered + HT2",
+              "Orientation": "horizontal"
+            },
+            "Note": "Values shown in Fig. 16; specific numbers not reported in text. Larger variation in YS and UTS for horizontally built specimens.",
+            "Data_Source": "image",
+            "Data_Nature": "Experimental"
+          }
+        ]
+      }
+    }
+  ]
+}

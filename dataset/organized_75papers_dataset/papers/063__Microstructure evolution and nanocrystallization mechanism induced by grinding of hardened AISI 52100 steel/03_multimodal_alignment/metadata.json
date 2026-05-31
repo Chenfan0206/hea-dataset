@@ -1,0 +1,7 @@
+{
+  "paper_dir": "Microstructure-evolu",
+  "figures": 16,
+  "direct_pairs": 16,
+  "topk_pairs": 80,
+  "sentences": 68
+}

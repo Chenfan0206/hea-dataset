@@ -1,0 +1,368 @@
+{
+  "Paper_Metadata": {
+    "Paper_Title": "On the effect of boron on grain boundary character in a new polycrystalline superalloy",
+    "DOI": "10.1016/j.actamat.2015.10.008"
+  },
+  "items": [
+    {
+      "Sample_ID": "STAL15CC-BoronFree",
+      "Gradient_Material": false,
+      "Gradient_Group_ID": null,
+      "Composition_Info": {
+        "Role": "Target",
+        "Alloy_Name_Raw": "STAL15CC",
+        "Nominal_Composition": {
+          "Composition_Type": "at%",
+          "Elements_Normalized": {
+            "B": 0.005,
+            "C": 0.44,
+            "Co": 5.5,
+            "Cr": 16.45,
+            "Mo": 0.61,
+            "W": 1.26,
+            "Al": 10.0,
+            "Ta": 2.41,
+            "Hf": 0.02,
+            "Ni": 61.72
+          }
+        },
+        "Measured_Composition": {
+          "Composition_Type": "at%",
+          "Elements_Normalized": null,
+          "Measurement_Method": null
+        },
+        "Note": "Nominal composition calculated from Table 2. Boron content is <0.005at%. Balance (Other) assumed to be Ni."
+      },
+      "Process_Info": {
+        "Process_Category": "Casting and Heat Treatment",
+        "Process_Text": {
+          "original": "Castings in the form of tapered rods were prepared at Doncasters Precision Castings Ltd... The ceramic moulds were de-waxed in a steam furnace for 5 min and then sintered at 1000℃ for an hour, prior to casting. All the castings were performed under vacuum conditions... Hot isostatic press (HIP) was used to consolidate the as-cast bars at 1195 'C for 5 h under 175 MPa pressure. The process of HIP was followed by a stage of primary ageing at 1120℃ for 4 h and a subsequent second stage of ageing at 845°C for 24 h, both followed by air-cooling.",
+          "simplified": "Vacuum casting. HIP: 1195°C/5h/175MPa. Aging: 1120°C/4h + 845°C/24h, air cooled."
+        },
+        "Equipment": "Ceramic moulds (de-waxed and sintered), Hot isostatic press (HIP)",
+        "Key_Params": {
+          "HIP_Temperature_K": 1468.15,
+          "HIP_Time_h": 5,
+          "HIP_Pressure_MPa": 175,
+          "Aging_Temperature_Stage1_K": 1393.15,
+          "Aging_Time_Stage1_h": 4,
+          "Aging_Temperature_Stage2_K": 1118.15,
+          "Aging_Time_Stage2_h": 24,
+          "Cooling_Medium": "Air"
+        }
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": "Combined SEM and TEM analyses confirmed the precipitation of inter-and intragranular carbides... These particles exhibit the brightest Z contrast... corresponds to MC-type carbides... In the case of the boron-free alloy these particles correspond to M23C6-type carbides... A carbon enrichment at the interface of width approximately 3 nm was observed... No significant boron was found dissolved in the M23C6.",
+          "simplified": "Precipitation of MC and M23C6 carbides. 3nm carbon enrichment at interface."
+        },
+        "Main_Phase": "Gamma (γ)",
+        "Precipitates": [
+          {
+            "Phase_Type": "MC Carbide",
+            "Volume_Fraction_pct": null
+          },
+          {
+            "Phase_Type": "M23C6 Carbide",
+            "Volume_Fraction_pct": null
+          }
+        ],
+        "Porosity_pct": null,
+        "Relative_Density_pct": null,
+        "Grain_Size_avg_um": null,
+        "Precipitate_Size_avg_nm": null,
+        "Advanced_Quantitative_Features": {
+          "Segregation_Zone_Width_nm": 3
+        }
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Creep_Rupture_Time",
+          "Test_Condition": "Creep Test",
+          "Value_Numeric": null,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "s",
+          "Test_Temperature_K": 1023.15,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": "Boron-free alloy showed the worst creep performance at 750°C/455MPa."
+        }
+      ]
+    },
+    {
+      "Sample_ID": "STAL15CC-LowBoron",
+      "Gradient_Material": false,
+      "Gradient_Group_ID": null,
+      "Composition_Info": {
+        "Role": "Target",
+        "Alloy_Name_Raw": "STAL15CC",
+        "Nominal_Composition": {
+          "Composition_Type": "at%",
+          "Elements_Normalized": {
+            "B": 0.03,
+            "C": 0.47,
+            "Co": 5.6,
+            "Cr": 16.43,
+            "Mo": 0.58,
+            "W": 1.27,
+            "Al": 10.11,
+            "Ta": 2.41,
+            "Hf": 0.02,
+            "Ni": 61.74
+          }
+        },
+        "Measured_Composition": {
+          "Composition_Type": "at%",
+          "Elements_Normalized": null,
+          "Measurement_Method": null
+        },
+        "Note": "Nominal composition calculated from Table 2. Balance (Other) assumed to be Ni."
+      },
+      "Process_Info": {
+        "Process_Category": "Casting and Heat Treatment",
+        "Process_Text": {
+          "original": "Castings in the form of tapered rods were prepared at Doncasters Precision Castings Ltd... The ceramic moulds were de-waxed in a steam furnace for 5 min and then sintered at 1000℃ for an hour, prior to casting. All the castings were performed under vacuum conditions... Hot isostatic press (HIP) was used to consolidate the as-cast bars at 1195 'C for 5 h under 175 MPa pressure. The process of HIP was followed by a stage of primary ageing at 1120℃ for 4 h and a subsequent second stage of ageing at 845°C for 24 h, both followed by air-cooling.",
+          "simplified": "Vacuum casting. HIP: 1195°C/5h/175MPa. Aging: 1120°C/4h + 845°C/24h, air cooled."
+        },
+        "Equipment": "Ceramic moulds (de-waxed and sintered), Hot isostatic press (HIP)",
+        "Key_Params": {
+          "HIP_Temperature_K": 1468.15,
+          "HIP_Time_h": 5,
+          "HIP_Pressure_MPa": 175,
+          "Aging_Temperature_Stage1_K": 1393.15,
+          "Aging_Time_Stage1_h": 4,
+          "Aging_Temperature_Stage2_K": 1118.15,
+          "Aging_Time_Stage2_h": 24,
+          "Cooling_Medium": "Air"
+        }
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": "The SEM and TEM investigations revealed the precipitation of borides along the grain boundaries... These borides are mainly enriched in chromium, and their stoichiometry corresponds to M5B3 borides... Composition profiles across these γ'/M5B3 interfaces revealed a zone approximately 3 nm wide where boron enrichment was observed.",
+          "simplified": "Precipitation of M5B3 borides. Boron enrichment at γ'/M5B3 interfaces."
+        },
+        "Main_Phase": "Gamma (γ)",
+        "Precipitates": [
+          {
+            "Phase_Type": "MC Carbide",
+            "Volume_Fraction_pct": null
+          },
+          {
+            "Phase_Type": "M5B3 Boride",
+            "Volume_Fraction_pct": null
+          }
+        ],
+        "Porosity_pct": null,
+        "Relative_Density_pct": null,
+        "Grain_Size_avg_um": null,
+        "Precipitate_Size_avg_nm": null,
+        "Advanced_Quantitative_Features": {
+          "Segregation_Zone_Width_nm": 3
+        }
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Creep_Rupture_Time",
+          "Test_Condition": "Creep Test",
+          "Value_Numeric": null,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "s",
+          "Test_Temperature_K": 1023.15,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": "Addition of 0.03at.%B caused significant improvement in creep rupture time compared to Boron Free."
+        }
+      ]
+    },
+    {
+      "Sample_ID": "STAL15CC-MediumBoron",
+      "Gradient_Material": false,
+      "Gradient_Group_ID": null,
+      "Composition_Info": {
+        "Role": "Target",
+        "Alloy_Name_Raw": "STAL15CC",
+        "Nominal_Composition": {
+          "Composition_Type": "at%",
+          "Elements_Normalized": {
+            "B": 0.05,
+            "C": 0.47,
+            "Co": 5.5,
+            "Cr": 16.55,
+            "Mo": 0.59,
+            "W": 1.26,
+            "Al": 10.09,
+            "Ta": 2.4,
+            "Hf": 0.02,
+            "Ni": 61.75
+          }
+        },
+        "Measured_Composition": {
+          "Composition_Type": "at%",
+          "Elements_Normalized": null,
+          "Measurement_Method": null
+        },
+        "Note": "Nominal composition calculated from Table 2. Balance (Other) assumed to be Ni."
+      },
+      "Process_Info": {
+        "Process_Category": "Casting and Heat Treatment",
+        "Process_Text": {
+          "original": "Castings in the form of tapered rods were prepared at Doncasters Precision Castings Ltd... The ceramic moulds were de-waxed in a steam furnace for 5 min and then sintered at 1000℃ for an hour, prior to casting. All the castings were performed under vacuum conditions... Hot isostatic press (HIP) was used to consolidate the as-cast bars at 1195 'C for 5 h under 175 MPa pressure. The process of HIP was followed by a stage of primary ageing at 1120℃ for 4 h and a subsequent second stage of ageing at 845°C for 24 h, both followed by air-cooling.",
+          "simplified": "Vacuum casting. HIP: 1195°C/5h/175MPa. Aging: 1120°C/4h + 845°C/24h, air cooled."
+        },
+        "Equipment": "Ceramic moulds (de-waxed and sintered), Hot isostatic press (HIP)",
+        "Key_Params": {
+          "HIP_Temperature_K": 1468.15,
+          "HIP_Time_h": 5,
+          "HIP_Pressure_MPa": 175,
+          "Aging_Temperature_Stage1_K": 1393.15,
+          "Aging_Time_Stage1_h": 4,
+          "Aging_Temperature_Stage2_K": 1118.15,
+          "Aging_Time_Stage2_h": 24,
+          "Cooling_Medium": "Air"
+        }
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": "The SEM and TEM investigations revealed the precipitation of borides along the grain boundaries... These borides are mainly enriched in chromium, and their stoichiometry corresponds to M5B3 borides... Composition profiles across these γ'/M5B3 interfaces revealed a zone approximately 3 nm wide where boron enrichment was observed.",
+          "simplified": "Precipitation of M5B3 borides. Boron enrichment at γ'/M5B3 interfaces."
+        },
+        "Main_Phase": "Gamma (γ)",
+        "Precipitates": [
+          {
+            "Phase_Type": "MC Carbide",
+            "Volume_Fraction_pct": null
+          },
+          {
+            "Phase_Type": "M5B3 Boride",
+            "Volume_Fraction_pct": null
+          }
+        ],
+        "Porosity_pct": null,
+        "Relative_Density_pct": null,
+        "Grain_Size_avg_um": null,
+        "Precipitate_Size_avg_nm": null,
+        "Advanced_Quantitative_Features": {
+          "Segregation_Zone_Width_nm": 3
+        }
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Creep_Rupture_Time",
+          "Test_Condition": "Creep Test",
+          "Value_Numeric": null,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "s",
+          "Test_Temperature_K": 1023.15,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": "Medium boron alloy (0.05at.%B) performed the best in terms of creep rupture time."
+        }
+      ]
+    },
+    {
+      "Sample_ID": "STAL15CC-HighBoron",
+      "Gradient_Material": false,
+      "Gradient_Group_ID": null,
+      "Composition_Info": {
+        "Role": "Target",
+        "Alloy_Name_Raw": "STAL15CC",
+        "Nominal_Composition": {
+          "Composition_Type": "at%",
+          "Elements_Normalized": {
+            "B": 0.08,
+            "C": 0.53,
+            "Co": 5.53,
+            "Cr": 16.64,
+            "Mo": 0.60,
+            "W": 1.27,
+            "Al": 10.01,
+            "Ta": 2.43,
+            "Hf": 0.02,
+            "Ni": 61.72
+          }
+        },
+        "Measured_Composition": {
+          "Composition_Type": "at%",
+          "Elements_Normalized": null,
+          "Measurement_Method": null
+        },
+        "Note": "Nominal composition calculated from Table 2. Balance (Other) assumed to be Ni."
+      },
+      "Process_Info": {
+        "Process_Category": "Casting and Heat Treatment",
+        "Process_Text": {
+          "original": "Castings in the form of tapered rods were prepared at Doncasters Precision Castings Ltd... The ceramic moulds were de-waxed in a steam furnace for 5 min and then sintered at 1000℃ for an hour, prior to casting. All the castings were performed under vacuum conditions... Hot isostatic press (HIP) was used to consolidate the as-cast bars at 1195 'C for 5 h under 175 MPa pressure. The process of HIP was followed by a stage of primary ageing at 1120℃ for 4 h and a subsequent second stage of ageing at 845°C for 24 h, both followed by air-cooling.",
+          "simplified": "Vacuum casting. HIP: 1195°C/5h/175MPa. Aging: 1120°C/4h + 845°C/24h, air cooled."
+        },
+        "Equipment": "Ceramic moulds (de-waxed and sintered), Hot isostatic press (HIP)",
+        "Key_Params": {
+          "HIP_Temperature_K": 1468.15,
+          "HIP_Time_h": 5,
+          "HIP_Pressure_MPa": 175,
+          "Aging_Temperature_Stage1_K": 1393.15,
+          "Aging_Time_Stage1_h": 4,
+          "Aging_Temperature_Stage2_K": 1118.15,
+          "Aging_Time_Stage2_h": 24,
+          "Cooling_Medium": "Air"
+        }
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": "The SEM and TEM investigations revealed the precipitation of borides along the grain boundaries... These borides are mainly enriched in chromium, and their stoichiometry corresponds to M5B3 borides... Composition profiles across these γ'/M5B3 interfaces revealed a zone approximately 3 nm wide where boron enrichment was observed.",
+          "simplified": "Precipitation of M5B3 borides. Boron enrichment at γ'/M5B3 interfaces."
+        },
+        "Main_Phase": "Gamma (γ)",
+        "Precipitates": [
+          {
+            "Phase_Type": "MC Carbide",
+            "Volume_Fraction_pct": null
+          },
+          {
+            "Phase_Type": "M5B3 Boride",
+            "Volume_Fraction_pct": null
+          }
+        ],
+        "Porosity_pct": null,
+        "Relative_Density_pct": null,
+        "Grain_Size_avg_um": null,
+        "Precipitate_Size_avg_nm": null,
+        "Advanced_Quantitative_Features": {
+          "Segregation_Zone_Width_nm": 3
+        }
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Creep_Rupture_Time",
+          "Test_Condition": "Creep Test",
+          "Value_Numeric": null,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "s",
+          "Test_Temperature_K": 1023.15,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": "High boron alloy (0.08at.%B) had the shortest creep rupture time among the doped variants but better than Boron Free."
+        }
+      ]
+    }
+  ]
+}

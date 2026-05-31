@@ -1,0 +1,1836 @@
+{
+  "Paper_Metadata": {
+    "Paper_Title": "Preparation of pleated RGO/MXene/Fe3O4 microsphere and its absorption properties for electromagnetic wave",
+    "DOI": "10.1016/j.carbon.2020.09.093"
+  },
+  "Paper_Routing": {
+    "base_material": "Composites",
+    "application": "Functional",
+    "research_paradigm": "Experimental",
+    "Supplements_Loaded": [
+      "/home/cs/.codex/skills/material-extractor/references/directions/base/Composites.txt",
+      "/home/cs/.codex/skills/material-extractor/references/directions/application/Functional.txt",
+      "/home/cs/.codex/skills/material-extractor/references/directions/paradigm/Experimental.txt"
+    ],
+    "Patch_Tags": [
+      "2D",
+      "Porous",
+      "Nanomaterial",
+      "Interface_Dominated"
+    ],
+    "Needs_Mixed_Routing_Check": false
+  },
+  "items": [
+    {
+      "Item_ID": "Item-001",
+      "Sample_ID": "RGO/MXene-2:1",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Composites",
+      "application": "Functional",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "2D",
+        "Porous",
+        "Nanomaterial",
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "RGO/MXene microspheres with mass ratios of MXene and RGO of 2:1, 3:1, 4:1 and 5:1 can be obtained.",
+        "The RLmin and corresponding thickness of RGO/MXene microspheres were -35.48 dB (5 mm) ... when MXene and GOx were 2:1"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Composite_Category": "RGO/MXene microsphere",
+          "Composite_System_Raw": "RGO/MXene microspheres with mass ratio of MXene and RGO of 2:1",
+          "Matrix": "RGO and MXene used as basic framework",
+          "Nominal_Component_Ratios": [
+            {
+              "Components": "MXene:RGO",
+              "Value": "2:1",
+              "Original_Values": "mass ratio of MXene and RGO of 2:1"
+            }
+          ],
+          "Fiber_Volume_Fraction": null,
+          "Fiber_Architecture": null
+        },
+        "Processing": {
+          "Process_Category": "ultrasonic spray high temperature reduction self-assembly",
+          "Process_Text": {
+            "original": "GOx dispersion, MXene dispersion and L-ascorbic acid were ultrasonically treated, then droplets were sprayed into liquid paraffin at 150 °C by ultrasonic atomizer, collected by centrifugation, washed and freeze dried.",
+            "simplified": "Disperse GOx and MXene; add L-ascorbic acid; ultrasound 30 min; ultrasonic atomization into 150 °C liquid paraffin; collect, wash and freeze dry."
+          },
+          "Key_Params": {
+            "Ultrasound_Time_min": {
+              "Value": 30,
+              "Original_Values": "ultrasound for 30 min"
+            },
+            "Flow_Rate_mL_min": {
+              "Value": 0.5,
+              "Original_Values": "flow rate was 0.5 mL/min"
+            },
+            "Nozzle_Power_W": {
+              "Value": 1.5,
+              "Original_Values": "ultrasonic power applied on the nozzle was 1.5 W"
+            },
+            "Paraffin_Temperature_K": {
+              "Value": 423.15,
+              "Original_Values": "150 °C"
+            },
+            "Stirring_Speed_r_min": {
+              "Value": 500,
+              "Original_Values": "500 r/min"
+            },
+            "Reducing_Agent": {
+              "Name": "L-ascorbic acid",
+              "Role": "reducing agent",
+              "Original_Values": "The reducing agent l-ascorbic acid reduced GOx to RGO"
+            }
+          },
+          "Equipment": [
+            {
+              "Name": "Beijing Oriental Jin Rong ultrasonic atomizer",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "freeze dryer",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "FEI Verios G4 field emission SEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "FEI TALOS-F200X TEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Thermo Scientific 7000 XRD",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Bruker TENSOR27 FTIR spectrometer",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "thermogravimetric analyzer",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Tristar3020 Micromeritics N2 physisorption analyzer",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "CFMS-14t PPMS",
+              "Category": "Testing"
+            },
+            {
+              "Name": "Agilent N5227 vector network analyzer",
+              "Category": "Testing"
+            }
+          ],
+          "Note": "Shared ultrasonic spray parameters are explicitly stated for the RGO/MXene series; exact GOx/MXene reagent masses are only retained for the 4:1 recipe where the stated masses match MXene:GOx = 4:1."
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "RGO and MXene were used as basic framework to form uniform microspheres with a diameter of about 6 μm. RGO/MXene showed typical shrinkage morphology. The epitaxial crimp of nanosheets was on the surface of microspheres.",
+            "simplified": "Uniform pleated RGO/MXene microspheres, about 6 μm diameter, formed from stacked 2D nanosheets with nanochannels."
+          },
+          "Morphology": "uniform microspheres with typical shrinkage morphology and epitaxial crimp of nanosheets on the surface",
+          "Phases": [
+            {
+              "Phase_Name": "Ti3C2Tx MXene",
+              "Crystal_Structure": "hexagonal",
+              "Note": "SAED indicated MXene nanocrystalline tablets maintained hexagonal crystal structure through etching."
+            },
+            {
+              "Phase_Name": "RGO",
+              "Crystal_Structure": "amorphous carbon",
+              "Note": "FTIR/TGA text identifies RGO; no graphitic crystal structure explicitly assigned for this item."
+            }
+          ],
+          "Advanced_Quantitative_Features": {
+            "Microsphere_Diameter": {
+              "Value": 6,
+              "Units": "um",
+              "Size_Type": "diameter",
+              "Note": "approximate value",
+              "Original_Values": "diameter of about 6 μm"
+            },
+            "MXene_Side_Length": {
+              "Value": 1,
+              "Units": "um",
+              "Size_Type": "undefined",
+              "Note": "approximate value; shared precursor nanosheet characterization for the RGO/MXene series; not exclusive to the 2:1 sample",
+              "Original_Values": "side length of Ti3C2Tx MXene was about 1 μm"
+            },
+            "MXene_Thickness": {
+              "Value": 2.36,
+              "Units": "nm",
+              "Size_Type": "thickness",
+              "Original_Values": "thickness was 2.36 nm",
+              "Note": "shared precursor nanosheet characterization for the RGO/MXene series; not exclusive to the 2:1 sample"
+            },
+            "GOx_Side_Length": {
+              "Value": 3,
+              "Units": "um",
+              "Size_Type": "undefined",
+              "Note": "upper expression in text; shared precursor nanosheet characterization for the RGO/MXene series; not exclusive to the 2:1 sample",
+              "Original_Values": "side length was up to 3 μm"
+            },
+            "GOx_Thickness": {
+              "Value": 1.41,
+              "Units": "nm",
+              "Size_Type": "thickness",
+              "Note": "about value; shared precursor nanosheet characterization for the RGO/MXene series; not exclusive to the 2:1 sample",
+              "Original_Values": "accurate thickness detected by AFM was only about 1.41 nm"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Minimum reflection loss",
+            "Value": -35.48,
+            "Units": "dB",
+            "Original_Values": "-35.48 dB (5 mm)",
+            "Test_Condition": {
+              "Filler_Loading_wt_percent": 40,
+              "Matching_Thickness_mm": 5,
+              "Frequency_Range_GHz": "2-18"
+            },
+            "Data_Source": "text"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "Item-002",
+      "Sample_ID": "RGO/MXene-3:1",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Composites",
+      "application": "Functional",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "2D",
+        "Porous",
+        "Nanomaterial",
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "RGO/MXene microspheres with mass ratios of MXene and RGO of 2:1, 3:1, 4:1 and 5:1 can be obtained.",
+        "The RLmin and corresponding thickness of RGO/MXene microspheres were ... -35.64 dB (4 mm) when MXene and GOx were ... 3:1"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Composite_Category": "RGO/MXene microsphere",
+          "Composite_System_Raw": "RGO/MXene microspheres with mass ratio of MXene and RGO of 3:1",
+          "Matrix": "RGO and MXene used as basic framework",
+          "Nominal_Component_Ratios": [
+            {
+              "Components": "MXene:RGO",
+              "Value": "3:1",
+              "Original_Values": "mass ratio of MXene and RGO of 3:1"
+            }
+          ],
+          "Fiber_Volume_Fraction": null,
+          "Fiber_Architecture": null
+        },
+        "Processing": {
+          "Process_Category": "ultrasonic spray high temperature reduction self-assembly",
+          "Process_Text": {
+            "original": "Prepared by the same RGO/MXene microsphere process with total mass of MXene and GOx unchanged.",
+            "simplified": "Same RGO/MXene ultrasonic spray self-assembly process; composition ratio changed to 3:1."
+          },
+          "Equipment": [
+            {
+              "Name": "Beijing Oriental Jin Rong ultrasonic atomizer",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "freeze dryer",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "FEI Verios G4 field emission SEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "FEI TALOS-F200X TEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Thermo Scientific 7000 XRD",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Bruker TENSOR27 FTIR spectrometer",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "thermogravimetric analyzer",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Tristar3020 Micromeritics N2 physisorption analyzer",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "CFMS-14t PPMS",
+              "Category": "Testing"
+            },
+            {
+              "Name": "Agilent N5227 vector network analyzer",
+              "Category": "Testing"
+            }
+          ],
+          "Note": "Shared ultrasonic spray parameters are explicitly stated for the RGO/MXene series; exact GOx/MXene reagent masses are only retained for the 4:1 recipe where the stated masses match MXene:GOx = 4:1.",
+          "Key_Params": {
+            "Ultrasound_Time_min": {
+              "Value": 30,
+              "Original_Values": "ultrasound for 30 min"
+            },
+            "Flow_Rate_mL_min": {
+              "Value": 0.5,
+              "Original_Values": "flow rate was 0.5 mL/min"
+            },
+            "Nozzle_Power_W": {
+              "Value": 1.5,
+              "Original_Values": "ultrasonic power applied on the nozzle was 1.5 W"
+            },
+            "Paraffin_Temperature_K": {
+              "Value": 423.15,
+              "Original_Values": "150 °C"
+            },
+            "Stirring_Speed_r_min": {
+              "Value": 500,
+              "Original_Values": "500 r/min"
+            }
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "The microspheres with four different ratios showed similar morphology.",
+            "simplified": "Similar pleated microsphere morphology to other RGO/MXene ratios."
+          },
+          "Morphology": "uniform RGO/MXene microspheres with similar morphology",
+          "Phases": [
+            {
+              "Phase_Name": "Ti3C2Tx MXene",
+              "Crystal_Structure": "hexagonal"
+            },
+            {
+              "Phase_Name": "RGO",
+              "Crystal_Structure": "amorphous carbon"
+            }
+          ]
+        },
+        "Properties": [
+          {
+            "Property_Name": "Minimum reflection loss",
+            "Value": -35.64,
+            "Units": "dB",
+            "Original_Values": "-35.64 dB (4 mm)",
+            "Test_Condition": {
+              "Filler_Loading_wt_percent": 40,
+              "Matching_Thickness_mm": 4,
+              "Frequency_Range_GHz": "2-18"
+            },
+            "Data_Source": "text"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "Item-003",
+      "Sample_ID": "RGO/MXene-4:1",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Composites",
+      "application": "Functional",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "2D",
+        "Porous",
+        "Nanomaterial",
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "when the mass ratio of MXene to GOx was 4:1, the highest tan delta_E appeared at 6.8-14.6 GHz",
+        "For the microspheres (4:1), the thickness was only 1.2 mm at 14.2 GHz, the best RLmin value was -44.2 dB."
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Composite_Category": "RGO/MXene microsphere",
+          "Composite_System_Raw": "RGO/MXene microspheres with mass ratio of MXene and RGO of 4:1",
+          "Matrix": "RGO and MXene used as basic framework",
+          "Nominal_Component_Ratios": [
+            {
+              "Components": "MXene:RGO",
+              "Value": "4:1",
+              "Original_Values": "mass ratio of MXene and RGO of 4:1"
+            }
+          ],
+          "Fiber_Volume_Fraction": null,
+          "Fiber_Architecture": null
+        },
+        "Processing": {
+          "Process_Category": "ultrasonic spray high temperature reduction self-assembly",
+          "Process_Text": {
+            "original": "Prepared by the same RGO/MXene microsphere process with total mass of MXene and GOx unchanged.",
+            "simplified": "Same RGO/MXene ultrasonic spray self-assembly process; composition ratio changed to 4:1."
+          },
+          "Equipment": [
+            {
+              "Name": "Beijing Oriental Jin Rong ultrasonic atomizer",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "freeze dryer",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "FEI Verios G4 field emission SEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "FEI TALOS-F200X TEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Thermo Scientific 7000 XRD",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Bruker TENSOR27 FTIR spectrometer",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "thermogravimetric analyzer",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Tristar3020 Micromeritics N2 physisorption analyzer",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "CFMS-14t PPMS",
+              "Category": "Testing"
+            },
+            {
+              "Name": "Agilent N5227 vector network analyzer",
+              "Category": "Testing"
+            }
+          ],
+          "Note": "Shared ultrasonic spray parameters are explicitly stated for the RGO/MXene series; exact GOx/MXene reagent masses are only retained for the 4:1 recipe where the stated masses match MXene:GOx = 4:1.",
+          "Key_Params": {
+            "Ultrasound_Time_min": {
+              "Value": 30,
+              "Original_Values": "ultrasound for 30 min"
+            },
+            "Flow_Rate_mL_min": {
+              "Value": 0.5,
+              "Original_Values": "flow rate was 0.5 mL/min"
+            },
+            "Nozzle_Power_W": {
+              "Value": 1.5,
+              "Original_Values": "ultrasonic power applied on the nozzle was 1.5 W"
+            },
+            "Paraffin_Temperature_K": {
+              "Value": 423.15,
+              "Original_Values": "150 °C"
+            },
+            "Stirring_Speed_r_min": {
+              "Value": 500,
+              "Original_Values": "500 r/min"
+            },
+            "GOx_Mass_mg": {
+              "Value": 4.34,
+              "Original_Values": "4.34 mg GOx"
+            },
+            "MXene_Dispersion": {
+              "Volume_mL": 5.43,
+              "Concentration_mg_mL": 3.2,
+              "Original_Values": "5.43 mL MXene dispersion (3.2 mg/mL)"
+            },
+            "L_Ascorbic_Acid_Mass_mg": {
+              "Value": 43.4,
+              "Original_Values": "43.4 mg of L-ascorbic acid"
+            }
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Fig. 2N showed the TEM images of the RGO/MXene microspheres with the mass ratio of 4:1 (MXene:GOx). The homogeneity of the internal mass thickness contrast ... showed that the nanosheets of RGO and MXene were closely stacked without obvious defects.",
+            "simplified": "Closely stacked RGO and MXene nanosheets with homogeneous internal mass-thickness contrast."
+          },
+          "Morphology": "pleated RGO/MXene microspheres with closely stacked nanosheets",
+          "Phases": [
+            {
+              "Phase_Name": "Ti3C2Tx MXene",
+              "Crystal_Structure": "hexagonal"
+            },
+            {
+              "Phase_Name": "RGO",
+              "Crystal_Structure": "amorphous carbon"
+            }
+          ]
+        },
+        "Properties": [
+          {
+            "Property_Name": "Minimum reflection loss",
+            "Value": -44.2,
+            "Units": "dB",
+            "Original_Values": "-44.2 dB",
+            "Test_Condition": {
+              "Filler_Loading_wt_percent": 40,
+              "Matching_Thickness_mm": 1.2,
+              "Frequency_GHz": 14.2
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Effective absorption bandwidth",
+            "Value": 2.8,
+            "Units": "GHz",
+            "Original_Values": "effective bandwidth ... 2.8 GHz",
+            "Test_Condition": {
+              "RL_Threshold_dB": -10,
+              "Filler_Loading_wt_percent": 40
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Highest dielectric loss tangent frequency range",
+            "Value": null,
+            "Value_Range": {
+              "Min": 6.8,
+              "Max": 14.6,
+              "Units": "GHz"
+            },
+            "Original_Values": "highest tan delta_E appeared at 6.8-14.6 GHz",
+            "Test_Condition": {
+              "Filler_Loading_wt_percent": 40,
+              "Measurement_Frequency_Range_GHz": "2-18",
+              "Composition_Ratio": "MXene:GOx = 4:1"
+            },
+            "Data_Source": "text",
+            "Note": "Frequency interval where the highest tan delta_E appeared; moved from Structure because it is an electromagnetic loss property."
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "Item-004",
+      "Sample_ID": "RGO/MXene-5:1",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Composites",
+      "application": "Functional",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "2D",
+        "Porous",
+        "Nanomaterial",
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "RGO/MXene microspheres with mass ratios of MXene and RGO of 2:1, 3:1, 4:1 and 5:1 can be obtained.",
+        "When the mass ratio was 5:1, the RLmin was -11 dB at 8.9 GHz and the thickness was 1.5 mm."
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Composite_Category": "RGO/MXene microsphere",
+          "Composite_System_Raw": "RGO/MXene microspheres with mass ratio of MXene and RGO of 5:1",
+          "Matrix": "RGO and MXene used as basic framework",
+          "Nominal_Component_Ratios": [
+            {
+              "Components": "MXene:RGO",
+              "Value": "5:1",
+              "Original_Values": "mass ratio of MXene and RGO of 5:1"
+            }
+          ],
+          "Fiber_Volume_Fraction": null,
+          "Fiber_Architecture": null
+        },
+        "Processing": {
+          "Process_Category": "ultrasonic spray high temperature reduction self-assembly",
+          "Process_Text": {
+            "original": "Prepared by the same RGO/MXene microsphere process with total mass of MXene and GOx unchanged.",
+            "simplified": "Same RGO/MXene ultrasonic spray self-assembly process; composition ratio changed to 5:1."
+          },
+          "Equipment": [
+            {
+              "Name": "Beijing Oriental Jin Rong ultrasonic atomizer",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "freeze dryer",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "FEI Verios G4 field emission SEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "FEI TALOS-F200X TEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Thermo Scientific 7000 XRD",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Bruker TENSOR27 FTIR spectrometer",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "thermogravimetric analyzer",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Tristar3020 Micromeritics N2 physisorption analyzer",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "CFMS-14t PPMS",
+              "Category": "Testing"
+            },
+            {
+              "Name": "Agilent N5227 vector network analyzer",
+              "Category": "Testing"
+            }
+          ],
+          "Note": "Shared ultrasonic spray parameters are explicitly stated for the RGO/MXene series; exact GOx/MXene reagent masses are only retained for the 4:1 recipe where the stated masses match MXene:GOx = 4:1.",
+          "Key_Params": {
+            "Ultrasound_Time_min": {
+              "Value": 30,
+              "Original_Values": "ultrasound for 30 min"
+            },
+            "Flow_Rate_mL_min": {
+              "Value": 0.5,
+              "Original_Values": "flow rate was 0.5 mL/min"
+            },
+            "Nozzle_Power_W": {
+              "Value": 1.5,
+              "Original_Values": "ultrasonic power applied on the nozzle was 1.5 W"
+            },
+            "Paraffin_Temperature_K": {
+              "Value": 423.15,
+              "Original_Values": "150 °C"
+            },
+            "Stirring_Speed_r_min": {
+              "Value": 500,
+              "Original_Values": "500 r/min"
+            }
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "The microspheres with four different ratios showed similar morphology.",
+            "simplified": "Similar pleated microsphere morphology to other RGO/MXene ratios."
+          },
+          "Morphology": "uniform RGO/MXene microspheres with similar morphology",
+          "Phases": [
+            {
+              "Phase_Name": "Ti3C2Tx MXene",
+              "Crystal_Structure": "hexagonal"
+            },
+            {
+              "Phase_Name": "RGO",
+              "Crystal_Structure": "amorphous carbon"
+            }
+          ]
+        },
+        "Properties": [
+          {
+            "Property_Name": "Minimum reflection loss",
+            "Value": -11,
+            "Units": "dB",
+            "Original_Values": "-11 dB at 8.9 GHz",
+            "Test_Condition": {
+              "Filler_Loading_wt_percent": 40,
+              "Frequency_GHz": 8.9,
+              "Matching_Thickness_mm": 1.5
+            },
+            "Data_Source": "text"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "Item-005",
+      "Sample_ID": "FMCM-1",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Composites",
+      "application": "Functional",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "2D",
+        "Porous",
+        "Nanomaterial",
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "The products with mass ratio of 4:1:0.4, 4:1:0.6, 4:1:0.8 and 4:1:1 were marked as FMCM-1, FMCM-2, FMCM-3 and FMCM-4 in turn.",
+        "Table 1: FMCM-1 Fe3O4 content 28.6%, BET Surface Area 119.53 m2/g, Pore Volume 0.3626 cm3/g, Pore Size 8.37 nm."
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Composite_Category": "RGO/MXene/Fe3O4 ternary composite microsphere",
+          "Composite_System_Raw": "RGO/MXene/Fe3O4 microspheres with GOx:MXene:Fe3O4 mass ratio of 4:1:0.4",
+          "Matrix": "RGO/MXene 2D sheet framework",
+          "Filler_or_Modifier": "Fe3O4 nanoparticles",
+          "Nominal_Component_Ratios": [
+            {
+              "Components": "GOx:MXene:Fe3O4",
+              "Value": "4:1:0.4",
+              "Original_Values": "mass ratio of 4:1:0.4",
+              "Note": "Methods labels FMCM-1 as mass ratio 4:1:0.4 after the phrase GOx, MXene and Fe3O4; other text says the optimized mass ratio of MXene to GOx was 4:1 and the abstract says GOx to MXene is 4:1. Ratio order is retained from Methods and the conflict is noted."
+            }
+          ],
+          "Measured_or_Calculated_Fe3O4_Content": {
+            "Value": 28.6,
+            "Units": "wt%",
+            "Original_Values": "Fe3O4 content (%) 28.6",
+            "Data_Source": "table"
+          },
+          "Fiber_Volume_Fraction": null,
+          "Fiber_Architecture": null,
+          "Note": "Methods labels FMCM-1 as mass ratio 4:1:0.4 after the phrase GOx, MXene and Fe3O4; other text says the optimized mass ratio of MXene to GOx was 4:1 and the abstract says GOx to MXene is 4:1. Ratio order is retained from Methods and the conflict is noted."
+        },
+        "Processing": {
+          "Process_Category": "ultrasonic atomization followed by L-ascorbic acid reduction",
+          "Process_Text": {
+            "original": "GOx, MXene and Fe3O4 nanoparticles were added to 20 mL deionized water in a certain proportion. GOx/MXene/Fe3O4 microspheres were prepared by ultrasonic atomizer. The process conditions and washing process were same as that of RGO/MXene microspheres. After dispersing GOx/MXene/Fe3O4 in L-ascorbic acid aqueous solution with concentration of 3.6 mg/mL and reducing for 30 min at 90 °C, RGO/MXene/Fe3O4 microspheres were obtained by magnetic separation.",
+            "simplified": "Mix GOx, MXene and Fe3O4 in water; ultrasonic atomize under the RGO/MXene spray conditions; wash; reduce in 3.6 mg/mL L-ascorbic acid at 90 °C for 30 min; magnetic separation."
+          },
+          "Key_Params": {
+            "Water_Volume_mL": {
+              "Value": 20,
+              "Original_Values": "20 mL deionized water"
+            },
+            "MXene_Concentration_mg_mL": {
+              "Value": 3.2,
+              "Original_Values": "mass concentration of MXene in aqueous solution was 3.2 mg/mL"
+            },
+            "Ultrasound_Time_min": {
+              "Value": 30,
+              "Original_Values": "ultrasound for 30 min"
+            },
+            "Flow_Rate_mL_min": {
+              "Value": 0.5,
+              "Original_Values": "flow rate was 0.5 mL/min"
+            },
+            "Nozzle_Power_W": {
+              "Value": 1.5,
+              "Original_Values": "ultrasonic power applied on the nozzle was 1.5 W"
+            },
+            "Paraffin_Temperature_K": {
+              "Value": 423.15,
+              "Original_Values": "150 °C"
+            },
+            "Stirring_Speed_r_min": {
+              "Value": 500,
+              "Original_Values": "500 r/min"
+            },
+            "Reduction_Temperature_K": {
+              "Value": 363.15,
+              "Original_Values": "90 °C"
+            },
+            "Reduction_Time_min": {
+              "Value": 30,
+              "Original_Values": "30 min"
+            },
+            "L_Ascorbic_Acid_Concentration_mg_mL": {
+              "Value": 3.6,
+              "Original_Values": "3.6 mg/mL"
+            }
+          },
+          "Equipment": [
+            {
+              "Name": "Beijing Oriental Jin Rong ultrasonic atomizer",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "freeze dryer",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "magnetic separation setup",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "FEI Verios G4 field emission SEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "FEI TALOS-F200X TEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Thermo Scientific 7000 XRD",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Bruker TENSOR27 FTIR spectrometer",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "thermogravimetric analyzer",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Tristar3020 Micromeritics N2 physisorption analyzer",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "CFMS-14t PPMS",
+              "Category": "Testing"
+            },
+            {
+              "Name": "Agilent N5227 vector network analyzer",
+              "Category": "Testing"
+            }
+          ],
+          "Note": "FMCM process conditions and washing process are explicitly stated to be the same as RGO/MXene microspheres; FMCM-specific reduction and magnetic separation conditions are separately retained."
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "The addition of Fe3O4 nanoparticles had basically no effect on the particle size of the microspheres ... Fe3O4 nanoparticles were highly dispersed in the pores and interstices of RGO/MXene microspheres.",
+            "simplified": "Pleated porous RGO/MXene/Fe3O4 microspheres with Fe3O4 nanoparticles dispersed in pores and interstices."
+          },
+          "Morphology": "pleated porous microspheres; Fe3O4 nanoparticles dispersed in RGO/MXene pores and interstices",
+          "Phases": [
+            {
+              "Phase_Name": "Fe3O4",
+              "Crystal_Structure": "spinel",
+              "Note": "XRD characteristic peaks indexed to Fe3O4 (220), (311), (400), (511), and (440)."
+            },
+            {
+              "Phase_Name": "Ti3C2Tx MXene",
+              "Crystal_Structure": "hexagonal"
+            },
+            {
+              "Phase_Name": "RGO/amorphous carbon",
+              "Crystal_Structure": "amorphous"
+            }
+          ],
+          "Porosity": {
+            "Pore_Type": "mesopores and macropores",
+            "Pore_Size_nm": {
+              "Value": 8.37,
+              "Original_Values": "Pore Size (nm) 8.37",
+              "Data_Source": "table"
+            },
+            "Pore_Volume_cm3_g": {
+              "Value": 0.3626,
+              "Original_Values": "Pore Volume (cm3/g) 0.3626",
+              "Data_Source": "table"
+            }
+          },
+          "Advanced_Quantitative_Features": {
+            "BET_Surface_Area": {
+              "Value": 119.53,
+              "Units": "m2/g",
+              "Original_Values": "BET Surface Area 119.53 m2/g",
+              "Data_Source": "table"
+            },
+            "Fe3O4_Nanoparticle_Size": {
+              "Value": 10,
+              "Units": "nm",
+              "Size_Type": "undefined",
+              "Note": "average particle size",
+              "Original_Values": "average particle size of 10 nm"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Saturation magnetization",
+            "Value": 9.2,
+            "Units": "emu/g",
+            "Original_Values": "9.2 emu.g-1",
+            "Test_Condition": {
+              "Temperature": "room temperature"
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Minimum reflection loss",
+            "Value": -41.4,
+            "Units": "dB",
+            "Original_Values": "-41.4 dB@12.2 GHz",
+            "Test_Condition": {
+              "Absorber_Filler_Loading_wt_percent": 35,
+              "Frequency_GHz": 12.2,
+              "Matching_Thickness_mm": 2.2
+            },
+            "Data_Source": "text"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "Item-006",
+      "Sample_ID": "FMCM-2",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Composites",
+      "application": "Functional",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "2D",
+        "Porous",
+        "Nanomaterial",
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "The products with mass ratio of 4:1:0.4, 4:1:0.6, 4:1:0.8 and 4:1:1 were marked as FMCM-1, FMCM-2, FMCM-3 and FMCM-4 in turn.",
+        "Table 2: FMCM-2 thickness 2.0 mm, effective bandwidth 6.5 GHz, RLmin -41.9 dB, This work."
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Composite_Category": "RGO/MXene/Fe3O4 ternary composite microsphere",
+          "Composite_System_Raw": "RGO/MXene/Fe3O4 microspheres with GOx:MXene:Fe3O4 mass ratio of 4:1:0.6",
+          "Matrix": "RGO/MXene 2D sheet framework",
+          "Filler_or_Modifier": "Fe3O4 nanoparticles",
+          "Nominal_Component_Ratios": [
+            {
+              "Components": "GOx:MXene:Fe3O4",
+              "Value": "4:1:0.6",
+              "Original_Values": "mass ratio of 4:1:0.6",
+              "Note": "Methods labels FMCM-2 as mass ratio 4:1:0.6 after the phrase GOx, MXene and Fe3O4; other text says the optimized mass ratio of MXene to GOx was 4:1 and the abstract says GOx to MXene is 4:1. Ratio order is retained from Methods and the conflict is noted."
+            }
+          ],
+          "Measured_or_Calculated_Fe3O4_Content": {
+            "Value": 37.5,
+            "Units": "wt%",
+            "Original_Values": "Fe3O4 content (%) 37.5",
+            "Data_Source": "table"
+          },
+          "Fiber_Volume_Fraction": null,
+          "Fiber_Architecture": null,
+          "Note": "Methods labels FMCM-2 as mass ratio 4:1:0.6 after the phrase GOx, MXene and Fe3O4; other text says the optimized mass ratio of MXene to GOx was 4:1 and the abstract says GOx to MXene is 4:1. Ratio order is retained from Methods and the conflict is noted."
+        },
+        "Processing": {
+          "Process_Category": "ultrasonic atomization followed by L-ascorbic acid reduction",
+          "Process_Text": {
+            "original": "Prepared by the same FMCM process while adjusting GOx:MXene:Fe3O4 ratio to 4:1:0.6.",
+            "simplified": "Same FMCM ultrasonic atomization and reduction process; composition ratio changed to 4:1:0.6."
+          },
+          "Equipment": [
+            {
+              "Name": "Beijing Oriental Jin Rong ultrasonic atomizer",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "freeze dryer",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "magnetic separation setup",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "FEI Verios G4 field emission SEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "FEI TALOS-F200X TEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Thermo Scientific 7000 XRD",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Bruker TENSOR27 FTIR spectrometer",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "thermogravimetric analyzer",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Tristar3020 Micromeritics N2 physisorption analyzer",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "CFMS-14t PPMS",
+              "Category": "Testing"
+            },
+            {
+              "Name": "Agilent N5227 vector network analyzer",
+              "Category": "Testing"
+            }
+          ],
+          "Note": "FMCM process conditions and washing process are explicitly stated to be the same as RGO/MXene microspheres; FMCM-specific reduction and magnetic separation conditions are separately retained.",
+          "Key_Params": {
+            "Water_Volume_mL": {
+              "Value": 20,
+              "Original_Values": "20 mL deionized water"
+            },
+            "MXene_Concentration_mg_mL": {
+              "Value": 3.2,
+              "Original_Values": "mass concentration of MXene in aqueous solution was 3.2 mg/mL"
+            },
+            "Ultrasound_Time_min": {
+              "Value": 30,
+              "Original_Values": "ultrasound for 30 min"
+            },
+            "Flow_Rate_mL_min": {
+              "Value": 0.5,
+              "Original_Values": "flow rate was 0.5 mL/min"
+            },
+            "Nozzle_Power_W": {
+              "Value": 1.5,
+              "Original_Values": "ultrasonic power applied on the nozzle was 1.5 W"
+            },
+            "Paraffin_Temperature_K": {
+              "Value": 423.15,
+              "Original_Values": "150 °C"
+            },
+            "Stirring_Speed_r_min": {
+              "Value": 500,
+              "Original_Values": "500 r/min"
+            },
+            "Reduction_Temperature_K": {
+              "Value": 363.15,
+              "Original_Values": "90 °C"
+            },
+            "Reduction_Time_min": {
+              "Value": 30,
+              "Original_Values": "30 min"
+            },
+            "L_Ascorbic_Acid_Concentration_mg_mL": {
+              "Value": 3.6,
+              "Original_Values": "3.6 mg/mL"
+            }
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "The microsphere appearance was basically same. The specific surface area of the sample decreased with the increase of Fe3O4 nanoparticles.",
+            "simplified": "Pleated porous FMCM microsphere; surface area and pore metrics reported in Table 1."
+          },
+          "Morphology": "pleated porous RGO/MXene/Fe3O4 microspheres",
+          "Phases": [
+            {
+              "Phase_Name": "Fe3O4",
+              "Crystal_Structure": "spinel"
+            },
+            {
+              "Phase_Name": "Ti3C2Tx MXene",
+              "Crystal_Structure": "hexagonal"
+            },
+            {
+              "Phase_Name": "RGO/amorphous carbon",
+              "Crystal_Structure": "amorphous"
+            }
+          ],
+          "Porosity": {
+            "Pore_Type": "mesopores and macropores",
+            "Pore_Size_nm": {
+              "Value": 8.83,
+              "Original_Values": "Pore Size (nm) 8.83",
+              "Data_Source": "table"
+            },
+            "Pore_Volume_cm3_g": {
+              "Value": 0.3829,
+              "Original_Values": "Pore Volume (cm3/g) 0.3829",
+              "Data_Source": "table"
+            }
+          },
+          "Advanced_Quantitative_Features": {
+            "BET_Surface_Area": {
+              "Value": 103.71,
+              "Units": "m2/g",
+              "Original_Values": "BET Surface Area 103.71 m2/g",
+              "Data_Source": "table"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Saturation magnetization",
+            "Value": 11.5,
+            "Units": "emu/g",
+            "Original_Values": "11.5 emu.g-1",
+            "Test_Condition": {
+              "Temperature": "room temperature"
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Minimum reflection loss",
+            "Value": -41.9,
+            "Units": "dB",
+            "Original_Values": "-41.9 dB@14.5 GHz",
+            "Test_Condition": {
+              "Absorber_Filler_Loading_wt_percent": 35,
+              "Frequency_GHz": 14.5,
+              "Matching_Thickness_mm": 2
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Effective absorption bandwidth",
+            "Value": 6.5,
+            "Units": "GHz",
+            "Original_Values": "6.5 GHz (11.5-18 GHz)",
+            "Test_Condition": {
+              "Absorber_Filler_Loading_wt_percent": 35,
+              "RL_Threshold_dB": -10,
+              "Frequency_Range_GHz": "11.5-18",
+              "Matching_Thickness_mm": 2
+            },
+            "Data_Source": "text"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "Item-007",
+      "Sample_ID": "FMCM-3",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Composites",
+      "application": "Functional",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "2D",
+        "Porous",
+        "Nanomaterial",
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "As the mass of Fe3O4 is 0.8 times that of MXene and GOx, FMCM-3 show the best wave absorbing performance.",
+        "RLmin of FMCM-1 to FMCM-4 was ... -51.2 dB@11.1 GHz ... corresponding matching thicknesses ... 2.9 mm."
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Composite_Category": "RGO/MXene/Fe3O4 ternary composite microsphere",
+          "Composite_System_Raw": "pleated RGO/MXene/Fe3O4 microspheres with GOx:MXene:Fe3O4 mass ratio of 4:1:0.8",
+          "Matrix": "RGO/MXene 2D sheet framework",
+          "Filler_or_Modifier": "Fe3O4 nanoparticles",
+          "Nominal_Component_Ratios": [
+            {
+              "Components": "GOx:MXene:Fe3O4",
+              "Value": "4:1:0.8",
+              "Original_Values": "mass ratio of 4:1:0.8",
+              "Note": "Methods labels FMCM-3 as mass ratio 4:1:0.8 after the phrase GOx, MXene and Fe3O4; other text says the optimized mass ratio of MXene to GOx was 4:1 and Fe3O4 was 0.8 times the total mass of MXene and GOx. Ratio order is retained from Methods and the conflict is noted."
+            },
+            {
+              "Components": "Fe3O4:(MXene+GOx)",
+              "Value": "0.8:1",
+              "Original_Values": "mass of Fe3O4 is 0.8 times that of MXene and GOx"
+            }
+          ],
+          "Measured_or_Calculated_Fe3O4_Content": {
+            "Value": 44.4,
+            "Units": "wt%",
+            "Original_Values": "Fe3O4 content (%) 44.4",
+            "Data_Source": "table"
+          },
+          "Fiber_Volume_Fraction": null,
+          "Fiber_Architecture": null,
+          "Note": "Methods labels FMCM-3 as mass ratio 4:1:0.8 after the phrase GOx, MXene and Fe3O4; other text says the optimized mass ratio of MXene to GOx was 4:1 and Fe3O4 was 0.8 times the total mass of MXene and GOx. Ratio order is retained from Methods and the conflict is noted."
+        },
+        "Processing": {
+          "Process_Category": "ultrasonic atomization followed by L-ascorbic acid reduction",
+          "Process_Text": {
+            "original": "GOx, MXene and Fe3O4 nanoparticles were added to 20 mL deionized water in a certain proportion. GOx/MXene/Fe3O4 microspheres were prepared by ultrasonic atomizer. The process conditions and washing process were same as that of RGO/MXene microspheres. After dispersing GOx/MXene/Fe3O4 in L-ascorbic acid aqueous solution with concentration of 3.6 mg/mL and reducing for 30 min at 90 °C, RGO/MXene/Fe3O4 microspheres were obtained by magnetic separation.",
+            "simplified": "Mix GOx, MXene and Fe3O4 in water; ultrasonic atomize into hot paraffin using RGO/MXene conditions; reduce with L-ascorbic acid at 90 °C for 30 min; magnetic separation."
+          },
+          "Key_Params": {
+            "Water_Volume_mL": {
+              "Value": 20,
+              "Original_Values": "20 mL deionized water"
+            },
+            "MXene_Concentration_mg_mL": {
+              "Value": 3.2,
+              "Original_Values": "mass concentration of MXene in aqueous solution was 3.2 mg/mL"
+            },
+            "Ultrasound_Time_min": {
+              "Value": 30,
+              "Original_Values": "ultrasound for 30 min"
+            },
+            "Flow_Rate_mL_min": {
+              "Value": 0.5,
+              "Original_Values": "flow rate was 0.5 mL/min"
+            },
+            "Nozzle_Power_W": {
+              "Value": 1.5,
+              "Original_Values": "ultrasonic power applied on the nozzle was 1.5 W"
+            },
+            "Paraffin_Temperature_K": {
+              "Value": 423.15,
+              "Original_Values": "150 °C"
+            },
+            "Stirring_Speed_r_min": {
+              "Value": 500,
+              "Original_Values": "500 r/min"
+            },
+            "Reduction_Temperature_K": {
+              "Value": 363.15,
+              "Original_Values": "90 °C"
+            },
+            "Reduction_Time_min": {
+              "Value": 30,
+              "Original_Values": "30 min"
+            },
+            "L_Ascorbic_Acid_Concentration_mg_mL": {
+              "Value": 3.6,
+              "Original_Values": "3.6 mg/mL"
+            }
+          },
+          "Equipment": [
+            {
+              "Name": "Beijing Oriental Jin Rong ultrasonic atomizer",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "freeze dryer",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "magnetic separation setup",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "FEI Verios G4 field emission SEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "FEI TALOS-F200X TEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Thermo Scientific 7000 XRD",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Bruker TENSOR27 FTIR spectrometer",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "thermogravimetric analyzer",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Tristar3020 Micromeritics N2 physisorption analyzer",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "CFMS-14t PPMS",
+              "Category": "Testing"
+            },
+            {
+              "Name": "Agilent N5227 vector network analyzer",
+              "Category": "Testing"
+            }
+          ],
+          "Testing_Specimen_Preparation": {
+            "Absorber_Loading_wt_percent": {
+              "Value": 40,
+              "Original_Values": "sample containing 40 wt% of the obtained microspheres"
+            },
+            "Paraffin_Substrate": "solid paraffin",
+            "Pressing_Pressure_MPa": {
+              "Value": 4,
+              "Original_Values": "4 MPa"
+            },
+            "Pressing_Time_s": {
+              "Value": 10,
+              "Original_Values": "10 s"
+            },
+            "Coaxial_Ring_Inner_Diameter_mm": {
+              "Value": 3.04,
+              "Original_Values": "inner diameter of 3.04 mm"
+            },
+            "Coaxial_Ring_Outer_Diameter_mm": {
+              "Value": 7,
+              "Original_Values": "outer diameter of 7.00 mm"
+            }
+          },
+          "Note": "Text reports general VNA specimen preparation at 40 wt% and later FMCM-3 dosage tests at 30%, 35%, and 40%; dosage-specific values are retained only as performance test conditions."
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Fe3O4 nanoparticles with high mass thickness contrast can be clearly observed inside the microspheres. The results of the energy spectrum analysis of FMCM-3 further indicated the uniform mixing of RGO, MXene and Fe3O4.",
+            "simplified": "Pleated porous FMCM-3 microspheres with uniformly mixed RGO, MXene and Fe3O4; Fe3O4 nanoparticles inside microspheres; rich heterogeneous interfaces."
+          },
+          "Morphology": "3D pleated porous microspheres with tighter folds after Fe3O4 addition",
+          "Interface_Features": [
+            "Fe3O4@MXene",
+            "RGO@Fe3O4",
+            "MXene@RGO"
+          ],
+          "Defects": "point defects, surface defects, mixed dislocations and mismatch in MXene crystal structure observed by HR-TEM/GPA",
+          "Phases": [
+            {
+              "Phase_Name": "Fe3O4",
+              "Crystal_Structure": "spinel",
+              "Note": "XRD characteristic peaks at 30.1 degrees (220), 35.7 degrees (311), 43.3 degrees (400), 57.3 degrees (511), and 62.9 degrees (440)."
+            },
+            {
+              "Phase_Name": "Ti3C2Tx MXene",
+              "Crystal_Structure": "hexagonal",
+              "Note": "low intensity XRD peak at 53.7 degrees attributed to Ti3C2Tx."
+            },
+            {
+              "Phase_Name": "RGO/amorphous carbon",
+              "Crystal_Structure": "amorphous",
+              "Note": "broad amorphous peak around 25.2 degrees corresponded to amorphous carbon in graphene."
+            }
+          ],
+          "Porosity": {
+            "Pore_Type": "mesopores and macropores with slit-type channels",
+            "Pore_Size_nm": {
+              "Value": 12.7,
+              "Original_Values": "Pore Size (nm) 12.70",
+              "Data_Source": "table"
+            },
+            "Pore_Volume_cm3_g": {
+              "Value": 0.4147,
+              "Original_Values": "Pore Volume (cm3/g) 0.4147",
+              "Data_Source": "table"
+            }
+          },
+          "Advanced_Quantitative_Features": {
+            "BET_Surface_Area": {
+              "Value": 87.51,
+              "Units": "m2/g",
+              "Original_Values": "BET Surface Area 87.51 m2/g",
+              "Data_Source": "table"
+            },
+            "Fe3O4_Nanoparticle_Size": {
+              "Value": 10,
+              "Units": "nm",
+              "Size_Type": "undefined",
+              "Note": "average particle size",
+              "Original_Values": "average particle size of 10 nm"
+            }
+          },
+          "Note": "MXene@paraffin and RGO@paraffin were omitted from microsphere-body Interface_Features because the text describes them as interfaces in the absorber/paraffin test composite, not intrinsic FMCM microsphere interfaces."
+        },
+        "Properties": [
+          {
+            "Property_Name": "Saturation magnetization",
+            "Value": 16.8,
+            "Units": "emu/g",
+            "Original_Values": "16.8 emu.g-1",
+            "Test_Condition": {
+              "Temperature": "room temperature"
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Minimum reflection loss",
+            "Value": -51.2,
+            "Units": "dB",
+            "Original_Values": "-51.2 dB@11.1 GHz",
+            "Test_Condition": {
+              "Absorber_Filler_Loading_wt_percent": 35,
+              "Frequency_GHz": 11.1,
+              "Matching_Thickness_mm": 2.9
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Effective absorption bandwidth",
+            "Value": 4.7,
+            "Units": "GHz",
+            "Original_Values": "4.7 GHz (7.8-12.5 GHz)",
+            "Test_Condition": {
+              "Absorber_Filler_Loading_wt_percent": 35,
+              "RL_Threshold_dB": -10,
+              "Frequency_Range_GHz": "7.8-12.5",
+              "Matching_Thickness_mm": 2.9
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Minimum reflection loss",
+            "Value": -8.4,
+            "Units": "dB",
+            "Original_Values": "-8.4 dB@12.9 GHz",
+            "Test_Condition": {
+              "Absorber_Dosage_percent": 30,
+              "Frequency_GHz": 12.9,
+              "Matching_Thickness_mm": 2.8
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Minimum reflection loss",
+            "Value": -51.2,
+            "Units": "dB",
+            "Original_Values": "-51.2 dB@12 GHz",
+            "Test_Condition": {
+              "Absorber_Dosage_percent": 35,
+              "Frequency_GHz": 12,
+              "Matching_Thickness_mm": 2.9
+            },
+            "Data_Source": "text",
+            "Note": "Reported in the absorber dosage comparison; frequency differs from Fig. 11 text value of 11.1 GHz."
+          },
+          {
+            "Property_Name": "Minimum reflection loss",
+            "Value": -27.1,
+            "Units": "dB",
+            "Original_Values": "-27.1 dB@5.4 GHz",
+            "Test_Condition": {
+              "Absorber_Dosage_percent": 40,
+              "Frequency_GHz": 5.4,
+              "Matching_Thickness_mm": 4.9
+            },
+            "Data_Source": "text"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "Item-008",
+      "Sample_ID": "FMCM-4",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Composites",
+      "application": "Functional",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "2D",
+        "Porous",
+        "Nanomaterial",
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "The products with mass ratio of 4:1:0.4, 4:1:0.6, 4:1:0.8 and 4:1:1 were marked as FMCM-1, FMCM-2, FMCM-3 and FMCM-4 in turn.",
+        "RLmin of FMCM-1 to FMCM-4 was ... -9.8 dB@12.6 GHz ... corresponding matching thicknesses ... 2.2 mm."
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Composite_Category": "RGO/MXene/Fe3O4 ternary composite microsphere",
+          "Composite_System_Raw": "RGO/MXene/Fe3O4 microspheres with GOx:MXene:Fe3O4 mass ratio of 4:1:1",
+          "Matrix": "RGO/MXene 2D sheet framework",
+          "Filler_or_Modifier": "Fe3O4 nanoparticles",
+          "Nominal_Component_Ratios": [
+            {
+              "Components": "GOx:MXene:Fe3O4",
+              "Value": "4:1:1",
+              "Original_Values": "mass ratio of 4:1:1",
+              "Note": "Methods labels FMCM-4 as mass ratio 4:1:1 after the phrase GOx, MXene and Fe3O4; other text says the optimized mass ratio of MXene to GOx was 4:1 and the abstract says GOx to MXene is 4:1. Ratio order is retained from Methods and the conflict is noted."
+            }
+          ],
+          "Measured_or_Calculated_Fe3O4_Content": {
+            "Value": 50,
+            "Units": "wt%",
+            "Original_Values": "Fe3O4 content (%) 50.0",
+            "Data_Source": "table"
+          },
+          "Fiber_Volume_Fraction": null,
+          "Fiber_Architecture": null,
+          "Note": "Methods labels FMCM-4 as mass ratio 4:1:1 after the phrase GOx, MXene and Fe3O4; other text says the optimized mass ratio of MXene to GOx was 4:1 and the abstract says GOx to MXene is 4:1. Ratio order is retained from Methods and the conflict is noted."
+        },
+        "Processing": {
+          "Process_Category": "ultrasonic atomization followed by L-ascorbic acid reduction",
+          "Process_Text": {
+            "original": "Prepared by the same FMCM process while adjusting GOx:MXene:Fe3O4 ratio to 4:1:1.",
+            "simplified": "Same FMCM ultrasonic atomization and reduction process; composition ratio changed to 4:1:1."
+          },
+          "Equipment": [
+            {
+              "Name": "Beijing Oriental Jin Rong ultrasonic atomizer",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "freeze dryer",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "magnetic separation setup",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "FEI Verios G4 field emission SEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "FEI TALOS-F200X TEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Thermo Scientific 7000 XRD",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Bruker TENSOR27 FTIR spectrometer",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "thermogravimetric analyzer",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Tristar3020 Micromeritics N2 physisorption analyzer",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "CFMS-14t PPMS",
+              "Category": "Testing"
+            },
+            {
+              "Name": "Agilent N5227 vector network analyzer",
+              "Category": "Testing"
+            }
+          ],
+          "Note": "FMCM process conditions and washing process are explicitly stated to be the same as RGO/MXene microspheres; FMCM-specific reduction and magnetic separation conditions are separately retained.",
+          "Key_Params": {
+            "Water_Volume_mL": {
+              "Value": 20,
+              "Original_Values": "20 mL deionized water"
+            },
+            "MXene_Concentration_mg_mL": {
+              "Value": 3.2,
+              "Original_Values": "mass concentration of MXene in aqueous solution was 3.2 mg/mL"
+            },
+            "Ultrasound_Time_min": {
+              "Value": 30,
+              "Original_Values": "ultrasound for 30 min"
+            },
+            "Flow_Rate_mL_min": {
+              "Value": 0.5,
+              "Original_Values": "flow rate was 0.5 mL/min"
+            },
+            "Nozzle_Power_W": {
+              "Value": 1.5,
+              "Original_Values": "ultrasonic power applied on the nozzle was 1.5 W"
+            },
+            "Paraffin_Temperature_K": {
+              "Value": 423.15,
+              "Original_Values": "150 °C"
+            },
+            "Stirring_Speed_r_min": {
+              "Value": 500,
+              "Original_Values": "500 r/min"
+            },
+            "Reduction_Temperature_K": {
+              "Value": 363.15,
+              "Original_Values": "90 °C"
+            },
+            "Reduction_Time_min": {
+              "Value": 30,
+              "Original_Values": "30 min"
+            },
+            "L_Ascorbic_Acid_Concentration_mg_mL": {
+              "Value": 3.6,
+              "Original_Values": "3.6 mg/mL"
+            }
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "The microsphere appearance was basically same. The specific surface area of the sample decreased with the increase of Fe3O4 nanoparticles.",
+            "simplified": "Pleated porous FMCM microsphere with highest Fe3O4 content in the series."
+          },
+          "Morphology": "pleated porous RGO/MXene/Fe3O4 microspheres",
+          "Phases": [
+            {
+              "Phase_Name": "Fe3O4",
+              "Crystal_Structure": "spinel"
+            },
+            {
+              "Phase_Name": "Ti3C2Tx MXene",
+              "Crystal_Structure": "hexagonal"
+            },
+            {
+              "Phase_Name": "RGO/amorphous carbon",
+              "Crystal_Structure": "amorphous"
+            }
+          ],
+          "Porosity": {
+            "Pore_Type": "mesopores and macropores",
+            "Pore_Size_nm": {
+              "Value": 11.64,
+              "Original_Values": "Pore Size (nm) 11.64",
+              "Data_Source": "table"
+            },
+            "Pore_Volume_cm3_g": {
+              "Value": 0.2978,
+              "Original_Values": "Pore Volume (cm3/g) 0.2978",
+              "Data_Source": "table"
+            }
+          },
+          "Advanced_Quantitative_Features": {
+            "BET_Surface_Area": {
+              "Value": 71.18,
+              "Units": "m2/g",
+              "Original_Values": "BET Surface Area 71.18 m2/g",
+              "Data_Source": "table"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Saturation magnetization",
+            "Value": 17.4,
+            "Units": "emu/g",
+            "Original_Values": "17.4 emu.g-1",
+            "Test_Condition": {
+              "Temperature": "room temperature"
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Minimum reflection loss",
+            "Value": -9.8,
+            "Units": "dB",
+            "Original_Values": "-9.8 dB@12.6 GHz",
+            "Test_Condition": {
+              "Absorber_Filler_Loading_wt_percent": 35,
+              "Frequency_GHz": 12.6,
+              "Matching_Thickness_mm": 2.2
+            },
+            "Data_Source": "text"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "Item-009",
+      "Sample_ID": "RGO/PPy nanotube/Fe3O4 aerogel",
+      "Role": "Reference",
+      "Data_Nature": "Literature_Experimental",
+      "base_material": "Composites",
+      "application": "Functional",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Porous",
+        "Nanomaterial"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 2: RGO/PPy nanotube/Fe3O4 aerogel, thickness 3.0 mm, effective bandwidth 6.1 GHz, RLmin -49.2, Reference [2]."
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Composite_System_Raw": "RGO/PPy nanotube/Fe3O4 aerogel"
+        },
+        "Properties": [
+          {
+            "Property_Name": "Minimum reflection loss",
+            "Value": -49.2,
+            "Units": "dB",
+            "Test_Condition": {
+              "Matching_Thickness_mm": 3
+            },
+            "Data_Source": "table",
+            "Reference": "[2]"
+          },
+          {
+            "Property_Name": "Effective absorption bandwidth",
+            "Value": 6.1,
+            "Units": "GHz",
+            "Test_Condition": {
+              "Matching_Thickness_mm": 3
+            },
+            "Data_Source": "table",
+            "Reference": "[2]"
+          }
+        ]
+      },
+      "Note": "Reference item retained only from Table 2 comparative data; no external literature details added."
+    },
+    {
+      "Item_ID": "Item-010",
+      "Sample_ID": "Fe3O4-Fe/Graphene composite",
+      "Role": "Reference",
+      "Data_Nature": "Literature_Experimental",
+      "base_material": "Composites",
+      "application": "Functional",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Nanomaterial",
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 2: Fe3O4-Fe/Graphene composite, thickness 2.0 mm, effective bandwidth 6.5 GHz, RLmin -30.5, Reference [9]."
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Composite_System_Raw": "Fe3O4-Fe/Graphene composite"
+        },
+        "Properties": [
+          {
+            "Property_Name": "Minimum reflection loss",
+            "Value": -30.5,
+            "Units": "dB",
+            "Test_Condition": {
+              "Matching_Thickness_mm": 2
+            },
+            "Data_Source": "table",
+            "Reference": "[9]"
+          },
+          {
+            "Property_Name": "Effective absorption bandwidth",
+            "Value": 6.5,
+            "Units": "GHz",
+            "Test_Condition": {
+              "Matching_Thickness_mm": 2
+            },
+            "Data_Source": "table",
+            "Reference": "[9]"
+          }
+        ]
+      },
+      "Note": "Reference item retained only from Table 2 comparative data; no external literature details added."
+    },
+    {
+      "Item_ID": "Item-011",
+      "Sample_ID": "MXene/Fe3O4 Microspheres",
+      "Role": "Reference",
+      "Data_Nature": "Literature_Experimental",
+      "base_material": "Composites",
+      "application": "Functional",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "2D",
+        "Nanomaterial",
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 2: MXene/Fe3O4 Microspheres, thickness 2.0 mm, effective bandwidth 4.67 GHz, RLmin -50.6, Reference [26]."
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Composite_System_Raw": "MXene/Fe3O4 Microspheres"
+        },
+        "Properties": [
+          {
+            "Property_Name": "Minimum reflection loss",
+            "Value": -50.6,
+            "Units": "dB",
+            "Test_Condition": {
+              "Matching_Thickness_mm": 2
+            },
+            "Data_Source": "table",
+            "Reference": "[26]"
+          },
+          {
+            "Property_Name": "Effective absorption bandwidth",
+            "Value": 4.67,
+            "Units": "GHz",
+            "Test_Condition": {
+              "Matching_Thickness_mm": 2
+            },
+            "Data_Source": "table",
+            "Reference": "[26]"
+          }
+        ]
+      },
+      "Note": "Reference item retained only from Table 2 comparative data; no external literature details added."
+    },
+    {
+      "Item_ID": "Item-012",
+      "Sample_ID": "Fe3O4@Polypyrrole Composites",
+      "Role": "Reference",
+      "Data_Nature": "Literature_Experimental",
+      "base_material": "Composites",
+      "application": "Functional",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Nanomaterial",
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 2: Fe3O4@Polypyrrole Composites, thickness 2.0 mm, effective bandwidth 6.0 GHz, RLmin -41.9, Reference [29]."
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Composite_System_Raw": "Fe3O4@Polypyrrole Composites"
+        },
+        "Properties": [
+          {
+            "Property_Name": "Minimum reflection loss",
+            "Value": -41.9,
+            "Units": "dB",
+            "Test_Condition": {
+              "Matching_Thickness_mm": 2
+            },
+            "Data_Source": "table",
+            "Reference": "[29]"
+          },
+          {
+            "Property_Name": "Effective absorption bandwidth",
+            "Value": 6,
+            "Units": "GHz",
+            "Test_Condition": {
+              "Matching_Thickness_mm": 2
+            },
+            "Data_Source": "table",
+            "Reference": "[29]"
+          }
+        ]
+      },
+      "Note": "Reference item retained only from Table 2 comparative data; no external literature details added."
+    },
+    {
+      "Item_ID": "Item-013",
+      "Sample_ID": "Fe3O4@CNTs",
+      "Role": "Reference",
+      "Data_Nature": "Literature_Experimental",
+      "base_material": "Composites",
+      "application": "Functional",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Nanomaterial",
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 2: Fe3O4@CNTs, thickness 2.0 mm, effective bandwidth 3.5 GHz, RLmin -39.3, Reference [37]."
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Composite_System_Raw": "Fe3O4@CNTs"
+        },
+        "Properties": [
+          {
+            "Property_Name": "Minimum reflection loss",
+            "Value": -39.3,
+            "Units": "dB",
+            "Test_Condition": {
+              "Matching_Thickness_mm": 2
+            },
+            "Data_Source": "table",
+            "Reference": "[37]"
+          },
+          {
+            "Property_Name": "Effective absorption bandwidth",
+            "Value": 3.5,
+            "Units": "GHz",
+            "Test_Condition": {
+              "Matching_Thickness_mm": 2
+            },
+            "Data_Source": "table",
+            "Reference": "[37]"
+          }
+        ]
+      },
+      "Note": "Reference item retained only from Table 2 comparative data; no external literature details added."
+    }
+  ]
+}

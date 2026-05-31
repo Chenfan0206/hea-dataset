@@ -1,0 +1,1041 @@
+{
+  "Paper_Metadata": {
+    "Paper_Title": "Microstructural evolution and formation of fine grains during fatigue crack initiation process of laser powder bed fusion Ni-based superalloy",
+    "DOI": null,
+    "Note": "DOI not found in OCR text"
+  },
+  "Paper_Routing": {
+    "base_material": "Metals",
+    "application": "Structural",
+    "research_paradigm": "Experimental",
+    "Supplements_Loaded": [
+      "directions/base/Metals.txt",
+      "directions/application/Structural.txt",
+      "directions/paradigm/Experimental.txt"
+    ],
+    "Patch_Tags": [
+      "Additive_Manufacturing",
+      "Laser_Assisted"
+    ],
+    "Needs_Mixed_Routing_Check": false,
+    "Mixed_Signals": []
+  },
+  "items": [
+    {
+      "Item_ID": "Item_1",
+      "Sample_ID": "LPBF_GH4169_SA_DA",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing",
+        "Laser_Assisted"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 1",
+        "Table 2",
+        "Section 2.1",
+        "Section 2.2",
+        "Section 2.3",
+        "Section 3.1",
+        "Section 3.2",
+        "Table 5"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Ni-based superalloy",
+          "Material_Name_Raw": "GH4169",
+          "Nominal_Composition": {
+            "Type": "nominal",
+            "Basis": "wt%",
+            "Source": "Table 1",
+            "Elements": [
+              {
+                "Element": "Ni",
+                "Value": 52.08,
+                "Unit": "wt%",
+                "Original_Values": "52.08 wt%"
+              },
+              {
+                "Element": "Fe",
+                "Value": "Balance",
+                "Unit": "wt%",
+                "Original_Values": "Balance",
+                "Note": "Balance; normalized ≈ 17.59 wt% (Computed)"
+              },
+              {
+                "Element": "Cr",
+                "Value": 20.12,
+                "Unit": "wt%",
+                "Original_Values": "20.12 wt%"
+              },
+              {
+                "Element": "Nb",
+                "Value": 5.33,
+                "Unit": "wt%",
+                "Original_Values": "5.33 wt%"
+              },
+              {
+                "Element": "Mo",
+                "Value": 3.24,
+                "Unit": "wt%",
+                "Original_Values": "3.24 wt%"
+              },
+              {
+                "Element": "Ti",
+                "Value": 0.99,
+                "Unit": "wt%",
+                "Original_Values": "0.99 wt%"
+              },
+              {
+                "Element": "Al",
+                "Value": 0.54,
+                "Unit": "wt%",
+                "Original_Values": "0.54 wt%"
+              },
+              {
+                "Element": "Co",
+                "Value": 0.056,
+                "Unit": "wt%",
+                "Original_Values": "0.056 wt%"
+              },
+              {
+                "Element": "C",
+                "Value": 0.036,
+                "Unit": "wt%",
+                "Original_Values": "0.036 wt%"
+              },
+              {
+                "Element": "Si",
+                "Value": 0.038,
+                "Unit": "wt%",
+                "Original_Values": "0.038 wt%"
+              },
+              {
+                "Element": "Cu",
+                "Value": 0.013,
+                "Unit": "wt%",
+                "Original_Values": "0.013 wt%"
+              }
+            ]
+          },
+          "Note": "Nominal composition of pre-alloyed GH4169 powder (Table 1)"
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "The EP-M250 system was employed to fabricate cylindrical blocks using pre-alloyed GH4169 powder. LPBF parameters: laser power 240 W, scanning speed 980 mm/s, scanning spacing 0.1 mm, layer thickness 40 μm. The laser's scanning direction is adjusted by 45° to initiate the scanning of the subsequent powder layer. Solution annealing at 980 °C for 1 hour, cooled with argon gas. First aging at 720 °C for 8 hours, furnace cooling at 50 °C/h to 620 °C. Second aging at 620 °C for 8 hours, cooled with argon gas.",
+            "simplified": "LPBF (EP-M250) → solution annealing (980 °C/1 h/Ar cooling) → double aging (720 °C/8 h → furnace cool 50 °C/h to 620 °C → 620 °C/8 h/Ar cooling)"
+          },
+          "Stages": {
+            "Stage1_LPBF": {
+              "Method": "Laser Powder Bed Fusion (LPBF)",
+              "Key_Params": {
+                "Laser_Power_W": {
+                  "Value": 240,
+                  "Unit": "W",
+                  "Original_Values": "240 W"
+                },
+                "Scanning_Speed_mm_s": {
+                  "Value": 980,
+                  "Unit": "mm/s",
+                  "Original_Values": "980 mm/s"
+                },
+                "Scan_Spacing_mm": {
+                  "Value": 0.1,
+                  "Unit": "mm",
+                  "Original_Values": "0.1 mm"
+                },
+                "Layer_Thickness_mm": {
+                  "Value": 0.04,
+                  "Unit": "mm",
+                  "Original_Values": "40 μm"
+                },
+                "Scanning_Direction_Deg": {
+                  "Value": 90,
+                  "Unit": "°",
+                  "Original_Values": "90°"
+                },
+                "Layer_to_Layer_Scan_Rotation_Deg": {
+                  "Value": 45,
+                  "Unit": "°",
+                  "Original_Values": "45°"
+                },
+                "Laser_Profile": "Linear",
+                "Volumetric_Energy_Density": {
+                  "Value": 61.22,
+                  "Unit": "J/mm³",
+                  "Original_Values": "approximately 61.22 J/mm³",
+                  "Note": "Approximate value as stated in text"
+                },
+                "Specimen_Geometry": "Cylindrical blocks, 11 cm height × 1.5 cm diameter"
+              },
+              "Data_Source": "table"
+            },
+            "Stage2_Solution_Annealing": {
+              "Method": "Solution annealing",
+              "Key_Params": {
+                "Temperature": {
+                  "Value": 1253.15,
+                  "Unit": "K",
+                  "Original_Values": "980 °C"
+                },
+                "Holding_Time": {
+                  "Value": 1,
+                  "Unit": "h",
+                  "Original_Values": "1 hour"
+                },
+                "Cooling_Medium": "Argon gas"
+              },
+              "Data_Source": "text"
+            },
+            "Stage3_First_Aging": {
+              "Method": "First thermal aging",
+              "Key_Params": {
+                "Temperature": {
+                  "Value": 993.15,
+                  "Unit": "K",
+                  "Original_Values": "720 °C"
+                },
+                "Holding_Time": {
+                  "Value": 8,
+                  "Unit": "h",
+                  "Original_Values": "8 hours"
+                },
+                "Cooling_Method": "Furnace cooling at 50 °C/h to 620 °C",
+                "Cooling_Rate": {
+                  "Value": 50,
+                  "Unit": "°C/h",
+                  "Original_Values": "50 °C/h"
+                }
+              },
+              "Data_Source": "text"
+            },
+            "Stage4_Second_Aging": {
+              "Method": "Second thermal aging",
+              "Key_Params": {
+                "Temperature": {
+                  "Value": 893.15,
+                  "Unit": "K",
+                  "Original_Values": "620 °C"
+                },
+                "Holding_Time": {
+                  "Value": 8,
+                  "Unit": "h",
+                  "Original_Values": "8 hours"
+                },
+                "Cooling_Medium": "Argon gas"
+              },
+              "Data_Source": "text"
+            }
+          },
+          "Equipment": [
+            {
+              "Name": "EP-M250",
+              "Category": "Preparation",
+              "Note": "LPBF system"
+            },
+            {
+              "Name": "diondo d2 CT system",
+              "Category": "Characterization",
+              "Note": "Micro-nano CT for 3D defect imaging, at Shanghai ND Inspection & Control Solution Co., Ltd"
+            },
+            {
+              "Name": "Zeiss GeminiSEM 300",
+              "Category": "Characterization",
+              "Note": "EBSD analysis, 0.5 μm step size, 20 kV"
+            },
+            {
+              "Name": "Thermofisher Talos F200X",
+              "Category": "Characterization",
+              "Note": "TEM, SAED, EDS, DPC imaging"
+            },
+            {
+              "Name": "FIB/SEM dual-beam system",
+              "Category": "Characterization",
+              "Note": "Sample preparation via focused ion beam"
+            },
+            {
+              "Name": "SEM",
+              "Category": "Characterization",
+              "Note": "Fractography at various magnifications"
+            },
+            {
+              "Name": "20 kHz ultrasonic fatigue tester",
+              "Category": "Testing",
+              "Note": "Fatigue testing, R = -1, tensile-compression cyclic loading"
+            },
+            {
+              "Name": "Tensile test machine (unspecified)",
+              "Category": "Testing",
+              "Note": "Quasi-static tension test, strain rate 2.5×10⁻⁴"
+            },
+            {
+              "Name": "HKL Channel5",
+              "Category": "Software",
+              "Note": "EBSD data post-processing, GND density calculation"
+            },
+            {
+              "Name": "DigitalMicrograph",
+              "Category": "Software",
+              "Note": "TEM data post-processing"
+            },
+            {
+              "Name": "Python",
+              "Category": "Software",
+              "Note": "Schmid factor calculation for 12 slip systems"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Cellular and lamellar substructures with strengthening γ' and γ'' precipitates in the grain, δ phase and carbide at the grain boundary. XRD peaks show overlapping γ/γ'/γ''. IPF maps show weak texture. GB maps show LAGBs 64.4% (x-y plane), 67.6% (y-z plane). Average GND density 0.55×10¹⁴/m².",
+            "simplified": "γ matrix with γ', γ'', δ, MC carbide, and σ phase precipitates. Cellular and lamellar substructures. Weak texture. LAGB-dominant grain boundaries."
+          },
+          "Main_Phase": {
+            "Phase_Name": "γ matrix",
+            "Crystal_Structure": "FCC"
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "γ'",
+              "Crystal_Structure": "L1₂ (FCC)",
+              "Formula": "Ni₃(Al, Ti)",
+              "Morphology": "Spherical, globular, blocky, or cuboidal",
+              "Location": "Within substructures"
+            },
+            {
+              "Phase_Name": "γ''",
+              "Crystal_Structure": "D0₂₂ (BCT)",
+              "Formula": "Ni₃Nb",
+              "Morphology": "Disc or plate shape",
+              "Location": "Within substructures, needle-like inside substructures"
+            },
+            {
+              "Phase_Name": "δ",
+              "Crystal_Structure": "D0a (Orthorhombic)",
+              "Formula": "Ni₃Nb",
+              "Morphology": "Needle or plate shape",
+              "Location": "At grain boundaries and substructure boundaries"
+            },
+            {
+              "Phase_Name": "MC carbide",
+              "Crystal_Structure": "FCC",
+              "Formula": "(Nb, Ti)(C, N)",
+              "Morphology": "Globular or blocky",
+              "Location": "Near substructure boundaries, enriched in C, Nb, Ti"
+            },
+            {
+              "Phase_Name": "σ phase",
+              "Crystal_Structure": "Tetragonal",
+              "Formula": "FeCr",
+              "Morphology": "Irregular",
+              "Location": "Observed via TEM BF image (Fig. 2o)"
+            }
+          ],
+          "Local_Phase_Composition_EDS": {
+            "Source": "Table 4",
+            "Basis": "at%",
+            "Method": "EDS point scanning",
+            "Points": [
+              {
+                "Point": "A",
+                "Phase": "γ matrix",
+                "C": null,
+                "Ti": 1.02,
+                "Cr": 26.01,
+                "Fe": 22.75,
+                "Ni": 49.55,
+                "Nb": 0.64,
+                "Note": "C not detected (marked as \\)"
+              },
+              {
+                "Point": "B",
+                "Phase": "δ",
+                "C": null,
+                "Ti": 3.63,
+                "Cr": 1.95,
+                "Fe": 2.85,
+                "Ni": 82.65,
+                "Nb": 8.9,
+                "Note": "C not detected"
+              },
+              {
+                "Point": "C",
+                "Phase": "Carbide",
+                "C": 39.75,
+                "Ti": 17.32,
+                "Cr": 6.49,
+                "Fe": 4.3,
+                "Ni": 17.88,
+                "Nb": 14.22
+              },
+              {
+                "Point": "D",
+                "Phase": "σ phase",
+                "C": null,
+                "Ti": 0.62,
+                "Cr": 89.22,
+                "Fe": 6.49,
+                "Ni": 3.31,
+                "Nb": 0.34,
+                "Note": "C not detected"
+              }
+            ]
+          },
+          "Grain_Size": [
+            {
+              "Plane": "x-y plane (longitudinal section, perpendicular to BD)",
+              "Average_Diameter": {
+                "Value": 17.64,
+                "Unit": "μm",
+                "Size_Type": "diameter",
+                "Data_Source": "text"
+              },
+              "Note": "From EBSD IPF map (Fig. 2d)"
+            },
+            {
+              "Plane": "y-z plane (transverse section, parallel to BD)",
+              "Average_Diameter": {
+                "Value": 19.36,
+                "Unit": "μm",
+                "Size_Type": "diameter",
+                "Data_Source": "text"
+              },
+              "Note": "From EBSD IPF map (Fig. 2g)"
+            }
+          ],
+          "Grain_Boundary_Distribution": [
+            {
+              "Plane": "x-y plane",
+              "LAGB_Fraction_2_15_deg": {
+                "Value": 64.4,
+                "Unit": "%",
+                "Original_Values": "64.4%"
+              },
+              "HAGB_Fraction_gt15_deg": {
+                "Value": 35.6,
+                "Unit": "%",
+                "Original_Values": "35.6%"
+              },
+              "Data_Source": "text"
+            },
+            {
+              "Plane": "y-z plane",
+              "LAGB_Fraction_2_15_deg": {
+                "Value": 67.6,
+                "Unit": "%",
+                "Original_Values": "67.6%"
+              },
+              "HAGB_Fraction_gt15_deg": {
+                "Value": 32.4,
+                "Unit": "%",
+                "Original_Values": "32.4%"
+              },
+              "Data_Source": "text"
+            }
+          ],
+          "Texture_or_Orientation": {
+            "Description": "Weak texture as shown by pole figures",
+            "Data_Source": "text"
+          },
+          "Porosity": {
+            "Value": 0.0017,
+            "Unit": "%",
+            "Original_Values": "0.0017%",
+            "Method": "CT (diondo d2)",
+            "Defect_Type": "Gas pores (no obvious LOFs)",
+            "Data_Source": "text"
+          },
+          "Advanced_Quantitative_Features": {
+            "Average_GND_Density": {
+              "Value": 55000000000000.0,
+              "Unit": "m⁻²",
+              "Original_Values": "0.55×10¹⁴/m²",
+              "Method": "HKL Channel5 software",
+              "Planes": "x-y and y-z planes",
+              "Data_Source": "text"
+            },
+            "Orientation_Relationship_gamma_double_prime_gamma": "(110)[110]γ''//(111)[110]γ",
+            "Orientation_Relationship_delta_gamma": "(010)[102]δ//(111)[110]γ"
+          }
+        },
+        "Properties": [
+          {
+            "Property_Category": "Tensile",
+            "Elastic_Modulus": {
+              "Value": 197,
+              "Unit": "GPa",
+              "Original_Values": "197 GPa",
+              "Data_Source": "text"
+            },
+            "Yield_Strength": {
+              "Value": 1266,
+              "Unit": "MPa",
+              "Original_Values": "1266 MPa",
+              "Note": "At 0.2% plastic strain",
+              "Data_Source": "text"
+            },
+            "Ultimate_Tensile_Strength": {
+              "Value": 1414.5,
+              "Unit": "MPa",
+              "Original_Values": "1414.5 MPa",
+              "Data_Source": "text"
+            },
+            "Elongation_Uniform": {
+              "Value": 16.4,
+              "Unit": "%",
+              "Original_Values": "16.4%",
+              "Data_Source": "text"
+            },
+            "Test_Condition": {
+              "Test_Temperature_K": {
+                "Value": 293.15,
+                "Unit": "K",
+                "Original_Values": "room temperature"
+              },
+              "Strain_Rate_s1": {
+                "Value": 0.00025,
+                "Unit": "s⁻¹",
+                "Original_Values": "2.5×10⁻⁴"
+              },
+              "Specimen_Type": "Standard tensile specimen",
+              "Gauge_Diameter": {
+                "Value": 5,
+                "Unit": "mm"
+              },
+              "Gauge_Length": {
+                "Value": 27,
+                "Unit": "mm"
+              },
+              "Number_of_Tests": 2,
+              "Note": "Two tensile tests performed with remarkably high repeatability"
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Category": "Hardness",
+            "Hardness_Vickers": {
+              "Value": 452,
+              "Unit": "kgf·mm⁻²",
+              "Original_Values": "452 kgf·mm⁻²",
+              "Data_Source": "text"
+            },
+            "Note": "Used in fatigue limit calculation via Murakami model",
+            "Data_Source": "text"
+          },
+          {
+            "Property_Category": "Fatigue",
+            "Test_Type": "Ultrasonic fatigue test",
+            "Test_Condition": {
+              "Test_Temperature_K": {
+                "Value": 293.15,
+                "Unit": "K",
+                "Original_Values": "room temperature"
+              },
+              "Frequency": {
+                "Value": 20000,
+                "Unit": "Hz",
+                "Original_Values": "20 kHz"
+              },
+              "Stress_Ratio_R": -1,
+              "Loading_Mode": "Tensile-compression cyclic loading",
+              "Specimen_Type": "Hourglass shaped",
+              "Cooling": "Dry compressed cold air",
+              "Runout_Criterion": "1×10⁹ cycles",
+              "Auto_Stop_Condition": "Frequency drops below 19.5 kHz"
+            },
+            "S_N_Data": {
+              "Source": "Table 5",
+              "Note": "11 failure specimens with crack initiation location, fatigue life, stress amplitude, calculated fatigue limit, and defect size",
+              "Data": [
+                {
+                  "Specimen_Number": 1,
+                  "Crack_Initiation_Location": "Surface",
+                  "Fatigue_Life_Cycles": {
+                    "Value": 1680000.0,
+                    "Original_Values": "1.68×10⁶"
+                  },
+                  "Experimental_Stress_Amplitude_MPa": {
+                    "Value": 536.78,
+                    "Original_Values": "536.78 MPa"
+                  },
+                  "Calculated_Fatigue_Limit_MPa": {
+                    "Value": 492.32,
+                    "Original_Values": "492.32 MPa"
+                  },
+                  "Defect_Size_um2": {
+                    "Value": 442.38,
+                    "Unit": "μm²",
+                    "Original_Values": "442.38 μm²"
+                  }
+                },
+                {
+                  "Specimen_Number": 3,
+                  "Crack_Initiation_Location": "Surface",
+                  "Fatigue_Life_Cycles": {
+                    "Value": 3280000.0,
+                    "Original_Values": "3.28×10⁶"
+                  },
+                  "Experimental_Stress_Amplitude_MPa": {
+                    "Value": 539.6,
+                    "Original_Values": "539.60 MPa"
+                  },
+                  "Calculated_Fatigue_Limit_MPa": {
+                    "Value": 486.59,
+                    "Original_Values": "486.59 MPa"
+                  },
+                  "Defect_Size_um2": {
+                    "Value": 509.18,
+                    "Unit": "μm²",
+                    "Original_Values": "509.18 μm²"
+                  }
+                },
+                {
+                  "Specimen_Number": 4,
+                  "Crack_Initiation_Location": "Surface",
+                  "Fatigue_Life_Cycles": {
+                    "Value": 2180000.0,
+                    "Original_Values": "2.18×10⁶"
+                  },
+                  "Experimental_Stress_Amplitude_MPa": {
+                    "Value": 533.95,
+                    "Original_Values": "533.95 MPa"
+                  },
+                  "Calculated_Fatigue_Limit_MPa": {
+                    "Value": 504.6,
+                    "Original_Values": "504.60 MPa"
+                  },
+                  "Defect_Size_um2": {
+                    "Value": 329.19,
+                    "Unit": "μm²",
+                    "Original_Values": "329.19 μm²"
+                  }
+                },
+                {
+                  "Specimen_Number": 6,
+                  "Crack_Initiation_Location": "Surface",
+                  "Fatigue_Life_Cycles": {
+                    "Value": 3940000.0,
+                    "Original_Values": "3.94×10⁶"
+                  },
+                  "Experimental_Stress_Amplitude_MPa": {
+                    "Value": 550.9,
+                    "Original_Values": "550.90 MPa"
+                  },
+                  "Calculated_Fatigue_Limit_MPa": {
+                    "Value": 493.21,
+                    "Original_Values": "493.21 MPa"
+                  },
+                  "Defect_Size_um2": {
+                    "Value": 432.91,
+                    "Unit": "μm²",
+                    "Original_Values": "432.91 μm²"
+                  }
+                },
+                {
+                  "Specimen_Number": 7,
+                  "Crack_Initiation_Location": "Surface",
+                  "Fatigue_Life_Cycles": {
+                    "Value": 3250000.0,
+                    "Original_Values": "3.25×10⁶"
+                  },
+                  "Experimental_Stress_Amplitude_MPa": {
+                    "Value": 570.69,
+                    "Original_Values": "570.69 MPa"
+                  },
+                  "Calculated_Fatigue_Limit_MPa": {
+                    "Value": 490.48,
+                    "Original_Values": "490.48 MPa"
+                  },
+                  "Defect_Size_um2": {
+                    "Value": 462.75,
+                    "Unit": "μm²",
+                    "Original_Values": "462.75 μm²"
+                  }
+                },
+                {
+                  "Specimen_Number": 8,
+                  "Crack_Initiation_Location": "Surface",
+                  "Fatigue_Life_Cycles": {
+                    "Value": 2890000.0,
+                    "Original_Values": "2.89×10⁶"
+                  },
+                  "Experimental_Stress_Amplitude_MPa": {
+                    "Value": 590.45,
+                    "Original_Values": "590.45 MPa"
+                  },
+                  "Calculated_Fatigue_Limit_MPa": {
+                    "Value": 513.44,
+                    "Original_Values": "513.44 MPa"
+                  },
+                  "Defect_Size_um2": {
+                    "Value": 267.24,
+                    "Unit": "μm²",
+                    "Original_Values": "267.24 μm²"
+                  }
+                },
+                {
+                  "Specimen_Number": 2,
+                  "Crack_Initiation_Location": "Interior",
+                  "Fatigue_Life_Cycles": {
+                    "Value": 45000000.0,
+                    "Original_Values": "4.50×10⁷"
+                  },
+                  "Experimental_Stress_Amplitude_MPa": {
+                    "Value": 536.78,
+                    "Original_Values": "536.78 MPa"
+                  },
+                  "Calculated_Fatigue_Limit_MPa": {
+                    "Value": 499.59,
+                    "Original_Values": "499.59 MPa"
+                  },
+                  "Defect_Size_um2": {
+                    "Value": 1053.98,
+                    "Unit": "μm²",
+                    "Original_Values": "1053.98 μm²"
+                  }
+                },
+                {
+                  "Specimen_Number": 5,
+                  "Crack_Initiation_Location": "Interior",
+                  "Fatigue_Life_Cycles": {
+                    "Value": 14800000.0,
+                    "Original_Values": "1.48×10⁷"
+                  },
+                  "Experimental_Stress_Amplitude_MPa": {
+                    "Value": 528.3,
+                    "Original_Values": "528.30 MPa"
+                  },
+                  "Calculated_Fatigue_Limit_MPa": {
+                    "Value": 521.16,
+                    "Original_Values": "521.16 MPa"
+                  },
+                  "Defect_Size_um2": {
+                    "Value": 634.81,
+                    "Unit": "μm²",
+                    "Original_Values": "634.81 μm²"
+                  }
+                },
+                {
+                  "Specimen_Number": 9,
+                  "Crack_Initiation_Location": "Interior",
+                  "Fatigue_Life_Cycles": {
+                    "Value": 9630000.0,
+                    "Original_Values": "9.63×10⁶"
+                  },
+                  "Experimental_Stress_Amplitude_MPa": {
+                    "Value": 519.53,
+                    "Original_Values": "519.53 MPa"
+                  },
+                  "Calculated_Fatigue_Limit_MPa": {
+                    "Value": 499.59,
+                    "Original_Values": "499.59 MPa"
+                  },
+                  "Defect_Size_um2": {
+                    "Value": 1054.18,
+                    "Unit": "μm²",
+                    "Original_Values": "1054.18 μm²"
+                  }
+                },
+                {
+                  "Specimen_Number": 10,
+                  "Crack_Initiation_Location": "Interior",
+                  "Fatigue_Life_Cycles": {
+                    "Value": 173000000.0,
+                    "Original_Values": "1.73×10⁸"
+                  },
+                  "Experimental_Stress_Amplitude_MPa": {
+                    "Value": 508.53,
+                    "Original_Values": "508.53 MPa"
+                  },
+                  "Calculated_Fatigue_Limit_MPa": {
+                    "Value": 485.38,
+                    "Original_Values": "485.38 MPa"
+                  },
+                  "Defect_Size_um2": {
+                    "Value": 1490.17,
+                    "Unit": "μm²",
+                    "Original_Values": "1490.17 μm²"
+                  }
+                },
+                {
+                  "Specimen_Number": 11,
+                  "Crack_Initiation_Location": "Interior",
+                  "Fatigue_Life_Cycles": {
+                    "Value": 13900000.0,
+                    "Original_Values": "1.39×10⁷"
+                  },
+                  "Experimental_Stress_Amplitude_MPa": {
+                    "Value": 502.88,
+                    "Original_Values": "502.88 MPa"
+                  },
+                  "Calculated_Fatigue_Limit_MPa": {
+                    "Value": 502.23,
+                    "Original_Values": "502.23 MPa"
+                  },
+                  "Defect_Size_um2": {
+                    "Value": 989.61,
+                    "Unit": "μm²",
+                    "Original_Values": "989.61 μm²"
+                  }
+                }
+              ]
+            },
+            "Competitive_Failure_Mode": {
+              "Description": "Surface flaw initiation in HCF regime, internal pore initiation in VHCF regime",
+              "Transition_Stress_Amplitude_MPa": {
+                "Value": 518.79,
+                "Original_Values": "approximately 518.79 MPa",
+                "Note": "Approximate value from text",
+                "Data_Source": "text"
+              }
+            },
+            "Data_Source": "table"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "Item_2",
+      "Sample_ID": "FIB_Sample_A_Specimen_II",
+      "Role": "Demonstration",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing",
+        "Laser_Assisted"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 3.4",
+        "Fig. 6",
+        "Fig. 7",
+        "Fig. 8"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Ni-based superalloy",
+          "Material_Name_Raw": "GH4169",
+          "Note": "Same base material as Item_1; FIB-sample-A taken from fatigue initiation area of Specimen II (σa=537 MPa, Nf=4.5×10⁷)"
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "FIB-sample-A prepared from Specimen II failed by single pore induced crack initiation (σa=537 MPa, Nf=4.5×10⁷). FIB sampling position shown in Fig. 5f. Characterized by TKD, TEM, and EDS.",
+            "simplified": "FIB sample from FIA of VHCF specimen (single pore initiation)"
+          },
+          "Equipment": [
+            {
+              "Name": "FIB/SEM dual-beam system",
+              "Category": "Characterization",
+              "Note": "Sample preparation"
+            },
+            {
+              "Name": "Thermofisher Talos F200X",
+              "Category": "Characterization",
+              "Note": "TEM, SAED, EDS"
+            },
+            {
+              "Name": "TKD system",
+              "Category": "Characterization",
+              "Note": "Crystallographic orientation mapping, scan step size 15 nm"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "A fine-grained layer is discernible at the fracture surface. Near the pore, numerous lamellar grains arise from slipping; cellular fine grains are more prevalent in regions distanced from the pore. Average equivalent diameter of fine grains is 120 nm. HAGBs account for 63.2%, LAGBs 36.8%. TBs account for a large proportion. GND concentrated at LAGB sites.",
+            "simplified": "Fine-grained layer at fracture surface; lamellar grains near pore, cellular fine grains away from pore. Precipitate dissolution and elemental homogenization in fine grains."
+          },
+          "Main_Phase": {
+            "Phase_Name": "γ matrix",
+            "Crystal_Structure": "FCC"
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "γ'",
+              "Crystal_Structure": "L1₂ (FCC)",
+              "Formula": "Ni₃(Al, Ti)",
+              "Note": "Dissolved in fine grain area (confirmed by SAED and EDS)"
+            },
+            {
+              "Phase_Name": "γ''",
+              "Crystal_Structure": "D0₂₂ (BCT)",
+              "Formula": "Ni₃Nb",
+              "Note": "Dissolved in fine grain area (confirmed by SAED and EDS)"
+            },
+            {
+              "Phase_Name": "MC carbide",
+              "Crystal_Structure": "FCC",
+              "Formula": "(Nb, Ti)(C, N)",
+              "Note": "Remains incompletely dissolved in fine grain area, attributed to inherent stability"
+            }
+          ],
+          "Fine_Grain_Layer": {
+            "Average_Equivalent_Diameter": {
+              "Value": 120,
+              "Unit": "nm",
+              "Size_Type": "diameter",
+              "Data_Source": "text"
+            },
+            "Location": "At fracture surface near pore",
+            "Fine_Grain_Characteristics": "Clean interior with no precipitates (SAED shows single crystal pattern); elemental homogenization confirmed by EDS"
+          },
+          "Grain_Boundary_Distribution": {
+            "HAGB_Fraction": {
+              "Value": 63.2,
+              "Unit": "%",
+              "Original_Values": "63.2%"
+            },
+            "LAGB_Fraction": {
+              "Value": 36.8,
+              "Unit": "%",
+              "Original_Values": "36.8%"
+            },
+            "Note": "Twin boundaries (TBs) account for a large proportion",
+            "Data_Source": "text"
+          },
+          "Advanced_Quantitative_Features": {
+            "Average_GND_Density": {
+              "Value": 1520000000000000.0,
+              "Unit": "m⁻²",
+              "Original_Values": "15.2×10¹⁴/m²",
+              "Note": "Much higher than initial material (0.55×10¹⁴/m²)",
+              "Data_Source": "text"
+            },
+            "PF_Max_Intensity": {
+              "Value": 4.91,
+              "Note": "Fine grain area; relatively random orientation",
+              "Data_Source": "text"
+            },
+            "Dominant_Slip_Planes": [
+              "(111)",
+              "(1̄11)",
+              "(11̄1)"
+            ],
+            "Note": "Fine grain equivalent diameter of ~300 nm observed in DF TEM image (Fig. 7e); parallel TBs inclined at 50° to loading direction near pore"
+          },
+          "Note": "Precipitate dissolution and elemental homogenization occur prior to grain refinement. Carbide remains incompletely dissolved. Microcracks manifest at interface between fine-grain layer and coarse-grain matrix."
+        }
+      }
+    },
+    {
+      "Item_ID": "Item_3",
+      "Sample_ID": "FIB_Sample_B_Specimen_III",
+      "Role": "Demonstration",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing",
+        "Laser_Assisted"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 3.5",
+        "Fig. 9",
+        "Fig. 10",
+        "Fig. 11"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Ni-based superalloy",
+          "Material_Name_Raw": "GH4169",
+          "Note": "Same base material as Item_1; FIB-sample-B taken from interface between porosity zone and facets of Specimen III (σa=508.5 MPa, Nf=1.73×10⁸)"
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "FIB-sample-B taken from the interface between the porosity zone and the facets of Specimen III (pores cluster induce crack initiation, σa=508.5 MPa, Nf=1.73×10⁸). Left side near porosity zone, right side near facets. Characterized by TKD, TEM, and EDS.",
+            "simplified": "FIB sample from FIA of VHCF specimen (pores cluster initiation)"
+          },
+          "Equipment": [
+            {
+              "Name": "FIB/SEM dual-beam system",
+              "Category": "Characterization",
+              "Note": "Sample preparation"
+            },
+            {
+              "Name": "Thermofisher Talos F200X",
+              "Category": "Characterization",
+              "Note": "TEM, SAED, EDS"
+            },
+            {
+              "Name": "TKD system",
+              "Category": "Characterization",
+              "Note": "Crystallographic orientation mapping, scan step size 15 nm"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Left side close to pores has formation of lamellar substructure, right side close to facets remains faceted, and there is obvious grain refinement with an average diameter of 110 nm in the middle. HAGBs concentrated in fine-grained region and boundary between lamellar substructure and matrix. LAGBs concentrated inside lamellar substructure and in matrix close to fracture surface.",
+            "simplified": "Fine-grained layer (avg 110 nm) between pore-proximal lamellar substructure and facet-proximal region. Precipitate dissolution in fine grains and lamellar substructure."
+          },
+          "Main_Phase": {
+            "Phase_Name": "γ matrix",
+            "Crystal_Structure": "FCC"
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "δ",
+              "Crystal_Structure": "D0a (Orthorhombic)",
+              "Formula": "Ni₃Nb",
+              "Location": "On grain boundary between two grains (Fig. 10a)"
+            },
+            {
+              "Phase_Name": "γ'",
+              "Crystal_Structure": "L1₂ (FCC)",
+              "Formula": "Ni₃(Al, Ti)",
+              "Note": "Dissolved in fine grain area and lamellar substructure"
+            },
+            {
+              "Phase_Name": "γ''",
+              "Crystal_Structure": "D0₂₂ (BCT)",
+              "Formula": "Ni₃Nb",
+              "Note": "Dissolved in fine grain area and lamellar substructure"
+            }
+          ],
+          "Fine_Grain_Layer": {
+            "Average_Diameter": {
+              "Value": 110,
+              "Unit": "nm",
+              "Size_Type": "diameter",
+              "Data_Source": "text"
+            },
+            "Location": "Middle region between pores and facets",
+            "Fine_Grain_Characteristics": "SAED shows single crystal pattern with no precipitates; elemental homogenization confirmed by EDS; equivalent diameter of single fine grain ~200 nm from DF TEM image (Fig. 10f)"
+          },
+          "Lamellar_Substructure": {
+            "Location": "Near pores zone",
+            "Note": "SAED confirms matrix γ phase; precipitates dissolved; elements well distributed; lamellar substructure produced by slip plane (111)"
+          },
+          "Facet_Region": {
+            "Location": "Near facets",
+            "Note": "TEM, SAED and EDS show precipitates present in addition to matrix γ phase; no grain refinement outside FIA"
+          },
+          "Advanced_Quantitative_Features": {
+            "Average_GND_Density": {
+              "Value": 2370000000000000.0,
+              "Unit": "m⁻²",
+              "Original_Values": "23.7×10¹⁴/m²",
+              "Note": "Much higher than initial material (0.55×10¹⁴/m²)",
+              "Data_Source": "text"
+            },
+            "PF_Max_Intensity": {
+              "Value": 10.73,
+              "Note": "Fine grain area; slightly higher than initial material; possibly not statistically significant due to fewer fine grains",
+              "Data_Source": "text"
+            },
+            "Dominant_Slip_Plane": "(111)"
+          },
+          "Note": "Limited presence of fine grains at boundary of porous FIA compared to Specimen II. Fine grains primarily concentrated at grain boundaries. No grain refinement on facets outside FIA."
+        }
+      }
+    }
+  ]
+}

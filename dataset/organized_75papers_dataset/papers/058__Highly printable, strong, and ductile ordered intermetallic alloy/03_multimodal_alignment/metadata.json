@@ -1,0 +1,7 @@
+{
+  "paper_dir": "4-Highly_printable_s",
+  "figures": 4,
+  "direct_pairs": 4,
+  "topk_pairs": 20,
+  "sentences": 18
+}

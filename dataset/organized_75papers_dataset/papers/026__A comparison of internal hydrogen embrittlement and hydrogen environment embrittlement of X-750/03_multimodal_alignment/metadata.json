@@ -1,0 +1,7 @@
+{
+  "paper_dir": "A_comparison_of_inte",
+  "figures": 10,
+  "direct_pairs": 10,
+  "topk_pairs": 50,
+  "sentences": 47
+}

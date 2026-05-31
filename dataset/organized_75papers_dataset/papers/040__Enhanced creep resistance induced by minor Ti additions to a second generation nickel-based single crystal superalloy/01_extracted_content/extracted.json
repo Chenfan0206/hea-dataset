@@ -1,0 +1,1069 @@
+{
+  "Paper_Metadata": {
+    "Paper_Title": "Enhanced creep resistance induced by minor Ti additions to a second generation nickel-based single crystal superalloy",
+    "DOI": "10.1016/j.actamat.2022.117938"
+  },
+  "Paper_Routing": {
+    "base_material": "Metals",
+    "application": "Structural",
+    "research_paradigm": "Experimental",
+    "Supplements_Loaded": [
+      "directions/base/Metals.txt",
+      "directions/application/Structural.txt",
+      "directions/paradigm/Experimental.txt"
+    ],
+    "Patch_Tags": [],
+    "Needs_Mixed_Routing_Check": false,
+    "Mixed_Signals": []
+  },
+  "items": [
+    {
+      "Item_ID": "T0",
+      "Sample_ID": "T0",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 1: nominal and measured compositions of T0",
+        "Section 2 Experimental: processing and creep test conditions",
+        "Table 2: microstructure parameters of T0",
+        "Table 3: APT partitioning results of T0",
+        "Table 4: lattice parameters and misfit of T0",
+        "Section 3.3: creep properties at 1030°C/230 MPa and other conditions"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Nickel-based single crystal superalloy",
+          "Material_Name_Raw": "T0",
+          "Nominal_Composition": {
+            "Ni": "Balance",
+            "Ti": 0.0,
+            "Co": 8.0,
+            "Cr": 6.0,
+            "Ta": 6.0,
+            "W": 6.5,
+            "Al": 5.6,
+            "Re": 3.0,
+            "Mo": 2.5,
+            "Hf": 0.18,
+            "C": 0.02,
+            "B": 0.01,
+            "Unit": "wt%",
+            "Note": "Ni balance; normalized ≈ 62.19 wt% (Data_Nature: Computed)"
+          },
+          "Measured_Composition": {
+            "Ni": "Balance",
+            "Ti": 0.0,
+            "Co": 8.1,
+            "Cr": 5.8,
+            "Ta": 6.06,
+            "W": 6.46,
+            "Al": 5.65,
+            "Re": 3.01,
+            "Mo": 2.56,
+            "Hf": 0.19,
+            "C": 0.02,
+            "B": 0.01,
+            "Unit": "wt%",
+            "Note": "Ni balance; normalized ≈ 62.14 wt% (Data_Nature: Computed)"
+          },
+          "Note": "Nominal and measured compositions from Table 1. Measured compositions correspond well with nominal levels, maximum deviation ±0.2 wt%."
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "The as-cast cylindrical SX bars 160 mm in length and 14 mm in diameter were prepared by a high-rate solidification (HRS) process using spiral grain selectors. The withdrawal rate of directional solidification was 3 mm/min. High temperature solution treatment was performed at 1290 °C for 4 h, followed by air cooling. Then, a two-stage aging treatment: first at 1120 °C for 4 h followed by air cooling, second at 900 °C for 16 h followed by air cooling. Tensile creep specimens with gage length 25 mm and diameter 5 mm.",
+            "simplified": "HRS directional solidification → solution treatment 1290°C/4h/AC → two-stage aging: 1120°C/4h/AC + 900°C/16h/AC → machined to creep specimens"
+          },
+          "Process_Category": "Casting + Heat Treatment",
+          "Equipment": [
+            {
+              "Name": "HRS directional solidification furnace with spiral grain selector",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Laue back-reflection X-ray technique",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "ZEISS SUPRA 55 FE-SEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "FEI Talos F200X TEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "FEI Helios nanolab 600i FIB",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "CAMECA LEAP-5000XR APT",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Shanghai Synchrotron Radiation Facility BL14B1 (synchrotron XRD)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "China Spallation Neutron Source GPPD (neutron diffraction)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Twin-jet polisher",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Image-Pro Plus 6.0",
+              "Category": "Software"
+            },
+            {
+              "Name": "PeakFit software",
+              "Category": "Software"
+            },
+            {
+              "Name": "CAMECA IVAS 3.8.0",
+              "Category": "Software"
+            }
+          ],
+          "Key_Params": {
+            "Stage1_Directional_Solidification": {
+              "Bar_Dimensions": "160 mm length × 14 mm diameter",
+              "Withdrawal_Rate": "3 mm/min",
+              "Process": "High-rate solidification (HRS) with spiral grain selectors"
+            },
+            "Stage2_Solution_Treatment": {
+              "Temperature": 1563.15,
+              "Temperature_Original": "1290 °C",
+              "Time_h": 4,
+              "Cooling": "air cooling"
+            },
+            "Stage3_Aging_1": {
+              "Temperature": 1393.15,
+              "Temperature_Original": "1120 °C",
+              "Time_h": 4,
+              "Cooling": "air cooling"
+            },
+            "Stage4_Aging_2": {
+              "Temperature": 1173.15,
+              "Temperature_Original": "900 °C",
+              "Time_h": 16,
+              "Cooling": "air cooling"
+            }
+          },
+          "Specimen_Preparation": {
+            "Creep_Specimen": {
+              "Type": "tensile creep specimen",
+              "Gage_Length_mm": 25,
+              "Gage_Diameter_mm": 5
+            },
+            "Crystallographic_Orientation": "within 6° away from [001]"
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Typical microstructure comprising narrow γ matrix channels and fine cubical γ′ precipitates with a cube-cube orientation relationship, with interfaces parallel to {100} planes. Primary dendrite arm spacing 345 μm.",
+            "simplified": "γ matrix (FCC) + cubical γ′ precipitates (L1₂) in cube-cube orientation, {100} interface planes. Single crystal, near [001] orientation."
+          },
+          "Main_Phase": {
+            "Phase_Name": "γ matrix",
+            "Crystal_Structure": "FCC",
+            "Morphology": "narrow channels between cubical γ′ precipitates"
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "γ′ precipitates",
+              "Crystal_Structure": "L1₂",
+              "Morphology": "fine cubical",
+              "Orientation_Relationship": "cube-cube with γ matrix, interfaces parallel to {100} planes"
+            }
+          ],
+          "Texture_or_Orientation": {
+            "Orientation": "near [001]",
+            "Misorientation": "within 6° from [001]"
+          },
+          "Advanced_Quantitative_Features": {
+            "Primary_Dendrite_Arm_Spacing": {
+              "Value": 345,
+              "Unit": "μm",
+              "Size_Type": "undefined",
+              "Data_Source": "text"
+            },
+            "Initial_State_Dendrite_Core": {
+              "γ′_Volume_Fraction": {
+                "Value": 68.4,
+                "Value_StdDev": 1.1,
+                "Unit": "%",
+                "Data_Source": "table",
+                "Location": "dendrite core"
+              },
+              "γ′_Size": {
+                "Value": 332,
+                "Value_StdDev": 56,
+                "Unit": "nm",
+                "Size_Type": "undefined",
+                "Data_Source": "table",
+                "Location": "dendrite core"
+              },
+              "γ_Channel_Width": {
+                "Value": 50.2,
+                "Value_StdDev": 16.5,
+                "Unit": "nm",
+                "Data_Source": "table",
+                "Location": "dendrite core"
+              }
+            },
+            "Initial_State_Interdendritic": {
+              "γ′_Volume_Fraction": {
+                "Value": 72.6,
+                "Value_StdDev": 1.2,
+                "Unit": "%",
+                "Data_Source": "table",
+                "Location": "interdendritic region"
+              },
+              "γ′_Size": {
+                "Value": 344,
+                "Value_StdDev": 64,
+                "Unit": "nm",
+                "Size_Type": "undefined",
+                "Data_Source": "table",
+                "Location": "interdendritic region"
+              },
+              "γ_Channel_Width": {
+                "Value": 51.4,
+                "Value_StdDev": 18.8,
+                "Unit": "nm",
+                "Data_Source": "table",
+                "Location": "interdendritic region"
+              }
+            },
+            "Aging_1030C_0.5h_Dendrite_Core": {
+              "γ′_Volume_Fraction": {
+                "Value": 65.5,
+                "Value_StdDev": 0.4,
+                "Unit": "%",
+                "Data_Source": "table",
+                "Location": "dendrite core"
+              },
+              "γ′_Size": {
+                "Value": 357,
+                "Value_StdDev": 66,
+                "Unit": "nm",
+                "Size_Type": "undefined",
+                "Data_Source": "table",
+                "Location": "dendrite core"
+              },
+              "γ_Channel_Width": {
+                "Value": 55.1,
+                "Value_StdDev": 27.9,
+                "Unit": "nm",
+                "Data_Source": "table",
+                "Location": "dendrite core"
+              }
+            },
+            "Aging_1030C_0.5h_Interdendritic": {
+              "γ′_Volume_Fraction": {
+                "Value": 67.2,
+                "Value_StdDev": 0.4,
+                "Unit": "%",
+                "Data_Source": "table",
+                "Location": "interdendritic region"
+              },
+              "γ′_Size": {
+                "Value": 374,
+                "Value_StdDev": 70,
+                "Unit": "nm",
+                "Size_Type": "undefined",
+                "Data_Source": "table",
+                "Location": "interdendritic region"
+              },
+              "γ_Channel_Width": {
+                "Value": 56.3,
+                "Value_StdDev": 19.1,
+                "Unit": "nm",
+                "Data_Source": "table",
+                "Location": "interdendritic region"
+              }
+            },
+            "Aging_1030C_2h_Dendrite_Core": {
+              "γ′_Volume_Fraction": {
+                "Value": 64.0,
+                "Value_StdDev": 0.8,
+                "Unit": "%",
+                "Data_Source": "table",
+                "Location": "dendrite core"
+              },
+              "γ′_Size": {
+                "Value": 372,
+                "Value_StdDev": 79,
+                "Unit": "nm",
+                "Size_Type": "undefined",
+                "Data_Source": "table",
+                "Location": "dendrite core"
+              },
+              "γ_Channel_Width": {
+                "Value": 61.0,
+                "Value_StdDev": 23.1,
+                "Unit": "nm",
+                "Data_Source": "table",
+                "Location": "dendrite core"
+              }
+            },
+            "Aging_1030C_2h_Interdendritic": {
+              "γ′_Volume_Fraction": {
+                "Value": 64.7,
+                "Value_StdDev": 0.5,
+                "Unit": "%",
+                "Data_Source": "table",
+                "Location": "interdendritic region"
+              },
+              "γ′_Size": {
+                "Value": 401,
+                "Value_StdDev": 99,
+                "Unit": "nm",
+                "Size_Type": "undefined",
+                "Data_Source": "table",
+                "Location": "interdendritic region"
+              },
+              "γ_Channel_Width": {
+                "Value": 58.7,
+                "Value_StdDev": 22.8,
+                "Unit": "nm",
+                "Data_Source": "table",
+                "Location": "interdendritic region"
+              }
+            },
+            "APT_Phase_Compositions": {
+              "Data_Source": "table",
+              "Note": "Local phase compositions from APT, at.%; not bulk composition",
+              "γ′_phase": {
+                "Co": 5.37,
+                "Cr": 1.96,
+                "Al": 16.94,
+                "Ta": 2.42,
+                "W": 2.68,
+                "Mo": 1.07,
+                "Re": 0.2,
+                "Ni": 69.23,
+                "Unit": "at.%"
+              },
+              "γ_phase": {
+                "Co": 15.62,
+                "Cr": 17.03,
+                "Al": 3.64,
+                "Ta": 0.24,
+                "W": 2.86,
+                "Mo": 3.22,
+                "Re": 3.72,
+                "Ni": 53.49,
+                "Unit": "at.%"
+              },
+              "Partitioning_Coefficients_k_γ′_over_γ": {
+                "Co": 0.344,
+                "Cr": 0.115,
+                "Al": 4.657,
+                "Ta": 9.893,
+                "W": 0.939,
+                "Mo": 0.332,
+                "Re": 0.052,
+                "Ni": 1.294
+              }
+            },
+            "Lattice_Misfit_Initial_State": {
+              "a_γ_nm": 0.3586,
+              "a_γ′_nm": 0.3579,
+              "δ_pct": -0.195,
+              "State": "initial, room temperature",
+              "Data_Source": "table",
+              "Method": "synchrotron XRD"
+            },
+            "Lattice_Misfit_1pct_Creep_Strain": {
+              "a_γ_nm": 0.3595,
+              "a_γ′_nm": 0.3583,
+              "δ_pct": -0.327,
+              "State": "1% creep strain, unconstrained",
+              "Data_Source": "table",
+              "Method": "neutron diffraction"
+            },
+            "After_Creep_1pct_Strain_Transverse": {
+              "γ′_Volume_Fraction": {
+                "Value": 44.4,
+                "Unit": "%",
+                "Data_Source": "text",
+                "Note": "interrupted at 1% strain at 1030°C/230 MPa, transverse section"
+              }
+            },
+            "Raft_Structure_After_Creep_1pct": {
+              "Rafting_Degree_Ω": 0.67,
+              "Rafted_γ_Lamella_Thickness": {
+                "Value": 0.215,
+                "Unit": "μm"
+              },
+              "Rafted_γ′_Lamella_Thickness": {
+                "Value": 0.223,
+                "Unit": "μm"
+              },
+              "Data_Source": "text",
+              "Section": "longitudinal"
+            },
+            "Dislocation_Network_After_Creep_1pct": {
+              "Mean_Dislocation_Spacing": {
+                "Value": 60.5,
+                "Unit": "nm",
+                "Data_Source": "text"
+              }
+            },
+            "Lever_Rule_γ′_Volume_Fraction": {
+              "Value": 69.7,
+              "Unit": "%",
+              "Data_Source": "text",
+              "Note": "calculated from APT compositions using lever rule"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Type": "Creep_Rupture_Time",
+            "Value": 50.1,
+            "Unit": "h",
+            "Test_Condition": {
+              "Test_Temperature_K": 1303.15,
+              "Test_Temperature_Original": "1030 °C",
+              "Applied_Stress_MPa": 230,
+              "Loading_Mode": "tensile",
+              "Orientation": "[001]"
+            },
+            "Data_Source": "text",
+            "Data_Nature": "Experimental"
+          },
+          {
+            "Property_Type": "Minimum_Creep_Strain_Rate",
+            "Value": 1.36e-07,
+            "Unit": "s⁻¹",
+            "Test_Condition": {
+              "Test_Temperature_K": 1303.15,
+              "Test_Temperature_Original": "1030 °C",
+              "Applied_Stress_MPa": 230,
+              "Loading_Mode": "tensile",
+              "Orientation": "[001]"
+            },
+            "Data_Source": "text",
+            "Data_Nature": "Experimental"
+          },
+          {
+            "Property_Type": "Time_to_1pct_Creep_Strain",
+            "Value": 14.2,
+            "Unit": "h",
+            "Test_Condition": {
+              "Test_Temperature_K": 1303.15,
+              "Test_Temperature_Original": "1030 °C",
+              "Applied_Stress_MPa": 230,
+              "Loading_Mode": "tensile",
+              "Orientation": "[001]"
+            },
+            "Data_Source": "text",
+            "Data_Nature": "Experimental"
+          },
+          {
+            "Property_Type": "Creep_Rupture_Time",
+            "Value": null,
+            "Unit": "h",
+            "Test_Condition": {
+              "Test_Temperature_K": 1323.15,
+              "Test_Temperature_Original": "1050 °C",
+              "Applied_Stress_MPa": 190,
+              "Loading_Mode": "tensile",
+              "Orientation": "[001]"
+            },
+            "Data_Source": "unknown",
+            "Data_Nature": "Experimental",
+            "Note": "creep test conducted but rupture time not reported in text; displayed in Fig S1"
+          },
+          {
+            "Property_Type": "Creep_Rupture_Time",
+            "Value": null,
+            "Unit": "h",
+            "Test_Condition": {
+              "Test_Temperature_K": 1373.15,
+              "Test_Temperature_Original": "1100 °C",
+              "Applied_Stress_MPa": 137,
+              "Loading_Mode": "tensile",
+              "Orientation": "[001]"
+            },
+            "Data_Source": "unknown",
+            "Data_Nature": "Experimental",
+            "Note": "creep test conducted but rupture time not reported in text; displayed in Fig S1"
+          },
+          {
+            "Property_Type": "Creep_Rupture_Time",
+            "Value": null,
+            "Unit": "h",
+            "Test_Condition": {
+              "Test_Temperature_K": 1373.15,
+              "Test_Temperature_Original": "1100 °C",
+              "Applied_Stress_MPa": 158,
+              "Loading_Mode": "tensile",
+              "Orientation": "[001]"
+            },
+            "Data_Source": "unknown",
+            "Data_Nature": "Experimental",
+            "Note": "creep test conducted but rupture time not reported in text; displayed in Fig S1"
+          },
+          {
+            "Property_Type": "Creep_Rupture_Time",
+            "Value": null,
+            "Unit": "h",
+            "Test_Condition": {
+              "Test_Temperature_K": 1253.15,
+              "Test_Temperature_Original": "980 °C",
+              "Applied_Stress_MPa": 248,
+              "Loading_Mode": "tensile",
+              "Orientation": "[001]"
+            },
+            "Data_Source": "unknown",
+            "Data_Nature": "Experimental",
+            "Note": "creep test conducted but rupture time not reported in text; displayed in Fig S1"
+          },
+          {
+            "Property_Type": "Unconstrained_Lattice_Misfit_by_Dislocation_Spacing",
+            "Value": -0.29,
+            "Unit": "%",
+            "Data_Source": "text",
+            "Data_Nature": "Computed",
+            "Note": "calculated using modified Brook formula from dislocation network spacing after 1% creep strain at 1030°C/230 MPa"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "T5",
+      "Sample_ID": "T5",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 1: nominal and measured compositions of T5",
+        "Section 2 Experimental: processing and creep test conditions",
+        "Table 2: microstructure parameters of T5",
+        "Table 3: APT partitioning results of T5",
+        "Table 4: lattice parameters and misfit of T5",
+        "Section 3.3: creep properties at 1030°C/230 MPa and other conditions"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Nickel-based single crystal superalloy",
+          "Material_Name_Raw": "T5",
+          "Nominal_Composition": {
+            "Ni": "Balance",
+            "Ti": 0.5,
+            "Co": 8.0,
+            "Cr": 6.0,
+            "Ta": 6.0,
+            "W": 6.5,
+            "Al": 5.6,
+            "Re": 3.0,
+            "Mo": 2.5,
+            "Hf": 0.18,
+            "C": 0.02,
+            "B": 0.01,
+            "Unit": "wt%",
+            "Note": "Ni balance; normalized ≈ 61.69 wt% (Data_Nature: Computed)"
+          },
+          "Measured_Composition": {
+            "Ni": "Balance",
+            "Ti": 0.51,
+            "Co": 8.0,
+            "Cr": 5.88,
+            "Ta": 6.03,
+            "W": 6.46,
+            "Al": 5.57,
+            "Re": 3.0,
+            "Mo": 2.52,
+            "Hf": 0.2,
+            "C": 0.02,
+            "B": 0.01,
+            "Unit": "wt%",
+            "Note": "Ni balance; normalized ≈ 61.80 wt% (Data_Nature: Computed)"
+          },
+          "Note": "Nominal and measured compositions from Table 1. 0.5 wt.% Ti added at the expense of Ni compared to T0. Measured compositions correspond well with nominal levels, maximum deviation ±0.2 wt%."
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "The as-cast cylindrical SX bars 160 mm in length and 14 mm in diameter were prepared by a high-rate solidification (HRS) process using spiral grain selectors. The withdrawal rate of directional solidification was 3 mm/min. High temperature solution treatment was performed at 1300 °C for 4 h, followed by air cooling. Then, a two-stage aging treatment: first at 1120 °C for 4 h followed by air cooling, second at 900 °C for 16 h followed by air cooling. Tensile creep specimens with gage length 25 mm and diameter 5 mm.",
+            "simplified": "HRS directional solidification → solution treatment 1300°C/4h/AC → two-stage aging: 1120°C/4h/AC + 900°C/16h/AC → machined to creep specimens"
+          },
+          "Process_Category": "Casting + Heat Treatment",
+          "Equipment": [
+            {
+              "Name": "HRS directional solidification furnace with spiral grain selector",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Laue back-reflection X-ray technique",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "ZEISS SUPRA 55 FE-SEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "FEI Talos F200X TEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "FEI Helios nanolab 600i FIB",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "CAMECA LEAP-5000XR APT",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Shanghai Synchrotron Radiation Facility BL14B1 (synchrotron XRD)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "China Spallation Neutron Source GPPD (neutron diffraction)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Twin-jet polisher",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Image-Pro Plus 6.0",
+              "Category": "Software"
+            },
+            {
+              "Name": "PeakFit software",
+              "Category": "Software"
+            },
+            {
+              "Name": "CAMECA IVAS 3.8.0",
+              "Category": "Software"
+            }
+          ],
+          "Key_Params": {
+            "Stage1_Directional_Solidification": {
+              "Bar_Dimensions": "160 mm length × 14 mm diameter",
+              "Withdrawal_Rate": "3 mm/min",
+              "Process": "High-rate solidification (HRS) with spiral grain selectors"
+            },
+            "Stage2_Solution_Treatment": {
+              "Temperature": 1573.15,
+              "Temperature_Original": "1300 °C",
+              "Time_h": 4,
+              "Cooling": "air cooling",
+              "Note": "T5 solution temperature is 1300°C, 10°C higher than T0 (1290°C)"
+            },
+            "Stage3_Aging_1": {
+              "Temperature": 1393.15,
+              "Temperature_Original": "1120 °C",
+              "Time_h": 4,
+              "Cooling": "air cooling",
+              "Note": "shared with T0; same aging treatment for both alloys as stated in Experimental"
+            },
+            "Stage4_Aging_2": {
+              "Temperature": 1173.15,
+              "Temperature_Original": "900 °C",
+              "Time_h": 16,
+              "Cooling": "air cooling",
+              "Note": "shared with T0; same aging treatment for both alloys as stated in Experimental"
+            }
+          },
+          "Specimen_Preparation": {
+            "Creep_Specimen": {
+              "Type": "tensile creep specimen",
+              "Gage_Length_mm": 25,
+              "Gage_Diameter_mm": 5
+            },
+            "Crystallographic_Orientation": "within 6° away from [001]"
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Typical microstructure comprising narrow γ matrix channels and fine cubical γ′ precipitates with a cube-cube orientation relationship, with interfaces parallel to {100} planes. Primary dendrite arm spacing 364 μm. N-type raft structure formed after creep at 1030°C.",
+            "simplified": "γ matrix (FCC) + cubical γ′ precipitates (L1₂) in cube-cube orientation, {100} interface planes. Single crystal, near [001] orientation."
+          },
+          "Main_Phase": {
+            "Phase_Name": "γ matrix",
+            "Crystal_Structure": "FCC",
+            "Morphology": "narrow channels between cubical γ′ precipitates"
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "γ′ precipitates",
+              "Crystal_Structure": "L1₂",
+              "Morphology": "fine cubical",
+              "Orientation_Relationship": "cube-cube with γ matrix, interfaces parallel to {100} planes"
+            }
+          ],
+          "Texture_or_Orientation": {
+            "Orientation": "near [001]",
+            "Misorientation": "within 6° from [001]"
+          },
+          "Advanced_Quantitative_Features": {
+            "Primary_Dendrite_Arm_Spacing": {
+              "Value": 364,
+              "Unit": "μm",
+              "Size_Type": "undefined",
+              "Data_Source": "text"
+            },
+            "Initial_State_Dendrite_Core": {
+              "γ′_Volume_Fraction": {
+                "Value": 72.5,
+                "Value_StdDev": 0.9,
+                "Unit": "%",
+                "Data_Source": "table",
+                "Location": "dendrite core"
+              },
+              "γ′_Size": {
+                "Value": 302,
+                "Value_StdDev": 53,
+                "Unit": "nm",
+                "Size_Type": "undefined",
+                "Data_Source": "table",
+                "Location": "dendrite core"
+              },
+              "γ_Channel_Width": {
+                "Value": 42.9,
+                "Value_StdDev": 16.8,
+                "Unit": "nm",
+                "Data_Source": "table",
+                "Location": "dendrite core"
+              }
+            },
+            "Initial_State_Interdendritic": {
+              "γ′_Volume_Fraction": {
+                "Value": 78.1,
+                "Value_StdDev": 0.5,
+                "Unit": "%",
+                "Data_Source": "table",
+                "Location": "interdendritic region"
+              },
+              "γ′_Size": {
+                "Value": 322,
+                "Value_StdDev": 74,
+                "Unit": "nm",
+                "Size_Type": "undefined",
+                "Data_Source": "table",
+                "Location": "interdendritic region"
+              },
+              "γ_Channel_Width": {
+                "Value": 47.5,
+                "Value_StdDev": 15.7,
+                "Unit": "nm",
+                "Data_Source": "table",
+                "Location": "interdendritic region"
+              }
+            },
+            "Aging_1030C_0.5h_Dendrite_Core": {
+              "γ′_Volume_Fraction": {
+                "Value": 70.4,
+                "Value_StdDev": 0.7,
+                "Unit": "%",
+                "Data_Source": "table",
+                "Location": "dendrite core"
+              },
+              "γ′_Size": {
+                "Value": 317,
+                "Value_StdDev": 59,
+                "Unit": "nm",
+                "Size_Type": "undefined",
+                "Data_Source": "table",
+                "Location": "dendrite core"
+              },
+              "γ_Channel_Width": {
+                "Value": 46.4,
+                "Value_StdDev": 18.4,
+                "Unit": "nm",
+                "Data_Source": "table",
+                "Location": "dendrite core"
+              }
+            },
+            "Aging_1030C_0.5h_Interdendritic": {
+              "γ′_Volume_Fraction": {
+                "Value": 75.7,
+                "Value_StdDev": 0.7,
+                "Unit": "%",
+                "Data_Source": "table",
+                "Location": "interdendritic region"
+              },
+              "γ′_Size": {
+                "Value": 347,
+                "Value_StdDev": 60,
+                "Unit": "nm",
+                "Size_Type": "undefined",
+                "Data_Source": "table",
+                "Location": "interdendritic region"
+              },
+              "γ_Channel_Width": {
+                "Value": 53.7,
+                "Value_StdDev": 14.6,
+                "Unit": "nm",
+                "Data_Source": "table",
+                "Location": "interdendritic region"
+              }
+            },
+            "Aging_1030C_2h_Dendrite_Core": {
+              "γ′_Volume_Fraction": {
+                "Value": 69.6,
+                "Value_StdDev": 0.4,
+                "Unit": "%",
+                "Data_Source": "table",
+                "Location": "dendrite core"
+              },
+              "γ′_Size": {
+                "Value": 329,
+                "Value_StdDev": 68,
+                "Unit": "nm",
+                "Size_Type": "undefined",
+                "Data_Source": "table",
+                "Location": "dendrite core"
+              },
+              "γ_Channel_Width": {
+                "Value": 49.3,
+                "Value_StdDev": 15.2,
+                "Unit": "nm",
+                "Data_Source": "table",
+                "Location": "dendrite core"
+              }
+            },
+            "Aging_1030C_2h_Interdendritic": {
+              "γ′_Volume_Fraction": {
+                "Value": 74.3,
+                "Value_StdDev": 0.7,
+                "Unit": "%",
+                "Data_Source": "table",
+                "Location": "interdendritic region"
+              },
+              "γ′_Size": {
+                "Value": 371,
+                "Value_StdDev": 78,
+                "Unit": "nm",
+                "Size_Type": "undefined",
+                "Data_Source": "table",
+                "Location": "interdendritic region"
+              },
+              "γ_Channel_Width": {
+                "Value": 55.7,
+                "Value_StdDev": 15.9,
+                "Unit": "nm",
+                "Data_Source": "table",
+                "Location": "interdendritic region"
+              }
+            },
+            "APT_Phase_Compositions": {
+              "Data_Source": "table",
+              "Note": "Local phase compositions from APT, at.%; not bulk composition",
+              "γ′_phase": {
+                "Co": 6.13,
+                "Cr": 1.89,
+                "Al": 16.44,
+                "Ta": 2.23,
+                "W": 2.55,
+                "Mo": 0.89,
+                "Re": 0.2,
+                "Ti": 0.9,
+                "Ni": 68.58,
+                "Unit": "at.%"
+              },
+              "γ_phase": {
+                "Co": 16.68,
+                "Cr": 19.04,
+                "Al": 3.14,
+                "Ta": 0.34,
+                "W": 3.09,
+                "Mo": 2.93,
+                "Re": 3.98,
+                "Ti": 0.25,
+                "Ni": 50.25,
+                "Unit": "at.%"
+              },
+              "Partitioning_Coefficients_k_γ′_over_γ": {
+                "Co": 0.368,
+                "Cr": 0.099,
+                "Al": 5.234,
+                "Ta": 6.637,
+                "W": 0.824,
+                "Mo": 0.302,
+                "Re": 0.05,
+                "Ti": 3.558,
+                "Ni": 1.365
+              }
+            },
+            "Lattice_Misfit_Initial_State": {
+              "a_γ_nm": 0.3594,
+              "a_γ′_nm": 0.3585,
+              "δ_pct": -0.267,
+              "State": "initial, room temperature",
+              "Data_Source": "table",
+              "Method": "synchrotron XRD"
+            },
+            "Lattice_Misfit_1pct_Creep_Strain": {
+              "a_γ_nm": 0.3599,
+              "a_γ′_nm": 0.3584,
+              "δ_pct": -0.42,
+              "State": "1% creep strain, unconstrained",
+              "Data_Source": "table",
+              "Method": "neutron diffraction"
+            },
+            "After_Creep_1pct_Strain_Transverse": {
+              "γ′_Volume_Fraction": {
+                "Value": 46.8,
+                "Unit": "%",
+                "Data_Source": "text",
+                "Note": "interrupted at 1% strain at 1030°C/230 MPa, transverse section"
+              }
+            },
+            "Raft_Structure_After_Creep_1pct": {
+              "Rafting_Degree_Ω": 0.73,
+              "Rafted_γ_Lamella_Thickness": {
+                "Value": 0.192,
+                "Unit": "μm"
+              },
+              "Rafted_γ′_Lamella_Thickness": {
+                "Value": 0.231,
+                "Unit": "μm"
+              },
+              "Data_Source": "text",
+              "Section": "longitudinal"
+            },
+            "Dislocation_Network_After_Creep_1pct": {
+              "Mean_Dislocation_Spacing": {
+                "Value": 45.1,
+                "Unit": "nm",
+                "Data_Source": "text"
+              }
+            },
+            "Lever_Rule_γ′_Volume_Fraction": {
+              "Value": 74.0,
+              "Unit": "%",
+              "Data_Source": "text",
+              "Note": "calculated from APT compositions using lever rule"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Type": "Creep_Rupture_Time",
+            "Value": 102.8,
+            "Unit": "h",
+            "Test_Condition": {
+              "Test_Temperature_K": 1303.15,
+              "Test_Temperature_Original": "1030 °C",
+              "Applied_Stress_MPa": 230,
+              "Loading_Mode": "tensile",
+              "Orientation": "[001]"
+            },
+            "Data_Source": "text",
+            "Data_Nature": "Experimental"
+          },
+          {
+            "Property_Type": "Minimum_Creep_Strain_Rate",
+            "Value": 4.09e-08,
+            "Unit": "s⁻¹",
+            "Test_Condition": {
+              "Test_Temperature_K": 1303.15,
+              "Test_Temperature_Original": "1030 °C",
+              "Applied_Stress_MPa": 230,
+              "Loading_Mode": "tensile",
+              "Orientation": "[001]"
+            },
+            "Data_Source": "text",
+            "Data_Nature": "Experimental"
+          },
+          {
+            "Property_Type": "Time_to_1pct_Creep_Strain",
+            "Value": 42.8,
+            "Unit": "h",
+            "Test_Condition": {
+              "Test_Temperature_K": 1303.15,
+              "Test_Temperature_Original": "1030 °C",
+              "Applied_Stress_MPa": 230,
+              "Loading_Mode": "tensile",
+              "Orientation": "[001]"
+            },
+            "Data_Source": "text",
+            "Data_Nature": "Experimental"
+          },
+          {
+            "Property_Type": "Creep_Rupture_Time",
+            "Value": null,
+            "Unit": "h",
+            "Test_Condition": {
+              "Test_Temperature_K": 1323.15,
+              "Test_Temperature_Original": "1050 °C",
+              "Applied_Stress_MPa": 190,
+              "Loading_Mode": "tensile",
+              "Orientation": "[001]"
+            },
+            "Data_Source": "unknown",
+            "Data_Nature": "Experimental",
+            "Note": "creep test conducted but rupture time not reported in text; displayed in Fig S1"
+          },
+          {
+            "Property_Type": "Creep_Rupture_Time",
+            "Value": null,
+            "Unit": "h",
+            "Test_Condition": {
+              "Test_Temperature_K": 1373.15,
+              "Test_Temperature_Original": "1100 °C",
+              "Applied_Stress_MPa": 137,
+              "Loading_Mode": "tensile",
+              "Orientation": "[001]"
+            },
+            "Data_Source": "unknown",
+            "Data_Nature": "Experimental",
+            "Note": "creep test conducted but rupture time not reported in text; displayed in Fig S1"
+          },
+          {
+            "Property_Type": "Creep_Rupture_Time",
+            "Value": null,
+            "Unit": "h",
+            "Test_Condition": {
+              "Test_Temperature_K": 1373.15,
+              "Test_Temperature_Original": "1100 °C",
+              "Applied_Stress_MPa": 158,
+              "Loading_Mode": "tensile",
+              "Orientation": "[001]"
+            },
+            "Data_Source": "unknown",
+            "Data_Nature": "Experimental",
+            "Note": "creep test conducted but rupture time not reported in text; displayed in Fig S1"
+          },
+          {
+            "Property_Type": "Creep_Rupture_Time",
+            "Value": null,
+            "Unit": "h",
+            "Test_Condition": {
+              "Test_Temperature_K": 1253.15,
+              "Test_Temperature_Original": "980 °C",
+              "Applied_Stress_MPa": 248,
+              "Loading_Mode": "tensile",
+              "Orientation": "[001]"
+            },
+            "Data_Source": "unknown",
+            "Data_Nature": "Experimental",
+            "Note": "creep test conducted but rupture time not reported in text; displayed in Fig S1"
+          },
+          {
+            "Property_Type": "Unconstrained_Lattice_Misfit_by_Dislocation_Spacing",
+            "Value": -0.4,
+            "Unit": "%",
+            "Data_Source": "text",
+            "Data_Nature": "Computed",
+            "Note": "calculated using modified Brook formula from dislocation network spacing after 1% creep strain at 1030°C/230 MPa"
+          }
+        ]
+      }
+    }
+  ]
+}

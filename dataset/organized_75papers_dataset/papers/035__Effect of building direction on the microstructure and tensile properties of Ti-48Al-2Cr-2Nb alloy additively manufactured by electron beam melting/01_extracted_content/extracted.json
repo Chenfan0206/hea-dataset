@@ -1,0 +1,533 @@
+{
+  "Paper_Metadata": {
+    "Paper_Title": "Effect of building direction on the microstructure and tensile properties of Ti-48Al-2Cr-2Nb alloy additively manufactured by electron beam melting",
+    "DOI": "10.1016/j.addma.2016.11.002"
+  },
+  "Paper_Routing": {
+    "base_material": "Metals",
+    "application": "Structural",
+    "research_paradigm": "Experimental",
+    "Supplements_Loaded": [
+      "directions/base/Metals.txt",
+      "directions/application/Structural.txt",
+      "directions/paradigm/Experimental.txt"
+    ],
+    "Patch_Tags": [
+      "Additive_Manufacturing",
+      "Directional_Anisotropy"
+    ],
+    "Needs_Mixed_Routing_Check": false
+  },
+  "items": [
+    {
+      "Item_ID": "Item_1",
+      "Sample_ID": "as-EBM_Ti-48Al-2Cr-2Nb",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing",
+        "Directional_Anisotropy"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Abstract",
+        "Section 2. Material and methods",
+        "Section 3. Results",
+        "Section 4. Discussion",
+        "Section 5. Conclusions"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "TiAl intermetallic",
+          "Material_Name_Raw": "Ti-48Al-2Cr-2Nb",
+          "Nominal_Composition": {
+            "unit": "at%",
+            "elements": [
+              {
+                "Element": "Ti",
+                "Value": "Balance"
+              },
+              {
+                "Element": "Al",
+                "Value": 48.0
+              },
+              {
+                "Element": "Cr",
+                "Value": 2.0
+              },
+              {
+                "Element": "Nb",
+                "Value": 2.0
+              }
+            ]
+          },
+          "Measured_Composition": [
+            {
+              "sample": "Powder as received",
+              "unit": "at%",
+              "Data_Source": "table",
+              "elements": [
+                {
+                  "Element": "Ti",
+                  "Value": "Balance"
+                },
+                {
+                  "Element": "Al",
+                  "Value": 48.6
+                },
+                {
+                  "Element": "Cr",
+                  "Value": 1.74
+                },
+                {
+                  "Element": "Nb",
+                  "Value": 1.95
+                },
+                {
+                  "Element": "C",
+                  "Value": 0.032
+                },
+                {
+                  "Element": "O",
+                  "Value": 0.193
+                },
+                {
+                  "Element": "N",
+                  "Value": 0.008
+                }
+              ]
+            },
+            {
+              "sample": "Specimen as EBM",
+              "unit": "at%",
+              "Data_Source": "table",
+              "elements": [
+                {
+                  "Element": "Ti",
+                  "Value": "Balance",
+                  "Note": "Balance; normalized ≈ 47.6 at% (Computed)"
+                },
+                {
+                  "Element": "Al",
+                  "Value": 46.3
+                },
+                {
+                  "Element": "Cr",
+                  "Value": 1.72
+                },
+                {
+                  "Element": "Nb",
+                  "Value": 2.1
+                },
+                {
+                  "Element": "C",
+                  "Value": 0.049
+                },
+                {
+                  "Element": "O",
+                  "Value": 0.215
+                },
+                {
+                  "Element": "N",
+                  "Value": 0.02
+                }
+              ]
+            },
+            {
+              "sample": "Powder as received",
+              "unit": "wt%",
+              "Data_Source": "table",
+              "elements": [
+                {
+                  "Element": "Ti",
+                  "Value": "Balance"
+                },
+                {
+                  "Element": "Al",
+                  "Value": 34.0
+                },
+                {
+                  "Element": "Cr",
+                  "Value": 2.34
+                },
+                {
+                  "Element": "Nb",
+                  "Value": 4.69
+                },
+                {
+                  "Element": "C",
+                  "Value": 0.01
+                },
+                {
+                  "Element": "O",
+                  "Value": 0.08
+                },
+                {
+                  "Element": "N",
+                  "Value": 0.003
+                }
+              ]
+            },
+            {
+              "sample": "Specimen as EBM",
+              "unit": "wt%",
+              "Data_Source": "table",
+              "elements": [
+                {
+                  "Element": "Ti",
+                  "Value": "Balance",
+                  "Note": "Balance; normalized ≈ 60.7 wt% (Computed)"
+                },
+                {
+                  "Element": "Al",
+                  "Value": 31.9
+                },
+                {
+                  "Element": "Cr",
+                  "Value": 2.28
+                },
+                {
+                  "Element": "Nb",
+                  "Value": 4.99
+                },
+                {
+                  "Element": "C",
+                  "Value": 0.015
+                },
+                {
+                  "Element": "O",
+                  "Value": 0.088
+                },
+                {
+                  "Element": "N",
+                  "Value": 0.007
+                }
+              ]
+            }
+          ],
+          "Note": "Al loss during EBM approximately 2 at%"
+        },
+        "Processing": {
+          "Process_Category": "Electron Beam Melting (EBM)",
+          "Process_Text": {
+            "original": "The EBM specimens were fabricated using an Arcam A2X EBM system. The precursor powder consists of spherical particles of which average diameter is around 100 μm. An electron beam was scanned according to a zigzag pattern; the building path was rotated by 90° between each layer. The cylindrical bars of Ti-48Al-2Cr-2Nb alloy were fabricated by EBM operated at 60 kV. The layer thickness for each fed powder layer was 90 μm and the pre-heating temperature before melting powder layer was 1060 °C.",
+            "simplified": "EBM fabrication of Ti-48Al-2Cr-2Nb using Arcam A2X with 60 kV acceleration voltage, 90 μm layer thickness, 1060 °C pre-heating, zigzag scanning pattern rotated 90° between layers"
+          },
+          "Equipment": [
+            {
+              "Name": "Arcam A2X EBM system",
+              "Category": "Preparation",
+              "Note": "Arcam AB, Mölndal, Sweden"
+            },
+            {
+              "Name": "Electro-discharge machining",
+              "Category": "Preparation",
+              "Note": "用于从 as-EBM 棒材切割拉伸和观察试样"
+            },
+            {
+              "Name": "Philips X-pert Pro",
+              "Category": "Characterization",
+              "Note": "X-ray diffraction analysis"
+            },
+            {
+              "Name": "JEOL JSM-6500F",
+              "Category": "Characterization",
+              "Note": "Scanning electron microscope; also used for SEM-EBSD analysis"
+            },
+            {
+              "Name": "Optical microscope (OM)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "JEOL JEM-3010",
+              "Category": "Characterization",
+              "Note": "Transmission electron microscope, operated at 300 kV"
+            },
+            {
+              "Name": "Elionix ENT-1100a",
+              "Category": "Testing",
+              "Note": "Nanoindenter, max load 29.4 mN"
+            }
+          ],
+          "Key_Params": {
+            "Stage1_Powder": {
+              "Process": "Powder preparation",
+              "Powder_Morphology": "spherical",
+              "Average_Particle_Diameter_um": {
+                "Value": 100,
+                "dimension": "diameter",
+                "Note": "approximate",
+                "Original_Values": "around 100 μm"
+              }
+            },
+            "Stage2_EBM_Build": {
+              "Process": "Electron Beam Melting",
+              "Acceleration_Voltage_kV": 60,
+              "Layer_Thickness_um": 90,
+              "Preheating_Temperature_C": {
+                "Value": 1333,
+                "Original_Values": "1060 °C"
+              },
+              "Scanning_Pattern": "zigzag, rotated 90° between each layer",
+              "Build_Orientations": "θ = 0°, 45°, 90° (angle between building direction and cylindrical axis)"
+            }
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Unique layered microstructure composed of duplex-like fine grains layers and coarser γ grains layers. The duplex-like region is predominantly composed of lamellar-structured γ/α₂ fine grains and fine equiaxed γ grains. The γ band region is composed of coarser equiaxed γ phase grains which form a chain perpendicular to the building direction.",
+            "simplified": "Alternating layered microstructure of duplex-like regions (~60 μm) and γ bands (~30 μm) perpendicular to building direction. Duplex-like region contains fine lamellar γ/α₂ grains and equiaxed γ grains. γ bands contain coarser equiaxed γ grains."
+          },
+          "Main_Phase": [
+            {
+              "Phase_Name": "γ-TiAl",
+              "Crystal_Structure": "L1₀ (tetragonal, P4/mmm)",
+              "Volume_Fraction": "major phase",
+              "Note": "Present in all specimens regardless of θ"
+            },
+            {
+              "Phase_Name": "α₂-Ti₃Al",
+              "Crystal_Structure": "D0₁₉ (hexagonal, P6₃/mmc)",
+              "Volume_Fraction": "minor compared to γ",
+              "Note": "Present in all specimens; volume fractions of γ and α₂ similar across θ values"
+            }
+          ],
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "β phase",
+              "Crystal_Structure": "BCC",
+              "Location": "mostly near surface region where rapid solidification occurred",
+              "Note": "Weak XRD peaks; hardly seen in central part of samples"
+            }
+          ],
+          "Layered_Structure": [
+            {
+              "Layer_Name": "duplex-like region",
+              "Layer_Thickness_um": {
+                "Value": 60,
+                "dimension": "thickness",
+                "Note": "average, independent of θ",
+                "Original_Values": "approximately 60 μm"
+              },
+              "Description": "Composed of fine lamellar γ/α₂ grains and fine equiaxed γ grains",
+              "Lamellar_Thickness": {
+                "γ_lamella_average_nm": {
+                  "Value": 162,
+                  "dimension": "thickness",
+                  "Data_Source": "text"
+                },
+                "α₂_lamella_average_nm": {
+                  "Value": 48,
+                  "dimension": "thickness",
+                  "Data_Source": "text"
+                }
+              },
+              "Orientation_Relationship": "{111}_γ // (0001)_α₂, <110>_γ // <11-20>_α₂"
+            },
+            {
+              "Layer_Name": "γ band",
+              "Layer_Thickness_um": {
+                "Value": 30,
+                "dimension": "thickness",
+                "Note": "average, independent of θ",
+                "Original_Values": "approximately 30 μm"
+              },
+              "Description": "Composed of coarser equiaxed γ phase grains, arranged perpendicular to building direction; α₂ phase hardly observed",
+              "Grain_Size_um": {
+                "Value": 20,
+                "dimension": "diameter",
+                "Note": "average, approximate",
+                "Original_Values": "approximately 20 μm"
+              }
+            }
+          ],
+          "Grain_Size": {
+            "Duplex_like_region_avg_um": {
+              "Value": null,
+              "dimension": "undefined",
+              "Note": "Less than γ bands; lamellar and γ grains both taken into account; exact value not numerically stated in text, shown in Fig. 3(h)"
+            },
+            "γ_band_avg_um": {
+              "Value": 20,
+              "dimension": "diameter",
+              "Original_Values": "approximately 20 μm",
+              "Note": "approximate"
+            }
+          },
+          "Porosity": {
+            "Total_Porosity_pct": {
+              "Value": null,
+              "Original_Values": "less than 0.5%",
+              "Note": "inequality value; determined for all examined specimens"
+            },
+            "Note": "Cracks due to thermal stress and residual pores are rarely observed"
+          },
+          "Texture_or_Orientation": "γ bands aligned perpendicular to building direction; orientation relationship between γ and α₂ lamellae: {111}_γ // (0001)_α₂, <110>_γ // <11-20>_α₂",
+          "Advanced_Quantitative_Features": {
+            "Nanoindentation_Hardness_Duplex_like_Region": {
+              "Value": null,
+              "Note": "Higher than γ bands; numerical value shown only in Fig. 11, not extractable from text"
+            },
+            "Nanoindentation_Hardness_γ_Band": {
+              "Value": null,
+              "Note": "Lower than duplex-like region; numerical value shown only in Fig. 11, not extractable from text"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Category": "Tensile",
+            "Yield_Strength_MPa": {
+              "Value": 605,
+              "Original_Values": "~605 MPa",
+              "Note": "approximate value at θ=0°, room temperature"
+            },
+            "Elongation_Total_pct": {
+              "Value": null,
+              "Note": "Low value at θ=0°, not numerically stated in text; 原文仅使用 'tensile elongation' 未区分 Total/At_Fracture"
+            },
+            "Test_Condition": {
+              "Test_Temperature_Original": "room temperature",
+              "Test_Temperature_K": 293,
+              "Loading_Mode": "tension",
+              "Strain_Rate_s1": 0.000167,
+              "Environment": "vacuum",
+              "Orientation_θ": "0°",
+              "Specimen_Dimensions": "0.8 × 1.5 mm cross section, 5 mm gauge length",
+              "Specimen_Shape": "dog-bone"
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Category": "Tensile",
+            "Yield_Strength_MPa": {
+              "Value": 566,
+              "Original_Values": "~566 MPa",
+              "Note": "approximate value at θ=45°, room temperature"
+            },
+            "Elongation_Total_pct": {
+              "Value": null,
+              "Original_Values": "more than 2%",
+              "Note": "inequality value; paper stated >2%"
+            },
+            "Test_Condition": {
+              "Test_Temperature_Original": "room temperature",
+              "Test_Temperature_K": 293,
+              "Loading_Mode": "tension",
+              "Strain_Rate_s1": 0.000167,
+              "Environment": "vacuum",
+              "Orientation_θ": "45°",
+              "Specimen_Dimensions": "0.8 × 1.5 mm cross section, 5 mm gauge length",
+              "Specimen_Shape": "dog-bone"
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Category": "Tensile",
+            "Yield_Strength_MPa": {
+              "Value": 587,
+              "Original_Values": "~587 MPa",
+              "Note": "approximate value at θ=90°, room temperature"
+            },
+            "Elongation_Total_pct": {
+              "Value": null,
+              "Note": "Low value at θ=90°, not numerically stated; slightly larger than θ=0°"
+            },
+            "Test_Condition": {
+              "Test_Temperature_Original": "room temperature",
+              "Test_Temperature_K": 293,
+              "Loading_Mode": "tension",
+              "Strain_Rate_s1": 0.000167,
+              "Environment": "vacuum",
+              "Orientation_θ": "90°",
+              "Specimen_Dimensions": "0.8 × 1.5 mm cross section, 5 mm gauge length",
+              "Specimen_Shape": "dog-bone"
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Category": "Tensile",
+            "Yield_Strength_MPa": {
+              "Value": null,
+              "Original_Values": "over 350 MPa",
+              "Note": "inequality value at 800°C"
+            },
+            "Elongation_Total_pct": {
+              "Value": null,
+              "Original_Values": "over 40%",
+              "Note": "inequality value at 800°C, all θ"
+            },
+            "Test_Condition": {
+              "Test_Temperature_Original": "800 °C",
+              "Test_Temperature_K": 1073,
+              "Loading_Mode": "tension",
+              "Strain_Rate_s1": 0.000167,
+              "Environment": "vacuum",
+              "Specimen_Dimensions": "0.8 × 1.5 mm cross section, 5 mm gauge length",
+              "Specimen_Shape": "dog-bone"
+            },
+            "Data_Source": "text",
+            "Note": "Anisotropy of yield strength becomes small at 800°C; applies to all θ"
+          },
+          {
+            "Property_Category": "Tensile",
+            "Yield_Strength_MPa": {
+              "Value": null,
+              "Note": "Yield strength shows peak at 700°C then decreases; exact values in Fig. 6(d)"
+            },
+            "Test_Condition": {
+              "Test_Temperature_Original": "700 °C",
+              "Test_Temperature_K": 973,
+              "Loading_Mode": "tension",
+              "Strain_Rate_s1": 0.000167,
+              "Environment": "vacuum",
+              "Specimen_Dimensions": "0.8 × 1.5 mm cross section, 5 mm gauge length",
+              "Specimen_Shape": "dog-bone"
+            },
+            "Data_Source": "text",
+            "Note": "Anomalous strengthening peak at 700°C; yield strength gradually decreases up to 600°C, then increases to peak at 700°C, then decreases again"
+          },
+          {
+            "Property_Category": "Tensile",
+            "Yield_Strength_MPa": {
+              "Value": null,
+              "Original_Values": "more than 550 MPa",
+              "Note": "inequality value; applies to all θ at room temperature"
+            },
+            "Test_Condition": {
+              "Test_Temperature_Original": "room temperature",
+              "Test_Temperature_K": 293,
+              "Loading_Mode": "tension",
+              "Strain_Rate_s1": 0.000167,
+              "Environment": "vacuum",
+              "Orientation_θ": "all (0°, 45°, 90°)",
+              "Specimen_Dimensions": "0.8 × 1.5 mm cross section, 5 mm gauge length",
+              "Specimen_Shape": "dog-bone"
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Category": "Other",
+            "Brittle_Ductile_Transition_Temperature": {
+              "Value": 1023,
+              "Original_Values": "approximately 750 °C",
+              "Note": "approximate; applies to all examined specimens"
+            },
+            "Test_Condition": {
+              "Loading_Mode": "tension",
+              "Strain_Rate_s1": 0.000167,
+              "Environment": "vacuum",
+              "Specimen_Dimensions": "0.8 × 1.5 mm cross section, 5 mm gauge length",
+              "Specimen_Shape": "dog-bone"
+            },
+            "Data_Source": "text"
+          }
+        ]
+      },
+      "Note": "All specimens are as-EBM (no post heat treatment or HIP). θ is the angle between building direction and cylindrical axis of the rods. The unique layered microstructure (duplex-like region + γ bands) is independent of θ. Al loss during EBM approximately 2 at%. BDTT approximately 750 °C. Anomalous strengthening observed with yield strength peak at 700°C."
+    }
+  ]
+}

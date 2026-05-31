@@ -1,0 +1,248 @@
+{
+  "Paper_Metadata": {
+    "Paper_Title": "A phase field model for hydrogen-assisted fatigue",
+    "DOI": "10.1016/j.ijfatigue.2022.106521"
+  },
+  "items": [
+    {
+      "Sample_ID": "High_Strength_Steel_Sim",
+      "Gradient_Material": false,
+      "Gradient_Group_ID": null,
+      "Composition_Info": {
+        "Role": "Target",
+        "Alloy_Name_Raw": "High strength steel (iron-based)",
+        "Nominal_Composition": null,
+        "Measured_Composition": null,
+        "Note": "Representative iron-based high strength steel used for phase field theoretical and numerical modeling."
+      },
+      "Process_Info": {
+        "Process_Category": "Theoretical Simulation",
+        "Process_Text": {
+          "original": "a representative iron-based high strength steel",
+          "simplified": "Simulated representative iron-based high strength steel"
+        },
+        "Equipment": null,
+        "Key_Params": {}
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": "Not described in the context of simulation.",
+          "simplified": "Not described"
+        },
+        "Main_Phase": null,
+        "Precipitates": [],
+        "Porosity_pct": null,
+        "Relative_Density_pct": null,
+        "Grain_Size_avg_um": null,
+        "Precipitate_Size_avg_nm": null,
+        "Advanced_Quantitative_Features": {
+          "Hydrogen_Diffusion_Coefficient_mm2_s": 0.0127,
+          "Partial_Molar_Volume_of_Hydrogen_mm3_mol": 2000,
+          "Partial_Molar_Volume_of_Hydrogen_m3_mol": 2e-6
+        }
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Elastic_Modulus",
+          "Test_Condition": "Simulation input parameter",
+          "Value_Numeric": 210.0,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "GPa",
+          "Test_Temperature_K": 293.0,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": "Cracked square plate / Boundary layer model",
+          "Note": null
+        },
+        {
+          "Property_Name": "Fracture_Energy",
+          "Test_Condition": "Simulation input parameter",
+          "Value_Numeric": 2.7,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "kJ/m^2",
+          "Test_Temperature_K": 293.0,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": "Cracked square plate / Boundary layer model",
+          "Note": "Critical fracture energy Gc"
+        },
+        {
+          "Property_Name": "Poisson_Ratio",
+          "Test_Condition": "Simulation input parameter",
+          "Value_Numeric": 0.3,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "dimensionless",
+          "Test_Temperature_K": 293.0,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": "Cracked square plate / Boundary layer model",
+          "Note": null
+        },
+        {
+          "Property_Name": "Fatigue_Damage_Threshold",
+          "Test_Condition": "Simulation input parameter",
+          "Value_Numeric": 56.25,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "MPa",
+          "Test_Temperature_K": 293.0,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": "Cracked square plate",
+          "Note": "Fatigue threshold parameter α_T"
+        }
+      ]
+    },
+    {
+      "Sample_ID": "JIS-SCM435_Sim",
+      "Gradient_Material": false,
+      "Gradient_Group_ID": null,
+      "Composition_Info": {
+        "Role": "Reference",
+        "Alloy_Name_Raw": "JIS-SCM435",
+        "Nominal_Composition": null,
+        "Measured_Composition": null,
+        "Note": "Cr-Mo high strength steel used for comparison via virtual S-N curves"
+      },
+      "Process_Info": {
+        "Process_Category": "Theoretical Simulation",
+        "Process_Text": {
+          "original": "Not provided in the text",
+          "simplified": "Not provided"
+        },
+        "Equipment": null,
+        "Key_Params": {}
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": "Not provided in the text",
+          "simplified": "Not provided"
+        },
+        "Main_Phase": null,
+        "Precipitates": [],
+        "Porosity_pct": null,
+        "Relative_Density_pct": null,
+        "Grain_Size_avg_um": null,
+        "Precipitate_Size_avg_nm": null,
+        "Advanced_Quantitative_Features": {}
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Ultimate_Tensile_Strength",
+          "Test_Condition": "Simulation input/reference",
+          "Value_Numeric": 840.0,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "MPa",
+          "Test_Temperature_K": 293.0,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": "Smooth dog-bone specimen / Notched cylindrical bar",
+          "Note": "Tensile strength from experiment, used for virtual S-N curve calibration"
+        },
+        {
+          "Property_Name": "Fracture_Energy",
+          "Test_Condition": "Simulation input parameter",
+          "Value_Numeric": 60.0,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "kJ/m^2",
+          "Test_Temperature_K": 293.0,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": "Smooth dog-bone specimen",
+          "Note": "Critical fracture energy Gc for JIS-SCM435"
+        }
+      ]
+    },
+    {
+      "Sample_ID": "JIS-SM490B_Sim",
+      "Gradient_Material": false,
+      "Gradient_Group_ID": null,
+      "Composition_Info": {
+        "Role": "Reference",
+        "Alloy_Name_Raw": "JIS-SM490B",
+        "Nominal_Composition": null,
+        "Measured_Composition": null,
+        "Note": "Carbon steel used for comparison via virtual S-N curves"
+      },
+      "Process_Info": {
+        "Process_Category": "Theoretical Simulation",
+        "Process_Text": {
+          "original": "Not provided in the text",
+          "simplified": "Not provided"
+        },
+        "Equipment": null,
+        "Key_Params": {}
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": "Not provided in the text",
+          "simplified": "Not described"
+        },
+        "Main_Phase": null,
+        "Precipitates": [],
+        "Porosity_pct": null,
+        "Relative_Density_pct": null,
+        "Grain_Size_avg_um": null,
+        "Precipitate_Size_avg_nm": null,
+        "Advanced_Quantitative_Features": {}
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Ultimate_Tensile_Strength",
+          "Test_Condition": "Simulation input/reference",
+          "Value_Numeric": 530.0,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "MPa",
+          "Test_Temperature_K": 293.0,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": "Smooth dog-bone specimen",
+          "Note": "Tensile strength from experiment, used for virtual S-N curve calibration"
+        },
+        {
+          "Property_Name": "Fracture_Energy",
+          "Test_Condition": "Simulation input parameter",
+          "Value_Numeric": 27.0,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "kJ/m^2",
+          "Test_Temperature_K": 293.0,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": "Smooth dog-bone specimen",
+          "Note": "Critical fracture energy Gc for JIS-SM490B"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1370 @@
+{
+  "Paper_Metadata": {
+    "Paper_Title": "Active learning framework to optimize process parameters for additive-manufactured Ti-6Al-4V with high strength and ductility",
+    "DOI": "10.1038/s41467-025-56267-1"
+  },
+  "Paper_Routing": {
+    "base_material": "Metals",
+    "application": "Structural",
+    "research_paradigm": "Experimental",
+    "Supplements_Loaded": [
+      "directions/base/Metals.txt",
+      "directions/application/Structural.txt",
+      "directions/paradigm/Experimental.txt"
+    ],
+    "Patch_Tags": [
+      "Additive_Manufacturing",
+      "Laser_Assisted"
+    ],
+    "Needs_Mixed_Routing_Check": false
+  },
+  "items": [
+    {
+      "Item_ID": "1-1",
+      "Sample_ID": "1-1",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing",
+        "Laser_Assisted"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 1",
+        "Fig. 4a",
+        "Fig. 6a1-a4",
+        "Fig. 7a1-a2"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Ti alloy",
+          "Material_Name_Raw": "Ti-6Al-4V",
+          "Nominal_Composition": {
+            "Note": "Gas-atomized metallic powder with nominal composition as shown in Supplementary Table 2; exact values not in main text"
+          }
+        },
+        "Processing": {
+          "Process_Category": "LPBF + Post-Heat-Treatment",
+          "Process_Text": {
+            "original": "Laser power 250 W, scan speed 1100 mm/s, layer thickness 50 μm, hatch distance 48 μm, rotation angle 67°, VED 94.69 J/mm³. Post-HT: 900 °C for 2 h, followed by furnace cooling under argon atmosphere.",
+            "simplified": "LPBF printing then sub-transus heat treatment at 900°C/2h with furnace cooling"
+          },
+          "Equipment": [
+            {
+              "Name": "Concept Laser M2 (GE Additive, USA)",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "JSM-7100F (JEOL, Japan)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Bruker/XRD D8-Advance Davinci",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Instron 1361 (Instron, USA)",
+              "Category": "Testing"
+            },
+            {
+              "Name": "ARAMIS 12 M (GOM, Germany)",
+              "Category": "Testing"
+            },
+            {
+              "Name": "XPR 205 (Mettler Toledo, USA)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "TSL OIM Analysis 7",
+              "Category": "Software"
+            },
+            {
+              "Name": "MTEX package (v. 6.0)",
+              "Category": "Software"
+            },
+            {
+              "Name": "scikit-learn",
+              "Category": "Software"
+            },
+            {
+              "Name": "PyTorch",
+              "Category": "Software"
+            }
+          ],
+          "Key_Params": {
+            "Stage1_LPBF": {
+              "Laser_Power_W": 250,
+              "Scan_Speed_mm_s": 1100,
+              "Layer_Thickness_um": 50,
+              "Hatch_Distance_um": 48,
+              "Rotation_Angle_deg": 67,
+              "VED_J_mm3": 94.69,
+              "VED_Original": "94.69 J/mm³",
+              "Specimen_Dimensions": "30 mm × 8 mm × 10 mm (width × length × height)"
+            },
+            "Stage2_Heat_Treatment": {
+              "Temperature_K": 1173.15,
+              "Temperature_Original": "900 °C",
+              "Time_h": 2,
+              "Cooling": "Furnace cooling",
+              "Atmosphere": "Argon"
+            }
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Fully acicular microstructure with Widmanstätten structure comprising elongated α laths within α-phase matrix. Prior-β grain width and α lath thickness ~2.62 μm. PF in (0001)α direction parallel to build direction. 54.80% of SF values between 0.4 and 0.5 for basal slip.",
+            "simplified": "Widmanstätten α lath structure from sub-transus HT; thickest α laths (~2.62 μm) among studied samples"
+          },
+          "Main_Phase": {
+            "Phase_Name": "α (Widmanstätten)",
+            "Crystal_Structure": "HCP",
+            "Morphology": "Acicular laths in Widmanstätten arrangement"
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "Prior-β",
+              "Crystal_Structure": "BCC",
+              "Note": "Reconstructed parent β grain structure from EBSD; width correlates with α lath thickness; not a current thermodynamic phase"
+            }
+          ],
+          "Texture_or_Orientation": {
+            "PF_Direction": "(0001)α parallel to build direction",
+            "PF_Distribution_1120": "Random distribution in (1120)α direction"
+          },
+          "Advanced_Quantitative_Features": {
+            "α_Lath_Thickness_um": {
+              "Value": 2.62,
+              "Original_Values": "~2.62 μm",
+              "Note": "Approximate value; thickest among studied samples",
+              "Dimension_Type": "undefined"
+            },
+            "Schmid_Factor_Basal_Slip_0.4_0.5_Frequency_Pct": {
+              "Value": 54.8,
+              "Original_Values": "54.80%",
+              "Note": "Percentage of SF values between 0.4 and 0.5 for basal slip {0001}<11-20>α"
+            },
+            "Density_g_cm3": {
+              "Value": 4.406,
+              "Value_StdDev": 0.004,
+              "Original_Values": "4.406 ± 0.004 g/cm³",
+              "Note": "Measured by Archimedes method"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Ultimate_Tensile_Strength",
+            "Value": 1061,
+            "Value_StdDev": 27.5,
+            "Unit": "MPa",
+            "Original_Values": "1061 ± 27.5 MPa",
+            "Data_Source": "table",
+            "Test_Condition": {
+              "Strain_Rate_s1": "5×10⁻³ s⁻¹",
+              "Specimen_Shape": "Dog-bone shaped",
+              "Gauge_Length_mm": 5,
+              "Gauge_Width_mm": 2.5,
+              "Gauge_Thickness_mm": 1.0,
+              "Test_Temperature_Original": "Room temperature",
+              "Number_of_Tests": "≥3"
+            }
+          },
+          {
+            "Property_Name": "Elongation_Total",
+            "Value": 18.3,
+            "Value_StdDev": 1.5,
+            "Unit": "%",
+            "Original_Values": "18.3 ± 1.5%",
+            "Data_Source": "table",
+            "Note": "Paper refers to 'total elongation (TE)';原文未区分 uniform/total，按 Structural 补充规则归入 Elongation_Total",
+            "Test_Condition": {
+              "Strain_Rate_s1": "5×10⁻³ s⁻¹",
+              "Specimen_Shape": "Dog-bone shaped",
+              "Gauge_Length_mm": 5,
+              "Gauge_Width_mm": 2.5,
+              "Gauge_Thickness_mm": 1.0,
+              "Test_Temperature_Original": "Room temperature",
+              "Number_of_Tests": "≥3"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "1-2",
+      "Sample_ID": "1-2",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing",
+        "Laser_Assisted"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 1",
+        "Fig. 4a"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Ti alloy",
+          "Material_Name_Raw": "Ti-6Al-4V",
+          "Nominal_Composition": {
+            "Note": "Same powder as Item 1-1; gas-atomized Ti-6Al-4V"
+          }
+        },
+        "Processing": {
+          "Process_Category": "LPBF + Post-Heat-Treatment",
+          "Process_Text": {
+            "original": "Laser power 250 W, scan speed 1150 mm/s, layer thickness 50 μm, hatch distance 48 μm, rotation angle 67°, VED 90.57 J/mm³. Post-HT: 900 °C for 2 h, furnace cooling under argon.",
+            "simplified": "LPBF printing then sub-transus heat treatment at 900°C/2h with furnace cooling"
+          },
+          "Equipment": [
+            {
+              "Name": "Concept Laser M2 (GE Additive, USA)",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Instron 1361 (Instron, USA)",
+              "Category": "Testing"
+            },
+            {
+              "Name": "ARAMIS 12 M (GOM, Germany)",
+              "Category": "Testing"
+            }
+          ],
+          "Key_Params": {
+            "Stage1_LPBF": {
+              "Laser_Power_W": 250,
+              "Scan_Speed_mm_s": 1150,
+              "Layer_Thickness_um": 50,
+              "Hatch_Distance_um": 48,
+              "Rotation_Angle_deg": 67,
+              "VED_J_mm3": 90.57,
+              "VED_Original": "90.57 J/mm³",
+              "Specimen_Dimensions": "30 mm × 8 mm × 10 mm (width × length × height)"
+            },
+            "Stage2_Heat_Treatment": {
+              "Temperature_K": 1173.15,
+              "Temperature_Original": "900 °C",
+              "Time_h": 2,
+              "Cooling": "Furnace cooling",
+              "Atmosphere": "Argon"
+            }
+          },
+          "Note": "All samples fabricated and tested using the same equipment as described in Methods; only sample-specific LPBF parameters and HT conditions differ per Table 1. Full equipment list in Item 1-1."
+        },
+        "Properties": [
+          {
+            "Property_Name": "Ultimate_Tensile_Strength",
+            "Value": 1065,
+            "Value_StdDev": 17.0,
+            "Unit": "MPa",
+            "Original_Values": "1065 ± 17.0 MPa",
+            "Data_Source": "table",
+            "Test_Condition": {
+              "Strain_Rate_s1": "5×10⁻³ s⁻¹",
+              "Specimen_Shape": "Dog-bone shaped",
+              "Gauge_Length_mm": 5,
+              "Gauge_Width_mm": 2.5,
+              "Gauge_Thickness_mm": 1.0,
+              "Test_Temperature_Original": "Room temperature",
+              "Number_of_Tests": "≥3"
+            }
+          },
+          {
+            "Property_Name": "Elongation_Total",
+            "Value": 16.3,
+            "Value_StdDev": 2.0,
+            "Unit": "%",
+            "Original_Values": "16.3 ± 2.0%",
+            "Data_Source": "table",
+            "Note": "原文未区分 uniform/total，归入 Elongation_Total",
+            "Test_Condition": {
+              "Strain_Rate_s1": "5×10⁻³ s⁻¹",
+              "Specimen_Shape": "Dog-bone shaped",
+              "Gauge_Length_mm": 5,
+              "Gauge_Width_mm": 2.5,
+              "Gauge_Thickness_mm": 1.0,
+              "Test_Temperature_Original": "Room temperature",
+              "Number_of_Tests": "≥3"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "2-1",
+      "Sample_ID": "2-1",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing",
+        "Laser_Assisted"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 1",
+        "Fig. 4b",
+        "Fig. 6b1-b4",
+        "Fig. 7b1-b2"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Ti alloy",
+          "Material_Name_Raw": "Ti-6Al-4V",
+          "Nominal_Composition": {
+            "Note": "Same powder as Item 1-1"
+          }
+        },
+        "Processing": {
+          "Process_Category": "LPBF + Post-Heat-Treatment",
+          "Process_Text": {
+            "original": "Laser power 200 W, scan speed 2000 mm/s, layer thickness 50 μm, hatch distance 48 μm, rotation angle 67°, VED 41.66 J/mm³. Post-HT: 595 °C for 2 h, furnace cooling under argon.",
+            "simplified": "LPBF printing then low-temperature heat treatment at 595°C/2h (near Ms temperature) with furnace cooling"
+          },
+          "Equipment": [
+            {
+              "Name": "Concept Laser M2 (GE Additive, USA)",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "JSM-7100F (JEOL, Japan)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "XPR 205 (Mettler Toledo, USA)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Instron 1361 (Instron, USA)",
+              "Category": "Testing"
+            },
+            {
+              "Name": "ARAMIS 12 M (GOM, Germany)",
+              "Category": "Testing"
+            },
+            {
+              "Name": "TSL OIM Analysis 7",
+              "Category": "Software"
+            },
+            {
+              "Name": "MTEX package (v. 6.0)",
+              "Category": "Software"
+            }
+          ],
+          "Key_Params": {
+            "Stage1_LPBF": {
+              "Laser_Power_W": 200,
+              "Scan_Speed_mm_s": 2000,
+              "Layer_Thickness_um": 50,
+              "Hatch_Distance_um": 48,
+              "Rotation_Angle_deg": 67,
+              "VED_J_mm3": 41.66,
+              "VED_Original": "41.66 J/mm³",
+              "Specimen_Dimensions": "30 mm × 8 mm × 10 mm (width × length × height)"
+            },
+            "Stage2_Heat_Treatment": {
+              "Temperature_K": 868.15,
+              "Temperature_Original": "595 °C",
+              "Time_h": 2,
+              "Cooling": "Furnace cooling",
+              "Atmosphere": "Argon",
+              "Note": "Near martensite start temperature (Ms)"
+            }
+          },
+          "Note": "Characterization and testing equipment shared as described in Methods; EBSD (JSM-7100F) and density (XPR 205) data available in main text"
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Fully acicular Widmanstätten structure with thinnest α laths (~0.71 μm) among studied samples. Prior-β grain width smallest among samples. PF in (0001)α direction parallel to build direction with lowest PF intensity among low-temperature HT samples. 27.26% of SF values between 0.4 and 0.5 for basal slip.",
+            "simplified": "Fine Widmanstätten α laths (~0.71 μm); smallest prior-β grains; lowest PF intensity among low-T HT group"
+          },
+          "Main_Phase": {
+            "Phase_Name": "α (Widmanstätten)",
+            "Crystal_Structure": "HCP",
+            "Morphology": "Acicular laths in Widmanstätten arrangement"
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "Prior-β",
+              "Crystal_Structure": "BCC",
+              "Note": "Reconstructed parent β grain structure from EBSD; width correlates with α lath thickness; not a current thermodynamic phase"
+            }
+          ],
+          "Texture_or_Orientation": {
+            "PF_Direction": "(0001)α parallel to build direction",
+            "PF_Intensity": "Lowest among low-temperature HT samples (2-1, 3-1, 3-2)",
+            "PF_Distribution_1120": "Random distribution in (1120)α direction"
+          },
+          "Advanced_Quantitative_Features": {
+            "α_Lath_Thickness_um": {
+              "Value": 0.71,
+              "Original_Values": "~0.71 μm",
+              "Note": "Approximate value; thinnest among studied samples",
+              "Dimension_Type": "undefined"
+            },
+            "Schmid_Factor_Basal_Slip_0.4_0.5_Frequency_Pct": {
+              "Value": 27.26,
+              "Original_Values": "27.26%",
+              "Note": "Percentage of SF values between 0.4 and 0.5 for basal slip {0001}<11-20>α"
+            },
+            "Density_g_cm3": {
+              "Value": 4.407,
+              "Value_StdDev": 0.003,
+              "Original_Values": "4.407 ± 0.003 g/cm³",
+              "Note": "Measured by Archimedes method"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Ultimate_Tensile_Strength",
+            "Value": 1221,
+            "Value_StdDev": 18.0,
+            "Unit": "MPa",
+            "Original_Values": "1221 ± 18.0 MPa",
+            "Data_Source": "table",
+            "Test_Condition": {
+              "Strain_Rate_s1": "5×10⁻³ s⁻¹",
+              "Specimen_Shape": "Dog-bone shaped",
+              "Gauge_Length_mm": 5,
+              "Gauge_Width_mm": 2.5,
+              "Gauge_Thickness_mm": 1.0,
+              "Test_Temperature_Original": "Room temperature",
+              "Number_of_Tests": "≥3"
+            }
+          },
+          {
+            "Property_Name": "Elongation_Total",
+            "Value": 12.9,
+            "Value_StdDev": 0.2,
+            "Unit": "%",
+            "Original_Values": "12.9 ± 0.2%",
+            "Data_Source": "table",
+            "Note": "原文未区分 uniform/total，归入 Elongation_Total",
+            "Test_Condition": {
+              "Strain_Rate_s1": "5×10⁻³ s⁻¹",
+              "Specimen_Shape": "Dog-bone shaped",
+              "Gauge_Length_mm": 5,
+              "Gauge_Width_mm": 2.5,
+              "Gauge_Thickness_mm": 1.0,
+              "Test_Temperature_Original": "Room temperature",
+              "Number_of_Tests": "≥3"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "2-2",
+      "Sample_ID": "2-2",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing",
+        "Laser_Assisted"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 1",
+        "Fig. 4b"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Ti alloy",
+          "Material_Name_Raw": "Ti-6Al-4V",
+          "Nominal_Composition": {
+            "Note": "Same powder as Item 1-1"
+          }
+        },
+        "Processing": {
+          "Process_Category": "LPBF + Post-Heat-Treatment",
+          "Process_Text": {
+            "original": "Laser power 200 W, scan speed 1950 mm/s, layer thickness 50 μm, hatch distance 48 μm, rotation angle 67°, VED 42.73 J/mm³. Post-HT: 595 °C for 2 h, furnace cooling under argon.",
+            "simplified": "LPBF printing then low-temperature heat treatment at 595°C/2h with furnace cooling"
+          },
+          "Equipment": [
+            {
+              "Name": "Concept Laser M2 (GE Additive, USA)",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Instron 1361 (Instron, USA)",
+              "Category": "Testing"
+            },
+            {
+              "Name": "ARAMIS 12 M (GOM, Germany)",
+              "Category": "Testing"
+            }
+          ],
+          "Key_Params": {
+            "Stage1_LPBF": {
+              "Laser_Power_W": 200,
+              "Scan_Speed_mm_s": 1950,
+              "Layer_Thickness_um": 50,
+              "Hatch_Distance_um": 48,
+              "Rotation_Angle_deg": 67,
+              "VED_J_mm3": 42.73,
+              "VED_Original": "42.73 J/mm³",
+              "Specimen_Dimensions": "30 mm × 8 mm × 10 mm (width × length × height)"
+            },
+            "Stage2_Heat_Treatment": {
+              "Temperature_K": 868.15,
+              "Temperature_Original": "595 °C",
+              "Time_h": 2,
+              "Cooling": "Furnace cooling",
+              "Atmosphere": "Argon"
+            }
+          },
+          "Note": "All samples fabricated and tested using the same equipment as described in Methods; only sample-specific LPBF parameters and HT conditions differ per Table 1. Full equipment list in Item 1-1."
+        },
+        "Properties": [
+          {
+            "Property_Name": "Ultimate_Tensile_Strength",
+            "Value": 1209,
+            "Value_StdDev": 8.0,
+            "Unit": "MPa",
+            "Original_Values": "1209 ± 8.0 MPa",
+            "Data_Source": "table",
+            "Test_Condition": {
+              "Strain_Rate_s1": "5×10⁻³ s⁻¹",
+              "Specimen_Shape": "Dog-bone shaped",
+              "Gauge_Length_mm": 5,
+              "Gauge_Width_mm": 2.5,
+              "Gauge_Thickness_mm": 1.0,
+              "Test_Temperature_Original": "Room temperature",
+              "Number_of_Tests": "≥3"
+            }
+          },
+          {
+            "Property_Name": "Elongation_Total",
+            "Value": 12.2,
+            "Value_StdDev": 2.1,
+            "Unit": "%",
+            "Original_Values": "12.2 ± 2.1%",
+            "Data_Source": "table",
+            "Note": "原文未区分 uniform/total，归入 Elongation_Total",
+            "Test_Condition": {
+              "Strain_Rate_s1": "5×10⁻³ s⁻¹",
+              "Specimen_Shape": "Dog-bone shaped",
+              "Gauge_Length_mm": 5,
+              "Gauge_Width_mm": 2.5,
+              "Gauge_Thickness_mm": 1.0,
+              "Test_Temperature_Original": "Room temperature",
+              "Number_of_Tests": "≥3"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "3-1",
+      "Sample_ID": "3-1",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing",
+        "Laser_Assisted"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 1",
+        "Fig. 4c",
+        "Fig. 6c1-c4",
+        "Fig. 7c1-c2"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Ti alloy",
+          "Material_Name_Raw": "Ti-6Al-4V",
+          "Nominal_Composition": {
+            "Note": "Same powder as Item 1-1"
+          }
+        },
+        "Processing": {
+          "Process_Category": "LPBF + Post-Heat-Treatment",
+          "Process_Text": {
+            "original": "Laser power 200 W, scan speed 1850 mm/s, layer thickness 50 μm, hatch distance 48 μm, rotation angle 67°, VED 45.04 J/mm³. Post-HT: 595 °C for 2 h, furnace cooling under argon.",
+            "simplified": "LPBF printing then low-temperature heat treatment at 595°C/2h with furnace cooling"
+          },
+          "Equipment": [
+            {
+              "Name": "Concept Laser M2 (GE Additive, USA)",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "JSM-7100F (JEOL, Japan)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "XPR 205 (Mettler Toledo, USA)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Instron 1361 (Instron, USA)",
+              "Category": "Testing"
+            },
+            {
+              "Name": "ARAMIS 12 M (GOM, Germany)",
+              "Category": "Testing"
+            },
+            {
+              "Name": "TSL OIM Analysis 7",
+              "Category": "Software"
+            },
+            {
+              "Name": "MTEX package (v. 6.0)",
+              "Category": "Software"
+            }
+          ],
+          "Key_Params": {
+            "Stage1_LPBF": {
+              "Laser_Power_W": 200,
+              "Scan_Speed_mm_s": 1850,
+              "Layer_Thickness_um": 50,
+              "Hatch_Distance_um": 48,
+              "Rotation_Angle_deg": 67,
+              "VED_J_mm3": 45.04,
+              "VED_Original": "45.04 J/mm³",
+              "Specimen_Dimensions": "30 mm × 8 mm × 10 mm (width × length × height)"
+            },
+            "Stage2_Heat_Treatment": {
+              "Temperature_K": 868.15,
+              "Temperature_Original": "595 °C",
+              "Time_h": 2,
+              "Cooling": "Furnace cooling",
+              "Atmosphere": "Argon"
+            }
+          },
+          "Note": "Characterization and testing equipment shared as described in Methods; EBSD (JSM-7100F) and density (XPR 205) data available in main text"
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Fully acicular Widmanstätten structure with α lath thickness ~0.97 μm. PF in (0001)α direction parallel to build direction with highest PF intensity among low-temperature HT samples. 36.80% of SF values between 0.4 and 0.5 for basal slip.",
+            "simplified": "Widmanstätten α laths (~0.97 μm); highest PF intensity among low-T HT group"
+          },
+          "Main_Phase": {
+            "Phase_Name": "α (Widmanstätten)",
+            "Crystal_Structure": "HCP",
+            "Morphology": "Acicular laths in Widmanstätten arrangement"
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "Prior-β",
+              "Crystal_Structure": "BCC",
+              "Note": "Reconstructed parent β grain structure from EBSD; width correlates with α lath thickness; not a current thermodynamic phase"
+            }
+          ],
+          "Texture_or_Orientation": {
+            "PF_Direction": "(0001)α parallel to build direction",
+            "PF_Intensity": "Highest among low-temperature HT samples (2-1, 3-1, 3-2)",
+            "PF_Distribution_1120": "Random distribution in (1120)α direction"
+          },
+          "Advanced_Quantitative_Features": {
+            "α_Lath_Thickness_um": {
+              "Value": 0.97,
+              "Original_Values": "~0.97 μm",
+              "Note": "Approximate value",
+              "Dimension_Type": "undefined"
+            },
+            "Schmid_Factor_Basal_Slip_0.4_0.5_Frequency_Pct": {
+              "Value": 36.8,
+              "Original_Values": "36.80%",
+              "Note": "Percentage of SF values between 0.4 and 0.5 for basal slip {0001}<11-20>α"
+            },
+            "Density_g_cm3": {
+              "Value": 4.418,
+              "Value_StdDev": 0.007,
+              "Original_Values": "4.418 ± 0.007 g/cm³",
+              "Note": "Measured by Archimedes method"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Ultimate_Tensile_Strength",
+            "Value": 1186,
+            "Value_StdDev": 9.0,
+            "Unit": "MPa",
+            "Original_Values": "1186 ± 9.0 MPa",
+            "Data_Source": "table",
+            "Test_Condition": {
+              "Strain_Rate_s1": "5×10⁻³ s⁻¹",
+              "Specimen_Shape": "Dog-bone shaped",
+              "Gauge_Length_mm": 5,
+              "Gauge_Width_mm": 2.5,
+              "Gauge_Thickness_mm": 1.0,
+              "Test_Temperature_Original": "Room temperature",
+              "Number_of_Tests": "≥3"
+            }
+          },
+          {
+            "Property_Name": "Elongation_Total",
+            "Value": 16.4,
+            "Value_StdDev": 0.7,
+            "Unit": "%",
+            "Original_Values": "16.4 ± 0.7%",
+            "Data_Source": "table",
+            "Note": "原文未区分 uniform/total，归入 Elongation_Total",
+            "Test_Condition": {
+              "Strain_Rate_s1": "5×10⁻³ s⁻¹",
+              "Specimen_Shape": "Dog-bone shaped",
+              "Gauge_Length_mm": 5,
+              "Gauge_Width_mm": 2.5,
+              "Gauge_Thickness_mm": 1.0,
+              "Test_Temperature_Original": "Room temperature",
+              "Number_of_Tests": "≥3"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "3-2",
+      "Sample_ID": "3-2",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing",
+        "Laser_Assisted"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 1",
+        "Fig. 4c",
+        "Fig. 6d1-d4",
+        "Fig. 7d1-d2"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Ti alloy",
+          "Material_Name_Raw": "Ti-6Al-4V",
+          "Nominal_Composition": {
+            "Note": "Same powder as Item 1-1"
+          }
+        },
+        "Processing": {
+          "Process_Category": "LPBF + Post-Heat-Treatment",
+          "Process_Text": {
+            "original": "Laser power 200 W, scan speed 1900 mm/s, layer thickness 50 μm, hatch distance 48 μm, rotation angle 67°, VED 43.85 J/mm³. Post-HT: 595 °C for 2 h, furnace cooling under argon.",
+            "simplified": "LPBF printing then low-temperature heat treatment at 595°C/2h with furnace cooling"
+          },
+          "Equipment": [
+            {
+              "Name": "Concept Laser M2 (GE Additive, USA)",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "JSM-7100F (JEOL, Japan)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "XPR 205 (Mettler Toledo, USA)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Instron 1361 (Instron, USA)",
+              "Category": "Testing"
+            },
+            {
+              "Name": "ARAMIS 12 M (GOM, Germany)",
+              "Category": "Testing"
+            },
+            {
+              "Name": "TSL OIM Analysis 7",
+              "Category": "Software"
+            },
+            {
+              "Name": "MTEX package (v. 6.0)",
+              "Category": "Software"
+            }
+          ],
+          "Key_Params": {
+            "Stage1_LPBF": {
+              "Laser_Power_W": 200,
+              "Scan_Speed_mm_s": 1900,
+              "Layer_Thickness_um": 50,
+              "Hatch_Distance_um": 48,
+              "Rotation_Angle_deg": 67,
+              "VED_J_mm3": 43.85,
+              "VED_Original": "43.85 J/mm³",
+              "Specimen_Dimensions": "30 mm × 8 mm × 10 mm (width × length × height)"
+            },
+            "Stage2_Heat_Treatment": {
+              "Temperature_K": 868.15,
+              "Temperature_Original": "595 °C",
+              "Time_h": 2,
+              "Cooling": "Furnace cooling",
+              "Atmosphere": "Argon"
+            }
+          },
+          "Note": "Characterization and testing equipment shared as described in Methods; EBSD (JSM-7100F) and density (XPR 205) data available in main text"
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Fully acicular Widmanstätten structure with α lath thickness ~0.90 μm. PF in (0001)α direction parallel to build direction. PF intensity between 2-1 and 3-1 samples. 46.38% of SF values between 0.4 and 0.5 for basal slip.",
+            "simplified": "Widmanstätten α laths (~0.90 μm); PF intensity between 2-1 and 3-1; determined as optimal combination for balanced UTS and TE"
+          },
+          "Main_Phase": {
+            "Phase_Name": "α (Widmanstätten)",
+            "Crystal_Structure": "HCP",
+            "Morphology": "Acicular laths in Widmanstätten arrangement"
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "Prior-β",
+              "Crystal_Structure": "BCC",
+              "Note": "Reconstructed parent β grain structure from EBSD; width correlates with α lath thickness; not a current thermodynamic phase"
+            }
+          ],
+          "Texture_or_Orientation": {
+            "PF_Direction": "(0001)α parallel to build direction",
+            "PF_Distribution_1120": "Random distribution in (1120)α direction"
+          },
+          "Advanced_Quantitative_Features": {
+            "α_Lath_Thickness_um": {
+              "Value": 0.9,
+              "Original_Values": "~0.90 μm",
+              "Note": "Approximate value",
+              "Dimension_Type": "undefined"
+            },
+            "Schmid_Factor_Basal_Slip_0.4_0.5_Frequency_Pct": {
+              "Value": 46.38,
+              "Original_Values": "46.38%",
+              "Note": "Percentage of SF values between 0.4 and 0.5 for basal slip {0001}<11-20>α"
+            },
+            "Density_g_cm3": {
+              "Value": 4.412,
+              "Value_StdDev": 0.002,
+              "Original_Values": "4.412 ± 0.002 g/cm³",
+              "Note": "Measured by Archimedes method"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Ultimate_Tensile_Strength",
+            "Value": 1190,
+            "Value_StdDev": 12.4,
+            "Unit": "MPa",
+            "Original_Values": "1190 ± 12.4 MPa",
+            "Data_Source": "table",
+            "Note": "Determined as optimal combination for balanced UTS and TE in the concluding remarks",
+            "Test_Condition": {
+              "Strain_Rate_s1": "5×10⁻³ s⁻¹",
+              "Specimen_Shape": "Dog-bone shaped",
+              "Gauge_Length_mm": 5,
+              "Gauge_Width_mm": 2.5,
+              "Gauge_Thickness_mm": 1.0,
+              "Test_Temperature_Original": "Room temperature",
+              "Number_of_Tests": "≥3"
+            }
+          },
+          {
+            "Property_Name": "Elongation_Total",
+            "Value": 16.5,
+            "Value_StdDev": 1.3,
+            "Unit": "%",
+            "Original_Values": "16.5 ± 1.3%",
+            "Data_Source": "table",
+            "Note": "原文未区分 uniform/total，归入 Elongation_Total; determined as optimal combination",
+            "Test_Condition": {
+              "Strain_Rate_s1": "5×10⁻³ s⁻¹",
+              "Specimen_Shape": "Dog-bone shaped",
+              "Gauge_Length_mm": 5,
+              "Gauge_Width_mm": 2.5,
+              "Gauge_Thickness_mm": 1.0,
+              "Test_Temperature_Original": "Room temperature",
+              "Number_of_Tests": "≥3"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "4-1",
+      "Sample_ID": "4-1",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing",
+        "Laser_Assisted"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 1",
+        "Fig. 4d"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Ti alloy",
+          "Material_Name_Raw": "Ti-6Al-4V",
+          "Nominal_Composition": {
+            "Note": "Same powder as Item 1-1"
+          }
+        },
+        "Processing": {
+          "Process_Category": "LPBF + Post-Heat-Treatment",
+          "Process_Text": {
+            "original": "Laser power 200 W, scan speed 1700 mm/s, layer thickness 50 μm, hatch distance 48 μm, rotation angle 67°, VED 49.01 J/mm³. Post-HT: 595 °C for 2 h, furnace cooling under argon.",
+            "simplified": "LPBF printing then low-temperature heat treatment at 595°C/2h with furnace cooling"
+          },
+          "Equipment": [
+            {
+              "Name": "Concept Laser M2 (GE Additive, USA)",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Instron 1361 (Instron, USA)",
+              "Category": "Testing"
+            },
+            {
+              "Name": "ARAMIS 12 M (GOM, Germany)",
+              "Category": "Testing"
+            }
+          ],
+          "Key_Params": {
+            "Stage1_LPBF": {
+              "Laser_Power_W": 200,
+              "Scan_Speed_mm_s": 1700,
+              "Layer_Thickness_um": 50,
+              "Hatch_Distance_um": 48,
+              "Rotation_Angle_deg": 67,
+              "VED_J_mm3": 49.01,
+              "VED_Original": "49.01 J/mm³",
+              "Specimen_Dimensions": "30 mm × 8 mm × 10 mm (width × length × height)"
+            },
+            "Stage2_Heat_Treatment": {
+              "Temperature_K": 868.15,
+              "Temperature_Original": "595 °C",
+              "Time_h": 2,
+              "Cooling": "Furnace cooling",
+              "Atmosphere": "Argon"
+            }
+          },
+          "Note": "All samples fabricated and tested using the same equipment as described in Methods; only sample-specific LPBF parameters and HT conditions differ per Table 1. Full equipment list in Item 1-1."
+        },
+        "Properties": [
+          {
+            "Property_Name": "Ultimate_Tensile_Strength",
+            "Value": 1130,
+            "Value_StdDev": 13.0,
+            "Unit": "MPa",
+            "Original_Values": "1130 ± 13.0 MPa",
+            "Data_Source": "table",
+            "Test_Condition": {
+              "Strain_Rate_s1": "5×10⁻³ s⁻¹",
+              "Specimen_Shape": "Dog-bone shaped",
+              "Gauge_Length_mm": 5,
+              "Gauge_Width_mm": 2.5,
+              "Gauge_Thickness_mm": 1.0,
+              "Test_Temperature_Original": "Room temperature",
+              "Number_of_Tests": "≥3"
+            }
+          },
+          {
+            "Property_Name": "Elongation_Total",
+            "Value": 17.6,
+            "Value_StdDev": 0.5,
+            "Unit": "%",
+            "Original_Values": "17.6 ± 0.5%",
+            "Data_Source": "table",
+            "Note": "原文未区分 uniform/total，归入 Elongation_Total",
+            "Test_Condition": {
+              "Strain_Rate_s1": "5×10⁻³ s⁻¹",
+              "Specimen_Shape": "Dog-bone shaped",
+              "Gauge_Length_mm": 5,
+              "Gauge_Width_mm": 2.5,
+              "Gauge_Thickness_mm": 1.0,
+              "Test_Temperature_Original": "Room temperature",
+              "Number_of_Tests": "≥3"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "4-2",
+      "Sample_ID": "4-2",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing",
+        "Laser_Assisted"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 1",
+        "Fig. 4d"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Ti alloy",
+          "Material_Name_Raw": "Ti-6Al-4V",
+          "Nominal_Composition": {
+            "Note": "Same powder as Item 1-1"
+          }
+        },
+        "Processing": {
+          "Process_Category": "LPBF + Post-Heat-Treatment",
+          "Process_Text": {
+            "original": "Laser power 250 W, scan speed 1750 mm/s, layer thickness 50 μm, hatch distance 48 μm, rotation angle 67°, VED 47.61 J/mm³. Post-HT: 595 °C for 2 h, furnace cooling under argon.",
+            "simplified": "LPBF printing then low-temperature heat treatment at 595°C/2h with furnace cooling"
+          },
+          "Equipment": [
+            {
+              "Name": "Concept Laser M2 (GE Additive, USA)",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Instron 1361 (Instron, USA)",
+              "Category": "Testing"
+            },
+            {
+              "Name": "ARAMIS 12 M (GOM, Germany)",
+              "Category": "Testing"
+            }
+          ],
+          "Key_Params": {
+            "Stage1_LPBF": {
+              "Laser_Power_W": 250,
+              "Scan_Speed_mm_s": 1750,
+              "Layer_Thickness_um": 50,
+              "Hatch_Distance_um": 48,
+              "Rotation_Angle_deg": 67,
+              "VED_J_mm3": 47.61,
+              "VED_Original": "47.61 J/mm³",
+              "Specimen_Dimensions": "30 mm × 8 mm × 10 mm (width × length × height)"
+            },
+            "Stage2_Heat_Treatment": {
+              "Temperature_K": 868.15,
+              "Temperature_Original": "595 °C",
+              "Time_h": 2,
+              "Cooling": "Furnace cooling",
+              "Atmosphere": "Argon"
+            }
+          },
+          "Note": "All samples fabricated and tested using the same equipment as described in Methods; only sample-specific LPBF parameters and HT conditions differ per Table 1. Full equipment list in Item 1-1."
+        },
+        "Properties": [
+          {
+            "Property_Name": "Ultimate_Tensile_Strength",
+            "Value": 1136,
+            "Value_StdDev": 4.0,
+            "Unit": "MPa",
+            "Original_Values": "1136 ± 4.0 MPa",
+            "Data_Source": "table",
+            "Note": "Failed to expand Pareto front",
+            "Test_Condition": {
+              "Strain_Rate_s1": "5×10⁻³ s⁻¹",
+              "Specimen_Shape": "Dog-bone shaped",
+              "Gauge_Length_mm": 5,
+              "Gauge_Width_mm": 2.5,
+              "Gauge_Thickness_mm": 1.0,
+              "Test_Temperature_Original": "Room temperature",
+              "Number_of_Tests": "≥3"
+            }
+          },
+          {
+            "Property_Name": "Elongation_Total",
+            "Value": 14.7,
+            "Value_StdDev": 2.2,
+            "Unit": "%",
+            "Original_Values": "14.7 ± 2.2%",
+            "Data_Source": "table",
+            "Note": "原文未区分 uniform/total，归入 Elongation_Total; failed to expand Pareto front",
+            "Test_Condition": {
+              "Strain_Rate_s1": "5×10⁻³ s⁻¹",
+              "Specimen_Shape": "Dog-bone shaped",
+              "Gauge_Length_mm": 5,
+              "Gauge_Width_mm": 2.5,
+              "Gauge_Thickness_mm": 1.0,
+              "Test_Temperature_Original": "Room temperature",
+              "Number_of_Tests": "≥3"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "5-1",
+      "Sample_ID": "5-1",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing",
+        "Laser_Assisted"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 1",
+        "Fig. 4e"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Ti alloy",
+          "Material_Name_Raw": "Ti-6Al-4V",
+          "Nominal_Composition": {
+            "Note": "Same powder as Item 1-1"
+          }
+        },
+        "Processing": {
+          "Process_Category": "LPBF + Post-Heat-Treatment",
+          "Process_Text": {
+            "original": "Laser power 150 W, scan speed 1500 mm/s, layer thickness 50 μm, hatch distance 48 μm, rotation angle 67°, VED 41.66 J/mm³. Post-HT: 595 °C for 2 h, furnace cooling under argon.",
+            "simplified": "LPBF printing then low-temperature heat treatment at 595°C/2h with furnace cooling"
+          },
+          "Equipment": [
+            {
+              "Name": "Concept Laser M2 (GE Additive, USA)",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Instron 1361 (Instron, USA)",
+              "Category": "Testing"
+            },
+            {
+              "Name": "ARAMIS 12 M (GOM, Germany)",
+              "Category": "Testing"
+            }
+          ],
+          "Key_Params": {
+            "Stage1_LPBF": {
+              "Laser_Power_W": 150,
+              "Scan_Speed_mm_s": 1500,
+              "Layer_Thickness_um": 50,
+              "Hatch_Distance_um": 48,
+              "Rotation_Angle_deg": 67,
+              "VED_J_mm3": 41.66,
+              "VED_Original": "41.66 J/mm³",
+              "Specimen_Dimensions": "30 mm × 8 mm × 10 mm (width × length × height)"
+            },
+            "Stage2_Heat_Treatment": {
+              "Temperature_K": 868.15,
+              "Temperature_Original": "595 °C",
+              "Time_h": 2,
+              "Cooling": "Furnace cooling",
+              "Atmosphere": "Argon"
+            }
+          },
+          "Note": "All samples fabricated and tested using the same equipment as described in Methods; only sample-specific LPBF parameters and HT conditions differ per Table 1. Full equipment list in Item 1-1."
+        },
+        "Properties": [
+          {
+            "Property_Name": "Ultimate_Tensile_Strength",
+            "Value": 1207,
+            "Value_StdDev": 10.2,
+            "Unit": "MPa",
+            "Original_Values": "1207 ± 10.2 MPa",
+            "Data_Source": "table",
+            "Note": "Failed to expand Pareto front in iteration 5",
+            "Test_Condition": {
+              "Strain_Rate_s1": "5×10⁻³ s⁻¹",
+              "Specimen_Shape": "Dog-bone shaped",
+              "Gauge_Length_mm": 5,
+              "Gauge_Width_mm": 2.5,
+              "Gauge_Thickness_mm": 1.0,
+              "Test_Temperature_Original": "Room temperature",
+              "Number_of_Tests": "≥3"
+            }
+          },
+          {
+            "Property_Name": "Elongation_Total",
+            "Value": 12.9,
+            "Value_StdDev": 1.2,
+            "Unit": "%",
+            "Original_Values": "12.9 ± 1.2%",
+            "Data_Source": "table",
+            "Note": "原文未区分 uniform/total，归入 Elongation_Total; failed to expand Pareto front in iteration 5",
+            "Test_Condition": {
+              "Strain_Rate_s1": "5×10⁻³ s⁻¹",
+              "Specimen_Shape": "Dog-bone shaped",
+              "Gauge_Length_mm": 5,
+              "Gauge_Width_mm": 2.5,
+              "Gauge_Thickness_mm": 1.0,
+              "Test_Temperature_Original": "Room temperature",
+              "Number_of_Tests": "≥3"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "5-2",
+      "Sample_ID": "5-2",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing",
+        "Laser_Assisted"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 1",
+        "Fig. 4e"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Ti alloy",
+          "Material_Name_Raw": "Ti-6Al-4V",
+          "Nominal_Composition": {
+            "Note": "Same powder as Item 1-1"
+          }
+        },
+        "Processing": {
+          "Process_Category": "LPBF_As-Built",
+          "Process_Text": {
+            "original": "Laser power 350 W, scan speed 1450 mm/s, layer thickness 50 μm, hatch distance 48 μm, rotation angle 67°, VED 100.0 J/mm³. No post heat treatment applied (as-built condition; Table 1 shows 0 for Heating Temperature and Heating Time).",
+            "simplified": "LPBF printing in as-built condition, no post heat treatment"
+          },
+          "Equipment": [
+            {
+              "Name": "Concept Laser M2 (GE Additive, USA)",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Instron 1361 (Instron, USA)",
+              "Category": "Testing"
+            },
+            {
+              "Name": "ARAMIS 12 M (GOM, Germany)",
+              "Category": "Testing"
+            }
+          ],
+          "Key_Params": {
+            "Stage1_LPBF": {
+              "Laser_Power_W": 350,
+              "Scan_Speed_mm_s": 1450,
+              "Layer_Thickness_um": 50,
+              "Hatch_Distance_um": 48,
+              "Rotation_Angle_deg": 67,
+              "VED_J_mm3": 100.0,
+              "VED_Original": "100.0 J/mm³",
+              "Specimen_Dimensions": "30 mm × 8 mm × 10 mm (width × length × height)"
+            },
+            "Note": "As-built condition; no post heat treatment applied"
+          },
+          "Note": "All samples fabricated and tested using the same equipment as described in Methods; only sample-specific LPBF parameters and HT conditions differ per Table 1. Full equipment list in Item 1-1."
+        },
+        "Properties": [
+          {
+            "Property_Name": "Ultimate_Tensile_Strength",
+            "Value": 1214,
+            "Value_StdDev": 21.5,
+            "Unit": "MPa",
+            "Original_Values": "1214 ± 21.5 MPa",
+            "Data_Source": "table",
+            "Note": "As-built sample; failed to expand Pareto front; only sample in this study not surpassing previous studies' performance",
+            "Test_Condition": {
+              "Strain_Rate_s1": "5×10⁻³ s⁻¹",
+              "Specimen_Shape": "Dog-bone shaped",
+              "Gauge_Length_mm": 5,
+              "Gauge_Width_mm": 2.5,
+              "Gauge_Thickness_mm": 1.0,
+              "Test_Temperature_Original": "Room temperature",
+              "Number_of_Tests": "≥3"
+            }
+          },
+          {
+            "Property_Name": "Elongation_Total",
+            "Value": 8.64,
+            "Value_StdDev": 1.4,
+            "Unit": "%",
+            "Original_Values": "8.64 ± 1.4%",
+            "Data_Source": "table",
+            "Note": "原文未区分 uniform/total，归入 Elongation_Total; as-built sample with lowest TE among all studied samples; failed to expand Pareto front",
+            "Test_Condition": {
+              "Strain_Rate_s1": "5×10⁻³ s⁻¹",
+              "Specimen_Shape": "Dog-bone shaped",
+              "Gauge_Length_mm": 5,
+              "Gauge_Width_mm": 2.5,
+              "Gauge_Thickness_mm": 1.0,
+              "Test_Temperature_Original": "Room temperature",
+              "Number_of_Tests": "≥3"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "Initial_Dataset_Literature",
+      "Sample_ID": "Initial_Dataset_Literature",
+      "Role": "Reference",
+      "Data_Nature": "Literature_Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing",
+        "Laser_Assisted"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Fig. 2",
+        "Fig. 4f"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Ti alloy",
+          "Material_Name_Raw": "Ti-6Al-4V",
+          "Note": "119 combinations of LPBF process parameters and post-HT conditions from previous studies (refs 43-57); individual compositions not detailed in main text"
+        },
+        "Processing": {
+          "Process_Category": "LPBF + Post-Heat-Treatment",
+          "Process_Text": {
+            "original": "119 combinations extracted from previous studies, including LPBF process parameters (laser power, scan speed, VED) and post-HT conditions (HT temperature, HT time), all subjected to consistent furnace cooling.",
+            "simplified": "119 literature data points used as initial training dataset for the Pareto active learning framework"
+          },
+          "Note": "Individual process parameters not listed in main text; details in Supplementary Data 1"
+        },
+        "Properties": [
+          {
+            "Property_Name": "Ultimate_Tensile_Strength",
+            "Value": null,
+            "Unit": "MPa",
+            "Data_Source": "unknown",
+            "Note": "119 UTS-TE data points from literature (refs 43-57) used as initial dataset; individual values not extractable from main text; see Supplementary Data 1"
+          },
+          {
+            "Property_Name": "Elongation_Total",
+            "Value": null,
+            "Unit": "%",
+            "Data_Source": "unknown",
+            "Note": "119 UTS-TE data points from literature (refs 43-57) used as initial dataset; individual values not extractable from main text; see Supplementary Data 1"
+          }
+        ]
+      }
+    }
+  ]
+}

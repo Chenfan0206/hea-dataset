@@ -1,0 +1,326 @@
+{
+  "Paper_Metadata": {
+    "Paper_Title": "Preparation of pleated RGO/MXene/Fe3O4 microsphere and its absorption properties for electromagnetic wave",
+    "DOI": "10.1016/j.carbon.2020.09.093"
+  },
+  "items": [
+    {
+      "Sample_ID": "FMCM-1",
+      "Gradient_Material": false,
+      "Gradient_Group_ID": null,
+      "Composition_Info": {
+        "Role": "Target",
+        "Fillers_Name_Raw": "RGO/MXene/Fe3O4 Microsphere",
+        "Nominal_Composition": {
+          "Composition_Type": "mass_ratio",
+          "Elements_Normalized": null,
+          "Note": "Mass ratio of GOx:MXene:Fe3O4 = 4:1:0.4"
+        },
+        "Process_Info": {
+          "Process_Category": "Ultrasonic Spray Pyrolysis and Reduction",
+          "Process_Text": {
+            "original": "GOx, MXene and Fe3O4 nanoparticles were added to 20 mL deionized water in a certain proportion. GOx/MXene/Fe3O4 microspheres were prepared by ultrasonic atomizer. The process conditions and washing process were same as that of RGO/MXene microspheres. After dispersing GOx/MXene/Fe3O4 in L-ascorbic acid aqueous solution with concentration of 3.6mg/mL and reducing for 30 min at 90°C, RGO/MXene/Fe3O4 microspheres were obtained by magnetic separation.",
+            "simplified": "Ultrasonic atomization of precursor droplets into liquid paraffin at 150°C, followed by chemical reduction using L-ascorbic acid at 90°C for 30 min."
+          },
+          "Equipment": "Ultrasonic atomizer (Beijing Oriental Jin Rong Ultrasonic Electric Appliance Co. Ltd.)",
+          "Key_Params": {
+            "Reduction_Temperature_K": 363.15,
+            "Reduction_Time_h": 0.5,
+            "Atomization_Temperature_K": 423.15
+          }
+        },
+        "Properties_Info": [
+          {
+            "Property_Name": "Microwave Absorption Performance",
+            "Test_Condition": "Coaxial ring sample with 40wt% loading in paraffin, frequency range 2.0-18.0 GHz",
+            "Value_Numeric": -41.4,
+            "Value_Range": null,
+            "Value_StdDev": null,
+            "Unit": "dB",
+            "Test_Temperature_K": 298.15,
+            "Data_Source": "text",
+            "Note": "Minimum Reflection Loss (RLmin) at 12.2 GHz"
+          },
+          {
+            "Property_Name": "Matching Thickness",
+            "Value_Numeric": 2.2,
+            "Unit": "mm",
+            "Test_Temperature_K": 298.15,
+            "Data_Source": "text",
+            "Note": "Thickness at RLmin"
+          },
+          {
+            "Property_Name": "Effective Absorption Bandwidth",
+            "Value_Numeric": 2.8,
+            "Unit": "GHz",
+            "Test_Temperature_K": 298.15,
+            "Data_Source": "text",
+            "Note": "Bandwidth < -10 dB"
+          },
+          {
+            "Property_Name": "Saturation Magnetization",
+            "Value_Numeric": 9.2,
+            "Unit": "emu g-1",
+            "Test_Temperature_K": 298.15,
+            "Data_Source": "text",
+            "Note": "Ms value"
+          }
+        ]
+      }
+    },
+    {
+      "Sample_ID": "FMCM-2",
+      "Gradient_Material": false,
+      "Gradient_Group_ID": null,
+      "Composition_Info": {
+        "Role": "Target",
+        "Alloy_Name_Raw": "RGO/MXene/Fe3O4 Microsphere",
+        "Nominal_Composition": {
+          "Composition_Type": "mass_ratio",
+          "Elements_Normalized": null,
+          "Note": "Mass ratio of GOx:MXene:Fe3O4 = 4:1:0.6"
+        },
+        "Measured_Composition": {
+          "Composition_Type": "wt%",
+          "Elements_Normalized": null,
+          "Measurement_Method": "TGA",
+          "Note": "Fe3O4 content determined as 37.5% by TGA"
+        }
+      },
+      "Process_Info": {
+        "Process_Category": "Ultrasonic Spray Pyrolysis and Reduction",
+        "Process_Text": {
+          "original": "GOx, MXene and Fe3O4 nanoparticles were added to 20 mL deionized water in a certain proportion. GOx/MXene/Fe3O4 microspheres were prepared by ultrasonic atomizer. The process conditions and washing process were same as that of RGO/MXene microspheres. After dispersing GOx/MXene/Fe3O4 in L-ascorbic acid aqueous solution with concentration of 3.6mg/mL and reducing for 30 min at 90°C, RGO/MXene/Fe3O4 microspheres were obtained by magnetic separation.",
+          "simplified": "Ultrasonic atomization of precursor droplets into liquid paraffin at 150°C, followed by chemical reduction using L-ascorbic acid at 90°C for 30 min."
+        },
+        "Equipment": "Ultrasonic atomizer (Beijing Oriental Jin Rong Ultrasonic Electric Appliance Co. Ltd.)",
+        "Key_Params": {
+          "Reduction_Temperature_K": 363.15,
+          "Reduction_Time_h": 0.5,
+          "Atomization_Temperature_K": 423.15
+        }
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": "The microspheres showed similar morphology to RGO/MXene, with a diameter of about 6um. The degree of wrinkles on the surface of the microspheres increased. Fe3O4 nanoparticles with high mass thickness contrast can be clearly observed inside the microspheres.",
+          "simplified": "Pleated microsphere morphology with diameter ~6um. Surface wrinkles increase with Fe3O4 content. Fe3O4 nanoparticles (avg 10nm) are encapsulated within the layered RGO/MXene structure."
+        },
+        "Main_Phase": null,
+        "Precipitates": [
+          {
+            "Phase_Type": "Fe3O4 Nanoparticle",
+            "Volume_Fraction_pct": null
+          }
+        ],
+        "Porosity_pct": null,
+        "Relative_Density_pct": null,
+        "Grain_Size_avg_um": 6.0,
+        "Precipitate_Size_avg_nm": 10.0,
+        "Advanced_Quantitative_Features": {
+          "BET_Surface_Area_m2_g": 103.71,
+          "Pore_Volume_cm3_g": 0.3829,
+          "Pore_Size_nm": 8.83
+        }
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Microwave Absorption Performance",
+          "Test_Condition": "Coaxial ring sample with 40wt% loading in paraffin, frequency range 2.0-18.0 GHz",
+          "Value_Numeric": -41.9,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "dB",
+          "Test_Temperature_K": 298.15,
+          "Data_Source": "text",
+          "Note": "Minimum Reflection Loss (RLmin) at 14.5 GHz"
+        },
+        {
+          "Property_Name": "Matching Thickness",
+          "Value_Numeric": 2.0,
+          "Unit": "mm",
+          "Test_Temperature_K": 298.15,
+          "Data_Source": "text",
+          "Note": "Thickness at RLmin"
+        },
+        {
+          "Property_Name": "Effective Absorption Bandwidth",
+          "Value_Numeric": 6.5,
+          "Unit": "GHz",
+          "Test_Temperature_K": 298.15,
+          "Data_Source": "text",
+          "Note": "Bandwidth < -10 dB"
+        },
+        {
+          "Property_Name": "Saturation Magnetization",
+          "Value_Numeric": 11.5,
+          "Unit": "emu g-1",
+          "Test_Temperature_K": 298.15,
+          "Data_Source": "text",
+          "Note": "Ms value"
+        }
+      ]
+    },
+    {
+      "Sample_ID": "FMCM-3",
+      "Gradient_Material": false,
+      "Gradient_Group_ID": null,
+      "Composition_Info": {
+        "Role": "Target",
+        "Alloy_Name_Raw": "RGO/MXene/Fe3O4 Microsphere",
+        "Nominal_Composition": {
+          "Composition_Type": "mass_ratio",
+          "Elements_Normalized": null,
+          "Note": "Mass ratio of GOx:MXene:Fe3O4 = 4:1:0.8"
+        },
+        "Measured_Composition": {
+          "Composition_Type": "wt%",
+          "Elements_Normalized": null,
+          "Measurement_Method": "TGA",
+          "Note": "Fe3O4 content determined as 44.4% by TGA"
+        }
+      },
+      "Process_Info": {
+        "Process_Category": "Ultrasonic Spray Pyrolysis and Reduction",
+        "Process_Text": {
+          "original": "GOx, MXene and Fe3O4 nanoparticles were added to 20 mL deionized water in a certain proportion. GOx/MXene/Fe3O4 microspheres were prepared by ultrasonic atomizer. The process conditions and washing process were same as that of RGO/MXene microspheres. After dispersing GOx/MXene/Fe3O4 in L-ascorbic acid aqueous solution with concentration of 3.6mg/mL and reducing for 30 min at 90°C, RGO/MXene/Fe3O4 microspheres were obtained by magnetic separation.",
+          "simplified": "Ultrasonic atomization of precursor droplets into liquid paraffin at 150°C, followed by chemical reduction using L-ascorbic acid at 90°C for 30 min."
+        },
+        "Equipment": "Ultrasonic atomizer (Beijing Oriental Jin Rong Ultrasonic Electric Appliance Co. Ltd.)",
+        "Key_Params": {
+          "Reduction_Temperature_K": 363.15,
+          "Reduction_Time_h": 0.5,
+          "Atomization_Temperature_K": 423.15
+        }
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": "The microspheres showed similar morphology to RGO/MXene, with a diameter of about 6um. The degree of wrinkles on the surface of the microspheres increased. Fe3O4 nanoparticles with high mass thickness contrast can be clearly observed inside the microspheres. The edge of FMCM-3 microsphere was relatively smooth. The difference of mass thickness contrast between the edge and the internal was reduced.",
+          "simplified": "Pleated microsphere morphology with diameter ~6um. Surface wrinkles increase with Fe3O4 content. Fe3O4 nanoparticles (avg 10nm) are encapsulated within the layered RGO/MXene structure. Tighter folds observed compared to other ratios."
+        },
+        "Main_Phase": null,
+        "Precipitates": [
+          {
+            "Phase_Type": "Fe3O4 Nanoparticle",
+            "Volume_Fraction_pct": null
+          }
+        ],
+        "Porosity_pct": null,
+        "Relative_Density_pct": null,
+        "Grain_Size_avg_um": 6.0,
+        "Precipitate_Size_avg_nm": 10.0,
+        "Advanced_Quantitative_Features": {
+          "BET_Surface_Area_m2_g": 87.51,
+          "Pore_Volume_cm3_g": 0.4147,
+          "Pore_Size_nm": 12.7
+        }
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Microwave Absorption Performance",
+          "Test_Condition": "Coaxial ring sample with 40wt% loading in paraffin, frequency range 2.0-18.0 GHz",
+          "Value_Numeric": -51.2,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "dB",
+          "Test_Temperature_K": 298.15,
+          "Data_Source": "text",
+          "Note": "Minimum Reflection Loss (RLmin) at 11.1 GHz"
+        },
+        {
+          "Property_Name": "Matching Thickness",
+          "Value_Numeric": 2.9,
+          "Unit": "mm",
+          "Test_Temperature_K": 298.15,
+          "Data_Source": "text",
+          "Note": "Thickness at RLmin"
+        },
+        {
+          "Property_Name": "Effective Absorption Bandwidth",
+          "Value_Numeric": 4.7,
+          "Unit": "GHz",
+          "Test_Temperature_K": 298.15,
+          "Data_Source": "text",
+          "Note": "Bandwidth < -10 dB"
+        },
+        {
+          "Property_Name": "Saturation Magnetization",
+          "Value_Numeric": 16.8,
+          "Unit": "emu g-1",
+          "Test_Temperature_K": 298.15,
+          "Data_Source": "text",
+          "Note": "Ms value"
+        }
+      ]
+    },
+    {
+      "Sample_ID": "FMCM-4",
+      "Gradient_Material": false,
+      "Gradient_Group_ID": null,
+      "Composition_Info": {
+        "Role": "Target",
+        "Alloy_Name_Raw": "RGO/MXene/Fe3O4 Microsphere",
+        "Nominal_Composition": {
+          "Composition_Type": "mass_ratio",
+          "Elements_Normalized": null,
+          "Note": "Mass ratio of GOx:MXene:Fe3O4 = 4:1:1"
+        },
+        "Measured_Composition": {
+          "Composition_Type": "wt%",
+          "Elements_Normalized": null,
+          "Measurement_Method": "TGA",
+          "Note": "Fe3O4 content determined as 50.0% by TGA"
+        }
+      },
+      "Process_Info": {
+        "Process_Category": "Ultrasonic Spray Pyrolysis and Reduction",
+        "Process_Text": {
+          "original": "GOx, MXene and Fe3O4 nanoparticles were added to 20 mL deionized water in a certain proportion. GOx/MXene/Fe3O4 microspheres were prepared by ultrasonic atomizer. The process conditions and washing process were same as that of RGO/MXene microspheres. After dispersing GOx/MXene/Fe3O4 in L-ascorbic acid aqueous solution with concentration of 3.6mg/mL and reducing for 30 min at 90°C, RGO/MXene/Fe3O4 microspheres were obtained by magnetic separation.",
+          "simplified": "Ultrasonic atomization of precursor droplets into liquid paraffin at 150°C, followed by chemical reduction using L-ascorbic acid at 90°C for 30 min."
+        },
+        "Equipment": "Ultrasonic atomizer (Beijing Oriental Jin Rong Ultrasonic Electric Appliance Co. Ltd.)",
+        "Key_Params": {
+          "Reduction_Temperature_K": 363.15,
+          "Reduction_Time_h": 0.5,
+          "Atomization_Temperature_K": 423.15
+        },
+        "Properties_Info": [
+          {
+            "Property_Name": "Microwave Absorption Performance",
+            "Test_Condition": "Coaxial ring sample with 40wt% loading in paraffin, frequency range 2.0-18.0 GHz",
+            "Value_Numeric": -9.8,
+            "Value_Range": null,
+            "Value_StdDev": null,
+            "Unit": "dB",
+            "Test_Temperature_K": 298.15,
+            "Data_Source": "text",
+            "Note": "Minimum Reflection Loss (RLmin) at 12.6 GHz"
+          },
+          {
+            "Property_Name": "Matching Thickness",
+            "Value_Numeric": 2.2,
+            "Unit": "mm",
+            "Test_Temperature_K": 298.15,
+            "Data_Source": "text",
+            "Note": "Thickness at RLmin"
+          },
+          {
+            "Property_Name": "Effective Absorption Bandwidth",
+            "Value_Numeric": null,
+            "Unit": "GHz",
+            "Test_Temperature_K": 298.15,
+            "Data_Source": "text",
+            "Note": "Value not provided in text for this specific sample"
+          },
+          {
+            "Property_Name": "Saturation Magnetization",
+            "Value_Numeric": 17.4,
+            "Unit": "emu g-1",
+            "Test_Temperature_K": 298.15,
+            "Data_Source": "text",
+            "Note": "Ms value"
+          }
+        ]
+      }
+    }
+  ]
+}

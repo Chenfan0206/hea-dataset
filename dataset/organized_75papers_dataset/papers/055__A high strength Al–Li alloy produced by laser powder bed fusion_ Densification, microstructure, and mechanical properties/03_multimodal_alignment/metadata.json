@@ -1,0 +1,7 @@
+{
+  "paper_dir": "王卓_增材-文献1",
+  "figures": 15,
+  "direct_pairs": 15,
+  "topk_pairs": 75,
+  "sentences": 65
+}

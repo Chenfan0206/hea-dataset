@@ -1,0 +1,7 @@
+{
+  "paper_dir": "Hydrogen_assisted_fa",
+  "figures": 16,
+  "direct_pairs": 16,
+  "topk_pairs": 80,
+  "sentences": 61
+}

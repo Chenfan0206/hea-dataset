@@ -1,0 +1,566 @@
+{
+  "Paper_Metadata": {
+    "Paper_Title": "Calphad-assisted design of high strength - ductility martensitic stainless-steels with reverted austenite",
+    "DOI": "10.1016/j.actamat.2023.119641"
+  },
+  "items": [
+    {
+      "Sample_ID": "8Ni_As_quenched",
+      "Gradient_Material": false,
+      "Gradient_Group_ID": null,
+      "Composition_Info": {
+        "Role": "Target",
+        "Alloy_Name_Raw": "8Ni",
+        "Nominal_Composition": {
+          "Composition_Type": "wt%",
+          "Elements_Normalized": {
+            "Fe": 78.0,
+            "Cr": 13.0,
+            "Ni": 8.0,
+            "Al": 1.0
+          }
+        },
+        "Measured_Composition": {
+          "Composition_Type": "wt%",
+          "Elements_Normalized": {
+            "Ni": 8.0,
+            "Cr": 14.51,
+            "Al": 1.78,
+            "Fe": 75.71
+          },
+          "Measurement_Method": "EDS [cite: 177, 391]"
+        },
+        "Note": "文中表1提供的原始EDS测量数据为: Ni 8.1, Cr 14.7, Al 1.8, Mo 0.0, Fe 76.7，总和为101.3%，已作归一化处理 [cite: 483-488]。"
+      },
+      "Process_Info": {
+        "Process_Category": "Casting and Homogenization",
+        "Process_Text": {
+          "original": "produced by Edmund Buhler arc melting system AM500 with suction casting. Then the ingots are cold rolled or hot rolled to target thickness and homogenized at 1000 °C for 3 h with a water quench. [cite: 170-171]",
+          "simplified": "使用Edmund Buhler电弧熔炼系统AM500进行吸铸。随后将铸锭冷轧或热轧至目标厚度，并在1000 °C下均匀化处理3小时后水淬 [cite: 170-171]。"
+        },
+        "Equipment": "Edmund Buhler arc melting system AM500",
+        "Key_Params": {
+          "Solution_Temperature_K": 1273.15,
+          "Solution_Time_h": 3.0,
+          "Cooling_Medium": "water quench"
+        }
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": "All three alloys show martensitic microstructure with retained austenite fractions below 1%.",
+          "simplified": "呈现马氏体显微组织，残余奥氏体体积分数低于1%。"
+        },
+        "Main_Phase": "Martensite",
+        "Precipitates": [],
+        "Porosity_pct": null,
+        "Relative_Density_pct": null,
+        "Grain_Size_avg_um": null,
+        "Precipitate_Size_avg_nm": null,
+        "Advanced_Quantitative_Features": {}
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Yield_Strength",
+          "Test_Condition": "uniaxial tension",
+          "Value_Numeric": 613.0,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "MPa",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": "10^-3",
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": "E8/E8M-22, gauge length 4 mm, cross-section area 0.7±0.2 mm2 [cite: 186-187]",
+          "Note": "淬火态8Ni的屈服强度。"
+        },
+        {
+          "Property_Name": "Elongation_Total",
+          "Test_Condition": "uniaxial tension",
+          "Value_Numeric": 17.4,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "%",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": "10^-3",
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": "E8/E8M-22, gauge length 4 mm, cross-section area 0.7±0.2 mm2 [cite: 186-187]",
+          "Note": "淬火态8Ni的断裂总延伸率。"
+        }
+      ]
+    },
+    {
+      "Sample_ID": "8Ni_Annealed_530C_1h",
+      "Gradient_Material": false,
+      "Gradient_Group_ID": null,
+      "Composition_Info": {
+        "Role": "Target",
+        "Alloy_Name_Raw": "8Ni",
+        "Nominal_Composition": {
+          "Composition_Type": "wt%",
+          "Elements_Normalized": {
+            "Fe": 78.0,
+            "Cr": 13.0,
+            "Ni": 8.0,
+            "Al": 1.0
+          }
+        },
+        "Measured_Composition": {
+          "Composition_Type": "wt%",
+          "Elements_Normalized": {
+            "Ni": 8.0,
+            "Cr": 14.51,
+            "Al": 1.78,
+            "Fe": 75.71
+          },
+          "Measurement_Method": "EDS [cite: 177, 391]"
+        },
+        "Note": "测量成分从原文总和不为100%的数据中归一化得出 [cite: 483-488]。"
+      },
+      "Process_Info": {
+        "Process_Category": "Annealing",
+        "Process_Text": {
+          "original": "homogenized at 1000 °C for 3 h with a water quench. Then samples are annealed at 530 °C for 1 hour. [cite: 171-172, 690]",
+          "simplified": "在1000 °C下均匀化处理3小时后水淬。然后样品在530 °C下退火处理1小时 [cite: 171-172, 690]。"
+        },
+        "Equipment": null,
+        "Key_Params": {
+          "Solution_Temperature_K": 1273.15,
+          "Solution_Time_h": 3.0,
+          "Cooling_Medium": "water quench",
+          "Aging_Temperature_K": 803.15,
+          "Aging_Time_h": 1.0
+        }
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": "All alloys display martensite matrix and precipitate formation.",
+          "simplified": "具有马氏体基体及析出相。"
+        },
+        "Main_Phase": "Martensite",
+        "Precipitates": [],
+        "Porosity_pct": null,
+        "Relative_Density_pct": null,
+        "Grain_Size_avg_um": null,
+        "Precipitate_Size_avg_nm": null,
+        "Advanced_Quantitative_Features": {}
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Yield_Strength",
+          "Test_Condition": "uniaxial tension",
+          "Value_Numeric": 1113.0,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "MPa",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": "10^-3",
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": "E8/E8M-22, gauge length 4 mm [cite: 186-187]",
+          "Note": "8Ni在530 °C退火1小时后的屈服强度。"
+        },
+        {
+          "Property_Name": "Elongation_Total",
+          "Test_Condition": "uniaxial tension",
+          "Value_Numeric": 11.9,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "%",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": "10^-3",
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": "E8/E8M-22, gauge length 4 mm [cite: 186-187]",
+          "Note": "8Ni在530 °C退火1小时后的断裂总延伸率。"
+        }
+      ]
+    },
+    {
+      "Sample_ID": "8Ni4Mo_As_quenched",
+      "Gradient_Material": false,
+      "Gradient_Group_ID": null,
+      "Composition_Info": {
+        "Role": "Target",
+        "Alloy_Name_Raw": "8Ni4Mo",
+        "Nominal_Composition": {
+          "Composition_Type": "wt%",
+          "Elements_Normalized": {
+            "Fe": 74.0,
+            "Cr": 13.0,
+            "Ni": 8.0,
+            "Al": 1.0,
+            "Mo": 4.0
+          }
+        },
+        "Measured_Composition": {
+          "Composition_Type": "wt%",
+          "Elements_Normalized": {
+            "Ni": 6.8,
+            "Cr": 14.3,
+            "Al": 1.0,
+            "Mo": 2.8,
+            "Fe": 75.1
+          },
+          "Measurement_Method": "EDS [cite: 177, 391]"
+        },
+        "Note": "文中表1提供的原始EDS测量数据 [cite: 493-497]。"
+      },
+      "Process_Info": {
+        "Process_Category": "Casting and Homogenization",
+        "Process_Text": {
+          "original": "produced by Edmund Buhler arc melting system AM500 with suction casting. Then the ingots are cold rolled or hot rolled to target thickness and homogenized at 1000 °C for 3 h with a water quench. [cite: 170-171]",
+          "simplified": "使用Edmund Buhler电弧熔炼系统AM500进行吸铸。随后将铸锭冷轧或热轧至目标厚度，并在1000 °C下均匀化处理3小时后水淬 [cite: 170-171]。"
+        },
+        "Equipment": "Edmund Buhler arc melting system AM500",
+        "Key_Params": {
+          "Solution_Temperature_K": 1273.15,
+          "Solution_Time_h": 3.0,
+          "Cooling_Medium": "water quench"
+        }
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": "All three alloys show martensitic microstructure with retained austenite fractions below 1%.",
+          "simplified": "呈现马氏体显微组织，残余奥氏体体积分数低于1%。"
+        },
+        "Main_Phase": "Martensite",
+        "Precipitates": [],
+        "Porosity_pct": null,
+        "Relative_Density_pct": null,
+        "Grain_Size_avg_um": null,
+        "Precipitate_Size_avg_nm": null,
+        "Advanced_Quantitative_Features": {}
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Yield_Strength",
+          "Test_Condition": "uniaxial tension",
+          "Value_Numeric": 744.0,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "MPa",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": "10^-3",
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": "E8/E8M-22, gauge length 4 mm [cite: 186-187]",
+          "Note": "淬火态8Ni4Mo的屈服强度。"
+        },
+        {
+          "Property_Name": "Elongation_Total",
+          "Test_Condition": "uniaxial tension",
+          "Value_Numeric": 14.0,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "%",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": "10^-3",
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": "E8/E8M-22, gauge length 4 mm [cite: 186-187]",
+          "Note": "淬火态8Ni4Mo的断裂总延伸率。"
+        }
+      ]
+    },
+    {
+      "Sample_ID": "8Ni4Mo_Annealed_530C_1h",
+      "Gradient_Material": false,
+      "Gradient_Group_ID": null,
+      "Composition_Info": {
+        "Role": "Target",
+        "Alloy_Name_Raw": "8Ni4Mo",
+        "Nominal_Composition": {
+          "Composition_Type": "wt%",
+          "Elements_Normalized": {
+            "Fe": 74.0,
+            "Cr": 13.0,
+            "Ni": 8.0,
+            "Al": 1.0,
+            "Mo": 4.0
+          }
+        },
+        "Measured_Composition": {
+          "Composition_Type": "wt%",
+          "Elements_Normalized": {
+            "Ni": 6.8,
+            "Cr": 14.3,
+            "Al": 1.0,
+            "Mo": 2.8,
+            "Fe": 75.1
+          },
+          "Measurement_Method": "EDS [cite: 177, 391]"
+        },
+        "Note": null
+      },
+      "Process_Info": {
+        "Process_Category": "Annealing",
+        "Process_Text": {
+          "original": "homogenized at 1000 °C for 3 h with a water quench. Then samples are annealed at 530 °C for 1 hour. [cite: 171-172, 690]",
+          "simplified": "在1000 °C下均匀化处理3小时后水淬。然后样品在530 °C下退火处理1小时 [cite: 171-172, 690]。"
+        },
+        "Equipment": null,
+        "Key_Params": {
+          "Solution_Temperature_K": 1273.15,
+          "Solution_Time_h": 3.0,
+          "Cooling_Medium": "water quench",
+          "Aging_Temperature_K": 803.15,
+          "Aging_Time_h": 1.0
+        }
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": "For 8Ni4Mo, there is no austenite formation even after 4 h of annealing at 580 °C. [cite: 567-633] Contains NiAl-b2 precipitates.",
+          "simplified": "无奥氏体形成，包含NiAl-b2相析出 [cite: 397, 567-633]。"
+        },
+        "Main_Phase": "Martensite",
+        "Precipitates": [
+          {
+            "Phase_Type": "NiAl-b2",
+            "Volume_Fraction_pct": null
+          }
+        ],
+        "Porosity_pct": null,
+        "Relative_Density_pct": null,
+        "Grain_Size_avg_um": null,
+        "Precipitate_Size_avg_nm": null,
+        "Advanced_Quantitative_Features": {}
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Yield_Strength",
+          "Test_Condition": "uniaxial tension",
+          "Value_Numeric": 1218.0,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "MPa",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": "10^-3",
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": "E8/E8M-22, gauge length 4 mm [cite: 186-187]",
+          "Note": "8Ni4Mo在530 °C退火1小时后的屈服强度。"
+        },
+        {
+          "Property_Name": "Elongation_Total",
+          "Test_Condition": "uniaxial tension",
+          "Value_Numeric": 10.9,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "%",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": "10^-3",
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": "E8/E8M-22, gauge length 4 mm [cite: 186-187]",
+          "Note": "8Ni4Mo在530 °C退火1小时后的断裂总延伸率。"
+        }
+      ]
+    },
+    {
+      "Sample_ID": "10Ni4Mo_As_quenched",
+      "Gradient_Material": false,
+      "Gradient_Group_ID": null,
+      "Composition_Info": {
+        "Role": "Target",
+        "Alloy_Name_Raw": "10Ni4Mo",
+        "Nominal_Composition": {
+          "Composition_Type": "wt%",
+          "Elements_Normalized": {
+            "Fe": 72.0,
+            "Cr": 13.0,
+            "Ni": 10.0,
+            "Al": 1.0,
+            "Mo": 4.0
+          }
+        },
+        "Measured_Composition": {
+          "Composition_Type": "wt%",
+          "Elements_Normalized": {
+            "Ni": 9.4,
+            "Cr": 14.6,
+            "Al": 0.9,
+            "Mo": 2.7,
+            "Fe": 72.4
+          },
+          "Measurement_Method": "EDS [cite: 177, 391]"
+        },
+        "Note": "文中表1提供的原始EDS测量数据 [cite: 515-519]。"
+      },
+      "Process_Info": {
+        "Process_Category": "Casting and Homogenization",
+        "Process_Text": {
+          "original": "produced by Edmund Buhler arc melting system AM500 with suction casting. Then the ingots are cold rolled or hot rolled to target thickness and homogenized at 1000 °C for 3 h with a water quench. [cite: 170-171]",
+          "simplified": "使用Edmund Buhler电弧熔炼系统AM500进行吸铸。随后将铸锭冷轧或热轧至目标厚度，并在1000 °C下均匀化处理3小时后水淬 [cite: 170-171]。"
+        },
+        "Equipment": "Edmund Buhler arc melting system AM500",
+        "Key_Params": {
+          "Solution_Temperature_K": 1273.15,
+          "Solution_Time_h": 3.0,
+          "Cooling_Medium": "water quench"
+        }
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": "All three alloys show martensitic microstructure with retained austenite fractions below 1%.",
+          "simplified": "呈现马氏体显微组织，残余奥氏体体积分数低于1%。"
+        },
+        "Main_Phase": "Martensite",
+        "Precipitates": [],
+        "Porosity_pct": null,
+        "Relative_Density_pct": null,
+        "Grain_Size_avg_um": null,
+        "Precipitate_Size_avg_nm": null,
+        "Advanced_Quantitative_Features": {}
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Yield_Strength",
+          "Test_Condition": "uniaxial tension",
+          "Value_Numeric": 622.0,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "MPa",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": "10^-3",
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": "E8/E8M-22, gauge length 4 mm [cite: 186-187]",
+          "Note": "淬火态10Ni4Mo的屈服强度。"
+        },
+        {
+          "Property_Name": "Elongation_Total",
+          "Test_Condition": "uniaxial tension",
+          "Value_Numeric": 21.1,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "%",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": "10^-3",
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": "E8/E8M-22, gauge length 4 mm [cite: 186-187]",
+          "Note": "淬火态10Ni4Mo的断裂总延伸率。"
+        }
+      ]
+    },
+    {
+      "Sample_ID": "10Ni4Mo_Annealed_530C_1h",
+      "Gradient_Material": false,
+      "Gradient_Group_ID": null,
+      "Composition_Info": {
+        "Role": "Target",
+        "Alloy_Name_Raw": "10Ni4Mo",
+        "Nominal_Composition": {
+          "Composition_Type": "wt%",
+          "Elements_Normalized": {
+            "Fe": 72.0,
+            "Cr": 13.0,
+            "Ni": 10.0,
+            "Al": 1.0,
+            "Mo": 4.0
+          }
+        },
+        "Measured_Composition": {
+          "Composition_Type": "wt%",
+          "Elements_Normalized": {
+            "Ni": 9.4,
+            "Cr": 14.6,
+            "Al": 0.9,
+            "Mo": 2.7,
+            "Fe": 72.4
+          },
+          "Measurement_Method": "EDS [cite: 177, 391]"
+        },
+        "Note": null
+      },
+      "Process_Info": {
+        "Process_Category": "Annealing",
+        "Process_Text": {
+          "original": "homogenized at 1000 °C for 3 h with a water quench. Then samples are annealed at 530 °C for 1 hour. [cite: 171-172, 690]",
+          "simplified": "在1000 °C下均匀化处理3小时后水淬。然后样品在530 °C下退火处理1小时 [cite: 171-172, 690]。"
+        },
+        "Equipment": null,
+        "Key_Params": {
+          "Solution_Temperature_K": 1273.15,
+          "Solution_Time_h": 3.0,
+          "Cooling_Medium": "water quench",
+          "Aging_Temperature_K": 803.15,
+          "Aging_Time_h": 1.0
+        }
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": "Before deformation (0% local strain), the austenite volume fraction is 12.2%. In the grain size histogram, the austenite grains exhibit bimodal distribution ... and the average grain size is 2.9±0.3 um2.",
+          "simplified": "包含马氏体基体，以及体积分数约为12.2%的奥氏体相 [cite: 943-944]。"
+        },
+        "Main_Phase": "Martensite",
+        "Precipitates": [
+          {
+            "Phase_Type": "Austenite (Gamma, γ)",
+            "Volume_Fraction_pct": 12.2
+          }
+        ],
+        "Porosity_pct": null,
+        "Relative_Density_pct": null,
+        "Grain_Size_avg_um": null,
+        "Precipitate_Size_avg_nm": null,
+        "Advanced_Quantitative_Features": {}
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Yield_Strength",
+          "Test_Condition": "uniaxial tension",
+          "Value_Numeric": 1081.0,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "MPa",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": "10^-3",
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": "E8/E8M-22, gauge length 4 mm [cite: 186-187]",
+          "Note": "10Ni4Mo在530 °C退火1小时后的屈服强度。"
+        },
+        {
+          "Property_Name": "Elongation_Total",
+          "Test_Condition": "uniaxial tension",
+          "Value_Numeric": 20.3,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "%",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": "10^-3",
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": "E8/E8M-22, gauge length 4 mm [cite: 186-187]",
+          "Note": "10Ni4Mo在530 °C退火1小时后的断裂总延伸率。"
+        }
+      ]
+    }
+  ]
+}

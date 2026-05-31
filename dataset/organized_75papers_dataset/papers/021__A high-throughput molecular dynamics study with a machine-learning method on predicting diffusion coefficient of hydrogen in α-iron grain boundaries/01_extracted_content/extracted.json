@@ -1,0 +1,454 @@
+{
+  "Paper_Metadata": {
+    "Paper_Title": "A high-throughput molecular dynamics study with a machine-learning method on predicting diffusion coefficient of hydrogen in α-iron grain boundaries",
+    "DOI": null,
+    "Note": "DOI not found in OCR text"
+  },
+  "Paper_Routing": {
+    "base_material": "Metals",
+    "application": "Functional",
+    "research_paradigm": "Pure_Simulation",
+    "Supplements_Loaded": [
+      "directions/base/Metals.txt",
+      "directions/application/Functional.txt",
+      "directions/paradigm/Pure_Simulation.txt"
+    ],
+    "Patch_Tags": [
+      "Hydrogen_Assisted"
+    ],
+    "Needs_Mixed_Routing_Check": false
+  },
+  "items": [
+    {
+      "Item_ID": "MD_Bulk_BCC_Fe",
+      "Sample_ID": "Bulk BCC Fe (MD)",
+      "Role": "Target",
+      "Data_Nature": "Computed",
+      "base_material": "Metals",
+      "application": "Functional",
+      "research_paradigm": "Pure_Simulation",
+      "Patch_Tags": [
+        "Hydrogen_Assisted"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 3.1: Diffusion of hydrogen in bulk iron",
+        "Section 2.1: Modeling and simulation details"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "α-iron",
+          "Material_Name_Raw": "α-iron",
+          "Nominal_Composition": {
+            "Fe": "Balance"
+          },
+          "Note": "Pure BCC iron model system; hydrogen atoms used as probe, not a component of the material"
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "The system is firstly heated from 333 K to 1000 K in 0.2 ns, then equilibrated at 1000 K for 0.5 ns, cooled from 1000 K to 333 K in 0.2 ns and equilibrated at 333 K for another 0.1 ns. The NPT ensemble is used with 0 pressure.",
+            "simplified": "Annealing: 333 K → 1000 K (0.2 ns), hold at 1000 K (0.5 ns), 1000 K → 333 K (0.2 ns), hold at 333 K (0.1 ns); NPT ensemble, 0 pressure"
+          },
+          "Stages": {
+            "Stage1_Annealing_Heating": {
+              "Process_Type": "Annealing - Heating",
+              "Temperature": {
+                "Value_Range_K": [333, 1000],
+                "Original_Values": "333 K to 1000 K"
+              },
+              "Duration_ns": 0.2,
+              "Ensemble": "NPT",
+              "Pressure_atm": 0
+            },
+            "Stage2_Annealing_Equilibration_HighT": {
+              "Process_Type": "Annealing - Equilibration at high temperature",
+              "Temperature": {
+                "Value": 1000,
+                "Unit": "K"
+              },
+              "Duration_ns": 0.5,
+              "Ensemble": "NPT",
+              "Pressure_atm": 0
+            },
+            "Stage3_Annealing_Cooling": {
+              "Process_Type": "Annealing - Cooling",
+              "Temperature": {
+                "Value_Range_K": [1000, 333],
+                "Original_Values": "1000 K to 333 K"
+              },
+              "Duration_ns": 0.2,
+              "Ensemble": "NPT",
+              "Pressure_atm": 0
+            },
+            "Stage4_Annealing_Equilibration_LowT": {
+              "Process_Type": "Annealing - Equilibration at low temperature",
+              "Temperature": {
+                "Value": 333,
+                "Unit": "K"
+              },
+              "Duration_ns": 0.1,
+              "Ensemble": "NPT",
+              "Pressure_atm": 0
+            },
+            "Stage5_Diffusion_Simulation": {
+              "Process_Type": "Diffusion simulation",
+              "Description": "10 hydrogen atoms randomly placed in box, energy minimization, followed by 10-ns equilibration in NVT ensemble at 333 K",
+              "Temperature": {
+                "Value": 333,
+                "Unit": "K"
+              },
+              "Duration_ns": 10,
+              "Ensemble": "NVT",
+              "Note": "Also computed at 500 K, 666 K, and 999 K for validation against experimental data"
+            }
+          },
+          "Equipment": [
+            {"Name": "LAMMPS", "Category": "Software"},
+            {"Name": "OVITO", "Category": "Software"}
+          ],
+          "Simulation_Metadata": {
+            "Method_Category": "Molecular Dynamics (MD)",
+            "Software": "LAMMPS",
+            "Potential": "EAM",
+            "Potential_Source": "Ramasubramaniam et al. (Ref [30])",
+            "Ensemble_Annealing": "NPT",
+            "Ensemble_Diffusion": "NVT",
+            "Time_Step_fs": 1,
+            "MSD_Collection_Interval_steps": 100,
+            "Box_Size_nm": 2.8,
+            "Box_Size_Note": "Approximate; original text says 'about 2.8 nm'",
+            "Number_of_H_atoms": 10,
+            "Diffusion_Method": "Mean Squared Displacement (MSD)",
+            "Simulation_Text": "Diffusion coefficients of hydrogen obtained via calculating MSD of hydrogen atom in iron with varied configurations; Eq.(1) D = lim(t→∞) (1/6N) Σ|r_i(t) - r_i(0)|²"
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "A pure BCC structure of iron is generated",
+            "simplified": "Single crystal BCC α-iron, no grain boundary"
+          },
+          "Main_Phase": {
+            "Phase_Name": "α-iron (BCC)",
+            "Crystal_Structure": "BCC"
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Hydrogen Diffusion Coefficient",
+            "Value": 7e-05,
+            "Unit": "cm²/s",
+            "Test_Temperature_K": 333,
+            "Original_Values": "~7 × 10⁻⁵ cm²/s",
+            "Note": "Approximate value from text: 'In pure BCC iron, we find that the diffusion coefficient is about 7 × 10⁻⁵ cm²/s'; also computed at 500 K, 666 K, and 999 K (values only shown in Fig. 4, not reported in text)",
+            "Data_Source": "text",
+            "Data_Nature": "Computed"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "MD_GB_Fe",
+      "Sample_ID": "GB structures of α-iron (MD)",
+      "Role": "Target",
+      "Data_Nature": "Computed",
+      "base_material": "Metals",
+      "application": "Functional",
+      "research_paradigm": "Pure_Simulation",
+      "Patch_Tags": [
+        "Hydrogen_Assisted"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 2.2: High-throughput computations",
+        "Section 3.2: Diffusion of hydrogen in grain boundaries"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "α-iron",
+          "Material_Name_Raw": "α-iron grain boundary structures",
+          "Nominal_Composition": {
+            "Fe": "Balance"
+          },
+          "Note": "Pure iron GB model system; 10 hydrogen atoms randomly placed as probe in diffusion process"
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "In each sampling step, a pair of rotations are applied to the upper and the bottom grain, thus forming an interface with varied configurations and a gap of 0.1 nm. The constructed model is then sent to annealing and subsequent diffusion simulations.",
+            "simplified": "Monte-Carlo sampling from SO(3) group to generate GB rotations; pair of rotations applied to upper and bottom grain with 0.1 nm gap; annealing then diffusion simulation"
+          },
+          "Stages": {
+            "Stage1_GB_Construction": {
+              "Process_Type": "Grain boundary construction",
+              "Sampling_Method": "Monte-Carlo from SO(3) group",
+              "Rotation_Representation": "Axis-angle form",
+              "Rotation_Axis": "Drawn from azimuthal angle (theta) and polar angle (phi) via spherical coordinates",
+              "Rotation_Angle_Range_deg": "0 to 360",
+              "Gap_nm": 0.1,
+              "Number_of_GB_Structures": 512
+            },
+            "Stage2_Annealing_Heating": {
+              "Process_Type": "Annealing - Heating",
+              "Temperature": {
+                "Value_Range_K": [333, 1000],
+                "Original_Values": "333 K to 1000 K"
+              },
+              "Duration_ns": 0.2,
+              "Ensemble": "NPT",
+              "Pressure_atm": 0
+            },
+            "Stage3_Annealing_Equilibration_HighT": {
+              "Process_Type": "Annealing - Equilibration at high temperature",
+              "Temperature": {
+                "Value": 1000,
+                "Unit": "K"
+              },
+              "Duration_ns": 0.5,
+              "Ensemble": "NPT",
+              "Pressure_atm": 0
+            },
+            "Stage4_Annealing_Cooling": {
+              "Process_Type": "Annealing - Cooling",
+              "Temperature": {
+                "Value_Range_K": [1000, 333],
+                "Original_Values": "1000 K to 333 K"
+              },
+              "Duration_ns": 0.2,
+              "Ensemble": "NPT",
+              "Pressure_atm": 0
+            },
+            "Stage5_Annealing_Equilibration_LowT": {
+              "Process_Type": "Annealing - Equilibration at low temperature",
+              "Temperature": {
+                "Value": 333,
+                "Unit": "K"
+              },
+              "Duration_ns": 0.1,
+              "Ensemble": "NPT",
+              "Pressure_atm": 0
+            },
+            "Stage6_Diffusion_Simulation": {
+              "Process_Type": "Diffusion simulation",
+              "Description": "10 hydrogen atoms randomly placed in box, energy minimization, followed by 10-ns equilibration in NVT ensemble at 333 K",
+              "Temperature": {
+                "Value": 333,
+                "Unit": "K"
+              },
+              "Duration_ns": 10,
+              "Ensemble": "NVT"
+            }
+          },
+          "Equipment": [
+            {"Name": "LAMMPS", "Category": "Software"},
+            {"Name": "OVITO", "Category": "Software"}
+          ],
+          "Simulation_Metadata": {
+            "Method_Category": "Molecular Dynamics (MD)",
+            "Software": "LAMMPS",
+            "Potential": "EAM",
+            "Potential_Source": "Ramasubramaniam et al. (Ref [30])",
+            "Ensemble_Annealing": "NPT",
+            "Ensemble_Diffusion": "NVT",
+            "Time_Step_fs": 1,
+            "MSD_Collection_Interval_steps": 100,
+            "Box_Size_nm": 2.8,
+            "Box_Size_Note": "Approximate; original text says 'about 2.8 nm'",
+            "Number_of_H_atoms": 10,
+            "Number_of_GB_Models": 512,
+            "BCC_Symmetry_Augmentation": "Yes, data augmented according to BCC symmetry after collection",
+            "Diffusion_Method": "Mean Squared Displacement (MSD)",
+            "Simulation_Text": "High-throughput MD with Monte-Carlo sampling from SO(3) group; rotation axis from theta (azimuthal) and phi (polar) angles; rotation angle randomized 0-360 deg; gap 0.1 nm between grains; BCC symmetry not considered in sampling but used for data augmentation"
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Structural deviations from BCC iron lead to decrease in hydrogen diffusion. More BCC atoms lead to higher diffusion coefficient and vice versa. The disordered iron atoms are traps of hydrogen.",
+            "simplified": "Bicrystal GB models of α-iron with varied misorientation; non-BCC structured atoms at GB region act as hydrogen traps; percentage of non-BCC atoms ranges from ~10% (most common) to >40% (lowest diffusion)"
+          },
+          "Main_Phase": {
+            "Phase_Name": "α-iron matrix (BCC)",
+            "Crystal_Structure": "BCC"
+          },
+          "Secondary_Phases": {
+            "Phase_Name": "Non-BCC disordered region at grain boundary",
+            "Crystal_Structure": "Disordered/Non-BCC",
+            "Description": "Atoms with non-BCC structure near grain boundaries; fraction ranges from ~10% (most common GB) to >40% (lowest diffusion GB)"
+          },
+          "Advanced_Quantitative_Features": {
+            "GB_Diffusion_vs_Bulk_Lowest": {
+              "Value": 0.1,
+              "Unit": "%",
+              "Original_Values": "about 0.1 % of the diffusion in the bulk",
+              "Description": "Lowest diffusion rate with more than 40% of atoms being non-BCC structured",
+              "Data_Source": "text"
+            },
+            "GB_Diffusion_vs_Bulk_Most_Common": {
+              "Value": 1,
+              "Unit": "%",
+              "Original_Values": "about 1 %",
+              "Description": "Most common diffusion coefficient in GB with about 10% atoms being non-BCC structured",
+              "Data_Source": "text"
+            },
+            "GB_Diffusion_vs_Bulk_Overall": {
+              "Value": 1,
+              "Unit": "%",
+              "Original_Values": "typically 1 % of that in the bulk BCC iron",
+              "Description": "The diffusion coefficient in GBs is typically 1% of that in the bulk BCC iron (stated in Conclusion)",
+              "Data_Source": "text"
+            },
+            "Number_of_GB_Models_Analyzed": 512,
+            "Number_of_GB_Models_D_above_1e-5_cm2s": {
+              "Value": 30,
+              "Description": "30 cases out of 512 with diffusion coefficient > 1×10⁻⁵ cm²/s",
+              "Data_Source": "image",
+              "Note": "from caption (Fig. 5)"
+            },
+            "Number_of_GB_Models_D_above_7e-5_cm2s": {
+              "Value": 2,
+              "Description": "2 cases with diffusion coefficient above 7×10⁻⁵ cm²/s",
+              "Data_Source": "image",
+              "Note": "from caption (Fig. 5)"
+            },
+            "Max_Diffusion_Coefficient_cm2s": {
+              "Value": 7.37e-05,
+              "Unit": "cm²/s",
+              "Original_Values": "up to 7.37 × 10⁻⁵ cm²/s",
+              "Data_Source": "image",
+              "Note": "from caption (Fig. 5)"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Hydrogen Diffusion Coefficient",
+            "Test_Temperature_K": 333,
+            "Note": "Histogram of diffusion coefficients at 333 K collected from 512 GB structures; values below 1×10⁻⁵ cm²/s are the majority; specific individual GB values not reported in text except statistical descriptions (0.1% and 1% of bulk)",
+            "Data_Source": "text",
+            "Data_Nature": "Computed"
+          },
+          {
+            "Property_Name": "Hydrogen Diffusion Reduction vs Bulk",
+            "Value": 99,
+            "Unit": "% decrease",
+            "Test_Temperature_K": 333,
+            "Original_Values": "99 % decrease",
+            "Note": "Diffusion of hydrogen within GBs is markedly reduced compared to that in bulk BCC iron, with a 99% decrease (from Abstract)",
+            "Data_Source": "text",
+            "Data_Nature": "Computed"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "ML_SchNet_Model",
+      "Sample_ID": "Modified SchNet for H diffusion prediction",
+      "Role": "Target",
+      "Data_Nature": "Computed",
+      "base_material": "Metals",
+      "application": "Functional",
+      "research_paradigm": "Pure_Simulation",
+      "Patch_Tags": [
+        "Hydrogen_Assisted"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 2.3: Machine-learning method",
+        "Section 3.3: Performance of the SchNet in predicting hydrogen diffusion coefficient"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "α-iron",
+          "Note": "ML model trained on 512 GB MD simulation results of α-iron; input: atomistic structural data; output: natural log of diffusion coefficient"
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "The SchNet architecture is employed, with modifications on the embedding layer. Iron atoms are classified into 100 types based on binned RMSD from polyhedral template matching, then sent to embedding layer to obtain a 64-dimension vector. Loss function is MSE, optimizer is ADAM with 0.001 learning rate, batch size 32.",
+            "simplified": "Modified SchNet: PTM-based RMSD binning (100 types, range 0-0.5), 64-dim embedding, MSE loss, ADAM optimizer (lr=0.001), batch size 32, 512 epochs"
+          },
+          "Equipment": [
+            {"Name": "SchNet / SchNetPack", "Category": "Software"},
+            {"Name": "PTM (Polyhedral Template Matching)", "Category": "Software"}
+          ],
+          "Simulation_Metadata": {
+            "Method_Category": "Machine Learning - Deep Neural Network",
+            "Software": "SchNet (modified)",
+            "Architecture": "SchNet with modified embedding layer",
+            "Embedding_Method": "PTM RMSD binned into 100 types (range 0–0.5), producing 64-dimension embedding vector",
+            "Output": "Natural log of hydrogen diffusion coefficient",
+            "Loss_Function": "MSE (Mean Squared Error)",
+            "Optimizer": "ADAM",
+            "Learning_Rate": 0.001,
+            "Batch_Size": 32,
+            "Epochs": 512,
+            "Training_Set_Size": 352,
+            "Validation_Set_Size": 128,
+            "Test_Set_Size": 32,
+            "Total_Samples": 512,
+            "Training_Loss_Final": 0.06,
+            "Validation_Loss_Final": 0.09,
+            "Simulation_Text": "Modified SchNet architecture: all atoms are iron so atom type embedding is replaced by PTM RMSD-based binning into 100 types; 64-dim embedding; summation pooling to yield system-level diffusion coefficient; trained on 512 MD samples (352 train, 128 validation, 32 test)"
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Configurations of the modeled GBs correspond to the lowest, the most common and the highest diffusion coefficient of hydrogen are analyzed.",
+            "simplified": "ML model takes atomistic structure (positions + PTM RMSD types) as input to predict hydrogen diffusion coefficient"
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "ML Model Training Loss (MSE, log scale)",
+            "Value": 0.06,
+            "Test_Condition": "Epoch 512",
+            "Data_Source": "text",
+            "Data_Nature": "Computed"
+          },
+          {
+            "Property_Name": "ML Model Validation Loss (MSE, log scale)",
+            "Value": 0.09,
+            "Test_Condition": "Epoch 512",
+            "Data_Source": "text",
+            "Data_Nature": "Computed"
+          },
+          {
+            "Property_Name": "ML Model Prediction Accuracy",
+            "Note": "Most predictions are within 1 order of magnitude different to the MD results; single outlier about 2 orders of magnitude difference (occurs at about 1% chance)",
+            "Data_Source": "text",
+            "Data_Nature": "Computed"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "Ref_Experimental_Bulk_Fe",
+      "Sample_ID": "Bulk Fe (Literature Experimental)",
+      "Role": "Reference",
+      "Data_Nature": "Literature_Experimental",
+      "base_material": "Metals",
+      "application": "Functional",
+      "research_paradigm": "Pure_Simulation",
+      "Patch_Tags": [
+        "Hydrogen_Assisted"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 3.1: 'A comparison between the numerical and experimental [38] results is shown in Fig. 4'",
+        "Section 3.2: 'in good agreement with experimental tests [39]'"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "α-iron",
+          "Note": "Literature experimental data for bulk α-iron hydrogen diffusion; Ref [38] Nagano et al. 1982, Ref [39] Miller et al. 1975"
+        },
+        "Properties": [
+          {
+            "Property_Name": "Hydrogen Diffusion Coefficient (Literature)",
+            "Note": "Experimental data from Ref [38] (Nagano et al. 1982) and Ref [39] (Miller et al. 1975) used for validation; specific numerical values not reported in text, shown in Fig. 4 as green curve",
+            "Data_Source": "unknown",
+            "Data_Nature": "Literature_Experimental",
+            "Literature_Source": "Ref [38] Nagano et al., Scr. Metall. 16 (1982) 973-976; Ref [39] Miller et al., Metall. Trans. A 6 (1975) 117-121"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "paper_dir": "Combining gradient s",
+  "figures": 10,
+  "direct_pairs": 10,
+  "topk_pairs": 50,
+  "sentences": 42
+}

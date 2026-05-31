@@ -1,0 +1,1674 @@
+{
+  "Paper_Metadata": {
+    "Paper_Title": "Confined necking and improved tensile ductility in heterostructured bi-metallic steels made by additive manufacturing",
+    "DOI": "10.1016/j.actamat.2026.121952"
+  },
+  "Paper_Routing": {
+    "base_material": "Metals",
+    "application": "Structural",
+    "research_paradigm": "Hybrid",
+    "Supplements_Loaded": [
+      "directions/base/Metals.txt",
+      "directions/application/Structural.txt",
+      "directions/paradigm/Hybrid.txt"
+    ],
+    "Patch_Tags": [
+      "Additive_Manufacturing",
+      "Interface_Dominated"
+    ],
+    "Needs_Mixed_Routing_Check": false
+  },
+  "items": [
+    {
+      "Item_ID": "01_Homo_316L",
+      "Sample_ID": "316L",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Additive_Manufacturing",
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 1: SS 316L powder composition",
+        "Table 2: 316L design parameters",
+        "Table 3: 316L mechanical properties"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Austenitic stainless steel",
+          "Material_Name_Raw": "SS 316L",
+          "Form": "Gas atomized spherical powder",
+          "Powder_Size": {
+            "Value_Range": "15–45 μm",
+            "Original_Values": "15–45 μm",
+            "Note": "Size distribution range, not individual value"
+          },
+          "Nominal_Composition": {
+            "Source": "Table 1 (supplier spec, by weight percentage)",
+            "Fe": {
+              "Value": "Balance",
+              "Unit": "wt%",
+              "Note": "Balance; composition given as supplier specification ranges, not precise measured values"
+            },
+            "Cr": {
+              "Value": null,
+              "Value_Range": "17.00–19.00",
+              "Original_Values": "17.00–19.00",
+              "Unit": "wt%"
+            },
+            "Ni": {
+              "Value": null,
+              "Value_Range": "13.00–15.00",
+              "Original_Values": "13.00–15.00",
+              "Unit": "wt%"
+            },
+            "Mo": {
+              "Value": null,
+              "Value_Range": "2.25–3.00",
+              "Original_Values": "2.25–3.00",
+              "Unit": "wt%"
+            },
+            "C": {
+              "Value": null,
+              "Value_Range": "0–0.03",
+              "Original_Values": "0–0.03",
+              "Unit": "wt%"
+            },
+            "N": {
+              "Value": null,
+              "Value_Range": "0–0.10",
+              "Original_Values": "0–0.10",
+              "Unit": "wt%"
+            },
+            "Note": "Supplier specification ranges; not precise measured composition. Cu and Nb+Ta listed as NA."
+          }
+        },
+        "Processing": {
+          "Process_Category": "L-DED",
+          "Process_Text": {
+            "original": "All samples were fabricated using an in-house developed 3-axis L-DED system equipped with a 1 kW fibre laser (IPG Photonics Corporation). The wavelength of the laser is 1070 nm, and its nominal beam size is 1 mm. Cuboid samples measuring 52 mm × 6 mm × 6 mm (L × W × H) were printed using the L-DED system, before tensile coupons were cut out using wire electrical discharge machining (EDM). Before each tensile test, the gauge sections of the coupons were mechanically polished down to a surface roughness of 1.78 ± 0.137 μm.",
+            "simplified": "L-DED printing of homogeneous 316L using 1 kW fibre laser, followed by EDM cutting and mechanical polishing."
+          },
+          "Equipment": [
+            {
+              "Name": "In-house 3-axis L-DED system with 1 kW fibre laser (IPG Photonics Corporation)",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Powder feeder (PF 2/2, GTV GmbH) with PLC-control and mass flow meters",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Coaxial printing nozzle (COAX14 v5, Fraunhofer USA, Inc.)",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Wire EDM",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Keyence VHX optical microscope (OM)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Hitachi SU3500 SEM with EBSD and EDS detectors",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Hitachi SU7000 SEM with EBSD and EDS detectors",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "FEI Talos F200X TEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Helio 5 PFIB system",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Bruker D8 Discover XRD",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Instron 3365 tensile tester with 5 kN loadcell",
+              "Category": "Testing"
+            },
+            {
+              "Name": "GOM RAMIS DIC system",
+              "Category": "Testing"
+            },
+            {
+              "Name": "USB microscope camera (Omron Sentech Co., LTD)",
+              "Category": "Testing"
+            },
+            {
+              "Name": "ImageJ",
+              "Category": "Software"
+            },
+            {
+              "Name": "Zeiss Inspect 2025 software",
+              "Category": "Software"
+            },
+            {
+              "Name": "In-house developed Python scripts (work hardening rate calculation)",
+              "Category": "Software"
+            }
+          ],
+          "Key_Params": {
+            "Stage1_L_DED_Printing": {
+              "Laser_Power_W": 450,
+              "Scan_Speed_mm_s": 4,
+              "Powder_Feed_Rate_g_min": 0.175,
+              "Laser_Wavelength_nm": 1070,
+              "Nominal_Beam_Size_mm": 1,
+              "Carrier_Gas": "Argon",
+              "Purge_Gas": "Argon",
+              "Cuboid_Dimensions_mm": "52 × 6 × 6 (L × W × H)",
+              "Layer_Thickness_mm": 0.51,
+              "Original_Values": "450 W, 4 mm/s, 0.175 g/min, layer thickness 0.51 mm (Table 2)",
+              "Note": "Consistent laser power, scan speed, and powder feed rate for all samples per inverse process parameter optimization framework",
+              "Melt_Pool_Width_mm": 1.16,
+              "Melt_Pool_Depth_mm": 0.61
+            },
+            "Stage2_Machining": {
+              "Method": "Wire EDM",
+              "Note": "Tensile coupons cut from as-deposited cuboid block"
+            },
+            "Stage3_Surface_Preparation": {
+              "Method": "Mechanical polishing",
+              "Surface_Roughness_μm": {
+                "Value": 1.78,
+                "Value_StdDev": 0.137,
+                "Original_Values": "1.78 ± 0.137 μm"
+              }
+            }
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "In the homogenous 316L steel, the only phase presented is the γ phase. The 316L regions show cellular structures with various morphologies as a result of constitutional supercooling. Coarser grains are found on the 316L side. All samples show a porosity <0.1% and are thus considered to be fully dense. Density > 99.9%.",
+            "simplified": "Homogeneous 316L: single-phase austenite (γ, FCC), cellular solidification structures, porosity <0.1%."
+          },
+          "Main_Phase": [
+            {
+              "Phase_Name": "Austenite (γ)",
+              "Crystal_Structure": "FCC"
+            }
+          ],
+          "Porosity": {
+            "Value": null,
+            "Note": "<0.1%; inequality, not exact value. Measured using ImageJ with OM images on polished samples."
+          },
+          "Relative_Density": {
+            "Value": null,
+            "Note": ">99.9%; inequality, not exact value"
+          },
+          "Advanced_Quantitative_Features": {
+            "Surface_Roughness_μm": {
+              "Value": 1.78,
+              "Value_StdDev": 0.137,
+              "Note": "After mechanical polishing, before tensile testing"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Elongation_At_Fracture",
+            "Value": 40.0,
+            "Value_StdDev": 2.83,
+            "Unit": "%",
+            "Original_Values": "40.0 ± 2.83 %",
+            "Test_Condition": {
+              "Loading_Mode": "Tension",
+              "Strain_Rate_s1": 0.001,
+              "Test_Temperature_Original": "Room temperature (implied; not explicitly stated, quasi-static loading at constant strain rate 0.001/s)",
+              "Number_of_Specimens": 3
+            },
+            "Data_Source": "table",
+            "Note": "Labelled as EL (%) in Table 3;原文未区分 Uniform 与 Total Elongation, 默认归入 Elongation_Total"
+          },
+          {
+            "Property_Name": "Ultimate_Tensile_Strength",
+            "Value": 582.8,
+            "Value_StdDev": 18.51,
+            "Unit": "MPa",
+            "Original_Values": "582.8 ± 18.51 MPa",
+            "Test_Condition": {
+              "Loading_Mode": "Tension",
+              "Strain_Rate_s1": 0.001,
+              "Test_Temperature_Original": "Room temperature (implied; not explicitly stated, quasi-static loading at constant strain rate 0.001/s)",
+              "Number_of_Specimens": 3
+            },
+            "Data_Source": "table"
+          },
+          {
+            "Property_Name": "Yield_Strength",
+            "Value": 402.8,
+            "Value_StdDev": 20.28,
+            "Unit": "MPa",
+            "Original_Values": "402.8 ± 20.28 MPa",
+            "Test_Condition": {
+              "Loading_Mode": "Tension",
+              "Strain_Rate_s1": 0.001,
+              "Test_Temperature_Original": "Room temperature (implied; not explicitly stated, quasi-static loading at constant strain rate 0.001/s)",
+              "Number_of_Specimens": 3
+            },
+            "Data_Source": "table",
+            "Note": "0.2% offset yield strength"
+          },
+          {
+            "Property_Name": "Elastic_Modulus",
+            "Value": 129.2,
+            "Value_StdDev": 17.29,
+            "Unit": "GPa",
+            "Original_Values": "129.2 ± 17.29 GPa",
+            "Test_Condition": {
+              "Loading_Mode": "Tension",
+              "Strain_Rate_s1": 0.001,
+              "Test_Temperature_Original": "Room temperature (implied; not explicitly stated, quasi-static loading at constant strain rate 0.001/s)",
+              "Number_of_Specimens": 3
+            },
+            "Data_Source": "table"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "02_Homo_PH17-4",
+      "Sample_ID": "PH17-4",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Additive_Manufacturing",
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 1: PH17-4 powder composition",
+        "Table 2: PH17-4 design parameters",
+        "Table 3: PH17-4 mechanical properties"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Precipitation-hardening martensitic stainless steel",
+          "Material_Name_Raw": "PH17-4",
+          "Form": "Gas atomized spherical powder",
+          "Powder_Size": {
+            "Value_Range": "15–45 μm",
+            "Original_Values": "15–45 μm",
+            "Note": "Size distribution range, not individual value"
+          },
+          "Nominal_Composition": {
+            "Source": "Table 1 (supplier spec, by weight percentage)",
+            "Fe": {
+              "Value": "Balance",
+              "Unit": "wt%",
+              "Note": "Balance"
+            },
+            "Cr": {
+              "Value": null,
+              "Original_Values": "17.00",
+              "Unit": "wt%",
+              "Note": "Single value given in supplier spec table; treated as nominal"
+            },
+            "Ni": {
+              "Value": null,
+              "Original_Values": "4.50",
+              "Unit": "wt%",
+              "Note": "Single value given in supplier spec table; treated as nominal"
+            },
+            "C": {
+              "Value": null,
+              "Original_Values": "<0.07",
+              "Unit": "wt%",
+              "Note": "Upper limit specification, not exact value"
+            },
+            "Cu": {
+              "Value": null,
+              "Original_Values": "4.00",
+              "Unit": "wt%",
+              "Note": "Single value given in supplier spec table; treated as nominal"
+            },
+            "Nb_Ta": {
+              "Value": null,
+              "Original_Values": "0.3",
+              "Unit": "wt%",
+              "Note": "Listed as Nb + Ta combined"
+            },
+            "Note": "Supplier specification. Mo and N listed as NA."
+          }
+        },
+        "Processing": {
+          "Process_Category": "L-DED",
+          "Process_Text": {
+            "original": "All samples were fabricated using an in-house developed 3-axis L-DED system equipped with a 1 kW fibre laser (IPG Photonics Corporation). The wavelength of the laser is 1070 nm, and its nominal beam size is 1 mm. Cuboid samples measuring 52 mm × 6 mm × 6 mm (L × W × H) were printed using the L-DED system, before tensile coupons were cut out using wire electrical discharge machining (EDM). Before each tensile test, the gauge sections of the coupons were mechanically polished down to a surface roughness of 1.78 ± 0.137 μm.",
+            "simplified": "L-DED printing of homogeneous PH17-4 using 1 kW fibre laser, followed by EDM cutting and mechanical polishing."
+          },
+          "Equipment": [
+            {
+              "Name": "In-house 3-axis L-DED system with 1 kW fibre laser (IPG Photonics Corporation)",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Powder feeder (PF 2/2, GTV GmbH) with PLC-control and mass flow meters",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Coaxial printing nozzle (COAX14 v5, Fraunhofer USA, Inc.)",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Wire EDM",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Keyence VHX optical microscope (OM)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Hitachi SU3500 SEM with EBSD and EDS detectors",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Hitachi SU7000 SEM with EBSD and EDS detectors",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "FEI Talos F200X TEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Helio 5 PFIB system",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Bruker D8 Discover XRD",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Instron 3365 tensile tester with 5 kN loadcell",
+              "Category": "Testing"
+            },
+            {
+              "Name": "GOM RAMIS DIC system",
+              "Category": "Testing"
+            },
+            {
+              "Name": "USB microscope camera (Omron Sentech Co., LTD)",
+              "Category": "Testing"
+            },
+            {
+              "Name": "ImageJ",
+              "Category": "Software"
+            },
+            {
+              "Name": "Zeiss Inspect 2025 software",
+              "Category": "Software"
+            },
+            {
+              "Name": "In-house developed Python scripts (work hardening rate calculation)",
+              "Category": "Software"
+            }
+          ],
+          "Key_Params": {
+            "Stage1_L_DED_Printing": {
+              "Laser_Power_W": 450,
+              "Scan_Speed_mm_s": 4,
+              "Powder_Feed_Rate_g_min": 0.175,
+              "Laser_Wavelength_nm": 1070,
+              "Nominal_Beam_Size_mm": 1,
+              "Carrier_Gas": "Argon",
+              "Purge_Gas": "Argon",
+              "Cuboid_Dimensions_mm": "52 × 6 × 6 (L × W × H)",
+              "Layer_Thickness_mm": 0.51,
+              "Original_Values": "450 W, 4 mm/s, 0.175 g/min, layer thickness 0.51 mm (Table 2)",
+              "Note": "Same base L-DED parameters as all samples",
+              "Melt_Pool_Width_mm": 1.16,
+              "Melt_Pool_Depth_mm": 0.61
+            },
+            "Stage2_Machining": {
+              "Method": "Wire EDM"
+            },
+            "Stage3_Surface_Preparation": {
+              "Method": "Mechanical polishing",
+              "Surface_Roughness_μm": {
+                "Value": 1.78,
+                "Value_StdDev": 0.137
+              }
+            }
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "The primary phase present in the homogenous PH17–4 steel is the BCC martensite (α) phase. Small peaks of FCC austenite (γ) phases are also presented. In the PH17–4 regions a large number of martensite laths are found. Finer grains are observed on the PH17–4 side.",
+            "simplified": "Homogeneous PH17-4: primary phase is BCC martensite (α), minor FCC austenite (γ), lath martensite structure."
+          },
+          "Main_Phase": [
+            {
+              "Phase_Name": "Martensite (α)",
+              "Crystal_Structure": "BCC",
+              "Note": "Primary phase in PH17-4; described as lath martensite"
+            }
+          ],
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "Austenite (γ)",
+              "Crystal_Structure": "FCC",
+              "Note": "Small peaks detected by XRD in PH17-4"
+            }
+          ],
+          "Porosity": {
+            "Value": null,
+            "Note": "<0.1%; inequality, not exact value"
+          },
+          "Relative_Density": {
+            "Value": null,
+            "Note": ">99.9%; inequality, not exact value"
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Elongation_At_Fracture",
+            "Value": 8.1,
+            "Value_StdDev": 0.86,
+            "Unit": "%",
+            "Original_Values": "8.1 ± 0.86 %",
+            "Test_Condition": {
+              "Loading_Mode": "Tension",
+              "Strain_Rate_s1": 0.001,
+              "Test_Temperature_Original": "Room temperature (implied; not explicitly stated, quasi-static loading at constant strain rate 0.001/s)",
+              "Number_of_Specimens": 3
+            },
+            "Data_Source": "table",
+            "Note": "Labelled as EL (%) in Table 3; 原文未区分 Uniform 与 Total Elongation, 默认归入 Elongation_Total"
+          },
+          {
+            "Property_Name": "Ultimate_Tensile_Strength",
+            "Value": 949.8,
+            "Value_StdDev": 5.24,
+            "Unit": "MPa",
+            "Original_Values": "949.8 ± 5.24 MPa",
+            "Test_Condition": {
+              "Loading_Mode": "Tension",
+              "Strain_Rate_s1": 0.001,
+              "Test_Temperature_Original": "Room temperature (implied; not explicitly stated, quasi-static loading at constant strain rate 0.001/s)",
+              "Number_of_Specimens": 3
+            },
+            "Data_Source": "table"
+          },
+          {
+            "Property_Name": "Yield_Strength",
+            "Value": 701.1,
+            "Value_StdDev": 5.05,
+            "Unit": "MPa",
+            "Original_Values": "701.1 ± 5.05 MPa",
+            "Test_Condition": {
+              "Loading_Mode": "Tension",
+              "Strain_Rate_s1": 0.001,
+              "Test_Temperature_Original": "Room temperature (implied; not explicitly stated, quasi-static loading at constant strain rate 0.001/s)",
+              "Number_of_Specimens": 3
+            },
+            "Data_Source": "table",
+            "Note": "0.2% offset yield strength"
+          },
+          {
+            "Property_Name": "Elastic_Modulus",
+            "Value": 130.1,
+            "Value_StdDev": 3.13,
+            "Unit": "GPa",
+            "Original_Values": "130.1 ± 3.13 GPa",
+            "Test_Condition": {
+              "Loading_Mode": "Tension",
+              "Strain_Rate_s1": 0.001,
+              "Test_Temperature_Original": "Room temperature (implied; not explicitly stated, quasi-static loading at constant strain rate 0.001/s)",
+              "Number_of_Specimens": 3
+            },
+            "Data_Source": "table"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "03_HS_SampleA",
+      "Sample_ID": "Sample A (Baseline)",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Additive_Manufacturing",
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 2: Sample A design parameters (two sub-configurations)",
+        "Table 3: Sample A mechanical properties",
+        "Table 4: Sample A saturation stress and deformation mode"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Bi-metallic heterostructured steel",
+          "Material_Name_Raw": "316L / PH17-4 heterostructured steel",
+          "Note": "Laminated bi-metallic configuration of 316L and PH17-4 stainless steels. Composition for each constituent given in Table 1 (see Items 01 and 02)."
+        },
+        "Processing": {
+          "Process_Category": "L-DED",
+          "Process_Text": {
+            "original": "The samples are designed to have a laminated configuration along the transverse direction (TD). The control of lamella width was achieved leveraging an inverse process parameter optimization framework. Laser power, scan speed, and powder feed rate are set at 450 W, 4 mm/s, and 0.175 g/min. Two hoppers storing 316L and PH17-4 powders were alternatively turned on and off, with 15 s pause between each alternation for the powder stream to stabilize. Two hatch spacings: 0.70 mm and 0.81 mm.",
+            "simplified": "L-DED printing of alternating 316L/PH17-4 lamellae via dual-hopper powder switching with 15s pause, two sub-configurations using hatch spacings 0.70 mm and 0.81 mm respectively, followed by EDM cutting and mechanical polishing."
+          },
+          "Equipment": [
+            {
+              "Name": "In-house 3-axis L-DED system with 1 kW fibre laser (IPG Photonics Corporation)",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Powder feeder (PF 2/2, GTV GmbH) with PLC-control and mass flow meters",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Coaxial printing nozzle (COAX14 v5, Fraunhofer USA, Inc.)",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Wire EDM",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Keyence VHX optical microscope (OM)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Hitachi SU3500 SEM with EBSD and EDS detectors",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Hitachi SU7000 SEM with EBSD and EDS detectors",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "FEI Talos F200X TEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Helio 5 PFIB system",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Bruker D8 Discover XRD",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Instron 3365 tensile tester with 5 kN loadcell",
+              "Category": "Testing"
+            },
+            {
+              "Name": "GOM RAMIS DIC system",
+              "Category": "Testing"
+            },
+            {
+              "Name": "USB microscope camera (Omron Sentech Co., LTD)",
+              "Category": "Testing"
+            },
+            {
+              "Name": "ImageJ",
+              "Category": "Software"
+            },
+            {
+              "Name": "Zeiss Inspect 2025 software",
+              "Category": "Software"
+            },
+            {
+              "Name": "In-house developed Python scripts (work hardening rate calculation)",
+              "Category": "Software"
+            }
+          ],
+          "Key_Params": {
+            "Stage1_L_DED_Printing": {
+              "Laser_Power_W": 450,
+              "Scan_Speed_mm_s": 4,
+              "Powder_Feed_Rate_g_min": 0.175,
+              "Carrier_Gas": "Argon",
+              "Purge_Gas": "Argon",
+              "Pause_Between_Switching_s": 15,
+              "Sub_Configuration_1": {
+                "Hatch_Spacing_mm": 0.7,
+                "Lamellae_Width_mm": 1.58,
+                "PH17_4_Vol_Fraction_pct": 47.5,
+                "Number_of_Interfaces": 2,
+                "Layer_Thickness_mm": 0.38,
+                "Note": "Two passes per lamella, wider lamellae"
+              },
+              "Sub_Configuration_2": {
+                "Hatch_Spacing_mm": 0.81,
+                "Lamellae_Width_mm": 1.27,
+                "PH17_4_Vol_Fraction_pct": 57.6,
+                "Number_of_Interfaces": 2,
+                "Layer_Thickness_mm": 0.54,
+                "Note": "Two passes per lamella, narrower lamellae"
+              },
+              "Note": "Table 2 lists Sample A with two rows; both sub-configurations share same base process parameters",
+              "Melt_Pool_Width_mm": 1.16,
+              "Melt_Pool_Depth_mm": 0.61
+            },
+            "Stage2_Machining": {
+              "Method": "Wire EDM"
+            },
+            "Stage3_Surface_Preparation": {
+              "Method": "Mechanical polishing",
+              "Surface_Roughness_μm": {
+                "Value": 1.78,
+                "Value_StdDev": 0.137
+              }
+            }
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "The samples are comprised of mainly two phases, i.e., face centered cubic (FCC) and body centered cubic (BCC), corresponding to 316L and PH17-4, respectively. No new phase is observed for the HS samples. Good bonding with clear boundaries is observed between the 316L and PH17-4 regions. Clear boundaries between the two materials with minimal element diffusion. No precipitates identified in PH17-4 or at the boundary.",
+            "simplified": "Bi-metallic HS with alternating 316L (FCC austenite) and PH17-4 (BCC martensite) lamellae, coherent interface with Kurdjumov-Sachs orientation relationship, no new phases or precipitates."
+          },
+          "Main_Phase": [
+            {
+              "Phase_Name": "Austenite (γ) / Martensite (α) bi-phase",
+              "Crystal_Structure": "FCC + BCC (dual-phase)",
+              "Note": "FCC in 316L regions, BCC in PH17-4 regions; XRD shows superposition of both phases"
+            }
+          ],
+          "Interface_Features": {
+            "Orientation_Relationship": "Kurdjumov-Sachs (K-S): (111)γ // (101)α, [011̄]γ // [1̄1̄1]α",
+            "Interplanar_Misfit_pct": {
+              "Value": 2.09,
+              "Unit": "%"
+            },
+            "Coherence": "Coherent",
+            "Note": "Misfit < 5%, classified as coherent interface. No precipitates at interface."
+          },
+          "Porosity": {
+            "Value": null,
+            "Note": "<0.1%; inequality, not exact value"
+          },
+          "Relative_Density": {
+            "Value": null,
+            "Note": ">99.9%; inequality, not exact value"
+          },
+          "Advanced_Quantitative_Features": {
+            "Saturation_Stress_MPa": {
+              "Value": 948.1,
+              "Unit": "MPa",
+              "Note": "From Kocks-Mecking fit of work hardening stage III (Table 4)"
+            },
+            "Dominating_Deformation_Mode": "Shear-induced",
+            "PH17_4_Vol_Fraction_measured_pct": {
+              "Value": null,
+              "Note": "Two sub-configuration values from Table 2: 47.5% and 57.6%. Table 4 reports V17-4=47.5% for Sample A."
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Elongation_At_Fracture",
+            "Value": 23.9,
+            "Value_StdDev": 1.63,
+            "Unit": "%",
+            "Original_Values": "23.9 ± 1.63 %",
+            "Test_Condition": {
+              "Loading_Mode": "Tension",
+              "Strain_Rate_s1": 0.001,
+              "Test_Temperature_Original": "Room temperature (implied; not explicitly stated, quasi-static loading at constant strain rate 0.001/s)",
+              "Number_of_Specimens": 3
+            },
+            "Data_Source": "table",
+            "Note": "Labelled as EL (%) in Table 3; 原文未区分 Uniform 与 Total Elongation, 默认归入 Elongation_Total"
+          },
+          {
+            "Property_Name": "Ultimate_Tensile_Strength",
+            "Value": 734.6,
+            "Value_StdDev": 7.75,
+            "Unit": "MPa",
+            "Original_Values": "734.6 ± 7.75 MPa",
+            "Test_Condition": {
+              "Loading_Mode": "Tension",
+              "Strain_Rate_s1": 0.001,
+              "Test_Temperature_Original": "Room temperature (implied; not explicitly stated, quasi-static loading at constant strain rate 0.001/s)",
+              "Number_of_Specimens": 3
+            },
+            "Data_Source": "table"
+          },
+          {
+            "Property_Name": "Yield_Strength",
+            "Value": 398.9,
+            "Value_StdDev": 9.1,
+            "Unit": "MPa",
+            "Original_Values": "398.9 ± 9.10 MPa",
+            "Test_Condition": {
+              "Loading_Mode": "Tension",
+              "Strain_Rate_s1": 0.001,
+              "Test_Temperature_Original": "Room temperature (implied; not explicitly stated, quasi-static loading at constant strain rate 0.001/s)",
+              "Number_of_Specimens": 3
+            },
+            "Data_Source": "table",
+            "Note": "0.2% offset yield strength"
+          },
+          {
+            "Property_Name": "Elastic_Modulus",
+            "Value": 123.4,
+            "Value_StdDev": 13.46,
+            "Unit": "GPa",
+            "Original_Values": "123.4 ± 13.46 GPa",
+            "Test_Condition": {
+              "Loading_Mode": "Tension",
+              "Strain_Rate_s1": 0.001,
+              "Test_Temperature_Original": "Room temperature (implied; not explicitly stated, quasi-static loading at constant strain rate 0.001/s)",
+              "Number_of_Specimens": 3
+            },
+            "Data_Source": "table"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "04_HS_SampleB",
+      "Sample_ID": "Sample B",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Additive_Manufacturing",
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 2: Sample B design parameters",
+        "Table 3: Sample B mechanical properties",
+        "Table 4: Sample B saturation stress and deformation mode"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Bi-metallic heterostructured steel",
+          "Material_Name_Raw": "316L / PH17-4 heterostructured steel",
+          "Note": "Laminated bi-metallic configuration. Composition for each constituent given in Table 1."
+        },
+        "Processing": {
+          "Process_Category": "L-DED",
+          "Process_Text": {
+            "original": "Similar material configuration as Sample A, but with more PH17-4 and less 316L. Single sub-configuration.",
+            "simplified": "L-DED printing of alternating 316L/PH17-4 lamellae with single hatch spacing configuration."
+          },
+          "Equipment": [
+            {
+              "Name": "In-house 3-axis L-DED system with 1 kW fibre laser (IPG Photonics Corporation)",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Powder feeder (PF 2/2, GTV GmbH) with PLC-control and mass flow meters",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Coaxial printing nozzle (COAX14 v5, Fraunhofer USA, Inc.)",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Wire EDM",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Keyence VHX optical microscope (OM)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Hitachi SU3500 SEM with EBSD and EDS detectors",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Hitachi SU7000 SEM with EBSD and EDS detectors",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "FEI Talos F200X TEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Helio 5 PFIB system",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Bruker D8 Discover XRD",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Instron 3365 tensile tester with 5 kN loadcell",
+              "Category": "Testing"
+            },
+            {
+              "Name": "GOM RAMIS DIC system",
+              "Category": "Testing"
+            },
+            {
+              "Name": "ImageJ",
+              "Category": "Software"
+            },
+            {
+              "Name": "Zeiss Inspect 2025 software",
+              "Category": "Software"
+            },
+            {
+              "Name": "USB microscope camera (Omron Sentech Co., LTD)",
+              "Category": "Testing"
+            },
+            {
+              "Name": "In-house developed Python scripts (work hardening rate calculation)",
+              "Category": "Software"
+            }
+          ],
+          "Key_Params": {
+            "Stage1_L_DED_Printing": {
+              "Laser_Power_W": 450,
+              "Scan_Speed_mm_s": 4,
+              "Powder_Feed_Rate_g_min": 0.175,
+              "Carrier_Gas": "Argon",
+              "Purge_Gas": "Argon",
+              "Pause_Between_Switching_s": 15,
+              "Hatch_Spacing_mm": 0.7,
+              "Lamellae_Width_mm": 0.78,
+              "PH17_4_Vol_Fraction_pct": 47.4,
+              "Number_of_Interfaces": 4,
+              "Layer_Thickness_mm": 0.38,
+              "Original_Values": "w=0.78 mm, V17-4=47.4%, 4 interfaces, layer thickness 0.38 mm (Table 2)",
+              "Melt_Pool_Width_mm": 1.16,
+              "Melt_Pool_Depth_mm": 0.61
+            },
+            "Stage2_Machining": {
+              "Method": "Wire EDM"
+            },
+            "Stage3_Surface_Preparation": {
+              "Method": "Mechanical polishing",
+              "Surface_Roughness_μm": {
+                "Value": 1.78,
+                "Value_StdDev": 0.137,
+                "Note": "Shared value for all samples per Section 2.2"
+              }
+            },
+            "Note": "Characterization equipment shared across all samples per Section 2.3"
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Sample B possesses a similar material configuration as that of Sample A, but with more PH17-4 and less 316L. No new phase is observed. Good bonding with clear boundaries between 316L and PH17-4.",
+            "simplified": "Bi-metallic HS with 4 interfaces, narrower lamellae than Sample A, similar microstructure features."
+          },
+          "Main_Phase": [
+            {
+              "Phase_Name": "Austenite (γ) / Martensite (α) bi-phase",
+              "Crystal_Structure": "FCC + BCC (dual-phase)"
+            }
+          ],
+          "Porosity": {
+            "Value": null,
+            "Note": "<0.1%"
+          },
+          "Relative_Density": {
+            "Value": null,
+            "Note": ">99.9%"
+          },
+          "Advanced_Quantitative_Features": {
+            "Saturation_Stress_MPa": {
+              "Value": 1083.4,
+              "Unit": "MPa",
+              "Note": "From Kocks-Mecking fit (Table 4)"
+            },
+            "Dominating_Deformation_Mode": "Necking-induced",
+            "PH17_4_Vol_Fraction_measured_pct": {
+              "Value": 47.4,
+              "Note": "From Table 2. Internal inconsistency: Table 4 reports V17-4=57.6% for Sample B, and Section 4.4 text states 'from 47.5% to 57.6%, A to B'. Source of discrepancy unclear."
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Elongation_At_Fracture",
+            "Value": 36.2,
+            "Value_StdDev": 3.13,
+            "Unit": "%",
+            "Original_Values": "36.2 ± 3.13 %",
+            "Test_Condition": {
+              "Loading_Mode": "Tension",
+              "Strain_Rate_s1": 0.001,
+              "Test_Temperature_Original": "Room temperature (implied; not explicitly stated, quasi-static loading at constant strain rate 0.001/s)",
+              "Number_of_Specimens": 3
+            },
+            "Data_Source": "table",
+            "Note": "Labelled as EL (%) in Table 3; 原文未区分 Uniform 与 Total Elongation, 默认归入 Elongation_Total"
+          },
+          {
+            "Property_Name": "Ultimate_Tensile_Strength",
+            "Value": 668.8,
+            "Value_StdDev": 33.43,
+            "Unit": "MPa",
+            "Original_Values": "668.8 ± 33.43 MPa",
+            "Test_Condition": {
+              "Loading_Mode": "Tension",
+              "Strain_Rate_s1": 0.001,
+              "Test_Temperature_Original": "Room temperature (implied; not explicitly stated, quasi-static loading at constant strain rate 0.001/s)",
+              "Number_of_Specimens": 3
+            },
+            "Data_Source": "table"
+          },
+          {
+            "Property_Name": "Yield_Strength",
+            "Value": 355.5,
+            "Value_StdDev": 27.62,
+            "Unit": "MPa",
+            "Original_Values": "355.5 ± 27.62 MPa",
+            "Test_Condition": {
+              "Loading_Mode": "Tension",
+              "Strain_Rate_s1": 0.001,
+              "Test_Temperature_Original": "Room temperature (implied; not explicitly stated, quasi-static loading at constant strain rate 0.001/s)",
+              "Number_of_Specimens": 3
+            },
+            "Data_Source": "table",
+            "Note": "0.2% offset yield strength"
+          },
+          {
+            "Property_Name": "Elastic_Modulus",
+            "Value": 132.1,
+            "Value_StdDev": 17.53,
+            "Unit": "GPa",
+            "Original_Values": "132.1 ± 17.53 GPa",
+            "Test_Condition": {
+              "Loading_Mode": "Tension",
+              "Strain_Rate_s1": 0.001,
+              "Test_Temperature_Original": "Room temperature (implied; not explicitly stated, quasi-static loading at constant strain rate 0.001/s)",
+              "Number_of_Specimens": 3
+            },
+            "Data_Source": "table"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "05_HS_SampleC",
+      "Sample_ID": "Sample C",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Additive_Manufacturing",
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 2: Sample C design parameters",
+        "Table 3: Sample C mechanical properties",
+        "Table 4: Sample C saturation stress and deformation mode"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Bi-metallic heterostructured steel",
+          "Material_Name_Raw": "316L / PH17-4 heterostructured steel",
+          "Note": "Laminated bi-metallic configuration. Composition for each constituent given in Table 1."
+        },
+        "Processing": {
+          "Process_Category": "L-DED",
+          "Process_Text": {
+            "original": "Sample C has thinner lamellae and a more symmetrical configuration than Samples A and B, with similar amount of PH17-4 to Sample A.",
+            "simplified": "L-DED printing of alternating 316L/PH17-4 lamellae with 5 interfaces, more symmetrical configuration."
+          },
+          "Equipment": [
+            {
+              "Name": "In-house 3-axis L-DED system with 1 kW fibre laser (IPG Photonics Corporation)",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Powder feeder (PF 2/2, GTV GmbH) with PLC-control and mass flow meters",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Coaxial printing nozzle (COAX14 v5, Fraunhofer USA, Inc.)",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Wire EDM",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Keyence VHX optical microscope (OM)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Hitachi SU3500 SEM with EBSD and EDS detectors",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Hitachi SU7000 SEM with EBSD and EDS detectors",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "FEI Talos F200X TEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Helio 5 PFIB system",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Bruker D8 Discover XRD",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Instron 3365 tensile tester with 5 kN loadcell",
+              "Category": "Testing"
+            },
+            {
+              "Name": "GOM RAMIS DIC system",
+              "Category": "Testing"
+            },
+            {
+              "Name": "ImageJ",
+              "Category": "Software"
+            },
+            {
+              "Name": "Zeiss Inspect 2025 software",
+              "Category": "Software"
+            },
+            {
+              "Name": "USB microscope camera (Omron Sentech Co., LTD)",
+              "Category": "Testing"
+            },
+            {
+              "Name": "In-house developed Python scripts (work hardening rate calculation)",
+              "Category": "Software"
+            }
+          ],
+          "Key_Params": {
+            "Stage1_L_DED_Printing": {
+              "Laser_Power_W": 450,
+              "Scan_Speed_mm_s": 4,
+              "Powder_Feed_Rate_g_min": 0.175,
+              "Carrier_Gas": "Argon",
+              "Purge_Gas": "Argon",
+              "Pause_Between_Switching_s": 15,
+              "Hatch_Spacing_mm": 0.81,
+              "Lamellae_Width_mm": 0.64,
+              "PH17_4_Vol_Fraction_pct": 57.0,
+              "Number_of_Interfaces": 5,
+              "Layer_Thickness_mm": 0.54,
+              "Original_Values": "w=0.64 mm, V17-4=57.0%, 5 interfaces, layer thickness 0.54 mm (Table 2)",
+              "Melt_Pool_Width_mm": 1.16,
+              "Melt_Pool_Depth_mm": 0.61
+            },
+            "Stage2_Machining": {
+              "Method": "Wire EDM"
+            },
+            "Stage3_Surface_Preparation": {
+              "Method": "Mechanical polishing",
+              "Surface_Roughness_μm": {
+                "Value": 1.78,
+                "Value_StdDev": 0.137,
+                "Note": "Shared value for all samples per Section 2.2"
+              }
+            },
+            "Note": "Characterization equipment shared across all samples per Section 2.3"
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Sample C has thinner lamellae and a more symmetrical configuration. The most severe necking presents at the central portion of PH17-4. More uniformly distributed stress/strain concentrations. No new phase observed.",
+            "simplified": "Bi-metallic HS with 5 interfaces, most symmetrical configuration, thinner lamellae."
+          },
+          "Main_Phase": [
+            {
+              "Phase_Name": "Austenite (γ) / Martensite (α) bi-phase",
+              "Crystal_Structure": "FCC + BCC (dual-phase)"
+            }
+          ],
+          "Porosity": {
+            "Value": null,
+            "Note": "<0.1%"
+          },
+          "Relative_Density": {
+            "Value": null,
+            "Note": ">99.9%"
+          },
+          "Advanced_Quantitative_Features": {
+            "Saturation_Stress_MPa": {
+              "Value": 1055.4,
+              "Unit": "MPa",
+              "Note": "From Kocks-Mecking fit (Table 4)"
+            },
+            "Dominating_Deformation_Mode": "Shear-induced",
+            "PH17_4_Vol_Fraction_measured_pct": {
+              "Value": 57.0,
+              "Note": "From Table 2. Internal inconsistency: Table 4 reports V17-4=47.4% for Sample C, differing from Table 2's 57.0%. Source of discrepancy unclear."
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Elongation_At_Fracture",
+            "Value": 34.7,
+            "Value_StdDev": 4.59,
+            "Unit": "%",
+            "Original_Values": "34.7 ± 4.59 %",
+            "Test_Condition": {
+              "Loading_Mode": "Tension",
+              "Strain_Rate_s1": 0.001,
+              "Test_Temperature_Original": "Room temperature (implied; not explicitly stated, quasi-static loading at constant strain rate 0.001/s)",
+              "Number_of_Specimens": 3
+            },
+            "Data_Source": "table",
+            "Note": "Labelled as EL (%) in Table 3; 原文未区分 Uniform 与 Total Elongation, 默认归入 Elongation_Total. 45.2% improvement in EL compared with baseline Sample A (Section 4.1 text)."
+          },
+          {
+            "Property_Name": "Ultimate_Tensile_Strength",
+            "Value": 690.0,
+            "Value_StdDev": 20.6,
+            "Unit": "MPa",
+            "Original_Values": "690.0 ± 20.60 MPa",
+            "Test_Condition": {
+              "Loading_Mode": "Tension",
+              "Strain_Rate_s1": 0.001,
+              "Test_Temperature_Original": "Room temperature (implied; not explicitly stated, quasi-static loading at constant strain rate 0.001/s)",
+              "Number_of_Specimens": 3
+            },
+            "Data_Source": "table",
+            "Note": "6.1% reduction in UTS compared with baseline Sample A (Section 4.1 text)"
+          },
+          {
+            "Property_Name": "Yield_Strength",
+            "Value": 381.5,
+            "Value_StdDev": 11.51,
+            "Unit": "MPa",
+            "Original_Values": "381.5 ± 11.51 MPa",
+            "Test_Condition": {
+              "Loading_Mode": "Tension",
+              "Strain_Rate_s1": 0.001,
+              "Test_Temperature_Original": "Room temperature (implied; not explicitly stated, quasi-static loading at constant strain rate 0.001/s)",
+              "Number_of_Specimens": 3
+            },
+            "Data_Source": "table",
+            "Note": "0.2% offset yield strength"
+          },
+          {
+            "Property_Name": "Elastic_Modulus",
+            "Value": 136.7,
+            "Value_StdDev": 16.58,
+            "Unit": "GPa",
+            "Original_Values": "136.7 ± 16.58 GPa",
+            "Test_Condition": {
+              "Loading_Mode": "Tension",
+              "Strain_Rate_s1": 0.001,
+              "Test_Temperature_Original": "Room temperature (implied; not explicitly stated, quasi-static loading at constant strain rate 0.001/s)",
+              "Number_of_Specimens": 3
+            },
+            "Data_Source": "table"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "06_HS_SampleD",
+      "Sample_ID": "Sample D (Improved)",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Additive_Manufacturing",
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 2: Sample D design parameters (cells blank in source)",
+        "Table 3: Sample D mechanical properties",
+        "Table 4: Sample D saturation stress and deformation mode"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Bi-metallic heterostructured steel",
+          "Material_Name_Raw": "316L / PH17-4 heterostructured steel",
+          "Note": "Improved HS design. Same PH17-4 vol fraction as Sample B (Table 2). Thinner lamellae and more interfaces than Sample B. Table 2 cells for Sample D are blank; parameters inferred from text description. Composition for each constituent given in Table 1."
+        },
+        "Processing": {
+          "Process_Category": "L-DED",
+          "Process_Text": {
+            "original": "An improved HS design, i.e., Sample D, is fabricated and tested. Sample D has the same PH17-4 vol fraction as Sample B (Table 2). It possesses thinner lamellae and more interfaces.",
+            "simplified": "L-DED printing of improved HS design with thinner lamellae, more interfaces, same PH17-4 vol fraction as Sample B."
+          },
+          "Equipment": [
+            {
+              "Name": "In-house 3-axis L-DED system with 1 kW fibre laser (IPG Photonics Corporation)",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Powder feeder (PF 2/2, GTV GmbH) with PLC-control and mass flow meters",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Coaxial printing nozzle (COAX14 v5, Fraunhofer USA, Inc.)",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Wire EDM",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Keyence VHX optical microscope (OM)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Hitachi SU3500 SEM with EBSD and EDS detectors",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Hitachi SU7000 SEM with EBSD and EDS detectors",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "FEI Talos F200X TEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Helio 5 PFIB system",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Bruker D8 Discover XRD",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Instron 3365 tensile tester with 5 kN loadcell",
+              "Category": "Testing"
+            },
+            {
+              "Name": "GOM RAMIS DIC system",
+              "Category": "Testing"
+            },
+            {
+              "Name": "ImageJ",
+              "Category": "Software"
+            },
+            {
+              "Name": "Zeiss Inspect 2025 software",
+              "Category": "Software"
+            },
+            {
+              "Name": "USB microscope camera (Omron Sentech Co., LTD)",
+              "Category": "Testing"
+            },
+            {
+              "Name": "In-house developed Python scripts (work hardening rate calculation)",
+              "Category": "Software"
+            }
+          ],
+          "Key_Params": {
+            "Stage1_L_DED_Printing": {
+              "Laser_Power_W": 450,
+              "Scan_Speed_mm_s": 4,
+              "Powder_Feed_Rate_g_min": 0.175,
+              "Carrier_Gas": "Argon",
+              "Purge_Gas": "Argon",
+              "Pause_Between_Switching_s": 15,
+              "Note": "Same base L-DED parameters as all samples. Table 2 design parameter cells for Sample D are blank; exact lamellae width, PH17-4 vol fraction, number of interfaces, and layer thickness not specified in table. Text states same PH17-4 vol fraction as Sample B and thinner lamellae with more interfaces.",
+              "Melt_Pool_Width_mm": 1.16,
+              "Melt_Pool_Depth_mm": 0.61
+            },
+            "Stage2_Machining": {
+              "Method": "Wire EDM"
+            },
+            "Stage3_Surface_Preparation": {
+              "Method": "Mechanical polishing",
+              "Surface_Roughness_μm": {
+                "Value": 1.78,
+                "Value_StdDev": 0.137,
+                "Note": "Shared value for all samples per Section 2.2"
+              }
+            },
+            "Note": "Characterization equipment shared across all samples per Section 2.3"
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "The improved Sample D shows the best ductility. The failure of Sample D is dominated by necking-induced deformation. The increased number of interfaces provides more HDI hardening effect. The global strain concentration is more distributed, accompanied by a lower magnitude and multi-necking.",
+            "simplified": "Improved HS with more distributed strain, multi-necking, necking-induced dominant deformation mode, enhanced HDI hardening from more interfaces."
+          },
+          "Main_Phase": [
+            {
+              "Phase_Name": "Austenite (γ) / Martensite (α) bi-phase",
+              "Crystal_Structure": "FCC + BCC (dual-phase)"
+            }
+          ],
+          "Porosity": {
+            "Value": null,
+            "Note": "<0.1%"
+          },
+          "Relative_Density": {
+            "Value": null,
+            "Note": ">99.9%"
+          },
+          "Advanced_Quantitative_Features": {
+            "Saturation_Stress_MPa": {
+              "Value": 2012.2,
+              "Unit": "MPa",
+              "Note": "From Kocks-Mecking fit (Table 4); highest among all samples"
+            },
+            "Dominating_Deformation_Mode": "Necking-induced",
+            "PH17_4_Vol_Fraction_measured_pct": {
+              "Value": null,
+              "Note": "Table 2 cells blank; text states same PH17-4 vol fraction as Sample B. Table 4 reports V17-4=57.0%. Note: if Sample B V17-4 is 57.6% per Table 4/Section 4.4, 'same vol fraction as Sample B' is approximately consistent with Table 4's 57.0%."
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Elongation_At_Fracture",
+            "Value": 50.9,
+            "Value_StdDev": 1.73,
+            "Unit": "%",
+            "Original_Values": "50.9 ± 1.73 %",
+            "Test_Condition": {
+              "Loading_Mode": "Tension",
+              "Strain_Rate_s1": 0.001,
+              "Test_Temperature_Original": "Room temperature (implied; not explicitly stated, quasi-static loading at constant strain rate 0.001/s)",
+              "Number_of_Specimens": 3
+            },
+            "Data_Source": "table",
+            "Note": "Labelled as EL (%) in Table 3; 原文未区分 Uniform 与 Total Elongation, 默认归入 Elongation_Total. 27.3% improvement over homogeneous 316L. 528.4% improvement over homogeneous PH17-4. Outperforms second-best HS by 40.6%."
+          },
+          {
+            "Property_Name": "Ultimate_Tensile_Strength",
+            "Value": 649.7,
+            "Value_StdDev": 4.99,
+            "Unit": "MPa",
+            "Original_Values": "649.7 ± 4.99 MPa",
+            "Test_Condition": {
+              "Loading_Mode": "Tension",
+              "Strain_Rate_s1": 0.001,
+              "Test_Temperature_Original": "Room temperature (implied; not explicitly stated, quasi-static loading at constant strain rate 0.001/s)",
+              "Number_of_Specimens": 3
+            },
+            "Data_Source": "table",
+            "Note": "11.5% improvement over homogeneous 316L. 31.6% reduction compared with homogeneous PH17-4."
+          },
+          {
+            "Property_Name": "Yield_Strength",
+            "Value": 409.9,
+            "Value_StdDev": 8.44,
+            "Unit": "MPa",
+            "Original_Values": "409.9 ± 8.44 MPa",
+            "Test_Condition": {
+              "Loading_Mode": "Tension",
+              "Strain_Rate_s1": 0.001,
+              "Test_Temperature_Original": "Room temperature (implied; not explicitly stated, quasi-static loading at constant strain rate 0.001/s)",
+              "Number_of_Specimens": 3
+            },
+            "Data_Source": "table",
+            "Note": "0.2% offset yield strength. 1.8% improvement over homogeneous 316L. 41.5% reduction compared with homogeneous PH17-4."
+          },
+          {
+            "Property_Name": "Elastic_Modulus",
+            "Value": 138.6,
+            "Value_StdDev": 5.92,
+            "Unit": "GPa",
+            "Original_Values": "138.6 ± 5.92 GPa",
+            "Test_Condition": {
+              "Loading_Mode": "Tension",
+              "Strain_Rate_s1": 0.001,
+              "Test_Temperature_Original": "Room temperature (implied; not explicitly stated, quasi-static loading at constant strain rate 0.001/s)",
+              "Number_of_Specimens": 3
+            },
+            "Data_Source": "table"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "07_FEA_SampleA",
+      "Sample_ID": "Sample A (FEA simulation)",
+      "Role": "Demonstration",
+      "Data_Nature": "Computed",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Additive_Manufacturing",
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 2.3: FEA simulation methodology",
+        "Fig. 7(b)-(d): FEA results for Sample A"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Note": "FEA model uses experimentally measured properties of 316L and PH17-4. Geometric model replicates Sample A configuration."
+        },
+        "Processing": {
+          "Process_Category": "FEA Simulation",
+          "Process_Text": {
+            "original": "Numerical finite element analysis (FEA) was implemented to study the stress and strain fields and the deformation modes of the various HS samples. Three-dimensional CAD models were created replicating the geometrical signatures of the tested HS samples. The FEA simulations were performed using the commercial software ABAQUS with an explicit solver.",
+            "simplified": "3D FEA using ABAQUS explicit solver to simulate tensile deformation of HS samples."
+          },
+          "Equipment": [
+            {
+              "Name": "ABAQUS (commercial FEA software, explicit solver)",
+              "Category": "Software"
+            }
+          ],
+          "Simulation_Metadata": {
+            "Software": "ABAQUS with explicit solver",
+            "Mesh_Type": "Hex elements",
+            "Boundary_Conditions": "One end fixed, other end under tension; replicating real-life tensile experiments",
+            "Material_Model": {
+              "Elastic_Property": "Young's modulus from experimental data",
+              "Plastic_Property": "Stress-plastic strain datapoints from experimental data",
+              "Density_kg_m3": 8000,
+              "Poisson_Ratio": 0.33,
+              "Note": "Same density and Poisson's ratio for both 316L and PH17-4"
+            },
+            "Note": "All FEA items share the same simulation framework: ABAQUS explicit solver, hex elements, same boundary conditions and material model."
+          }
+        },
+        "Structure": {
+          "Note": "FEA model replicates Sample A geometry with alternating 316L/PH17-4 lamellae. See Fig. 7(b)-(d) for von Mises stress/strain maps."
+        },
+        "Experiment_Link": {
+          "Related_Item_IDs": [
+            "03_HS_SampleA"
+          ],
+          "Description": "FEA simulation of Sample A tensile deformation",
+          "Validation_Target": "Von Mises stress and strain fields compared with DIC measurements",
+          "Note": "Used to support confined-necking co-deformation mechanism analysis"
+        }
+      }
+    },
+    {
+      "Item_ID": "08_FEA_SampleB",
+      "Sample_ID": "Sample B (FEA simulation)",
+      "Role": "Demonstration",
+      "Data_Nature": "Computed",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Additive_Manufacturing",
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 2.3: FEA simulation methodology",
+        "Fig. 7(f)-(h): FEA results for Sample B"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Note": "FEA model uses experimentally measured properties of 316L and PH17-4. Geometric model replicates Sample B configuration."
+        },
+        "Processing": {
+          "Process_Category": "FEA Simulation",
+          "Process_Text": {
+            "original": "FEA simulation of Sample B using same methodology as Sample A.",
+            "simplified": "3D FEA using ABAQUS explicit solver to simulate tensile deformation of Sample B."
+          },
+          "Equipment": [
+            {
+              "Name": "ABAQUS (commercial FEA software, explicit solver)",
+              "Category": "Software"
+            }
+          ],
+          "Simulation_Metadata": {
+            "Software": "ABAQUS with explicit solver",
+            "Mesh_Type": "Hex elements",
+            "Boundary_Conditions": "One end fixed, other end under tension",
+            "Material_Model": {
+              "Elastic_Property": "Young's modulus from experimental data",
+              "Plastic_Property": "Stress-plastic strain datapoints from experimental data",
+              "Density_kg_m3": 8000,
+              "Poisson_Ratio": 0.33
+            },
+            "Note": "All FEA items share the same simulation framework: ABAQUS explicit solver, hex elements, same boundary conditions and material model."
+          }
+        },
+        "Structure": {
+          "Note": "FEA model replicates Sample B geometry. See Fig. 7(f)-(h) for von Mises stress/strain maps."
+        },
+        "Experiment_Link": {
+          "Related_Item_IDs": [
+            "04_HS_SampleB"
+          ],
+          "Description": "FEA simulation of Sample B tensile deformation",
+          "Validation_Target": "Von Mises stress and strain fields compared with DIC measurements"
+        }
+      }
+    },
+    {
+      "Item_ID": "09_FEA_SampleC",
+      "Sample_ID": "Sample C (FEA simulation)",
+      "Role": "Demonstration",
+      "Data_Nature": "Computed",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Additive_Manufacturing",
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 2.3: FEA simulation methodology",
+        "Fig. 7(j)-(l): FEA results for Sample C"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Note": "FEA model uses experimentally measured properties of 316L and PH17-4. Geometric model replicates Sample C configuration."
+        },
+        "Processing": {
+          "Process_Category": "FEA Simulation",
+          "Process_Text": {
+            "original": "FEA simulation of Sample C using same methodology.",
+            "simplified": "3D FEA using ABAQUS explicit solver to simulate tensile deformation of Sample C."
+          },
+          "Equipment": [
+            {
+              "Name": "ABAQUS (commercial FEA software, explicit solver)",
+              "Category": "Software"
+            }
+          ],
+          "Simulation_Metadata": {
+            "Software": "ABAQUS with explicit solver",
+            "Mesh_Type": "Hex elements",
+            "Boundary_Conditions": "One end fixed, other end under tension",
+            "Material_Model": {
+              "Elastic_Property": "Young's modulus from experimental data",
+              "Plastic_Property": "Stress-plastic strain datapoints from experimental data",
+              "Density_kg_m3": 8000,
+              "Poisson_Ratio": 0.33
+            },
+            "Note": "All FEA items share the same simulation framework: ABAQUS explicit solver, hex elements, same boundary conditions and material model."
+          }
+        },
+        "Structure": {
+          "Note": "FEA model replicates Sample C geometry. See Fig. 7(j)-(l) for von Mises stress/strain maps."
+        },
+        "Experiment_Link": {
+          "Related_Item_IDs": [
+            "05_HS_SampleC"
+          ],
+          "Description": "FEA simulation of Sample C tensile deformation",
+          "Validation_Target": "Von Mises stress and strain fields compared with DIC measurements"
+        }
+      }
+    },
+    {
+      "Item_ID": "10_FEA_SampleD",
+      "Sample_ID": "Sample D (FEA simulation)",
+      "Role": "Demonstration",
+      "Data_Nature": "Computed",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Additive_Manufacturing",
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 2.3: FEA simulation methodology",
+        "Fig. 14(e): FEA von Mises strain map for Sample D"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Note": "FEA model uses experimentally measured properties of 316L and PH17-4. Geometric model replicates Sample D configuration."
+        },
+        "Processing": {
+          "Process_Category": "FEA Simulation",
+          "Process_Text": {
+            "original": "FEA simulation of Sample D using same methodology.",
+            "simplified": "3D FEA using ABAQUS explicit solver to simulate tensile deformation of Sample D."
+          },
+          "Equipment": [
+            {
+              "Name": "ABAQUS (commercial FEA software, explicit solver)",
+              "Category": "Software"
+            }
+          ],
+          "Simulation_Metadata": {
+            "Software": "ABAQUS with explicit solver",
+            "Mesh_Type": "Hex elements",
+            "Boundary_Conditions": "One end fixed, other end under tension",
+            "Material_Model": {
+              "Elastic_Property": "Young's modulus from experimental data",
+              "Plastic_Property": "Stress-plastic strain datapoints from experimental data",
+              "Density_kg_m3": 8000,
+              "Poisson_Ratio": 0.33
+            },
+            "Note": "All FEA items share the same simulation framework: ABAQUS explicit solver, hex elements, same boundary conditions and material model."
+          }
+        },
+        "Structure": {
+          "Note": "FEA model replicates Sample D geometry. See Fig. 14(e) for von Mises strain map."
+        },
+        "Experiment_Link": {
+          "Related_Item_IDs": [
+            "06_HS_SampleD"
+          ],
+          "Description": "FEA simulation of Sample D tensile deformation",
+          "Validation_Target": "Von Mises strain compared with DIC measurements"
+        }
+      }
+    }
+  ]
+}

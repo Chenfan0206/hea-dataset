@@ -1,0 +1,678 @@
+{
+  "Paper_Metadata": {
+    "Paper_Title": "Confined necking and improved tensile ductility in heterostructured bi-metallic steels made by additive manufacturing",
+    "DOI": "10.1016/j.actamat.2026.121952"
+  },
+  "items": [
+    {
+      "Sample_ID": "316L",
+      "Gradient_Material": false,
+      "Gradient_Group_ID": null,
+      "Composition_Info": {
+        "Role": "Target",
+        "Alloy_Name_Raw": "SS 316L",
+        "Nominal_Composition": {
+          "Composition_Type": "wt%",
+          "Elements_Normalized": null
+        },
+        "Measured_Composition": null,
+        "Note": "Table 1 (nominal range): Fe Bal., Cr 17.00–19.00, Ni 13.00–15.00, Mo 2.25–3.00, C 0–0.03, N 0–0.10, S and P not specified. Commercial grade, exact composition not provided in text."
+      },
+      "Process_Info": {
+        "Process_Category": "Additive Manufacturing (L-DED)",
+        "Process_Text": {
+          "original": "All samples were fabricated using an in-house developed 3-axis L-DED system equipped with a 1 kW fibre laser (IPG Photonics Corporation). The wavelength of the laser is 1070 nm, and its nominal beam size is 1 mm. During the fabrication process, the powders were delivered by argon as the carrier and purge gas through a coaxial printing nozzle (COAX14 v5, Fraunhofer USA, Inc.). To ensure accurately controlled powder delivery, a powder feeder (PF 2/2, GTV GmbH) with PLC-control and mass flow meters was used. The laser power, scan speed, and powder feed rate are set to be consistent at 450 W, 4 mm/s, and 0.175 g/min, respectively. The powders are gas atomized spherical with a size distribution of 15–45 μm (EOS GmbH). For homogeneous 316L samples, no powder switching was applied.",
+          "simplified": "Fabricated using a 3-axis L-DED system with a 1 kW fibre laser. Powders delivered by argon gas. Laser power 450 W, scanning speed 4 mm/s, powder feed rate 0.175 g/min. Powder size 15–45 μm."
+        },
+        "Equipment": "in-house 3-axis L-DED system, 1 kW fibre laser (IPG Photonics), COAX14 v5 nozzle (Fraunhofer USA), PF 2/2 powder feeder (GTV GmbH)",
+        "Key_Params": {
+          "Laser_Power_W": 450.0,
+          "Scanning_Speed_mm_s": 4.0,
+          "Powder_Feed_Rate_g_min": 0.175,
+          "Layer_Thickness_um": 510.0,
+          "Powder_Size_avg_um": "15-45",
+          "Protective_Atmosphere": "Argon",
+          "Laser_Wavelength_nm": 1070,
+          "Beam_Diameter_mm": 1.0
+        }
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": "The 316L regions show cellular structures with various morphologies as a result of constitutional supercooling. As shown in Fig. 4(c), the samples are comprised of mainly two phases, i.e., face centred cubic (FCC) and body centred cubic (BCC), corresponding to 316L and PH17-4, respectively. All samples show a porosity <0.1% and are thus considered to be fully dense. No precipitates were identified.",
+          "simplified": "Microstructure exhibits cellular structures due to constitutional supercooling. Phase is FCC. Fully dense with porosity <0.1%."
+        },
+        "Main_Phase": "FCC",
+        "Precipitates": [],
+        "Porosity_pct": null,
+        "Relative_Density_pct": null,
+        "Grain_Size_avg_um": null,
+        "Precipitate_Size_avg_nm": null,
+        "Advanced_Quantitative_Features": {},
+        "Note": "Porosity <0.1% as per original text; no exact value provided."
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Yield_Strength",
+          "Test_Condition": "Quasi-static loading, constant strain rate",
+          "Value_Numeric": 402.8,
+          "Value_Range": null,
+          "Value_StdDev": 20.28,
+          "Unit": "MPa",
+          "Test_Temperature_K": null,
+          "Strain_Rate_s1": 0.001,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": "Room temperature assumed but not explicitly stated. Test specimen dimensions not provided in main text."
+        },
+        {
+          "Property_Name": "Ultimate_Tensile_Strength",
+          "Test_Condition": "Quasi-static loading, constant strain rate",
+          "Value_Numeric": 582.8,
+          "Value_Range": null,
+          "Value_StdDev": 18.51,
+          "Unit": "MPa",
+          "Test_Temperature_K": null,
+          "Strain_Rate_s1": 0.001,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": null
+        },
+        {
+          "Property_Name": "Elongation_Total",
+          "Test_Condition": "Quasi-static loading, constant strain rate",
+          "Value_Numeric": 40.0,
+          "Value_Range": null,
+          "Value_StdDev": 2.83,
+          "Unit": "%",
+          "Test_Temperature_K": null,
+          "Strain_Rate_s1": 0.001,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": "Original only provides total elongation at break (Elongation_Total)."
+        },
+        {
+          "Property_Name": "Elastic_Modulus",
+          "Test_Condition": "Quasi-static loading, constant strain rate",
+          "Value_Numeric": 129.2,
+          "Value_Range": null,
+          "Value_StdDev": 17.29,
+          "Unit": "GPa",
+          "Test_Temperature_K": null,
+          "Strain_Rate_s1": 0.001,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": null
+        }
+      ]
+    },
+    {
+      "Sample_ID": "PH17-4",
+      "Gradient_Material": false,
+      "Gradient_Group_ID": null,
+      "Composition_Info": {
+        "Role": "Target",
+        "Alloy_Name_Raw": "PH17-4",
+        "Nominal_Composition": {
+          "Composition_Type": "wt%",
+          "Elements_Normalized": null
+        },
+        "Measured_Composition": null,
+        "Note": "Table 1: Fe Bal., Cr 17.00, Ni 4.50, Cu 4.00, Nb+Ta 0.3, C <0.07. Commercial grade, exact composition not provided in text."
+      },
+      "Process_Info": {
+        "Process_Category": "Additive Manufacturing (L-DED)",
+        "Process_Text": {
+          "original": "Same as 316L homogeneous sample but using PH17-4 powder. All samples were fabricated using an in-house developed 3-axis L-DED system equipped with a 1 kW fibre laser (IPG Photonics Corporation). The wavelength of the laser is 1070 nm, and its nominal beam size is 1 mm. During the fabrication process, the powders were delivered by argon as the carrier and purge gas through a coaxial printing nozzle (COAX14 v5, Fraunhofer USA, Inc.). To ensure accurately controlled powder delivery, a powder feeder (PF 2/2, GTV GmbH) with PLC-control and mass flow meters was used. The laser power, scan speed, and powder feed rate are set to be consistent at 450 W, 4 mm/s, and 0.175 g/min, respectively. The powders are gas atomized spherical with a size distribution of 15–45 μm (EOS GmbH).",
+          "simplified": "Fabricated using a 3-axis L-DED system with a 1 kW fibre laser. Powders delivered by argon gas. Laser power 450 W, scanning speed 4 mm/s, powder feed rate 0.175 g/min. Powder size 15–45 μm."
+        },
+        "Equipment": "in-house 3-axis L-DED system, 1 kW fibre laser (IPG Photonics), COAX14 v5 nozzle (Fraunhofer USA), PF 2/2 powder feeder (GTV GmbH)",
+        "Key_Params": {
+          "Laser_Power_W": 450.0,
+          "Scanning_Speed_mm_s": 4.0,
+          "Powder_Feed_Rate_g_min": 0.175,
+          "Layer_Thickness_um": 510.0,
+          "Powder_Size_avg_um": "15-45",
+          "Protective_Atmosphere": "Argon",
+          "Laser_Wavelength_nm": 1070,
+          "Beam_Diameter_mm": 1.0
+        }
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": "In the PH17-4 regions a large number of martensite laths are found. As shown in Fig. 4(c), the samples are comprised of mainly two phases, i.e., face centred cubic (FCC) and body centred cubic (BCC), corresponding to 316L and PH17-4, respectively. All samples show a porosity <0.1% and are thus considered to be fully dense. No precipitates were identified.",
+          "simplified": "Microstructure displays a large number of martensite laths. Phase is BCC. Fully dense with porosity <0.1%."
+        },
+        "Main_Phase": "BCC",
+        "Precipitates": [],
+        "Porosity_pct": null,
+        "Relative_Density_pct": null,
+        "Grain_Size_avg_um": null,
+        "Precipitate_Size_avg_nm": null,
+        "Advanced_Quantitative_Features": {},
+        "Note": "Porosity <0.1% as per original text; no exact value provided."
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Yield_Strength",
+          "Test_Condition": "Quasi-static loading, constant strain rate",
+          "Value_Numeric": 701.1,
+          "Value_Range": null,
+          "Value_StdDev": 5.05,
+          "Unit": "MPa",
+          "Test_Temperature_K": null,
+          "Strain_Rate_s1": 0.001,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": null
+        },
+        {
+          "Property_Name": "Ultimate_Tensile_Strength",
+          "Test_Condition": "Quasi-static loading, constant strain rate",
+          "Value_Numeric": 949.8,
+          "Value_Range": null,
+          "Value_StdDev": 5.24,
+          "Unit": "MPa",
+          "Test_Temperature_K": null,
+          "Strain_Rate_s1": 0.001,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": null
+        },
+        {
+          "Property_Name": "Elongation_Total",
+          "Test_Condition": "Quasi-static loading, constant strain rate",
+          "Value_Numeric": 8.1,
+          "Value_Range": null,
+          "Value_StdDev": 0.86,
+          "Unit": "%",
+          "Test_Temperature_K": null,
+          "Strain_Rate_s1": 0.001,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": "Original only provides total elongation at break."
+        },
+        {
+          "Property_Name": "Elastic_Modulus",
+          "Test_Condition": "Quasi-static loading, constant strain rate",
+          "Value_Numeric": 130.1,
+          "Value_Range": null,
+          "Value_StdDev": 3.13,
+          "Unit": "GPa",
+          "Test_Temperature_K": null,
+          "Strain_Rate_s1": 0.001,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": null
+        }
+      ]
+    },
+    {
+      "Sample_ID": "A (Baseline)",
+      "Gradient_Material": false,
+      "Gradient_Group_ID": null,
+      "Composition_Info": {
+        "Role": "Target",
+        "Alloy_Name_Raw": "316L / PH17-4 bi-metallic heterostructured steel",
+        "Nominal_Composition": null,
+        "Measured_Composition": null,
+        "Note": "Laminated configuration (alternating 316L and PH17-4 layers). Measured PH17-4 volume fraction: 47.5%. Number of interfaces: 2. Measured lamellae width: 1.58 mm. Not a continuous gradient; discrete bimetal composite."
+      },
+      "Process_Info": {
+        "Process_Category": "Additive Manufacturing (L-DED)",
+        "Process_Text": {
+          "original": "All samples were fabricated using an in-house developed 3-axis L-DED system equipped with a 1 kW fibre laser (IPG Photonics Corporation). The wavelength of the laser is 1070 nm, and its nominal beam size is 1 mm. During the fabrication process, the powders were delivered by argon as the carrier and purge gas through a coaxial printing nozzle (COAX14 v5, Fraunhofer USA, Inc.). To ensure accurately controlled powder delivery, a powder feeder (PF 2/2, GTV GmbH) with PLC-control and mass flow meters was used. The laser power, scan speed, and powder feed rate are set to be consistent at 450 W, 4 mm/s, and 0.175 g/min, respectively. In the fabrication process, two hoppers storing 316L and PH17-4 powders were alternatively turned on and off, with 15 s pause between each alternation for the powder stream to stabilize. Both the hatch spacing and the number of passes before powder switching were changed to achieve varying lamellae width. For Sample A, the layer thickness is 0.38 mm. The powders are gas atomized spherical with a size distribution of 15–45 μm (EOS GmbH).",
+          "simplified": "Fabricated using alternating powder delivery of 316L and PH17-4 on a 3-axis L-DED system. Constant laser power (450 W), scanning speed (4 mm/s), powder feed rate (0.175 g/min). Powder size 15–45 μm. 15 s pause between powder switches. Layer thickness 0.38 mm."
+        },
+        "Equipment": "in-house 3-axis L-DED system, 1 kW fibre laser (IPG Photonics), COAX14 v5 nozzle (Fraunhofer USA), PF 2/2 powder feeder (GTV GmbH)",
+        "Key_Params": {
+          "Laser_Power_W": 450.0,
+          "Scanning_Speed_mm_s": 4.0,
+          "Powder_Feed_Rate_g_min": 0.175,
+          "Layer_Thickness_um": 380.0,
+          "Powder_Size_avg_um": "15-45",
+          "Protective_Atmosphere": "Argon",
+          "Laser_Wavelength_nm": 1070,
+          "Beam_Diameter_mm": 1.0,
+          "Powder_Switch_Pause_s": 15
+        }
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": "Good bonding with clear boundaries is observed between the 316L regions and the PH17-4 regions. The 316L regions show cellular structures with various morphologies as a result of constitutional supercooling, while in the PH17-4 regions a large number of martensite laths are found. The samples are comprised of mainly two phases, i.e., face centred cubic (FCC) and body centred cubic (BCC), corresponding to 316L and PH17-4, respectively. No defect is found at the boundaries, indicating strong inter-material bonding. The interface between lath martensite and austenite exhibits Kurdjumov-Sachs (K-S) orientation relationship: (111)γ // (101)α’, [011]γ // [111]α’. The interplanar misfit is 2.09%, indicating a coherent interface. No precipitates were identified. All samples show a porosity <0.1% and are thus considered to be fully dense.",
+          "simplified": "Heterostructure composed of distinct 316L (FCC) and PH17-4 (BCC) regions with clear coherent interfaces (K-S orientation, misfit 2.09%). No precipitates. Fully dense with porosity <0.1%."
+        },
+        "Main_Phase": null,
+        "Precipitates": [],
+        "Porosity_pct": null,
+        "Relative_Density_pct": null,
+        "Grain_Size_avg_um": null,
+        "Precipitate_Size_avg_nm": null,
+        "Advanced_Quantitative_Features": {},
+        "Note": "Porosity <0.1% as per original text; no exact value provided. Multiple phases present, main phase not explicitly stated."
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Yield_Strength",
+          "Test_Condition": "Quasi-static loading, constant strain rate",
+          "Value_Numeric": 398.9,
+          "Value_Range": null,
+          "Value_StdDev": 9.10,
+          "Unit": "MPa",
+          "Test_Temperature_K": null,
+          "Strain_Rate_s1": 0.001,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": null
+        },
+        {
+          "Property_Name": "Ultimate_Tensile_Strength",
+          "Test_Condition": "Quasi-static loading, constant strain rate",
+          "Value_Numeric": 734.6,
+          "Value_Range": null,
+          "Value_StdDev": 7.75,
+          "Unit": "MPa",
+          "Test_Temperature_K": null,
+          "Strain_Rate_s1": 0.001,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": null
+        },
+        {
+          "Property_Name": "Elongation_Total",
+          "Test_Condition": "Quasi-static loading, constant strain rate",
+          "Value_Numeric": 23.9,
+          "Value_Range": null,
+          "Value_StdDev": 1.63,
+          "Unit": "%",
+          "Test_Temperature_K": null,
+          "Strain_Rate_s1": 0.001,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": "Original only provides total elongation at break."
+        },
+        {
+          "Property_Name": "Elastic_Modulus",
+          "Test_Condition": "Quasi-static loading, constant strain rate",
+          "Value_Numeric": 123.4,
+          "Value_Range": null,
+          "Value_StdDev": 13.46,
+          "Unit": "GPa",
+          "Test_Temperature_K": null,
+          "Strain_Rate_s1": 0.001,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": null
+        }
+      ]
+    },
+    {
+      "Sample_ID": "B",
+      "Gradient_Material": false,
+      "Gradient_Group_ID": null,
+      "Composition_Info": {
+        "Role": "Target",
+        "Alloy_Name_Raw": "316L / PH17-4 bi-metallic heterostructured steel",
+        "Nominal_Composition": null,
+        "Measured_Composition": null,
+        "Note": "Laminated configuration. Measured PH17-4 volume fraction: 57.6%. Number of interfaces: 2. Measured lamellae width: 1.27 mm."
+      },
+      "Process_Info": {
+        "Process_Category": "Additive Manufacturing (L-DED)",
+        "Process_Text": {
+          "original": "Same alternating powder strategy as Sample A but with different hatch spacing and number of passes. Layer thickness 0.54 mm. Other parameters identical: laser power 450 W, scan speed 4 mm/s, powder feed rate 0.175 g/min, 15 s pause between powder switches. Powder size 15–45 μm.",
+          "simplified": "Fabricated using alternating powder delivery of 316L and PH17-4 on a 3-axis L-DED system. Constant laser power (450 W), scanning speed (4 mm/s), powder feed rate (0.175 g/min). Powder size 15–45 μm. 15 s pause between powder switches. Layer thickness 0.54 mm."
+        },
+        "Equipment": "in-house 3-axis L-DED system, 1 kW fibre laser (IPG Photonics), COAX14 v5 nozzle (Fraunhofer USA), PF 2/2 powder feeder (GTV GmbH)",
+        "Key_Params": {
+          "Laser_Power_W": 450.0,
+          "Scanning_Speed_mm_s": 4.0,
+          "Powder_Feed_Rate_g_min": 0.175,
+          "Layer_Thickness_um": 540.0,
+          "Powder_Size_avg_um": "15-45",
+          "Protective_Atmosphere": "Argon",
+          "Laser_Wavelength_nm": 1070,
+          "Beam_Diameter_mm": 1.0,
+          "Powder_Switch_Pause_s": 15
+        }
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": "Good bonding with clear boundaries is observed between the 316L regions and the PH17-4 regions. The samples are comprised of mainly two phases, i.e., FCC and BCC, corresponding to 316L and PH17-4. Coherent interface with K-S orientation. No precipitates. Porosity <0.1%.",
+          "simplified": "Similar to Sample A: distinct 316L (FCC) and PH17-4 (BCC) regions with coherent interfaces. No precipitates. Fully dense with porosity <0.1%."
+        },
+        "Main_Phase": null,
+        "Precipitates": [],
+        "Porosity_pct": null,
+        "Relative_Density_pct": null,
+        "Grain_Size_avg_um": null,
+        "Precipitate_Size_avg_nm": null,
+        "Advanced_Quantitative_Features": {},
+        "Note": "Porosity <0.1% as per original text; no exact value provided."
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Yield_Strength",
+          "Test_Condition": "Quasi-static loading, constant strain rate",
+          "Value_Numeric": 355.5,
+          "Value_Range": null,
+          "Value_StdDev": 27.62,
+          "Unit": "MPa",
+          "Test_Temperature_K": null,
+          "Strain_Rate_s1": 0.001,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": null
+        },
+        {
+          "Property_Name": "Ultimate_Tensile_Strength",
+          "Test_Condition": "Quasi-static loading, constant strain rate",
+          "Value_Numeric": 668.8,
+          "Value_Range": null,
+          "Value_StdDev": 33.43,
+          "Unit": "MPa",
+          "Test_Temperature_K": null,
+          "Strain_Rate_s1": 0.001,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": null
+        },
+        {
+          "Property_Name": "Elongation_Total",
+          "Test_Condition": "Quasi-static loading, constant strain rate",
+          "Value_Numeric": 36.2,
+          "Value_Range": null,
+          "Value_StdDev": 3.13,
+          "Unit": "%",
+          "Test_Temperature_K": null,
+          "Strain_Rate_s1": 0.001,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": "Original only provides total elongation at break."
+        },
+        {
+          "Property_Name": "Elastic_Modulus",
+          "Test_Condition": "Quasi-static loading, constant strain rate",
+          "Value_Numeric": 132.1,
+          "Value_Range": null,
+          "Value_StdDev": 17.53,
+          "Unit": "GPa",
+          "Test_Temperature_K": null,
+          "Strain_Rate_s1": 0.001,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": null
+        }
+      ]
+    },
+    {
+      "Sample_ID": "C",
+      "Gradient_Material": false,
+      "Gradient_Group_ID": null,
+      "Composition_Info": {
+        "Role": "Target",
+        "Alloy_Name_Raw": "316L / PH17-4 bi-metallic heterostructured steel",
+        "Nominal_Composition": null,
+        "Measured_Composition": null,
+        "Note": "Laminated configuration. Measured PH17-4 volume fraction: 47.4%. Number of interfaces: 4. Measured lamellae width: 0.78 mm."
+      },
+      "Process_Info": {
+        "Process_Category": "Additive Manufacturing (L-DED)",
+        "Process_Text": {
+          "original": "Same alternating powder strategy as Sample A but with different hatch spacing (narrower lamellae). Layer thickness 0.38 mm. Other parameters identical.",
+          "simplified": "Fabricated using alternating powder delivery of 316L and PH17-4. Layer thickness 0.38 mm. Same laser power (450 W), scanning speed (4 mm/s), powder feed rate (0.175 g/min), powder size 15–45 μm."
+        },
+        "Equipment": "in-house 3-axis L-DED system, 1 kW fibre laser (IPG Photonics), COAX14 v5 nozzle (Fraunhofer USA), PF 2/2 powder feeder (GTV GmbH)",
+        "Key_Params": {
+          "Laser_Power_W": 450.0,
+          "Scanning_Speed_mm_s": 4.0,
+          "Powder_Feed_Rate_g_min": 0.175,
+          "Layer_Thickness_um": 380.0,
+          "Powder_Size_avg_um": "15-45",
+          "Protective_Atmosphere": "Argon",
+          "Laser_Wavelength_nm": 1070,
+          "Beam_Diameter_mm": 1.0,
+          "Powder_Switch_Pause_s": 15
+        }
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": "Similar to Sample A. Good bonding, clear boundaries, FCC/BCC phases, coherent interface, no precipitates. Porosity <0.1%.",
+          "simplified": "Same as Sample A: distinct 316L (FCC) and PH17-4 (BCC) regions with coherent interfaces. Fully dense."
+        },
+        "Main_Phase": null,
+        "Precipitates": [],
+        "Porosity_pct": null,
+        "Relative_Density_pct": null,
+        "Grain_Size_avg_um": null,
+        "Precipitate_Size_avg_nm": null,
+        "Advanced_Quantitative_Features": {},
+        "Note": "Porosity <0.1% as per original text; no exact value provided."
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Yield_Strength",
+          "Test_Condition": "Quasi-static loading, constant strain rate",
+          "Value_Numeric": 381.5,
+          "Value_Range": null,
+          "Value_StdDev": 11.51,
+          "Unit": "MPa",
+          "Test_Temperature_K": null,
+          "Strain_Rate_s1": 0.001,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": null
+        },
+        {
+          "Property_Name": "Ultimate_Tensile_Strength",
+          "Test_Condition": "Quasi-static loading, constant strain rate",
+          "Value_Numeric": 690.0,
+          "Value_Range": null,
+          "Value_StdDev": 20.60,
+          "Unit": "MPa",
+          "Test_Temperature_K": null,
+          "Strain_Rate_s1": 0.001,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": null
+        },
+        {
+          "Property_Name": "Elongation_Total",
+          "Test_Condition": "Quasi-static loading, constant strain rate",
+          "Value_Numeric": 34.7,
+          "Value_Range": null,
+          "Value_StdDev": 4.59,
+          "Unit": "%",
+          "Test_Temperature_K": null,
+          "Strain_Rate_s1": 0.001,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": "Original only provides total elongation at break."
+        },
+        {
+          "Property_Name": "Elastic_Modulus",
+          "Test_Condition": "Quasi-static loading, constant strain rate",
+          "Value_Numeric": 136.7,
+          "Value_Range": null,
+          "Value_StdDev": 16.58,
+          "Unit": "GPa",
+          "Test_Temperature_K": null,
+          "Strain_Rate_s1": 0.001,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": null
+        }
+      ]
+    },
+    {
+      "Sample_ID": "D (Improved)",
+      "Gradient_Material": false,
+      "Gradient_Group_ID": null,
+      "Composition_Info": {
+        "Role": "Target",
+        "Alloy_Name_Raw": "316L / PH17-4 bi-metallic heterostructured steel",
+        "Nominal_Composition": null,
+        "Measured_Composition": null,
+        "Note": "Laminated configuration. Measured PH17-4 volume fraction: 57.0%. Number of interfaces: 5. Measured lamellae width: 0.64 mm."
+      },
+      "Process_Info": {
+        "Process_Category": "Additive Manufacturing (L-DED)",
+        "Process_Text": {
+          "original": "Improved design with thinner lamellae and more interfaces. Layer thickness 0.54 mm. Same laser parameters and powder switching strategy.",
+          "simplified": "Fabricated using alternating powder delivery of 316L and PH17-4. Layer thickness 0.54 mm. Same laser power (450 W), scanning speed (4 mm/s), powder feed rate (0.175 g/min), powder size 15–45 μm."
+        },
+        "Equipment": "in-house 3-axis L-DED system, 1 kW fibre laser (IPG Photonics), COAX14 v5 nozzle (Fraunhofer USA), PF 2/2 powder feeder (GTV GmbH)",
+        "Key_Params": {
+          "Laser_Power_W": 450.0,
+          "Scanning_Speed_mm_s": 4.0,
+          "Powder_Feed_Rate_g_min": 0.175,
+          "Layer_Thickness_um": 540.0,
+          "Powder_Size_avg_um": "15-45",
+          "Protective_Atmosphere": "Argon",
+          "Laser_Wavelength_nm": 1070,
+          "Beam_Diameter_mm": 1.0,
+          "Powder_Switch_Pause_s": 15
+        }
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": "Similar microstructure to other HS samples: clear 316L/PH17-4 interfaces, FCC and BCC phases, coherent K-S orientation, no precipitates. Porosity <0.1%.",
+          "simplified": "Same as other HS samples: distinct 316L (FCC) and PH17-4 (BCC) regions with coherent interfaces. Fully dense."
+        },
+        "Main_Phase": null,
+        "Precipitates": [],
+        "Porosity_pct": null,
+        "Relative_Density_pct": null,
+        "Grain_Size_avg_um": null,
+        "Precipitate_Size_avg_nm": null,
+        "Advanced_Quantitative_Features": {},
+        "Note": "Porosity <0.1% as per original text; no exact value provided."
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Yield_Strength",
+          "Test_Condition": "Quasi-static loading, constant strain rate",
+          "Value_Numeric": 409.9,
+          "Value_Range": null,
+          "Value_StdDev": 8.44,
+          "Unit": "MPa",
+          "Test_Temperature_K": null,
+          "Strain_Rate_s1": 0.001,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": null
+        },
+        {
+          "Property_Name": "Ultimate_Tensile_Strength",
+          "Test_Condition": "Quasi-static loading, constant strain rate",
+          "Value_Numeric": 649.7,
+          "Value_Range": null,
+          "Value_StdDev": 4.99,
+          "Unit": "MPa",
+          "Test_Temperature_K": null,
+          "Strain_Rate_s1": 0.001,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": null
+        },
+        {
+          "Property_Name": "Elongation_Total",
+          "Test_Condition": "Quasi-static loading, constant strain rate",
+          "Value_Numeric": 50.9,
+          "Value_Range": null,
+          "Value_StdDev": 1.73,
+          "Unit": "%",
+          "Test_Temperature_K": null,
+          "Strain_Rate_s1": 0.001,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": "Original only provides total elongation at break."
+        },
+        {
+          "Property_Name": "Elastic_Modulus",
+          "Test_Condition": "Quasi-static loading, constant strain rate",
+          "Value_Numeric": 138.6,
+          "Value_Range": null,
+          "Value_StdDev": 5.92,
+          "Unit": "GPa",
+          "Test_Temperature_K": null,
+          "Strain_Rate_s1": 0.001,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": null
+        }
+      ]
+    }
+  ]
+}

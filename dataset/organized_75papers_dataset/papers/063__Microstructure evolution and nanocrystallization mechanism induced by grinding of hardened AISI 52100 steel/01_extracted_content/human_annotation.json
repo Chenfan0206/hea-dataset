@@ -1,0 +1,231 @@
+{
+  "Paper_Metadata": {
+    "Paper_Title": "Microstructure evolution and nanocrystallization mechanism induced by grinding of hardened AISI 52100 steel",
+    "DOI": "10.1016/j.jmatprotec.2025.118909"
+  },
+  "items": [
+    {
+      "Sample_ID": "AISI-52100-AsReceived",
+      "Gradient_Material": false,
+      "Gradient_Group_ID": null,
+      "Composition_Info": {
+        "Role": "Reference",
+        "Alloy_Name_Raw": "AISI 52100 Steel",
+        "Nominal_Composition": {
+          "Composition_Type": "null",
+          "Elements_Normalized": null
+        },
+        "Measured_Composition": {
+          "Composition_Type": "null",
+          "Elements_Normalized": null,
+          "Measurement_Method": null
+        },
+        "Note": "Standard heat treatment: 850℃ holding 2h, oil quenching, 180℃ tempering 4h."
+      },
+      "Process_Info": {
+        "Process_Category": "Heat Treatment",
+        "Process_Text": {
+          "original": "Heating to 850 ℃ and holding for 2 h, quenching in oil, and tempering at 180 ℃ for 4 h, according to the ISO 683–17 standard.",
+          "simplified": "Quenched and tempered to 62 HRC."
+        },
+        "Equipment": null,
+        "Key_Params": {
+          "Austenitizing_Temperature_K": 1123.15,
+          "Austenitizing_Time_h": 2,
+          "Tempering_Temperature_K": 453.15,
+          "Tempering_Time_h": 4
+        }
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": "The microstructures of the heat-treated workpiece were composed of tempered martensite, spherical carbides, tempered carbides, and a small amount of residual austenite.",
+          "simplified": "Tempered martensite with spherical carbides."
+        },
+        "Main_Phase": "BCC (Tempered Martensite)",
+        "Precipitates": [
+          {
+            "Phase_Type": "Carbides (Fe3C)",
+            "Volume_Fraction_pct": null
+          }
+        ],
+        "Porosity_pct": null,
+        "Relative_Density_pct": null,
+        "Grain_Size_avg_um": null,
+        "Precipitate_Size_avg_nm": null,
+        "Advanced_Quantitative_Features": {
+          "Residual_Austenite_Content_pct": 8.4
+        }
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Hardness",
+          "Test_Condition": "Macrohardness",
+          "Value_Numeric": 62,
+          "Value_Range": null,
+          "Value_StdDev": 1,
+          "Unit": "HRC",
+          "Test_Temperature_K": 298.15,
+          "Data_Source": "text",
+          "Note": "Surface hardness of the bulk material."
+        }
+      ]
+    },
+    {
+      "Sample_ID": "AISI-52100-Grinding-WhiteLayer",
+      "Gradient_Material": false,
+      "Gradient_Group_ID": null,
+      "Composition_Info": {
+        "Role": "Target",
+        "Alloy_Name_Raw": "AISI 52100 Steel",
+        "Nominal_Composition": {
+          "Composition_Type": "null",
+          "Elements_Normalized": null
+        },
+        "Measured_Composition": {
+          "Composition_Type": "null",
+          "Elements_Normalized": null,
+          "Measurement_Method": null
+        },
+        "Note": "The white layer exhibits supersaturated carbon solid solution due to rapid cooling."
+      },
+      "Process_Info": {
+        "Process_Category": "Surface Grinding",
+        "Process_Text": {
+          "original": "Grinding depth: 40 μm, Wheel speed: 31.4 m/s, Worktable speed: 0.1 m/s.",
+          "simplified": "Dry grinding with high temperature and rapid cooling inducing re-austenitization and martensitic transformation."
+        },
+        "Equipment": "Precision horizontal axis surface grinding machine (MGK 7120)",
+        "Key_Params": {
+          "Grinding_Depth_um": 40,
+          "Wheel_Speed_m_s": 31.4,
+          "Worktable_Speed_m_s": 0.1,
+
+        }
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": "Hardened white layer composed of acicular martensite grains. XRD shows increased austenite phase (22.6%). TEM reveals nanocrystalline structure (10-50 nm) with equiaxed nanocrystals near the surface.",
+          "simplified": "Acicular martensite with retained austenite and nanocrystalline grains."
+        },
+        "Main_Phase": "BCT (Martensite)",
+        "Precipitates": [
+          {
+            "Phase_Type": "Austenite (γ)",
+            "Volume_Fraction_pct": 22.6
+          }
+        ],
+        "Porosity_pct": null,
+        "Relative_Density_pct": null,
+        "Grain_Size_avg_um": null,
+        "Precipitate_Size_avg_nm": null,
+        "Advanced_Quantitative_Features": {
+          "Dislocation_Density_Type": "High"
+        }
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Hardness",
+          "Test_Condition": "Microhardness",
+          "Value_Numeric": 1027,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "HV",
+          "Test_Temperature_K": 298.15,
+          "Hardness_Load": "100gf",
+          "Hardness_Dwell_Time_s": 10,
+          "Data_Source": "text",
+          "Note": "Peak hardness at the surface. Gradient distribution observed."
+        },
+        {
+          "Property_Name": "Corrosion_Resistance",
+          "Test_Condition": "Qualitative",
+          "Value_Numeric": null,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": null,
+          "Test_Temperature_K": null,
+          "Data_Source": "text",
+          "Note": "Exhibits stronger corrosion resistance compared to bulk material."
+        }
+      ]
+    },
+    {
+      "Sample_ID": "AISI-52100-Grinding-DarkLayer",
+      "Gradient_Material": false,
+      "Gradient_Group_ID": null,
+      "Composition_Info": {
+        "Role": "Target",
+        "Alloy_Name_Raw": "AISI 52100 Steel",
+        "Nominal_Composition": {
+          "Composition_Type": "null",
+          "Elements_Normalized": null
+        },
+        "Measured_Composition": {
+          "Composition_Type": "null",
+          "Elements_Normalized": null,
+          "Measurement_Method": null
+        },
+        "Note": "Subsurface layer where temperature was insufficient for re-austenitization."
+      },
+      "Process_Info": {
+        "Process_Category": "Surface Grinding (Subsurface)",
+        "Process_Text": {
+          "original": "Grinding depth: 40 μm, Wheel speed: 31.4 m/s, Worktable speed: 0.1 m/s. Subsurface regions underwent high-temperature tempering due to insufficient thermal input for austenitization. Cooling rate slower than white layer.",
+          "simplified": "Thermal exposure resulted in high-temperature tempering."
+        },
+        "Equipment": "Precision horizontal axis surface grinding machine (MGK 7120)",
+        "Key_Params": {
+          "Grinding_Depth_um": 40,
+          "Wheel_Speed_m_s": 31.4,
+          "Worktable_Speed_m_s": 0.1
+        }
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": "Softened dark layer of over-tempered martensite and ferrite composites. XRD shows no austenite phase. High density of precipitated carbides.",
+          "simplified": "Over-tempered martensite and ferrite."
+        },
+        "Main_Phase": "BCC (Ferrite/Martensite)",
+        "Precipitates": [
+          {
+            "Phase_Type": null,
+            "Volume_Fraction_pct": null
+          }
+        ],
+        "Porosity_pct": null,
+        "Relative_Density_pct": null,
+        "Grain_Size_avg_um": null,
+        "Precipitate_Size_avg_nm": null,
+        "Advanced_Quantitative_Features": {
+          "Carbide_Density": "High"
+        }
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Hardness",
+          "Test_Condition": "Microhardness",
+          "Value_Numeric": 521,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "HV",
+          "Test_Temperature_K": 298.15,
+          "Hardness_Load": "100gf",
+          "Hardness_Dwell_Time_s": 10,
+          "Data_Source": "text",
+          "Note": "Minimum hardness observed, approx. 70% of bulk material hardness (740 HV)."
+        },
+        {
+          "Property_Name": "Corrosion_Resistance",
+          "Test_Condition": "Qualitative",
+          "Value_Numeric": null,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": null,
+          "Test_Temperature_K": null,
+          "Data_Source": "text",
+          "Note": "Exhibits severe etching and high susceptibility to corrosion."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,776 @@
+{
+  "Paper_Metadata": {
+    "Paper_Title": "Additively manufactured heterogeneous precipitation-strengthened high-entropy alloys with high strength and ductility",
+    "DOI": "10.1016/j.addma.2023.103795"
+  },
+  "Paper_Routing": {
+    "base_material": "Metals",
+    "application": "Structural",
+    "research_paradigm": "Experimental",
+    "Supplements_Loaded": [
+      "directions/base/Metals.txt",
+      "directions/application/Structural.txt",
+      "directions/paradigm/Experimental.txt"
+    ],
+    "Patch_Tags": [
+      "High_Entropy",
+      "Additive_Manufacturing",
+      "Laser_Assisted"
+    ],
+    "Needs_Mixed_Routing_Check": false,
+    "Mixed_Signals": []
+  },
+  "items": [
+    {
+      "Item_ID": "1",
+      "Sample_ID": "AP-HEA",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "High_Entropy",
+        "Additive_Manufacturing",
+        "Laser_Assisted"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 2.1",
+        "Section 3.1",
+        "Section 3.2",
+        "Section 4.1",
+        "Section 4.2"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "High-entropy alloy",
+          "Material_Name_Raw": "CoNiCrFeAlTi-based HEA",
+          "Nominal_Composition": {
+            "Unit": "at%",
+            "Formula": "Co₄₇Ni₂₈Cr₁₆Fe₃Al₃Ti₃",
+            "Elements": [
+              {
+                "Element": "Co",
+                "Value": 47
+              },
+              {
+                "Element": "Ni",
+                "Value": 28
+              },
+              {
+                "Element": "Cr",
+                "Value": 16
+              },
+              {
+                "Element": "Fe",
+                "Value": 3
+              },
+              {
+                "Element": "Al",
+                "Value": 3
+              },
+              {
+                "Element": "Ti",
+                "Value": 3
+              }
+            ]
+          },
+          "Note": "Overall measured composition of AP-HEA is close to designed composition (Supplementary Tab. S1); detailed measured values not available in main text. Original text gives all elements' exact atomic ratios summing to 100 at%; Co listed as exact value (47 at%) rather than 'Balance' per Metals supplement, as this is more faithful to the original text"
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "Elemental powders of Co, Ni, Cr, Fe, Al, and Ti with atomic ratio of Co₄₇Ni₂₈Cr₁₆Fe₃Al₃Ti₃ were mechanically mixed via a three-dimensional mixer. Powders heated to 120 °C for 4 h for drying before use. DED: fiber laser 1080 nm, spot 1.2 mm, 750 W, 480 mm/min scanning speed, 0.3 mm layer height, 14.45 g/min powder feeding, 0.8 mm hatch distance. Argon protection. Cuboid part 60 × 15 × 6 mm.",
+            "simplified": "Elemental powders mixed via 3D mixer → dried 120°C/4h → DED with 750W, 480mm/min, 0.3mm layer height → as-built state"
+          },
+          "Process_Category": "Directed Energy Deposition (DED)",
+          "Key_Params": {
+            "Stage1_Powder_Preparation": {
+              "Method": "Mechanical mixing via three-dimensional mixer",
+              "Drying_Temperature": {
+                "Value": 393.15,
+                "Unit": "K",
+                "Original_Values": "120 °C"
+              },
+              "Drying_Time": {
+                "Value": 4,
+                "Unit": "h"
+              }
+            },
+            "Stage2_DED_Building": {
+              "Laser_Wavelength_nm": 1080,
+              "Spot_Diameter_mm": 1.2,
+              "Laser_Power_W": 750,
+              "Scanning_Speed_mm_min": 480,
+              "Layer_Height_mm": 0.3,
+              "Powder_Feeding_Rate_g_min": 14.45,
+              "Hatch_Distance_mm": 0.8,
+              "Atmosphere": "Argon",
+              "Part_Dimensions_mm": "60 (L) × 15 (W) × 6 (H)"
+            }
+          },
+          "Equipment": [
+            {
+              "Name": "Three-dimensional mixer",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "DED system (fiber laser, 1080 nm)",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "FEI Scios SEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "EBSD",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "JEOL 2100F TEM with EDS",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Gatan 695 PIPS",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "XRD",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "CAMECA LEAP 5000 XR APT",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "FEI Scios dual-beam FIB",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "diondo d2 micro-CT",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "MTS Material Testing System",
+              "Category": "Testing"
+            },
+            {
+              "Name": "ImageJ",
+              "Category": "Software"
+            },
+            {
+              "Name": "Thermo-Calc",
+              "Category": "Software"
+            }
+          ],
+          "Note": "AP-HEA is as-built state with no heat treatment. DED processing parameters shared with HT-HEA (Item 2); paper states as-printed HEAs were subsequently aged"
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "The AP-HEA shows a fine cellular structure (~5 μm diameter) with single FCC structure in both interior and wall regions. Ti-rich zone observed in wall via EDS mapping. High-density dislocations in both interior and wall regions attributed to repeated compression-tension cycles during laser scanning. Grain size estimated as 93 ± 36 μm from EBSD. Mechanical twinning is the preferred deformation mode at ~30% plastic strain.",
+            "simplified": "Single-phase FCC cellular structure (~5 μm cells); Ti segregation at walls; high-density dislocations throughout; grain size 93 ± 36 μm; deformation by mechanical twinning"
+          },
+          "Main_Phase": {
+            "Phase_Name": "FCC matrix",
+            "Crystal_Structure": "FCC",
+            "Morphology": "Cellular structure in both interior and wall regions",
+            "Note": "Single FCC phase confirmed by SAED and XRD in AP state"
+          },
+          "Grain_Size": {
+            "Value": 93,
+            "Value_StdDev": 36,
+            "Unit": "μm",
+            "Dimension_Type": "undefined",
+            "Original_Values": "93 ± 36 μm",
+            "Data_Source": "text",
+            "Note": "Estimated from EBSD data in Supplementary Fig. S2"
+          },
+          "Relative_Density": {
+            "Value": 99.999,
+            "Unit": "%",
+            "Original_Values": "~99.999%",
+            "Data_Source": "text",
+            "Note": "Estimated from micro-CT (Supplementary Fig. S3); approximate value"
+          },
+          "Segregation": {
+            "Element": "Ti",
+            "Location": "Wall / interdendritic region of cellular structure",
+            "Data_Source": "text",
+            "Note": "Ti enrichment observed via SEM-EDS mapping (Fig. 3b)"
+          },
+          "Advanced_Quantitative_Features": {
+            "Cell_Diameter_um": {
+              "Value": 5,
+              "Dimension_Type": "diameter",
+              "Original_Values": "~5 μm",
+              "Data_Source": "text",
+              "Note": "Approximate cell diameter of the cellular structure"
+            },
+            "SFE_FCC_Matrix_mJ_m2": {
+              "Value": 11,
+              "Original_Values": "~11 mJ/m²",
+              "Data_Source": "text",
+              "Note": "Evaluated based on composition and work of Xie et al. [59]; Data_Nature: Computed; approximate"
+            },
+            "Critical_Twinning_Stress_MPa": {
+              "Value": null,
+              "Value_Min": 403,
+              "Value_Max": 492,
+              "Original_Values": "403–492 MPa",
+              "Data_Source": "text",
+              "Note": "Calculated range for AP-HEA; Data_Nature: Computed; below YS (~548 MPa), confirming mechanical twinning occurs"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Type": "Tensile",
+            "Loading_Mode": "Tension",
+            "Test_Temperature_K": null,
+            "Test_Temperature_Original": "room temperature",
+            "Strain_Rate_s1": {
+              "Value": 0.001,
+              "Original_Values": "1 × 10⁻³ s⁻¹"
+            },
+            "Orientation": "Vertical to building direction",
+            "Specimen_Geometry": "Flat dog-bone shaped",
+            "Specimen_Dimensions": "Gauge length 12.5 mm, cross-section 3.2 × 1.5 mm²",
+            "Yield_Strength_MPa": {
+              "Value": 548,
+              "Original_Values": "~548 MPa",
+              "Data_Source": "text",
+              "Note": "Approximate value"
+            },
+            "Ultimate_Tensile_Strength_MPa": {
+              "Value": 835,
+              "Original_Values": "~835 MPa",
+              "Data_Source": "text",
+              "Note": "Approximate value"
+            },
+            "Elongation_At_Fracture_pct": {
+              "Value": 30,
+              "Original_Values": "~30%",
+              "Data_Source": "text",
+              "Note": "Fracture elongation; approximate value; original text uses 'fracture elongation', does not distinguish uniform vs total elongation"
+            },
+            "Fracture_Mode": "Ductile fracture with dense dimples observed on fracture surface",
+            "Note": "All tensile values approximate as stated in text; tensile direction vertical to building direction"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "2",
+      "Sample_ID": "HT-HEA",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "High_Entropy",
+        "Additive_Manufacturing",
+        "Laser_Assisted"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 2.1",
+        "Section 3.1",
+        "Section 3.2",
+        "Section 4.1",
+        "Section 4.2",
+        "Section 4.3"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "High-entropy alloy",
+          "Material_Name_Raw": "CoNiCrFeAlTi-based HEA",
+          "Nominal_Composition": {
+            "Unit": "at%",
+            "Formula": "Co₄₇Ni₂₈Cr₁₆Fe₃Al₃Ti₃",
+            "Elements": [
+              {
+                "Element": "Co",
+                "Value": 47
+              },
+              {
+                "Element": "Ni",
+                "Value": 28
+              },
+              {
+                "Element": "Cr",
+                "Value": 16
+              },
+              {
+                "Element": "Fe",
+                "Value": 3
+              },
+              {
+                "Element": "Al",
+                "Value": 3
+              },
+              {
+                "Element": "Ti",
+                "Value": 3
+              }
+            ],
+            "Note": "Same nominal composition as AP-HEA (Item 1); identical raw material and DED procedure. Original text gives all elements' exact atomic ratios summing to 100 at%; Co listed as exact value (47 at%) rather than 'Balance' per Metals supplement, as this is more faithful to the original text"
+          }
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "DED fabrication (same as AP-HEA) followed by isothermal aging at 800 °C for 4 h, then cooled to room temperature in air.",
+            "simplified": "DED (shared with Item 1) → isothermal aging 800°C/4h → air cooling to room temperature"
+          },
+          "Process_Category": "Directed Energy Deposition (DED) + Isothermal Aging",
+          "Key_Params": {
+            "Stage1_DED_Building": {
+              "Note": "Same DED parameters as AP-HEA (Item 1); paper states as-printed HEAs were isothermally aged"
+            },
+            "Stage2_Isothermal_Aging": {
+              "Type": "Isothermal aging",
+              "Temperature": {
+                "Value": 1073.15,
+                "Unit": "K",
+                "Original_Values": "800 °C"
+              },
+              "Time": {
+                "Value": 4,
+                "Unit": "h"
+              },
+              "Cooling": "Air cooling to room temperature",
+              "Original_Values": "800 °C for 4 h and were then cooled to room temperature in air"
+            }
+          },
+          "Equipment": [
+            {
+              "Name": "Three-dimensional mixer",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "DED system (fiber laser, 1080 nm)",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "FEI Scios SEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "EBSD",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "JEOL 2100F TEM with EDS",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Gatan 695 PIPS",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "XRD",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "CAMECA LEAP 5000 XR APT",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "FEI Scios dual-beam FIB",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "diondo d2 micro-CT",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "MTS Material Testing System",
+              "Category": "Testing"
+            },
+            {
+              "Name": "ImageJ",
+              "Category": "Software"
+            },
+            {
+              "Name": "Thermo-Calc",
+              "Category": "Software"
+            }
+          ],
+          "Note": "DED stage shared with AP-HEA (Item 1); paper explicitly states as-printed HEAs were isothermally aged. Aging furnace model not specified in text"
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "HT-HEA exhibits heterogeneous cellular structure: single-phase FCC interior and dual-phase (FCC + L1₂) wall. High-density nanoscale L1₂ precipitation found in wall with average size 31.0 ± 5.1 nm. Interior remains single FCC. Ni, Al, Ti partition into L1₂ precipitates; Co, Cr, Fe enriched in FCC matrix. Pronounced strain partitioning between interior and wall during plastic deformation. Deformation dominated by stacking faults (SFs) in both interior and wall, with SF networks and L1₂ shearing by SFs observed.",
+            "simplified": "Heterogeneous cellular structure: FCC interior + (FCC + L1₂) wall; L1₂ nanoprecipitates ~31 nm in wall; Ni/Al/Ti partition to L1₂; SF-dominated deformation mechanism"
+          },
+          "Main_Phase": {
+            "Phase_Name": "FCC matrix",
+            "Crystal_Structure": "FCC",
+            "Morphology": "Cellular structure; single-phase in interior, matrix phase in dual-phase wall",
+            "Measured_Composition": [
+              {
+                "Location": "Interior",
+                "Unit": "at%",
+                "Data_Source": "table",
+                "Elements": [
+                  {
+                    "Element": "Co",
+                    "Value": 49.5,
+                    "Value_StdDev": 1.0
+                  },
+                  {
+                    "Element": "Ni",
+                    "Value": 28.5,
+                    "Value_StdDev": 0.5
+                  },
+                  {
+                    "Element": "Cr",
+                    "Value": 16.3,
+                    "Value_StdDev": 0.6
+                  },
+                  {
+                    "Element": "Fe",
+                    "Value": 1.9,
+                    "Value_StdDev": 0.2
+                  },
+                  {
+                    "Element": "Al",
+                    "Value": 1.7,
+                    "Value_StdDev": 0.2
+                  },
+                  {
+                    "Element": "Ti",
+                    "Value": 2.1,
+                    "Value_StdDev": 0.1
+                  }
+                ]
+              },
+              {
+                "Location": "Wall",
+                "Unit": "at%",
+                "Data_Source": "table",
+                "Elements": [
+                  {
+                    "Element": "Co",
+                    "Value": 52.2,
+                    "Value_StdDev": 0.4
+                  },
+                  {
+                    "Element": "Ni",
+                    "Value": 23.7,
+                    "Value_StdDev": 0.5
+                  },
+                  {
+                    "Element": "Cr",
+                    "Value": 17.3,
+                    "Value_StdDev": 0.4
+                  },
+                  {
+                    "Element": "Fe",
+                    "Value": 2.7,
+                    "Value_StdDev": 0.2
+                  },
+                  {
+                    "Element": "Al",
+                    "Value": 1.7,
+                    "Value_StdDev": 0.1
+                  },
+                  {
+                    "Element": "Ti",
+                    "Value": 2.4,
+                    "Value_StdDev": 0.1
+                  }
+                ]
+              }
+            ],
+            "Note": "Single FCC in interior; FCC matrix coexists with L1₂ in wall. Measured compositions from APT and TEM-EDS (Table 1)"
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "L1₂ precipitate",
+              "Crystal_Structure": "L1₂",
+              "Location": "Wall region of cellular structure",
+              "Size": {
+                "Value": 31.0,
+                "Value_StdDev": 5.1,
+                "Unit": "nm",
+                "Dimension_Type": "undefined",
+                "Original_Values": "31.0 ± 5.1 nm",
+                "Data_Source": "text"
+              },
+              "Volume_Fraction": {
+                "Value": 0.208,
+                "Original_Values": "~0.208",
+                "Data_Source": "text",
+                "Note": "From Supplementary Fig. S8; approximate"
+              },
+              "Solvus_Temperature": {
+                "Value": 1221.15,
+                "Unit": "K",
+                "Original_Values": "~948 °C",
+                "Data_Source": "text",
+                "Note": "Calculated by Thermo-Calc for wall composition; Data_Nature: Computed"
+              },
+              "APB_Energy": {
+                "Value": 332.5,
+                "Unit": "mJ/m²",
+                "Original_Values": "~332.5 mJ/m²",
+                "Data_Source": "text",
+                "Note": "Calculated from APB energy additivity model using measured L1₂ composition (Table 1); Data_Nature: Computed"
+              },
+              "Measured_Composition": {
+                "Unit": "at%",
+                "Data_Source": "table",
+                "Location": "Wall L1₂ precipitate",
+                "Elements": [
+                  {
+                    "Element": "Co",
+                    "Value": 20.7,
+                    "Value_StdDev": 0.7
+                  },
+                  {
+                    "Element": "Ni",
+                    "Value": 53.0,
+                    "Value_StdDev": 0.8
+                  },
+                  {
+                    "Element": "Cr",
+                    "Value": 2.1,
+                    "Value_StdDev": 0.2
+                  },
+                  {
+                    "Element": "Fe",
+                    "Value": 0.5,
+                    "Value_StdDev": 0.1
+                  },
+                  {
+                    "Element": "Al",
+                    "Value": 6.1,
+                    "Value_StdDev": 0.5
+                  },
+                  {
+                    "Element": "Ti",
+                    "Value": 17.6,
+                    "Value_StdDev": 0.7
+                  }
+                ]
+              }
+            }
+          ],
+          "Advanced_Quantitative_Features": {
+            "Cell_Diameter_um": {
+              "Value": 5,
+              "Dimension_Type": "diameter",
+              "Original_Values": "~5 μm",
+              "Data_Source": "text",
+              "Note": "Approximate diameter of FCC-structured interior in HT-HEA; from Section 4.2"
+            },
+            "Interior_Volume_Fraction": {
+              "Value": 0.53,
+              "Original_Values": "~0.53",
+              "Data_Source": "text",
+              "Note": "Evaluated by ImageJ projected areal fraction"
+            },
+            "Wall_Volume_Fraction": {
+              "Value": 0.47,
+              "Original_Values": "~0.47",
+              "Data_Source": "text",
+              "Note": "Evaluated by ImageJ projected areal fraction"
+            },
+            "Interior_L1₂_Solvus_Temperature_K": {
+              "Value": 1070.15,
+              "Original_Values": "~797 °C",
+              "Data_Source": "text",
+              "Note": "Calculated by Thermo-Calc for interior composition; below aging temperature of 800°C, hence single FCC in interior; Data_Nature: Computed"
+            },
+            "Ordering_Strengthening_MPa": {
+              "Value": 806.2,
+              "Original_Values": "~806.2 MPa",
+              "Data_Source": "text",
+              "Note": "Calculated from ordering strengthening model using APB energy and L1₂ volume fraction; Data_Nature: Computed"
+            },
+            "Solid_Solution_Hardening_MPa": {
+              "Value": 334,
+              "Original_Values": "~334 MPa",
+              "Data_Source": "text",
+              "Note": "Roughly extrapolated from Zhao et al. [65] for both interior and wall; Data_Nature: Computed"
+            },
+            "Calculated_YS_Wall_MPa": {
+              "Value": 1140.2,
+              "Original_Values": "~1140.2 MPa",
+              "Data_Source": "text",
+              "Note": "Sum of ordering strengthening (~806.2 MPa) and solid-solution hardening (~334 MPa); Data_Nature: Computed"
+            },
+            "Estimated_Overall_YS_MPa": {
+              "Value": 712.9,
+              "Original_Values": "~712.9 MPa",
+              "Data_Source": "text",
+              "Note": "Estimated by linear rule of mixture using interior (~0.53) and wall (~0.47) volume fractions; Data_Nature: Computed"
+            },
+            "Critical_Twinning_Stress_Interior_MPa": {
+              "Value": 1120,
+              "Original_Values": "~1120 MPa",
+              "Data_Source": "text",
+              "Note": "For FCC interior (~5 μm diameter); calculated; Data_Nature: Computed; higher than YS (~748 MPa), explaining SF-dominated deformation instead of twinning"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Type": "Tensile",
+            "Loading_Mode": "Tension",
+            "Test_Temperature_K": null,
+            "Test_Temperature_Original": "room temperature",
+            "Strain_Rate_s1": {
+              "Value": 0.001,
+              "Original_Values": "1 × 10⁻³ s⁻¹"
+            },
+            "Orientation": "Vertical to building direction",
+            "Specimen_Geometry": "Flat dog-bone shaped",
+            "Specimen_Dimensions": "Gauge length 12.5 mm, cross-section 3.2 × 1.5 mm²",
+            "Yield_Strength_MPa": {
+              "Value": 748,
+              "Original_Values": "~748 MPa",
+              "Data_Source": "text",
+              "Note": "Approximate value"
+            },
+            "Ultimate_Tensile_Strength_MPa": {
+              "Value": 1148,
+              "Original_Values": "~1148 MPa",
+              "Data_Source": "text",
+              "Note": "Approximate value"
+            },
+            "Elongation_At_Fracture_pct": {
+              "Value": 28,
+              "Original_Values": "~28%",
+              "Data_Source": "text",
+              "Note": "Approximate value; original text uses 'ductility', does not distinguish uniform vs total elongation"
+            },
+            "Fracture_Mode": "Ductile fracture with dense dimples observed on fracture surface",
+            "Note": "All tensile values approximate as stated in text; tensile direction vertical to building direction"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "3",
+      "Sample_ID": "Ref-Mu2022-LPBF-HEA",
+      "Role": "Reference",
+      "Data_Nature": "Literature_Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "High_Entropy",
+        "Additive_Manufacturing",
+        "Laser_Assisted"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 1 Introduction, Ref [18]"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "High-entropy alloy",
+          "Material_Name_Raw": "Fe₂₈.₀Co₂₉.₅Ni₂₇.₅Al₈.₅Ti₆.₅ HEA",
+          "Nominal_Composition": {
+            "Unit": "at%",
+            "Elements": [
+              {
+                "Element": "Fe",
+                "Value": 28.0
+              },
+              {
+                "Element": "Co",
+                "Value": 29.5
+              },
+              {
+                "Element": "Ni",
+                "Value": 27.5
+              },
+              {
+                "Element": "Al",
+                "Value": 8.5
+              },
+              {
+                "Element": "Ti",
+                "Value": 6.5
+              }
+            ]
+          }
+        },
+        "Processing": {
+          "Process_Category": "Laser Powder Bed Fusion (L-PBF)",
+          "Note": "Literature data from Mu et al. [18]"
+        },
+        "Properties": [
+          {
+            "Property_Type": "Tensile",
+            "Loading_Mode": "Tension",
+            "Yield_Strength_MPa": {
+              "Value": 790,
+              "Value_StdDev": 30,
+              "Original_Values": "790 ± 30 MPa",
+              "Data_Source": "text"
+            },
+            "Elongation_At_Fracture_pct": {
+              "Value": 28.0,
+              "Value_StdDev": 0.8,
+              "Original_Values": "28.0 ± 0.8%",
+              "Data_Source": "text"
+            },
+            "Note": "Literature data cited from Mu et al. [18]"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "4",
+      "Sample_ID": "Ref-Yao2022-LPBF-MEA",
+      "Role": "Reference",
+      "Data_Nature": "Literature_Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 1 Introduction, Ref [36]"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Medium-entropy alloy",
+          "Material_Name_Raw": "(CoCrNi)₉₄Al₃Ti₃",
+          "Nominal_Composition": {
+            "Unit": "at%",
+            "Formula": "(CoCrNi)₉₄Al₃Ti₃"
+          }
+        },
+        "Processing": {
+          "Process_Category": "Laser Powder Bed Fusion (L-PBF)",
+          "Note": "Literature data from Yao et al. [36]"
+        },
+        "Properties": [
+          {
+            "Property_Type": "Tensile",
+            "Loading_Mode": "Tension",
+            "Yield_Strength_MPa": {
+              "Value": 836.7,
+              "Original_Values": "~836.7 MPa",
+              "Data_Source": "text",
+              "Note": "Approximate value"
+            },
+            "Elongation_At_Fracture_pct": {
+              "Value": 27.4,
+              "Original_Values": "27.4%",
+              "Data_Source": "text"
+            },
+            "Note": "Literature data cited from Yao et al. [36]"
+          }
+        ]
+      }
+    }
+  ]
+}

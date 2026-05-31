@@ -1,0 +1,1373 @@
+{
+  "Paper_Metadata": {
+    "Paper_Title": "A comparative analysis of Inconel 718 made by additive manufacturing and suction casting: Microstructure evolution in homogenization",
+    "DOI": "10.1016/j.addma.2020.101404"
+  },
+  "Paper_Routing": {
+    "base_material": "Metals",
+    "application": "Structural",
+    "research_paradigm": "Experimental",
+    "Supplements_Loaded": [
+      "directions/base/Metals.txt",
+      "directions/application/Structural.txt",
+      "directions/paradigm/Experimental.txt"
+    ],
+    "Patch_Tags": [
+      "Additive_Manufacturing",
+      "Laser_Assisted"
+    ],
+    "Needs_Mixed_Routing_Check": false
+  },
+  "items": [
+    {
+      "Item_ID": "Item-AC",
+      "Sample_ID": "AC",
+      "Role": "Comparator",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 1: cast alloy composition",
+        "Table 2: sample AC notation",
+        "Section 3.1: as-cast microstructure"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Ni-based superalloy",
+          "Material_Name_Raw": "Inconel 718",
+          "Measured_Composition": {
+            "Unit": "wt%",
+            "Ni": "Balance",
+            "Fe": {
+              "Value": 18.5,
+              "Unit": "wt%"
+            },
+            "Cr": {
+              "Value": 18.3,
+              "Unit": "wt%"
+            },
+            "Nb": {
+              "Value": 4.99,
+              "Unit": "wt%"
+            },
+            "Mo": {
+              "Value": 3.04,
+              "Unit": "wt%"
+            },
+            "Ti": {
+              "Value": 1.02,
+              "Unit": "wt%"
+            },
+            "Al": {
+              "Value": 0.55,
+              "Unit": "wt%"
+            },
+            "Mn": {
+              "Value": 0.23,
+              "Unit": "wt%"
+            },
+            "Co": {
+              "Value": 0.39,
+              "Unit": "wt%"
+            },
+            "Cu": {
+              "Value": 0.07,
+              "Unit": "wt%"
+            },
+            "Si": {
+              "Value": 0.08,
+              "Unit": "wt%"
+            },
+            "C": {
+              "Value": 0.051,
+              "Unit": "wt%"
+            },
+            "Note": "Ni = Balance; normalized ≈ 52.88 wt% (Data_Nature: Computed, sum of other elements = 47.12 wt%)"
+          },
+          "Data_Source": "table"
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "One rod shape sample of Inconel 718 with a diameter of 11 mm and a length of 40 mm was prepared by suction-casting under a pure argon atmosphere using an arc-melter (ABJ-338, manufactured by Materials Research Furnaces Inc).",
+            "simplified": "Suction casting under pure Ar atmosphere to produce rod sample (diameter 11 mm, length 40 mm)"
+          },
+          "Process_Category": "Casting",
+          "Equipment": [
+            {
+              "Name": "Arc-melter ABJ-338",
+              "Category": "Preparation",
+              "Manufacturer": "Materials Research Furnaces Inc"
+            },
+            {
+              "Name": "Zeiss Sigma 500 V P",
+              "Category": "Characterization",
+              "Manufacturer": "Carl Zeiss AG",
+              "Note": "SEM for microstructure morphology observation"
+            },
+            {
+              "Name": "Oxford Instruments EDS",
+              "Category": "Characterization",
+              "Manufacturer": "Oxford Instruments plc",
+              "Note": "Composition determination"
+            },
+            {
+              "Name": "FEI Scios Dual-Beam",
+              "Category": "Characterization",
+              "Manufacturer": "FEI Company",
+              "Note": "EBSD; mapping area 1200 μm × 1200 μm, step size 1.2 μm"
+            },
+            {
+              "Name": "ImageJ",
+              "Category": "Software",
+              "Note": "Phase fraction estimation from SEM images"
+            },
+            {
+              "Name": "OIM Analysis v8",
+              "Category": "Software",
+              "Note": "EBSD data analysis"
+            },
+            {
+              "Name": "XRD",
+              "Category": "Characterization",
+              "Note": "Phase identification; specific instrument not named"
+            }
+          ],
+          "Key_Params": {
+            "Atmosphere": "pure argon",
+            "Sample_Shape": "rod",
+            "Sample_Diameter": {
+              "Value": 11,
+              "Unit": "mm",
+              "Dimension_Type": "diameter"
+            },
+            "Sample_Length": {
+              "Value": 40,
+              "Unit": "mm"
+            }
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "In the as-cast sample, the grains formed during the solidification are equiaxial with a diameter between 10 and 20 μm. Irregular-shaped Nb-rich Laves_C14 phase forms along grain boundaries as the predominant precipitate. A small fraction of blocky NbC carbides is encompassed by the Laves_C14 precipitates.",
+            "simplified": "Equiaxial grains, Laves_C14 phase along grain boundaries, blocky NbC carbides enveloped by Laves_C14"
+          },
+          "Main_Phase": {
+            "Phase_Name": "γ matrix",
+            "Crystal_Structure": "FCC (fcc_A1)",
+            "Morphology": "equiaxial grains"
+          },
+          "Grain_Size": {
+            "Value_Range": {
+              "Min": 10,
+              "Max": 20,
+              "Unit": "μm"
+            },
+            "Dimension_Type": "diameter",
+            "Original_Values": "between 10 and 20 μm",
+            "Note": "Equiaxial grains in as-cast state"
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "Laves_C14",
+              "Crystal_Structure": "HCP (C14)",
+              "Morphology": "irregular-shaped, along grain boundaries",
+              "Note": "Nb-rich, predominant precipitate in as-cast state"
+            },
+            {
+              "Phase_Name": "NbC carbide",
+              "Crystal_Structure": "FCC (B1)",
+              "Morphology": "blocky",
+              "Note": "small fraction, encompassed by Laves_C14"
+            }
+          ],
+          "Nb_Rich_Phase_Fraction": {
+            "Value": 13.13,
+            "Value_StdDev": 1.3,
+            "Unit": "%",
+            "Data_Source": "table",
+            "Note": "Total Nb-rich phases (Laves_C14 + NbC), from Table 3"
+          },
+          "Data_Source": "text"
+        }
+      }
+    },
+    {
+      "Item_ID": "Item-AC20m",
+      "Sample_ID": "AC20m",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 2: AC20m",
+        "Section 3.2: phase transformations",
+        "Fig. 3(b)"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Ni-based superalloy",
+          "Material_Name_Raw": "Inconel 718",
+          "Measured_Composition": {
+            "Unit": "wt%",
+            "Ni": "Balance",
+            "Note": "Same cast alloy composition as Item-AC; shared per Table 1"
+          },
+          "Data_Source": "table"
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "Samples were homogenized at 1180 °C for 20 min followed by quenching in ice-water.",
+            "simplified": "Homogenization at 1180 °C for 20 min, ice-water quench"
+          },
+          "Stages": {
+            "Stage1": {
+              "Process_Type": "Homogenization",
+              "Temperature": {
+                "Value": 1453.15,
+                "Unit": "K",
+                "Original_Values": "1180 °C"
+              },
+              "Time": {
+                "Value": 20,
+                "Unit": "min"
+              },
+              "Atmosphere": "vacuum quartz tube with back-filled pure argon"
+            },
+            "Stage2": {
+              "Process_Type": "Quenching",
+              "Medium": "ice-water"
+            }
+          },
+          "Equipment": [
+            {
+              "Name": "Arc-melter ABJ-338",
+              "Category": "Preparation",
+              "Manufacturer": "Materials Research Furnaces Inc",
+              "Note": "shared with Item-AC; suction casting per Section 2.2"
+            },
+            {
+              "Name": "Zeiss Sigma 500 V P",
+              "Category": "Characterization",
+              "Manufacturer": "Carl Zeiss AG",
+              "Note": "SEM for microstructure morphology observation; shared across all AC samples"
+            },
+            {
+              "Name": "Oxford Instruments EDS",
+              "Category": "Characterization",
+              "Manufacturer": "Oxford Instruments plc",
+              "Note": "Composition determination; shared across all AC samples"
+            },
+            {
+              "Name": "FEI Scios Dual-Beam",
+              "Category": "Characterization",
+              "Manufacturer": "FEI Company",
+              "Note": "EBSD; shared across all AC samples"
+            },
+            {
+              "Name": "ImageJ",
+              "Category": "Software",
+              "Note": "Phase fraction estimation; shared across all AC samples"
+            },
+            {
+              "Name": "OIM Analysis v8",
+              "Category": "Software",
+              "Note": "EBSD data analysis; shared across all AC samples"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "20-min homogenization at 1180°C can dissolve most of the Laves_C14 phase in the as-cast microstructure and remain the NbC carbides formed during solidification. However, some remaining Laves_C14 particles can still be observed near the NbC carbides.",
+            "simplified": "Most Laves_C14 dissolved, NbC carbides remain, residual Laves_C14 near NbC"
+          },
+          "Main_Phase": {
+            "Phase_Name": "γ matrix",
+            "Crystal_Structure": "FCC (fcc_A1)"
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "NbC carbide",
+              "Crystal_Structure": "FCC (B1)",
+              "Note": "retained from solidification"
+            },
+            {
+              "Phase_Name": "Laves_C14",
+              "Crystal_Structure": "HCP (C14)",
+              "Note": "residual, near NbC carbides, mostly dissolved"
+            }
+          ],
+          "Nb_Rich_Phase_Fraction": {
+            "Value": 0.73,
+            "Value_StdDev": 0.07,
+            "Unit": "%",
+            "Data_Source": "table",
+            "Note": "Total Nb-rich phases, from Table 3"
+          },
+          "GOS": {
+            "Note": "GOS increases from AC to AC20m attributed to strains introduced by grain growth and Laves_C14 dissolution",
+            "Data_Source": "text"
+          }
+        }
+      }
+    },
+    {
+      "Item_ID": "Item-AC1h",
+      "Sample_ID": "AC1h",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 2: AC1h",
+        "Section 3.2: phase transformations",
+        "Fig. 6(d)"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Ni-based superalloy",
+          "Material_Name_Raw": "Inconel 718",
+          "Measured_Composition": {
+            "Unit": "wt%",
+            "Ni": "Balance",
+            "Note": "Same cast alloy composition as Item-AC; shared per Table 1"
+          },
+          "Data_Source": "table"
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "Samples were homogenized at 1180 °C for 1 hour followed by quenching in ice-water.",
+            "simplified": "Homogenization at 1180 °C for 1 h, ice-water quench"
+          },
+          "Stages": {
+            "Stage1": {
+              "Process_Type": "Homogenization",
+              "Temperature": {
+                "Value": 1453.15,
+                "Unit": "K",
+                "Original_Values": "1180 °C"
+              },
+              "Time": {
+                "Value": 1,
+                "Unit": "h"
+              },
+              "Atmosphere": "vacuum quartz tube with back-filled pure argon"
+            },
+            "Stage2": {
+              "Process_Type": "Quenching",
+              "Medium": "ice-water"
+            }
+          },
+          "Equipment": [
+            {
+              "Name": "Arc-melter ABJ-338",
+              "Category": "Preparation",
+              "Manufacturer": "Materials Research Furnaces Inc",
+              "Note": "shared with Item-AC; suction casting per Section 2.2"
+            },
+            {
+              "Name": "Zeiss Sigma 500 V P",
+              "Category": "Characterization",
+              "Manufacturer": "Carl Zeiss AG",
+              "Note": "SEM; shared across all AC samples"
+            },
+            {
+              "Name": "Oxford Instruments EDS",
+              "Category": "Characterization",
+              "Manufacturer": "Oxford Instruments plc",
+              "Note": "EDS; shared across all AC samples"
+            },
+            {
+              "Name": "FEI Scios Dual-Beam",
+              "Category": "Characterization",
+              "Manufacturer": "FEI Company",
+              "Note": "EBSD; mapping area 2500 μm × 2500 μm for AC1h"
+            },
+            {
+              "Name": "ImageJ",
+              "Category": "Software",
+              "Note": "Phase fraction estimation; shared across all AC samples"
+            },
+            {
+              "Name": "OIM Analysis v8",
+              "Category": "Software",
+              "Note": "EBSD data analysis; shared across all AC samples"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "After 1-h homogenization, a bimodal grain size distribution indicates a discontinuous grain growth. Both GOS and phase fraction of Laves_C14 get reduced.",
+            "simplified": "Bimodal grain size distribution, discontinuous grain growth, Laves_C14 further reduced"
+          },
+          "Main_Phase": {
+            "Phase_Name": "γ matrix",
+            "Crystal_Structure": "FCC (fcc_A1)"
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "NbC carbide",
+              "Crystal_Structure": "FCC (B1)"
+            },
+            {
+              "Phase_Name": "Laves_C14",
+              "Crystal_Structure": "HCP (C14)",
+              "Note": "residual, further reduced"
+            }
+          ],
+          "Nb_Rich_Phase_Fraction": {
+            "Value": 0.65,
+            "Value_StdDev": 0.07,
+            "Unit": "%",
+            "Data_Source": "table",
+            "Note": "Total Nb-rich phases, from Table 3"
+          },
+          "Grain_Size_Distribution": {
+            "Note": "Bimodal grain size distribution; left peak represents initial grains, right peak represents grown grains from AC20m",
+            "Data_Source": "text"
+          }
+        }
+      }
+    },
+    {
+      "Item_ID": "Item-AC12h",
+      "Sample_ID": "AC12h",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 2: AC12h",
+        "Section 3.2–3.3",
+        "Fig. 3(d), Fig. 5–7, Appendix A"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Ni-based superalloy",
+          "Material_Name_Raw": "Inconel 718",
+          "Measured_Composition": {
+            "Unit": "wt%",
+            "Ni": "Balance",
+            "Note": "Same cast alloy composition as Item-AC; shared per Table 1"
+          },
+          "Data_Source": "table"
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "Samples were homogenized at 1180 °C for 12 hours followed by quenching in ice-water.",
+            "simplified": "Homogenization at 1180 °C for 12 h, ice-water quench"
+          },
+          "Stages": {
+            "Stage1": {
+              "Process_Type": "Homogenization",
+              "Temperature": {
+                "Value": 1453.15,
+                "Unit": "K",
+                "Original_Values": "1180 °C"
+              },
+              "Time": {
+                "Value": 12,
+                "Unit": "h"
+              },
+              "Atmosphere": "vacuum quartz tube with back-filled pure argon"
+            },
+            "Stage2": {
+              "Process_Type": "Quenching",
+              "Medium": "ice-water"
+            }
+          },
+          "Equipment": [
+            {
+              "Name": "Arc-melter ABJ-338",
+              "Category": "Preparation",
+              "Manufacturer": "Materials Research Furnaces Inc",
+              "Note": "shared with Item-AC; suction casting per Section 2.2"
+            },
+            {
+              "Name": "Zeiss Sigma 500 V P",
+              "Category": "Characterization",
+              "Manufacturer": "Carl Zeiss AG",
+              "Note": "SEM; shared across all AC samples"
+            },
+            {
+              "Name": "Oxford Instruments EDS",
+              "Category": "Characterization",
+              "Manufacturer": "Oxford Instruments plc",
+              "Note": "EDS; shared across all AC samples"
+            },
+            {
+              "Name": "FEI Scios Dual-Beam",
+              "Category": "Characterization",
+              "Manufacturer": "FEI Company",
+              "Note": "EBSD; mapping area 2500 μm × 2500 μm for AC12h"
+            },
+            {
+              "Name": "ImageJ",
+              "Category": "Software",
+              "Note": "Phase fraction estimation; shared across all AC samples"
+            },
+            {
+              "Name": "OIM Analysis v8",
+              "Category": "Software",
+              "Note": "EBSD data analysis; shared across all AC samples"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "After 12-h homogenization, the Laves_C14 phase dissolves completely, and only NbC carbides can be observed as precipitates. Significantly coarsened grains can be found in sample AC12h with some small grains remained at the triple junctions of these coarsened grains. A trimodal grain size distribution can be observed, with two peaks appearing with smaller grain diameters of 150 μm and 400 μm. Abnormal grain growth during homogenization.",
+            "simplified": "Laves_C14 fully dissolved, only NbC remains, abnormal grain growth with coarsened grains, trimodal distribution"
+          },
+          "Main_Phase": {
+            "Phase_Name": "γ matrix",
+            "Crystal_Structure": "FCC (fcc_A1)"
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "NbC carbide",
+              "Crystal_Structure": "FCC (B1)",
+              "Note": "only precipitate remaining after 12-h homogenization"
+            }
+          ],
+          "Nb_Rich_Phase_Fraction": {
+            "Value": 0.47,
+            "Value_StdDev": 0.05,
+            "Unit": "%",
+            "Data_Source": "table",
+            "Note": "Total Nb-rich phases (essentially NbC only), from Table 3. Consistent with CALPHAD prediction of equilibrium NbC fraction."
+          },
+          "Grain_Size_Distribution": {
+            "Type": "trimodal",
+            "Peaks": [
+              {
+                "Value": 150,
+                "Unit": "μm",
+                "Dimension_Type": "diameter"
+              },
+              {
+                "Value": 400,
+                "Unit": "μm",
+                "Dimension_Type": "diameter"
+              }
+            ],
+            "Note": "Two smaller grain diameter peaks reported; abnormal grain growth",
+            "Data_Source": "text"
+          },
+          "Advanced_Quantitative_Features": {
+            "Abnormal_Grain_Growth_Rate_Experimental": {
+              "Value": 4.7e-09,
+              "Unit": "m/s",
+              "Data_Source": "text",
+              "Note": "From Appendix A, dR/dt at t=12h"
+            },
+            "Abnormal_Grain_Growth_Rate_Theoretical": {
+              "Value": 2.067e-05,
+              "Unit": "m/s",
+              "Data_Source": "text",
+              "Note": "From Appendix A, theoretical prediction; much faster than experimental"
+            },
+            "Abnormal_Grain_Radius_Ra": {
+              "Value": 406.6,
+              "Unit": "μm",
+              "Dimension_Type": "radius",
+              "Data_Source": "text",
+              "Note": "weighted average grain radius of abnormal grains in AC12h, from Appendix A"
+            },
+            "Normal_Grain_Radius_Rn": {
+              "Value": 113.5,
+              "Unit": "μm",
+              "Dimension_Type": "radius",
+              "Data_Source": "text",
+              "Note": "left peak of grain size distribution in AC1h, used as reference for normal grains, from Appendix A"
+            },
+            "Initial_Grain_Radius_R0": {
+              "Value": 16,
+              "Unit": "μm",
+              "Dimension_Type": "radius",
+              "Data_Source": "text",
+              "Note": "average grain radius in as-cast sample, from Appendix A"
+            },
+            "Grain_Growth_Constant_k": {
+              "Value": 3.82e-12,
+              "Unit": "m²/s",
+              "Data_Source": "text",
+              "Note": "calculated from Appendix A"
+            },
+            "Grain_Boundary_Energy_Sigma_h": {
+              "Value": 0.424,
+              "Unit": "J/m²",
+              "Data_Source": "text",
+              "Note": "from Nishimoto et al. [94], Reference value"
+            },
+            "Molar_Volume_Vm": {
+              "Value": 7.38e-06,
+              "Unit": "m³/mol",
+              "Data_Source": "text",
+              "Note": "calculated using TCNI8 database"
+            },
+            "Driving_Pressure_Delta_G": {
+              "Value": 0.0337,
+              "Unit": "J/mol",
+              "Data_Source": "text"
+            },
+            "Grain_Boundary_Mobility_Mgb": {
+              "Value": 0.0006142,
+              "Unit": "mol·m/(J·s)",
+              "Data_Source": "text"
+            },
+            "Grain_Boundary_Diffusivity_Dgb": {
+              "Value": 3.71e-09,
+              "Unit": "m²/s",
+              "Data_Source": "text"
+            }
+          }
+        }
+      }
+    },
+    {
+      "Item_ID": "Item-AB",
+      "Sample_ID": "AB",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing",
+        "Laser_Assisted"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 1: AM alloy composition",
+        "Table 2: sample AB notation",
+        "Section 3.1: as-built microstructure"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Ni-based superalloy",
+          "Material_Name_Raw": "Inconel 718",
+          "Measured_Composition": {
+            "Unit": "wt%",
+            "Ni": "Balance",
+            "Fe": {
+              "Value": 18.26,
+              "Unit": "wt%"
+            },
+            "Cr": {
+              "Value": 18.87,
+              "Unit": "wt%"
+            },
+            "Nb": {
+              "Value": 4.97,
+              "Unit": "wt%"
+            },
+            "Mo": {
+              "Value": 2.97,
+              "Unit": "wt%"
+            },
+            "Ti": {
+              "Value": 0.94,
+              "Unit": "wt%"
+            },
+            "Al": {
+              "Value": 0.46,
+              "Unit": "wt%"
+            },
+            "Mn": {
+              "Value": 0.06,
+              "Unit": "wt%"
+            },
+            "Co": {
+              "Value": 0.23,
+              "Unit": "wt%"
+            },
+            "Cu": {
+              "Value": 0.05,
+              "Unit": "wt%"
+            },
+            "Si": {
+              "Value": 0.06,
+              "Unit": "wt%"
+            },
+            "C": {
+              "Value": 0.03,
+              "Unit": "wt%"
+            },
+            "Note": "Ni = Balance; normalized ≈ 53.10 wt% (Data_Nature: Computed, sum of other elements = 46.90 wt%)"
+          },
+          "Data_Source": "table"
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "AM Inconel 718 samples were built by LPBF using an EOS M 290 machine with default laser melting parameters with the laser power of 285 W, the scan velocity of 960 mm/s, and the hatching space of 0.11 mm. The hatch lines between adjacent layers have a rotation angle of 67°.",
+            "simplified": "LPBF (EOS M 290): laser power 285 W, scan velocity 960 mm/s, hatching space 0.11 mm, layer rotation 67°"
+          },
+          "Process_Category": "LPBF",
+          "Equipment": [
+            {
+              "Name": "EOS M 290",
+              "Category": "Preparation",
+              "Manufacturer": "EOS"
+            },
+            {
+              "Name": "Zeiss Sigma 500 V P",
+              "Category": "Characterization",
+              "Manufacturer": "Carl Zeiss AG",
+              "Note": "SEM for microstructure morphology observation"
+            },
+            {
+              "Name": "Oxford Instruments EDS",
+              "Category": "Characterization",
+              "Manufacturer": "Oxford Instruments plc",
+              "Note": "Composition determination"
+            },
+            {
+              "Name": "FEI Scios Dual-Beam",
+              "Category": "Characterization",
+              "Manufacturer": "FEI Company",
+              "Note": "EBSD; mapping area 1200 μm × 1200 μm, step size 1.2 μm"
+            },
+            {
+              "Name": "ImageJ",
+              "Category": "Software",
+              "Note": "Phase fraction estimation from SEM images"
+            },
+            {
+              "Name": "OIM Analysis v8",
+              "Category": "Software",
+              "Note": "EBSD data analysis"
+            },
+            {
+              "Name": "XRD",
+              "Category": "Characterization",
+              "Note": "Phase identification; specific instrument not named"
+            }
+          ],
+          "Key_Params": {
+            "Laser_Power": {
+              "Value": 285,
+              "Unit": "W"
+            },
+            "Scan_Velocity": {
+              "Value": 960,
+              "Unit": "mm/s"
+            },
+            "Hatching_Space": {
+              "Value": 0.11,
+              "Unit": "mm"
+            },
+            "Layer_Rotation_Angle": {
+              "Value": 67,
+              "Unit": "°"
+            }
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Due to the large directional thermal gradient introduced by laser melting, columnar grains grow along the direction normal to the edge of single arc-shaped melt pools. Both very fine columnar (with a width of ~1 μm) and cellular (with a diameter of ~2 μm) subgrains can be found within the relatively larger grains of the overlapped melt pool areas. The only secondary phase observed in the as-built sample is the Laves_C14 phase, which forms along grain boundaries of both the columnar and cellular subgrains due to Nb segregation.",
+            "simplified": "Columnar grains with fine columnar (~1 μm wide) and cellular (~2 μm diameter) subgrains, Laves_C14 along subgrain boundaries, no NbC observed"
+          },
+          "Main_Phase": {
+            "Phase_Name": "γ matrix",
+            "Crystal_Structure": "FCC (fcc_A1)",
+            "Morphology": "columnar grains with subgrains"
+          },
+          "Subgrain_Size": [
+            {
+              "Type": "columnar subgrain",
+              "Value": 1,
+              "Unit": "μm",
+              "Dimension_Type": "width",
+              "Note": "approximate value (~1 μm)"
+            },
+            {
+              "Type": "cellular subgrain",
+              "Value": 2,
+              "Unit": "μm",
+              "Dimension_Type": "diameter",
+              "Note": "approximate value (~2 μm)"
+            }
+          ],
+          "Texture_or_Orientation": {
+            "Note": "Columnar grains grow along direction normal to edge of arc-shaped melt pools in X-Z plane (building direction Z); anisotropic grain texture",
+            "Data_Source": "text"
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "Laves_C14",
+              "Crystal_Structure": "HCP (C14)",
+              "Morphology": "along grain boundaries of columnar and cellular subgrains",
+              "Note": "only secondary phase observed in as-built state; due to Nb segregation"
+            }
+          ],
+          "Nb_Rich_Phase_Fraction": {
+            "Value": 6.52,
+            "Value_StdDev": 0.7,
+            "Unit": "%",
+            "Data_Source": "table",
+            "Note": "Total Nb-rich phases (predominantly Laves_C14), from Table 3"
+          },
+          "Data_Source": "text"
+        }
+      }
+    },
+    {
+      "Item_ID": "Item-AM20m",
+      "Sample_ID": "AM20m",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing",
+        "Laser_Assisted"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 2: AM20m",
+        "Section 3.2: phase transformations",
+        "Fig. 3(f)"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Ni-based superalloy",
+          "Material_Name_Raw": "Inconel 718",
+          "Measured_Composition": {
+            "Unit": "wt%",
+            "Ni": "Balance",
+            "Note": "Same AM alloy composition as Item-AB; shared per Table 1"
+          },
+          "Data_Source": "table"
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "Samples were homogenized at 1180 °C for 20 min followed by quenching in ice-water.",
+            "simplified": "Homogenization at 1180 °C for 20 min, ice-water quench"
+          },
+          "Stages": {
+            "Stage1": {
+              "Process_Type": "Homogenization",
+              "Temperature": {
+                "Value": 1453.15,
+                "Unit": "K",
+                "Original_Values": "1180 °C"
+              },
+              "Time": {
+                "Value": 20,
+                "Unit": "min"
+              },
+              "Atmosphere": "vacuum quartz tube with back-filled pure argon"
+            },
+            "Stage2": {
+              "Process_Type": "Quenching",
+              "Medium": "ice-water"
+            }
+          },
+          "Equipment": [
+            {
+              "Name": "EOS M 290",
+              "Category": "Preparation",
+              "Manufacturer": "EOS",
+              "Note": "shared with Item-AB; LPBF per Section 2.2"
+            },
+            {
+              "Name": "Zeiss Sigma 500 V P",
+              "Category": "Characterization",
+              "Manufacturer": "Carl Zeiss AG",
+              "Note": "SEM; shared across all AM samples"
+            },
+            {
+              "Name": "Oxford Instruments EDS",
+              "Category": "Characterization",
+              "Manufacturer": "Oxford Instruments plc",
+              "Note": "EDS; shared across all AM samples"
+            },
+            {
+              "Name": "FEI Scios Dual-Beam",
+              "Category": "Characterization",
+              "Manufacturer": "FEI Company",
+              "Note": "EBSD; shared across all AM samples"
+            },
+            {
+              "Name": "ImageJ",
+              "Category": "Software",
+              "Note": "Phase fraction estimation; shared across all AM samples"
+            },
+            {
+              "Name": "OIM Analysis v8",
+              "Category": "Software",
+              "Note": "EBSD data analysis; shared across all AM samples"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "20-min homogenization causes the Laves_C14 phase formed in the as-built condition to dissolve into the γ matrix completely. Meanwhile, only a very small amount of NbC carbides can be found to form along grain boundaries.",
+            "simplified": "Laves_C14 completely dissolved, very small amount of NbC formed along grain boundaries"
+          },
+          "Main_Phase": {
+            "Phase_Name": "γ matrix",
+            "Crystal_Structure": "FCC (fcc_A1)"
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "NbC carbide",
+              "Crystal_Structure": "FCC (B1)",
+              "Note": "very small amount forming along grain boundaries"
+            }
+          ],
+          "Nb_Rich_Phase_Fraction": {
+            "Value": 0,
+            "Value_StdDev": null,
+            "Unit": "%",
+            "Original_Values": "~0",
+            "Data_Source": "table",
+            "Note": "approximately zero, from Table 3"
+          },
+          "Grain_Size_Distribution": {
+            "Note": "Small peak at grain diameter of 50 μm indicates initiation of recrystallization",
+            "Data_Source": "text"
+          },
+          "GOS": {
+            "Note": "Relatively high GOS values, attributed to distortion accumulation from residual stress introduced during LPBF process",
+            "Data_Source": "text"
+          }
+        }
+      }
+    },
+    {
+      "Item_ID": "Item-AM1h",
+      "Sample_ID": "AM1h",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing",
+        "Laser_Assisted"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 2: AM1h",
+        "Section 3.3: grain size evolution",
+        "Fig. 5, Fig. 6(f)(i), Fig. 7(f)(i)"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Ni-based superalloy",
+          "Material_Name_Raw": "Inconel 718",
+          "Measured_Composition": {
+            "Unit": "wt%",
+            "Ni": "Balance",
+            "Note": "Same AM alloy composition as Item-AB; shared per Table 1"
+          },
+          "Data_Source": "table"
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "Samples were homogenized at 1180 °C for 1 hour followed by quenching in ice-water.",
+            "simplified": "Homogenization at 1180 °C for 1 h, ice-water quench"
+          },
+          "Stages": {
+            "Stage1": {
+              "Process_Type": "Homogenization",
+              "Temperature": {
+                "Value": 1453.15,
+                "Unit": "K",
+                "Original_Values": "1180 °C"
+              },
+              "Time": {
+                "Value": 1,
+                "Unit": "h"
+              },
+              "Atmosphere": "vacuum quartz tube with back-filled pure argon"
+            },
+            "Stage2": {
+              "Process_Type": "Quenching",
+              "Medium": "ice-water"
+            }
+          },
+          "Equipment": [
+            {
+              "Name": "EOS M 290",
+              "Category": "Preparation",
+              "Manufacturer": "EOS",
+              "Note": "shared with Item-AB; LPBF per Section 2.2"
+            },
+            {
+              "Name": "Zeiss Sigma 500 V P",
+              "Category": "Characterization",
+              "Manufacturer": "Carl Zeiss AG",
+              "Note": "SEM; shared across all AM samples"
+            },
+            {
+              "Name": "Oxford Instruments EDS",
+              "Category": "Characterization",
+              "Manufacturer": "Oxford Instruments plc",
+              "Note": "EDS; shared across all AM samples"
+            },
+            {
+              "Name": "FEI Scios Dual-Beam",
+              "Category": "Characterization",
+              "Manufacturer": "FEI Company",
+              "Note": "EBSD; shared across all AM samples"
+            },
+            {
+              "Name": "ImageJ",
+              "Category": "Software",
+              "Note": "Phase fraction estimation; shared across all AM samples"
+            },
+            {
+              "Name": "OIM Analysis v8",
+              "Category": "Software",
+              "Note": "EBSD data analysis; shared across all AM samples"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "After 1-h homogenization, three distinct peaks can be observed in the grain size distribution curve. The average grain size of sample AM1h also becomes a smaller value of 128 μm. Almost all grains are continuously recrystallized.",
+            "simplified": "Trimodal grain size distribution, continuous recrystallization, average grain size 128 μm"
+          },
+          "Main_Phase": {
+            "Phase_Name": "γ matrix",
+            "Crystal_Structure": "FCC (fcc_A1)"
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "NbC carbide",
+              "Crystal_Structure": "FCC (B1)"
+            }
+          ],
+          "Nb_Rich_Phase_Fraction": {
+            "Value": 0.05,
+            "Value_StdDev": 0.005,
+            "Unit": "%",
+            "Data_Source": "table",
+            "Note": "From Table 3"
+          },
+          "Grain_Size": {
+            "Value": 128,
+            "Unit": "μm",
+            "Dimension_Type": "diameter",
+            "Note": "Average grain size",
+            "Data_Source": "text"
+          },
+          "Grain_Size_Distribution": {
+            "Type": "trimodal (three distinct peaks)",
+            "Data_Source": "text"
+          },
+          "GOS": {
+            "Note": "Lowest and most uniform GOS distribution, indicating almost all grains are continuously recrystallized",
+            "Data_Source": "text"
+          }
+        }
+      }
+    },
+    {
+      "Item_ID": "Item-AM12h",
+      "Sample_ID": "AM12h",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing",
+        "Laser_Assisted"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 2: AM12h",
+        "Section 3.2–3.4",
+        "Fig. 3(h), Fig. 5–8"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Ni-based superalloy",
+          "Material_Name_Raw": "Inconel 718",
+          "Measured_Composition": {
+            "Unit": "wt%",
+            "Ni": "Balance",
+            "Note": "Same AM alloy composition as Item-AB; shared per Table 1"
+          },
+          "Data_Source": "table"
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "Samples were homogenized at 1180 °C for 12 hours followed by quenching in ice-water.",
+            "simplified": "Homogenization at 1180 °C for 12 h, ice-water quench"
+          },
+          "Stages": {
+            "Stage1": {
+              "Process_Type": "Homogenization",
+              "Temperature": {
+                "Value": 1453.15,
+                "Unit": "K",
+                "Original_Values": "1180 °C"
+              },
+              "Time": {
+                "Value": 12,
+                "Unit": "h"
+              },
+              "Atmosphere": "vacuum quartz tube with back-filled pure argon"
+            },
+            "Stage2": {
+              "Process_Type": "Quenching",
+              "Medium": "ice-water"
+            }
+          },
+          "Equipment": [
+            {
+              "Name": "EOS M 290",
+              "Category": "Preparation",
+              "Manufacturer": "EOS",
+              "Note": "shared with Item-AB; LPBF per Section 2.2"
+            },
+            {
+              "Name": "Zeiss Sigma 500 V P",
+              "Category": "Characterization",
+              "Manufacturer": "Carl Zeiss AG",
+              "Note": "SEM; shared across all AM samples"
+            },
+            {
+              "Name": "Oxford Instruments EDS",
+              "Category": "Characterization",
+              "Manufacturer": "Oxford Instruments plc",
+              "Note": "EDS; shared across all AM samples"
+            },
+            {
+              "Name": "FEI Scios Dual-Beam",
+              "Category": "Characterization",
+              "Manufacturer": "FEI Company",
+              "Note": "EBSD; shared across all AM samples"
+            },
+            {
+              "Name": "Fischione Model 110 twin-jet electropolisher",
+              "Category": "Preparation",
+              "Manufacturer": "E.A. Fischione Instruments, Inc.",
+              "Note": "TEM sample preparation; 15 V at -30 °C, 10 vol.% perchloric acid + 90 vol.% methanol"
+            },
+            {
+              "Name": "Hitachi H-9500 E-TEM",
+              "Category": "Characterization",
+              "Manufacturer": "Hitachi, Ltd.",
+              "Note": "TEM characterization; acceleration voltage 300 kV"
+            },
+            {
+              "Name": "ImageJ",
+              "Category": "Software",
+              "Note": "Phase fraction estimation; shared across all AM samples"
+            },
+            {
+              "Name": "OIM Analysis v8",
+              "Category": "Software",
+              "Note": "EBSD data analysis; shared across all AM samples"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "The grain size in sample AM12h after 12-h isothermal treatment at 1180 °C is even smaller than AM20m. The grain size distribution of AM12h is close to unimodal. Dispersed NbC particles distribute along and near grain boundaries, confirming Zener pinning effect. A large number of dislocations were found in the vicinity of NbC carbides and grain boundaries. NbC carbides around 200~300 nm in diameter are dislocation sources. Small NbC carbides have coherency with γ matrix. The dislocation-precipitate interaction follows both Orowan bowing and dislocation cutting mechanisms. Dislocation arrays/loops are planar; tanglings and cells seldom found.",
+            "simplified": "Unimodal grain size distribution (refined), NbC Zener pinning, dislocation arrays/loops near NbC, Orowan + cutting mechanisms, planar dislocations"
+          },
+          "Main_Phase": {
+            "Phase_Name": "γ matrix",
+            "Crystal_Structure": "FCC (fcc_A1)"
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "NbC carbide",
+              "Crystal_Structure": "FCC (B1)",
+              "Morphology": "dispersed along and near grain boundaries",
+              "Size": {
+                "Value_Range": {
+                  "Min": 200,
+                  "Max": 300,
+                  "Unit": "nm"
+                },
+                "Dimension_Type": "diameter",
+                "Original_Values": "200~300 nm in diameter",
+                "Note": "larger NbC carbides that act as dislocation sources"
+              },
+              "Coherency": {
+                "Small_NbC": "coherent with γ matrix",
+                "Large_NbC": "loss of coherency with γ matrix",
+                "Orientation_Relationship": "(0̄2̄2)_NbC [2̄33̄]_NbC // (1̄1̄1)_γ [1̄12]_γ",
+                "Note": "Orientation_Relationship uses overline notation for negative Miller indices; OCR text used negative sign as substitute"
+              }
+            }
+          ],
+          "Nb_Rich_Phase_Fraction": {
+            "Value": 0.36,
+            "Value_StdDev": 0.04,
+            "Unit": "%",
+            "Data_Source": "table",
+            "Note": "From Table 3; notable increase from AM1h"
+          },
+          "Grain_Size": {
+            "Value": 113,
+            "Unit": "μm",
+            "Dimension_Type": "diameter",
+            "Note": "Average grain size; smaller than AM20m, refined by recrystallization",
+            "Data_Source": "text"
+          },
+          "Grain_Size_Distribution": {
+            "Type": "close to unimodal",
+            "Data_Source": "text"
+          },
+          "GOS": {
+            "Note": "Slightly increased compared with AM1h but still at low level; attributed to deformation induced by Nb accumulation to form more NbC carbides",
+            "Data_Source": "text"
+          },
+          "Advanced_Quantitative_Features": {
+            "Stacking_Fault_Energy_Range": {
+              "Value_Range": {
+                "Min": 50,
+                "Max": 70,
+                "Unit": "mJ/m²"
+              },
+              "Original_Values": "50~70 mJ/m²",
+              "Data_Source": "text",
+              "Note": "intermediate SFE of Inconel 718, from Sundararaman et al. [91,92]; inhibits cross slip during homogenization, prevents stacking fault formation"
+            },
+            "Dislocation_Morphology": "planar arrays/loops",
+            "Dislocation_Precipitate_Interaction": [
+              "Orowan bowing",
+              "dislocation cutting"
+            ],
+            "Dislocation_Behavior_Note": "Small particles: dislocations cut through; Large particles: dislocations bow around. Dislocation arrays pile up at grain boundaries."
+          },
+          "Data_Source": "text"
+        }
+      }
+    },
+    {
+      "Item_ID": "Item-CALPHAD",
+      "Sample_ID": "CALPHAD-Inconel718",
+      "Role": "Reference",
+      "Data_Nature": "Computed",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 2.1: Thermodynamic modeling",
+        "Fig. 2(a)(b)(c)"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Ni-based superalloy",
+          "Material_Name_Raw": "Inconel 718",
+          "Note": "CALPHAD calculation using nominal Inconel 718 composition"
+        },
+        "Processing": {
+          "Simulation_Metadata": {
+            "Software": "Thermo-Calc",
+            "Database": "TCNI8",
+            "Method": [
+              "Equilibrium step diagram",
+              "Nonequilibrium step diagram",
+              "Scheil-Gulliver modeling"
+            ]
+          },
+          "Equipment": [
+            {
+              "Name": "Thermo-Calc",
+              "Category": "Software"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "The NbC carbide is stable at high temperatures, even at 1200 °C, and thus often co-exists with the γ matrix phase during homogenization. The δ phase is stable up to 1034 °C. The γ\" phase is metastable and will transform into the δ phase after long-time aging. The formation temperature of NbC carbides (1298 °C) is higher than that of the Laves_C14 phase (1170 °C).",
+            "simplified": "CALPHAD predictions: NbC stable at >1200°C, δ stable up to 1034°C, γ\" metastable, NbC formation at 1298°C, Laves_C14 at 1170°C"
+          },
+          "Main_Phase": {
+            "Phase_Name": "γ matrix",
+            "Crystal_Structure": "FCC (fcc_A1)"
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "NbC carbide",
+              "Crystal_Structure": "FCC (B1)",
+              "Note": "stable at high temperatures, even at 1200 °C"
+            },
+            {
+              "Phase_Name": "δ phase",
+              "Crystal_Structure": "D0ₐ",
+              "Chemical_Formula": "Ni₃Nb",
+              "Note": "stable up to 1034 °C"
+            },
+            {
+              "Phase_Name": "γ\" phase",
+              "Crystal_Structure": "BCT (D0₂₂)",
+              "Chemical_Formula": "Ni₃Nb",
+              "Note": "metastable, transforms to δ after long-time aging"
+            },
+            {
+              "Phase_Name": "γ' phase",
+              "Crystal_Structure": "FCC (L1₂)",
+              "Chemical_Formula": "Ni₃(Ti, Al)",
+              "Note": "strengthening phase"
+            },
+            {
+              "Phase_Name": "Laves_C14",
+              "Crystal_Structure": "HCP (C14)",
+              "Chemical_Formula": "(Ni, Fe, Cr)₂(Nb, Ti, Mo)",
+              "Note": "metastable, forms during solidification"
+            }
+          ],
+          "Advanced_Quantitative_Features": {
+            "NbC_Formation_Temperature": {
+              "Value": 1298,
+              "Unit": "°C",
+              "Data_Source": "text",
+              "Note": "Predicted by Scheil-Gulliver simulation"
+            },
+            "Laves_C14_Formation_Temperature": {
+              "Value": 1170,
+              "Unit": "°C",
+              "Data_Source": "text",
+              "Note": "Predicted by Scheil-Gulliver simulation"
+            },
+            "Delta_Solvus_Temperature": {
+              "Value": 1034,
+              "Unit": "°C",
+              "Data_Source": "text",
+              "Note": "δ phase stable up to this temperature, from Fig. 2(a)"
+            },
+            "Predicted_Incipient_Melting_Point": {
+              "Value": 1110,
+              "Unit": "°C",
+              "Data_Source": "text",
+              "Note": "Predicted by Scheil-Gulliver modeling; lower than experimental value of 1165 °C reported for as-cast samples"
+            },
+            "Experimental_Incipient_Melting_Point": {
+              "Value": 1165,
+              "Unit": "°C",
+              "Data_Source": "text",
+              "Note": "Reported for as-cast samples, cited from Cao et al. [69]"
+            },
+            "Equilibrium_NbC_Fraction_At_1180C": {
+              "Value": 0.47,
+              "Unit": "%",
+              "Data_Source": "text",
+              "Note": "Consistent with experimental Nb-rich phase fraction after 12-h homogenization in both alloys"
+            }
+          },
+          "Data_Source": "text"
+        }
+      }
+    }
+  ]
+}

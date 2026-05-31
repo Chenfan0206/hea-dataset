@@ -1,0 +1,7 @@
+{
+  "paper_dir": "Peculiar_microstruct",
+  "figures": 23,
+  "direct_pairs": 23,
+  "topk_pairs": 115,
+  "sentences": 86
+}

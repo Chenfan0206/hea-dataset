@@ -1,0 +1,272 @@
+{
+  "Paper_Metadata": {
+    "Paper_Title": "Enhanced creep resistance induced by minor Ti additions to a second generation nickel-based single crystal superalloy",
+    "DOI": "10.1016/j.actamat.2022.117938"
+  },
+  "items": [
+    {
+      "Sample_ID": "T0",
+      "Gradient_Material": false,
+      "Gradient_Group_ID": null,
+      "Composition_Info": {
+        "Role": "Target",
+        "Alloy_Name_Raw": "T0",
+        "Nominal_Composition": {
+          "Composition_Type": "wt%",
+          "Elements_Normalized": {
+            "Ni": 64.71,
+            "Al": 5.6,
+            "Co": 8.0,
+            "Cr": 6.0,
+            "Ta": 6.0,
+            "W": 6.5,
+            "Re": 3.0,
+            "Mo": 2.5,
+            "Hf": 0.18,
+            "C": 0.02,
+            "B": 0.01
+          }
+        },
+        "Measured_Composition": {
+          "Composition_Type": "wt%",
+          "Elements_Normalized": {
+            "Ni": 64.68,
+            "Al": 5.65,
+            "Co": 8.1,
+            "Cr": 5.8,
+            "Ta": 6.0,
+            "W": 6.46,
+            "Re": 3.01,
+            "Mo": 2.56,
+            "Hf": 0.19,
+            "C": 0.02,
+            "B": 0.01
+          },
+          "Measurement_Method": "Table 1"
+        },
+        "Note": null
+      },
+      "Process_Info": {
+        "Process_Category": "Directional Solidification and Heat Treatment",
+        "Process_Text": {
+          "original": "The as-cast cylindrical SX bars 160 mm in length and 14 mm in diameter were prepared at the Beijing Institute of Aeronautical Materials by a high-rate solidification (HRS) process using spiral grain selectors. The withdrawal rate of directional solidification was 3 mm/min. The crystallographic orientation of the SX bars was measured using the Laue back-reflection X-ray technique and only the bars whose misorientation was within 6° away from [001] were selected for subsequent creep tests. High temperature solution treatments for T0 and T5 were performed at 1290 °C and 1300 °C, respectively, for 4 h, followed by air cooling. Then, a two-stage aging treatment, involving first treatment at 1120 °C for 4 h followed by air cooling and the second treatment at 900 °C for 16 h followed by air cooling, was conducted to obtain fine cubical γ' precipitates.",
+          "simplified": "HRS process with withdrawal rate 3 mm/min. Solution treatment at 1290 °C for 4 h AC. Aging: 1120 °C for 4 h AC + 900 °C for 16 h AC."
+        },
+        "Equipment": "High-Rate Solidification (HRS) furnace; Spiral grain selector; Laue back-reflection X-ray diffractometer",
+        "Key_Params": {
+          "Withdrawal_Rate_mm_min": 3,
+          "Solution_Temperature_K": 1563.15,
+          "Solution_Time_h": 4,
+          "Cooling_Medium_Solution": "Air",
+          "Aging_Temperature_Stage1_K": 1393.15,
+          "Aging_Time_Stage1_h": 4,
+          "Aging_Temperature_Stage2_K": 1173.15,
+          "Aging_Time_Stage2_h": 16
+        }
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": "Both alloys display a typical microstructure comprising narrow γ matrix channels and fine cubical γ' precipitates with a cube-cube orientation relationship, with the interfaces parallel to the {100} planes of both phases. The volume fractions of γ' precipitates in the dendrite cores and interdendritic regions of both alloys (Fig. 1) decrease after they are subjected to aging at 1030 °C, as shown in Fig. 9, which is caused by the dissolution of the γ' phase at high temperature toward a new equilibrium. In addition, continuous coarsening of γ' precipitates and broadening of γ matrix channels occur.",
+          "simplified": "Cubical γ' precipitates in γ matrix. Volume fraction decreases and coarsening occurs at 1030 °C."
+        },
+        "Main_Phase": "Gamma (γ)",
+        "Precipitates": [
+          {
+            "Phase_Type": "Gamma Prime (γ')",
+            "Volume_Fraction_pct": 69.7
+          }
+        ],
+        "Porosity_pct": null,
+        "Relative_Density_pct": null,
+        "Grain_Size_avg_um": null,
+        "Precipitate_Size_avg_nm": 332,
+        "Advanced_Quantitative_Features": {
+          "Gamma_Channel_Width_nm": 50.2
+        }
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Creep Rupture Life",
+          "Test_Condition": "1030 °C, 230 MPa",
+          "Value_Numeric": 50.1,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "h",
+          "Test_Temperature_K": 1303.15,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": null
+        },
+        {
+          "Property_Name": "Minimum Creep Strain Rate",
+          "Test_Condition": "1030 °C, 230 MPa",
+          "Value_Numeric": 1.36e-07,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "s^-1",
+          "Test_Temperature_K": 1303.15,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": null
+        },
+        {
+          "Property_Name": "Time to 1% Creep Strain",
+          "Test_Condition": "1030 °C, 230 MPa",
+          "Value_Numeric": 14.2,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "h",
+          "Test_Temperature_K": 1303.15,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": null
+        },
+        {
+          "Sample_ID": "T5",
+          "Gradient_Material": false,
+          "Gradient_Group_ID": null,
+          "Composition_Info": {
+            "Role": "Target",
+            "Alloy_Name_Raw": "T5",
+            "Nominal_Composition": {
+              "Composition_Type": "wt%",
+              "Elements_Normalized": {
+                "Ni": 64.21,
+                "Al": 5.6,
+                "Co": 8.0,
+                "Cr": 6.0,
+                "Ta": 6.0,
+                "W": 6.5,
+                "Re": 3.0,
+                "Mo": 2.5,
+                "Hf": 0.18,
+                "C": 0.02,
+                "B": 0.01,
+                "Ti": 0.5
+              }
+            },
+            "Measured_Composition": {
+              "Composition_Type": "wt%",
+              "Elements_Normalized": {
+                "Ni": 63.55,
+                "Al": 5.57,
+                "Co": 8.0,
+                "Cr": 5.83,
+                "Ta": 6.03,
+                "W": 6.46,
+                "Re": 3.0,
+                "Mo": 2.52,
+                "Hf": 0.2,
+                "C": 0.02,
+                "B": 0.01,
+                "Ti": 0.51
+              },
+              "Measurement_Method": "Table 1"
+            },
+            "Note": null
+          },
+          "Process_Info": {
+            "Process_Category": "Directional Solidification and Heat Treatment",
+            "Process_Text": {
+              "original": "The as-cast cylindrical SX bars 160 mm in length and 14 mm in diameter were prepared at the Beijing Institute of Aeronautical Materials by a high-rate solidification (HRS) process using spiral grain selectors. The withdrawal rate of directional solidification was 3 mm/min. The crystallographic orientation of the SX bars was measured using the Laue back-reflection X-ray technique and only the bars whose misorientation was within 6° away from [001] were selected for subsequent creep tests. High temperature solution treatments for TO and T5 were performed at 1290 °C and 1300 °C, respectively, for 4 h, followed by air cooling. Then, a two-stage aging treatment, involving first treatment at 1120 °C for 4 h followed by air cooling and the second treatment at 900 °C for 16 h followed by air cooling, was conducted to obtain fine cubical γ' precipitates.",
+              "simplified": "HRS process with withdrawal rate 3 mm/min. Solution treatment at 1300 °C for 4 h AC. Aging: 1120 °C for 4 h AC + 900 °C for 16 h AC."
+            },
+            "Equipment": "High-Rate Solidification (HRS) furnace; Spiral grain selector; Laue back-reflection X-ray diffractometer",
+            "Key_Params": {
+              "Withdrawal_Rate_mm_min": 3,
+              "Solution_Temperature_K": 1573.15,
+              "Solution_Time_h": 4,
+              "Cooling_Medium_Solution": "Air",
+              "Aging_Temperature_Stage1_K": 1393.15,
+              "Aging_Time_Stage1_h": 4,
+              "Aging_Temperature_Stage2_K": 1173.15,
+              "Aging_Time_Stage2_h": 16
+            }
+          },
+          "Microstructure_Info": {
+            "Microstructure_Text": {
+              "original": "Both alloys display a typical microstructure comprising narrow γ matrix channels and fine cubical γ' precipitates with a cube-cube orientation relationship, with the interfaces parallel to the {100} planes of both phases. The volume fractions of γ' precipitates in the dendrite cores and interdendritic regions of both alloys (Fig. 1) decrease after they are subjected to aging at 1030 °C, as shown in Fig. 9, which is caused by the dissolution of the γ' phase at high temperature toward a new equilibrium. In addition, continuous coarsening of γ' precipitates and broadening of γ matrix channels occur.",
+              "simplified": "Cubical γ' precipitates in γ matrix. Volume fraction decreases and coarsening occurs at 1030 °C."
+            },
+            "Main_Phase": "Gamma (γ)",
+            "Precipitates": [
+              {
+                "Phase_Type": "Gamma Prime (γ')",
+                "Volume_Fraction_pct": 74.0
+              }
+            ],
+            "Porosity_pct": null,
+            "Relative_Density_pct": null,
+            "Grain_Size_avg_um": null,
+            "Precipitate_Size_avg_nm": 302,
+            "Advanced_Quantitative_Features": {
+              "Gamma_Channel_Width_nm": 42.9
+            }
+          },
+          "Properties_Info": [
+            {
+              "Property_Name": "Creep Rupture Life",
+              "Test_Condition": "1030 °C, 230 MPa",
+              "Value_Numeric": 102.8,
+              "Value_Range": null,
+              "Value_StdDev": null,
+              "Unit": "h",
+              "Test_Temperature_K": 1303.15,
+              "Strain_Rate_s1": null,
+              "Tensile_Speed_mm_min": null,
+              "Hardness_Load": null,
+              "Hardness_Dwell_Time_s": null,
+              "Data_Source": "text",
+              "Test_Specimen": null,
+              "Note": null
+            },
+            {
+              "Property_Name": "Minimum Creep Strain Rate",
+              "Test_Condition": "1030 °C, 230 MPa",
+              "Value_Numeric": 4.09e-08,
+              "Value_Range": null,
+              "Value_StdDev": null,
+              "Unit": "s^-1",
+              "Test_Temperature_K": 1303.15,
+              "Strain_Rate_s1": null,
+              "Tensile_Speed_mm_min": null,
+              "Hardness_Load": null,
+              "Hardness_Dwell_Time_s": null,
+              "Data_Source": "text",
+              "Test_Specimen": null,
+              "Note": null
+            },
+            {
+              "Property_Name": "Time to 1% Creep Strain",
+              "Test_Condition": "1030 °C, 230 MPa",
+              "Value_Numeric": 42.8,
+              "Value_Range": null,
+              "Value_StdDev": null,
+              "Unit": "h",
+              "Test_Temperature_K": 1303.15,
+              "Strain_Rate_s1": null,
+              "Tensile_Speed_mm_min": null,
+              "Hardness_Load": null,
+              "Hardness_Dwell_Time_s": null,
+              "Data_Source": "text",
+              "Test_Specimen": null,
+              "Note": null
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

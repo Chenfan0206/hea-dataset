@@ -1,0 +1,7 @@
+{
+  "paper_dir": "2-Superior_corrosion",
+  "figures": 15,
+  "direct_pairs": 15,
+  "topk_pairs": 75,
+  "sentences": 62
+}

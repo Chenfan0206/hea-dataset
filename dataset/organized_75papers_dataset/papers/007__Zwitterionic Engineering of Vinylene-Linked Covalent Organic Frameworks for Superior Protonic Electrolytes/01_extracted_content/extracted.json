@@ -1,0 +1,1438 @@
+{
+  "Paper_Metadata": {
+    "Paper_Title": "Zwitterionic Engineering of Vinylene-Linked Covalent Organic Frameworks for Superior Protonic Electrolytes",
+    "DOI": null,
+    "Note": "DOI not found in OCR text; journal identified as Angewandte Chemie based on supporting file name pattern (anie71731-sup-0001-SuppMat.docx)"
+  },
+  "Paper_Routing": {
+    "base_material": "Polymers",
+    "application": "Functional",
+    "research_paradigm": "Hybrid",
+    "Supplements_Loaded": [
+      "directions/base/Polymers.txt",
+      "directions/application/Functional.txt",
+      "directions/paradigm/Hybrid.txt",
+      "directions/domain/Battery.txt"
+    ],
+    "Patch_Tags": [
+      "Battery",
+      "Porous",
+      "2D"
+    ],
+    "Needs_Mixed_Routing_Check": false
+  },
+  "items": [
+    {
+      "Item_ID": "ITEM_ZVCOF",
+      "Sample_ID": "ZVCOF",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Polymers",
+      "application": "Functional",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Porous",
+        "2D",
+        "Battery"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Figure 1a-e",
+        "Figure S1-S3",
+        "Figure S8"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Polymer_Category": "Covalent Organic Framework (COF)",
+          "Polymer_Name_Raw": "ZVCOF",
+          "Monomer_or_Formula": "Zwitterionic vinylene-linked COF synthesized from TFPT + SPTMP via Knoevenagel condensation",
+          "Monomers": [
+            {
+              "Name": "1,3,5-tri(4-formylphenyl)triazine",
+              "Abbreviation": "TFPT"
+            },
+            {
+              "Name": "N-sulfopropyl-2,4,6-trimethylpyridinium",
+              "Abbreviation": "SPTMP"
+            }
+          ],
+          "Functional_Groups": [
+            "Sulfobetaine zwitterionic moieties (sulfopropyl pendant chains with quaternary ammonium + sulfonate)",
+            "Triazine rings",
+            "Vinylene (C=C) linkages",
+            "Pyridinyl rings"
+          ],
+          "Note": "Zwitterionic COF with coexisting positively charged quaternary ammonium and negatively charged sulfonate groups"
+        },
+        "Processing": {
+          "Process_Category": "Chemical synthesis",
+          "Process_Text": {
+            "original": "Synthesized through a Knoevenagel condensation reaction between TFPT and SPTMP",
+            "simplified": "Knoevenagel condensation of TFPT and SPTMP"
+          },
+          "Equipment": [
+            {"Name": "PXRD", "Category": "Characterization"},
+            {"Name": "FT-IR spectrometer", "Category": "Characterization"},
+            {"Name": "Solid-state 13C CP-MAS NMR", "Category": "Characterization"},
+            {"Name": "XPS", "Category": "Characterization"},
+            {"Name": "N2 adsorption analyzer (BET)", "Category": "Characterization"}
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Both COFs exhibit high crystallinity. Pawley refinement indicates that both structures adopt an eclipsed AA stacking model. Characteristic diffraction peaks were observed at approximately 5.6°, 9.8°, 11.4°, 15.0°, and 26.0°, corresponding to the (100), (110), (200), (210), and (001) crystal planes, sequentially. FT-IR: C=C stretching at 965 cm⁻¹, S=O stretching at 1037 cm⁻¹, disappearance of C=O at 1700 cm⁻¹. ¹³C CP-MAS NMR: 170, 152, 145, 140, 119, 49, 15 ppm. BET surface area 502 m² g⁻¹, pore volume 0.29 cm³ g⁻¹, pore diameter 1.3 nm. XPS: distinct S 2p characteristic signals.",
+            "simplified": "Crystalline vinylene-linked COF with AA eclipsed stacking, microporous (1.3 nm pores), BET 502 m² g⁻¹"
+          },
+          "Crystallinity": {
+            "Phase_Name": "Vinylene-linked COF",
+            "Crystal_Structure": "AA eclipsed stacking",
+            "PXRD_Peaks": [
+              {
+                "2Theta_deg": 5.6,
+                "Miller_Indices": "(100)"
+              },
+              {
+                "2Theta_deg": 9.8,
+                "Miller_Indices": "(110)"
+              },
+              {
+                "2Theta_deg": 11.4,
+                "Miller_Indices": "(200)"
+              },
+              {
+                "2Theta_deg": 15.0,
+                "Miller_Indices": "(210)"
+              },
+              {
+                "2Theta_deg": 26.0,
+                "Miller_Indices": "(001)"
+              }
+            ],
+            "Note": "Peaks reported as approximate values"
+          },
+          "Porosity": {
+            "BET_Surface_Area_m2_g": 502,
+            "Pore_Volume_cm3_g": 0.29,
+            "Pore_Diameter_nm": 1.3,
+            "Isotherm_Type": "Type I",
+            "Note": "Pore diameter estimated; text states 'pore diameters'; diameter/radius not explicitly clarified"
+          },
+          "FTIR": [
+            {
+              "Wavenumber_cm-1": 965,
+              "Assignment": "C=C stretching vibration (vinylene linkage)"
+            },
+            {
+              "Wavenumber_cm-1": 1037,
+              "Assignment": "S=O stretching (sulfonate groups)"
+            },
+            {
+              "Wavenumber_cm-1": 1700,
+              "Assignment": "C=O stretching (disappeared, confirming Knoevenagel condensation)"
+            }
+          ],
+          "NMR_13C_CP_MAS": [
+            {
+              "Chemical_Shift_ppm": 170,
+              "Assignment": "Triazine ring carbon"
+            },
+            {
+              "Chemical_Shift_ppm": 152,
+              "Assignment": "Pyridinyl ring carbon"
+            },
+            {
+              "Chemical_Shift_ppm": 145,
+              "Assignment": "Pyridinyl ring carbon"
+            },
+            {
+              "Chemical_Shift_ppm": 140,
+              "Assignment": "Vinylene carbon"
+            },
+            {
+              "Chemical_Shift_ppm": 119,
+              "Assignment": "Pyridinyl ring carbon and vinylene carbon"
+            },
+            {
+              "Chemical_Shift_ppm": 49,
+              "Assignment": "Alkane carbon of sulfopropyl chains (ZVCOF only)"
+            },
+            {
+              "Chemical_Shift_ppm": 15,
+              "Assignment": "Alkane carbon of sulfopropyl chains (ZVCOF only)"
+            }
+          ],
+          "XPS": {
+            "S_2p": "Present (distinct characteristic signals)",
+            "Note": "Confirms successful incorporation of sulfobetaine groups; NVCOF shows no sulfur signal"
+          },
+          "Chemical_Stability": {
+            "Note": "Retained crystallinity after immersion in 12 M HCl or 12 M NaOH for 48 h (Figure S8)"
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Ionic_Conductivity",
+            "Value": null,
+            "Unit": "S cm⁻¹",
+            "Value_Range": "10⁻⁸ to 10⁻⁵ S cm⁻¹",
+            "Original_Values": "10⁻⁸ to 10⁻⁵ S cm⁻¹",
+            "Test_Condition": {
+              "Temperature_Range_K": "298-413",
+              "Environment": "ambient conditions"
+            },
+            "Data_Source": "text",
+            "Note": "Pristine ZVCOF poor conductivity due to insufficient proton sources; range reported for pristine COFs collectively"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "ITEM_NVCOF",
+      "Sample_ID": "NVCOF",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Polymers",
+      "application": "Functional",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Porous",
+        "2D",
+        "Battery"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Figure 1a-e",
+        "Figure S1-S3"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Polymer_Category": "Covalent Organic Framework (COF)",
+          "Polymer_Name_Raw": "NVCOF",
+          "Monomer_or_Formula": "Non-zwitterionic vinylene-linked COF synthesized from TFPT + TMP via Knoevenagel condensation",
+          "Monomers": [
+            {
+              "Name": "1,3,5-tri(4-formylphenyl)triazine",
+              "Abbreviation": "TFPT"
+            },
+            {
+              "Name": "2,4,6-trimethylpyridine",
+              "Abbreviation": "TMP"
+            }
+          ],
+          "Functional_Groups": [
+            "Triazine rings",
+            "Vinylene (C=C) linkages",
+            "Pyridinyl rings"
+          ],
+          "Note": "Non-zwitterionic counterpart of ZVCOF, lacking sulfobetaine groups"
+        },
+        "Processing": {
+          "Process_Category": "Chemical synthesis",
+          "Process_Text": {
+            "original": "Synthesized through a Knoevenagel condensation reaction between TFPT and TMP",
+            "simplified": "Knoevenagel condensation of TFPT and TMP"
+          },
+          "Equipment": [
+            {"Name": "PXRD", "Category": "Characterization"},
+            {"Name": "FT-IR spectrometer", "Category": "Characterization"},
+            {"Name": "Solid-state 13C CP-MAS NMR", "Category": "Characterization"},
+            {"Name": "XPS", "Category": "Characterization"},
+            {"Name": "N2 adsorption analyzer (BET)", "Category": "Characterization"}
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Both COFs exhibit high crystallinity with AA eclipsed stacking. Same characteristic diffraction peaks. FT-IR: C=C stretching at 965 cm⁻¹, disappearance of C=O at 1700 cm⁻¹ (no S=O band). 13C CP-MAS NMR: 170, 152, 145, 140, 119 ppm (no 49 or 15 ppm signals). BET surface area 937 m² g⁻¹, pore volume 0.32 cm³ g⁻¹, pore diameter 1.7 nm. No sulfur signal in XPS.",
+            "simplified": "Crystalline vinylene-linked COF with AA eclipsed stacking, microporous (1.7 nm pores), BET 937 m² g⁻¹"
+          },
+          "Crystallinity": {
+            "Phase_Name": "Vinylene-linked COF",
+            "Crystal_Structure": "AA eclipsed stacking",
+            "PXRD_Peaks": [
+              {
+                "2Theta_deg": 5.6,
+                "Miller_Indices": "(100)"
+              },
+              {
+                "2Theta_deg": 9.8,
+                "Miller_Indices": "(110)"
+              },
+              {
+                "2Theta_deg": 11.4,
+                "Miller_Indices": "(200)"
+              },
+              {
+                "2Theta_deg": 15.0,
+                "Miller_Indices": "(210)"
+              },
+              {
+                "2Theta_deg": 26.0,
+                "Miller_Indices": "(001)"
+              }
+            ],
+            "Note": "Peaks reported as approximate values; same as ZVCOF as described for both COFs"
+          },
+          "Porosity": {
+            "BET_Surface_Area_m2_g": 937,
+            "Pore_Volume_cm3_g": 0.32,
+            "Pore_Diameter_nm": 1.7,
+            "Isotherm_Type": "Type I"
+          },
+          "FTIR": [
+            {
+              "Wavenumber_cm-1": 965,
+              "Assignment": "C=C stretching vibration (vinylene linkage)"
+            },
+            {
+              "Wavenumber_cm-1": 1700,
+              "Assignment": "C=O stretching (disappeared, confirming Knoevenagel condensation)"
+            }
+          ],
+          "NMR_13C_CP_MAS": [
+            {
+              "Chemical_Shift_ppm": 170,
+              "Assignment": "Triazine ring carbon"
+            },
+            {
+              "Chemical_Shift_ppm": 152,
+              "Assignment": "Pyridinyl ring carbon"
+            },
+            {
+              "Chemical_Shift_ppm": 145,
+              "Assignment": "Pyridinyl ring carbon"
+            },
+            {
+              "Chemical_Shift_ppm": 140,
+              "Assignment": "Vinylene carbon"
+            },
+            {
+              "Chemical_Shift_ppm": 119,
+              "Assignment": "Pyridinyl ring carbon and vinylene carbon"
+            }
+          ],
+          "XPS": {
+            "S_2p": "Not detected",
+            "Note": "No sulfur signal confirms absence of sulfobetaine groups"
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Ionic_Conductivity",
+            "Value": null,
+            "Unit": "S cm⁻¹",
+            "Value_Range": "10⁻⁸ to 10⁻⁵ S cm⁻¹",
+            "Original_Values": "10⁻⁸ to 10⁻⁵ S cm⁻¹",
+            "Test_Condition": {
+              "Temperature_Range_K": "298-413",
+              "Environment": "ambient conditions"
+            },
+            "Data_Source": "text",
+            "Note": "Pristine NVCOF poor conductivity; range reported for pristine COFs collectively"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "ITEM_PA_ZVCOF_40",
+      "Sample_ID": "PA@ZVCOF-40",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Polymers",
+      "application": "Functional",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Porous",
+        "2D",
+        "Battery"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Figure 2",
+        "Figure 3a-d",
+        "Figure S9-S16"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Polymer_Category": "COF-based composite",
+          "Polymer_Name_Raw": "PA@ZVCOF-40",
+          "Component_Type": "Electrolyte",
+          "Composite_Formulation": "ZVCOF + 40 wt% phosphoric acid (PA)",
+          "Components": [
+            {
+              "Component": "ZVCOF",
+              "Mass_Fraction_wt_pct": 60
+            },
+            {
+              "Component": "H3PO4 (phosphoric acid)",
+              "Mass_Fraction_wt_pct": 40
+            }
+          ]
+        },
+        "Processing": {
+          "Process_Category": "Mechanical mixing",
+          "Process_Text": {
+            "original": "Phosphoric acid was incorporated into the COFs by mechanically grinding the COFs with varying amounts of PA",
+            "simplified": "Mechanical grinding of ZVCOF with 40 wt% PA"
+          },
+          "Equipment": [
+            {"Name": "PXRD", "Category": "Characterization"},
+            {"Name": "FT-IR spectrometer", "Category": "Characterization"},
+            {"Name": "N2 adsorption analyzer (BET)", "Category": "Characterization"},
+            {"Name": "EIS", "Category": "Testing"}
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Diminished crystallinity with disappearance of characteristic COF diffraction peaks upon PA loading. FT-IR showed new bands at 990 and 493 cm⁻¹ (P=O).",
+            "simplified": "PA loading reduces crystallinity; PA confirmed by FT-IR P=O bands"
+          },
+          "Porosity": {
+            "Note": "PA@ZVCOF-X (X=40-80) showed very low BET surface areas of 9.6-26.3 m² g⁻¹ and pore volumes of 0.001-0.01 cm³ g⁻¹; individual values not specified for X=40"
+          },
+          "FTIR_New_Bands": [
+            {
+              "Wavenumber_cm-1": 990,
+              "Assignment": "P=O asymmetric stretching"
+            },
+            {
+              "Wavenumber_cm-1": 493,
+              "Assignment": "P=O in-plane bending"
+            }
+          ]
+        },
+        "Properties": [
+          {
+            "Property_Name": "Ionic_Conductivity",
+            "Value": 0.0118,
+            "Unit": "S cm⁻¹",
+            "Original_Values": "1.18 × 10⁻² S cm⁻¹",
+            "Test_Condition": {
+              "Test_Temperature_K": 298,
+              "Environment": "ambient conditions"
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Ionic_Conductivity",
+            "Value": 0.0291,
+            "Unit": "S cm⁻¹",
+            "Original_Values": "2.91 × 10⁻² S cm⁻¹",
+            "Test_Condition": {
+              "Test_Temperature_K": 413
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Activation_Energy",
+            "Value": null,
+            "Unit": "eV",
+            "Value_Range": "0.12-0.15 eV",
+            "Original_Values": "0.12-0.15 eV",
+            "Data_Source": "text",
+            "Note": "Range for PA@ZVCOF-X (X=40-80) series; individual value not specified for PA@ZVCOF-40; below 0.4 eV indicates Grotthuss-type hopping mechanism"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "ITEM_PA_ZVCOF_60",
+      "Sample_ID": "PA@ZVCOF-60",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Polymers",
+      "application": "Functional",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Porous",
+        "2D",
+        "Battery"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Figure 2",
+        "Figure 3a-d",
+        "Figure S9-S16"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Polymer_Category": "COF-based composite",
+          "Polymer_Name_Raw": "PA@ZVCOF-60",
+          "Component_Type": "Electrolyte",
+          "Composite_Formulation": "ZVCOF + 60 wt% phosphoric acid (PA)",
+          "Components": [
+            {
+              "Component": "ZVCOF",
+              "Mass_Fraction_wt_pct": 40
+            },
+            {
+              "Component": "H3PO4 (phosphoric acid)",
+              "Mass_Fraction_wt_pct": 60
+            }
+          ]
+        },
+        "Processing": {
+          "Process_Category": "Mechanical mixing",
+          "Process_Text": {
+            "original": "Phosphoric acid was incorporated into the COFs by mechanically grinding the COFs with varying amounts of PA",
+            "simplified": "Mechanical grinding of ZVCOF with 60 wt% PA"
+          },
+          "Equipment": [
+            {"Name": "PXRD", "Category": "Characterization"},
+            {"Name": "FT-IR spectrometer", "Category": "Characterization"},
+            {"Name": "N2 adsorption analyzer (BET)", "Category": "Characterization"},
+            {"Name": "EIS", "Category": "Testing"}
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Diminished crystallinity upon PA loading. FT-IR showed new P=O bands at 990 and 493 cm⁻¹.",
+            "simplified": "PA loading reduces crystallinity"
+          },
+          "Porosity": {
+            "Note": "PA@ZVCOF-X (X=40-80) showed very low BET surface areas of 9.6-26.3 m² g⁻¹ and pore volumes of 0.001-0.01 cm³ g⁻¹; individual value not specified for X=60"
+          },
+          "FTIR_New_Bands": [
+            {
+              "Wavenumber_cm-1": 990,
+              "Assignment": "P=O asymmetric stretching"
+            },
+            {
+              "Wavenumber_cm-1": 493,
+              "Assignment": "P=O in-plane bending"
+            }
+          ]
+        },
+        "Properties": [
+          {
+            "Property_Name": "Ionic_Conductivity",
+            "Value": 0.0216,
+            "Unit": "S cm⁻¹",
+            "Original_Values": "2.16 × 10⁻² S cm⁻¹",
+            "Test_Condition": {
+              "Test_Temperature_K": 298,
+              "Environment": "ambient conditions"
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Ionic_Conductivity",
+            "Value": 0.0722,
+            "Unit": "S cm⁻¹",
+            "Original_Values": "7.22 × 10⁻² S cm⁻¹",
+            "Test_Condition": {
+              "Test_Temperature_K": 413
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Activation_Energy",
+            "Value": null,
+            "Unit": "eV",
+            "Value_Range": "0.12-0.15 eV",
+            "Original_Values": "0.12-0.15 eV",
+            "Data_Source": "text",
+            "Note": "Range for PA@ZVCOF-X (X=40-80) series; individual value not specified for PA@ZVCOF-60"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "ITEM_PA_ZVCOF_80",
+      "Sample_ID": "PA@ZVCOF-80",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Polymers",
+      "application": "Functional",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Porous",
+        "2D",
+        "Battery"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Figure 2-5",
+        "Figure S26-S38"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Polymer_Category": "COF-based composite",
+          "Polymer_Name_Raw": "PA@ZVCOF-80",
+          "Component_Type": "Electrolyte",
+          "Composite_Formulation": "ZVCOF + 80 wt% phosphoric acid (PA)",
+          "Components": [
+            {
+              "Component": "ZVCOF",
+              "Mass_Fraction_wt_pct": 20
+            },
+            {
+              "Component": "H3PO4 (phosphoric acid)",
+              "Mass_Fraction_wt_pct": 80
+            }
+          ]
+        },
+        "Processing": {
+          "Process_Category": "Mechanical mixing",
+          "Process_Text": {
+            "original": "Phosphoric acid was incorporated into the COFs by mechanically grinding the COFs with varying amounts of PA, resulting in composites denoted as PA@ZVCOF-80",
+            "simplified": "Mechanical grinding of ZVCOF with 80 wt% PA"
+          },
+          "Equipment": [
+            {"Name": "PXRD", "Category": "Characterization"},
+            {"Name": "FT-IR spectrometer", "Category": "Characterization"},
+            {"Name": "N2 adsorption analyzer (BET)", "Category": "Characterization"},
+            {"Name": "EIS", "Category": "Testing"}
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Diminished crystallinity upon PA loading. Maintained solid-state morphology even at 80 wt% PA. FT-IR showed new P=O bands at 990 and 493 cm⁻¹. Very low BET surface area and pore volume indicating negligible residual porosity.",
+            "simplified": "PA-loaded ZVCOF composite; retains solid state at 80 wt% PA; negligible residual porosity"
+          },
+          "Porosity": {
+            "Note": "PA@ZVCOF-X (X=40-80) showed BET surface areas of 9.6-26.3 m² g⁻¹ and pore volumes of 0.001-0.01 cm³ g⁻¹; individual value for X=80 not specified"
+          },
+          "Morphology": {
+            "Note": "Maintained solid-state morphology at 80 wt% PA; NVCOF lost solid-state and became paste at same loading"
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Ionic_Conductivity",
+            "Value": 0.0534,
+            "Unit": "S cm⁻¹",
+            "Original_Values": "5.34 × 10⁻² S cm⁻¹",
+            "Test_Condition": {
+              "Test_Temperature_K": 298,
+              "Environment": "ambient conditions"
+            },
+            "Data_Source": "text",
+            "Note": "Highest proton conductivity among all reported COF-based protonic electrolytes under ambient conditions"
+          },
+          {
+            "Property_Name": "Ionic_Conductivity",
+            "Value": 0.161,
+            "Unit": "S cm⁻¹",
+            "Original_Values": "1.61 × 10⁻¹ S cm⁻¹",
+            "Test_Condition": {
+              "Test_Temperature_K": 373
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Ionic_Conductivity",
+            "Value": 0.179,
+            "Unit": "S cm⁻¹",
+            "Original_Values": "1.79 × 10⁻¹ S cm⁻¹",
+            "Test_Condition": {
+              "Test_Temperature_K": 413
+            },
+            "Data_Source": "text",
+            "Note": "Peak conductivity"
+          },
+          {
+            "Property_Name": "Activation_Energy",
+            "Value": null,
+            "Unit": "eV",
+            "Value_Range": "0.12-0.15 eV",
+            "Original_Values": "0.12-0.15 eV",
+            "Data_Source": "text",
+            "Note": "Range for PA@ZVCOF-X (X=40-80) series; well below 0.4 eV indicating Grotthuss-type hopping mechanism"
+          },
+          {
+            "Property_Name": "Long_Term_Proton_Conduction_Stability",
+            "Value": null,
+            "Original_Values": "consistently high proton conductivity over extended operation periods",
+            "Data_Source": "text",
+            "Note": "Qualitative description only; no specific numerical value given in text (Figure S27)"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "ITEM_PA_ZVCOF_20",
+      "Sample_ID": "PA@ZVCOF-20",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Polymers",
+      "application": "Functional",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Porous",
+        "2D",
+        "Battery"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Figure S28"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Polymer_Category": "COF-based composite",
+          "Polymer_Name_Raw": "PA@ZVCOF-20",
+          "Component_Type": "Electrolyte",
+          "Composite_Formulation": "ZVCOF + 20 wt% phosphoric acid (PA)",
+          "Components": [
+            {
+              "Component": "ZVCOF",
+              "Mass_Fraction_wt_pct": 80
+            },
+            {
+              "Component": "H3PO4 (phosphoric acid)",
+              "Mass_Fraction_wt_pct": 20
+            }
+          ]
+        },
+        "Processing": {
+          "Process_Category": "Mechanical mixing",
+          "Process_Text": {
+            "original": "A ZVCOF sample with a lower PA loading of 20 wt% (PA@ZVCOF-20) was also synthesized",
+            "simplified": "Mechanical grinding of ZVCOF with 20 wt% PA"
+          },
+          "Equipment": [
+            {"Name": "EIS", "Category": "Testing"}
+          ]
+        },
+        "Properties": [
+          {
+            "Property_Name": "Activation_Energy",
+            "Value": 0.49,
+            "Unit": "eV",
+            "Original_Values": "0.49 eV",
+            "Data_Source": "text",
+            "Note": "Substantially higher Ea indicating less efficient proton transfer at low PA loading"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "ITEM_PA_NVCOF_40",
+      "Sample_ID": "PA@NVCOF-40",
+      "Role": "Comparator",
+      "Data_Nature": "Experimental",
+      "base_material": "Polymers",
+      "application": "Functional",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Porous",
+        "2D",
+        "Battery"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Figure 2e,f",
+        "Figure 3"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Polymer_Category": "COF-based composite",
+          "Polymer_Name_Raw": "PA@NVCOF-40",
+          "Component_Type": "Electrolyte",
+          "Composite_Formulation": "NVCOF + 40 wt% phosphoric acid (PA)",
+          "Components": [
+            {
+              "Component": "NVCOF",
+              "Mass_Fraction_wt_pct": 60
+            },
+            {
+              "Component": "H3PO4 (phosphoric acid)",
+              "Mass_Fraction_wt_pct": 40
+            }
+          ]
+        },
+        "Processing": {
+          "Process_Category": "Mechanical mixing",
+          "Process_Text": {
+            "original": "Phosphoric acid was incorporated into the COFs by mechanically grinding the COFs with varying amounts of PA",
+            "simplified": "Mechanical grinding of NVCOF with 40 wt% PA"
+          },
+          "Equipment": [
+            {"Name": "FT-IR spectrometer", "Category": "Characterization"},
+            {"Name": "N2 adsorption analyzer (BET)", "Category": "Characterization"},
+            {"Name": "EIS", "Category": "Testing"}
+          ]
+        },
+        "Structure": {
+          "Porosity": {
+            "Note": "PA@NVCOF-X (X=40-60) showed similar low BET surface area and pore volume values; individual values not specified"
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Ionic_Conductivity",
+            "Value": null,
+            "Unit": "S cm⁻¹",
+            "Value_Range": "10⁻⁶ to 10⁻⁴ S cm⁻¹",
+            "Original_Values": "10⁻⁶ to 10⁻⁴ S cm⁻¹",
+            "Test_Condition": {
+              "Temperature_Range_K": "298-413"
+            },
+            "Data_Source": "text",
+            "Note": "Conductivity range across tested temperature range"
+          },
+          {
+            "Property_Name": "Activation_Energy",
+            "Value": 0.4,
+            "Unit": "eV",
+            "Original_Values": "0.40 eV",
+            "Data_Source": "text"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "ITEM_PA_NVCOF_60",
+      "Sample_ID": "PA@NVCOF-60",
+      "Role": "Comparator",
+      "Data_Nature": "Experimental",
+      "base_material": "Polymers",
+      "application": "Functional",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Porous",
+        "2D",
+        "Battery"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Figure 2e,f",
+        "Figure 3"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Polymer_Category": "COF-based composite",
+          "Polymer_Name_Raw": "PA@NVCOF-60",
+          "Component_Type": "Electrolyte",
+          "Composite_Formulation": "NVCOF + 60 wt% phosphoric acid (PA)",
+          "Components": [
+            {
+              "Component": "NVCOF",
+              "Mass_Fraction_wt_pct": 40
+            },
+            {
+              "Component": "H3PO4 (phosphoric acid)",
+              "Mass_Fraction_wt_pct": 60
+            }
+          ]
+        },
+        "Processing": {
+          "Process_Category": "Mechanical mixing",
+          "Process_Text": {
+            "original": "Phosphoric acid was incorporated into the COFs by mechanically grinding the COFs with varying amounts of PA",
+            "simplified": "Mechanical grinding of NVCOF with 60 wt% PA"
+          },
+          "Equipment": [
+            {"Name": "FT-IR spectrometer", "Category": "Characterization"},
+            {"Name": "N2 adsorption analyzer (BET)", "Category": "Characterization"},
+            {"Name": "EIS", "Category": "Testing"}
+          ]
+        },
+        "Structure": {
+          "Porosity": {
+            "Note": "PA@NVCOF-X (X=40-60) showed similar low BET surface area and pore volume values; individual values not specified"
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Activation_Energy",
+            "Value": 0.22,
+            "Unit": "eV",
+            "Original_Values": "0.22 eV",
+            "Data_Source": "text",
+            "Note": "Increasing PA content to 60 wt% led to a 2-3 orders of magnitude improvement in ionic conductivity over PA@NVCOF-40, yet the resulting conductivity remained significantly lower than ZVCOF-based composites (no specific numerical conductivity value given)"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "ITEM_MEMBRANE_PA_ZVCOF_80",
+      "Sample_ID": "PA@ZVCOF-80_membrane",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Polymers",
+      "application": "Functional",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Battery"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Figure 4a",
+        "Figure S29-S32"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Polymer_Name_Raw": "PA@ZVCOF-80 membrane",
+          "Component_Type": "Electrolyte",
+          "Composite_Formulation": "PA@ZVCOF-80 + 4 wt% PTFE binder",
+          "Additives_or_Modifiers": [
+            {
+              "Name": "PTFE (polytetrafluoroethylene)",
+              "Role": "Binder",
+              "Amount": "4 wt%"
+            }
+          ]
+        },
+        "Processing": {
+          "Process_Category": "Membrane fabrication",
+          "Process_Text": {
+            "original": "PA@ZVCOF-80 was mixed with a small amount (4 wt%) of polytetrafluoroethylene (PTFE) binder and processed into a membrane by rolling",
+            "simplified": "Mix PA@ZVCOF-80 with 4 wt% PTFE binder, roll into membrane"
+          },
+          "Equipment": [
+            {
+              "Name": "Rolling equipment",
+              "Category": "Preparation",
+              "Note": "Specific type not described"
+            },
+            {"Name": "SEM", "Category": "Characterization"},
+            {"Name": "EDS", "Category": "Characterization"}
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Dense and homogeneous morphology with overall thickness of approximately 100 μm. EDS mapping certifies homogeneous distribution of N, O, S, F, and P elements.",
+            "simplified": "Dense homogeneous membrane ~100 μm thick, uniform elemental distribution"
+          },
+          "Morphology": {
+            "Type": "Dense and homogeneous",
+            "Thickness_um": 100,
+            "Thickness_Note": "Approximately 100 μm"
+          },
+          "EDS_Elements_Detected": [
+            "N",
+            "O",
+            "S",
+            "F",
+            "P"
+          ],
+          "EDS_Note": "Homogeneous distribution confirmed",
+          "Thermal_Stability": {
+            "Note": "Remarkable thermal stability (Figure S29); good mechanical flexibility, can be bent or crimped without damage (Figure S30)"
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Electrochemical_Window",
+            "Value": 2.7,
+            "Unit": "V",
+            "Original_Values": "2.7 V",
+            "Data_Source": "text",
+            "Note": "Significantly wider than 1.7 V for 5.0 M PA aqueous solution"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "ITEM_SOLID_STATE_BATTERY",
+      "Sample_ID": "Solid_state_proton_battery",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Polymers",
+      "application": "Functional",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Battery"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Figure 4b-g",
+        "Figure 5",
+        "Figure S33-S38"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Battery_Composition": {
+            "Component_Type": "Full_Cell",
+            "Configuration": "MoO3 anode | PA@ZVCOF-80 solid electrolyte membrane | H-VHCF cathode"
+          },
+          "Cell_Components": [
+            {
+              "Role_In_Cell": "Anode",
+              "Material": "MoO3 membrane"
+            },
+            {
+              "Role_In_Cell": "Electrolyte",
+              "Material": "PA@ZVCOF-80 membrane (with 4 wt% PTFE binder)"
+            },
+            {
+              "Role_In_Cell": "Cathode",
+              "Material": "H-VHCF (vanadium hexacyanoferrate, Prussian blue analogue)",
+              "Full_Name": "vanadium hexacyanoferrate"
+            }
+          ]
+        },
+        "Processing": {
+          "Process_Category": "Battery assembly",
+          "Process_Text": {
+            "original": "Prototype solid-state proton batteries were assembled by integrating the electrolyte membrane with a MoO3 anode and a Prussian blue analogue (vanadium hexacyanoferrate, HVHCF) cathode",
+            "simplified": "Integrate PA@ZVCOF-80 membrane with MoO3 anode and H-VHCF cathode"
+          },
+          "Equipment": [
+            {"Name": "CV (cyclic voltammetry)", "Category": "Testing"},
+            {"Name": "GITT", "Category": "Testing"},
+            {"Name": "Charge-discharge cycler", "Category": "Testing"},
+            {"Name": "XRD", "Category": "Characterization"},
+            {"Name": "SEM", "Category": "Characterization"}
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Post-cycling XRD and SEM of MoO3 anodes after 5000 cycles: solid-state battery MoO3 retained original morphology with minimal structural damage. CV curves displayed pronounced redox peak pairs indicating Faradaic proton storage.",
+            "simplified": "MoO3 anode retained structural integrity after cycling; Faradaic proton storage confirmed by CV"
+          },
+          "CV": {
+            "Result": "Pronounced redox peak pairs",
+            "Note": "Indicates Faradaic proton storage process"
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Specific_Capacity",
+            "Value": 108.5,
+            "Unit": "mAh g⁻¹",
+            "Original_Values": "108.5 mAh g⁻¹",
+            "Test_Condition": {
+              "Current_Density_A_g": 1.0
+            },
+            "Data_Source": "text",
+            "Note": "Record-high specific capacity among all reported solid-state proton batteries"
+          },
+          {
+            "Property_Name": "Specific_Capacity",
+            "Value": 98.6,
+            "Unit": "mAh g⁻¹",
+            "Original_Values": "98.6 mAh g⁻¹",
+            "Test_Condition": {
+              "Current_Density_A_g": 2.0
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Specific_Capacity",
+            "Value": 92.6,
+            "Unit": "mAh g⁻¹",
+            "Original_Values": "92.6 mAh g⁻¹",
+            "Test_Condition": {
+              "Current_Density_A_g": 3.0
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Specific_Capacity",
+            "Value": 88.3,
+            "Unit": "mAh g⁻¹",
+            "Original_Values": "88.3 mAh g⁻¹",
+            "Test_Condition": {
+              "Current_Density_A_g": 4.0
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Specific_Capacity",
+            "Value": 84.3,
+            "Unit": "mAh g⁻¹",
+            "Original_Values": "84.3 mAh g⁻¹",
+            "Test_Condition": {
+              "Current_Density_A_g": 5.0
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Coulombic_Efficiency",
+            "Value": 98.9,
+            "Unit": "%",
+            "Original_Values": "98.9%",
+            "Test_Condition": {
+              "Current_Density_A_g": 1.0,
+              "Cycle_Number": 2000
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Specific_Capacity",
+            "Value": 98.0,
+            "Unit": "mAh g⁻¹",
+            "Original_Values": "98.0 mAh g⁻¹",
+            "Test_Condition": {
+              "Current_Density_A_g": 1.0,
+              "Cycle_Number": 2000
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Capacity_Retention",
+            "Value": 90,
+            "Unit": "%",
+            "Original_Values": "90% capacity retention after 2000 charge-discharge cycles at 1.0 A g⁻¹",
+            "Test_Condition": {
+              "Current_Density_A_g": 1.0,
+              "Cycle_Number": 2000
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Proton_Diffusion_Coefficient",
+            "Value": null,
+            "Unit": "cm² s⁻¹",
+            "Value_Range": "10⁻⁹ to 10⁻⁶ cm² s⁻¹",
+            "Original_Values": "10⁻⁹-10⁻⁶ cm² s⁻¹",
+            "Test_Condition": {
+              "Method": "GITT (galvanostatic intermittent titration technique)",
+              "During": "charge-discharge cycles"
+            },
+            "Data_Source": "text",
+            "Note": "Signifies fast proton reaction kinetics"
+          },
+          {
+            "Property_Name": "Specific_Capacity",
+            "Value": 76,
+            "Unit": "mAh g⁻¹",
+            "Original_Values": "76 mAh g⁻¹",
+            "Test_Condition": {
+              "Cycle_Number": 5000
+            },
+            "Data_Source": "text",
+            "Note": "Extended cycling test; current density not explicitly stated for this 5000-cycle point; comparison context with liquid electrolyte at 2.0 A g⁻¹ (Figure 5c) suggests possible same current density but not confirmed"
+          },
+          {
+            "Property_Name": "Capacity_Retention",
+            "Value": 84,
+            "Unit": "%",
+            "Original_Values": "84% retention after 5000 cycles",
+            "Test_Condition": {
+              "Cycle_Number": 5000
+            },
+            "Data_Source": "text",
+            "Note": "Current density not explicitly stated; comparison context suggests 2.0 A g⁻¹ but not confirmed"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "ITEM_LIQUID_ELECTROLYTE_BATTERY",
+      "Sample_ID": "Liquid_PA_battery",
+      "Role": "Comparator",
+      "Data_Nature": "Experimental",
+      "base_material": "Polymers",
+      "application": "Functional",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Battery"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Figure 5c-f"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Battery_Composition": {
+            "Component_Type": "Full_Cell",
+            "Configuration": "MoO3 anode | 5.0 M PA aqueous electrolyte | H-VHCF cathode"
+          },
+          "Cell_Components": [
+            {
+              "Role_In_Cell": "Anode",
+              "Material": "MoO3"
+            },
+            {
+              "Role_In_Cell": "Electrolyte",
+              "Material": "5.0 M phosphoric acid (PA) aqueous solution"
+            },
+            {
+              "Role_In_Cell": "Cathode",
+              "Material": "H-VHCF (vanadium hexacyanoferrate)"
+            }
+          ]
+        },
+        "Processing": {
+          "Process_Category": "Battery assembly",
+          "Process_Text": {
+            "original": "Proton batteries assembled with a 5.0 M PA aqueous electrolyte, MoO3 anode, and H-VHCF cathode",
+            "simplified": "Assemble battery with 5.0 M PA liquid electrolyte"
+          },
+          "Equipment": [
+            {"Name": "XRD", "Category": "Characterization"},
+            {"Name": "SEM", "Category": "Characterization"},
+            {"Name": "Charge-discharge cycler", "Category": "Testing"}
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Post-cycling XRD showed drastic changes after 5000 cycles indicating structural corrosion. SEM showed severe erosion of MoO3 anode.",
+            "simplified": "Severe electrode corrosion in liquid electrolyte system"
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Electrochemical_Window",
+            "Value": 1.7,
+            "Unit": "V",
+            "Original_Values": "1.7 V",
+            "Test_Condition": {
+              "Electrolyte": "5.0 M PA aqueous solution"
+            },
+            "Data_Source": "text",
+            "Note": "For 5.0 M PA aqueous solution; significantly narrower than PA@ZVCOF-80 (2.7 V)"
+          },
+          {
+            "Property_Name": "Specific_Capacity",
+            "Value": 17.5,
+            "Unit": "mAh g⁻¹",
+            "Original_Values": "17.5 mAh g⁻¹",
+            "Test_Condition": {
+              "Current_Density_A_g": 2.0,
+              "Cycle_Number": 1000
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Capacity_Retention",
+            "Value": 20.4,
+            "Unit": "%",
+            "Original_Values": "20.4% of initial capacity after 1000 cycles",
+            "Test_Condition": {
+              "Current_Density_A_g": 2.0,
+              "Cycle_Number": 1000
+            },
+            "Data_Source": "text"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "ITEM_MD_ZVCOF_PA",
+      "Sample_ID": "MD_ZVCOF_PA",
+      "Role": "Target",
+      "Data_Nature": "Computed",
+      "base_material": "Polymers",
+      "application": "Functional",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Porous",
+        "2D",
+        "Battery"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Figure 3e,f"
+      ],
+      "Experiment_Link": {
+        "Related_Item_IDs": [
+          "ITEM_PA_ZVCOF_80"
+        ],
+        "Description": "MD simulation of PA molecules confined in ZVCOF pores to probe proton diffusion behavior",
+        "Validation_Target": "Proton transport mechanism in zwitterionic COF"
+      },
+      "Extracted_Data": {
+        "Composition": {
+          "Model_System": "ZVCOF with PA molecules confined in pores",
+          "Note": "Molecular dynamics simulation model"
+        },
+        "Processing": {
+          "Simulation_Metadata": {
+            "Method": "Molecular Dynamics (MD)",
+            "Software": null,
+            "Note": "MD software not specified in text"
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "RDF between H atoms of PA and O atoms of the sulfonate groups [H(PA)-O(ZVCOF)] showed two prominent distances at 1.00 and 1.37 Å, indicative of strong interactions.",
+            "simplified": "Strong PA-sulfonate interaction in ZVCOF confirmed by RDF peaks at 1.00 and 1.37 Å"
+          },
+          "Advanced_Quantitative_Features": {
+            "RDF_H_PA_O_ZVCOF_peaks_Angstrom": [
+              1.0,
+              1.37
+            ],
+            "RDF_Pair": "H(PA)-O(ZVCOF)",
+            "Note": "Two prominent distances indicating strong hydrogen-bonding interactions"
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Self_Diffusion_Coefficient",
+            "Value": 0.000109,
+            "Unit": "cm² s⁻¹",
+            "Original_Values": "1.09 × 10⁻⁴ cm² s⁻¹",
+            "Test_Condition": {
+              "Method": "Time-dependent mean square displacement (MSD)",
+              "Species": "PA molecules within ZVCOF"
+            },
+            "Data_Source": "text",
+            "Data_Nature": "Computed",
+            "Note": "Lower D indicates stronger binding between PA and zwitterionic COF"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "ITEM_MD_NVCOF_PA",
+      "Sample_ID": "MD_NVCOF_PA",
+      "Role": "Comparator",
+      "Data_Nature": "Computed",
+      "base_material": "Polymers",
+      "application": "Functional",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Porous",
+        "2D",
+        "Battery"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Figure 3e,f"
+      ],
+      "Experiment_Link": {
+        "Related_Item_IDs": [
+          "ITEM_PA_NVCOF_60"
+        ],
+        "Description": "MD simulation of PA molecules confined in NVCOF pores to probe proton diffusion behavior",
+        "Validation_Target": "Proton transport mechanism in non-zwitterionic COF"
+      },
+      "Extracted_Data": {
+        "Composition": {
+          "Model_System": "NVCOF with PA molecules confined in pores",
+          "Note": "Molecular dynamics simulation model"
+        },
+        "Processing": {
+          "Simulation_Metadata": {
+            "Method": "Molecular Dynamics (MD)",
+            "Software": null
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "RDF for NVCOF-based system [H(PA)-N(NVCOF)] exhibited a peak centered at 1.68 Å, reflecting weaker interactions.",
+            "simplified": "Weaker PA-pyridinyl nitrogen interaction in NVCOF; RDF peak at 1.68 Å"
+          },
+          "Advanced_Quantitative_Features": {
+            "RDF_H_PA_N_NVCOF_peak_Angstrom": 1.68,
+            "RDF_Pair": "H(PA)-N(NVCOF)",
+            "Note": "Peak centered at 1.68 Å reflecting weaker interactions"
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Self_Diffusion_Coefficient",
+            "Value": 0.000494,
+            "Unit": "cm² s⁻¹",
+            "Original_Values": "4.94 × 10⁻⁴ cm² s⁻¹",
+            "Test_Condition": {
+              "Method": "Time-dependent mean square displacement (MSD)",
+              "Species": "PA molecules within NVCOF"
+            },
+            "Data_Source": "text",
+            "Data_Nature": "Computed",
+            "Note": "Higher D indicates weaker binding and higher molecular mobility"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "ITEM_PES_ZVCOF",
+      "Sample_ID": "PES_ZVCOF",
+      "Role": "Target",
+      "Data_Nature": "Computed",
+      "base_material": "Polymers",
+      "application": "Functional",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Porous",
+        "2D",
+        "Battery"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Figure 3g,h"
+      ],
+      "Experiment_Link": {
+        "Related_Item_IDs": [
+          "ITEM_PA_ZVCOF_80"
+        ],
+        "Description": "PES scan of proton dissociation from PA within ZVCOF framework",
+        "Validation_Target": "Proton dissociation energetics in zwitterionic environment"
+      },
+      "Extracted_Data": {
+        "Composition": {
+          "Model_System": "PA-loaded ZVCOF optimized structure",
+          "Note": "Potential energy surface scan for proton dissociation"
+        },
+        "Processing": {
+          "Simulation_Metadata": {
+            "Method": "Potential Energy Surface (PES) scan",
+            "Software": "Gaussian 16 W",
+            "Coordinate_Definition": "q_asym = 1/2(r(D...H) - r(H...A)), where D = oxygen bonded to proton, A = proton acceptor oxygen",
+            "References": [
+              40,
+              41,
+              42
+            ]
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Proton_Dissociation_Energy_Barrier",
+            "Value": null,
+            "Data_Source": "text",
+            "Data_Nature": "Computed",
+            "Note": "ZVCOF-based system exhibited notably lower relative energy barrier for proton dissociation compared to NVCOF counterpart; exact numerical value not specified in text"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "ITEM_PES_NVCOF",
+      "Sample_ID": "PES_NVCOF",
+      "Role": "Comparator",
+      "Data_Nature": "Computed",
+      "base_material": "Polymers",
+      "application": "Functional",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Porous",
+        "2D",
+        "Battery"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Figure 3g,h"
+      ],
+      "Experiment_Link": {
+        "Related_Item_IDs": [
+          "ITEM_PA_NVCOF_60"
+        ],
+        "Description": "PES scan of proton dissociation from PA within NVCOF framework",
+        "Validation_Target": "Proton dissociation energetics in non-zwitterionic environment"
+      },
+      "Extracted_Data": {
+        "Composition": {
+          "Model_System": "PA-loaded NVCOF optimized structure",
+          "Note": "Potential energy surface scan for proton dissociation"
+        },
+        "Processing": {
+          "Simulation_Metadata": {
+            "Method": "Potential Energy Surface (PES) scan",
+            "Software": "Gaussian 16 W",
+            "Coordinate_Definition": "q_asym = 1/2(r(D...H) - r(H...A))",
+            "References": [
+              40,
+              41,
+              42
+            ]
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Proton_Dissociation_Energy_Barrier",
+            "Value": null,
+            "Data_Source": "text",
+            "Data_Nature": "Computed",
+            "Note": "NVCOF-based system showed higher relative energy barrier for proton dissociation compared to ZVCOF; exact numerical value not specified in text"
+          }
+        ]
+      }
+    }
+  ]
+}

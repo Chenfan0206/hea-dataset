@@ -1,0 +1,628 @@
+{
+  "Paper_Metadata": {
+    "Paper_Title": "Achieving superior high-temperature mechanical properties in Al-Cu-Li-Sc-Zr alloy with nano-scale microstructure via laser additive manufacturing",
+    "DOI": "10.1080/21663831.2023.2285388"
+  },
+  "Paper_Routing": {
+    "base_material": "Metals",
+    "application": "Structural",
+    "research_paradigm": "Experimental",
+    "Supplements_Loaded": [
+      "directions/base/Metals.txt",
+      "directions/application/Structural.txt",
+      "directions/paradigm/Experimental.txt"
+    ],
+    "Patch_Tags": [
+      "Additive_Manufacturing",
+      "Laser_Assisted"
+    ],
+    "Needs_Mixed_Routing_Check": false,
+    "Mixed_Signals": []
+  },
+  "items": [
+    {
+      "Item_ID": "AF",
+      "Sample_ID": "AF",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing",
+        "Laser_Assisted"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Materials and methods: A gas-atomized alloy powder... was employed as the feedstock for the LPBF process...",
+        "Two types of samples were selected: those in the as-fabricated (AF) condition...",
+        "Table 1. Tensile properties of as-fabricated and heat-treated samples at various testing temperatures.",
+        "EBSD analysis was performed on both AF and HT samples...",
+        "TEM results for both AF and HT samples..."
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Al-Cu-Li-Sc-Zr alloy",
+          "Material_Name_Raw": "Al-Cu-Li-Sc-Zr alloy",
+          "Nominal_Composition": {
+            "Unit": "wt%",
+            "Elements": [
+              {
+                "Element": "Al",
+                "Value": "Balance",
+                "Note": "Balance; normalized ≈ 93.48 wt% (Data_Nature: Computed)"
+              },
+              {
+                "Element": "Cu",
+                "Value": 3.89
+              },
+              {
+                "Element": "Li",
+                "Value": 1.22
+              },
+              {
+                "Element": "Sc",
+                "Value": 0.98
+              },
+              {
+                "Element": "Zr",
+                "Value": 0.43
+              }
+            ]
+          },
+          "Note": "Gas-atomized alloy powder composition reported as Al-3.89Cu-1.22Li-0.98Sc-0.43Zr (wt%)."
+        },
+        "Processing": {
+          "Process_Category": "Laser Powder Bed Fusion (LPBF)",
+          "Process_Text": {
+            "original": "A gas-atomized alloy powder, comprising Al-3.89Cu-1.22Li-0.98Sc-0.43Zr (wt%), was employed as the feedstock for the LPBF process using a LiM-X260A LPBF machine. Samples with a relative density exceeding 99.9% were fabricated under laser power of 300 W, scanning velocity of 1200 mm/s, hatch spacing of 0.1 mm, and layer thickness of 40 μm. Two types of samples were selected: those in the as-fabricated (AF) condition.",
+            "simplified": "Gas-atomized Al-Cu-Li-Sc-Zr powder processed by LPBF (LiM-X260A) at 300 W, 1200 mm/s, 0.1 mm hatch, 40 μm layer. As-fabricated (AF) condition, no post-processing heat treatment."
+          },
+          "Equipment": [
+            {
+              "Name": "LiM-X260A LPBF machine",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Zeiss Gemini 300 SEM with advanced EBSD detector",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "FEI Tecnai G2 F30 TEM with EDS",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Zwick/Roell Z020 Universal Materials Tester",
+              "Category": "Testing"
+            },
+            {
+              "Name": "AZtecCrystal software",
+              "Category": "Software"
+            },
+            {
+              "Name": "Image-Pro Plus software",
+              "Category": "Software"
+            }
+          ],
+          "Key_Params": {
+            "LPBF": {
+              "Laser_Power_W": 300,
+              "Scanning_Velocity_mm_s": 1200,
+              "Hatch_Spacing_mm": 0.1,
+              "Layer_Thickness_um": 40,
+              "Relative_Density_pct": {
+                "Value": null,
+                "Original_Values": ">99.9%",
+                "Note": "Only lower bound given; precise value not stated."
+              }
+            }
+          },
+          "Original_Values": "laser power of 300 W, scanning velocity of 1200 mm/s, hatch spacing of 0.1 mm, and layer thickness of 40 μm"
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "The IPF maps indicated a nearly random distribution of grain orientations... fine equiaxed grains and coarse columnar grains. Statistical results revealed that the average sizes of fine equiaxed grains were measured to be 1.49 μm for the AF sample... while the average sizes of coarse columnar grains were found to be 1.84 μm for the AF sample... EDS map obtained from the equiaxed grain area of the AF sample revealed the stacking of Cu-rich and Sc-rich precipitates along the equiaxed grain boundaries. TKD analysis identified Al₂Cu and AlCuSc phases, predominantly located at the grain boundaries of Al. Statistical results indicated an average size of these precipitates to be 116 ± 42 nm. No discernible Zr segregation was observed.",
+            "simplified": "AF sample: nearly random grain orientation (max texture intensity 2.79). Fine equiaxed grains avg 1.49 μm, coarse columnar grains avg 1.84 μm. Grain boundaries decorated with Al₂Cu and AlCuSc precipitates (avg 116±42 nm at GB in equiaxed area, 117±32 nm at GB in columnar area). Intra-granular precipitates within columnar grains avg 42±13 nm. Al₃(Sc,Zr) nucleant particles too small for TEM-EDS distinction. Zr supersaturated in Al matrix in columnar grain areas."
+          },
+          "Main_Phase": {
+            "Phase_Name": "Al matrix (FCC)",
+            "Crystal_Structure": "FCC"
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "Al₂Cu",
+              "Crystal_Structure": "BCT (tetragonal)",
+              "Location": "Grain boundaries (equiaxed and columnar) and intra-columnar grains",
+              "Size": {
+                "at_equiaxed_grain_boundaries": {
+                  "Value": 116,
+                  "Value_StdDev": 42,
+                  "Unit": "nm",
+                  "Size_Type": "diameter",
+                  "Note": "Average diameter of precipitates in equiaxed grain boundary area."
+                },
+                "at_columnar_grain_boundaries": {
+                  "Value": 117,
+                  "Value_StdDev": 32,
+                  "Unit": "nm",
+                  "Size_Type": "diameter"
+                },
+                "within_columnar_grains": {
+                  "Value": 42,
+                  "Value_StdDev": 13,
+                  "Unit": "nm",
+                  "Size_Type": "diameter"
+                }
+              },
+              "Data_Source": "text"
+            },
+            {
+              "Phase_Name": "AlCuSc",
+              "Crystal_Structure": "undefined",
+              "Location": "Grain boundaries (equiaxed and columnar) and intra-columnar grains",
+              "Size": {
+                "at_equiaxed_grain_boundaries": {
+                  "Value": 116,
+                  "Value_StdDev": 42,
+                  "Unit": "nm",
+                  "Size_Type": "diameter",
+                  "Note": "Co-located with Al₂Cu; same statistical measurement."
+                },
+                "at_columnar_grain_boundaries": {
+                  "Value": 117,
+                  "Value_StdDev": 32,
+                  "Unit": "nm",
+                  "Size_Type": "diameter"
+                },
+                "within_columnar_grains": {
+                  "Value": 42,
+                  "Value_StdDev": 13,
+                  "Unit": "nm",
+                  "Size_Type": "diameter"
+                }
+              },
+              "Data_Source": "text"
+            },
+            {
+              "Phase_Name": "Al₃(Sc, Zr)",
+              "Crystal_Structure": "L1₂",
+              "Location": "Equiaxed grain area, acting as grain nucleants",
+              "Note": "Primary Al₃(Sc,Zr) particles as nucleants; too small to distinguish by TEM-EDS. Crystal structure inferred from literature description in paper.",
+              "Data_Source": "text"
+            }
+          ],
+          "Grain_Size": [
+            {
+              "Grain_Type": "equiaxed",
+              "Value": 1.49,
+              "Unit": "μm",
+              "Size_Type": "diameter",
+              "Note": "Average size of fine equiaxed grains."
+            },
+            {
+              "Grain_Type": "columnar",
+              "Value": 1.84,
+              "Unit": "μm",
+              "Size_Type": "diameter",
+              "Note": "Average size of coarse columnar grains."
+            }
+          ],
+          "Texture_or_Orientation": {
+            "Max_Texture_Intensity": {
+              "Value": 2.79,
+              "Note": "Weak texture, nearly random grain orientation."
+            }
+          },
+          "Relative_Density": {
+            "Value": null,
+            "Original_Values": "exceeding 99.9%",
+            "Note": "Only lower bound stated; precise value not given."
+          }
+        },
+        "Properties": [
+          {
+            "Property_Type": "Tensile",
+            "Loading_Mode": "Tension",
+            "Test_Temperature_K": 293,
+            "Test_Temperature_Original": "RT (room temperature)",
+            "Yield_Strength_MPa": {
+              "Value": 482,
+              "Value_StdDev": 1
+            },
+            "Elongation_Total_pct": {
+              "Value": 9,
+              "Value_StdDev": 1,
+              "Note": "Paper reports 'Elongation (%)'; not distinguished between uniform and at fracture. Classified as Elongation_Total per Structural supplement rule."
+            },
+            "Specimen_State": "As-fabricated (AF)",
+            "Specimen_Shape": "Dog-bone shaped",
+            "Specimen_Dimensions": "gauge section 32 mm × 6 mm × 3 mm",
+            "Test_Standard": "ASTM B557M-10",
+            "Holding_Time_Before_Test": "N/A for RT",
+            "Data_Source": "table",
+            "Note": "AF-RT. Three trials per condition."
+          },
+          {
+            "Property_Type": "Tensile",
+            "Loading_Mode": "Tension",
+            "Test_Temperature_K": 473,
+            "Test_Temperature_Original": "200 °C",
+            "Yield_Strength_MPa": {
+              "Value": 402,
+              "Value_StdDev": 14
+            },
+            "Elongation_Total_pct": {
+              "Value": 11,
+              "Value_StdDev": 2,
+              "Note": "Paper reports 'Elongation (%)'; not distinguished between uniform and at fracture."
+            },
+            "Specimen_State": "As-fabricated (AF)",
+            "Specimen_Shape": "Dog-bone shaped",
+            "Specimen_Dimensions": "gauge section 32 mm × 6 mm × 3 mm",
+            "Test_Standard": "ASTM B557M-10 (specimen geometry); ISO 6892-2:2018 (loading protocol)",
+            "Holding_Time_Before_Test": "10 min at test temperature",
+            "Data_Source": "table",
+            "Note": "AF-200°C. Three trials per condition."
+          },
+          {
+            "Property_Type": "Tensile",
+            "Loading_Mode": "Tension",
+            "Test_Temperature_K": 523,
+            "Test_Temperature_Original": "250 °C",
+            "Yield_Strength_MPa": {
+              "Value": 355,
+              "Value_StdDev": 10
+            },
+            "Elongation_Total_pct": {
+              "Value": 16,
+              "Value_StdDev": 2,
+              "Note": "Paper reports 'Elongation (%)'; not distinguished between uniform and at fracture."
+            },
+            "Specimen_State": "As-fabricated (AF)",
+            "Specimen_Shape": "Dog-bone shaped",
+            "Specimen_Dimensions": "gauge section 32 mm × 6 mm × 3 mm",
+            "Test_Standard": "ASTM B557M-10 (specimen geometry); ISO 6892-2:2018 (loading protocol)",
+            "Holding_Time_Before_Test": "10 min at test temperature",
+            "Data_Source": "table",
+            "Note": "AF-250°C. Three trials per condition."
+          },
+          {
+            "Property_Type": "Tensile",
+            "Loading_Mode": "Tension",
+            "Test_Temperature_K": 573,
+            "Test_Temperature_Original": "300 °C",
+            "Yield_Strength_MPa": {
+              "Value": 177,
+              "Value_StdDev": 7
+            },
+            "Elongation_Total_pct": {
+              "Value": 26,
+              "Value_StdDev": 3,
+              "Note": "Paper reports 'Elongation (%)'; not distinguished between uniform and at fracture."
+            },
+            "Specimen_State": "As-fabricated (AF)",
+            "Specimen_Shape": "Dog-bone shaped",
+            "Specimen_Dimensions": "gauge section 32 mm × 6 mm × 3 mm",
+            "Test_Standard": "ASTM B557M-10 (specimen geometry); ISO 6892-2:2018 (loading protocol)",
+            "Holding_Time_Before_Test": "10 min at test temperature",
+            "Data_Source": "table",
+            "Note": "AF-300°C. Three trials per condition."
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "HT",
+      "Sample_ID": "HT",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing",
+        "Laser_Assisted"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Materials and methods: Two types of samples were selected: those in the as-fabricated (AF) condition and optimized heat-treated (HT) condition. The HT samples underwent gradual heating at a rate of 10 °C/min from room temperature to reach 300 °C inside a KSL-1400X muffle furnace. Subsequently, they were held at 300 °C for 1 h before cooled to ambient temperature in air.",
+        "Table 1. Tensile properties of as-fabricated and heat-treated samples at various testing temperatures.",
+        "EBSD analysis was performed on both AF and HT samples...",
+        "TEM results for both AF and HT samples..."
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Al-Cu-Li-Sc-Zr alloy",
+          "Material_Name_Raw": "Al-Cu-Li-Sc-Zr alloy",
+          "Nominal_Composition": {
+            "Unit": "wt%",
+            "Elements": [
+              {
+                "Element": "Al",
+                "Value": "Balance",
+                "Note": "Balance; normalized ≈ 93.48 wt% (Data_Nature: Computed)"
+              },
+              {
+                "Element": "Cu",
+                "Value": 3.89
+              },
+              {
+                "Element": "Li",
+                "Value": 1.22
+              },
+              {
+                "Element": "Sc",
+                "Value": 0.98
+              },
+              {
+                "Element": "Zr",
+                "Value": 0.43
+              }
+            ]
+          },
+          "Note": "Same gas-atomized powder as AF item. Composition shared per paper statement: same feedstock for both AF and HT samples."
+        },
+        "Processing": {
+          "Process_Category": "Laser Powder Bed Fusion (LPBF) + Heat Treatment",
+          "Process_Text": {
+            "original": "A gas-atomized alloy powder, comprising Al-3.89Cu-1.22Li-0.98Sc-0.43Zr (wt%), was employed as the feedstock for the LPBF process using a LiM-X260A LPBF machine. Samples with a relative density exceeding 99.9% were fabricated under laser power of 300 W, scanning velocity of 1200 mm/s, hatch spacing of 0.1 mm, and layer thickness of 40 μm. The HT samples underwent gradual heating at a rate of 10 °C/min from room temperature to reach 300 °C inside a KSL-1400X muffle furnace. Subsequently, they were held at 300 °C for 1 h before cooled to ambient temperature in air.",
+            "simplified": "Gas-atomized Al-Cu-Li-Sc-Zr powder processed by LPBF (LiM-X260A) at 300 W, 1200 mm/s, 0.1 mm hatch, 40 μm layer. Heat treatment: heated at 10 °C/min from RT to 300 °C, held 1 h, air cooled."
+          },
+          "Equipment": [
+            {
+              "Name": "LiM-X260A LPBF machine",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "KSL-1400X muffle furnace",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Zeiss Gemini 300 SEM with advanced EBSD detector",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "FEI Tecnai G2 F30 TEM with EDS",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Zwick/Roell Z020 Universal Materials Tester",
+              "Category": "Testing"
+            },
+            {
+              "Name": "AZtecCrystal software",
+              "Category": "Software"
+            },
+            {
+              "Name": "Image-Pro Plus software",
+              "Category": "Software"
+            }
+          ],
+          "Note": "Equipment shared with AF item per paper: same LPBF fabrication, characterization, and testing equipment for both AF and HT conditions; only KSL-1400X furnace is HT-specific.",
+          "Key_Params": {
+            "LPBF": {
+              "Laser_Power_W": 300,
+              "Scanning_Velocity_mm_s": 1200,
+              "Hatch_Spacing_mm": 0.1,
+              "Layer_Thickness_um": 40,
+              "Relative_Density_pct": {
+                "Value": null,
+                "Original_Values": ">99.9%",
+                "Note": "Only lower bound given; precise value not stated."
+              }
+            },
+            "Heat_Treatment": {
+              "Stage": "Aging",
+              "Heating_Rate_K_min": 10,
+              "Target_Temperature_K": 573,
+              "Target_Temperature_Original": "300 °C",
+              "Holding_Time_h": 1,
+              "Cooling": "Air cooled to ambient temperature"
+            }
+          },
+          "Original_Values": "heating at a rate of 10 °C/min from room temperature to reach 300 °C inside a KSL-1400X muffle furnace; held at 300 °C for 1 h before cooled to ambient temperature in air"
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "The IPF maps indicated a nearly random distribution of grain orientations in both samples. Statistical results revealed that the average sizes of fine equiaxed grains were measured to be 1.53 μm for the HT sample, while the average sizes of coarse columnar grains were found to be 1.76 μm for the HT sample. The comparative grain sizes implied no significant grain coarsening after heat treatment. For the HT sample, an increased number of precipitates can be observed in both equiaxed grain area and columnar grain area. The fine precipitates within the columnar grains tended to coalesce and grow, resulting in a size increase to 72 ± 21 nm. The precipitation particles were nearly continuously stacked along the grain boundaries in the HT sample. These precipitates located at the grain boundaries exhibited sizes of 125 ± 39 nm for equiaxed grains and 123 ± 37 nm for coarse grains, which were respectively larger by approximately 8% and 5% compared to those presented in the AF sample.",
+            "simplified": "HT sample: nearly random grain orientation (max texture intensity 1.83). Fine equiaxed grains avg 1.53 μm, coarse columnar grains avg 1.76 μm. No significant grain coarsening after heat treatment. Increased number of Al₂Cu and AlCuSc precipitates. Intra-columnar-grain precipitates avg 72±21 nm (71% growth vs AF). GB precipitates: 125±39 nm (equiaxed), 123±37 nm (columnar). Nearly continuous stacking along GBs vs intermittent in AF."
+          },
+          "Main_Phase": {
+            "Phase_Name": "Al matrix (FCC)",
+            "Crystal_Structure": "FCC"
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "Al₂Cu",
+              "Crystal_Structure": "BCT (tetragonal)",
+              "Location": "Grain boundaries (equiaxed and columnar) and within columnar grains",
+              "Size": {
+                "at_equiaxed_grain_boundaries": {
+                  "Value": 125,
+                  "Value_StdDev": 39,
+                  "Unit": "nm",
+                  "Size_Type": "diameter",
+                  "Note": "Approximately 8% larger than AF sample."
+                },
+                "at_columnar_grain_boundaries": {
+                  "Value": 123,
+                  "Value_StdDev": 37,
+                  "Unit": "nm",
+                  "Size_Type": "diameter",
+                  "Note": "Approximately 5% larger than AF sample."
+                },
+                "within_columnar_grains": {
+                  "Value": 72,
+                  "Value_StdDev": 21,
+                  "Unit": "nm",
+                  "Size_Type": "diameter",
+                  "Note": "71% growth compared to AF sample (42 nm)."
+                }
+              },
+              "Data_Source": "text"
+            },
+            {
+              "Phase_Name": "AlCuSc",
+              "Crystal_Structure": "undefined",
+              "Location": "Grain boundaries (equiaxed and columnar) and within columnar grains",
+              "Size": {
+                "at_equiaxed_grain_boundaries": {
+                  "Value": 125,
+                  "Value_StdDev": 39,
+                  "Unit": "nm",
+                  "Size_Type": "diameter",
+                  "Note": "Co-located with Al₂Cu; same statistical measurement."
+                },
+                "at_columnar_grain_boundaries": {
+                  "Value": 123,
+                  "Value_StdDev": 37,
+                  "Unit": "nm",
+                  "Size_Type": "diameter"
+                },
+                "within_columnar_grains": {
+                  "Value": 72,
+                  "Value_StdDev": 21,
+                  "Unit": "nm",
+                  "Size_Type": "diameter"
+                }
+              },
+              "Data_Source": "text"
+            },
+            {
+              "Phase_Name": "Al₃(Sc, Zr)",
+              "Crystal_Structure": "L1₂",
+              "Location": "Equiaxed grain area, acting as grain nucleants",
+              "Note": "Core-shell structure with Sc-rich core and Zr-rich shell (~1-2 nm thick). Crystal structure inferred from literature description in paper.",
+              "Data_Source": "text"
+            }
+          ],
+          "Grain_Size": [
+            {
+              "Grain_Type": "equiaxed",
+              "Value": 1.53,
+              "Unit": "μm",
+              "Size_Type": "diameter",
+              "Note": "Average size of fine equiaxed grains."
+            },
+            {
+              "Grain_Type": "columnar",
+              "Value": 1.76,
+              "Unit": "μm",
+              "Size_Type": "diameter",
+              "Note": "Average size of coarse columnar grains."
+            }
+          ],
+          "Texture_or_Orientation": {
+            "Max_Texture_Intensity": {
+              "Value": 1.83,
+              "Note": "Weak texture, nearly random grain orientation."
+            }
+          },
+          "Relative_Density": {
+            "Value": null,
+            "Original_Values": "exceeding 99.9%",
+            "Note": "Only lower bound stated; precise value not given. Shared with AF per same LPBF process."
+          },
+          "Advanced_Quantitative_Features": {
+            "Al3Sc_Zr_shell_thickness": {
+              "Value": null,
+              "Value_Range": "1-2 nm",
+              "Original_Values": "approximately 1-2 nm thick",
+              "Note": "Zr-rich shell around Sc-rich core in Al₃(Sc,Zr) phase."
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Type": "Tensile",
+            "Loading_Mode": "Tension",
+            "Test_Temperature_K": 293,
+            "Test_Temperature_Original": "RT (room temperature)",
+            "Yield_Strength_MPa": {
+              "Value": 595,
+              "Value_StdDev": 14
+            },
+            "Elongation_Total_pct": {
+              "Value": 2,
+              "Value_StdDev": 1,
+              "Note": "Paper reports 'Elongation (%)'; not distinguished between uniform and at fracture. HT sample exhibited brittle nature at RT."
+            },
+            "Specimen_State": "Heat-treated (HT, 300 °C / 1 h)",
+            "Specimen_Shape": "Dog-bone shaped",
+            "Specimen_Dimensions": "gauge section 32 mm × 6 mm × 3 mm",
+            "Test_Standard": "ASTM B557M-10",
+            "Holding_Time_Before_Test": "N/A for RT",
+            "Data_Source": "table",
+            "Note": "HT-RT. Three trials per condition."
+          },
+          {
+            "Property_Type": "Tensile",
+            "Loading_Mode": "Tension",
+            "Test_Temperature_K": 473,
+            "Test_Temperature_Original": "200 °C",
+            "Yield_Strength_MPa": {
+              "Value": 366,
+              "Value_StdDev": 3
+            },
+            "Elongation_Total_pct": {
+              "Value": 16,
+              "Value_StdDev": 5,
+              "Note": "Paper reports 'Elongation (%)'; not distinguished between uniform and at fracture."
+            },
+            "Specimen_State": "Heat-treated (HT, 300 °C / 1 h)",
+            "Specimen_Shape": "Dog-bone shaped",
+            "Specimen_Dimensions": "gauge section 32 mm × 6 mm × 3 mm",
+            "Test_Standard": "ASTM B557M-10 (specimen geometry); ISO 6892-2:2018 (loading protocol)",
+            "Holding_Time_Before_Test": "10 min at test temperature",
+            "Data_Source": "table",
+            "Note": "HT-200°C. Three trials per condition."
+          },
+          {
+            "Property_Type": "Tensile",
+            "Loading_Mode": "Tension",
+            "Test_Temperature_K": 523,
+            "Test_Temperature_Original": "250 °C",
+            "Yield_Strength_MPa": {
+              "Value": 319,
+              "Value_StdDev": 13
+            },
+            "Elongation_Total_pct": {
+              "Value": 30,
+              "Value_StdDev": 7,
+              "Note": "Paper reports 'Elongation (%)'; not distinguished between uniform and at fracture."
+            },
+            "Specimen_State": "Heat-treated (HT, 300 °C / 1 h)",
+            "Specimen_Shape": "Dog-bone shaped",
+            "Specimen_Dimensions": "gauge section 32 mm × 6 mm × 3 mm",
+            "Test_Standard": "ASTM B557M-10 (specimen geometry); ISO 6892-2:2018 (loading protocol)",
+            "Holding_Time_Before_Test": "10 min at test temperature",
+            "Data_Source": "table",
+            "Note": "HT-250°C. Three trials per condition."
+          },
+          {
+            "Property_Type": "Tensile",
+            "Loading_Mode": "Tension",
+            "Test_Temperature_K": 573,
+            "Test_Temperature_Original": "300 °C",
+            "Yield_Strength_MPa": {
+              "Value": 170,
+              "Value_StdDev": 7
+            },
+            "Elongation_Total_pct": {
+              "Value": 38,
+              "Value_StdDev": 9,
+              "Note": "Paper reports 'Elongation (%)'; not distinguished between uniform and at fracture."
+            },
+            "Specimen_State": "Heat-treated (HT, 300 °C / 1 h)",
+            "Specimen_Shape": "Dog-bone shaped",
+            "Specimen_Dimensions": "gauge section 32 mm × 6 mm × 3 mm",
+            "Test_Standard": "ASTM B557M-10 (specimen geometry); ISO 6892-2:2018 (loading protocol)",
+            "Holding_Time_Before_Test": "10 min at test temperature",
+            "Data_Source": "table",
+            "Note": "HT-300°C. Three trials per condition."
+          }
+        ]
+      }
+    }
+  ]
+}

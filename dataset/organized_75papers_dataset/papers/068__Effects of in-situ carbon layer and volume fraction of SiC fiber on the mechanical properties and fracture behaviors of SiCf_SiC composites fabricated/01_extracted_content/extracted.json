@@ -1,0 +1,781 @@
+{
+  "Paper_Metadata": {
+    "Paper_Title": "Effects of in-situ carbon layer and volume fraction of SiC fiber on the mechanical properties and fracture behaviors of SiCf/SiC composites fabricated by a modified PIP method",
+    "DOI": "10.1016/j.jeurceramsoc.2022.11.012"
+  },
+  "Paper_Routing": {
+    "base_material": "Composites",
+    "application": "Structural",
+    "research_paradigm": "Experimental",
+    "Supplements_Loaded": [
+      "directions/base/Composites.txt",
+      "directions/application/Structural.txt",
+      "directions/paradigm/Experimental.txt"
+    ],
+    "Patch_Tags": [
+      "Interface_Dominated"
+    ],
+    "Needs_Mixed_Routing_Check": false,
+    "Mixed_Signals": []
+  },
+  "items": [
+    {
+      "Item_ID": "1",
+      "Sample_ID": "SS-H-40",
+      "Role": "Comparator",
+      "Data_Nature": "Experimental",
+      "base_material": "Composites",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "SS-H-40 was fabricated by a different PIP process... detailed process parameters of SS-H-40 can be found in our previous work [16]"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Composite_Category": "CMC",
+          "Composite_System_Raw": "SiCf/SiC",
+          "Matrix": {
+            "Material": "SiC",
+            "Source": "VH-PCS"
+          },
+          "Reinforcement": {
+            "Material": "SiC fiber",
+            "Commercial_Name": "Cansas 3303 3rd",
+            "Manufacturer": "Leaoasia New Material Co. LTD",
+            "Fiber_Volume_Fraction": {
+              "Value": 40,
+              "Unit": "%"
+            },
+            "Fiber_Architecture": "Unidirectional"
+          },
+          "Interface_or_Interphase": {
+            "Material": "BN",
+            "Thickness": {
+              "Value": 200,
+              "Unit": "nm",
+              "Original_Values": "~200 nm",
+              "Note": "Approximate value from Table 1"
+            }
+          }
+        },
+        "Processing": {
+          "Process_Category": "PIP",
+          "Process_Text": {
+            "original": "SS-H-40 was fabricated by a different PIP process. That is, after deposition of BN interphase, SiC fiber perform was impregnated with a high concentration PCS solution in which the mass ratio of PCS to xylene was 1:1 for repeating the rest of PIP processes until the weight increase of composites was less than 1%.",
+            "simplified": "BN deposition followed by repeated PIP using high concentration PCS (1:1 PCS/xylene) until <1% weight gain."
+          },
+          "Equipment": [
+            {
+              "Name": "Universal testing machine (HD-609B; Haida Qualitative Analysis)",
+              "Category": "Testing"
+            },
+            {
+              "Name": "SEM (S-2700, Hitachi, Japan)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "TEM (Themis Z, FEI, USA)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "FEI Helios 600i FIB",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "FTIR (Nicolet iS 10, USA)",
+              "Category": "Characterization"
+            }
+          ],
+          "Key_Params": [
+            {
+              "Stage": "Stage1_Interphase",
+              "Process": "BN deposition"
+            },
+            {
+              "Stage": "Stage2_PIP",
+              "Process": "PIP with high concentration PCS",
+              "Concentration": "PCS:xylene = 1:1 mass ratio",
+              "Atmosphere": "Argon",
+              "Pyrolysis_Temperature": {
+                "Value": 900,
+                "Unit": "°C"
+              },
+              "Heating_Rate": {
+                "Value": 5,
+                "Unit": "°C/min"
+              },
+              "Cycles": 9,
+              "Termination_Criteria": "weight increase < 1%"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "BN interphase in SS-H-40 is “scattered” in the matrix rather than completely wrapped around SiC fiber... SiO2 is disordered in the matrix.",
+            "simplified": "Damaged BN interphase scattered in matrix. Disordered SiO2 phase in matrix."
+          },
+          "Phase_Composition": [
+            {
+              "Phase_Name": "SiC matrix",
+              "Crystal_Structure": "Amorphous",
+              "Location": "Matrix"
+            },
+            {
+              "Phase_Name": "SiO2",
+              "Crystal_Structure": null,
+              "Location": "Matrix",
+              "Note": "Disordered distribution in matrix"
+            }
+          ],
+          "Porosity": {
+            "Value": 5.7,
+            "Unit": "%"
+          },
+          "Density": {
+            "Value": 2.35,
+            "Unit": "g/cm3"
+          },
+          "Interface_Features": {
+            "BN_Interphase_State": "Scattered/Damaged",
+            "Note": "Damaged by stress caused by matrix shrinkage during polymer-to-ceramic transformation."
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Flexural_Strength",
+            "Value": 813.0,
+            "Value_StdDev": 32.4,
+            "Unit": "MPa",
+            "Test_Condition": {
+              "Method": "Three-point bending",
+              "Support_Span_Length": "30 mm",
+              "Crosshead_Speed": "0.5 mm/min",
+              "Specimen_Dimensions": "40 mm × 5 mm × 3 mm",
+              "Loading_Direction": "Parallel to fiber axis",
+              "Standard": "ASTM C1161",
+              "Replicates": 5
+            },
+            "Data_Source": "table"
+          },
+          {
+            "Property_Name": "Fracture_Toughness",
+            "Value": 26.1,
+            "Value_StdDev": 2.9,
+            "Unit": "MPa·m^1/2",
+            "Test_Condition": {
+              "Method": "Single edge notch beam",
+              "Support_Span_Length": "30 mm",
+              "Crosshead_Speed": "0.05 mm/min",
+              "Specimen_Dimensions": "40 mm × 3 mm × 5 mm",
+              "Notch_Depth": "2.5 mm",
+              "Notch_Width": "0.3 mm",
+              "Standard": "ASTM C1421",
+              "Replicates": 5
+            },
+            "Data_Source": "table"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "2",
+      "Sample_ID": "SS-L-30",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Composites",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "SS-L-30 and SS-L-50 with the corresponding fiber content of 30% and 50% respectively were prepared by the same PIP method as that of SS-L-40."
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Composite_Category": "CMC",
+          "Composite_System_Raw": "SiCf/SiC",
+          "Matrix": {
+            "Material": "SiC",
+            "Source": "VH-PCS"
+          },
+          "Reinforcement": {
+            "Material": "SiC fiber",
+            "Commercial_Name": "Cansas 3303 3rd",
+            "Manufacturer": "Leaoasia New Material Co. LTD",
+            "Fiber_Volume_Fraction": {
+              "Value": 30,
+              "Unit": "%"
+            },
+            "Fiber_Architecture": "Unidirectional"
+          },
+          "Interface_or_Interphase": {
+            "Material": "BN",
+            "Thickness": {
+              "Value": 200,
+              "Unit": "nm",
+              "Original_Values": "~200 nm",
+              "Note": "Approximate value from Table 1"
+            }
+          }
+        },
+        "Processing": {
+          "Process_Category": "PIP",
+          "Process_Text": {
+            "original": "After deposition of BN interphase, SiC fiber perform was first impregnated with a low concentration PCS solution in which the mass ratio of PCS to xylene was 1:20. Then the SiC fiber perform was pyrolyzed at 900 °C with a heating rate of 5 °C/min in argon atmosphere. This impregnation and pyrolysis process was repeated 4 times. Then a high concentration PCS solution in which the mass ratio of PCS to xylene was 1:1 was used for repeating the rest of PIP processes until the weight increase of composites was less than 1%.",
+            "simplified": "BN deposition followed by 4 PIP cycles with low concentration PCS (1:20) and 11 PIP cycles with high concentration PCS (1:1) until <1% weight gain."
+          },
+          "Equipment": [
+            {
+              "Name": "Universal testing machine (HD-609B; Haida Qualitative Analysis)",
+              "Category": "Testing"
+            },
+            {
+              "Name": "SEM (S-2700, Hitachi, Japan)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "TEM (Themis Z, FEI, USA)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "FEI Helios 600i FIB",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "FTIR (Nicolet iS 10, USA)",
+              "Category": "Characterization"
+            }
+          ],
+          "Key_Params": [
+            {
+              "Stage": "Stage1_Interphase",
+              "Process": "BN deposition"
+            },
+            {
+              "Stage": "Stage2_PIP_Low_Conc",
+              "Process": "PIP with low concentration PCS",
+              "Concentration": "PCS:xylene = 1:20 mass ratio",
+              "Atmosphere": "Argon",
+              "Pyrolysis_Temperature": {
+                "Value": 900,
+                "Unit": "°C"
+              },
+              "Heating_Rate": {
+                "Value": 5,
+                "Unit": "°C/min"
+              },
+              "Cycles": 4
+            },
+            {
+              "Stage": "Stage3_PIP_High_Conc",
+              "Process": "PIP with high concentration PCS",
+              "Concentration": "PCS:xylene = 1:1 mass ratio",
+              "Atmosphere": "Argon",
+              "Pyrolysis_Temperature": {
+                "Value": 900,
+                "Unit": "°C",
+                "Note": "Temperature inferred from Stage 2 and general description of PIP process for SS-L samples"
+              },
+              "Heating_Rate": {
+                "Value": 5,
+                "Unit": "°C/min",
+                "Note": "Heating rate inferred from Stage 2"
+              },
+              "Cycles": 11,
+              "Termination_Criteria": "weight increase < 1%"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Continuous carbon layers encircling SiC fibers... matrix is relatively continuous... carbon layers alternating with SiC phase... turbostratic carbon has an interplanar distance of around 0.34 nm.",
+            "simplified": "Continuous carbon layers alternating with SiC matrix. Relatively continuous matrix. Turbostratic carbon interplanar distance ~0.34 nm."
+          },
+          "Phase_Composition": [
+            {
+              "Phase_Name": "SiC matrix",
+              "Crystal_Structure": "Amorphous",
+              "Location": "Matrix"
+            },
+            {
+              "Phase_Name": "Carbon layer",
+              "Crystal_Structure": "Turbostratic carbon",
+              "Location": "Matrix",
+              "Note": "In-situ formed during low concentration PCS pyrolysis"
+            }
+          ],
+          "Porosity": {
+            "Value": 5.5,
+            "Unit": "%"
+          },
+          "Density": {
+            "Value": 2.28,
+            "Unit": "g/cm3"
+          },
+          "Interface_Features": {
+            "BN_Interphase_State": "Continuous",
+            "Note": "Completely covers SiC fiber"
+          },
+          "Advanced_Quantitative_Features": {
+            "Turbostratic_Carbon_Interplanar_Distance": {
+              "Value": 0.34,
+              "Unit": "nm",
+              "Original_Values": "around 0.34 nm",
+              "Note": "Approximate value"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Flexural_Strength",
+            "Value": 1318.5,
+            "Value_StdDev": 158.3,
+            "Unit": "MPa",
+            "Test_Condition": {
+              "Method": "Three-point bending",
+              "Support_Span_Length": "30 mm",
+              "Crosshead_Speed": "0.5 mm/min",
+              "Specimen_Dimensions": "40 mm × 5 mm × 3 mm",
+              "Loading_Direction": "Parallel to fiber axis",
+              "Standard": "ASTM C1161",
+              "Replicates": 5
+            },
+            "Data_Source": "table"
+          },
+          {
+            "Property_Name": "Fracture_Toughness",
+            "Value": 47.6,
+            "Value_StdDev": 5.6,
+            "Unit": "MPa·m^1/2",
+            "Test_Condition": {
+              "Method": "Single edge notch beam",
+              "Support_Span_Length": "30 mm",
+              "Crosshead_Speed": "0.05 mm/min",
+              "Specimen_Dimensions": "40 mm × 3 mm × 5 mm",
+              "Notch_Depth": "2.5 mm",
+              "Notch_Width": "0.3 mm",
+              "Standard": "ASTM C1421",
+              "Replicates": 5
+            },
+            "Data_Source": "table"
+          },
+          {
+            "Property_Name": "Ultimate_Tensile_Strength",
+            "Value": 724,
+            "Value_StdDev": 25,
+            "Unit": "MPa",
+            "Test_Condition": {
+              "Method": "Tensile test",
+              "Crosshead_Speed": "0.5 mm/min",
+              "Specimen_Dimensions": "120 mm × 10 mm × 3 mm",
+              "Standard": "ASTM C1275",
+              "Replicates": 5
+            },
+            "Data_Source": "table"
+          },
+          {
+            "Property_Name": "Elongation_At_Fracture",
+            "Value": 0.61,
+            "Value_StdDev": 0.02,
+            "Unit": "%",
+            "Original_Values": "0.61 ± 0.02",
+            "Test_Condition": {
+              "Method": "Tensile test",
+              "Crosshead_Speed": "0.5 mm/min",
+              "Specimen_Dimensions": "120 mm × 10 mm × 3 mm",
+              "Standard": "ASTM C1275",
+              "Replicates": 5
+            },
+            "Data_Source": "table"
+          },
+          {
+            "Property_Name": "Proportional_Limit_Stress",
+            "Value": null,
+            "Unit": "MPa",
+            "Original_Values": "less than 200 MPa",
+            "Test_Condition": {
+              "Method": "Tensile test",
+              "Specimen_Dimensions": "120 mm × 10 mm × 1 mm"
+            },
+            "Data_Source": "text",
+            "Note": "Inequality value reported in text"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "3",
+      "Sample_ID": "SS-L-40",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Composites",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "SS-L-40 was fabricated by a different PIP process. That is, after deposition of BN interphase..."
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Composite_Category": "CMC",
+          "Composite_System_Raw": "SiCf/SiC",
+          "Matrix": {
+            "Material": "SiC",
+            "Source": "VH-PCS"
+          },
+          "Reinforcement": {
+            "Material": "SiC fiber",
+            "Commercial_Name": "Cansas 3303 3rd",
+            "Manufacturer": "Leaoasia New Material Co. LTD",
+            "Fiber_Volume_Fraction": {
+              "Value": 40,
+              "Unit": "%"
+            },
+            "Fiber_Architecture": "Unidirectional"
+          },
+          "Interface_or_Interphase": {
+            "Material": "BN",
+            "Thickness": {
+              "Value": 200,
+              "Unit": "nm",
+              "Original_Values": "~200 nm",
+              "Note": "Approximate value from Table 1"
+            }
+          }
+        },
+        "Processing": {
+          "Process_Category": "PIP",
+          "Process_Text": {
+            "original": "After deposition of BN interphase, SiC fiber perform was first impregnated with a low concentration PCS solution in which the mass ratio of PCS to xylene was 1:20. Then the SiC fiber perform was pyrolyzed at 900 °C with a heating rate of 5 °C/min in argon atmosphere. This impregnation and pyrolysis process was repeated 4 times. Then a high concentration PCS solution in which the mass ratio of PCS to xylene was 1:1 was used for repeating the rest of PIP processes until the weight increase of composites was less than 1%.",
+            "simplified": "BN deposition followed by 4 PIP cycles with low concentration PCS (1:20) and 9 PIP cycles with high concentration PCS (1:1) until <1% weight gain."
+          },
+          "Equipment": [
+            {
+              "Name": "Universal testing machine (HD-609B; Haida Qualitative Analysis)",
+              "Category": "Testing"
+            },
+            {
+              "Name": "SEM (S-2700, Hitachi, Japan)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "TEM (Themis Z, FEI, USA)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "FEI Helios 600i FIB",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "FTIR (Nicolet iS 10, USA)",
+              "Category": "Characterization"
+            }
+          ],
+          "Key_Params": [
+            {
+              "Stage": "Stage1_Interphase",
+              "Process": "BN deposition"
+            },
+            {
+              "Stage": "Stage2_PIP_Low_Conc",
+              "Process": "PIP with low concentration PCS",
+              "Concentration": "PCS:xylene = 1:20 mass ratio",
+              "Atmosphere": "Argon",
+              "Pyrolysis_Temperature": {
+                "Value": 900,
+                "Unit": "°C"
+              },
+              "Heating_Rate": {
+                "Value": 5,
+                "Unit": "°C/min"
+              },
+              "Cycles": 4
+            },
+            {
+              "Stage": "Stage3_PIP_High_Conc",
+              "Process": "PIP with high concentration PCS",
+              "Concentration": "PCS:xylene = 1:1 mass ratio",
+              "Atmosphere": "Argon",
+              "Pyrolysis_Temperature": {
+                "Value": 900,
+                "Unit": "°C",
+                "Note": "Temperature inferred from Stage 2 and general description of PIP process for SS-L samples"
+              },
+              "Heating_Rate": {
+                "Value": 5,
+                "Unit": "°C/min",
+                "Note": "Heating rate inferred from Stage 2"
+              },
+              "Cycles": 9,
+              "Termination_Criteria": "weight increase < 1%"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Continuous carbon layers encircling SiC fibers... matrix begins to be discontinuous and the defects including pores are clearly observed in matrix... carbon layers alternating with SiC phase... turbostratic carbon has an interplanar distance of around 0.34 nm.",
+            "simplified": "Continuous carbon layers alternating with SiC matrix. Discontinuous matrix with observed defects/pores. Turbostratic carbon interplanar distance ~0.34 nm."
+          },
+          "Phase_Composition": [
+            {
+              "Phase_Name": "SiC matrix",
+              "Crystal_Structure": "Amorphous",
+              "Location": "Matrix"
+            },
+            {
+              "Phase_Name": "Carbon layer",
+              "Crystal_Structure": "Turbostratic carbon",
+              "Location": "Matrix",
+              "Note": "In-situ formed during low concentration PCS pyrolysis"
+            }
+          ],
+          "Porosity": {
+            "Value": 5.8,
+            "Unit": "%"
+          },
+          "Density": {
+            "Value": 2.34,
+            "Unit": "g/cm3"
+          },
+          "Interface_Features": {
+            "BN_Interphase_State": "Continuous",
+            "Note": "Completely covers SiC fiber"
+          },
+          "Advanced_Quantitative_Features": {
+            "Turbostratic_Carbon_Interplanar_Distance": {
+              "Value": 0.34,
+              "Unit": "nm",
+              "Original_Values": "around 0.34 nm",
+              "Note": "Approximate value"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Flexural_Strength",
+            "Value": 850.7,
+            "Value_StdDev": 52.6,
+            "Unit": "MPa",
+            "Test_Condition": {
+              "Method": "Three-point bending",
+              "Support_Span_Length": "30 mm",
+              "Crosshead_Speed": "0.5 mm/min",
+              "Specimen_Dimensions": "40 mm × 5 mm × 3 mm",
+              "Loading_Direction": "Parallel to fiber axis",
+              "Standard": "ASTM C1161",
+              "Replicates": 5
+            },
+            "Data_Source": "table"
+          },
+          {
+            "Property_Name": "Fracture_Toughness",
+            "Value": 40.2,
+            "Value_StdDev": 8.7,
+            "Unit": "MPa·m^1/2",
+            "Test_Condition": {
+              "Method": "Single edge notch beam",
+              "Support_Span_Length": "30 mm",
+              "Crosshead_Speed": "0.05 mm/min",
+              "Specimen_Dimensions": "40 mm × 3 mm × 5 mm",
+              "Notch_Depth": "2.5 mm",
+              "Notch_Width": "0.3 mm",
+              "Standard": "ASTM C1421",
+              "Replicates": 5
+            },
+            "Data_Source": "table"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "4",
+      "Sample_ID": "SS-L-50",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Composites",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "SS-L-30 and SS-L-50 with the corresponding fiber content of 30% and 50% respectively were prepared by the same PIP method as that of SS-L-40."
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Composite_Category": "CMC",
+          "Composite_System_Raw": "SiCf/SiC",
+          "Matrix": {
+            "Material": "SiC",
+            "Source": "VH-PCS"
+          },
+          "Reinforcement": {
+            "Material": "SiC fiber",
+            "Commercial_Name": "Cansas 3303 3rd",
+            "Manufacturer": "Leaoasia New Material Co. LTD",
+            "Fiber_Volume_Fraction": {
+              "Value": 50,
+              "Unit": "%"
+            },
+            "Fiber_Architecture": "Unidirectional"
+          },
+          "Interface_or_Interphase": {
+            "Material": "BN",
+            "Thickness": {
+              "Value": 200,
+              "Unit": "nm",
+              "Original_Values": "~200 nm",
+              "Note": "Approximate value from Table 1"
+            }
+          }
+        },
+        "Processing": {
+          "Process_Category": "PIP",
+          "Process_Text": {
+            "original": "SS-L-30 and SS-L-50 with the corresponding fiber content of 30% and 50% respectively were prepared by the same PIP method as that of SS-L-40.",
+            "simplified": "BN deposition followed by 4 PIP cycles with low concentration PCS (1:20) and 8 PIP cycles with high concentration PCS (1:1) until <1% weight gain."
+          },
+          "Equipment": [
+            {
+              "Name": "Universal testing machine (HD-609B; Haida Qualitative Analysis)",
+              "Category": "Testing"
+            },
+            {
+              "Name": "SEM (S-2700, Hitachi, Japan)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "TEM (Themis Z, FEI, USA)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "FEI Helios 600i FIB",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "FTIR (Nicolet iS 10, USA)",
+              "Category": "Characterization"
+            }
+          ],
+          "Key_Params": [
+            {
+              "Stage": "Stage1_Interphase",
+              "Process": "BN deposition"
+            },
+            {
+              "Stage": "Stage2_PIP_Low_Conc",
+              "Process": "PIP with low concentration PCS",
+              "Concentration": "PCS:xylene = 1:20 mass ratio",
+              "Atmosphere": "Argon",
+              "Pyrolysis_Temperature": {
+                "Value": 900,
+                "Unit": "°C",
+                "Note": "Shared process parameters with SS-L-40 explicitly stated in text"
+              },
+              "Heating_Rate": {
+                "Value": 5,
+                "Unit": "°C/min",
+                "Note": "Shared process parameters with SS-L-40 explicitly stated in text"
+              },
+              "Cycles": 4
+            },
+            {
+              "Stage": "Stage3_PIP_High_Conc",
+              "Process": "PIP with high concentration PCS",
+              "Concentration": "PCS:xylene = 1:1 mass ratio",
+              "Atmosphere": "Argon",
+              "Pyrolysis_Temperature": {
+                "Value": 900,
+                "Unit": "°C",
+                "Note": "Shared process parameters with SS-L-40 explicitly stated in text"
+              },
+              "Heating_Rate": {
+                "Value": 5,
+                "Unit": "°C/min",
+                "Note": "Shared process parameters with SS-L-40 explicitly stated in text"
+              },
+              "Cycles": 8,
+              "Termination_Criteria": "weight increase < 1%"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Continuous carbon layers encircling SiC fibers... matrix begins to be discontinuous and the defects including pores are clearly observed in matrix... carbon layers alternating with SiC phase.",
+            "simplified": "Continuous carbon layers alternating with SiC matrix. Discontinuous matrix with observed defects/pores."
+          },
+          "Phase_Composition": [
+            {
+              "Phase_Name": "SiC matrix",
+              "Crystal_Structure": "Amorphous",
+              "Location": "Matrix"
+            },
+            {
+              "Phase_Name": "Carbon layer",
+              "Crystal_Structure": "Turbostratic carbon",
+              "Location": "Matrix",
+              "Note": "In-situ formed during low concentration PCS pyrolysis"
+            }
+          ],
+          "Porosity": {
+            "Value": 5.2,
+            "Unit": "%"
+          },
+          "Density": {
+            "Value": 2.36,
+            "Unit": "g/cm3"
+          },
+          "Interface_Features": {
+            "BN_Interphase_State": "Continuous",
+            "Note": "Completely covers SiC fiber"
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Flexural_Strength",
+            "Value": 802.7,
+            "Value_StdDev": 104.1,
+            "Unit": "MPa",
+            "Test_Condition": {
+              "Method": "Three-point bending",
+              "Support_Span_Length": "30 mm",
+              "Crosshead_Speed": "0.5 mm/min",
+              "Specimen_Dimensions": "40 mm × 5 mm × 3 mm",
+              "Loading_Direction": "Parallel to fiber axis",
+              "Standard": "ASTM C1161",
+              "Replicates": 5
+            },
+            "Data_Source": "table"
+          },
+          {
+            "Property_Name": "Fracture_Toughness",
+            "Value": 39.4,
+            "Value_StdDev": 6.3,
+            "Unit": "MPa·m^1/2",
+            "Test_Condition": {
+              "Method": "Single edge notch beam",
+              "Support_Span_Length": "30 mm",
+              "Crosshead_Speed": "0.05 mm/min",
+              "Specimen_Dimensions": "40 mm × 3 mm × 5 mm",
+              "Notch_Depth": "2.5 mm",
+              "Notch_Width": "0.3 mm",
+              "Standard": "ASTM C1421",
+              "Replicates": 5
+            },
+            "Data_Source": "table"
+          }
+        ]
+      }
+    }
+  ]
+}

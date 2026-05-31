@@ -1,0 +1,1227 @@
+{
+  "Paper_Metadata": {
+    "Paper_Title": "Mechanical field assisted additive manufacturing of ultrahigh strength aluminum alloy",
+    "DOI": "10.1088/2631-7990/adb7a8"
+  },
+  "Paper_Routing": {
+    "base_material": "Metals",
+    "application": "Structural",
+    "research_paradigm": "Experimental",
+    "Supplements_Loaded": [
+      "directions/base/Metals.txt",
+      "directions/application/Structural.txt",
+      "directions/paradigm/Experimental.txt"
+    ],
+    "Patch_Tags": [
+      "Additive_Manufacturing",
+      "Gradient",
+      "Laser_Assisted"
+    ],
+    "Needs_Mixed_Routing_Check": false
+  },
+  "items": [
+    {
+      "Item_ID": "item_01_LPBF",
+      "Sample_ID": "LPBF",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing",
+        "Laser_Assisted"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 2.1: LPBF as-built sample (termed as LPBF)",
+        "Table 1: LPBF row",
+        "Section 3.3.1: Figure 6(a) LPBF grain morphology",
+        "Section 3.1: Figure 3(a) LPBF defect"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Al-Mg-Sc alloy",
+          "Material_Name_Raw": "AlMgSc",
+          "Nominal_Composition": {
+            "Al": "Balance",
+            "Mg": {
+              "Value": 4.7,
+              "Unit": "wt%"
+            },
+            "Sc": {
+              "Value": 1.3,
+              "Unit": "wt%"
+            },
+            "Zr": {
+              "Value": 0.6,
+              "Unit": "wt%"
+            },
+            "Mn": {
+              "Value": 0.8,
+              "Unit": "wt%"
+            },
+            "Si": {
+              "Value": 0.01,
+              "Unit": "wt%"
+            }
+          },
+          "Note": "Powder nominal composition: Al-4.7Mg-1.3Sc-0.6Zr-0.8Mn-0.01Si, wt%. Al is Balance; normalized ≈ 92.59 wt% (Data_Nature: Computed)"
+        },
+        "Processing": {
+          "Process_Category": "LPBF (Laser Powder Bed Fusion)",
+          "Process_Text": {
+            "original": "The LPBF process was performed using an SLM®125 system, with the substrate preheated to 100 °C. The oxygen level in the chamber during the LPBF process was kept below 0.1 vol% via argon gas flow. The gas-atomized spherical AlMgSc powder with particle size of 21.8–61.9 μm (37 μm on average) was used as feedstock.",
+            "simplified": "LPBF using SLM125 system, substrate preheated 100°C, oxygen <0.1 vol%, Ar atmosphere, powder D=21.8–61.9 μm (avg 37 μm)"
+          },
+          "Equipment": [
+            {
+              "Name": "SLM®125",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "NewView 9000 3D optical profiler",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "nanoVoxel-4000 Micro-CT",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "M230-3M180 optical microscope",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "D8 FOCUS XRD",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "EBSD",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "AZtecCrystal software",
+              "Category": "Software"
+            },
+            {
+              "Name": "Thermofisher Talos F200X TEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Avizo software",
+              "Category": "Software"
+            },
+            {
+              "Name": "JMatPro software",
+              "Category": "Software"
+            },
+            {
+              "Name": "INSTRON 68MT-50 universal material testing machine",
+              "Category": "Testing"
+            },
+            {
+              "Name": "INSTRON 5982 universal material testing machine",
+              "Category": "Testing"
+            },
+            {
+              "Name": "X-350 A x-ray residual stress analyzer",
+              "Category": "Testing"
+            }
+          ],
+          "Key_Params": {
+            "Substrate_Preheat_Temperature": {
+              "Value": 373.15,
+              "Unit": "K",
+              "Original_Values": "100 °C"
+            },
+            "Chamber_Oxygen_Level": {
+              "Value": null,
+              "Original_Values": "<0.1 vol%",
+              "Note": "Upper limit specification, not exact value"
+            },
+            "Atmosphere": "Argon",
+            "Powder_Size_Range": {
+              "Value": null,
+              "Original_Values": "21.8–61.9 μm",
+              "Note": "Range value"
+            },
+            "Powder_Average_Size": {
+              "Value": 37.0,
+              "Unit": "μm",
+              "Note": "Diameter, approximate average"
+            }
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "The LPBF-manufactured AlMgSc alloy exhibits multimodal grains with coarse columnar grains (CCGs), coarse equiaxed grains (CEGs), and fine equiaxed grains (FEGs). FEGs average diameter (1.25±0.13) μm, occupying >65% of scan area. CGs sizes between 1.5 μm and 7.8 μm (average (1.86±0.48) μm). LAGBs content 3.5%.",
+            "simplified": "Multimodal grain structure: CCGs + CEGs + FEGs. FEGs avg d=(1.25±0.13) μm, >65% area. CGs avg d=(1.86±0.48) μm. LAGBs 3.5%."
+          },
+          "Main_Phase": {
+            "Phase_Name": "α-Al matrix",
+            "Crystal_Structure": "FCC"
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "primary Al₃(Sc, Zr)",
+              "Crystal_Structure": "L1₂",
+              "Size": {
+                "Length": {
+                  "Value": null,
+                  "Original_Values": "~50 nm",
+                  "Note": "Polygonal shape, approximate length; a small amount observed"
+                }
+              },
+              "Note": "Infrequent in LPBF sample due to sluggish diffusion of Sc and Zr; no distinct Al₃(Sc,Zr) XRD peaks in LPBF sample"
+            },
+            {
+              "Phase_Name": "MgO",
+              "Crystal_Structure": null,
+              "Note": "Nanoparticles 20–50 nm diameter, formed from reaction of Mg with residual oxygen"
+            }
+          ],
+          "Grain_Size": {
+            "Fine_Equiaxed_Grains": {
+              "Average_Diameter": {
+                "Value": 1.249,
+                "Unit": "μm",
+                "Value_StdDev": 0.129,
+                "Original_Values": "(1.249±0.129) μm"
+              },
+              "Volume_Fraction": {
+                "Value": 65.83,
+                "Unit": "%",
+                "Original_Values": "65.83%"
+              }
+            },
+            "Coarse_Grains": {
+              "Average_Diameter": {
+                "Value": 1.86,
+                "Unit": "μm",
+                "Value_StdDev": 0.48,
+                "Original_Values": "(1.86±0.48) μm"
+              },
+              "Size_Range": {
+                "Original_Values": "1.5–7.8 μm"
+              }
+            },
+            "Ultra_Fine_Equiaxed_Grains": {
+              "Maximum_Diameter": {
+                "Value": null,
+                "Original_Values": "~700 nm",
+                "Note": "UFEGs size as large as ~700 nm in LPBF sample; approximate upper bound from TEM"
+              }
+            }
+          },
+          "Porosity": {
+            "Value": 0.309,
+            "Unit": "%",
+            "Original_Values": "0.309%",
+            "Measurement_Method": "Micro-CT"
+          },
+          "Relative_Density": {
+            "Value": 99.69,
+            "Unit": "%",
+            "Original_Values": "99.69%",
+            "Note": "At optimal Ev of 185.2 J·mm⁻³, measured by Archimedes' principle"
+          },
+          "Residual_Stress": {
+            "Surface_Tensile_Residual_Stress": {
+              "Value": 167.0,
+              "Unit": "MPa",
+              "Original_Values": "167 MPa",
+              "Note": "Maximum TRS at surface; gradually decreases with depth, near 0 MPa at 400 μm depth"
+            }
+          },
+          "Texture_or_Orientation": {
+            "LAGBs_Fraction": {
+              "Value": 3.5,
+              "Unit": "%",
+              "Original_Values": "3.5%"
+            }
+          },
+          "Advanced_Quantitative_Features": {
+            "Mg_content_in_FEGs_by_EDS": {
+              "Value": null,
+              "Original_Values": "lower compared with metal powder",
+              "Note": "Qualitative comparison; exact value not given for LPBF FEGs"
+            },
+            "Mg_enrichment_network_at_GB": "Present at grain boundaries of CGs and FEGs",
+            "GND_Density": {
+              "Value": 314000000000000.0,
+              "Unit": "m⁻²",
+              "Original_Values": "3.14×10¹⁴ m⁻²",
+              "Note": "Calculated from EBSD"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Yield_Strength",
+            "Value": 429.0,
+            "Unit": "MPa",
+            "Value_StdDev": 20.0,
+            "Original_Values": "(429±20) MPa",
+            "Data_Source": "table",
+            "Test_Condition": {
+              "Loading_Mode": "Tension",
+              "Crosshead_Speed": {
+                "Value": 1.0,
+                "Unit": "mm·min⁻¹"
+              },
+              "Specimen_State": "As-built",
+              "Test_Standard": "Uniaxial tensile test",
+              "Number_of_Tests": "3–4 repeated tests"
+            }
+          },
+          {
+            "Property_Name": "Ultimate_Tensile_Strength",
+            "Value": 447.0,
+            "Unit": "MPa",
+            "Value_StdDev": 19.0,
+            "Original_Values": "(447±19) MPa",
+            "Data_Source": "table",
+            "Test_Condition": {
+              "Loading_Mode": "Tension",
+              "Crosshead_Speed": {
+                "Value": 1.0,
+                "Unit": "mm·min⁻¹"
+              },
+              "Specimen_State": "As-built"
+            }
+          },
+          {
+            "Property_Name": "Elongation_Total",
+            "Value": 8.9,
+            "Unit": "%",
+            "Value_StdDev": 1.5,
+            "Original_Values": "(8.9±1.5)%",
+            "Data_Source": "table",
+            "Note": "Paper uses symbol ε; not explicitly distinguished as uniform vs total, defaulting to Elongation_Total",
+            "Test_Condition": {
+              "Loading_Mode": "Tension",
+              "Crosshead_Speed": {
+                "Value": 1.0,
+                "Unit": "mm·min⁻¹"
+              },
+              "Specimen_State": "As-built"
+            }
+          },
+          {
+            "Property_Name": "PLC_Effect",
+            "Value": null,
+            "Data_Source": "text",
+            "Note": "LPBF sample exhibits obvious Portevin-Le Chatelier (PLC) effect in tensile stress-strain curve",
+            "Test_Condition": {
+              "Loading_Mode": "Tension",
+              "Specimen_State": "As-built"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "item_02_LPBF_HT",
+      "Sample_ID": "LPBF-HT",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing",
+        "Laser_Assisted"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 2.1: LPBF followed by aging treatment (termed as LPBF-HT)",
+        "Table 1: LPBF-HT row",
+        "Section 3.3.1: Figure 6(b) LPBF-HT grain morphology"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Al-Mg-Sc alloy",
+          "Material_Name_Raw": "AlMgSc",
+          "Nominal_Composition": {
+            "Al": "Balance",
+            "Mg": {
+              "Value": 4.7,
+              "Unit": "wt%"
+            },
+            "Sc": {
+              "Value": 1.3,
+              "Unit": "wt%"
+            },
+            "Zr": {
+              "Value": 0.6,
+              "Unit": "wt%"
+            },
+            "Mn": {
+              "Value": 0.8,
+              "Unit": "wt%"
+            },
+            "Si": {
+              "Value": 0.01,
+              "Unit": "wt%"
+            }
+          },
+          "Note": "Same powder nominal composition as LPBF item; shared by statement 'Four types of samples were processed in this work for comparison'"
+        },
+        "Processing": {
+          "Process_Category": "LPBF + Aging Treatment",
+          "Process_Text": {
+            "original": "LPBF followed by aging treatment (termed as LPBF-HT). Aging treated in a TL1200 tube furnace protected by high-purity argon gas at 300 °C for 4 h, furnace cooling.",
+            "simplified": "LPBF (same as item_01) + aging 300°C/4h/furnace cooling in Ar-protected TL1200 tube furnace"
+          },
+          "Equipment": [
+            {
+              "Name": "SLM®125",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "TL1200 tube furnace",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "EBSD",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Thermofisher Talos F200X TEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "D8 FOCUS XRD",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "INSTRON 68MT-50 universal material testing machine",
+              "Category": "Testing"
+            },
+            {
+              "Name": "INSTRON 5982 universal material testing machine",
+              "Category": "Testing"
+            }
+          ],
+          "Key_Params": {
+            "Aging_Temperature": {
+              "Value": 573.15,
+              "Unit": "K",
+              "Original_Values": "300 °C"
+            },
+            "Aging_Time": {
+              "Value": 4.0,
+              "Unit": "h"
+            },
+            "Aging_Cooling": "Furnace cooling",
+            "Aging_Atmosphere": "High-purity argon"
+          },
+          "Note": "LPBF process parameters shared with item_01 as stated 'Four types of samples were processed in this work for comparison'"
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "After heat treatment, the number of coarse grains in the LPBF-HT sample is increased. FEGs avg d=(1.254±0.130) μm, proportion 56.78%. LAGBs content 6.8%. Al₃(Sc,Zr) peaks detected in XRD. Mg-rich network disappeared. Massive Mn-enriched nanoparticles ~20 nm present, along with Al₃(Sc,Zr) and Al₆Mn.",
+            "simplified": "Increased CG count after HT. FEGs avg d=(1.254±0.130) μm, 56.78%. LAGBs 6.8%. Mg network eliminated. Al₃(Sc,Zr) + Al₆Mn + Mg₂Si precipitates formed."
+          },
+          "Main_Phase": {
+            "Phase_Name": "α-Al matrix",
+            "Crystal_Structure": "FCC"
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "Al₃(Sc, Zr)",
+              "Crystal_Structure": "L1₂",
+              "Note": "Detected by XRD in LPBF-HT sample. Diameter reaching about 80 nm after HT."
+            },
+            {
+              "Phase_Name": "Al₆Mn",
+              "Crystal_Structure": null,
+              "Note": "Mn-enriched nanoparticles with length ~20 nm"
+            },
+            {
+              "Phase_Name": "Mg₂Si",
+              "Crystal_Structure": null,
+              "Note": "Si-rich nanoparticles co-existing with Mg enrichment at same positions in FEGs region"
+            }
+          ],
+          "Grain_Size": {
+            "Fine_Equiaxed_Grains": {
+              "Average_Diameter": {
+                "Value": 1.254,
+                "Unit": "μm",
+                "Value_StdDev": 0.13,
+                "Original_Values": "(1.254±0.130) μm"
+              },
+              "Volume_Fraction": {
+                "Value": 56.78,
+                "Unit": "%",
+                "Original_Values": "56.78%"
+              }
+            }
+          },
+          "Texture_or_Orientation": {
+            "LAGBs_Fraction": {
+              "Value": 6.8,
+              "Unit": "%",
+              "Original_Values": "6.8%"
+            }
+          },
+          "Advanced_Quantitative_Features": {
+            "Mg_content_in_FEGs_by_EDS": {
+              "Value": 4.4,
+              "Unit": "at.%",
+              "Value_StdDev": 0.8,
+              "Original_Values": "(4.4±0.8) at.%"
+            },
+            "GND_Density": {
+              "Value": 279000000000000.0,
+              "Unit": "m⁻²",
+              "Original_Values": "2.79×10¹⁴ m⁻²",
+              "Note": "Calculated from EBSD"
+            },
+            "Mg_enrichment_network_at_GB": "Eliminated after aging treatment"
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Yield_Strength",
+            "Value": 539.0,
+            "Unit": "MPa",
+            "Value_StdDev": 6.0,
+            "Original_Values": "(539±6) MPa",
+            "Data_Source": "table",
+            "Test_Condition": {
+              "Loading_Mode": "Tension",
+              "Crosshead_Speed": {
+                "Value": 1.0,
+                "Unit": "mm·min⁻¹"
+              },
+              "Specimen_State": "Aging treated (300°C/4h)"
+            }
+          },
+          {
+            "Property_Name": "Ultimate_Tensile_Strength",
+            "Value": 566.0,
+            "Unit": "MPa",
+            "Value_StdDev": 6.0,
+            "Original_Values": "(566±6) MPa",
+            "Data_Source": "table",
+            "Test_Condition": {
+              "Loading_Mode": "Tension",
+              "Crosshead_Speed": {
+                "Value": 1.0,
+                "Unit": "mm·min⁻¹"
+              },
+              "Specimen_State": "Aging treated (300°C/4h)"
+            }
+          },
+          {
+            "Property_Name": "Elongation_Total",
+            "Value": 8.3,
+            "Unit": "%",
+            "Value_StdDev": 0.2,
+            "Original_Values": "(8.3±0.2)%",
+            "Data_Source": "table",
+            "Note": "Paper uses symbol ε; not explicitly distinguished as uniform vs total, defaulting to Elongation_Total",
+            "Test_Condition": {
+              "Loading_Mode": "Tension",
+              "Crosshead_Speed": {
+                "Value": 1.0,
+                "Unit": "mm·min⁻¹"
+              },
+              "Specimen_State": "Aging treated (300°C/4h)"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "item_03_HAM",
+      "Sample_ID": "HAM",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing",
+        "Gradient",
+        "Laser_Assisted"
+      ],
+      "Gradient_Material": true,
+      "Gradient_Group_ID": "HAM_gradient_group",
+      "Raw_Evidence_Span": [
+        "Section 2.1: USP-assisted LPBF hybrid additive manufactured sample (termed as HAM)",
+        "Table 1: HAM row",
+        "Section 3.1: Figure 3(b) HAM defect",
+        "Section 3.2: Figure 4 HAM residual stress"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Al-Mg-Sc alloy",
+          "Material_Name_Raw": "AlMgSc",
+          "Nominal_Composition": {
+            "Al": "Balance",
+            "Mg": {
+              "Value": 4.7,
+              "Unit": "wt%"
+            },
+            "Sc": {
+              "Value": 1.3,
+              "Unit": "wt%"
+            },
+            "Zr": {
+              "Value": 0.6,
+              "Unit": "wt%"
+            },
+            "Mn": {
+              "Value": 0.8,
+              "Unit": "wt%"
+            },
+            "Si": {
+              "Value": 0.01,
+              "Unit": "wt%"
+            }
+          },
+          "Note": "Same powder nominal composition as LPBF item; shared by statement 'Four types of samples were processed in this work for comparison'"
+        },
+        "Processing": {
+          "Process_Category": "Hybrid Additive Manufacturing (LPBF + interlayer USP)",
+          "Process_Text": {
+            "original": "USP-assisted LPBF hybrid additive manufactured sample (termed as HAM). The USP process was performed using a UPM-3000 equipment with 2.0 mm diameter bearing steel shots under an ultrasonic frequency of 20 kHz. Different amplitudes of vibrating head: 30 μm, 35 μm, and 40 μm. USP treatment conducted at distance of 16 mm. USP process ex-situ applied every 33 layers (~1.0 mm height), each treatment lasting 8 min. USP effect area was a 30 mm diameter circular region.",
+            "simplified": "LPBF + interlayer USP (every 33 layers/~1mm). UPM-3000, 2mm steel shots, 20kHz, amplitudes 30/35/40μm, distance 16mm, 8 min per treatment, 30mm dia area."
+          },
+          "Equipment": [
+            {
+              "Name": "SLM®125",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "UPM-3000 ultrasonic shot peening equipment",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "EBSD",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "D8 FOCUS XRD",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "nanoVoxel-4000 Micro-CT",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "AZtecCrystal software",
+              "Category": "Software"
+            },
+            {
+              "Name": "X-350 A x-ray residual stress analyzer",
+              "Category": "Testing"
+            }
+          ],
+          "Key_Params": {
+            "USP_Shot_Diameter": {
+              "Value": 2.0,
+              "Unit": "mm",
+              "Note": "Bearing steel shots, diameter"
+            },
+            "USP_Frequency": {
+              "Value": 20000,
+              "Unit": "Hz",
+              "Original_Values": "20 kHz"
+            },
+            "USP_Amplitude_Range": {
+              "Value": null,
+              "Original_Values": "30 μm, 35 μm, 40 μm",
+              "Note": "Three amplitudes tested for optimization"
+            },
+            "USP_Distance": {
+              "Value": 16.0,
+              "Unit": "mm"
+            },
+            "USP_Interval_Layers": {
+              "Value": 33,
+              "Unit": "layers"
+            },
+            "USP_Interval_Height": {
+              "Value": null,
+              "Original_Values": "~1.0 mm",
+              "Note": "Approximate height per 33 layers"
+            },
+            "USP_Duration_Per_Treatment": {
+              "Value": 8.0,
+              "Unit": "min"
+            },
+            "USP_Effect_Area_Diameter": {
+              "Value": 30.0,
+              "Unit": "mm",
+              "Note": "Circular region, diameter"
+            }
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "After USP treatment, porosity decreased from 0.309% to 0.049% in HAM. TRS transferred into CRS. Grain morphology changed; original coarse columnar grains transformed into homogeneous equiaxed grains. FEGs avg d=(1.235±0.128) μm, proportion 66.52%. LAGBs content 10.6%.",
+            "simplified": "Porosity 0.049%. TRS→CRS conversion. Equiaxed grains. FEGs avg d=(1.235±0.128) μm, 66.52%. LAGBs 10.6%."
+          },
+          "Main_Phase": {
+            "Phase_Name": "α-Al matrix",
+            "Crystal_Structure": "FCC"
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "Al₃(Sc, Zr)",
+              "Crystal_Structure": "L1₂",
+              "Note": "No distinct XRD peaks in HAM sample (without HT) due to sluggish diffusion of Sc and Zr"
+            }
+          ],
+          "Grain_Size": {
+            "Fine_Equiaxed_Grains": {
+              "Average_Diameter": {
+                "Value": 1.235,
+                "Unit": "μm",
+                "Value_StdDev": 0.128,
+                "Original_Values": "(1.235±0.128) μm"
+              },
+              "Volume_Fraction": {
+                "Value": 66.52,
+                "Unit": "%",
+                "Original_Values": "66.52%"
+              }
+            }
+          },
+          "Porosity": {
+            "Value": 0.049,
+            "Unit": "%",
+            "Original_Values": "0.049%",
+            "Measurement_Method": "Micro-CT"
+          },
+          "Residual_Stress": {
+            "Note": "TRS transferred into CRS after USP treatment. CRS increases with depth, reaching peak ~250 MPa at 400–600 μm, then gradually decreases until converted to TRS. Effective depth exceeds 600 μm.",
+            "Surface_CRS": {
+              "Value": null,
+              "Note": "CRS on surface; specific surface value not given as exact number in text"
+            },
+            "Peak_CRS": {
+              "Value": null,
+              "Original_Values": "~250 MPa",
+              "Note": "Approximate value at depth of 400–600 μm"
+            }
+          },
+          "Texture_or_Orientation": {
+            "LAGBs_Fraction": {
+              "Value": 10.6,
+              "Unit": "%",
+              "Original_Values": "10.6%"
+            }
+          },
+          "Advanced_Quantitative_Features": {
+            "USP_Effective_Depth": {
+              "Value": null,
+              "Original_Values": ">600 μm",
+              "Note": "Effective depth of CRS in HAM sample exceeds 600 μm"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Yield_Strength",
+            "Value": 451.0,
+            "Unit": "MPa",
+            "Value_StdDev": 4.0,
+            "Original_Values": "(451±4) MPa",
+            "Data_Source": "table",
+            "Test_Condition": {
+              "Loading_Mode": "Tension",
+              "Crosshead_Speed": {
+                "Value": 1.0,
+                "Unit": "mm·min⁻¹"
+              },
+              "Specimen_State": "As-built (HAM, no aging)"
+            }
+          },
+          {
+            "Property_Name": "Ultimate_Tensile_Strength",
+            "Value": 461.0,
+            "Unit": "MPa",
+            "Value_StdDev": 8.0,
+            "Original_Values": "(461±8) MPa",
+            "Data_Source": "table",
+            "Test_Condition": {
+              "Loading_Mode": "Tension",
+              "Crosshead_Speed": {
+                "Value": 1.0,
+                "Unit": "mm·min⁻¹"
+              },
+              "Specimen_State": "As-built (HAM, no aging)"
+            }
+          },
+          {
+            "Property_Name": "Elongation_Total",
+            "Value": 6.7,
+            "Unit": "%",
+            "Value_StdDev": 0.4,
+            "Original_Values": "(6.7±0.4)%",
+            "Data_Source": "table",
+            "Note": "Paper uses symbol ε; not explicitly distinguished as uniform vs total, defaulting to Elongation_Total",
+            "Test_Condition": {
+              "Loading_Mode": "Tension",
+              "Crosshead_Speed": {
+                "Value": 1.0,
+                "Unit": "mm·min⁻¹"
+              },
+              "Specimen_State": "As-built (HAM, no aging)"
+            }
+          },
+          {
+            "Property_Name": "PLC_Effect",
+            "Value": null,
+            "Data_Source": "text",
+            "Note": "HAM sample exhibits obvious PLC effect",
+            "Test_Condition": {
+              "Loading_Mode": "Tension",
+              "Specimen_State": "As-built (HAM, no aging)"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "item_04_HAM_HT",
+      "Sample_ID": "HAM-HT",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing",
+        "Gradient",
+        "Laser_Assisted"
+      ],
+      "Gradient_Material": true,
+      "Gradient_Group_ID": "HAM_gradient_group",
+      "Raw_Evidence_Span": [
+        "Section 2.1: HAM processed sample followed by subsequent aging treatment (termed as HAM-HT)",
+        "Table 1: HAM-HT row",
+        "Section 3.3.1: Figure 6(d) HAM-HT grain morphology",
+        "Section 4.2.3: Figure 18 hierarchical gradient structure",
+        "Section 4.3: Table 2 strengthening calculation parameters",
+        "Section 3.4: Figure 13 tensile properties"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Al-Mg-Sc alloy",
+          "Material_Name_Raw": "AlMgSc",
+          "Nominal_Composition": {
+            "Al": "Balance",
+            "Mg": {
+              "Value": 4.7,
+              "Unit": "wt%"
+            },
+            "Sc": {
+              "Value": 1.3,
+              "Unit": "wt%"
+            },
+            "Zr": {
+              "Value": 0.6,
+              "Unit": "wt%"
+            },
+            "Mn": {
+              "Value": 0.8,
+              "Unit": "wt%"
+            },
+            "Si": {
+              "Value": 0.01,
+              "Unit": "wt%"
+            }
+          },
+          "Note": "Same powder nominal composition as LPBF item; shared by statement 'Four types of samples were processed in this work for comparison'"
+        },
+        "Processing": {
+          "Process_Category": "Hybrid Additive Manufacturing (LPBF + interlayer USP) + Aging Treatment",
+          "Process_Text": {
+            "original": "HAM processed sample followed by subsequent aging treatment (termed as HAM-HT). USP-assisted LPBF with interlayer USP every 33 layers (~1.0 mm height). Each USP treatment lasting 8 min using UPM-3000 equipment. Aging treated in a TL1200 tube furnace protected by high-purity argon gas at 300 °C for 4 h, furnace cooling.",
+            "simplified": "LPBF + interlayer USP (every 33 layers/~1mm, 8 min per treatment) + aging 300°C/4h/furnace cooling/Ar protection"
+          },
+          "Equipment": [
+            {
+              "Name": "SLM®125",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "UPM-3000 ultrasonic shot peening equipment",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "TL1200 tube furnace",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "EBSD",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Thermofisher Talos F200X TEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "D8 FOCUS XRD",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "nanoVoxel-4000 Micro-CT",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "AZtecCrystal software",
+              "Category": "Software"
+            },
+            {
+              "Name": "INSTRON 68MT-50 universal material testing machine",
+              "Category": "Testing"
+            },
+            {
+              "Name": "INSTRON 5982 universal material testing machine",
+              "Category": "Testing"
+            },
+            {
+              "Name": "X-350 A x-ray residual stress analyzer",
+              "Category": "Testing"
+            },
+            {
+              "Name": "Strain++ software",
+              "Category": "Software"
+            }
+          ],
+          "Key_Params": {
+            "USP_Shot_Diameter": {
+              "Value": 2.0,
+              "Unit": "mm",
+              "Note": "Bearing steel shots, diameter"
+            },
+            "USP_Frequency": {
+              "Value": 20000,
+              "Unit": "Hz",
+              "Original_Values": "20 kHz"
+            },
+            "USP_Optimal_Amplitude": {
+              "Value": null,
+              "Original_Values": "35–40 μm",
+              "Note": "CRS maximized at amplitude of 35–40 μm"
+            },
+            "USP_Distance": {
+              "Value": 16.0,
+              "Unit": "mm"
+            },
+            "USP_Interval_Layers": {
+              "Value": 33,
+              "Unit": "layers"
+            },
+            "USP_Duration_Per_Treatment": {
+              "Value": 8.0,
+              "Unit": "min"
+            },
+            "Aging_Temperature": {
+              "Value": 573.15,
+              "Unit": "K",
+              "Original_Values": "300 °C"
+            },
+            "Aging_Time": {
+              "Value": 4.0,
+              "Unit": "h"
+            },
+            "Aging_Cooling": "Furnace cooling",
+            "Aging_Atmosphere": "High-purity argon"
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "HAM-HT sample shows almost no CCGs, homogeneous equiaxed grains. FEGs avg d=(1.241±0.128) μm, proportion 61.05%. UFEGs with avg diameter (0.60±0.21) μm, smallest down to ~200 nm. LAGBs content 15.4%. Recrystallized grains 97.1%, substructured 2.4%, deformed 0.5%. Porosity 0.018%. Keyholes and lack of fusion almost eliminated. Al₃(Sc,Zr) + Al₆Mn + Mg₂Si multi-precipitates. Secondary Al₃(Sc,Zr) with L1₂ structure, width ~5 nm. Hierarchical multi-gradient structure with grain and dislocation gradients across three regions (I to III).",
+            "simplified": "Equiaxed grains, no CCGs. FEGs avg d=(1.241±0.128) μm, 61.05%. UFEGs avg d=(0.60±0.21) μm. LAGBs 15.4%. Recrystallized 97.1%. Porosity 0.018%. Multi-precipitates: Al₃(Sc,Zr) L1₂, Al₆Mn, Mg₂Si. Hierarchical multi-gradient grain/dislocation structure."
+          },
+          "Main_Phase": {
+            "Phase_Name": "α-Al matrix",
+            "Crystal_Structure": "FCC"
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "primary Al₃(Sc, Zr)",
+              "Crystal_Structure": "L1₂",
+              "Note": "Coherent interface with Al matrix. Predominantly square-shaped. Volume fraction ~2.84%, mean radius ~43.8 nm"
+            },
+            {
+              "Phase_Name": "secondary Al₃(Sc, Zr)",
+              "Crystal_Structure": "L1₂",
+              "Size": {
+                "Width": {
+                  "Value": 5.0,
+                  "Unit": "nm",
+                  "Original_Values": "~5 nm",
+                  "Note": "Width, approximate"
+                }
+              },
+              "Note": "Uniformly distributed throughout matrix. Volume fraction ~1.02%, mean radius ~3.2 nm. Formed during aging treatment."
+            },
+            {
+              "Phase_Name": "Al₆Mn",
+              "Crystal_Structure": null,
+              "Note": "Mn-enriched nanoparticles"
+            },
+            {
+              "Phase_Name": "Mg₂Si",
+              "Crystal_Structure": null,
+              "Note": "Uniformly distributed nanoprecipitates; Mg and Si co-enrichment"
+            }
+          ],
+          "Grain_Size": {
+            "Fine_Equiaxed_Grains": {
+              "Average_Diameter": {
+                "Value": 1.241,
+                "Unit": "μm",
+                "Value_StdDev": 0.128,
+                "Original_Values": "(1.241±0.128) μm"
+              },
+              "Volume_Fraction": {
+                "Value": 61.05,
+                "Unit": "%",
+                "Original_Values": "61.05%"
+              }
+            },
+            "Coarse_Grains": {
+              "Average_Diameter": {
+                "Value": 1.956,
+                "Unit": "μm",
+                "Original_Values": "1.956 μm"
+              },
+              "Volume_Fraction": {
+                "Value": 38.95,
+                "Unit": "%",
+                "Original_Values": "38.95%"
+              }
+            },
+            "Ultra_Fine_Equiaxed_Grains": {
+              "Average_Diameter": {
+                "Value": 0.6,
+                "Unit": "μm",
+                "Value_StdDev": 0.21,
+                "Original_Values": "(0.60±0.21) μm"
+              },
+              "Smallest_Diameter": {
+                "Value": null,
+                "Original_Values": "~200 nm",
+                "Note": "Approximate smallest UFEG diameter"
+              },
+              "Note": "In FEGs region of HAM-HT sample"
+            },
+            "Ultra_Fine_Columnar_Grains": {
+              "Width": {
+                "Value": 300.0,
+                "Unit": "nm",
+                "Original_Values": "~300 nm",
+                "Note": "Width of ultra-fine columnar grains in HAM-HT, approximate"
+              }
+            }
+          },
+          "Porosity": {
+            "Value": 0.018,
+            "Unit": "%",
+            "Original_Values": "0.018%",
+            "Measurement_Method": "Micro-CT",
+            "Note": "Keyholes and lack of fusion almost eliminated; only small gas pores remain"
+          },
+          "Residual_Stress": {
+            "Note": "TRS transferred to CRS. Surface CRS lower than at 400 μm depth due to offset between USP-induced CRS and LPBF TRS. Peak CRS at 400–600 μm depth. Effective depth of USP ~700 μm.",
+            "Effective_USP_Depth": {
+              "Value": null,
+              "Original_Values": "~700 μm",
+              "Note": "Approximate; interlayer USP depth reached ~700 μm"
+            }
+          },
+          "Texture_or_Orientation": {
+            "LAGBs_Fraction": {
+              "Value": 15.4,
+              "Unit": "%",
+              "Original_Values": "15.4%"
+            },
+            "Recrystallized_Grain_Fraction": {
+              "Value": 97.1,
+              "Unit": "%",
+              "Original_Values": "97.1%"
+            },
+            "Substructured_Grain_Fraction": {
+              "Value": 2.4,
+              "Unit": "%",
+              "Original_Values": "2.4%"
+            },
+            "Deformed_Grain_Fraction": {
+              "Value": 0.5,
+              "Unit": "%",
+              "Original_Values": "0.5%"
+            }
+          },
+          "Advanced_Quantitative_Features": {
+            "GND_Density": {
+              "Value": 361000000000000.0,
+              "Unit": "m⁻²",
+              "Original_Values": "3.61×10¹⁴ m⁻²",
+              "Note": "Calculated from EBSD"
+            },
+            "Mg_content_in_FEGs_by_EDS": {
+              "Value": 4.5,
+              "Unit": "at.%",
+              "Value_StdDev": 0.6,
+              "Original_Values": "(4.5±0.6) at.%"
+            },
+            "Primary_Al3ScZr_Volume_Fraction": {
+              "Value": 2.84,
+              "Unit": "%",
+              "Original_Values": "~2.84%",
+              "Note": "Estimated; Data_Nature: Computed"
+            },
+            "Primary_Al3ScZr_Mean_Radius": {
+              "Value": 43.8,
+              "Unit": "nm",
+              "Original_Values": "~43.8 nm",
+              "Note": "Estimated; radius"
+            },
+            "Secondary_Al3ScZr_Volume_Fraction": {
+              "Value": 1.02,
+              "Unit": "%",
+              "Original_Values": "~1.02%",
+              "Note": "Estimated; Data_Nature: Computed"
+            },
+            "Secondary_Al3ScZr_Mean_Radius": {
+              "Value": 3.2,
+              "Unit": "nm",
+              "Original_Values": "~3.2 nm",
+              "Note": "Estimated; radius"
+            },
+            "Mg_network_eliminated": "Yes — Mg network structures in both CGs and FEGs regions eliminated in HAM-HT",
+            "Hierarchical_Multi_Gradient_Structure": "Three regions per cycle: Region I (surface USP layer) — nanograins, high dislocation density; Region II (center) — fine grains, moderate dislocations; Region III (interior) — coarse grains, lower dislocation density",
+            "Primary_Al3ScZr_Lattice_Strain": {
+              "Original_Values": "up to 20%",
+              "Note": "Al₃(Sc,Zr) presents both positive and negative lattice strains along σxx and σyy in Al matrix, value up to 20%"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Yield_Strength",
+            "Value": 609.0,
+            "Unit": "MPa",
+            "Value_StdDev": 10.0,
+            "Original_Values": "(609±10) MPa",
+            "Data_Source": "table",
+            "Test_Condition": {
+              "Loading_Mode": "Tension",
+              "Crosshead_Speed": {
+                "Value": 1.0,
+                "Unit": "mm·min⁻¹"
+              },
+              "Specimen_State": "HAM + Aging treated (300°C/4h)",
+              "Number_of_Tests": "3–4 repeated tests"
+            }
+          },
+          {
+            "Property_Name": "Ultimate_Tensile_Strength",
+            "Value": 626.0,
+            "Unit": "MPa",
+            "Value_StdDev": 19.0,
+            "Original_Values": "(626±19) MPa",
+            "Data_Source": "table",
+            "Test_Condition": {
+              "Loading_Mode": "Tension",
+              "Crosshead_Speed": {
+                "Value": 1.0,
+                "Unit": "mm·min⁻¹"
+              },
+              "Specimen_State": "HAM + Aging treated (300°C/4h)"
+            }
+          },
+          {
+            "Property_Name": "Elongation_Total",
+            "Value": 7.5,
+            "Unit": "%",
+            "Value_StdDev": 2.4,
+            "Original_Values": "(7.5±2.4)%",
+            "Data_Source": "table",
+            "Note": "Paper uses symbol ε; not explicitly distinguished as uniform vs total, defaulting to Elongation_Total",
+            "Test_Condition": {
+              "Loading_Mode": "Tension",
+              "Crosshead_Speed": {
+                "Value": 1.0,
+                "Unit": "mm·min⁻¹"
+              },
+              "Specimen_State": "HAM + Aging treated (300°C/4h)"
+            }
+          },
+          {
+            "Property_Name": "HDI_Strengthening",
+            "Value": 99.0,
+            "Unit": "MPa",
+            "Original_Values": "~99 MPa",
+            "Data_Source": "text",
+            "Note": "Additional strengthening from USP-induced heterogeneous microstructures; calculated as difference of σHDI between HAM-HT and LPBF-HT samples. Approximate value.",
+            "Test_Condition": {
+              "Loading_Mode": "Cyclic loading-unloading-reloading tension",
+              "Crosshead_Speed": {
+                "Value": 1.0,
+                "Unit": "mm·min⁻¹"
+              },
+              "Unloading_Strain_Points": "2%, 4%, 6%",
+              "Unload_Threshold": "50 MPa",
+              "Gauge_Length": {
+                "Value": 6.0,
+                "Unit": "mm"
+              },
+              "Specimen_State": "HAM + Aging treated (300°C/4h)"
+            }
+          },
+          {
+            "Property_Name": "Calculated_Yield_Strength",
+            "Value": 624.0,
+            "Unit": "MPa",
+            "Original_Values": "624 MPa",
+            "Data_Source": "text",
+            "Note": "Theoretical yield strength calculated from multi-strengthening mechanisms: σGB ~116 MPa + σss ~95 MPa + σdis ~73 MPa + σp(Orowan) ~241 MPa + σHDI ~99 MPa = 624 MPa. Consistent with experimental 609 MPa."
+          },
+          {
+            "Property_Name": "Grain_Boundary_Strengthening_Contribution",
+            "Value": 116.0,
+            "Unit": "MPa",
+            "Original_Values": "~116 MPa",
+            "Data_Source": "text",
+            "Note": "Calculated contribution (Data_Nature: Computed)"
+          },
+          {
+            "Property_Name": "Solid_Solution_Strengthening_Contribution",
+            "Value": 95.0,
+            "Unit": "MPa",
+            "Original_Values": "~95 MPa",
+            "Data_Source": "text",
+            "Note": "Calculated contribution from Mg solid solution (Data_Nature: Computed)"
+          },
+          {
+            "Property_Name": "Dislocation_Strengthening_Contribution",
+            "Value": 73.0,
+            "Unit": "MPa",
+            "Original_Values": "~73 MPa",
+            "Data_Source": "text",
+            "Note": "Calculated contribution with ρ=3.61×10¹⁴ m⁻² (Data_Nature: Computed)"
+          },
+          {
+            "Property_Name": "Precipitate_Strengthening_Contribution_Orowan",
+            "Value": 241.0,
+            "Unit": "MPa",
+            "Original_Values": "~241 MPa",
+            "Data_Source": "text",
+            "Note": "Primary Al₃(Sc,Zr) contributes ~24 MPa; secondary Al₃(Sc,Zr) contributes ~217 MPa. Total ~241 MPa. (Data_Nature: Computed)"
+          }
+        ]
+      }
+    }
+  ]
+}

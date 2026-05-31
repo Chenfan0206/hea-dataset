@@ -1,0 +1,561 @@
+{
+  "Paper_Metadata": {
+    "Paper_Title": "Improving ductility via grain structure control in Sc/Zr modified Al-Cu-Li alloys by pulsed-laser powder bed fusion",
+    "DOI": "10.1080/17452759.2025.2526171"
+  },
+  "Paper_Routing": {
+    "base_material": "Metals",
+    "application": "Structural",
+    "research_paradigm": "Experimental",
+    "Supplements_Loaded": [
+      "directions/base/Metals.txt",
+      "directions/application/Structural.txt",
+      "directions/paradigm/Experimental.txt"
+    ],
+    "Patch_Tags": [
+      "Additive_Manufacturing",
+      "Laser_Assisted"
+    ],
+    "Needs_Mixed_Routing_Check": false,
+    "Mixed_Signals": []
+  },
+  "items": [
+    {
+      "Item_ID": "1",
+      "Sample_ID": "CL",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing",
+        "Laser_Assisted"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 1: CL sample process parameters",
+        "Section 2: Materials and methods",
+        "Section 3.1: Metallurgical quality and microstructure",
+        "Section 3.2: Mechanical properties and fracture analysis",
+        "Table 2: Porosity data",
+        "Table 3: Strength calculations"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Al-Cu-Li alloy",
+          "Material_Name_Raw": "Sc/Zr modified Al-Cu-Li alloy",
+          "Measured_Composition": {
+            "method": "ICP-OES",
+            "elements": [
+              {
+                "Element": "Al",
+                "Value": "Balance",
+                "Unit": "wt%"
+              },
+              {
+                "Element": "Cu",
+                "Value": 2.88,
+                "Unit": "wt%"
+              },
+              {
+                "Element": "Li",
+                "Value": 1.79,
+                "Unit": "wt%"
+              },
+              {
+                "Element": "Sc",
+                "Value": 1.06,
+                "Unit": "wt%"
+              },
+              {
+                "Element": "Zr",
+                "Value": 0.56,
+                "Unit": "wt%"
+              }
+            ],
+            "Note": "Powder composition measured by ICP-OES; same powder used for CL and PL samples. Al is Balance; normalized ≈ 93.71 wt% (Computed)"
+          },
+          "Powder_Characteristics": {
+            "Particle_Size_Range": {
+              "Value_Range": [
+                15,
+                53
+              ],
+              "Unit": "µm",
+              "Size_Type": "diameter"
+            },
+            "Production_Method": "gas atomisation"
+          }
+        },
+        "Processing": {
+          "Process_Category": "LPBF (continuous laser)",
+          "Process_Text": {
+            "original": "Continuous laser experiments (CL) were conducted using a BLT S200 laser system, with a focused laser diameter of 100 µm.",
+            "simplified": "LPBF with continuous laser mode on BLT S200 machine"
+          },
+          "Stages": {
+            "Stage1_Deposition": {
+              "Laser_Mode": "continuous",
+              "Laser_Power_W": 800,
+              "Scanning_Speed_mm_s": 1000,
+              "Hatch_Spacing_mm": 0.08,
+              "Layer_Thickness_µm": 30,
+              "Focused_Laser_Diameter_µm": 100,
+              "Scanning_Strategy": "interlayer rotation of 67°"
+            }
+          },
+          "Substrate": {
+            "Material": "AlSi10Mg",
+            "Preheating_Temperature_C": 150,
+            "Surface_Preparation": "surface polishing and cleaned with acetone"
+          },
+          "Atmosphere": {
+            "Gas": "argon",
+            "Oxygen_Constraint": "below 300 ppm"
+          },
+          "Equipment": [
+            {
+              "Name": "BLT S200",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Renishaw AM400",
+              "Category": "Preparation",
+              "Note": "used for PL samples only; listed in shared methods section"
+            },
+            {
+              "Name": "Zeiss Xradia 520 Versa (CT)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Keyence VH-Z50L (OM)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Tescan Clara GMH (SEM/EDS/EBSD)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Tecnai-G2 F30 (TEM)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Instron-3382",
+              "Category": "Testing"
+            },
+            {
+              "Name": "Image-Pro Plus",
+              "Category": "Software"
+            }
+          ],
+          "Note": "As-built condition; no heat treatment applied"
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "The XOZ plane exhibit a heterogeneous microstructure comprising both columnar and equiaxed grains, attributed to the epitaxial growth along the [001] direction and the heterogeneous nucleation of primary Al₃(Li,Sc,Zr).",
+            "simplified": "Heterogeneous microstructure: columnar grains in CG region and equiaxed grains in FG region, forming alternating bands along melt pool boundaries"
+          },
+          "Main_Phase": {
+            "Phase_Name": "α-Al matrix",
+            "Crystal_Structure": "FCC"
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "θ-Al₂Cu (eutectic)",
+              "Crystal_Structure": "BCT",
+              "Morphology": "continuous network along grain boundaries",
+              "Formation": "eutectic reaction L→α-Al+θ-Al₂Cu during solidification"
+            },
+            {
+              "Phase_Name": "Al₃(Li,Sc,Zr)",
+              "Crystal_Structure": "L1₂",
+              "Morphology": "irregular precipitates in FG region; coherent with α-Al matrix",
+              "Distribution": "predominantly in FG region near melt pool boundaries; no notable precipitation in CG region"
+            }
+          ],
+          "Grain_Morphology": "heterogeneous: alternating columnar grain (CG) bands and fine equiaxed grain (FG) bands",
+          "Grain_Size": {
+            "CG_Region": {
+              "Average_Grain_Size_µm": 2.17,
+              "Section": "XOZ plane",
+              "Size_Type": "diameter"
+            },
+            "FG_Region": {
+              "Average_Grain_Size_µm": 0.86,
+              "Section": "XOZ plane",
+              "Size_Type": "diameter"
+            },
+            "Overall_Average_XOZ_µm": 1.52,
+            "XOY_CG_Region_Average_µm": 1.49,
+            "XOY_FG_Region_Average_µm": 0.72,
+            "Overall_Average_XOY_µm": 0.94,
+            "Note": "Grain sizes from EBSD analysis (Figure 4). Overall average = 1.52 µm (XOZ) and 0.94 µm (XOY)"
+          },
+          "Porosity": {
+            "Value": 0.27,
+            "Unit": "%",
+            "Note": "porosity 0.27%; both exceeding 99.7% stated in text likely refers to relative density >99.7%",
+            "Data_Source": "table",
+            "CT_Resolution_µm": 3.5,
+            "CT_Test_Volume_mm3": 1.75
+          },
+          "Pore_Statistics": {
+            "Total_Pore_Count": 17411,
+            "Maximum_Pore_Size_µm3": 352904,
+            "Frequency_0_1000_µm3": "81.19%",
+            "Frequency_0_5000_µm3": "96.85%",
+            "Frequency_gt_30000_µm3": "0.05%",
+            "Note": ">30000 µm³ frequency from text (not in Table 2); remainder from Table 2",
+            "Data_Source": "table"
+          },
+          "Texture_or_Orientation": {
+            "Description": "epitaxial growth along the [001] direction in CG region"
+          },
+          "Advanced_Quantitative_Features": {
+            "Al3_LiScZr_Volume_Fraction_FG": {
+              "Value_Range": [
+                2.0,
+                2.5
+              ],
+              "Unit": "%",
+              "Note": "volume fraction indirectly inferred: PL section states 'a volume fraction of approximately 2% to 2.5%, similar to region b in Figure 6(a)'; region b corresponds to CL FG region"
+            },
+            "Al3_LiScZr_Volume_Fraction_CG": {
+              "Value": null,
+              "Note": "no significant Al₃(Li,Sc,Zr) precipitates found in CG region"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Type": "Tensile",
+            "Loading_Mode": "tension",
+            "Ultimate_Tensile_Strength_MPa": {
+              "Value": 471.86,
+              "Value_StdDev": 2.07,
+              "Original_Values": "471.86 ± 2.07 MPa"
+            },
+            "Yield_Strength_MPa": {
+              "Value": 448.97,
+              "Value_StdDev": 4.15,
+              "Original_Values": "448.97 ± 4.15 MPa"
+            },
+            "Elongation_Total_%": {
+              "Value": 4.82,
+              "Value_StdDev": 0.36,
+              "Original_Values": "4.82 ± 0.36%"
+            },
+            "Test_Condition": {
+              "Test_Temperature_K": 298.15,
+              "Test_Temperature_Original": "room temperature",
+              "Crosshead_Speed_mm_min": 1,
+              "Specimen_Geometry": "6 mm gauge width, 2 mm gauge thickness, 24 mm gauge length",
+              "Specimen_Orientation": "tensile axis perpendicular to build direction",
+              "Specimen_State": "as-built"
+            },
+            "Data_Source": "text",
+            "Note": "Original text states elongation (δ); not explicitly distinguished as total vs uniform. Assigned to Elongation_Total per Structural supplement rule"
+          },
+          {
+            "Property_Type": "Computed_Strength_Contribution",
+            "Loading_Mode": null,
+            "Data_Nature": "Computed",
+            "Grain_Boundary_Strengthening_dsigma_GBS_MPa": {
+              "Value": 135.1
+            },
+            "Precipitation_Strengthening_sigma_modulus_MPa": {
+              "Value": 198.6
+            },
+            "Precipitation_Strengthening_sigma_coherency_MPa": {
+              "Value": 80.2
+            },
+            "Precipitation_Strengthening_sigma_modulus_plus_coherency_MPa": {
+              "Value": 278.8
+            },
+            "Precipitation_Strengthening_sigma_order_MPa": {
+              "Value": 223.5
+            },
+            "Solution_Strengthening_sigma_sss_MPa": {
+              "Value": 57.4
+            },
+            "Data_Source": "table",
+            "Note": "Calculated strength contributions. σ_modulus + σ_coherency = 278.8 MPa governs over σ_order = 223.5 MPa"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "2",
+      "Sample_ID": "PL",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing",
+        "Laser_Assisted"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 1: PL sample process parameters",
+        "Section 2: Materials and methods",
+        "Section 3.1: Metallurgical quality and microstructure",
+        "Section 3.2: Mechanical properties and fracture analysis",
+        "Table 2: Porosity data",
+        "Table 3: Strength calculations"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Al-Cu-Li alloy",
+          "Material_Name_Raw": "Sc/Zr modified Al-Cu-Li alloy",
+          "Measured_Composition": {
+            "method": "ICP-OES",
+            "elements": [
+              {
+                "Element": "Al",
+                "Value": "Balance",
+                "Unit": "wt%"
+              },
+              {
+                "Element": "Cu",
+                "Value": 2.88,
+                "Unit": "wt%"
+              },
+              {
+                "Element": "Li",
+                "Value": 1.79,
+                "Unit": "wt%"
+              },
+              {
+                "Element": "Sc",
+                "Value": 1.06,
+                "Unit": "wt%"
+              },
+              {
+                "Element": "Zr",
+                "Value": 0.56,
+                "Unit": "wt%"
+              }
+            ],
+            "Note": "Same powder as CL sample; powder composition measured by ICP-OES. Shared per explicit statement in Section 2"
+          },
+          "Powder_Characteristics": {
+            "Particle_Size_Range": {
+              "Value_Range": [
+                15,
+                53
+              ],
+              "Unit": "µm",
+              "Size_Type": "diameter"
+            },
+            "Production_Method": "gas atomisation"
+          }
+        },
+        "Processing": {
+          "Process_Category": "LPBF (pulsed laser)",
+          "Process_Text": {
+            "original": "Pulsed laser experiments (PL) were carried out with a Renishaw AM400 commercial laser equipped with a 400 W quasi-continuous mode laser, with a focused spot diameter of approximately 70 µm.",
+            "simplified": "LPBF with pulsed laser mode on Renishaw AM400 machine"
+          },
+          "Stages": {
+            "Stage1_Deposition": {
+              "Laser_Mode": "pulsed",
+              "Laser_Power_W": 800,
+              "Exposure_Time_µs": 50,
+              "Delay_Time_µs": 10,
+              "Point_Spacing_µm": 60,
+              "Hatch_Spacing_mm": 0.08,
+              "Layer_Thickness_µm": 30,
+              "Focused_Laser_Diameter_µm": 70,
+              "Scanning_Strategy": "interlayer rotation of 67°",
+              "Equivalent_Scanning_Speed_mm_s": 1000,
+              "Note": "Equivalent scanning speed matched to CL sample at 1000 mm/s per formula ve = D/(t+t0) = 60/(50+10) = 1000 mm/s. Focused laser diameter is approximate (~70 µm per original text)"
+            }
+          },
+          "Substrate": {
+            "Material": "AlSi10Mg",
+            "Preheating_Temperature_C": 150,
+            "Surface_Preparation": "surface polishing and cleaned with acetone"
+          },
+          "Atmosphere": {
+            "Gas": "argon",
+            "Oxygen_Constraint": "below 300 ppm"
+          },
+          "Equipment": [
+            {
+              "Name": "Renishaw AM400",
+              "Category": "Preparation",
+              "Note": "equipped with 400 W quasi-continuous mode laser"
+            },
+            {
+              "Name": "BLT S200",
+              "Category": "Preparation",
+              "Note": "used for CL samples only; listed in shared methods section"
+            },
+            {
+              "Name": "Zeiss Xradia 520 Versa (CT)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Keyence VH-Z50L (OM)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Tescan Clara GMH (SEM/EDS/EBSD)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Tecnai-G2 F30 (TEM)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Instron-3382",
+              "Category": "Testing"
+            },
+            {
+              "Name": "Image-Pro Plus",
+              "Category": "Software"
+            }
+          ],
+          "Note": "As-built condition; no heat treatment applied. Substrate and atmosphere conditions shared with CL per Section 2 explicit statement"
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "The XOZ plane predominantly features equiaxed grains, with sporadic occurrences of short columnar grains. Columnar grains are completely eliminated, resulting in a fully equiaxed grain structure in the printed sample.",
+            "simplified": "Fully equiaxed grain microstructure achieved by pulsed laser remelting strategy"
+          },
+          "Main_Phase": {
+            "Phase_Name": "α-Al matrix",
+            "Crystal_Structure": "FCC"
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "θ-Al₂Cu (eutectic)",
+              "Crystal_Structure": "BCT",
+              "Morphology": "discontinuous network along grain boundaries",
+              "Distribution": "grain boundaries throughout"
+            },
+            {
+              "Phase_Name": "Al₃(Li,Sc,Zr)",
+              "Crystal_Structure": "L1₂",
+              "Morphology": "precipitates in both FG and LG regions; coherent with α-Al matrix",
+              "Distribution": "distributed in both coarse and fine equiaxed grain regions, with higher volume fraction in fine grain region"
+            }
+          ],
+          "Grain_Morphology": "fully equiaxed",
+          "Grain_Size": {
+            "CG_Region": {
+              "Average_Grain_Size_µm": 1.03,
+              "Section": "XOZ plane",
+              "Size_Type": "diameter",
+              "Note": "short columnar grains with aspect ratio near 1:1; more accurately described as coarser equiaxed grains"
+            },
+            "FG_Region": {
+              "Average_Grain_Size_µm": 0.88,
+              "Section": "XOZ plane",
+              "Size_Type": "diameter"
+            },
+            "Overall_Average_XOZ_µm": 0.91,
+            "XOY_LG_Region_Average_µm": 1.26,
+            "XOY_FG_Region_Average_µm": 0.89,
+            "Overall_Average_XOY_µm": 0.91,
+            "Note": "Average grain size reduced by 40% compared to CL sample. Overall average = 0.91 µm (XOZ) and 0.91 µm (XOY)"
+          },
+          "Porosity": {
+            "Value": 0.21,
+            "Unit": "%",
+            "Note": "porosity 0.21%",
+            "Data_Source": "table",
+            "CT_Resolution_µm": 3.5,
+            "CT_Test_Volume_mm3": 1.75
+          },
+          "Pore_Statistics": {
+            "Total_Pore_Count": 4068,
+            "Maximum_Pore_Size_µm3": 405469,
+            "Frequency_0_1000_µm3": "76.01%",
+            "Frequency_0_5000_µm3": "89.85%",
+            "Frequency_gt_30000_µm3": "2.14%",
+            "Note": ">30000 µm³ frequency from text (not in Table 2); remainder from Table 2",
+            "Data_Source": "table"
+          },
+          "Advanced_Quantitative_Features": {
+            "Al3_LiScZr_Volume_Fraction_FG": {
+              "Value_Range": [
+                2.0,
+                2.5
+              ],
+              "Unit": "%",
+              "Note": "volume fraction in fine grain region; directly stated in text for PL sample"
+            },
+            "Al3_LiScZr_Volume_Fraction_LG": {
+              "Value_Range": [
+                0.5,
+                1.1
+              ],
+              "Unit": "%",
+              "Note": "volume fraction in larger equiaxed grain region"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Type": "Tensile",
+            "Loading_Mode": "tension",
+            "Ultimate_Tensile_Strength_MPa": {
+              "Value": 435.77,
+              "Value_StdDev": 0.27,
+              "Original_Values": "435.77 ± 0.27 MPa"
+            },
+            "Yield_Strength_MPa": {
+              "Value": 391.65,
+              "Value_StdDev": 3.85,
+              "Original_Values": "391.65 ± 3.85 MPa"
+            },
+            "Elongation_Total_%": {
+              "Value": 10.18,
+              "Value_StdDev": 0.14,
+              "Original_Values": "10.18 ± 0.14%"
+            },
+            "Test_Condition": {
+              "Test_Temperature_K": 298.15,
+              "Test_Temperature_Original": "room temperature",
+              "Crosshead_Speed_mm_min": 1,
+              "Specimen_Geometry": "6 mm gauge width, 2 mm gauge thickness, 24 mm gauge length",
+              "Specimen_Orientation": "tensile axis perpendicular to build direction",
+              "Specimen_State": "as-built"
+            },
+            "Data_Source": "text",
+            "Note": "Original text states elongation (δ); not explicitly distinguished as total vs uniform. Assigned to Elongation_Total per Structural supplement rule. Pronounced PLC (Portevin–Le Chatelier) effect observed"
+          },
+          {
+            "Property_Type": "Computed_Strength_Contribution",
+            "Loading_Mode": null,
+            "Data_Nature": "Computed",
+            "Grain_Boundary_Strengthening_dsigma_GBS_MPa": {
+              "Value": 159.9
+            },
+            "Precipitation_Strengthening_sigma_modulus_MPa": {
+              "Value": 253.6
+            },
+            "Precipitation_Strengthening_sigma_coherency_MPa": {
+              "Value": 101.3
+            },
+            "Precipitation_Strengthening_sigma_modulus_plus_coherency_MPa": {
+              "Value": 354.9
+            },
+            "Precipitation_Strengthening_sigma_order_MPa": {
+              "Value": 289.0
+            },
+            "Solution_Strengthening_sigma_sss_MPa": {
+              "Value": 59.0
+            },
+            "Data_Source": "table",
+            "Note": "Calculated strength contributions. σ_modulus + σ_coherency = 354.9 MPa governs over σ_order = 289.0 MPa"
+          }
+        ]
+      }
+    }
+  ]
+}

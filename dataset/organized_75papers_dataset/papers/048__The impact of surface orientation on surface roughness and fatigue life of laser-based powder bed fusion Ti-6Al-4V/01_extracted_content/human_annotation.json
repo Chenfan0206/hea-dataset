@@ -1,0 +1,903 @@
+{
+  "Paper_Metadata": {
+    "Paper_Title": "The impact of surface orientation on surface roughness and fatigue life of laser-based powder bed fusion Ti-6Al-4V",
+    "DOI": "10.1016/j.addma.2024.104149"
+  },
+  "items": [
+    {
+      "Sample_ID": "LBPBF_Ti64_as_manufactured_no_HIP",
+      "Gradient_Material": false,
+      "Gradient_Group_ID": null,
+      "Composition_Info": {
+        "Role": "Target",
+        "Alloy_Name_Raw": "Ti-6Al-4V powder",
+        "Nominal_Composition": {
+          "Composition_Type": null,
+          "Elements_Normalized": null
+        },
+        "Measured_Composition": {
+          "Composition_Type": null,
+          "Elements_Normalized": null,
+          "Measurement_Method": null
+        },
+        "Note": "Commercial Ti-6Al-4V designation reported, but no explicit numerical composition was provided in the paper."
+      },
+      "Process_Info": {
+        "Process_Category": "LB-PBF as-manufactured",
+        "Process_Text": {
+          "original": "Fatigue and tensile specimens were produced using LB-PBF (SLM Solutions 250) with Ti-6Al-4V powder. Before using virgin Ti-6Al-4V powder, two drying runs were completed to remove any moisture present. After drying, the powder is sieved (-100µm) resulting in a Dv90 powder size distribution of 65.8 µm and Dv50 of 44.5 µm. Applied process parameters are: 30 µm layer height, 100 W laser power, 425 mm/s scan speed on borders and 375 mm/s scan speed on hatching. Fatigue specimens dimensions conform to subsize specimens in ASTM E466 and tensile specimens conform to subsize specimens specified in ASTM E8. Fatigue specimens were manufactured at six inclination angles from 90° down to 0°. Specimens manufactured at or above 40° did not require supports in the gauge section, only on the lower grip section. Specimens manufactured below 40° required supports for the gauge section. The support method adopted a thin-wall, edge support in contact with the perimeter of the gauge section and column supports separated by 100 µm from the downward-facing surface of the specimen gauge section to avoid mutual contact, thus no machining was required and an as-manufactured surface was achieved.",
+          "simplified": "Ti-6Al-4V tensile and fatigue specimens were built by LB-PBF on an SLM Solutions 250 after powder drying and sieving. Powder Dv50 was 44.5 µm and Dv90 was 65.8 µm. Process parameters were 30 µm layer height, 100 W laser power, 425 mm/s border scan speed, and 375 mm/s hatching scan speed. Specimens were built at 0°, 10°, 30°, 50°, 70°, and 90° inclination. Supports were required in the gauge section below 40°, using non-contact columnar supports with 100 µm separation from the downward-facing gauge surface."
+        },
+        "Equipment": "SLM Solutions 250",
+        "Key_Params": {
+          "Laser_Power_W": 100.0,
+          "Scanning_Speed_Border_mm_s": 425.0,
+          "Scanning_Speed_Hatching_mm_s": 375.0,
+          "Layer_Thickness_um": 30.0,
+          "Hatch_Spacing_um": null,
+          "Build_Plate_Temperature_K": null,
+          "Solution_Temperature_K": null,
+          "Solution_Time_h": null,
+          "Aging_Temperature_K": null,
+          "Aging_Time_h": null,
+          "Annealing_Temperature_K": null,
+          "Annealing_Time_h": null,
+          "Cooling_Medium": null,
+          "Protective_Atmosphere": null,
+          "Powder_Size_Dv50_um": 44.5,
+          "Powder_Size_Dv90_um": 65.8,
+          "Powder_Sieving_Cutoff_um": 100.0,
+          "Specimen_Inclination_Angles_deg": [
+            0,
+            10,
+            30,
+            50,
+            70,
+            90
+          ],
+          "Support_Required_Below_deg": 40.0,
+          "Support_Surface_Separation_um": 100.0,
+          "Fatigue_Specimen_Standard": "ASTM E466 subsize",
+          "Tensile_Specimen_Standard": "ASTM E8 subsize"
+        }
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": "The α’ martensite, typical of LB-PBF Ti-6Al-4V, is observed before HIP. Needle-like alpha laths are observed within the prior beta grains; prior beta grains exhibit epitaxial growth parallel to the build direction of the specimens. Backscatter and EBSD images of vertically built 90° specimens before HIP were used to approximate average lath statistics.",
+          "simplified": "Before HIP, the as-manufactured LB-PBF Ti-6Al-4V shows α′ martensite with needle-like alpha laths inside prior beta grains, and prior beta grains grow epitaxially parallel to the build direction."
+        },
+        "Porosity_pct": null,
+        "Relative_Density_pct": null,
+        "Main_Phase": "Alpha prime martensite (α′)",
+        "Grain_Size_avg_um": null,
+        "Precipitate_Size_avg_nm": null,
+        "Phase_Fraction_pct": null,
+        "Advanced_Quantitative_Features": {
+          "Unprocessed_EBSD_Solve_Rate_Min_pct": 83.95,
+          "Unprocessed_EBSD_Solve_Rate_Max_pct": 97.7,
+          "Auto_Clean_Resolved_Percentage_Change_Min_pct": 2.2,
+          "Auto_Clean_Resolved_Percentage_Change_Max_pct": 8.37,
+          "Prior_Beta_Grain_Growth_Parallel_to_Build_Direction": true,
+          "Approximate_Average_Lath_Statistics_90deg": {
+            "Area_um2": {
+              "Value_Numeric": 3.25,
+              "Value_StdDev": 7.72
+            },
+            "Length_um": {
+              "Value_Numeric": 4.04,
+              "Value_StdDev": 5.03
+            },
+            "Breadth_um": {
+              "Value_Numeric": 1.19,
+              "Value_StdDev": 0.71
+            },
+            "Aspect_Ratio": {
+              "Value_Numeric": 3.07,
+              "Value_StdDev": 1.73
+            }
+          }
+        }
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Yield_Strength",
+          "Test_Condition": "Uniaxial tensile test on 0° specimen with as-manufactured surfaces, no HIP",
+          "Value_Numeric": 1093.0,
+          "Value_Range": null,
+          "Value_StdDev": 7.5,
+          "Unit": "MPa",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": 0.00052,
+          "Tensile_Speed_mm_min": 1.0,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": "ASTM E8 subsize tensile specimen",
+          "Build_Angle_deg": 0,
+          "Surface_Condition": "as-manufactured",
+          "HIP_State": "No-HIP",
+          "Note": "Original table reports YS0.2%."
+        },
+        {
+          "Property_Name": "Ultimate_Tensile_Strength",
+          "Test_Condition": "Uniaxial tensile test on 0° specimen with as-manufactured surfaces, no HIP",
+          "Value_Numeric": 1226.0,
+          "Value_Range": null,
+          "Value_StdDev": 3.0,
+          "Unit": "MPa",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": 0.00052,
+          "Tensile_Speed_mm_min": 1.0,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": "ASTM E8 subsize tensile specimen",
+          "Build_Angle_deg": 0,
+          "Surface_Condition": "as-manufactured",
+          "HIP_State": "No-HIP",
+          "Note": null
+        },
+        {
+          "Property_Name": "Elongation_Total",
+          "Test_Condition": "Uniaxial tensile test on 0° specimen with as-manufactured surfaces, no HIP",
+          "Value_Numeric": 2.09,
+          "Value_Range": null,
+          "Value_StdDev": 0.7,
+          "Unit": "%",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": 0.00052,
+          "Tensile_Speed_mm_min": 1.0,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": "ASTM E8 subsize tensile specimen",
+          "Build_Angle_deg": 0,
+          "Surface_Condition": "as-manufactured",
+          "HIP_State": "No-HIP",
+          "Note": "Original table reports maximum elongation."
+        },
+        {
+          "Property_Name": "Yield_Strength",
+          "Test_Condition": "Uniaxial tensile test on 10° specimen with as-manufactured surfaces, no HIP",
+          "Value_Numeric": 1175.0,
+          "Value_Range": null,
+          "Value_StdDev": 15.0,
+          "Unit": "MPa",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": 0.00052,
+          "Tensile_Speed_mm_min": 1.0,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": "ASTM E8 subsize tensile specimen",
+          "Build_Angle_deg": 10,
+          "Surface_Condition": "as-manufactured",
+          "HIP_State": "No-HIP",
+          "Note": "Original table reports YS0.2%."
+        },
+        {
+          "Property_Name": "Ultimate_Tensile_Strength",
+          "Test_Condition": "Uniaxial tensile test on 10° specimen with as-manufactured surfaces, no HIP",
+          "Value_Numeric": 1382.0,
+          "Value_Range": null,
+          "Value_StdDev": 21.0,
+          "Unit": "MPa",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": 0.00052,
+          "Tensile_Speed_mm_min": 1.0,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": "ASTM E8 subsize tensile specimen",
+          "Build_Angle_deg": 10,
+          "Surface_Condition": "as-manufactured",
+          "HIP_State": "No-HIP",
+          "Note": null
+        },
+        {
+          "Property_Name": "Elongation_Total",
+          "Test_Condition": "Uniaxial tensile test on 10° specimen with as-manufactured surfaces, no HIP",
+          "Value_Numeric": 3.6,
+          "Value_Range": null,
+          "Value_StdDev": 1.1,
+          "Unit": "%",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": 0.00052,
+          "Tensile_Speed_mm_min": 1.0,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": "ASTM E8 subsize tensile specimen",
+          "Build_Angle_deg": 10,
+          "Surface_Condition": "as-manufactured",
+          "HIP_State": "No-HIP",
+          "Note": "Original table reports maximum elongation."
+        }
+      ]
+    },
+    {
+      "Sample_ID": "LBPBF_Ti64_HIP",
+      "Gradient_Material": false,
+      "Gradient_Group_ID": null,
+      "Composition_Info": {
+        "Role": "Target",
+        "Alloy_Name_Raw": "Ti-6Al-4V powder",
+        "Nominal_Composition": {
+          "Composition_Type": null,
+          "Elements_Normalized": null
+        },
+        "Measured_Composition": {
+          "Composition_Type": null,
+          "Elements_Normalized": null,
+          "Measurement_Method": null
+        },
+        "Note": "Commercial Ti-6Al-4V designation reported, but no explicit numerical composition was provided in the paper."
+      },
+      "Process_Info": {
+        "Process_Category": "LB-PBF + HIP",
+        "Process_Text": {
+          "original": "Fatigue and tensile specimens were produced using LB-PBF (SLM Solutions 250) with Ti-6Al-4V powder. Before using virgin Ti-6Al-4V powder, two drying runs were completed to remove any moisture present. After drying, the powder is sieved (-100µm) resulting in a Dv90 powder size distribution of 65.8 µm and Dv50 of 44.5 µm. Applied process parameters are: 30 µm layer height, 100 W laser power, 425 mm/s scan speed on borders and 375 mm/s scan speed on hatching. Fatigue specimens dimensions conform to subsize specimens in ASTM E466 and tensile specimens conform to subsize specimens specified in ASTM E8. Fatigue specimens were manufactured at six inclination angles from 90° down to 0°. Specimens manufactured at or above 40° did not require supports in the gauge section, only on the lower grip section. Specimens manufactured below 40° required supports for the gauge section. The support method adopted a thin-wall, edge support in contact with the perimeter of the gauge section and column supports separated by 100 µm from the downward-facing surface of the specimen gauge section to avoid mutual contact, thus no machining was required and an as-manufactured surface was achieved. HIP was applied to all fatigue specimens and half of the tensile specimens. HIP conditions were 820 °C, 200 MPa and 2 h hold time in a pure argon atmosphere. All specimens were ultrasonically cleaned using de-ionised water prior to HIP to remove loose powder.",
+          "simplified": "Ti-6Al-4V specimens were built by LB-PBF on an SLM Solutions 250 using dried and sieved powder, then HIP treated at 820 °C, 200 MPa for 2 h in pure argon. Powder Dv50 was 44.5 µm and Dv90 was 65.8 µm. LB-PBF parameters were 30 µm layer height, 100 W laser power, 425 mm/s border scan speed, and 375 mm/s hatching scan speed. Inclination angles were 0°, 10°, 30°, 50°, 70°, and 90°. Supports were required in the gauge section below 40° with 100 µm separation from the downward-facing gauge surface."
+        },
+        "Equipment": "SLM Solutions 250",
+        "Key_Params": {
+          "Laser_Power_W": 100.0,
+          "Scanning_Speed_Border_mm_s": 425.0,
+          "Scanning_Speed_Hatching_mm_s": 375.0,
+          "Layer_Thickness_um": 30.0,
+          "Hatch_Spacing_um": null,
+          "Build_Plate_Temperature_K": null,
+          "Solution_Temperature_K": null,
+          "Solution_Time_h": null,
+          "Aging_Temperature_K": null,
+          "Aging_Time_h": null,
+          "Annealing_Temperature_K": null,
+          "Annealing_Time_h": null,
+          "Cooling_Medium": null,
+          "Protective_Atmosphere": "pure argon",
+          "Powder_Size_Dv50_um": 44.5,
+          "Powder_Size_Dv90_um": 65.8,
+          "Powder_Sieving_Cutoff_um": 100.0,
+          "HIP_Temperature_K": 1093.15,
+          "HIP_Pressure_MPa": 200.0,
+          "HIP_Hold_Time_h": 2.0,
+          "Specimen_Inclination_Angles_deg": [
+            0,
+            10,
+            30,
+            50,
+            70,
+            90
+          ],
+          "Support_Required_Below_deg": 40.0,
+          "Support_Surface_Separation_um": 100.0,
+          "Fatigue_Specimen_Standard": "ASTM E466 subsize",
+          "Tensile_Specimen_Standard": "ASTM E8 subsize"
+        }
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": "The effect of grain coarsening after HIP is visually evident in the backscatter and EBSD images. Based on approximations derived from EBSD data in vertically built 90° specimens before and after HIP, using equivalent ellipse fitting method, after HIP, the lath length and breadth increase by approximately two times. Approximate average lath statistics for specimens manufactured at 0°, 30° and 90° after HIP show that for all angles the average length and breadth is larger in the bulk region by less than 7 %, the average lath area is larger in the bulk region by less than 19 %, average lath length for 30° specimens is less than for 0° and 90° in both bulk and edge regions, and average lath breadth for 30° specimens is greater than 0° and 90° specimens in the bulk region. In regions close to the side and downward-facing surfaces, columnar growth of prior-beta grains parallel to build direction is not obvious. However, clear bands of similarly oriented laths can be seen within columnar prior beta grains in the bulk region.",
+          "simplified": "HIP causes lath coarsening in LB-PBF Ti-6Al-4V. In 90° specimens, lath area, length, breadth and aspect ratio all increase after HIP. After HIP, bulk regions have slightly larger lath size than edge regions, while orientation-related differences are modest. Columnar prior-beta growth is less obvious near side and downward-facing surfaces than in the bulk."
+        },
+        "Porosity_pct": null,
+        "Relative_Density_pct": null,
+        "Main_Phase": null,
+        "Grain_Size_avg_um": null,
+        "Precipitate_Size_avg_nm": null,
+        "Phase_Fraction_pct": null,
+        "Advanced_Quantitative_Features": {
+          "Approximate_Average_Lath_Statistics_90deg_After_HIP": {
+            "Area_um2": {
+              "Value_Numeric": 10.7,
+              "Value_StdDev": 18.4
+            },
+            "Length_um": {
+              "Value_Numeric": 7.86,
+              "Value_StdDev": 8.02
+            },
+            "Breadth_um": {
+              "Value_Numeric": 2.16,
+              "Value_StdDev": 1.46
+            },
+            "Aspect_Ratio": {
+              "Value_Numeric": 3.6,
+              "Value_StdDev": 2.12
+            }
+          },
+          "Approximate_Average_Lath_Size_Statistics_After_HIP": {
+            "0deg_Bulk": {
+              "Area_um2": 10.8,
+              "Length_um": 7.92,
+              "Breadth_um": 2.14,
+              "Aspect_Ratio": 3.66
+            },
+            "0deg_Edge": {
+              "Area_um2": 9.94,
+              "Length_um": 7.66,
+              "Breadth_um": 2.13,
+              "Aspect_Ratio": 3.68
+            },
+            "30deg_Bulk": {
+              "Area_um2": 10.9,
+              "Length_um": 7.39,
+              "Breadth_um": 2.23,
+              "Aspect_Ratio": 3.23
+            },
+            "30deg_Edge": {
+              "Area_um2": 9.23,
+              "Length_um": 7.0,
+              "Breadth_um": 2.1,
+              "Aspect_Ratio": 3.35
+            },
+            "90deg_Bulk": {
+              "Area_um2": 10.7,
+              "Length_um": 7.86,
+              "Breadth_um": 2.16,
+              "Aspect_Ratio": 3.6
+            },
+            "90deg_Edge": {
+              "Area_um2": 9.56,
+              "Length_um": 7.46,
+              "Breadth_um": 2.11,
+              "Aspect_Ratio": 3.49
+            }
+          },
+          "Bulk_vs_Edge_Length_Breadth_Increase_Max_pct": 7.0,
+          "Bulk_vs_Edge_Area_Increase_Max_pct": 19.0,
+          "Columnar_Prior_Beta_Growth_Less_Obvious_Near_Surface": true
+        }
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Yield_Strength",
+          "Test_Condition": "Uniaxial tensile test on 0° specimen with as-manufactured surfaces after HIP",
+          "Value_Numeric": 1020.0,
+          "Value_Range": null,
+          "Value_StdDev": 10.0,
+          "Unit": "MPa",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": 0.00052,
+          "Tensile_Speed_mm_min": 1.0,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": "ASTM E8 subsize tensile specimen",
+          "Build_Angle_deg": 0,
+          "Surface_Condition": "as-manufactured",
+          "HIP_State": "HIP",
+          "Note": "Original table reports YS0.2%."
+        },
+        {
+          "Property_Name": "Ultimate_Tensile_Strength",
+          "Test_Condition": "Uniaxial tensile test on 0° specimen with as-manufactured surfaces after HIP",
+          "Value_Numeric": 1060.0,
+          "Value_Range": null,
+          "Value_StdDev": 13.0,
+          "Unit": "MPa",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": 0.00052,
+          "Tensile_Speed_mm_min": 1.0,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": "ASTM E8 subsize tensile specimen",
+          "Build_Angle_deg": 0,
+          "Surface_Condition": "as-manufactured",
+          "HIP_State": "HIP",
+          "Note": null
+        },
+        {
+          "Property_Name": "Elongation_Total",
+          "Test_Condition": "Uniaxial tensile test on 0° specimen with as-manufactured surfaces after HIP",
+          "Value_Numeric": 3.21,
+          "Value_Range": null,
+          "Value_StdDev": 0.2,
+          "Unit": "%",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": 0.00052,
+          "Tensile_Speed_mm_min": 1.0,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": "ASTM E8 subsize tensile specimen",
+          "Build_Angle_deg": 0,
+          "Surface_Condition": "as-manufactured",
+          "HIP_State": "HIP",
+          "Note": "Original table reports maximum elongation."
+        },
+        {
+          "Property_Name": "Yield_Strength",
+          "Test_Condition": "Uniaxial tensile test on 10° specimen with as-manufactured surfaces after HIP",
+          "Value_Numeric": 1063.0,
+          "Value_Range": null,
+          "Value_StdDev": 35.0,
+          "Unit": "MPa",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": 0.00052,
+          "Tensile_Speed_mm_min": 1.0,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": "ASTM E8 subsize tensile specimen",
+          "Build_Angle_deg": 10,
+          "Surface_Condition": "as-manufactured",
+          "HIP_State": "HIP",
+          "Note": "Original table reports YS0.2%."
+        },
+        {
+          "Property_Name": "Ultimate_Tensile_Strength",
+          "Test_Condition": "Uniaxial tensile test on 10° specimen with as-manufactured surfaces after HIP",
+          "Value_Numeric": 1129.0,
+          "Value_Range": null,
+          "Value_StdDev": 33.0,
+          "Unit": "MPa",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": 0.00052,
+          "Tensile_Speed_mm_min": 1.0,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": "ASTM E8 subsize tensile specimen",
+          "Build_Angle_deg": 10,
+          "Surface_Condition": "as-manufactured",
+          "HIP_State": "HIP",
+          "Note": null
+        },
+        {
+          "Property_Name": "Elongation_Total",
+          "Test_Condition": "Uniaxial tensile test on 10° specimen with as-manufactured surfaces after HIP",
+          "Value_Numeric": 5.13,
+          "Value_Range": null,
+          "Value_StdDev": 0.9,
+          "Unit": "%",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": 0.00052,
+          "Tensile_Speed_mm_min": 1.0,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": "ASTM E8 subsize tensile specimen",
+          "Build_Angle_deg": 10,
+          "Surface_Condition": "as-manufactured",
+          "HIP_State": "HIP",
+          "Note": "Original table reports maximum elongation."
+        },
+        {
+          "Property_Name": "Surface_Roughness_Ra",
+          "Test_Condition": "Polished fatigue specimen face after defined polishing process",
+          "Value_Numeric": 0.7,
+          "Value_Range": null,
+          "Value_StdDev": 0.1,
+          "Unit": "µm",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": "ASTM E466 subsize fatigue specimen",
+          "HIP_State": "HIP",
+          "Note": "Polished parallel to loading direction."
+        },
+        {
+          "Property_Name": "Surface_Roughness_Ra",
+          "Test_Condition": "Horizontal upward-facing as-manufactured surface",
+          "Value_Numeric": 6.4,
+          "Value_Range": null,
+          "Value_StdDev": 1.1,
+          "Unit": "µm",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": "ASTM E466 subsize fatigue specimen",
+          "Build_Angle_deg": 0,
+          "Surface_Orientation": "upward-facing",
+          "HIP_State": "HIP",
+          "Note": "Reported as the lowest Ra among all as-manufactured surfaces in this research."
+        },
+        {
+          "Property_Name": "Surface_Roughness_Rt",
+          "Test_Condition": "50° upward-facing as-manufactured surface measured by focus variation microscopy",
+          "Value_Numeric": 62.1,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "µm",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": "ASTM E466 subsize fatigue specimen",
+          "Build_Angle_deg": 50,
+          "Surface_Orientation": "upward-facing",
+          "HIP_State": "HIP",
+          "Note": "Text compares this value with previously processed CT data."
+        },
+        {
+          "Property_Name": "Surface_Roughness_Rt",
+          "Test_Condition": "50° upward-facing as-manufactured surface measured previously by high-resolution CT",
+          "Value_Numeric": 60.4,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "µm",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": "ASTM E466 subsize fatigue specimen",
+          "Build_Angle_deg": 50,
+          "Surface_Orientation": "upward-facing",
+          "HIP_State": "HIP",
+          "Note": "Included to show agreement between focus variation microscopy and CT."
+        },
+        {
+          "Property_Name": "Material_Removal_Depth",
+          "Test_Condition": "Average material removed during polishing of downward-facing fatigue surfaces",
+          "Value_Numeric": 260.0,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "µm",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": "ASTM E466 subsize fatigue specimen",
+          "HIP_State": "HIP",
+          "Note": "Average polishing depth to achieve a defect-free surface."
+        },
+        {
+          "Property_Name": "Material_Removal_Depth",
+          "Test_Condition": "Average material removed during polishing of upward-facing fatigue surfaces",
+          "Value_Numeric": 210.0,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "µm",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": "ASTM E466 subsize fatigue specimen",
+          "HIP_State": "HIP",
+          "Note": "Average polishing depth to achieve a defect-free surface."
+        },
+        {
+          "Property_Name": "Fatigue_Test_Program",
+          "Test_Condition": "Fully tensile uniaxial fatigue test design",
+          "Value_Numeric": null,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": null,
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": "ASTM E466 subsize fatigue specimen",
+          "Stress_Ratio": 0.1,
+          "Test_Frequency_Hz": 20.0,
+          "Runout_Definition_cycles": 1500000.0,
+          "Total_Number_of_Fatigue_Tests": 96,
+          "Design_of_Experiments": [
+            {
+              "Build_Angle_deg": 0,
+              "Polished_Face": "Upward-facing",
+              "Applied_Force_kN": [
+                5.4,
+                6.2,
+                7.7,
+                9.3
+              ],
+              "Repetitions": 2,
+              "Tests_per_Condition": 8
+            },
+            {
+              "Build_Angle_deg": 0,
+              "Polished_Face": "Downward-facing",
+              "Applied_Force_kN": [
+                5.4,
+                6.2,
+                7.7,
+                9.3
+              ],
+              "Repetitions": 2,
+              "Tests_per_Condition": 8
+            },
+            {
+              "Build_Angle_deg": 10,
+              "Polished_Face": "Upward-facing",
+              "Applied_Force_kN": [
+                5.4,
+                6.2,
+                7.7,
+                9.3
+              ],
+              "Repetitions": 2,
+              "Tests_per_Condition": 8
+            },
+            {
+              "Build_Angle_deg": 10,
+              "Polished_Face": "Downward-facing",
+              "Applied_Force_kN": [
+                5.4,
+                6.2,
+                7.7,
+                9.3
+              ],
+              "Repetitions": 2,
+              "Tests_per_Condition": 8
+            },
+            {
+              "Build_Angle_deg": 30,
+              "Polished_Face": "Upward-facing",
+              "Applied_Force_kN": [
+                5.4,
+                6.2,
+                7.7,
+                9.3
+              ],
+              "Repetitions": 2,
+              "Tests_per_Condition": 8
+            },
+            {
+              "Build_Angle_deg": 30,
+              "Polished_Face": "Downward-facing",
+              "Applied_Force_kN": [
+                5.4,
+                6.2,
+                7.7,
+                9.3
+              ],
+              "Repetitions": 2,
+              "Tests_per_Condition": 8
+            },
+            {
+              "Build_Angle_deg": 50,
+              "Polished_Face": "Upward-facing",
+              "Applied_Force_kN": [
+                5.4,
+                6.2,
+                7.7,
+                9.3
+              ],
+              "Repetitions": 2,
+              "Tests_per_Condition": 8
+            },
+            {
+              "Build_Angle_deg": 50,
+              "Polished_Face": "Downward-facing",
+              "Applied_Force_kN": [
+                5.4,
+                6.2,
+                7.7,
+                9.3
+              ],
+              "Repetitions": 2,
+              "Tests_per_Condition": 8
+            },
+            {
+              "Build_Angle_deg": 70,
+              "Polished_Face": "Upward-facing",
+              "Applied_Force_kN": [
+                5.4,
+                6.2,
+                7.7,
+                9.3
+              ],
+              "Repetitions": 2,
+              "Tests_per_Condition": 8
+            },
+            {
+              "Build_Angle_deg": 70,
+              "Polished_Face": "Downward-facing",
+              "Applied_Force_kN": [
+                5.4,
+                6.2,
+                7.7,
+                9.3
+              ],
+              "Repetitions": 2,
+              "Tests_per_Condition": 8
+            },
+            {
+              "Build_Angle_deg": 90,
+              "Polished_Face": "Side-facing",
+              "Applied_Force_kN": [
+                5.4,
+                6.2,
+                7.7,
+                9.3
+              ],
+              "Repetitions": 2,
+              "Tests_per_Condition": 16
+            }
+          ],
+          "Note": "Fatigue specimens retained one rough as-manufactured face while the opposite upward or downward face was polished smooth."
+        },
+        {
+          "Property_Name": "Fatigue_Orientation_Effect",
+          "Test_Condition": "Comparison of upward-facing rough surfaces versus downward-facing rough surfaces using exponential S-N regression curves",
+          "Value_Numeric": null,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "cycles",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": "ASTM E466 subsize fatigue specimen",
+          "Stress_Ratio": 0.1,
+          "Test_Frequency_Hz": 20.0,
+          "DeltaE4_cycles": 4200.0,
+          "DeltaE5_cycles": 39000.0,
+          "DeltaE6_cycles": 360000.0,
+          "Equivalent_Downward_Cycles_at_Upward_1E4_Stress": 5800.0,
+          "Equivalent_Downward_Cycles_at_Upward_1E5_Stress": 61000.0,
+          "Equivalent_Downward_Cycles_at_Upward_1E6_Stress": 640000.0,
+          "Average_Improvement_in_Cycles_to_Failure_pct": 63.0,
+          "Note": "These cycle differences quantify the fatigue life gained by removing downward-facing surface roughness."
+        },
+        {
+          "Property_Name": "Fatigue_Orientation_Effect_without_10deg",
+          "Test_Condition": "Supplementary exponential S-N regression with 10° specimens omitted",
+          "Value_Numeric": null,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "cycles",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": "ASTM E466 subsize fatigue specimen",
+          "Stress_Ratio": 0.1,
+          "Test_Frequency_Hz": 20.0,
+          "DeltaE4_cycles": 400.0,
+          "DeltaE5_cycles": 31000.0,
+          "DeltaE6_cycles": 500000.0,
+          "Equivalent_Downward_Cycles_at_Upward_1E4_Stress": 9600.0,
+          "Equivalent_Downward_Cycles_at_Upward_1E5_Stress": 69000.0,
+          "Equivalent_Downward_Cycles_at_Upward_1E6_Stress": 500000.0,
+          "Note": "10° specimens had a significant influence on the original regression curves."
+        },
+        {
+          "Property_Name": "Fatigue_Runout_Observation",
+          "Test_Condition": "Observed runout distribution in fatigue tests",
+          "Value_Numeric": 300.0,
+          "Value_Range": "Only 50°, 70° and 90° specimens reached runout for stress amplitudes below 300 MPa",
+          "Value_StdDev": null,
+          "Unit": "MPa",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": "ASTM E466 subsize fatigue specimen",
+          "Stress_Ratio": 0.1,
+          "Test_Frequency_Hz": 20.0,
+          "Note": null
+        },
+        {
+          "Property_Name": "Fatigue_Failure_Initiation_Observation",
+          "Test_Condition": "Fractographic summary of fatigue failures",
+          "Value_Numeric": null,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": null,
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": "ASTM E466 subsize fatigue specimen",
+          "Stress_Ratio": 0.1,
+          "Test_Frequency_Hz": 20.0,
+          "Failure_Initiated_at_or_Near_Corners": true,
+          "Failure_Initiated_at_Rough_As_Manufactured_Surface_in_Almost_All_Cases": true,
+          "Failure_Initiated_at_Polished_Surface_in_Almost_All_Cases": false,
+          "Note": "Geometry-induced corner stress concentration contributed to crack initiation."
+        },
+        {
+          "Property_Name": "ANOVA_Nf_Response",
+          "Test_Condition": "ANOVA for response variable cycles to failure Nf with regressors stress, Ra, and upward/downward-facing indicator variable",
+          "Value_Numeric": 0.841,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "R2",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": "ASTM E466 subsize fatigue specimen",
+          "Regressor_Stress_F_Stat": 380.9,
+          "Regressor_Stress_P_Value": "<.001",
+          "Regressor_Ra_F_Stat": 87.6,
+          "Regressor_Ra_P_Value": "<.001",
+          "Regressor_Upward_Downward_Indicator_F_Stat": 5.252,
+          "Regressor_Upward_Downward_Indicator_P_Value": "0.02",
+          "Note": "All three regressors were statistically significant for explaining variability in Nf."
+        },
+        {
+          "Property_Name": "DeltaKR_Regression_All_Data",
+          "Test_Condition": "Regression analysis between ΔKR and cycles to failure for all fatigue data",
+          "Value_Numeric": null,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "adjusted R2",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": "ASTM E466 subsize fatigue specimen",
+          "Best_Roughness_Parameter": "Rt",
+          "Best_Adjusted_R2": 0.68,
+          "Worst_Roughness_Parameter": "Ra",
+          "Worst_Adjusted_R2": 0.61,
+          "Note": "Runout data were excluded from regression analysis."
+        },
+        {
+          "Property_Name": "DeltaKR_Regression_Downward_Facing_Data",
+          "Test_Condition": "Regression analysis between ΔKR and cycles to failure for downward-facing rough-surface data",
+          "Value_Numeric": null,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "adjusted R2",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": "ASTM E466 subsize fatigue specimen",
+          "Best_Roughness_Parameter": "Rp",
+          "Best_Adjusted_R2": 0.85,
+          "Worst_Roughness_Parameter": "Rv",
+          "Worst_Adjusted_R2": 0.68,
+          "Stress_vs_Nf_Adjusted_R2": 0.65,
+          "Note": "For downward-facing surfaces, Rp gave the strongest ΔKR correlation to fatigue life."
+        },
+        {
+          "Property_Name": "DeltaKR_Regression_Upward_Facing_Data",
+          "Test_Condition": "Regression analysis between ΔKR and cycles to failure for upward-facing rough-surface data",
+          "Value_Numeric": null,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "adjusted R2",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": "ASTM E466 subsize fatigue specimen",
+          "Best_Roughness_Parameter": "Rv",
+          "Best_Adjusted_R2": 0.87,
+          "Worst_Roughness_Parameter": "Rp",
+          "Worst_Adjusted_R2": 0.6,
+          "Stress_vs_Nf_Adjusted_R2": 0.76,
+          "Note": "For upward-facing surfaces, Rv gave the strongest ΔKR correlation to fatigue life."
+        }
+      ]
+    }
+  ]
+}

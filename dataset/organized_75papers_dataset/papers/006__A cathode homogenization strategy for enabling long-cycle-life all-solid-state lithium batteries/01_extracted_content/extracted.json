@@ -1,0 +1,1499 @@
+{
+  "Paper_Metadata": {
+    "Paper_Title": "A cathode homogenization strategy for enabling long-cycle-life all-solid-state lithium batteries",
+    "DOI": "10.1038/s41560-024-01596-6"
+  },
+  "Paper_Routing": {
+    "base_material": "Ceramics_Inorganic",
+    "application": "Functional",
+    "research_paradigm": "Hybrid",
+    "Supplements_Loaded": [
+      "directions/base/Ceramics_Inorganic.txt",
+      "directions/application/Functional.txt",
+      "directions/paradigm/Hybrid.txt",
+      "directions/domain/Battery.txt"
+    ],
+    "Patch_Tags": [
+      "Battery"
+    ],
+    "Needs_Mixed_Routing_Check": false
+  },
+  "items": [
+    {
+      "Item_ID": "item_01",
+      "Sample_ID": "LTG0.25PSSe0.2",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Ceramics_Inorganic",
+      "application": "Functional",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Battery"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Li1.75Ti2(Ge0.25P0.75S3.8Se0.2)3 (referred to as LTG0.25PSSe0.2; Supplementary Table 3)",
+        "a cathode material, Li1.75Ti2(Ge0.25P0.75S3.8Se0.2)3"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Category": "Sulfide thiophosphate cathode active material",
+          "Material_Name_Raw": "Li1.75Ti2(Ge0.25P0.75S3.8Se0.2)3 (LTG0.25PSSe0.2)",
+          "Component_Type": "Cathode",
+          "Stoichiometry": {
+            "Nominal": "Li1.75Ti2(Ge0.25P0.75S3.8Se0.2)3",
+            "Measured": "Li1.72Ti2.05(Ge0.25P0.74S3.73Se0.20)3",
+            "Measurement_Method": "ICP-MS (Agilent ICPOES730)"
+          },
+          "Doping_or_Modification": {
+            "Ge_doping": {
+              "Target_Site": "P site",
+              "Nominal_Amount": 0.25,
+              "Unit": "per formula unit"
+            },
+            "Se_doping": {
+              "Target_Site": "S site",
+              "Nominal_Amount": 0.2,
+              "Unit": "per formula unit"
+            }
+          },
+          "Actual_Density": {
+            "Value": 1.82,
+            "Unit": "g cm-3",
+            "Data_Source": "text"
+          },
+          "Tap_Density": {
+            "Value": 1.19,
+            "Unit": "g cm-3",
+            "Data_Source": "text"
+          },
+          "Raw_Materials": [
+            {
+              "Name": "Li2S",
+              "Supplier": "Alfa Aesar",
+              "Purity": "99.9%"
+            },
+            {
+              "Name": "P2S5",
+              "Supplier": "MACKLIN",
+              "Purity": ">= 99%"
+            },
+            {
+              "Name": "TiS2",
+              "Supplier": "MERDA",
+              "Purity": "99.95%"
+            },
+            {
+              "Name": "GeS2",
+              "Supplier": "Aladdin",
+              "Purity": "99.999%"
+            },
+            {
+              "Name": "TiSe2",
+              "Supplier": "Alfa Aesar",
+              "Purity": "99.9%"
+            },
+            {
+              "Name": "S (excess)",
+              "Supplier": "MACKLIN",
+              "Purity": "99.99%",
+              "Note": "slight excess added during annealing"
+            }
+          ]
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "Stoichiometric reagents of Li2S (Alfa Aesar, 99.9%), P2S5 (MACKLIN, >= 99%), TiS2 (MERDA, 99.95%), GeS2 (Aladdin, 99.999%) and TiSe2 (Alfa Aesar, 99.9%) are placed in a sealed zirconia pot. The mixtures are ball milled for 40 h at a speed of 370 rpm. The obtained powders are then pelletized in a 12 mm diameter mould and sealed in a quartz tube together with slight excess of sulfur (MACKLIN, 99.99%). After annealing at 400 C for 8 h, the pellets are removed from the tube and grinded manually in a mortar to obtain the target powders. All procedures are conducted under argon.",
+            "simplified": "Ball milling (40 h, 370 rpm, sealed zirconia pot, Ar) -> pelletization (12 mm die) -> sealed quartz tube annealing (400 C, 8 h, excess S) -> manual grinding"
+          },
+          "Stages": {
+            "Stage1_Ball_Milling": {
+              "Method": "Ball milling",
+              "Duration_h": 40,
+              "Speed_rpm": 370,
+              "Atmosphere": "Ar (sealed zirconia pot)",
+              "Equipment_Details": "sealed zirconia pot"
+            },
+            "Stage2_Pelletization": {
+              "Method": "Pelletizing",
+              "Die_Diameter_mm": 12
+            },
+            "Stage3_Annealing": {
+              "Method": "Sealed quartz tube annealing",
+              "Temperature_C": 400,
+              "Temperature_K": 673.15,
+              "Duration_h": 8,
+              "Atmosphere": "sealed quartz tube with slight excess of sulfur",
+              "Container": "quartz tube"
+            },
+            "Stage4_PostProcessing": {
+              "Method": "Manual grinding in mortar"
+            }
+          },
+          "Equipment": [
+            {
+              "Name": "Sealed zirconia pot (ball mill)",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "12 mm diameter mould",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Quartz tube",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Rigaku SmartLab powder X-ray diffractometer",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Hitachi S-4800 SEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "EDS (energy dispersive spectroscopy)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Agilent ICPOES730",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Renishaw inVia micro-Raman spectrometer",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "ESCALab 250Xi (Thermo Scientific) XPS",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Thermo Scientific Model K-Alpha XPS",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "PHI nanoTOFII Time-of-Flight SIMS",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Bruker AVANCE NEO 500WB (7Li PFG-NMR)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "BL 16A and BL 20A (National Synchrotron Radiation Research Center) XAS",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Biologic VMP-300 electrochemical workstation",
+              "Category": "Testing"
+            },
+            {
+              "Name": "Land CT2001A battery test system (Wuhan Land Electronic Co. Ltd.)",
+              "Category": "Testing"
+            },
+            {
+              "Name": "HY-100 tapping apparatus (Haoyu Co. Ltd. DanDong)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Maud 2.80 programme",
+              "Category": "Software"
+            }
+          ],
+          "Key_Params": {
+            "Active_Material_Loading_mg_cm2": 4,
+            "Cold_Press_Pressure_MPa": 350,
+            "Ball_Milling_Time_h": 40,
+            "Annealing_Temperature_K": 673.15
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "The XRD patterns of Se-tuned LTG0.25PS with Se content <= 0.2 fit well with that of LTG0.25PS. The element homogeneity is revealed by the elemental mapping analysis. A new Raman peak at 370 cm-1 represents PS3Se3+ tetrahedron. LTG0.25PSSe0.2 undergoes a volume change of 1.2% with six Li+ inserted.",
+            "simplified": "Hexagonal structure (P6cc) confirmed by XRD Rietveld refinement. No impurity at Se <= 0.2. Edge-sharing TiS6 octahedra + (P/Ge)(S/Se)4 tetrahedra forming open 3D framework. Volume change 1.2% with 6 Li+ insertion."
+          },
+          "Crystalline_Phases": [
+            {
+              "Phase_Name": "LTG0.25PSSe0.2",
+              "Crystal_Structure": "Hexagonal",
+              "Space_Group": "P6cc",
+              "Phase_Fraction": "Main phase, no impurity",
+              "Note": "XRD pattern fits hexagonal structure; Rietveld refinement performed (Rwp reported in Fig. 2c)"
+            }
+          ],
+          "Raman_Peaks": [
+            {
+              "Wavenumber_cm-1": 370,
+              "Assignment": "PS₃Se³⁻ tetrahedron",
+              "Note": "confirms partial replacement of S by Se; source text reads PS₃Se³⁺, charge sign corrected as chemically consistent with tetrahedral anion"
+            }
+          ],
+          "Microstructure_Features": {
+            "Morphology": "Powder; elemental mapping shows homogeneous distribution of Ti, Ge, P, S, Se",
+            "Data_Source": "image",
+            "Note": "from SEM and elemental mapping in Fig. 2d"
+          },
+          "Advanced_Quantitative_Features": {
+            "Volume_Change_with_6_Li_pct": {
+              "Value": 1.2,
+              "Unit": "%",
+              "Data_Source": "text"
+            },
+            "Young_Modulus_GPa": {
+              "Value": 17.0,
+              "Unit": "GPa",
+              "Data_Source": "text",
+              "Note": "low Young's modulus enables easy dense compression"
+            },
+            "D_Li_Plus_cm2_s_PFG_NMR": {
+              "Value": 5.5e-08,
+              "Unit": "cm2 s-1",
+              "Data_Source": "text"
+            },
+            "Li_Plus_Activation_Energy_eV": {
+              "Value": 0.18,
+              "Unit": "eV",
+              "Data_Source": "text"
+            },
+            "Bandgap_initial_eV": {
+              "Value": 0.749,
+              "Unit": "eV",
+              "Data_Source": "text",
+              "Note": "from DFT DOS calculation",
+              "Data_Nature": "Computed"
+            },
+            "Bandgap_fully_lithiated_eV": {
+              "Value": 0,
+              "Unit": "eV",
+              "Data_Source": "text",
+              "Note": "semiconductor-to-metal transition upon full lithiation",
+              "Data_Nature": "Computed"
+            },
+            "Interplanar_Spacing_Increase_pct_304": {
+              "Value": 1.2,
+              "Unit": "%",
+              "Data_Source": "text",
+              "Note": "estimated by Bragg equation; 2theta shifted from 34 to 33.6 deg"
+            },
+            "Interplanar_Spacing_Increase_pct_211": {
+              "Value": 1.0,
+              "Unit": "%",
+              "Data_Source": "text",
+              "Note": "estimated by Bragg equation; 2theta shifted from 15.5 to 15.35 deg"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Li+ Ionic Conductivity (initial, as-prepared)",
+            "Property_Type": "Ionic_Conductivity",
+            "Value": 0.2,
+            "Unit": "mS cm-1",
+            "Original_Values": "0.2 mS cm-1",
+            "Test_Condition": {
+              "Test_Temperature_K": 298.15,
+              "Original_Temperature": "room temperature",
+              "State": "cold pressed",
+              "Method": "EIS with electrode-blocking method (steel/steel symmetric cell)",
+              "Pressure_MPa": 350,
+              "Frequency_Range": "7 MHz to 100 mHz",
+              "Amplitude_mV": 50
+            },
+            "Data_Source": "text",
+            "Note": "initial sigma_Li+ at cold pressed state"
+          },
+          {
+            "Property_Name": "Electronic Conductivity (initial, as-prepared)",
+            "Property_Type": "Electronic_Conductivity",
+            "Value": 225,
+            "Unit": "mS cm-1",
+            "Original_Values": "225 mS cm-1",
+            "Test_Condition": {
+              "Test_Temperature_K": 298.15,
+              "Original_Temperature": "room temperature",
+              "State": "cold pressed"
+            },
+            "Data_Source": "text",
+            "Note": "initial sigma_e"
+          },
+          {
+            "Property_Name": "Li+ Ionic Conductivity vs Li+ content (first discharge)",
+            "Property_Type": "Ionic_Conductivity",
+            "Values_by_Li_insertion": [
+              {
+                "Li_inserted": 1,
+                "Value_mS_cm-1": 0.22
+              },
+              {
+                "Li_inserted": 2,
+                "Value_mS_cm-1": 0.25
+              },
+              {
+                "Li_inserted": 3,
+                "Value_mS_cm-1": 0.35
+              },
+              {
+                "Li_inserted": 4,
+                "Value_mS_cm-1": 0.42
+              },
+              {
+                "Li_inserted": 5,
+                "Value_mS_cm-1": 0.5
+              },
+              {
+                "Li_inserted": 6,
+                "Value_mS_cm-1": 0.66
+              }
+            ],
+            "Test_Condition": {
+              "Test_Temperature_K": 298.15,
+              "Voltage_Range_V_vs_Li": "1.6-3.5",
+              "Current_Density_mA_cm2": 0.5,
+              "Method": "EIS after electrochemical (de)intercalation",
+              "Note": "calculated based on discharge capacity; error bars = standard deviation of 3 measurements"
+            },
+            "Data_Source": "text",
+            "Note": "monotonically increases with Li+ insertion"
+          },
+          {
+            "Property_Name": "Electronic Conductivity vs Li+ content (first discharge)",
+            "Property_Type": "Electronic_Conductivity",
+            "Values_by_Li_insertion": [
+              {
+                "Li_inserted": 1,
+                "Value_mS_cm-1": 242
+              },
+              {
+                "Li_inserted": 2,
+                "Value_mS_cm-1": 281
+              },
+              {
+                "Li_inserted": 3,
+                "Value_mS_cm-1": 310
+              },
+              {
+                "Li_inserted": 4,
+                "Value_mS_cm-1": 324
+              },
+              {
+                "Li_inserted": 5,
+                "Value_mS_cm-1": 336
+              },
+              {
+                "Li_inserted": 6,
+                "Value_mS_cm-1": 412
+              }
+            ],
+            "Test_Condition": {
+              "Test_Temperature_K": 298.15,
+              "Voltage_Range_V_vs_Li": "1.6-3.5"
+            },
+            "Data_Source": "text",
+            "Note": "monotonically increases with Li+ insertion; sigma_e gain with 4 Li+ attributed to Ti4+ to Ti2+ reduction"
+          },
+          {
+            "Property_Name": "Li+ Ionic Conductivity vs Li+ extraction (subsequent charging)",
+            "Property_Type": "Ionic_Conductivity",
+            "Values_by_Li_extraction": [
+              {
+                "Li_extracted": 2,
+                "Value_mS_cm-1": 0.49
+              },
+              {
+                "Li_extracted": 4,
+                "Value_mS_cm-1": 0.28
+              },
+              {
+                "Li_extracted": 5.4,
+                "Value_mS_cm-1": 0.2
+              }
+            ],
+            "Test_Condition": {
+              "Test_Temperature_K": 298.15,
+              "Voltage_Range_V_vs_Li": "1.6-3.5"
+            },
+            "Data_Source": "text",
+            "Note": "reversibly decreasing during charging"
+          },
+          {
+            "Property_Name": "Electronic Conductivity vs Li+ extraction (subsequent charging)",
+            "Property_Type": "Electronic_Conductivity",
+            "Values_by_Li_extraction": [
+              {
+                "Li_extracted": 2,
+                "Value_mS_cm-1": 327
+              },
+              {
+                "Li_extracted": 4,
+                "Value_mS_cm-1": 291
+              },
+              {
+                "Li_extracted": 5.4,
+                "Value_mS_cm-1": 202
+              }
+            ],
+            "Test_Condition": {
+              "Test_Temperature_K": 298.15,
+              "Voltage_Range_V_vs_Li": "1.6-3.5"
+            },
+            "Data_Source": "text",
+            "Note": "reversibly decreasing during charging"
+          },
+          {
+            "Property_Name": "Specific Capacity",
+            "Property_Type": "Specific_Capacity",
+            "Value": 250,
+            "Unit": "mAh g-1",
+            "Original_Values": "250 mAh g-1",
+            "Data_Source": "text",
+            "Note": "delivered by LTG0.25PSSe0.2"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "item_02",
+      "Sample_ID": "LTG0.25PS",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Ceramics_Inorganic",
+      "application": "Functional",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Battery"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "LTG0.25PS possesses a higher D_Li+ of 6.5 x 10^-8 cm2 s-1",
+        "sigma_e of LTG0.25PS decreases 2.5-fold to 47 mS cm-1"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Category": "Sulfide thiophosphate cathode material (Ge-doped LTPS, no Se)",
+          "Material_Name_Raw": "LTG0.25PS",
+          "Component_Type": "Cathode",
+          "Stoichiometry": {
+            "Nominal": "LiTi2(Ge0.25P0.75S4)3"
+          },
+          "Doping_or_Modification": {
+            "Ge_doping": {
+              "Target_Site": "P site",
+              "Nominal_Amount": 0.25,
+              "Unit": "per formula unit"
+            }
+          }
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "Ge-tuned LTPS samples fabricated by solid-state reaction method",
+            "simplified": "Same solid-state reaction method as LTG0.25PSSe0.2 without TiSe2 precursor"
+          },
+          "Note": "Processing shared with item_01 per paper statement: 'Ge, Se-tuned LTPS samples are fabricated by the solid-state reaction method'; same base process parameters"
+        },
+        "Structure": {
+          "Structure_Text": {
+            "simplified": "Hexagonal structure (P6cc), same as LTPS parent, with Ge at P site. No impurity."
+          },
+          "Crystalline_Phases": [
+            {
+              "Phase_Name": "LTG0.25PS",
+              "Crystal_Structure": "Hexagonal",
+              "Space_Group": "P6cc"
+            }
+          ],
+          "Advanced_Quantitative_Features": {
+            "D_Li_Plus_cm2_s_PFG_NMR": {
+              "Value": 6.5e-08,
+              "Unit": "cm2 s-1",
+              "Method": "7Li PFG-NMR",
+              "Data_Source": "text"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Li+ Ionic Conductivity",
+            "Property_Type": "Ionic_Conductivity",
+            "Value": 0.22,
+            "Unit": "mS cm-1",
+            "Original_Values": "2.2 x 10^-4 S cm-1",
+            "Test_Condition": {
+              "Test_Temperature_K": 298.15,
+              "Original_Temperature": "room temperature"
+            },
+            "Data_Source": "text",
+            "Note": "significant increase from LTPS due to increased Li+ concentration and D_Li+"
+          },
+          {
+            "Property_Name": "Electronic Conductivity",
+            "Property_Type": "Electronic_Conductivity",
+            "Value": 47,
+            "Unit": "mS cm-1",
+            "Original_Values": "47 mS cm-1",
+            "Test_Condition": {
+              "Test_Temperature_K": 298.15,
+              "Original_Temperature": "room temperature"
+            },
+            "Data_Source": "text",
+            "Note": "decreases 2.5-fold vs LTPS (115 mS cm-1 per this work) due to reduced number of delocalized electrons within GeS4^4- tetrahedra"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "item_03",
+      "Sample_ID": "LTPS",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Ceramics_Inorganic",
+      "application": "Functional",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Battery"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "lithium titanium thiophosphate, LiTi2(PS4)3 (LTPS)",
+        "sigma_Li+ of lower than 10^-5 S cm-1 (5.2 x 10^-6 S cm-1 estimated by this work)"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Category": "Sulfide thiophosphate cathode material (parent compound)",
+          "Material_Name_Raw": "LiTi2(PS4)3 (LTPS)",
+          "Component_Type": "Cathode",
+          "Stoichiometry": {
+            "Nominal": "LiTi2(PS4)3"
+          }
+        },
+        "Processing": {
+          "Process_Text": {
+            "simplified": "Fabricated by solid-state reaction method (same process family)"
+          },
+          "Note": "Processing shared with item_01 per paper statement: 'Ge, Se-tuned LTPS samples are fabricated by the solid-state reaction method'; same base process parameters (ball milling + sealed quartz tube annealing)"
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "LTPS is built of edge-sharing TiS6 octahedra and PS4 tetrahedra forming an open three-dimensional framework",
+            "simplified": "3D framework of edge-sharing TiS6 octahedra and PS4 tetrahedra; hexagonal P6cc or orthorhombic Ccc2"
+          },
+          "Crystalline_Phases": [
+            {
+              "Phase_Name": "LTPS (LiTi2(PS4)3)",
+              "Crystal_Structure": "Hexagonal P6cc or Orthorhombic Ccc2",
+              "Note": "Crystal structure discrepancy: orthorhombic Ccc2 vs hexagonal P6cc attributed to different synthesis processes"
+            }
+          ],
+          "Advanced_Quantitative_Features": {
+            "Volume_Change_with_6_Li_pct": {
+              "Value": 1.2,
+              "Unit": "%",
+              "Data_Source": "text"
+            },
+            "Young_Modulus_GPa": {
+              "Value": 17.0,
+              "Unit": "GPa",
+              "Data_Source": "text"
+            },
+            "D_Li_Plus_cm2_s_PFG_NMR_this_work": {
+              "Value": 2.2e-08,
+              "Unit": "cm2 s-1",
+              "Data_Source": "text"
+            },
+            "D_Li_Plus_cm2_s_DiStefano": {
+              "Value": 1.2e-07,
+              "Unit": "cm2 s-1",
+              "Data_Source": "text",
+              "Note": "reported by Di Stefano et al."
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Li+ Ionic Conductivity (this work)",
+            "Property_Type": "Ionic_Conductivity",
+            "Value": 5.2e-06,
+            "Unit": "S cm-1",
+            "Original_Values": "5.2 x 10^-6 S cm-1 estimated by this work via electrode-blocking method",
+            "Test_Condition": {
+              "Test_Temperature_K": 298.15,
+              "Original_Temperature": "room temperature, cold pressed state"
+            },
+            "Data_Source": "text",
+            "Note": "lower than 10^-5 S cm-1 due to grain boundary impact"
+          },
+          {
+            "Property_Name": "Electronic Conductivity (this work)",
+            "Property_Type": "Electronic_Conductivity",
+            "Value": 0.115,
+            "Unit": "S cm-1",
+            "Original_Values": "1.15 x 10^-1 S cm-1 (this work)",
+            "Test_Condition": {
+              "Test_Temperature_K": 298.15,
+              "Original_Temperature": "room temperature"
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Electronic Conductivity (literature)",
+            "Property_Type": "Electronic_Conductivity",
+            "Value": 8.2e-08,
+            "Unit": "S cm-1",
+            "Original_Values": "8.2 x 10^-8 S cm-1 (previous work)",
+            "Data_Nature": "Literature_Experimental",
+            "Data_Source": "text",
+            "Note": "discrepancy with this work attributed to different synthesis processes resulting in different defects or crystal structures"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "item_04",
+      "Sample_ID": "Se-tuned_LTG0.25PS_series",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Ceramics_Inorganic",
+      "application": "Functional",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Battery"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "sigma_e of LTGe0.25PS monotonically increases from 75 to 113, 174 and 225 mS cm-1 with the electronic structure of LTG0.25PS modified by 0.05, 0.1, 0.15 and 0.2 Se"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Category": "Sulfide thiophosphate cathode materials (Se-doped LTG0.25PS series)",
+          "Material_Name_Raw": "LTG0.25PSSe_x (x = 0.05, 0.1, 0.15, 0.2)",
+          "Component_Type": "Cathode",
+          "Stoichiometry": {
+            "Nominal": "LiTi2(Ge0.25P0.75S(4-x)Se_x)3, x = 0.05, 0.1, 0.15, 0.2"
+          },
+          "Doping_or_Modification": {
+            "Ge_doping": "0.25 at P site",
+            "Se_doping": "0.05, 0.1, 0.15, 0.2 at S site"
+          }
+        },
+        "Processing": {
+          "Process_Text": {
+            "simplified": "Same solid-state reaction method as LTG0.25PSSe0.2 with varying Se content"
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "simplified": "XRD patterns fit well with LTG0.25PS for Se <= 0.2; hexagonal structure maintained"
+          },
+          "Advanced_Quantitative_Features": {
+            "Bandgap_LTPS_eV_DFT": {
+              "Value": 1.292,
+              "Unit": "eV",
+              "Data_Source": "text",
+              "Data_Nature": "Computed"
+            },
+            "Bandgap_Se_doped_eV_DFT": {
+              "Value": 0.52,
+              "Unit": "eV",
+              "Data_Source": "text",
+              "Note": "bandgap decreased from 1.292 eV to 0.52 eV with Se introduction",
+              "Data_Nature": "Computed"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Electronic Conductivity vs Se content",
+            "Property_Type": "Electronic_Conductivity",
+            "Values_by_Se_content": [
+              {
+                "Se_content": 0.05,
+                "Value_mS_cm-1": 75
+              },
+              {
+                "Se_content": 0.1,
+                "Value_mS_cm-1": 113
+              },
+              {
+                "Se_content": 0.15,
+                "Value_mS_cm-1": 174
+              },
+              {
+                "Se_content": 0.2,
+                "Value_mS_cm-1": 225
+              }
+            ],
+            "Test_Condition": {
+              "Test_Temperature_K": 298.15,
+              "Original_Temperature": "room temperature"
+            },
+            "Data_Source": "text",
+            "Note": "σ_e monotonically increases with Se content; σ_Li+ remains nearly unchanged due to constant Li+ concentration; original: 'from 75 to 113, 174 and 225 mS cm-1 with 0.05, 0.1, 0.15 and 0.2 Se'"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "item_05",
+      "Sample_ID": "LTG0.25PSSe0.25",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Ceramics_Inorganic",
+      "application": "Functional",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Battery"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Further increasing the Se content to LTG0.25PSSe0.25 gives rise to a TiSe2 impurity at 2theta = 32 deg"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Category": "Sulfide thiophosphate cathode material (over-doped Se)",
+          "Material_Name_Raw": "LTG0.25PSSe0.25",
+          "Component_Type": "Cathode",
+          "Stoichiometry": {
+            "Nominal": "LiTi2(Ge0.25P0.75S3.75Se0.25)3"
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "LTG0.25PSSe0.25 gives rise to a TiSe2 impurity at 2theta = 32 deg"
+          },
+          "Crystalline_Phases": [
+            {
+              "Phase_Name": "TiSe2 (impurity)",
+              "Crystal_Structure": "not specified",
+              "Note": "impurity detected at 2theta = 32 deg when Se content exceeds 0.2"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "Item_ID": "item_06",
+      "Sample_ID": "Li6PS5Cl",
+      "Role": "Comparator",
+      "Data_Nature": "Experimental",
+      "base_material": "Ceramics_Inorganic",
+      "application": "Functional",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Battery"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Li6PS5Cl is synthesized by the solid-state reaction",
+        "the ASLB with the LTG0.25PSSe0.2|Li6PS5Cl|Li-Si configuration"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Category": "Sulfide solid electrolyte",
+          "Material_Name_Raw": "Li6PS5Cl",
+          "Component_Type": "Electrolyte",
+          "Stoichiometry": {
+            "Nominal": "Li6PS5Cl"
+          },
+          "Raw_Materials": [
+            {
+              "Name": "Li2S",
+              "Supplier": "Alfa Aesar",
+              "Purity": "99.9%"
+            },
+            {
+              "Name": "LiCl",
+              "Supplier": "MACKLIN",
+              "Purity": ">=99%"
+            },
+            {
+              "Name": "P2S5",
+              "Supplier": "MACKLIN",
+              "Purity": ">=99%"
+            }
+          ]
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "Li6PS5Cl is synthesized by the solid-state reaction with stoichiometric reagents of Li2S (Alfa Aesar, 99.9%), LiCl (MACKLIN, >=99%) and P2S5 (MACKLIN, >=99%). The starting materials are thoroughly mixed in a hermetically sealed zirconia container and subjected to ball milling for 24 h at 600 rpm. The resulting mixture is then compressed into pellets, placed within a quartz tube, annealed at 550 C for 5 h, followed by gradual cooling to room temperature. The pellets are pulverized using an agate mortar. All procedures under argon.",
+            "simplified": "Ball milling (24 h, 600 rpm, sealed zirconia, Ar) -> pelletization -> sealed quartz tube annealing (550 C, 5 h) -> gradual cooling to RT -> pulverize in agate mortar"
+          },
+          "Stages": {
+            "Stage1_Ball_Milling": {
+              "Duration_h": 24,
+              "Speed_rpm": 600,
+              "Atmosphere": "Ar (sealed)"
+            },
+            "Stage2_Annealing": {
+              "Temperature_C": 550,
+              "Temperature_K": 823.15,
+              "Duration_h": 5,
+              "Atmosphere": "sealed quartz tube",
+              "Cooling": "gradual cooling to room temperature"
+            },
+            "Stage3_PostProcessing": {
+              "Method": "Pulverizing using agate mortar"
+            }
+          },
+          "Equipment": [
+            {
+              "Name": "Sealed zirconia container (ball mill)",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Quartz tube",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Agate mortar",
+              "Category": "Preparation"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "Item_ID": "item_07",
+      "Sample_ID": "Li-Si_alloy_anode",
+      "Role": "Comparator",
+      "Data_Nature": "Experimental",
+      "base_material": "Ceramics_Inorganic",
+      "application": "Functional",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Battery"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "The Li-Si alloy anode is prepared using Li-Si alloy powders and Li3N powders"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Category": "Li-Si alloy anode",
+          "Material_Name_Raw": "Li-Si alloy + Li3N",
+          "Component_Type": "Anode",
+          "Stoichiometry": {
+            "Li_Si_Alloy": "Li3.5Si",
+            "Additive": "Li3N",
+            "Weight_Ratio_LiSi_to_Li3N": "10:1"
+          },
+          "Raw_Materials": [
+            {
+              "Name": "Si powders",
+              "Supplier": "Alfa Aesar",
+              "Purity": "99.9%",
+              "Particle_Size": "1-5 um"
+            },
+            {
+              "Name": "Scrap lithium foil"
+            },
+            {
+              "Name": "LiFSI in THF solution",
+              "Concentration": "0.1 mol L-1",
+              "Role": "lubricant"
+            },
+            {
+              "Name": "Li3N powders",
+              "Supplier": "MACKLIN",
+              "Purity": ">=99%"
+            }
+          ]
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "Li-Si alloy (Li3.5Si) powders are prepared by manual grinding the stoichiometric mixtures of Si powders and the scrap lithium foil in a glovebox filled with Ar atmosphere. Several drops of 0.1 mol L-1 lithium bis(fluorosulfonyl)imide in tetrahydrofuran solution is used as the lubricant. Dark grey Li3.5Si powders are obtained after tetrahydrofuran is evaporated. The Li-Si alloy anode are finally obtained by manual grinding the as-prepared Li-Si alloy powders and Li3N powders according to a weight ratio of 10:1.",
+            "simplified": "Si + Li foil manual grinding in Ar glovebox (with LiFSI/THF lubricant) -> THF evaporation -> Li3.5Si + Li3N manual grinding (10:1 wt ratio)"
+          }
+        }
+      }
+    },
+    {
+      "Item_ID": "item_08",
+      "Sample_ID": "ASLB_LTGPSSe_standard",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Ceramics_Inorganic",
+      "application": "Functional",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Battery"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "the ASLB with the LTG0.25PSSe0.2|Li6PS5Cl|Li-Si configuration",
+        "a very long cycle life of over 20,000 cycles without failure at 2.5 mA cm-2"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Category": "All-solid-state lithium battery (full cell)",
+          "Material_Name_Raw": "LTG0.25PSSe0.2 | Li6PS5Cl | Li-Si ASLB",
+          "Component_Type": "Full_Cell",
+          "Composite_Formulation": {
+            "Cathode": "100% LTG0.25PSSe0.2 (homogeneous cathode, no conductive additives)",
+            "Electrolyte": "Li6PS5Cl (80 mg)",
+            "Anode": "Li-Si alloy (Li3.5Si + Li3N, weight ratio 10:1)"
+          }
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "80 mg Li6PS5Cl powders are first pressed at 200 MPa as the electrolyte layer. Then the prepared sample powders are added homogeneously on the top of the electrolyte layer and compressed at 350 MPa. In the end, Li-Si alloy anode powders are added on the bottom of the Li6PS5Cl layer and compressed for 2 min at 350 MPa. The stack pressure is 50 MPa during battery operation.",
+            "simplified": "Li6PS5Cl 80 mg pressed at 200 MPa -> cathode powder added, pressed at 350 MPa -> Li-Si anode pressed at 350 MPa for 2 min -> stack pressure 50 MPa during operation"
+          },
+          "Stages": {
+            "Stage1_Electrolyte_Layer": {
+              "Electrolyte_Mass_mg": 80,
+              "Pressure_MPa": 200
+            },
+            "Stage2_Cathode_Layer": {
+              "Pressure_MPa": 350
+            },
+            "Stage3_Anode_Layer": {
+              "Pressure_MPa": 350,
+              "Duration_min": 2
+            },
+            "Operation": {
+              "Stack_Pressure_MPa": 50
+            }
+          },
+          "Equipment": [
+            {
+              "Name": "PEEK die (10 mm diameter)",
+              "Category": "Testing"
+            },
+            {
+              "Name": "Land CT2001A battery test system (Wuhan Land Electronic Co. Ltd.)",
+              "Category": "Testing"
+            },
+            {
+              "Name": "Biologic VMP-300 electrochemical workstation",
+              "Category": "Testing"
+            }
+          ],
+          "Key_Params": {
+            "Active_Material_Loading_mg_cm2": 4,
+            "Electrolyte_Amount_mg": 80,
+            "Stack_Pressure_MPa": 50,
+            "PEEK_Die_Diameter_mm": 10
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "The ASLB with the LTG0.25PSSe0.2|Li6PS5Cl|Li-Si configuration has an integrated three-tier dense structure, which can be unambiguously distinguished by the consistent dispersion of Ti, Ge, P, S and Se in the respective layers.",
+            "simplified": "Three-tier dense structure: LTG0.25PSSe0.2 cathode | Li6PS5Cl electrolyte | Li-Si anode with clear elemental layer separation"
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Cycling Performance (4 mg cm-2, 2.5 C)",
+            "Property_Type": "Capacity_Retention",
+            "Capacity_Retention_Data": [
+              {
+                "Cycle": 2000,
+                "Retention_percent": 90.8
+              },
+              {
+                "Cycle": 5000,
+                "Retention_percent": 79.7
+              },
+              {
+                "Cycle": 10000,
+                "Retention_percent": 73.4
+              },
+              {
+                "Cycle": 20000,
+                "Retention_percent": 65.7
+              }
+            ],
+            "Discharge_Capacity_at_20000_cycles_mAh_g-1": 118,
+            "Average_Decay_Rate": "0.017 per mille per cycle",
+            "Test_Condition": {
+              "Test_Temperature_K": 298.15,
+              "Original_Temperature": "room temperature",
+              "Current_Density_mA_cm2": 2.5,
+              "C_Rate": 2.5,
+              "Areal_Capacity_mAh_cm2": 1,
+              "Loading_mg_cm2": 4,
+              "Voltage_Range_V_vs_Li": "1.6-3.5"
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Cycling Performance (8 mg cm-2, 2.5 mA cm-2)",
+            "Property_Type": "Capacity_Retention",
+            "Capacity_Retention_at_1000_cycles_percent": 82.3,
+            "Coulombic_Efficiency": [
+              {
+                "Cycle": 100,
+                "CE_percent": 99.93
+              },
+              {
+                "Cycle": 600,
+                "CE_percent": 99.93
+              },
+              {
+                "Cycle": 1000,
+                "CE_percent": 99.99
+              }
+            ],
+            "Test_Condition": {
+              "Test_Temperature_K": 298.15,
+              "Original_Temperature": "room temperature",
+              "Current_Density_mA_cm2": 2.5,
+              "Loading_mg_cm2": 8,
+              "Areal_Capacity_mAh_cm2": 2
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Cycling Performance (34 mg cm-2, 1 mA cm-2)",
+            "Property_Type": "Specific_Capacity",
+            "Value": 5,
+            "Unit": "mAh cm-2 (areal)",
+            "Original_Values": "reversible areal capacity of more than 5 mAh cm-2 after 65 cycles",
+            "Test_Condition": {
+              "Test_Temperature_K": 298.15,
+              "Original_Temperature": "room temperature",
+              "Current_Density_mA_cm2": 1,
+              "Loading_mg_cm2": 34,
+              "Areal_Capacity_mAh_cm2": 8.5,
+              "Cycle_Number": 65
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Rate Performance (8 mg cm-2)",
+            "Property_Type": "Rate_Capability",
+            "Rate_Data": [
+              {
+                "Current_Density_mA_cm2": 0.5,
+                "C_Rate_approx": 0.25,
+                "Discharge_Capacity_mAh_g-1": 250
+              },
+              {
+                "Current_Density_mA_cm2": 2.0,
+                "Discharge_Capacity_mAh_g-1": 234
+              },
+              {
+                "Current_Density_mA_cm2": 4.0,
+                "Discharge_Capacity_mAh_g-1": 209
+              },
+              {
+                "Current_Density_mA_cm2": 6.0,
+                "Discharge_Capacity_mAh_g-1": 177
+              },
+              {
+                "Current_Density_mA_cm2": 8.2,
+                "C_Rate_approx": 4.1,
+                "Discharge_Capacity_mAh_g-1": 134
+              }
+            ],
+            "Test_Condition": {
+              "Test_Temperature_K": 298.15,
+              "Original_Temperature": "room temperature",
+              "Loading_mg_cm2": 8,
+              "Voltage_Range_V_vs_Li": "1.6-3.5",
+              "Cycles_per_rate": 5
+            },
+            "Data_Source": "text",
+            "Note": "excellent reversibility upon returning to 1 mA cm-2"
+          },
+          {
+            "Property_Name": "Energy Density at Cathode Level",
+            "Property_Type": "Energy_Density",
+            "Ragone_Data_Cathode_Level": [
+              {
+                "C_Rate": 0.3,
+                "E_m_Wh_kg-1": 548,
+                "P_m_W_kg-1": 177
+              },
+              {
+                "C_Rate": 1,
+                "E_m_Wh_kg-1": 506,
+                "P_m_W_kg-1": 506
+              },
+              {
+                "C_Rate": 10,
+                "E_m_Wh_kg-1": 268,
+                "P_m_W_kg-1": 2680
+              }
+            ],
+            "Test_Condition": {
+              "Test_Temperature_K": 298.15,
+              "Original_Temperature": "room temperature",
+              "Level": "cathode level"
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Energy Density at Cell Level",
+            "Property_Type": "Energy_Density",
+            "Data_Cell_Level": [
+              {
+                "E_m_Wh_kg-1": 383,
+                "E_v_Wh_l-1": 660,
+                "Note": "cell level, mass of cathode, anode and electrolyte"
+              },
+              {
+                "E_m_Wh_kg-1": 200,
+                "P_m_W_kg-1": 102,
+                "Note": "cell level"
+              }
+            ],
+            "Test_Condition": {
+              "Test_Temperature_K": 298.15,
+              "Original_Temperature": "room temperature",
+              "Level": "cell level"
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Energy Density at Cell Level (0.1 C)",
+            "Property_Type": "Energy_Density",
+            "Value": 390,
+            "Unit": "Wh kg-1",
+            "Original_Values": "390 Wh kg-1 at the cell level at 0.1 C",
+            "Test_Condition": {
+              "C_Rate": 0.1,
+              "Level": "cell level"
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Low Temperature Cycling (-20 C)",
+            "Property_Type": "Specific_Capacity",
+            "Value": 145,
+            "Unit": "mAh g-1",
+            "Original_Values": "145 mAh g-1",
+            "Test_Condition": {
+              "Test_Temperature_K": 253.15,
+              "Original_Temperature": "-20 C",
+              "Current_Density_mA_cm2": 0.25,
+              "Cycle_Number": 200,
+              "CE_percent": 100
+            },
+            "Data_Source": "text",
+            "Note": "stably cycled at -20 C for over 200 cycles"
+          },
+          {
+            "Property_Name": "Low Temperature Cycling (-30 C)",
+            "Property_Type": "Specific_Capacity",
+            "Value": 62,
+            "Unit": "mAh g-1",
+            "Original_Values": "62 mAh g-1",
+            "Test_Condition": {
+              "Test_Temperature_K": 243.15,
+              "Original_Temperature": "-30 C",
+              "Current_Density_mA_cm2": 0.25,
+              "Cycle_Number": 600,
+              "CE_percent": 100
+            },
+            "Data_Source": "text",
+            "Note": "steady operation of over 600 cycles at -30 C"
+          },
+          {
+            "Property_Name": "High Temperature Cycling (80 C)",
+            "Property_Type": "Specific_Capacity",
+            "Value": 170,
+            "Unit": "mAh g-1",
+            "Original_Values": "170 mAh g-1",
+            "Test_Condition": {
+              "Test_Temperature_K": 353.15,
+              "Original_Temperature": "80 C",
+              "Current_Density_mA_cm2": 0.25,
+              "Cycle_Number": 100,
+              "CE_percent": 100
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Interface Resistance (uncycled)",
+            "Property_Type": "Interface_Resistance",
+            "Value": 23,
+            "Unit": "Ohm cm2",
+            "Original_Values": "23 Ohm cm2",
+            "Test_Condition": {
+              "State": "uncycled"
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Interface Resistance (after 20000 cycles)",
+            "Property_Type": "Interface_Resistance",
+            "Value": 28,
+            "Unit": "Ohm cm2",
+            "Original_Values": "28 Ohm cm2",
+            "Test_Condition": {
+              "State": "after 20000 cycles"
+            },
+            "Data_Source": "text",
+            "Note": "21% increase; average increase rate 0.105% per cycle"
+          },
+          {
+            "Property_Name": "First Cycle Capacity Loss",
+            "Property_Type": "Specific_Capacity",
+            "Value": -24,
+            "Unit": "mAh g-1",
+            "Original_Values": "capacity loss (-24 mAh g-1) in the first cycle",
+            "Data_Source": "text",
+            "Note": "attributed to partially irreversible structural transformation at beginning of first cycle"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "item_09",
+      "Sample_ID": "NCM811_heterogeneous_cathode",
+      "Role": "Comparator",
+      "Data_Nature": "Experimental",
+      "base_material": "Ceramics_Inorganic",
+      "application": "Functional",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Battery"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "the NCM811 + Li6PS5Cl heterogeneous cathode",
+        "NCM811 particles are embedded in Li6PS5Cl"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Category": "Heterogeneous composite cathode",
+          "Material_Name_Raw": "NCM811 + Li6PS5Cl + carbon",
+          "Component_Type": "Composite_Cathode",
+          "Composite_Formulation": {
+            "Active_Material": "LiNi0.8Co0.1Mn0.1O2 (NCM811)",
+            "Ionic_Conductor": "Li6PS5Cl",
+            "Electronic_Conductor": "carbon",
+            "Weight_Ratio": "NCM811 68 wt% : Li6PS5Cl 29 wt% : carbon 3 wt%"
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "The NCM811 particles are embedded in Li6PS5Cl, forming a relatively dense composite initially. However, this cathode shows severe mechanical breakdown, including contact losses, microcracks and NCM811/Li6PS5Cl disintegration after only 100 cycles."
+          },
+          "Advanced_Quantitative_Features": {
+            "Young_Modulus_GPa": {
+              "Value": 200,
+              "Unit": "GPa",
+              "Original_Values": "~200 GPa",
+              "Data_Source": "text"
+            },
+            "Volume_Change_pct": {
+              "Value": 5.1,
+              "Unit": "%",
+              "Original_Values": "~5.1%",
+              "Data_Source": "text",
+              "Note": "large volume change of NCM811"
+            },
+            "D_Li_Plus_cm2_s": {
+              "Value": 1e-11,
+              "Unit": "cm2 s-1",
+              "Original_Values": "10^-11 cm2 s-1",
+              "Data_Source": "text",
+              "Note": "D_Li+ of NCM811; four orders of magnitude lower than LTG0.25PSSe0.2"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Composite Ionic Conductivity",
+            "Property_Type": "Ionic_Conductivity",
+            "Value": 0.00022,
+            "Unit": "S cm-1",
+            "Original_Values": "2.2 x 10^-4 S cm-1",
+            "Data_Source": "text",
+            "Note": "estimated sigma_Li+ of the NCM811 composite cathode"
+          },
+          {
+            "Property_Name": "Composite Electronic Conductivity",
+            "Property_Type": "Electronic_Conductivity",
+            "Value": 88,
+            "Unit": "mS cm-1",
+            "Original_Values": "88 mS cm-1",
+            "Data_Source": "text",
+            "Note": "estimated sigma_e of the NCM811 composite cathode"
+          },
+          {
+            "Property_Name": "Mechanical Failure After Cycling",
+            "Property_Type": "Morphology_Change",
+            "Description": "Severe mechanical breakdown including contact losses, microcracks and NCM811/Li6PS5Cl disintegration after only 100 cycles",
+            "Test_Condition": {
+              "Cycle_Number": 100
+            },
+            "Data_Source": "text"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "item_10",
+      "Sample_ID": "DFT_DOS_LTGPSSe",
+      "Role": "Target",
+      "Data_Nature": "Computed",
+      "base_material": "Ceramics_Inorganic",
+      "application": "Functional",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Battery"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "All first-principles calculations are carried out using the plane-wave-based density functional theory",
+        "Calculated DOS of LTG0.25PSSe0.2 with Li+ insertion"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Category": "DFT simulation of LTG0.25PSSe0.2",
+          "Stoichiometry": {
+            "Nominal": "Li1.75+xTi2(Ge0.25P0.75S3.8Se0.2)3, x = 0 to 6"
+          }
+        },
+        "Processing": {
+          "Simulation_Metadata": {
+            "Method": "DFT with PAW (plane-wave-based density functional theory)",
+            "Software": "VASP via MedeA technology platform (MedeA 3.9)",
+            "Exchange_Correlation": "PBE-GGA (Perdew-Burke-Ernzerhof)",
+            "Cutoff_Energy_eV": 520,
+            "K_Mesh_Relaxation": "1 x 1 x 2 (Monkhorst-Pack)",
+            "K_Mesh_DOS": "3 x 3 x 5 (Monkhorst-Pack)",
+            "Convergence_Energy_eV": 1e-05,
+            "Convergence_Force_eV_per_A": 0.01,
+            "Geometry_Optimization": "Conjugated gradient"
+          },
+          "Equipment": [
+            {
+              "Name": "VASP (Vienna ab initio simulation package)",
+              "Category": "Software"
+            },
+            {
+              "Name": "MedeA 3.9 (Materials Design, 2024)",
+              "Category": "Software"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "With Li+ insertion, electronic states gradually appear near the Fermi level and the bandgap of LTG0.25PSSe0.2 decreases from 0.749 to 0 eV, suggesting a conducting behaviour transition from semiconductor to metal.",
+            "simplified": "DOS shows bandgap narrowing from 0.749 eV (initial) to 0 eV (fully lithiated); semiconductor-to-metal transition"
+          },
+          "Advanced_Quantitative_Features": {
+            "Bandgap_LTPS_eV_DFT": {
+              "Value": 1.292,
+              "Unit": "eV",
+              "Data_Source": "text"
+            },
+            "Bandgap_Se_introduced_eV_DFT": {
+              "Value": 0.52,
+              "Unit": "eV",
+              "Data_Source": "text",
+              "Note": "bandgap decreased from 1.292 eV to 0.52 eV with Se introduction"
+            },
+            "Bandgap_initial_eV_DFT": {
+              "Value": 0.749,
+              "Unit": "eV",
+              "Data_Source": "text",
+              "Note": "initial bandgap of LTG0.25PSSe0.2"
+            },
+            "Bandgap_fully_lithiated_eV_DFT": {
+              "Value": 0,
+              "Unit": "eV",
+              "Data_Source": "text",
+              "Note": "semiconductor-to-metal transition"
+            }
+          }
+        },
+        "Experiment_Link": {
+          "Related_Item_IDs": [
+            "item_01"
+          ],
+          "Description": "DFT calculations of DOS and bandgap evolution used to explain experimental conductivity changes of LTG0.25PSSe0.2",
+          "Validation_Target": "Conductivity evolution with Li+ insertion/extraction"
+        }
+      }
+    },
+    {
+      "Item_ID": "item_11",
+      "Sample_ID": "COMSOL_FEM_lithiation",
+      "Role": "Demonstration",
+      "Data_Nature": "Computed",
+      "base_material": "Ceramics_Inorganic",
+      "application": "Functional",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Battery"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "COMSOL Multiphysics 5.6 is used to perform the modelling of lithiation uniformity of two cathode materials",
+        "Finite element analysis simulating the lithiation behaviour"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Category": "FEM simulation of lithiation dynamics",
+          "Simulated_Systems": [
+            {
+              "Name": "LTG0.25PSSe0.2 homogeneous cathode particle",
+              "Component_Type": "Cathode"
+            },
+            {
+              "Name": "NCM811 heterogeneous cathode particle",
+              "Component_Type": "Composite_Cathode"
+            }
+          ]
+        },
+        "Processing": {
+          "Simulation_Metadata": {
+            "Method": "Finite element analysis",
+            "Software": "COMSOL Multiphysics 5.6",
+            "Coupled_Physics": "current distribution, mass transport, electrochemical reactions",
+            "Lithiation_Rate": "1 C",
+            "Simulation_Duration_h": 1
+          },
+          "Equipment": [
+            {
+              "Name": "COMSOL Multiphysics 5.6",
+              "Category": "Software"
+            }
+          ]
+        },
+        "Properties": [
+          {
+            "Property_Name": "Lithiation Uniformity (LTG0.25PSSe0.2)",
+            "Property_Type": "Lithiation_Fraction",
+            "Value": 99.1,
+            "Unit": "%",
+            "Original_Values": "99.1% of the LTG0.25PSSe0.2 particle demonstrates full lithiation after 1 h",
+            "Test_Condition": {
+              "C_Rate": 1,
+              "Duration_h": 1,
+              "Material": "LTG0.25PSSe0.2"
+            },
+            "Data_Source": "text",
+            "Note": "uniform lithiation from surface to center"
+          },
+          {
+            "Property_Name": "Lithiation Uniformity (NCM811)",
+            "Property_Type": "Lithiation_Fraction",
+            "Value": 57.5,
+            "Unit": "%",
+            "Original_Values": "57.5% of the NCM811 particle demonstrates full lithiation at end of discharging",
+            "Test_Condition": {
+              "C_Rate": 1,
+              "Duration_h": 1,
+              "Material": "NCM811 heterogeneous cathode"
+            },
+            "Data_Source": "text",
+            "Note": "highly non-uniform lithiation due to confined active sites and low D_Li+"
+          }
+        ],
+        "Experiment_Link": {
+          "Related_Item_IDs": [
+            "item_01",
+            "item_09"
+          ],
+          "Description": "FEM simulation comparing lithiation uniformity between homogeneous and heterogeneous cathode particles",
+          "Validation_Target": "Rationalizing superior electrochemical performance of homogeneous cathodes"
+        }
+      }
+    }
+  ]
+}

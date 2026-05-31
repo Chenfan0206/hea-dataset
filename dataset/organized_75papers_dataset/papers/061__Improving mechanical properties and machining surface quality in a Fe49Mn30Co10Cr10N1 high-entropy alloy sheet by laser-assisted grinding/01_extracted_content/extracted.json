@@ -1,0 +1,895 @@
+{
+  "Paper_Metadata": {
+    "Paper_Title": "Improving mechanical properties and machining surface quality in a Fe49Mn30Co10Cr10N1 high-entropy alloy sheet by laser-assisted grinding",
+    "DOI": null,
+    "Note": "DOI not found in OCR text"
+  },
+  "Paper_Routing": {
+    "base_material": "Metals",
+    "application": "Structural",
+    "research_paradigm": "Experimental",
+    "Supplements_Loaded": [
+      "directions/base/Metals.txt",
+      "directions/application/Structural.txt",
+      "directions/paradigm/Experimental.txt",
+      "directions/domain/Machining.txt"
+    ],
+    "Patch_Tags": [
+      "High_Entropy",
+      "Gradient",
+      "Laser_Assisted"
+    ],
+    "Needs_Mixed_Routing_Check": false
+  },
+  "items": [
+    {
+      "Item_ID": "N1-HOMO",
+      "Sample_ID": "N1-HOMO",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "High_Entropy"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "N1-HOMO material exhibits an excellent ductility, but its yield strength is only 358 MPa",
+        "the N1-HOMO (grain size ~85 μm) ... fully recrystallized state"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "High-entropy alloy",
+          "Material_Name_Raw": "Fe49Mn30Co10Cr10N1",
+          "Nominal_Composition": {
+            "Type": "at%",
+            "Fe": "Balance",
+            "Mn": 30,
+            "Co": 10,
+            "Cr": 10,
+            "N": 1,
+            "Note": "Fe = Balance; normalized ≈ 49 at% (from formula Fe49Mn30Co10Cr10N1)"
+          }
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "The ingot was fabricated by vacuum induction melting (under Ar atmosphere) a mixture of pure metals Fe, Mn, Co, Cr (purity > 99.9 wt%) and compounds of MnN and CrN. Following hot forging at 1200 °C, the alloy underwent multipass hot rolling to achieve a total reduction of 50% (initial and terminal rolling temperatures are 1050 °C and 900 °C, respectively). Subsequently, homogenization treatment was conducted at 1200 °C for 2 h.",
+            "simplified": "Vacuum induction melting → hot forging (1200 °C) → hot rolling (1050–900 °C, 50% reduction) → homogenization (1200 °C, 2 h)"
+          },
+          "Stages": {
+            "Stage1_Melting": {
+              "Method": "Vacuum induction melting",
+              "Atmosphere": "Ar",
+              "Raw_Materials": "Pure metals Fe, Mn, Co, Cr (purity > 99.9 wt%) and compounds of MnN and CrN"
+            },
+            "Stage2_Hot_Forging": {
+              "Temperature_Original": "1200 °C",
+              "Temperature_K": 1473.15
+            },
+            "Stage3_Hot_Rolling": {
+              "Total_Reduction": "50%",
+              "Initial_Rolling_Temperature_Original": "1050 °C",
+              "Initial_Rolling_Temperature_K": 1323.15,
+              "Terminal_Rolling_Temperature_Original": "900 °C",
+              "Terminal_Rolling_Temperature_K": 1173.15
+            },
+            "Stage4_Homogenization": {
+              "Temperature_Original": "1200 °C",
+              "Temperature_K": 1473.15,
+              "Time": "2 h",
+              "Resulting_State": "Homogenized (HOMO)"
+            }
+          },
+          "Equipment": [
+            {
+              "Name": "Vacuum induction melting furnace",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Rigaku Smartlab X-ray diffractometer",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Zeiss Ultra Plus SEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "JEOL JEM-2100F TEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "AG-XPLUS 100 KN testing machine",
+              "Category": "Testing"
+            },
+            {
+              "Name": "HV-1000Z microhardness tester",
+              "Category": "Testing"
+            },
+            {
+              "Name": "HSR-2M friction and wear testing machine",
+              "Category": "Testing"
+            },
+            {
+              "Name": "3D laser confocal microscope",
+              "Category": "Characterization"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "The N1-HOMO (grain size ~85 μm) and the N1-CR materials are in the fully recrystallized state",
+            "simplified": "Fully recrystallized equiaxed grain structure, grain size ~85 μm, FCC single phase"
+          },
+          "Main_Phase": {
+            "Phase_Name": "FCC matrix",
+            "Crystal_Structure": "FCC"
+          },
+          "Grain_Size": {
+            "Value": 85,
+            "Unit": "μm",
+            "Note": "approximate; from Fig. 2(b) statistics by line intercept method",
+            "dimension_type": "diameter",
+            "Original_Values": "~85 μm"
+          }
+        },
+        "Properties": [
+          {
+            "Test_Type": "Tensile",
+            "Yield_Strength": {
+              "Value": 358,
+              "Unit": "MPa",
+              "Value_StdDev": 5,
+              "Original_Values": "358 ± 5 MPa"
+            },
+            "Ultimate_Tensile_Strength": {
+              "Value": 692,
+              "Unit": "MPa",
+              "Value_StdDev": 8,
+              "Original_Values": "692 ± 8 MPa"
+            },
+            "Elongation_Uniform": {
+              "Value": 108,
+              "Unit": "%",
+              "Value_StdDev": 6,
+              "Original_Values": "108 ± 6 %",
+              "Note": "OCR text shows \"108 ± 6\"; human annotation records 0.6 as StdDev — possible OCR decimal point ambiguity"
+            },
+            "Elongation_At_Fracture": {
+              "Value": 139,
+              "Unit": "%",
+              "Value_StdDev": 9,
+              "Original_Values": "139 ± 9 %"
+            },
+            "Test_Condition": {
+              "Strain_Rate": "10^-3 s^-1",
+              "Direction": "RD (rolling direction)",
+              "Specimen_Type": "Dog-bone shaped",
+              "Specimen_Gauge_Dimension": "3 mm × 2 mm × 3 mm (length × width × thickness)"
+            },
+            "Data_Source": "table",
+            "Note": "Table 2"
+          },
+          {
+            "Test_Type": "Hardness",
+            "Hardness": {
+              "Value": 1.8,
+              "Unit": "GPa",
+              "Original_Values": "1.8 GPa"
+            },
+            "Test_Condition": {
+              "Test_Plane": "Surface (RD/TD plane)",
+              "Loading_Force": "3 N",
+              "Note": "at least 20 positions tested"
+            },
+            "Data_Source": "text",
+            "Note": "Surface microhardness"
+          },
+          {
+            "Test_Type": "Wear",
+            "Friction_Coefficient_Average": {
+              "Value": null,
+              "Note": "Average friction coefficient shown in Fig. 8(b); value not explicitly given in text for N1-HOMO"
+            },
+            "Wear_Mass_Loss": {
+              "Value": null,
+              "Note": "Wear mass loss shown in Fig. 8(b); value not explicitly given in text for N1-HOMO"
+            },
+            "Test_Condition": {
+              "Loading_Force": "30 N",
+              "Sliding_Distance": "5 mm",
+              "Sliding_Time": "20 min"
+            },
+            "Data_Source": "image",
+            "Note": "Average friction coefficient and wear mass loss shown in Fig. 8(b); values not explicitly given in text for N1-HOMO"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "N1-CR",
+      "Sample_ID": "N1-CR",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "High_Entropy"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "N1-CR material is as high as 1385 MPa, but its ductility is extremely poor",
+        "multi-passes cold rolling (CR), achieving an overall thickness reduction of 60%"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "High-entropy alloy",
+          "Material_Name_Raw": "Fe49Mn30Co10Cr10N1",
+          "Note": "Same nominal composition as N1-HOMO; shared by all processing variants in this study"
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "the HOMO material underwent multi-passes cold rolling (CR), achieving an overall thickness reduction of 60%, and the CR sheet was used for LAG processing",
+            "simplified": "Cold rolling (CR), total thickness reduction 60%, starting from HOMO material"
+          },
+          "Stages": {
+            "Stage1_Inherit": {
+              "Note": "Inherits Stage1–Stage4 from N1-HOMO item (melting → hot forging → hot rolling → homogenization); same raw materials and prior processing"
+            },
+            "Stage5_Cold_Rolling": {
+              "Method": "Cold rolling",
+              "Total_Thickness_Reduction": "60%",
+              "Resulting_State": "Cold-rolled (CR) sheet"
+            }
+          },
+          "Equipment": [
+            {
+              "Name": "Vacuum induction melting furnace",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Rigaku Smartlab X-ray diffractometer",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Zeiss Ultra Plus SEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "JEOL JEM-2100F TEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "AG-XPLUS 100 KN testing machine",
+              "Category": "Testing"
+            },
+            {
+              "Name": "HV-1000Z microhardness tester",
+              "Category": "Testing"
+            },
+            {
+              "Name": "HSR-2M friction and wear testing machine",
+              "Category": "Testing"
+            },
+            {
+              "Name": "3D laser confocal microscope",
+              "Category": "Characterization"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "the N1-CR materials are in the deformed state",
+            "simplified": "Fully deformed state after cold rolling, FCC single phase, uniform structure"
+          },
+          "Main_Phase": {
+            "Phase_Name": "FCC matrix",
+            "Crystal_Structure": "FCC"
+          }
+        },
+        "Properties": [
+          {
+            "Test_Type": "Tensile",
+            "Yield_Strength": {
+              "Value": 1385,
+              "Unit": "MPa",
+              "Value_StdDev": 7,
+              "Original_Values": "1385 ± 7 MPa"
+            },
+            "Ultimate_Tensile_Strength": {
+              "Value": 1389,
+              "Unit": "MPa",
+              "Value_StdDev": 10,
+              "Original_Values": "1389 ± 10 MPa"
+            },
+            "Elongation_Uniform": {
+              "Value": null,
+              "Original_Values": "–",
+              "Note": "Plastic instability immediately occurs after yield; uniform elongation not applicable"
+            },
+            "Elongation_At_Fracture": {
+              "Value": 22,
+              "Unit": "%",
+              "Value_StdDev": 3,
+              "Original_Values": "22 ± 3 %"
+            },
+            "Test_Condition": {
+              "Strain_Rate": "10^-3 s^-1",
+              "Direction": "RD (rolling direction)",
+              "Specimen_Type": "Dog-bone shaped",
+              "Specimen_Gauge_Dimension": "3 mm × 2 mm × 3 mm (length × width × thickness)"
+            },
+            "Data_Source": "table",
+            "Note": "Table 2"
+          },
+          {
+            "Test_Type": "Hardness",
+            "Hardness": {
+              "Value": 4.2,
+              "Unit": "GPa",
+              "Original_Values": "4.2 GPa"
+            },
+            "Test_Condition": {
+              "Test_Plane": "Surface (RD/TD plane)",
+              "Loading_Force": "3 N"
+            },
+            "Data_Source": "text",
+            "Note": "Surface microhardness"
+          },
+          {
+            "Test_Type": "Wear",
+            "Wear_Mass_Loss": {
+              "Value": 1.9,
+              "Unit": "mg",
+              "Original_Values": "1.9 mg"
+            },
+            "Test_Condition": {
+              "Loading_Force": "30 N",
+              "Sliding_Distance": "5 mm",
+              "Sliding_Time": "20 min"
+            },
+            "Data_Source": "text",
+            "Note": "High wear mass loss attributed to high strength and hardness causing cracking and fragmentation"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "N1-LH",
+      "Sample_ID": "N1-LH",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "High_Entropy",
+        "Gradient",
+        "Laser_Assisted"
+      ],
+      "Gradient_Material": true,
+      "Raw_Evidence_Span": [
+        "the N1-CR sheet that only passed through LH zone without grinding was also prepared, and hereafter denoted as the N1-LH material",
+        "the N1-LH material with gradient structures exhibit a good combination of strength and ductility"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "High-entropy alloy",
+          "Material_Name_Raw": "Fe49Mn30Co10Cr10N1",
+          "Note": "Same nominal composition as N1-HOMO; shared by all processing variants in this study"
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "the N1-CR sheet that only passed through LH zone without grinding was also prepared",
+            "simplified": "Laser heating only (no grinding): CR sheet passed through laser heating zone (600 W, 5 mm diameter) at 5 mm/s feed rate"
+          },
+          "Stages": {
+            "Stage1_Inherit": {
+              "Note": "Inherits all prior stages from N1-CR (melting → hot forging → hot rolling → homogenization → cold rolling)"
+            },
+            "Stage6_Laser_Heating": {
+              "Method": "Laser heating",
+              "Laser_Power": {
+                "Value": 600,
+                "Unit": "W",
+                "Original_Values": "600 W"
+              },
+              "Laser_Heating_Zone_Diameter": {
+                "Value": 5,
+                "Unit": "mm",
+                "Original_Values": "5 mm",
+                "dimension_type": "diameter"
+              },
+              "Feed_Rate": {
+                "Value": 5,
+                "Unit": "mm/s",
+                "Original_Values": "5 mm/s"
+              },
+              "Resulting_State": "Laser heated (LH)"
+            }
+          },
+          "Equipment": [
+            {
+              "Name": "Vacuum induction melting furnace",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Continuous laser (600 W)",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Rigaku Smartlab X-ray diffractometer",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Zeiss Ultra Plus SEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "JEOL JEM-2100F TEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "AG-XPLUS 100 KN testing machine",
+              "Category": "Testing"
+            },
+            {
+              "Name": "HV-1000Z microhardness tester",
+              "Category": "Testing"
+            },
+            {
+              "Name": "HSR-2M friction and wear testing machine",
+              "Category": "Testing"
+            },
+            {
+              "Name": "3D laser confocal microscope",
+              "Category": "Characterization"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "the N1-LH material show gradient structures from surface to the core along ND. The gradient structure of N1-LH material can be divided into three layers, i.e., a recrystallized (RX) layer on the material surface, a non-recrystallized (NRX) layer in the core and a partially-recrystallized (PRX) layer in the transition region from the surface to the core.",
+            "simplified": "Gradient structure along ND: RX layer (surface) → PRX layer (transition) → NRX layer (core)"
+          },
+          "Main_Phase": {
+            "Phase_Name": "FCC matrix",
+            "Crystal_Structure": "FCC"
+          },
+          "Gradient_or_Depth_Profile": {
+            "Is_Gradient": true,
+            "Direction": "ND (from grinding surface to core)",
+            "Layers": [
+              {
+                "Layer_Name": "RX layer",
+                "Position": "Surface",
+                "Grain_Size": {
+                  "Value": 38,
+                  "Unit": "μm",
+                  "Note": "Average grain size at ~100 μm from surface along ND",
+                  "dimension_type": "diameter",
+                  "Original_Values": "38 μm"
+                },
+                "Microhardness": {
+                  "Value": 2.2,
+                  "Unit": "GPa",
+                  "Original_Values": "2.2 GPa",
+                  "Note": "Subsurface microhardness"
+                }
+              },
+              {
+                "Layer_Name": "PRX layer",
+                "Position": "Transition region from surface to core",
+                "Grain_Size": {
+                  "Value": 5,
+                  "Unit": "μm",
+                  "Note": "Average grain size at ~800 μm from surface along ND",
+                  "dimension_type": "diameter",
+                  "Original_Values": "5 μm"
+                }
+              },
+              {
+                "Layer_Name": "NRX layer",
+                "Position": "Core",
+                "Microhardness": {
+                  "Value": 2.8,
+                  "Unit": "GPa",
+                  "Original_Values": "2.8 GPa",
+                  "Note": "Core microhardness"
+                }
+              }
+            ]
+          }
+        },
+        "Properties": [
+          {
+            "Test_Type": "Tensile",
+            "Yield_Strength": {
+              "Value": 481,
+              "Unit": "MPa",
+              "Value_StdDev": 4,
+              "Original_Values": "481 ± 4 MPa"
+            },
+            "Ultimate_Tensile_Strength": {
+              "Value": 829,
+              "Unit": "MPa",
+              "Value_StdDev": 5,
+              "Original_Values": "829 ± 5 MPa"
+            },
+            "Elongation_Uniform": {
+              "Value": 70,
+              "Unit": "%",
+              "Value_StdDev": 3,
+              "Original_Values": "70 ± 3 %"
+            },
+            "Elongation_At_Fracture": {
+              "Value": 97,
+              "Unit": "%",
+              "Value_StdDev": 7,
+              "Original_Values": "97 ± 7 %"
+            },
+            "Test_Condition": {
+              "Strain_Rate": "10^-3 s^-1",
+              "Direction": "RD (rolling direction)",
+              "Specimen_Type": "Dog-bone shaped",
+              "Specimen_Gauge_Dimension": "3 mm × 2 mm × 3 mm (length × width × thickness)"
+            },
+            "Data_Source": "table",
+            "Note": "Table 2"
+          },
+          {
+            "Test_Type": "Hardness",
+            "Hardness": {
+              "Value": 2.2,
+              "Unit": "GPa",
+              "Original_Values": "2.2 GPa"
+            },
+            "Test_Condition": {
+              "Test_Plane": "Surface (RD/TD plane)",
+              "Loading_Force": "3 N"
+            },
+            "Data_Source": "text",
+            "Note": "Surface microhardness; consistent with RX layer value"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "N1-LAG",
+      "Sample_ID": "N1-LAG",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "High_Entropy",
+        "Gradient",
+        "Laser_Assisted"
+      ],
+      "Gradient_Material": true,
+      "Raw_Evidence_Span": [
+        "LAG was performed on the RD-TD plane of the N1-CR sheet",
+        "The prepared sheet is hereafter denoted as the N1-LAG material",
+        "yield and ultimate tensile strengths of 775 MPa and 945 MPa, uniform and fracture elongations of 38% and 70%"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "High-entropy alloy",
+          "Material_Name_Raw": "Fe49Mn30Co10Cr10N1",
+          "Note": "Same nominal composition as N1-HOMO; shared by all processing variants in this study"
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "LAG was performed on the RD-TD plane of the N1-CR sheet using a hydraulic surface grinding machine (MY250). A continuous laser with the power of 600 W was incident from one side and formed a laser heating (LH) zone with a diameter of 5 mm on the experimental platform. A white corundum grinding wheel with particle size of F60 was selected and placed on one side of the laser heating zone. The diameter and width of the grinding wheel are 160 mm and 16 mm, respectively, and the rotational speed is 2500 rad/min. The N1-CR sheet workpiece passed through the laser heating zone and grinding processing zone in order along RD at a feed rate of 5 mm/s. Micro lubrication water cooling was used during grinding.",
+            "simplified": "Laser-assisted grinding (LAG): laser preheating (600 W, 5 mm spot) → grinding with white corundum wheel (F60, 160 mm dia, 16 mm width, 2500 rad/min) at 0.01 mm depth, 5 mm/s feed rate, with micro lubrication water cooling"
+          },
+          "Stages": {
+            "Stage1_Inherit": {
+              "Note": "Inherits all prior stages from N1-CR (melting → hot forging → hot rolling → homogenization → cold rolling)"
+            },
+            "Stage6_Laser_Assisted_Grinding": {
+              "Method": "Laser-assisted grinding (LAG)",
+              "Laser_Power": {
+                "Value": 600,
+                "Unit": "W",
+                "Original_Values": "600 W"
+              },
+              "Laser_Heating_Zone_Diameter": {
+                "Value": 5,
+                "Unit": "mm",
+                "Original_Values": "5 mm",
+                "dimension_type": "diameter"
+              },
+              "Grinding_Depth": {
+                "Value": 0.01,
+                "Unit": "mm",
+                "Original_Values": "0.01 mm"
+              },
+              "Feed_Rate": {
+                "Value": 5,
+                "Unit": "mm/s",
+                "Original_Values": "5 mm/s"
+              },
+              "Wheel_Speed": {
+                "Value": 2500,
+                "Unit": "rad/min",
+                "Original_Values": "2500 rad/min"
+              },
+              "Cooling": "Micro lubrication water cooling",
+              "Resulting_State": "Laser-assisted ground (LAG)"
+            }
+          },
+          "Equipment": [
+            {
+              "Name": "MY250 hydraulic surface grinding machine",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Continuous laser (600 W)",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "White corundum grinding wheel (F60)",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Rigaku Smartlab X-ray diffractometer (Cu-Kα1, λ = 1.54056 Å)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Zeiss Ultra Plus SEM (BSE detector, 20 kV)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "JEOL JEM-2100F TEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "AG-XPLUS 100 KN testing machine",
+              "Category": "Testing"
+            },
+            {
+              "Name": "HV-1000Z microhardness tester",
+              "Category": "Testing"
+            },
+            {
+              "Name": "HSR-2M friction and wear testing machine",
+              "Category": "Testing"
+            },
+            {
+              "Name": "3D laser confocal microscope",
+              "Category": "Characterization"
+            }
+          ],
+          "Tool_Information": {
+            "Tool_Material": "White corundum (white corundum grinding wheel)",
+            "Tool_Particle_Size": "F60",
+            "Tool_Diameter": {
+              "Value": 160,
+              "Unit": "mm",
+              "dimension_type": "diameter",
+              "Original_Values": "160 mm"
+            },
+            "Tool_Width": {
+              "Value": 16,
+              "Unit": "mm",
+              "Original_Values": "16 mm"
+            }
+          },
+          "Workpiece_Dimensions": {
+            "Length": 30,
+            "Width": 8,
+            "Thickness": 3,
+            "Unit": "mm",
+            "Original_Values": "30 mm × 8 mm × 3 mm"
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "The N1-LAG material obtained a gradient microstructure composed of work hardening, RX, PRX and NRX layers along ND from the grinding surface to the core, and the recrystallization fraction, grain size, dislocation density and LCO-lath density showed gradient distributions.",
+            "simplified": "Gradient structure along ND: work hardening layer (grinding surface) → RX layer (subsurface) → PRX layer (transition) → NRX layer (core). Gradient distributions of recrystallization fraction, grain size, dislocation density and LCO-lath density."
+          },
+          "Main_Phase": {
+            "Phase_Name": "FCC matrix",
+            "Crystal_Structure": "FCC"
+          },
+          "Gradient_or_Depth_Profile": {
+            "Is_Gradient": true,
+            "Direction": "ND (from grinding surface to core)",
+            "Layers": [
+              {
+                "Layer_Name": "Work hardening layer",
+                "Position": "Grinding surface",
+                "Thickness": {
+                  "Value": 7,
+                  "Unit": "μm",
+                  "Original_Values": "approximate 7 μm",
+                  "Note": "Approximate thickness",
+                  "dimension_type": "undefined"
+                }
+              },
+              {
+                "Layer_Name": "RX layer",
+                "Position": "Grinding subsurface",
+                "Description": "Equiaxed grains with annealing twins",
+                "Grain_Size": {
+                  "Value": 41,
+                  "Unit": "μm",
+                  "Note": "Average grain size at ~100 μm from surface along ND",
+                  "dimension_type": "diameter",
+                  "Original_Values": "41 μm"
+                },
+                "Microhardness": {
+                  "Value": 2.3,
+                  "Unit": "GPa",
+                  "Original_Values": "2.3 GPa",
+                  "Note": "Subsurface microhardness"
+                },
+                "Deformation_Features": "Deformation twins and dislocation cells observed after tensile deformation"
+              },
+              {
+                "Layer_Name": "PRX layer",
+                "Position": "Transition region from subsurface to core",
+                "Description": "Mixed structure composed of RX zone with equiaxed grains and NRX zone with LCO-laths",
+                "Grain_Size": {
+                  "Value": 9.5,
+                  "Unit": "μm",
+                  "Note": "Average grain size at ~800 μm from surface along ND",
+                  "dimension_type": "diameter",
+                  "Original_Values": "9.5 μm"
+                },
+                "LCO_Lath_Average_Width": {
+                  "Value": 58,
+                  "Unit": "nm",
+                  "Note": "In NRX zone of PRX layer; from TEM statistics",
+                  "dimension_type": "width",
+                  "Original_Values": "58 nm"
+                },
+                "LCO_Lath_Average_Spacing": {
+                  "Value": 160,
+                  "Unit": "nm",
+                  "Note": "Average spacing between neighboring LCO-laths in NRX zone of PRX layer",
+                  "Original_Values": "160 nm"
+                },
+                "LCO_Lath_Volume_Fraction_NRZ_Zone": {
+                  "Value": 42,
+                  "Unit": "%",
+                  "Original_Values": "42 %",
+                  "Note": "In NRX zone of PRX layer; calculated by Fullman's volumetric analysis"
+                },
+                "MRO_Characteristics": "SAED along [011]γ and [112]γ shows superlattice reflections, indicating medium-range order (MRO) in LCO-laths"
+              },
+              {
+                "Layer_Name": "NRX layer",
+                "Position": "Core",
+                "Description": "Large number of LCO-laths with dense dislocations",
+                "LCO_Lath_Average_Width": {
+                  "Value": 78,
+                  "Unit": "nm",
+                  "Note": "From TEM statistics",
+                  "dimension_type": "width",
+                  "Original_Values": "78 nm"
+                },
+                "LCO_Lath_Average_Spacing": {
+                  "Value": 118,
+                  "Unit": "nm",
+                  "Note": "Average spacing between neighboring LCO-laths",
+                  "Original_Values": "118 nm"
+                },
+                "LCO_Lath_Volume_Fraction": {
+                  "Value": 57,
+                  "Unit": "%",
+                  "Original_Values": "57 %",
+                  "Note": "Calculated by Fullman's volumetric analysis"
+                },
+                "Microhardness": {
+                  "Value": 3.4,
+                  "Unit": "GPa",
+                  "Original_Values": "3.4 GPa",
+                  "Note": "Core microhardness"
+                },
+                "MRO_Characteristics": "SAED along [112]γ shows sharp superlattice reflections at 1/2 {311}γ positions, indicating medium-range order (MRO) domains",
+                "Deformation_Features": "Deformation twins form between LCO-laths during tensile deformation; dense dislocations tangle between neighboring deformation twins"
+              }
+            ]
+          },
+          "Surface_Quality": {
+            "Surface_Roughness_Ra": {
+              "Value": 0.55,
+              "Unit": "μm",
+              "Original_Values": "0.55 μm"
+            },
+            "Note": "Grinding surface morphology is quite smooth with regular and shallow surface texture"
+          }
+        },
+        "Properties": [
+          {
+            "Test_Type": "Tensile",
+            "Yield_Strength": {
+              "Value": 775,
+              "Unit": "MPa",
+              "Value_StdDev": 6,
+              "Original_Values": "775 ± 6 MPa"
+            },
+            "Ultimate_Tensile_Strength": {
+              "Value": 945,
+              "Unit": "MPa",
+              "Value_StdDev": 9,
+              "Original_Values": "945 ± 9 MPa"
+            },
+            "Elongation_Uniform": {
+              "Value": 38,
+              "Unit": "%",
+              "Value_StdDev": 4,
+              "Original_Values": "38 ± 4 %"
+            },
+            "Elongation_At_Fracture": {
+              "Value": 70,
+              "Unit": "%",
+              "Value_StdDev": 5,
+              "Original_Values": "70 ± 5 %"
+            },
+            "Test_Condition": {
+              "Strain_Rate": "10^-3 s^-1",
+              "Direction": "RD (|| grinding direction GD)",
+              "Specimen_Type": "Dog-bone shaped",
+              "Specimen_Gauge_Dimension": "3 mm × 2 mm × 3 mm (length × width × thickness)"
+            },
+            "Data_Source": "table",
+            "Note": "Table 2; yield strength ~2.2 times that of N1-HOMO (358 MPa)"
+          },
+          {
+            "Test_Type": "Hardness",
+            "Hardness": {
+              "Value": 2.9,
+              "Unit": "GPa",
+              "Original_Values": "2.9 GPa"
+            },
+            "Test_Condition": {
+              "Test_Plane": "Surface (RD/TD plane)",
+              "Loading_Force": "3 N",
+              "Note": "at least 20 positions tested"
+            },
+            "Data_Source": "text",
+            "Note": "Surface microhardness; significantly improved compared to RX layer subsurface value (2.3 GPa) due to work hardening layer"
+          },
+          {
+            "Test_Type": "Wear",
+            "Friction_Coefficient_Average": {
+              "Value": 0.48,
+              "Unit": "dimensionless",
+              "Original_Values": "0.48"
+            },
+            "Wear_Mass_Loss": {
+              "Value": 0.03,
+              "Unit": "mg",
+              "Original_Values": "0.03 mg"
+            },
+            "Test_Condition": {
+              "Loading_Force": "30 N",
+              "Sliding_Distance": "5 mm",
+              "Sliding_Time": "20 min",
+              "Weighing_Accuracy": "0.01 mg"
+            },
+            "Data_Source": "text",
+            "Note": "Lowest wear mass loss among all four materials; attributed to protection of work hardening layer"
+          },
+          {
+            "Test_Type": "Surface_Roughness",
+            "Surface_Roughness_Ra": {
+              "Value": 0.55,
+              "Unit": "μm",
+              "Original_Values": "0.55 μm"
+            },
+            "Test_Condition": {
+              "Test_Plane": "Grinding surface (RD-TD plane)"
+            },
+            "Data_Source": "text"
+          }
+        ]
+      }
+    }
+  ]
+}

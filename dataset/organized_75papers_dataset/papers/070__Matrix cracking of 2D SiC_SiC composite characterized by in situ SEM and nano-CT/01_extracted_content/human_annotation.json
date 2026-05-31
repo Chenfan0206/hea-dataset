@@ -1,0 +1,115 @@
+{
+  "Paper_Metadata": {
+    "Paper_Title": "Matrix cracking of 2D SiC/SiC composite characterized by in situ SEM and nano-CT",
+    "DOI": "10.1016/j.ceramint.2022.12.111"
+  },
+  "items": [
+    {
+      "Sample_ID": "2D SiC/SiC-PIP-BN",
+      "Gradient_Material": false,
+      "Gradient_Group_ID": null,
+      "Composition_Info": {
+        "Role": "Target",
+        "Alloy_Name_Raw": "2D plain-woven SiC fiber-reinforced SiC matrix composite with BN interphase",
+        "Nominal_Composition": {
+          "Composition_Type": null,
+          "Elements_Normalized": null
+        },
+        "Measured_Composition": {
+          "Composition_Type": "at%",
+          "Elements_Normalized": {
+            "Si": 38.66,
+            "C": 54.35,
+            "O": 6.99
+          },
+          "Measurement_Method": "EDS"
+        },
+        "Note": "SiC matrix presents non-uniform distribution with SiC blocks, C-rich layer and O-rich regions; SiC fiber diameter 12.2 μm, density 3.1 g·cm⁻³"
+      },
+      "Process_Info": {
+        "Process_Category": "Polymer Infiltration-Pyrolysis (PIP) + Chemical Vapor Infiltration (CVI)",
+        "Process_Text": {
+          "original": "2D preform formed by alternately stacking four plain SiC fiber layers; tightened between two graphite plates to ensure thickness 1.3 mm; seamed with carbon fibers to keep fiber volume fraction ~40%; BN interface deposited at ~800-1000 °C from BCl₃-NH₃-H₂-Ar systems by CVI; vacuum impregnation with liquid polycarbosilane (PCS) dissolved in xylene (mass ratio 1:1); pyrolyzed at 900 °C for 1 h in argon atmosphere; repeated until weight gain in one cycle < 1%",
+          "simplified": "2D SiC fiber preform stacked and seamed; BN interphase deposited via CVI at 800-1000 °C; PIP process with PCS/xylene impregnation and 900 °C pyrolysis in Ar, cycled to density"
+        },
+        "Equipment": "Zeiss Gemini 500 SEM, Zeiss Xradia 520 versa nano-CT, Zeiss sigma 300 SEM",
+        "Key_Params": {
+          "BN_Deposition_Temperature_K": "1073-1273",
+          "Pyrolysis_Temperature_K": 1173.15,
+          "Pyrolysis_Time_h": 1,
+          "Composite_Thickness_mm": 1.3,
+          "Fiber_Volume_Fraction_pct": 40,
+          "C_Fiber_Seam_Distance_mm": 0.5,
+          "PCS_Xylene_Mass_Ratio": "1:1"
+        }
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": "Plain-woven structure with square pores; PIP-SiC matrix has non-homogeneous distribution with bright white SiC blocks, dark gray network-like O-rich structures, shrinkage cracks and pores; interlayer pores and closed pores within fiber bundles as internal defects; intra-bundle micropores of tens of nanometers; weak BN interface between fiber and matrix",
+          "simplified": "2D plain-woven SiC/SiC with porous structure; PIP-SiC matrix is inhomogeneous with SiC blocks, shrinkage cracks, pores and O-rich regions; BN weak interface exists; micro/nano pores distributed in bundles and interlayers"
+        },
+        "Main_Phase": "SiC",
+        "Precipitates": [],
+        "Porosity_pct": 7.2,
+        "Relative_Density_pct": null,
+        "Grain_Size_avg_um": null,
+        "Precipitate_Size_avg_nm": null,
+        "Advanced_Quantitative_Features": {
+          "Defect_Volume_mm3": "<0.04",
+          "Nano_CT_Resolution_um": 0.7,
+          "SEM_Resolution_nm": 0.6
+        }
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Elastic_Modulus",
+          "Test_Condition": "Nanoindentation test",
+          "Value_Numeric": 213.9,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "GPa",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": null
+        },
+        {
+          "Property_Name": "Hardness_HV",
+          "Test_Condition": "Nanoindentation test",
+          "Value_Numeric": 18.6,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "GPa",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": "mN level",
+          "Hardness_Dwell_Time_s": 10,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": "Nanoindentation hardness value"
+        },
+        {
+          "Property_Name": "Ultimate_Tensile_Strength",
+          "Test_Condition": "In situ SEM tensile test",
+          "Value_Numeric": 345.0,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "MPa",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": "1×10⁻⁴",
+          "Tensile_Speed_mm_min": 0.01,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": "Dog-bone shaped specimen",
+          "Note": "Matrix cracking initiation strength"
+        }
+      ]
+    }
+  ]
+}

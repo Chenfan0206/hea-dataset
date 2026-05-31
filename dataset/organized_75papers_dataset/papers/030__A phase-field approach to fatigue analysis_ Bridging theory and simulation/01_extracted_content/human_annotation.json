@@ -1,0 +1,124 @@
+{
+    "Paper_Metadata": {
+        "Paper_Title": "A phase-field approach to fatigue analysis: Bridging theory and simulation",
+        "DOI": "10.1016/j.ijfatigue.2025.109397"
+    },
+    "items": [
+        {
+            "Sample_ID": "Haynes_230_superalloy",
+            "Gradient_Material": false,
+            "Gradient_Group_ID": null,
+            "Composition_Info": {
+                "Role": "Reference",
+                "Alloy_Name_Raw": "Haynes 230 superalloy",
+                "Nominal_Composition": null,
+                "Measured_Composition": null,
+                "Note": "Properties and parameters were obtained from literature [22-25]"
+            },
+            "Process_Info": {
+                "Process_Category": "Unknown",
+                "Process_Text": {
+                    "original": "Not provided in the text",
+                    "simplified": "Not provided"
+                },
+                "Equipment": null,
+                "Key_Params": {}
+            },
+            "Microstructure_Info": {
+                "Microstructure_Text": {
+                    "original": "Not provided in the text",
+                    "simplified": "Not provided"
+                },
+                "Main_Phase": null,
+                "Precipitates": [],
+                "Porosity_pct": null,
+                "Relative_Density_pct": null,
+                "Grain_Size_avg_um": null,
+                "Precipitate_Size_avg_nm": null,
+                "Advanced_Quantitative_Features": {}
+            },
+            "Properties_Info": [
+                {
+                    "Property_Name": "Elastic_Modulus",
+                    "Test_Condition": "Literature value",
+                    "Value_Numeric": 211.0,
+                    "Value_Range": null,
+                    "Value_StdDev": null,
+                    "Unit": "GPa",
+                    "Test_Temperature_K": null,
+                    "Strain_Rate_s1": null,
+                    "Tensile_Speed_mm_min": null,
+                    "Hardness_Load": null,
+                    "Hardness_Dwell_Time_s": null,
+                    "Data_Source": "text",
+                    "Test_Specimen": "Modified compact tension (CT) specimens with internal voids",
+                    "Note": "Reported as 211 kN/mm²"
+                },
+                {
+                    "Property_Name": "Poisson_Ratio",
+                    "Test_Condition": "Literature value",
+                    "Value_Numeric": 0.3,
+                    "Value_Range": null,
+                    "Value_StdDev": null,
+                    "Unit": "dimensionless",
+                    "Test_Temperature_K": null,
+                    "Strain_Rate_s1": null,
+                    "Tensile_Speed_mm_min": null,
+                    "Hardness_Load": null,
+                    "Hardness_Dwell_Time_s": null,
+                    "Data_Source": "text",
+                    "Test_Specimen": "Modified compact tension (CT) specimens with internal voids",
+                    "Note": null
+                },
+                {
+                    "Property_Name": "Critical_Energy_Release_Rate",
+                    "Test_Condition": "Literature value",
+                    "Value_Numeric": 0.073,
+                    "Value_Range": null,
+                    "Value_StdDev": null,
+                    "Unit": "kN/mm",
+                    "Test_Temperature_K": null,
+                    "Strain_Rate_s1": null,
+                    "Tensile_Speed_mm_min": null,
+                    "Hardness_Load": null,
+                    "Hardness_Dwell_Time_s": null,
+                    "Data_Source": "text",
+                    "Test_Specimen": "Modified compact tension (CT) specimens with internal voids",
+                    "Note": "Reported as 0.073 kN/mm"
+                },
+                {
+                    "Property_Name": "Paris_Law_Exponent_n",
+                    "Test_Condition": "Literature value",
+                    "Value_Numeric": 2.08,
+                    "Value_Range": null,
+                    "Value_StdDev": null,
+                    "Unit": "dimensionless",
+                    "Test_Temperature_K": null,
+                    "Strain_Rate_s1": null,
+                    "Tensile_Speed_mm_min": null,
+                    "Hardness_Load": null,
+                    "Hardness_Dwell_Time_s": null,
+                    "Data_Source": "text",
+                    "Test_Specimen": "Modified compact tension (CT) specimens with internal voids",
+                    "Note": null
+                },
+                {
+                    "Property_Name": "Paris_Law_Constant_C",
+                    "Test_Condition": "Literature value",
+                    "Value_Numeric": 2.129e-05,
+                    "Value_Range": null,
+                    "Value_StdDev": null,
+                    "Unit": "mm^((2+3n)/2)·cycle^-1·kN^-n",
+                    "Test_Temperature_K": null,
+                    "Strain_Rate_s1": null,
+                    "Tensile_Speed_mm_min": null,
+                    "Hardness_Load": null,
+                    "Hardness_Dwell_Time_s": null,
+                    "Data_Source": "text",
+                    "Test_Specimen": "Modified compact tension (CT) specimens with internal voids",
+                    "Note": null
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,7 @@
+{
+  "paper_dir": "4",
+  "figures": 12,
+  "direct_pairs": 12,
+  "topk_pairs": 60,
+  "sentences": 53
+}

@@ -1,0 +1,7 @@
+{
+  "paper_dir": "Branched_Fluorine_Ad",
+  "figures": 6,
+  "direct_pairs": 6,
+  "topk_pairs": 30,
+  "sentences": 28
+}

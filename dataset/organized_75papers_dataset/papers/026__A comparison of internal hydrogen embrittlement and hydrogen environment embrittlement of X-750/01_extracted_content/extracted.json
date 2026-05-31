@@ -1,0 +1,1830 @@
+{
+  "Paper_Metadata": {
+    "Paper_Title": "A comparison of internal hydrogen embrittlement and hydrogen environment embrittlement of X-750",
+    "DOI": null,
+    "Note": "DOI not found in OCR text"
+  },
+  "Paper_Routing": {
+    "base_material": "Metals",
+    "application": "Structural",
+    "research_paradigm": "Hybrid",
+    "Supplements_Loaded": [
+      "/home/cs/.codex/skills/material-extractor/references/directions/base/Metals.txt",
+      "/home/cs/.codex/skills/material-extractor/references/directions/application/Structural.txt",
+      "/home/cs/.codex/skills/material-extractor/references/directions/paradigm/Hybrid.txt"
+    ],
+    "Patch_Tags": [
+      "Hydrogen_Assisted"
+    ],
+    "Needs_Mixed_Routing_Check": false
+  },
+  "items": [
+    {
+      "Item_ID": "X750_HTH_noncharged_CT_air",
+      "Sample_ID": "HTH alloy X-750 noncharged CT specimens",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Hydrogen_Assisted"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "The material used in this program was from 6.35 cm diameter alloy X-750 bars heat treated to the HTH condition with the composition provided in Table 1.",
+        "The noncharged testing used compact tension (CT) specimens that were 15.2 mm thick (B) with 20% side grooves (10% per side) and a width (W) of 30.5 mm.",
+        "The noncharged specimens were tested using an elastic-plastic fracture toughness testing technique at 25°C according to ASTM E813-89."
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Nickel-base superalloy",
+          "Material_Name_Raw": "alloy X-750",
+          "Heat_Treatment_Condition": "HTH",
+          "Measured_Composition": {
+            "Basis": "wt.%",
+            "Elements": [
+              {
+                "Element": "Ni",
+                "Value": "Balance",
+                "Note": "Balance; normalized ≈ 71.17 wt% (from Table 1 measured composition)"
+              },
+              {
+                "Element": "Cr",
+                "Value": 15.46,
+                "Unit": "wt.%"
+              },
+              {
+                "Element": "Nb",
+                "Value": 1.0,
+                "Unit": "wt.%"
+              },
+              {
+                "Element": "Ti",
+                "Value": 2.67,
+                "Unit": "wt.%"
+              },
+              {
+                "Element": "Al",
+                "Value": 0.76,
+                "Unit": "wt.%"
+              },
+              {
+                "Element": "Fe",
+                "Value": 8.33,
+                "Unit": "wt.%"
+              },
+              {
+                "Element": "C",
+                "Value": 0.072,
+                "Unit": "wt.%"
+              }
+            ],
+            "Original_Values": "Table 1 Chemical analysis (wt.%): Ni 71.17, Cr 15.46, Nb 1.00, Ti 2.67, Al 0.76, Fe 8.33, C 0.072"
+          }
+        },
+        "Processing": {
+          "Process_Category": "Wrought bar heat treatment and fracture toughness specimen preparation",
+          "Process_Text": {
+            "original": "6.35 cm diameter alloy X-750 bars heat treated to the HTH condition. The HTH condition consists of a solution anneal at 1094°C for 1-2 h with a rapid air cool followed by aging at 704°C for 20 h. Noncharged CT specimens were 15.2 mm thick with 20% side grooves and 30.5 mm width; all specimens had an L-R orientation and were precracked at 30 Hz with final maximum K1 of 16.5 MPa√m.",
+            "simplified": "X-750 bar was solution annealed, rapidly air cooled, aged, machined into L-R CT specimens with side grooves, fatigue precracked, and tested in air without hydrogen charging."
+          },
+          "Key_Params": {
+            "Stage1": {
+              "Process": "solution anneal",
+              "Temperature_K": 1367.15,
+              "Original_Temperature": "1094°C",
+              "Time_Range": {
+                "Min": 1,
+                "Max": 2,
+                "Unit": "h"
+              },
+              "Cooling": "rapid air cool"
+            },
+            "Stage2": {
+              "Process": "aging",
+              "Temperature_K": 977.15,
+              "Original_Temperature": "704°C",
+              "Time": 20,
+              "Time_Unit": "h"
+            },
+            "Stage3": {
+              "Process": "fatigue precracking",
+              "Frequency": 30,
+              "Frequency_Unit": "Hz",
+              "Final_Maximum_K": 16.5,
+              "Final_Maximum_K_Unit": "MPa√m"
+            }
+          },
+          "Specimen": {
+            "Type": "compact tension (CT)",
+            "Thickness_B": 15.2,
+            "Thickness_Unit": "mm",
+            "Width_W": 30.5,
+            "Width_Unit": "mm",
+            "Side_Grooves": "20% total, 10% per side",
+            "Orientation": "L-R"
+          },
+          "Equipment": [
+            {
+              "Name": "fatigue precracking machine",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "compliance crack length measurement",
+              "Category": "Testing"
+            }
+          ],
+          "Standards": [
+            "ASTM E813-89",
+            "ASTM E813-81 conversion to KJC"
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "The mean intercept grain size was 125 μm with small discrete M23C6 carbide precipitates decorating the grain boundaries. The alloy was strengthened by ~20 nm γ' precipitates with a rounded cuboidal shape and a weight fraction of 0.126. Primary carbides and carbonitrides, M(C, N), were observed to be aligned along the rolling direction.",
+            "simplified": "HTH X-750 contained 125 μm grains, grain-boundary M23C6 carbides, rounded cuboidal γ' strengthening precipitates, and primary carbides/carbonitrides aligned with the rolling direction."
+          },
+          "Grain_Size": {
+            "Metric": "mean intercept grain size",
+            "Value": 125,
+            "Unit": "μm",
+            "Size_Type": "undefined",
+            "Original_Values": "125 μm"
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "M23C6 carbide precipitates",
+              "Crystal_Structure": null,
+              "Location": "grain boundaries",
+              "Morphology": "small discrete precipitates",
+              "Note": "Crystal structure not explicitly stated in OCR text"
+            },
+            {
+              "Phase_Name": "γ' precipitates",
+              "Crystal_Structure": null,
+              "Morphology": "rounded cuboidal",
+              "Size": {
+                "Value": 20,
+                "Unit": "nm",
+                "Size_Type": "undefined",
+                "Original_Values": "~20 nm",
+                "Note": "approximate value"
+              },
+              "Weight_Fraction": {
+                "Value": 0.126,
+                "Original_Values": "weight fraction of 0.126"
+              },
+              "Note": "Crystal structure not explicitly stated in OCR text"
+            },
+            {
+              "Phase_Name": "M(C,N) primary carbides and carbonitrides",
+              "Crystal_Structure": null,
+              "Location": "aligned along the rolling direction",
+              "Note": "Crystal structure not explicitly stated in OCR text"
+            }
+          ]
+        },
+        "Properties": [
+          {
+            "Property": "Fracture_Toughness",
+            "Metric": "KJC converted from JIC",
+            "Value": 147,
+            "Unit": "MPa√m",
+            "Test_Condition": {
+              "Hydrogen_Concentration": 0,
+              "Hydrogen_Concentration_Unit": "ppm",
+              "Test_Temperature_K": 298.15,
+              "Test_Temperature_Original": "25°C",
+              "Loading_Rate_Range": {
+                "Min": 420,
+                "Max": 1980,
+                "Unit": "MPa√m/h"
+              },
+              "Environment": "air",
+              "Specimen_State": "noncharged",
+              "Valid_Per_Standard": "Yes"
+            },
+            "Original_Values": "Table 2: Hydrogen concentration 0 ppm; Test temperature 25°C; Loading rate 420-1980 MPa√m/h; KIC column '-' and KJC 147 MPa√m; valid Yes",
+            "Data_Source": "table"
+          },
+          {
+            "Property": "Fracture_Morphology",
+            "Value": "mixture of approximately 20% transgranular ductile dimple fracture and 80% intergranular fracture",
+            "Test_Condition": {
+              "Environment": "air",
+              "Specimen_State": "noncharged"
+            },
+            "Original_Values": "The fracture morphology in noncharged specimens was a mixture of approximately 20% transgranular ductile dimple fracture and 80% intergranular fracture.",
+            "Data_Source": "text"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "X750_HTH_IHE_40ppm_CT_air",
+      "Sample_ID": "HTH alloy X-750 CT specimens internally charged to 40 wppm hydrogen",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Hydrogen_Assisted"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "The hydrogen concentration of the specimens charged at 315°C was 40 ppm by weight.",
+        "The fracture toughness of the hydrogen-charged specimens was determined by using linear-elastic fracture toughness testing.",
+        "Table 2 Fracture toughness properties of HTH alloy X-750 in air tests at 25°C and 54°C"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Nickel-base superalloy",
+          "Material_Name_Raw": "alloy X-750",
+          "Heat_Treatment_Condition": "HTH",
+          "Measured_Composition": {
+            "Basis": "wt.%",
+            "Elements": [
+              {
+                "Element": "Ni",
+                "Value": "Balance",
+                "Note": "Balance; normalized ≈ 71.17 wt% (from Table 1 measured composition)"
+              },
+              {
+                "Element": "Cr",
+                "Value": 15.46,
+                "Unit": "wt.%"
+              },
+              {
+                "Element": "Nb",
+                "Value": 1.0,
+                "Unit": "wt.%"
+              },
+              {
+                "Element": "Ti",
+                "Value": 2.67,
+                "Unit": "wt.%"
+              },
+              {
+                "Element": "Al",
+                "Value": 0.76,
+                "Unit": "wt.%"
+              },
+              {
+                "Element": "Fe",
+                "Value": 8.33,
+                "Unit": "wt.%"
+              },
+              {
+                "Element": "C",
+                "Value": 0.072,
+                "Unit": "wt.%"
+              }
+            ],
+            "Original_Values": "Same HTH alloy X-750 material; Table 1 Chemical analysis (wt.%): Ni 71.17, Cr 15.46, Nb 1.00, Ti 2.67, Al 0.76, Fe 8.33, C 0.072",
+            "Note": "Shared composition because the paper states the material used in this program was from alloy X-750 bars with Table 1 composition."
+          },
+          "Hydrogen_Content": {
+            "Value": 40,
+            "Unit": "wppm",
+            "Original_Values": "40 ppm by weight"
+          }
+        },
+        "Processing": {
+          "Process_Category": "Heat treated X-750, CT specimen machining, fatigue precracking, high-pressure hydrogen charging, and fracture toughness testing",
+          "Process_Text": {
+            "original": "CT specimens with a width (W) of 20.3 mm and thickness (B) of 10.1 mm were machined in an L-R orientation. The specimens were fatigue precracked prior to hydrogen charging to an a/W of about 0.45 at a final maximum K1 of 16.5 MPa√m. The specimens were charged in a high-pressure hydrogen autoclave at 21 MPa and 315°C for four weeks. After hydrogen charging, the specimens were removed from the autoclave and stored below 0°C.",
+            "simplified": "HTH X-750 was machined into L-R CT specimens, fatigue precracked, hydrogen charged in an autoclave at 21 MPa and 315°C for four weeks, stored below 0°C, and tested in air."
+          },
+          "Key_Params": {
+            "Stage1": {
+              "Process": "solution anneal",
+              "Temperature_K": 1367.15,
+              "Original_Temperature": "1094°C",
+              "Time_Range": {
+                "Min": 1,
+                "Max": 2,
+                "Unit": "h"
+              },
+              "Cooling": "rapid air cool"
+            },
+            "Stage2": {
+              "Process": "aging",
+              "Temperature_K": 977.15,
+              "Original_Temperature": "704°C",
+              "Time": 20,
+              "Time_Unit": "h"
+            },
+            "Stage3": {
+              "Process": "fatigue precracking",
+              "a_over_W": 0.45,
+              "Final_Maximum_K": 16.5,
+              "Final_Maximum_K_Unit": "MPa√m",
+              "Note": "a/W reported as about 0.45"
+            },
+            "Stage4": {
+              "Process": "hydrogen charging",
+              "Hydrogen_Pressure": 21,
+              "Hydrogen_Pressure_Unit": "MPa",
+              "Temperature_K": 588.15,
+              "Original_Temperature": "315°C",
+              "Time": 4,
+              "Time_Unit": "weeks",
+              "Measured_Hydrogen_Concentration": 40,
+              "Measured_Hydrogen_Concentration_Unit": "wppm"
+            },
+            "Stage5": {
+              "Process": "post-charge storage",
+              "Storage_Temperature": null,
+              "Original_Values": "stored below 0°C",
+              "Note": "Inequality temperature retained from text"
+            }
+          },
+          "Specimen": {
+            "Type": "compact tension (CT)",
+            "Thickness_B": 10.1,
+            "Thickness_Unit": "mm",
+            "Width_W": 20.3,
+            "Width_Unit": "mm",
+            "Orientation": "L-R"
+          },
+          "Equipment": [
+            {
+              "Name": "high-pressure hydrogen autoclave",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "LECO hydrogen analyzer model RH404",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "linear-elastic fracture toughness testing setup",
+              "Category": "Testing"
+            }
+          ],
+          "Standards": [
+            "ASTM E399-90"
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "The fracture morphology of all the hydrogen specimens was intergranular.",
+            "simplified": "The hydrogen charged 40 wppm specimen fractured intergranularly in air testing."
+          },
+          "Fracture_Morphology": "intergranular",
+          "Inherited_Microstructure_Note": "Same HTH alloy X-750 material microstructure as described for the program material: 125 μm mean intercept grain size, grain-boundary M23C6 carbides, ~20 nm γ' precipitates with 0.126 weight fraction, and M(C,N) aligned along rolling direction."
+        },
+        "Properties": [
+          {
+            "Property": "Fracture_Toughness",
+            "Metric": "KIC",
+            "Value": 53,
+            "Unit": "MPa√m",
+            "Test_Condition": {
+              "Hydrogen_Concentration": 40,
+              "Hydrogen_Concentration_Unit": "wppm",
+              "Test_Temperature_K": 298.15,
+              "Test_Temperature_Original": "25°C",
+              "Loading_Rate": 180,
+              "Loading_Rate_Unit": "MPa√m/h",
+              "Environment": "air",
+              "Specimen_State": "hydrogen precharged",
+              "Valid_Per_Standard": "Yes"
+            },
+            "Original_Values": "Table 2: 40 ppm, 25°C, 180 MPa√m/h, KIC 53 MPa√m, valid Yes",
+            "Data_Source": "table"
+          },
+          {
+            "Property": "Fracture_Morphology",
+            "Value": "intergranular",
+            "Test_Condition": {
+              "Specimen_State": "hydrogen precharged"
+            },
+            "Original_Values": "The fracture morphology of all the hydrogen specimens was intergranular.",
+            "Data_Source": "text"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "X750_HTH_IHE_65ppm_CT_air",
+      "Sample_ID": "HTH alloy X-750 CT specimens internally charged to 65 wppm hydrogen",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Hydrogen_Assisted"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "The hydrogen concentration of the specimens charged at 360°C was 65 ppm by weight.",
+        "Loading rates were varied by a factor of 50 to evaluate hydrogen diffusion effects on the fracture behavior.",
+        "Table 2 Fracture toughness properties of HTH alloy X-750 in air tests at 25°C and 54°C"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Nickel-base superalloy",
+          "Material_Name_Raw": "alloy X-750",
+          "Heat_Treatment_Condition": "HTH",
+          "Measured_Composition": {
+            "Basis": "wt.%",
+            "Elements": [
+              {
+                "Element": "Ni",
+                "Value": "Balance",
+                "Note": "Balance; normalized ≈ 71.17 wt% (from Table 1 measured composition)"
+              },
+              {
+                "Element": "Cr",
+                "Value": 15.46,
+                "Unit": "wt.%"
+              },
+              {
+                "Element": "Nb",
+                "Value": 1.0,
+                "Unit": "wt.%"
+              },
+              {
+                "Element": "Ti",
+                "Value": 2.67,
+                "Unit": "wt.%"
+              },
+              {
+                "Element": "Al",
+                "Value": 0.76,
+                "Unit": "wt.%"
+              },
+              {
+                "Element": "Fe",
+                "Value": 8.33,
+                "Unit": "wt.%"
+              },
+              {
+                "Element": "C",
+                "Value": 0.072,
+                "Unit": "wt.%"
+              }
+            ],
+            "Original_Values": "Same HTH alloy X-750 material; Table 1 Chemical analysis (wt.%): Ni 71.17, Cr 15.46, Nb 1.00, Ti 2.67, Al 0.76, Fe 8.33, C 0.072",
+            "Note": "Shared composition because the paper states the material used in this program was from alloy X-750 bars with Table 1 composition."
+          },
+          "Hydrogen_Content": {
+            "Value": 65,
+            "Unit": "wppm",
+            "Original_Values": "65 ppm by weight"
+          }
+        },
+        "Processing": {
+          "Process_Category": "Heat treated X-750, CT specimen machining, fatigue precracking, high-pressure hydrogen charging, and fracture toughness testing",
+          "Process_Text": {
+            "original": "CT specimens with a width (W) of 20.3 mm and thickness (B) of 10.1 mm were machined in an L-R orientation. The specimens were fatigue precracked prior to hydrogen charging to an a/W of about 0.45 at a final maximum K1 of 16.5 MPa√m. The specimens were charged in a high-pressure hydrogen autoclave at 34 MPa and 360°C for three weeks. After hydrogen charging, the specimens were removed from the autoclave and stored below 0°C.",
+            "simplified": "HTH X-750 was machined into L-R CT specimens, fatigue precracked, hydrogen charged in an autoclave at 34 MPa and 360°C for three weeks, stored below 0°C, and tested in air."
+          },
+          "Key_Params": {
+            "Stage1": {
+              "Process": "solution anneal",
+              "Temperature_K": 1367.15,
+              "Original_Temperature": "1094°C",
+              "Time_Range": {
+                "Min": 1,
+                "Max": 2,
+                "Unit": "h"
+              },
+              "Cooling": "rapid air cool"
+            },
+            "Stage2": {
+              "Process": "aging",
+              "Temperature_K": 977.15,
+              "Original_Temperature": "704°C",
+              "Time": 20,
+              "Time_Unit": "h"
+            },
+            "Stage3": {
+              "Process": "fatigue precracking",
+              "a_over_W": 0.45,
+              "Final_Maximum_K": 16.5,
+              "Final_Maximum_K_Unit": "MPa√m",
+              "Note": "a/W reported as about 0.45"
+            },
+            "Stage4": {
+              "Process": "hydrogen charging",
+              "Hydrogen_Pressure": 34,
+              "Hydrogen_Pressure_Unit": "MPa",
+              "Temperature_K": 633.15,
+              "Original_Temperature": "360°C",
+              "Time": 3,
+              "Time_Unit": "weeks",
+              "Measured_Hydrogen_Concentration": 65,
+              "Measured_Hydrogen_Concentration_Unit": "wppm"
+            },
+            "Stage5": {
+              "Process": "post-charge storage",
+              "Storage_Temperature": null,
+              "Original_Values": "stored below 0°C",
+              "Note": "Inequality temperature retained from text"
+            }
+          },
+          "Specimen": {
+            "Type": "compact tension (CT)",
+            "Thickness_B": 10.1,
+            "Thickness_Unit": "mm",
+            "Width_W": 20.3,
+            "Width_Unit": "mm",
+            "Orientation": "L-R"
+          },
+          "Equipment": [
+            {
+              "Name": "high-pressure hydrogen autoclave",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "LECO hydrogen analyzer model RH404",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "linear-elastic fracture toughness testing setup",
+              "Category": "Testing"
+            }
+          ],
+          "Standards": [
+            "ASTM E399-90"
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "The fracture morphology of all the hydrogen specimens was intergranular as shown in Fig. 3.",
+            "simplified": "The 65 wppm hydrogen charged specimens fractured intergranularly."
+          },
+          "Fracture_Morphology": "intergranular",
+          "Inherited_Microstructure_Note": "Same HTH alloy X-750 material microstructure as described for the program material: 125 μm mean intercept grain size, grain-boundary M23C6 carbides, ~20 nm γ' precipitates with 0.126 weight fraction, and M(C,N) aligned along rolling direction."
+        },
+        "Properties": [
+          {
+            "Property": "Fracture_Toughness",
+            "Metric": "KIC",
+            "Value": 52,
+            "Unit": "MPa√m",
+            "Test_Condition": {
+              "Hydrogen_Concentration": 65,
+              "Hydrogen_Concentration_Unit": "wppm",
+              "Test_Temperature_K": 298.15,
+              "Test_Temperature_Original": "25°C",
+              "Loading_Rate": 1980,
+              "Loading_Rate_Unit": "MPa√m/h",
+              "Environment": "air",
+              "Specimen_State": "hydrogen precharged",
+              "Valid_Per_Standard": "Yes"
+            },
+            "Original_Values": "Table 2: 65 ppm, 25°C, 1980 MPa√m/h, KIC 52 MPa√m, valid Yes",
+            "Data_Source": "table"
+          },
+          {
+            "Property": "Fracture_Toughness",
+            "Metric": "KIC",
+            "Value": 45,
+            "Unit": "MPa√m",
+            "Test_Condition": {
+              "Hydrogen_Concentration": 65,
+              "Hydrogen_Concentration_Unit": "wppm",
+              "Test_Temperature_K": 298.15,
+              "Test_Temperature_Original": "25°C",
+              "Loading_Rate": 180,
+              "Loading_Rate_Unit": "MPa√m/h",
+              "Environment": "air",
+              "Specimen_State": "hydrogen precharged",
+              "Valid_Per_Standard": "Yes"
+            },
+            "Original_Values": "Table 2: 65 ppm, 25°C, 180 MPa√m/h, KIC 45 MPa√m, valid Yes",
+            "Data_Source": "table"
+          },
+          {
+            "Property": "Fracture_Toughness",
+            "Metric": "KIC",
+            "Value": 42,
+            "Unit": "MPa√m",
+            "Test_Condition": {
+              "Hydrogen_Concentration": 65,
+              "Hydrogen_Concentration_Unit": "wppm",
+              "Test_Temperature_K": 298.15,
+              "Test_Temperature_Original": "25°C",
+              "Loading_Rate": 42,
+              "Loading_Rate_Unit": "MPa√m/h",
+              "Environment": "air",
+              "Specimen_State": "hydrogen precharged",
+              "Valid_Per_Standard": "Yes"
+            },
+            "Original_Values": "Table 2: 65 ppm, 25°C, 42 MPa√m/h, KIC 42 MPa√m, valid Yes",
+            "Data_Source": "table"
+          },
+          {
+            "Property": "Fracture_Toughness",
+            "Metric": "KIC",
+            "Value": 44,
+            "Unit": "MPa√m",
+            "Test_Condition": {
+              "Hydrogen_Concentration": 65,
+              "Hydrogen_Concentration_Unit": "wppm",
+              "Test_Temperature_K": 327.15,
+              "Test_Temperature_Original": "54°C",
+              "Loading_Rate": 180,
+              "Loading_Rate_Unit": "MPa√m/h",
+              "Environment": "air",
+              "Specimen_State": "hydrogen precharged",
+              "Valid_Per_Standard": "Yes"
+            },
+            "Original_Values": "Table 2: 65 ppm, 54°C, 180 MPa√m/h, KIC 44 MPa√m, valid Yes",
+            "Data_Source": "table"
+          },
+          {
+            "Property": "Fracture_Toughness",
+            "Metric": "KIC",
+            "Value": 49,
+            "Unit": "MPa√m",
+            "Test_Condition": {
+              "Hydrogen_Concentration": 65,
+              "Hydrogen_Concentration_Unit": "wppm",
+              "Test_Temperature_K": 373.15,
+              "Test_Temperature_Original": "100°C",
+              "Loading_Rate": 1800,
+              "Loading_Rate_Unit": "MPa√m/h",
+              "Environment": "air",
+              "Specimen_State": "hydrogen precharged",
+              "Valid_Per_Standard": "Yes"
+            },
+            "Original_Values": "Table 2: 65 ppm, 100°C, 1800 MPa√m/h, KIC 49 MPa√m, valid Yes",
+            "Data_Source": "table"
+          },
+          {
+            "Property": "Fracture_Morphology",
+            "Value": "intergranular",
+            "Test_Condition": {
+              "Specimen_State": "hydrogen precharged"
+            },
+            "Original_Values": "The fracture morphology of all the hydrogen specimens was intergranular.",
+            "Data_Source": "text"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "X750_HTH_HEE_CT_hydrogen_gas",
+      "Sample_ID": "HTH alloy X-750 CT specimens tested in hydrogen gas",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Hydrogen_Assisted"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "The tests were run at pressures of 0.14, 0.34, 3.4, and 34 MPa hydrogen at 54°C.",
+        "The hydrogen gas was a minimum of 99.999% pure.",
+        "Table 3 Fracture toughness properties of HTH alloy X-750 tested in hydrogen gas at 54°C"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Nickel-base superalloy",
+          "Material_Name_Raw": "alloy X-750",
+          "Heat_Treatment_Condition": "HTH",
+          "Measured_Composition": {
+            "Basis": "wt.%",
+            "Elements": [
+              {
+                "Element": "Ni",
+                "Value": "Balance",
+                "Note": "Balance; normalized ≈ 71.17 wt% (from Table 1 measured composition)"
+              },
+              {
+                "Element": "Cr",
+                "Value": 15.46,
+                "Unit": "wt.%"
+              },
+              {
+                "Element": "Nb",
+                "Value": 1.0,
+                "Unit": "wt.%"
+              },
+              {
+                "Element": "Ti",
+                "Value": 2.67,
+                "Unit": "wt.%"
+              },
+              {
+                "Element": "Al",
+                "Value": 0.76,
+                "Unit": "wt.%"
+              },
+              {
+                "Element": "Fe",
+                "Value": 8.33,
+                "Unit": "wt.%"
+              },
+              {
+                "Element": "C",
+                "Value": 0.072,
+                "Unit": "wt.%"
+              }
+            ],
+            "Original_Values": "Same HTH alloy X-750 material; Table 1 Chemical analysis (wt.%): Ni 71.17, Cr 15.46, Nb 1.00, Ti 2.67, Al 0.76, Fe 8.33, C 0.072",
+            "Note": "Shared composition because the paper states the material used in this program was from alloy X-750 bars with Table 1 composition."
+          }
+        },
+        "Processing": {
+          "Process_Category": "Heat treated X-750, CT specimen machining, fatigue precracking, and hydrogen gas fracture toughness testing",
+          "Process_Text": {
+            "original": "CT specimens with a width (W) of 20.3 mm and thickness (B) of 10.1 mm were used. The specimens were fatigue precracked to an a/W of about 0.45 at a final maximum K1 of 16.5 MPa√m. All specimens were machined in an L-R orientation. At 54°C, the fracture tests were conducted on an electrohydraulic closed-loop machine in stroke control with a loading rate of 4.4 MPa√m/h. One specimen was tested at 0.44 MPa√m/h. Displacements were determined from an internal displacement gauge attached to the front face of the specimen and load from a system load cell. The autoclave was evacuated prior to adding the hydrogen gas.",
+            "simplified": "HTH X-750 was machined into L-R CT specimens, fatigue precracked, placed in evacuated autoclave hydrogen gas, and tested for linear-elastic fracture toughness at 54°C under multiple hydrogen pressures."
+          },
+          "Key_Params": {
+            "Stage1": {
+              "Process": "solution anneal",
+              "Temperature_K": 1367.15,
+              "Original_Temperature": "1094°C",
+              "Time_Range": {
+                "Min": 1,
+                "Max": 2,
+                "Unit": "h"
+              },
+              "Cooling": "rapid air cool"
+            },
+            "Stage2": {
+              "Process": "aging",
+              "Temperature_K": 977.15,
+              "Original_Temperature": "704°C",
+              "Time": 20,
+              "Time_Unit": "h"
+            },
+            "Stage3": {
+              "Process": "fatigue precracking",
+              "a_over_W": 0.45,
+              "Final_Maximum_K": 16.5,
+              "Final_Maximum_K_Unit": "MPa√m",
+              "Note": "a/W reported as about 0.45"
+            },
+            "Stage4": {
+              "Process": "hydrogen gas exposure during fracture testing",
+              "Hydrogen_Gas_Purity": "minimum 99.999%",
+              "Hydrogen_Pressures": [
+                {
+                  "Value": 0.14,
+                  "Unit": "MPa"
+                },
+                {
+                  "Value": 0.34,
+                  "Unit": "MPa"
+                },
+                {
+                  "Value": 3.4,
+                  "Unit": "MPa"
+                },
+                {
+                  "Value": 34,
+                  "Unit": "MPa"
+                }
+              ],
+              "Test_Temperature_K": 327.15,
+              "Original_Temperature": "54°C"
+            }
+          },
+          "Specimen": {
+            "Type": "compact tension (CT)",
+            "Thickness_B": 10.1,
+            "Thickness_Unit": "mm",
+            "Width_W": 20.3,
+            "Width_Unit": "mm",
+            "Orientation": "L-R"
+          },
+          "Equipment": [
+            {
+              "Name": "autoclave",
+              "Category": "Testing"
+            },
+            {
+              "Name": "electrohydraulic closed-loop machine",
+              "Category": "Testing"
+            },
+            {
+              "Name": "internal displacement gauge",
+              "Category": "Testing"
+            },
+            {
+              "Name": "system load cell",
+              "Category": "Testing"
+            }
+          ],
+          "Standards": [
+            "ASTM E399-90"
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Again, the fractography showed that all the specimens had an intergranular fracture morphology. At the low pressure, 0.14 MPa hydrogen, while the fractography shows a predominantly intergranular fracture, there is limited (less than 10%) transgranular faceted fracture. At a pressure of 0.34 and over, the fractography showed over 98% intergranular fracture.",
+            "simplified": "Hydrogen gas specimens fractured predominantly intergranularly; the 0.14 MPa specimen had less than 10% transgranular faceted fracture, while specimens at 0.34 MPa and above had over 98% intergranular fracture."
+          },
+          "Fracture_Morphology_By_Condition": [
+            {
+              "Hydrogen_Pressure": 0.14,
+              "Hydrogen_Pressure_Unit": "MPa",
+              "Morphology": "predominantly intergranular with limited transgranular faceted fracture",
+              "Transgranular_Faceted_Fraction": null,
+              "Original_Values": "less than 10%",
+              "Note": "Inequality retained from text"
+            },
+            {
+              "Hydrogen_Pressure_Min": 0.34,
+              "Hydrogen_Pressure_Unit": "MPa",
+              "Morphology": "over 98% intergranular fracture",
+              "Intergranular_Fraction": null,
+              "Original_Values": "over 98%",
+              "Note": "Inequality retained from text"
+            }
+          ],
+          "Inherited_Microstructure_Note": "Same HTH alloy X-750 material microstructure as described for the program material: 125 μm mean intercept grain size, grain-boundary M23C6 carbides, ~20 nm γ' precipitates with 0.126 weight fraction, and M(C,N) aligned along rolling direction."
+        },
+        "Properties": [
+          {
+            "Property": "Fracture_Toughness",
+            "Metric": "KIC",
+            "Value": 43,
+            "Unit": "MPa√m",
+            "Test_Condition": {
+              "Hydrogen_Pressure": 0.14,
+              "Hydrogen_Pressure_Unit": "MPa",
+              "Solubility_Per_Sieverts_Law": 1.0,
+              "Solubility_Unit": "ppm",
+              "Test_Temperature_K": 327.15,
+              "Test_Temperature_Original": "54°C",
+              "Loading_Rate": 4.4,
+              "Loading_Rate_Unit": "MPa√m/h",
+              "Environment": "hydrogen gas"
+            },
+            "Original_Values": "Table 3: 0.14 MPa H2, solubility 1.0 ppm, loading rate 4.4 MPa√m/h, KIC 43 MPa√m",
+            "Data_Source": "table"
+          },
+          {
+            "Property": "Fracture_Toughness",
+            "Metric": "KIC",
+            "Value": 36,
+            "Unit": "MPa√m",
+            "Test_Condition": {
+              "Hydrogen_Pressure": 0.34,
+              "Hydrogen_Pressure_Unit": "MPa",
+              "Solubility_Per_Sieverts_Law": 1.7,
+              "Solubility_Unit": "ppm",
+              "Test_Temperature_K": 327.15,
+              "Test_Temperature_Original": "54°C",
+              "Loading_Rate": 4.4,
+              "Loading_Rate_Unit": "MPa√m/h",
+              "Environment": "hydrogen gas"
+            },
+            "Original_Values": "Table 3: 0.34 MPa H2, solubility 1.7 ppm, loading rate 4.4 MPa√m/h, KIC 36 MPa√m",
+            "Data_Source": "table"
+          },
+          {
+            "Property": "Fracture_Toughness",
+            "Metric": "KIC",
+            "Value": 36,
+            "Unit": "MPa√m",
+            "Test_Condition": {
+              "Hydrogen_Pressure": 0.34,
+              "Hydrogen_Pressure_Unit": "MPa",
+              "Solubility_Per_Sieverts_Law": 1.7,
+              "Solubility_Unit": "ppm",
+              "Test_Temperature_K": 327.15,
+              "Test_Temperature_Original": "54°C",
+              "Loading_Rate": 0.44,
+              "Loading_Rate_Unit": "MPa√m/h",
+              "Environment": "hydrogen gas"
+            },
+            "Original_Values": "Table 3: 0.34 MPa H2, solubility 1.7 ppm, loading rate 0.44 MPa√m/h, KIC 36 MPa√m",
+            "Data_Source": "table"
+          },
+          {
+            "Property": "Fracture_Toughness",
+            "Metric": "KIC",
+            "Value": 29,
+            "Unit": "MPa√m",
+            "Test_Condition": {
+              "Hydrogen_Pressure": 3.4,
+              "Hydrogen_Pressure_Unit": "MPa",
+              "Solubility_Per_Sieverts_Law": 5.4,
+              "Solubility_Unit": "ppm",
+              "Test_Temperature_K": 327.15,
+              "Test_Temperature_Original": "54°C",
+              "Loading_Rate": 4.4,
+              "Loading_Rate_Unit": "MPa√m/h",
+              "Environment": "hydrogen gas"
+            },
+            "Original_Values": "Table 3: 3.4 MPa H2, solubility 5.4 ppm, loading rate 4.4 MPa√m/h, KIC 29 MPa√m",
+            "Data_Source": "table"
+          },
+          {
+            "Property": "Fracture_Toughness",
+            "Metric": "KIC",
+            "Value": 22,
+            "Unit": "MPa√m",
+            "Test_Condition": {
+              "Hydrogen_Pressure": 34.4,
+              "Hydrogen_Pressure_Unit": "MPa",
+              "Solubility_Per_Sieverts_Law": 17,
+              "Solubility_Unit": "ppm",
+              "Test_Temperature_K": 327.15,
+              "Test_Temperature_Original": "54°C",
+              "Loading_Rate": 4.4,
+              "Loading_Rate_Unit": "MPa√m/h",
+              "Environment": "hydrogen gas"
+            },
+            "Original_Values": "Table 3: 34.4 MPa H2, solubility 17 ppm, loading rate 4.4 MPa√m/h, KIC 22 MPa√m",
+            "Data_Source": "table"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "X750_HTH_IHE_plus_HEE_bolt_loaded_CT",
+      "Sample_ID": "HTH alloy X-750 bolt-loaded CT specimens with internal hydrogen and hydrogen environment",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Hydrogen_Assisted"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "An additional test was performed on two bolt-loaded specimens to investigate the interaction of internal hydrogen and the hydrogen environment.",
+        "At this high pressure, the autoclave was held for four weeks. This allowed sufficient time for the specimens to achieve a uniform hydrogen concentration of 40 ppm.",
+        "The bolt-loaded specimens that were hydrogen charged and then tested in the hydrogen environment had a final stress intensity factor of 20 MPa√m for both specimens."
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Nickel-base superalloy",
+          "Material_Name_Raw": "alloy X-750",
+          "Heat_Treatment_Condition": "HTH",
+          "Hydrogen_Content": {
+            "Value": 40,
+            "Unit": "wppm",
+            "Original_Values": "uniform hydrogen concentration of 40 ppm"
+          }
+        },
+        "Processing": {
+          "Process_Category": "Bolt-loaded CT specimen hydrogen charging and hydrogen environment exposure",
+          "Process_Text": {
+            "original": "One specimen was loaded to a stress intensity factor of 22 MPa√m and the second was loaded to 33 MPa√m. The specimens were bolt loaded using a load transfer technique. The specimens were loaded to 98% of the final load in a tensile machine, then the load was transferred to the specimen by tightening the bolt while maintaining the crack mouth opening displacement constant as measured by a clip gage. After the bolt loading, the specimens were inserted into the autoclave, evacuated and then pressurized to 3.4 MPa and heated to 315°C. Once at temperature, the pressure was then increased to 21 MPa. At this high pressure, the autoclave was held for four weeks. The pressure was then kept constant, and the autoclave was cooled.",
+            "simplified": "Two CT specimens were bolt loaded, transferred into an evacuated autoclave, exposed first to 3.4 MPa hydrogen while heating to 315°C, then to 21 MPa hydrogen for four weeks, cooled at constant pressure, removed, and evaluated by reverse load transfer."
+          },
+          "Key_Params": {
+            "Stage1": {
+              "Process": "bolt loading",
+              "Initial_Stress_Intensity_Factors": [
+                {
+                  "Value": 22,
+                  "Unit": "MPa√m"
+                },
+                {
+                  "Value": 33,
+                  "Unit": "MPa√m"
+                }
+              ],
+              "Load_Transfer": "loaded to 98% of final load in a tensile machine, then bolt tightened while maintaining CMOD constant"
+            },
+            "Stage2": {
+              "Process": "autoclave hydrogen exposure during heating",
+              "Hydrogen_Pressure": 3.4,
+              "Hydrogen_Pressure_Unit": "MPa",
+              "Temperature_K": 588.15,
+              "Original_Temperature": "315°C"
+            },
+            "Stage3": {
+              "Process": "high-pressure hydrogen hold",
+              "Hydrogen_Pressure": 21,
+              "Hydrogen_Pressure_Unit": "MPa",
+              "Temperature_K": 588.15,
+              "Original_Temperature": "315°C",
+              "Time": 4,
+              "Time_Unit": "weeks",
+              "Hydrogen_Concentration": 40,
+              "Hydrogen_Concentration_Unit": "wppm"
+            },
+            "Stage4": {
+              "Process": "constant-pressure cooling",
+              "Final_Temperature_K": 298.15,
+              "Original_Final_Temperature": "25°C",
+              "Hydrogen_Pressure": 21,
+              "Hydrogen_Pressure_Unit": "MPa",
+              "Equilibrium_Hydrogen_Concentration": 10,
+              "Equilibrium_Hydrogen_Concentration_Unit": "ppm"
+            }
+          },
+          "Equipment": [
+            {
+              "Name": "tensile machine",
+              "Category": "Testing"
+            },
+            {
+              "Name": "bolt-loading fixture",
+              "Category": "Testing"
+            },
+            {
+              "Name": "clip gage",
+              "Category": "Testing"
+            },
+            {
+              "Name": "autoclave",
+              "Category": "Testing"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "The fractography on both of these specimens showed an intergranular morphology.",
+            "simplified": "Both bolt-loaded IHE plus HEE specimens had intergranular fracture morphology."
+          },
+          "Fracture_Morphology": "intergranular"
+        },
+        "Properties": [
+          {
+            "Property": "Threshold_Stress_Intensity_Factor",
+            "Metric": "final stress intensity factor",
+            "Value": 20,
+            "Unit": "MPa√m",
+            "Test_Condition": {
+              "Specimen_Count": 2,
+              "Specimen_State": "hydrogen charged and tested in hydrogen environment",
+              "Environment": "21 MPa hydrogen at 25°C after cooling",
+              "Crack_Extensions": [
+                {
+                  "Value": 1.5,
+                  "Unit": "mm"
+                },
+                {
+                  "Value": 5.7,
+                  "Unit": "mm"
+                }
+              ]
+            },
+            "Original_Values": "The bolt-loaded specimens ... had a final stress intensity factor of 20 MPa√m for both specimens ... one specimen grew 1.5 mm and the other specimen grew 5.7 mm.",
+            "Data_Source": "text"
+          },
+          {
+            "Property": "Fracture_Morphology",
+            "Value": "intergranular",
+            "Test_Condition": {
+              "Specimen_State": "hydrogen charged and tested in hydrogen environment"
+            },
+            "Original_Values": "The fractography on both of these specimens showed an intergranular morphology.",
+            "Data_Source": "text"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "X750_HTH_HEE_literature_elevated_temperature",
+      "Sample_ID": "Previously reported HEE alloy X-750 elevated-temperature hydrogen gas specimens",
+      "Role": "Reference",
+      "Data_Nature": "Literature_Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Hydrogen_Assisted"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Included in Fig. 6 is some previously reported data for HEE of alloy X-750 at elevated temperatures [25].",
+        "The previous work included testing at 260°C and 338°C in hydrogen gas at a pressure of 13.8 MPa.",
+        "The fracture toughness values under these conditions were 68 MPa√m at 260°C and 87 MPa√m at 338°C."
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Name_Raw": "alloy X-750",
+          "Material_Family": "Nickel-base superalloy",
+          "Note": "Previously reported HEE data included by the paper for comparison; full composition not restated in the cited-data sentence."
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "Previously reported data for HEE of alloy X-750 at elevated temperatures [25] included testing at 260°C and 338°C in hydrogen gas at a pressure of 13.8 MPa.",
+            "simplified": "Literature HEE tests on alloy X-750 were performed in 13.8 MPa hydrogen gas at 260°C and 338°C."
+          },
+          "Equipment": [
+            {
+              "Name": "hydrogen gas test apparatus",
+              "Category": "Testing"
+            }
+          ],
+          "Note": "Specific equipment name not provided in OCR text for the previously reported elevated-temperature data."
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "The fracture morphology for the elevated temperature specimens was also intergranular [25].",
+            "simplified": "The elevated-temperature literature HEE specimens had intergranular fracture morphology."
+          },
+          "Fracture_Morphology": "intergranular"
+        },
+        "Properties": [
+          {
+            "Property": "Fracture_Toughness",
+            "Metric": "KIC",
+            "Value": 68,
+            "Unit": "MPa√m",
+            "Test_Condition": {
+              "Hydrogen_Pressure": 13.8,
+              "Hydrogen_Pressure_Unit": "MPa",
+              "Test_Temperature_K": 533.15,
+              "Test_Temperature_Original": "260°C",
+              "Environment": "hydrogen gas"
+            },
+            "Original_Values": "68 MPa√m at 260°C; hydrogen gas pressure 13.8 MPa",
+            "Data_Source": "text"
+          },
+          {
+            "Property": "Fracture_Toughness",
+            "Metric": "KIC",
+            "Value": 87,
+            "Unit": "MPa√m",
+            "Test_Condition": {
+              "Hydrogen_Pressure": 13.8,
+              "Hydrogen_Pressure_Unit": "MPa",
+              "Test_Temperature_K": 611.15,
+              "Test_Temperature_Original": "338°C",
+              "Environment": "hydrogen gas"
+            },
+            "Original_Values": "87 MPa√m at 338°C; hydrogen gas pressure 13.8 MPa",
+            "Data_Source": "text"
+          },
+          {
+            "Property": "Fracture_Morphology",
+            "Value": "intergranular",
+            "Test_Condition": {
+              "Environment": "hydrogen gas",
+              "Temperature_Range_Original": "260°C and 338°C"
+            },
+            "Original_Values": "The fracture morphology for the elevated temperature specimens was also intergranular [25].",
+            "Data_Source": "text"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "X750_HTH_tensile_literature_dataset",
+      "Sample_ID": "Previously reported HTH alloy X-750 tensile specimens",
+      "Role": "Reference",
+      "Data_Nature": "Literature_Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Hydrogen_Assisted"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "There was a large range of temperatures and strain rates used for the hydrogen charged tensile specimens, as was previously reported [6], and summarized in Table 4.",
+        "Table 4 Tensile properties of HTH alloy X-750"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Name_Raw": "HTH alloy X-750",
+          "Material_Family": "Nickel-base superalloy",
+          "Hydrogen_Content_Series": {
+            "Values": [
+              0,
+              5.7,
+              18,
+              52,
+              65
+            ],
+            "Unit": "wppm",
+            "Original_Values": "Table 4 Hydrogen concentration (wppm): 0, 5.7, 18, 52, 65"
+          },
+          "Note": "Previously reported tensile data summarized in this paper; item retained as a literature dataset because individual precharging histories for each row are not provided in the OCR text."
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "Hydrogen charged tensile specimens, as was previously reported [6], and summarized in Table 4.",
+            "simplified": "Previously reported HTH alloy X-750 tensile specimens were tested over multiple hydrogen concentrations, strain rates, and temperatures."
+          },
+          "Equipment": [
+            {
+              "Name": "tensile testing apparatus",
+              "Category": "Testing"
+            }
+          ],
+          "Note": "Specific tensile equipment name and specimen geometry are not provided in the OCR text."
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Using the same analysis technique as for the fracture toughness specimen analysis, Eq. (2), the trapping energy was determined to be 18 kJ/mol. The result of the diffusive segregation analysis on the tensile behavior is shown in Fig. 11.",
+            "simplified": "The previously reported tensile behavior was analyzed using a grain-boundary hydrogen trapping framework with 18 kJ/mol trapping energy."
+          },
+          "Advanced_Quantitative_Features": {
+            "IHE_Tensile_Trapping_Energy": {
+              "Value": 18,
+              "Unit": "kJ/mol",
+              "Original_Values": "the trapping energy was determined to be 18 kJ/mol"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property": "Tensile",
+            "Yield_Strength": 814,
+            "Yield_Strength_Unit": "MPa",
+            "True_Fracture_Stress": 1482,
+            "True_Fracture_Stress_Unit": "MPa",
+            "Elongation_Total": 23,
+            "Elongation_Total_Unit": "%",
+            "Reduction_in_Area": 24,
+            "Reduction_in_Area_Unit": "%",
+            "EI_Loss": 0,
+            "EI_Loss_Unit": "%",
+            "Test_Condition": {
+              "Hydrogen_Concentration": 0,
+              "Hydrogen_Concentration_Unit": "wppm",
+              "Strain_Rate": 0.000333,
+              "Strain_Rate_Unit": "s^-1",
+              "Test_Temperature_K": 248.15,
+              "Test_Temperature_Original": "-25°C"
+            },
+            "Original_Values": "Table 4 row: 0 wppm, yield 814 MPa, true fracture stress 1482 MPa, fracture-strain 23%, reduction in area 24%, EI loss 0%, strain rate 3.33 x 10^-4 s^-1, temperature -25°C",
+            "Data_Source": "table",
+            "Note": "Original table heading is fracture-strain; recorded as Elongation_Total because the table does not distinguish uniform and total elongation."
+          },
+          {
+            "Property": "Tensile",
+            "Yield_Strength": 819,
+            "Yield_Strength_Unit": "MPa",
+            "True_Fracture_Stress": 1375,
+            "True_Fracture_Stress_Unit": "MPa",
+            "Elongation_Total": 21.2,
+            "Elongation_Total_Unit": "%",
+            "Reduction_in_Area": 22.1,
+            "Reduction_in_Area_Unit": "%",
+            "EI_Loss": 0,
+            "EI_Loss_Unit": "%",
+            "Test_Condition": {
+              "Hydrogen_Concentration": 0,
+              "Hydrogen_Concentration_Unit": "wppm",
+              "Strain_Rate": 0.000333,
+              "Strain_Rate_Unit": "s^-1",
+              "Test_Temperature_K": 298.15,
+              "Test_Temperature_Original": "25°C"
+            },
+            "Original_Values": "Table 4 row: 0 wppm, yield 819 MPa, true fracture stress 1375 MPa, fracture-strain 21.2%, reduction in area 22.1%, EI loss 0%, strain rate 3.33 x 10^-4 s^-1, temperature 25°C",
+            "Data_Source": "table",
+            "Note": "Original table heading is fracture-strain; recorded as Elongation_Total because the table does not distinguish uniform and total elongation."
+          },
+          {
+            "Property": "Tensile",
+            "Yield_Strength": 809,
+            "Yield_Strength_Unit": "MPa",
+            "True_Fracture_Stress": 1424,
+            "True_Fracture_Stress_Unit": "MPa",
+            "Elongation_Total": 22,
+            "Elongation_Total_Unit": "%",
+            "Reduction_in_Area": 24,
+            "Reduction_in_Area_Unit": "%",
+            "EI_Loss": 0,
+            "EI_Loss_Unit": "%",
+            "Test_Condition": {
+              "Hydrogen_Concentration": 0,
+              "Hydrogen_Concentration_Unit": "wppm",
+              "Strain_Rate": 3.33e-05,
+              "Strain_Rate_Unit": "s^-1",
+              "Test_Temperature_K": 298.15,
+              "Test_Temperature_Original": "25°C"
+            },
+            "Original_Values": "Table 4 row: 0 wppm, yield 809 MPa, true fracture stress 1424 MPa, fracture-strain 22%, reduction in area 24%, EI loss 0%, strain rate 3.33 x 10^-5 s^-1, temperature 25°C",
+            "Data_Source": "table",
+            "Note": "Original table heading is fracture-strain; recorded as Elongation_Total because the table does not distinguish uniform and total elongation."
+          },
+          {
+            "Property": "Tensile",
+            "Yield_Strength": 800,
+            "Yield_Strength_Unit": "MPa",
+            "True_Fracture_Stress": 1385,
+            "True_Fracture_Stress_Unit": "MPa",
+            "Elongation_Total": 21.5,
+            "Elongation_Total_Unit": "%",
+            "EI_Loss": 0,
+            "EI_Loss_Unit": "%",
+            "Test_Condition": {
+              "Hydrogen_Concentration": 0,
+              "Hydrogen_Concentration_Unit": "wppm",
+              "Strain_Rate": 0.000333,
+              "Strain_Rate_Unit": "s^-1",
+              "Test_Temperature_K": 338.15,
+              "Test_Temperature_Original": "65°C"
+            },
+            "Original_Values": "Table 4 row: 0 wppm, yield 800 MPa, true fracture stress 1385 MPa, fracture-strain 21.5%, reduction in area '-', EI loss 0%, strain rate 3.33 x 10^-4 s^-1, temperature 65°C",
+            "Data_Source": "table",
+            "Note": "Reduction in area omitted because table value is '-'. Original table heading is fracture-strain; recorded as Elongation_Total."
+          },
+          {
+            "Property": "Tensile",
+            "Yield_Strength": 766,
+            "Yield_Strength_Unit": "MPa",
+            "True_Fracture_Stress": 1359,
+            "True_Fracture_Stress_Unit": "MPa",
+            "Elongation_Total": 23,
+            "Elongation_Total_Unit": "%",
+            "Reduction_in_Area": 26,
+            "Reduction_in_Area_Unit": "%",
+            "EI_Loss": 0,
+            "EI_Loss_Unit": "%",
+            "Test_Condition": {
+              "Hydrogen_Concentration": 0,
+              "Hydrogen_Concentration_Unit": "wppm",
+              "Strain_Rate": 0.000333,
+              "Strain_Rate_Unit": "s^-1",
+              "Test_Temperature_K": 448.15,
+              "Test_Temperature_Original": "175°C"
+            },
+            "Original_Values": "Table 4 row: 0 wppm, yield 766 MPa, true fracture stress 1359 MPa, fracture-strain 23%, reduction in area 26%, EI loss 0%, strain rate 3.33 x 10^-4 s^-1, temperature 175°C",
+            "Data_Source": "table",
+            "Note": "Original table heading is fracture-strain; recorded as Elongation_Total because the table does not distinguish uniform and total elongation."
+          },
+          {
+            "Property": "Tensile",
+            "Yield_Strength": 735,
+            "Yield_Strength_Unit": "MPa",
+            "True_Fracture_Stress": 1378,
+            "True_Fracture_Stress_Unit": "MPa",
+            "Elongation_Total": 30,
+            "Elongation_Total_Unit": "%",
+            "EI_Loss": 0,
+            "EI_Loss_Unit": "%",
+            "Test_Condition": {
+              "Hydrogen_Concentration": 0,
+              "Hydrogen_Concentration_Unit": "wppm",
+              "Strain_Rate": 0.000333,
+              "Strain_Rate_Unit": "s^-1",
+              "Test_Temperature_K": 558.15,
+              "Test_Temperature_Original": "285°C"
+            },
+            "Original_Values": "Table 4 row: 0 wppm, yield 735 MPa, true fracture stress 1378 MPa, fracture-strain 30%, reduction in area '-', EI loss 0%, strain rate 3.33 x 10^-4 s^-1, temperature 285°C",
+            "Data_Source": "table",
+            "Note": "Reduction in area omitted because table value is '-'. Original table heading is fracture-strain; recorded as Elongation_Total."
+          },
+          {
+            "Property": "Tensile",
+            "Yield_Strength": 801,
+            "Yield_Strength_Unit": "MPa",
+            "True_Fracture_Stress": 1088,
+            "True_Fracture_Stress_Unit": "MPa",
+            "Elongation_Total": 7.3,
+            "Elongation_Total_Unit": "%",
+            "Reduction_in_Area": 13.9,
+            "Reduction_in_Area_Unit": "%",
+            "EI_Loss": 67,
+            "EI_Loss_Unit": "%",
+            "Test_Condition": {
+              "Hydrogen_Concentration": 5.7,
+              "Hydrogen_Concentration_Unit": "wppm",
+              "Strain_Rate": 0.000333,
+              "Strain_Rate_Unit": "s^-1",
+              "Test_Temperature_K": 298.15,
+              "Test_Temperature_Original": "25°C"
+            },
+            "Original_Values": "Table 4 row: 5.7 wppm, yield 801 MPa, true fracture stress 1088 MPa, fracture-strain 7.3%, reduction in area 13.9%, EI loss 67%, strain rate 3.33 x 10^-4 s^-1, temperature 25°C",
+            "Data_Source": "table",
+            "Note": "Original table heading is fracture-strain; recorded as Elongation_Total."
+          },
+          {
+            "Property": "Tensile",
+            "Yield_Strength": 803,
+            "Yield_Strength_Unit": "MPa",
+            "True_Fracture_Stress": 1009,
+            "True_Fracture_Stress_Unit": "MPa",
+            "Elongation_Total": 4.3,
+            "Elongation_Total_Unit": "%",
+            "Reduction_in_Area": 11.5,
+            "Reduction_in_Area_Unit": "%",
+            "EI_Loss": 80,
+            "EI_Loss_Unit": "%",
+            "Test_Condition": {
+              "Hydrogen_Concentration": 18,
+              "Hydrogen_Concentration_Unit": "wppm",
+              "Strain_Rate": 0.000333,
+              "Strain_Rate_Unit": "s^-1",
+              "Test_Temperature_K": 298.15,
+              "Test_Temperature_Original": "25°C"
+            },
+            "Original_Values": "Table 4 row: 18 wppm, yield 803 MPa, true fracture stress 1009 MPa, fracture-strain 4.3%, reduction in area 11.5%, EI loss 80%, strain rate 3.33 x 10^-4 s^-1, temperature 25°C",
+            "Data_Source": "table",
+            "Note": "Original table heading is fracture-strain; recorded as Elongation_Total."
+          },
+          {
+            "Property": "Tensile",
+            "Yield_Strength": 806,
+            "Yield_Strength_Unit": "MPa",
+            "True_Fracture_Stress": 942,
+            "True_Fracture_Stress_Unit": "MPa",
+            "Elongation_Total": 2.5,
+            "Elongation_Total_Unit": "%",
+            "Reduction_in_Area": 8.4,
+            "Reduction_in_Area_Unit": "%",
+            "EI_Loss": 89,
+            "EI_Loss_Unit": "%",
+            "Test_Condition": {
+              "Hydrogen_Concentration": 52,
+              "Hydrogen_Concentration_Unit": "wppm",
+              "Strain_Rate": 3.33e-05,
+              "Strain_Rate_Unit": "s^-1",
+              "Test_Temperature_K": 298.15,
+              "Test_Temperature_Original": "25°C"
+            },
+            "Original_Values": "Table 4 row: 52 wppm, yield 806 MPa, true fracture stress 942 MPa, fracture-strain 2.5%, reduction in area 8.4%, EI loss 89%, strain rate 3.33 x 10^-5 s^-1, temperature 25°C",
+            "Data_Source": "table",
+            "Note": "Original table heading is fracture-strain; recorded as Elongation_Total."
+          },
+          {
+            "Property": "Tensile",
+            "Yield_Strength": 837,
+            "Yield_Strength_Unit": "MPa",
+            "True_Fracture_Stress": 1039,
+            "True_Fracture_Stress_Unit": "MPa",
+            "Elongation_Total": 5.0,
+            "Elongation_Total_Unit": "%",
+            "Reduction_in_Area": 12,
+            "Reduction_in_Area_Unit": "%",
+            "EI_Loss": 78,
+            "EI_Loss_Unit": "%",
+            "Test_Condition": {
+              "Hydrogen_Concentration": 65,
+              "Hydrogen_Concentration_Unit": "wppm",
+              "Strain_Rate": 0.000333,
+              "Strain_Rate_Unit": "s^-1",
+              "Test_Temperature_K": 248.15,
+              "Test_Temperature_Original": "-25°C"
+            },
+            "Original_Values": "Table 4 row: 65 wppm, yield 837 MPa, true fracture stress 1039 MPa, fracture-strain 5.0%, reduction in area 12%, EI loss 78%, strain rate 3.33 x 10^-4 s^-1, temperature -25°C",
+            "Data_Source": "table",
+            "Note": "Original table heading is fracture-strain; recorded as Elongation_Total."
+          },
+          {
+            "Property": "Tensile",
+            "Yield_Strength": 837,
+            "Yield_Strength_Unit": "MPa",
+            "True_Fracture_Stress": 997,
+            "True_Fracture_Stress_Unit": "MPa",
+            "Elongation_Total": 3.5,
+            "Elongation_Total_Unit": "%",
+            "Reduction_in_Area": 7.4,
+            "Reduction_in_Area_Unit": "%",
+            "EI_Loss": 85,
+            "EI_Loss_Unit": "%",
+            "Test_Condition": {
+              "Hydrogen_Concentration": 65,
+              "Hydrogen_Concentration_Unit": "wppm",
+              "Strain_Rate": 5e-05,
+              "Strain_Rate_Unit": "s^-1",
+              "Test_Temperature_K": 248.15,
+              "Test_Temperature_Original": "-25°C"
+            },
+            "Original_Values": "Table 4 row: 65 wppm, yield 837 MPa, true fracture stress 997 MPa, fracture-strain 3.5%, reduction in area 7.4%, EI loss 85%, strain rate 5.00 x 10^-5 s^-1, temperature -25°C",
+            "Data_Source": "table",
+            "Note": "Original table heading is fracture-strain; recorded as Elongation_Total."
+          },
+          {
+            "Property": "Tensile",
+            "Yield_Strength": 870,
+            "Yield_Strength_Unit": "MPa",
+            "True_Fracture_Stress": 1170,
+            "True_Fracture_Stress_Unit": "MPa",
+            "Elongation_Total": 15.5,
+            "Elongation_Total_Unit": "%",
+            "EI_Loss": 29,
+            "EI_Loss_Unit": "%",
+            "Test_Condition": {
+              "Hydrogen_Concentration": 65,
+              "Hydrogen_Concentration_Unit": "wppm",
+              "Strain_Rate": 3.33,
+              "Strain_Rate_Unit": "s^-1",
+              "Test_Temperature_K": 298.15,
+              "Test_Temperature_Original": "25°C"
+            },
+            "Original_Values": "Table 4 row: 65 wppm, yield 870 MPa, true fracture stress 1170 MPa, fracture-strain 15.5%, reduction in area '-', EI loss 29%, strain rate 3.33 s^-1, temperature 25°C",
+            "Data_Source": "table",
+            "Note": "Reduction in area omitted because table value is '-'. Original table heading is fracture-strain; recorded as Elongation_Total."
+          },
+          {
+            "Property": "Tensile",
+            "Yield_Strength": 817,
+            "Yield_Strength_Unit": "MPa",
+            "True_Fracture_Stress": 1022,
+            "True_Fracture_Stress_Unit": "MPa",
+            "Elongation_Total": 4.7,
+            "Elongation_Total_Unit": "%",
+            "EI_Loss": 79,
+            "EI_Loss_Unit": "%",
+            "Test_Condition": {
+              "Hydrogen_Concentration": 65,
+              "Hydrogen_Concentration_Unit": "wppm",
+              "Strain_Rate": 0.00333,
+              "Strain_Rate_Unit": "s^-1",
+              "Test_Temperature_K": 298.15,
+              "Test_Temperature_Original": "25°C"
+            },
+            "Original_Values": "Table 4 row: 65 wppm, yield 817 MPa, true fracture stress 1022 MPa, fracture-strain 4.7%, reduction in area '-', EI loss 79%, strain rate 3.33 x 10^-3 s^-1, temperature 25°C",
+            "Data_Source": "table",
+            "Note": "Reduction in area omitted because table value is '-'. Original table heading is fracture-strain; recorded as Elongation_Total."
+          },
+          {
+            "Property": "Tensile",
+            "Yield_Strength": 806,
+            "Yield_Strength_Unit": "MPa",
+            "True_Fracture_Stress": 983,
+            "True_Fracture_Stress_Unit": "MPa",
+            "Elongation_Total": 3.5,
+            "Elongation_Total_Unit": "%",
+            "Reduction_in_Area": 8.6,
+            "Reduction_in_Area_Unit": "%",
+            "EI_Loss": 84,
+            "EI_Loss_Unit": "%",
+            "Test_Condition": {
+              "Hydrogen_Concentration": 65,
+              "Hydrogen_Concentration_Unit": "wppm",
+              "Strain_Rate": 0.000333,
+              "Strain_Rate_Unit": "s^-1",
+              "Test_Temperature_K": 298.15,
+              "Test_Temperature_Original": "25°C"
+            },
+            "Original_Values": "Table 4 row: 65 wppm, yield 806 MPa, true fracture stress 983 MPa, fracture-strain 3.5%, reduction in area 8.6%, EI loss 84%, strain rate 3.33 x 10^-4 s^-1, temperature 25°C",
+            "Data_Source": "table",
+            "Note": "Original table heading is fracture-strain; recorded as Elongation_Total."
+          },
+          {
+            "Property": "Tensile",
+            "Yield_Strength": 806,
+            "Yield_Strength_Unit": "MPa",
+            "True_Fracture_Stress": 930,
+            "True_Fracture_Stress_Unit": "MPa",
+            "Elongation_Total": 2.6,
+            "Elongation_Total_Unit": "%",
+            "Reduction_in_Area": 8.9,
+            "Reduction_in_Area_Unit": "%",
+            "EI_Loss": 88,
+            "EI_Loss_Unit": "%",
+            "Test_Condition": {
+              "Hydrogen_Concentration": 65,
+              "Hydrogen_Concentration_Unit": "wppm",
+              "Strain_Rate": 3.33e-05,
+              "Strain_Rate_Unit": "s^-1",
+              "Test_Temperature_K": 298.15,
+              "Test_Temperature_Original": "25°C"
+            },
+            "Original_Values": "Table 4 row: 65 wppm, yield 806 MPa, true fracture stress 930 MPa, fracture-strain 2.6%, reduction in area 8.9%, EI loss 88%, strain rate 3.33 x 10^-5 s^-1, temperature 25°C",
+            "Data_Source": "table",
+            "Note": "Original table heading is fracture-strain; recorded as Elongation_Total."
+          },
+          {
+            "Property": "Tensile",
+            "Yield_Strength": 810,
+            "Yield_Strength_Unit": "MPa",
+            "True_Fracture_Stress": 902,
+            "True_Fracture_Stress_Unit": "MPa",
+            "Elongation_Total": 1.6,
+            "Elongation_Total_Unit": "%",
+            "Reduction_in_Area": 5.2,
+            "Reduction_in_Area_Unit": "%",
+            "EI_Loss": 92,
+            "EI_Loss_Unit": "%",
+            "Test_Condition": {
+              "Hydrogen_Concentration": 65,
+              "Hydrogen_Concentration_Unit": "wppm",
+              "Strain_Rate": 3.33e-06,
+              "Strain_Rate_Unit": "s^-1",
+              "Test_Temperature_K": 298.15,
+              "Test_Temperature_Original": "25°C"
+            },
+            "Original_Values": "Table 4 row: 65 wppm, yield 810 MPa, true fracture stress 902 MPa, fracture-strain 1.6%, reduction in area 5.2%, EI loss 92%, strain rate 3.33 x 10^-6 s^-1, temperature 25°C",
+            "Data_Source": "table",
+            "Note": "Original table heading is fracture-strain; recorded as Elongation_Total."
+          },
+          {
+            "Property": "Tensile",
+            "Yield_Strength": 800,
+            "Yield_Strength_Unit": "MPa",
+            "True_Fracture_Stress": 890,
+            "True_Fracture_Stress_Unit": "MPa",
+            "Elongation_Total": 1.7,
+            "Elongation_Total_Unit": "%",
+            "EI_Loss": 92,
+            "EI_Loss_Unit": "%",
+            "Test_Condition": {
+              "Hydrogen_Concentration": 65,
+              "Hydrogen_Concentration_Unit": "wppm",
+              "Strain_Rate": 3.33e-07,
+              "Strain_Rate_Unit": "s^-1",
+              "Test_Temperature_K": 298.15,
+              "Test_Temperature_Original": "25°C"
+            },
+            "Original_Values": "Table 4 row: 65 wppm, yield 800 MPa, true fracture stress 890 MPa, fracture-strain 1.7%, reduction in area '-', EI loss 92%, strain rate 3.33 x 10^-7 s^-1, temperature 25°C",
+            "Data_Source": "table",
+            "Note": "Reduction in area omitted because table value is '-'. Original table heading is fracture-strain; recorded as Elongation_Total."
+          },
+          {
+            "Property": "Tensile",
+            "Yield_Strength": 793,
+            "Yield_Strength_Unit": "MPa",
+            "True_Fracture_Stress": 958,
+            "True_Fracture_Stress_Unit": "MPa",
+            "Elongation_Total": 3.6,
+            "Elongation_Total_Unit": "%",
+            "EI_Loss": 82,
+            "EI_Loss_Unit": "%",
+            "Test_Condition": {
+              "Hydrogen_Concentration": 65,
+              "Hydrogen_Concentration_Unit": "wppm",
+              "Strain_Rate": 0.000333,
+              "Strain_Rate_Unit": "s^-1",
+              "Test_Temperature_K": 338.15,
+              "Test_Temperature_Original": "65°C"
+            },
+            "Original_Values": "Table 4 row: 65 wppm, yield 793 MPa, true fracture stress 958 MPa, fracture-strain 3.6%, reduction in area '-', EI loss 82%, strain rate 3.33 x 10^-4 s^-1, temperature 65°C",
+            "Data_Source": "table",
+            "Note": "Reduction in area omitted because table value is '-'. Original table heading is fracture-strain; recorded as Elongation_Total."
+          },
+          {
+            "Property": "Tensile",
+            "Yield_Strength": 751,
+            "Yield_Strength_Unit": "MPa",
+            "True_Fracture_Stress": 948,
+            "True_Fracture_Stress_Unit": "MPa",
+            "Elongation_Total": 6.5,
+            "Elongation_Total_Unit": "%",
+            "Reduction_in_Area": 15,
+            "Reduction_in_Area_Unit": "%",
+            "EI_Loss": 72,
+            "EI_Loss_Unit": "%",
+            "Test_Condition": {
+              "Hydrogen_Concentration": 65,
+              "Hydrogen_Concentration_Unit": "wppm",
+              "Strain_Rate": 0.000333,
+              "Strain_Rate_Unit": "s^-1",
+              "Test_Temperature_K": 448.15,
+              "Test_Temperature_Original": "175°C"
+            },
+            "Original_Values": "Table 4 row: 65 wppm, yield 751 MPa, true fracture stress 948 MPa, fracture-strain 6.5%, reduction in area 15%, EI loss 72%, strain rate 3.33 x 10^-4 s^-1, temperature 175°C",
+            "Data_Source": "table",
+            "Note": "Original table heading is fracture-strain; recorded as Elongation_Total."
+          },
+          {
+            "Property": "Tensile",
+            "Yield_Strength": 725,
+            "Yield_Strength_Unit": "MPa",
+            "True_Fracture_Stress": 1145,
+            "True_Fracture_Stress_Unit": "MPa",
+            "Elongation_Total": 13.5,
+            "Elongation_Total_Unit": "%",
+            "EI_Loss": 55,
+            "EI_Loss_Unit": "%",
+            "Test_Condition": {
+              "Hydrogen_Concentration": 65,
+              "Hydrogen_Concentration_Unit": "wppm",
+              "Strain_Rate": 0.000333,
+              "Strain_Rate_Unit": "s^-1",
+              "Test_Temperature_K": 558.15,
+              "Test_Temperature_Original": "285°C"
+            },
+            "Original_Values": "Table 4 row: 65 wppm, yield 725 MPa, true fracture stress 1145 MPa, fracture-strain 13.5%, reduction in area '-', EI loss 55%, strain rate 3.33 x 10^-4 s^-1, temperature 285°C",
+            "Data_Source": "table",
+            "Note": "Reduction in area omitted because table value is '-'. Original table heading is fracture-strain; recorded as Elongation_Total."
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "X750_HTH_hydrogen_embrittlement_model",
+      "Sample_ID": "Critical grain-boundary hydrogen concentration model for HTH alloy X-750",
+      "Role": "Demonstration",
+      "Data_Nature": "Computed",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Hydrogen_Assisted"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "A model based on a critical grain boundary hydrogen concentration is proposed to describe the behavior in both HEE and IHE conditions.",
+        "The best correlation between the grain boundary hydrogen concentration and the fracture toughness was achieved with a grain-boundary hydrogen trapping energy, HT, of 26 kJ/mol.",
+        "From the available data, the trapping energy could be estimated to be between 10 and 18 kJ/mol for the internally charged specimens."
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Model_System": "HTH alloy X-750 with hydrogen at grain boundaries and grain-boundary carbides"
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "The trapped hydrogen concentration at the grain boundary may be described by Oriani's theory of trapping including the trapping at the grain boundary and grain boundary carbides. The local concentration is denoted here as CHσ because the matrix hydrogen solubility is increased ahead of a crack due to the hydrostatic stress field opening the lattice.",
+            "simplified": "The model computes stress-modified matrix hydrogen concentration and trapped grain-boundary hydrogen concentration using Oriani trapping, Sievert solubility, crack-tip hydrostatic stress, and diffusion profiles."
+          },
+          "Simulation_Metadata": {
+            "Equations_Used": [
+              "Oriani trapping relation",
+              "stress-modified matrix hydrogen concentration",
+              "Sievert's law",
+              "Akhurst-Baker hydrostatic stress approximation",
+              "Crank semi-infinite diffusion solution",
+              "McLean grain-boundary segregation relation"
+            ],
+            "Constants": [
+              {
+                "Name": "R",
+                "Value": 8.314,
+                "Unit": "J/mol K"
+              },
+              {
+                "Name": "partial molar volume of hydrogen",
+                "Value": 1.72,
+                "Unit": "cm3/mol"
+              },
+              {
+                "Name": "hydrogen diffusivity prefactor D0",
+                "Value": 0.016,
+                "Unit": "cm2/s"
+              },
+              {
+                "Name": "hydrogen diffusion activation energy Q",
+                "Value": 49000,
+                "Unit": "J/mol"
+              }
+            ]
+          },
+          "Equipment": [
+            {
+              "Name": "diffusion and trapping analysis",
+              "Category": "Software"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "The trapping energy used to correlate the data is consistent with that determined by Young and Scully for trapping on the M23C6 grain boundary carbides in alloy 600. The characteristic distance for HEE is within two CTODs. This analysis results in a characteristic distance between 10 and 50 μm.",
+            "simplified": "The model links fracture to hydrogen trapping at grain boundaries and grain-boundary carbides, with a shorter HEE characteristic distance than IHE."
+          },
+          "Advanced_Quantitative_Features": {
+            "HEE_Grain_Boundary_Hydrogen_Trapping_Energy": {
+              "Value": 26,
+              "Unit": "kJ/mol",
+              "Original_Values": "HT of 26 kJ/mol"
+            },
+            "IHE_Trapping_Energy_Range": {
+              "Value": null,
+              "Value_Range": {
+                "Min": 10,
+                "Max": 18,
+                "Unit": "kJ/mol"
+              },
+              "Original_Values": "between 10 and 18 kJ/mol"
+            },
+            "IHE_Tensile_Trapping_Energy": {
+              "Value": 18,
+              "Unit": "kJ/mol",
+              "Original_Values": "the trapping energy was determined to be 18 kJ/mol"
+            },
+            "HEE_Characteristic_Distance": {
+              "Value": null,
+              "Value_Range": {
+                "Max": 1,
+                "Unit": "μm"
+              },
+              "Original_Values": "less than 1 μm",
+              "Note": "Inequality retained from text"
+            },
+            "IHE_Characteristic_Distance": {
+              "Value": null,
+              "Value_Range": {
+                "Min": 10,
+                "Max": 50,
+                "Unit": "μm"
+              },
+              "Original_Values": "between 10 and 50 μm"
+            },
+            "IHE_Peak_Hydrostatic_Stress_Location": {
+              "Value": 10,
+              "Unit": "μm",
+              "Original_Values": "~10 μm",
+              "Note": "approximate value"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property": "Model_Conclusion",
+            "Value": "grain boundary hydrogen concentration controls embrittlement of HTH alloy X-750; HEE has shorter characteristic fracture distance and higher strain at fracture location than IHE",
+            "Original_Values": "The degree of embrittlement of this alloy is controlled by the grain boundary hydrogen concentration irrespective of test temperature and bulk hydrogen concentration.",
+            "Data_Source": "text"
+          }
+        ]
+      }
+    }
+  ]
+}

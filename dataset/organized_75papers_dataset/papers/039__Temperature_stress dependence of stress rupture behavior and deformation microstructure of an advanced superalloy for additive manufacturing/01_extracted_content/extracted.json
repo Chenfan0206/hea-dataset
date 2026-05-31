@@ -1,0 +1,1021 @@
+{
+  "Paper_Metadata": {
+    "Paper_Title": "Temperature/stress dependence of stress rupture behavior and deformation microstructure of an advanced superalloy for additive manufacturing",
+    "DOI": null
+  },
+  "Paper_Routing": {
+    "base_material": "Metals",
+    "application": "Structural",
+    "research_paradigm": "Experimental",
+    "Supplements_Loaded": [
+      "directions/base/Metals.txt",
+      "directions/application/Structural.txt",
+      "directions/paradigm/Experimental.txt"
+    ],
+    "Patch_Tags": [
+      "Additive_Manufacturing"
+    ],
+    "Needs_Mixed_Routing_Check": false,
+    "Mixed_Signals": []
+  },
+  "items": [
+    {
+      "Item_ID": "ZGH451_DED_AsBuilt",
+      "Sample_ID": "ZGH451-DED-AsBuilt",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 2: Materials and methods",
+        "Section 3.1: Observation of as-built microstructure and defects",
+        "Section 3.2: Texture characteristics",
+        "Table 1, Table 3"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Ni-based superalloy",
+          "Material_Name_Raw": "ZGH451",
+          "Measured_Composition": {
+            "Unit": "wt%",
+            "Basis": "Ni-base",
+            "Measurement_Method": "ICP-OES, ICP-combustion (carbon), Spark OES (boron)",
+            "Elements": [
+              {
+                "Element": "Co+Cr+W+Mo",
+                "Value": 28.0,
+                "Original_Values": "28 wt%"
+              },
+              {
+                "Element": "Al",
+                "Value": 4.3,
+                "Original_Values": "4.30 wt%"
+              },
+              {
+                "Element": "Ti",
+                "Value": 1.22,
+                "Original_Values": "1.22 wt%"
+              },
+              {
+                "Element": "Ta",
+                "Value": 5.6,
+                "Original_Values": "5.60 wt%"
+              },
+              {
+                "Element": "C",
+                "Value": 0.01,
+                "Original_Values": "0.01 wt%"
+              },
+              {
+                "Element": "B",
+                "Value": 0.03,
+                "Original_Values": "0.03 wt%"
+              },
+              {
+                "Element": "Ni",
+                "Value": "Balance",
+                "Note": "Balance; normalized ≈ 60.84 wt% (Computed: 100 - 28 - 4.30 - 1.22 - 5.60 - 0.01 - 0.03)"
+              }
+            ],
+            "Ta_Al_Ratio": 1.3
+          },
+          "Note": "Powder composition measured by ICP-OES, ICP-combustion (C), and Spark OES (B). Co+Cr+W+Mo reported as combined value; individual element contents not provided."
+        },
+        "Processing": {
+          "Process_Category": "Additive Manufacturing - Direct Energy Deposition (DED)",
+          "Process_Text": {
+            "original": "Spherical ZGH451 superalloy powder prepared by argon gas atomization, D50 ~92.94 μm, sphericity 90%, flowability 16.81 s/50 g. Powder dried in vacuum drying oven at 120 °C for 6 h. Substrate: same composition as powder, 30 mm × 30 mm × 20 mm, prepared by vacuum melting furnace. Substrate surface polished with sandpaper and cleaned with acetone. Printed using CO2 laser deposition machine (assembled by Institute of Metal Research, CAS) with coaxial powder delivery and argon protection, pulsed laser ~2.0 mm beam diameter. Optimal parameters: laser power 1800 W, powder feeding rate 10.5 g/min, scanning speed 1100 mm/min, beam diameter 2.0 mm, beam-on time 0.16 s, beam-off time 0.4–0.6 s. Laser moves straight in each layer, rotated 90° between layers. Laser preheats substrate 3 times without powder before printing.",
+            "simplified": "ZGH451 powder (Ar gas atomized, D50 ~92.94 μm) → vacuum drying (120 °C, 6 h) → DED printing with CO2 laser (1800 W, 1100 mm/min, 10.5 g/min powder feed, 2.0 mm beam) → As-built bulk (20 mm × 20 mm × 60 mm)"
+          },
+          "Stages": [
+            {
+              "Stage": "Stage1_Powder_Preparation",
+              "Description": "Spherical ZGH451 powder prepared by argon gas atomization",
+              "Key_Params": {
+                "D50": "92.94 μm",
+                "Sphericity": "90%",
+                "Flowability": "16.81 s/50 g",
+                "Drying_Temperature_Original": "120 °C",
+                "Drying_Temperature_K": 393.15,
+                "Drying_Time": "6 h",
+                "Drying_Atmosphere": "vacuum"
+              }
+            },
+            {
+              "Stage": "Stage2_DED_Printing",
+              "Description": "Laser-directed energy deposition printing of ZGH451",
+              "Key_Params": {
+                "Laser_Power": "1800 W",
+                "Scanning_Speed": "1100 mm/min",
+                "Powder_Feeding_Rate": "10.5 g/min",
+                "Laser_Beam_Diameter": "2.0 mm",
+                "Beam_On_Time": "0.16 s",
+                "Beam_Off_Time": "0.4–0.6 s",
+                "Scan_Strategy": "Straight line per layer, rotated 90° between layers",
+                "Substrate_Preheating": "3 laser scans without powder",
+                "Atmosphere": "Argon protection",
+                "Deposited_Bulk_Size": "20 mm × 20 mm × 60 mm",
+                "Substrate_Size": "30 mm × 30 mm × 20 mm"
+              }
+            }
+          ],
+          "Equipment": [
+            {
+              "Name": "Argon gas atomization system",
+              "Category": "Preparation",
+              "Note": "for powder preparation"
+            },
+            {
+              "Name": "Vacuum drying oven",
+              "Category": "Preparation",
+              "Note": "for powder drying at 120 °C for 6 h"
+            },
+            {
+              "Name": "Vacuum melting furnace",
+              "Category": "Preparation",
+              "Note": "for substrate preparation"
+            },
+            {
+              "Name": "CO2 laser deposition machine (Institute of Metal Research, CAS)",
+              "Category": "Preparation",
+              "Note": "DED printing with coaxial powder delivery and argon protection"
+            },
+            {
+              "Name": "Zeiss optical microscope (OM)",
+              "Category": "Characterization",
+              "Note": "microstructure characterization on longitudinal sections"
+            },
+            {
+              "Name": "Thermo Scientific Apreo 2 FEG-SEM",
+              "Category": "Characterization",
+              "Note": "microstructure characterization on longitudinal sections"
+            },
+            {
+              "Name": "Symmetry S2 EBSD system",
+              "Category": "Characterization",
+              "Note": "crystal orientation (IPF, pole figure), texture, GND distribution, grain size"
+            },
+            {
+              "Name": "X-ray computed tomography (XCT)",
+              "Category": "Characterization",
+              "Note": "3D distribution of micro-voids (size, morphology, content); cylinder samples 3 mm diameter × 5 mm length; effective detection length 2 mm"
+            },
+            {
+              "Name": "TEM (transmission electron microscope)",
+              "Category": "Characterization",
+              "Note": "TEM specimens sectioned 5 mm from fracture surface, mechanically ground to ~50 μm, twin-jet polished at -27 °C, 22 V in perchloric acid + ethanol"
+            },
+            {
+              "Name": "ICP-OES",
+              "Category": "Characterization",
+              "Note": "chemical composition measurement"
+            },
+            {
+              "Name": "ICP-combustion analysis",
+              "Category": "Characterization",
+              "Note": "carbon measurement"
+            },
+            {
+              "Name": "Spark OES",
+              "Category": "Characterization",
+              "Note": "boron measurement"
+            },
+            {
+              "Name": "ImageJ Pro-software",
+              "Category": "Software",
+              "Note": "measuring size and Per Area of precipitates, at least five pictures"
+            },
+            {
+              "Name": "F-25 creep machine",
+              "Category": "Testing",
+              "Note": "stress rupture tests at 760 °C/780 MPa and 980 °C/260 MPa"
+            },
+            {
+              "Name": "Extensometer",
+              "Category": "Testing",
+              "Note": "strain measurement during stress rupture tests"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "As-built microstructure constituted by typical coarse columnar grains growing along build direction with epitaxial finer dendrites elongated to deposition direction. Fusion lines smooth, large molten pools with high width-depth ratio. Dendrite core (DC), interdendritic region (IR), primary dendrite arms, MC-type carbides, and small approximate cubic γ′ phases visible. Initial dislocation tangles on γ′/γ interface and GBs. Few void defects (gas-induced or lack of fusion) in IR. No cracks observed. Strong {100} texture along building direction. 9 coarse columnar grains observed in EBSD scan area.",
+            "simplified": "As-built: coarse columnar grains with [001]//BD texture, epitaxial dendrites (PDAS 17.43 μm), small cubic γ′ phases (DC 124.10 nm / IR 150.50 nm, vol% 50.52%), MC-type carbides on GBs, initial dislocation tangles, low void content (0.10 vol%), crack-free"
+          },
+          "Main_Phase": {
+            "Phase_Name": "γ matrix (FCC Ni-based solid solution)",
+            "Crystal_Structure": "FCC",
+            "Morphology": "Continuous matrix with dendritic solidification structure"
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "γ′ (Ni₃(Al,Ti,Ta))",
+              "Crystal_Structure": "L1₂",
+              "Morphology": "Approximate cubic with circular corners",
+              "Size": {
+                "DC_Average": {
+                  "Value": 124.1,
+                  "Unit": "nm",
+                  "Dimension_Type": "undefined",
+                  "Original_Values": "124.10 nm"
+                },
+                "Transition_Region_Average": {
+                  "Value": 135.6,
+                  "Unit": "nm",
+                  "Dimension_Type": "undefined",
+                  "Original_Values": "135.6 nm"
+                },
+                "IR_Average": {
+                  "Value": 150.5,
+                  "Unit": "nm",
+                  "Dimension_Type": "undefined",
+                  "Original_Values": "150.50 nm"
+                }
+              },
+              "Volume_Fraction": {
+                "Value": 50.52,
+                "Unit": "%",
+                "Original_Values": "50.52%",
+                "Note": "Approximately replaced with Obj./Total (area percent regarded as volume fraction)"
+              },
+              "Distribution": "In both DC and IR, size increases from DC to IR due to segregation of γ′ forming elements"
+            },
+            {
+              "Phase_Name": "MC-type carbide",
+              "Crystal_Structure": "FCC (NaCl-type)",
+              "Morphology": "Fine particles",
+              "Distribution": "Distributed in DC, IR, and GBs; enriched Ti and Ta",
+              "Note": "Low content due to low C element (0.01 wt.%)"
+            }
+          ],
+          "Grain_Size": {
+            "Average_Grain_Size": {
+              "Value": 395.4,
+              "Unit": "μm",
+              "Dimension_Type": "undefined",
+              "Original_Values": "395.4 μm"
+            },
+            "Grain_Count_In_Scan_Area": 9,
+            "Grain_Type": "Coarse columnar grains",
+            "Aspect_Ratio": "High",
+            "Scan_Area": "3 mm²"
+          },
+          "Texture_or_Orientation": {
+            "Preferred_Orientation": "{100} // Building Direction",
+            "Texture_Strength": "Strong {100} texture component",
+            "Note": "Strongest {100} pole figure texture, consistent with IPF results"
+          },
+          "Porosity": {
+            "Average_Size_of_Voids": {
+              "Value": 9.59,
+              "Unit": "μm",
+              "Dimension_Type": "undefined",
+              "Original_Values": "9.59 μm"
+            },
+            "Volume_Fraction_of_Voids": {
+              "Value": 0.1,
+              "Unit": "%",
+              "Original_Values": "0.10%"
+            },
+            "Void_Types": "Gas-induced (tiny, regular spheres) and lack-of-fusion (irregular with unmelted powder)",
+            "Distribution": "Mainly in IR"
+          },
+          "Advanced_Quantitative_Features": {
+            "PDAS": {
+              "Value": 17.43,
+              "Unit": "μm",
+              "Original_Values": "17.43 μm"
+            },
+            "Gamma_Channel_Width_DC": {
+              "Value": 40.31,
+              "Unit": "nm",
+              "Dimension_Type": "undefined",
+              "Original_Values": "40.31 nm"
+            },
+            "Gamma_Channel_Width_IR": {
+              "Value": 75.42,
+              "Unit": "nm",
+              "Dimension_Type": "undefined",
+              "Original_Values": "75.42 nm"
+            },
+            "GND_Density": {
+              "Value": "0.25 × 10^14 m^-2",
+              "Original_Values": "0.25 × 10^14 m^-2"
+            },
+            "Transition_Region_Width": {
+              "Value_Range": "200–300 nm",
+              "Original_Values": "200–300 nm"
+            },
+            "Initial_Dislocation_Tangles": "Observed on γ′/γ interface in IR and GBs"
+          }
+        },
+        "Properties": [
+          {
+            "Property_Type": "Stress_Rupture_Life",
+            "Test_Condition": {
+              "Test_Temperature_K": 1033.15,
+              "Test_Temperature_Original": "760 °C",
+              "Applied_Stress": "780 MPa",
+              "Loading_Mode": "Uniaxial tension",
+              "Loading_Direction": "Build direction",
+              "Environment": "Atmospheric",
+              "Specimen_Shape": "M6φ3 cylindrical bar",
+              "Gauge_Length": {
+                "Value": 20,
+                "Unit": "mm"
+              },
+              "Gauge_Diameter": {
+                "Value": 3,
+                "Unit": "mm"
+              },
+              "Thread_Segment_Diameter": {
+                "Value": 6,
+                "Unit": "mm"
+              },
+              "Total_Length": {
+                "Value": 47,
+                "Unit": "mm"
+              },
+              "Replicates": 3
+            },
+            "Value": 134.2,
+            "Unit": "h",
+            "Original_Values": "134.20 h",
+            "Data_Source": "table",
+            "Note": "Average of three identical samples"
+          },
+          {
+            "Property_Type": "Stress_Rupture_Life",
+            "Test_Condition": {
+              "Test_Temperature_K": 1253.15,
+              "Test_Temperature_Original": "980 °C",
+              "Applied_Stress": "260 MPa",
+              "Loading_Mode": "Uniaxial tension",
+              "Loading_Direction": "Build direction",
+              "Environment": "Atmospheric",
+              "Specimen_Shape": "M6φ3 cylindrical bar",
+              "Gauge_Length": {
+                "Value": 20,
+                "Unit": "mm"
+              },
+              "Gauge_Diameter": {
+                "Value": 3,
+                "Unit": "mm"
+              },
+              "Thread_Segment_Diameter": {
+                "Value": 6,
+                "Unit": "mm"
+              },
+              "Total_Length": {
+                "Value": 47,
+                "Unit": "mm"
+              },
+              "Replicates": 3
+            },
+            "Value": 26.9,
+            "Unit": "h",
+            "Original_Values": "26.90 h",
+            "Data_Source": "table",
+            "Note": "Average of three identical samples"
+          },
+          {
+            "Property_Type": "Minimum_Stress_Rupture_Strain_Rate",
+            "Test_Condition": {
+              "Test_Temperature_K": 1033.15,
+              "Test_Temperature_Original": "760 °C",
+              "Applied_Stress": "780 MPa",
+              "Loading_Mode": "Uniaxial tension",
+              "Loading_Direction": "Build direction",
+              "Environment": "Atmospheric"
+            },
+            "Value": 1.78e-05,
+            "Unit": "s⁻¹",
+            "Original_Values": "1.78 × 10⁻⁵ s⁻¹",
+            "Data_Source": "table",
+            "Note": "Range due to extensometer shaking: 1.15 × 10⁻⁴ – 3.33 × 10⁻⁵ /s"
+          },
+          {
+            "Property_Type": "Minimum_Stress_Rupture_Strain_Rate",
+            "Test_Condition": {
+              "Test_Temperature_K": 1253.15,
+              "Test_Temperature_Original": "980 °C",
+              "Applied_Stress": "260 MPa",
+              "Loading_Mode": "Uniaxial tension",
+              "Loading_Direction": "Build direction",
+              "Environment": "Atmospheric"
+            },
+            "Value": 0.000208,
+            "Unit": "s⁻¹",
+            "Original_Values": "2.08 × 10⁻⁴ s⁻¹",
+            "Data_Source": "table",
+            "Note": "Range due to extensometer shaking: 2.77 × 10⁻⁴ – 1.38 × 10⁻⁴ /s"
+          },
+          {
+            "Property_Type": "Stress_Rupture_Stage_Time",
+            "Test_Condition": {
+              "Test_Temperature_K": 1033.15,
+              "Test_Temperature_Original": "760 °C",
+              "Applied_Stress": "780 MPa"
+            },
+            "Incubation_Period_t0": {
+              "Value": 3.11,
+              "Unit": "h",
+              "Original_Values": "3.11 h",
+              "Data_Source": "table"
+            },
+            "Primary_Stage_t1": {
+              "Value": 6.52,
+              "Unit": "h",
+              "Original_Values": "6.52 h",
+              "Data_Source": "table"
+            },
+            "Secondary_Stage_t2": {
+              "Value": 112.22,
+              "Unit": "h",
+              "Original_Values": "112.22 h",
+              "Data_Source": "table",
+              "Note": "83.6% of total life"
+            },
+            "Tertiary_Stage_t3": {
+              "Value": 12.35,
+              "Unit": "h",
+              "Original_Values": "12.35 h",
+              "Data_Source": "table"
+            },
+            "Total_Life_t4": {
+              "Value": 134.2,
+              "Unit": "h",
+              "Original_Values": "134.20 h",
+              "Data_Source": "table"
+            },
+            "Stages_Count": 4,
+            "Note": "Four stress rupture stages including incubation period"
+          },
+          {
+            "Property_Type": "Stress_Rupture_Stage_Time",
+            "Test_Condition": {
+              "Test_Temperature_K": 1253.15,
+              "Test_Temperature_Original": "980 °C",
+              "Applied_Stress": "260 MPa"
+            },
+            "Incubation_Period_t0": {
+              "Value": 0,
+              "Unit": "h",
+              "Original_Values": "0 h",
+              "Data_Source": "table",
+              "Note": "No incubation period observed"
+            },
+            "Primary_Stage_t1": {
+              "Value": 2.96,
+              "Unit": "h",
+              "Original_Values": "2.96 h",
+              "Data_Source": "table"
+            },
+            "Secondary_Stage_t2": {
+              "Value": 16.14,
+              "Unit": "h",
+              "Original_Values": "16.14 h",
+              "Data_Source": "table",
+              "Note": "60% of total life"
+            },
+            "Tertiary_Stage_t3": {
+              "Value": 7.8,
+              "Unit": "h",
+              "Original_Values": "7.80 h",
+              "Data_Source": "table"
+            },
+            "Total_Life_t4": {
+              "Value": 26.9,
+              "Unit": "h",
+              "Original_Values": "26.90 h",
+              "Data_Source": "table"
+            },
+            "Stages_Count": 3,
+            "Note": "Typical three stages, no incubation period"
+          },
+          {
+            "Property_Type": "Stress_Rupture_Strain_at_Stage_Transition",
+            "Test_Condition": {
+              "Test_Temperature_K": 1033.15,
+              "Test_Temperature_Original": "760 °C",
+              "Applied_Stress": "780 MPa"
+            },
+            "Secondary_Stage_Start_Strain": {
+              "Value": 9.31,
+              "Unit": "%",
+              "Value_StdDev": 0.05,
+              "Original_Values": "(9.31±0.05)%",
+              "Data_Source": "text"
+            },
+            "Tertiary_Stage_Start_Strain": {
+              "Value": 17.94,
+              "Unit": "%",
+              "Value_StdDev": 0.05,
+              "Original_Values": "(17.94±0.05)%",
+              "Data_Source": "text"
+            }
+          },
+          {
+            "Property_Type": "Stress_Rupture_Strain_at_Stage_Transition",
+            "Test_Condition": {
+              "Test_Temperature_K": 1253.15,
+              "Test_Temperature_Original": "980 °C",
+              "Applied_Stress": "260 MPa"
+            },
+            "Secondary_Stage_Start_Strain": {
+              "Value": 3.17,
+              "Unit": "%",
+              "Value_StdDev": 0.03,
+              "Original_Values": "(3.17±0.03)%",
+              "Data_Source": "text"
+            },
+            "Tertiary_Stage_Start_Strain": {
+              "Value": 9.45,
+              "Unit": "%",
+              "Value_StdDev": 0.03,
+              "Original_Values": "(9.45±0.03)%",
+              "Data_Source": "text"
+            }
+          },
+          {
+            "Property_Type": "Fracture_Mode",
+            "Test_Condition": {
+              "Test_Temperature_K": 1033.15,
+              "Test_Temperature_Original": "760 °C",
+              "Applied_Stress": "780 MPa"
+            },
+            "Value": "Mixed fracture (brittle cleavage + ductile dimples)",
+            "Data_Source": "text"
+          },
+          {
+            "Property_Type": "Fracture_Mode",
+            "Test_Condition": {
+              "Test_Temperature_K": 1253.15,
+              "Test_Temperature_Original": "980 °C",
+              "Applied_Stress": "260 MPa"
+            },
+            "Value": "Typical micro-void aggregation fracture with necking (ductile)",
+            "Data_Source": "text"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "ZGH451_DED_760C_PostTest",
+      "Sample_ID": "ZGH451-DED-760C-780MPa-PostTest",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 3.4: Fracture morphology",
+        "Section 4.1: Evolution of microstructure and defects",
+        "Section 4.2: Deformation mechanism under medium temperature and high stress",
+        "Table 5"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Ni-based superalloy",
+          "Material_Name_Raw": "ZGH451",
+          "Note": "Same as-built composition; no separate composition measurement after stress rupture"
+        },
+        "Processing": {
+          "Process_Category": "Additive Manufacturing - DED + Stress Rupture Testing",
+          "Process_Text": {
+            "original": "DED-fabricated ZGH451 as-built specimen tested under stress rupture condition at 760 °C and 780 MPa for 134.20 h until fracture. TEM specimens sectioned 5 mm away from fracture surface on gauge section.",
+            "simplified": "As-built ZGH451 → stress rupture test at 760 °C / 780 MPa → fractured after 134.20 h"
+          },
+          "Stages": [
+            {
+              "Stage": "Stage1_DED_Printing",
+              "Description": "Same DED process as as-built item; shared per experimental design",
+              "Note": "Shared with ZGH451_DED_AsBuilt; all processing parameters identical"
+            },
+            {
+              "Stage": "Stage2_Stress_Rupture_Test",
+              "Description": "Stress rupture test at 760 °C/780 MPa",
+              "Key_Params": {
+                "Test_Temperature_Original": "760 °C",
+                "Applied_Stress": "780 MPa",
+                "Duration": "134.20 h",
+                "Outcome": "Fractured"
+              }
+            }
+          ],
+          "Equipment": [
+            {
+              "Name": "F-25 creep machine",
+              "Category": "Testing",
+              "Note": "stress rupture test"
+            },
+            {
+              "Name": "Thermo Scientific Apreo 2 FEG-SEM",
+              "Category": "Characterization",
+              "Note": "fracture surface and longitudinal section observation"
+            },
+            {
+              "Name": "TEM",
+              "Category": "Characterization",
+              "Note": "deformation microstructure near fracture surface"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "After stress rupture test at 760 °C/780 MPa: high content cubic γ′ phases with high volume fraction (56.85%) and average size 220.45 nm (DC) / 279.65 nm (IR). Dendrite structures increasingly difficult to observe; composition segregation regions with average width 6.1 μm. Chain-like M₂₃C₆ carbides on GBs enriched Cr and Mo with average size 620 nm (equivalent length). Voids deformed along loading direction. Dislocation piled-up on γ/γ′ interface, stacking faults in γ′ phases, dislocations shearing γ′ phases, L-C locks. Small coupled pairs of a/2 type dislocations with APB (~70 nm) in γ′. Dislocation tangles preserved.",
+            "simplified": "Post-test 760 °C: cubic γ′ (DC 220.45 nm / IR 279.65 nm, vol% 56.85%), chain-like M₂₃C₆ on GBs (620 nm), voids (1.09%, 10.91 μm), dislocation pile-up, SFs, L-C locks"
+          },
+          "Main_Phase": {
+            "Phase_Name": "γ matrix (FCC Ni-based solid solution)",
+            "Crystal_Structure": "FCC"
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "γ′ (Ni₃(Al,Ti,Ta))",
+              "Crystal_Structure": "L1₂",
+              "Morphology": "Cubic, slightly elongated along loading direction",
+              "Size": {
+                "DC_Average": {
+                  "Value": 220.45,
+                  "Unit": "nm",
+                  "Dimension_Type": "undefined",
+                  "Original_Values": "220.45 nm"
+                },
+                "IR_Average": {
+                  "Value": 279.65,
+                  "Unit": "nm",
+                  "Dimension_Type": "undefined",
+                  "Original_Values": "279.65 nm"
+                }
+              },
+              "Volume_Fraction": {
+                "Value": 56.85,
+                "Unit": "%",
+                "Original_Values": "56.85%"
+              },
+              "Data_Source": "table"
+            },
+            {
+              "Phase_Name": "M₂₃C₆ carbide",
+              "Crystal_Structure": "FCC (complex cubic)",
+              "Morphology": "Chain-like continuous distribution",
+              "Size": {
+                "Average_Equivalent_Length": {
+                  "Value": 620,
+                  "Unit": "nm",
+                  "Dimension_Type": "undefined",
+                  "Original_Values": "620 nm (equivalent length)"
+                }
+              },
+              "Distribution": "On GBs",
+              "Enriched_Elements": "Cr, Mo",
+              "Note": "Formed by decomposition of initial MC carbides; continuous chain-like shape enhances brittleness of GBs"
+            }
+          ],
+          "Gamma_Channel_Width": {
+            "DC_Average": {
+              "Value": 100.85,
+              "Unit": "nm",
+              "Original_Values": "100.85 nm",
+              "Data_Source": "table"
+            },
+            "IR_Average": {
+              "Value": 135.49,
+              "Unit": "nm",
+              "Original_Values": "135.49 nm",
+              "Data_Source": "table"
+            }
+          },
+          "Porosity": {
+            "Void_Content": {
+              "Value": 1.09,
+              "Unit": "%",
+              "Original_Values": "1.09%"
+            },
+            "Average_Size_of_Voids": {
+              "Value": 10.91,
+              "Unit": "μm",
+              "Dimension_Type": "undefined",
+              "Original_Values": "10.91 μm"
+            },
+            "Void_Distribution": "Deformed along loading direction, mainly in IR and on GBs",
+            "Note": "Content and size higher than as-built state due to long-term effect of temperature and stress"
+          },
+          "Advanced_Quantitative_Features": {
+            "Segregation_Region_Width": {
+              "Value": 6.1,
+              "Unit": "μm",
+              "Original_Values": "6.1 μm"
+            },
+            "APB_Coupled_Dislocation_Length": {
+              "Value": 70,
+              "Unit": "nm",
+              "Note": "~70 nm, approximate value"
+            },
+            "Deformation_Mechanisms": "Dislocation piled-up on γ/γ′ interface, formation of stacking faults in γ′ phases, dislocations shearing γ′ phases, L-C locks formed by SFs intersection"
+          }
+        }
+      }
+    },
+    {
+      "Item_ID": "ZGH451_DED_980C_PostTest",
+      "Sample_ID": "ZGH451-DED-980C-260MPa-PostTest",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 3.4: Fracture morphology",
+        "Section 4.1: Evolution of microstructure and defects",
+        "Section 4.3: Deformation mechanism under high temperature and low stress",
+        "Table 5"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Ni-based superalloy",
+          "Material_Name_Raw": "ZGH451",
+          "Note": "Same as-built composition; no separate composition measurement after stress rupture"
+        },
+        "Processing": {
+          "Process_Category": "Additive Manufacturing - DED + Stress Rupture Testing",
+          "Process_Text": {
+            "original": "DED-fabricated ZGH451 as-built specimen tested under stress rupture condition at 980 °C and 260 MPa for 26.90 h until fracture. TEM specimens sectioned 5 mm away from fracture surface on gauge section.",
+            "simplified": "As-built ZGH451 → stress rupture test at 980 °C / 260 MPa → fractured after 26.90 h"
+          },
+          "Stages": [
+            {
+              "Stage": "Stage1_DED_Printing",
+              "Description": "Same DED process as as-built item; shared per experimental design",
+              "Note": "Shared with ZGH451_DED_AsBuilt; all processing parameters identical"
+            },
+            {
+              "Stage": "Stage2_Stress_Rupture_Test",
+              "Description": "Stress rupture test at 980 °C/260 MPa",
+              "Key_Params": {
+                "Test_Temperature_Original": "980 °C",
+                "Applied_Stress": "260 MPa",
+                "Duration": "26.90 h",
+                "Outcome": "Fractured"
+              }
+            }
+          ],
+          "Equipment": [
+            {
+              "Name": "F-25 creep machine",
+              "Category": "Testing",
+              "Note": "stress rupture test"
+            },
+            {
+              "Name": "Thermo Scientific Apreo 2 FEG-SEM",
+              "Category": "Characterization",
+              "Note": "fracture surface and longitudinal section observation"
+            },
+            {
+              "Name": "TEM",
+              "Category": "Characterization",
+              "Note": "deformation microstructure near fracture surface"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "After stress rupture test at 980 °C/260 MPa: rafted γ′ phases in DC and IR, significantly coarser and uneven in IR due to segregation. Average size 362.38 nm (DC) / 423.08 nm (IR, width direction), volume fraction 62.55%. Composition segregation region width 10.3 μm. Discontinuous fine granular M₆C carbides on GBs enriched Mo and W, average size 450 nm. Voids deformed and grown (2.91%, 16.43 μm). Dislocation networks on γ/γ′ interface, dislocations bypassing γ′ phases. a<101> superdislocations ~150 nm, single dislocations ~70 nm. Topological inversion in IR where γ′ volume fraction over 50%.",
+            "simplified": "Post-test 980 °C: rafted γ′ (DC 362.38 nm / IR 423.08 nm, vol% 62.55%), granular M₆C on GBs (450 nm), voids (2.91%, 16.43 μm), dislocation networks, bypassing mechanism, topological inversion in IR"
+          },
+          "Main_Phase": {
+            "Phase_Name": "γ matrix (FCC Ni-based solid solution)",
+            "Crystal_Structure": "FCC"
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "γ′ rafted (Ni₃(Al,Ti,Ta))",
+              "Crystal_Structure": "L1₂",
+              "Morphology": "Rafted (directionally coarsened, N-type, normal to applied stress direction)",
+              "Size": {
+                "DC_Average_Width": {
+                  "Value": 362.38,
+                  "Unit": "nm",
+                  "Dimension_Type": "undefined",
+                  "Original_Values": "362.38 nm"
+                },
+                "IR_Average_Width": {
+                  "Value": 423.08,
+                  "Unit": "nm",
+                  "Dimension_Type": "undefined",
+                  "Original_Values": "423.08 nm"
+                },
+                "Note": "Width direction"
+              },
+              "Volume_Fraction": {
+                "Value": 62.55,
+                "Unit": "%",
+                "Original_Values": "62.55%"
+              },
+              "Data_Source": "table",
+              "Note": "Topological inversion phenomenon observed in IR where γ′ volume fraction > 50%"
+            },
+            {
+              "Phase_Name": "M₆C carbide",
+              "Crystal_Structure": "FCC (complex cubic)",
+              "Morphology": "Discontinuous fine granular blocks",
+              "Size": {
+                "Average_Equivalent_Length": {
+                  "Value": 450,
+                  "Unit": "nm",
+                  "Dimension_Type": "undefined",
+                  "Original_Values": "450 nm (equivalent length)"
+                }
+              },
+              "Distribution": "On GBs",
+              "Enriched_Elements": "Mo, W",
+              "Note": "Formed by decomposition of initial MC carbides; granular-shaped M₆C improves GB strength"
+            }
+          ],
+          "Gamma_Channel_Width": {
+            "DC_Average": {
+              "Value": 320.86,
+              "Unit": "nm",
+              "Original_Values": "320.86 nm",
+              "Data_Source": "table"
+            },
+            "IR_Average": {
+              "Value": 420.06,
+              "Unit": "nm",
+              "Original_Values": "420.06 nm",
+              "Data_Source": "table"
+            }
+          },
+          "Porosity": {
+            "Void_Content": {
+              "Value": 2.91,
+              "Unit": "%",
+              "Original_Values": "2.91%"
+            },
+            "Average_Size_of_Voids": {
+              "Value": 16.43,
+              "Unit": "μm",
+              "Dimension_Type": "undefined",
+              "Original_Values": "16.43 μm"
+            },
+            "Void_Distribution": "Two types: polyhedral voids from vacancy aggregation on {111}/{001} planes and evolved initial voids in IR",
+            "Note": "Significantly increased compared to as-built and 760 °C/780 MPa state"
+          },
+          "Advanced_Quantitative_Features": {
+            "Segregation_Region_Width": {
+              "Value": 10.3,
+              "Unit": "μm",
+              "Original_Values": "10.3 μm"
+            },
+            "Dislocation_Network_Spacing": {
+              "Value": 12,
+              "Unit": "nm",
+              "Original_Values": "~12 nm",
+              "Note": "Fine dislocation spacing"
+            },
+            "Superdislocation_Length": {
+              "Value": 150,
+              "Unit": "nm",
+              "Original_Values": "~150 nm",
+              "Note": "a<101> superdislocations, arcuate and wavy"
+            },
+            "Single_Dislocation_Length": {
+              "Value": 70,
+              "Unit": "nm",
+              "Original_Values": "~70 nm"
+            },
+            "Orowan_Bowing_Stress_IR": {
+              "Value": 22.94,
+              "Unit": "MPa",
+              "Original_Values": "22.94 MPa",
+              "Note": "Computed: G=62.7 GPa at 973 K, b=0.26 nm, λ=0.9 μm for IR"
+            },
+            "Orowan_Bowing_Stress_DC": {
+              "Value": 32.06,
+              "Unit": "MPa",
+              "Original_Values": "32.06 MPa",
+              "Note": "Computed: G=62.7 GPa at 973 K, b=0.26 nm, λ=0.6 μm for DC"
+            },
+            "Deformation_Mechanisms": "Dislocation networks on γ/γ′ interface, dislocations bypassing γ′ phases, a<101> superdislocations shearing γ′ phases, single dislocation shearing γ′ phases"
+          }
+        }
+      }
+    },
+    {
+      "Item_ID": "ZGH451_DED_SLM_LMP_Comparison",
+      "Sample_ID": "ZGH451-DED-SLM-LMP",
+      "Role": "Demonstration",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 4.4",
+        "Fig. 13"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Ni-based superalloy",
+          "Material_Name_Raw": "ZGH451",
+          "Note": "Same alloy; heat treatment states mentioned"
+        },
+        "Processing": {
+          "Process_Category": "Additive Manufacturing",
+          "Process_Text": {
+            "original": "ZGH451 fabricated by DED or SLM with heat treatment (650 °C/4 h, AC + 1200 °C/180 MPa/2 h, AC (HIP))",
+            "simplified": "DED or SLM ZGH451 + heat treatment (650 °C/4 h AC + 1200 °C/180 MPa/2 h AC (HIP))"
+          },
+          "Stages": [
+            {
+              "Stage": "Heat_Treatment_Stress_Relief",
+              "Description": "650 °C/4 h, AC (stress relief annealing)",
+              "Key_Params": {
+                "Temperature_Original": "650 °C",
+                "Time": "4 h",
+                "Cooling": "AC"
+              }
+            },
+            {
+              "Stage": "Heat_Treatment_HIP",
+              "Description": "1200 °C/180 MPa/2 h, AC (HIP)",
+              "Key_Params": {
+                "Temperature_Original": "1200 °C",
+                "Pressure": "180 MPa",
+                "Time": "2 h",
+                "Cooling": "AC"
+              }
+            }
+          ]
+        },
+        "Properties": [
+          {
+            "Property_Type": "Larson_Miller_Parameter",
+            "Test_Condition": {
+              "Note": "Multiple conditions plotted in Fig. 13"
+            },
+            "Value": null,
+            "Data_Source": "image",
+            "Note": "LMP comparison shown in Fig. 13; ZGH451 (as-built and heat-treated, DED and SLM) compared with ABD-900AM, IN718, and CM247LC. Specific LMP values not provided in text or tables. From caption only."
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "Reference_IN718_ABD900AM_CM247LC",
+      "Sample_ID": "Reference-Alloys",
+      "Role": "Reference",
+      "Data_Nature": "Literature_Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Fig. 13",
+        "Reference [88]"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Name_Raw": "IN718, ABD-900AM, CM247LC",
+          "Note": "Literature reference alloys; composition not discussed in this paper"
+        },
+        "Processing": {
+          "Process_Category": "Additive Manufacturing (reported by others)",
+          "Process_Text": {
+            "original": "Heat-treated alloy IN718, ABD-900AM, CM247LC reported by Tang et al. [88]",
+            "simplified": "Reference alloys from literature [88]"
+          }
+        },
+        "Properties": [
+          {
+            "Property_Type": "Larson_Miller_Parameter",
+            "Test_Condition": {
+              "Note": "Reported stress rupture data converted to LMP"
+            },
+            "Value": null,
+            "Data_Source": "image",
+            "Note": "Stress rupture properties compared via Larson-Miller Parameter plot (Fig. 13). Specific values not provided in text or tables. Source: Tang et al. [88] Acta Mater. 202 (2021) 417–436."
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,275 @@
+{
+  "Paper_Metadata": {
+    "Paper_Title": "Matrix cracking of 2D SiC/SiC composite characterized by in situ SEM and nano-CT",
+    "DOI": null
+  },
+  "Paper_Routing": {
+    "base_material": "Composites",
+    "application": "Structural",
+    "research_paradigm": "Experimental",
+    "Supplements_Loaded": [
+      "directions/base/Composites.txt",
+      "directions/application/Structural.txt",
+      "directions/paradigm/Experimental.txt"
+    ],
+    "Patch_Tags": [
+      "Interface_Dominated"
+    ],
+    "Needs_Mixed_Routing_Check": false,
+    "Mixed_Signals": []
+  },
+  "items": [
+    {
+      "Item_ID": "2D_SiC_SiC_PIP",
+      "Sample_ID": "2D SiC/SiC composite",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Composites",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [],
+      "Extracted_Data": {
+        "Composition": {
+          "Composite_Category": "CMC",
+          "Composite_System_Raw": "2D plain-woven SiC_f/SiC composite (PIP)",
+          "Matrix": [
+            {
+              "Component": "PIP SiC",
+              "Phase_Name": "SiC",
+              "Crystal_Structure": "β-SiC",
+              "Note": "Low-fracture energy, non-homogeneous distribution with shrinkage cracks"
+            }
+          ],
+          "Reinforcement": [
+            {
+              "Type": "Fiber",
+              "Name": "Cansas 3303 3rd SiC fiber",
+              "Source": "Xiamen University",
+              "Fiber_Diameter": {
+                "Value": 12.2,
+                "Unit": "μm",
+                "dimension_type": "diameter"
+              },
+              "Fiber_Density": {
+                "Value": 3.1,
+                "Unit": "g/cm³"
+              },
+              "Fiber_Strength": {
+                "Value": 2.8,
+                "Unit": "GPa"
+              },
+              "Fiber_Modulus": {
+                "Value": 383,
+                "Unit": "GPa"
+              },
+              "Elongation": {
+                "Value": 1.03,
+                "Unit": "%"
+              },
+              "Data_Source": "table"
+            }
+          ],
+          "Interface_or_Interphase": [
+            {
+              "Type": "Interphase",
+              "Material": "BN",
+              "Deposition_Method": "CVI",
+              "Deposition_Temperature": {
+                "Value_Range": {
+                  "Min": 800,
+                  "Max": 1000
+                },
+                "Unit": "°C",
+                "Original_Values": "approximately 800–1000 °C"
+              },
+              "Precursors": "BCl₃-NH₃-H₂-Ar",
+              "Note": "Weak BN interface; accelerated crack propagation"
+            }
+          ],
+          "Fiber_Volume_Fraction": {
+            "Value": 40,
+            "Unit": "%",
+            "Original_Values": "about 40%",
+            "Data_Source": "table"
+          },
+          "Density": {
+            "Value": 2.3,
+            "Unit": "g/cm³",
+            "Data_Source": "table"
+          },
+          "Total_Porosity": {
+            "Value": 7.2,
+            "Unit": "%",
+            "Data_Source": "table"
+          }
+        },
+        "Processing": {
+          "Process_Category": "PIP",
+          "Process_Text": {
+            "original": "2D preform formed by alternately stacking four plain SiC fiber layers, placed between graphite plates tightened to 1.3mm thickness, seamed with C-fiber tow (0.5mm spacing) → BN interphase CVI deposition (~800-1000°C) → PIP: liquid PCS dissolved in xylene (1:1 mass ratio), vacuum impregnation, pyrolysis at 900°C for 1h in Ar, repeated until weight gain <1%",
+            "simplified": "2D plain-woven preform → CVI BN interphase → PIP SiC at 900°C in Ar"
+          },
+          "Equipment": [
+            {
+              "Name": "PIP furnace",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "CVI furnace",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Zeiss Gemini 500 SEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Zeiss Xradia 520 versa nano-CT",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Zeiss sigma 300 SEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Nanoindenter (for matrix modulus)",
+              "Category": "Characterization"
+            }
+          ],
+          "Key_Params": {
+            "Stage1_Preform": {
+              "Architecture": "2D plain-woven",
+              "Number_of_Layers": 4,
+              "Composite_Thickness": {
+                "Value": 1.3,
+                "Unit": "mm"
+              },
+              "C_fiber_Seam_Spacing": {
+                "Value": 0.5,
+                "Unit": "mm"
+              }
+            },
+            "Stage2_BN_Interphase": {
+              "Deposition_Method": "CVI",
+              "Temperature": {
+                "Value_Range": {
+                  "Min": 800,
+                  "Max": 1000
+                },
+                "Unit": "°C"
+              },
+              "Precursors": "BCl₃-NH₃-H₂-Ar"
+            },
+            "Stage3_PIP": {
+              "Precursor": "Liquid polycarbosilane (PCS) in xylene",
+              "Mass_Ratio_PCS_to_Xylene": "1:1",
+              "Impregnation_Method": "Vacuum impregnation",
+              "Pyrolysis_Temperature": {
+                "Value": 900,
+                "Unit": "°C"
+              },
+              "Pyrolysis_Time": {
+                "Value": 1,
+                "Unit": "h"
+              },
+              "Atmosphere": "Argon",
+              "Termination_Criterion": "weight gain < 1%"
+            }
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "2D plain-woven structure with braided fiber bundles not closely overlapped forming square pores. PIP-SiC matrix non-homogeneous: bright white SiC blocks with striped C-rich layer at edge, dark gray areas rich in O. Shrinkage cracks present in matrix. Interlayer pores and closed pores within fiber bundles as internal defects. Small volume defects (<0.04mm³) in non-overlapping areas, large-volume defects connected through layers.",
+            "simplified": "2D plain-woven; non-homogeneous PIP-SiC with shrinkage cracks; interlayer and intra-bundle pores; weak BN interface"
+          },
+          "Fiber_Architecture": "2D plain-woven",
+          "Phases": [
+            {
+              "Phase_Name": "SiC (fiber)",
+              "Crystal_Structure": "SiC",
+              "Location": "Reinforcement"
+            },
+            {
+              "Phase_Name": "SiC (PIP matrix)",
+              "Crystal_Structure": "β-SiC (low crystallinity)",
+              "Location": "Matrix"
+            },
+            {
+              "Phase_Name": "BN",
+              "Crystal_Structure": "amorphous/low-crystallinity",
+              "Location": "Interphase"
+            },
+            {
+              "Phase_Name": "C-rich layer",
+              "Crystal_Structure": "amorphous carbon",
+              "Location": "PIP SiC matrix edge"
+            }
+          ],
+          "Interface_Features": [
+            {
+              "Interface": "fiber/matrix (BN)",
+              "State": "Weak bonding; cracks deflected along BN interface; low resistance to crack propagation"
+            }
+          ],
+          "Defects": [
+            {
+              "Type": "Shrinkage cracks",
+              "Location": "PIP SiC matrix",
+              "Cause": "Cyclic pyrolysis"
+            },
+            {
+              "Type": "Interlayer pores",
+              "Location": "Between plain-woven layers",
+              "Cause": "Difficult to densify large pores by PIP"
+            },
+            {
+              "Type": "Intra-bundle micropores",
+              "Location": "Within fiber bundles",
+              "Size": "tens of nanometers"
+            }
+          ],
+          "Advanced_Quantitative_Features": {
+            "Fiber_Elastic_Modulus": {
+              "Value": 327.5,
+              "Unit": "GPa",
+              "Data_Source": "table"
+            },
+            "Matrix_Elastic_Modulus_nanoindentation": {
+              "Value": 213.9,
+              "Unit": "GPa",
+              "Data_Source": "table",
+              "Test_Method": "nanoindentation"
+            },
+            "Matrix_Elastic_Modulus_point_avg": {
+              "Value": 213.88,
+              "Unit": "GPa",
+              "Note": "Average of 3 nanoindentation points from Table 3",
+              "Data_Source": "table"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Matrix_Cracking_Stress",
+            "Value": 60,
+            "Unit": "MPa",
+            "Test_Condition": "in situ tensile test, strain ~0.04% onset of nonlinearity",
+            "Data_Source": "text",
+            "Note": "Determined from end of linear stress-strain curve; low value due to weak BN interface and non-homogeneous PIP-SiC matrix"
+          },
+          {
+            "Property_Name": "Tensile_Strength",
+            "Value": null,
+            "Unit": "MPa",
+            "Test_Condition": "in situ tensile test",
+            "Note": "Ultimate strength not explicitly given; level IV loading at 230 MPa for fracture characterization",
+            "Data_Source": "text"
+          }
+        ]
+      }
+    }
+  ]
+}

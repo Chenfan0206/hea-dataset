@@ -1,0 +1,1626 @@
+{
+  "Paper_Metadata": {
+    "Paper_Title": "PBO fibers/fluorine-containing liquid crystal compound modified cyanate ester wave-transparent laminated composites with excellent mechanical and flame retardance properties",
+    "DOI": "10.1016/j.jmst.2023.01.007"
+  },
+  "Paper_Routing": {
+    "base_material": "Composites",
+    "application": "Functional",
+    "research_paradigm": "Experimental",
+    "Supplements_Loaded": [
+      "directions/base/Composites.txt",
+      "directions/base/Polymers.txt",
+      "directions/application/Functional.txt",
+      "directions/paradigm/Experimental.txt"
+    ],
+    "Patch_Tags": [
+      "2D",
+      "Interface_Dominated"
+    ],
+    "Needs_Mixed_Routing_Check": false
+  },
+  "items": [
+    {
+      "Item_ID": "Item_01",
+      "Sample_ID": "pure BADCy resin",
+      "Role": "Comparator",
+      "Data_Nature": "Experimental",
+      "base_material": "Polymers",
+      "application": "Functional",
+      "research_paradigm": "Experimental",
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "pure BADCy",
+        "BADCy resin"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Polymer_Category": "thermoset resin",
+          "Polymer_Name_Raw": "Bisphenol A dicyanate ester (BADCy)"
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "Pure BADCy resin curing",
+            "simplified": "Pure BADCy resin curing without modifier"
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Flexural Strength",
+            "Value": 102.4,
+            "Unit": "MPa",
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Impact Strength",
+            "Value": 9.9,
+            "Unit": "kJ/m²",
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Tensile Strength",
+            "Value": 36.7,
+            "Unit": "MPa",
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Heat Resistance Index",
+            "Value": 197.5,
+            "Unit": "°C",
+            "Original_Values": "197.5 °C",
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Glass Transition Temperature",
+            "Value": 271.9,
+            "Unit": "°C",
+            "Original_Values": "271.9 °C",
+            "Data_Source": "text"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "Item_02",
+      "Sample_ID": "LCFE2-BADCy resin (10 wt%)",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Polymers",
+      "application": "Functional",
+      "research_paradigm": "Experimental",
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "LCFE2-BADCy",
+        "LCFE2-BADCy resin",
+        "mass fraction of LCFE2 is 10 wt%"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Polymer_Category": "thermoset resin (modified)",
+          "Polymer_Name_Raw": "LCFE2-BADCy",
+          "Matrix": "Bisphenol A dicyanate ester (BADCy)",
+          "Filler_or_Modifier": [
+            {
+              "Modifier_Name": "LCFE2 (fluorine-containing liquid crystal compound)",
+              "Mass_Fraction": "10 wt%",
+              "Role": "copolymerization modifier"
+            }
+          ]
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "LCFE2 prepolymerized with BADCy at 160 °C, followed by curing",
+            "simplified": "Prepolymerization at 160 °C then curing"
+          },
+          "Key_Params": {
+            "Prepolymerization_Temperature": 160,
+            "Prepolymerization_Temperature_Unit": "°C",
+            "Note": "Prepolymerization temperature selected based on liquid crystal interval of LCFE2 (145-165 °C)"
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "LCFE2 forms locally ordered structure through pi-pi stacking of biphenyl units in BADCy cured network",
+            "simplified": "Locally ordered structure in LCFE2-BADCy cured network due to biphenyl pi-pi stacking"
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Flexural Strength",
+            "Value": 137.2,
+            "Unit": "MPa",
+            "Data_Source": "text",
+            "Test_Condition": {
+              "LCFE2_Mass_Fraction": "10 wt%"
+            },
+            "Note": "Increased by 34.0% compared to pure BADCy"
+          },
+          {
+            "Property_Name": "Impact Strength",
+            "Value": 14.8,
+            "Unit": "kJ/m²",
+            "Data_Source": "text",
+            "Test_Condition": {
+              "LCFE2_Mass_Fraction": "10 wt%"
+            },
+            "Note": "Increased by 49.5% compared to pure BADCy"
+          },
+          {
+            "Property_Name": "Tensile Strength",
+            "Value": 45.7,
+            "Unit": "MPa",
+            "Data_Source": "text",
+            "Test_Condition": {
+              "LCFE2_Mass_Fraction": "10 wt%"
+            },
+            "Note": "Increased by 24.5% compared to pure BADCy"
+          },
+          {
+            "Property_Name": "Heat Resistance Index",
+            "Value": 202.8,
+            "Unit": "°C",
+            "Original_Values": "202.8 °C",
+            "Data_Source": "text",
+            "Test_Condition": {
+              "LCFE2_Mass_Fraction": "10 wt%"
+            }
+          },
+          {
+            "Property_Name": "Glass Transition Temperature",
+            "Value": 275.0,
+            "Unit": "°C",
+            "Original_Values": "275.0 °C",
+            "Data_Source": "text",
+            "Test_Condition": {
+              "LCFE2_Mass_Fraction": "10 wt%"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "Item_03",
+      "Sample_ID": "LCFE2-BADCy resin (15 wt%)",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Polymers",
+      "application": "Functional",
+      "research_paradigm": "Experimental",
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "LCFE2-BADCy",
+        "mass fraction of LCFE2 is 15 wt%"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Polymer_Category": "thermoset resin (modified)",
+          "Polymer_Name_Raw": "LCFE2-BADCy",
+          "Matrix": "Bisphenol A dicyanate ester (BADCy)",
+          "Filler_or_Modifier": [
+            {
+              "Modifier_Name": "LCFE2 (fluorine-containing liquid crystal compound)",
+              "Mass_Fraction": "15 wt%",
+              "Role": "copolymerization modifier"
+            }
+          ]
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "LCFE2 prepolymerized with BADCy at 160 °C, followed by curing",
+            "simplified": "Prepolymerization at 160 °C then curing"
+          },
+          "Key_Params": {
+            "Prepolymerization_Temperature": 160,
+            "Prepolymerization_Temperature_Unit": "°C"
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Flexural Strength",
+            "Value": 141.3,
+            "Unit": "MPa",
+            "Data_Source": "text",
+            "Test_Condition": {
+              "LCFE2_Mass_Fraction": "15 wt%"
+            }
+          },
+          {
+            "Property_Name": "Impact Strength",
+            "Value": 15.2,
+            "Unit": "kJ/m²",
+            "Data_Source": "text",
+            "Test_Condition": {
+              "LCFE2_Mass_Fraction": "15 wt%"
+            }
+          },
+          {
+            "Property_Name": "Tensile Strength",
+            "Value": 48.7,
+            "Unit": "MPa",
+            "Data_Source": "text",
+            "Test_Condition": {
+              "LCFE2_Mass_Fraction": "15 wt%"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "Item_04",
+      "Sample_ID": "FE0-BADCy resin (10 wt%)",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Polymers",
+      "application": "Functional",
+      "research_paradigm": "Experimental",
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "FE0-BADCy",
+        "mass fraction of FE0 is 10 wt%"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Polymer_Category": "thermoset resin (modified)",
+          "Polymer_Name_Raw": "FE0-BADCy",
+          "Matrix": "Bisphenol A dicyanate ester (BADCy)",
+          "Filler_or_Modifier": [
+            {
+              "Modifier_Name": "FE0 (non-liquid-crystal fluorine-containing compound)",
+              "Mass_Fraction": "10 wt%",
+              "Role": "copolymerization modifier"
+            }
+          ]
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "FE0 prepolymerized with BADCy at 120 °C, followed by curing",
+            "simplified": "Prepolymerization at 120 °C then curing"
+          },
+          "Key_Params": {
+            "Prepolymerization_Temperature": 120,
+            "Prepolymerization_Temperature_Unit": "°C",
+            "Note": "Prepolymerization temperature selected based on FE0 melting temperature of 98.5 °C"
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Flexural Strength",
+            "Value": 128.4,
+            "Unit": "MPa",
+            "Data_Source": "text",
+            "Test_Condition": {
+              "FE0_Mass_Fraction": "10 wt%"
+            },
+            "Note": "Increased by 25.4% compared to pure BADCy"
+          },
+          {
+            "Property_Name": "Impact Strength",
+            "Value": 13.4,
+            "Unit": "kJ/m²",
+            "Data_Source": "text",
+            "Test_Condition": {
+              "FE0_Mass_Fraction": "10 wt%"
+            },
+            "Note": "Increased by 35.4% compared to pure BADCy"
+          },
+          {
+            "Property_Name": "Tensile Strength",
+            "Value": 43.2,
+            "Unit": "MPa",
+            "Data_Source": "text",
+            "Test_Condition": {
+              "FE0_Mass_Fraction": "10 wt%"
+            },
+            "Note": "Increased by 17.7% compared to pure BADCy"
+          },
+          {
+            "Property_Name": "Heat Resistance Index",
+            "Value": 190.9,
+            "Unit": "°C",
+            "Original_Values": "190.9 °C",
+            "Data_Source": "text",
+            "Test_Condition": {
+              "FE0_Mass_Fraction": "10 wt%"
+            },
+            "Note": "Lower than pure BADCy (197.5 °C)"
+          },
+          {
+            "Property_Name": "Glass Transition Temperature",
+            "Value": 270.6,
+            "Unit": "°C",
+            "Original_Values": "270.6 °C",
+            "Data_Source": "text",
+            "Test_Condition": {
+              "FE0_Mass_Fraction": "10 wt%"
+            },
+            "Note": "Lower than pure BADCy (271.9 °C)"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "Item_05",
+      "Sample_ID": "FE0-BADCy resin (15 wt%)",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Polymers",
+      "application": "Functional",
+      "research_paradigm": "Experimental",
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "FE0-BADCy",
+        "mass fraction of FE0 is 15 wt%"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Polymer_Category": "thermoset resin (modified)",
+          "Polymer_Name_Raw": "FE0-BADCy",
+          "Matrix": "Bisphenol A dicyanate ester (BADCy)",
+          "Filler_or_Modifier": [
+            {
+              "Modifier_Name": "FE0 (non-liquid-crystal fluorine-containing compound)",
+              "Mass_Fraction": "15 wt%",
+              "Role": "copolymerization modifier"
+            }
+          ]
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "FE0 prepolymerized with BADCy at 120 °C, followed by curing",
+            "simplified": "Prepolymerization at 120 °C then curing"
+          },
+          "Key_Params": {
+            "Prepolymerization_Temperature": 120,
+            "Prepolymerization_Temperature_Unit": "°C"
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Flexural Strength",
+            "Value": 135.4,
+            "Unit": "MPa",
+            "Data_Source": "text",
+            "Test_Condition": {
+              "FE0_Mass_Fraction": "15 wt%"
+            }
+          },
+          {
+            "Property_Name": "Impact Strength",
+            "Value": 14.1,
+            "Unit": "kJ/m²",
+            "Data_Source": "text",
+            "Test_Condition": {
+              "FE0_Mass_Fraction": "15 wt%"
+            }
+          },
+          {
+            "Property_Name": "Tensile Strength",
+            "Value": 46.5,
+            "Unit": "MPa",
+            "Data_Source": "text",
+            "Test_Condition": {
+              "FE0_Mass_Fraction": "15 wt%"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "Item_06",
+      "Sample_ID": "LCFE5-BADCy resin (10 wt%)",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Polymers",
+      "application": "Functional",
+      "research_paradigm": "Experimental",
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "LCFE5-BADCy",
+        "mass fraction of LCFE5 is 10 wt%"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Polymer_Category": "thermoset resin (modified)",
+          "Polymer_Name_Raw": "LCFE5-BADCy",
+          "Matrix": "Bisphenol A dicyanate ester (BADCy)",
+          "Filler_or_Modifier": [
+            {
+              "Modifier_Name": "LCFE5 (fluorine-containing liquid crystal compound with longer flexible chain)",
+              "Mass_Fraction": "10 wt%",
+              "Role": "copolymerization modifier"
+            }
+          ]
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "LCFE5 prepolymerized with BADCy at 120 °C, followed by curing",
+            "simplified": "Prepolymerization at 120 °C then curing"
+          },
+          "Key_Params": {
+            "Prepolymerization_Temperature": 120,
+            "Prepolymerization_Temperature_Unit": "°C",
+            "Note": "Prepolymerization temperature selected based on liquid crystal interval of LCFE5 (120-138 °C)"
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Flexural Strength",
+            "Value": 140.2,
+            "Unit": "MPa",
+            "Data_Source": "text",
+            "Test_Condition": {
+              "LCFE5_Mass_Fraction": "10 wt%"
+            },
+            "Note": "Increased by 36.9% compared to pure BADCy"
+          },
+          {
+            "Property_Name": "Impact Strength",
+            "Value": 15.3,
+            "Unit": "kJ/m²",
+            "Data_Source": "text",
+            "Test_Condition": {
+              "LCFE5_Mass_Fraction": "10 wt%"
+            },
+            "Note": "Increased by 54.5% compared to pure BADCy"
+          },
+          {
+            "Property_Name": "Tensile Strength",
+            "Value": 47.8,
+            "Unit": "MPa",
+            "Data_Source": "text",
+            "Test_Condition": {
+              "LCFE5_Mass_Fraction": "10 wt%"
+            },
+            "Note": "Increased by 30.2% compared to pure BADCy"
+          },
+          {
+            "Property_Name": "Heat Resistance Index",
+            "Value": 194.8,
+            "Unit": "°C",
+            "Original_Values": "194.8 °C",
+            "Data_Source": "text",
+            "Test_Condition": {
+              "LCFE5_Mass_Fraction": "10 wt%"
+            },
+            "Note": "Lower than pure BADCy (197.5 °C)"
+          },
+          {
+            "Property_Name": "Glass Transition Temperature",
+            "Value": 272.8,
+            "Unit": "°C",
+            "Original_Values": "272.8 °C",
+            "Data_Source": "text",
+            "Test_Condition": {
+              "LCFE5_Mass_Fraction": "10 wt%"
+            },
+            "Note": "Higher than pure BADCy (271.9 °C)"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "Item_07",
+      "Sample_ID": "LCFE5-BADCy resin (15 wt%)",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Polymers",
+      "application": "Functional",
+      "research_paradigm": "Experimental",
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "LCFE5-BADCy",
+        "mass fraction of LCFE5 is 15 wt%"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Polymer_Category": "thermoset resin (modified)",
+          "Polymer_Name_Raw": "LCFE5-BADCy",
+          "Matrix": "Bisphenol A dicyanate ester (BADCy)",
+          "Filler_or_Modifier": [
+            {
+              "Modifier_Name": "LCFE5 (fluorine-containing liquid crystal compound with longer flexible chain)",
+              "Mass_Fraction": "15 wt%",
+              "Role": "copolymerization modifier"
+            }
+          ]
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "LCFE5 prepolymerized with BADCy at 120 °C, followed by curing",
+            "simplified": "Prepolymerization at 120 °C then curing"
+          },
+          "Key_Params": {
+            "Prepolymerization_Temperature": 120,
+            "Prepolymerization_Temperature_Unit": "°C"
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Flexural Strength",
+            "Value": 143.7,
+            "Unit": "MPa",
+            "Data_Source": "text",
+            "Test_Condition": {
+              "LCFE5_Mass_Fraction": "15 wt%"
+            }
+          },
+          {
+            "Property_Name": "Impact Strength",
+            "Value": 17.2,
+            "Unit": "kJ/m²",
+            "Data_Source": "text",
+            "Test_Condition": {
+              "LCFE5_Mass_Fraction": "15 wt%"
+            }
+          },
+          {
+            "Property_Name": "Tensile Strength",
+            "Value": 52.5,
+            "Unit": "MPa",
+            "Data_Source": "text",
+            "Test_Condition": {
+              "LCFE5_Mass_Fraction": "15 wt%"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "Item_08",
+      "Sample_ID": "Sample 0 (PBO fibers/BADCy)",
+      "Role": "Comparator",
+      "Data_Nature": "Experimental",
+      "base_material": "Composites",
+      "application": "Functional",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "2D"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "PBO fibers/BADCy",
+        "Sample 0"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Composite_Category": "PMC",
+          "Composite_System_Raw": "PBO fibers/BADCy",
+          "Matrix": {
+            "Matrix_Material": "Bisphenol A dicyanate ester (BADCy)"
+          },
+          "Reinforcement": {
+            "Reinforcement_Material": "PBO (poly(p-phenylene-2,6-benzobisoxazole)) fibers",
+            "Fiber_Volume_Fraction": null
+          }
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "PBO fibers/BADCy wave-transparent laminated composites prepared by laminating PBO fibers with BADCy resin",
+            "simplified": "Laminate PBO fibers with BADCy resin matrix"
+          },
+          "Equipment": [
+            {
+              "Name": "TGA",
+              "Category": "Characterization",
+              "Purpose": "Thermogravimetric analysis for THRI and Tg"
+            },
+            {
+              "Name": "DMA",
+              "Category": "Characterization",
+              "Purpose": "Dynamic mechanical analysis for Tg"
+            },
+            {
+              "Name": "SEM",
+              "Category": "Characterization",
+              "Purpose": "Surface morphology observation after ILSS tests and combustion"
+            },
+            {
+              "Name": "Raman spectroscopy",
+              "Category": "Characterization",
+              "Purpose": "Char residue analysis after combustion"
+            },
+            {
+              "Name": "EastWave software",
+              "Category": "Software",
+              "Purpose": "FDTD and high-frequency physical optics simulation of radome"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "The surface of PBO fiber is smooth and shows strong chemical inertness, resulting in weak interfacial interaction between PBO fibers and BADCy resin; the smooth surface of PBO fibers has no BADCy resin residues after ILSS tests; the surface carbon layer of PBO fibers/BADCy composites has large holes after combustion",
+            "simplified": "Smooth and chemically inert PBO fiber surface with weak fiber-resin interfacial bonding; no resin residues on fibers after ILSS tests; porous carbon layer after combustion"
+          },
+          "Interface_Features": {
+            "Description": "Smooth PBO fiber surface with strong chemical inertness; no BADCy resin residues after ILSS tests; weak interfacial interaction between PBO fibers and BADCy resin"
+          },
+          "Combustion_Structure": {
+            "Description": "Surface carbon layer has large holes after combustion, unable to protect internal BADCy resins",
+            "Char_ID_IG_Ratio": 2.03
+          },
+          "Fiber_Architecture": null
+        },
+        "Properties": [
+          {
+            "Property_Name": "Dielectric Constant",
+            "Value": 3.06,
+            "Unit": "dimensionless",
+            "Data_Source": "text",
+            "Test_Condition": {
+              "Frequency": "1e6 Hz",
+              "Temperature": "25 °C"
+            }
+          },
+          {
+            "Property_Name": "Dielectric Loss",
+            "Value": 0.006,
+            "Unit": "dimensionless",
+            "Data_Source": "text",
+            "Test_Condition": {
+              "Frequency": "1e6 Hz",
+              "Temperature": "25 °C"
+            }
+          },
+          {
+            "Property_Name": "Wave Transmission Efficiency",
+            "Value": 92.5,
+            "Unit": "%",
+            "Original_Values": "92.5%",
+            "Data_Source": "text",
+            "Test_Condition": {
+              "Frequency": "1e6 Hz",
+              "Temperature": "25 °C"
+            }
+          },
+          {
+            "Property_Name": "Interlaminar Shear Strength",
+            "Value": 36.7,
+            "Unit": "MPa",
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Flexural Strength",
+            "Value": 587.4,
+            "Unit": "MPa",
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Volume Resistivity",
+            "Value": 2.2e15,
+            "Unit": "Ω cm",
+            "Original_Values": "2.2 × 10¹⁵ Ω cm",
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Breakdown Strength",
+            "Value": 17.69,
+            "Unit": "kV/mm",
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Heat Resistance Index",
+            "Value": 229.6,
+            "Unit": "°C",
+            "Original_Values": "229.6 °C",
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Glass Transition Temperature",
+            "Value": 247.1,
+            "Unit": "°C",
+            "Original_Values": "247.1 °C",
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Ultimate Oxygen Index",
+            "Value": 29.2,
+            "Unit": "%",
+            "Original_Values": "29.2%",
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Flame Retardant Grade",
+            "Value": null,
+            "Unit": "UL-94",
+            "Original_Values": "NR grade",
+            "Data_Source": "text",
+            "Note": "NR (no rating) grade"
+          },
+          {
+            "Property_Name": "Time to Ignition",
+            "Value": 55,
+            "Unit": "s",
+            "Original_Values": "55 s",
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Peak Heat Release Rate",
+            "Value": 226.7,
+            "Unit": "kW/m²",
+            "Original_Values": "226.7 KW/m²",
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Average Heat Release Rate",
+            "Value": 66.1,
+            "Unit": "kW/m²",
+            "Original_Values": "66.1 KW/m²",
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Total Heat Release (100 s)",
+            "Value": 9.2,
+            "Unit": "MJ/m²",
+            "Original_Values": "9.2 MJ/m²",
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Total Heat Release (200 s)",
+            "Value": 16.1,
+            "Unit": "MJ/m²",
+            "Original_Values": "16.1 MJ/m²",
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Total Smoke Production",
+            "Value": 12.2,
+            "Unit": "m²",
+            "Original_Values": "12.2 m²",
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Mass Percentage after Combustion",
+            "Value": 50.8,
+            "Unit": "%",
+            "Original_Values": "50.8%",
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "ID/IG Ratio of Char Residue",
+            "Value": 2.03,
+            "Unit": "dimensionless",
+            "Original_Values": "2.03",
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Wave Transmission Efficiency",
+            "Value": 89.8,
+            "Unit": "%",
+            "Original_Values": "89.8%",
+            "Data_Source": "text",
+            "Test_Condition": {
+              "Frequency": "10 GHz",
+              "Thickness": "2.5 mm"
+            }
+          },
+          {
+            "Property_Name": "Insertion Phase Displacement",
+            "Value": 4.32,
+            "Unit": "dB",
+            "Original_Values": "4.32 dB",
+            "Data_Source": "text",
+            "Test_Condition": {
+              "Frequency": "10 GHz",
+              "Thickness": "2.5 mm"
+            }
+          },
+          {
+            "Property_Name": "ILSS Retention Rate",
+            "Value": 42.8,
+            "Unit": "%",
+            "Original_Values": "42.8%",
+            "Data_Source": "text",
+            "Test_Condition": {
+              "Hygrothermal_Aging_Temperature": "80 °C",
+              "Aging_Time": "288 h"
+            }
+          },
+          {
+            "Property_Name": "Flexural Strength Retention Rate",
+            "Value": 45.7,
+            "Unit": "%",
+            "Original_Values": "45.7%",
+            "Data_Source": "text",
+            "Test_Condition": {
+              "Hygrothermal_Aging_Temperature": "80 °C",
+              "Aging_Time": "288 h"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "Item_09",
+      "Sample_ID": "Sample 1 (PBO fibers/FABPBO/BADCy)",
+      "Role": "Comparator",
+      "Data_Nature": "Experimental",
+      "base_material": "Composites",
+      "application": "Functional",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "2D",
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "PBO fibers/FABPBO/BADCy",
+        "Sample 1"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Composite_Category": "PMC",
+          "Composite_System_Raw": "PBO fibers/FABPBO/BADCy",
+          "Matrix": {
+            "Matrix_Material": "Bisphenol A dicyanate ester (BADCy)"
+          },
+          "Reinforcement": {
+            "Reinforcement_Material": "PBO (poly(p-phenylene-2,6-benzobisoxazole)) fibers",
+            "Fiber_Volume_Fraction": null
+          },
+          "Interface_or_Interphase": {
+            "Interface_Material": "preFABPBO (fluorine/adamantane PBO precursor)",
+            "Role": "interfacial compatibilizer"
+          }
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "PBO fibers/FABPBO/BADCy laminated composites prepared using preFABPBO as interfacial compatibilizer",
+            "simplified": "Laminate PBO fibers with preFABPBO interfacial compatibilizer and BADCy resin"
+          },
+          "Equipment": [
+            {
+              "Name": "TGA",
+              "Category": "Characterization",
+              "Purpose": "Thermogravimetric analysis for THRI and Tg"
+            },
+            {
+              "Name": "DMA",
+              "Category": "Characterization",
+              "Purpose": "Dynamic mechanical analysis for Tg"
+            },
+            {
+              "Name": "SEM",
+              "Category": "Characterization",
+              "Purpose": "Surface morphology observation after ILSS tests"
+            },
+            {
+              "Name": "Raman spectroscopy",
+              "Category": "Characterization",
+              "Purpose": "Char residue analysis"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "The introduction of preFABPBO interfacial compatibilizer improves the interfacial compatibility between BADCy resins and PBO fibers; more BADCy resin is adhered to the surface of PBO fibers and fewer PBO fibers are pulled out from the BADCy matrix",
+            "simplified": "Improved interfacial bonding with preFABPBO; enhanced resin adhesion to PBO fiber surface; fewer fiber pull-outs"
+          },
+          "Interface_Features": {
+            "Description": "Improved interfacial compatibility between BADCy resin and PBO fibers due to preFABPBO; more BADCy resin adhered to PBO fiber surface; fewer PBO fibers pulled out from matrix"
+          },
+          "Fiber_Architecture": null
+        },
+        "Properties": [
+          {
+            "Property_Name": "Dielectric Constant",
+            "Value": 2.53,
+            "Unit": "dimensionless",
+            "Data_Source": "text",
+            "Test_Condition": {
+              "Frequency": "1e6 Hz",
+              "Temperature": "25 °C"
+            }
+          },
+          {
+            "Property_Name": "Dielectric Loss",
+            "Value": 0.003,
+            "Unit": "dimensionless",
+            "Data_Source": "text",
+            "Test_Condition": {
+              "Frequency": "1e6 Hz",
+              "Temperature": "25 °C"
+            }
+          },
+          {
+            "Property_Name": "Wave Transmission Efficiency",
+            "Value": 94.8,
+            "Unit": "%",
+            "Original_Values": "94.8%",
+            "Data_Source": "text",
+            "Test_Condition": {
+              "Frequency": "1e6 Hz"
+            },
+            "Note": "Value from comparison text; 94.6% also mentioned in temperature stability context"
+          },
+          {
+            "Property_Name": "Interlaminar Shear Strength",
+            "Value": 48.9,
+            "Unit": "MPa",
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Flexural Strength",
+            "Value": 665.3,
+            "Unit": "MPa",
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Volume Resistivity",
+            "Value": 5.1e15,
+            "Unit": "Ω cm",
+            "Original_Values": "5.1 × 10¹⁵ Ω cm",
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Breakdown Strength",
+            "Value": 27.12,
+            "Unit": "kV/mm",
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Heat Resistance Index",
+            "Value": 229.7,
+            "Unit": "°C",
+            "Original_Values": "229.7 °C",
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Glass Transition Temperature",
+            "Value": 247.5,
+            "Unit": "°C",
+            "Original_Values": "247.5 °C",
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Wave Transmission Efficiency",
+            "Value": 92.7,
+            "Unit": "%",
+            "Original_Values": "92.7%",
+            "Data_Source": "text",
+            "Test_Condition": {
+              "Frequency": "10 GHz",
+              "Thickness": "2.5 mm"
+            }
+          },
+          {
+            "Property_Name": "Insertion Phase Displacement",
+            "Value": 3.21,
+            "Unit": "dB",
+            "Original_Values": "3.21 dB",
+            "Data_Source": "text",
+            "Test_Condition": {
+              "Frequency": "10 GHz",
+              "Thickness": "2.5 mm"
+            }
+          },
+          {
+            "Property_Name": "ILSS Retention Rate",
+            "Value": 62.8,
+            "Unit": "%",
+            "Original_Values": "62.8%",
+            "Data_Source": "text",
+            "Test_Condition": {
+              "Hygrothermal_Aging_Temperature": "80 °C",
+              "Aging_Time": "288 h"
+            }
+          },
+          {
+            "Property_Name": "Flexural Strength Retention Rate",
+            "Value": 60.4,
+            "Unit": "%",
+            "Original_Values": "60.4%",
+            "Data_Source": "text",
+            "Test_Condition": {
+              "Hygrothermal_Aging_Temperature": "80 °C",
+              "Aging_Time": "288 h"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "Item_10",
+      "Sample_ID": "Sample 2 (PBO fibers/FABPBO/LCFE2-BADCy)",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Composites",
+      "application": "Functional",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "2D",
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "PBO fibers/FABPBO/LCFE2-BADCy",
+        "Sample 2"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Composite_Category": "PMC",
+          "Composite_System_Raw": "PBO fibers/FABPBO/LCFE2-BADCy",
+          "Matrix": {
+            "Matrix_Material": "LCFE2-BADCy (LCFE2 modified BADCy resin)",
+            "LCFE2_Mass_Fraction_in_Resin": "10 wt%"
+          },
+          "Reinforcement": {
+            "Reinforcement_Material": "PBO (poly(p-phenylene-2,6-benzobisoxazole)) fibers",
+            "Fiber_Volume_Fraction": null
+          },
+          "Interface_or_Interphase": {
+            "Interface_Material": "preFABPBO (fluorine/adamantane PBO precursor)",
+            "Role": "interfacial compatibilizer",
+            "Source_Reference": "previous work [55], doi:10.1002/cjoc.202200749"
+          },
+          "Filler_or_Modifier": [
+            {
+              "Modifier_Name": "LCFE2 (fluorine-containing liquid crystal compound)",
+              "Role": "matrix modifier"
+            }
+          ]
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "LCFE2-BADCy resin as polymer matrix, PBO fibers as reinforcement, preFABPBO as interfacial compatibilizer, prepared by laminating process with curing",
+            "simplified": "Laminate PBO fibers with preFABPBO interface modifier and LCFE2-BADCy matrix"
+          },
+          "Equipment": [
+            {
+              "Name": "TGA",
+              "Category": "Characterization",
+              "Purpose": "Thermogravimetric analysis for THRI and Tg"
+            },
+            {
+              "Name": "DMA",
+              "Category": "Characterization",
+              "Purpose": "Dynamic mechanical analysis for Tg"
+            },
+            {
+              "Name": "SEM",
+              "Category": "Characterization",
+              "Purpose": "Surface morphology observation after ILSS tests and combustion"
+            },
+            {
+              "Name": "Raman spectroscopy",
+              "Category": "Characterization",
+              "Purpose": "Char residue analysis after combustion"
+            },
+            {
+              "Name": "EastWave software",
+              "Category": "Software",
+              "Purpose": "FDTD and high-frequency physical optics simulation of radome"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "LCFE2 forms an ordered structure of dense rigid chain accumulation in LCFE2-BADCy resin; continuous and dense carbon layer formed on the surface during combustion; significantly increased fracture roughness of LCFE2-BADCy resin; residual carbon has a higher degree of graphitization",
+            "simplified": "Locally ordered structure in LCFE2-BADCy matrix; continuous dense carbon layer after combustion; higher graphitization degree of residual carbon; increased fracture roughness"
+          },
+          "Interface_Features": {
+            "Description": "Enhanced interfacial bonding between PBO fibers and LCFE2-BADCy resin due to preFABPBO compatibilizer and LCFE2 matrix modification; significantly increased fracture roughness of LCFE2-BADCy resin"
+          },
+          "Matrix_Structure": {
+            "Description": "Locally ordered region in LCFE2-BADCy cured network formed through biphenyl pi-pi stacking; ordered structure of dense rigid chain accumulation",
+            "Ordered_Structure_Origin": "pi-pi stacking of biphenyl units in LCFE2"
+          },
+          "Combustion_Structure": {
+            "Description": "Continuous and dense carbon layer formed on surface during combustion",
+            "Char_ID_IG_Ratio": 1.71,
+            "Note": "Lower ID/IG ratio indicates higher degree of graphitization compared to PBO fibers/BADCy (2.03)"
+          },
+          "Fiber_Architecture": null
+        },
+        "Properties": [
+          {
+            "Property_Name": "Dielectric Constant",
+            "Value": 2.49,
+            "Unit": "dimensionless",
+            "Data_Source": "text",
+            "Test_Condition": {
+              "Frequency": "1e6 Hz",
+              "Temperature": "25 °C"
+            }
+          },
+          {
+            "Property_Name": "Dielectric Loss",
+            "Value": 0.003,
+            "Unit": "dimensionless",
+            "Data_Source": "text",
+            "Test_Condition": {
+              "Frequency": "1e6 Hz",
+              "Temperature": "25 °C"
+            }
+          },
+          {
+            "Property_Name": "Wave Transmission Efficiency",
+            "Value": 95.0,
+            "Unit": "%",
+            "Original_Values": "95.0%",
+            "Data_Source": "text",
+            "Test_Condition": {
+              "Frequency": "1e6 Hz",
+              "Temperature": "25 °C"
+            },
+            "Note": "Temperature stable from 25 to 200 °C; |T|² stays in range 94.9%-95.1%"
+          },
+          {
+            "Property_Name": "Dielectric Constant",
+            "Value": 2.47,
+            "Unit": "dimensionless",
+            "Data_Source": "text",
+            "Test_Condition": {
+              "Frequency": "10 GHz"
+            }
+          },
+          {
+            "Property_Name": "Dielectric Loss",
+            "Value": 0.012,
+            "Unit": "dimensionless",
+            "Data_Source": "text",
+            "Test_Condition": {
+              "Frequency": "10 GHz"
+            }
+          },
+          {
+            "Property_Name": "Wave Transmission Efficiency",
+            "Value": 93.9,
+            "Unit": "%",
+            "Original_Values": "93.9%",
+            "Data_Source": "text",
+            "Test_Condition": {
+              "Frequency": "10 GHz"
+            }
+          },
+          {
+            "Property_Name": "Wave Transmission Efficiency",
+            "Value": 93.1,
+            "Unit": "%",
+            "Original_Values": "93.1%",
+            "Data_Source": "text",
+            "Test_Condition": {
+              "Frequency": "10 GHz",
+              "Thickness": "2.5 mm"
+            }
+          },
+          {
+            "Property_Name": "Insertion Phase Displacement",
+            "Value": 3.09,
+            "Unit": "dB",
+            "Original_Values": "3.09 dB",
+            "Data_Source": "text",
+            "Test_Condition": {
+              "Frequency": "10 GHz",
+              "Thickness": "2.5 mm"
+            }
+          },
+          {
+            "Property_Name": "Interlaminar Shear Strength",
+            "Value": 50.7,
+            "Unit": "MPa",
+            "Data_Source": "text",
+            "Note": "38.1% higher than PBO fibers/BADCy (36.7 MPa)"
+          },
+          {
+            "Property_Name": "Flexural Strength",
+            "Value": 682.5,
+            "Unit": "MPa",
+            "Data_Source": "text",
+            "Note": "16.2% higher than PBO fibers/BADCy (587.4 MPa)"
+          },
+          {
+            "Property_Name": "Volume Resistivity",
+            "Value": 5.3e15,
+            "Unit": "Ω cm",
+            "Original_Values": "5.3 × 10¹⁵ Ω cm",
+            "Data_Source": "text",
+            "Note": "140.9% higher than PBO fibers/BADCy (2.2 × 10¹⁵ Ω cm)"
+          },
+          {
+            "Property_Name": "Breakdown Strength",
+            "Value": 29.75,
+            "Unit": "kV/mm",
+            "Data_Source": "text",
+            "Note": "68.2% higher than PBO fibers/BADCy (17.69 kV/mm)"
+          },
+          {
+            "Property_Name": "Heat Resistance Index",
+            "Value": 217.2,
+            "Unit": "°C",
+            "Original_Values": "217.2 °C",
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Glass Transition Temperature",
+            "Value": 245.7,
+            "Unit": "°C",
+            "Original_Values": "245.7 °C",
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Ultimate Oxygen Index",
+            "Value": 33.6,
+            "Unit": "%",
+            "Original_Values": "33.6%",
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Flame Retardant Grade",
+            "Value": "V-1",
+            "Unit": "UL-94",
+            "Original_Values": "V-1 grade",
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Time to Ignition",
+            "Value": 58,
+            "Unit": "s",
+            "Original_Values": "58 s",
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Peak Heat Release Rate",
+            "Value": 132.1,
+            "Unit": "kW/m²",
+            "Original_Values": "132.1 KW/m²",
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Average Heat Release Rate",
+            "Value": 63.8,
+            "Unit": "kW/m²",
+            "Original_Values": "63.8 KW/m²",
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Total Heat Release (100 s)",
+            "Value": 5.4,
+            "Unit": "MJ/m²",
+            "Original_Values": "5.4 MJ/m²",
+            "Data_Source": "text",
+            "Note": "41.3% lower than PBO fibers/BADCy (9.2 MJ/m²)"
+          },
+          {
+            "Property_Name": "Total Heat Release (200 s)",
+            "Value": 13.5,
+            "Unit": "MJ/m²",
+            "Original_Values": "13.5 MJ/m²",
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Total Smoke Production",
+            "Value": 5.1,
+            "Unit": "m²",
+            "Original_Values": "5.1 m²",
+            "Data_Source": "text",
+            "Note": "58.2% lower than PBO fibers/BADCy (12.2 m²)"
+          },
+          {
+            "Property_Name": "Mass Percentage after Combustion",
+            "Value": 53.4,
+            "Unit": "%",
+            "Original_Values": "53.4%",
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "ID/IG Ratio of Char Residue",
+            "Value": 1.71,
+            "Unit": "dimensionless",
+            "Original_Values": "1.71",
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "ILSS Retention Rate",
+            "Value": 69.4,
+            "Unit": "%",
+            "Original_Values": "69.4%",
+            "Data_Source": "text",
+            "Test_Condition": {
+              "Hygrothermal_Aging_Temperature": "80 °C",
+              "Aging_Time": "288 h"
+            }
+          },
+          {
+            "Property_Name": "Flexural Strength Retention Rate",
+            "Value": 67.9,
+            "Unit": "%",
+            "Original_Values": "67.9%",
+            "Data_Source": "text",
+            "Test_Condition": {
+              "Hygrothermal_Aging_Temperature": "80 °C",
+              "Aging_Time": "288 h"
+            }
+          },
+          {
+            "Property_Name": "ILSS after Hygrothermal Aging",
+            "Value": 35.2,
+            "Unit": "MPa",
+            "Data_Source": "text",
+            "Test_Condition": {
+              "Hygrothermal_Aging_Temperature": "80 °C",
+              "Aging_Time": "288 h"
+            }
+          },
+          {
+            "Property_Name": "Flexural Strength after Hygrothermal Aging",
+            "Value": 463.7,
+            "Unit": "MPa",
+            "Data_Source": "text",
+            "Test_Condition": {
+              "Hygrothermal_Aging_Temperature": "80 °C",
+              "Aging_Time": "288 h"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "Item_11",
+      "Sample_ID": "LCFE2 (liquid crystal compound)",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Polymers",
+      "application": "Functional",
+      "research_paradigm": "Experimental",
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "LCFE2",
+        "fluorine-containing liquid crystal compound"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Polymer_Category": "liquid crystal compound",
+          "Polymer_Name_Raw": "LCFE2",
+          "Monomer_or_Formula": "Synthesized from 2,2'-bis(trifluoromethyl)-4,4'-diaminobiphenyl, bromoacetic acid, and glycidyl"
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "LCFE2 synthesized from 2,2'-bis(trifluoromethyl)-4,4'-diaminobiphenyl (TFDB), bromoacetic acid, and glycidyl",
+            "simplified": "Multi-step synthesis from TFDB, bromoacetic acid, and glycidyl"
+          },
+          "Equipment": [
+            {
+              "Name": "FT-IR (Fourier transform infrared)",
+              "Category": "Characterization",
+              "Purpose": "Molecular structure characterization"
+            },
+            {
+              "Name": "¹H NMR (nuclear magnetic resonance)",
+              "Category": "Characterization",
+              "Purpose": "Molecular structure characterization"
+            },
+            {
+              "Name": "¹³C NMR (nuclear magnetic resonance)",
+              "Category": "Characterization",
+              "Purpose": "Molecular structure characterization"
+            },
+            {
+              "Name": "HRMS (high-resolution mass spectrometry)",
+              "Category": "Characterization",
+              "Purpose": "Molecular mass confirmation"
+            },
+            {
+              "Name": "DSC (differential scanning calorimetry)",
+              "Category": "Characterization",
+              "Purpose": "Liquid crystal behavior and thermal transition analysis"
+            },
+            {
+              "Name": "in-situ XRD (in-situ X-ray diffraction)",
+              "Category": "Characterization",
+              "Purpose": "Crystal structure and phase transition analysis"
+            },
+            {
+              "Name": "POM (polarizing microscope)",
+              "Category": "Characterization",
+              "Purpose": "Liquid crystal morphology observation"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "LCFE2 is a thermotropic liquid crystal compound, semi-crystalline with anisotropy at room temperature",
+            "simplified": "Thermotropic liquid crystal compound, semi-crystalline at room temperature"
+          },
+          "Crystallinity": {
+            "Description": "semi-crystalline with anisotropy at room temperature",
+            "XRD_2theta": "21.3°"
+          },
+          "Melting_Point": {
+            "Crystal_Melting_Temperature_T1": {
+              "Value": 153.6,
+              "Unit": "°C"
+            },
+            "Clear_Point_T2": {
+              "Value": 179.0,
+              "Unit": "°C"
+            },
+            "Note": "T1 is crystal-to-liquid crystal transition; T2 is liquid crystal-to-isotropic liquid transition"
+          },
+          "Advanced_Quantitative_Features": {
+            "Crystal_Plane_Spacing": {
+              "Value": 0.417,
+              "Unit": "nm"
+            },
+            "Liquid_Crystal_Temperature_Range": "145-165 °C",
+            "HRMS_Molecular_Ion_Peak_m_e": 548.15,
+            "Molecular_Mass": 548.44,
+            "Unidirectional_Liquid_Crystal": true
+          }
+        }
+      }
+    },
+    {
+      "Item_ID": "Item_12",
+      "Sample_ID": "LCFE5 (liquid crystal compound)",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Polymers",
+      "application": "Functional",
+      "research_paradigm": "Experimental",
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "LCFE5",
+        "fluorine-containing liquid crystal compound"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Polymer_Category": "liquid crystal compound",
+          "Polymer_Name_Raw": "LCFE5",
+          "Monomer_or_Formula": "Synthesized from 2,2'-bis(trifluoromethyl)-4,4'-diaminobiphenyl, 5-bromovalanoic acid, and glycidyl"
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "LCFE5 synthesized from 2,2'-bis(trifluoromethyl)-4,4'-diaminobiphenyl (TFDB), 5-bromovalanoic acid, and glycidyl",
+            "simplified": "Multi-step synthesis from TFDB, 5-bromovalanoic acid, and glycidyl"
+          },
+          "Equipment": [
+            {
+              "Name": "FT-IR (Fourier transform infrared)",
+              "Category": "Characterization",
+              "Purpose": "Molecular structure characterization"
+            },
+            {
+              "Name": "¹H NMR (nuclear magnetic resonance)",
+              "Category": "Characterization",
+              "Purpose": "Molecular structure characterization"
+            },
+            {
+              "Name": "¹³C NMR (nuclear magnetic resonance)",
+              "Category": "Characterization",
+              "Purpose": "Molecular structure characterization"
+            },
+            {
+              "Name": "HRMS (high-resolution mass spectrometry)",
+              "Category": "Characterization",
+              "Purpose": "Molecular mass confirmation"
+            },
+            {
+              "Name": "DSC (differential scanning calorimetry)",
+              "Category": "Characterization",
+              "Purpose": "Liquid crystal behavior and thermal transition analysis"
+            },
+            {
+              "Name": "in-situ XRD (in-situ X-ray diffraction)",
+              "Category": "Characterization",
+              "Purpose": "Crystal structure and phase transition analysis"
+            },
+            {
+              "Name": "POM (polarizing microscope)",
+              "Category": "Characterization",
+              "Purpose": "Liquid crystal morphology observation"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "LCFE5 is a thermotropic liquid crystal compound, semi-crystalline with anisotropy at room temperature, with longer flexible chain segment than LCFE2",
+            "simplified": "Thermotropic liquid crystal compound, semi-crystalline at room temperature, longer flexible chain than LCFE2"
+          },
+          "Crystallinity": {
+            "Description": "semi-crystalline with anisotropy at room temperature",
+            "XRD_2theta": "20.9°"
+          },
+          "Melting_Point": {
+            "Crystal_Melting_Temperature_T1": {
+              "Value": 122.5,
+              "Unit": "°C"
+            },
+            "Clear_Point_T2": {
+              "Value": 129.0,
+              "Unit": "°C"
+            },
+            "Note": "T1 is crystal-to-liquid crystal transition; T2 is liquid crystal-to-isotropic liquid transition"
+          },
+          "Advanced_Quantitative_Features": {
+            "Crystal_Plane_Spacing": {
+              "Value": 0.425,
+              "Unit": "nm"
+            },
+            "Liquid_Crystal_Temperature_Range": "120-138 °C",
+            "HRMS_Molecular_Ion_Peak_m_e": 632.15,
+            "Molecular_Mass": 632.6,
+            "Unidirectional_Liquid_Crystal": true
+          }
+        }
+      }
+    },
+    {
+      "Item_ID": "Item_13",
+      "Sample_ID": "FE0",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Polymers",
+      "application": "Functional",
+      "research_paradigm": "Experimental",
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "FE0"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Polymer_Category": "fluorine-containing compound (non-liquid crystal)",
+          "Polymer_Name_Raw": "FE0",
+          "Monomer_or_Formula": "Synthesized from 2,2'-bis(trifluoromethyl)-4,4'-diaminobiphenyl (TFDB) and glycidyl"
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "FE0 synthesized from TFDB and glycidyl",
+            "simplified": "Synthesized from TFDB and glycidyl"
+          },
+          "Equipment": [
+            {
+              "Name": "FT-IR (Fourier transform infrared)",
+              "Category": "Characterization",
+              "Purpose": "Molecular structure characterization"
+            },
+            {
+              "Name": "¹H NMR (nuclear magnetic resonance)",
+              "Category": "Characterization",
+              "Purpose": "Molecular structure characterization"
+            },
+            {
+              "Name": "¹³C NMR (nuclear magnetic resonance)",
+              "Category": "Characterization",
+              "Purpose": "Molecular structure characterization"
+            },
+            {
+              "Name": "HRMS (high-resolution mass spectrometry)",
+              "Category": "Characterization",
+              "Purpose": "Molecular mass confirmation"
+            },
+            {
+              "Name": "DSC (differential scanning calorimetry)",
+              "Category": "Characterization",
+              "Purpose": "Thermal transition analysis"
+            },
+            {
+              "Name": "XRD (X-ray diffraction)",
+              "Category": "Characterization",
+              "Purpose": "Crystal structure analysis"
+            },
+            {
+              "Name": "POM (polarizing microscope)",
+              "Category": "Characterization",
+              "Purpose": "Morphology observation at different temperatures"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "FE0 is an amorphous solid at room temperature without liquid crystal behavior",
+            "simplified": "Amorphous solid at room temperature, no liquid crystal behavior"
+          },
+          "Melting_Point": {
+            "Value": 98.2,
+            "Unit": "°C",
+            "Note": "Melting temperature; no liquid crystal transition interval. Original text also reports 98.5 °C in prepolymerization temperature discussion section; Conclusions section confirms 98.2 °C"
+          },
+          "Advanced_Quantitative_Features": {
+            "HRMS_Molecular_Ion_Peak_m_e": 544.19,
+            "Molecular_Mass": 544.18
+          }
+        }
+      }
+    }
+  ]
+}

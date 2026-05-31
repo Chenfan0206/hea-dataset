@@ -1,0 +1,1076 @@
+{
+  "Paper_Metadata": {
+    "Paper_Title": "Overview of constitutive laws, kinematics, homogenization and multiscale methods in crystal plasticity finite-element modeling: Theory, experiments, applications",
+    "DOI": null,
+    "Note": "DOI not found in OCR text. Published in Acta Materialia (2009), Overview No. 149."
+  },
+  "Paper_Routing": {
+    "base_material": "Metals",
+    "application": "Structural",
+    "research_paradigm": "Hybrid",
+    "Supplements_Loaded": [
+      "directions/base/Metals.txt",
+      "directions/application/Structural.txt",
+      "directions/paradigm/Hybrid.txt"
+    ],
+    "Patch_Tags": [
+      "TRIP_or_Deformation_Transformation"
+    ],
+    "Needs_Mixed_Routing_Check": false,
+    "Mixed_Signals": []
+  },
+  "items": [
+    {
+      "Item_ID": "01",
+      "Sample_ID": "Cu_nanowire_bent",
+      "Role": "Reference",
+      "Data_Nature": "Literature_Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [],
+      "Gradient_Material": false,
+      "Note": "Review example from Section 9.2.2, originally from Weber et al. [176]. Cu single-crystalline nanowire bending experiment and CPFE simulation.",
+      "Raw_Evidence_Span": [
+        "Section 9.2.2"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Cu (copper)",
+          "Material_Name_Raw": "single-crystalline copper nanowire",
+          "Nominal_Composition": {
+            "Cu": "Balance"
+          }
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "A 23 μm long single-crystalline copper nanowire was produced by focused ion beam fabrication (FIB). The nanowire was bent in situ using a micromanipulator.",
+            "simplified": "FIB fabrication of Cu nanowire; in-situ bending via micromanipulator"
+          },
+          "Equipment": [
+            {
+              "Name": "FIB (focused ion beam)",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Micromanipulator",
+              "Category": "Testing"
+            },
+            {
+              "Name": "SEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "EBSD",
+              "Category": "Characterization"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "A 23 μm long single-crystalline copper nanowire with average cross-section of 750 × 750 nm²",
+            "simplified": "Single crystal Cu nanowire, 23 μm long, cross-section ~750 × 750 nm²"
+          },
+          "Main_Phase": {
+            "Phase_Name": "copper single crystal",
+            "Crystal_Structure": "FCC"
+          },
+          "Advanced_Quantitative_Features": {
+            "Nanowire_Length_um": {
+              "Value": 23,
+              "Original_Values": "23 μm"
+            },
+            "Cross_Section_nm2": {
+              "Value": null,
+              "Original_Values": "750 × 750 nm²",
+              "Note": "average cross-section"
+            }
+          }
+        }
+      }
+    },
+    {
+      "Item_ID": "02",
+      "Sample_ID": "Cu_single_crystal_nanoindent",
+      "Role": "Reference",
+      "Data_Nature": "Literature_Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [],
+      "Gradient_Material": false,
+      "Note": "Review example from Section 9.2.3, originally from Wang et al. [170], Zaafarani et al. [171,174,177]. Nanoindentation of {111}-oriented Cu single crystal.",
+      "Raw_Evidence_Span": [
+        "Section 9.2.3"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Cu (copper)",
+          "Material_Name_Raw": "{111}-oriented copper single crystal",
+          "Nominal_Composition": {
+            "Cu": "Balance"
+          }
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "A conical indenter with spherical tip was used for nanoindentation. 3-D EBSD via serial sectioning in SEM-FIB setup.",
+            "simplified": "Nanoindentation with conical indenter (spherical tip) on Cu single crystal; 3-D EBSD characterization"
+          },
+          "Equipment": [
+            {
+              "Name": "Nanoindenter (conical with spherical tip)",
+              "Category": "Testing"
+            },
+            {
+              "Name": "SEM-FIB setup",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "EBSD",
+              "Category": "Characterization"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Deformation-induced orientation patterns below nanoindents in a {111}-oriented copper single crystal. Neighboring crystalline zones with opposite rotation rates.",
+            "simplified": "{111}-oriented Cu single crystal; deformation-induced orientation patterns under nanoindent characterized by 3-D EBSD"
+          },
+          "Main_Phase": {
+            "Phase_Name": "copper single crystal",
+            "Crystal_Structure": "FCC"
+          },
+          "Texture_or_Orientation": {
+            "Surface_Orientation": {
+              "Value": null,
+              "Original_Values": "{111}"
+            }
+          }
+        }
+      }
+    },
+    {
+      "Item_ID": "03",
+      "Sample_ID": "Al_single_crystal_shear",
+      "Role": "Reference",
+      "Data_Nature": "Literature_Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [],
+      "Gradient_Material": false,
+      "Note": "Review example from Section 9.2.4, originally from Ma et al. [24,98,406]. Simple shear test on commercially pure Al single crystal.",
+      "Raw_Evidence_Span": [
+        "Section 9.2.4"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Al (aluminum)",
+          "Material_Name_Raw": "commercially pure aluminum single crystal",
+          "Nominal_Composition": {
+            "Al": "Balance"
+          }
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "Simple shear experiments on commercially pure aluminum single crystals. Non-local dislocation-based CPFE model implemented in MSC.Marc200x using HYPELA2 subroutine.",
+            "simplified": "Simple shear test on CP Al single crystal; CPFE simulation with non-local GND model in MSC.Marc"
+          },
+          "Equipment": [
+            {
+              "Name": "MSC.Marc200x",
+              "Category": "Software"
+            },
+            {
+              "Name": "DIC (digital image correlation)",
+              "Category": "Characterization"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Aluminum single crystal (3.1 mm long, 2.0 mm thick and 2.2 mm high) for a simple shear test.",
+            "simplified": "Al single crystal specimen, 3.1 × 2.0 × 2.2 mm"
+          },
+          "Main_Phase": {
+            "Phase_Name": "aluminum single crystal",
+            "Crystal_Structure": "FCC"
+          },
+          "Advanced_Quantitative_Features": {
+            "Specimen_Length_mm": {
+              "Value": 3.1,
+              "Original_Values": "3.1 mm"
+            },
+            "Specimen_Thickness_mm": {
+              "Value": 2.0,
+              "Original_Values": "2.0 mm"
+            },
+            "Specimen_Height_mm": {
+              "Value": 2.2,
+              "Original_Values": "2.2 mm"
+            }
+          }
+        }
+      }
+    },
+    {
+      "Item_ID": "04",
+      "Sample_ID": "Al_bicrystal_shear_7.4deg",
+      "Role": "Reference",
+      "Data_Nature": "Literature_Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [],
+      "Gradient_Material": false,
+      "Note": "Review example from Section 9.2.6, originally from Ma et al. [24,25]. Al bicrystal with 7.4° low-angle grain boundary under simple shear.",
+      "Raw_Evidence_Span": [
+        "Section 9.2.6"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Al (aluminum)",
+          "Material_Name_Raw": "aluminum bicrystal",
+          "Nominal_Composition": {
+            "Al": "Balance"
+          }
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "50% (frictionless) simple shear deformation of aluminum bicrystal with a small-angle grain boundary parallel to the shear plane.",
+            "simplified": "Frictionless simple shear to 50% strain on Al bicrystal; grain boundary parallel to shear plane"
+          },
+          "Equipment": [
+            {
+              "Name": "DIC (digital image correlation)",
+              "Category": "Characterization"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Aluminum bicrystal with a 7.4° low-angle grain boundary (3.1 mm long, 2.0 mm thick and 2.2 mm high) parallel to the shear plane.",
+            "simplified": "Al bicrystal, 3.1 × 2.0 × 2.2 mm, 7.4° low-angle GB parallel to shear plane"
+          },
+          "Main_Phase": {
+            "Phase_Name": "aluminum (bicrystal)",
+            "Crystal_Structure": "FCC"
+          },
+          "Advanced_Quantitative_Features": {
+            "GB_Misorientation_deg": {
+              "Value": 7.4,
+              "Original_Values": "7.4°"
+            },
+            "GB_Type": {
+              "Value": null,
+              "Original_Values": "low-angle grain boundary"
+            },
+            "Specimen_Length_mm": {
+              "Value": 3.1,
+              "Original_Values": "3.1 mm"
+            },
+            "Specimen_Thickness_mm": {
+              "Value": 2.0,
+              "Original_Values": "2.0 mm"
+            },
+            "Specimen_Height_mm": {
+              "Value": 2.2,
+              "Original_Values": "2.2 mm"
+            }
+          }
+        }
+      }
+    },
+    {
+      "Item_ID": "05",
+      "Sample_ID": "Al_bicrystal_shear_15.9deg",
+      "Role": "Reference",
+      "Data_Nature": "Literature_Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [],
+      "Gradient_Material": false,
+      "Note": "Review example from Section 9.2.6. Al bicrystal with 15.9° intermediate-angle grain boundary under simple shear.",
+      "Raw_Evidence_Span": [
+        "Section 9.2.6"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Al (aluminum)",
+          "Material_Name_Raw": "aluminum bicrystal",
+          "Nominal_Composition": {
+            "Al": "Balance"
+          }
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "50% (frictionless) simple shear deformation of aluminum bicrystal with an intermediate-angle grain boundary parallel to the shear plane.",
+            "simplified": "Frictionless simple shear to 50% strain on Al bicrystal; GB parallel to shear plane"
+          },
+          "Equipment": [
+            {
+              "Name": "DIC (digital image correlation)",
+              "Category": "Characterization"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Aluminum bicrystal with a 15.9° intermediate-angle grain boundary (3.1 mm long, 2.0 mm thick and 2.2 mm high).",
+            "simplified": "Al bicrystal, 3.1 × 2.0 × 2.2 mm, 15.9° intermediate-angle GB parallel to shear plane"
+          },
+          "Main_Phase": {
+            "Phase_Name": "aluminum (bicrystal)",
+            "Crystal_Structure": "FCC"
+          },
+          "Advanced_Quantitative_Features": {
+            "GB_Misorientation_deg": {
+              "Value": 15.9,
+              "Original_Values": "15.9°"
+            },
+            "GB_Type": {
+              "Value": null,
+              "Original_Values": "intermediate-angle grain boundary"
+            },
+            "Specimen_Length_mm": {
+              "Value": 3.1,
+              "Original_Values": "3.1 mm"
+            },
+            "Specimen_Thickness_mm": {
+              "Value": 2.0,
+              "Original_Values": "2.0 mm"
+            },
+            "Specimen_Height_mm": {
+              "Value": 2.2,
+              "Original_Values": "2.2 mm"
+            }
+          }
+        }
+      }
+    },
+    {
+      "Item_ID": "06",
+      "Sample_ID": "Al_bicrystal_shear_33.2deg",
+      "Role": "Reference",
+      "Data_Nature": "Literature_Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [],
+      "Gradient_Material": false,
+      "Note": "Review example from Section 9.2.6. Al bicrystal with 33.2° high-angle grain boundary under simple shear.",
+      "Raw_Evidence_Span": [
+        "Section 9.2.6"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Al (aluminum)",
+          "Material_Name_Raw": "aluminum bicrystal",
+          "Nominal_Composition": {
+            "Al": "Balance"
+          }
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "50% (frictionless) simple shear deformation of aluminum bicrystal with a high-angle grain boundary parallel to the shear plane.",
+            "simplified": "Frictionless simple shear to 50% strain on Al bicrystal; GB parallel to shear plane"
+          },
+          "Equipment": [
+            {
+              "Name": "DIC (digital image correlation)",
+              "Category": "Characterization"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Aluminum bicrystal with a 33.2° high-angle grain boundary (3.1 mm long, 2.0 mm thick and 2.2 mm high).",
+            "simplified": "Al bicrystal, 3.1 × 2.0 × 2.2 mm, 33.2° high-angle GB parallel to shear plane"
+          },
+          "Main_Phase": {
+            "Phase_Name": "aluminum (bicrystal)",
+            "Crystal_Structure": "FCC"
+          },
+          "Advanced_Quantitative_Features": {
+            "GB_Misorientation_deg": {
+              "Value": 33.2,
+              "Original_Values": "33.2°"
+            },
+            "GB_Type": {
+              "Value": null,
+              "Original_Values": "high-angle grain boundary"
+            },
+            "Specimen_Length_mm": {
+              "Value": 3.1,
+              "Original_Values": "3.1 mm"
+            },
+            "Specimen_Thickness_mm": {
+              "Value": 2.0,
+              "Original_Values": "2.0 mm"
+            },
+            "Specimen_Height_mm": {
+              "Value": 2.2,
+              "Original_Values": "2.2 mm"
+            }
+          }
+        }
+      }
+    },
+    {
+      "Item_ID": "07",
+      "Sample_ID": "TRIP_steel_austenite_ferrite",
+      "Role": "Reference",
+      "Data_Nature": "Literature_Computed",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "TRIP_or_Deformation_Transformation"
+      ],
+      "Gradient_Material": false,
+      "Note": "Review example from Section 9.2.10, originally from Tjahjanto et al. [82]. CPFE simulation of TRIP-assisted steel with austenite → BCT martensite transformation under uniaxial tension.",
+      "Raw_Evidence_Span": [
+        "Section 9.2.10"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "TRIP steel (multi-phase)",
+          "Material_Name_Raw": "TRIP-assisted steel with austenite carbon concentration of 1.4 wt.%",
+          "Nominal_Composition": {
+            "C_in_austenite": {
+              "Value": 1.4,
+              "Unit": "wt%",
+              "Original_Values": "1.4 wt.%"
+            },
+            "Note": "Carbon concentration in austenite phase only"
+          }
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "A cubic sample of size a³ representing a single grain of austenite surrounded by a matrix of ferrite. Uniaxial tensile loading with boundary conditions: normal displacement on external face 1 equals u₁ = 10⁻⁴at, time interval 0 < t ≤ 2000 s. Faces 2, 3, 5: zero normal displacement and tangential traction. Faces 4, 6: traction-free. Axial straining rate 10⁻⁴ s⁻¹.",
+            "simplified": "CPFE simulation of cubic unit cell (austenite grain in ferrite matrix); uniaxial tension at 10⁻⁴ s⁻¹, 300 K"
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Cubic sample of size a³ representing a single austenitic grain (~13% volume) surrounded by ferritic matrix. FCC austenite transforms to BCT martensite under loading.",
+            "simplified": "Unit cell: single austenite grain (~13 vol%) in ferrite matrix; FCC → BCT martensite transformation"
+          },
+          "Main_Phase": {
+            "Phase_Name": "austenite (FCC) + ferrite (BCC)",
+            "Crystal_Structure": "FCC + BCC (dual-phase)"
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "martensite",
+              "Crystal_Structure": "BCT",
+              "Note": "Transformation product of austenite, 24 possible transformation systems"
+            }
+          ],
+          "Advanced_Quantitative_Features": {
+            "Initial_Austenite_Volume_Fraction_pct": {
+              "Value": 13,
+              "Original_Values": "approximately 13% of the total volume"
+            },
+            "Number_Transformation_Systems": {
+              "Value": 24,
+              "Original_Values": "M = 24"
+            },
+            "Slip_Systems_FCC_Austenite": {
+              "Value": null,
+              "Original_Values": "N_A slip systems in fcc austenite",
+              "Note": "12 slip systems inferred from general FCC crystal plasticity discussion in the paper (e.g., Fig. 24 caption), not explicitly stated in Section 9.2.10"
+            },
+            "Slip_Systems_BCC_Ferrite": {
+              "Value": null,
+              "Original_Values": "{110}, {112}, {123} slip planes with <111>/2 Burgers vectors",
+              "Note": "Slip system information from Section 9.3.1 and general BCC crystal plasticity, not explicitly stated in Section 9.2.10"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Axial_Stress_Strain_Response",
+            "Test_Type": "simulation",
+            "Loading_Mode": "uniaxial tension",
+            "Test_Condition": {
+              "Test_Temperature_K": {
+                "Value": 300,
+                "Original_Values": "300 K"
+              },
+              "Strain_Rate_s1": {
+                "Value": 0.0001,
+                "Original_Values": "10⁻⁴ s⁻¹"
+              },
+              "Time_Interval_s": {
+                "Original_Values": "0 < t ≤ 2000 s"
+              }
+            },
+            "Data_Source": "text",
+            "Note": "Fig. 42 shows stress-strain curves and austenite volume fraction evolution for 4 orientation combinations (samples 1-4). No specific numerical values given in text; data only in figures."
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "08",
+      "Sample_ID": "Ti-18atpctNb_beta",
+      "Role": "Reference",
+      "Data_Nature": "Literature_Computed",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [],
+      "Gradient_Material": false,
+      "Note": "Review example from Section 9.3.1, originally from [416]. beta-Ti alloy with elastic constants from ab initio calculations. Used for rolling texture prediction.",
+      "Raw_Evidence_Span": [
+        "Section 9.3.1"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Ti alloy (beta-Ti)",
+          "Material_Name_Raw": "Ti-18 at.%Nb",
+          "Nominal_Composition": {
+            "Ti": "Balance",
+            "Nb": {
+              "Value": 18,
+              "Unit": "at%",
+              "Original_Values": "18 at.%"
+            }
+          }
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "Rolling texture simulation using plane-strain compression boundary conditions and random initial texture.",
+            "simplified": "CPFE rolling texture simulation via plane-strain compression; random initial texture"
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "β-Ti alloy with bcc crystal lattice structure. Slip systems: {110}, {112} and {123} slip planes, and <111>/2 Burgers vectors.",
+            "simplified": "BCC beta-Ti; slip on {110}<111>, {112}<111>, {123}<111>"
+          },
+          "Main_Phase": {
+            "Phase_Name": "beta-Ti (BCC)",
+            "Crystal_Structure": "BCC"
+          },
+          "Texture_or_Orientation": {
+            "Initial_Texture": {
+              "Original_Values": "random"
+            }
+          },
+          "Advanced_Quantitative_Features": {
+            "C11_GPa": {
+              "Value": 49.8,
+              "Original_Values": "C₁₁ = 49.8 GPa",
+              "Note": "from ab initio calculation"
+            },
+            "C12_GPa": {
+              "Value": 21.4,
+              "Original_Values": "C₁₂ = 21.4 GPa",
+              "Note": "from ab initio calculation"
+            },
+            "C44_GPa": {
+              "Value": 33.1,
+              "Original_Values": "C₄₄ = 33.1 GPa",
+              "Note": "from ab initio calculation"
+            },
+            "Zener_Anisotropy_Ratio": {
+              "Value": 2.4,
+              "Original_Values": "2C₄₄/(C₁₁-C₁₂) = 2.4"
+            }
+          }
+        }
+      }
+    },
+    {
+      "Item_ID": "09",
+      "Sample_ID": "Ti-31atpctNb_beta",
+      "Role": "Reference",
+      "Data_Nature": "Literature_Computed",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [],
+      "Gradient_Material": false,
+      "Note": "Review example from Section 9.3.1. Second beta-Ti alloy with different Nb content and different elastic anisotropy.",
+      "Raw_Evidence_Span": [
+        "Section 9.3.1"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Ti alloy (beta-Ti)",
+          "Material_Name_Raw": "Ti-31 at.%Nb",
+          "Nominal_Composition": {
+            "Ti": "Balance",
+            "Nb": {
+              "Value": 31,
+              "Unit": "at%",
+              "Original_Values": "31 at.%"
+            }
+          }
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "Rolling texture simulation using plane-strain compression boundary conditions and random initial texture.",
+            "simplified": "CPFE rolling texture simulation via plane-strain compression; random initial texture"
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "β-Ti alloy with bcc crystal lattice structure. Slip systems: {110}, {112} and {123} slip planes, and <111>/2 Burgers vectors.",
+            "simplified": "BCC beta-Ti; slip on {110}<111>, {112}<111>, {123}<111>"
+          },
+          "Main_Phase": {
+            "Phase_Name": "beta-Ti (BCC)",
+            "Crystal_Structure": "BCC"
+          },
+          "Texture_or_Orientation": {
+            "Initial_Texture": {
+              "Original_Values": "random"
+            }
+          },
+          "Advanced_Quantitative_Features": {
+            "C11_GPa": {
+              "Value": 72.6,
+              "Original_Values": "C₁₁ = 72.6 GPa",
+              "Note": "from ab initio calculation"
+            },
+            "C12_GPa": {
+              "Value": 31.1,
+              "Original_Values": "C₁₂ = 31.1 GPa",
+              "Note": "from ab initio calculation"
+            },
+            "C44_GPa": {
+              "Value": 19.3,
+              "Original_Values": "C₄₄ = 19.3 GPa",
+              "Note": "from ab initio calculation"
+            },
+            "Zener_Anisotropy_Ratio": {
+              "Value": 1.1,
+              "Original_Values": "2C₄₄/(C₁₁-C₁₂) = 1.1"
+            }
+          }
+        }
+      }
+    },
+    {
+      "Item_ID": "10",
+      "Sample_ID": "ferritic_stainless_steel_X6Cr17_cup",
+      "Role": "Reference",
+      "Data_Nature": "Literature_Computed",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [],
+      "Gradient_Material": false,
+      "Note": "Review example from Section 9.3.3. Ferritic stainless steel sheet (X6Cr17 / AISI 430) cup drawing simulation with texture gradient. Originally from [13,119,128,130,142]. Simulation results compared with experimental earing profiles.",
+      "Raw_Evidence_Span": [
+        "Section 9.3.3"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Fe-Cr stainless steel (ferritic)",
+          "Material_Name_Raw": "ferritic 17% Cr stainless steel (X6Cr17, AISI 430)",
+          "Nominal_Composition": {
+            "Fe": "Balance",
+            "Cr": {
+              "Value": 17,
+              "Unit": "wt%",
+              "Original_Values": "17% Cr"
+            }
+          }
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "Cup drawing simulation using texture component CPFE method (TCCP-FEM). Through-thickness texture gradient considered: 1/3 center layer (s=0.0) + 2/3 subsurface layer (s=0.8). Slip systems: {110}<111>, {112}<111>, {123}<111>.",
+            "simplified": "Cup drawing of ferritic stainless steel sheet via TCCP-FEM; texture gradient across thickness"
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Ferritic stainless steel sheet with through-thickness texture gradient. Center layer (s=0.0) with high {111}<112> component; subsurface layer (s=0.8) with weaker {111}<112> intensity.",
+            "simplified": "Ferritic BCC steel sheet; through-thickness texture gradient"
+          },
+          "Main_Phase": {
+            "Phase_Name": "ferrite",
+            "Crystal_Structure": "BCC"
+          },
+          "Texture_or_Orientation": {
+            "Through_Thickness_Gradient": {
+              "Center_Layer_s0": {
+                "Original_Values": "high {111}<112> orientation density"
+              },
+              "Subsurface_Layer_s08": {
+                "Original_Values": "relatively weak {111}<112> intensity"
+              }
+            }
+          },
+          "Advanced_Quantitative_Features": {
+            "Center_Layer_Volume_Fraction": {
+              "Value": 33.3,
+              "Unit": "%",
+              "Original_Values": "1/3 of the through-thickness volume"
+            },
+            "Subsurface_Layer_Volume_Fraction": {
+              "Value": 66.7,
+              "Unit": "%",
+              "Original_Values": "2/3 of the volume"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Earing_Profile",
+            "Test_Type": "cup drawing",
+            "Loading_Mode": "deep drawing",
+            "Data_Source": "text",
+            "Note": "Fig. 48 shows earing profile (ear height/average height). TCCP-FEM with gradient texture matches experiment better than Hill48 yield surface prediction. No specific numerical values in text."
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "11",
+      "Sample_ID": "Al_sheet_cube_texture_cup",
+      "Role": "Reference",
+      "Data_Nature": "Literature_Computed",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [],
+      "Gradient_Material": false,
+      "Note": "Review example from Section 9.3.3. Cube-textured aluminum sheet cup drawing. Simulation compared with experiment.",
+      "Raw_Evidence_Span": [
+        "Section 9.3.3"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Al (aluminum)",
+          "Material_Name_Raw": "cube-textured aluminum sheet",
+          "Nominal_Composition": {
+            "Al": "Balance"
+          }
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "Cup drawing of cube-textured aluminum sheet. No through-thickness texture gradients existed.",
+            "simplified": "Cup drawing of cube-textured Al sheet; uniform through-thickness texture"
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Cube-textured aluminum sheet with no through-thickness texture gradients.",
+            "simplified": "Cube-textured Al sheet; uniform texture"
+          },
+          "Main_Phase": {
+            "Phase_Name": "aluminum",
+            "Crystal_Structure": "FCC"
+          },
+          "Texture_or_Orientation": {
+            "Initial_Texture": {
+              "Original_Values": "cube texture"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Earing_Profile",
+            "Test_Type": "cup drawing",
+            "Loading_Mode": "deep drawing",
+            "Data_Source": "text",
+            "Note": "Fig. 49 shows comparison of earing profile between experiment and TCCP simulation. No specific numerical values in text."
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "12",
+      "Sample_ID": "Al_polycrystal_orientation_stability",
+      "Role": "Reference",
+      "Data_Nature": "Literature_Computed",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [],
+      "Gradient_Material": false,
+      "Note": "Review example from Section 9.2.1. CPFE study of orientation stability in aluminum under plane strain deformation. Originally from Roters et al. [92,119].",
+      "Raw_Evidence_Span": [
+        "Section 9.2.1"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Al (aluminum)",
+          "Material_Name_Raw": "aluminum (fcc, high stacking fault energy)",
+          "Nominal_Composition": {
+            "Al": "Balance"
+          }
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "CPFE simulations and classical homogenization theory for orientation stability under plane strain loading (rolling, mid-thickness layer). 50% plane strain deformation with 12 slip systems.",
+            "simplified": "CPFE plane strain simulation of Al polycrystal; 50% strain; 12 FCC slip systems"
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Three categories of orientation stability under plane strain: (1) stable orientations with negative divergence (e.g., Goss {011}<100> in fcc); (2) extremely unstable with positive divergence (e.g., rotated cube {001}<110> in fcc); (3) very small divergence. 2.5° initial orientation scatter tested with Coulomb friction coefficients 0.1 and 0.3.",
+            "simplified": "Orientation stability in FCC Al: stable (Goss), unstable (rotated cube), neutral under plane strain"
+          },
+          "Main_Phase": {
+            "Phase_Name": "aluminum polycrystal",
+            "Crystal_Structure": "FCC"
+          },
+          "Texture_or_Orientation": {
+            "Key_Orientations_Studied": {
+              "Original_Values": "{001}<110>, {011}<100> (Goss)"
+            }
+          },
+          "Advanced_Quantitative_Features": {
+            "Plane_Strain_Pct": {
+              "Value": 50,
+              "Original_Values": "50% plane strain deformation"
+            },
+            "Initial_Orientation_Scatter_deg": {
+              "Value": 2.5,
+              "Original_Values": "2.5° initial orientation scatter"
+            },
+            "Coulomb_Friction_Coefficient": {
+              "Value": null,
+              "Original_Values": "0.1 and 0.3"
+            },
+            "Number_Slip_Systems": {
+              "Value": 12,
+              "Original_Values": "12 slip systems"
+            }
+          }
+        }
+      }
+    },
+    {
+      "Item_ID": "13",
+      "Sample_ID": "Al_polycrystal_grain_size_dependence",
+      "Role": "Reference",
+      "Data_Nature": "Literature_Computed",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [],
+      "Gradient_Material": false,
+      "Note": "Review example from Section 9.2.7, originally from Evers et al. [20]. CPFE study of grain size dependent mechanical response of polycrystals using GND-enhanced hardening.",
+      "Raw_Evidence_Span": [
+        "Section 9.2.7"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Al (aluminum)",
+          "Material_Name_Raw": "aluminum polycrystal",
+          "Nominal_Composition": {
+            "Al": "Balance"
+          }
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "Local plastic strain-gradient-dependent crystal plasticity model for grain-size-dependent mechanical response. GND populations assigned to intragranular incompatible deformations at grain boundaries.",
+            "simplified": "CPFE with GND-enhanced hardening for grain size dependence study"
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Polycrystal modeled as statistical set of bicrystal aggregates. GND-enhanced hardening grows as crystal size drops.",
+            "simplified": "Polycrystalline Al; GND-enhanced hardening increases with decreasing grain size"
+          },
+          "Main_Phase": {
+            "Phase_Name": "aluminum polycrystal",
+            "Crystal_Structure": "FCC"
+          },
+          "Advanced_Quantitative_Features": {
+            "Grain_Size_14_um": {
+              "Original_Values": "average grain diameter 14 μm"
+            },
+            "Grain_Size_33_um": {
+              "Original_Values": "average grain diameter 33 μm"
+            },
+            "Grain_Size_220_um": {
+              "Original_Values": "average grain diameter 220 μm"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Stress_Strain_Response",
+            "Test_Type": "simulation",
+            "Loading_Mode": null,
+            "Data_Source": "text",
+            "Note": "Fig. 35 shows stress-strain curves for 14, 33 and 220 μm grain sizes. Smaller grains show higher flow stress. No specific numerical values in text."
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "14",
+      "Sample_ID": "Al_recrystallization_simulation",
+      "Role": "Reference",
+      "Data_Nature": "Literature_Computed",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [],
+      "Gradient_Material": false,
+      "Note": "Review example from Section 9.2.9, originally from Raabe and Becker [156,408]. CPFE simulation of recrystallization in deformed aluminum with columnar coarse grain structure.",
+      "Raw_Evidence_Span": [
+        "Section 9.2.9"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Al (aluminum)",
+          "Material_Name_Raw": "pure aluminum",
+          "Nominal_Composition": {
+            "Al": "Balance"
+          }
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "CPFE model simulated plane strain compression of aluminum with columnar coarse grain structure to total logarithmic strain of 0.434. Annealing at 800 K. Cellular automaton recrystallization simulation using CPFE results as input.",
+            "simplified": "Plane strain compression to log strain 0.434; annealing at 800 K; cellular automaton recrystallization"
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Columnar coarse grain aluminum. CPFE results mapped to cellular automaton lattice (spacing 61.9 μm). Max driving force ~1 MPa from stored dislocation density. High-angle GB activation energy for mobility 1.3 eV.",
+            "simplified": "Columnar coarse-grained Al; CA recrystallization simulation"
+          },
+          "Main_Phase": {
+            "Phase_Name": "aluminum (columnar grains)",
+            "Crystal_Structure": "FCC"
+          },
+          "Advanced_Quantitative_Features": {
+            "Total_Log_Strain": {
+              "Value": 0.434,
+              "Original_Values": "total logarithmic strain of 0.434"
+            },
+            "CA_Lattice_Spacing_um": {
+              "Value": 61.9,
+              "Original_Values": "lattice point spacing of 61.9 μm"
+            },
+            "Max_Driving_Force_MPa": {
+              "Value": 1,
+              "Original_Values": "maximum driving force ~1 MPa"
+            },
+            "Annealing_Temperature_K": {
+              "Value": 800,
+              "Original_Values": "annealing temperature was 800 K"
+            },
+            "GB_Mobility_Activation_Energy_eV": {
+              "Value": 1.3,
+              "Original_Values": "activation energy for the mobility of 1.3 eV (high-angle GB)"
+            }
+          }
+        }
+      }
+    },
+    {
+      "Item_ID": "15",
+      "Sample_ID": "beta_Ti_elastic_FFT_3alloys",
+      "Role": "Reference",
+      "Data_Nature": "Literature_Computed",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [],
+      "Gradient_Material": false,
+      "Note": "Review example from Section 9.3.1 / Fig. 46. CEFE (crystal elasticity finite element) predictions of elastic stress-strain distribution in 3 beta-Ti alloys with 200 grains and 32³ elements under uniaxial elastic tension. Similar FFT results shown in Fig. 51.",
+      "Raw_Evidence_Span": [
+        "Section 9.3.1"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Ti alloys (beta-Ti)",
+          "Material_Name_Raw": "three β-Ti alloys (including Ti-18 at.%Nb and Ti-31 at.%Nb)",
+          "Nominal_Composition": {
+            "Note": "See Items 08 and 09 for individual alloy compositions; third alloy composition not specified in text"
+          }
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "Randomly textured polycrystalline aggregate of 200 grains and 32×32×32 elements subjected to unidirectional purely elastic tensile load.",
+            "simplified": "Elastic FEM and FFT simulation on 200-grain RVE (32³ elements) under uniaxial tension"
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Randomly textured polycrystalline aggregates, 200 grains, 32×32×32 elements/FFT points. Increasing elastic anisotropy (Zener ratio) leads to larger spread in stress-strain distribution.",
+            "simplified": "200-grain random polycrystal RVE; elastic anisotropy effect on internal stress heterogeneity"
+          },
+          "Main_Phase": {
+            "Phase_Name": "beta-Ti alloys",
+            "Crystal_Structure": "BCC"
+          },
+          "Texture_or_Orientation": {
+            "Initial_Texture": {
+              "Original_Values": "random"
+            }
+          },
+          "Advanced_Quantitative_Features": {
+            "Number_of_Grains": {
+              "Value": 200,
+              "Original_Values": "200 grains"
+            },
+            "Mesh_Resolution": {
+              "Original_Values": "32×32×32 elements/FFT points"
+            },
+            "Zener_Ratio_Alloy1": {
+              "Value": 2.4,
+              "Note": "Ti-18 at.%Nb, from ab initio"
+            },
+            "Zener_Ratio_Alloy2": {
+              "Value": 1.1,
+              "Note": "Ti-31 at.%Nb, from ab initio"
+            }
+          }
+        }
+      }
+    },
+    {
+      "Item_ID": "16",
+      "Sample_ID": "low_carbon_steel_virtual_testing",
+      "Role": "Reference",
+      "Data_Nature": "Literature_Computed",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [],
+      "Gradient_Material": false,
+      "Note": "Review example from Section 9.3.4. CPFE-based virtual material testing for stamping simulation using RVE approach on low-carbon steel. Originally from [217].",
+      "Raw_Evidence_Span": [
+        "Section 9.3.4"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "low-carbon steel",
+          "Material_Name_Raw": "low-carbon steel grade",
+          "Nominal_Composition": {
+            "Fe": "Balance"
+          }
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "CPFE method used for virtual material testing using RVE approach. Parameters of empirical yield surface function calibrated from CPFE predictions. Commercial stamping part simulated.",
+            "simplified": "CPFE virtual testing via RVE; yield surface calibration; stamping simulation"
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Low-carbon steel grade represented by RVE with crystallographic texture for virtual mechanical testing.",
+            "simplified": "Low-carbon steel RVE for virtual yield surface calibration"
+          },
+          "Main_Phase": {
+            "Phase_Name": "ferrite-based steel",
+            "Crystal_Structure": "BCC"
+          }
+        }
+      }
+    }
+  ]
+}

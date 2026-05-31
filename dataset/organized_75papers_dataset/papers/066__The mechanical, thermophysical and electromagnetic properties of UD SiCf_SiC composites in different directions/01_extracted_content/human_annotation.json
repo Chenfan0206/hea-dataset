@@ -1,0 +1,260 @@
+[
+    {
+        "Paper_Metadata": {
+            "Paper_Title": "The mechanical, thermophysical and electromagnetic properties of UD SiCf/SiC composites in different directions",
+            "DOI": "10.1016/j.jeurceramsoc.2022.01.016"
+        },
+        "items": [
+            {
+                "Sample_ID": "SS0",
+                "Gradient_Material": false,
+                "Gradient_Group_ID": null,
+                "Composition_Info": {
+                    "Role": "Target",
+                    "Alloy_Name_Raw": "UD SiCf/SiC composites with CVI BN interphase",
+                    "Nominal_Composition": {
+                        "Composition_Type": null,
+                        "Elements_Normalized": null
+                    },
+                    "Measured_Composition": {
+                        "Composition_Type": "vol%",
+                        "Elements_Normalized": {
+                            "SiC_fiber": 46.0,
+                            "SiC_matrix": 48.7,
+                            "pore": 5.3
+                        },
+                        "Measurement_Method": null
+                    },
+                    "Note": "Fiber volume fraction 46%, porosity 5.3%, density 2.3 g/cm³; reinforced by SiC fibers, matrix is PIP SiC, interphase is CVI BN"
+                },
+                "Process_Info": {
+                    "Process_Category": "Polymer infiltration-pyrolysis (PIP) combined with chemical vapor infiltration (CVI)",
+                    "Process_Text": {
+                        "original": "SiC fiber bundles were stacked in one direction, deposited BN interphase by CVI from BCl₃-NH₃-H₂-Ar systems for 30 h, then dipped into PCS solution by vacuum infiltration method and pyrolyzed at high temperature, repeated infiltration and pyrolysis cycles until dense composites were obtained",
+                        "simplified": "Unidirectional SiC fiber stacking; CVI BN interphase deposition (BCl₃-NH₃-H₂-Ar, 30 h); vacuum PIP with PCS solution, repeated infiltration-pyrolysis cycles to full densification"
+                    },
+                    "Equipment": null,
+                    "Key_Params": {
+                        "CVI_Time_h": 30.0,
+                        "Infiltration_Method": "vacuum infiltration",
+                        "Matrix_Precursor": "PCS solution"
+                    }
+                },
+                "Microstructure_Info": {
+                    "Microstructure_Text": {
+                        "original": "Unidirectional SiC fiber distribution, continuous BN interphase coated on fiber surface, SiC matrix filled the inter-fiber gaps, uniform pore distribution in the composite",
+                        "simplified": "Unidirectional aligned SiC fibers; continuous BN fiber coating; SiC matrix infiltration; uniform internal porosity"
+                    },
+                    "Main_Phase": "SiC",
+                    "Precipitates": [],
+                    "Porosity_pct": 5.3,
+                    "Relative_Density_pct": null,
+                    "Grain_Size_avg_um": null,
+                    "Precipitate_Size_avg_nm": null,
+                    "Advanced_Quantitative_Features": {}
+                },
+                "Properties_Info": [
+                    {
+                        "Property_Name": "Ultimate_Tensile_Strength",
+                        "Test_Condition": "Longitudinal direction tensile test",
+                        "Value_Numeric": null,
+                        "Value_Range": null,
+                        "Value_StdDev": null,
+                        "Unit": "MPa",
+                        "Test_Temperature_K": 298.15,
+                        "Strain_Rate_s1": null,
+                        "Tensile_Speed_mm_min": null,
+                        "Hardness_Load": null,
+                        "Hardness_Dwell_Time_s": null,
+                        "Data_Source": "text",
+                        "Test_Specimen": null,
+                        "Note": null
+                    },
+                    {
+                        "Property_Name": "Thermal_Conductivity",
+                        "Test_Condition": "Room temperature",
+                        "Value_Numeric": null,
+                        "Value_Range": null,
+                        "Value_StdDev": null,
+                        "Unit": "W/(m·K)",
+                        "Test_Temperature_K": 298.15,
+                        "Strain_Rate_s1": null,
+                        "Tensile_Speed_mm_min": null,
+                        "Hardness_Load": null,
+                        "Hardness_Dwell_Time_s": null,
+                        "Data_Source": "text",
+                        "Test_Specimen": null,
+                        "Note": null
+                    },
+                    {
+                        "Property_Name": "Flexural_Strength",
+                        "Test_Condition": "Three-point bending, parallel to SiC fiber axis",
+                        "Value_Numeric": 813.0,
+                        "Value_StdDev": 32.4,
+                        "Unit": "MPa",
+                        "Test_Temperature_K": 298.15,
+                        "Data_Source": "Table 2",
+                        "Test_Specimen": "SS0",
+                        "Note": "Fiber axis parallel to specimen long side"
+                    },
+                    {
+                        "Property_Name": "Fracture_Toughness",
+                        "Test_Condition": "SENB method, parallel to SiC fiber axis",
+                        "Value_Numeric": 26.1,
+                        "Value_StdDev": 2.9,
+                        "Unit": "MPa·m^(1/2)",
+                        "Test_Temperature_K": 298.15,
+                        "Data_Source": "Table 2",
+                        "Test_Specimen": "SS0",
+                        "Note": "Fiber axis parallel to specimen long side"
+                    }
+                ]
+            },
+            {
+                "Sample_ID": "SS90",
+                "Gradient_Material": false,
+                "Gradient_Group_ID": null,
+                "Composition_Info": {
+                    "Role": "Target",
+                    "Alloy_Name_Raw": "UD SiCf/SiC composites with CVI BN interphase",
+                    "Nominal_Composition": {
+                        "Composition_Type": null,
+                        "Elements_Normalized": null
+                    },
+                    "Measured_Composition": {
+                        "Composition_Type": "vol%",
+                        "Elements_Normalized": {
+                            "SiC_fiber": 46.0,
+                            "SiC_matrix": 48.7,
+                            "pore": 5.3
+                        },
+                        "Measurement_Method": null
+                    },
+                    "Note": "Fiber volume fraction 46%, porosity 5.3%, density 2.3 g/cm³; reinforced by SiC fibers, matrix is PIP SiC, interphase is CVI BN"
+                },
+                "Process_Info": {
+                    "Process_Category": "Polymer infiltration-pyrolysis (PIP) combined with chemical vapor infiltration (CVI)",
+                    "Process_Text": {
+                        "original": "SiC fiber bundles were stacked in one direction, deposited BN interphase by CVI from BCl₃-NH₃-H₂-Ar systems for 30 h, then dipped into PCS solution by vacuum infiltration method and pyrolyzed at high temperature, repeated infiltration and pyrolysis cycles until dense composites were obtained",
+                        "simplified": "Unidirectional SiC fiber stacking; CVI BN interphase deposition (BCl₃-NH₃-H₂-Ar, 30 h); vacuum PIP with PCS solution, repeated infiltration-pyrolysis cycles to full densification"
+                    },
+                    "Equipment": null,
+                    "Key_Params": {
+                        "CVI_Time_h": 30.0,
+                        "Infiltration_Method": "vacuum infiltration",
+                        "Matrix_Precursor": "PCS solution"
+                    }
+                },
+                "Microstructure_Info": {
+                    "Microstructure_Text": {
+                        "original": "Unidirectional SiC fiber distribution, continuous BN interphase coated on fiber surface, SiC matrix filled the inter-fiber gaps, uniform pore distribution in the composite",
+                        "simplified": "Unidirectional aligned SiC fibers; continuous BN fiber coating; SiC matrix infiltration; uniform internal porosity"
+                    },
+                    "Main_Phase": "SiC",
+                    "Precipitates": [],
+                    "Porosity_pct": 5.3,
+                    "Relative_Density_pct": null,
+                    "Grain_Size_avg_um": null,
+                    "Precipitate_Size_avg_nm": null,
+                    "Advanced_Quantitative_Features": {}
+                },
+                "Properties_Info": [
+                    {
+                        "Property_Name": "Flexural_Strength",
+                        "Test_Condition": "Three-point bending, perpendicular to SiC fiber axis",
+                        "Value_Numeric": 36.6,
+                        "Value_StdDev": 6.9,
+                        "Unit": "MPa",
+                        "Test_Temperature_K": 298.15,
+                        "Data_Source": "Table 2",
+                        "Test_Specimen": "SS90",
+                        "Note": "Fiber axis perpendicular to specimen long side"
+                    },
+                    {
+                        "Property_Name": "Fracture_Toughness",
+                        "Test_Condition": "SENB method, perpendicular to SiC fiber axis",
+                        "Value_Numeric": 0.9,
+                        "Value_StdDev": 0.5,
+                        "Unit": "MPa·m^(1/2)",
+                        "Test_Temperature_K": 298.15,
+                        "Data_Source": "Table 2",
+                        "Test_Specimen": "SS90",
+                        "Note": "Fiber axis perpendicular to specimen long side"
+                    }
+                ]
+            },
+            {
+                "Sample_ID": "PDC SiC",
+                "Gradient_Material": false,
+                "Gradient_Group_ID": null,
+                "Composition_Info": {
+                    "Role": "Reference",
+                    "Alloy_Name_Raw": "Polymer-derived SiC bulk ceramic",
+                    "Nominal_Composition": {
+                        "Composition_Type": null,
+                        "Elements_Normalized": null
+                    },
+                    "Measured_Composition": {
+                        "Composition_Type": "vol%",
+                        "Elements_Normalized": {
+                            "SiC_matrix": 94.7,
+                            "pore": 5.3
+                        },
+                        "Measurement_Method": null
+                    },
+                    "Note": "Fiber free, porosity 5.3%, density 2.1 g/cm³; prepared by same PIP process as matrix"
+                },
+                "Process_Info": {
+                    "Process_Category": "Polymer infiltration-pyrolysis (PIP)",
+                    "Process_Text": {
+                        "original": "PCS solution vacuum infiltration and pyrolysis at 900 °C in Ar, repeated cycles to full densification",
+                        "simplified": "Vacuum PIP with PCS solution; pyrolysis at 900 °C in Ar; repeated cycles to full densification"
+                    },
+                    "Equipment": null,
+                    "Key_Params": {
+                        "Pyrolysis_Temperature_C": 900,
+                        "Infiltration_Method": "vacuum infiltration",
+                        "Matrix_Precursor": "PCS solution"
+                    }
+                },
+                "Microstructure_Info": {
+                    "Microstructure_Text": {
+                        "original": "Uniform pore distribution, no fiber, homogeneous SiC matrix",
+                        "simplified": "Fiber-free; uniform porosity; homogeneous PIP SiC matrix"
+                    },
+                    "Main_Phase": "SiC",
+                    "Precipitates": [],
+                    "Porosity_pct": 5.3,
+                    "Relative_Density_pct": null,
+                    "Grain_Size_avg_um": null,
+                    "Precipitate_Size_avg_nm": null,
+                    "Advanced_Quantitative_Features": {}
+                },
+                "Properties_Info": [
+                    {
+                        "Property_Name": "Flexural_Strength",
+                        "Test_Condition": "Three-point bending",
+                        "Value_Numeric": 119.0,
+                        "Value_StdDev": 13.6,
+                        "Unit": "MPa",
+                        "Test_Temperature_K": 298.15,
+                        "Data_Source": "Table 2",
+                        "Test_Specimen": "PDC SiC",
+                        "Note": "Bulk SiC ceramic reference"
+                    },
+                    {
+                        "Property_Name": "Fracture_Toughness",
+                        "Test_Condition": "SENB method",
+                        "Value_Numeric": 2.5,
+                        "Value_StdDev": 0.3,
+                        "Unit": "MPa·m^(1/2)",
+                        "Test_Temperature_K": 298.15,
+                        "Data_Source": "Table 2",
+                        "Test_Specimen": "PDC SiC",
+                        "Note": "Bulk SiC ceramic reference"
+                    }
+                ]
+            }
+        ]
+    }
+]

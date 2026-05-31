@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Local secrets
+.env
+*.env
+!.env.example
+
+# OS/editor metadata
+.DS_Store
+._*
+Thumbs.db
+.vscode/
+.idea/
+
+# Runtime outputs
+logs/
+tmp/
+temp/
+*.log
+
+# Archive scratch files
+__MACOSX/

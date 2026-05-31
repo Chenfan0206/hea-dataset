@@ -1,0 +1,1594 @@
+{
+"Paper_Metadata": {
+"Paper_Title": "The crack formation, propagation and healing mechanisms of plasma sprayed multi-layer thermal/environmental barrier coatings during heat treatment",
+"DOI": "10.1016/j.jeurceramsoc.2025.117793"
+},
+"items": [
+{
+"Sample_ID": "Target-TEBC-01",
+"Gradient_Material": false,
+"Gradient_Group_ID": null,
+"Composition_Info": {
+"Role": "Target",
+"Alloy_Name_Raw": "Si/Yb2Si2O7-Yb2SiO5/Yb2SiO5/LaMgAl11O19 multi-layer thermal/environmental barrier coating on SiCf/SiC",
+"Nominal_Composition": {
+"Composition_Type": null,
+"Elements_Normalized": null
+},
+"Measured_Composition": {
+"Composition_Type": null,
+"Elements_Normalized": null,
+"Measurement_Method": null
+},
+"Note": "Multi-layer TEBC architecture consisting of Si bond coat, Yb2Si2O7-Yb2SiO5 mixed layer, Yb2SiO5 layer, and LaMgAl11O19 top layer on SiCf/SiC substrate."
+},
+"Process_Info": {
+"Process_Category": "Atmospheric plasma spraying plus post-heat treatment in air",
+"Process_Text": {
+"original": "Multi-layer Si/YbDS-YbMS/YbMS/LMA TEBCs was prepared on the surface of the SiCf/SiC by the method of atmospheric plasma spraying using the Multicoat Plasma Spray Unit (F4 gun, Multicoat, Oerlikon Metco, Switzerland). The sprayed powder is commercial Si feedstock (30–60 μm, Shanghai ST-NANO Science & Technology Co., Ltd), Yb2Si2O7-Yb2SiO5 feedstock (32–125 μm, Beijing Sunspraying New Materials Co., Ltd), Yb2SiO5 feedstock (32–125 μm, Beijing Sunspraying New Materials Co., Ltd) and self-synthesized LaMgAl11O19 feedstock with particle size of 32–125 μm. Before coating deposition, all SiCf/SiC substrates were sandblasted using 150 mesh corundum grits at 0.4 MPa for 30 s to remove SiC sealing layer and increase the surface roughness. Subsequently, the SiCf/SiC substrate was ultrasonically cleaned by deionized water and alcohol, and dried at 110 °C. The coated sample was heat treated at 950 °C, 1050 °C, 1200 °C, 1300 °C and 1350 °C for 10 h in air atmosphere, respectively. The heating rate and cooling rate of box furnace is about 5 °C/min.",
+"simplified": "APS-deposited Si/Yb2Si2O7-Yb2SiO5/Yb2SiO5/LaMgAl11O19 TEBC on SiCf/SiC using F4 plasma gun after substrate sandblasting, ultrasonic cleaning, and drying. Post-heat treatment was conducted in air at 950–1350 °C for 10 h with ~5 °C/min heating and cooling."
+},
+"Equipment": "Multicoat Plasma Spray Unit with F4 gun (Multicoat, Oerlikon Metco, Switzerland); box furnace; XRD Smart Lab (Rigaku, Japan); SEM EVO 10 (Zeiss, Germany); TG-DSC STA449F3 (Netzsch, Germany)",
+"Key_Params": {
+"Powder_Size_Si_um": "30-60",
+"Powder_Size_Yb2Si2O7_Yb2SiO5_um": "32-125",
+"Powder_Size_Yb2SiO5_um": "32-125",
+"Powder_Size_LaMgAl11O19_um": "32-125",
+"Laser_Power_Stage1_W": null,
+"Protective_Atmosphere": "Air",
+"Cooling_Medium": "Air",
+"Substrate_Sandblast_Pressure_MPa": 0.4,
+"Substrate_Sandblast_Time_s": 30.0,
+"Substrate_Drying_Temperature_K": 383.15,
+"Heat_Treatment_Temperature_K": "1223.15-1623.15",
+"Heat_Treatment_Time_h": 10.0,
+"Heating_Rate_C_min": 5.0,
+"Cooling_Rate_C_min": 5.0,
+"Primary_Gas_Ar_SLPM": 35.0,
+"Secondary_Gas_H2_SLPM": 12.0,
+"Feeding_Rate_pct": 6.0,
+"Si_Powder_Power_kW": 32.0,
+"Yb2Si2O7_Yb2SiO5_Powder_Power_kW": 36.0,
+"Yb2SiO5_Powder_Power_kW": 36.0,
+"LaMgAl11O19_Powder_Power_kW": 36.0,
+"Si_Layer_Thickness_um": 100.0,
+"Yb2Si2O7_Yb2SiO5_Layer_Thickness_um": 50.0,
+"Yb2SiO5_Layer_Thickness_um": 50.0,
+"LaMgAl11O19_Layer_Thickness_um": 100.0
+}
+},
+"Microstructure_Info": {
+"Microstructure_Text": {
+"original": "The overview microstructures of coating showed that the thickness of Si, YbDS-YbMS, YbMS and LMA coating is about 100 μm, 50 μm, 50 μm and 100 μm, respectively. Two kinds of microcracks including vertical crack and horizontal crack can be observed at YbDS-YbMS, YbMS and LMA coating after deposition. The shrinkage solidification of splat and CTE mismatch between coating and substrate produced residual stress during coating deposition, which formed microcracks in the coating to release stress. During heat treatment, vertical cracks formed first in the LMA layer, then deflected and bridged with cracks in the YbMS layer, while crack bifurcation occurred in the YbDS-YbMS layer. The Si bond coat maintained good bonding to the SiCf/SiC substrate and vertical cracks generally terminated at the Si surface, although slight oxidation-induced interfacial microcracks appeared at 1350 °C.",
+"simplified": "The TEBC had an approximate thickness sequence of 100/50/50/100 μm for Si/Yb2Si2O7-Yb2SiO5/Yb2SiO5/LMA. As-deposited ceramic layers contained vertical and horizontal cracks. Heat treatment caused crack bridging from LMA into YbMS, bifurcation in the Yb2Si2O7-Yb2SiO5 layer, and crack termination at the Si bond coat."
+},
+"Main_Phase": null,
+"Precipitates": [],
+"Porosity_pct": null,
+"Relative_Density_pct": null,
+"Grain_Size_avg_um": null,
+"Precipitate_Size_avg_nm": null,
+"Advanced_Quantitative_Features": {
+"Total_Ceramic_Thickness_um": 300.0
+}
+},
+"Properties_Info": [
+{
+"Property_Name": "Optimized_Heat_Treatment_Temperature",
+"Test_Condition": "Post-process heat treatment in air for 10 h",
+"Value_Numeric": 1473.15,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "K",
+"Test_Temperature_K": 1473.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": "APS multi-layer TEBC on SiCf/SiC",
+"Note": "The paper states that the optimized heat treatment is about 1200 °C because the ratio of crack width to porosity is lower than at other temperatures and vertical cracks terminated within the Yb2Si2O7-Yb2SiO5 layer."
+}
+]
+},
+{
+"Sample_ID": "Target-Si-01",
+"Gradient_Material": false,
+"Gradient_Group_ID": null,
+"Composition_Info": {
+"Role": "Target",
+"Alloy_Name_Raw": "Si bond coat",
+"Nominal_Composition": {
+"Composition_Type": "at%",
+"Elements_Normalized": {
+"Si": 100.0
+}
+},
+"Measured_Composition": {
+"Composition_Type": null,
+"Elements_Normalized": null,
+"Measurement_Method": null
+},
+"Note": null
+},
+"Process_Info": {
+"Process_Category": "Atmospheric plasma spraying plus post-heat treatment",
+"Process_Text": {
+"original": "Commercial Si feedstock (30–60 μm, Shanghai ST-NANO Science & Technology Co., Ltd) was plasma sprayed onto SiCf/SiC substrate using the Multicoat Plasma Spray Unit with F4 gun. The APS deposition parameters for the Si coating were powder power 32 kW, primary gas Ar 35 SLPM, secondary gas H2 12 SLPM, and feeding rate 6%. The coated samples were then heat treated at 950 °C, 1050 °C, 1200 °C, 1300 °C and 1350 °C for 10 h in air atmosphere. TG-DSC testing of Si coating was performed in argon from room temperature to 1350 °C at 10 °C/min.",
+"simplified": "APS Si bond coat deposited with 32 kW, Ar/H2 = 35/12 SLPM, and 6% feed rate. Post-heat treatment was 950–1350 °C for 10 h in air; TG-DSC for Si was run in argon to 1350 °C at 10 °C/min."
+},
+"Equipment": "Multicoat Plasma Spray Unit with F4 gun; TG-DSC STA449F3 (Netzsch, Germany)",
+"Key_Params": {
+"Powder_Size_avg_um": "30-60",
+"Layer_Thickness_um": 100.0,
+"Protective_Atmosphere": "Air",
+"TG_DSC_Atmosphere": "Argon",
+"TG_DSC_Heating_Rate_C_min": 10.0,
+"Heat_Treatment_Temperature_K": "1223.15-1623.15",
+"Heat_Treatment_Time_h": 10.0,
+"Primary_Gas_Ar_SLPM": 35.0,
+"Secondary_Gas_H2_SLPM": 12.0,
+"Feeding_Rate_pct": 6.0,
+"Powder_Power_kW": 32.0
+}
+},
+"Microstructure_Info": {
+"Microstructure_Text": {
+"original": "A good interfacial bonding can be observed at the interface between Si and YbDS-YbMS coating, and these vertical cracks terminated at the surface of Si coating. The Si bond coat provided excellent bonding strength between EBC system and SiCf/SiC, and no evident microcracks in ceramic coating were observed at the Si bond coat. This is due to the melting point of Si is about 1414 °C, which has better melting state and crystalline. Furthermore, the CTE of Si is lower than that of SiCf/SiC, indicating the compressive stress was formed at the Si bond coat and effectively restrain the crack formation. At 1300–1350 °C the vertical cracks still terminated at the Si surface, but at 1350 °C slight oxidation of Si caused micro-crack formation at the interface between Si layer and YbDS-YbMS layer.",
+"simplified": "The Si bond coat was dense and well bonded. Vertical cracks from upper ceramic layers generally terminated at the Si surface, indicating crack arrest at the Si layer. Slight oxidation-induced interfacial microcracking appeared only after 1350 °C heat treatment."
+},
+"Main_Phase": "Si",
+"Precipitates": [],
+"Porosity_pct": null,
+"Relative_Density_pct": null,
+"Grain_Size_avg_um": null,
+"Precipitate_Size_avg_nm": null,
+"Advanced_Quantitative_Features": {}
+},
+"Properties_Info": [
+{
+"Property_Name": "Initial_Crystallization_Temperature",
+"Test_Condition": "TG-DSC in argon from room temperature to 1350 °C at 10 °C/min",
+"Value_Numeric": 1024.15,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "K",
+"Test_Temperature_K": null,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": "Free-standing Si coating",
+"Note": "Weak exothermal peak at 751 °C attributed to crystallization of amorphous Si."
+},
+{
+"Property_Name": "Quenching_Stress",
+"Test_Condition": "As-deposited Si coating on SiCf/SiC, calculated using Eq. (1)",
+"Value_Numeric": 0.26,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "GPa",
+"Test_Temperature_K": null,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": "APS Si coating on SiCf/SiC",
+"Note": "Calculated using pure-phase parameters."
+}
+]
+},
+{
+"Sample_ID": "Target-YbDSYbMS-01",
+"Gradient_Material": false,
+"Gradient_Group_ID": null,
+"Composition_Info": {
+"Role": "Target",
+"Alloy_Name_Raw": "Yb2Si2O7-Yb2SiO5 mixed coating layer (YbDS-YbMS)",
+"Nominal_Composition": {
+"Composition_Type": null,
+"Elements_Normalized": null
+},
+"Measured_Composition": {
+"Composition_Type": null,
+"Elements_Normalized": null,
+"Measurement_Method": "XRD and XRD peak-intensity ratio"
+},
+"Note": "As-sprayed YbMS/YbDS phase ratio in the feedstock powder was about 0.17 estimated from the intensity ratio of the main peaks of YbMS (-402) and YbDS (021). Exact whole-layer elemental normalization was not reported."
+},
+"Process_Info": {
+"Process_Category": "Atmospheric plasma spraying plus post-heat treatment",
+"Process_Text": {
+"original": "Yb2Si2O7-Yb2SiO5 feedstock (32–125 μm, Beijing Sunspraying New Materials Co., Ltd) was atmospheric plasma sprayed using the Multicoat Plasma Spray Unit with F4 gun. The APS deposition parameters were powder power 36 kW, primary gas Ar 35 SLPM, secondary gas H2 12 SLPM, and feeding rate 6%. The layer was subsequently heat treated at 950 °C, 1050 °C, 1200 °C, 1300 °C and 1350 °C for 10 h in air atmosphere. TG-DSC testing of the YbDS-YbMS coating was conducted from room temperature to 1450 °C in air environment with a heating rate of 10 °C/min.",
+"simplified": "APS-deposited Yb2Si2O7-Yb2SiO5 mixed layer with 36 kW, Ar/H2 = 35/12 SLPM, and 6% feed rate. Post-heat treatment was 950–1350 °C for 10 h in air. TG-DSC was conducted in air to 1450 °C at 10 °C/min."
+},
+"Equipment": "Multicoat Plasma Spray Unit with F4 gun; TG-DSC STA449F3 (Netzsch, Germany); XRD Smart Lab (Rigaku, Japan)",
+"Key_Params": {
+"Powder_Size_avg_um": "32-125",
+"Layer_Thickness_um": 50.0,
+"Protective_Atmosphere": "Air",
+"Heat_Treatment_Temperature_K": "1223.15-1623.15",
+"Heat_Treatment_Time_h": 10.0,
+"TG_DSC_Heating_Rate_C_min": 10.0,
+"Primary_Gas_Ar_SLPM": 35.0,
+"Secondary_Gas_H2_SLPM": 12.0,
+"Feeding_Rate_pct": 6.0,
+"Powder_Power_kW": 36.0,
+"As_Sprayed_YbMS_to_YbDS_Peak_Intensity_Ratio": 0.17
+}
+},
+"Microstructure_Info": {
+"Microstructure_Text": {
+"original": "The YbDS-YbMS layer contained vertical cracks, horizontal cracks, bifurcated cracks, pores, and dark-contrast SiO2-rich pores caused by decomposition of YbDS particles. During heat treatment at 950–1050 °C, amorphous phase and metastable phases crystallized gradually. The layer contained β-Yb2Si2O7 and X1-Yb2SiO5 as well as metastable α-Yb2Si2O7 and X1-Yb2SiO5 after heat treatment at 950–1050 °C. At 1200 °C, the amorphous hump and metastable phases disappeared, and only β-Yb2Si2O7 and X2-Yb2SiO5 were observed. Mud cracks with different modes formed at 950 °C due to stress release; crack spheroidization was seen at 1050–1200 °C; partial crack healing was observed after 1200–1350 °C, but large black SiO2-rich pores persisted and were difficult to eliminate by solid-state sintering.",
+"simplified": "The Yb2Si2O7-Yb2SiO5 mixed layer was a crack-prone, decomposed mixed silicate layer with dark SiO2-rich pores. Heat treatment progressively crystallized amorphous material and transformed metastable phases; by 1200 °C the layer mainly contained β-Yb2Si2O7 and X2-Yb2SiO5. Crack bifurcation and spheroidization occurred, but large SiO2-rich pores remained."
+},
+"Main_Phase": "Yb2Si2O7 + Yb2SiO5",
+"Precipitates": [],
+"Porosity_pct": 7.23,
+"Relative_Density_pct": null,
+"Grain_Size_avg_um": null,
+"Precipitate_Size_avg_nm": null,
+"Advanced_Quantitative_Features": {
+"As_Deposited_Crack_Width_um": 0.45
+}
+},
+"Properties_Info": [
+{
+"Property_Name": "Initial_Crystallization_Temperature",
+"Test_Condition": "TG-DSC in air from room temperature to 1450 °C at 10 °C/min",
+"Value_Numeric": 1324.15,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "K",
+"Test_Temperature_K": null,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": "Free-standing Yb2Si2O7-Yb2SiO5 mixed coating",
+"Note": "First exothermal peak at 1051 °C attributed mainly to crystallization of amorphous phase."
+},
+{
+"Property_Name": "Second_Exothermal_Peak_Temperature",
+"Test_Condition": "TG-DSC in air from room temperature to 1450 °C at 10 °C/min",
+"Value_Numeric": 1484.15,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "K",
+"Test_Temperature_K": null,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": "Free-standing Yb2Si2O7-Yb2SiO5 mixed coating",
+"Note": "Second exothermal peak at 1211 °C attributed to secondary crystallization and phase transformation."
+},
+{
+"Property_Name": "Quenching_Stress",
+"Test_Condition": "As-deposited YbDS coating on SiCf/SiC, calculated using Eq. (1)",
+"Value_Numeric": 0.35,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "GPa",
+"Test_Temperature_K": null,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": "APS YbDS-containing layer on SiCf/SiC",
+"Note": "Calculated using pure-phase parameters."
+},
+{
+"Property_Name": "Porosity_pct",
+"Test_Condition": "As-deposited APS Yb2Si2O7-Yb2SiO5 mixed layer",
+"Value_Numeric": 7.23,
+"Value_Range": null,
+"Value_StdDev": 2.18,
+"Unit": "%",
+"Test_Temperature_K": null,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "image",
+"Test_Specimen": "Cross-sectional coating image analysis",
+"Note": null
+},
+{
+"Property_Name": "Crack_Width",
+"Test_Condition": "As-deposited APS Yb2Si2O7-Yb2SiO5 mixed layer",
+"Value_Numeric": 0.45,
+"Value_Range": null,
+"Value_StdDev": 0.22,
+"Unit": "μm",
+"Test_Temperature_K": null,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "image",
+"Test_Specimen": "Cross-sectional coating image analysis",
+"Note": null
+},
+{
+"Property_Name": "Porosity_pct",
+"Test_Condition": "Heat treatment in air at 950 °C for 10 h",
+"Value_Numeric": 7.15,
+"Value_Range": null,
+"Value_StdDev": 1.09,
+"Unit": "%",
+"Test_Temperature_K": 1223.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "image",
+"Test_Specimen": "Cross-sectional coating image analysis",
+"Note": null
+},
+{
+"Property_Name": "Crack_Width",
+"Test_Condition": "Heat treatment in air at 950 °C for 10 h",
+"Value_Numeric": 1.03,
+"Value_Range": null,
+"Value_StdDev": 0.28,
+"Unit": "μm",
+"Test_Temperature_K": 1223.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "image",
+"Test_Specimen": "Cross-sectional coating image analysis",
+"Note": "Mud cracks with different modes were observed."
+},
+{
+"Property_Name": "Porosity_pct",
+"Test_Condition": "Heat treatment in air at 1050 °C for 10 h",
+"Value_Numeric": 6.33,
+"Value_Range": null,
+"Value_StdDev": 0.93,
+"Unit": "%",
+"Test_Temperature_K": 1323.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "image",
+"Test_Specimen": "Cross-sectional coating image analysis",
+"Note": null
+},
+{
+"Property_Name": "Crack_Width",
+"Test_Condition": "Heat treatment in air at 1050 °C for 10 h",
+"Value_Numeric": 1.62,
+"Value_Range": null,
+"Value_StdDev": 0.78,
+"Unit": "μm",
+"Test_Temperature_K": 1323.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "image",
+"Test_Specimen": "Cross-sectional coating image analysis",
+"Note": "Crack spheroidization observed."
+},
+{
+"Property_Name": "Porosity_pct",
+"Test_Condition": "Heat treatment in air at 1200 °C for 10 h",
+"Value_Numeric": 4.68,
+"Value_Range": null,
+"Value_StdDev": 1.37,
+"Unit": "%",
+"Test_Temperature_K": 1473.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "image",
+"Test_Specimen": "Cross-sectional coating image analysis",
+"Note": "Decrease attributed to phase transformation and sintering."
+},
+{
+"Property_Name": "Crack_Width",
+"Test_Condition": "Heat treatment in air at 1200 °C for 10 h",
+"Value_Numeric": 0.96,
+"Value_Range": null,
+"Value_StdDev": 0.57,
+"Unit": "μm",
+"Test_Temperature_K": 1473.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "image",
+"Test_Specimen": "Cross-sectional coating image analysis",
+"Note": "Smallest crack-width regime among the heat-treated conditions shown in the figure."
+},
+{
+"Property_Name": "Porosity_pct",
+"Test_Condition": "Heat treatment in air at 1300 °C for 10 h",
+"Value_Numeric": 4.75,
+"Value_Range": null,
+"Value_StdDev": 1.24,
+"Unit": "%",
+"Test_Temperature_K": 1573.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "image",
+"Test_Specimen": "Cross-sectional coating image analysis",
+"Note": null
+},
+{
+"Property_Name": "Crack_Width",
+"Test_Condition": "Heat treatment in air at 1300 °C for 10 h",
+"Value_Numeric": 0.95,
+"Value_Range": null,
+"Value_StdDev": 0.54,
+"Unit": "μm",
+"Test_Temperature_K": 1573.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "image",
+"Test_Specimen": "Cross-sectional coating image analysis",
+"Note": null
+},
+{
+"Property_Name": "Porosity_pct",
+"Test_Condition": "Heat treatment in air at 1350 °C for 10 h",
+"Value_Numeric": 5.29,
+"Value_Range": null,
+"Value_StdDev": 1.63,
+"Unit": "%",
+"Test_Temperature_K": 1623.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "image",
+"Test_Specimen": "Cross-sectional coating image analysis",
+"Note": null
+},
+{
+"Property_Name": "Crack_Width",
+"Test_Condition": "Heat treatment in air at 1350 °C for 10 h",
+"Value_Numeric": 0.90,
+"Value_Range": null,
+"Value_StdDev": 0.53,
+"Unit": "μm",
+"Test_Temperature_K": 1623.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "image",
+"Test_Specimen": "Cross-sectional coating image analysis",
+"Note": "Large SiO2-rich pores still remained."
+}
+]
+},
+{
+"Sample_ID": "Target-YbMS-01",
+"Gradient_Material": false,
+"Gradient_Group_ID": null,
+"Composition_Info": {
+"Role": "Target",
+"Alloy_Name_Raw": "Yb2SiO5 coating layer",
+"Nominal_Composition": {
+"Composition_Type": "at%",
+"Elements_Normalized": {
+"Yb": 25.0,
+"Si": 12.5,
+"O": 62.5
+}
+},
+"Measured_Composition": {
+"Composition_Type": null,
+"Elements_Normalized": null,
+"Measurement_Method": "XRD"
+},
+"Note": "Commercial Yb2SiO5 feedstock was reported to be pure Yb2SiO5 without other impurities."
+},
+"Process_Info": {
+"Process_Category": "Atmospheric plasma spraying plus post-heat treatment",
+"Process_Text": {
+"original": "Commercial Yb2SiO5 feedstock (32–125 μm, Beijing Sunspraying New Materials Co., Ltd) was atmospheric plasma sprayed using the Multicoat Plasma Spray Unit with F4 gun. The APS deposition parameters were powder power 36 kW, primary gas Ar 35 SLPM, secondary gas H2 12 SLPM, and feeding rate 6%. The layer was subsequently heat treated at 950 °C, 1050 °C, 1200 °C, 1300 °C and 1350 °C for 10 h in air atmosphere. TG-DSC testing of the YbMS coating was conducted from room temperature to 1450 °C in air environment with a heating rate of 10 °C/min.",
+"simplified": "APS Yb2SiO5 coating deposited with 36 kW, Ar/H2 = 35/12 SLPM, and 6% feed rate. Post-heat treatment was 950–1350 °C for 10 h in air. TG-DSC was conducted in air to 1450 °C at 10 °C/min."
+},
+"Equipment": "Multicoat Plasma Spray Unit with F4 gun; TG-DSC STA449F3 (Netzsch, Germany); XRD Smart Lab (Rigaku, Japan)",
+"Key_Params": {
+"Powder_Size_avg_um": "32-125",
+"Layer_Thickness_um": 50.0,
+"Protective_Atmosphere": "Air",
+"Heat_Treatment_Temperature_K": "1223.15-1623.15",
+"Heat_Treatment_Time_h": 10.0,
+"TG_DSC_Heating_Rate_C_min": 10.0,
+"Primary_Gas_Ar_SLPM": 35.0,
+"Secondary_Gas_H2_SLPM": 12.0,
+"Feeding_Rate_pct": 6.0,
+"Powder_Power_kW": 36.0
+}
+},
+"Microstructure_Info": {
+"Microstructure_Text": {
+"original": "The YbMS layer contained vertical cracks, horizontal cracks, pores, and Yb2O3-rich regions generated due to YbMS decomposition during plasma spraying. At 950–1050 °C, amorphous phase mostly crystallized and X1-YbMS metastable phase was present. After heat treatment at 1200 °C, all X1-YbMS transformed into X2-YbMS phase and the YbMS coating was composed of YbMS and Yb2O3 phases. Vertical cracks in the LMA layer bridged with cracks in the YbMS layer during heat treatment. At higher temperatures the YbMS layer densified by viscous flow and solid-state sintering, but crack opening still occurred due to residual stress release and thermal mismatch stress.",
+"simplified": "The Yb2SiO5 layer was a cracked plasma-sprayed silicate layer with Yb2O3 secondary phase caused by decomposition. It crystallized during heat treatment and transformed from X1-Yb2SiO5 to X2-Yb2SiO5 by 1200 °C. Densification occurred, but crack opening persisted under thermal mismatch stress."
+},
+"Main_Phase": "Yb2SiO5",
+"Precipitates": [
+{
+"Phase_Type": "Yb2O3",
+"Volume_Fraction_pct": null
+}
+],
+"Porosity_pct": 6.26,
+"Relative_Density_pct": null,
+"Grain_Size_avg_um": null,
+"Precipitate_Size_avg_nm": null,
+"Advanced_Quantitative_Features": {
+"As_Deposited_Crack_Width_um": 0.45
+}
+},
+"Properties_Info": [
+{
+"Property_Name": "Initial_Crystallization_Temperature",
+"Test_Condition": "TG-DSC in air from room temperature to 1450 °C at 10 °C/min",
+"Value_Numeric": 1236.15,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "K",
+"Test_Temperature_K": null,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": "Free-standing Yb2SiO5 coating",
+"Note": "First exothermal peak at 963 °C attributed to crystallization of amorphous phase."
+},
+{
+"Property_Name": "Second_Exothermal_Peak_Temperature",
+"Test_Condition": "TG-DSC in air from room temperature to 1450 °C at 10 °C/min",
+"Value_Numeric": 1396.15,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "K",
+"Test_Temperature_K": null,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": "Free-standing Yb2SiO5 coating",
+"Note": "Second exothermal peak at 1123 °C attributed to secondary crystallization and phase transformation."
+},
+{
+"Property_Name": "Quenching_Stress",
+"Test_Condition": "As-deposited YbMS coating on SiCf/SiC, calculated using Eq. (1)",
+"Value_Numeric": 0.89,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "GPa",
+"Test_Temperature_K": null,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": "APS Yb2SiO5 coating on SiCf/SiC",
+"Note": "Calculated using pure-phase parameters."
+},
+{
+"Property_Name": "Porosity_pct",
+"Test_Condition": "As-deposited APS Yb2SiO5 layer",
+"Value_Numeric": 6.26,
+"Value_Range": null,
+"Value_StdDev": 1.63,
+"Unit": "%",
+"Test_Temperature_K": null,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "image",
+"Test_Specimen": "Cross-sectional coating image analysis",
+"Note": null
+},
+{
+"Property_Name": "Crack_Width",
+"Test_Condition": "As-deposited APS Yb2SiO5 layer",
+"Value_Numeric": 0.45,
+"Value_Range": null,
+"Value_StdDev": 0.18,
+"Unit": "μm",
+"Test_Temperature_K": null,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "image",
+"Test_Specimen": "Cross-sectional coating image analysis",
+"Note": null
+},
+{
+"Property_Name": "Porosity_pct",
+"Test_Condition": "Heat treatment in air at 950 °C for 10 h",
+"Value_Numeric": 5.37,
+"Value_Range": null,
+"Value_StdDev": 0.44,
+"Unit": "%",
+"Test_Temperature_K": 1223.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "image",
+"Test_Specimen": "Cross-sectional coating image analysis",
+"Note": "Decrease attributed to capillarity-driven viscous flow of glass."
+},
+{
+"Property_Name": "Crack_Width",
+"Test_Condition": "Heat treatment in air at 950 °C for 10 h",
+"Value_Numeric": 0.99,
+"Value_Range": null,
+"Value_StdDev": 0.44,
+"Unit": "μm",
+"Test_Temperature_K": 1223.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "image",
+"Test_Specimen": "Cross-sectional coating image analysis",
+"Note": null
+},
+{
+"Property_Name": "Porosity_pct",
+"Test_Condition": "Heat treatment in air at 1050 °C for 10 h",
+"Value_Numeric": 4.33,
+"Value_Range": null,
+"Value_StdDev": 1.09,
+"Unit": "%",
+"Test_Temperature_K": 1323.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "image",
+"Test_Specimen": "Cross-sectional coating image analysis",
+"Note": null
+},
+{
+"Property_Name": "Crack_Width",
+"Test_Condition": "Heat treatment in air at 1050 °C for 10 h",
+"Value_Numeric": 1.25,
+"Value_Range": null,
+"Value_StdDev": 0.74,
+"Unit": "μm",
+"Test_Temperature_K": 1323.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "image",
+"Test_Specimen": "Cross-sectional coating image analysis",
+"Note": null
+},
+{
+"Property_Name": "Porosity_pct",
+"Test_Condition": "Heat treatment in air at 1200 °C for 10 h",
+"Value_Numeric": 2.09,
+"Value_Range": null,
+"Value_StdDev": 0.50,
+"Unit": "%",
+"Test_Temperature_K": 1473.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "image",
+"Test_Specimen": "Cross-sectional coating image analysis",
+"Note": "Densification promoted by solid-state sintering."
+},
+{
+"Property_Name": "Crack_Width",
+"Test_Condition": "Heat treatment in air at 1200 °C for 10 h",
+"Value_Numeric": 1.32,
+"Value_Range": null,
+"Value_StdDev": 0.91,
+"Unit": "μm",
+"Test_Temperature_K": 1473.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "image",
+"Test_Specimen": "Cross-sectional coating image analysis",
+"Note": null
+},
+{
+"Property_Name": "Porosity_pct",
+"Test_Condition": "Heat treatment in air at 1300 °C for 10 h",
+"Value_Numeric": 2.04,
+"Value_Range": null,
+"Value_StdDev": 0.57,
+"Unit": "%",
+"Test_Temperature_K": 1573.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "image",
+"Test_Specimen": "Cross-sectional coating image analysis",
+"Note": "Porosity no longer decreased significantly because closed-pore gas pressure counteracted surface tension."
+},
+{
+"Property_Name": "Crack_Width",
+"Test_Condition": "Heat treatment in air at 1300 °C for 10 h",
+"Value_Numeric": 1.53,
+"Value_Range": null,
+"Value_StdDev": 1.06,
+"Unit": "μm",
+"Test_Temperature_K": 1573.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "image",
+"Test_Specimen": "Cross-sectional coating image analysis",
+"Note": null
+},
+{
+"Property_Name": "Porosity_pct",
+"Test_Condition": "Heat treatment in air at 1350 °C for 10 h",
+"Value_Numeric": 2.19,
+"Value_Range": null,
+"Value_StdDev": 0.76,
+"Unit": "%",
+"Test_Temperature_K": 1623.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "image",
+"Test_Specimen": "Cross-sectional coating image analysis",
+"Note": null
+},
+{
+"Property_Name": "Crack_Width",
+"Test_Condition": "Heat treatment in air at 1350 °C for 10 h",
+"Value_Numeric": 1.46,
+"Value_Range": null,
+"Value_StdDev": 1.07,
+"Unit": "μm",
+"Test_Temperature_K": 1623.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "image",
+"Test_Specimen": "Cross-sectional coating image analysis",
+"Note": null
+}
+]
+},
+{
+"Sample_ID": "Target-LMA-01",
+"Gradient_Material": false,
+"Gradient_Group_ID": null,
+"Composition_Info": {
+"Role": "Target",
+"Alloy_Name_Raw": "LaMgAl11O19 coating layer",
+"Nominal_Composition": {
+"Composition_Type": "at%",
+"Elements_Normalized": {
+"La": 3.125,
+"Mg": 3.125,
+"Al": 34.375,
+"O": 59.375
+}
+},
+"Measured_Composition": {
+"Composition_Type": null,
+"Elements_Normalized": null,
+"Measurement_Method": "XRD"
+},
+"Note": "Self-synthesized LaMgAl11O19 feedstock; as-sprayed powder contained La2O3 phase."
+},
+"Process_Info": {
+"Process_Category": "Atmospheric plasma spraying plus post-heat treatment",
+"Process_Text": {
+"original": "Self-synthesized LaMgAl11O19 feedstock with particle size of 32–125 μm was atmospheric plasma sprayed using the Multicoat Plasma Spray Unit with F4 gun. The APS deposition parameters were powder power 36 kW, primary gas Ar 35 SLPM, secondary gas H2 12 SLPM, and feeding rate 6%. The layer was subsequently heat treated at 950 °C, 1050 °C, 1200 °C, 1300 °C and 1350 °C for 10 h in air atmosphere. TG-DSC testing of the LMA coating was conducted from room temperature to 1450 °C in air environment with a heating rate of 10 °C/min.",
+"simplified": "APS LaMgAl11O19 coating deposited with 36 kW, Ar/H2 = 35/12 SLPM, and 6% feed rate. Post-heat treatment was 950–1350 °C for 10 h in air. TG-DSC was conducted in air to 1450 °C at 10 °C/min."
+},
+"Equipment": "Multicoat Plasma Spray Unit with F4 gun; TG-DSC STA449F3 (Netzsch, Germany); XRD Smart Lab (Rigaku, Japan)",
+"Key_Params": {
+"Powder_Size_avg_um": "32-125",
+"Layer_Thickness_um": 100.0,
+"Protective_Atmosphere": "Air",
+"Heat_Treatment_Temperature_K": "1223.15-1623.15",
+"Heat_Treatment_Time_h": 10.0,
+"TG_DSC_Heating_Rate_C_min": 10.0,
+"Primary_Gas_Ar_SLPM": 35.0,
+"Secondary_Gas_H2_SLPM": 12.0,
+"Feeding_Rate_pct": 6.0,
+"Powder_Power_kW": 36.0
+}
+},
+"Microstructure_Info": {
+"Microstructure_Text": {
+"original": "The as-deposited LMA coating contained pores, un-melted particles and microcracks. During heat treatment, crystallization of amorphous phase caused volume shrinkage, and vertical cracks formed in the LMA coating. Crack spheroidization was observed. The amorphous phase, Al2O3 and LMA phase were found in the as-deposited LMA coating. At 950–1050 °C the amorphous phase content decreased by crystallization but was not fully eliminated. LaAlO3 was detected after heat treatment at 1050 °C. Al2O3 and LaAlO3 disappeared after heat treatment at 1300–1350 °C, while La2O3 second phase appeared. The LMA coating showed poor healing because of excellent sintering resistance associated with the magnetoplumbite structure and platelet-like hexagonal grains.",
+"simplified": "The LMA top coat was a porous, crack-prone, sintering-resistant magnetoplumbite ceramic. Heat treatment crystallized amorphous material and generated vertical cracks by shrinkage. Secondary phases evolved from Al2O3/LaAlO3 to La2O3 at higher temperatures."
+},
+"Main_Phase": "LaMgAl11O19",
+"Precipitates": [
+{
+"Phase_Type": "La2O3",
+"Volume_Fraction_pct": null
+},
+{
+"Phase_Type": "LaAlO3",
+"Volume_Fraction_pct": null
+},
+{
+"Phase_Type": "Al2O3",
+"Volume_Fraction_pct": null
+}
+],
+"Porosity_pct": 10.22,
+"Relative_Density_pct": null,
+"Grain_Size_avg_um": null,
+"Precipitate_Size_avg_nm": null,
+"Advanced_Quantitative_Features": {
+"As_Deposited_Crack_Width_um": 0.44
+}
+},
+"Properties_Info": [
+{
+"Property_Name": "Initial_Crystallization_Temperature",
+"Test_Condition": "TG-DSC in air from room temperature to 1450 °C at 10 °C/min",
+"Value_Numeric": 1173.15,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "K",
+"Test_Temperature_K": null,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": "Free-standing LaMgAl11O19 coating",
+"Note": "Exothermal peak at 900 °C related to crystallization of amorphous phase."
+},
+{
+"Property_Name": "Crystallization_Peak_Temperature",
+"Test_Condition": "TG-DSC in air from room temperature to 1450 °C at 10 °C/min",
+"Value_Numeric": 1324.15,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "K",
+"Test_Temperature_K": null,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": "Free-standing LaMgAl11O19 coating",
+"Note": "Exothermal peak at 1051 °C related to crystallization of amorphous phase."
+},
+{
+"Property_Name": "Crystallization_Peak_Temperature",
+"Test_Condition": "TG-DSC in air from room temperature to 1450 °C at 10 °C/min",
+"Value_Numeric": 1437.15,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "K",
+"Test_Temperature_K": null,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": "Free-standing LaMgAl11O19 coating",
+"Note": "Exothermal peak at 1164 °C related to crystallization of amorphous phase."
+},
+{
+"Property_Name": "Reaction_Peak_Temperature",
+"Test_Condition": "TG-DSC in air from room temperature to 1450 °C at 10 °C/min",
+"Value_Numeric": 1521.15,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "K",
+"Test_Temperature_K": null,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": "Free-standing LaMgAl11O19 coating",
+"Note": "Exothermal peak at 1248 °C attributed to LMA reformed reaction of secondary phase."
+},
+{
+"Property_Name": "Reaction_Peak_Temperature",
+"Test_Condition": "TG-DSC in air from room temperature to 1450 °C at 10 °C/min",
+"Value_Numeric": 1584.15,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "K",
+"Test_Temperature_K": null,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": "Free-standing LaMgAl11O19 coating",
+"Note": "Exothermal peak at 1311 °C attributed to LMA reformed reaction of secondary phase."
+},
+{
+"Property_Name": "Quenching_Stress",
+"Test_Condition": "As-deposited LMA coating on SiCf/SiC, calculated using Eq. (1)",
+"Value_Numeric": 1.11,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "GPa",
+"Test_Temperature_K": null,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": "APS LaMgAl11O19 coating on SiCf/SiC",
+"Note": "Calculated using pure-phase parameters."
+},
+{
+"Property_Name": "Porosity_pct",
+"Test_Condition": "As-deposited APS LaMgAl11O19 layer",
+"Value_Numeric": 10.22,
+"Value_Range": null,
+"Value_StdDev": 3.02,
+"Unit": "%",
+"Test_Temperature_K": null,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "image",
+"Test_Specimen": "Cross-sectional coating image analysis",
+"Note": null
+},
+{
+"Property_Name": "Crack_Width",
+"Test_Condition": "As-deposited APS LaMgAl11O19 layer",
+"Value_Numeric": 0.44,
+"Value_Range": null,
+"Value_StdDev": 0.26,
+"Unit": "μm",
+"Test_Temperature_K": null,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "image",
+"Test_Specimen": "Cross-sectional coating image analysis",
+"Note": null
+},
+{
+"Property_Name": "Porosity_pct",
+"Test_Condition": "Heat treatment in air at 950 °C for 10 h",
+"Value_Numeric": 13.73,
+"Value_Range": null,
+"Value_StdDev": 2.46,
+"Unit": "%",
+"Test_Temperature_K": 1223.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "image",
+"Test_Specimen": "Cross-sectional coating image analysis",
+"Note": "Increase caused by crystallization-induced shrinkage and channel crack formation."
+},
+{
+"Property_Name": "Crack_Width",
+"Test_Condition": "Heat treatment in air at 950 °C for 10 h",
+"Value_Numeric": 2.01,
+"Value_Range": null,
+"Value_StdDev": 1.31,
+"Unit": "μm",
+"Test_Temperature_K": 1223.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "image",
+"Test_Specimen": "Cross-sectional coating image analysis",
+"Note": null
+},
+{
+"Property_Name": "Porosity_pct",
+"Test_Condition": "Heat treatment in air at 1050 °C for 10 h",
+"Value_Numeric": 8.20,
+"Value_Range": null,
+"Value_StdDev": 2.01,
+"Unit": "%",
+"Test_Temperature_K": 1323.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "image",
+"Test_Specimen": "Cross-sectional coating image analysis",
+"Note": "Decrease attributed to viscous flow."
+},
+{
+"Property_Name": "Crack_Width",
+"Test_Condition": "Heat treatment in air at 1050 °C for 10 h",
+"Value_Numeric": 1.29,
+"Value_Range": null,
+"Value_StdDev": 0.75,
+"Unit": "μm",
+"Test_Temperature_K": 1323.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "image",
+"Test_Specimen": "Cross-sectional coating image analysis",
+"Note": null
+},
+{
+"Property_Name": "Porosity_pct",
+"Test_Condition": "Heat treatment in air at 1200 °C for 10 h",
+"Value_Numeric": 9.91,
+"Value_Range": null,
+"Value_StdDev": 1.71,
+"Unit": "%",
+"Test_Temperature_K": 1473.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "image",
+"Test_Specimen": "Cross-sectional coating image analysis",
+"Note": "LMA retained high porosity because of excellent sintering resistance."
+},
+{
+"Property_Name": "Crack_Width",
+"Test_Condition": "Heat treatment in air at 1200 °C for 10 h",
+"Value_Numeric": 3.34,
+"Value_Range": null,
+"Value_StdDev": 1.68,
+"Unit": "μm",
+"Test_Temperature_K": 1473.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "image",
+"Test_Specimen": "Cross-sectional coating image analysis",
+"Note": "Crack spheroidization observed."
+},
+{
+"Property_Name": "Porosity_pct",
+"Test_Condition": "Heat treatment in air at 1300 °C for 10 h",
+"Value_Numeric": 9.66,
+"Value_Range": null,
+"Value_StdDev": 1.07,
+"Unit": "%",
+"Test_Temperature_K": 1573.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "image",
+"Test_Specimen": "Cross-sectional coating image analysis",
+"Note": null
+},
+{
+"Property_Name": "Crack_Width",
+"Test_Condition": "Heat treatment in air at 1300 °C for 10 h",
+"Value_Numeric": 3.06,
+"Value_Range": null,
+"Value_StdDev": 1.64,
+"Unit": "μm",
+"Test_Temperature_K": 1573.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "image",
+"Test_Specimen": "Cross-sectional coating image analysis",
+"Note": null
+},
+{
+"Property_Name": "Porosity_pct",
+"Test_Condition": "Heat treatment in air at 1350 °C for 10 h",
+"Value_Numeric": 8.78,
+"Value_Range": null,
+"Value_StdDev": 1.14,
+"Unit": "%",
+"Test_Temperature_K": 1623.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "image",
+"Test_Specimen": "Cross-sectional coating image analysis",
+"Note": null
+},
+{
+"Property_Name": "Crack_Width",
+"Test_Condition": "Heat treatment in air at 1350 °C for 10 h",
+"Value_Numeric": 3.28,
+"Value_Range": null,
+"Value_StdDev": 2.57,
+"Unit": "μm",
+"Test_Temperature_K": 1623.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "image",
+"Test_Specimen": "Cross-sectional coating image analysis",
+"Note": "Largest average crack width among the LMA heat-treatment conditions shown."
+}
+]
+},
+{
+"Sample_ID": "Reference-Si-01",
+"Gradient_Material": false,
+"Gradient_Group_ID": null,
+"Composition_Info": {
+"Role": "Reference",
+"Alloy_Name_Raw": "Si coating on SiCf/SiC cited from previous work",
+"Nominal_Composition": {
+"Composition_Type": "at%",
+"Elements_Normalized": {
+"Si": 100.0
+}
+},
+"Measured_Composition": {
+"Composition_Type": null,
+"Elements_Normalized": null,
+"Measurement_Method": null
+},
+"Note": "Reference property values quoted in the current paper from previous work or cited literature."
+},
+"Process_Info": {
+"Process_Category": "Reported in literature",
+"Process_Text": {
+"original": "The paper cites previous work for the thermal mismatch stress of as-deposited Si coating on SiCf/SiC surface and cites the brittle-ductile transition temperature of silicon.",
+"simplified": "Reference Si-coating thermophysical/stress values quoted from literature."
+},
+"Equipment": null,
+"Key_Params": {}
+},
+"Microstructure_Info": {
+"Microstructure_Text": {
+"original": "The paper states that the pure silicon has lower CTE, forms compressive stress, and exhibits excellent ductility-like metal behavior when the heat-treated temperature is higher than the brittle-ductile transition temperature.",
+"simplified": "Reference Si bond coat exhibits low CTE and brittle-ductile transition behavior."
+},
+"Main_Phase": "Si",
+"Precipitates": [],
+"Porosity_pct": null,
+"Relative_Density_pct": null,
+"Grain_Size_avg_um": null,
+"Precipitate_Size_avg_nm": null,
+"Advanced_Quantitative_Features": {}
+},
+"Properties_Info": [
+{
+"Property_Name": "Thermal_Mismatch_Stress",
+"Test_Condition": "As-deposited Si coating on SiCf/SiC surface, cited from previous work",
+"Value_Numeric": -136.0,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "MPa",
+"Test_Temperature_K": null,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": null,
+"Note": "Quoted by the current paper from Ref. [3]."
+},
+{
+"Property_Name": "Coefficient_of_Thermal_Expansion",
+"Test_Condition": "Reference value quoted in the current paper",
+"Value_Numeric": 4.2,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "10^-6 K^-1",
+"Test_Temperature_K": null,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": null,
+"Note": null
+},
+{
+"Property_Name": "Brittle_Ductile_Transition_Temperature",
+"Test_Condition": "Reference value quoted in the current paper",
+"Value_Numeric": 898.0,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "K",
+"Test_Temperature_K": null,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": null,
+"Note": "Quoted by the current paper from Ref. [47]."
+}
+]
+},
+{
+"Sample_ID": "Reference-YbDS-01",
+"Gradient_Material": false,
+"Gradient_Group_ID": null,
+"Composition_Info": {
+"Role": "Reference",
+"Alloy_Name_Raw": "Yb2Si2O7 coating on SiCf/SiC cited from previous work",
+"Nominal_Composition": {
+"Composition_Type": "at%",
+"Elements_Normalized": {
+"Yb": 18.1818,
+"Si": 18.1818,
+"O": 63.6364
+}
+},
+"Measured_Composition": {
+"Composition_Type": null,
+"Elements_Normalized": null,
+"Measurement_Method": null
+},
+"Note": "Reference property values quoted in the current paper from previous work."
+},
+"Process_Info": {
+"Process_Category": "Reported in literature",
+"Process_Text": {
+"original": "The paper cites previous work for the thermal mismatch stress and CTE of as-deposited YbDS coating prepared on SiCf/SiC surface.",
+"simplified": "Reference Yb2Si2O7 coating thermophysical/stress values quoted from literature."
+},
+"Equipment": null,
+"Key_Params": {}
+},
+"Microstructure_Info": {
+"Microstructure_Text": {
+"original": "The current paper uses literature values of YbDS to calculate stress evolution and explain crack behavior.",
+"simplified": "Reference Yb2Si2O7 coating values used for stress analysis."
+},
+"Main_Phase": "Yb2Si2O7",
+"Precipitates": [],
+"Porosity_pct": null,
+"Relative_Density_pct": null,
+"Grain_Size_avg_um": null,
+"Precipitate_Size_avg_nm": null,
+"Advanced_Quantitative_Features": {}
+},
+"Properties_Info": [
+{
+"Property_Name": "Thermal_Mismatch_Stress",
+"Test_Condition": "As-deposited YbDS coating on SiCf/SiC surface, cited from previous work",
+"Value_Numeric": -96.0,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "MPa",
+"Test_Temperature_K": null,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": null,
+"Note": "Quoted by the current paper from Ref. [3]."
+},
+{
+"Property_Name": "Coefficient_of_Thermal_Expansion",
+"Test_Condition": "Reference value quoted in the current paper",
+"Value_Numeric": 4.1,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "10^-6 K^-1",
+"Test_Temperature_K": null,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": null,
+"Note": null
+}
+]
+},
+{
+"Sample_ID": "Reference-YbMS-01",
+"Gradient_Material": false,
+"Gradient_Group_ID": null,
+"Composition_Info": {
+"Role": "Reference",
+"Alloy_Name_Raw": "Yb2SiO5 coating cited from previous work",
+"Nominal_Composition": {
+"Composition_Type": "at%",
+"Elements_Normalized": {
+"Yb": 25.0,
+"Si": 12.5,
+"O": 62.5
+}
+},
+"Measured_Composition": {
+"Composition_Type": null,
+"Elements_Normalized": null,
+"Measurement_Method": null
+},
+"Note": "Reference property values quoted in the current paper from previous work and cited literature."
+},
+"Process_Info": {
+"Process_Category": "Reported in literature",
+"Process_Text": {
+"original": "The paper cites previous work and literature for the thermal mismatch stress, elastic modulus and CTE of YbMS coating and for the CTE range of YbMS coating over 200–1400 °C.",
+"simplified": "Reference Yb2SiO5 coating thermophysical/stress values quoted from literature."
+},
+"Equipment": null,
+"Key_Params": {}
+},
+"Microstructure_Info": {
+"Microstructure_Text": {
+"original": "The current paper uses literature values of YbMS to discuss crack propagation, stress evolution, and interfacial channel crack formation.",
+"simplified": "Reference Yb2SiO5 coating values used for stress and modulus analysis."
+},
+"Main_Phase": "Yb2SiO5",
+"Precipitates": [
+{
+"Phase_Type": "Yb2O3",
+"Volume_Fraction_pct": null
+}
+],
+"Porosity_pct": null,
+"Relative_Density_pct": null,
+"Grain_Size_avg_um": null,
+"Precipitate_Size_avg_nm": null,
+"Advanced_Quantitative_Features": {}
+},
+"Properties_Info": [
+{
+"Property_Name": "Thermal_Mismatch_Stress",
+"Test_Condition": "As-deposited YbMS coating on SiCf/SiC surface, cited from previous work",
+"Value_Numeric": 410.0,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "MPa",
+"Test_Temperature_K": null,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": null,
+"Note": "Quoted by the current paper from Ref. [3]."
+},
+{
+"Property_Name": "Elastic_Modulus",
+"Test_Condition": "Reference value quoted in the current paper",
+"Value_Numeric": 97.3,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "GPa",
+"Test_Temperature_K": null,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": null,
+"Note": "Quoted by the current paper from Ref. [32]."
+},
+{
+"Property_Name": "Coefficient_of_Thermal_Expansion",
+"Test_Condition": "Reference value quoted in the current paper",
+"Value_Numeric": 7.2,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "10^-6 K^-1",
+"Test_Temperature_K": null,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": null,
+"Note": "Quoted by the current paper from Ref. [3]."
+},
+{
+"Property_Name": "Coefficient_of_Thermal_Expansion",
+"Test_Condition": "Reference value quoted in the current paper over 200–1400 °C",
+"Value_Numeric": 8.085,
+"Value_Range": "7.50-8.67",
+"Value_StdDev": null,
+"Unit": "10^-6 K^-1",
+"Test_Temperature_K": null,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": null,
+"Note": "Range quoted by the current paper from Ref. [44]; Value_Numeric is the range midpoint."
+}
+]
+},
+{
+"Sample_ID": "Reference-LMA-01",
+"Gradient_Material": false,
+"Gradient_Group_ID": null,
+"Composition_Info": {
+"Role": "Reference",
+"Alloy_Name_Raw": "LaMgAl11O19 coating cited from previous work",
+"Nominal_Composition": {
+"Composition_Type": "at%",
+"Elements_Normalized": {
+"La": 3.125,
+"Mg": 3.125,
+"Al": 34.375,
+"O": 59.375
+}
+},
+"Measured_Composition": {
+"Composition_Type": null,
+"Elements_Normalized": null,
+"Measurement_Method": null
+},
+"Note": "Reference property values quoted in the current paper from previous work and literature."
+},
+"Process_Info": {
+"Process_Category": "Reported in literature",
+"Process_Text": {
+"original": "The paper cites previous work for the thermal mismatch stress and CTE of LMA coating and cites literature on the sintering resistance of LMA coatings with magnetoplumbite structure.",
+"simplified": "Reference LaMgAl11O19 coating thermophysical/stress values quoted from literature."
+},
+"Equipment": null,
+"Key_Params": {}
+},
+"Microstructure_Info": {
+"Microstructure_Text": {
+"original": "The current paper states that LMA with magnetoplumbite structure has excellent sintering resistance and platelet-like hexagonal grains with high aspect ratio, which contributes to high porosity and poor crack healing.",
+"simplified": "Reference LaMgAl11O19 coating exhibits high CTE and strong sintering resistance."
+},
+"Main_Phase": "LaMgAl11O19",
+"Precipitates": [],
+"Porosity_pct": null,
+"Relative_Density_pct": null,
+"Grain_Size_avg_um": null,
+"Precipitate_Size_avg_nm": null,
+"Advanced_Quantitative_Features": {}
+},
+"Properties_Info": [
+{
+"Property_Name": "Thermal_Mismatch_Stress",
+"Test_Condition": "As-deposited LMA coating on SiCf/SiC surface, cited from previous work",
+"Value_Numeric": 204.0,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "MPa",
+"Test_Temperature_K": null,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": null,
+"Note": "Quoted by the current paper from Ref. [3]."
+},
+{
+"Property_Name": "Coefficient_of_Thermal_Expansion",
+"Test_Condition": "Reference value quoted in the current paper",
+"Value_Numeric": 10.1,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "10^-6 K^-1",
+"Test_Temperature_K": null,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": null,
+"Note": null
+}
+]
+},
+{
+"Sample_ID": "Reference-Yb2O3-01",
+"Gradient_Material": false,
+"Gradient_Group_ID": null,
+"Composition_Info": {
+"Role": "Reference",
+"Alloy_Name_Raw": "Yb2O3 coating cited from literature",
+"Nominal_Composition": {
+"Composition_Type": "at%",
+"Elements_Normalized": {
+"Yb": 40.0,
+"O": 60.0
+}
+},
+"Measured_Composition": {
+"Composition_Type": null,
+"Elements_Normalized": null,
+"Measurement_Method": null
+},
+"Note": "Reference values quoted in the current paper to compare with Yb2SiO5 decomposition regions."
+},
+"Process_Info": {
+"Process_Category": "Reported in literature",
+"Process_Text": {
+"original": "The paper cites literature values for the elastic modulus and CTE of Yb2O3 coating to compare with YbMS coating and discuss the influence of YbMS-Yb2O3 ratio on crack formation.",
+"simplified": "Reference Yb2O3 coating thermophysical values quoted from literature."
+},
+"Equipment": null,
+"Key_Params": {}
+},
+"Microstructure_Info": {
+"Microstructure_Text": {
+"original": "The paper notes that Yb2O3 regions form in the YbMS coating due to decomposition of YbMS during coating deposition.",
+"simplified": "Reference Yb2O3 values used for comparison with decomposed YbMS regions."
+},
+"Main_Phase": "Yb2O3",
+"Precipitates": [],
+"Porosity_pct": null,
+"Relative_Density_pct": null,
+"Grain_Size_avg_um": null,
+"Precipitate_Size_avg_nm": null,
+"Advanced_Quantitative_Features": {}
+},
+"Properties_Info": [
+{
+"Property_Name": "Elastic_Modulus",
+"Test_Condition": "Reference value quoted in the current paper",
+"Value_Numeric": 100.8,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "GPa",
+"Test_Temperature_K": null,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": null,
+"Note": "Quoted by the current paper from Ref. [29]."
+},
+{
+"Property_Name": "Coefficient_of_Thermal_Expansion",
+"Test_Condition": "Reference value quoted in the current paper",
+"Value_Numeric": 7.5,
+"Value_Range": "7-8",
+"Value_StdDev": null,
+"Unit": "10^-6 K^-1",
+"Test_Temperature_K": null,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": null,
+"Note": "Range quoted by the current paper from Ref. [29]; Value_Numeric is the range midpoint."
+}
+]
+}
+]
+}

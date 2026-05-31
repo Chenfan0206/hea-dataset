@@ -1,0 +1,7 @@
+{
+  "paper_dir": "论文3",
+  "figures": 12,
+  "direct_pairs": 12,
+  "topk_pairs": 60,
+  "sentences": 51
+}

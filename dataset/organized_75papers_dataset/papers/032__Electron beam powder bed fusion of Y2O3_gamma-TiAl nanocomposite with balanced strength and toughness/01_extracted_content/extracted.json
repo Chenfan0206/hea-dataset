@@ -1,0 +1,1040 @@
+{
+  "Paper_Metadata": {
+    "Paper_Title": "Electron beam powder bed fusion of Y2O3/gamma-TiAl nanocomposite with balanced strength and toughness",
+    "DOI": "10.1016/j.addma.2023.103650"
+  },
+  "Paper_Routing": {
+    "base_material": "Metals",
+    "application": "Structural",
+    "research_paradigm": "Experimental",
+    "Supplements_Loaded": [
+      "directions/base/Metals.txt",
+      "directions/application/Structural.txt",
+      "directions/paradigm/Experimental.txt"
+    ],
+    "Patch_Tags": [
+      "Additive_Manufacturing",
+      "Nanomaterial"
+    ],
+    "Needs_Mixed_Routing_Check": false,
+    "Mixed_Signals": []
+  },
+  "items": [
+    {
+      "Item_ID": "01",
+      "Sample_ID": "Multi-spot_L70",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing",
+        "Nanomaterial"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 2.1: PBF-EB samples ... processed on an Arcam A2XX machine ... pre-alloyed powders mixed with 0.4 wt.% Y2O3 nanoparticles ... multi-spot melt strategy ... layer thickness of 70 um",
+        "Section 3.1: The multi-spot sample has a phase constitution of 49.7% alpha2-phase, 40.2% gamma-phase and 10.1% B2-phase",
+        "Section 3.3: L70 with KIC = 16.5 +/- 0.3 MPa*sqrt(m)"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "TiAl intermetallic nanocomposite",
+          "Material_Name_Raw": "Y2O3/Ti-48Al-2Cr-2Nb (Y2O3/TiAl)",
+          "Nominal_Composition": {
+            "Ti": "Balance",
+            "Al": {
+              "Value": 48.0,
+              "Unit": "at.%",
+              "Original_Values": "Ti-48Al"
+            },
+            "Cr": {
+              "Value": 2.0,
+              "Unit": "at.%",
+              "Original_Values": "2Cr"
+            },
+            "Nb": {
+              "Value": 2.0,
+              "Unit": "at.%",
+              "Original_Values": "2Nb"
+            },
+            "Y2O3_nanoparticle_addition": {
+              "Value": 0.4,
+              "Unit": "wt.%",
+              "Original_Values": "0.4 wt.% Y2O3 nanoparticles"
+            },
+            "Note": "Ti-48Al-2Cr-2Nb pre-alloyed powders mixed with 0.4 wt.% Y2O3 nanoparticles; Ti = Balance (normalized ≈ 48.0 at.%; Data_Nature: Computed)"
+          },
+          "Measured_Composition": {
+            "Al": {
+              "Value": 46.3,
+              "Unit": "at.%",
+              "Original_Values": "46.3 at.%",
+              "Note": "Measured by titration in the multi-spot sample (EL = 2.5 J/mm)"
+            }
+          }
+        },
+        "Processing": {
+          "Process_Category": "Additive_Manufacturing",
+          "Process_Text": {
+            "original": "PBF-EB multi-spot melt strategy with layer thickness of 70 um on Arcam A2XX machine. Pre-alloyed Ti-48Al-2Cr-2Nb powders (45-150 um) mixed with 0.4 wt.% Y2O3 nanoparticles (~30 nm) using V-shaped 3D blender in air for 5 h at 13 rpm. Build temperature 1160 C, vacuum 1E-2 mbar with helium regulating gas. Multi-spot melt with closed loops along sample perimeter, 4 concurrent beam spots, dummy scan after each loop.",
+            "simplified": "Powder mixing (Y2O3/TiAl, 5h, air) -> PBF-EB multi-spot melt (Arcam A2XX, 70 um layer, 1160 C build temp, 1E-2 mbar vacuum, He) -> As-built"
+          },
+          "Equipment": [
+            {
+              "Name": "Arcam A2XX",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "V-shaped three-dimensional blender (Mitr Instrument Equipment Co., Ltd.)",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Olympus LEXT OLS4000 3D laser confocal microscope",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Zeiss Gemini-300 SEM (SE2, BSE, EDS, EBSD)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "HKI Nordlys Max3 EBSD",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Tecnai G2 S-TWIN TEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Twin-jet electropolisher",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "QATM Qness Q30 A+",
+              "Category": "Testing"
+            },
+            {
+              "Name": "Instron 5582 universal testing machine",
+              "Category": "Testing"
+            },
+            {
+              "Name": "UTM4204 universal testing machine",
+              "Category": "Testing"
+            },
+            {
+              "Name": "Epsilon high-temperature extensometer",
+              "Category": "Testing"
+            },
+            {
+              "Name": "ImageJ",
+              "Category": "Software"
+            },
+            {
+              "Name": "HKL CHANNEL5",
+              "Category": "Software"
+            },
+            {
+              "Name": "OIM Analysis 7",
+              "Category": "Software"
+            }
+          ],
+          "Key_Params": {
+            "Stage1_Powder_Preparation": {
+              "Powder_Type": "Electrode induction melting gas-atomised pre-alloyed powders",
+              "Powder_Size": {
+                "Value_Range": "45-150 um",
+                "Original_Values": "size of 45-150 um"
+              },
+              "Y2O3_Nanoparticle_Size": {
+                "Value": 30,
+                "Unit": "nm",
+                "Note": "Approximate value (~30 nm)"
+              },
+              "Mixing_Duration": {
+                "Value": 5,
+                "Unit": "h"
+              },
+              "Mixing_Speed": {
+                "Value": 13,
+                "Unit": "rpm"
+              },
+              "Mixing_Atmosphere": "air"
+            },
+            "Stage2_PBF_EB": {
+              "Melt_Strategy": "Multi-spot melt",
+              "Layer_Thickness": {
+                "Value": 70,
+                "Unit": "um",
+                "Original_Values": "70 um"
+              },
+              "Build_Temperature": {
+                "Value": 1433,
+                "Unit": "K",
+                "Original_Values": "1160 C"
+              },
+              "Vacuum": {
+                "Value": 0.01,
+                "Unit": "mbar",
+                "Original_Values": "1 x 10^-2 mbar"
+              },
+              "Regulating_Gas": "High purity helium",
+              "Scanning_Speed": {
+                "Value": 600,
+                "Unit": "mm/s",
+                "Original_Values": "v = 600 mm/s"
+              },
+              "Beam_Current": {
+                "Value": 25,
+                "Unit": "mA",
+                "Original_Values": "I = 25 mA"
+              },
+              "Line_Offset": {
+                "Value": 0.5,
+                "Unit": "mm",
+                "Original_Values": "Loff = 0.5 mm"
+              },
+              "Focus_Offset": {
+                "Value": 0,
+                "Unit": "mA",
+                "Original_Values": "FO = 0 mA"
+              },
+              "Line_Energy_Density": {
+                "Value": 2.5,
+                "Unit": "J/mm",
+                "Original_Values": "EL = 2.5 J/mm"
+              },
+              "Spot_Number": {
+                "Value": 50,
+                "Original_Values": "n = 50"
+              },
+              "Spot_Time": {
+                "Value": 0.8,
+                "Unit": "ms",
+                "Original_Values": "t = 0.8 ms"
+              },
+              "Min_Distance_Per_Spot": {
+                "Value": 4,
+                "Unit": "mm",
+                "Original_Values": "l = 4 mm"
+              },
+              "Concurrent_Beam_Spots": 4,
+              "Contour": "Multiple closed loops along sample perimeter",
+              "Sample_Dimensions": "20 x 20 x 60 mm3"
+            }
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Duplex microstructure consisting of alpha2/gamma lamellar colonies, equiaxed gamma and B2 grains. Phase constitution: 49.7% alpha2, 40.2% gamma, 10.1% B2. Lamellar spacing 208 +/- 72 nm with straight interface between alpha2/gamma. Y2O3 nanoparticles uniformly distributed, mean size 90 +/- 38 nm, number density 0.28 +/- 0.14 um^-2, volume fraction 0.8 +/- 0.2%. Twins form in equiaxed gamma grains and within gamma lamellae. Nanoparticles have two morphologies: rod-like Y2O3 (monoclinic) and spherical Y2O3 (cubic).",
+            "simplified": "Duplex microstructure: alpha2/gamma lamellar colonies + equiaxed gamma + B2 grains; 49.7% alpha2, 40.2% gamma, 10.1% B2; lamellar spacing 208 +/- 72 nm; Y2O3 nanoparticles (rod-like monoclinic + spherical cubic) uniformly distributed, size 90 +/- 38 nm"
+          },
+          "Main_Phase": {
+            "Phase_Name": "alpha2/gamma lamellar colonies (duplex matrix)",
+            "Crystal_Structure": "HCP (alpha2) + L10 (gamma)",
+            "Phase_Fraction": {
+              "alpha2": {
+                "Value": 49.7,
+                "Unit": "%",
+                "Original_Values": "49.7% alpha2-phase"
+              },
+              "gamma": {
+                "Value": 40.2,
+                "Unit": "%",
+                "Original_Values": "40.2% gamma-phase"
+              }
+            },
+            "Note": "EBSD phase map determined; duplex microstructure with lamellar colonies, equiaxed gamma and B2 grains"
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "B2",
+              "Crystal_Structure": "B2 (ordered BCC)",
+              "Phase_Fraction": {
+                "Value": 10.1,
+                "Unit": "%",
+                "Original_Values": "10.1% B2-phase"
+              }
+            },
+            {
+              "Phase_Name": "Y2O3 (rod-like)",
+              "Crystal_Structure": "Monoclinic",
+              "Size": {
+                "Value": null,
+                "Unit": "nm",
+                "Note": "Rod-like morphology; size included in overall nanoparticle statistics (90 +/- 38 nm is combined average)"
+              },
+              "Distribution": "Randomly distributed in TiAl matrix",
+              "Interface": "Semi-coherent (curved, (311)Y2O3||(110)gamma, misfit 19.4%) and coherent (straight, (001)Y2O3/(111)gamma, misfit 1.5%)",
+              "Note": "Clean interface, free of interfacial reactions"
+            },
+            {
+              "Phase_Name": "Y2O3 (spherical)",
+              "Crystal_Structure": "Cubic",
+              "Size": {
+                "Value": null,
+                "Unit": "nm",
+                "Note": "Spherical morphology; size included in overall nanoparticle statistics (90 +/- 38 nm is combined average)"
+              },
+              "Distribution": "Randomly distributed in TiAl matrix",
+              "Interface": "Semi-coherent ((110)gamma||(013)Y2O3, misfit 9.9%; (240)Y2O3/(002)gamma, misfit 5.3%)",
+              "Note": "Clean interface, free of interfacial reactions"
+            }
+          ],
+          "Lamellar_Spacing": {
+            "Value": 208,
+            "Unit": "nm",
+            "Value_StdDev": 72,
+            "Original_Values": "208 +/- 72 nm",
+            "Note": "Measured by TEM; straight alpha2/gamma interface"
+          },
+          "Colony_Size": {
+            "Region_A": {
+              "Value": 42,
+              "Unit": "um",
+              "Value_StdDev": 10,
+              "Original_Values": "42 +/- 10 um"
+            },
+            "Region_B": {
+              "Value": 34,
+              "Unit": "um",
+              "Value_StdDev": 11,
+              "Original_Values": "34 +/- 11 um"
+            },
+            "Region_C": {
+              "Value": 33,
+              "Unit": "um",
+              "Value_StdDev": 9,
+              "Original_Values": "33 +/- 9 um"
+            },
+            "Note": "Measured at three locations (A, B, C) on x-y plane at z = 22.5 mm; uniform microstructure"
+          },
+          "Lamellar_Colony_Fraction": {
+            "Region_A": {
+              "Value": 54,
+              "Unit": "%",
+              "Value_StdDev": 5,
+              "Original_Values": "54 +/- 5%"
+            },
+            "Region_B": {
+              "Value": 58,
+              "Unit": "%",
+              "Value_StdDev": 6,
+              "Original_Values": "58 +/- 6%"
+            },
+            "Region_C": {
+              "Value": 61,
+              "Unit": "%",
+              "Value_StdDev": 3,
+              "Original_Values": "61 +/- 3%"
+            },
+            "Note": "Measured at three locations on x-y plane at z = 22.5 mm"
+          },
+          "Nanoparticle_Characteristics": {
+            "Mean_Size": {
+              "Value": 90,
+              "Unit": "nm",
+              "Value_StdDev": 38,
+              "Original_Values": "90 +/- 38 nm",
+              "Note": "diameter; measured from SEM micrographs"
+            },
+            "Number_Density": {
+              "Value": 0.28,
+              "Unit": "um^-2",
+              "Value_StdDev": 0.14,
+              "Original_Values": "0.28 +/- 0.14 um^-2"
+            },
+            "Volume_Fraction": {
+              "Value": 0.8,
+              "Unit": "%",
+              "Value_StdDev": 0.2,
+              "Original_Values": "0.8 +/- 0.2%"
+            }
+          },
+          "Defects": {
+            "Defect_Area_Fraction": {
+              "Value": null,
+              "Unit": "%",
+              "Original_Values": "virtually no defect",
+              "Note": "Qualitative description only; no explicit numerical defect area fraction given for multi-spot sample"
+            }
+          },
+          "Advanced_Quantitative_Features": {
+            "Twins": "Present in equiaxed gamma grains and within gamma lamellae; can propagate across twin interface but terminate at gamma/alpha2 interface",
+            "Top_Layer_Aspect_Ratio": {
+              "Value": 114,
+              "Value_StdDev": 38,
+              "Unit": "dimensionless",
+              "Original_Values": "114 +/- 38",
+              "Note": "Length-to-thickness of gamma lamellae in top layer"
+            },
+            "Alpha2_Phase_Fraction_Bulk": {
+              "Value": 50,
+              "Unit": "%",
+              "Original_Values": "50%",
+              "Note": "Measured in bulk region of L70"
+            },
+            "Lamellar_Colony_Fraction_Upper_Region_z_ge_58mm": {
+              "Value": 78,
+              "Unit": "%",
+              "Value_StdDev": 2,
+              "Original_Values": "78 +/- 2%",
+              "Note": "Upper region z >= 58 mm"
+            },
+            "Lamellar_Colony_Fraction_Below_z_47_5mm": {
+              "Value": null,
+              "Note": "Little change observed when z <= 47.5 mm; no specific number given"
+            },
+            "Step_Width_Fractography": {
+              "Value": 160,
+              "Unit": "nm",
+              "Note": "Approximate value (~160 nm) from SEM fractography of SENB specimen"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Yield_Strength",
+            "Value": 404,
+            "Unit": "MPa",
+            "Value_StdDev": 5,
+            "Original_Values": "404 +/- 5 MPa",
+            "Test_Condition": {
+              "Test_Temperature_K": 1073,
+              "Test_Temperature_Original": "800 C",
+              "Loading_Mode": "Tension",
+              "Strain_Rate_s1": 0.0002,
+              "Original_Values_Strain_Rate": "2 x 10^-4 s^-1",
+              "Standard": "ISO 783-1999",
+              "Specimen_State": "As-built",
+              "Extensometer_Gauge_Length": "25 mm"
+            },
+            "Data_Source": "text",
+            "Note": "Minimum of three tests performed"
+          },
+          {
+            "Property_Name": "Ultimate_Tensile_Strength",
+            "Value": 556,
+            "Unit": "MPa",
+            "Value_StdDev": 11,
+            "Original_Values": "556 +/- 11 MPa",
+            "Test_Condition": {
+              "Test_Temperature_K": 1073,
+              "Test_Temperature_Original": "800 C",
+              "Loading_Mode": "Tension",
+              "Strain_Rate_s1": 0.0002,
+              "Original_Values_Strain_Rate": "2 x 10^-4 s^-1",
+              "Standard": "ISO 783-1999",
+              "Specimen_State": "As-built",
+              "Extensometer_Gauge_Length": "25 mm"
+            },
+            "Data_Source": "text",
+            "Note": "Minimum of three tests performed"
+          },
+          {
+            "Property_Name": "Elongation_Total",
+            "Value": 17.0,
+            "Unit": "%",
+            "Value_StdDev": 3.1,
+            "Original_Values": "17.0 +/- 3.1%",
+            "Test_Condition": {
+              "Test_Temperature_K": 1073,
+              "Test_Temperature_Original": "800 C",
+              "Loading_Mode": "Tension",
+              "Strain_Rate_s1": 0.0002,
+              "Original_Values_Strain_Rate": "2 x 10^-4 s^-1",
+              "Standard": "ISO 783-1999",
+              "Specimen_State": "As-built",
+              "Extensometer_Gauge_Length": "25 mm"
+            },
+            "Data_Source": "text",
+            "Note": "Original text uses EL (elongation to failure); not distinguished between uniform and total; classified as Elongation_Total per Structural supplement rule"
+          },
+          {
+            "Property_Name": "Hardness",
+            "Value": 383,
+            "Unit": "HV0.2",
+            "Value_StdDev": 25,
+            "Original_Values": "383 +/- 25 HV0.2",
+            "Test_Condition": {
+              "Loading_Mode": "Vickers microhardness",
+              "Load": "200 gf",
+              "Dwell_Time": "15 s",
+              "Test_Temperature_Original": "Room temperature (assumed)",
+              "Specimen_State": "As-built",
+              "Note": "Load and dwell time specified; test temperature not explicitly stated for hardness"
+            },
+            "Data_Source": "text",
+            "Note": "Ten indentations per condition"
+          },
+          {
+            "Property_Name": "Fracture_Toughness",
+            "Value": 16.5,
+            "Unit": "MPa*sqrt(m)",
+            "Value_StdDev": 0.3,
+            "Original_Values": "16.5 +/- 0.3 MPa*sqrt(m)",
+            "Test_Condition": {
+              "Test_Temperature_K": 293,
+              "Test_Temperature_Original": "Room temperature",
+              "Loading_Mode": "SENB (Single-Edge Notched Bend)",
+              "Standard": "ASTM E399",
+              "Specimen_State": "As-built",
+              "Note": "Specimen dimensions in Fig. S2"
+            },
+            "Data_Source": "text",
+            "Note": "Original text uses MPa/m notation; interpreted as MPa*sqrt(m) per standard KIC unit"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "02",
+      "Sample_ID": "Multi-spot_L90",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing",
+        "Nanomaterial"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 2.1: multi-spot melt strategy, two PBF-EB sample batches ... one with the layer thickness of 90 um; hereafter abbreviated as L90",
+        "Section 3.3: L90 with KIC = 11.7 +/- 1.0 MPa*sqrt(m)"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "TiAl intermetallic nanocomposite",
+          "Material_Name_Raw": "Y2O3/Ti-48Al-2Cr-2Nb (Y2O3/TiAl)",
+          "Nominal_Composition": {
+            "Ti": "Balance",
+            "Al": {
+              "Value": 48.0,
+              "Unit": "at.%",
+              "Original_Values": "Ti-48Al"
+            },
+            "Cr": {
+              "Value": 2.0,
+              "Unit": "at.%",
+              "Original_Values": "2Cr"
+            },
+            "Nb": {
+              "Value": 2.0,
+              "Unit": "at.%",
+              "Original_Values": "2Nb"
+            },
+            "Y2O3_nanoparticle_addition": {
+              "Value": 0.4,
+              "Unit": "wt.%",
+              "Original_Values": "0.4 wt.% Y2O3 nanoparticles"
+            },
+            "Note": "Same powder as Multi-spot L70; paper uses single batch of pre-mixed Y2O3/TiAl powder for all samples"
+          },
+          "Measured_Composition": {
+            "Note": "Al concentration measured by titration reported for multi-spot sample as 46.3 at.%; not separately reported for L90"
+          }
+        },
+        "Processing": {
+          "Process_Category": "Additive_Manufacturing",
+          "Process_Text": {
+            "original": "PBF-EB multi-spot melt strategy with layer thickness of 90 um on Arcam A2XX machine. Same powder and multi-spot melt parameters as L70 except layer thickness.",
+            "simplified": "Powder mixing (Y2O3/TiAl, 5h, air) -> PBF-EB multi-spot melt (Arcam A2XX, 90 um layer, 1160 C build temp, 1E-2 mbar vacuum, He) -> As-built"
+          },
+          "Equipment": [
+            {
+              "Name": "Arcam A2XX",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "V-shaped three-dimensional blender (Mitr Instrument Equipment Co., Ltd.)",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Zeiss Gemini-300 SEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Tecnai G2 S-TWIN TEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "QATM Qness Q30 A+",
+              "Category": "Testing"
+            },
+            {
+              "Name": "Instron 5582 universal testing machine",
+              "Category": "Testing"
+            },
+            {
+              "Name": "UTM4204 universal testing machine",
+              "Category": "Testing"
+            },
+            {
+              "Name": "ImageJ",
+              "Category": "Software"
+            }
+          ],
+          "Key_Params": {
+            "Stage1_Powder_Preparation": {
+              "Note": "Same as Multi-spot L70; shared per paper statement that single batch of pre-mixed Y2O3/TiAl powder was used for all samples"
+            },
+            "Stage2_PBF_EB": {
+              "Melt_Strategy": "Multi-spot melt",
+              "Layer_Thickness": {
+                "Value": 90,
+                "Unit": "um",
+                "Original_Values": "90 um"
+              },
+              "Build_Temperature": {
+                "Value": 1433,
+                "Unit": "K",
+                "Original_Values": "1160 C"
+              },
+              "Vacuum": {
+                "Value": 0.01,
+                "Unit": "mbar",
+                "Original_Values": "1 x 10^-2 mbar"
+              },
+              "Regulating_Gas": "High purity helium",
+              "Scanning_Speed": {
+                "Value": 600,
+                "Unit": "mm/s"
+              },
+              "Beam_Current": {
+                "Value": 25,
+                "Unit": "mA"
+              },
+              "Line_Offset": {
+                "Value": 0.5,
+                "Unit": "mm"
+              },
+              "Focus_Offset": {
+                "Value": 0,
+                "Unit": "mA"
+              },
+              "Line_Energy_Density": {
+                "Value": 2.5,
+                "Unit": "J/mm"
+              },
+              "Spot_Number": {
+                "Value": 50
+              },
+              "Spot_Time": {
+                "Value": 0.8,
+                "Unit": "ms"
+              },
+              "Min_Distance_Per_Spot": {
+                "Value": 4,
+                "Unit": "mm"
+              },
+              "Sample_Dimensions": "20 x 20 x 60 mm3",
+              "Note": "Same multi-spot melt parameters as L70 per Table 1; only layer thickness differs"
+            }
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Duplex microstructure with lamellar colonies, equiaxed gamma and B2 grains. Bulk alpha2-phase fraction 12%. Top layer: fully lamellar with aspect ratio 31 +/- 13. Lamellar colony fraction upper region (z >= 58 mm): 59 +/- 11%.",
+            "simplified": "Duplex microstructure: lamellar colonies + equiaxed gamma + B2; alpha2 fraction 12% (bulk); fully lamellar top layer with lower aspect ratio (31 +/- 13) than L70"
+          },
+          "Main_Phase": {
+            "Phase_Name": "alpha2/gamma lamellar colonies (duplex matrix)",
+            "Crystal_Structure": "HCP (alpha2) + L10 (gamma)",
+            "Note": "Alpha2 fraction in bulk 12%; gamma fraction ~75% per Section 3.3 text"
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "B2",
+              "Crystal_Structure": "B2 (ordered BCC)",
+              "Note": "Present but fraction not separately specified for L90 bulk"
+            },
+            {
+              "Phase_Name": "Y2O3 nanoparticles",
+              "Crystal_Structure": "Monoclinic (rod-like) and Cubic (spherical)",
+              "Note": "Present; separate statistics not given for L90 nanoparticles"
+            }
+          ],
+          "Advanced_Quantitative_Features": {
+            "Alpha2_Phase_Fraction_Bulk": {
+              "Value": 12,
+              "Unit": "%",
+              "Original_Values": "12%",
+              "Note": "Considerably lower than L70 (50%)"
+            },
+            "Top_Layer_Aspect_Ratio": {
+              "Value": 31,
+              "Value_StdDev": 13,
+              "Unit": "dimensionless",
+              "Original_Values": "31 +/- 13",
+              "Note": "Length-to-thickness of gamma lamellae in top layer"
+            },
+            "Lamellar_Colony_Fraction_Upper_Region_z_ge_58mm": {
+              "Value": 59,
+              "Unit": "%",
+              "Value_StdDev": 11,
+              "Original_Values": "59 +/- 11%",
+              "Note": "Upper region z >= 58 mm"
+            },
+            "Lamellar_Colony_Fraction_Below_z_47_5mm": {
+              "Value": null,
+              "Note": "Little change observed when z <= 47.5 mm; no specific number given; applies to both L90 and L90 per Section 3.3"
+            },
+            "Step_Width_Fractography": {
+              "Value": 710,
+              "Unit": "nm",
+              "Note": "Approximate value (~710 nm) from SEM fractography of SENB specimen"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Yield_Strength",
+            "Value": 394,
+            "Unit": "MPa",
+            "Value_StdDev": 15,
+            "Original_Values": "394 +/- 15 MPa",
+            "Test_Condition": {
+              "Test_Temperature_K": 1073,
+              "Test_Temperature_Original": "800 C",
+              "Loading_Mode": "Tension",
+              "Strain_Rate_s1": 0.0002,
+              "Original_Values_Strain_Rate": "2 x 10^-4 s^-1",
+              "Standard": "ISO 783-1999",
+              "Specimen_State": "As-built",
+              "Note": "Same testing conditions as L70 per shared experimental setup"
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Ultimate_Tensile_Strength",
+            "Value": 456,
+            "Unit": "MPa",
+            "Value_StdDev": 4,
+            "Original_Values": "456 +/- 4 MPa",
+            "Test_Condition": {
+              "Test_Temperature_K": 1073,
+              "Test_Temperature_Original": "800 C",
+              "Loading_Mode": "Tension",
+              "Strain_Rate_s1": 0.0002,
+              "Original_Values_Strain_Rate": "2 x 10^-4 s^-1",
+              "Standard": "ISO 783-1999",
+              "Specimen_State": "As-built",
+              "Note": "Derived from stress-strain curves as shown in Fig. S5"
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Elongation_Total",
+            "Value": 18.4,
+            "Unit": "%",
+            "Value_StdDev": 4.6,
+            "Original_Values": "18.4 +/- 4.6%",
+            "Test_Condition": {
+              "Test_Temperature_K": 1073,
+              "Test_Temperature_Original": "800 C",
+              "Loading_Mode": "Tension",
+              "Strain_Rate_s1": 0.0002,
+              "Original_Values_Strain_Rate": "2 x 10^-4 s^-1",
+              "Standard": "ISO 783-1999",
+              "Specimen_State": "As-built",
+              "Note": "Derived from stress-strain curves as shown in Fig. S5"
+            },
+            "Data_Source": "text",
+            "Note": "Original text uses EL (elongation to failure); not distinguished between uniform and total"
+          },
+          {
+            "Property_Name": "Hardness",
+            "Value": 349,
+            "Unit": "HV0.2",
+            "Value_StdDev": 16,
+            "Original_Values": "349 +/- 16 HV0.2",
+            "Test_Condition": {
+              "Loading_Mode": "Vickers microhardness",
+              "Load": "200 gf",
+              "Dwell_Time": "15 s",
+              "Test_Temperature_Original": "Room temperature (assumed)",
+              "Specimen_State": "As-built"
+            },
+            "Data_Source": "text",
+            "Note": "Ten indentations per condition"
+          },
+          {
+            "Property_Name": "Fracture_Toughness",
+            "Value": 11.7,
+            "Unit": "MPa*sqrt(m)",
+            "Value_StdDev": 1.0,
+            "Original_Values": "11.7 +/- 1.0 MPa*sqrt(m)",
+            "Test_Condition": {
+              "Test_Temperature_K": 293,
+              "Test_Temperature_Original": "Room temperature",
+              "Loading_Mode": "SENB (Single-Edge Notched Bend)",
+              "Standard": "ASTM E399",
+              "Specimen_State": "As-built"
+            },
+            "Data_Source": "text",
+            "Note": "Original text uses MPa/m notation; interpreted as MPa*sqrt(m) per standard KIC unit"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "03",
+      "Sample_ID": "Hatch_melt_L70",
+      "Role": "Comparator",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing",
+        "Nanomaterial"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 2.1: For the reference sample, three outlines with 0.5 mm offset ... electron beam meandered in a back-and-forth pattern during the hatch melt ... layer thickness of 70 um",
+        "Section 3.1: The EBSD determined phase constitution in the hatch melt sample is 14.3% alpha2, 70.4% gamma and 15.3% B2"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "TiAl intermetallic nanocomposite",
+          "Material_Name_Raw": "Y2O3/Ti-48Al-2Cr-2Nb (Y2O3/TiAl)",
+          "Nominal_Composition": {
+            "Ti": "Balance",
+            "Al": {
+              "Value": 48.0,
+              "Unit": "at.%",
+              "Original_Values": "Ti-48Al"
+            },
+            "Cr": {
+              "Value": 2.0,
+              "Unit": "at.%",
+              "Original_Values": "2Cr"
+            },
+            "Nb": {
+              "Value": 2.0,
+              "Unit": "at.%",
+              "Original_Values": "2Nb"
+            },
+            "Y2O3_nanoparticle_addition": {
+              "Value": 0.4,
+              "Unit": "wt.%",
+              "Original_Values": "0.4 wt.% Y2O3 nanoparticles"
+            },
+            "Note": "Same powder as Multi-spot samples"
+          },
+          "Measured_Composition": {
+            "Al": {
+              "Value": 46.5,
+              "Unit": "at.%",
+              "Original_Values": "46.5 at.%",
+              "Note": "Measured by titration in the hatch melt sample (EL = 0.2 J/mm)"
+            }
+          }
+        },
+        "Processing": {
+          "Process_Category": "Additive_Manufacturing",
+          "Process_Text": {
+            "original": "PBF-EB hatch melt strategy with layer thickness of 70 um on Arcam A2XX machine. Snake-like scan pattern with 90 degree scan rotation between layers. Three outlines with 0.5 mm offset during contour melt.",
+            "simplified": "Powder mixing (Y2O3/TiAl, 5h, air) -> PBF-EB hatch melt (Arcam A2XX, 70 um layer, 1160 C build temp, 1E-2 mbar vacuum, He) -> As-built"
+          },
+          "Equipment": [
+            {
+              "Name": "Arcam A2XX",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "V-shaped three-dimensional blender (Mitr Instrument Equipment Co., Ltd.)",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Olympus LEXT OLS4000 3D laser confocal microscope",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Zeiss Gemini-300 SEM (SE2, BSE, EDS, EBSD)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "HKI Nordlys Max3 EBSD",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Tecnai G2 S-TWIN TEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "QATM Qness Q30 A+",
+              "Category": "Testing"
+            },
+            {
+              "Name": "Instron 5582 universal testing machine",
+              "Category": "Testing"
+            },
+            {
+              "Name": "ImageJ",
+              "Category": "Software"
+            },
+            {
+              "Name": "HKL CHANNEL5",
+              "Category": "Software"
+            },
+            {
+              "Name": "OIM Analysis 7",
+              "Category": "Software"
+            }
+          ],
+          "Key_Params": {
+            "Stage1_Powder_Preparation": {
+              "Note": "Same as Multi-spot L70; shared per paper statement"
+            },
+            "Stage2_PBF_EB": {
+              "Melt_Strategy": "Hatch melt (snake-like, back-and-forth pattern)",
+              "Layer_Thickness": {
+                "Value": 70,
+                "Unit": "um",
+                "Original_Values": "70 um"
+              },
+              "Build_Temperature": {
+                "Value": 1433,
+                "Unit": "K",
+                "Original_Values": "1160 C"
+              },
+              "Vacuum": {
+                "Value": 0.01,
+                "Unit": "mbar",
+                "Original_Values": "1 x 10^-2 mbar"
+              },
+              "Regulating_Gas": "High purity helium",
+              "Scanning_Speed": {
+                "Value": 2400,
+                "Unit": "mm/s",
+                "Original_Values": "v = 2400 mm/s",
+                "Note": "Per Table 1"
+              },
+              "Beam_Current": {
+                "Value": 8,
+                "Unit": "mA",
+                "Original_Values": "I = 8 mA",
+                "Note": "Per Table 1"
+              },
+              "Line_Offset": {
+                "Value": 0.1,
+                "Unit": "mm",
+                "Original_Values": "Loff = 0.1 mm",
+                "Note": "Per Table 1"
+              },
+              "Focus_Offset": {
+                "Value": 0,
+                "Unit": "mA",
+                "Original_Values": "FO = 0 mA",
+                "Note": "Per Table 1"
+              },
+              "Line_Energy_Density": {
+                "Value": 0.2,
+                "Unit": "J/mm",
+                "Original_Values": "EL = 0.2 J/mm",
+                "Note": "Per Table 1"
+              },
+              "Scan_Rotation": "90 degree between layers",
+              "Contour": "Three outlines with 0.5 mm offset",
+              "Sample_Dimensions": "20 x 20 x 60 mm3"
+            }
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "EBSD phase constitution: 14.3% alpha2, 70.4% gamma, 15.3% B2. Nanoparticle mean size 218 +/- 113 nm, chain-like pattern distribution. Lamellar spacing 959 +/- 155 nm. Lack-of-fusion defects with defect area fraction 1.6%. Dislocations and twins in equiaxed gamma grains and gamma lamellae. Chain-like nanoparticles at top layer located ~50 um from top surface.",
+            "simplified": "Duplex microstructure with higher gamma fraction (70.4%); coarser lamellar spacing (959 +/- 155 nm); larger nanoparticles (218 +/- 113 nm) with chain-like distribution; 1.6% defect area fraction"
+          },
+          "Main_Phase": {
+            "Phase_Name": "alpha2/gamma lamellar colonies (duplex matrix)",
+            "Crystal_Structure": "HCP (alpha2) + L10 (gamma)",
+            "Phase_Fraction": {
+              "alpha2": {
+                "Value": 14.3,
+                "Unit": "%",
+                "Original_Values": "14.3% alpha2"
+              },
+              "gamma": {
+                "Value": 70.4,
+                "Unit": "%",
+                "Original_Values": "70.4% gamma"
+              }
+            }
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "B2",
+              "Crystal_Structure": "B2 (ordered BCC)",
+              "Phase_Fraction": {
+                "Value": 15.3,
+                "Unit": "%",
+                "Original_Values": "15.3% B2"
+              }
+            }
+          ],
+          "Lamellar_Spacing": {
+            "Value": 959,
+            "Unit": "nm",
+            "Value_StdDev": 155,
+            "Original_Values": "959 +/- 155 nm",
+            "Note": "Measured by TEM; straight interface between alpha2/gamma"
+          },
+          "Nanoparticle_Characteristics": {
+            "Mean_Size": {
+              "Value": 218,
+              "Unit": "nm",
+              "Value_StdDev": 113,
+              "Original_Values": "218 +/- 113 nm",
+              "Note": "diameter; some particles arranged in chain-like pattern"
+            },
+            "Number_Density": {
+              "Value": 0.09,
+              "Unit": "um^-2",
+              "Value_StdDev": 0.03,
+              "Original_Values": "0.09 +/- 0.03 um^-2"
+            },
+            "Volume_Fraction": {
+              "Value": 0.9,
+              "Unit": "%",
+              "Value_StdDev": 0.4,
+              "Original_Values": "0.9 +/- 0.4%"
+            }
+          },
+          "Defects": {
+            "Defect_Area_Fraction": {
+              "Value": 1.6,
+              "Unit": "%",
+              "Original_Values": "1.6%",
+              "Note": "Lack-of-fusion defects and a few pores observed"
+            }
+          },
+          "Advanced_Quantitative_Features": {
+            "Dislocations_and_Twins": "Present in equiaxed gamma grains and gamma lamellae; no evidence of their presence in alpha2 and B2 grains. Dislocations blocked by twins and grain boundaries. Dislocation sub-grain boundaries within gamma lamellae indicate recovery and recrystallisation.",
+            "Chain_Nanoparticle_Location_From_Top_Surface": {
+              "Value": 50,
+              "Unit": "um",
+              "Note": "Approximate value (~50 um); corresponds to layer thickness after powder collapse; observed at top layer in hatch melt sample per Section 4.3"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Tensile_Properties",
+            "Value": null,
+            "Test_Condition": {
+              "Test_Temperature_K": 1073,
+              "Test_Temperature_Original": "800 C",
+              "Loading_Mode": "Tension",
+              "Specimen_State": "As-built"
+            },
+            "Data_Source": "text",
+            "Note": "Hatch melt sample fractured either out of gauge length or from lack-of-fusion defects in an intergranular manner. Engineering stress-strain curve shows a pure elastic characteristic; quantitative data not included for brevity per authors"
+          }
+        ]
+      }
+    }
+  ]
+}

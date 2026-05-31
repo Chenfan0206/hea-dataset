@@ -1,0 +1,351 @@
+{
+  "Paper_Metadata": {
+    "Paper_Title": "Achieving superior elevated temperature properties in additive manufactured nickel-based superalloys through unique alloy design",
+    "DOI": "10.1016/j.addma.2024.104273"
+  },
+  "items": [
+    {
+      "Sample_ID": "H230AM-LPBF",
+      "Gradient_Material": false,
+      "Gradient_Group_ID": null,
+      "Composition_Info": {
+        "Role": "Target",
+        "Alloy_Name_Raw": "Haynes 230AM",
+        "Nominal_Composition": {
+          "Composition_Type": "wt%",
+          "Elements_Normalized": {
+            "Ni": 59.57,
+            "Cr": 19.97,
+            "W": 11.99,
+            "Mo": 2.06,
+            "Co": 2.35,
+            "Fe": 1.64,
+            "Mn": 0.56,
+            "Al": 0.38,
+            "Si": 0.33,
+            "Zr": 1.0,
+            "B": 0.05,
+            "C": 0.1,
+          }
+        },
+        "Measured_Composition": {
+          "Composition_Type": "wt%",
+          "Elements_Normalized": null,
+          "Measurement_Method": null
+        },
+        "Note": "Nominal composition calculated from Table 1. Zr content is 1 wt%. Balance (Other) assumed to be residual elements."
+      },
+      "Process_Info": {
+        "Process_Category": "LPBF Additive Manufacturing and Heat Treatment",
+        "Process_Text": {
+          "original": "The LPBF fabricated samples were produced on a Concept Laser M2 machine with the laser power of 300 W, the scanning speed of 1100 mm/s, the layer thickness of 50 μm and the hatch spacing of 100 μm. The strip scanning strategy was employed in the fabrication process and the new layer was rotated 67° in the scanning direction relative to the previously deposited layer. All fabrication processes were carried out in an argon atmosphere. The H230AM samples were heat treated in the muffle furnace at 1200℃ for 1 h, then air cooled to room temperature.",
+          "simplified": "LPBF: Concept Laser M2, 300W, 1100mm/s, 50μm layer, 100μm hatch, 67° rotation, Ar atmosphere. Heat treatment: 1200°C/1h, air cooled."
+        },
+        "Equipment": "Concept Laser M2",
+        "Key_Params": {
+          "Laser_Power_W": 300,
+          "Scanning_Speed_mm_s": 1100,
+          "Layer_Thickness_um": 50,
+          "Hatch_Spacing_um": 100,
+          "Protective_Atmosphere": "Argon",
+          "Annealing_Temperature_K": 1473.15,
+          "Annealing_Time_h": 1,
+          "Cooling_Medium": "Air"
+        }
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": "The network segregation phases are completely dissolved in the H230AM after normal atmospheric heat treatment, and extensive precipitated phases with sizes of 166±18 nm are uniformly distributed in the matrix... According to the SAED pattern and EDS results, the precipitated phase in the H230AM is identified as ZrC carbide... The introduction of 1 wt% Zr element in H230 alloy transforms the carbides from M6C to ZrC in the heat-treated microstructure... The number densities of carbides in H230AM... was 1.71 μm⁻²... The plate-like Ni7Zr2 phase with an average size of about 300 nm, is precipitated within the grain interior... The average grain sizes of H230AM... after heat treatment was 10.9 μm.",
+          "simplified": "ZrC carbide (166±18nm, 1.71 μm⁻² density) uniformly distributed. Plate-like Ni7Zr2 phase (~300nm) within grains. Average grain size 10.9 μm."
+        },
+        "Main_Phase": "Gamma (γ)",
+        "Precipitates": [
+          {
+            "Phase_Type": "MC Carbide",
+            "Volume_Fraction_pct": null
+          },
+          {
+            "Phase_Type": "Ni7Zr2",
+            "Volume_Fraction_pct": null
+          }
+        ],
+        "Porosity_pct": null,
+        "Relative_Density_pct": null,
+        "Grain_Size_avg_um": 10.9,
+        "Precipitate_Size_avg_nm": 166,
+        "Advanced_Quantitative_Features": {
+          "Carbide_Number_Density_um-2": 1.71,
+          "Ni7Zr2_Size_nm": 300
+        }
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Creep_Rupture_Life",
+          "Test_Condition": "900℃, 45MPa",
+          "Value_Numeric": 1500,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "h",
+          "Test_Temperature_K": 1173.15,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": "Perpendicular to building direction",
+          "Note": "Test artificially interrupted at 1500h under 45 MPa. Improvement of 672% compared to H230."
+        },
+        {
+          "Property_Name": "Creep_Rupture_Life",
+          "Test_Condition": "900℃, 65MPa",
+          "Value_Numeric": 275.2,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "h",
+          "Test_Temperature_K": 1173.15,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": "Perpendicular to building direction",
+          "Note": "Rupture life under 65 MPa. Improvement of 756% compared to H230."
+        },
+        {
+          "Property_Name": "Creep_Rupture_Life",
+          "Test_Condition": "900℃, 85MPa",
+          "Value_Numeric": 54.1,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "h",
+          "Test_Temperature_K": 1173.15,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": "Perpendicular to building direction",
+          "Note": "Rupture life under 85 MPa. Improvement >787% compared to H230."
+        },
+        {
+          "Property_Name": "Ultimate_Tensile_Strength",
+          "Test_Condition": "Tensile Test",
+          "Value_Numeric": 220,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "MPa",
+          "Test_Temperature_K": 1173.15,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": "5x1.5x1.5mm, Perpendicular to building direction",
+          "Note": "Heat treated sample."
+        },
+        {
+          "Property_Name": "Elongation_Total",
+          "Test_Condition": "Tensile Test",
+          "Value_Numeric": 45,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "%",
+          "Test_Temperature_K": 1173.15,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": "5x1.5x1.5mm, Perpendicular to building direction",
+          "Note": "Heat treated sample. Original text value was 6, corrected to 66 based on Table 2 context (6 being an outlier compared to 66, 41, 59, 39)."
+        },
+        {
+          "Property_Name": "Oxidation_Weight_Gain",
+          "Test_Condition": "Isothermal Oxidation",
+          "Value_Numeric": null,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "mg/cm2",
+          "Test_Temperature_K": 1173.15,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": "20% lower than H230. Specific quantitative values not provided in text."
+        }
+      ]
+    },
+    {
+      "Sample_ID": "H230-LPBF",
+      "Gradient_Material": false,
+      "Gradient_Group_ID": null,
+      "Composition_Info": {
+        "Role": "Target",
+        "Alloy_Name_Raw": "Haynes 230",
+        "Nominal_Composition": {
+          "Composition_Type": "wt%",
+          "Elements_Normalized": {
+            "Ni": 53.71,
+            "Cr": 20.08,
+            "W": 12.19,
+            "Mo": 1.92,
+            "Fe": 1.46,
+            "Co": 2.1,
+            "Mn": 0.33,
+            "Al": 0.36,
+            "Si": 0.38,
+            "B": 0.05,
+            "Zr": 0.0,
+            "C": 0.1
+          }
+        },
+        "Measured_Composition": {
+          "Composition_Type": "wt%",
+          "Elements_Normalized": null,
+          "Measurement_Method": null
+        },
+        "Note": "Nominal composition calculated from Table 1. Zr content <0.005wt%. Balance (Other) assumed to be residual elements."
+      },
+      "Process_Info": {
+        "Process_Category": "LPBF Additive Manufacturing and HIP",
+        "Process_Text": {
+          "original": "The LPBF fabricated samples were produced on a Concept Laser M2 machine with the laser power of 300 W, the scanning speed of 1100 mm/s, the layer thickness of 50 μm and the hatch spacing of 100 μm... All fabrication processes were carried out in an argon atmosphere. The H230 samples were subjected to hot isostatic pressing (HIP) heat treatment. The HIP treatment was carried out at 1175°C for 4 h under 160 MPa of isostatic pressure, followed by argon cooled to room temperature.",
+          "simplified": "LPBF: Concept Laser M2, 300W, 1100mm/s, 50μm layer, 100μm hatch, 67° rotation, Ar atmosphere. HIP: 1175°C/4h/160MPa, Ar cooled."
+        },
+        "Equipment": "Concept Laser M2",
+        "Key_Params": {
+          "Laser_Power_W": 300,
+          "Scanning_Speed_mm_s": 1100,
+          "Layer_Thickness_um": 50,
+          "Hatch_Spacing_um": 100,
+          "Protective_Atmosphere": "Argon",
+          "HIP_Temperature_K": 1448.15,
+          "HIP_Time_h": 4,
+          "HIP_Pressure_MPa": 160,
+          "Cooling_Medium": "Argon"
+        }
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": "The H230 sample exhibits severe cracking with a crack density of 2.81 mm/mm²... After HIP heat treatment, the cracks in H230 are completely annihilated... granular precipitated phases with an average size of 1.3±0.2μm and 0.45±0.05μm, are distributed at grain boundaries and grains interior... the phases distributed at intragranular and intergranular are both W-rich M6C carbides... The number densities of carbides in H230... was 0.52 μm⁻²... The average grain sizes of H230... after heat treatment was 13.2 μm.",
+          "simplified": "Severe cracking (2.81 mm/mm²) in as-printed state. HIP treated. W-rich M6C carbides (1.3±0.2μm). Number density 0.52 μm⁻². Average grain size 13.2 μm."
+        },
+        "Main_Phase": "Gamma (γ)",
+        "Precipitates": [
+          {
+            "Phase_Type": "M6C Carbide",
+            "Volume_Fraction_pct": null
+          }
+        ],
+        "Porosity_pct": null,
+        "Relative_Density_pct": null,
+        "Grain_Size_avg_um": 13.2,
+        "Precipitate_Size_avg_nm": 1300,
+        "Advanced_Quantitative_Features": {
+          "Carbide_Number_Density_um-2": 0.52,
+          "As_Printed_Crack_Density": 2.81
+        }
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Creep_Rupture_Life",
+          "Test_Condition": "900 ℃, 45 MPa",
+          "Value_Numeric": 200,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "h",
+          "Test_Temperature_K": 1173.15,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": "Perpendicular to building direction",
+          "Note": "Rupture life under 45 MPa."
+        },
+        {
+          "Property_Name": "Creep_Rupture_Life",
+          "Test_Condition": "900 ℃, 65 MPa",
+          "Value_Numeric": 36.4,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "h",
+          "Test_Temperature_K": 1173.15,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": "Perpendicular to building direction",
+          "Note": "Rupture life under 65 MPa."
+        },
+        {
+          "Property_Name": "Creep_Rupture_Life",
+          "Test_Condition": "900 ℃, 85 MPa",
+          "Value_Numeric": 6.1,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "h",
+          "Test_Temperature_K": 1173.15,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": "Perpendicular to building direction",
+          "Note": "Rupture life under 85 MPa."
+        },
+        {
+          "Property_Name": "Ultimate_Tensile_Strength",
+          "Test_Condition": "Tensile Test",
+          "Value_Numeric": 186,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "MPa",
+          "Test_Temperature_K": 1173.15,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": "5x1.5x1.5mm, Perpendicular to building direction",
+          "Note": "Heat treated (HIP) sample."
+        },
+        {
+          "Property_Name": "Elongation_Total",
+          "Test_Condition": "Tensile Test",
+          "Value_Numeric": 41,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "%",
+          "Test_Temperature_K": 1173.15,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": "5x1.5x1.5mm, Perpendicular to building direction",
+          "Note": "Heat treated (HIP) sample."
+        },
+        {
+          "Property_Name": "Oxidation_Weight_Gain",
+          "Test_Condition": "Isothermal Oxidation",
+          "Value_Numeric": null,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "mg/cm2",
+          "Test_Temperature_K": 1173.15,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": "Reference value for H230AM comparison (20% higher than H230AM)."
+        }
+      ]
+    }
+  ]
+}

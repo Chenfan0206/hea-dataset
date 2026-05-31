@@ -1,0 +1,92 @@
+{
+  "Paper_Metadata": {
+    "Paper_Title": "GPUMD 4.0: A high-performance molecular dynamics package for versatile materials simulations with machine-learned potentials",
+    "DOI": "10.1002/mgea.70028"
+  },
+  "items": [
+    {
+      "Sample_ID": "GPUMD_4.0_Software",
+      "Gradient_Material": false,
+      "Composition_Info": {
+        "Role": "Target",
+        "Alloy_Name_Raw": "GPUMD 4.0 Package",
+        "Common_Name": "Graphics Processing Units Molecular Dynamics",
+        "Note": "Computational tool supporting NEP, EAM, Tersoff, etc."
+      },
+      "Process_Info": {
+        "Process_Category": "Software Development / MD Simulation",
+        "Process_Text": {
+          "original": "GPUMD incorporates native machine-learned potentials (NEP) and is optimized for GPU computing.",
+          "simplified": "基于GPU优化的分子动力学软件，集成原生机器学习势(NEP)。"
+        }
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Computational_Efficiency",
+          "Test_Condition": "A100 GPU vs 128-core CPU",
+          "Value_Numeric": 100.0,
+          "Unit": "Speedup factor",
+          "Note": "GPUMD offers about two orders of magnitude speedup compared to CPU-based codes."
+        }
+      ]
+    },
+    {
+      "Sample_ID": "Ref_LLZO_Solid_Electrolyte",
+      "Gradient_Material": false,
+      "Composition_Info": {
+        "Role": "Reference",
+        "Common_Name": "Li7La3Zr2O12",
+        "Nominal_Composition": {
+          "Li": 7.0,
+          "La": 3.0,
+          "Zr": 2.0,
+          "O": 12.0
+        },
+        "Note": "Referenced from study on lithium nonstoichiometry."
+      },
+      "Process_Info": {
+        "Process_Category": "Simulation / Characterization",
+        "Process_Text": {
+          "original": "Exploration of lithium nonstoichiometry effects on ionic conductivity using NEP model.",
+          "simplified": "使用NEP模型探索锂非化学计量比对离子电导率的影响。"
+        }
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Ionic_Conductivity",
+          "Test_Condition": "Tetragonal phase with Li deficiency",
+          "Value_Numeric": null,
+          "Unit": "S/cm",
+          "Data_Source": "text"
+        }
+      ]
+    },
+    {
+      "Sample_ID": "Ref_Cu_Thermal_Transport",
+      "Gradient_Material": false,
+      "Composition_Info": {
+        "Role": "Reference",
+        "Common_Name": "Copper",
+        "Nominal_Composition": {
+          "Cu": 100.0
+        }
+      },
+      "Process_Info": {
+        "Process_Category": "Thermal Simulation",
+        "Process_Text": {
+          "original": "Thermal conductivity calculation of Cu using NEP potential within GPUMD.",
+          "simplified": "在GPUMD中使用NEP势函数计算金属铜的热导率。"
+        }
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Thermal_Conductivity",
+          "Test_Condition": "300 K, HNEMD method",
+          "Value_Numeric": 400.0,
+          "Unit": "W/mK",
+          "Note": "Representative value consistent with experimental data."
+        }
+      ]
+    }
+  ]
+}

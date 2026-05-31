@@ -1,0 +1,703 @@
+{
+  "Paper_Metadata": {
+    "Paper_Title": "Nanotwinned precipitates induced ultra-strong AlCoCrFeNi2.1 eutectic high-entropy alloy through additive manufacturing",
+    "DOI": "10.1016/j.mattod.2025.05.022"
+  },
+  "Paper_Routing": {
+    "base_material": "Metals",
+    "application": "Structural",
+    "research_paradigm": "Experimental",
+    "Supplements_Loaded": [
+      "directions/base/Metals.txt",
+      "directions/application/Structural.txt",
+      "directions/paradigm/Experimental.txt"
+    ],
+    "Patch_Tags": [
+      "High_Entropy",
+      "Additive_Manufacturing"
+    ],
+    "Needs_Mixed_Routing_Check": false,
+    "Mixed_Signals": []
+  },
+  "items": [
+    {
+      "Item_ID": "Item_1",
+      "Sample_ID": "As-built_AlCoCrFeNi2.1_EHEA",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "High_Entropy",
+        "Additive_Manufacturing"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "As-built microstructure",
+        "Mechanical properties",
+        "Materials and methods"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Eutectic high-entropy alloy (EHEA)",
+          "Material_Name_Raw": "AlCoCrFeNi2.1",
+          "Nominal_Composition": {
+            "Al": "16.4 at.%",
+            "Co": "16.4 at.%",
+            "Cr": "16.4 at.%",
+            "Fe": "16.4 at.%",
+            "Ni": "34.4 at.%",
+            "Unit": "at.%"
+          },
+          "Measured_Composition": "See Table S1; chemical composition of as-built sample listed in Table S1 (not reproduced in main text)",
+          "Note": "Nominal composition derived from formula AlCoCrFeNi2.1 (Al:Co:Cr:Fe:Ni = 1:1:1:1:2.1, total 6.1 parts). Exact measured composition of powder and as-built sample are in Table S1 (supplementary), not available in main text. Measured phase compositions for FCC and B2 phases in as-built state reported in text and Table S2."
+        },
+        "Processing": {
+          "Process_Category": "Laser-based powder bed fusion (PBF-LB)",
+          "Process_Text": {
+            "original": "The gas-atomization powder was fabricated by LangFeng Material Technology Co., Ltd. The PBF-LB process was conducted using an EOS M100 Laser-sintering system equipped with a 200 W fiber laser and a laser spot diameter of 40 μm. The adopted optimized parameters were a laser power (P) of 100 W, a scan speed (v) of 1000 mm/s, a hatch spacing (h) of 0.05 mm, and a layer thickness (t) of 0.02 mm. Prior to the AM process, a 20 μm thick layer of powder was deposited onto a 304 stainless-steel build platform without preheating in a high-purity argon environment (<1000 ppm oxygen). After each scan, a new layer of powder was deposited, and the laser scanning direction was rotated by 67° relative to the previous layer.",
+            "simplified": "Gas-atomized AlCoCrFeNi2.1 powder (15–53 μm, avg 31.5 μm) processed by PBF-LB (EOS M100) with 100 W laser power, 1000 mm/s scan speed, 0.05 mm hatch spacing, 0.02 mm layer thickness, 40 μm spot size, no preheating, Ar atmosphere, 67° rotation between layers. As-built plates: 40 mm × 8 mm × 4 mm, relative density >99%."
+          },
+          "Equipment": [
+            {
+              "Name": "EOS M100 Laser-sintering system",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Bruker D8 Advance diffractometer",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "FEI Scios (SEM/EBSD)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "JEOL JEM-2100F (TEM)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "FEI Themis Z (Cs-corrected TEM)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "CAMECA LEAP 5000XR (3D-APT)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "FEI Scios FIB/SEM system",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Gatan 695 ion-milling system",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Instron 5565 testing machine",
+              "Category": "Testing"
+            }
+          ],
+          "Key_Params": {
+            "Stage1_PBF_LB": {
+              "Laser_Power": {
+                "Value": 100,
+                "Unit": "W",
+                "Original_Values": "100 W"
+              },
+              "Scan_Speed": {
+                "Value": 1000,
+                "Unit": "mm/s",
+                "Original_Values": "1000 mm/s"
+              },
+              "Hatch_Spacing": {
+                "Value": 0.05,
+                "Unit": "mm",
+                "Original_Values": "0.05 mm"
+              },
+              "Layer_Thickness": {
+                "Value": 0.02,
+                "Unit": "mm",
+                "Original_Values": "0.02 mm"
+              },
+              "Laser_Spot_Diameter": {
+                "Value": 40,
+                "Unit": "μm",
+                "Original_Values": "40 μm"
+              },
+              "Atmosphere": "High-purity argon (<1000 ppm oxygen)",
+              "Preheating": "None",
+              "Scan_Rotation_Per_Layer": {
+                "Value": 67,
+                "Unit": "°",
+                "Original_Values": "67°"
+              },
+              "Powder_Size_Range": {
+                "Value_Range": {
+                  "Min": 15,
+                  "Max": 53
+                },
+                "Unit": "μm",
+                "Original_Values": "15–53 μm"
+              },
+              "Powder_Size_Average": {
+                "Value": 31.5,
+                "Unit": "μm",
+                "Original_Values": "31.5 μm"
+              },
+              "Build_Platform": "304 stainless-steel",
+              "Part_Dimensions": {
+                "Length": 40,
+                "Width": 8,
+                "Height": 4,
+                "Unit": "mm",
+                "Original_Values": "40 mm × 8 mm × 4 mm"
+              },
+              "Relative_Density": {
+                "Value": 99,
+                "Unit": "%",
+                "Original_Values": "exceeding 99%"
+              }
+            }
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "A dual-phase hierarchical microstructure is achieved in the as-built AlCoCrFeNi2.1 EHEA. The as-built EHEA exhibits a lower volume fraction of the FCC phase (16.4%) and a much higher volume fraction of the B2 phase (83.6%). The lamellar colonies are composed of alternating FCC and ordered B2 nanolayers. The as-built microstructure has no precipitates in the FCC and B2 matrix. A high density of dislocations is present due to the rapid solidification of PBF-LB. Cellular colonies are primarily composed of the BCC phase with a high density of dislocations, adopting an ordered-B2 structure encapsulated by a disordered FCC interfacial nanolayer.",
+            "simplified": "Dual-phase hierarchical microstructure: B2-dominated (83.6 vol%) with minor FCC (16.4 vol%). Two types of eutectic colonies: nano-lamellar (alternating FCC/B2 layers) and cellular (B2 core + FCC shell). No precipitates. High dislocation density. Bicontinuous Ni-Al-rich and Co-Cr-Fe-rich nanostructures within B2 colonies suggest spinodal decomposition."
+          },
+          "Main_Phase": {
+            "Phase_Name": "B2 (ordered)",
+            "Crystal_Structure": "B2",
+            "Volume_Fraction": {
+              "Value": 83.6,
+              "Unit": "vol%",
+              "Original_Values": "83.6 %"
+            }
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "FCC matrix phase",
+              "Crystal_Structure": "FCC",
+              "Volume_Fraction": {
+                "Value": 16.4,
+                "Unit": "vol%",
+                "Original_Values": "16.4 %"
+              },
+              "Morphology": "Nano-lamellar / interfacial nanolayer"
+            }
+          ],
+          "Relative_Density": {
+            "Value": 99,
+            "Unit": "%",
+            "Original_Values": "exceeding 99%"
+          },
+          "Texture_or_Orientation": {
+            "Lamellar_colonies": {
+              "Orientation_Relationship": "Kurdjumov-Sachs (K-S)",
+              "Details": "{011}_B2 // {111}_FCC and <111>_B2 // <011>_FCC"
+            },
+            "Cellular_colonies": {
+              "Orientation_Relationship": "Nishiyama-Wasserman (N-W)",
+              "Details": "{110}_B2 // {111}_FCC and <001>_B2 // <011>_FCC"
+            }
+          },
+          "Advanced_Quantitative_Features": {
+            "Lamellar_colony_FCC_layer_thickness": {
+              "Value": 87,
+              "Unit": "nm",
+              "dimension_type": "thickness",
+              "Original_Values": "λ_FCC = 87 nm"
+            },
+            "Lamellar_colony_B2_layer_thickness": {
+              "Value": 160,
+              "Unit": "nm",
+              "dimension_type": "thickness",
+              "Original_Values": "λ_B2 = 160 nm"
+            },
+            "Cellular_structure_average_cell_size": {
+              "Value": 800,
+              "Unit": "nm",
+              "dimension_type": "diameter",
+              "Original_Values": "average cell size of 800 nm"
+            },
+            "Cellular_colony_FCC_shell_thickness": {
+              "Value": 14,
+              "Unit": "nm",
+              "dimension_type": "thickness",
+              "Original_Values": "~14 nm"
+            },
+            "Scan_track_width": {
+              "Value": 52,
+              "Unit": "μm",
+              "dimension_type": "width",
+              "Original_Values": "approximately 52 μm"
+            },
+            "B2_phase_composition_lamellar_Al_content": {
+              "Value": 16.8,
+              "Unit": "at.%",
+              "Note": "From STEM-EDS; full composition in Table S2"
+            },
+            "FCC_phase_composition_lamellar_Al_content": {
+              "Value": 14.1,
+              "Unit": "at.%",
+              "Note": "From STEM-EDS; full composition in Table S2"
+            },
+            "B2_phase_composition_as_built": {
+              "Note": "Al15.9Co16.9Cr15.7Fe16.8Ni34.7 (at.%) from text; significantly deviates from equilibrium state (Al38.56Co10.12Cr4.12Fe9.2Ni37.98 [59])",
+              "Original_Values": "Al15.9Co16.9Cr15.7Fe16.8Ni34.7"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Test_Type": "Tensile",
+            "Test_Temperature_K": {
+              "Value": 293,
+              "Unit": "K"
+            },
+            "Test_Temperature_Original": "Room temperature (RT)",
+            "Loading_Mode": "Uniaxial tension",
+            "Strain_Rate_s1": {
+              "Value": 0.001,
+              "Unit": "s⁻¹",
+              "Original_Values": "1.0 × 10⁻³ s⁻¹"
+            },
+            "Orientation": "Perpendicular to building direction",
+            "Specimen_State": "As-built",
+            "Specimen_Dimensions": {
+              "Shape": "Dog-bone",
+              "Gauge_Length": {
+                "Value": 8,
+                "Unit": "mm"
+              },
+              "Gauge_Width": {
+                "Value": 2,
+                "Unit": "mm"
+              },
+              "Gauge_Thickness": {
+                "Value": 1.0,
+                "Unit": "mm"
+              },
+              "Original_Values": "8 mm (length) × 2 mm (width) × 1 mm (thickness)"
+            },
+            "Yield_Strength": {
+              "Value": 1381,
+              "Unit": "MPa",
+              "Value_StdDev": 10,
+              "Original_Values": "1381 ± 10 MPa"
+            },
+            "Ultimate_Tensile_Strength": {
+              "Value": 1731,
+              "Unit": "MPa",
+              "Value_StdDev": 31,
+              "Original_Values": "1731 ± 31 MPa"
+            },
+            "Elongation_Uniform": {
+              "Value": 3.9,
+              "Unit": "%",
+              "Value_StdDev": 0.3,
+              "Original_Values": "3.9 ± 0.3%"
+            },
+            "Data_Source": "text",
+            "Data_Nature": "Experimental",
+            "Note": "As-built sample tensile properties at RT. At least 3 tests repeated. Video extensometer used."
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "Item_2",
+      "Sample_ID": "Annealed_600C_8h_AlCoCrFeNi2.1_EHEA",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "High_Entropy",
+        "Additive_Manufacturing"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Post-annealed microstructure",
+        "Mechanical properties",
+        "Strengthening mechanism of NT precipitates",
+        "Materials and methods"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Eutectic high-entropy alloy (EHEA)",
+          "Material_Name_Raw": "AlCoCrFeNi2.1",
+          "Nominal_Composition": {
+            "Al": "16.4 at.%",
+            "Co": "16.4 at.%",
+            "Cr": "16.4 at.%",
+            "Fe": "16.4 at.%",
+            "Ni": "34.4 at.%",
+            "Unit": "at.%"
+          },
+          "Note": "Same nominal composition as Item_1. Composition shared basis: as-built plates from Item_1 were sectioned and annealed."
+        },
+        "Processing": {
+          "Process_Category": "PBF-LB + Post-annealing",
+          "Process_Text": {
+            "original": "The as-built samples were subjected to 600 °C for 8 h to trigger nanoprecipitation. Post-heat treatments were performed in a muffle furnace at 600 °C for various durations, followed by water quenching.",
+            "simplified": "PBF-LB fabricated AlCoCrFeNi2.1 EHEA (same parameters as Item_1), then annealed at 600 °C for 8 h in a muffle furnace, followed by water quenching."
+          },
+          "Equipment": [
+            {
+              "Name": "EOS M100 Laser-sintering system",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Muffle furnace",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Bruker D8 Advance diffractometer",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "FEI Scios (SEM/EBSD)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "JEOL JEM-2100F (TEM)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "FEI Themis Z (Cs-corrected TEM)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "CAMECA LEAP 5000XR (3D-APT)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "FEI Scios FIB/SEM system",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Gatan 695 ion-milling system",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Instron 5565 testing machine",
+              "Category": "Testing"
+            }
+          ],
+          "Key_Params": {
+            "Stage1_PBF_LB": {
+              "Note": "Same PBF-LB parameters as Item_1. Shared processing explicitly stated: as-built samples subjected to post-heat treatment."
+            },
+            "Stage2_Annealing": {
+              "Annealing_Temperature": {
+                "Value": 873.15,
+                "Unit": "K",
+                "Original_Values": "600 °C"
+              },
+              "Annealing_Time": {
+                "Value": 8,
+                "Unit": "h",
+                "Original_Values": "8 h"
+              },
+              "Cooling_Method": "Water quenching",
+              "Atmosphere": "Not specified for annealing"
+            }
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "The as-built samples were subjected to 600 °C for 8 h to trigger nanoprecipitation. A multiple-order hierarchical multiphase architecture is achieved. The annealed sample retains a mixture of nano-lamellar and cellular eutectic colonies, with only slight coarsening. At the micro-scale, nanoscale precipitates are observed in both colonies after annealing. In the FCC phase, ordered L1₂ precipitates are identified. High-density needle-like nanoprecipitates are evenly distributed within the B2 phases. These nanoprecipitates average ~180 nm in length and ~20 nm in diameter, with volume fractions of 20% in lamellar colonies and 45% in cellular colonies.",
+            "simplified": "After annealing at 600°C/8h: retained lamellar and cellular eutectic colonies with slight coarsening. L1₂ ordered precipitates in FCC phase. Needle-like nanotwinned (NT) FCC and HCP nanoprecipitates in B2 phase. Type I (>20 nm width): FCC with ultrafine nanotwins. Type II (<10 nm width): HCP with high-density stacking faults."
+          },
+          "Main_Phase": {
+            "Phase_Name": "B2 (ordered)",
+            "Crystal_Structure": "B2",
+            "Volume_Fraction": null,
+            "Note": "B2 phase remains dominant after annealing; exact volume fraction not explicitly stated for annealed condition"
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "FCC matrix phase",
+              "Crystal_Structure": "FCC",
+              "Morphology": "Nano-lamellar / interfacial nanolayer"
+            },
+            {
+              "Phase_Name": "L1₂ ordered precipitates",
+              "Crystal_Structure": "L1₂",
+              "Location": "Within FCC phase",
+              "Morphology": "Nanoscale precipitates",
+              "Note": "Identified by super-lattice spots in SAED pattern"
+            },
+            {
+              "Phase_Name": "NT FCC nanoprecipitates (Type I)",
+              "Crystal_Structure": "FCC",
+              "Location": "Within B2 phase",
+              "Morphology": "Needle-like with ultrafine nanotwins",
+              "Average_Length": {
+                "Value": 180,
+                "Unit": "nm",
+                "dimension_type": "length",
+                "Original_Values": "~180 nm in length"
+              },
+              "Average_Width": {
+                "Value": 20,
+                "Unit": "nm",
+                "dimension_type": "diameter",
+                "Original_Values": "~20 nm in diameter"
+              },
+              "Volume_Fraction_in_lamellar_colonies": {
+                "Value": 20,
+                "Unit": "%",
+                "Original_Values": "20%"
+              },
+              "Volume_Fraction_in_cellular_colonies": {
+                "Value": 45,
+                "Unit": "%",
+                "Original_Values": "45%"
+              },
+              "Twin_Thickness_Range": {
+                "Value_Range": {
+                  "Min": 0.4,
+                  "Max": 16
+                },
+                "Unit": "nm",
+                "Original_Values": "0.4 nm to 16 nm"
+              },
+              "Twin_Thickness_Average": {
+                "Value": 2.4,
+                "Unit": "nm",
+                "Original_Values": "average of 2.4 nm"
+              },
+              "Orientation_Relationship_with_B2_matrix": "Kurdjumov-Sachs (K-S): {110}_B2 // {111}_FCC, <1-11>_B2 // <1-10>_FCC",
+              "Fraction_of_needle_like_precipitates": {
+                "Value": 76,
+                "Unit": "%",
+                "Original_Values": "76% of needle-like nanoprecipitates are FCC-type"
+              }
+            },
+            {
+              "Phase_Name": "HCP nanoprecipitates (Type II)",
+              "Crystal_Structure": "HCP",
+              "Location": "Within B2 phase",
+              "Morphology": "Needle-like with high-density stacking faults",
+              "Width": {
+                "Value_Range": {
+                  "Max": 10
+                },
+                "Unit": "nm",
+                "dimension_type": "diameter",
+                "Original_Values": "under 10 nm in width"
+              },
+              "SF_Spacing_Range": {
+                "Value_Range": {
+                  "Min": 0.4,
+                  "Max": 2.9
+                },
+                "Unit": "nm",
+                "Original_Values": "0.4 to 2.9 nm"
+              },
+              "SF_Spacing_Average": {
+                "Value": 1.1,
+                "Unit": "nm",
+                "Original_Values": "averaging 1.1 nm"
+              },
+              "Orientation_Relationship_with_B2_matrix": "Burgers: {110}_B2 // {0001}_HCP, <1-11>_B2 // <11-20>_HCP"
+            }
+          ],
+          "Advanced_Quantitative_Features": {
+            "Lamellar_colony_FCC_layer_thickness_annealed": {
+              "Value": 96,
+              "Unit": "nm",
+              "dimension_type": "thickness",
+              "Original_Values": "λ_FCC increased from 87 to 96 nm"
+            },
+            "Lamellar_colony_B2_layer_thickness_annealed": {
+              "Value": 176,
+              "Unit": "nm",
+              "dimension_type": "thickness",
+              "Original_Values": "λ_B2 increased from 160 to 176 nm"
+            },
+            "Cellular_structure_average_diameter_annealed": {
+              "Value": 653,
+              "Unit": "nm",
+              "dimension_type": "diameter",
+              "Original_Values": "~653 nm"
+            },
+            "Cellular_structure_average_diameter_as_built_ref": {
+              "Value": 549,
+              "Unit": "nm",
+              "dimension_type": "diameter",
+              "Original_Values": "~549 nm"
+            },
+            "NT_FCC_precipitate_composition_from_APT": {
+              "Note": "Nanoprecipitates consist of Co, Cr, Fe, and Ni in nearly equiatomic ratios (approximately 24.4 at.%) and 2.4 at.% Al, corresponding to CoCrFeNiAl0.1 HEA. Full composition in Table S2.",
+              "Original_Values": "Co, Cr, Fe, and Ni in nearly equiatomic ratios (approximately 24.4 at.%) and 2.4 at.% Al"
+            },
+            "HCP_B2_interface_lattice_misfit": {
+              "Value": 1.4,
+              "Unit": "%",
+              "Original_Values": "1.4%"
+            },
+            "FCC_B2_interface_lattice_misfit": {
+              "Value": 2.4,
+              "Unit": "%",
+              "Original_Values": "2.4%"
+            },
+            "Strengthening_contribution_NT_precipitates_Orowan": {
+              "Value": 565,
+              "Unit": "MPa",
+              "Original_Values": "~565 MPa",
+              "Note": "Estimated via modified Orowan bowing mechanism with shape correction factor K. Data_Nature: Computed."
+            },
+            "Orowan_model_parameters": {
+              "Taylor_factor_M": {
+                "Value": 2.71,
+                "Original_Values": "~2.71"
+              },
+              "Shear_modulus_G": {
+                "Value": 57,
+                "Unit": "GPa",
+                "Original_Values": "~57 GPa"
+              },
+              "Burgers_vector_b": {
+                "Value": 0.248,
+                "Unit": "nm",
+                "Original_Values": "~0.248 nm"
+              },
+              "Poisson_ratio_nu": {
+                "Value": 0.25,
+                "Original_Values": "~0.25"
+              },
+              "Interprecipitate_spacing": {
+                "Value": 64,
+                "Unit": "nm",
+                "Original_Values": "~64 nm"
+              },
+              "Aspect_ratio_h": {
+                "Value": 8.75,
+                "Original_Values": "~8.75"
+              },
+              "Note": "Parameters from literature [14,66]. Data_Nature: Literature_Experimental / Computed."
+            },
+            "Yield_strength_increment_NT_precipitates_estimated": {
+              "Value": 565,
+              "Unit": "MPa",
+              "Original_Values": "~565 MPa",
+              "Note": "Increment of yield strength contributed by NT precipitates in B2-matrix. Overall yield strength increment (as-annealed minus as-built) is ~335 MPa per text. Data_Nature: Computed."
+            },
+            "SFE_of_FeCoCrNiAl_0_36": {
+              "Value": -10,
+              "Unit": "mJ/m²",
+              "Note": "At RT from DFT calculations [63]. At 600°C: ~5 mJ/m². Data_Nature: Literature_Computed.",
+              "Original_Values": "approximately -10 mJ/m² at RT, ~5 mJ/m² at 600°C"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Test_Type": "Tensile",
+            "Test_Temperature_K": {
+              "Value": 293,
+              "Unit": "K"
+            },
+            "Test_Temperature_Original": "Room temperature (RT)",
+            "Loading_Mode": "Uniaxial tension",
+            "Strain_Rate_s1": {
+              "Value": 0.001,
+              "Unit": "s⁻¹",
+              "Original_Values": "1.0 × 10⁻³ s⁻¹"
+            },
+            "Orientation": "Perpendicular to building direction",
+            "Specimen_State": "As-annealed (600 °C, 8 h)",
+            "Specimen_Dimensions": {
+              "Shape": "Dog-bone",
+              "Gauge_Length": {
+                "Value": 8,
+                "Unit": "mm"
+              },
+              "Gauge_Width": {
+                "Value": 2,
+                "Unit": "mm"
+              },
+              "Gauge_Thickness": {
+                "Value": 1.0,
+                "Unit": "mm"
+              },
+              "Original_Values": "8 mm (length) × 2 mm (width) × 1 mm (thickness)"
+            },
+            "Yield_Strength": {
+              "Value": 1723,
+              "Unit": "MPa",
+              "Value_StdDev": 37,
+              "Original_Values": "1723 ± 37 MPa"
+            },
+            "Ultimate_Tensile_Strength": {
+              "Value": 2153,
+              "Unit": "MPa",
+              "Value_StdDev": 24,
+              "Original_Values": "2153 ± 24 MPa"
+            },
+            "Elongation_Uniform": {
+              "Value": null,
+              "Unit": "%",
+              "Note": "Not explicitly stated for as-annealed at RT; text states ductility is comparable to as-built (3.9 ± 0.3%) without compromising ductility"
+            },
+            "Data_Source": "text",
+            "Data_Nature": "Experimental",
+            "Note": "σ_0.2 and σ_u approximately 24% higher than as-built. Abstract states ~2200 MPa and ~2.2 GPa tensile strength; actual reported value in body: 2153 ± 24 MPa. At least 3 tests repeated."
+          },
+          {
+            "Test_Type": "Tensile",
+            "Test_Temperature_K": {
+              "Value": 873.15,
+              "Unit": "K"
+            },
+            "Test_Temperature_Original": "600 °C",
+            "Loading_Mode": "Uniaxial tension",
+            "Strain_Rate_s1": {
+              "Value": 0.001,
+              "Unit": "s⁻¹",
+              "Original_Values": "1.0 × 10⁻³ s⁻¹"
+            },
+            "Orientation": "Perpendicular to building direction",
+            "Specimen_State": "As-annealed (600 °C, 8 h)",
+            "Specimen_Dimensions": {
+              "Shape": "Dog-bone",
+              "Gauge_Length": {
+                "Value": 8,
+                "Unit": "mm"
+              },
+              "Gauge_Width": {
+                "Value": 2,
+                "Unit": "mm"
+              },
+              "Gauge_Thickness": {
+                "Value": 1.0,
+                "Unit": "mm"
+              },
+              "Original_Values": "8 mm (length) × 2 mm (width) × 1 mm (thickness)"
+            },
+            "Ultimate_Tensile_Strength": {
+              "Value": 1090,
+              "Unit": "MPa",
+              "Value_StdDev": 34,
+              "Original_Values": "1090 ± 34 MPa"
+            },
+            "Elongation_Total": {
+              "Value": 3.0,
+              "Unit": "%",
+              "Value_StdDev": 0.14,
+              "Original_Values": "3.0 ± 0.14%",
+              "Note": "Original text states 'ductility (3.0 ± 0.14 %)' without specifying uniform or total; defaulted to Elongation_Total per Structural supplement rule"
+            },
+            "Data_Source": "text",
+            "Data_Nature": "Experimental",
+            "Note": "As-annealed at 600°C tensile properties. At least 3 tests repeated. Yield strength not explicitly stated for this condition. Abstract states 1133 MPa at 600°C (likely same condition, discrepancy with body text value of 1090 ± 34 MPa)."
+          }
+        ]
+      }
+    }
+  ]
+}

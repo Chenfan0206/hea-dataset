@@ -1,0 +1,1404 @@
+{
+  "Paper_Metadata": {
+    "Paper_Title": "Additively-manufactured Al-0.3Zr-0.2Ce-0.2Cu alloy with high creep resistance and electrical conductivity",
+    "DOI": "10.1016/j.actamat.2025.121785"
+  },
+  "Paper_Routing": {
+    "base_material": "Metals",
+    "application": "Structural",
+    "research_paradigm": "Experimental",
+    "Supplements_Loaded": [
+      "directions/base/Metals.txt",
+      "directions/application/Structural.txt",
+      "directions/paradigm/Experimental.txt"
+    ],
+    "Patch_Tags": [
+      "Additive_Manufacturing"
+    ],
+    "Needs_Mixed_Routing_Check": false
+  },
+  "items": [
+    {
+      "Item_ID": "AF",
+      "Sample_ID": "Al-Zr-Ce-Cu as-fabricated",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 1",
+        "Table 2",
+        "Table 3",
+        "Table 5",
+        "Table 6",
+        "Table 7",
+        "Fig. 1",
+        "Fig. 6",
+        "Fig. 7"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Al alloy",
+          "Material_Name_Raw": "Al-0.3Zr-0.2Ce-0.2Cu (wt.%)",
+          "Measured_Composition": {
+            "Source": "ICP-OES",
+            "Unit": "wt.%",
+            "Elements": [
+              {
+                "Element": "Al",
+                "Value": "Balance"
+              },
+              {
+                "Element": "Zr",
+                "Value": 0.34
+              },
+              {
+                "Element": "Ce",
+                "Value": 0.19
+              },
+              {
+                "Element": "Cu",
+                "Value": 0.19
+              },
+              {
+                "Element": "Si",
+                "Value": 0.09
+              },
+              {
+                "Element": "Fe",
+                "Value": 0.05
+              },
+              {
+                "Element": "Sn",
+                "Value": 0.07
+              }
+            ]
+          },
+          "Local_Phase_Composition": [
+            {
+              "Phase": "α-Al matrix (melt pool core)",
+              "Source": "APT",
+              "Unit": "wt.%",
+              "Elements": [
+                {
+                  "Element": "Al",
+                  "Value": "Balance"
+                },
+                {
+                  "Element": "Zr",
+                  "Value": 0.41,
+                  "Value_StdDev": 0.07
+                },
+                {
+                  "Element": "Cu",
+                  "Value": 0.08,
+                  "Value_StdDev": 0.01
+                },
+                {
+                  "Element": "Si",
+                  "Value": 0.06,
+                  "Value_StdDev": 0.02
+                }
+              ],
+              "Note": "Ce, Sn, Fe not detected in α-Al matrix. Average of three individual APT tips."
+            },
+            {
+              "Phase": "α-Al matrix (melt pool boundary)",
+              "Source": "APT",
+              "Unit": "wt.%",
+              "Elements": [
+                {
+                  "Element": "Al",
+                  "Value": "Balance"
+                },
+                {
+                  "Element": "Zr",
+                  "Value": 0.43,
+                  "Value_StdDev": 0.06
+                },
+                {
+                  "Element": "Cu",
+                  "Value": 0.06,
+                  "Value_StdDev": 0.02
+                },
+                {
+                  "Element": "Si",
+                  "Value": 0.05,
+                  "Value_StdDev": 0.01
+                }
+              ],
+              "Note": "Ce, Sn, Fe not detected in α-Al matrix. Average of four individual APT tips."
+            },
+            {
+              "Phase": "α-Al matrix after creep (50-69 MPa, ~12% strain)",
+              "Source": "APT",
+              "Unit": "wt.%",
+              "Elements": [
+                {
+                  "Element": "Al",
+                  "Value": "Balance"
+                },
+                {
+                  "Element": "Zr",
+                  "Value": 0.4,
+                  "Value_StdDev": 0.02
+                },
+                {
+                  "Element": "Cu",
+                  "Value": 0.13,
+                  "Value_StdDev": 0.02
+                },
+                {
+                  "Element": "Si",
+                  "Value": 0.03,
+                  "Value_StdDev": 0.003
+                }
+              ],
+              "Note": "All Zr remained fully in solid solution after creep. Ce, Sn, Fe not detected. Average of three individual APT tips."
+            }
+          ],
+          "Note": "Nominal composition: Al-0.3Zr-0.2Ce-0.2Cu (wt.%). Zr is supersaturated in α-Al matrix due to rapid cooling in AM."
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "The alloy was additively manufactured using laser powder-bed fusion (LPBF, EOS M290) at Beehive Industries. Powder feedstock was gas-atomized under nitrogen atmosphere and sieved into 20-63 μm size range. Mechanical coupons (115 mm long and 15 mm in diameter) were fabricated with their length aligned along the build direction under Ar atmosphere. No post-fabrication heat treatment for as-fabricated state.",
+            "simplified": "LPBF additive manufacturing of Al-0.3Zr-0.2Ce-0.2Cu alloy using gas-atomized powder, no post-processing heat treatment."
+          },
+          "Stage1_AM": {
+            "Process_Category": "Additive Manufacturing (LPBF)",
+            "Key_Params": {
+              "Machine": "EOS M290",
+              "Laser_Power_W": 370,
+              "Scanning_Speed_mm_s": 1300,
+              "Hatch_Spacing_mm": 0.21,
+              "Layer_Thickness_um": 30,
+              "Beam_Size_um": 83,
+              "Stripe_Width_mm": 10,
+              "Stripe_Overlap_mm": 0.02,
+              "Scan_Rotation_Angle_deg": 67,
+              "Substrate_Temperature_C": 150,
+              "Atmosphere": "Ar",
+              "Powder_Size_Range_um": "20-63",
+              "Powder_Atomization_Atmosphere": "nitrogen"
+            },
+            "Original_Values": {
+              "Substrate_Temperature": "150 °C",
+              "Scan_Rotation_Angle": "67° between layers",
+              "Relative_Density": "> 99.5%"
+            },
+            "Specimen_Geometry": {
+              "Mechanical_Coupons": "115 mm long × 15 mm diameter, length aligned along BD"
+            }
+          },
+          "Equipment": [
+            {
+              "Name": "EOS M290",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "ICP-OES",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "TESCAN MIRA3 SEM with EBSD",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "JEOL 2200FS S/TEM with EDS",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "JEOL 2100F S/TEM with EDS",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "LEAP4000X HR APT (Cameca Instruments)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "FEI Nova 200 FIB-SEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Bruker AXS 2nd gen. D2 Phaser XRD",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Sigma-scope SMP10 (eddy current conductivity)",
+              "Category": "Testing"
+            },
+            {
+              "Name": "OIM Analysis software",
+              "Category": "Software"
+            },
+            {
+              "Name": "ImageJ",
+              "Category": "Software"
+            },
+            {
+              "Name": "IVAS v.3.8 (Cameca Instruments)",
+              "Category": "Software"
+            },
+            {
+              "Name": "Highscore Plus",
+              "Category": "Software"
+            },
+            {
+              "Name": "LVDT extensometer",
+              "Category": "Testing"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Elongated <001>Al and <101>Al grains aligned along BD spanning multiple melt pool widths. No fine grains observed. Submicron-sized (Ce,Cu)-rich precipitates distributed uniformly; thin region (~1 μm) above melt pool boundaries devoid of such precipitates. XRD reveals α-Al, Al8Cu4Ce, Al11Ce3, and Sn precipitates. High cooling rate completely suppressed primary Al3Zr formation. All Zr supersaturated in α-Al matrix.",
+            "simplified": "Coarse epitaxial α-Al grains elongated along BD with submicron (Ce,Cu)-rich intermetallic particles. Zr fully supersaturated in α-Al. No primary Al3Zr."
+          },
+          "Main_Phase": {
+            "Phase_Name": "α-Al matrix",
+            "Crystal_Structure": "FCC"
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "Al8Cu4Ce",
+              "Crystal_Structure": "undefined",
+              "Note": "Metastable phase identified by XRD. Formed on solidification as submicron particles."
+            },
+            {
+              "Phase_Name": "Al11Ce3",
+              "Crystal_Structure": "undefined",
+              "Note": "Identified by XRD."
+            },
+            {
+              "Phase_Name": "Sn-rich precipitates",
+              "Crystal_Structure": "undefined",
+              "Note": "Identified by XRD as Sn precipitates. Adjacent to (Ce,Cu)-rich precipitates. STEM-EDS shows Sn-rich phase as part of agglomerated intermetallic particles."
+            },
+            {
+              "Phase_Name": "(Ce,Cu)-rich particles",
+              "Crystal_Structure": "undefined",
+              "Note": "Submicron-sized composite particles comprising Ce-Cu-Si phase, Sn-rich phase, and Fe-Ce phase. Scavenge Cu, Fe, Si impurities."
+            }
+          ],
+          "Grain_Size": {
+            "Value": null,
+            "Note": "Described as elongated grains spanning multiple melt pool widths. Average grain diameter ~100 μm estimated for Hall-Petch calculation in Appendix B. Approximate cell size on surfaces perpendicular to BD ~1 μm used for resistivity estimation."
+          },
+          "Texture_or_Orientation": {
+            "Value": "Elongated <001>Al and <101>Al grains aligned along build direction",
+            "Note": "Near-equal fraction of <100>Al // BD and <101>Al // BD textures."
+          },
+          "Relative_Density": {
+            "Value": null,
+            "Original_Values": "> 99.5%",
+            "Note": "Inequality value; exact number not provided."
+          },
+          "Advanced_Quantitative_Features": {
+            "Grain_Boundary_Misorientation_deg": {
+              "Value_Range": "2-8",
+              "Note": "Boundaries within grains have misorientation angle of ~2-8°, from EBSD."
+            },
+            "Zr_in_alpha_Al_matrix_melt_pool_core_wt_pct": {
+              "Value": 0.41,
+              "Value_StdDev": 0.07,
+              "Source": "APT",
+              "Note": "Supersaturated Zr; slightly higher than bulk alloy composition (0.34 wt.%) likely due to APT overestimation."
+            },
+            "Zr_in_alpha_Al_matrix_melt_pool_boundary_wt_pct": {
+              "Value": 0.43,
+              "Value_StdDev": 0.06,
+              "Source": "APT"
+            },
+            "Interprecipitate_spacing_CeCu_rich_nm": {
+              "Value": 350,
+              "Unit": "nm",
+              "Note": "Interprecipitate spacing measured from SEM micrographs for (Ce,Cu)-rich intermetallics."
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Vickers Hardness",
+            "Value": 40.9,
+            "Value_StdDev": 1.0,
+            "Unit": "HV",
+            "Test_Condition": {
+              "Load": "200 g or 5 kg",
+              "Dwell_Time_s": 20,
+              "Surface": "perpendicular to BD",
+              "Number_of_Indentations": "minimum 12"
+            },
+            "Data_Source": "table",
+            "Note": "From Table 3. As-fabricated state."
+          },
+          {
+            "Property_Name": "Electrical Conductivity",
+            "Value": 47.5,
+            "Value_StdDev": 0.1,
+            "Unit": "%IACS",
+            "Test_Condition": {
+              "Test_Temperature_Original": "room temperature",
+              "Method": "eddy current",
+              "Frequency": "60 kHz",
+              "Number_of_Measurements": 10,
+              "Specimen": "15 mm diameter × ~6.35 mm thickness"
+            },
+            "Data_Source": "table",
+            "Note": "From Table 3."
+          },
+          {
+            "Property_Name": "Electrical Resistivity (experimental)",
+            "Value": 3.63,
+            "Unit": "μΩ·cm",
+            "Test_Condition": {
+              "Test_Temperature_Original": "~20 °C"
+            },
+            "Data_Source": "table",
+            "Note": "From Table 7."
+          },
+          {
+            "Property_Name": "Yield Strength",
+            "Value": 75,
+            "Value_StdDev": 0.3,
+            "Unit": "MPa",
+            "Test_Condition": {
+              "Test_Temperature_Original": "20 °C",
+              "Test_Temperature_K": 293,
+              "Loading_Mode": "tension",
+              "Strain_Rate_s1": "2 × 10⁻⁴",
+              "Specimen_Geometry": "6.3 mm diameter × 31.75 mm length gauge section",
+              "Orientation": "loading axis aligned with BD",
+              "Number_of_Replicates": "at least 2"
+            },
+            "Data_Source": "text",
+            "Note": "~75 (±0.3) MPa. From Section 3.4.1."
+          },
+          {
+            "Property_Name": "Ultimate Tensile Strength",
+            "Value": 100,
+            "Unit": "MPa",
+            "Test_Condition": {
+              "Test_Temperature_Original": "20 °C",
+              "Test_Temperature_K": 293,
+              "Loading_Mode": "tension",
+              "Strain_Rate_s1": "2 × 10⁻⁴",
+              "Orientation": "loading axis aligned with BD"
+            },
+            "Data_Source": "text",
+            "Note": "~25 MPa higher than respective YS of ~75 MPa, giving ~100 MPa. Approximate value. From Section 3.4.1."
+          },
+          {
+            "Property_Name": "Elongation at Break",
+            "Value": 20,
+            "Unit": "%",
+            "Test_Condition": {
+              "Test_Temperature_Original": "20 °C",
+              "Test_Temperature_K": 293,
+              "Loading_Mode": "tension",
+              "Strain_Rate_s1": "2 × 10⁻⁴",
+              "Orientation": "loading axis aligned with BD"
+            },
+            "Data_Source": "text",
+            "Note": "Around 20% across all alloy conditions at ambient temperature. From Section 3.4.1."
+          },
+          {
+            "Property_Name": "Uniform Elongation",
+            "Value": 11,
+            "Unit": "%",
+            "Test_Condition": {
+              "Test_Temperature_Original": "20 °C",
+              "Test_Temperature_K": 293,
+              "Loading_Mode": "tension",
+              "Strain_Rate_s1": "2 × 10⁻⁴",
+              "Orientation": "loading axis aligned with BD"
+            },
+            "Data_Source": "text",
+            "Note": "Uniform elongation of roughly 11% across all alloy conditions at ambient temperature. From Section 3.4.1."
+          },
+          {
+            "Property_Name": "Yield Strength",
+            "Value": 65,
+            "Value_StdDev": 0.2,
+            "Unit": "MPa",
+            "Test_Condition": {
+              "Test_Temperature_Original": "200 °C",
+              "Test_Temperature_K": 473,
+              "Loading_Mode": "tension",
+              "Strain_Rate_s1": "10⁻⁴",
+              "Specimen_Geometry": "6.3 mm diameter × 31.75 mm length gauge section",
+              "Orientation": "loading axis aligned with BD"
+            },
+            "Data_Source": "text",
+            "Note": "~65 (±0.2) MPa at 200 °C. YS remains constant at ~65 MPa within four orders of magnitude strain rate range. From Section 3.4.1."
+          },
+          {
+            "Property_Name": "Strain Rate Sensitivity m",
+            "Value": 0.01,
+            "Test_Condition": {
+              "Test_Temperature_Original": "200 °C",
+              "Test_Temperature_K": 473,
+              "Loading_Mode": "tension"
+            },
+            "Data_Source": "table",
+            "Note": "From Table 5. Low strain rate sensitivity for as-fabricated alloy at 200 °C."
+          },
+          {
+            "Property_Name": "Elongation at Break",
+            "Value": null,
+            "Unit": "%",
+            "Test_Condition": {
+              "Test_Temperature_Original": "200 °C",
+              "Test_Temperature_K": 473,
+              "Loading_Mode": "tension",
+              "Orientation": "loading axis aligned with BD"
+            },
+            "Data_Source": "text",
+            "Original_Values": "around 30-40% depending on alloy condition",
+            "Note": "Range value at 200 °C; specific value per alloy condition not given. Uniform elongation ~2-5%. From Section 3.4.1."
+          },
+          {
+            "Property_Name": "Creep Behavior",
+            "Value": null,
+            "Test_Condition": {
+              "Test_Temperature_Original": "200 °C",
+              "Test_Temperature_K": 473,
+              "Loading_Mode": "compression",
+              "Stress_MPa": "stress-jump mode, various stresses up to ~65 MPa",
+              "Specimen_Geometry": "10 mm diameter × 22 mm length, axis aligned along BD"
+            },
+            "Data_Source": "text",
+            "Note": "As-fabricated alloy shows some primary creep but no measurable secondary creep up to ~65 MPa. Near-zero creep rate below alloy yield point. Pronounced primary creep above YS but still near-zero secondary creep. Complete suppression of dislocation climb. From Fig. 7b."
+          },
+          {
+            "Property_Name": "Creep Behavior",
+            "Value": null,
+            "Test_Condition": {
+              "Test_Temperature_Original": "200 °C",
+              "Test_Temperature_K": 473,
+              "Loading_Mode": "tension",
+              "Stress_MPa": 55,
+              "Specimen_Geometry": "6.3 mm diameter × 31.75 mm length gauge section",
+              "Orientation": "loading axis aligned with BD"
+            },
+            "Data_Source": "text",
+            "Note": "Near-zero tensile creep rate at 55 MPa, remained unruptured for ~860 h after which test was discontinued. No measurable (near-zero) tensile creep. From Section 3.4.2."
+          },
+          {
+            "Property_Name": "Creep Behavior",
+            "Value": null,
+            "Test_Condition": {
+              "Test_Temperature_Original": "200 °C",
+              "Test_Temperature_K": 473,
+              "Loading_Mode": "tension",
+              "Stress_MPa": 60,
+              "Specimen_Geometry": "6.3 mm diameter × 31.75 mm length gauge section",
+              "Orientation": "loading axis aligned with BD"
+            },
+            "Data_Source": "text",
+            "Note": "Near-zero tensile creep at 60 MPa (below YS of 65 MPa). No significant change in YS. From Section 3.4.2."
+          },
+          {
+            "Property_Name": "Creep Behavior",
+            "Value": null,
+            "Test_Condition": {
+              "Test_Temperature_Original": "200 °C",
+              "Test_Temperature_K": 473,
+              "Loading_Mode": "tension",
+              "Stress_MPa": 70,
+              "Orientation": "loading axis aligned with BD"
+            },
+            "Data_Source": "text",
+            "Note": "At 70 MPa (5 MPa above YS), specimen ruptured after near-zero tensile creep at 60 MPa for ~500 h. From Section 3.4.2."
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "SA",
+      "Sample_ID": "Al-Zr-Ce-Cu single-step aged (375C/100h)",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 1",
+        "Table 3",
+        "Table 4",
+        "Table 5",
+        "Table 7",
+        "Fig. 4",
+        "Fig. 5",
+        "Fig. 6",
+        "Fig. 7",
+        "Fig. 9"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Al alloy",
+          "Material_Name_Raw": "Al-0.3Zr-0.2Ce-0.2Cu (wt.%)",
+          "Measured_Composition": {
+            "Source": "ICP-OES",
+            "Unit": "wt.%",
+            "Note": "Same bulk composition as Item AF (Table 1). Shared as per Section 2.1: same AM specimen."
+          },
+          "Local_Phase_Composition": [
+            {
+              "Phase": "α-Al matrix after single-step aging (375 °C/100 h)",
+              "Source": "APT",
+              "Unit": "wt.%",
+              "Elements": [
+                {
+                  "Element": "Al",
+                  "Value": "Balance"
+                },
+                {
+                  "Element": "Zr",
+                  "Value": 0.05,
+                  "Value_StdDev": 0.01
+                },
+                {
+                  "Element": "Cu",
+                  "Value": 0.07,
+                  "Value_StdDev": 0.02
+                },
+                {
+                  "Element": "Si",
+                  "Value": 0.05,
+                  "Value_StdDev": 0.01
+                }
+              ],
+              "Note": "Ce, Sn, Fe not detected. Average of three APT tips. Most Zr precipitated out as L12-Al3Zr."
+            }
+          ]
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "LPBF as-fabricated followed by single-step aging at 375 °C for 100 h in a muffle furnace in air, then air-cooled.",
+            "simplified": "LPBF fabricated then aged at 375 °C for 100 h."
+          },
+          "Stage1_AM": {
+            "Process_Category": "Additive Manufacturing (LPBF)",
+            "Note": "Same AM parameters as Item AF. Shared per Section 2.1."
+          },
+          "Stage2_Heat_Treatment": {
+            "Process_Category": "Aging",
+            "Key_Params": {
+              "Temperature_C": 375,
+              "Time_h": 100,
+              "Atmosphere": "air",
+              "Cooling": "air-cooled",
+              "Furnace": "muffle furnace"
+            },
+            "Original_Values": {
+              "Temperature": "375 °C",
+              "Time": "100 h"
+            }
+          },
+          "Equipment": [
+            {
+              "Name": "muffle furnace",
+              "Category": "Preparation"
+            }
+          ],
+          "Note": "AM equipment and characterization equipment shared with Item AF per Section 2.1."
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "After peak aging at 375 °C/100 h, (Ce,Cu)-rich submicron precipitates show no notable coarsening. L12-Al3Zr nanoprecipitates finely distributed throughout α-Al matrix interiors, ~7.5 nm in diameter. L12-precipitates also contain minor amounts of Si.",
+            "simplified": "Aged microstructure with L12-Al3Zr nanoprecipitates (~7.5 nm diameter) and unchanged (Ce,Cu)-rich submicron particles."
+          },
+          "Main_Phase": {
+            "Phase_Name": "α-Al matrix",
+            "Crystal_Structure": "FCC"
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "L12-Al3Zr nanoprecipitates",
+              "Crystal_Structure": "L12",
+              "Size": {
+                "Value": 7.5,
+                "Unit": "nm",
+                "Dimension_Type": "diameter"
+              },
+              "Volume_Fraction_pct": {
+                "Value": 0.25,
+                "Note": "Estimated assuming all excess Zr precipitated as L12-Al3Zr. Data_Nature: Computed."
+              },
+              "Note": "Contain minor amounts of Si."
+            },
+            {
+              "Phase_Name": "(Ce,Cu)-rich particles",
+              "Crystal_Structure": "undefined",
+              "Note": "No notable coarsening during aging. Same as as-fabricated state."
+            }
+          ],
+          "Advanced_Quantitative_Features": {
+            "Interprecipitate_spacing_L12_Al3Zr_nm": {
+              "Value": 115,
+              "Unit": "nm",
+              "Note": "Interprecipitate spacing for L12-Al3Zr after single-step aging."
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Vickers Hardness",
+            "Value": 62.5,
+            "Value_StdDev": 1.3,
+            "Unit": "HV",
+            "Test_Condition": {
+              "Load": "200 g or 5 kg",
+              "Dwell_Time_s": 20,
+              "Surface": "perpendicular to BD"
+            },
+            "Data_Source": "table",
+            "Note": "From Table 3. Single-step aged (375 °C/100 h)."
+          },
+          {
+            "Property_Name": "Electrical Conductivity",
+            "Value": 58.2,
+            "Value_StdDev": 0.1,
+            "Unit": "%IACS",
+            "Test_Condition": {
+              "Test_Temperature_Original": "room temperature",
+              "Method": "eddy current",
+              "Frequency": "60 kHz"
+            },
+            "Data_Source": "table",
+            "Note": "From Table 3."
+          },
+          {
+            "Property_Name": "Electrical Resistivity (experimental)",
+            "Value": 2.96,
+            "Unit": "μΩ·cm",
+            "Test_Condition": {
+              "Test_Temperature_Original": "~20 °C"
+            },
+            "Data_Source": "table",
+            "Note": "From Table 7. Peak-aged state."
+          },
+          {
+            "Property_Name": "Yield Strength",
+            "Value": 125,
+            "Value_StdDev": 0.4,
+            "Unit": "MPa",
+            "Test_Condition": {
+              "Test_Temperature_Original": "20 °C",
+              "Test_Temperature_K": 293,
+              "Loading_Mode": "tension",
+              "Strain_Rate_s1": "2 × 10⁻⁴",
+              "Specimen_Geometry": "6.3 mm diameter × 31.75 mm length gauge section",
+              "Orientation": "loading axis aligned with BD"
+            },
+            "Data_Source": "text",
+            "Note": "~125 (±0.4) MPa after 375 °C/100 h aging. From Section 3.4.1."
+          },
+          {
+            "Property_Name": "Ultimate Tensile Strength",
+            "Value": 150,
+            "Unit": "MPa",
+            "Test_Condition": {
+              "Test_Temperature_Original": "20 °C",
+              "Test_Temperature_K": 293,
+              "Loading_Mode": "tension",
+              "Strain_Rate_s1": "2 × 10⁻⁴",
+              "Specimen_Geometry": "6.3 mm diameter × 31.75 mm length gauge section",
+              "Orientation": "loading axis aligned with BD"
+            },
+            "Data_Source": "text",
+            "Note": "~25 MPa higher than YS of ~125 MPa. Approximate value. From Section 3.4.1."
+          },
+          {
+            "Property_Name": "Elongation at Break",
+            "Value": 20,
+            "Unit": "%",
+            "Test_Condition": {
+              "Test_Temperature_Original": "20 °C",
+              "Test_Temperature_K": 293,
+              "Loading_Mode": "tension",
+              "Strain_Rate_s1": "2 × 10⁻⁴",
+              "Orientation": "loading axis aligned with BD"
+            },
+            "Data_Source": "text",
+            "Note": "Around 20% across all alloy conditions at ambient temperature. From Section 3.4.1."
+          },
+          {
+            "Property_Name": "Uniform Elongation",
+            "Value": 11,
+            "Unit": "%",
+            "Test_Condition": {
+              "Test_Temperature_Original": "20 °C",
+              "Test_Temperature_K": 293,
+              "Loading_Mode": "tension",
+              "Strain_Rate_s1": "2 × 10⁻⁴",
+              "Orientation": "loading axis aligned with BD"
+            },
+            "Data_Source": "text",
+            "Note": "Uniform elongation of roughly 11% across all alloy conditions at ambient temperature. From Section 3.4.1."
+          },
+          {
+            "Property_Name": "Yield Strength",
+            "Value": 65,
+            "Unit": "MPa",
+            "Test_Condition": {
+              "Test_Temperature_Original": "200 °C",
+              "Test_Temperature_K": 473,
+              "Loading_Mode": "tension",
+              "Strain_Rate_s1": "10⁻⁴",
+              "Specimen_Geometry": "6.3 mm diameter × 31.75 mm length gauge section",
+              "Orientation": "loading axis aligned with BD"
+            },
+            "Data_Source": "text",
+            "Note": "Comparable to as-fabricated state at 200 °C. Marginally affected by aging microstructural changes. From Section 3.4.1."
+          },
+          {
+            "Property_Name": "Elongation at Break",
+            "Value": null,
+            "Unit": "%",
+            "Test_Condition": {
+              "Test_Temperature_Original": "200 °C",
+              "Test_Temperature_K": 473,
+              "Loading_Mode": "tension",
+              "Orientation": "loading axis aligned with BD"
+            },
+            "Data_Source": "text",
+            "Original_Values": "around 30-40% depending on alloy condition",
+            "Note": "Range value at 200 °C; specific value per alloy condition not given. Uniform elongation ~2-5%. From Section 3.4.1."
+          },
+          {
+            "Property_Name": "Creep Behavior",
+            "Value": null,
+            "Test_Condition": {
+              "Test_Temperature_Original": "200 °C",
+              "Test_Temperature_K": 473,
+              "Loading_Mode": "compression",
+              "Stress_MPa": "stress-jump mode, 40-63 MPa",
+              "Specimen_Geometry": "10 mm diameter × 22 mm length, axis aligned along BD"
+            },
+            "Data_Source": "text",
+            "Note": "Aged alloy shows typical primary and secondary creep at any given stress. Dislocation storage and dynamic recovery balanced following primary creep producing measurable minimum secondary creep strain rate. From Section 3.4.2. Apparent stress exponent na ~22. Threshold stress for dislocation creep σth = 50 MPa."
+          },
+          {
+            "Property_Name": "Creep Lifetime",
+            "Value": 18,
+            "Unit": "h",
+            "Test_Condition": {
+              "Test_Temperature_Original": "200 °C",
+              "Test_Temperature_K": 473,
+              "Loading_Mode": "tension",
+              "Stress_MPa": 55,
+              "Specimen_Geometry": "6.3 mm diameter × 31.75 mm length gauge section",
+              "Orientation": "loading axis aligned with BD"
+            },
+            "Data_Source": "text",
+            "Note": "From Section 3.4.2."
+          },
+          {
+            "Property_Name": "Creep Lifetime",
+            "Value": 115,
+            "Unit": "h",
+            "Test_Condition": {
+              "Test_Temperature_Original": "200 °C",
+              "Test_Temperature_K": 473,
+              "Loading_Mode": "tension",
+              "Stress_MPa": 52.5,
+              "Orientation": "loading axis aligned with BD"
+            },
+            "Data_Source": "text",
+            "Note": "From Section 3.4.2."
+          },
+          {
+            "Property_Name": "Creep Lifetime",
+            "Value": 560,
+            "Unit": "h",
+            "Test_Condition": {
+              "Test_Temperature_Original": "200 °C",
+              "Test_Temperature_K": 473,
+              "Loading_Mode": "tension",
+              "Stress_MPa": 50,
+              "Orientation": "loading axis aligned with BD"
+            },
+            "Data_Source": "text",
+            "Note": "From Section 3.4.2."
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "TA",
+      "Sample_ID": "Al-Zr-Ce-Cu two-step aged (350C/5h + 375C/100h)",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 1",
+        "Table 3",
+        "Table 4",
+        "Table 5",
+        "Fig. 5",
+        "Fig. 6"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Al alloy",
+          "Material_Name_Raw": "Al-0.3Zr-0.2Ce-0.2Cu (wt.%)",
+          "Measured_Composition": {
+            "Source": "ICP-OES",
+            "Unit": "wt.%",
+            "Note": "Same bulk composition as Item AF (Table 1). Shared per Section 2.1: same AM specimen."
+          },
+          "Local_Phase_Composition": [
+            {
+              "Phase": "α-Al matrix after initial 350 °C/5 h aging",
+              "Source": "APT",
+              "Note": "More numerous L12-precipitates sized ~2.6 nm diameter observed, with Si distributed in interiors."
+            },
+            {
+              "Phase": "α-Al matrix after two-step aging (350 °C/5h + 375 °C/100h)",
+              "Source": "APT",
+              "Unit": "wt.%",
+              "Elements": [
+                {
+                  "Element": "Al",
+                  "Value": "Balance"
+                },
+                {
+                  "Element": "Zr",
+                  "Value": 0.03,
+                  "Value_StdDev": 0.01
+                },
+                {
+                  "Element": "Cu",
+                  "Value": 0.12,
+                  "Value_StdDev": 0.01
+                },
+                {
+                  "Element": "Si",
+                  "Value": 0.03,
+                  "Value_StdDev": 0.01
+                }
+              ],
+              "Note": "Ce, Sn, Fe not detected. Average of three APT tips."
+            }
+          ]
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "LPBF as-fabricated followed by two-step aging: first step at 350 °C for 5 h, second step at 375 °C for 100 h, in a muffle furnace in air, air-cooled.",
+            "simplified": "LPBF fabricated then two-step aged: 350 °C/5 h + 375 °C/100 h."
+          },
+          "Stage1_AM": {
+            "Process_Category": "Additive Manufacturing (LPBF)",
+            "Note": "Same AM parameters as Item AF. Shared per Section 2.1."
+          },
+          "Stage2_Heat_Treatment": {
+            "Process_Category": "Aging (two-step)",
+            "Step_A": {
+              "Temperature_C": 350,
+              "Time_h": 5
+            },
+            "Step_B": {
+              "Temperature_C": 375,
+              "Time_h": 100
+            },
+            "Atmosphere": "air",
+            "Cooling": "air-cooled",
+            "Furnace": "muffle furnace"
+          },
+          "Equipment": [
+            {
+              "Name": "muffle furnace",
+              "Category": "Preparation"
+            }
+          ],
+          "Note": "AM equipment and characterization equipment shared with Item AF per Section 2.1."
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Two-step aging produced finer (~5.1 nm in diameter) and more numerous L12-precipitates compared with single-step aging. Initial 350 °C/5 h aging produced ~2.6 nm L12-precipitates with Si in interiors; subsequent 375 °C/100 h produced ~5.1 nm precipitates.",
+            "simplified": "Two-step aged with finer and more numerous L12-Al3Zr nanoprecipitates (~5.1 nm) compared to single-step aging."
+          },
+          "Main_Phase": {
+            "Phase_Name": "α-Al matrix",
+            "Crystal_Structure": "FCC"
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "L12-Al3Zr nanoprecipitates",
+              "Crystal_Structure": "L12",
+              "Size": {
+                "Value": 5.1,
+                "Unit": "nm",
+                "Dimension_Type": "diameter"
+              },
+              "Volume_Fraction_pct": {
+                "Value": 0.25,
+                "Note": "Estimated assuming all excess Zr precipitated as L12-Al3Zr. Data_Nature: Computed."
+              },
+              "Note": "Finer and more numerous than single-step aging."
+            },
+            {
+              "Phase_Name": "L12-Al3Zr nanoprecipitates (after 350 °C/5 h pre-aging)",
+              "Crystal_Structure": "L12",
+              "Size": {
+                "Value": 2.6,
+                "Unit": "nm",
+                "Dimension_Type": "diameter"
+              },
+              "Note": "Observed after initial pre-aging step at 350 °C for 5 h."
+            },
+            {
+              "Phase_Name": "(Ce,Cu)-rich particles",
+              "Crystal_Structure": "undefined",
+              "Note": "No notable coarsening during aging. Same as as-fabricated state."
+            }
+          ],
+          "Advanced_Quantitative_Features": {
+            "Interprecipitate_spacing_L12_Al3Zr_nm": {
+              "Value": 75,
+              "Unit": "nm",
+              "Note": "Interprecipitate spacing for L12-Al3Zr after two-step aging."
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Vickers Hardness",
+            "Value": 70.8,
+            "Value_StdDev": 0.8,
+            "Unit": "HV",
+            "Test_Condition": {
+              "Load": "200 g or 5 kg",
+              "Dwell_Time_s": 20,
+              "Surface": "perpendicular to BD"
+            },
+            "Data_Source": "table",
+            "Note": "From Table 3. Two-step aged (350 °C/5 h + 375 °C/100 h)."
+          },
+          {
+            "Property_Name": "Electrical Conductivity",
+            "Value": 58.5,
+            "Value_StdDev": 0.1,
+            "Unit": "%IACS",
+            "Test_Condition": {
+              "Test_Temperature_Original": "room temperature",
+              "Method": "eddy current",
+              "Frequency": "60 kHz"
+            },
+            "Data_Source": "table",
+            "Note": "From Table 3."
+          },
+          {
+            "Property_Name": "Yield Strength",
+            "Value": 150,
+            "Unit": "MPa",
+            "Test_Condition": {
+              "Test_Temperature_Original": "20 °C",
+              "Test_Temperature_K": 293,
+              "Loading_Mode": "tension",
+              "Strain_Rate_s1": "2 × 10⁻⁴",
+              "Specimen_Geometry": "6.3 mm diameter × 31.75 mm length gauge section",
+              "Orientation": "loading axis aligned with BD"
+            },
+            "Data_Source": "text",
+            "Note": "~150 MPa. YS doubles compared to as-fabricated. From Section 3.4.1 and Abstract."
+          },
+          {
+            "Property_Name": "Ultimate Tensile Strength",
+            "Value": 175,
+            "Unit": "MPa",
+            "Test_Condition": {
+              "Test_Temperature_Original": "20 °C",
+              "Test_Temperature_K": 293,
+              "Loading_Mode": "tension",
+              "Strain_Rate_s1": "2 × 10⁻⁴",
+              "Specimen_Geometry": "6.3 mm diameter × 31.75 mm length gauge section",
+              "Orientation": "loading axis aligned with BD"
+            },
+            "Data_Source": "text",
+            "Note": "~25 MPa higher than YS of ~150 MPa. Approximate value. From Section 3.4.1."
+          },
+          {
+            "Property_Name": "Elongation at Break",
+            "Value": 20,
+            "Unit": "%",
+            "Test_Condition": {
+              "Test_Temperature_Original": "20 °C",
+              "Test_Temperature_K": 293,
+              "Loading_Mode": "tension",
+              "Strain_Rate_s1": "2 × 10⁻⁴",
+              "Orientation": "loading axis aligned with BD"
+            },
+            "Data_Source": "text",
+            "Note": "Around 20% across all alloy conditions at ambient temperature. From Section 3.4.1."
+          },
+          {
+            "Property_Name": "Uniform Elongation",
+            "Value": 11,
+            "Unit": "%",
+            "Test_Condition": {
+              "Test_Temperature_Original": "20 °C",
+              "Test_Temperature_K": 293,
+              "Loading_Mode": "tension",
+              "Strain_Rate_s1": "2 × 10⁻⁴",
+              "Orientation": "loading axis aligned with BD"
+            },
+            "Data_Source": "text",
+            "Note": "Uniform elongation of roughly 11% across all alloy conditions at ambient temperature. From Section 3.4.1."
+          },
+          {
+            "Property_Name": "Yield Strength",
+            "Value": 70,
+            "Unit": "MPa",
+            "Test_Condition": {
+              "Test_Temperature_Original": "200 °C",
+              "Test_Temperature_K": 473,
+              "Loading_Mode": "tension",
+              "Strain_Rate_s1": "2 × 10⁻⁴",
+              "Specimen_Geometry": "6.3 mm diameter × 31.75 mm length gauge section",
+              "Orientation": "loading axis aligned with BD"
+            },
+            "Data_Source": "text",
+            "Note": "Slightly higher YS by 5 MPa compared to as-fabricated state at 200 °C (~65 + 5 = ~70 MPa). From Section 3.4.1."
+          },
+          {
+            "Property_Name": "Yield Strength",
+            "Value": 125,
+            "Unit": "MPa",
+            "Test_Condition": {
+              "Test_Temperature_Original": "200 °C",
+              "Test_Temperature_K": 473,
+              "Loading_Mode": "tension",
+              "Strain_Rate_s1": "0.1",
+              "Orientation": "loading axis aligned with BD"
+            },
+            "Data_Source": "text",
+            "Note": "YS at high strain rate of 0.1 s⁻¹ at 200 °C. Higher m value of 0.08 for aged alloy. From Section 3.4.1."
+          },
+          {
+            "Property_Name": "Strain Rate Sensitivity m",
+            "Value": 0.09,
+            "Test_Condition": {
+              "Test_Temperature_Original": "200 °C",
+              "Test_Temperature_K": 473,
+              "Loading_Mode": "tension"
+            },
+            "Data_Source": "table",
+            "Note": "From Table 5. Value 0.09 for higher strain rates. Overall m = 0.08 across full range. m = 0.03 for strain rates of 2×10⁻⁴ and 10⁻⁵ s⁻¹."
+          },
+          {
+            "Property_Name": "Strain Rate Sensitivity m",
+            "Value": 0.01,
+            "Test_Condition": {
+              "Test_Temperature_Original": "20 °C",
+              "Test_Temperature_K": 293,
+              "Loading_Mode": "tension"
+            },
+            "Data_Source": "table",
+            "Note": "From Table 5. Very low strain rate sensitivity at room temperature."
+          },
+          {
+            "Property_Name": "Elongation at Break",
+            "Value": null,
+            "Unit": "%",
+            "Test_Condition": {
+              "Test_Temperature_Original": "200 °C",
+              "Test_Temperature_K": 473,
+              "Loading_Mode": "tension",
+              "Orientation": "loading axis aligned with BD"
+            },
+            "Data_Source": "text",
+            "Original_Values": "around 30-40% depending on alloy condition",
+            "Note": "Range value at 200 °C; specific value per alloy condition not given. Uniform elongation ~2-5%. From Section 3.4.1."
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "REF_PureAl",
+      "Sample_ID": "Pure Al (literature data)",
+      "Role": "Reference",
+      "Data_Nature": "Literature_Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Fig. 11"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Pure Al",
+          "Material_Name_Raw": "high-purity cast Al"
+        },
+        "Properties": [
+          {
+            "Property_Name": "Apparent Stress Exponent na",
+            "Value": 5,
+            "Test_Condition": {
+              "Test_Temperature_Original": "200 °C and 300 °C",
+              "Loading_Mode": "creep"
+            },
+            "Data_Source": "text",
+            "Note": "Pure Al displays na = 5 at 200 °C, indicative of dislocation climb as rate-limiting mechanism. From Section 4.4.1."
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "REF_AlZr_cast",
+      "Sample_ID": "Cast/aged Al-Zr (literature data, Ref. [32])",
+      "Role": "Reference",
+      "Data_Nature": "Literature_Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Fig. 11"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Name_Raw": "Cast/aged Al-Zr",
+          "Note": "Comparable Zr concentration and L12-Al3Zr precipitate size to AM Al-Zr-Ce-Cu alloy but lower creep resistance."
+        },
+        "Properties": [
+          {
+            "Property_Name": "Creep Resistance",
+            "Value": null,
+            "Test_Condition": {
+              "Test_Temperature_Original": "300-400 °C"
+            },
+            "Data_Source": "text",
+            "Note": "Lower creep resistance than aged AM Al-Zr-Ce-Cu alloy. From Section 4.4.1, comparison in Fig. 11b."
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "REF_AlCeSiMg",
+      "Sample_ID": "Cast Al-2.7Ce-1.1Si-0.6Mg (Ref. [1])",
+      "Role": "Reference",
+      "Data_Nature": "Literature_Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Introduction"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Al alloy",
+          "Material_Name_Raw": "Cast Al-2.7Ce-1.1Si-0.6Mg (wt.%)"
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "Cast alloy, heat treated to T5 or T6 temper.",
+            "simplified": "Cast + T5 or T6 temper."
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Yield Strength",
+            "Value": 110,
+            "Unit": "MPa",
+            "Test_Condition": {
+              "Test_Temperature_Original": "room temperature",
+              "Specimen_State": "T5 or T6 temper"
+            },
+            "Data_Source": "text",
+            "Note": "Literature data from Ref. [1]. From Introduction."
+          },
+          {
+            "Property_Name": "Electrical Conductivity",
+            "Value": 49,
+            "Unit": "%IACS",
+            "Test_Condition": {
+              "Test_Temperature_Original": "room temperature",
+              "Specimen_State": "T5 or T6 temper"
+            },
+            "Data_Source": "text",
+            "Note": "Literature data from Ref. [1]. From Introduction."
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "REF_AlNiSiMg",
+      "Sample_ID": "Cast Al-3Ni-0.55Si-0.55Mg (Ref. [2])",
+      "Role": "Reference",
+      "Data_Nature": "Literature_Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Introduction"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Al alloy",
+          "Material_Name_Raw": "Cast Al-3Ni-0.55Si-0.55Mg (wt.%)"
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "Cast alloy, heat treated to T5 or T6 temper.",
+            "simplified": "Cast + T5 or T6 temper."
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Yield Strength",
+            "Value": 180,
+            "Unit": "MPa",
+            "Test_Condition": {
+              "Test_Temperature_Original": "room temperature",
+              "Specimen_State": "T5 temper"
+            },
+            "Data_Source": "text",
+            "Note": "~180 MPa in T5 state. Literature data from Ref. [2]. From Introduction."
+          },
+          {
+            "Property_Name": "Electrical Conductivity",
+            "Value": 50,
+            "Unit": "%IACS",
+            "Test_Condition": {
+              "Test_Temperature_Original": "room temperature",
+              "Specimen_State": "T5 temper"
+            },
+            "Data_Source": "text",
+            "Note": "~50 %IACS in T5 state. Literature data from Ref. [2]. From Introduction."
+          },
+          {
+            "Property_Name": "Yield Strength",
+            "Value": 250,
+            "Unit": "MPa",
+            "Test_Condition": {
+              "Test_Temperature_Original": "room temperature",
+              "Specimen_State": "T6 temper"
+            },
+            "Data_Source": "text",
+            "Note": "~250 MPa in T6 state. Literature data from Ref. [2]. From Introduction."
+          },
+          {
+            "Property_Name": "Electrical Conductivity",
+            "Value": 50,
+            "Unit": "%IACS",
+            "Test_Condition": {
+              "Test_Temperature_Original": "room temperature",
+              "Specimen_State": "T6 temper"
+            },
+            "Data_Source": "text",
+            "Note": "~50 %IACS in T6 state. Literature data from Ref. [2]. From Introduction."
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "REF_A356",
+      "Sample_ID": "A356 (Ref. [2])",
+      "Role": "Reference",
+      "Data_Nature": "Literature_Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Introduction"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Al alloy",
+          "Material_Name_Raw": "Al-Si based A356"
+        },
+        "Properties": [
+          {
+            "Property_Name": "Electrical Conductivity",
+            "Value": 40,
+            "Unit": "%IACS",
+            "Test_Condition": {
+              "Test_Temperature_Original": "room temperature"
+            },
+            "Data_Source": "text",
+            "Note": "Literature data from Ref. [2]. From Introduction."
+          },
+          {
+            "Property_Name": "Yield Strength",
+            "Value": 225,
+            "Unit": "MPa",
+            "Test_Condition": {
+              "Test_Temperature_Original": "room temperature"
+            },
+            "Data_Source": "text",
+            "Note": "YS reaching as high as 225 MPa. Literature data from Ref. [2]. From Introduction."
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "REF_AM_AlFeZr",
+      "Sample_ID": "AM Al-1Fe-1Zr (Ref. [23])",
+      "Role": "Reference",
+      "Data_Nature": "Literature_Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Introduction"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Al alloy",
+          "Material_Name_Raw": "AM Al-1Fe-1Zr (wt.%)"
+        },
+        "Processing": {
+          "Process_Text": {
+            "simplified": "Additively manufactured and aged."
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Yield Strength",
+            "Value": 350,
+            "Unit": "MPa",
+            "Test_Condition": {
+              "Test_Temperature_Original": "room temperature",
+              "Specimen_State": "aged"
+            },
+            "Data_Source": "text",
+            "Note": "~350 MPa. Literature data from Ref. [23]. From Introduction."
+          },
+          {
+            "Property_Name": "Electrical Conductivity",
+            "Value": 45,
+            "Unit": "%IACS",
+            "Test_Condition": {
+              "Test_Temperature_Original": "room temperature",
+              "Specimen_State": "aged"
+            },
+            "Data_Source": "text",
+            "Note": "~45 %IACS. Literature data from Ref. [23]. From Introduction."
+          }
+        ]
+      }
+    }
+  ]
+}

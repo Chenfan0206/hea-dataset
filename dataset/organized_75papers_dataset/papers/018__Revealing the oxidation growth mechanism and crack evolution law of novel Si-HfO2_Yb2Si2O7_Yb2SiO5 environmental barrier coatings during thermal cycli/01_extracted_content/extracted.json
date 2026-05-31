@@ -1,0 +1,2296 @@
+{
+  "Paper_Metadata": {
+    "Paper_Title": "Revealing the oxidation growth mechanism and crack evolution law of novel Si-HfO2/Yb2Si2O7/Yb2SiO5 environmental barrier coatings during thermal cycling",
+    "DOI": "10.26599/JAC.2024.9220969"
+  },
+  "Paper_Routing": {
+    "base_material": "Ceramics_Inorganic",
+    "application": "Structural",
+    "research_paradigm": "Hybrid",
+    "Supplements_Loaded": [
+      "directions/base/Ceramics_Inorganic.txt",
+      "directions/application/Structural.txt",
+      "directions/paradigm/Hybrid.txt",
+      "directions/domain/Coating.txt"
+    ],
+    "Patch_Tags": [
+      "Thermal_Barrier_or_EBC",
+      "Thermal_Cycling",
+      "Interface_Dominated"
+    ],
+    "Needs_Mixed_Routing_Check": false,
+    "Mixed_Signals": []
+  },
+  "items": [
+    {
+      "Item_ID": "item_01",
+      "Sample_ID": "Si-HfO2/Yb2Si2O7/Yb2SiO5_EBC_as_sprayed",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Ceramics_Inorganic",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Thermal_Barrier_or_EBC",
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 2.1 Experimental procedure",
+        "Section 3.1 Microstructure and composition of feedstock and as-sprayed coating"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Coating_Composition": {
+            "Substrate_Material": {
+              "Material_Name": "SiCf/SiC (CMC)",
+              "Geometry": "15 mm x 15 mm bulk",
+              "Surface_Roughness": {
+                "Value": 5.0,
+                "Unit": "um",
+                "Original_Values": "Ra = 5 um"
+              }
+            },
+            "Coating_Layers": [
+              {
+                "Layer_Name": "Si-HfO2 bond coat",
+                "Layer_Position": "bond coat",
+                "Composition_Nominal": {
+                  "Si": {
+                    "Value": 85.0,
+                    "Unit": "mol%",
+                    "Original_Values": "85 mol% Si"
+                  },
+                  "HfO2": {
+                    "Value": 15.0,
+                    "Unit": "mol%",
+                    "Original_Values": "15 mol% HfO2"
+                  }
+                },
+                "Raw_Material_Purity": {
+                  "Si": "99.99%",
+                  "HfO2": "99.95%"
+                }
+              },
+              {
+                "Layer_Name": "Yb2Si2O7 interlayer",
+                "Layer_Position": "interlayer",
+                "Composition_Nominal": {
+                  "Yb2O3_to_SiO2_ratio": "1:1",
+                  "Original_Values": "Yb2O3 and SiO2 powders mixed at 1:1 ratio"
+                },
+                "Raw_Material_Purity": "99.99%"
+              },
+              {
+                "Layer_Name": "Yb2SiO5 top coat",
+                "Layer_Position": "top coat",
+                "Composition_Nominal": {
+                  "Yb2O3_to_SiO2_ratio": "1:2",
+                  "Original_Values": "Yb2O3 and SiO2 powders mixed at 1:2 ratio"
+                },
+                "Raw_Material_Purity": "99.99%"
+              }
+            ]
+          }
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "Si-HfO2/Yb2Si2O7/Yb2SiO5 EBC samples were deposited on the surface of 15 mm x 15 mm bulk SiCf/SiC substrates via PS-PVD method. Yb2O3 and SiO2 powders were mixed at 1:1 and 1:2 ratios, ball-milled (450 r/min, 7 h), dried, and subjected to solid-state reaction (1400 C, 2 h) to synthesize Yb2SiO5 and Yb2Si2O7 initial powders. Si-HfO2 powders were produced by blending 15 mol% HfO2 with 85 mol% Si, ball-milling at 500 r/min for 12 h, then drying. Three initial powders were processed into feedstocks via spray granulation. Trilayer EBC was fabricated via PS-PVD.",
+            "simplified": "Feedstock synthesis: Yb2Si2O7 and Yb2SiO5 from Yb2O3+SiO2 solid-state reaction at 1400C/2h; Si-HfO2 from 85mol%Si+15mol%HfO2 ball-milled 500rpm/12h. Spray granulation to spheroidal feedstocks. PS-PVD deposition of trilayer EBC on SiCf/SiC substrate."
+          },
+          "Stage1_Feedstock_Synthesis_Yb2Si2O7": {
+            "Process_Category": "Powder synthesis",
+            "Key_Params": {
+              "Mixing_Ratio": "Yb2O3:SiO2 = 1:1",
+              "Ball_Mill_Speed": {
+                "Value": 450,
+                "Unit": "r/min"
+              },
+              "Ball_Mill_Time": {
+                "Value": 7,
+                "Unit": "h"
+              },
+              "Ball_Mill_Media": "zirconia balls",
+              "Drying": null,
+              "Solid_State_Reaction_Temperature": {
+                "Value": 1673,
+                "Unit": "K",
+                "Original_Values": "1400 C"
+              },
+              "Solid_State_Reaction_Time": {
+                "Value": 2,
+                "Unit": "h"
+              }
+            }
+          },
+          "Stage2_Feedstock_Synthesis_Yb2SiO5": {
+            "Process_Category": "Powder synthesis",
+            "Key_Params": {
+              "Mixing_Ratio": "Yb2O3:SiO2 = 1:2",
+              "Ball_Mill_Speed": {
+                "Value": 450,
+                "Unit": "r/min"
+              },
+              "Ball_Mill_Time": {
+                "Value": 7,
+                "Unit": "h"
+              },
+              "Ball_Mill_Media": "zirconia balls",
+              "Drying": null,
+              "Solid_State_Reaction_Temperature": {
+                "Value": 1673,
+                "Unit": "K",
+                "Original_Values": "1400 C"
+              },
+              "Solid_State_Reaction_Time": {
+                "Value": 2,
+                "Unit": "h"
+              }
+            }
+          },
+          "Stage3_Feedstock_Synthesis_SiHfO2": {
+            "Process_Category": "Powder synthesis",
+            "Key_Params": {
+              "Composition": "85 mol% Si + 15 mol% HfO2",
+              "Ball_Mill_Speed": {
+                "Value": 500,
+                "Unit": "r/min"
+              },
+              "Ball_Mill_Time": {
+                "Value": 12,
+                "Unit": "h"
+              },
+              "Drying": null
+            }
+          },
+          "Stage4_Spray_Granulation": {
+            "Process_Category": "Spray granulation",
+            "Key_Params": {
+              "Slurry_Solid_Content": "40%-50%",
+              "Binder_Content": "4%-6%",
+              "Inlet_Air_Temperature": {
+                "Value_Range": "200-300",
+                "Unit": "C"
+              },
+              "Outlet_Air_Temperature": {
+                "Value_Range": "90-120",
+                "Unit": "C"
+              },
+              "Atomization_Disk_Frequency": {
+                "Value_Range": "20-50",
+                "Unit": "Hz"
+              },
+              "Feed_Pump_Speed": {
+                "Value_Range": "30-50",
+                "Unit": "r/min"
+              }
+            },
+            "Data_Source": "table"
+          },
+          "Stage5_PS_PVD_Deposition": {
+            "Process_Category": "Coating deposition",
+            "Method": "Plasma spraying physical vapor deposition (PS-PVD)",
+            "Reference": "Process parameters detailed in Ref. [34]"
+          },
+          "Equipment": [
+            {
+              "Name": "Ball mill (with zirconia balls)",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "High-temperature furnace",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Spray granulation equipment",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "PS-PVD system",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "D8-ADVANCE XRD (Bruker)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "SEM (Scios 2 DualBeam, Thermo Scientific)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "EDS system",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "FIB (Scios 2 DualBeam, Thermo Scientific)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "SEM/TEM (Talos F200X, FEI)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "GSAS-II",
+              "Category": "Software"
+            },
+            {
+              "Name": "ImageJ",
+              "Category": "Software"
+            },
+            {
+              "Name": "Strain++",
+              "Category": "Software"
+            },
+            {
+              "Name": "ANSYS",
+              "Category": "Software"
+            },
+            {
+              "Name": "Diamond wire cutting machine",
+              "Category": "Preparation"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "The thicknesses of Si-HfO2, Yb2Si2O7, and Yb2SiO5 layers were ~40, ~119, and ~75 um, respectively. This tri-layer coating presented a dense structure, tight adhesion to CMC substrate, and no apparent cracks appeared in the coating layers and layer interfaces. The internal stress within the as-sprayed coating was a compressive stress of 257 MPa. Within Yb2Si2O7 layer, a small amount of light gray lamellar secondary phase (likely minor Yb2SiO5 phase from feedstock). For Yb2SiO5 layer, a small amount of dark gray lamellar secondary phase (Yb2O3 and SiO2 striped bands from dissociation in plasma). The porosity of the coating surface was 3.68%.",
+            "simplified": "Trilayer EBC: Si-HfO2 (~40 um) / Yb2Si2O7 (~119 um) / Yb2SiO5 (~75 um). Dense, tight adhesion, no cracks. Internal compressive stress 257 MPa. Surface porosity 3.68%."
+          },
+          "Coating_Structure": {
+            "Coating_Layer_Details": [
+              {
+                "Layer_Name": "Si-HfO2 bond coat",
+                "Thickness": {
+                  "Value": 40.0,
+                  "Unit": "um",
+                  "Original_Values": "~40 um",
+                  "Note": "approximate value"
+                },
+                "Microstructure_Features": "Uniform mixture of Si and HfO2 phases; minor composition segregation areas do not detract from overall uniformity"
+              },
+              {
+                "Layer_Name": "Yb2Si2O7 interlayer",
+                "Thickness": {
+                  "Value": 119.0,
+                  "Unit": "um",
+                  "Original_Values": "~119 um",
+                  "Note": "approximate value"
+                },
+                "Microstructure_Features": "Typical layered microstructure; small amount of light gray lamellar secondary phase (minor Yb2SiO5); a few encapsulated pores from gas entrapment during PS-PVD"
+              },
+              {
+                "Layer_Name": "Yb2SiO5 top coat",
+                "Thickness": {
+                  "Value": 75.0,
+                  "Unit": "um",
+                  "Original_Values": "~75 um",
+                  "Note": "approximate value"
+                },
+                "Microstructure_Features": "Typical layered microstructure; small amount of dark gray lamellar secondary phase (Yb2O3 and SiO2 striped bands and Yb2SiO5 splats alternately); composed of fully melted and partially melted particles"
+              }
+            ]
+          },
+          "Porosity": {
+            "Value": 3.68,
+            "Unit": "%",
+            "Original_Values": "3.68%",
+            "Location": "coating surface",
+            "Data_Source": "text"
+          },
+          "Crystalline_Phases": {
+            "Feedstock_Phases": [
+              {
+                "Phase_Name": "X2-Yb2SiO5",
+                "Crystal_Structure": "monoclinic",
+                "Source_Material": "Yb2SiO5 feedstock",
+                "Phase_Fraction": {
+                  "Value": 100.0,
+                  "Unit": "mol%",
+                  "Original_Values": "pure X2-Yb2SiO5 phase"
+                },
+                "Data_Source": "text",
+                "Note": "Crystal structure (monoclinic) confirmed by SAED in Section 3.3 TEM analysis; Section 3.1 XRD indexed as pure X2-Yb2SiO5 phase"
+              },
+              {
+                "Phase_Name": "beta-Yb2Si2O7",
+                "Crystal_Structure": "base-centered monoclinic (C2/m)",
+                "Source_Material": "Yb2Si2O7 feedstock",
+                "Phase_Fraction": {
+                  "Value": 94.4,
+                  "Unit": "mol%",
+                  "Original_Values": "94.4 mol%"
+                },
+                "Data_Source": "text"
+              },
+              {
+                "Phase_Name": "X2-Yb2SiO5",
+                "Crystal_Structure": "monoclinic",
+                "Source_Material": "Yb2Si2O7 feedstock (secondary phase)",
+                "Phase_Fraction": {
+                  "Value": 5.6,
+                  "Unit": "mol%",
+                  "Original_Values": "5.6 mol%"
+                },
+                "Data_Source": "text",
+                "Note": "Crystal structure (monoclinic) confirmed by SAED in Section 3.3 TEM analysis; Section 3.1 XRD indexed as pure X2-Yb2SiO5 phase"
+              },
+              {
+                "Phase_Name": "cubic Si",
+                "Crystal_Structure": "cubic",
+                "Source_Material": "Si-HfO2 feedstock",
+                "Phase_Fraction": {
+                  "Value": 85.3,
+                  "Unit": "mol%",
+                  "Original_Values": "85.3 mol%"
+                },
+                "Data_Source": "text"
+              },
+              {
+                "Phase_Name": "m-HfO2",
+                "Crystal_Structure": "monoclinic",
+                "Source_Material": "Si-HfO2 feedstock",
+                "Phase_Fraction": {
+                  "Value": 14.7,
+                  "Unit": "mol%",
+                  "Original_Values": "14.7 mol%"
+                },
+                "Data_Source": "text"
+              }
+            ],
+            "Note": "Phase fractions of feedstocks determined by quantitative XRD phase analysis (Rietveld method)"
+          },
+          "Feedstock_Particle_Size": {
+            "Value_Range": "11-55",
+            "Unit": "um",
+            "Original_Values": "approximately 11-55 um",
+            "Note": "approximate value; reported in Ref. [34]"
+          },
+          "Advanced_Quantitative_Features": {
+            "As_Sprayed_Internal_Stress": {
+              "Value": 257,
+              "Unit": "MPa",
+              "Original_Values": "257 MPa",
+              "Type": "compressive",
+              "Data_Source": "text",
+              "Note": "confirmed by earlier work [34]"
+            }
+          }
+        }
+      }
+    },
+    {
+      "Item_ID": "item_02",
+      "Sample_ID": "EBC_1400C_50h",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Ceramics_Inorganic",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Thermal_Barrier_or_EBC",
+        "Thermal_Cycling",
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 3.2.1 Thermal cycling tests at 1400 C",
+        "Table 3"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Note": "Same coating composition as item_01; no composition change during thermal cycling at 1400C"
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "Thermal cycling: isothermal heating for 1 h at 1400 C in furnace; rapid cooling in air stream to room temperature for 10 min. 50 cycles = 50 h total.",
+            "simplified": "Thermal cycling at 1400C, 1 h hold per cycle, air cooling to RT in 10 min, 50 cycles (50 h)."
+          },
+          "Stage1_Thermal_Cycling": {
+            "Process_Category": "Thermal cycling",
+            "Key_Params": {
+              "Peak_Temperature": {
+                "Value": 1673,
+                "Unit": "K",
+                "Original_Values": "1400 C"
+              },
+              "Holding_Time_Per_Cycle": {
+                "Value": 1,
+                "Unit": "h"
+              },
+              "Cooling_Method": "rapid cooling in air stream",
+              "Cooling_Duration": {
+                "Value": 10,
+                "Unit": "min"
+              },
+              "Total_Cycles": 50,
+              "Total_Time": {
+                "Value": 50,
+                "Unit": "h"
+              },
+              "Atmosphere": "air"
+            }
+          }
+        },
+        "Structure": {
+          "Coating_Structure": {
+            "TGO_Growth": {
+              "Layer_Name": "m-TGO (Si-HfO2 bond coat after oxidation)",
+              "Average_Thickness": {
+                "Value": 44.87,
+                "Unit": "um",
+                "Original_Values": "44.87 um",
+                "Data_Source": "table"
+              },
+              "Growth_Time": {
+                "Value": 50,
+                "Unit": "h"
+              },
+              "Test_Temperature_Original": "1400 C",
+              "Phase_Composition": "HfSiO4 particles dispersed in beta-cristobalite SiO2 matrix (dual-state duplex composite structure)",
+              "Note": "No distinct independent SiO2 scale observed"
+            }
+          },
+          "Microstructure_Features": "Coating crystallized on surface; intact and bonded with CMC; no obvious microcracks within or between layers. Light gray hafnia-rich precipitates (HfSiO4) primarily distributed within dark gray Si-rich phase (SiO2 cristobalite). Minor agglomeration of precipitates in certain areas but uniformly distributed overall."
+        },
+        "Properties": [
+          {
+            "Property_Name": "Thermal_Cycle_Life",
+            "Value": null,
+            "Unit": null,
+            "Test_Condition": {
+              "Test_Temperature_K": 1673,
+              "Test_Temperature_Original": "1400 C",
+              "Holding_Time_Per_Cycle": "1 h",
+              "Cooling_Method": "air cooling",
+              "Atmosphere": "air"
+            },
+            "Specimen_State": "50 cycles completed, no visible EBC spallation",
+            "Data_Source": "text",
+            "Note": "Thermal cycling continued to 200 cycles; no spallation at 50 h"
+          },
+          {
+            "Property_Name": "m-TGO_Thickness",
+            "Value": 44.87,
+            "Unit": "um",
+            "Test_Condition": {
+              "Test_Temperature_K": 1673,
+              "Test_Temperature_Original": "1400 C",
+              "Test_Duration": "50 h"
+            },
+            "Data_Source": "table"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "item_03",
+      "Sample_ID": "EBC_1400C_100h",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Ceramics_Inorganic",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Thermal_Barrier_or_EBC",
+        "Thermal_Cycling",
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 3.2.1 Thermal cycling tests at 1400 C",
+        "Table 3"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Note": "Same coating composition as item_01"
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "Thermal cycling at 1400 C, 1 h hold per cycle, air cooling to RT in 10 min, 100 cycles (100 h).",
+            "simplified": "Thermal cycling at 1400C, 100 cycles (100 h)."
+          },
+          "Stage1_Thermal_Cycling": {
+            "Process_Category": "Thermal cycling",
+            "Key_Params": {
+              "Peak_Temperature": {
+                "Value": 1673,
+                "Unit": "K",
+                "Original_Values": "1400 C"
+              },
+              "Total_Cycles": 100,
+              "Total_Time": {
+                "Value": 100,
+                "Unit": "h"
+              },
+              "Holding_Time_Per_Cycle": {
+                "Value": 1,
+                "Unit": "h"
+              },
+              "Cooling_Method": "rapid cooling in air stream",
+              "Cooling_Duration": {
+                "Value": 10,
+                "Unit": "min"
+              },
+              "Atmosphere": "air"
+            },
+            "Note": "Thermal cycling protocol per Section 2.1: isothermal heating for 1 h followed by rapid air cooling to RT in 10 min; same protocol applied at all test temperatures (1400, 1450, 1500 °C)"
+          }
+        },
+        "Structure": {
+          "Coating_Structure": {
+            "TGO_Growth": {
+              "Layer_Name": "m-TGO",
+              "Average_Thickness": {
+                "Value": 46.81,
+                "Unit": "um",
+                "Original_Values": "46.81 um",
+                "Data_Source": "table"
+              },
+              "Growth_Time": {
+                "Value": 100,
+                "Unit": "h"
+              },
+              "Test_Temperature_Original": "1400 C"
+            }
+          },
+          "Microstructure_Features": "Surface microcracks and vertical mud cracks appeared. Localized agglomeration of hafnia-rich precipitates but uniformly distributed overall. A few oriented cracks in m-TGO."
+        },
+        "Properties": [
+          {
+            "Property_Name": "m-TGO_Thickness",
+            "Value": 46.81,
+            "Unit": "um",
+            "Test_Condition": {
+              "Test_Temperature_K": 1673,
+              "Test_Temperature_Original": "1400 C",
+              "Test_Duration": "100 h"
+            },
+            "Data_Source": "table"
+          },
+          {
+            "Property_Name": "Specimen_State",
+            "Value": null,
+            "Test_Condition": {
+              "Test_Temperature_K": 1673,
+              "Test_Temperature_Original": "1400 °C",
+              "Test_Duration": "100 h"
+            },
+            "Specimen_State": "100 h completed; adhesion of each layer still good without any signs of spallation",
+            "Data_Source": "text"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "item_04",
+      "Sample_ID": "EBC_1400C_150h",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Ceramics_Inorganic",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Thermal_Barrier_or_EBC",
+        "Thermal_Cycling",
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 3.2.1",
+        "Table 3"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Note": "Same coating composition as item_01"
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "Thermal cycling at 1400 °C: isothermal heating for 1 h in furnace, rapid cooling in air stream to room temperature for 10 min. 150 cycles (150 h).",
+            "simplified": "Thermal cycling at 1400 °C, 1 h hold per cycle, air cooling to RT in 10 min, 150 cycles (150 h)."
+          },
+          "Stage1_Thermal_Cycling": {
+            "Process_Category": "Thermal cycling",
+            "Key_Params": {
+              "Peak_Temperature": {
+                "Value": 1673,
+                "Unit": "K",
+                "Original_Values": "1400 C"
+              },
+              "Total_Cycles": 150,
+              "Total_Time": {
+                "Value": 150,
+                "Unit": "h"
+              },
+              "Holding_Time_Per_Cycle": {
+                "Value": 1,
+                "Unit": "h"
+              },
+              "Cooling_Method": "rapid cooling in air stream",
+              "Cooling_Duration": {
+                "Value": 10,
+                "Unit": "min"
+              },
+              "Atmosphere": "air"
+            },
+            "Note": "Thermal cycling protocol per Section 2.1: isothermal heating for 1 h followed by rapid air cooling to RT in 10 min; same protocol applied at all test temperatures (1400, 1450, 1500 °C)"
+          }
+        },
+        "Structure": {
+          "Coating_Structure": {
+            "TGO_Growth": {
+              "Layer_Name": "m-TGO",
+              "Average_Thickness": {
+                "Value": 49.11,
+                "Unit": "um",
+                "Original_Values": "49.11 um",
+                "Data_Source": "table"
+              },
+              "Growth_Time": {
+                "Value": 150,
+                "Unit": "h"
+              },
+              "Test_Temperature_Original": "1400 C"
+            }
+          },
+          "Microstructure_Features": "Surface microcracks began to connect. Vertical mud cracks bifurcated when extending from Yb2SiO5 layer to Yb2Si2O7 interface. More oriented cracks in bond coating but did not harm adhesion."
+        },
+        "Properties": [
+          {
+            "Property_Name": "m-TGO_Thickness",
+            "Value": 49.11,
+            "Unit": "um",
+            "Test_Condition": {
+              "Test_Temperature_K": 1673,
+              "Test_Temperature_Original": "1400 C",
+              "Test_Duration": "150 h"
+            },
+            "Data_Source": "table"
+          },
+          {
+            "Property_Name": "Specimen_State",
+            "Value": null,
+            "Test_Condition": {
+              "Test_Temperature_K": 1673,
+              "Test_Temperature_Original": "1400 °C",
+              "Test_Duration": "150 h"
+            },
+            "Specimen_State": "150 h completed; microcracks connecting and vertical mud cracks bifurcating at Yb2Si2O7 interface, but oriented cracks did not harm adhesion",
+            "Data_Source": "text"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "item_05",
+      "Sample_ID": "EBC_1400C_200h",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Ceramics_Inorganic",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Thermal_Barrier_or_EBC",
+        "Thermal_Cycling",
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 3.2.1",
+        "Table 3"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Note": "Same coating composition as item_01"
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "Thermal cycling at 1400 °C: isothermal heating for 1 h in furnace, rapid cooling in air stream to room temperature for 10 min. 200 cycles (200 h).",
+            "simplified": "Thermal cycling at 1400 °C, 1 h hold per cycle, air cooling to RT in 10 min, 200 cycles (200 h)."
+          },
+          "Stage1_Thermal_Cycling": {
+            "Process_Category": "Thermal cycling",
+            "Key_Params": {
+              "Peak_Temperature": {
+                "Value": 1673,
+                "Unit": "K",
+                "Original_Values": "1400 C"
+              },
+              "Total_Cycles": 200,
+              "Total_Time": {
+                "Value": 200,
+                "Unit": "h"
+              },
+              "Holding_Time_Per_Cycle": {
+                "Value": 1,
+                "Unit": "h"
+              },
+              "Cooling_Method": "rapid cooling in air stream",
+              "Cooling_Duration": {
+                "Value": 10,
+                "Unit": "min"
+              },
+              "Atmosphere": "air"
+            },
+            "Note": "Thermal cycling protocol per Section 2.1: isothermal heating for 1 h followed by rapid air cooling to RT in 10 min; same protocol applied at all test temperatures (1400, 1450, 1500 °C)"
+          }
+        },
+        "Structure": {
+          "Coating_Structure": {
+            "TGO_Growth": {
+              "Layer_Name": "m-TGO",
+              "Average_Thickness": {
+                "Value": 50.43,
+                "Unit": "um",
+                "Original_Values": "50.43 um",
+                "Data_Source": "table"
+              },
+              "Growth_Time": {
+                "Value": 200,
+                "Unit": "h"
+              },
+              "Test_Temperature_Original": "1400 C"
+            }
+          },
+          "Microstructure_Features": "Increased surface microcracks and vertical mud cracks (higher density). Interlaminar crack between Si-HfO2 bond coating and Yb2Si2O7 layer. Oriented cracks interconnected. No distinct independent SiO2 scale. No oxidation of SiC fibers or SiC matrix in CMC substrate. No SiO2 scale at CMC/bond coating interface."
+        },
+        "Properties": [
+          {
+            "Property_Name": "Thermal_Cycle_Life",
+            "Value": 200,
+            "Unit": "cycles",
+            "Test_Condition": {
+              "Test_Temperature_K": 1673,
+              "Test_Temperature_Original": "1400 C",
+              "Holding_Time_Per_Cycle": "1 h",
+              "Cooling_Method": "air cooling 10 min",
+              "Atmosphere": "air"
+            },
+            "Specimen_State": "200 cycles completed; interlaminar cracks appeared but no spallation",
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "m-TGO_Thickness",
+            "Value": 50.43,
+            "Unit": "um",
+            "Test_Condition": {
+              "Test_Temperature_K": 1673,
+              "Test_Temperature_Original": "1400 C",
+              "Test_Duration": "200 h"
+            },
+            "Data_Source": "table"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "item_06",
+      "Sample_ID": "EBC_1450C_50h",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Ceramics_Inorganic",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Thermal_Barrier_or_EBC",
+        "Thermal_Cycling",
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 3.2.2 1450 C thermal cycling tests",
+        "Table 3"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Note": "Same coating composition as item_01"
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "Thermal cycling at 1450 °C: isothermal heating for 1 h in furnace, rapid cooling in air stream to room temperature for 10 min. 50 cycles (50 h).",
+            "simplified": "Thermal cycling at 1450 °C, 1 h hold per cycle, air cooling to RT in 10 min, 50 cycles (50 h)."
+          },
+          "Stage1_Thermal_Cycling": {
+            "Process_Category": "Thermal cycling",
+            "Key_Params": {
+              "Peak_Temperature": {
+                "Value": 1723,
+                "Unit": "K",
+                "Original_Values": "1450 C"
+              },
+              "Total_Cycles": 50,
+              "Total_Time": {
+                "Value": 50,
+                "Unit": "h"
+              },
+              "Holding_Time_Per_Cycle": {
+                "Value": 1,
+                "Unit": "h"
+              },
+              "Cooling_Method": "rapid cooling in air stream",
+              "Cooling_Duration": {
+                "Value": 10,
+                "Unit": "min"
+              },
+              "Atmosphere": "air"
+            },
+            "Note": "Thermal cycling protocol per Section 2.1: isothermal heating for 1 h followed by rapid air cooling to RT in 10 min; same protocol applied at all test temperatures (1400, 1450, 1500 °C)"
+          }
+        },
+        "Structure": {
+          "Coating_Structure": {
+            "TGO_Growth": {
+              "Layer_Name": "m-TGO",
+              "Average_Thickness": {
+                "Value": 45.81,
+                "Unit": "um",
+                "Original_Values": "45.81 um",
+                "Data_Source": "table"
+              },
+              "Growth_Time": {
+                "Value": 50,
+                "Unit": "h"
+              },
+              "Test_Temperature_Original": "1450 C"
+            }
+          },
+          "Microstructure_Features": "Crystallized surface. Early appearance of vertical mud cracks. Si-HfO2 bond coating characteristics similar to 1400C sample."
+        },
+        "Properties": [
+          {
+            "Property_Name": "m-TGO_Thickness",
+            "Value": 45.81,
+            "Unit": "um",
+            "Test_Condition": {
+              "Test_Temperature_K": 1723,
+              "Test_Temperature_Original": "1450 C",
+              "Test_Duration": "50 h"
+            },
+            "Data_Source": "table"
+          },
+          {
+            "Property_Name": "Specimen_State",
+            "Value": null,
+            "Test_Condition": {
+              "Test_Temperature_K": 1723,
+              "Test_Temperature_Original": "1450 °C",
+              "Test_Duration": "50 h"
+            },
+            "Specimen_State": "50 h completed; coating intact with early appearance of vertical mud cracks",
+            "Data_Source": "text"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "item_07",
+      "Sample_ID": "EBC_1450C_100h",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Ceramics_Inorganic",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Thermal_Barrier_or_EBC",
+        "Thermal_Cycling",
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 3.2.2",
+        "Table 3"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Note": "Same coating composition as item_01"
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "Thermal cycling at 1450 °C: isothermal heating for 1 h in furnace, rapid cooling in air stream to room temperature for 10 min. 100 cycles (100 h).",
+            "simplified": "Thermal cycling at 1450 °C, 1 h hold per cycle, air cooling to RT in 10 min, 100 cycles (100 h)."
+          },
+          "Stage1_Thermal_Cycling": {
+            "Process_Category": "Thermal cycling",
+            "Key_Params": {
+              "Peak_Temperature": {
+                "Value": 1723,
+                "Unit": "K",
+                "Original_Values": "1450 C"
+              },
+              "Total_Cycles": 100,
+              "Total_Time": {
+                "Value": 100,
+                "Unit": "h"
+              },
+              "Holding_Time_Per_Cycle": {
+                "Value": 1,
+                "Unit": "h"
+              },
+              "Cooling_Method": "rapid cooling in air stream",
+              "Cooling_Duration": {
+                "Value": 10,
+                "Unit": "min"
+              },
+              "Atmosphere": "air"
+            },
+            "Note": "Thermal cycling protocol per Section 2.1: isothermal heating for 1 h followed by rapid air cooling to RT in 10 min; same protocol applied at all test temperatures (1400, 1450, 1500 °C)"
+          }
+        },
+        "Structure": {
+          "Coating_Structure": {
+            "TGO_Growth": {
+              "Layer_Name": "m-TGO",
+              "Average_Thickness": {
+                "Value": 48.24,
+                "Unit": "um",
+                "Original_Values": "48.24 um",
+                "Data_Source": "table"
+              },
+              "Growth_Time": {
+                "Value": 100,
+                "Unit": "h"
+              },
+              "Test_Temperature_Original": "1450 C"
+            }
+          },
+          "Microstructure_Features": "Surface microcracks formed. Increased vertical mud cracks in Yb2SiO5 layer. Decreased crack spacing. Oriented cracks in bond coating."
+        },
+        "Properties": [
+          {
+            "Property_Name": "m-TGO_Thickness",
+            "Value": 48.24,
+            "Unit": "um",
+            "Test_Condition": {
+              "Test_Temperature_K": 1723,
+              "Test_Temperature_Original": "1450 C",
+              "Test_Duration": "100 h"
+            },
+            "Data_Source": "table"
+          },
+          {
+            "Property_Name": "Specimen_State",
+            "Value": null,
+            "Test_Condition": {
+              "Test_Temperature_K": 1723,
+              "Test_Temperature_Original": "1450 °C",
+              "Test_Duration": "100 h"
+            },
+            "Specimen_State": "100 h completed; bonding between each layer still tight",
+            "Data_Source": "text"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "item_08",
+      "Sample_ID": "EBC_1450C_150h",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Ceramics_Inorganic",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Thermal_Barrier_or_EBC",
+        "Thermal_Cycling",
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 3.2.2",
+        "Table 3"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Note": "Same coating composition as item_01"
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "Thermal cycling at 1450 °C: isothermal heating for 1 h in furnace, rapid cooling in air stream to room temperature for 10 min. 150 cycles (150 h).",
+            "simplified": "Thermal cycling at 1450 °C, 1 h hold per cycle, air cooling to RT in 10 min, 150 cycles (150 h)."
+          },
+          "Stage1_Thermal_Cycling": {
+            "Process_Category": "Thermal cycling",
+            "Key_Params": {
+              "Peak_Temperature": {
+                "Value": 1723,
+                "Unit": "K",
+                "Original_Values": "1450 C"
+              },
+              "Total_Cycles": 150,
+              "Total_Time": {
+                "Value": 150,
+                "Unit": "h"
+              },
+              "Holding_Time_Per_Cycle": {
+                "Value": 1,
+                "Unit": "h"
+              },
+              "Cooling_Method": "rapid cooling in air stream",
+              "Cooling_Duration": {
+                "Value": 10,
+                "Unit": "min"
+              },
+              "Atmosphere": "air"
+            },
+            "Note": "Thermal cycling protocol per Section 2.1: isothermal heating for 1 h followed by rapid air cooling to RT in 10 min; same protocol applied at all test temperatures (1400, 1450, 1500 °C)"
+          }
+        },
+        "Structure": {
+          "Coating_Structure": {
+            "TGO_Growth": {
+              "Layer_Name": "m-TGO",
+              "Average_Thickness": {
+                "Value": 50.21,
+                "Unit": "um",
+                "Original_Values": "50.21 um",
+                "Data_Source": "table"
+              },
+              "Growth_Time": {
+                "Value": 150,
+                "Unit": "h"
+              },
+              "Test_Temperature_Original": "1450 C"
+            }
+          },
+          "Microstructure_Features": "Microcracks interconnected on surface. Increased vertical mud crack density. Majority of vertical mud cracks bifurcated at Yb2SiO5/Yb2Si2O7 interface. Inner-layer cracks in dark gray SiO2 phase of bond coating (possibly from cristobalite phase transition in hafnia-poor area)."
+        },
+        "Properties": [
+          {
+            "Property_Name": "m-TGO_Thickness",
+            "Value": 50.21,
+            "Unit": "um",
+            "Test_Condition": {
+              "Test_Temperature_K": 1723,
+              "Test_Temperature_Original": "1450 C",
+              "Test_Duration": "150 h"
+            },
+            "Data_Source": "table"
+          },
+          {
+            "Property_Name": "Specimen_State",
+            "Value": null,
+            "Test_Condition": {
+              "Test_Temperature_K": 1723,
+              "Test_Temperature_Original": "1450 °C",
+              "Test_Duration": "150 h"
+            },
+            "Specimen_State": "150 h completed; microcracks interconnected on surface, vertical mud crack density increased, inner-layer cracks emerged in SiO2 phase",
+            "Data_Source": "text"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "item_09",
+      "Sample_ID": "EBC_1450C_200h",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Ceramics_Inorganic",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Thermal_Barrier_or_EBC",
+        "Thermal_Cycling",
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 3.2.2",
+        "Table 3"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Note": "Same coating composition as item_01"
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "Thermal cycling at 1450 °C: isothermal heating for 1 h in furnace, rapid cooling in air stream to room temperature for 10 min. 200 cycles (200 h).",
+            "simplified": "Thermal cycling at 1450 °C, 1 h hold per cycle, air cooling to RT in 10 min, 200 cycles (200 h)."
+          },
+          "Stage1_Thermal_Cycling": {
+            "Process_Category": "Thermal cycling",
+            "Key_Params": {
+              "Peak_Temperature": {
+                "Value": 1723,
+                "Unit": "K",
+                "Original_Values": "1450 C"
+              },
+              "Total_Cycles": 200,
+              "Total_Time": {
+                "Value": 200,
+                "Unit": "h"
+              },
+              "Holding_Time_Per_Cycle": {
+                "Value": 1,
+                "Unit": "h"
+              },
+              "Cooling_Method": "rapid cooling in air stream",
+              "Cooling_Duration": {
+                "Value": 10,
+                "Unit": "min"
+              },
+              "Atmosphere": "air"
+            },
+            "Note": "Thermal cycling protocol per Section 2.1: isothermal heating for 1 h followed by rapid air cooling to RT in 10 min; same protocol applied at all test temperatures (1400, 1450, 1500 °C)"
+          }
+        },
+        "Structure": {
+          "Coating_Structure": {
+            "TGO_Growth": {
+              "Layer_Name": "m-TGO",
+              "Average_Thickness": {
+                "Value": 51.73,
+                "Unit": "um",
+                "Original_Values": "51.73 um",
+                "Data_Source": "table"
+              },
+              "Growth_Time": {
+                "Value": 200,
+                "Unit": "h"
+              },
+              "Test_Temperature_Original": "1450 C"
+            }
+          },
+          "Microstructure_Features": "Fissuration (wider cracks interconnect forming network) and interlaminar cracks at surface and Yb2Si2O7/Yb2SiO5 interface. Ongoing initiation, propagation, and transformation of oriented cracks into interconnected cracks."
+        },
+        "Properties": [
+          {
+            "Property_Name": "Thermal_Cycle_Life",
+            "Value": 200,
+            "Unit": "cycles",
+            "Test_Condition": {
+              "Test_Temperature_K": 1723,
+              "Test_Temperature_Original": "1450 C",
+              "Holding_Time_Per_Cycle": "1 h",
+              "Cooling_Method": "air cooling 10 min",
+              "Atmosphere": "air"
+            },
+            "Specimen_State": "200 cycles completed; fissuration and interlaminar cracks appeared",
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "m-TGO_Thickness",
+            "Value": 51.73,
+            "Unit": "um",
+            "Test_Condition": {
+              "Test_Temperature_K": 1723,
+              "Test_Temperature_Original": "1450 C",
+              "Test_Duration": "200 h"
+            },
+            "Data_Source": "table"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "item_10",
+      "Sample_ID": "EBC_1500C_50h",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Ceramics_Inorganic",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Thermal_Barrier_or_EBC",
+        "Thermal_Cycling",
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 3.2.3 1500 C thermal cycling tests",
+        "Table 3"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Note": "Same coating composition as item_01"
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "Thermal cycling at 1500 °C: isothermal heating for 1 h in furnace, rapid cooling in air stream to room temperature for 10 min. 50 cycles (50 h).",
+            "simplified": "Thermal cycling at 1500 °C, 1 h hold per cycle, air cooling to RT in 10 min, 50 cycles (50 h)."
+          },
+          "Stage1_Thermal_Cycling": {
+            "Process_Category": "Thermal cycling",
+            "Key_Params": {
+              "Peak_Temperature": {
+                "Value": 1773,
+                "Unit": "K",
+                "Original_Values": "1500 C"
+              },
+              "Total_Cycles": 50,
+              "Total_Time": {
+                "Value": 50,
+                "Unit": "h"
+              },
+              "Holding_Time_Per_Cycle": {
+                "Value": 1,
+                "Unit": "h"
+              },
+              "Cooling_Method": "rapid cooling in air stream",
+              "Cooling_Duration": {
+                "Value": 10,
+                "Unit": "min"
+              },
+              "Atmosphere": "air"
+            },
+            "Note": "Thermal cycling protocol per Section 2.1: isothermal heating for 1 h followed by rapid air cooling to RT in 10 min; same protocol applied at all test temperatures (1400, 1450, 1500 °C)"
+          }
+        },
+        "Structure": {
+          "Coating_Structure": {
+            "TGO_Growth": {
+              "Layer_Name": "m-TGO",
+              "Average_Thickness": {
+                "Value": 46.49,
+                "Unit": "um",
+                "Original_Values": "46.49 um",
+                "Data_Source": "table"
+              },
+              "Growth_Time": {
+                "Value": 50,
+                "Unit": "h"
+              },
+              "Test_Temperature_Original": "1500 C"
+            }
+          },
+          "Microstructure_Features": "High crystallinity. A few vertical mud cracks inside Yb2SiO5 layer. Bond coating stuck well to CMC substrate. Hafnia-rich precipitates uniformly distributed."
+        },
+        "Properties": [
+          {
+            "Property_Name": "m-TGO_Thickness",
+            "Value": 46.49,
+            "Unit": "um",
+            "Test_Condition": {
+              "Test_Temperature_K": 1773,
+              "Test_Temperature_Original": "1500 C",
+              "Test_Duration": "50 h"
+            },
+            "Data_Source": "table"
+          },
+          {
+            "Property_Name": "Specimen_State",
+            "Value": null,
+            "Test_Condition": {
+              "Test_Temperature_K": 1773,
+              "Test_Temperature_Original": "1500 °C",
+              "Test_Duration": "50 h"
+            },
+            "Specimen_State": "50 h completed; bond coating adhered well to CMC substrate, adhesion between layers stable",
+            "Data_Source": "text"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "item_11",
+      "Sample_ID": "EBC_1500C_100h",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Ceramics_Inorganic",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Thermal_Barrier_or_EBC",
+        "Thermal_Cycling",
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 3.2.3",
+        "Table 3"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Note": "Same coating composition as item_01"
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "Thermal cycling at 1500 °C: isothermal heating for 1 h in furnace, rapid cooling in air stream to room temperature for 10 min. 100 cycles (100 h).",
+            "simplified": "Thermal cycling at 1500 °C, 1 h hold per cycle, air cooling to RT in 10 min, 100 cycles (100 h)."
+          },
+          "Stage1_Thermal_Cycling": {
+            "Process_Category": "Thermal cycling",
+            "Key_Params": {
+              "Peak_Temperature": {
+                "Value": 1773,
+                "Unit": "K",
+                "Original_Values": "1500 C"
+              },
+              "Total_Cycles": 100,
+              "Total_Time": {
+                "Value": 100,
+                "Unit": "h"
+              },
+              "Holding_Time_Per_Cycle": {
+                "Value": 1,
+                "Unit": "h"
+              },
+              "Cooling_Method": "rapid cooling in air stream",
+              "Cooling_Duration": {
+                "Value": 10,
+                "Unit": "min"
+              },
+              "Atmosphere": "air"
+            },
+            "Note": "Thermal cycling protocol per Section 2.1: isothermal heating for 1 h followed by rapid air cooling to RT in 10 min; same protocol applied at all test temperatures (1400, 1450, 1500 °C)"
+          }
+        },
+        "Structure": {
+          "Coating_Structure": {
+            "TGO_Growth": {
+              "Layer_Name": "m-TGO",
+              "Average_Thickness": {
+                "Value": 49.1,
+                "Unit": "um",
+                "Original_Values": "49.10 um",
+                "Data_Source": "table"
+              },
+              "Growth_Time": {
+                "Value": 100,
+                "Unit": "h"
+              },
+              "Test_Temperature_Original": "1500 C"
+            }
+          },
+          "Microstructure_Features": "Visible surface crack and bifurcated crack appeared early. More oriented cracks inside bond coating than at 1400/1450 C. Minority of oriented cracks penetrated through hafnia-rich precipitates driven by excessive thermal stress."
+        },
+        "Properties": [
+          {
+            "Property_Name": "m-TGO_Thickness",
+            "Value": 49.1,
+            "Unit": "um",
+            "Test_Condition": {
+              "Test_Temperature_K": 1773,
+              "Test_Temperature_Original": "1500 C",
+              "Test_Duration": "100 h"
+            },
+            "Data_Source": "table"
+          },
+          {
+            "Property_Name": "Specimen_State",
+            "Value": null,
+            "Test_Condition": {
+              "Test_Temperature_K": 1773,
+              "Test_Temperature_Original": "1500 °C",
+              "Test_Duration": "100 h"
+            },
+            "Specimen_State": "100 h completed; m-TGO adhered well to CMC substrate, bifurcated cracks appeared early",
+            "Data_Source": "text"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "item_12",
+      "Sample_ID": "EBC_1500C_150h",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Ceramics_Inorganic",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Thermal_Barrier_or_EBC",
+        "Thermal_Cycling",
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 3.2.3",
+        "Table 3"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Note": "Same coating composition as item_01"
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "Thermal cycling at 1500 °C: isothermal heating for 1 h in furnace, rapid cooling in air stream to room temperature for 10 min. 150 cycles (150 h).",
+            "simplified": "Thermal cycling at 1500 °C, 1 h hold per cycle, air cooling to RT in 10 min, 150 cycles (150 h)."
+          },
+          "Stage1_Thermal_Cycling": {
+            "Process_Category": "Thermal cycling",
+            "Key_Params": {
+              "Peak_Temperature": {
+                "Value": 1773,
+                "Unit": "K",
+                "Original_Values": "1500 C"
+              },
+              "Total_Cycles": 150,
+              "Total_Time": {
+                "Value": 150,
+                "Unit": "h"
+              },
+              "Holding_Time_Per_Cycle": {
+                "Value": 1,
+                "Unit": "h"
+              },
+              "Cooling_Method": "rapid cooling in air stream",
+              "Cooling_Duration": {
+                "Value": 10,
+                "Unit": "min"
+              },
+              "Atmosphere": "air"
+            },
+            "Note": "Thermal cycling protocol per Section 2.1: isothermal heating for 1 h followed by rapid air cooling to RT in 10 min; same protocol applied at all test temperatures (1400, 1450, 1500 °C)"
+          }
+        },
+        "Structure": {
+          "Coating_Structure": {
+            "TGO_Growth": {
+              "Layer_Name": "m-TGO",
+              "Average_Thickness": {
+                "Value": 51.71,
+                "Unit": "um",
+                "Original_Values": "51.71 um",
+                "Data_Source": "table"
+              },
+              "Growth_Time": {
+                "Value": 150,
+                "Unit": "h"
+              },
+              "Test_Temperature_Original": "1500 C"
+            }
+          },
+          "Microstructure_Features": "Surface cracks connected. Bifurcated cracks expanded laterally along Yb2Si2O7/Yb2SiO5 interface. Interlaminar crack partly appeared between bond coating and Yb2Si2O7 layer. Majority of oriented cracks interconnected."
+        },
+        "Properties": [
+          {
+            "Property_Name": "m-TGO_Thickness",
+            "Value": 51.71,
+            "Unit": "um",
+            "Test_Condition": {
+              "Test_Temperature_K": 1773,
+              "Test_Temperature_Original": "1500 C",
+              "Test_Duration": "150 h"
+            },
+            "Data_Source": "table"
+          },
+          {
+            "Property_Name": "Specimen_State",
+            "Value": null,
+            "Test_Condition": {
+              "Test_Temperature_K": 1773,
+              "Test_Temperature_Original": "1500 °C",
+              "Test_Duration": "150 h"
+            },
+            "Specimen_State": "150 h completed; interlaminar crack partly appeared between bond coating and Yb2Si2O7 layer, oriented cracks interconnected",
+            "Data_Source": "text"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "item_13",
+      "Sample_ID": "EBC_1500C_200h",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Ceramics_Inorganic",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Thermal_Barrier_or_EBC",
+        "Thermal_Cycling",
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 3.2.3",
+        "Table 3"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Note": "Same coating composition as item_01"
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "Thermal cycling at 1500 °C: isothermal heating for 1 h in furnace, rapid cooling in air stream to room temperature for 10 min. 200 cycles (200 h).",
+            "simplified": "Thermal cycling at 1500 °C, 1 h hold per cycle, air cooling to RT in 10 min, 200 cycles (200 h)."
+          },
+          "Stage1_Thermal_Cycling": {
+            "Process_Category": "Thermal cycling",
+            "Key_Params": {
+              "Peak_Temperature": {
+                "Value": 1773,
+                "Unit": "K",
+                "Original_Values": "1500 C"
+              },
+              "Total_Cycles": 200,
+              "Total_Time": {
+                "Value": 200,
+                "Unit": "h"
+              },
+              "Holding_Time_Per_Cycle": {
+                "Value": 1,
+                "Unit": "h"
+              },
+              "Cooling_Method": "rapid cooling in air stream",
+              "Cooling_Duration": {
+                "Value": 10,
+                "Unit": "min"
+              },
+              "Atmosphere": "air"
+            },
+            "Note": "Thermal cycling protocol per Section 2.1: isothermal heating for 1 h followed by rapid air cooling to RT in 10 min; same protocol applied at all test temperatures (1400, 1450, 1500 °C)"
+          }
+        },
+        "Structure": {
+          "Coating_Structure": {
+            "TGO_Growth": {
+              "Layer_Name": "m-TGO",
+              "Average_Thickness": {
+                "Value": 53.34,
+                "Unit": "um",
+                "Original_Values": "53.34 um",
+                "Data_Source": "table"
+              },
+              "Growth_Time": {
+                "Value": 200,
+                "Unit": "h"
+              },
+              "Test_Temperature_Original": "1500 C"
+            }
+          },
+          "Microstructure_Features": "Surface cracks substantially connected. Increased vertical mud cracks with reduced spacing and increased density. Bifurcated cracks interconnected to form interlaminar cracks at Yb2Si2O7/Yb2SiO5 interface. Interlaminar cracks at CMC/m-TGO and m-TGO/Yb2Si2O7 interfaces. Protection of CMC substrate was compromised."
+        },
+        "Properties": [
+          {
+            "Property_Name": "Thermal_Cycle_Life",
+            "Value": 200,
+            "Unit": "cycles",
+            "Test_Condition": {
+              "Test_Temperature_K": 1773,
+              "Test_Temperature_Original": "1500 C",
+              "Holding_Time_Per_Cycle": "1 h",
+              "Cooling_Method": "air cooling 10 min",
+              "Atmosphere": "air"
+            },
+            "Specimen_State": "200 cycles completed; interlaminar cracks at CMC/m-TGO and m-TGO/Yb2Si2O7 interfaces; EBC protection compromised",
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "m-TGO_Thickness",
+            "Value": 53.34,
+            "Unit": "um",
+            "Test_Condition": {
+              "Test_Temperature_K": 1773,
+              "Test_Temperature_Original": "1500 C",
+              "Test_Duration": "200 h"
+            },
+            "Data_Source": "table"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "item_14",
+      "Sample_ID": "SiHfO2_bond_1450C_25h_TEM",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Ceramics_Inorganic",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Thermal_Barrier_or_EBC",
+        "Thermal_Cycling",
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 3.3 TEM analysis of trilayer EBC after thermal cycling",
+        "Fig. 6"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Note": "Same coating composition as item_01; Si-HfO2 bond coat after 25 h at 1450C"
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "TEM sample taken from Si-HfO2 bond coating after 25 h of thermal cycling at 1450 °C, selected for phase composition and microdefect analysis. Thermal cycling protocol: isothermal heating for 1 h at 1450 °C, rapid cooling in air stream to RT for 10 min.",
+            "simplified": "TEM analysis of Si-HfO2 bond coat after 25 h at 1450 °C. Thermal cycling: 1 h hold, air cooling 10 min per cycle."
+          },
+          "Stage1_Thermal_Cycling": {
+            "Process_Category": "Thermal cycling",
+            "Key_Params": {
+              "Peak_Temperature": {
+                "Value": 1723,
+                "Unit": "K",
+                "Original_Values": "1450 C"
+              },
+              "Total_Time": {
+                "Value": 25,
+                "Unit": "h"
+              }
+            }
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Elliptical HfSiO4 bricks randomly distributed within SiO2 mortar, with average size of ~1.16 um. SAED pattern along [111] zone direction and interplanar spacing of 4.448 A confirmed tetragonal HfSiO4 phase.",
+            "simplified": "Dual-state duplex m-TGO: elliptical HfSiO4 (~1.16 um avg) in SiO2 matrix. SAED confirmed tetragonal HfSiO4."
+          },
+          "Crystalline_Phases": [
+            {
+              "Phase_Name": "HfSiO4",
+              "Crystal_Structure": "tetragonal",
+              "SAED_Zone_Axis": "[111]",
+              "Interplanar_Spacing": {
+                "Value": 4.448,
+                "Unit": "A"
+              },
+              "Morphology": "elliptical particles randomly distributed",
+              "Average_Size": {
+                "Value": 1.16,
+                "Unit": "um",
+                "Note": "approximate value",
+                "Original_Values": "~1.16 um"
+              },
+              "Data_Source": "text"
+            },
+            {
+              "Phase_Name": "beta-cristobalite SiO2",
+              "Crystal_Structure": "tetragonal (beta-cristobalite)",
+              "Role_In_Structure": "matrix (mortar)",
+              "Data_Source": "text"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "Item_ID": "item_15",
+      "Sample_ID": "Yb2Si2O7_Yb2SiO5_interface_1450C_100h_TEM",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Ceramics_Inorganic",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Thermal_Barrier_or_EBC",
+        "Thermal_Cycling",
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 3.3 TEM analysis",
+        "Section 4.3 Vertical mud-crack evolution",
+        "Fig. 7, Fig. 14, Fig. 15"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Note": "Same coating composition as item_01; Yb2Si2O7/Yb2SiO5 interface after 100 h at 1450C"
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "TEM sample taken from Yb2Si2O7/Yb2SiO5 interface after 100 h of thermal cycling at 1450 °C, selected for detailed microdefect analysis before vertical mud-crack bifurcation onset. Thermal cycling protocol: isothermal heating for 1 h at 1450 °C, rapid cooling in air stream to RT for 10 min.",
+            "simplified": "TEM analysis of Yb2Si2O7/Yb2SiO5 interface after 100 h at 1450 °C. Thermal cycling: 1 h hold, air cooling 10 min per cycle."
+          },
+          "Stage1_Thermal_Cycling": {
+            "Process_Category": "Thermal cycling",
+            "Key_Params": {
+              "Peak_Temperature": {
+                "Value": 1723,
+                "Unit": "K",
+                "Original_Values": "1450 C"
+              },
+              "Total_Time": {
+                "Value": 100,
+                "Unit": "h"
+              }
+            }
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Phase I identified as X2-Yb2SiO5 with simple monoclinic structure (P21/C, space group#13) along [011] zone, interplanar spacing 5.483 A. Phase II confirmed as beta-Yb2Si2O7 with base-centered monoclinic structure (C2/m, space group#15) along [202], interplanar spacing 1.781 A. Twins and dislocations observed in Yb2Si2O7 layer. (001) twinning and [110] dislocations identified. Interaction zones between twinning and dislocations observed.",
+            "simplified": "Yb2Si2O7/Yb2SiO5 interface: X2-Yb2SiO5 (monoclinic P21/C) and beta-Yb2Si2O7 (monoclinic C2/m). (001) twins and [110] dislocations in Yb2Si2O7."
+          },
+          "Crystalline_Phases": [
+            {
+              "Phase_Name": "X2-Yb2SiO5",
+              "Crystal_Structure": "simple monoclinic (P21/C, space group#13)",
+              "Location": "Yb2SiO5 layer",
+              "SAED_Zone_Axis": "[011]",
+              "Interplanar_Spacing": {
+                "Value": 5.483,
+                "Unit": "A"
+              },
+              "Data_Source": "text"
+            },
+            {
+              "Phase_Name": "beta-Yb2Si2O7",
+              "Crystal_Structure": "base-centered monoclinic (C2/m, space group#15)",
+              "Location": "Yb2Si2O7 layer",
+              "SAED_Zone_Axis": "[202]",
+              "Interplanar_Spacing": {
+                "Value": 1.781,
+                "Unit": "A"
+              },
+              "Data_Source": "text"
+            }
+          ],
+          "Microstructure_Features": {
+            "Twinning": {
+              "Twin_Plane": "(001)",
+              "Material": "Yb2Si2O7",
+              "Note": "First observation of (001) twinning in Yb2Si2O7; previously only (110) twins reported; attributed to higher thermal stresses from higher cycling temperatures"
+            },
+            "Dislocations": {
+              "Slip_Direction": "[110]",
+              "Burgers_Vector": "b = +/-[110]",
+              "Material": "Yb2Si2O7",
+              "Note": "Combination of edge and screw dislocations identified via two-beam diffraction with g vectors [1-1-1], [20-1], [110], [021]"
+            },
+            "Twin_Dislocation_Interaction": {
+              "Description": "Interaction zones between (001) twinning and dislocations observed for the first time in Yb2Si2O7",
+              "Mechanism": "Edge dislocations reacting with twin boundaries generate new edge dislocations; incomplete dislocations on twin boundary can slip along the twin boundary"
+            }
+          }
+        }
+      }
+    },
+    {
+      "Item_ID": "item_16",
+      "Sample_ID": "m-TGO_oxidation_kinetics_computed",
+      "Role": "Target",
+      "Data_Nature": "Computed",
+      "base_material": "Ceramics_Inorganic",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Thermal_Barrier_or_EBC",
+        "Thermal_Cycling",
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 4.1 Oxidation mechanism of m-TGO",
+        "Section 2.2 M-TGO growth model",
+        "Fig. 8",
+        "Table 3"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Note": "m-TGO composed of SiO2 + HfSiO4 + HfO2; composition same as item_01 bond coat after oxidation"
+        },
+        "Processing": {
+          "Note": "Oxidation kinetics model based on experimental data from Table 3"
+        },
+        "Properties": [
+          {
+            "Property_Name": "Parabolic_Rate_Constant_kp",
+            "Values_By_Temperature": [
+              {
+                "Test_Temperature_K": 1673,
+                "Test_Temperature_Original": "1400 C",
+                "Value": 0.52306,
+                "Unit": "um^2/h",
+                "Original_Values": "0.52306 um^2/h",
+                "Data_Source": "text"
+              },
+              {
+                "Test_Temperature_K": 1723,
+                "Test_Temperature_Original": "1450 C",
+                "Value": 0.69133,
+                "Unit": "um^2/h",
+                "Original_Values": "0.69133 um^2/h",
+                "Data_Source": "text"
+              },
+              {
+                "Test_Temperature_K": 1773,
+                "Test_Temperature_Original": "1500 C",
+                "Value": 0.84419,
+                "Unit": "um^2/h",
+                "Original_Values": "0.84419 um^2/h",
+                "Data_Source": "text"
+              }
+            ],
+            "Note": "Fitted from m-TGO thickness vs time data (Table 3) using parabolic model (dh)^2 = kp * tau(t)"
+          },
+          {
+            "Property_Name": "Activation_Energy_Oxygen_Diffusion",
+            "Values_By_Temperature_Range": [
+              {
+                "Temperature_Range": "1400-1450 C",
+                "Value": 133.69,
+                "Unit": "kJ/mol",
+                "Original_Values": "133.69 kJ/mol",
+                "Data_Source": "text"
+              },
+              {
+                "Temperature_Range": "1450-1500 C",
+                "Value": 101.47,
+                "Unit": "kJ/mol",
+                "Original_Values": "101.47 kJ/mol",
+                "Data_Source": "text"
+              }
+            ],
+            "Preexponential_Factor_A": {
+              "Value": 824.16,
+              "Unit": "um^2/h",
+              "Original_Values": "824.16",
+              "Data_Source": "text"
+            },
+            "Note": "QA change attributed to changes in coating microstructure (e.g., increased vertical mud cracks at higher temperatures reducing activation energy for oxygen transport). Molecular oxygen transport mechanism indicated by QA values (80-120 kJ/mol for molecular, 230-400 kJ/mol for ionic). kp = A * exp(-QA/RT)"
+          },
+          {
+            "Property_Name": "m-TGO_Growth_Model",
+            "Formula": "(dh)^2 = 824.16 * exp(-133.69/RT) * tau(t) for 1400-1450C; (dh)^2 = 824.16 * exp(-101.47/RT) * tau(t) for 1450-1500C",
+            "Data_Source": "text",
+            "Note": "Deal-Grove parabolic model; R = 8.314472 J/(mol*K); dh = m-TGO thickness growth; tau(t) = high-temperature holding time in hours"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "item_17",
+      "Sample_ID": "thermomechanical_computed",
+      "Role": "Target",
+      "Data_Nature": "Computed",
+      "base_material": "Ceramics_Inorganic",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Thermal_Barrier_or_EBC",
+        "Thermal_Cycling",
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 4.2 Theoretical thermomechanical compatibility of m-TGO growth",
+        "Table 2",
+        "Figs. 10-13"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Note": "Material properties used for computation listed in Table 2; m-TGO effective LCTE derived from linear regression based on Ref. [27]"
+        },
+        "Processing": {
+          "Note": "Thermomechanical calculations based on m-TGO growth during thermal cycling"
+        },
+        "Structure": {
+          "Thermomechanical_Properties_Table2": {
+            "Note": "Properties used in calculations; Data_Source: table",
+            "SiCf_SiC": {
+              "Average_CTE": {
+                "Value": 4.41,
+                "Unit": "10^-6 K^-1",
+                "Original_Values": "4.41*10^-6 K^-1",
+                "Source": "Ref. [40]"
+              },
+              "Youngs_Modulus": {
+                "Value": 244,
+                "Unit": "GPa",
+                "Source": "Ref. [40]"
+              },
+              "Poissons_Ratio": {
+                "Value": 0.14,
+                "Source": "Ref. [40]"
+              }
+            },
+            "m-TGO": {
+              "Average_CTE": {
+                "Value": 5.65,
+                "Unit": "10^-6 K^-1",
+                "Original_Values": "5.65*10^-6 K^-1",
+                "Source": "average effective CTE from Fig. 10",
+                "Note": "Effective LCTE varies with temperature and thermal cycling time"
+              },
+              "Youngs_Modulus": {
+                "Value": 161.84,
+                "Unit": "GPa",
+                "Source": "derived via linear regression based on Ref. [27] with 15 mol% Hf"
+              },
+              "Poissons_Ratio": {
+                "Value": 0.34,
+                "Source": "derived via linear regression based on Ref. [27]"
+              }
+            },
+            "Yb2Si2O7": {
+              "Average_CTE": {
+                "Value": 4.25,
+                "Unit": "10^-6 K^-1",
+                "Original_Values": "4.25*10^-6 K^-1",
+                "Source": "as-sprayed coatings from Ref. [14]"
+              },
+              "Youngs_Modulus": {
+                "Value": 67.49,
+                "Unit": "GPa",
+                "Source": "as-sprayed coatings from Ref. [14]"
+              },
+              "Poissons_Ratio": {
+                "Value": 0.3,
+                "Source": "as-sprayed coatings from Ref. [14]"
+              }
+            },
+            "Yb2SiO5": {
+              "Average_CTE": {
+                "Value": 7.24,
+                "Unit": "10^-6 K^-1",
+                "Original_Values": "7.24*10^-6 K^-1",
+                "Source": "as-sprayed coatings from Ref. [14]"
+              },
+              "Youngs_Modulus": {
+                "Value": 97.3,
+                "Unit": "GPa",
+                "Source": "as-sprayed coatings from Ref. [14]"
+              },
+              "Poissons_Ratio": {
+                "Value": 0.23,
+                "Source": "as-sprayed coatings from Ref. [14]"
+              }
+            }
+          },
+          "m-TGO_Effective_LCTE": {
+            "Note": "Effective LCTE of m-TGO varies with temperature and thermal cycling time. Relatively high LCTE at lower temperature (~9.6*10^-6 K^-1) due to alpha-cristobalite; lower at higher temperatures due to beta-cristobalite. Slight decrease in LCTE at lower temperatures and rise at higher temperatures as thermal cycling progresses, attributed to increased HfSiO4 content.",
+            "Data_Source": "text"
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Thermal_Mismatch_Stress",
+            "Description": "Thermal mismatch stress between m-TGO and CMC substrate during thermal cycling",
+            "Values_By_Temperature": [
+              {
+                "Test_Temperature_K": 1673,
+                "Test_Temperature_Original": "1400 C",
+                "Value_Range": "449-470",
+                "Unit": "MPa",
+                "Original_Values": "449 to 470 MPa",
+                "Test_Duration_Range": "0-200 h",
+                "Data_Source": "text"
+              },
+              {
+                "Test_Temperature_K": 1723,
+                "Test_Temperature_Original": "1450 C",
+                "Value_Range": "465-486",
+                "Unit": "MPa",
+                "Original_Values": "465 to 486 MPa",
+                "Test_Duration_Range": "0-200 h",
+                "Data_Source": "text"
+              },
+              {
+                "Test_Temperature_K": 1773,
+                "Test_Temperature_Original": "1500 C",
+                "Value_Range": "482-503",
+                "Unit": "MPa",
+                "Original_Values": "482 to 503 MPa",
+                "Test_Duration_Range": "0-200 h",
+                "Data_Source": "text"
+              }
+            ],
+            "Note": "Calculated via Eq. (7): sigma_t = (alpha_c - alpha_s) * E_c * delta_T / (1 - nu_c). Upper bound estimation."
+          },
+          {
+            "Property_Name": "Thermal_Mismatch_Stress_Yb2Si2O7_vs_CMC",
+            "Description": "Thermal mismatch stress between Yb2Si2O7 layer and CMC substrate",
+            "Values_By_Temperature": [
+              {
+                "Test_Temperature_K": 1673,
+                "Test_Temperature_Original": "1400 C",
+                "Value": -21.2,
+                "Unit": "MPa",
+                "Data_Source": "text"
+              },
+              {
+                "Test_Temperature_K": 1723,
+                "Test_Temperature_Original": "1450 C",
+                "Value": -22.0,
+                "Unit": "MPa",
+                "Data_Source": "text"
+              },
+              {
+                "Test_Temperature_K": 1773,
+                "Test_Temperature_Original": "1500 C",
+                "Value": -22.8,
+                "Unit": "MPa",
+                "Data_Source": "text"
+              }
+            ],
+            "Note": "Negative values indicate compressive stress"
+          },
+          {
+            "Property_Name": "Thermal_Mismatch_Stress_Yb2SiO5_vs_CMC",
+            "Description": "Thermal mismatch stress between Yb2SiO5 layer and CMC substrate",
+            "Values_By_Temperature": [
+              {
+                "Test_Temperature_K": 1673,
+                "Test_Temperature_Original": "1400 C",
+                "Value": 491.7,
+                "Unit": "MPa",
+                "Data_Source": "text"
+              },
+              {
+                "Test_Temperature_K": 1723,
+                "Test_Temperature_Original": "1450 C",
+                "Value": 509.6,
+                "Unit": "MPa",
+                "Data_Source": "text"
+              },
+              {
+                "Test_Temperature_K": 1773,
+                "Test_Temperature_Original": "1500 C",
+                "Value": 527.5,
+                "Unit": "MPa",
+                "Data_Source": "text"
+              }
+            ]
+          },
+          {
+            "Property_Name": "Energy_Release_Rate_ERR_m-TGO_vs_CMC",
+            "Description": "Strain energy release rate between m-TGO and CMC substrate",
+            "Values_By_Temperature": [
+              {
+                "Test_Temperature_K": 1673,
+                "Test_Temperature_Original": "1400 C",
+                "Near_Cristobalite_Transition": {
+                  "Value": 14.2,
+                  "Unit": "J/m^2",
+                  "Data_Source": "text"
+                },
+                "Peak_in_700_900C_Range": {
+                  "Value": 18.1,
+                  "Unit": "J/m^2",
+                  "Data_Source": "text"
+                }
+              },
+              {
+                "Test_Temperature_K": 1723,
+                "Test_Temperature_Original": "1450 C",
+                "Near_Cristobalite_Transition": {
+                  "Value": 15.1,
+                  "Unit": "J/m^2",
+                  "Data_Source": "text"
+                },
+                "Peak_in_700_900C_Range": {
+                  "Value": 19.7,
+                  "Unit": "J/m^2",
+                  "Data_Source": "text"
+                }
+              },
+              {
+                "Test_Temperature_K": 1773,
+                "Test_Temperature_Original": "1500 C",
+                "Near_Cristobalite_Transition": {
+                  "Value": 16.3,
+                  "Unit": "J/m^2",
+                  "Data_Source": "text"
+                },
+                "Peak_in_700_900C_Range": {
+                  "Value": 20.4,
+                  "Unit": "J/m^2",
+                  "Data_Source": "text"
+                }
+              }
+            ],
+            "Note": "Calculated via Eq. (10); ERR increases near cristobalite phase transition temperature and in 700-900C range. Much lower than SiO2-TGO ERR (>40 J/m^2) in pure Si bond coating systems."
+          },
+          {
+            "Property_Name": "Energy_Release_Rate_ERR_m-TGO_vs_Yb2Si2O7",
+            "Description": "Strain energy release rate between m-TGO and Yb2Si2O7 layer",
+            "Values_By_Temperature": [
+              {
+                "Test_Temperature_K": 1673,
+                "Test_Temperature_Original": "1400 C",
+                "Near_Cristobalite_Transition": {
+                  "Value_Range": "2.7-4.7",
+                  "Unit": "J/m^2",
+                  "Data_Source": "text",
+                  "Original_Values": "2.7 to 4.7 J/m^2"
+                },
+                "Peak_Value": {
+                  "Value": 4.7,
+                  "Unit": "J/m^2",
+                  "Original_Values": "4.7 J/m^2",
+                  "Data_Source": "text"
+                }
+              },
+              {
+                "Test_Temperature_K": 1723,
+                "Test_Temperature_Original": "1450 C",
+                "Near_Cristobalite_Transition": {
+                  "Value_Range": "2.7-5.2",
+                  "Unit": "J/m^2",
+                  "Data_Source": "text",
+                  "Original_Values": "2.7 to 5.2 J/m^2"
+                },
+                "Peak_Value": {
+                  "Value": 5.2,
+                  "Unit": "J/m^2",
+                  "Original_Values": "5.2 J/m^2",
+                  "Data_Source": "text"
+                }
+              },
+              {
+                "Test_Temperature_K": 1773,
+                "Test_Temperature_Original": "1500 C",
+                "Near_Cristobalite_Transition": {
+                  "Value_Range": "2.7-5.8",
+                  "Unit": "J/m^2",
+                  "Data_Source": "text",
+                  "Original_Values": "2.7 to 5.8 J/m^2"
+                },
+                "Peak_Value": {
+                  "Value": 5.8,
+                  "Unit": "J/m^2",
+                  "Original_Values": "5.8 J/m^2",
+                  "Data_Source": "text"
+                }
+              }
+            ],
+            "Note": "Lower ERR than m-TGO/CMC interface due to smaller LCTE difference. Increases rapidly above 1300C. Peak values at 1400, 1450, 1500C: 4.7, 5.2, 5.8 J/m^2 respectively."
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "item_18",
+      "Sample_ID": "FEM_simulation_1450C_cooling",
+      "Role": "Demonstration",
+      "Data_Nature": "Computed",
+      "base_material": "Ceramics_Inorganic",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Thermal_Barrier_or_EBC",
+        "Thermal_Cycling",
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 2.3 Finite element model",
+        "Section 4.3 Vertical mud-crack evolution",
+        "Fig. 17"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Note": "Same material system as item_01; properties from Table 2 used as input"
+        },
+        "Processing": {
+          "Simulation_Metadata": {
+            "Software": "ANSYS",
+            "Analysis_Type": "Linear static structural analysis",
+            "Model_Type": "Generalized plane strain",
+            "Simulation_Condition": {
+              "Initial_Temperature": {
+                "Value": 1723,
+                "Unit": "K",
+                "Original_Values": "1450 C"
+              },
+              "Final_Temperature": {
+                "Value": 298,
+                "Unit": "K",
+                "Original_Values": "25 C"
+              },
+              "Note": "Cooled from 1450C to 25C; assumed stress-free initial state at 1450C"
+            },
+            "Geometry": "Trilayer coating model with prefabricated vertical mud crack and bifurcated crack, based on cross-sectional microstructure after 150 h at 1450C",
+            "Assumptions": [
+              "Stress-free initial state at 1450C due to high creep rates",
+              "Material properties assumed linear and constant across entire temperature range",
+              "Plasticity and creep not considered",
+              "Each material layer assumed homogeneous, no pores or oxide inclusions",
+              "Volume expansion of m-TGO not considered"
+            ],
+            "Model_Type_Category": "Prefabricated crack simulation",
+            "Objective": "Qualitative analysis of stress field changes between cracks during cooling and prediction of potential crack propagation direction"
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Finite_Element_Simulation_Result",
+            "Description": "Qualitative analysis of stress distribution during cooling of trilayer coating with vertical mud cracks",
+            "Findings": {
+              "Strain_Distribution": "Strain between left vertical mud crack and right bifurcated crack increased step-by-step during cooling",
+              "von_Mises_Stress": "Left vertical mud-crack tip consistently experienced highest stress (located in Yb2SiO5 layer); stress at left tip of bifurcated crack greater than right tip",
+              "Principal_Stress": "Principal stress between cracks gradually increased during cooling with trend toward connection",
+              "Crack_Propagation_Prediction": "Stress field intensification between crack tips may prompt bifurcated crack to extend horizontally"
+            },
+            "Data_Source": "text",
+            "Note": "Qualitative simulation; confirms experimentally observed bifurcated crack lateral extension at Yb2Si2O7/Yb2SiO5 interface"
+          }
+        ]
+      },
+      "Experiment_Link": {
+        "Related_Item_IDs": [
+          "item_08",
+          "item_09"
+        ],
+        "Description": "FEM simulation based on cross-sectional microstructure after 150 h thermal cycling at 1450C; validates observed crack bifurcation and lateral extension",
+        "Validation_Target": "Vertical mud-crack bifurcation mechanism at Yb2Si2O7/Yb2SiO5 interface"
+      }
+    },
+    {
+      "Item_ID": "item_19",
+      "Sample_ID": "literature_EBC_comparison",
+      "Role": "Comparator",
+      "Data_Nature": "Literature_Experimental",
+      "base_material": "Ceramics_Inorganic",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Thermal_Barrier_or_EBC"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 4.3",
+        "Table 4"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Literature_Systems": [
+            {
+              "Ref": "[14]",
+              "EBC_System": "Si/Yb2Si2O7/Yb2SiO5",
+              "Substrate": "SiC"
+            },
+            {
+              "Ref": "[57]",
+              "EBC_System": "HfO2-Si/YbSi1.5/Yb2SiO5/LaMgAl11O19",
+              "Substrate": "CMC"
+            },
+            {
+              "Ref": "[58]",
+              "EBC_System": "SiO2-HfO2/Yb2Si2O7",
+              "Substrate": "SiC"
+            }
+          ]
+        },
+        "Properties": [
+          {
+            "Property_Name": "Thermal_Cycle_Performance_Comparison",
+            "Data_Source": "table",
+            "Values": [
+              {
+                "Ref": "[14]",
+                "Deposition_Method": "APS",
+                "Thermal_Cycling_Condition": "1350 C for 15 min, water-cooled to 25 C",
+                "Number_of_Cycles": 40,
+                "Result": "Obvious edge spalling and cracking"
+              },
+              {
+                "Ref": "[57]",
+                "Deposition_Method": "APS",
+                "Thermal_Cycling_Condition": "1300 C for 55 min, air-cooled for 5 min",
+                "Number_of_Cycles": 171,
+                "Result": "Severe spalling at YbSi1.5/HfO2-Si and HfO2-Si/substrate interfaces; vertical cracks completely penetrated layers; no bifurcated cracks"
+              },
+              {
+                "Ref": "[58]",
+                "Deposition_Method": "APS",
+                "Thermal_Cycling_Condition": "1475 C for 10 h, cooled at 5 C/min to 25 C, steam",
+                "Number_of_Cycles": 22,
+                "Result": "Complete delamination of 70 mol% HfO2-SiO2/Yb2Si2O7 at SiC substrate; cracks in TGO of 50 mol% HfO2-SiO2/Yb2Si2O7"
+              },
+              {
+                "Ref": "This work",
+                "Deposition_Method": "PS-PVD",
+                "Thermal_Cycling_Condition": "1400, 1450, or 1500 C for 60 min, air-cooled for 10 min",
+                "Number_of_Cycles": 200,
+                "Result": "Protection maintained for 200 h at all temperatures despite crack evolution"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

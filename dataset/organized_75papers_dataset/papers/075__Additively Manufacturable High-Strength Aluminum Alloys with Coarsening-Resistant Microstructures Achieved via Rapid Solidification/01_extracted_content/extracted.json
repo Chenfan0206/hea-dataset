@@ -1,0 +1,1153 @@
+{
+  "Paper_Metadata": {
+    "Paper_Title": "Additively Manufacturable High-Strength Aluminum Alloys with Coarsening-Resistant Microstructures Achieved via Rapid Solidification",
+    "DOI": null,
+    "Note": "DOI not found in OCR text"
+  },
+  "Paper_Routing": {
+    "base_material": "Metals",
+    "application": "Structural",
+    "research_paradigm": "Hybrid",
+    "Supplements_Loaded": [
+      "directions/base/Metals.txt",
+      "directions/application/Structural.txt",
+      "directions/paradigm/Hybrid.txt"
+    ],
+    "Patch_Tags": [
+      "Additive_Manufacturing",
+      "Laser_Assisted",
+      "Interface_Dominated"
+    ],
+    "Needs_Mixed_Routing_Check": false,
+    "Mixed_Signals": []
+  },
+  "items": [
+    {
+      "Item_ID": "Item_01",
+      "Sample_ID": "Target_LPBF_AsBuilt",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Additive_Manufacturing",
+        "Laser_Assisted",
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Results and Discussion: Step VI",
+        "Figure 6a,b",
+        "Figure S17"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Al-Er-Zr-Ni alloy",
+          "Material_Name_Raw": "Al-0.4Er-1Zr-1.33Ni",
+          "Nominal_Composition": {
+            "unit": "at%",
+            "Al": "Balance",
+            "Er": 0.4,
+            "Zr": 1.0,
+            "Ni": 1.33
+          },
+          "Note": "Also expressed as Al-2.33Er-3.19Zr-2.73Ni wt.%; Al balance normalized ≈ 97.27 at% (Computed, Data_Nature: Computed); five-element alloy system Al-Er-Zr-Y-Yb-Ni with Y=0 and Yb=0 in final design"
+        },
+        "Processing": {
+          "Process_Category": "Additive Manufacturing",
+          "Process_Text": {
+            "original": "Powder manufactured by ultrasonic atomization from custom alloy ingot; LPBF printing with optimized power and scan speed; as-built condition, no post-treatment",
+            "simplified": "Ultrasonic atomization → LPBF → as-built"
+          },
+          "Equipment": [
+            {
+              "Name": "Amazemet ultrasonic atomizer",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "DMG MORI LT30",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "ThermoFisher Apreo HiVac SEM with EDAX Hikari EBSD detector",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Vickers hardness tester",
+              "Category": "Testing"
+            }
+          ],
+          "Key_Params": {
+            "Sample_Dimensions": "28 × 6 × 6 mm³ and 6 × 6 × 6 mm³",
+            "Build_Quality": "crack-free",
+            "Note": "Power and scan speed optimized for highest density (details in Discussion S6, Supporting Information)"
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Non-textured equiaxed grains from EBSD; submicron-scale (≈100 nm) metastable ternary phases (Al-Ni-M, M = Er, Zr) formed during rapid solidification; melt pool boundaries visible",
+            "simplified": "FCC Al matrix with submicron metastable ternary phases, equiaxed non-textured grains"
+          },
+          "Main_Phase": {
+            "Phase_Name": "FCC Al matrix",
+            "Crystal_Structure": "FCC"
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "Metastable ternary phase (Al-Ni-M)",
+              "Crystal_Structure": null,
+              "Size": {
+                "Original_Values": "submicron-scale (≈100 nm)",
+                "Size_Type": "undefined",
+                "Note": "Approximate value"
+              },
+              "Location": "grain interiors and grain boundaries",
+              "Note": "M = Er, Zr, Y, Yb; formed during rapid solidification; acts as reactant reservoir for L1₂ precipitation during aging; crystal structure not specified in paper"
+            }
+          ],
+          "Grain_Size": {
+            "Morphology": "equiaxed",
+            "Note": "Grain size and aspect ratio distributions in Figure 8c,d (no explicit values in text)"
+          },
+          "Texture_or_Orientation": {
+            "Value": "non-textured",
+            "Method": "EBSD (side and top surfaces)"
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Vickers_Hardness",
+            "Value": 180,
+            "Unit": "HV",
+            "Data_Source": "text",
+            "Test_Condition": {
+              "Specimen_State": "as-built (LPBF)",
+              "Test_Temperature_K": 298,
+              "Test_Temperature_Original": "room temperature",
+              "Orientation": "parallel to build direction and on top surface"
+            },
+            "Note": "Comparable to wrought Al 7075"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "Item_02",
+      "Sample_ID": "Target_LPBF_Aged_400C_8h",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Additive_Manufacturing",
+        "Laser_Assisted",
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Results and Discussion: Step VI",
+        "Figure 2",
+        "Figure 3",
+        "Figure 6c",
+        "Figure 9",
+        "Figure S13",
+        "Figure S17"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Al-Er-Zr-Ni alloy",
+          "Material_Name_Raw": "Al-0.4Er-1Zr-1.33Ni",
+          "Nominal_Composition": {
+            "unit": "at%",
+            "Al": "Balance",
+            "Er": 0.4,
+            "Zr": 1.0,
+            "Ni": 1.33
+          },
+          "Note": "Also expressed as Al-2.33Er-3.19Zr-2.73Ni wt.%; Al balance normalized ≈ 97.27 at% (Computed, Data_Nature: Computed); same nominal composition as Item_01"
+        },
+        "Processing": {
+          "Process_Category": "Additive Manufacturing + Heat Treatment",
+          "Process_Text": {
+            "original": "LPBF printed; isothermal aging at 400 °C for 8 h in air",
+            "simplified": "LPBF → aging 400°C/8h"
+          },
+          "Equipment": [
+            {
+              "Name": "Amazemet ultrasonic atomizer",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "DMG MORI LT30",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "JEOL JSM7900F FE-SEM with Oxford Ultim Max 100 mm² EDS detector",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "ThermoFisher Apreo HiVac SEM with EDAX Hikari EBSD detector",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Thermo Fisher Scientific Themis Z 60-300 kV STEM/TEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Thermo Fisher Scientific Super X EDS detector",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Helios Nanolab 660 FIB (Thermo Fisher Scientific)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Fischione Model 1040 NanoMill",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Fischione 1051 TEM Mill",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "FEI Helios 660 dual-beam FIB/SEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Cameca LEAP 4000 HR",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Vickers hardness tester",
+              "Category": "Testing"
+            },
+            {
+              "Name": "Tensile testing machine",
+              "Category": "Testing"
+            },
+            {
+              "Name": "Aztec 5.1",
+              "Category": "Software"
+            },
+            {
+              "Name": "OIM",
+              "Category": "Software"
+            },
+            {
+              "Name": "SphInx",
+              "Category": "Software"
+            },
+            {
+              "Name": "Thermo Fisher Velox",
+              "Category": "Software"
+            },
+            {
+              "Name": "Cameca IVAS 3.6.14",
+              "Category": "Software"
+            }
+          ],
+          "Key_Params": {
+            "Stage1": {
+              "Process": "LPBF printing",
+              "Note": "Same LPBF parameters as Item_01; process parameters optimized for highest density"
+            },
+            "Stage2": {
+              "Process": "Isothermal aging",
+              "Temperature_K": 673.15,
+              "Temperature_Original": "400 °C",
+              "Time_h": 8,
+              "Note": "Peak hardness condition after 8-10 h aging"
+            },
+            "Sample_Dimensions": "28 × 6 × 6 mm³ and 6 × 6 × 6 mm³"
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Nanoscale L1₂-Al₃(Er,Zr) precipitates (1-5 nm) with core-shell structure (Er core, Zr shell) confirmed by STEM and APT; L1₂ nanoclusters (avg radius 0.70 nm, area fraction 17%); Al₃Ni primary phase uniformly distributed; ternary phase Al₂₃Ni₆M₄ at grain boundaries; GB precipitates avg area 3.87 μm², 9.1% of field of view; non-textured equiaxed grains; melt pool boundaries visible",
+            "simplified": "FCC Al matrix strengthened by nanoscale L1₂ precipitates, Al₃Ni, and GB ternary phases"
+          },
+          "Main_Phase": {
+            "Phase_Name": "FCC Al matrix",
+            "Crystal_Structure": "FCC"
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "L1₂-Al₃(Er,Zr)",
+              "Crystal_Structure": "L1₂",
+              "Size": {
+                "Value_Range_min_nm": 1,
+                "Value_Range_max_nm": 5,
+                "Unit": "nm",
+                "Size_Type": "undefined",
+                "Original_Values": "≈1-5 nm"
+              },
+              "Location": "matrix (grain interior)",
+              "Morphology": "coherent, cubic",
+              "Note": "Core-shell structure: Er-rich core, Zr-rich shell; confirmed by atomic-resolution STEM-HAADF and EDS; Fourier transform shows superlattice reflections consistent with L1₂; APT confirms L1₂ Al₃(Er,Zr) precipitation"
+            },
+            {
+              "Phase_Name": "L1₂ nanoclusters (short-range ordered)",
+              "Crystal_Structure": "L1₂",
+              "Size": {
+                "Value": 0.7,
+                "Value_StdDev": 0.35,
+                "Unit": "nm",
+                "Size_Type": "radius",
+                "Original_Values": "radius of 0.70 nm (std. dev. 0.35 nm)"
+              },
+              "Location": "matrix",
+              "Area_Fraction": {
+                "Value": 17,
+                "Unit": "%"
+              },
+              "Note": "Identified by Getis-Ord Gi* statistic via kernel correlation and spatial autocorrelation; average area 1.90 nm² (std. dev. 1.79 nm²); ordered atom column intensities on adjacent planes consistent with L1₂-type ordering"
+            },
+            {
+              "Phase_Name": "Al₃Ni",
+              "Crystal_Structure": null,
+              "Location": "uniformly distributed throughout sample; also at grain boundaries",
+              "Note": "Primary phase formed during solidification; crystal structure not specified in paper; uniformly distributed based on SEM-EDS at low magnification"
+            },
+            {
+              "Phase_Name": "Al₂₃Ni₆M₄ ternary phase",
+              "Crystal_Structure": null,
+              "Location": "grain boundaries of grains inside melt pools",
+              "Note": "M = Er, Zr; metastable; acts as reservoir for L1₂ precipitation during aging; APT confirms composition near predicted Al₂₃Ni₆M₄; crystal structure not specified in paper; Er and Ni enriched in these phases compared to matrix"
+            },
+            {
+              "Phase_Name": "D0₂₃-Al₃Zr",
+              "Crystal_Structure": "D0₂₃",
+              "Note": "Brittle phase; fraction minimized by design; Zr-rich precipitates at low magnification, possibly D0₂₃ or L1₂; TEM analyses suggest cubic morphology → likely L1₂ when located in grain centers"
+            }
+          ],
+          "Grain_Size": {
+            "Morphology": "equiaxed",
+            "Note": "Grain size and aspect ratio distributions in Figure 8c,d (no explicit values in text)"
+          },
+          "Texture_or_Orientation": {
+            "Value": "non-textured",
+            "Method": "EBSD"
+          },
+          "Advanced_Quantitative_Features": {
+            "GB_precipitate_avg_area_μm2": {
+              "Value": 3.87,
+              "Value_StdDev": 5.06,
+              "Unit": "μm²",
+              "Original_Values": "3.87 μm² (std. dev. 5.06 μm²)",
+              "Data_Source": "text",
+              "Note": "From STEM-HAADF overview (3.2 × 4.6 μm field of view); segmented by binary thresholding and morphological filtering"
+            },
+            "GB_precipitate_avg_major_axis_nm": {
+              "Value": 104,
+              "Value_StdDev": 114,
+              "Unit": "nm",
+              "Original_Values": "104 nm (std. dev. 114 nm)",
+              "Data_Source": "text"
+            },
+            "GB_area_fraction_pct": {
+              "Value": 9.1,
+              "Unit": "%",
+              "Original_Values": "9.1% of the total field of view",
+              "Data_Source": "text",
+              "Note": "Overall masked grain boundaries comprising 9.1% of total field of view"
+            },
+            "L1₂_nanocluster_avg_area_nm2": {
+              "Value": 1.9,
+              "Value_StdDev": 1.79,
+              "Unit": "nm²",
+              "Original_Values": "1.90 nm² (std. dev. 1.79)",
+              "Data_Source": "text"
+            },
+            "APT_Zr_isosurface_threshold": {
+              "Value": 3.0,
+              "Unit": "at.% Zr",
+              "Original_Values": "3.0% Zr",
+              "Note": "Used for segmenting Zr-rich precipitates (L1₂ phase) in APT reconstruction"
+            },
+            "APT_Ni_isosurface_threshold": {
+              "Value": 2.5,
+              "Unit": "at.% Ni",
+              "Original_Values": "2.5% Ni",
+              "Note": "Used for segmenting Er- and Ni-rich phase (ternary phase) in APT reconstruction"
+            },
+            "APT_proximity_histogram_bin_size": {
+              "Value": 0.1,
+              "Unit": "nm",
+              "Original_Values": "0.1 nm"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Vickers_Hardness",
+            "Value": 200,
+            "Unit": "HV",
+            "Data_Source": "text",
+            "Test_Condition": {
+              "Specimen_State": "aged at 400°C for 8 h (LPBF)",
+              "Test_Temperature_K": 298,
+              "Test_Temperature_Original": "room temperature",
+              "Orientation": "parallel to build direction and on top surface"
+            },
+            "Note": "Peak hardness after 8-10 h aging at 400°C; ≈50% higher than AM benchmark alloy (133 HV); higher than wrought Al 7075 aged under identical conditions; gradual decrease with further aging"
+          },
+          {
+            "Property_Name": "Ultimate_Tensile_Strength",
+            "Value": 395,
+            "Unit": "MPa",
+            "Data_Source": "text",
+            "Test_Condition": {
+              "Specimen_State": "aged at 400°C for 8 h (LPBF)",
+              "Test_Temperature_K": 298,
+              "Test_Temperature_Original": "room temperature",
+              "Loading_Mode": "tension"
+            },
+            "Note": "Peak tensile strength after 8 h aging; paper states 'tensile strength reaches 395 MPa' and later refers to it as '50% higher yield strength' than benchmark — potential terminology inconsistency; ≈50% higher than benchmark printable Al alloy [11]; maintained without significant decrease after aging for 48 h at 400°C; five-fold that of equivalent cast alloy"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "Item_03",
+      "Sample_ID": "Target_LPBF_Aged_400C_48h",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Additive_Manufacturing",
+        "Laser_Assisted",
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Results and Discussion: Step VI"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Al-Er-Zr-Ni alloy",
+          "Material_Name_Raw": "Al-0.4Er-1Zr-1.33Ni",
+          "Nominal_Composition": {
+            "unit": "at%",
+            "Al": "Balance",
+            "Er": 0.4,
+            "Zr": 1.0,
+            "Ni": 1.33
+          },
+          "Note": "Same nominal composition as Item_01"
+        },
+        "Processing": {
+          "Process_Category": "Additive Manufacturing + Heat Treatment",
+          "Process_Text": {
+            "original": "LPBF printed; isothermal aging at 400 °C for 48 h",
+            "simplified": "LPBF → aging 400°C/48h"
+          },
+          "Equipment": [
+            {
+              "Name": "Amazemet ultrasonic atomizer",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "DMG MORI LT30",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Vickers hardness tester",
+              "Category": "Testing"
+            }
+          ],
+          "Key_Params": {
+            "Stage1": {
+              "Process": "LPBF printing",
+              "Note": "Same LPBF parameters as Item_01"
+            },
+            "Stage2": {
+              "Process": "Isothermal aging",
+              "Temperature_K": 673.15,
+              "Temperature_Original": "400 °C",
+              "Time_h": 48
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Vickers_Hardness",
+            "Value": null,
+            "Unit": "HV",
+            "Data_Source": "text",
+            "Test_Condition": {
+              "Specimen_State": "aged at 400°C for 48 h (LPBF)",
+              "Test_Temperature_K": 298,
+              "Test_Temperature_Original": "room temperature"
+            },
+            "Note": "Hardness maintained without significant decrease after aging for 48 h at 400°C; no specific numeric value given"
+          },
+          {
+            "Property_Name": "Ultimate_Tensile_Strength",
+            "Value": null,
+            "Unit": "MPa",
+            "Data_Source": "text",
+            "Test_Condition": {
+              "Specimen_State": "aged at 400°C for 48 h (LPBF)",
+              "Test_Temperature_K": 298,
+              "Test_Temperature_Original": "room temperature",
+              "Loading_Mode": "tension"
+            },
+            "Note": "Paper states strength 'maintained without significant decrease after aging for 48 h at 400°C'; no specific numeric value given for 48 h condition"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "Item_04",
+      "Sample_ID": "Target_LS_Aged_400C_8h",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Additive_Manufacturing",
+        "Laser_Assisted"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Results and Discussion: Step V",
+        "Figure 1"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Al-Er-Zr-Ni alloy",
+          "Material_Name_Raw": "Al-0.4Er-1Zr-1.33Ni",
+          "Nominal_Composition": {
+            "unit": "at%",
+            "Al": "Balance",
+            "Er": 0.4,
+            "Zr": 1.0,
+            "Ni": 1.33
+          },
+          "Note": "Same nominal composition as Item_01; rapid screening sample"
+        },
+        "Processing": {
+          "Process_Category": "Casting + Laser Scanning",
+          "Process_Text": {
+            "original": "Small-scale sample fabricated by induction melting, followed by laser scanning to mimic AM heating and solidification conditions; aging at 400 °C for 8 h",
+            "simplified": "Induction melting → laser scanning → aging 400°C/8h"
+          },
+          "Equipment": [
+            {
+              "Name": "Induction melting furnace",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Laser scanning setup",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Vickers hardness tester",
+              "Category": "Testing"
+            }
+          ],
+          "Key_Params": {
+            "Stage1": "Induction melting",
+            "Stage2": "Laser scanning (mimicking AM conditions)",
+            "Stage3": {
+              "Process": "Isothermal aging",
+              "Temperature_K": 673.15,
+              "Temperature_Original": "400 °C",
+              "Time_h": 8
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Vickers_Hardness",
+            "Value": 147,
+            "Unit": "HV",
+            "Data_Source": "text",
+            "Test_Condition": {
+              "Specimen_State": "aged at 400°C for 8 h (laser-scanned)",
+              "Test_Temperature_Original": "room temperature"
+            },
+            "Note": "50% higher than benchmark alloy (100 HV) processed and tested under identical conditions; 34% higher than control sample without Ni (110 HV)"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "Item_05",
+      "Sample_ID": "Target_Cast_AsCast",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Results and Discussion: Step VI",
+        "Figure 1",
+        "Figure S15"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Al-Er-Zr-Ni alloy",
+          "Material_Name_Raw": "Al-0.4Er-1Zr-1.33Ni",
+          "Nominal_Composition": {
+            "unit": "at%",
+            "Al": "Balance",
+            "Er": 0.4,
+            "Zr": 1.0,
+            "Ni": 1.33
+          },
+          "Note": "Same nominal composition as Item_01; induction-melted (cast) version"
+        },
+        "Processing": {
+          "Process_Category": "Casting",
+          "Process_Text": {
+            "original": "Induction melting only (casting); no laser scanning or AM processing",
+            "simplified": "Induction melting, as-cast"
+          },
+          "Equipment": [
+            {
+              "Name": "Induction melting furnace",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "ThermoFisher Apreo HiVac SEM with EDAX Elite 150 SDD EDS detector",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Vickers hardness tester",
+              "Category": "Testing"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Large micrometer-scale ternary phases (SEM-EDS, Figure S15); 5 times (80%) lower hardness than aged AM sample",
+            "simplified": "FCC Al matrix with large micrometer-scale ternary phases"
+          },
+          "Main_Phase": {
+            "Phase_Name": "FCC Al matrix",
+            "Crystal_Structure": "FCC"
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "Ternary phases",
+              "Crystal_Structure": null,
+              "Size": {
+                "Original_Values": "micrometer-scale",
+                "Note": "Large ternary and Al₃M phases"
+              },
+              "Note": "Crystal structure not specified; much larger than in AM counterpart due to slower solidification"
+            }
+          ]
+        },
+        "Properties": [
+          {
+            "Property_Name": "Vickers_Hardness",
+            "Value": 40,
+            "Unit": "HV",
+            "Data_Source": "text",
+            "Test_Condition": {
+              "Specimen_State": "as-cast (induction melted)",
+              "Test_Temperature_Original": "room temperature"
+            },
+            "Note": "5 times (80%) lower than aged AM sample (200 HV); confirms concept of exploiting rapid solidification for submicron ternary phase formation"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "Item_06",
+      "Sample_ID": "Benchmark_LS_Aged_400C_8h",
+      "Role": "Comparator",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Laser_Assisted"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Results and Discussion",
+        "Figure 1"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Al-Er-Zr-Y-Yb-Ni alloy",
+          "Material_Name_Raw": "Alloy 1 (benchmark, Gong et al. [11])",
+          "Nominal_Composition": {
+            "unit": "wt%",
+            "Al": "Balance",
+            "Er": 1.35,
+            "Zr": 1.15,
+            "Y": 0.25,
+            "Yb": 0.73,
+            "Ni": 2.14
+          },
+          "Note": "Al balance normalized ≈ 94.38 wt% (Computed, Data_Nature: Computed); best-known benchmark printable Al alloy from Gong et al. [11]; wt% only given in paper, no at% conversion provided"
+        },
+        "Processing": {
+          "Process_Category": "Casting + Laser Scanning",
+          "Process_Text": {
+            "original": "Induction melting followed by laser scanning; aging at 400 °C for 8 h; prepared by the same method as the designed alloy",
+            "simplified": "Induction melting → laser scanning → aging 400°C/8h"
+          },
+          "Equipment": [
+            {
+              "Name": "Induction melting furnace",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Laser scanning setup",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Vickers hardness tester",
+              "Category": "Testing"
+            }
+          ],
+          "Key_Params": {
+            "Note": "Processed and tested under identical conditions as Item_04"
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Vickers_Hardness",
+            "Value": 100,
+            "Unit": "HV",
+            "Data_Source": "text",
+            "Test_Condition": {
+              "Specimen_State": "aged at 400°C for 8 h (laser-scanned)",
+              "Test_Temperature_Original": "room temperature"
+            },
+            "Note": "Benchmark alloy for comparison; 50% lower than designed alloy (147 HV) under identical conditions"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "Item_07",
+      "Sample_ID": "Benchmark_LPBF_Aged_400C_8h",
+      "Role": "Comparator",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Additive_Manufacturing",
+        "Laser_Assisted"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Results and Discussion: Step VI",
+        "Figure S17"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Al-Er-Zr-Y-Yb-Ni alloy",
+          "Material_Name_Raw": "Alloy 1 (benchmark, Gong et al. [11])",
+          "Nominal_Composition": {
+            "unit": "wt%",
+            "Al": "Balance",
+            "Er": 1.35,
+            "Zr": 1.15,
+            "Y": 0.25,
+            "Yb": 0.73,
+            "Ni": 2.14
+          },
+          "Note": "Same nominal composition as Item_06; AM benchmark alloy aged under identical conditions (Figure S17)"
+        },
+        "Processing": {
+          "Process_Category": "Additive Manufacturing + Heat Treatment",
+          "Process_Text": {
+            "original": "LPBF printed and aged at 400 °C for 8 h under identical conditions as designed alloy",
+            "simplified": "LPBF → aging 400°C/8h"
+          },
+          "Equipment": [
+            {
+              "Name": "DMG MORI LT30",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Vickers hardness tester",
+              "Category": "Testing"
+            }
+          ],
+          "Key_Params": {
+            "Note": "Aged under identical conditions as Item_02 per text"
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Vickers_Hardness",
+            "Value": 133,
+            "Unit": "HV",
+            "Data_Source": "text",
+            "Test_Condition": {
+              "Specimen_State": "aged at 400°C for 8 h (LPBF)",
+              "Test_Temperature_Original": "room temperature"
+            },
+            "Note": "AM benchmark alloy hardness; ≈50% lower than designed alloy (200 HV) aged under identical conditions; gradual decrease with further aging similar to designed alloy"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "Item_08",
+      "Sample_ID": "Ctrl_NoNi_LS_Aged_400C_8h",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Laser_Assisted"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Results and Discussion: Step V",
+        "Figure 1",
+        "Figure S16"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Al-Er-Zr alloy",
+          "Material_Name_Raw": "Al-0.4Er-1Zr (W/O Ni control)",
+          "Nominal_Composition": {
+            "unit": "at%",
+            "Al": "Balance",
+            "Er": 0.4,
+            "Zr": 1.0,
+            "Ni": 0
+          },
+          "Note": "Identical molar percentage of Er and Zr as target alloy but without Ni; labeled 'W/O ternary' in Figure 1"
+        },
+        "Processing": {
+          "Process_Category": "Casting + Laser Scanning",
+          "Process_Text": {
+            "original": "Induction melting followed by laser scanning; aging at 400 °C for 8 h; processed by identical procedure as the designed alloy",
+            "simplified": "Induction melting → laser scanning → aging 400°C/8h"
+          },
+          "Equipment": [
+            {
+              "Name": "Induction melting furnace",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Laser scanning setup",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "ThermoFisher Apreo HiVac SEM with EDAX Elite 150 SDD EDS detector",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Vickers hardness tester",
+              "Category": "Testing"
+            }
+          ],
+          "Key_Params": {
+            "Note": "Processed by identical procedure as Item_04 per text"
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Several large clusters of micrometer-scale Zr-rich phases within grain interiors (SEM-EDS, Figure S16); L1₂ phases directly form during rapid solidification without ternary intermediary",
+            "simplified": "FCC Al matrix with Zr-rich clusters and direct L1₂ formation"
+          },
+          "Main_Phase": {
+            "Phase_Name": "FCC Al matrix",
+            "Crystal_Structure": "FCC"
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "Zr-rich clusters",
+              "Crystal_Structure": null,
+              "Size": {
+                "Original_Values": "micrometer-scale"
+              },
+              "Location": "grain interiors",
+              "Note": "Not present in the target designed alloy; crystal structure not specified; likely L1₂ or D0₂₃"
+            },
+            {
+              "Phase_Name": "L1₂-Al₃(Er,Zr)",
+              "Crystal_Structure": "L1₂",
+              "Note": "Directly forms during rapid solidification without ternary intermediary due to absence of Ni"
+            }
+          ]
+        },
+        "Properties": [
+          {
+            "Property_Name": "Vickers_Hardness",
+            "Value": 110,
+            "Unit": "HV",
+            "Data_Source": "text",
+            "Test_Condition": {
+              "Specimen_State": "aged at 400°C for 8 h (laser-scanned)",
+              "Test_Temperature_Original": "room temperature"
+            },
+            "Note": "34% lower than designed composition (147 HV) processed in identical procedure; demonstrates role of Ni in forming submicron ternary phases as L1₂ reservoirs"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "Item_09",
+      "Sample_ID": "Al7075_LaserScanned",
+      "Role": "Comparator",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Laser_Assisted"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Results and Discussion: Step V",
+        "Figure 5c",
+        "Figure S20"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Al alloy (7000 series)",
+          "Material_Name_Raw": "Al 7075",
+          "Note": "Commercial alloy; no specific composition given; standard composition not supplemented from database"
+        },
+        "Processing": {
+          "Process_Category": "Laser Scanning",
+          "Process_Text": {
+            "original": "Laser scanning on Al 7075 sheet to evaluate hot cracking susceptibility",
+            "simplified": "Laser scanning on Al 7075 sheet"
+          },
+          "Equipment": [
+            {
+              "Name": "Laser scanning setup",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Zeiss Xradia Crystal CT",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Optical microscope",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Zeiss Scout-and-Scan Control System",
+              "Category": "Software"
+            },
+            {
+              "Name": "ORS Dragonfly",
+              "Category": "Software"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Hot cracking observed after single laser path (Figure 5c); CT scan reveals large density of low aspect ratio defects attributed to long cracks; defect density 1.43% in scanned area",
+            "simplified": "Severe hot cracking in laser-scanned Al 7075"
+          },
+          "Advanced_Quantitative_Features": {
+            "Defect_density_pct": {
+              "Value": 1.43,
+              "Unit": "%",
+              "Original_Values": "1.43%",
+              "Data_Source": "text",
+              "Note": "Density of defects in the scanned area from CT scan; low aspect ratio defects attributed to long cracks over each laser track"
+            },
+            "HCS": {
+              "Value": null,
+              "Original_Values": "1.13 (Scheil calculation)",
+              "Data_Source": "text",
+              "Note": "Computed value from Scheil solidification simulation for Al 7075; used as printability comparison"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Printability",
+            "Value": null,
+            "Data_Source": "text",
+            "Test_Condition": {
+              "Method": "Laser scanning + optical microscopy + CT scan"
+            },
+            "Note": "Not printable: clear hot cracking observed after single laser path; poor printability confirmed by CT scan and optical microscopy"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "Item_10",
+      "Sample_ID": "Computed_Target_CalphadML",
+      "Role": "Target",
+      "Data_Nature": "Computed",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Additive_Manufacturing",
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Results and Discussion: Steps I-IV",
+        "Figure 4",
+        "Figure 5a,b",
+        "Figure S1-S4",
+        "Methods Section"
+      ],
+      "Experiment_Link": {
+        "Related_Item_IDs": [
+          "Item_01",
+          "Item_02",
+          "Item_04"
+        ],
+        "Description": "CALPHAD-based ICME + ML + Bayesian optimization predictions for optimal alloy Al-0.4Er-1Zr-1.33Ni",
+        "Validation_Target": "Printability (no hot cracking) and mechanical performance (high hardness and strength at elevated temperature)",
+        "Agreement_or_Error": "No hot cracking observed experimentally; predicted hardness enhancement validated; peak tensile strength 395 MPa achieved"
+      },
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Al-Er-Zr-Ni alloy",
+          "Material_Name_Raw": "Al-0.4Er-1Zr-1.33Ni (ML-optimized)",
+          "Nominal_Composition": {
+            "unit": "at%",
+            "Al": "Balance",
+            "Er": 0.4,
+            "Zr": 1.0,
+            "Ni": 1.33
+          },
+          "Note": "Composition inversely designed by Bayesian optimization with Gaussian process surrogate; Er and Zr identified as most influential elements on coarsening metric; Y and Yb set to zero by optimization"
+        },
+        "Processing": {
+          "Process_Category": "Computational Design",
+          "Process_Text": {
+            "original": "CALPHAD single equilibrium and Scheil solidification simulations via Thermo-Calc TC-Python; NN surrogate model trained on 40 compositions; Bayesian optimization with Gaussian process surrogate and EI acquisition function; 4 rounds of 20 samples (80 total) for direct ICME; converged after 100 samples using NN surrogate",
+            "simplified": "CALPHAD + NN surrogate + Bayesian optimization inverse design"
+          },
+          "Equipment": [
+            {
+              "Name": "Thermo-Calc 2024a with TC-Python",
+              "Category": "Software"
+            },
+            {
+              "Name": "TensorFlow (NN regression)",
+              "Category": "Software"
+            },
+            {
+              "Name": "CuML from RAPIDS (KNN, RF, SVR, GB, LR)",
+              "Category": "Software"
+            },
+            {
+              "Name": "BayBE 1.5.1 (Bayesian optimization)",
+              "Category": "Software"
+            },
+            {
+              "Name": "Python 3.11.7",
+              "Category": "Software"
+            }
+          ],
+          "Simulation_Metadata": {
+            "Database": "QuesTek proprietary CALPHAD database",
+            "Sampling_Method": "Latin hypercube sampling (LHS)",
+            "Sampling_Size": "250,000 and 500,000 random compositions",
+            "Composition_Constraints_at_pct": {
+              "Er": "0-2",
+              "Zr": "0-2",
+              "Y": "0-1",
+              "Yb": "0-1",
+              "Ni": "0-4"
+            },
+            "ML_Model_Selection": "Neural network (lowest RMSE among NN, KNN, RF, SVR, GB, LR); 5-fold cross-validation",
+            "NN_Training_Size": 40,
+            "NN_Normalized_RMSE_pct": 3,
+            "Optimization_Method": "Bayesian optimization with Gaussian process surrogate and expected improvement (EI) acquisition function",
+            "Validation": "Also verified by particle swarm optimization (PSO); identical minimum coarsening metric found"
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Predicted L1₂ phase at 250°C enhanced by 40% vs benchmark; predicted ternary phase Al₂₃Ni₆M₄ max 3.21 mol% at Ni=0.64; predicted L1₂ max 1.63 at Ni=0; coarsening metric 3.5x lower (71% reduction) vs benchmark; L1₂ during solidification limited to ≤1 at Er=0.4 at.%",
+            "simplified": "CALPHAD-predicted enhanced L1₂ content and minimized coarsening metric"
+          },
+          "Main_Phase": {
+            "Phase_Name": "FCC Al matrix",
+            "Crystal_Structure": "FCC"
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "L1₂-Al₃M",
+              "Crystal_Structure": "L1₂",
+              "Note": "M = Er, Zr, Y, Yb; predicted content at 250°C enhanced by 40% vs benchmark (from single equilibrium calculations); predicted to initially precipitate as ternary phases during Scheil solidification"
+            },
+            {
+              "Phase_Name": "Al₂₃Ni₆M₄ ternary phase",
+              "Crystal_Structure": null,
+              "Phase_Percentage_max_mol_pct": {
+                "Value": 3.21,
+                "Condition": "Zr = 1 at.%, Ni = 0.64 at.%"
+              },
+              "Note": "Metastable; forms during rapid solidification; reservoir for L1₂ precipitation during aging"
+            },
+            {
+              "Phase_Name": "D0₂₃-Al₃Zr",
+              "Crystal_Structure": "D0₂₃",
+              "Note": "Brittle; minimized by design; solvus temperature limits maximum Zr concentration"
+            },
+            {
+              "Phase_Name": "Al₃Ni",
+              "Crystal_Structure": null,
+              "Note": "Rapidly coarsening phase; fraction minimized by limiting Ni to just above 0.64 at.%"
+            }
+          ],
+          "Advanced_Quantitative_Features": {
+            "L1₂_max_mol_pct_at_Ni0": {
+              "Value": 1.63,
+              "Unit": "mol%",
+              "Condition": "Zr = 1 at.%, Ni = 0",
+              "Note": "From Scheil calculations"
+            },
+            "L1₂_during_solidification_limit": {
+              "Value": 1,
+              "Unit": "mol%",
+              "Condition": "Er = 0.4 at.% at 660°C",
+              "Note": "L1₂ content during solidification limited by Er concentration choice"
+            },
+            "Coarsening_metric_reduction_vs_benchmark": {
+              "Value": 3.5,
+              "Unit": "times lower",
+              "Original_Values": "3.5 times (71%) reduction",
+              "Note": "Normalized coarsening metric of optimal composition vs benchmark alloy; also described as 71% reduction"
+            },
+            "HCS_optimal": {
+              "Value": null,
+              "Original_Values": "< 0.05 for all compositions within design space (vs 1.13 for Al 7075)",
+              "Note": "From Scheil solidification simulations"
+            },
+            "Uncertainty_robustness": {
+              "Note": "Even with elemental concentration change up to 50%, L1₂ phase percentage and coarsening metric will not change more than 5% with 99% confidence (Figure S10)"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Predicted_Printability",
+            "Value": null,
+            "Data_Source": "text",
+            "Test_Condition": {
+              "Method": "Scheil solidification simulation"
+            },
+            "Note": "HCS < 0.05 for all compositions within design space; met all requirements for printability; experimentally validated as crack-free"
+          }
+        ]
+      }
+    }
+  ]
+}

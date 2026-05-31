@@ -1,0 +1,1316 @@
+{
+  "Paper_Metadata": {
+    "Paper_Title": "Mechanisms in the machinability improvement of Inconel 718 superalloy through ultra-high-speed grinding",
+    "DOI": "10.1016/j.jmatprotec.2024.118614"
+  },
+  "Paper_Routing": {
+    "base_material": "Metals",
+    "application": "Structural",
+    "research_paradigm": "Experimental",
+    "Supplements_Loaded": [
+      "directions/base/Metals.txt",
+      "directions/application/Structural.txt",
+      "directions/paradigm/Experimental.txt",
+      "directions/domain/Machining.txt"
+    ],
+    "Patch_Tags": [],
+    "Needs_Mixed_Routing_Check": false,
+    "Mixed_Signals": []
+  },
+  "items": [
+    {
+      "Item_ID": "IN718_unmachined",
+      "Sample_ID": "IN718_unmachined",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 1",
+        "Table 2",
+        "Fig. 1",
+        "Section 2.1"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Ni-based superalloy",
+          "Material_Name_Raw": "Inconel 718 (IN718)",
+          "Nominal_Composition": {
+            "unit": "wt%",
+            "Note": "ASTM B670 specification range (Min–Max), not measured exact values",
+            "Ni": "50–55",
+            "Cr": "17–21",
+            "Fe": "Balance",
+            "Mo": "2.80–3.30",
+            "Cu": "≤0.30",
+            "Al": "0.20–0.80",
+            "Ti": "0.65–1.15",
+            "Nb": "4.75–5.50",
+            "C": "≤0.08"
+          },
+          "Workpiece_Material": "Rolled plate of IN718 superalloy treated by solution annealing (ASTM B670)"
+        },
+        "Processing": {
+          "Process_Category": "Solution annealing (pre-condition)",
+          "Process_Text": {
+            "original": "rolled plate of IN718 superalloy treated by solution annealing (complying with ASTM B670)",
+            "simplified": "Rolled IN718 plate, solution annealed per ASTM B670"
+          },
+          "Equipment": [
+            {
+              "Name": "Wire electrical discharge machine (Sodick AG400L)",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "SEM (FEI Apreo 2 S)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "XRD (Rigaku Smartlab)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "TEM (Talos F200X G2)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "FIB (Helios 600i)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Microhardness tester (HXD-1000TMC/LCD)",
+              "Category": "Testing"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Grain diameters mostly ranging from 15 to 38 μm and an average size of 21.3 μm. Random distribution of grain orientations and a notable presence of annealing twins. Dense wheat-shape grains δ phase (Ni₃Nb) are uniformly distributed on the grain boundaries, which together with a small number of carbo-nitrides constitute the main phases of this material. There is also a minor amount of undissolved white Laves phase. No precipitate-hardened γ′ and γ″ phases were observed within the grains.",
+            "simplified": "Equiaxed grains (avg 21.3 μm) with annealing twins; δ phase (Ni₃Nb) on grain boundaries; minor carbo-nitrides and Laves phase; no γ′/γ″ precipitates"
+          },
+          "Main_Phase": {
+            "Phase_Name": "γ matrix (austenite)",
+            "Crystal_Structure": "FCC"
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "δ phase",
+              "Chemical_Formula": "Ni₃Nb",
+              "Crystal_Structure": null,
+              "Morphology": "Dense wheat-shape grains uniformly distributed on grain boundaries",
+              "Note": "Crystal structure not explicitly stated in text; δ-Ni₃Nb is commonly orthorhombic (D0a)"
+            },
+            {
+              "Phase_Name": "Carbo-nitrides",
+              "Crystal_Structure": null,
+              "Morphology": "Small number"
+            },
+            {
+              "Phase_Name": "Laves phase",
+              "Crystal_Structure": null,
+              "Morphology": "Minor amount, undissolved, white contrast",
+              "Note": "Crystal structure not explicitly stated in text"
+            }
+          ],
+          "Grain_Size": {
+            "Value": 21.3,
+            "Unit": "μm",
+            "Type": "diameter",
+            "Range": "15–38 μm",
+            "Note": "Average grain diameter of unmachined workpiece"
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Microhardness",
+            "Value": 290,
+            "Unit": "HV",
+            "Test_Condition": {
+              "Specimen_State": "Unmachined (as-received, solution annealed)"
+            },
+            "Data_Source": "text",
+            "Note": "Unmachined IN718 baseline microhardness"
+          },
+          {
+            "Property_Name": "Thermal_Conductivity",
+            "Value": 14.7,
+            "Unit": "W/(m·K)",
+            "Data_Source": "table",
+            "Note": "From Table 2 (physical-mechanical properties of workpiece material)"
+          },
+          {
+            "Property_Name": "Specific_Heat_Capacity",
+            "Value": 435,
+            "Unit": "J/(kg·K)",
+            "Data_Source": "table",
+            "Note": "From Table 2"
+          },
+          {
+            "Property_Name": "Tensile_Strength",
+            "Value": 965,
+            "Unit": "MPa",
+            "Data_Source": "table",
+            "Note": "From Table 2"
+          },
+          {
+            "Property_Name": "Yield_Strength",
+            "Value": 550,
+            "Unit": "MPa",
+            "Data_Source": "table",
+            "Note": "From Table 2"
+          },
+          {
+            "Property_Name": "Elastic_Modulus",
+            "Value": 199.9,
+            "Unit": "GPa",
+            "Data_Source": "table",
+            "Note": "From Table 2"
+          },
+          {
+            "Property_Name": "Poisson_Ratio",
+            "Value": 0.3,
+            "Unit": null,
+            "Data_Source": "table",
+            "Note": "From Table 2"
+          },
+          {
+            "Property_Name": "Density",
+            "Value": 8.24,
+            "Unit": "g/cm³",
+            "Data_Source": "table",
+            "Note": "From Table 2"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "IN718_G1_vg40",
+      "Sample_ID": "IN718_G1_vg40",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 4 Group 1",
+        "Fig. 4a/e",
+        "Fig. 5",
+        "Fig. 6",
+        "Fig. 8a",
+        "Fig. 9a",
+        "Fig. 10a",
+        "Fig. 12"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Ni-based superalloy",
+          "Material_Name_Raw": "Inconel 718 (IN718)",
+          "Workpiece_Material": "Same as IN718_unmachined; shared per Section 2.1",
+          "Tool_Material": {
+            "Material": "Ceramic bond CBN superabrasive",
+            "Mesh_Size": "80/100#",
+            "Concentration": "175%",
+            "Substrate": "CFRP (carbon fiber-reinforced plastic)",
+            "Overall_Size": "118×10×15 mm",
+            "Abrasive_Layer_Size": "4×8 mm",
+            "Note": "From Table 3; same wheel used for all grinding groups"
+          }
+        },
+        "Processing": {
+          "Process_Category": "Grinding",
+          "Machining_Method": "Up-grinding (counterclockwise rotation of both wheel and workpiece axes)",
+          "Process_Text": {
+            "original": "Grinding Group 1: νs = 20 m/s, νw = 20 m/s, νg = 40 m/s, ap = 5 μm, f = 150 mm/min. Up-grinding method. Water-based coolant at 10 L/min. Total grinding depth 500 μm.",
+            "simplified": "Conventional grinding at νg = 40 m/s, ap = 5 μm, f = 150 mm/min, water-based coolant"
+          },
+          "Equipment": [
+            {
+              "Name": "High-speed grinder (Hardinge GT27)",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Hydrostatic spindle (TDM)",
+              "Category": "Preparation",
+              "Note": "Max 60,000 rpm"
+            },
+            {
+              "Name": "CBN superabrasive wheel (ceramic bond, 80/100# mesh, 175% concentration, CFRP substrate, 118×10×15 mm)",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Diamond roller dresser",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "SiC sharpening wheel",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Dynamic balancer (BMT240M.2)",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Dynamometer (KISTLER 5080 A)",
+              "Category": "Testing",
+              "Note": "Sampling rate 2000 Hz"
+            },
+            {
+              "Name": "SEM (FEI Apreo 2 S)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Non-contact optical 3D profilometer (Taylor Hobson CCI HD)",
+              "Category": "Testing"
+            },
+            {
+              "Name": "Microhardness tester (HXD-1000TMC/LCD)",
+              "Category": "Testing",
+              "Note": "500 g load, 10 s hold time"
+            },
+            {
+              "Name": "XRD (Rigaku Smartlab)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "EBSD system",
+              "Category": "Characterization",
+              "Note": "Step size 0.3 μm"
+            },
+            {
+              "Name": "FIB (Helios 600i)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "TEM (Talos F200X G2)",
+              "Category": "Characterization",
+              "Note": "200 kV acceleration voltage"
+            },
+            {
+              "Name": "TKD system",
+              "Category": "Characterization",
+              "Note": "Step size 5 nm, 30 kV, 6.4 nA"
+            }
+          ],
+          "Key_Params": {
+            "Grinding_Wheel_Linear_Speed": {
+              "Value": 20,
+              "Unit": "m/s",
+              "Symbol": "νs"
+            },
+            "Workpiece_Linear_Speed": {
+              "Value": 20,
+              "Unit": "m/s",
+              "Symbol": "νw"
+            },
+            "Actual_Grinding_Speed": {
+              "Value": 40,
+              "Unit": "m/s",
+              "Symbol": "νg"
+            },
+            "Depth_of_Cut": {
+              "Value": 5,
+              "Unit": "μm",
+              "Symbol": "ap"
+            },
+            "Feed_Rate": {
+              "Value": 150,
+              "Unit": "mm/min",
+              "Symbol": "f"
+            },
+            "Total_Grinding_Depth": {
+              "Value": 500,
+              "Unit": "μm"
+            },
+            "Coolant": "Water-based coolant",
+            "Coolant_Flow_Rate": {
+              "Value": 10,
+              "Unit": "L/min"
+            },
+            "Workpiece_Size": "10 × 10 × 3.5 mm"
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Severe material smearing on the surface with smearing particles ranging in size from 2 to 8 μm and notable ductile tearing. Grain refinement layer avg depth 1.68 μm with equiaxed nanocrystals (20–100 nm). Transition layer extends to ~5.31 μm. Plastic flow layer with numerous micrometer-scale twins. No significant dislocation formation in recrystallized grains. Electron diffraction along [112] zone axis without twinning.",
+            "simplified": "Surface smearing (2–8 μm particles) with ductile tearing. Grain refinement layer 1.68 μm (nanocrystals 20–100 nm). Transition layer ~5.31 μm. Plastic flow layer with micro-twins. dDRX dominant."
+          },
+          "Surface_Integrity": {
+            "Surface_Morphology": "Severe material smearing with particles 2–8 μm, ductile tearing"
+          },
+          "Subsurface_Layers": [
+            {
+              "Layer_Name": "White layer + severe deformation area (WPSD)",
+              "Depth": {
+                "Value": null,
+                "Range": "20–24 μm",
+                "Unit": "μm"
+              },
+              "Note": "From EBSD IPF+IQ maps; WPSD range for conventional grinding 40–70 m/s"
+            },
+            {
+              "Layer_Name": "Grain refinement layer",
+              "Depth": {
+                "Value": 1.68,
+                "Unit": "μm",
+                "Type": "average"
+              },
+              "Morphology": "Equiaxed nanocrystals (20–100 nm)",
+              "Recrystallization_Mechanism": "dDRX (discontinuous dynamic recrystallization)"
+            },
+            {
+              "Layer_Name": "Transition layer",
+              "Depth": {
+                "Value": 5.31,
+                "Unit": "μm"
+              },
+              "Morphology": "Elongated grains with high density of dislocations, low-angle grains and subgrains"
+            },
+            {
+              "Layer_Name": "Plastic flow layer",
+              "Morphology": "Numerous micrometer-scale twins"
+            }
+          ],
+          "Subsurface_Microstructure": {
+            "Recrystallized_Nanograin_Size": {
+              "Value": 62.8,
+              "Unit": "nm",
+              "Type": "diameter",
+              "Note": "Average from TKD measurement"
+            },
+            "Recrystallization_Mechanism": "dDRX dominant",
+            "Crystallographic_Zone_Axis": "[112]"
+          },
+          "Main_Phase": {
+            "Phase_Name": "γ matrix",
+            "Crystal_Structure": "FCC"
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "δ phase",
+              "Chemical_Formula": "Ni₃Nb",
+              "Crystal_Structure": "Orthorhombic",
+              "Morphology": "Regularly aligned along grain boundaries"
+            }
+          ],
+          "XRD_Analysis": {
+            "Phases_Detected": [
+              "γ (FCC)",
+              "δ"
+            ],
+            "Note": "Predominantly γ and δ phases; γ(400) peak disappeared after grinding; no evident phase transformation detected"
+          },
+          "Advanced_Quantitative_Features": {
+            "Misorientation_Radiation_Range": {
+              "Value": null,
+              "Note": "Not separately reported for 40 m/s; see Fig. 10"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Surface_Roughness_Ra",
+            "Value": 0.3,
+            "Unit": "μm",
+            "Test_Condition": {
+              "Grinding_Speed": "40 m/s"
+            },
+            "Data_Source": "text",
+            "Note": "Average roughness at conventional grinding speed 40 m/s; poorest surface finish"
+          },
+          {
+            "Property_Name": "Microhardness",
+            "Value": null,
+            "Unit": "HV",
+            "Test_Condition": {
+              "Load": "500 g",
+              "Hold_Time": "10 s",
+              "Indentation_Depth": "approximately 5.7 μm",
+              "Grinding_Speed": "40 m/s"
+            },
+            "Data_Source": "text",
+            "Note": "Overall microhardness range 400–500 HV after grinding (work hardening zone). Value at 40 m/s not individually specified; lies in 400–500 HV range."
+          },
+          {
+            "Property_Name": "Grinding_Force",
+            "Value": null,
+            "Unit": "N",
+            "Test_Condition": {
+              "Grinding_Speed": "40 m/s",
+              "Measurement": "Dynamometer KISTLER 5080 A, 2000 Hz sampling rate"
+            },
+            "Data_Source": "text",
+            "Note": "Grinding force at 40 m/s is comparable to ultra-high-speed range (>160 m/s) per Fig. 8i. Exact value not numerically stated for this specific speed point."
+          },
+          {
+            "Property_Name": "Grinding_Force_Max",
+            "Value": 1.02,
+            "Unit": "N",
+            "Test_Condition": {
+              "Grinding_Speed_Range": "20-70 m/s"
+            },
+            "Data_Source": "text",
+            "Note": "Maximum total grinding force within 20-70 m/s conventional grinding range; from polynomial fit (R-sq > 0.99)"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "IN718_G2_vg70",
+      "Sample_ID": "IN718_G2_vg70",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 4 Group 2",
+        "Fig. 9b",
+        "Fig. 10b"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Ni-based superalloy",
+          "Material_Name_Raw": "Inconel 718 (IN718)",
+          "Workpiece_Material": "Same as IN718_unmachined; shared per Section 2.1"
+        },
+        "Processing": {
+          "Process_Category": "Grinding",
+          "Machining_Method": "Up-grinding",
+          "Process_Text": {
+            "original": "Grinding Group 2: νs = 50 m/s, νg = 70 m/s, ap = 5 μm, f = 150 mm/min. Water-based coolant at 10 L/min. Total grinding depth 500 μm.",
+            "simplified": "Conventional grinding at νg = 70 m/s, ap = 5 μm, f = 150 mm/min"
+          },
+          "Key_Params": {
+            "Grinding_Wheel_Linear_Speed": {
+              "Value": 50,
+              "Unit": "m/s",
+              "Symbol": "νs"
+            },
+            "Workpiece_Linear_Speed": {
+              "Value": 20,
+              "Unit": "m/s",
+              "Symbol": "νw",
+              "Note": "Calculated from νg = νs + νw (text Section 2.2); Table 4 blank convention (same as Group 1)"
+            },
+            "Actual_Grinding_Speed": {
+              "Value": 70,
+              "Unit": "m/s",
+              "Symbol": "νg"
+            },
+            "Depth_of_Cut": {
+              "Value": 5,
+              "Unit": "μm",
+              "Symbol": "ap",
+              "Note": "Same as Group 1 per Table 4; only νs varies"
+            },
+            "Feed_Rate": {
+              "Value": 150,
+              "Unit": "mm/min",
+              "Symbol": "f",
+              "Note": "Table 4 blank convention (same as Group 1)"
+            },
+            "Total_Grinding_Depth": {
+              "Value": 500,
+              "Unit": "μm"
+            },
+            "Coolant": "Water-based coolant",
+            "Coolant_Flow_Rate": {
+              "Value": 10,
+              "Unit": "L/min"
+            }
+          }
+        },
+        "Structure": {
+          "Subsurface_Layers": [
+            {
+              "Layer_Name": "White layer + severe deformation area (WPSD)",
+              "Depth": {
+                "Value": null,
+                "Range": "20–24 μm",
+                "Unit": "μm"
+              },
+              "Note": "WPSD range for conventional grinding 40–70 m/s; clear signs of plastic flow, grains elongated aligned with grinding direction"
+            }
+          ],
+          "Main_Phase": {
+            "Phase_Name": "γ matrix",
+            "Crystal_Structure": "FCC"
+          }
+        }
+      }
+    },
+    {
+      "Item_ID": "IN718_G3_vg100",
+      "Sample_ID": "IN718_G3_vg100",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 4 Group 3",
+        "Fig. 4f",
+        "Fig. 5",
+        "Fig. 6",
+        "Fig. 8c",
+        "Fig. 9c",
+        "Fig. 10c"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Ni-based superalloy",
+          "Material_Name_Raw": "Inconel 718 (IN718)",
+          "Workpiece_Material": "Same as IN718_unmachined; shared per Section 2.1",
+          "Tool_Material": "Same as IN718_G1_vg40 (CBN wheel per Table 3); shared per Section 2.2"
+        },
+        "Processing": {
+          "Process_Category": "Grinding",
+          "Machining_Method": "Up-grinding",
+          "Process_Text": {
+            "original": "Grinding Group 3: νs = 80 m/s, νg = 100 m/s, ap = 5 μm, f = 150 mm/min. Water-based coolant at 10 L/min.",
+            "simplified": "High-speed grinding at νg = 100 m/s, ap = 5 μm, f = 150 mm/min"
+          },
+          "Key_Params": {
+            "Grinding_Wheel_Linear_Speed": {
+              "Value": 80,
+              "Unit": "m/s",
+              "Symbol": "νs"
+            },
+            "Workpiece_Linear_Speed": {
+              "Value": 20,
+              "Unit": "m/s",
+              "Symbol": "νw",
+              "Note": "Calculated from νg = νs + νw (text Section 2.2); Table 4 blank convention (same as Group 1)"
+            },
+            "Actual_Grinding_Speed": {
+              "Value": 100,
+              "Unit": "m/s",
+              "Symbol": "νg"
+            },
+            "Depth_of_Cut": {
+              "Value": 5,
+              "Unit": "μm",
+              "Symbol": "ap"
+            },
+            "Feed_Rate": {
+              "Value": 150,
+              "Unit": "mm/min",
+              "Symbol": "f",
+              "Note": "Table 4 blank convention (same as Group 1)"
+            },
+            "Total_Grinding_Depth": {
+              "Value": 500,
+              "Unit": "μm"
+            },
+            "Coolant": "Water-based coolant",
+            "Coolant_Flow_Rate": {
+              "Value": 10,
+              "Unit": "L/min"
+            }
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Surface smearing somewhat reduced, showing side flow and adhesion layer. Significant strain concentration persists in areas remote from the ground surface. Cracks occur at hard phases.",
+            "simplified": "Reduced smearing with side flow and adhesion layer; significant subsurface strain; cracks at hard phases"
+          },
+          "Surface_Integrity": {
+            "Surface_Morphology": "Side flow and adhesion layer; cracks at hard phases in matrix"
+          },
+          "Subsurface_Layers": [
+            {
+              "Layer_Name": "Misorientation radiation range",
+              "Depth": {
+                "Value": null,
+                "Note": "Significant strain concentration in remote areas at 100 m/s; see Fig. 10c"
+              },
+              "Note": "Within high-speed grinding range 100–160 m/s, misorientation radiation reaches maximum ~120 μm"
+            }
+          ],
+          "Advanced_Quantitative_Features": {
+            "Lattice_Distortion": {
+              "Note": "Maximum XRD peak deviation (γ(111) and γ(200) shift) occurs at 100–130 m/s, indicating most severe plastic deformation"
+            }
+          },
+          "Main_Phase": {
+            "Phase_Name": "γ matrix",
+            "Crystal_Structure": "FCC"
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Microhardness",
+            "Value": 485,
+            "Unit": "HV",
+            "Test_Condition": {
+              "Load": "500 g",
+              "Hold_Time": "10 s",
+              "Grinding_Speed": "100 m/s"
+            },
+            "Data_Source": "text",
+            "Note": "Peak microhardness after grinding, maximum work hardening"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "IN718_G4_vg130",
+      "Sample_ID": "IN718_G4_vg130",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 4 Group 4",
+        "Fig. 5",
+        "Fig. 6",
+        "Fig. 8d",
+        "Fig. 9d",
+        "Fig. 10d"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Ni-based superalloy",
+          "Material_Name_Raw": "Inconel 718 (IN718)",
+          "Workpiece_Material": "Same as IN718_unmachined; shared per Section 2.1",
+          "Tool_Material": "Same as IN718_G1_vg40 (CBN wheel per Table 3); shared per Section 2.2"
+        },
+        "Processing": {
+          "Process_Category": "Grinding",
+          "Machining_Method": "Up-grinding",
+          "Process_Text": {
+            "original": "Grinding Group 4: νs = 110 m/s, νg = 130 m/s, ap = 5 μm, f = 150 mm/min.",
+            "simplified": "High-speed grinding at νg = 130 m/s, ap = 5 μm, f = 150 mm/min"
+          },
+          "Key_Params": {
+            "Grinding_Wheel_Linear_Speed": {
+              "Value": 110,
+              "Unit": "m/s",
+              "Symbol": "νs"
+            },
+            "Workpiece_Linear_Speed": {
+              "Value": 20,
+              "Unit": "m/s",
+              "Symbol": "νw",
+              "Note": "Calculated from νg = νs + νw (text Section 2.2); Table 4 blank convention (same as Group 1)"
+            },
+            "Actual_Grinding_Speed": {
+              "Value": 130,
+              "Unit": "m/s",
+              "Symbol": "νg"
+            },
+            "Depth_of_Cut": {
+              "Value": 5,
+              "Unit": "μm",
+              "Symbol": "ap"
+            },
+            "Feed_Rate": {
+              "Value": 150,
+              "Unit": "mm/min",
+              "Symbol": "f",
+              "Note": "Table 4 blank convention (same as Group 1)"
+            },
+            "Total_Grinding_Depth": {
+              "Value": 500,
+              "Unit": "μm"
+            },
+            "Coolant": "Water-based coolant",
+            "Coolant_Flow_Rate": {
+              "Value": 10,
+              "Unit": "L/min"
+            }
+          }
+        },
+        "Structure": {
+          "Subsurface_Layers": [
+            {
+              "Layer_Name": "White layer + severe deformation area (WPSD)",
+              "Depth": {
+                "Value": null,
+                "Range": "16–20 μm",
+                "Unit": "μm"
+              },
+              "Note": "WPSD range for high-speed grinding 130–190 m/s"
+            },
+            {
+              "Layer_Name": "Misorientation radiation range",
+              "Depth": {
+                "Value": null,
+                "Note": "Significant strain concentration persists at 100 and 130 m/s; maximum ~120 μm at 100–130 m/s"
+              },
+              "Note": "At 130 m/s, significant strain concentration in remote areas"
+            }
+          ],
+          "Advanced_Quantitative_Features": {
+            "Lattice_Distortion": {
+              "Note": "Maximum XRD peak deviation occurs at 100–130 m/s speed range"
+            }
+          },
+          "Main_Phase": {
+            "Phase_Name": "γ matrix",
+            "Crystal_Structure": "FCC"
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Microhardness",
+            "Value": null,
+            "Unit": "HV",
+            "Test_Condition": {
+              "Grinding_Speed": "130 m/s"
+            },
+            "Data_Source": "text",
+            "Note": "Maximum surface microhardness at 100 and 130 m/s; exact value at 130 m/s not separately stated"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "IN718_G5_vg160",
+      "Sample_ID": "IN718_G5_vg160",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 4 Group 5",
+        "Fig. 4c/g",
+        "Fig. 5",
+        "Fig. 6",
+        "Fig. 8e",
+        "Fig. 9e",
+        "Fig. 10e",
+        "Fig. 13",
+        "Fig. 15b/e"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Ni-based superalloy",
+          "Material_Name_Raw": "Inconel 718 (IN718)",
+          "Workpiece_Material": "Same as IN718_unmachined; shared per Section 2.1",
+          "Tool_Material": "Same as IN718_G1_vg40 (CBN wheel per Table 3); shared per Section 2.2"
+        },
+        "Processing": {
+          "Process_Category": "Grinding",
+          "Machining_Method": "Up-grinding",
+          "Process_Text": {
+            "original": "Grinding Group 5: νs = 140 m/s, νg = 160 m/s, ap = 5 μm, f = 150 mm/min.",
+            "simplified": "High-speed grinding at νg = 160 m/s, ap = 5 μm, f = 150 mm/min"
+          },
+          "Key_Params": {
+            "Grinding_Wheel_Linear_Speed": {
+              "Value": 140,
+              "Unit": "m/s",
+              "Symbol": "νs"
+            },
+            "Workpiece_Linear_Speed": {
+              "Value": 20,
+              "Unit": "m/s",
+              "Symbol": "νw",
+              "Note": "Calculated from νg = νs + νw (text Section 2.2); Table 4 blank convention (same as Group 1)"
+            },
+            "Actual_Grinding_Speed": {
+              "Value": 160,
+              "Unit": "m/s",
+              "Symbol": "νg"
+            },
+            "Depth_of_Cut": {
+              "Value": 5,
+              "Unit": "μm",
+              "Symbol": "ap"
+            },
+            "Feed_Rate": {
+              "Value": 150,
+              "Unit": "mm/min",
+              "Symbol": "f",
+              "Note": "Table 4 blank convention (same as Group 1)"
+            },
+            "Total_Grinding_Depth": {
+              "Value": 500,
+              "Unit": "μm"
+            },
+            "Coolant": "Water-based coolant",
+            "Coolant_Flow_Rate": {
+              "Value": 10,
+              "Unit": "L/min"
+            }
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Grain refinement layer avg depth 1.25 μm, transition layer avg depth 3.01 μm. Deformation twins in plastic flow and transition layer with widths 60–70 nm, arranged in parallel. Recrystallization grains undergo less plastic deformation. cDRX and sDRX dominant.",
+            "simplified": "Grain refinement layer 1.25 μm, transition layer 3.01 μm. Deformation twins (60–70 nm width) in flow/transition layers. cDRX + sDRX dominant."
+          },
+          "Subsurface_Layers": [
+            {
+              "Layer_Name": "Grain refinement layer",
+              "Depth": {
+                "Value": 1.25,
+                "Unit": "μm",
+                "Type": "average"
+              },
+              "Recrystallization_Mechanism": "cDRX and sDRX dominant"
+            },
+            {
+              "Layer_Name": "Transition layer",
+              "Depth": {
+                "Value": 3.01,
+                "Unit": "μm",
+                "Type": "average"
+              }
+            },
+            {
+              "Layer_Name": "Plastic flow layer",
+              "Morphology": "Deformation twins with widths 60–70 nm, arranged in parallel"
+            }
+          ],
+          "Subsurface_Microstructure": {
+            "Recrystallized_Nanograin_Size": {
+              "Value": 41.4,
+              "Unit": "nm",
+              "Type": "diameter",
+              "Note": "Average from TKD measurement"
+            },
+            "Recrystallization_Mechanism": "cDRX and sDRX dominant",
+            "Deformation_Twin_Width": {
+              "Value": null,
+              "Range": "60–70 nm",
+              "Unit": "nm",
+              "Type": "width",
+              "Location": "Plastic flow and transition layer"
+            }
+          },
+          "Main_Phase": {
+            "Phase_Name": "γ matrix",
+            "Crystal_Structure": "FCC"
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Grinding_Force",
+            "Value": 0.36,
+            "Unit": "N",
+            "Test_Condition": {
+              "Grinding_Speed": "160 m/s"
+            },
+            "Data_Source": "text",
+            "Note": "From polynomial fit curve (R² > 0.99); grinding force reaches 0.36 N at 160 m/s"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "IN718_G6_vg190",
+      "Sample_ID": "IN718_G6_vg190",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 4 Group 6",
+        "Fig. 9f",
+        "Fig. 10f"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Ni-based superalloy",
+          "Material_Name_Raw": "Inconel 718 (IN718)",
+          "Workpiece_Material": "Same as IN718_unmachined; shared per Section 2.1",
+          "Tool_Material": "Same as IN718_G1_vg40 (CBN wheel per Table 3); shared per Section 2.2"
+        },
+        "Processing": {
+          "Process_Category": "Grinding",
+          "Machining_Method": "Up-grinding",
+          "Process_Text": {
+            "original": "Grinding Group 6: νs = 170 m/s, νg = 190 m/s, ap = 5 μm, f = 150 mm/min.",
+            "simplified": "Ultra-high-speed grinding at νg = 190 m/s, ap = 5 μm, f = 150 mm/min"
+          },
+          "Key_Params": {
+            "Grinding_Wheel_Linear_Speed": {
+              "Value": 170,
+              "Unit": "m/s",
+              "Symbol": "νs"
+            },
+            "Workpiece_Linear_Speed": {
+              "Value": 20,
+              "Unit": "m/s",
+              "Symbol": "νw",
+              "Note": "Calculated from νg = νs + νw (text Section 2.2); Table 4 blank convention (same as Group 1)"
+            },
+            "Actual_Grinding_Speed": {
+              "Value": 190,
+              "Unit": "m/s",
+              "Symbol": "νg"
+            },
+            "Depth_of_Cut": {
+              "Value": 5,
+              "Unit": "μm",
+              "Symbol": "ap"
+            },
+            "Feed_Rate": {
+              "Value": 150,
+              "Unit": "mm/min",
+              "Symbol": "f",
+              "Note": "Table 4 blank convention (same as Group 1)"
+            },
+            "Total_Grinding_Depth": {
+              "Value": 500,
+              "Unit": "μm"
+            },
+            "Coolant": "Water-based coolant",
+            "Coolant_Flow_Rate": {
+              "Value": 10,
+              "Unit": "L/min"
+            }
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Critical speed for ductile-to-brittle transition in IN718 superalloy is 190 m/s. Beyond this speed, subsurface damage stabilizes at minimum level. Chips show penetrating cracks.",
+            "simplified": "Ductile-to-brittle transition critical speed; subsurface damage stabilizes beyond 190 m/s"
+          },
+          "Subsurface_Layers": [
+            {
+              "Layer_Name": "White layer + severe deformation area (WPSD)",
+              "Depth": {
+                "Value": null,
+                "Range": "16–20 μm",
+                "Unit": "μm"
+              },
+              "Note": "WPSD range for high-speed grinding 130–190 m/s"
+            }
+          ],
+          "Main_Phase": {
+            "Phase_Name": "γ matrix",
+            "Crystal_Structure": "FCC"
+          },
+          "Advanced_Quantitative_Features": {
+            "Critical_Ductile_Brittle_Transition_Speed": {
+              "Value": 190,
+              "Unit": "m/s",
+              "Note": "Critical grinding speed for IN718 in micron-level precision grinding"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Grinding_Force",
+            "Value": null,
+            "Unit": "N",
+            "Test_Condition": {
+              "Grinding_Speed": "190 m/s"
+            },
+            "Data_Source": "text",
+            "Note": "Grinding force stabilizes beyond 160 m/s per Fig. 8i; comparable to 20 m/s level; exact value at 190 m/s not separately stated"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "IN718_G7_vg220",
+      "Sample_ID": "IN718_G7_vg220",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 4 Group 7",
+        "Fig. 4d/h",
+        "Fig. 5",
+        "Fig. 6",
+        "Fig. 8g",
+        "Fig. 9g",
+        "Fig. 10g"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Ni-based superalloy",
+          "Material_Name_Raw": "Inconel 718 (IN718)",
+          "Workpiece_Material": "Same as IN718_unmachined; shared per Section 2.1",
+          "Tool_Material": "Same as IN718_G1_vg40 (CBN wheel per Table 3); shared per Section 2.2"
+        },
+        "Processing": {
+          "Process_Category": "Grinding",
+          "Machining_Method": "Up-grinding",
+          "Process_Text": {
+            "original": "Grinding Group 7: νs = 200 m/s, νg = 220 m/s, ap = 5 μm, f = 150 mm/min.",
+            "simplified": "Ultra-high-speed grinding at νg = 220 m/s, ap = 5 μm, f = 150 mm/min"
+          },
+          "Key_Params": {
+            "Grinding_Wheel_Linear_Speed": {
+              "Value": 200,
+              "Unit": "m/s",
+              "Symbol": "νs"
+            },
+            "Workpiece_Linear_Speed": {
+              "Value": 20,
+              "Unit": "m/s",
+              "Symbol": "νw",
+              "Note": "Calculated from νg = νs + νw (text Section 2.2); Table 4 blank convention (same as Group 1)"
+            },
+            "Actual_Grinding_Speed": {
+              "Value": 220,
+              "Unit": "m/s",
+              "Symbol": "νg"
+            },
+            "Depth_of_Cut": {
+              "Value": 5,
+              "Unit": "μm",
+              "Symbol": "ap"
+            },
+            "Feed_Rate": {
+              "Value": 150,
+              "Unit": "mm/min",
+              "Symbol": "f",
+              "Note": "Table 4 blank convention (same as Group 1)"
+            },
+            "Total_Grinding_Depth": {
+              "Value": 500,
+              "Unit": "μm"
+            },
+            "Coolant": "Water-based coolant",
+            "Coolant_Flow_Rate": {
+              "Value": 10,
+              "Unit": "L/min"
+            }
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Material smearing almost completely suppressed at 220 m/s. Localized recasting layers and high-density pores appear on sub-micron scale. WPSD confined to within 10 μm, ~50% reduction vs conventional grinding. No significant traces of plastic flow. Misorientation influence confined to within 40 μm.",
+            "simplified": "Suppressed smearing; localized recasting + sub-micron pores; WPSD <10 μm; no significant plastic flow; misorientation <40 μm"
+          },
+          "Surface_Integrity": {
+            "Surface_Morphology": "Material smearing almost completely suppressed; localized recasting layers and high-density pores on sub-micron scale"
+          },
+          "Subsurface_Layers": [
+            {
+              "Layer_Name": "White layer + severe deformation area (WPSD)",
+              "Depth": {
+                "Value": null,
+                "Note": "Confined to within 10 μm at ultra-high speeds 220–240 m/s"
+              },
+              "Note": "Approximately 50% reduction in depth compared to conventional grinding"
+            },
+            {
+              "Layer_Name": "Misorientation radiation range",
+              "Depth": {
+                "Value": null,
+                "Note": "Confined to within 40 μm at ultra-high speeds 220–240 m/s"
+              }
+            }
+          ],
+          "Main_Phase": {
+            "Phase_Name": "γ matrix",
+            "Crystal_Structure": "FCC"
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Microhardness",
+            "Value": 425,
+            "Unit": "HV",
+            "Test_Condition": {
+              "Load": "500 g",
+              "Hold_Time": "10 s",
+              "Grinding_Speed": "220–240 m/s"
+            },
+            "Data_Source": "text",
+            "Note": "Microhardness under ultra-high-speed conditions (220–240 m/s); 20.69% reduction relative to as-received material"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "IN718_G8_vg240",
+      "Sample_ID": "IN718_G8_vg240",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 4 Group 8",
+        "Fig. 5",
+        "Fig. 6",
+        "Fig. 8h",
+        "Fig. 9h",
+        "Fig. 10h",
+        "Fig. 14",
+        "Fig. 15c/f"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Ni-based superalloy",
+          "Material_Name_Raw": "Inconel 718 (IN718)",
+          "Workpiece_Material": "Same as IN718_unmachined; shared per Section 2.1",
+          "Tool_Material": "Same as IN718_G1_vg40 (CBN wheel per Table 3); shared per Section 2.2"
+        },
+        "Processing": {
+          "Process_Category": "Grinding",
+          "Machining_Method": "Up-grinding",
+          "Process_Text": {
+            "original": "Grinding Group 8: νs = 220 m/s, νg = 240 m/s, ap = 5 μm, f = 150 mm/min. Maximum grinding speed achieved in this study.",
+            "simplified": "Ultra-high-speed grinding at νg = 240 m/s, ap = 5 μm, f = 150 mm/min; maximum speed in study"
+          },
+          "Key_Params": {
+            "Grinding_Wheel_Linear_Speed": {
+              "Value": 220,
+              "Unit": "m/s",
+              "Symbol": "νs"
+            },
+            "Workpiece_Linear_Speed": {
+              "Value": 20,
+              "Unit": "m/s",
+              "Symbol": "νw",
+              "Note": "Calculated from νg = νs + νw (text Section 2.2); Table 4 blank convention (same as Group 1)"
+            },
+            "Actual_Grinding_Speed": {
+              "Value": 240,
+              "Unit": "m/s",
+              "Symbol": "νg"
+            },
+            "Depth_of_Cut": {
+              "Value": 5,
+              "Unit": "μm",
+              "Symbol": "ap"
+            },
+            "Feed_Rate": {
+              "Value": 150,
+              "Unit": "mm/min",
+              "Symbol": "f",
+              "Note": "Table 4 blank convention (same as Group 1)"
+            },
+            "Total_Grinding_Depth": {
+              "Value": 500,
+              "Unit": "μm"
+            },
+            "Coolant": "Water-based coolant",
+            "Coolant_Flow_Rate": {
+              "Value": 10,
+              "Unit": "L/min"
+            }
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Grain refinement layer depth ~1.24 μm (26% reduction vs conventional); grain elongation layer ~1.94 μm (63% reduction). Multifold nanoscale twins within grain refinement layer grains, twin widths 4–5 nm. Twins in transition layer width 16.88 nm; twins in plastic flow layer width 61.83 nm. Multi-twin intersection structures in plastic flow layer. cDRX dominant. No absolute grain refinement layer; incomplete recrystallization due to decreased incubation time. Recrystallized nanograin size 85.3 nm (TKD).",
+            "simplified": "Grain refinement layer 1.24 μm; elongation layer 1.94 μm. Nano-twins (4–5 nm) in refinement layer. Transition twin 16.88 nm; flow twin 61.83 nm. Multi-twin intersections. cDRX dominant, incomplete recrystallization."
+          },
+          "Subsurface_Layers": [
+            {
+              "Layer_Name": "Grain refinement layer",
+              "Depth": {
+                "Value": 1.24,
+                "Unit": "μm",
+                "Note": "26% reduction compared to conventional grinding (40 m/s, 1.68 μm)"
+              },
+              "Recrystallization_Mechanism": "cDRX dominant",
+              "Morphology": "Nanocrystalline layer with multifold nano-twins; more elongated grains than at 40 m/s"
+            },
+            {
+              "Layer_Name": "Grain elongation layer",
+              "Depth": {
+                "Value": 1.94,
+                "Unit": "μm",
+                "Note": "63% reduction compared to conventional grinding"
+              }
+            },
+            {
+              "Layer_Name": "Transition layer",
+              "Twin_Width": {
+                "Value": 16.88,
+                "Unit": "nm"
+              }
+            },
+            {
+              "Layer_Name": "Plastic flow layer",
+              "Twin_Width": {
+                "Value": 61.83,
+                "Unit": "nm"
+              },
+              "Morphology": "Distinct multi-twin intersection structures"
+            }
+          ],
+          "Subsurface_Microstructure": {
+            "Recrystallized_Nanograin_Size": {
+              "Value": 85.3,
+              "Unit": "nm",
+              "Type": "diameter",
+              "Note": "Average from TKD measurement"
+            },
+            "Recrystallization_Mechanism": "cDRX dominant",
+            "Nano_Twin_Width_Refinement_Layer": {
+              "Value": null,
+              "Range": "4–5 nm",
+              "Unit": "nm",
+              "Note": "Multifold nano-twins within tens of nanometer grains under UHSM"
+            },
+            "Incomplete_Recrystallization": true
+          },
+          "Main_Phase": {
+            "Phase_Name": "γ matrix",
+            "Crystal_Structure": "FCC"
+          },
+          "XRD_Analysis": {
+            "Note": "Surface plastic deformation minimal at 220–240 m/s; XRD peak shift decreases compared to 100–130 m/s"
+          },
+          "Advanced_Quantitative_Features": {
+            "Estimated_Strain_Rate": {
+              "Value": null,
+              "Inequality": ">6.6×10⁷ s⁻¹",
+              "Note": "Strain rate of UHSM (above 190 m/s) per Eq. (4); inequality value not precise"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Microhardness",
+            "Value": 425,
+            "Unit": "HV",
+            "Test_Condition": {
+              "Load": "500 g",
+              "Hold_Time": "10 s",
+              "Grinding_Speed": "220–240 m/s"
+            },
+            "Data_Source": "text",
+            "Note": "Microhardness under ultra-high-speed conditions (220–240 m/s); 20.69% reduction relative to as-received material (290 HV)"
+          },
+          {
+            "Property_Name": "Surface_Roughness_Ra",
+            "Value": null,
+            "Unit": "μm",
+            "Test_Condition": {
+              "Grinding_Speed": "240 m/s"
+            },
+            "Data_Source": "text",
+            "Note": "Roughness decreases then slightly increases at UHSM speeds; exact value at 240 m/s not numerically stated in text"
+          }
+        ]
+      }
+    }
+  ]
+}

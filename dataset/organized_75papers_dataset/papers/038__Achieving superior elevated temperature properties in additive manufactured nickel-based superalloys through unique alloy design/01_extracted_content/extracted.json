@@ -1,0 +1,746 @@
+{
+  "Paper_Metadata": {
+    "Paper_Title": "Achieving superior elevated temperature properties in additive manufactured nickel-based superalloys through unique alloy design",
+    "DOI": "10.1016/j.addma.2024.104273"
+  },
+  "Paper_Routing": {
+    "base_material": "Metals",
+    "application": "Structural",
+    "research_paradigm": "Experimental",
+    "Supplements_Loaded": [
+      "directions/base/Metals.txt",
+      "directions/application/Structural.txt",
+      "directions/paradigm/Experimental.txt"
+    ],
+    "Patch_Tags": [
+      "Additive_Manufacturing"
+    ],
+    "Needs_Mixed_Routing_Check": false,
+    "Mixed_Signals": []
+  },
+  "items": [
+    {
+      "Item_ID": "H230",
+      "Sample_ID": "H230",
+      "Role": "Comparator",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 1",
+        "Section 2.1",
+        "Section 2.2",
+        "Section 2.3",
+        "Section 2.4",
+        "Section 3.1",
+        "Section 3.2",
+        "Section 3.3",
+        "Table 2",
+        "Section 3.4"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Nickel-based superalloy",
+          "Material_Name_Raw": "Haynes 230 (H230)",
+          "Measured_Composition": {
+            "Unit": "wt%",
+            "Source": "table",
+            "Elements": {
+              "Cr": 20.08,
+              "W": 12.19,
+              "Mo": 1.92,
+              "Fe": 1.46,
+              "Co": 2.1,
+              "Mn": 0.33,
+              "Al": 0.36,
+              "Si": 0.38,
+              "Zr": 0,
+              "C": 0.1,
+              "B": 0.05,
+              "Ni": "Balance"
+            },
+            "Note": "Powder composition from Table 1; powders prepared by argon atomization; Ni as Balance; normalized ≈ 59.98 wt% (Computed)"
+          }
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "The LPBF fabricated samples were produced on a Concept Laser M2 machine with the laser power of 300 W, the scanning speed of 1100 mm/s, the layer thickness of 50 μm and the hatch spacing of 100 μm. The strip scanning strategy was employed in the fabrication process and the new layer was rotated 67° in the scanning direction relative to the previously deposited layer. All fabrication processes were carried out in an argon atmosphere. The H230 samples were subjected to hot isostatic pressing (HIP) heat treatment. The HIP treatment was carried out at 1175 °C for 4 h under 160 MPa of isostatic pressure, followed by argon cooled to room temperature.",
+            "simplified": "LPBF fabrication followed by HIP heat treatment at 1175 °C / 4 h / 160 MPa, argon cooled."
+          },
+          "Key_Params": [
+            {
+              "Stage": "Stage1_LPBF",
+              "Process_Category": "Laser Powder Bed Fusion",
+              "Parameters": {
+                "Laser_Power_W": 300,
+                "Scanning_Speed_mm_s": 1100,
+                "Layer_Thickness_μm": 50,
+                "Hatch_Spacing_μm": 100,
+                "Scanning_Strategy": "Strip scanning with 67° rotation between layers",
+                "Atmosphere": "Argon"
+              }
+            },
+            {
+              "Stage": "Stage2_HIP",
+              "Process_Category": "Hot Isostatic Pressing",
+              "Parameters": {
+                "Temperature_Original": "1175 °C",
+                "Temperature_K": 1448.15,
+                "Time_h": 4,
+                "Pressure_MPa": 160,
+                "Cooling": "Argon cooled to room temperature"
+              },
+              "Note": "HIP applied to close cracks and eliminate their interference with mechanical properties"
+            }
+          ],
+          "Equipment": [
+            {
+              "Name": "Concept Laser M2",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Muffle furnace",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Olympus optical microscopy (OM)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "SEM S-4800",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "JSM-7800F SEM (EBSD/EDS)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Bruker D8 Advanced XRD",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Talos F200X TEM (200 kV)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "JEM-ARM200F STEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Gatan PIPS II 695",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Electronic balance (accuracy 0.1 mg)",
+              "Category": "Testing"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "The H230 sample exhibits severe cracking with a crack density of 2.81 mm/mm². After HIP heat treatment, the cracks in H230 are completely annihilated. Granular precipitated phases with an average size of 1.3 ± 0.2 μm and 0.45 ± 0.05 μm are distributed at grain boundaries and grains interior, respectively. The phases distributed at intragranular and intergranular are both W-rich M₆C carbides. The intragranular M₆C precipitated along the cell boundaries. The precipitate free zone occurs on both sides of the grain boundary. The number density of carbides in H230 was counted to be 0.52 μm⁻². The average grain sizes of H230 after heat treatment were 13.2 μm. The grain size of H230 (12.4 μm) remains essentially unchanged after creep testing.",
+            "simplified": "As-printed: severe cracking (2.81 mm/mm²). After HIP: cracks annihilated. Main precipitates are W-rich M₆C carbides at grain boundaries (1.3 ± 0.2 μm) and intragranular cell boundaries (0.45 ± 0.05 μm). Grain size after heat treatment: 13.2 μm; after creep: 12.4 μm. Carbide number density: 0.52 μm⁻²."
+          },
+          "Main_Phase": {
+            "Phase_Name": "γ matrix (FCC Ni-based solid solution)",
+            "Crystal_Structure": "FCC"
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "M₆C carbide (W-rich)",
+              "Crystal_Structure": "complex cubic",
+              "Size": {
+                "Value_Original": "1.3 ± 0.2 μm (intergranular), 0.45 ± 0.05 μm (intragranular)",
+                "Dimension_Type": "undefined"
+              },
+              "Distribution": "Grain boundaries and cell boundaries; precipitate free zone adjacent to grain boundaries",
+              "Note": "Both intragranular and intergranular M₆C confirmed by SAED and EDS"
+            }
+          ],
+          "Grain_Size": {
+            "Value_μm": 13.2,
+            "Value_Original": "13.2 μm",
+            "Dimension_Type": "undefined",
+            "Measurement_Method": "Intercept method from EBSD",
+            "State": "After HIP heat treatment"
+          },
+          "Texture_or_Orientation": {
+            "Description": "Dominant XRD peak transformed from (220) to (200) after creep; crystal orientation concentrated from [101] to [001]. I(200)/I(220) ratio increased by 190% after creep.",
+            "Note": "Crystal orientation rotation accomplished mainly by dislocation long-range slip and climb"
+          },
+          "Advanced_Quantitative_Features": {
+            "Crack_Density_As_Printed": {
+              "Value": 2.81,
+              "Unit": "mm/mm²",
+              "Data_Source": "text"
+            },
+            "Carbide_Number_Density_After_HT": {
+              "Value": 0.52,
+              "Unit": "μm⁻²",
+              "Data_Source": "text"
+            },
+            "Grain_Size_After_Creep_65MPa": {
+              "Value_μm": 12.4,
+              "Value_Original": "12.4 μm",
+              "Data_Source": "text"
+            },
+            "Stress_Exponent_n_900C": {
+              "Value": 4.9,
+              "Data_Source": "text",
+              "Note": "From Norton plot at 900 °C"
+            },
+            "XRD_I200_I220_Ratio_After_Creep_Increase_Pct": {
+              "Value": 190,
+              "Unit": "%",
+              "Data_Source": "text",
+              "Note": "Increase in I(200)/I(220) ratio after creep test"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Creep_Rupture_Time",
+            "Test_Condition": {
+              "Test_Temperature_K": 1173.15,
+              "Test_Temperature_Original": "900 °C",
+              "Applied_Stress_MPa": 85,
+              "Loading_Mode": "Tension",
+              "Environment": "Air",
+              "Standard": "ASTM E139-11",
+              "Specimen_Dimension": "diameter 5 mm, gage length 25 mm",
+              "Specimen_Orientation": "Loading axis perpendicular to building direction"
+            },
+            "Value": null,
+            "Value_Original": null,
+            "Data_Source": "text",
+            "Note": "H230AM creep lifetime improved by >787% compared to H230 at 85 MPa; exact rupture time not reported in text"
+          },
+          {
+            "Property_Name": "Creep_Rupture_Time",
+            "Test_Condition": {
+              "Test_Temperature_K": 1173.15,
+              "Test_Temperature_Original": "900 °C",
+              "Applied_Stress_MPa": 65,
+              "Loading_Mode": "Tension",
+              "Environment": "Air",
+              "Standard": "ASTM E139-11",
+              "Specimen_Dimension": "diameter 5 mm, gage length 25 mm",
+              "Specimen_Orientation": "Loading axis perpendicular to building direction"
+            },
+            "Value": null,
+            "Value_Original": null,
+            "Data_Source": "text",
+            "Note": "H230AM creep lifetime improved by 756% compared to H230 at 65 MPa; exact rupture time not reported"
+          },
+          {
+            "Property_Name": "Creep_Rupture_Time",
+            "Test_Condition": {
+              "Test_Temperature_K": 1173.15,
+              "Test_Temperature_Original": "900 °C",
+              "Applied_Stress_MPa": 45,
+              "Loading_Mode": "Tension",
+              "Environment": "Air",
+              "Standard": "ASTM E139-11",
+              "Specimen_Dimension": "diameter 5 mm, gage length 25 mm",
+              "Specimen_Orientation": "Loading axis perpendicular to building direction"
+            },
+            "Value": null,
+            "Value_Original": null,
+            "Data_Source": "text",
+            "Note": "H230AM creep lifetime improved by 672% compared to H230 at 45 MPa; exact rupture time not reported"
+          },
+          {
+            "Property_Name": "Ultimate_Tensile_Strength",
+            "Test_Condition": {
+              "Test_Temperature_K": 1173.15,
+              "Test_Temperature_Original": "900 °C",
+              "Loading_Mode": "Tension",
+              "Strain_Rate_s1": "1e-3",
+              "Environment": "Air",
+              "Specimen_Dimension": "5 × 1.5 × 1.5 mm (dog-bone shaped)",
+              "Specimen_Orientation": "Perpendicular to building direction",
+              "Specimen_State": "After HIP heat treatment (HT)"
+            },
+            "Value_MPa": 186,
+            "Value_Original": "186 MPa",
+            "Data_Source": "table"
+          },
+          {
+            "Property_Name": "Elongation_Total",
+            "Test_Condition": {
+              "Test_Temperature_K": 1173.15,
+              "Test_Temperature_Original": "900 °C",
+              "Loading_Mode": "Tension",
+              "Strain_Rate_s1": "1e-3",
+              "Environment": "Air",
+              "Specimen_Dimension": "5 × 1.5 × 1.5 mm (dog-bone shaped)",
+              "Specimen_Orientation": "Perpendicular to building direction",
+              "Specimen_State": "After HIP heat treatment (HT)"
+            },
+            "Value_pct": 41,
+            "Value_Original": "41%",
+            "Data_Source": "table",
+            "Note": "Original text says Elongation without specifying Uniform or Total; treated as Elongation_Total per Structural supplement rule"
+          },
+          {
+            "Property_Name": "Ultimate_Tensile_Strength",
+            "Test_Condition": {
+              "Test_Temperature_K": 1173.15,
+              "Test_Temperature_Original": "900 °C",
+              "Loading_Mode": "Tension",
+              "Strain_Rate_s1": "1e-3",
+              "Environment": "Air",
+              "Specimen_Dimension": "5 × 1.5 × 1.5 mm (dog-bone shaped)",
+              "Specimen_Orientation": "Perpendicular to building direction",
+              "Specimen_State": "After 200 h thermal exposure at 900 °C"
+            },
+            "Value_MPa": 183,
+            "Value_Original": "183 MPa",
+            "Data_Source": "table"
+          },
+          {
+            "Property_Name": "Elongation_Total",
+            "Test_Condition": {
+              "Test_Temperature_K": 1173.15,
+              "Test_Temperature_Original": "900 °C",
+              "Loading_Mode": "Tension",
+              "Strain_Rate_s1": "1e-3",
+              "Environment": "Air",
+              "Specimen_Dimension": "5 × 1.5 × 1.5 mm (dog-bone shaped)",
+              "Specimen_Orientation": "Perpendicular to building direction",
+              "Specimen_State": "After 200 h thermal exposure at 900 °C"
+            },
+            "Value_pct": 59,
+            "Value_Original": "59%",
+            "Data_Source": "table",
+            "Note": "Original text says Elongation without specifying Uniform or Total; treated as Elongation_Total per Structural supplement rule"
+          },
+          {
+            "Property_Name": "Ultimate_Tensile_Strength",
+            "Test_Condition": {
+              "Test_Temperature_K": 1173.15,
+              "Test_Temperature_Original": "900 °C",
+              "Loading_Mode": "Tension",
+              "Strain_Rate_s1": "1e-3",
+              "Environment": "Air",
+              "Specimen_Dimension": "5 × 1.5 × 1.5 mm (dog-bone shaped)",
+              "Specimen_Orientation": "Perpendicular to building direction",
+              "Specimen_State": "After 500 h thermal exposure at 900 °C"
+            },
+            "Value_MPa": 178,
+            "Value_Original": "178 MPa",
+            "Data_Source": "table"
+          },
+          {
+            "Property_Name": "Elongation_Total",
+            "Test_Condition": {
+              "Test_Temperature_K": 1173.15,
+              "Test_Temperature_Original": "900 °C",
+              "Loading_Mode": "Tension",
+              "Strain_Rate_s1": "1e-3",
+              "Environment": "Air",
+              "Specimen_Dimension": "5 × 1.5 × 1.5 mm (dog-bone shaped)",
+              "Specimen_Orientation": "Perpendicular to building direction",
+              "Specimen_State": "After 500 h thermal exposure at 900 °C"
+            },
+            "Value_pct": 39,
+            "Value_Original": "39%",
+            "Data_Source": "table",
+            "Note": "Original text says Elongation without specifying Uniform or Total; treated as Elongation_Total per Structural supplement rule"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "H230AM",
+      "Sample_ID": "H230AM",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 1",
+        "Section 2.1",
+        "Section 2.2",
+        "Section 2.3",
+        "Section 2.4",
+        "Section 3.1",
+        "Section 3.2",
+        "Section 3.3",
+        "Table 2",
+        "Section 3.4"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Nickel-based superalloy",
+          "Material_Name_Raw": "Haynes 230AM (H230AM)",
+          "Measured_Composition": {
+            "Unit": "wt%",
+            "Source": "table",
+            "Elements": {
+              "Cr": 19.97,
+              "W": 11.99,
+              "Mo": 2.06,
+              "Fe": 1.64,
+              "Co": 2.35,
+              "Mn": 0.56,
+              "Al": 0.38,
+              "Si": 0.33,
+              "Zr": 1,
+              "C": 0.1,
+              "B": 0.05,
+              "Ni": "Balance"
+            },
+            "Note": "Powder composition from Table 1; powders prepared by argon atomization; Ni as Balance; normalized ≈ 59.22 wt% (Computed)"
+          }
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "The LPBF fabricated samples were produced on a Concept Laser M2 machine with the laser power of 300 W, the scanning speed of 1100 mm/s, the layer thickness of 50 μm and the hatch spacing of 100 μm. The strip scanning strategy was employed in the fabrication process and the new layer was rotated 67° in the scanning direction relative to the previously deposited layer. All fabrication processes were carried out in an argon atmosphere. The H230AM samples were heat treated in the muffle furnace at 1200 °C for 1 h, then air cooled to room temperature.",
+            "simplified": "LPBF fabrication followed by heat treatment at 1200 °C / 1 h, air cooled."
+          },
+          "Key_Params": [
+            {
+              "Stage": "Stage1_LPBF",
+              "Process_Category": "Laser Powder Bed Fusion",
+              "Parameters": {
+                "Laser_Power_W": 300,
+                "Scanning_Speed_mm_s": 1100,
+                "Layer_Thickness_μm": 50,
+                "Hatch_Spacing_μm": 100,
+                "Scanning_Strategy": "Strip scanning with 67° rotation between layers",
+                "Atmosphere": "Argon"
+              }
+            },
+            {
+              "Stage": "Stage2_Heat_Treatment",
+              "Process_Category": "Heat Treatment",
+              "Parameters": {
+                "Temperature_Original": "1200 °C",
+                "Temperature_K": 1473.15,
+                "Time_h": 1,
+                "Cooling": "Air cooled to room temperature"
+              },
+              "Note": "Normal atmospheric heat treatment in muffle furnace"
+            }
+          ],
+          "Equipment": [
+            {
+              "Name": "Concept Laser M2",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Muffle furnace",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Olympus optical microscopy (OM)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "SEM S-4800",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "JSM-7800F SEM (EBSD/EDS)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Bruker D8 Advanced XRD",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Talos F200X TEM (200 kV)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "JEM-ARM200F STEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Gatan PIPS II 695",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Electronic balance (accuracy 0.1 mg)",
+              "Category": "Testing"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "The cracking is completely eliminated in the H230AM sample. The network segregation phases are completely dissolved in the H230AM after normal atmospheric heat treatment, and extensive precipitated phases with sizes of 166 ± 18 nm are uniformly distributed in the matrix. The precipitated phase in the H230AM is identified as ZrC carbide, which is distributed along cell and grain boundaries. The number densities of carbides in H230AM were counted to be 1.71 μm⁻². The average grain sizes of H230AM after heat treatment were 10.9 μm. The grain size of H230AM (10 μm) remains essentially unchanged after creep testing. After creep at 900 °C/65 MPa, three types of precipitation phases are present in H230AM: ZrC (retained from heat treatment), M₆C carbides (~380 nm) along grain boundaries, and plate-like Ni₇Zr₂ phase (~300 nm) within grain interior. The Ni₇Zr₂ phase has orientation relationship (001)_Ni₇Zr₂ // (111)_γ with the γ matrix. Unique matrix distortion stripes exist along (022) planes of γ matrix. The HAADF-STEM image shows a coherent interface between the Ni₇Zr₂ phase and γ matrix after thermal exposure. The Ni₇Zr₂ phase average size is 293 ± 58 nm and 289 ± 51 nm after thermal exposure at 900 °C for 50 h and 500 h, respectively.",
+            "simplified": "As-printed: crack-free. After heat treatment (1200 °C/1 h/AC): ZrC carbides (166 ± 18 nm) uniformly distributed, number density 1.71 μm⁻². Grain size 10.9 μm. After creep at 900 °C/65 MPa: three precipitate phases — ZrC (retained), M₆C (~380 nm) at grain boundaries, Ni₇Zr₂ (~300 nm, plate-like) within grains. Matrix distortion stripes along (022) planes. Ni₇Zr₂ coherent with γ matrix, orientation (001)_Ni₇Zr₂ // (111)_γ."
+          },
+          "Main_Phase": {
+            "Phase_Name": "γ matrix (FCC Ni-based solid solution)",
+            "Crystal_Structure": "FCC"
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "ZrC carbide",
+              "Crystal_Structure": "NaCl-type (FCC)",
+              "Size": {
+                "Value_Original": "166 ± 18 nm",
+                "Dimension_Type": "undefined"
+              },
+              "Distribution": "Uniformly distributed along cell and grain boundaries; retained after creep",
+              "State": "After heat treatment",
+              "Note": "Confirmed by SAED and EDS"
+            },
+            {
+              "Phase_Name": "M₆C carbide",
+              "Crystal_Structure": "complex cubic",
+              "Size": {
+                "Value_Original": "~380 nm",
+                "Dimension_Type": "undefined"
+              },
+              "Distribution": "Precipitated along grain boundaries during creep deformation",
+              "State": "After creep at 900 °C/65 MPa",
+              "Note": "Size and content lower than H230 sample"
+            },
+            {
+              "Phase_Name": "Ni₇Zr₂ phase",
+              "Crystal_Structure": "orthorhombic",
+              "Size": {
+                "Value_Original": "~300 nm (after creep), 293 ± 58 nm (after 50 h thermal exposure), 289 ± 51 nm (after 500 h thermal exposure)",
+                "Dimension_Type": "undefined"
+              },
+              "Morphology": "Plate-like",
+              "Distribution": "Within grain interior, along close-packed planes {111}",
+              "Orientation_Relationship": "(001)_Ni₇Zr₂ // (111)_γ",
+              "Interface": "Coherent interface with γ matrix",
+              "State": "After creep and long-term thermal exposure at 900 °C",
+              "Note": "Rapidly precipitates and remains stable during thermal exposure; size does not coarsen significantly; topologically close-packed (TCP) phase"
+            }
+          ],
+          "Grain_Size": {
+            "Value_μm": 10.9,
+            "Value_Original": "10.9 μm",
+            "Dimension_Type": "undefined",
+            "Measurement_Method": "Intercept method from EBSD",
+            "State": "After heat treatment"
+          },
+          "Texture_or_Orientation": {
+            "Description": "Crystal orientation rotates from [101] to [001] during creep; dominant XRD peak remains (220) after creep. I(200)/I(220) ratio increased by 72% after creep.",
+            "Note": "Slower crystal rotation than H230 during creep"
+          },
+          "Advanced_Quantitative_Features": {
+            "Carbide_Number_Density_After_HT": {
+              "Value": 1.71,
+              "Unit": "μm⁻²",
+              "Data_Source": "text"
+            },
+            "Grain_Size_After_Creep_65MPa": {
+              "Value_μm": 10,
+              "Value_Original": "10 μm",
+              "Data_Source": "text"
+            },
+            "Stress_Exponent_n_900C": {
+              "Value": 6.4,
+              "Data_Source": "text",
+              "Note": "From Norton plot at 900 °C"
+            },
+            "XRD_I200_I220_Ratio_After_Creep_Increase_Pct": {
+              "Value": 72,
+              "Unit": "%",
+              "Data_Source": "text",
+              "Note": "Increase in I(200)/I(220) ratio after creep test; dominant peak remains (220)"
+            },
+            "Ni7Zr2_Size_After_50h_900C": {
+              "Value_Original": "293 ± 58 nm",
+              "Data_Source": "text",
+              "Note": "After 50 h thermal exposure at 900 °C"
+            },
+            "Ni7Zr2_Size_After_500h_900C": {
+              "Value_Original": "289 ± 51 nm",
+              "Data_Source": "text",
+              "Note": "After 500 h thermal exposure at 900 °C"
+            },
+            "Matrix_Distortion_Stripes": {
+              "Description": "Parallel stripes in most grains along (022) planes of γ matrix; dislocations undergo periodic bending with stripes; FFT shows severe distortion of {011} planes",
+              "Data_Source": "text",
+              "Note": "Unique to H230AM; not observed in H230"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Creep_Rupture_Time",
+            "Test_Condition": {
+              "Test_Temperature_K": 1173.15,
+              "Test_Temperature_Original": "900 °C",
+              "Applied_Stress_MPa": 85,
+              "Loading_Mode": "Tension",
+              "Environment": "Air",
+              "Standard": "ASTM E139-11",
+              "Specimen_Dimension": "diameter 5 mm, gage length 25 mm",
+              "Specimen_Orientation": "Loading axis perpendicular to building direction"
+            },
+            "Value": null,
+            "Value_Original": null,
+            "Data_Source": "text",
+            "Note": "Creep lifetime improved by >787% compared to H230 at 85 MPa; exact rupture time not reported in text"
+          },
+          {
+            "Property_Name": "Creep_Rupture_Time",
+            "Test_Condition": {
+              "Test_Temperature_K": 1173.15,
+              "Test_Temperature_Original": "900 °C",
+              "Applied_Stress_MPa": 65,
+              "Loading_Mode": "Tension",
+              "Environment": "Air",
+              "Standard": "ASTM E139-11",
+              "Specimen_Dimension": "diameter 5 mm, gage length 25 mm",
+              "Specimen_Orientation": "Loading axis perpendicular to building direction"
+            },
+            "Value": null,
+            "Value_Original": null,
+            "Data_Source": "text",
+            "Note": "Creep lifetime improved by 756% compared to H230 at 65 MPa; exact rupture time not reported in text"
+          },
+          {
+            "Property_Name": "Creep_Rupture_Time",
+            "Test_Condition": {
+              "Test_Temperature_K": 1173.15,
+              "Test_Temperature_Original": "900 °C",
+              "Applied_Stress_MPa": 45,
+              "Loading_Mode": "Tension",
+              "Environment": "Air",
+              "Standard": "ASTM E139-11",
+              "Specimen_Dimension": "diameter 5 mm, gage length 25 mm",
+              "Specimen_Orientation": "Loading axis perpendicular to building direction"
+            },
+            "Value_h": 1500,
+            "Value_Original": "1500 h",
+            "Data_Source": "text",
+            "Note": "Artificially interrupted at 1500 h; did not rupture. Improvement of 672% compared to H230 at 45 MPa."
+          },
+          {
+            "Property_Name": "Ultimate_Tensile_Strength",
+            "Test_Condition": {
+              "Test_Temperature_K": 1173.15,
+              "Test_Temperature_Original": "900 °C",
+              "Loading_Mode": "Tension",
+              "Strain_Rate_s1": "1e-3",
+              "Environment": "Air",
+              "Specimen_Dimension": "5 × 1.5 × 1.5 mm (dog-bone shaped)",
+              "Specimen_Orientation": "Perpendicular to building direction",
+              "Specimen_State": "After heat treatment (HT)"
+            },
+            "Value_MPa": 220,
+            "Value_Original": "220 MPa",
+            "Data_Source": "table"
+          },
+          {
+            "Property_Name": "Elongation_Total",
+            "Test_Condition": {
+              "Test_Temperature_K": 1173.15,
+              "Test_Temperature_Original": "900 °C",
+              "Loading_Mode": "Tension",
+              "Strain_Rate_s1": "1e-3",
+              "Environment": "Air",
+              "Specimen_Dimension": "5 × 1.5 × 1.5 mm (dog-bone shaped)",
+              "Specimen_Orientation": "Perpendicular to building direction",
+              "Specimen_State": "After heat treatment (HT)"
+            },
+            "Value_pct": 45,
+            "Value_Original": "45%",
+            "Data_Source": "table",
+            "Note": "Original text says Elongation without specifying Uniform or Total; treated as Elongation_Total per Structural supplement rule"
+          },
+          {
+            "Property_Name": "Ultimate_Tensile_Strength",
+            "Test_Condition": {
+              "Test_Temperature_K": 1173.15,
+              "Test_Temperature_Original": "900 °C",
+              "Loading_Mode": "Tension",
+              "Strain_Rate_s1": "1e-3",
+              "Environment": "Air",
+              "Specimen_Dimension": "5 × 1.5 × 1.5 mm (dog-bone shaped)",
+              "Specimen_Orientation": "Perpendicular to building direction",
+              "Specimen_State": "After 200 h thermal exposure at 900 °C"
+            },
+            "Value_MPa": 204,
+            "Value_Original": "204 MPa",
+            "Data_Source": "table"
+          },
+          {
+            "Property_Name": "Elongation_Total",
+            "Test_Condition": {
+              "Test_Temperature_K": 1173.15,
+              "Test_Temperature_Original": "900 °C",
+              "Loading_Mode": "Tension",
+              "Strain_Rate_s1": "1e-3",
+              "Environment": "Air",
+              "Specimen_Dimension": "5 × 1.5 × 1.5 mm (dog-bone shaped)",
+              "Specimen_Orientation": "Perpendicular to building direction",
+              "Specimen_State": "After 200 h thermal exposure at 900 °C"
+            },
+            "Value_pct": 56,
+            "Value_Original": "56%",
+            "Data_Source": "table",
+            "Note": "Original text says Elongation without specifying Uniform or Total; treated as Elongation_Total per Structural supplement rule"
+          },
+          {
+            "Property_Name": "Ultimate_Tensile_Strength",
+            "Test_Condition": {
+              "Test_Temperature_K": 1173.15,
+              "Test_Temperature_Original": "900 °C",
+              "Loading_Mode": "Tension",
+              "Strain_Rate_s1": "1e-3",
+              "Environment": "Air",
+              "Specimen_Dimension": "5 × 1.5 × 1.5 mm (dog-bone shaped)",
+              "Specimen_Orientation": "Perpendicular to building direction",
+              "Specimen_State": "After 500 h thermal exposure at 900 °C"
+            },
+            "Value_MPa": 200,
+            "Value_Original": "200 MPa",
+            "Data_Source": "table"
+          },
+          {
+            "Property_Name": "Elongation_Total",
+            "Test_Condition": {
+              "Test_Temperature_K": 1173.15,
+              "Test_Temperature_Original": "900 °C",
+              "Loading_Mode": "Tension",
+              "Strain_Rate_s1": "1e-3",
+              "Environment": "Air",
+              "Specimen_Dimension": "5 × 1.5 × 1.5 mm (dog-bone shaped)",
+              "Specimen_Orientation": "Perpendicular to building direction",
+              "Specimen_State": "After 500 h thermal exposure at 900 °C"
+            },
+            "Value_pct": 36,
+            "Value_Original": "36%",
+            "Data_Source": "table",
+            "Note": "Original text says Elongation without specifying Uniform or Total; treated as Elongation_Total per Structural supplement rule"
+          },
+          {
+            "Property_Name": "Oxidation_Weight_Gain_Reduction_vs_H230",
+            "Test_Condition": {
+              "Test_Temperature_K": 1173.15,
+              "Test_Temperature_Original": "900 °C",
+              "Environment": "Air",
+              "Exposure_Time": "500 h isothermal",
+              "Specimen_State": "Heat treated"
+            },
+            "Value_pct": 20,
+            "Value_Original": "20%",
+            "Data_Source": "text",
+            "Note": "Oxidation weight gain of H230AM is 20% lower than H230; surface oxides are Mn₂O₃, (Ni,Mn)Cr₂O₄, Cr₂O₃, Al₂O₃ from outer to inner layers"
+          }
+        ]
+      }
+    }
+  ]
+}

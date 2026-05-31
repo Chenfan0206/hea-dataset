@@ -1,0 +1,744 @@
+{
+  "Paper_Metadata": {
+    "Paper_Title": "GPUMD 4.0: A high-performance molecular dynamics package for versatile materials simulations with machine-learned potentials",
+    "DOI": "10.1002/mgea.70028"
+  },
+  "Paper_Routing": {
+    "base_material": "Metals",
+    "application": "Functional",
+    "research_paradigm": "Pure_Simulation",
+    "Supplements_Loaded": [
+      "directions/base/Metals.txt",
+      "directions/application/Functional.txt",
+      "directions/paradigm/Pure_Simulation.txt"
+    ],
+    "Patch_Tags": [],
+    "Needs_Mixed_Routing_Check": true,
+    "Mixed_Signals": [
+      "Paper is a broad computational methodology/software review covering metals, ceramics, carbon materials, perovskites, etc. Routed as Metals based on prominent metal application examples (HEA 100M atoms, W radiation damage, 16-metals NEP model), but the software itself is material-agnostic.",
+      "Application is mixed: thermal transport (Functional), mechanical properties (Structural), electronic transport (Functional). Routed as Functional based on thermal/electronic transport dominance.",
+      "No additive manufacturing content despite group label suggesting AM; paper is purely about MD simulation methodology."
+    ]
+  },
+  "items": [
+    {
+      "Item_ID": "GPUMD4_Software",
+      "Sample_ID": "GPUMD_4.0",
+      "Role": "Target",
+      "Data_Nature": "Computed",
+      "base_material": "Metals",
+      "application": "Functional",
+      "research_paradigm": "Pure_Simulation",
+      "Patch_Tags": [],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "GPUMD 4.0: A high-performance molecular dynamics package for versatile materials simulations with machine-learned potentials",
+        "GPUMD incorporates native machine-learned potentials (NEP) and is optimized for GPU computing",
+        "the latest version of GPUMD, released in April 2025, is GPUMD 4.0",
+        "It contains about 85,000 lines of source code written in CUDA C++"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Other",
+          "Material_Name_Raw": "GPUMD 4.0",
+          "Note": "GPUMD 4.0 is a GPU-accelerated molecular dynamics simulation software package, not a physical material. It supports NEP, EAM, Tersoff, LJ, FCP, DP, ILP, and other interatomic potentials."
+        },
+        "Processing": {
+          "Process_Category": "Other",
+          "Process_Text": {
+            "original": "GPUMD is primarily developed using CUDA C++ (although it has also been adapted to work with HIP). Upon compilation, two executables are generated: gpumd and nep. The nep executable serves the training of NEP models, whereas the gpumd executable is designed for conducting MD simulations. For the nep executable, two files are required: train.xyz (training data) and nep.in (training hyperparameters). For the gpumd executable, at least two files must be provided: run.in (controls the MD simulation) and model.xyz (defines the system). GPUMD supports both conventional empirical potentials and machine-learned potentials including LJ, EAM, Tersoff, ILP, FCP, NEP, and DP.",
+            "simplified": "GPUMD 4.0 is a CUDA C++ based GPU-accelerated MD package. Generates gpumd (simulation) and nep (NEP training) executables. Supports LJ, EAM, Tersoff, NEP, DP, FCP potentials. ~85,000 lines of CUDA C++ source code."
+          },
+          "Simulation_Metadata": {
+            "Method_Category": "MD",
+            "Software": "GPUMD",
+            "Software_Version": "4.0",
+            "Functional_or_Potential": "NEP (Neuroevolution Potential), EAM, Tersoff, LJ, FCP, DP, ILP",
+            "Ensemble": "NVE, NVT (Berendsen, NHC, BDP, Langevin), NPT (Berendsen, SCR, MTTK), NPH (MTTK), PIMD, RPMD, TRPMD",
+            "Model_Size": {
+              "Atoms": 100000000,
+              "Note": "100 million atoms simulated with 8x 80-GB A100 GPUs for high-entropy alloy (Song et al. [24])"
+            },
+            "Time_or_Step_Params": {
+              "Note": "Time step is user-configurable; no single default value specified"
+            },
+            "Simulation_Text": {
+              "original": "Using a single GPU, either professional or consumer grade, NEP-GPUMD can achieve a computational speed of the order of 10^7 atom-step per second in typical MD simulations. The number of atoms in the simulation cell manageable with a single GPU ranges from 1 to 10 million, depending on the device memory of the GPU. With eight 80-GB A100 GPUs, NEP has been used to simulate a high-entropy alloy with 100 million atoms.",
+              "simplified": "NEP-GPUMD achieves ~10^7 atom-steps/s on a single GPU. Single GPU manages 1-10M atoms. 8x A100 GPUs used for 100M atom HEA simulation."
+            }
+          },
+          "Advanced_Quantitative_Features": {
+            "Source_Code_Lines": 85000,
+            "NEP_Computational_Speed_atom_step_per_s": {
+              "Value": null,
+              "Note": "原文: of the order of 10^7 atom-step per second (order of magnitude, not exact value)"
+            },
+            "Max_Atoms_Single_GPU": 10000000,
+            "Max_Atoms_Multi_GPU_HEA": 100000000,
+            "Number_Supported_Potential_Types": 8,
+            "GPU_Types_Mentioned": "V100, A100"
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "GPUMD is a software package, not a physical material. The NEP4 architecture uses a single hidden layer neural network with descriptor vectors consisting of radial and angular components. Radial descriptors use Chebyshev polynomial basis functions with trainable expansion coefficients. Angular descriptors use Legendre polynomials. The descriptor dimension is N_des, hidden layer dimension is N_neu. Activation function is tanh. NEP4 supports multi-element systems with element-pair-specific radial functions.",
+            "simplified": "NEP4 neural network architecture: single hidden layer, radial + angular descriptors, Chebyshev polynomial basis, Legendre polynomial angular descriptors, tanh activation."
+          },
+          "Advanced_Quantitative_Features": {
+            "NEP4_Hidden_Layers": 1,
+            "NEP4_Activation_Function": "tanh",
+            "NEP4_Descriptor_Types": "radial + angular"
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Computational_Speed",
+            "Test_Condition": "Single GPU, NEP potential, typical MD simulation",
+            "Value": null,
+            "Unit": "atom-step/s",
+            "Original_Values": "of the order of 10^7 atom-step per second",
+            "Data_Source": "text",
+            "Data_Nature": "Computed",
+            "Note": "原文给出数量级而非精确值: of the order of 10^7 atom-step per second"
+          },
+          {
+            "Property_Name": "Computational_Speed_2D_Silicene_NEP",
+            "Test_Condition": "NEP potential on V100 GPU, 2D Silicene",
+            "Value": 13000000,
+            "Unit": "atom-step/s",
+            "Data_Source": "table",
+            "Data_Nature": "Computed",
+            "Note": "From Table 2: NEP on V100 for 2D Silicene"
+          },
+          {
+            "Property_Name": "Computational_Speed_2D_Silicene_DP",
+            "Test_Condition": "DP potential on V100 GPU, 2D Silicene",
+            "Value": 870000,
+            "Unit": "atom-step/s",
+            "Data_Source": "table",
+            "Data_Nature": "Computed",
+            "Note": "From Table 2: DP on V100 for 2D Silicene"
+          },
+          {
+            "Property_Name": "Computational_Speed_Bulk_PbTe_NEP",
+            "Test_Condition": "NEP potential on V100 GPU, Bulk PbTe",
+            "Value": 11000000,
+            "Unit": "atom-step/s",
+            "Data_Source": "table",
+            "Data_Nature": "Computed",
+            "Note": "From Table 2: NEP on V100 for Bulk PbTe"
+          },
+          {
+            "Property_Name": "Computational_Speed_Bulk_PbTe_DP",
+            "Test_Condition": "DP potential on V100 GPU, Bulk PbTe",
+            "Value": 520000,
+            "Unit": "atom-step/s",
+            "Data_Source": "table",
+            "Data_Nature": "Computed",
+            "Note": "From Table 2: DP on V100 for Bulk PbTe"
+          },
+          {
+            "Property_Name": "Computational_Speed_W_NEP",
+            "Test_Condition": "NEP potential on A100 GPU, Tungsten",
+            "Value": 13000000,
+            "Unit": "atom-step/s",
+            "Data_Source": "table",
+            "Data_Nature": "Computed",
+            "Note": "From Table 2: NEP on A100 for Tungsten"
+          },
+          {
+            "Property_Name": "Computational_Speed_W_DP",
+            "Test_Condition": "DP potential on A100 GPU, Tungsten",
+            "Value": 130000,
+            "Unit": "atom-step/s",
+            "Data_Source": "table",
+            "Data_Nature": "Computed",
+            "Note": "From Table 2: DP on A100 for Tungsten"
+          },
+          {
+            "Property_Name": "Computational_Speed_Diamond_NEP",
+            "Test_Condition": "NEP potential on V100 GPU, Diamond",
+            "Value": 1830000,
+            "Unit": "atom-step/s",
+            "Data_Source": "table",
+            "Data_Nature": "Computed",
+            "Note": "From Table 2: NEP on V100 for Diamond"
+          },
+          {
+            "Property_Name": "Computational_Speed_Diamond_MACE",
+            "Test_Condition": "MACE potential on V100 GPU, Diamond",
+            "Value": 1200,
+            "Unit": "atom-step/s",
+            "Data_Source": "table",
+            "Data_Nature": "Computed",
+            "Note": "From Table 2: MACE on V100 for Diamond"
+          },
+          {
+            "Property_Name": "Computational_Speed_Diamond_NequIP",
+            "Test_Condition": "NequIP potential on V100 GPU, Diamond",
+            "Value": 2000,
+            "Unit": "atom-step/s",
+            "Data_Source": "table",
+            "Data_Nature": "Computed",
+            "Note": "From Table 2: NequIP on V100 for Diamond"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "NEP89_Foundation_Model",
+      "Sample_ID": "NEP89",
+      "Role": "Reference",
+      "Data_Nature": "Computed",
+      "base_material": "Metals",
+      "application": "Functional",
+      "research_paradigm": "Pure_Simulation",
+      "Patch_Tags": [],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Liang et al. [43] developed NEP89, a comprehensive foundation model covering virtually the entire periodic table",
+        "NEP89 achieves competitive accuracy compared to representative foundation models across a range of properties",
+        "while being three to four orders of magnitude more computationally efficient"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Other",
+          "Material_Name_Raw": "NEP89",
+          "Note": "NEP89 is a comprehensive foundation model covering virtually the entire periodic table (89 elements). It can be used out-of-box or fine-tuned."
+        },
+        "Processing": {
+          "Process_Category": "Other",
+          "Process_Text": {
+            "original": "NEP89, a comprehensive foundation model covering virtually the entire periodic table, which has been released alongside GPUMD 4.0. NEP89 can be used out of the box or as a starting point that can be conveniently fine-tuned with a relatively small amount of additional training data for system-specific applications. NEP89 achieves competitive accuracy compared to representative foundation models across a range of properties, including energetics, elastic properties, phonon frequencies, and MD simulations of amorphous carbon, liquid water, and solid-state electrolytes, while being three to four orders of magnitude more computationally efficient.",
+            "simplified": "NEP89 covers 89 elements (virtually entire periodic table). Released with GPUMD 4.0. Can be used out-of-box or fine-tuned. 3-4 orders of magnitude more efficient than other foundation models."
+          },
+          "Simulation_Metadata": {
+            "Method_Category": "MD",
+            "Software": "GPUMD",
+            "Software_Version": "4.0",
+            "Functional_or_Potential": "NEP89"
+          },
+          "Advanced_Quantitative_Features": {
+            "Efficiency_Gain_Orders_of_Magnitude": {
+              "Value": null,
+              "Value_Range": [
+                "3 orders of magnitude",
+                "4 orders of magnitude"
+              ],
+              "Note": "原文: three to four orders of magnitude more computationally efficient"
+            },
+            "Elements_Covered": 89,
+            "Property_Types_Validated": "energetics, elastic properties, phonon frequencies, MD simulations of amorphous carbon, liquid water, solid-state electrolytes"
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "NEP89 is the first in a series of NEP-based foundation models. It covers virtually the entire periodic table with 89 elements.",
+            "simplified": "NEP89: first NEP-based foundation model covering 89 elements."
+          }
+        }
+      }
+    },
+    {
+      "Item_ID": "Ref_16Metals_NEP",
+      "Sample_ID": "NEP_16Metals",
+      "Role": "Reference",
+      "Data_Nature": "Computed",
+      "base_material": "Metals",
+      "application": "Functional",
+      "research_paradigm": "Pure_Simulation",
+      "Patch_Tags": [],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Song et al. [24] pioneered the development of large NEP models for multiple species",
+        "They successfully created a general-purpose NEP model for 16 metals and their arbitrary alloys",
+        "simulating 100 million atoms using only eight 80-GB A100 GPUs"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Other",
+          "Material_Name_Raw": "NEP for 16 metals",
+          "Note": "General-purpose NEP model for 16 elemental metals and their arbitrary alloys. Demonstrated substantially higher accuracy than conventional EAM."
+        },
+        "Processing": {
+          "Process_Category": "Other",
+          "Process_Text": {
+            "original": "Song et al. [24] pioneered the development of large NEP models for multiple species, emphasizing the importance of focusing on elemental and binary systems during data construction. They successfully created a general-purpose NEP model for 16 metals and their arbitrary alloys, demonstrating substantially higher accuracy compared to the conventional embedded atom method. This NEP model also achieved a computational milestone by simulating 100 million atoms using only eight 80-GB A100 GPUs.",
+            "simplified": "Song et al. [24]: NEP model for 16 metals + arbitrary alloys. Higher accuracy than EAM. Milestone: 100M atoms on 8x A100 GPUs."
+          },
+          "Simulation_Metadata": {
+            "Method_Category": "MD",
+            "Software": "GPUMD",
+            "Functional_or_Potential": "NEP",
+            "Model_Size": {
+              "Atoms": 100000000,
+              "Note": "100 million atoms simulated for high-entropy alloy"
+            }
+          },
+          "Advanced_Quantitative_Features": {
+            "Metals_Covered": 16,
+            "Max_Simulated_Atoms": 100000000,
+            "GPU_Count_for_100M": 8,
+            "GPU_Model": "A100 80-GB"
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "The NEP model for 16 metals demonstrated substantially higher accuracy compared to the conventional embedded atom method. Data construction focused on elemental and binary systems.",
+            "simplified": "16-metals NEP model: higher accuracy than EAM, trained on elemental + binary data."
+          }
+        }
+      }
+    },
+    {
+      "Item_ID": "Ref_W_Radiation_NEP",
+      "Sample_ID": "W_radiation_damage",
+      "Role": "Reference",
+      "Data_Nature": "Computed",
+      "base_material": "Metals",
+      "application": "Functional",
+      "research_paradigm": "Pure_Simulation",
+      "Patch_Tags": [],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Liu et al. [39] expanded the NEP approach by incorporating the Ziegler-Biersack-Littmark potential",
+        "applying it for the first time to investigate primary radiation damage in tungsten",
+        "large-scale MD simulations involving up to 8.1 million atoms over 240 ps using a single 40-GB A100 GPU"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Other",
+          "Material_Name_Raw": "Tungsten (W)",
+          "Nominal_Composition": {
+            "Composition_Type": null,
+            "Composition_Source_Type": "nominal_inferred",
+            "Elements": {
+              "W": 100.0
+            },
+            "Note": "Elemental tungsten model for radiation damage simulation"
+          }
+        },
+        "Processing": {
+          "Process_Category": "Other",
+          "Process_Text": {
+            "original": "Liu et al. [39] expanded the NEP approach by incorporating the Ziegler-Biersack-Littmark potential [42], applying it for the first time to investigate primary radiation damage in tungsten. They conducted large-scale MD simulations involving up to 8.1 million atoms over 240 ps using a single 40-GB A100 GPU, achieving computational efficiency comparable to that of embedded-atom-method potentials.",
+            "simplified": "Liu et al. [39]: NEP + ZBL potential for W radiation damage. 8.1M atoms, 240 ps, single 40-GB A100 GPU."
+          },
+          "Simulation_Metadata": {
+            "Method_Category": "MD",
+            "Software": "GPUMD",
+            "Functional_or_Potential": "NEP + Ziegler-Biersack-Littmark (ZBL)",
+            "Model_Size": {
+              "Atoms": 8100000
+            },
+            "Time_or_Step_Params": {
+              "Total_Simulation_Time_ps": 240
+            }
+          },
+          "Advanced_Quantitative_Features": {
+            "Max_Atoms": 8100000,
+            "Simulation_Time_ps": 240,
+            "GPU_Memory_GB": 40,
+            "GPU_Model": "A100"
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "The NEP model demonstrated superior accuracy over embedded-atom-method potentials in capturing radiation damage in foils. The ZBL potential ensures physical repulsive interactions at close range.",
+            "simplified": "NEP + ZBL hybrid: superior accuracy over EAM for W radiation damage."
+          }
+        }
+      }
+    },
+    {
+      "Item_ID": "Ref_LLZO_IonTransport",
+      "Sample_ID": "LLZO_ion_transport",
+      "Role": "Reference",
+      "Data_Nature": "Computed",
+      "base_material": "Metals",
+      "application": "Functional",
+      "research_paradigm": "Pure_Simulation",
+      "Patch_Tags": [],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Yan et al.[233] initiated research on ion transport in solid-state electrolytes",
+        "NEP model to explore the effects of lithium nonstoichiometry on ionic conductivity and phase stability in Li7La3Zr2O12",
+        "ten-orders-of-magnitude increase in room-temperature ionic conductivity"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Other",
+          "Material_Name_Raw": "Li7La3Zr2O12 (LLZO)",
+          "Note": "Solid-state electrolyte material. Studied lithium nonstoichiometry effects."
+        },
+        "Processing": {
+          "Process_Category": "Other",
+          "Process_Text": {
+            "original": "Yan et al.[233] initiated research on ion transport in solid-state electrolytes, a critical area for advancing all-solid-state battery technology. They developed a NEP model to explore the effects of lithium nonstoichiometry on ionic conductivity and phase stability in Li7La3Zr2O12. Their findings revealed that even minor deviations from stoichiometry, particularly lithium deficiency, significantly lower the activation energy for Li+ diffusion in tetragonal Li7La3Zr2O12. This leads to a remarkable ten-orders-of-magnitude increase in room-temperature ionic conductivity.",
+            "simplified": "Yan et al. [233]: NEP for Li7La3Zr2O12. Li deficiency lowers activation energy for Li+ diffusion in tetragonal phase, causing 10 orders of magnitude increase in room-temperature ionic conductivity."
+          },
+          "Simulation_Metadata": {
+            "Method_Category": "MD",
+            "Software": "GPUMD",
+            "Functional_or_Potential": "NEP"
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Lithium deficiency in tetragonal Li7La3Zr2O12 significantly lowers activation energy for Li+ diffusion.",
+            "simplified": "Tetragonal LLZO with Li deficiency shows dramatically enhanced Li+ diffusion."
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Ionic_Conductivity_Increase",
+            "Test_Condition": "Room temperature, tetragonal phase with Li deficiency",
+            "Value": null,
+            "Unit": "orders of magnitude",
+            "Original_Values": "ten-orders-of-magnitude increase",
+            "Data_Source": "text",
+            "Data_Nature": "Computed",
+            "Note": "原文: ten-orders-of-magnitude increase in room-temperature ionic conductivity. This is a qualitative order-of-magnitude description, not a precise numerical value."
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "Ref_C_Shock_NEP",
+      "Sample_ID": "C_shock_NEP",
+      "Role": "Reference",
+      "Data_Nature": "Computed",
+      "base_material": "Metals",
+      "application": "Functional",
+      "research_paradigm": "Pure_Simulation",
+      "Patch_Tags": [],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Shi et al. [152] initiated the study of shock compression using GPUMD and NEP",
+        "developed a NEP model for carbon at high pressures",
+        "discovery of the long-sought BC8 phase of carbon"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Other",
+          "Material_Name_Raw": "Carbon (high pressure)",
+          "Nominal_Composition": {
+            "Composition_Type": null,
+            "Composition_Source_Type": "nominal_inferred",
+            "Elements": {
+              "C": 100.0
+            },
+            "Note": "Carbon model for high-pressure shock compression simulation"
+          }
+        },
+        "Processing": {
+          "Process_Category": "Other",
+          "Process_Text": {
+            "original": "Shi et al. [152] initiated the study of shock compression using GPUMD and NEP. They developed a NEP model for carbon at high pressures, which demonstrated exceptional capabilities in modeling both the melting behavior and the Hugoniot line. They designed a thermodynamic pathway suitable for double shock compression experiments, facilitating the discovery of the long-sought BC8 phase of carbon.",
+            "simplified": "Shi et al. [152]: NEP for high-pressure carbon shock compression. Discovered BC8 phase via double shock pathway."
+          },
+          "Simulation_Metadata": {
+            "Method_Category": "MD",
+            "Software": "GPUMD",
+            "Functional_or_Potential": "NEP"
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "BC8 phase of carbon discovered through double shock compression simulations. The NEP model captured melting behavior and Hugoniot line accurately.",
+            "simplified": "BC8 carbon phase discovered via NEP-based shock simulation."
+          }
+        }
+      }
+    },
+    {
+      "Item_ID": "Ref_C60_Mechanical_NEP",
+      "Sample_ID": "C60_mechanical",
+      "Role": "Reference",
+      "Data_Nature": "Computed",
+      "base_material": "Metals",
+      "application": "Functional",
+      "research_paradigm": "Pure_Simulation",
+      "Patch_Tags": [],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Ying et al. [166] were the first to apply GPUMD and NEP to investigate mechanical properties",
+        "study of a C60-based quasi-two-dimensional network",
+        "extended the scope to larger spatial and temporal scales, approaching strain rates that are almost experimentally attainable"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Other",
+          "Material_Name_Raw": "C60-based quasi-2D network"
+        },
+        "Processing": {
+          "Process_Category": "Other",
+          "Process_Text": {
+            "original": "Ying et al. [166] were the first to apply GPUMD and NEP to investigate mechanical properties in their study of a C60-based quasi-two-dimensional network. Their work demonstrated consistent results for quasi-static deformation processes when compared with quantum-mechanical calculations. Moreover, they extended the scope of their study to larger spatial and temporal scales, approaching strain rates that are almost experimentally attainable.",
+            "simplified": "Ying et al. [166]: First mechanical properties study with GPUMD+NEP. C60 quasi-2D network. Consistent with quantum-mechanical results at near-experimental strain rates."
+          },
+          "Simulation_Metadata": {
+            "Method_Category": "MD",
+            "Software": "GPUMD",
+            "Functional_or_Potential": "NEP"
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "C60-based quasi-two-dimensional network studied under quasi-static deformation.",
+            "simplified": "C60 quasi-2D network for mechanical properties."
+          }
+        }
+      }
+    },
+    {
+      "Item_ID": "Ref_GeSn_SRO_NEP",
+      "Sample_ID": "GeSn_SRO",
+      "Role": "Reference",
+      "Data_Nature": "Computed",
+      "base_material": "Metals",
+      "application": "Functional",
+      "research_paradigm": "Pure_Simulation",
+      "Patch_Tags": [],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Chen et al. [177] initiated the study of short-range order in GeSn alloys using GPUMD and NEP",
+        "uncovered intricate short-range order features that strongly impact the electronic band structure",
+        "coexistence of nanoscale short-range order domains"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Other",
+          "Material_Name_Raw": "GeSn alloy"
+        },
+        "Processing": {
+          "Process_Category": "Other",
+          "Process_Text": {
+            "original": "Chen et al. [177] initiated the study of short-range order in GeSn alloys using GPUMD and NEP. A compact yet representative dataset was constructed via farthest-point sampling to improve training efficiency and predictive accuracy. Through extensive statistical sampling, they uncovered intricate short-range order features that strongly impact the electronic band structure. Large-scale simulations revealed the coexistence of nanoscale short-range order domains, which is promising for optoelectronic applications.",
+            "simplified": "Chen et al. [177]: NEP for GeSn SRO. Farthest-point sampling for dataset. Discovered nanoscale SRO domains affecting electronic band structure."
+          },
+          "Simulation_Metadata": {
+            "Method_Category": "MD",
+            "Software": "GPUMD",
+            "Functional_or_Potential": "NEP"
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Short-range order features in GeSn alloys strongly impact electronic band structure. Nanoscale SRO domains coexist in large-scale simulations.",
+            "simplified": "GeSn SRO domains affect band structure; promising for optoelectronics."
+          }
+        }
+      }
+    },
+    {
+      "Item_ID": "Ref_CsPbX3_PhaseTransition_NEP",
+      "Sample_ID": "CsPbX3_phase_transition",
+      "Role": "Reference",
+      "Data_Nature": "Computed",
+      "base_material": "Metals",
+      "application": "Functional",
+      "research_paradigm": "Pure_Simulation",
+      "Patch_Tags": [],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Fransson et al. [142] were the first to investigate temperature-induced structural phase transitions in inorganic halide perovskites using GPUMD and NEP",
+        "impact of simulation size, temperature variation rate, and the choice of exchange-correlation functionals"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Other",
+          "Material_Name_Raw": "CsPbX3 (X = Cl, Br, I) perovskites"
+        },
+        "Processing": {
+          "Process_Category": "Other",
+          "Process_Text": {
+            "original": "Fransson et al. [142] were the first to investigate temperature-induced structural phase transitions in inorganic halide perovskites using GPUMD and NEP. Their work revealed the impact of simulation size, temperature variation rate, and the choice of exchange-correlation functionals in quantum-mechanical calculations for training data.",
+            "simplified": "Fransson et al. [142]: NEP for CsPbX3 perovskite phase transitions. Studied simulation size, temperature rate, and XC functional effects."
+          },
+          "Simulation_Metadata": {
+            "Method_Category": "MD",
+            "Software": "GPUMD",
+            "Functional_or_Potential": "NEP"
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Temperature-induced structural phase transitions in inorganic halide perovskites. Simulation parameters affect results significantly.",
+            "simplified": "CsPbX3 perovskite temperature-induced phase transitions via NEP."
+          }
+        }
+      }
+    },
+    {
+      "Item_ID": "Ref_Mg_Corrosion_Reactive_NEP",
+      "Sample_ID": "Mg_corrosion_reactive",
+      "Role": "Reference",
+      "Data_Nature": "Computed",
+      "base_material": "Metals",
+      "application": "Functional",
+      "research_paradigm": "Pure_Simulation",
+      "Patch_Tags": [],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Liu et al. [278] constructed a reactive NEP model for magnesium corrosion studies",
+        "utilizing high-temperature MD to sample critical interfacial regions within substrate-interface-solution systems",
+        "revealed the inward oxide/hydroxide migration mechanism governing corrosion layer growth"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Other",
+          "Material_Name_Raw": "Magnesium (Mg)",
+          "Nominal_Composition": {
+            "Composition_Type": null,
+            "Composition_Source_Type": "nominal_inferred",
+            "Elements": {
+              "Mg": 100.0
+            },
+            "Note": "Elemental Mg for corrosion simulation with reactive NEP"
+          }
+        },
+        "Processing": {
+          "Process_Category": "Other",
+          "Process_Text": {
+            "original": "Liu et al. [278] constructed a reactive NEP model for magnesium corrosion studies by utilizing high-temperature MD to sample critical interfacial regions within substrate-interface-solution systems. This enabled the atomistic simulation of the MgOH intermediate phase formation and revealed the inward oxide/hydroxide migration mechanism governing corrosion layer growth.",
+            "simplified": "Liu et al. [278]: Reactive NEP for Mg corrosion. Simulated MgOH intermediate formation, revealed inward oxide/hydroxide migration mechanism."
+          },
+          "Simulation_Metadata": {
+            "Method_Category": "MD",
+            "Software": "GPUMD",
+            "Functional_or_Potential": "Reactive NEP"
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "MgOH intermediate phase formation in substrate-interface-solution systems. Inward oxide/hydroxide migration mechanism governs corrosion layer growth.",
+            "simplified": "Mg corrosion: MgOH intermediate, inward oxide/hydroxide migration mechanism."
+          }
+        }
+      }
+    },
+    {
+      "Item_ID": "Ref_Confined_Melting_NEP",
+      "Sample_ID": "Confined_melting_NEP",
+      "Role": "Reference",
+      "Data_Nature": "Computed",
+      "base_material": "Metals",
+      "application": "Functional",
+      "research_paradigm": "Pure_Simulation",
+      "Patch_Tags": [],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Wang et al. [299] have recently used GPUMD and NEP to study the melting transition in atomistically confined layered materials",
+        "noble gases and aluminum confined between two graphene sheets",
+        "tetragonal-packed configurations in the confined systems"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Other",
+          "Material_Name_Raw": "Noble gases and Al confined between graphene sheets"
+        },
+        "Processing": {
+          "Process_Category": "Other",
+          "Process_Text": {
+            "original": "Wang et al. [299] have recently used GPUMD and NEP to study the melting transition in atomistically confined layered materials. They developed NEP models for noble gases and aluminum confined between two graphene sheets at different pressures and temperatures. Although noble gases and aluminum typically form only close-packed structures, even under the extreme conditions of white dwarf stars, they discovered tetragonal-packed configurations in the confined systems. Upon heating, confined two-dimensional monolayers melt according to the two-step continuous Kosterlitz-Thouless-Halperin-Nelson-Young theory. However, multilayer solids transition continuously into an intermediate layered-hexatic phase before melting discontinuously into an isotropic liquid.",
+            "simplified": "Wang et al. [299]: NEP for confined melting. Noble gases + Al between graphene sheets. Discovered tetragonal-packed configurations. Monolayer follows KTHNY theory; multilayer has layered-hexatic intermediate phase."
+          },
+          "Simulation_Metadata": {
+            "Method_Category": "MD",
+            "Software": "GPUMD",
+            "Functional_or_Potential": "NEP"
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Tetragonal-packed configurations discovered in confined noble gases and Al (normally close-packed). Monolayer melting follows KTHNY theory (two-step continuous). Multilayer: continuous transition to layered-hexatic phase then discontinuous melting to isotropic liquid.",
+            "simplified": "Confined systems show tetragonal packing (vs normal close-packed). Monolayer: KTHNY melting. Multilayer: hexatic intermediate phase."
+          }
+        }
+      }
+    },
+    {
+      "Item_ID": "Ref_CL20_Reactive_NEP",
+      "Sample_ID": "CL20_reactive_NEP",
+      "Role": "Reference",
+      "Data_Nature": "Computed",
+      "base_material": "Metals",
+      "application": "Functional",
+      "research_paradigm": "Pure_Simulation",
+      "Patch_Tags": [],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Hu et al. [262] also constructed a reactive NEP model to predict the reaction kinetics of CL-20",
+        "a high energy-density material, under extreme conditions",
+        "revealing its atomic-level shock compression and thermal decomposition mechanisms"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Other",
+          "Material_Name_Raw": "CL-20 (2,4,6,8,10,12-Hexanitro-2,4,6,8,10,12-hexaazaisowurtzitane)"
+        },
+        "Processing": {
+          "Process_Category": "Other",
+          "Process_Text": {
+            "original": "Hu et al. [262] also constructed a reactive NEP model to predict the reaction kinetics of 2,4,6,8,10,12-Hexanitro-2,4,6,8,10,12-hexaazaisowurtzitane (CL-20), a high energy-density material, under extreme conditions, revealing its atomic-level shock compression and thermal decomposition mechanisms.",
+            "simplified": "Hu et al. [262]: Reactive NEP for CL-20 (high energy-density material). Simulated shock compression and thermal decomposition at atomic level."
+          },
+          "Simulation_Metadata": {
+            "Method_Category": "MD",
+            "Software": "GPUMD",
+            "Functional_or_Potential": "Reactive NEP"
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Atomic-level shock compression and thermal decomposition mechanisms of CL-20 under extreme conditions.",
+            "simplified": "CL-20: atomic-level shock compression and thermal decomposition mechanisms."
+          }
+        }
+      }
+    },
+    {
+      "Item_ID": "Ref_TiAlNb_MC_MD_NEP",
+      "Sample_ID": "TiAlNb_MC_MD",
+      "Role": "Reference",
+      "Data_Nature": "Computed",
+      "base_material": "Metals",
+      "application": "Functional",
+      "research_paradigm": "Pure_Simulation",
+      "Patch_Tags": [],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Song et al. [65] were the first to apply NEP in conjunction with hybrid Monte Carlo and MD simulations",
+        "The Monte Carlo sampling with NEP is highly efficient",
+        "significant promise for investigating the effects of chemical order in multicomponent systems"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Other",
+          "Material_Name_Raw": "Ti-Al-Nb alloy",
+          "Note": "Referenced in Table 6: Zhao [245] (Ti-Al-Nb) and Song [24] (16 metals). Hybrid MC/MD applied to multicomponent systems."
+        },
+        "Processing": {
+          "Process_Category": "Other",
+          "Process_Text": {
+            "original": "Song et al. [65] were the first to apply NEP in conjunction with hybrid Monte Carlo and MD simulations. The Monte Carlo sampling with NEP is highly efficient, as it leverages the locality of the potential function. This approach holds significant promise for investigating the effects of chemical order in multicomponent systems.",
+            "simplified": "Song et al. [65]: First hybrid MC+MD with NEP. Efficient MC sampling via potential locality. Chemical order in multicomponent systems."
+          },
+          "Simulation_Metadata": {
+            "Method_Category": "MD",
+            "Software": "GPUMD",
+            "Functional_or_Potential": "NEP",
+            "Ensemble": "canonical MC, SGC-MC, VCSGC-MC"
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Hybrid MC/MD with NEP enables investigation of chemical order in multicomponent alloy systems.",
+            "simplified": "Hybrid MC/MD for chemical order in multicomponent alloys."
+          }
+        }
+      }
+    }
+  ]
+}

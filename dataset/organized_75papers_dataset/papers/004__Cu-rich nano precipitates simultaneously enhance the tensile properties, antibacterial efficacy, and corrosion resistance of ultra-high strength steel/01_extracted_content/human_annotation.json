@@ -1,0 +1,728 @@
+{
+  "Paper_Metadata": {
+    "Paper_Title": "Cu-rich nano precipitates simultaneously enhance the tensile properties, antibacterial efficacy, and corrosion resistance of ultra-high strength steel",
+    "DOI": "10.1016/j.actamat.2025.121026"
+  },
+  "items": [
+    {
+      "Sample_ID": "Cu-free steel, AQ",
+      "Gradient_Material": false,
+      "Gradient_Group_ID": null,
+      "Composition_Info": {
+        "Role": "Target",
+        "Alloy_Name_Raw": "Cu-free steel",
+        "Nominal_Composition": {
+          "Composition_Type": "wt%",
+          "Elements_Normalized": {
+            "Fe": 68.5,
+            "Cr": 13.0,
+            "Ni": 7.0,
+            "Co": 7.0,
+            "Mo": 3.0,
+            "Ti": 1.5
+          }
+        },
+        "Measured_Composition": {
+          "Composition_Type": "wt%",
+          "Elements_Normalized": {
+            "Cr": 12.85,
+            "Ni": 6.64,
+            "Co": 7.01,
+            "Mo": 2.92,
+            "Ti": 1.44,
+            "Fe": 69.14
+          },
+          "Measurement_Method": "chemical analysis"
+        },
+        "Note": null
+      },
+      "Process_Info": {
+        "Process_Category": "Thermomechanical treatment + Quenching",
+        "Process_Text": {
+          "original": "fabricated using vacuum induction melting and cast into ingots... homogenization at 1250°C for 20 h, followed by hot forging into square bars... solution-treated at 1050°C for 1 h, air cooled to room temperature, and then quenched in liquid nitrogen for 1 h to obtain a fully martensite microstructure. The samples were either left in the as-quenched (AQ) condition.",
+          "simplified": "Vacuum induction melted, cast, homogenized at 1250 °C for 20 h, hot forged. Solution treated at 1050 °C for 1 h, air cooled to room temperature, then quenched in liquid nitrogen for 1 h. Kept in as-quenched (AQ) condition."
+        },
+        "Equipment": "vacuum induction melting furnace",
+        "Key_Params": {
+          "Homogenization_Temperature_K": 1523.15,
+          "Homogenization_Time_h": 20.0,
+          "Solution_Temperature_K": 1323.15,
+          "Solution_Time_h": 1.0,
+          "Cooling_Medium": "air cooled followed by liquid nitrogen"
+        }
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": "fully martensite microstructure... show only the diffraction peaks corresponding to the martensitic phase, with no detectable austenite diffraction peaks.",
+          "simplified": "Fully martensitic microstructure with no detectable austenite."
+        },
+        "Main_Phase": "Martensite (BCC)",
+        "Precipitates": [],
+        "Porosity_pct": null,
+        "Relative_Density_pct": null,
+        "Grain_Size_avg_um": null,
+        "Precipitate_Size_avg_nm": null,
+        "Advanced_Quantitative_Features": {
+          "Austenite_Volume_Fraction_pct": 0.0
+        }
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Yield_Strength",
+          "Test_Condition": "Room temperature tensile test",
+          "Value_Numeric": 766.0,
+          "Value_Range": null,
+          "Value_StdDev": 17.0,
+          "Unit": "MPa",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": "2×10⁻³",
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": "Cylindrical, diameter 5 mm, gauge length 25 mm",
+          "Note": null
+        },
+        {
+          "Property_Name": "Ultimate_Tensile_Strength",
+          "Test_Condition": "Room temperature tensile test",
+          "Value_Numeric": 1034.0,
+          "Value_Range": null,
+          "Value_StdDev": 21.0,
+          "Unit": "MPa",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": "2×10⁻³",
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": "Cylindrical, diameter 5 mm, gauge length 25 mm",
+          "Note": null
+        }
+      ]
+    },
+    {
+      "Sample_ID": "Cu-containing steel, AQ",
+      "Gradient_Material": false,
+      "Gradient_Group_ID": null,
+      "Composition_Info": {
+        "Role": "Target",
+        "Alloy_Name_Raw": "Cu-containing steel",
+        "Nominal_Composition": {
+          "Composition_Type": "wt%",
+          "Elements_Normalized": {
+            "Fe": 67.5,
+            "Cr": 13.0,
+            "Ni": 7.0,
+            "Co": 7.0,
+            "Mo": 3.0,
+            "Ti": 1.5,
+            "Cu": 1.0
+          }
+        },
+        "Measured_Composition": {
+          "Composition_Type": "wt%",
+          "Elements_Normalized": {
+            "Cr": 12.71,
+            "Ni": 6.85,
+            "Co": 7.14,
+            "Mo": 2.94,
+            "Ti": 1.47,
+            "Cu": 0.97,
+            "Fe": 67.92
+          },
+          "Measurement_Method": "chemical analysis"
+        },
+        "Note": null
+      },
+      "Process_Info": {
+        "Process_Category": "Thermomechanical treatment + Quenching",
+        "Process_Text": {
+          "original": "fabricated using vacuum induction melting and cast into ingots... homogenization at 1250°C for 20 h, followed by hot forging into square bars... solution-treated at 1050°C for 1 h, air cooled to room temperature, and then quenched in liquid nitrogen for 1 h to obtain a fully martensite microstructure. The samples were either left in the as-quenched (AQ) condition.",
+          "simplified": "Vacuum induction melted, cast, homogenized at 1250 °C for 20 h, hot forged. Solution treated at 1050 °C for 1 h, air cooled to room temperature, then quenched in liquid nitrogen for 1 h. Kept in as-quenched (AQ) condition."
+        },
+        "Equipment": "vacuum induction melting furnace",
+        "Key_Params": {
+          "Homogenization_Temperature_K": 1523.15,
+          "Homogenization_Time_h": 20.0,
+          "Solution_Temperature_K": 1323.15,
+          "Solution_Time_h": 1.0,
+          "Cooling_Medium": "air cooled followed by liquid nitrogen"
+        }
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": "fully martensite microstructure... show only the diffraction peaks corresponding to the martensitic phase, with no detectable austenite diffraction peaks.",
+          "simplified": "Fully martensitic microstructure with no detectable austenite."
+        },
+        "Main_Phase": "Martensite (BCC)",
+        "Precipitates": [],
+        "Porosity_pct": null,
+        "Relative_Density_pct": null,
+        "Grain_Size_avg_um": null,
+        "Precipitate_Size_avg_nm": null,
+        "Advanced_Quantitative_Features": {
+          "Austenite_Volume_Fraction_pct": 0.0
+        }
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Yield_Strength",
+          "Test_Condition": "Room temperature tensile test",
+          "Value_Numeric": 716.0,
+          "Value_Range": null,
+          "Value_StdDev": 20.0,
+          "Unit": "MPa",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": "2×10⁻³",
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": "Cylindrical, diameter 5 mm, gauge length 25 mm",
+          "Note": null
+        },
+        {
+          "Property_Name": "Ultimate_Tensile_Strength",
+          "Test_Condition": "Room temperature tensile test",
+          "Value_Numeric": 991.0,
+          "Value_Range": null,
+          "Value_StdDev": 16.0,
+          "Unit": "MPa",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": "2×10⁻³",
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": "Cylindrical, diameter 5 mm, gauge length 25 mm",
+          "Note": null
+        },
+        {
+          "Property_Name": "Corrosion_Current_Density",
+          "Test_Condition": "14 days immersion in SRB-inoculated solution",
+          "Value_Numeric": 0.0000068,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "A/cm²",
+          "Test_Temperature_K": 303.15,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": "Measured as 6.8×10⁻⁶ A/cm²"
+        }
+      ]
+    },
+    {
+      "Sample_ID": "Cu-free steel, aged",
+      "Gradient_Material": false,
+      "Gradient_Group_ID": null,
+      "Composition_Info": {
+        "Role": "Target",
+        "Alloy_Name_Raw": "Cu-free steel",
+        "Nominal_Composition": {
+          "Composition_Type": "wt%",
+          "Elements_Normalized": {
+            "Fe": 68.5,
+            "Cr": 13.0,
+            "Ni": 7.0,
+            "Co": 7.0,
+            "Mo": 3.0,
+            "Ti": 1.5
+          }
+        },
+        "Measured_Composition": {
+          "Composition_Type": "wt%",
+          "Elements_Normalized": {
+            "Cr": 12.85,
+            "Ni": 6.64,
+            "Co": 7.01,
+            "Mo": 2.92,
+            "Ti": 1.44,
+            "Fe": 69.14
+          },
+          "Measurement_Method": "chemical analysis"
+        },
+        "Note": null
+      },
+      "Process_Info": {
+        "Process_Category": "Thermomechanical treatment + Quenching + Aging",
+        "Process_Text": {
+          "original": "fabricated using vacuum induction melting and cast into ingots... homogenization at 1250°C for 20 h, followed by hot forging into square bars... solution-treated at 1050°C for 1 h, air cooled to room temperature, and then quenched in liquid nitrogen for 1 h to obtain a fully martensite microstructure. The samples were... aged at 480°C for 16 h.",
+          "simplified": "Vacuum induction melted, cast, homogenized at 1250 °C for 20 h, hot forged. Solution treated at 1050 °C for 1 h, air cooled, quenched in liquid nitrogen for 1 h. Aged at 480 °C for 16 h."
+        },
+        "Equipment": "vacuum induction melting furnace",
+        "Key_Params": {
+          "Homogenization_Temperature_K": 1523.15,
+          "Homogenization_Time_h": 20.0,
+          "Solution_Temperature_K": 1323.15,
+          "Solution_Time_h": 1.0,
+          "Cooling_Medium": "air cooled followed by liquid nitrogen",
+          "Aging_Temperature_K": 753.15,
+          "Aging_Time_h": 16.0
+        }
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": "exhibit a tempered martensite microstructure with a comparable average grain size of around 60 μm... small amounts of austenite phase... distributed randomly along the martensite laths. The volume fractions of austenite are measured to be 8.3±0.8%... high densities of nanoscale spindle precipitates were observed... STEM-EDS maps reveal the co-segregation of Ni and Ti, indicating the formation of (Ni, Ti)-rich precipitates... D024-ordered structure, characteristic of the Ni3Ti-type η phase... number density of Ni3Ti precipitates in the Cu-free steel is 2.5×10^23 m^-3, with an average radius of 3.1 nm and a volume fraction of 3.1%.",
+          "simplified": "Tempered martensite matrix (grain size ~60 μm) with 8.3% reverted austenite. High density (2.5×10^23 m^-3) of nanoscale Ni3Ti (η phase) precipitates with 3.1 nm radius and 3.1% volume fraction."
+        },
+        "Main_Phase": "Tempered Martensite",
+        "Precipitates": [
+          {
+            "Phase_Type": "Ni3Ti",
+            "Volume_Fraction_pct": 3.1
+          }
+        ],
+        "Porosity_pct": null,
+        "Relative_Density_pct": null,
+        "Grain_Size_avg_um": 60.0,
+        "Precipitate_Size_avg_nm": 6.2,
+        "Advanced_Quantitative_Features": {
+          "Austenite_Volume_Fraction_pct": 8.3,
+          "Ni3Ti_Number_Density_m3": 2.5e+23,
+          "Ni3Ti_Size_avg_radius_nm": 3.1
+        }
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Yield_Strength",
+          "Test_Condition": "Room temperature tensile test",
+          "Value_Numeric": 1764.0,
+          "Value_Range": null,
+          "Value_StdDev": 23.0,
+          "Unit": "MPa",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": "2×10⁻³",
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": "Cylindrical, diameter 5 mm, gauge length 25 mm",
+          "Note": null
+        },
+        {
+          "Property_Name": "Ultimate_Tensile_Strength",
+          "Test_Condition": "Room temperature tensile test",
+          "Value_Numeric": 1802.0,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "MPa",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": "2×10⁻³",
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": "Cylindrical, diameter 5 mm, gauge length 25 mm",
+          "Note": null
+        },
+        {
+          "Property_Name": "Elongation_Uniform",
+          "Test_Condition": "Room temperature tensile test",
+          "Value_Numeric": 5.0,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "%",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": "2×10⁻³",
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": "Cylindrical, diameter 5 mm, gauge length 25 mm",
+          "Note": null
+        },
+        {
+          "Property_Name": "Weight_Loss_Rate",
+          "Test_Condition": "14 days of corrosion in SRB-inoculated culture medium",
+          "Value_Numeric": 0.733,
+          "Value_Range": null,
+          "Value_StdDev": 0.053,
+          "Unit": "mg/cm²",
+          "Test_Temperature_K": 303.15,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": null
+        },
+        {
+          "Property_Name": "Corrosion_Potential",
+          "Test_Condition": "14 days immersion in SRB-inoculated solution (CPP test)",
+          "Value_Numeric": -0.66,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "V vs. SCE",
+          "Test_Temperature_K": 303.15,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": null
+        },
+        {
+          "Property_Name": "Corrosion_Current_Density",
+          "Test_Condition": "14 days immersion in SRB-inoculated solution (CPP test)",
+          "Value_Numeric": 0.00000076,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "A/cm²",
+          "Test_Temperature_K": 303.15,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": "Measured as 7.6×10⁻⁷ A/cm²"
+        },
+        {
+          "Property_Name": "Pitting_Potential",
+          "Test_Condition": "14 days immersion in SRB-inoculated solution (CPP test)",
+          "Value_Numeric": 0.1,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "V vs. SCE",
+          "Test_Temperature_K": 303.15,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": null
+        },
+        {
+          "Property_Name": "Repassivation_Potential",
+          "Test_Condition": "14 days immersion in SRB-inoculated solution (CPP test)",
+          "Value_Numeric": -0.38,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "V vs. SCE",
+          "Test_Temperature_K": 303.15,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": null
+        },
+        {
+          "Property_Name": "Maximum_Pit_Depth",
+          "Test_Condition": "14 days in SRB-inoculated solution",
+          "Value_Numeric": 5.3,
+          "Value_Range": null,
+          "Value_StdDev": 0.8,
+          "Unit": "μm",
+          "Test_Temperature_K": 303.15,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": null
+        },
+        {
+          "Property_Name": "Average_Pit_Depth",
+          "Test_Condition": "14 days in SRB-inoculated solution, calculated from 10 largest pits",
+          "Value_Numeric": 4.44,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "μm",
+          "Test_Temperature_K": 303.15,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": null
+        }
+      ]
+    },
+    {
+      "Sample_ID": "Cu-containing steel, aged",
+      "Gradient_Material": false,
+      "Gradient_Group_ID": null,
+      "Composition_Info": {
+        "Role": "Target",
+        "Alloy_Name_Raw": "Cu-containing steel",
+        "Nominal_Composition": {
+          "Composition_Type": "wt%",
+          "Elements_Normalized": {
+            "Fe": 67.5,
+            "Cr": 13.0,
+            "Ni": 7.0,
+            "Co": 7.0,
+            "Mo": 3.0,
+            "Ti": 1.5,
+            "Cu": 1.0
+          }
+        },
+        "Measured_Composition": {
+          "Composition_Type": "wt%",
+          "Elements_Normalized": {
+            "Cr": 12.71,
+            "Ni": 6.85,
+            "Co": 7.14,
+            "Mo": 2.94,
+            "Ti": 1.47,
+            "Cu": 0.97,
+            "Fe": 67.92
+          },
+          "Measurement_Method": "chemical analysis"
+        },
+        "Note": null
+      },
+      "Process_Info": {
+        "Process_Category": "Thermomechanical treatment + Quenching + Aging",
+        "Process_Text": {
+          "original": "fabricated using vacuum induction melting and cast into ingots... homogenization at 1250°C for 20 h, followed by hot forging into square bars... solution-treated at 1050°C for 1 h, air cooled to room temperature, and then quenched in liquid nitrogen for 1 h to obtain a fully martensite microstructure. The samples were... aged at 480°C for 16 h.",
+          "simplified": "Vacuum induction melted, cast, homogenized at 1250 °C for 20 h, hot forged. Solution treated at 1050 °C for 1 h, air cooled, quenched in liquid nitrogen for 1 h. Aged at 480 °C for 16 h."
+        },
+        "Equipment": "vacuum induction melting furnace",
+        "Key_Params": {
+          "Homogenization_Temperature_K": 1523.15,
+          "Homogenization_Time_h": 20.0,
+          "Solution_Temperature_K": 1323.15,
+          "Solution_Time_h": 1.0,
+          "Cooling_Medium": "air cooled followed by liquid nitrogen",
+          "Aging_Temperature_K": 753.15,
+          "Aging_Time_h": 16.0
+        }
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": "exhibit a tempered martensite microstructure with a comparable average grain size of around 60 μm... small amounts of austenite phase... distributed randomly along the martensite laths. The volume fractions of austenite are measured to be 12.5±1.3%... high densities of nanoscale spindle precipitates were observed... exhibits not only the co-segregation of Ni and Ti but also the clustering of Cu, indicating that the following two distinct types of precipitates are formed in it: (Ni,Ti)-rich and Cu-rich precipitates... exhibits a significantly higher number density of Ni3Ti precipitates (9.8×10^23 m^-3)... average radius of the Ni3Ti precipitates in the Cu-containing steel is found to be 2.1 nm and their volume fraction increases to 3.8%... high number density of the Cu-rich precipitates... is 5.1×10^23 m^-3 with an average radius of 2.4 nm and a volume fraction of 3.0%.",
+          "simplified": "Tempered martensite matrix (grain size ~60 μm) with 12.5% reverted austenite. Contains co-precipitated Ni3Ti (density 9.8×10^23 m^-3, 2.1 nm radius, 3.8% vol) and Cu-rich precipitates (density 5.1×10^23 m^-3, 2.4 nm radius, 3.0% vol)."
+        },
+        "Main_Phase": "Tempered Martensite",
+        "Precipitates": [
+          {
+            "Phase_Type": "Ni3Ti",
+            "Volume_Fraction_pct": 3.8
+          },
+          {
+            "Phase_Type": "Cu-rich",
+            "Volume_Fraction_pct": 3.0
+          }
+        ],
+        "Porosity_pct": null,
+        "Relative_Density_pct": null,
+        "Grain_Size_avg_um": 60.0,
+        "Precipitate_Size_avg_nm": null,
+        "Advanced_Quantitative_Features": {
+          "Austenite_Volume_Fraction_pct": 12.5,
+          "Ni3Ti_Number_Density_m3": 9.8e+23,
+          "Ni3Ti_Size_avg_radius_nm": 2.1,
+          "Cu_rich_Number_Density_m3": 5.1e+23,
+          "Cu_rich_Size_avg_radius_nm": 2.4
+        }
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Yield_Strength",
+          "Test_Condition": "Room temperature tensile test",
+          "Value_Numeric": 1778.0,
+          "Value_Range": null,
+          "Value_StdDev": 16.0,
+          "Unit": "MPa",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": "2×10⁻³",
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": "Cylindrical, diameter 5 mm, gauge length 25 mm",
+          "Note": null
+        },
+        {
+          "Property_Name": "Ultimate_Tensile_Strength",
+          "Test_Condition": "Room temperature tensile test",
+          "Value_Numeric": 1843.0,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "MPa",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": "2×10⁻³",
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": "Cylindrical, diameter 5 mm, gauge length 25 mm",
+          "Note": null
+        },
+        {
+          "Property_Name": "Elongation_Uniform",
+          "Test_Condition": "Room temperature tensile test",
+          "Value_Numeric": 8.0,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "%",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": "2×10⁻³",
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": "Cylindrical, diameter 5 mm, gauge length 25 mm",
+          "Note": null
+        },
+        {
+          "Property_Name": "Elongation_Total",
+          "Test_Condition": "Room temperature tensile test",
+          "Value_Numeric": 12.0,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "%",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": "2×10⁻³",
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": "Cylindrical, diameter 5 mm, gauge length 25 mm",
+          "Note": "Original provides total elongation ~12% in discussion section (Section 4.1)"
+        },
+        {
+          "Property_Name": "Weight_Loss_Rate",
+          "Test_Condition": "14 days of corrosion in SRB-inoculated culture medium",
+          "Value_Numeric": 0.05,
+          "Value_Range": null,
+          "Value_StdDev": 0.01,
+          "Unit": "mg/cm²",
+          "Test_Temperature_K": 303.15,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": null
+        },
+        {
+          "Property_Name": "Corrosion_Potential",
+          "Test_Condition": "14 days immersion in SRB-inoculated solution (CPP test)",
+          "Value_Numeric": -0.64,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "V vs. SCE",
+          "Test_Temperature_K": 303.15,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": null
+        },
+        {
+          "Property_Name": "Corrosion_Current_Density",
+          "Test_Condition": "14 days immersion in SRB-inoculated solution (CPP test)",
+          "Value_Numeric": 0.00000038,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "A/cm²",
+          "Test_Temperature_K": 303.15,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": "Measured as 3.8×10⁻⁷ A/cm²"
+        },
+        {
+          "Property_Name": "Pitting_Potential",
+          "Test_Condition": "14 days immersion in SRB-inoculated solution (CPP test)",
+          "Value_Numeric": 0.2,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "V vs. SCE",
+          "Test_Temperature_K": 303.15,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": null
+        },
+        {
+          "Property_Name": "Repassivation_Potential",
+          "Test_Condition": "14 days immersion in SRB-inoculated solution (CPP test)",
+          "Value_Numeric": -0.41,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "V vs. SCE",
+          "Test_Temperature_K": 303.15,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": null
+        },
+        {
+          "Property_Name": "Maximum_Pit_Depth",
+          "Test_Condition": "14 days in SRB-inoculated solution",
+          "Value_Numeric": 0.95,
+          "Value_Range": null,
+          "Value_StdDev": 0.3,
+          "Unit": "μm",
+          "Test_Temperature_K": 303.15,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": null
+        },
+        {
+          "Property_Name": "Average_Pit_Depth",
+          "Test_Condition": "14 days in SRB-inoculated solution, calculated from 10 largest pits",
+          "Value_Numeric": 0.68,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "μm",
+          "Test_Temperature_K": 303.15,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": null
+        },
+        {
+          "Property_Name": "Cu_Ion_Release_Concentration",
+          "Test_Condition": "24 hours immersion in SRB-inoculated solution",
+          "Value_Numeric": 3.0,
+          "Value_Range": null,
+          "Value_StdDev": 0.8,
+          "Unit": "μg/L",
+          "Test_Temperature_K": 303.15,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": "Measured by ICP-MS"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,636 @@
+{
+  "Paper_Metadata": {
+    "Paper_Title": "Combining gradient structure and TRIP effect to produce austenite stainless steel with high strength and ductility",
+    "DOI": null
+  },
+  "Paper_Routing": {
+    "base_material": "Metals",
+    "application": "Structural",
+    "research_paradigm": "Experimental",
+    "Supplements_Loaded": [
+      "directions/base/Metals.txt",
+      "directions/application/Structural.txt",
+      "directions/paradigm/Experimental.txt"
+    ],
+    "Patch_Tags": [
+      "Gradient",
+      "SPD",
+      "TRIP_or_Deformation_Transformation"
+    ],
+    "Needs_Mixed_Routing_Check": false,
+    "Mixed_Signals": []
+  },
+  "items": [
+    {
+      "Item_ID": "CG_annealed_304ss",
+      "Sample_ID": "CG_annealed",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "TRIP_or_Deformation_Transformation"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "as-annealed AISI 304ss disks were used",
+        "CG: coarse grain"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Stainless_Steel",
+          "Material_Name_Raw": "AISI 304 stainless steel (304ss)",
+          "Nominal_Composition": {
+            "Composition_Type": "wt%",
+            "Composition_Source_Type": "nominal_inferred",
+            "Elements": {
+              "Fe": "Balance",
+              "C": 0.04,
+              "Si": 0.49,
+              "Mn": 1.65,
+              "Ni": 7.8,
+              "Cr": 16.8,
+              "Mo": 0.37
+            },
+            "Note": "All values in mass%, from Experimental section"
+          },
+          "Note": "As-annealed AISI 304ss, disk diameter 100 mm, thickness 0.5/1/2 mm"
+        },
+        "Processing": {
+          "Process_Category": "Other",
+          "Process_Text": {
+            "original": "As-annealed AISI 304ss disks were used, with a diameter of 100 mm and thickness of 0.5, 1 and 2 mm, respectively.",
+            "simplified": "Annealed 304ss disks, 100 mm diameter, 0.5/1/2 mm thickness"
+          },
+          "Note": "No SMAT processing applied to CG samples"
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Equi-axial grains of austenite with an average grain size of 25 μm in the central CG layer. α'-martensite with a volume fraction of ~6% in original austenite of CG samples.",
+            "simplified": "Equiaxed austenite grains, avg 25 μm; ~6% α'-martensite present"
+          },
+          "Main_Phase": "FCC",
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "α'-martensite",
+              "Volume_Fraction_pct": 6.0,
+              "Note": "~6% in original as-annealed CG sample, estimated from EBSD"
+            }
+          ],
+          "Grain_Size": {
+            "Grain_Size_avg_um": 25,
+            "Grain_Size_Type": "undefined",
+            "Grain_Structure": "equiaxed",
+            "Note": "Average grain size of 25 μm from EBSD observation"
+          },
+          "Advanced_Quantitative_Features": {
+            "Initial_Alpha_Prime_Martensite_Fraction_pct": 6.0
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Yield_Strength",
+            "Value": null,
+            "Unit": "MPa",
+            "Data_Source": "image",
+            "Note": "Read from Fig. 1(a) engineering stress-strain curve, approximate value not extractable from text"
+          },
+          {
+            "Property_Name": "Elongation_Total",
+            "Value": null,
+            "Unit": "%",
+            "Data_Source": "unknown",
+            "Note": "Reported ~30% uniform elongation in text referencing earlier report [49,50]"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "GS5_1mm_SMAT5min",
+      "Sample_ID": "GS5_1mm",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Gradient",
+        "SPD",
+        "TRIP_or_Deformation_Transformation"
+      ],
+      "Gradient_Material": true,
+      "Gradient_Group_ID": "GS5",
+      "Raw_Evidence_Span": [
+        "GS₅¹ sample (1-mm thick, SMAT 5 min)",
+        "the processing by SMAT for 15 min",
+        "GS₅¹ sample"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Stainless_Steel",
+          "Material_Name_Raw": "AISI 304 stainless steel (304ss)",
+          "Nominal_Composition": {
+            "Composition_Type": "wt%",
+            "Composition_Source_Type": "nominal_inferred",
+            "Elements": {
+              "Fe": "Balance",
+              "C": 0.04,
+              "Si": 0.49,
+              "Mn": 1.65,
+              "Ni": 7.8,
+              "Cr": 16.8,
+              "Mo": 0.37
+            },
+            "Note": "Same as-annealed 304ss composition"
+          }
+        },
+        "Processing": {
+          "Process_Category": "SPD",
+          "Process_Text": {
+            "original": "Surface mechanical attrition treatment (SMAT) technique was used to produce the gradient structured 304ss specimens. Spherical steel shots of 3-mm in diameter were accelerated to high speeds using high-power ultra-sound to impact on the sample disk. The SMAT processing time was the same for both sides of each disk, which was 1–15 min. Frequency 20 kHz.",
+            "simplified": "SMAT: steel shots 3 mm dia, 20 kHz ultrasonic, both sides 5 min, 1 mm thick disk"
+          },
+          "Equipment": [
+            {
+              "Instrument_Name": "SMAT",
+              "Note": "Surface mechanical attrition treatment, steel shots 3 mm diameter, 20 kHz frequency"
+            },
+            {
+              "Instrument_Name": "Tensile Testing Machine",
+              "Manufacturer": "MTS",
+              "Model": "Landmark"
+            },
+            {
+              "Instrument_Name": "TEM",
+              "Manufacturer": "JEOL",
+              "Model": "JEM 2010",
+              "Note": "Operating voltage 200 kV"
+            },
+            {
+              "Instrument_Name": "SEM",
+              "Manufacturer": "Cambridge",
+              "Model": "S-360",
+              "Note": "配备 EBSD: Oxford Instruments Aztec 2.0 (Channel 5 Software)"
+            },
+            {
+              "Instrument_Name": "XRD",
+              "Manufacturer": "Philips",
+              "Model": "Xpert",
+              "Note": "Cu Kα radiation"
+            },
+            {
+              "Instrument_Name": "Electro-polishing System",
+              "Manufacturer": "Struers",
+              "Model": "LectroPol-5"
+            }
+          ],
+          "Key_Params": {
+            "SMAT_Shot_Diameter_mm": 3,
+            "SMAT_Frequency_kHz": 20,
+            "SMAT_Duration_min": 5,
+            "Sample_Thickness_mm": 1,
+            "Sample_Diameter_mm": 100
+          },
+          "Original_Values": {
+            "SMAT_Shot_Diameter": "3 mm",
+            "SMAT_Frequency": "20 kHz",
+            "SMAT_Duration": "5 min"
+          },
+          "Note": "SMAT applied to both sides, gradient layer ~250 μm deep on each side"
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Gradient structured 304ss with central CG core layer sandwiched between two grain-size gradient layers. Gradient layer composed of submicron-sized parallelepiped austenite domains separated by intersecting ε-martensite plates, with increasing domain size along depth. Gradient layer depth ~250 μm on both sides. Domain side lengths decrease approaching treated surface.",
+            "simplified": "Gradient structure: CG core + 2 gradient layers (~250 μm each). Gradient layers: submicron parallelepiped austenite domains separated by ε-martensite plates. Domain size increases with depth."
+          },
+          "Main_Phase": "FCC",
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "ε-martensite",
+              "Distribution": "Band-like plates separating austenite domains in gradient layer",
+              "Note": "Formed by planar slip of partial dislocations during SMAT"
+            },
+            {
+              "Phase_Name": "α'-martensite",
+              "Distribution": "At intersections of ε-martensite plates (granular) and inside ε-martensite plates (plate-shaped) in gradient layer",
+              "Note": "Higher initial content near surface from SMAT processing"
+            }
+          ],
+          "Grain_Size": {
+            "Grain_Size_avg_um": 25,
+            "Grain_Size_Type": "undefined",
+            "Grain_Structure": "equiaxed",
+            "Note": "Central CG core: 25 μm avg grain size. Gradient layer: submicron-sized domains decreasing toward surface."
+          },
+          "Advanced_Quantitative_Features": {
+            "Gradient_Layer_Depth_um": 250,
+            "Surface_Hv_GPa": 3.5,
+            "CG_Core_Hv_GPa": 2.0
+          },
+          "Texture_or_Orientation": "Deformation twins in (111̄)γ and (11̄1)γ planes; ε-martensite bands along {111}γ orientations"
+        },
+        "Properties": [
+          {
+            "Property_Name": "Yield_Strength",
+            "Value": null,
+            "Unit": "MPa",
+            "Data_Source": "image",
+            "Test_Temperature_K": 298.15,
+            "Test_Temperature_Original": "room temperature",
+            "Loading_Mode": "Tension",
+            "Strain_Rate_s1": 0.0005,
+            "Note": "Value from Fig. 1(a), not explicitly stated in text for GS₅¹"
+          },
+          {
+            "Property_Name": "Ultimate_Tensile_Strength",
+            "Value": null,
+            "Unit": "MPa",
+            "Data_Source": "image",
+            "Test_Temperature_K": 298.15,
+            "Test_Temperature_Original": "room temperature",
+            "Loading_Mode": "Tension",
+            "Strain_Rate_s1": 0.0005
+          },
+          {
+            "Property_Name": "Elongation_Total",
+            "Value": null,
+            "Unit": "%",
+            "Data_Source": "unknown",
+            "Note": "Uniform elongation value not explicitly stated for GS₅¹"
+          },
+          {
+            "Property_Name": "Microhardness",
+            "Value": 3500,
+            "Unit": "MPa",
+            "Data_Source": "text",
+            "Test_Temperature_K": 298.15,
+            "Original_Values": "3.5 GPa",
+            "Hardness_Load": "25 gf",
+            "Note": "Hv near treated surface = 3.5 GPa (text: 'The Hv value near the treated surface is 3.5 GPa')"
+          },
+          {
+            "Property_Name": "Microhardness",
+            "Value": 2000,
+            "Unit": "MPa",
+            "Data_Source": "text",
+            "Test_Temperature_K": 298.15,
+            "Original_Values": "2 GPa",
+            "Hardness_Load": "25 gf",
+            "Note": "Hv in central CG core = 2 GPa (text: 'much larger than 2 GPa in the central CG core')"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "GS15_1mm_SMAT15min",
+      "Sample_ID": "GS15_1mm",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Gradient",
+        "SPD",
+        "TRIP_or_Deformation_Transformation"
+      ],
+      "Gradient_Material": true,
+      "Gradient_Group_ID": "GS15_1mm",
+      "Raw_Evidence_Span": [
+        "GS₁₅¹, increased σ₀.₂ by 132% while εᵤ dropped by only 30%"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Stainless_Steel",
+          "Material_Name_Raw": "AISI 304ss",
+          "Nominal_Composition": {
+            "Composition_Type": "wt%",
+            "Composition_Source_Type": "nominal_inferred",
+            "Elements": {
+              "Fe": "Balance",
+              "C": 0.04,
+              "Si": 0.49,
+              "Mn": 1.65,
+              "Ni": 7.8,
+              "Cr": 16.8,
+              "Mo": 0.37
+            }
+          }
+        },
+        "Processing": {
+          "Process_Category": "SPD",
+          "Process_Text": {
+            "original": "SMAT processing for 15 min on both sides of 1-mm thick disk. Spherical steel shots of 3-mm in diameter, 20 kHz frequency.",
+            "simplified": "SMAT 15 min both sides, 1 mm thick, steel shots 3 mm, 20 kHz"
+          },
+          "Equipment": [
+            {
+              "Instrument_Name": "SMAT",
+              "Note": "Steel shots 3 mm, 20 kHz"
+            }
+          ],
+          "Key_Params": {
+            "SMAT_Shot_Diameter_mm": 3,
+            "SMAT_Frequency_kHz": 20,
+            "SMAT_Duration_min": 15,
+            "Sample_Thickness_mm": 1
+          },
+          "Original_Values": {
+            "SMAT_Duration": "15 min"
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Gradient structured sample with SMAT 15 min processing on 1-mm thick disk. Same gradient structure as GS₅¹ but with deeper gradient layers or higher surface hardness.",
+            "simplified": "Gradient structure, SMAT 15 min, 1 mm thick"
+          },
+          "Main_Phase": "FCC"
+        },
+        "Properties": [
+          {
+            "Property_Name": "Yield_Strength",
+            "Value": null,
+            "Unit": "MPa",
+            "Data_Source": "image",
+            "Note": "σ₀.₂ increased by 132% compared to CG (text stated). If CG YS ~350 MPa, then GS₁₅¹ YS ~812 MPa. However exact CG YS not stated, using proportional increase from Fig. 1(a)."
+          },
+          {
+            "Property_Name": "Elongation_Uniform",
+            "Value": null,
+            "Unit": "%",
+            "Data_Source": "image",
+            "Note": "εᵤ dropped by only 30% compared to CG (text). If CG εᵤ ~60%, then GS₁₅¹ εᵤ ~42%. Exact values from Fig. 1(a)."
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "GS15_2mm_SMAT15min",
+      "Sample_ID": "GS15_2mm",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Gradient",
+        "SPD",
+        "TRIP_or_Deformation_Transformation"
+      ],
+      "Gradient_Material": true,
+      "Gradient_Group_ID": "GS15_2mm",
+      "Raw_Evidence_Span": [
+        "GS₁₅² sample (2-mm thick)",
+        "both its σ₀.₂ and εᵤ increased over those of the CG sample"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Stainless_Steel",
+          "Material_Name_Raw": "AISI 304ss",
+          "Nominal_Composition": {
+            "Composition_Type": "wt%",
+            "Composition_Source_Type": "nominal_inferred",
+            "Elements": {
+              "Fe": "Balance",
+              "C": 0.04,
+              "Si": 0.49,
+              "Mn": 1.65,
+              "Ni": 7.8,
+              "Cr": 16.8,
+              "Mo": 0.37
+            }
+          }
+        },
+        "Processing": {
+          "Process_Category": "SPD",
+          "Process_Text": {
+            "original": "SMAT 15 min on both sides of 2-mm thick disk.",
+            "simplified": "SMAT 15 min both sides, 2 mm thick"
+          },
+          "Key_Params": {
+            "SMAT_Duration_min": 15,
+            "Sample_Thickness_mm": 2
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Gradient structured 2-mm thick sample, twice as thick as GS₁₅¹.",
+            "simplified": "Gradient structure, SMAT 15 min, 2 mm thick"
+          },
+          "Main_Phase": "FCC"
+        },
+        "Properties": [
+          {
+            "Property_Name": "Yield_Strength",
+            "Value": null,
+            "Unit": "MPa",
+            "Data_Source": "image",
+            "Note": "Both YS and uniform elongation increased over CG (text). Exact values from Fig. 1(a)."
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "GL5_0.04_freestanding",
+      "Sample_ID": "GL5_0.04",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Gradient",
+        "SPD",
+        "TRIP_or_Deformation_Transformation"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "GI₅⁰.⁰⁴ film",
+        "the flow stress reached as high as 2 GPa"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Stainless_Steel",
+          "Material_Name_Raw": "AISI 304ss",
+          "Nominal_Composition": {
+            "Composition_Type": "wt%",
+            "Composition_Source_Type": "nominal_inferred",
+            "Elements": {
+              "Fe": "Balance",
+              "C": 0.04,
+              "Si": 0.49,
+              "Mn": 1.65,
+              "Ni": 7.8,
+              "Cr": 16.8,
+              "Mo": 0.37
+            }
+          }
+        },
+        "Processing": {
+          "Process_Category": "SPD",
+          "Process_Text": {
+            "original": "Free-standing gradient layer film of 40 μm thickness from GS₅ sample, prepared by polishing away one side.",
+            "simplified": "Free-standing GL film, 40 μm thick, from GS₅"
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Free-standing gradient layer film, heavily deformed microstructure from SMAT.",
+            "simplified": "GL film, 40 μm thick, heavily deformed"
+          },
+          "Main_Phase": "FCC",
+          "Advanced_Quantitative_Features": {
+            "Final_Alpha_Prime_Martensite_Fraction_pct": 97,
+            "Note": "Vα' close to 97% by end of uniform elongation in GL₅⁰.⁰⁴ film"
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Yield_Strength",
+            "Value": null,
+            "Unit": "MPa",
+            "Data_Source": "image",
+            "Test_Temperature_K": 298.15,
+            "Loading_Mode": "Tension",
+            "Strain_Rate_s1": 0.0005,
+            "Note": "GL₅⁰.⁰⁴ (40 μm) YS not explicitly stated in text; 1700 MPa refers to GL₅⁰.⁰² (20 μm). Typical two-stage flow behavior observed."
+          },
+          {
+            "Property_Name": "Ultimate_Tensile_Strength",
+            "Value": 2000,
+            "Unit": "MPa",
+            "Data_Source": "text",
+            "Test_Temperature_K": 298.15,
+            "Loading_Mode": "Tension",
+            "Strain_Rate_s1": 0.0005,
+            "Note": "Text: 'The flow stress reached as high as 2 GPa in GI₅⁰.⁰⁴'"
+          },
+          {
+            "Property_Name": "Elongation_Uniform",
+            "Value": null,
+            "Unit": "%",
+            "Data_Source": "text",
+            "Note": "Text: 'with uniform elongation even above 20%' for 40 and 70 μm GL films"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "GL5_0.02_freestanding",
+      "Sample_ID": "GL5_0.02",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Gradient",
+        "SPD",
+        "TRIP_or_Deformation_Transformation"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "The top layer of 20 μm thick, i.e. GL₅⁰.⁰² film, has σ₀.₂ as high as 1700 MPa"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Stainless_Steel",
+          "Material_Name_Raw": "AISI 304ss",
+          "Nominal_Composition": {
+            "Composition_Type": "wt%",
+            "Composition_Source_Type": "nominal_inferred",
+            "Elements": {
+              "Fe": "Balance",
+              "C": 0.04,
+              "Si": 0.49,
+              "Mn": 1.65,
+              "Ni": 7.8,
+              "Cr": 16.8,
+              "Mo": 0.37
+            }
+          }
+        },
+        "Processing": {
+          "Process_Category": "SPD",
+          "Process_Text": {
+            "original": "Free-standing gradient layer film of 20 μm thickness from GS₅.",
+            "simplified": "Free-standing GL film, 20 μm thick, from GS₅"
+          }
+        },
+        "Structure": {
+          "Main_Phase": "FCC"
+        },
+        "Properties": [
+          {
+            "Property_Name": "Yield_Strength",
+            "Value": 1700,
+            "Unit": "MPa",
+            "Data_Source": "text",
+            "Test_Temperature_K": 298.15,
+            "Loading_Mode": "Tension",
+            "Strain_Rate_s1": 0.0005,
+            "Note": "Text: 'GL₅⁰.⁰² film, has σ₀.₂ as high as 1700 MPa but necking occurred soon after yielding'"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "GL5_0.07_freestanding",
+      "Sample_ID": "GL5_0.07",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Gradient",
+        "SPD",
+        "TRIP_or_Deformation_Transformation"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "GI₅⁰.⁰⁷ films",
+        "Hv rises instantly even at true strain of 0.1"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Stainless_Steel",
+          "Material_Name_Raw": "AISI 304ss",
+          "Nominal_Composition": {
+            "Composition_Type": "wt%",
+            "Composition_Source_Type": "nominal_inferred",
+            "Elements": {
+              "Fe": "Balance",
+              "C": 0.04,
+              "Si": 0.49,
+              "Mn": 1.65,
+              "Ni": 7.8,
+              "Cr": 16.8,
+              "Mo": 0.37
+            }
+          }
+        },
+        "Processing": {
+          "Process_Category": "SPD",
+          "Process_Text": {
+            "original": "Free-standing gradient layer film of 70 μm thickness from GS₅.",
+            "simplified": "Free-standing GL film, 70 μm thick, from GS₅"
+          }
+        },
+        "Structure": {
+          "Main_Phase": "FCC"
+        },
+        "Properties": [
+          {
+            "Property_Name": "Elongation_Uniform",
+            "Value": null,
+            "Unit": "%",
+            "Data_Source": "text",
+            "Note": "Text: 'uniform elongation even above 20%' for 40 and 70 μm GL films"
+          }
+        ]
+      }
+    }
+  ]
+}

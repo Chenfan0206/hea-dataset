@@ -1,0 +1,108 @@
+{
+  "Paper_Metadata": {
+    "Paper_Title": "Temperature stress dependence of stress rupture behavior and deformation microstructure of an advanced superalloy for additive manufacturing",
+    "DOI": "10.1016/j.jmst.2024.03.072"
+  },
+  "items": [
+    {
+      "Sample_ID": "ZGH451-DED-AsBuilt",
+      "Gradient_Material": false,
+      "Gradient_Group_ID": null,
+      "Composition_Info": {
+        "Role": "Target",
+        "Alloy_Name_Raw": "ZGH451",
+        "Nominal_Composition": {
+          "Composition_Type": "wt%",
+          "Elements_Normalized": null
+        },
+        "Measured_Composition": {
+          "Composition_Type": "wt%",
+          "Elements_Normalized": {
+            "Ni": 60.84,
+            "Co": null,
+            "Cr": null,
+            "W": null,
+            "Mo": null,
+            "Al": 4.30,
+            "Ti": 1.22,
+            "Ta": 5.60,
+            "C": 0.01,
+            "B": 0.03,
+          },
+          "Measurement_Method": "ICP-OES, ICP-combustion, Spark OES"
+        },
+        "Note": "Composition calculated from Table 1. 'Other' includes balance Ni and unspecified elements to sum to 100%."
+      },
+      "Process_Info": {
+        "Process_Category": "DED Additive Manufacturing",
+        "Process_Text": {
+          "original": "The spherical ZGH451 superalloy powder was prepared by argon gas atomization... A CO₂ laser deposition machine assembled by the Institute of Metal Research, Chinese Academy of Sciences was used for printing. The machine has a coaxial powder delivery system with argon protection and a pulsed laser of about 2.0mm beam diameter... The optimal process parameters determined in this work are laser power 1800 W, powder feeding rate 10.5 g/ min, scanning speed 1100 mm/ min, laser beam diameter 2.0 mm, beam-on time 0.16 s, and beam-off time 0.4-0.6 s. The laser moves in a straight line in each cladding layer and is rotated 90° compared to the motion direction of the previous layer... Before printing, the laser will scan on the substrate surface three times without powder-feeding to preheat the substrate.",
+          "simplified": "DED: CO2 laser, 1800W, 1100mm/min scanning speed, 10.5g/min powder feed rate, 2.0mm beam diameter. Preheated substrate. Argon protection."
+        },
+        "Equipment": "CO2 laser deposition machine (Institute of Metal Research, CAS), Concept Laser M2",
+        "Key_Params": {
+          "Laser_Power_W": 1800,
+          "Scanning_Speed_mm_s": 18.33,
+          "Powder_Feed_Rate_g_min": 10.5,
+          "Laser_Beam_Diameter_mm": 2.0,
+          "Protective_Atmosphere": "Argon"
+        }
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": "The as-built microstructure is constituted by typical coarse columnar grains that grow along the build direction... The fusion lines are smooth and pass through several grains... Based on the enlarged pictures of the interior of grains... Typical MC-type carbides are fine and distributed in DC, IR, and grain boundaries (GBs)... In the DC, the average size of γ' phases is 124.10 nm... In the transition region... the average size of γ' phases is 135.6 nm... In the IR, the average size of γ' phases is 150.50 nm... Several initial dislocation tangles are also observed in γ'/γ interface and GBs... The average size of voids is 17.43 um and volume fraction is 0.10%.",
+          "simplified": "Coarse columnar grains. MC carbides in DC/IR/GBs. Gamma prime size: 124.1nm (DC), 150.5nm (IR). Initial dislocation tangles present. Voids: 17.43um size, 0.10% fraction."
+        },
+        "Main_Phase": "Gamma (γ)",
+        "Precipitates": [
+          {
+            "Phase_Type": "MC Carbide",
+            "Volume_Fraction_pct": null
+          }
+        ],
+        "Porosity_pct": null,
+        "Relative_Density_pct": 99.9,
+        "Grain_Size_avg_um": 395.4,
+        "Precipitate_Size_avg_nm": 124.1,
+        "Advanced_Quantitative_Features": {
+          "Void_Volume_Fraction_pct": 0.10,
+          "Void_Size_avg_um": 17.43
+        }
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Stress_Rupture_Life",
+          "Test_Condition": "760 °C / 780 MPa",
+          "Value_Numeric": 134.20,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "h",
+          "Test_Temperature_K": 1033.15,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": "Cylindrical bars, gauge length 20mm, diameter 3mm",
+          "Note": "Life includes incubation, primary, secondary, and tertiary stages."
+        },
+        {
+          "Property_Name": "Stress_Rupture_Life",
+          "Test_Condition": "980 °C / 260 MPa",
+          "Value_Numeric": 26.90,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "h",
+          "Test_Temperature_K": 1273.15,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": "Cylindrical bars, gauge length 20mm, diameter 3mm",
+          "Note": "Life includes primary, secondary, and tertiary stages."
+        }
+      ]
+    }
+  ]
+}

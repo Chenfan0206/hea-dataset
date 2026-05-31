@@ -1,0 +1,1777 @@
+{
+  "Paper_Metadata": {
+    "Paper_Title": "Phase formation capability and compositional design of β-phase multiple rare-earth principal component disilicates",
+    "DOI": "10.1038/s41467-023-36947-6",
+    "SI_Data_Note": "论文提到 Supplementary Table 1 含 TEM-EDS mapping 原子比数据，Supplementary Figs. 1-11 含额外 XRD/STEM 数据，但 OCR 文本中不含这些补充数据"
+  },
+  "Paper_Routing": {
+    "base_material": "Ceramics_Inorganic",
+    "application": "Functional",
+    "research_paradigm": "Hybrid",
+    "Supplements_Loaded": [
+      "directions/base/Ceramics_Inorganic.txt",
+      "directions/application/Functional.txt",
+      "directions/paradigm/Hybrid.txt",
+      "directions/domain/Coating.txt"
+    ],
+    "Patch_Tags": [
+      "High_Entropy",
+      "Thermal_Barrier_or_EBC"
+    ],
+    "Needs_Mixed_Routing_Check": false,
+    "Mixed_Signals": []
+  },
+  "items": [
+    {
+      "Item_ID": "01",
+      "Sample_ID": "DyTmYbLu_powder_1550C",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Ceramics_Inorganic",
+      "application": "Functional",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "High_Entropy",
+        "Thermal_Barrier_or_EBC"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "All the detected peaks for (Dy0.25Tm0.25Yb0.25Lu0.25)2Si2O7 samples could be indexed to β-Yb2Si2O7 (PDF#25-1345). The homogeneous distribution of the RE elements is further confirmed by the SEM-EDS analysis.",
+        "twenty-one four-RE-principal-component (RE0.25RE0.25RE0.25RE0.25)Si2O7 (RE = Y, La, Ce, Eu, Gd, Tb, Dy, Ho, Er, Tm, Yb, and Lu) are synthesized"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Category": "Functional_Ceramic",
+          "Material_Name_Raw": "(Dy0.25Tm0.25Yb0.25Lu0.25)2Si2O7",
+          "Phase_Composition": [
+            {
+              "Phase_Name": "β-type (Dy0.25Tm0.25Yb0.25Lu0.25)2Si2O7 solid solution",
+              "Chemical_Formula": "(Dy0.25Tm0.25Yb0.25Lu0.25)2Si2O7",
+              "Weight_Fraction_pct": 100,
+              "Note": "Pure single-phase β-type solid solution, indexed to β-Yb2Si2O7 (PDF#25-1345)"
+            }
+          ],
+          "Stoichiometry": {
+            "Formula_Raw": "(Dy0.25Tm0.25Yb0.25Lu0.25)2Si2O7",
+            "Note": "Equimolar four-RE-principal-component rare-earth disilicate"
+          },
+          "Composition_Source_Type": "nominal_inferred",
+          "Note": "Composition designed according to stoichiometry; homogeneous RE distribution confirmed by SEM-EDS with Dy:Tm:Yb:Lu nearly 1:1:1:1"
+        },
+        "Processing": {
+          "Process_Category": "Sintering",
+          "Process_Text": {
+            "original": "Commercially available powders of rare-earth oxides and SiO2 were mixed according to the stoichiometry of (Dy0.25Tm0.25Yb0.25Lu0.25)2Si2O7, ball milled for 24 h in a Si3N4 jar with Si3N4 balls and ethanol solution, dried at 60 °C for 24 h, passed through a 120-mesh sieve, and then synthesized by pressure-less synthesis at 1550 °C for 6 h.",
+            "simplified": "RE oxide + SiO2 mixed stoichiometrically, 24 h ball milling in Si3N4 jar/balls with ethanol, dried 60 °C/24 h, 120-mesh sieved, pressure-less synthesis at 1550 °C for 6 h."
+          },
+          "Equipment": [
+            {
+              "Instrument_Name": "Si3N4 milling jar and Si3N4 balls"
+            },
+            {
+              "Instrument_Name": "XRD",
+              "Manufacturer": "Rigaku",
+              "Model": "D/max-2400",
+              "Note": "X-ray diffraction for phase identification"
+            },
+            {
+              "Instrument_Name": "SEM",
+              "Manufacturer": "Zeiss",
+              "Model": "Supra 55",
+              "Note": "equipped with EDS"
+            }
+          ],
+          "Key_Params": {
+            "Stage1_Ball_Milling_Time_h": 24,
+            "Stage1_Drying_Temperature_K": 333.15,
+            "Stage1_Drying_Time_h": 24,
+            "Stage1_Sieve_Mesh": 120,
+            "Stage1_Synthesis_Temperature_K": 1823.15,
+            "Stage1_Synthesis_Time_h": 6,
+            "Stage1_Synthesis_Method": "pressure-less"
+          },
+          "Original_Values": {
+            "Stage1_Drying_Temperature": "60 °C",
+            "Stage1_Synthesis_Temperature": "1550 °C"
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "All the detected peaks for (Dy0.25Tm0.25Yb0.25Lu0.25)2Si2O7 samples could be indexed to β-Yb2Si2O7 (PDF#25-1345). The homogeneous distribution of the RE elements is further confirmed by SEM-EDS analysis, wherein the atomic ratios of Dy:Tm:Yb:Lu are measured to be nearly 1:1:1:1. The as-synthesized powders are pure single-phase β-(Dy0.25Tm0.25Yb0.25Lu0.25)2Si2O7 solid solutions.",
+            "simplified": "Pure single-phase β-type solid solution indexed to β-Yb2Si2O7 (PDF#25-1345) with homogeneous RE distribution (Dy:Tm:Yb:Lu ≈ 1:1:1:1)."
+          },
+          "Crystalline_Phases": [
+            {
+              "Phase_Name": "β-(Dy0.25Tm0.25Yb0.25Lu0.25)2Si2O7",
+              "PDF_Card": "PDF#25-1345",
+              "Phase_Type": "primary"
+            }
+          ],
+          "Advanced_Quantitative_Features": {
+            "Avg_RE3plus_Radius_Angstrom": {
+              "Value": 0.867,
+              "Note": "Calculated as weighted average of RE3+ cationic radii for Dy, Tm, Yb, Lu"
+            },
+            "RE_Radius_Deviation_sigma_r_Angstrom": {
+              "Value": 0.02,
+              "Note": "Standard deviation of RE3+ cationic radii"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Phase_Fraction",
+            "Value": 100,
+            "Unit": "wt%",
+            "Data_Nature": "Experimental",
+            "Data_Source": "text",
+            "Note": "Pure single-phase β-type solid solution"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "02",
+      "Sample_ID": "DyTmYbLu_bulk_1860C",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Ceramics_Inorganic",
+      "application": "Functional",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "High_Entropy",
+        "Thermal_Barrier_or_EBC"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "DyTmYbLu (1860 °C HP) ... β ... Dy0.26Tm0.26Yb0.24Lu0.24",
+        "the corresponding hot-pressed bulk material are pure single-phase β-(Dy0.25Tm0.25Yb0.25Lu0.25)2Si2O7 solid solutions"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Category": "Functional_Ceramic",
+          "Material_Name_Raw": "(Dy0.25Tm0.25Yb0.25Lu0.25)2Si2O7",
+          "Phase_Composition": [
+            {
+              "Phase_Name": "β-type (Dy0.25Tm0.25Yb0.25Lu0.25)2Si2O7 solid solution",
+              "Chemical_Formula": "(Dy0.25Tm0.25Yb0.25Lu0.25)2Si2O7",
+              "Weight_Fraction_pct": 100,
+              "Note": "Pure single-phase β-type solid solution, hot-pressed bulk"
+            }
+          ],
+          "Stoichiometry": {
+            "Formula_Raw": "(Dy0.25Tm0.25Yb0.25Lu0.25)2Si2O7"
+          },
+          "Composition_Source_Type": "measured_inferred",
+          "Note": "SEM-EDS point analysis gave Dy0.26Tm0.26Yb0.24Lu0.24 (Table 1)"
+        },
+        "Processing": {
+          "Process_Category": "Hot_Pressing",
+          "Process_Text": {
+            "original": "The bulk sample was fabricated via hot-pressing sintering method at 1860 °C under 30 MPa in a BN-coated graphite mold.",
+            "simplified": "Hot pressing at 1860 °C under 30 MPa in BN-coated graphite mold."
+          },
+          "Equipment": [
+            {
+              "Instrument_Name": "Hot-pressing furnace",
+              "Note": "BN-coated graphite mold"
+            },
+            {
+              "Instrument_Name": "XRD",
+              "Manufacturer": "Rigaku",
+              "Model": "D/max-2400"
+            },
+            {
+              "Instrument_Name": "SEM",
+              "Manufacturer": "Zeiss",
+              "Model": "Supra 55",
+              "Note": "equipped with EDS"
+            }
+          ],
+          "Key_Params": {
+            "Stage2_Hot_Pressing_Temperature_K": 2133.15,
+            "Stage2_Pressure_MPa": 30,
+            "Stage2_Atmosphere": "BN-coated graphite mold"
+          },
+          "Original_Values": {
+            "Stage2_Hot_Pressing_Temperature": "1860 °C"
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "The hot-pressed bulk material is pure single-phase β-(Dy0.25Tm0.25Yb0.25Lu0.25)2Si2O7 solid solution. SEM-EDS point analysis gave the atomic ratio Dy:Tm:Yb:Lu nearly 1:1:1:1.",
+            "simplified": "Pure single-phase β-type bulk material with homogeneous RE distribution (Dy0.26Tm0.26Yb0.24Lu0.24)."
+          },
+          "Crystalline_Phases": [
+            {
+              "Phase_Name": "β-(Dy0.25Tm0.25Yb0.25Lu0.25)2Si2O7",
+              "Phase_Type": "primary"
+            }
+          ],
+          "Advanced_Quantitative_Features": {
+            "SEM_EDS_Dy_at_pct": {
+              "Value": 5.19,
+              "Value_StdDev": 0.09
+            },
+            "SEM_EDS_Tm_at_pct": {
+              "Value": 5.05,
+              "Value_StdDev": 0.22
+            },
+            "SEM_EDS_Yb_at_pct": {
+              "Value": 4.73,
+              "Value_StdDev": 0.09
+            },
+            "SEM_EDS_Lu_at_pct": {
+              "Value": 4.68,
+              "Value_StdDev": 0.09
+            },
+            "SEM_EDS_RE_Ratio": "Dy0.26Tm0.26Yb0.24Lu0.24"
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Phase_Fraction",
+            "Value": 100,
+            "Unit": "wt%",
+            "Data_Nature": "Experimental",
+            "Data_Source": "text",
+            "Note": "Pure single-phase β-type solid solution"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "03",
+      "Sample_ID": "DyHoYbLu_powder_1550C",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Ceramics_Inorganic",
+      "application": "Functional",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "High_Entropy",
+        "Thermal_Barrier_or_EBC"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "the powders synthesized at 1550 °C contain dual-phase mixture of β-type solid solution as major phase, together with a decent amount of γ-type solid solution",
+        "β-phase accounts for 61.15 wt% in the mixture, whereas the γ-phase accounts for 38.85 wt%"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Category": "Functional_Ceramic",
+          "Material_Name_Raw": "(Dy0.25Ho0.25Yb0.25Lu0.25)2Si2O7",
+          "Phase_Composition": [
+            {
+              "Phase_Name": "β-type solid solution",
+              "Weight_Fraction_pct": 61.15,
+              "Note": "Indexed to β-Yb2Si2O7 (PDF#25-1345)"
+            },
+            {
+              "Phase_Name": "γ-type solid solution",
+              "Weight_Fraction_pct": 38.85,
+              "Note": "Indexed to γ-Y2Si2O7 (PDF#42-0167)"
+            }
+          ],
+          "Stoichiometry": {
+            "Formula_Raw": "(Dy0.25Ho0.25Yb0.25Lu0.25)2Si2O7"
+          },
+          "Composition_Source_Type": "nominal_inferred"
+        },
+        "Processing": {
+          "Process_Category": "Sintering",
+          "Process_Text": {
+            "original": "RE oxides and SiO2 powders mixed according to the stoichiometry of (Dy0.25Ho0.25Yb0.25Lu0.25)2Si2O7, ball milled 24 h, dried at 60 °C for 24 h, sieved through 120 mesh, pressure-less synthesis at 1550 °C for 6 h.",
+            "simplified": "Stoichiometric oxide mixture, 24 h ball milling, 60 °C/24 h drying, 120-mesh sieved, pressure-less synthesis at 1550 °C/6 h."
+          },
+          "Equipment": [
+            {
+              "Instrument_Name": "XRD",
+              "Manufacturer": "Rigaku",
+              "Model": "D/max-2400"
+            },
+            {
+              "Instrument_Name": "SEM",
+              "Manufacturer": "Zeiss",
+              "Model": "Supra 55",
+              "Note": "equipped with EDS"
+            }
+          ],
+          "Key_Params": {
+            "Stage1_Synthesis_Temperature_K": 1823.15,
+            "Stage1_Synthesis_Time_h": 6,
+            "Stage1_Synthesis_Method": "pressure-less"
+          },
+          "Original_Values": {
+            "Stage1_Synthesis_Temperature": "1550 °C"
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "The powders synthesized at 1550 °C contain dual-phase mixture of β-type solid solution as major phase, together with a decent amount of γ-type solid solution. Quantitative phase analysis based on the Rietveld method shows β-phase accounts for 61.15 wt% and γ-phase accounts for 38.85 wt%.",
+            "simplified": "Dual-phase β + γ mixture at 1550 °C: β = 61.15 wt%, γ = 38.85 wt%."
+          },
+          "Crystalline_Phases": [
+            {
+              "Phase_Name": "β-type solid solution",
+              "Weight_Fraction_pct": 61.15,
+              "Phase_Type": "primary"
+            },
+            {
+              "Phase_Name": "γ-type solid solution",
+              "Weight_Fraction_pct": 38.85,
+              "Phase_Type": "secondary"
+            }
+          ],
+          "Advanced_Quantitative_Features": {
+            "Avg_RE3plus_Radius_Angstrom": {
+              "Value": 0.886,
+              "Note": "Near β-γ boundary"
+            },
+            "RE_Radius_Deviation_sigma_r_Angstrom": {
+              "Value": 0.016
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Beta_Phase_Fraction",
+            "Value": 61.15,
+            "Unit": "wt%",
+            "Data_Nature": "Experimental",
+            "Data_Source": "text",
+            "Note": "Rietveld refinement of XRD for as-synthesized powder at 1550 °C"
+          },
+          {
+            "Property_Name": "Gamma_Phase_Fraction",
+            "Value": 38.85,
+            "Unit": "wt%",
+            "Data_Nature": "Experimental",
+            "Data_Source": "text",
+            "Note": "Rietveld refinement of XRD for as-synthesized powder at 1550 °C"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "04",
+      "Sample_ID": "DyHoYbLu_bulk_1650C",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Ceramics_Inorganic",
+      "application": "Functional",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "High_Entropy",
+        "Thermal_Barrier_or_EBC"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Fabricating the sample via hot-pressing sintering method at 1650 °C results in decreased amount of β-phase down to 33.16 wt%, compensated by increased amount of γ-phase up to 66.84 wt%",
+        "DyHoYbLu (1650 °C HP) ... β or γ ... Dy0.27Ho0.26Yb0.25Lu0.22"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Category": "Functional_Ceramic",
+          "Material_Name_Raw": "(Dy0.25Ho0.25Yb0.25Lu0.25)2Si2O7",
+          "Phase_Composition": [
+            {
+              "Phase_Name": "β-type solid solution",
+              "Weight_Fraction_pct": 33.16
+            },
+            {
+              "Phase_Name": "γ-type solid solution",
+              "Weight_Fraction_pct": 66.84
+            }
+          ],
+          "Stoichiometry": {
+            "Formula_Raw": "(Dy0.25Ho0.25Yb0.25Lu0.25)2Si2O7"
+          },
+          "Composition_Source_Type": "measured_inferred",
+          "Note": "SEM-EDS for both β and γ phases gave Dy0.27Ho0.26Yb0.25Lu0.22 (Table 1). TEM-EDS mapping confirmed homogeneous RE distribution at atomic scale in both β and γ lattices."
+        },
+        "Processing": {
+          "Process_Category": "Hot_Pressing",
+          "Process_Text": {
+            "original": "Fabricated via hot-pressing sintering method at 1650 °C under 30 MPa in a BN-coated graphite mold. Characterized by XRD, SEM-EDS, and aberration-corrected STEM.",
+            "simplified": "Hot pressing at 1650 °C under 30 MPa; characterized by XRD, SEM-EDS, and aberration-corrected STEM."
+          },
+          "Equipment": [
+            {
+              "Instrument_Name": "Hot-pressing furnace",
+              "Note": "BN-coated graphite mold"
+            },
+            {
+              "Instrument_Name": "XRD",
+              "Manufacturer": "Rigaku",
+              "Model": "D/max-2400"
+            },
+            {
+              "Instrument_Name": "SEM",
+              "Manufacturer": "Zeiss",
+              "Model": "Supra 55",
+              "Note": "equipped with EDS"
+            },
+            {
+              "Instrument_Name": "STEM",
+              "Manufacturer": "Thermo Fisher Scientific",
+              "Model": "Titan Themis Z",
+              "Note": "double aberration-corrected; HAADF-STEM; equipped with EDS for atomic-resolution mapping"
+            }
+          ],
+          "Key_Params": {
+            "Stage2_Hot_Pressing_Temperature_K": 1923.15,
+            "Stage2_Pressure_MPa": 30
+          },
+          "Original_Values": {
+            "Stage2_Hot_Pressing_Temperature": "1650 °C"
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Fabricating the sample via hot-pressing sintering method at 1650 °C results in decreased amount of β-phase down to 33.16 wt%, compensated by increased amount of γ-phase up to 66.84 wt%. Both β-phase and γ-phase exhibit homogeneous RE elemental distributions. Aberration-corrected STEM resolved phase 1 as β-(Dy0.25Ho0.25Yb0.25Lu0.25)2Si2O7 in [112] zone axis and phase 2 as γ-(Dy0.25Ho0.25Yb0.25Lu0.25)2Si2O7 in [100] zone axis.",
+            "simplified": "1650 °C hot-pressed bulk: β = 33.16 wt%, γ = 66.84 wt%. Both phases have homogeneous RE distribution confirmed by SEM-EDS and STEM-HAADF/EDS."
+          },
+          "Crystalline_Phases": [
+            {
+              "Phase_Name": "β-(Dy0.25Ho0.25Yb0.25Lu0.25)2Si2O7",
+              "Weight_Fraction_pct": 33.16,
+              "Zone_Axis": "[112]",
+              "Phase_Type": "secondary"
+            },
+            {
+              "Phase_Name": "γ-(Dy0.25Ho0.25Yb0.25Lu0.25)2Si2O7",
+              "Weight_Fraction_pct": 66.84,
+              "Zone_Axis": "[100]",
+              "Phase_Type": "primary"
+            }
+          ],
+          "Advanced_Quantitative_Features": {
+            "SEM_EDS_Dy_at_pct": {
+              "Value": 5.77,
+              "Value_StdDev": 0.1
+            },
+            "SEM_EDS_Ho_at_pct": {
+              "Value": 5.49,
+              "Value_StdDev": 0.21
+            },
+            "SEM_EDS_Yb_at_pct": {
+              "Value": 5.29,
+              "Value_StdDev": 0.06
+            },
+            "SEM_EDS_Lu_at_pct": {
+              "Value": 4.74,
+              "Value_StdDev": 0.2
+            },
+            "SEM_EDS_RE_Ratio": "Dy0.27Ho0.26Yb0.25Lu0.22"
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Beta_Phase_Fraction",
+            "Value": 33.16,
+            "Unit": "wt%",
+            "Data_Nature": "Experimental",
+            "Data_Source": "text",
+            "Note": "Rietveld refinement of XRD, 1650 °C hot-pressed bulk"
+          },
+          {
+            "Property_Name": "Gamma_Phase_Fraction",
+            "Value": 66.84,
+            "Unit": "wt%",
+            "Data_Nature": "Experimental",
+            "Data_Source": "text",
+            "Note": "Rietveld refinement of XRD, 1650 °C hot-pressed bulk"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "05",
+      "Sample_ID": "DyHoYbLu_bulk_1860C",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Ceramics_Inorganic",
+      "application": "Functional",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "High_Entropy",
+        "Thermal_Barrier_or_EBC"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "After hot-pressed at 1860 °C for 2 h, the bulk material turns into a single-phase γ-type solid solution.",
+        "DyHoYbLu (1860 °C HP) ... γ ... Dy0.27Ho0.26Yb0.24Lu0.23"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Category": "Functional_Ceramic",
+          "Material_Name_Raw": "(Dy0.25Ho0.25Yb0.25Lu0.25)2Si2O7",
+          "Phase_Composition": [
+            {
+              "Phase_Name": "γ-type (Dy0.25Ho0.25Yb0.25Lu0.25)2Si2O7 solid solution",
+              "Chemical_Formula": "(Dy0.25Ho0.25Yb0.25Lu0.25)2Si2O7",
+              "Weight_Fraction_pct": 100
+            }
+          ],
+          "Stoichiometry": {
+            "Formula_Raw": "(Dy0.25Ho0.25Yb0.25Lu0.25)2Si2O7"
+          },
+          "Composition_Source_Type": "measured_inferred",
+          "Note": "SEM-EDS gave Dy0.27Ho0.26Yb0.24Lu0.23 (Table 1)"
+        },
+        "Processing": {
+          "Process_Category": "Hot_Pressing",
+          "Process_Text": {
+            "original": "Hot-pressed at 1860 °C for 2 h under 30 MPa.",
+            "simplified": "Hot pressing at 1860 °C for 2 h under 30 MPa, yielding single-phase γ bulk."
+          },
+          "Equipment": [
+            {
+              "Instrument_Name": "XRD",
+              "Manufacturer": "Rigaku",
+              "Model": "D/max-2400"
+            },
+            {
+              "Instrument_Name": "SEM",
+              "Manufacturer": "Zeiss",
+              "Model": "Supra 55",
+              "Note": "equipped with EDS"
+            }
+          ],
+          "Key_Params": {
+            "Stage2_Hot_Pressing_Temperature_K": 2133.15,
+            "Stage2_Hot_Pressing_Time_h": 2,
+            "Stage2_Pressure_MPa": 30
+          },
+          "Original_Values": {
+            "Stage2_Hot_Pressing_Temperature": "1860 °C"
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "After hot-pressed at 1860 °C for 2 h, the bulk material turns into a single-phase γ-type solid solution.",
+            "simplified": "Single-phase γ-type solid solution after 1860 °C hot pressing for 2 h."
+          },
+          "Crystalline_Phases": [
+            {
+              "Phase_Name": "γ-(Dy0.25Ho0.25Yb0.25Lu0.25)2Si2O7",
+              "Phase_Type": "primary"
+            }
+          ],
+          "Advanced_Quantitative_Features": {
+            "SEM_EDS_Dy_at_pct": {
+              "Value": 5.32,
+              "Value_StdDev": 0.11
+            },
+            "SEM_EDS_Ho_at_pct": {
+              "Value": 5.21,
+              "Value_StdDev": 0.06
+            },
+            "SEM_EDS_Yb_at_pct": {
+              "Value": 4.83,
+              "Value_StdDev": 0.07
+            },
+            "SEM_EDS_Lu_at_pct": {
+              "Value": 4.59,
+              "Value_StdDev": 0.06
+            },
+            "SEM_EDS_RE_Ratio": "Dy0.27Ho0.26Yb0.24Lu0.23"
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Phase_Fraction",
+            "Value": 100,
+            "Unit": "wt%",
+            "Data_Nature": "Experimental",
+            "Data_Source": "text",
+            "Note": "Single-phase γ-type solid solution after β→γ transformation"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "06",
+      "Sample_ID": "GdHoYbLu_powder_1550C",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Ceramics_Inorganic",
+      "application": "Functional",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "High_Entropy",
+        "Thermal_Barrier_or_EBC"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "the as-synthesized powders exhibit γ-(Gd0.25Ho0.25Yb0.25Lu0.25)2Si2O7 solid solution with very few β",
+        "γ-phase accounts for 91.21 wt% in the mixture, whereas the β-phase accounts for 8.79 wt%"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Category": "Functional_Ceramic",
+          "Material_Name_Raw": "(Gd0.25Ho0.25Yb0.25Lu0.25)2Si2O7",
+          "Phase_Composition": [
+            {
+              "Phase_Name": "γ-type solid solution",
+              "Weight_Fraction_pct": 91.21
+            },
+            {
+              "Phase_Name": "β-type solid solution",
+              "Weight_Fraction_pct": 8.79
+            }
+          ],
+          "Stoichiometry": {
+            "Formula_Raw": "(Gd0.25Ho0.25Yb0.25Lu0.25)2Si2O7"
+          },
+          "Composition_Source_Type": "measured_inferred",
+          "Note": "SEM-EDS confirmed Gd:Ho:Yb:Lu nearly 1:1:1:1 (Table 1)"
+        },
+        "Processing": {
+          "Process_Category": "Sintering",
+          "Process_Text": {
+            "original": "RE oxides and SiO2 mixed stoichiometrically, ball milled 24 h, pressure-less synthesis at 1550 °C for 6 h.",
+            "simplified": "Pressure-less synthesis at 1550 °C for 6 h."
+          },
+          "Equipment": [
+            {
+              "Instrument_Name": "XRD",
+              "Manufacturer": "Rigaku",
+              "Model": "D/max-2400"
+            },
+            {
+              "Instrument_Name": "SEM",
+              "Manufacturer": "Zeiss",
+              "Model": "Supra 55",
+              "Note": "equipped with EDS"
+            }
+          ],
+          "Key_Params": {
+            "Stage1_Synthesis_Temperature_K": 1823.15,
+            "Stage1_Synthesis_Time_h": 6
+          },
+          "Original_Values": {
+            "Stage1_Synthesis_Temperature": "1550 °C"
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "As-synthesized powders exhibit γ-(Gd0.25Ho0.25Yb0.25Lu0.25)2Si2O7 solid solution with very few β. γ-phase = 91.21 wt%, β-phase = 8.79 wt%.",
+            "simplified": "Predominantly γ-phase with minor β: γ = 91.21 wt%, β = 8.79 wt%."
+          },
+          "Crystalline_Phases": [
+            {
+              "Phase_Name": "γ-type solid solution",
+              "Weight_Fraction_pct": 91.21,
+              "Phase_Type": "primary"
+            },
+            {
+              "Phase_Name": "β-type solid solution",
+              "Weight_Fraction_pct": 8.79,
+              "Phase_Type": "secondary"
+            }
+          ],
+          "Advanced_Quantitative_Features": {
+            "Avg_RE3plus_Radius_Angstrom": {
+              "Value": 0.898,
+              "Note": "Above β-γ boundary of 0.885 Å"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Gamma_Phase_Fraction",
+            "Value": 91.21,
+            "Unit": "wt%",
+            "Data_Nature": "Experimental",
+            "Data_Source": "text",
+            "Note": "Rietveld refinement, 1550 °C powder"
+          },
+          {
+            "Property_Name": "Beta_Phase_Fraction",
+            "Value": 8.79,
+            "Unit": "wt%",
+            "Data_Nature": "Experimental",
+            "Data_Source": "text",
+            "Note": "Rietveld refinement, 1550 °C powder"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "07",
+      "Sample_ID": "GdHoYbLu_bulk_1860C",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Ceramics_Inorganic",
+      "application": "Functional",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "High_Entropy",
+        "Thermal_Barrier_or_EBC"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "the small amount of β-phase is completely eliminated after hot-pressed at 1860 °C",
+        "GdHoYbLu (1860 °C HP) ... γ ... Gd0.27Ho0.24Yb0.25Lu0.24"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Category": "Functional_Ceramic",
+          "Material_Name_Raw": "(Gd0.25Ho0.25Yb0.25Lu0.25)2Si2O7",
+          "Phase_Composition": [
+            {
+              "Phase_Name": "γ-type (Gd0.25Ho0.25Yb0.25Lu0.25)2Si2O7 solid solution",
+              "Weight_Fraction_pct": 100
+            }
+          ],
+          "Stoichiometry": {
+            "Formula_Raw": "(Gd0.25Ho0.25Yb0.25Lu0.25)2Si2O7"
+          },
+          "Composition_Source_Type": "measured_inferred",
+          "Note": "SEM-EDS gave Gd0.27Ho0.24Yb0.25Lu0.24 (Table 1)"
+        },
+        "Processing": {
+          "Process_Category": "Hot_Pressing",
+          "Process_Text": {
+            "original": "Hot-pressed at 1860 °C under 30 MPa in a BN-coated graphite mold.",
+            "simplified": "Hot pressing at 1860 °C under 30 MPa."
+          },
+          "Equipment": [
+            {
+              "Instrument_Name": "XRD",
+              "Manufacturer": "Rigaku",
+              "Model": "D/max-2400"
+            },
+            {
+              "Instrument_Name": "SEM",
+              "Manufacturer": "Zeiss",
+              "Model": "Supra 55",
+              "Note": "equipped with EDS"
+            }
+          ],
+          "Key_Params": {
+            "Stage2_Hot_Pressing_Temperature_K": 2133.15,
+            "Stage2_Pressure_MPa": 30
+          },
+          "Original_Values": {
+            "Stage2_Hot_Pressing_Temperature": "1860 °C"
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "The small amount of β-phase is completely eliminated after hot-pressed at 1860 °C, due to the β→γ polymorphic transformation.",
+            "simplified": "Single-phase γ after β→γ transformation at 1860 °C."
+          },
+          "Crystalline_Phases": [
+            {
+              "Phase_Name": "γ-(Gd0.25Ho0.25Yb0.25Lu0.25)2Si2O7",
+              "Phase_Type": "primary"
+            }
+          ],
+          "Advanced_Quantitative_Features": {
+            "SEM_EDS_Gd_at_pct": {
+              "Value": 5.31,
+              "Value_StdDev": 0.08
+            },
+            "SEM_EDS_Ho_at_pct": {
+              "Value": 4.83,
+              "Value_StdDev": 0.05
+            },
+            "SEM_EDS_Yb_at_pct": {
+              "Value": 4.92,
+              "Value_StdDev": 0.1
+            },
+            "SEM_EDS_Lu_at_pct": {
+              "Value": 4.71,
+              "Value_StdDev": 0.09
+            },
+            "SEM_EDS_RE_Ratio": "Gd0.27Ho0.24Yb0.25Lu0.24"
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Phase_Fraction",
+            "Value": 100,
+            "Unit": "wt%",
+            "Data_Nature": "Experimental",
+            "Data_Source": "text",
+            "Note": "Single-phase γ after β→γ transformation"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "08",
+      "Sample_ID": "LaCeYbLu_powder_1550C",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Ceramics_Inorganic",
+      "application": "Functional",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "High_Entropy",
+        "Thermal_Barrier_or_EBC"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "as-synthesized powders contain G-phase in 72.60 wt% and β-phase in 27.40 wt%",
+        "obvious elemental segregation ... β-phase is enriched with Yb and Lu ... G-phase is enriched with La and Ce"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Category": "Functional_Ceramic",
+          "Material_Name_Raw": "(La0.25Ce0.25Yb0.25Lu0.25)2Si2O7",
+          "Phase_Composition": [
+            {
+              "Phase_Name": "G-type solid solution",
+              "Chemical_Formula": "G-(Lax1Cex2Ybx3Lux4)2Si2O7",
+              "Weight_Fraction_pct": 72.6,
+              "Note": "Indexed to G-Ce2Si2O7 (PDF#48-0058), enriched with La and Ce"
+            },
+            {
+              "Phase_Name": "β-type solid solution",
+              "Weight_Fraction_pct": 27.4,
+              "Note": "Enriched with Yb and Lu"
+            }
+          ],
+          "Stoichiometry": {
+            "Formula_Raw": "(La0.25Ce0.25Yb0.25Lu0.25)2Si2O7",
+            "Note": "Designed equimolar composition cannot form homogeneous solid solution; severe elemental segregation occurs"
+          },
+          "Composition_Source_Type": "nominal_inferred"
+        },
+        "Processing": {
+          "Process_Category": "Sintering",
+          "Process_Text": {
+            "original": "RE oxides and SiO2 mixed stoichiometrically, pressure-less synthesis at 1550 °C for 6 h.",
+            "simplified": "Pressure-less synthesis at 1550 °C for 6 h."
+          },
+          "Equipment": [
+            {
+              "Instrument_Name": "XRD",
+              "Manufacturer": "Rigaku",
+              "Model": "D/max-2400"
+            }
+          ],
+          "Key_Params": {
+            "Stage1_Synthesis_Temperature_K": 1823.15,
+            "Stage1_Synthesis_Time_h": 6
+          },
+          "Original_Values": {
+            "Stage1_Synthesis_Temperature": "1550 °C"
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Both the as-synthesized powders and the hot-pressed bulk material are mixtures of β-type and G-type disilicates. As-synthesized powders: G-phase 72.60 wt%, β-phase 27.40 wt%. SEM-EDS shows obvious elemental segregation: β-phase enriched with Yb and Lu, G-phase enriched with La and Ce.",
+            "simplified": "Mixed β + G phases with elemental segregation: G = 72.60 wt%, β = 27.40 wt%."
+          },
+          "Crystalline_Phases": [
+            {
+              "Phase_Name": "G-type solid solution",
+              "Weight_Fraction_pct": 72.6,
+              "Phase_Type": "primary"
+            },
+            {
+              "Phase_Name": "β-type solid solution",
+              "Weight_Fraction_pct": 27.4,
+              "Phase_Type": "secondary"
+            }
+          ],
+          "Advanced_Quantitative_Features": {
+            "Avg_RE3plus_Radius_Angstrom": {
+              "Value": 0.951,
+              "Note": "Well above β-γ boundary"
+            },
+            "RE_Radius_Deviation_sigma_r_Angstrom": {
+              "Value": 0.079,
+              "Note": "Large sigma_r causes elemental segregation"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "G_Phase_Fraction",
+            "Value": 72.6,
+            "Unit": "wt%",
+            "Data_Nature": "Experimental",
+            "Data_Source": "text",
+            "Note": "Rietveld refinement, 1550 °C powder"
+          },
+          {
+            "Property_Name": "Beta_Phase_Fraction",
+            "Value": 27.4,
+            "Unit": "wt%",
+            "Data_Nature": "Experimental",
+            "Data_Source": "text",
+            "Note": "Rietveld refinement, 1550 °C powder"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "09",
+      "Sample_ID": "LaCeYbLu_bulk_1650C",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Ceramics_Inorganic",
+      "application": "Functional",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "High_Entropy",
+        "Thermal_Barrier_or_EBC"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "phase composition remains almost unchanged after hot-pressed at 1650 °C for 2 h (G-phase in 72.15 wt% and β-phase in 27.85 wt%)",
+        "SEM-EDS analysis shows obvious elemental segregation in both phases"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Category": "Functional_Ceramic",
+          "Material_Name_Raw": "(La0.25Ce0.25Yb0.25Lu0.25)2Si2O7",
+          "Phase_Composition": [
+            {
+              "Phase_Name": "G-type solid solution",
+              "Weight_Fraction_pct": 72.15,
+              "Note": "Enriched with La and Ce"
+            },
+            {
+              "Phase_Name": "β-type solid solution",
+              "Weight_Fraction_pct": 27.85,
+              "Note": "Enriched with Yb and Lu"
+            }
+          ],
+          "Stoichiometry": {
+            "Formula_Raw": "(La0.25Ce0.25Yb0.25Lu0.25)2Si2O7"
+          },
+          "Composition_Source_Type": "measured_inferred",
+          "Note": "SEM-EDS (Table 1): β-phase RE ratio La0.05Ce0.06Yb0.43Lu0.46; G-phase RE ratio La0.35Ce0.35Yb0.16Lu0.14"
+        },
+        "Processing": {
+          "Process_Category": "Hot_Pressing",
+          "Process_Text": {
+            "original": "Hot-pressed at 1650 °C for 2 h under 30 MPa in a BN-coated graphite mold.",
+            "simplified": "Hot pressing at 1650 °C for 2 h under 30 MPa."
+          },
+          "Equipment": [
+            {
+              "Instrument_Name": "XRD",
+              "Manufacturer": "Rigaku",
+              "Model": "D/max-2400"
+            },
+            {
+              "Instrument_Name": "SEM",
+              "Manufacturer": "Zeiss",
+              "Model": "Supra 55",
+              "Note": "equipped with EDS"
+            },
+            {
+              "Instrument_Name": "STEM",
+              "Manufacturer": "Thermo Fisher Scientific",
+              "Model": "Titan Themis Z",
+              "Note": "double aberration-corrected; HAADF-STEM; EDS mapping"
+            }
+          ],
+          "Key_Params": {
+            "Stage2_Hot_Pressing_Temperature_K": 1923.15,
+            "Stage2_Hot_Pressing_Time_h": 2,
+            "Stage2_Pressure_MPa": 30
+          },
+          "Original_Values": {
+            "Stage2_Hot_Pressing_Temperature": "1650 °C"
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Phase composition remains almost unchanged after hot-pressed at 1650 °C for 2 h: G-phase 72.15 wt%, β-phase 27.85 wt%. SEM-EDS shows obvious elemental segregation: β-phase enriched with Yb and Lu, G-phase enriched with La and Ce.",
+            "simplified": "Phase composition unchanged: G = 72.15 wt%, β = 27.85 wt%. Strong elemental segregation."
+          },
+          "Crystalline_Phases": [
+            {
+              "Phase_Name": "G-type solid solution",
+              "Weight_Fraction_pct": 72.15,
+              "Phase_Type": "primary"
+            },
+            {
+              "Phase_Name": "β-type solid solution",
+              "Weight_Fraction_pct": 27.85,
+              "Phase_Type": "secondary"
+            }
+          ],
+          "Advanced_Quantitative_Features": {
+            "Beta_Phase_SEM_EDS_La_at_pct": {
+              "Value": 1.04,
+              "Value_StdDev": 0.07
+            },
+            "Beta_Phase_SEM_EDS_Ce_at_pct": {
+              "Value": 1.33,
+              "Value_StdDev": 0.07
+            },
+            "Beta_Phase_SEM_EDS_Yb_at_pct": {
+              "Value": 9.6,
+              "Value_StdDev": 0.42
+            },
+            "Beta_Phase_SEM_EDS_Lu_at_pct": {
+              "Value": 10.2,
+              "Value_StdDev": 0.27
+            },
+            "Beta_Phase_RE_Ratio": "La0.05Ce0.06Yb0.43Lu0.46",
+            "G_Phase_SEM_EDS_La_at_pct": {
+              "Value": 7.87,
+              "Value_StdDev": 0.08
+            },
+            "G_Phase_SEM_EDS_Ce_at_pct": {
+              "Value": 7.98,
+              "Value_StdDev": 0.17
+            },
+            "G_Phase_SEM_EDS_Yb_at_pct": {
+              "Value": 3.6,
+              "Value_StdDev": 0.16
+            },
+            "G_Phase_SEM_EDS_Lu_at_pct": {
+              "Value": 3.12,
+              "Value_StdDev": 0.09
+            },
+            "G_Phase_RE_Ratio": "La0.35Ce0.35Yb0.16Lu0.14"
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "G_Phase_Fraction",
+            "Value": 72.15,
+            "Unit": "wt%",
+            "Data_Nature": "Experimental",
+            "Data_Source": "text",
+            "Note": "Rietveld refinement, 1650 °C hot-pressed bulk"
+          },
+          {
+            "Property_Name": "Beta_Phase_Fraction",
+            "Value": 27.85,
+            "Unit": "wt%",
+            "Data_Nature": "Experimental",
+            "Data_Source": "text",
+            "Note": "Rietveld refinement, 1650 °C hot-pressed bulk"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "10",
+      "Sample_ID": "DFT_beta_DyTmYbLu",
+      "Role": "Target",
+      "Data_Nature": "Computed",
+      "base_material": "Ceramics_Inorganic",
+      "application": "Functional",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "High_Entropy",
+        "Thermal_Barrier_or_EBC"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "β-(Dy0.25Tm0.25Yb0.25Lu0.25)2Si2O7 ... FWHM 0.36121 ... σr 0.01955",
+        "DFT calculations is performed using the Vienna Ab Initio Simulation Package (VASP)"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Category": "Functional_Ceramic",
+          "Material_Name_Raw": "β-(Dy0.25Tm0.25Yb0.25Lu0.25)2Si2O7 configuration ensemble",
+          "Stoichiometry": {
+            "Formula_Raw": "(Dy0.25Tm0.25Yb0.25Lu0.25)2Si2O7"
+          }
+        },
+        "Processing": {
+          "Process_Category": "DFT_Calculation",
+          "Process_Text": {
+            "original": "DFT calculations performed using VASP with PAW method, PBE-GGA functional, 600 eV plane-wave cutoff, Γ-centered Monkhorst-Pack k-mesh at 2π × 0.03 Å⁻¹. Supercells with 88 lattice sites, 558 unique configurations for β-type. Configuration ensembles generated using ATAT SQS code.",
+            "simplified": "VASP-PAW-PBE DFT with 600 eV cutoff, 88-site supercells, 558 β-type configurations via ATAT SQS."
+          },
+          "Equipment": [
+            {
+              "Instrument_Name": "VASP"
+            },
+            {
+              "Instrument_Name": "ATAT SQS generation code"
+            }
+          ],
+          "Key_Params": {
+            "Supercell_Lattice_Sites": 88,
+            "Unique_Configurations": 558,
+            "Plane_Wave_Cutoff_eV": 600,
+            "Kmesh_Resolution_2pi_Angstrom_inv": 0.03,
+            "Energy_Convergence_Criteria_eV": 1e-07,
+            "Force_Convergence_Criteria_eV_per_Angstrom": 0.005
+          },
+          "Simulation_Metadata": {
+            "Method_Category": "DFT",
+            "Software": "VASP",
+            "Functional_or_Potential": "PBE-GGA (PAW)",
+            "Energy_Cutoff_eV": 600,
+            "K_Points": "Gamma-centered Monkhorst-Pack, 2pi x 0.03 A^-1 resolution",
+            "Model_Size": {
+              "Atoms": 88,
+              "Description": "88 lattice sites supercells, 4x minimum cell"
+            },
+            "Numerical_Control_Params": {
+              "convergence_tolerance_energy_eV": 1e-07,
+              "convergence_tolerance_force_eV_per_A": 0.005
+            },
+            "Simulation_Text": {
+              "original": "Configuration ensembles generated using ATAT SQS code. DFT calculations performed using VASP with PAW method, PBE-GGA functional, 600 eV plane-wave cutoff, Gamma-centered Monkhorst-Pack k-mesh at 2pi x 0.03 A^-1. Full relaxation of lattice parameters and internal atomic positions.",
+              "simplified": "VASP-PAW-PBE DFT with 600 eV cutoff, full geometry relaxation."
+            }
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "β-type ensemble with randomized occupations of Dy, Tm, Yb, Lu on RE sublattice.",
+            "simplified": "β-type configurational ensemble for DFT mixing-energy analysis."
+          },
+          "Advanced_Quantitative_Features": {
+            "FWHM_Mixing_Energy": {
+              "Value": 0.36121,
+              "Data_Nature": "Computed",
+              "Note": "Full width at half maximum of Gaussian-fitted mixing energy distribution"
+            },
+            "RE_Radius_Deviation_sigma_r_Angstrom": {
+              "Value": 0.01955,
+              "Data_Nature": "Computed"
+            },
+            "Pearson_Correlation_FWHM_sigma_r_pct": {
+              "Value": 99.54,
+              "Data_Nature": "Computed",
+              "Note": "For β-type ensembles"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "FWHM_Mixing_Energy_Distribution",
+            "Value": 0.36121,
+            "Unit": "eV",
+            "Data_Nature": "Computed",
+            "Data_Source": "table"
+          },
+          {
+            "Property_Name": "Configurational_Entropy_Convergence",
+            "Value": 18.7,
+            "Unit": "J/mol/K",
+            "Data_Nature": "Computed",
+            "Data_Source": "text",
+            "Note": "Sconfig converges to 18.70 J·mol⁻¹·K⁻¹; 18.8% lower than ideal 23.04 J·mol⁻¹·K⁻¹"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "11",
+      "Sample_ID": "DFT_gamma_DyTmYbLu",
+      "Role": "Target",
+      "Data_Nature": "Computed",
+      "base_material": "Ceramics_Inorganic",
+      "application": "Functional",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "High_Entropy",
+        "Thermal_Barrier_or_EBC"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "γ-(Dy0.25Tm0.25Yb0.25Lu0.25)2Si2O7 ... FWHM 0.46106 ... σr 0.01955"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Category": "Functional_Ceramic",
+          "Material_Name_Raw": "γ-(Dy0.25Tm0.25Yb0.25Lu0.25)2Si2O7 configuration ensemble",
+          "Stoichiometry": {
+            "Formula_Raw": "(Dy0.25Tm0.25Yb0.25Lu0.25)2Si2O7"
+          }
+        },
+        "Processing": {
+          "Process_Category": "DFT_Calculation",
+          "Process_Text": {
+            "original": "γ-type ensemble with 319 unique configurations, same VASP-PAW-PBE parameters.",
+            "simplified": "γ-type DFT ensemble with 319 configurations."
+          },
+          "Key_Params": {
+            "Supercell_Lattice_Sites": 88,
+            "Unique_Configurations": 319,
+            "Plane_Wave_Cutoff_eV": 600,
+            "Kmesh_Resolution_2pi_Angstrom_inv": 0.03
+          },
+          "Simulation_Metadata": {
+            "Method_Category": "DFT",
+            "Software": "VASP",
+            "Functional_or_Potential": "PBE-GGA (PAW)",
+            "Energy_Cutoff_eV": 600,
+            "K_Points": "Gamma-centered Monkhorst-Pack, 2pi x 0.03 A^-1 resolution",
+            "Model_Size": {
+              "Atoms": 88,
+              "Description": "88 lattice sites supercells, 4x minimum cell"
+            },
+            "Numerical_Control_Params": {
+              "convergence_tolerance_energy_eV": 1e-07,
+              "convergence_tolerance_force_eV_per_A": 0.005
+            },
+            "Simulation_Text": {
+              "original": "Configuration ensembles generated using ATAT SQS code. DFT calculations performed using VASP with PAW method, PBE-GGA functional, 600 eV plane-wave cutoff, Gamma-centered Monkhorst-Pack k-mesh at 2pi x 0.03 A^-1. Full relaxation of lattice parameters and internal atomic positions.",
+              "simplified": "VASP-PAW-PBE DFT with 600 eV cutoff, full geometry relaxation."
+            }
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "γ-type ensemble with randomized occupations of Dy, Tm, Yb, Lu on RE sublattice.",
+            "simplified": "γ-type configurational ensemble."
+          },
+          "Advanced_Quantitative_Features": {
+            "FWHM_Mixing_Energy": {
+              "Value": 0.46106,
+              "Data_Nature": "Computed"
+            },
+            "RE_Radius_Deviation_sigma_r_Angstrom": {
+              "Value": 0.01955,
+              "Data_Nature": "Computed"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "FWHM_Mixing_Energy_Distribution",
+            "Value": 0.46106,
+            "Unit": "eV",
+            "Data_Nature": "Computed",
+            "Data_Source": "table"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "12",
+      "Sample_ID": "DFT_beta_DyHoYbLu",
+      "Role": "Target",
+      "Data_Nature": "Computed",
+      "base_material": "Ceramics_Inorganic",
+      "application": "Functional",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "High_Entropy",
+        "Thermal_Barrier_or_EBC"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "β-(Dy0.25Ho0.25Yb0.25Lu0.25)2Si2O7 ... FWHM 0.47613 ... σr 0.0215"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Category": "Functional_Ceramic",
+          "Material_Name_Raw": "β-(Dy0.25Ho0.25Yb0.25Lu0.25)2Si2O7 configuration ensemble",
+          "Stoichiometry": {
+            "Formula_Raw": "(Dy0.25Ho0.25Yb0.25Lu0.25)2Si2O7"
+          }
+        },
+        "Processing": {
+          "Process_Category": "DFT_Calculation",
+          "Process_Text": {
+            "original": "β-type ensemble with 558 unique configurations, VASP-PAW-PBE, 600 eV cutoff.",
+            "simplified": "β-type DFT ensemble, 558 configurations."
+          },
+          "Key_Params": {
+            "Supercell_Lattice_Sites": 88,
+            "Unique_Configurations": 558,
+            "Plane_Wave_Cutoff_eV": 600
+          },
+          "Simulation_Metadata": {
+            "Method_Category": "DFT",
+            "Software": "VASP",
+            "Functional_or_Potential": "PBE-GGA (PAW)",
+            "Energy_Cutoff_eV": 600,
+            "K_Points": "Gamma-centered Monkhorst-Pack, 2pi x 0.03 A^-1 resolution",
+            "Model_Size": {
+              "Atoms": 88,
+              "Description": "88 lattice sites supercells, 4x minimum cell"
+            },
+            "Numerical_Control_Params": {
+              "convergence_tolerance_energy_eV": 1e-07,
+              "convergence_tolerance_force_eV_per_A": 0.005
+            },
+            "Simulation_Text": {
+              "original": "Configuration ensembles generated using ATAT SQS code. DFT calculations performed using VASP with PAW method, PBE-GGA functional, 600 eV plane-wave cutoff, Gamma-centered Monkhorst-Pack k-mesh at 2pi x 0.03 A^-1. Full relaxation of lattice parameters and internal atomic positions.",
+              "simplified": "VASP-PAW-PBE DFT with 600 eV cutoff, full geometry relaxation."
+            }
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "β-type ensemble with randomized occupations of Dy, Ho, Yb, Lu on RE sublattice.",
+            "simplified": "β-type configurational ensemble."
+          },
+          "Advanced_Quantitative_Features": {
+            "FWHM_Mixing_Energy": {
+              "Value": 0.47613,
+              "Data_Nature": "Computed"
+            },
+            "RE_Radius_Deviation_sigma_r_Angstrom": {
+              "Value": 0.0215,
+              "Data_Nature": "Computed"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "FWHM_Mixing_Energy_Distribution",
+            "Value": 0.47613,
+            "Unit": "eV",
+            "Data_Nature": "Computed",
+            "Data_Source": "table"
+          },
+          {
+            "Property_Name": "Configurational_Entropy_Convergence",
+            "Value": 18.7,
+            "Unit": "J/mol/K",
+            "Data_Nature": "Computed",
+            "Data_Source": "text",
+            "Note": "Sconfig converges to 18.70 J/mol/K; 18.8% lower than ideal 23.04 J/mol/K"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "13",
+      "Sample_ID": "DFT_gamma_DyHoYbLu",
+      "Role": "Target",
+      "Data_Nature": "Computed",
+      "base_material": "Ceramics_Inorganic",
+      "application": "Functional",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "High_Entropy",
+        "Thermal_Barrier_or_EBC"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "γ-(Dy0.25Ho0.25Yb0.25Lu0.25)2Si2O7 ... FWHM 0.67814 ... σr 0.0215"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Category": "Functional_Ceramic",
+          "Material_Name_Raw": "γ-(Dy0.25Ho0.25Yb0.25Lu0.25)2Si2O7 configuration ensemble",
+          "Stoichiometry": {
+            "Formula_Raw": "(Dy0.25Ho0.25Yb0.25Lu0.25)2Si2O7"
+          }
+        },
+        "Processing": {
+          "Process_Category": "DFT_Calculation",
+          "Process_Text": {
+            "simplified": "γ-type DFT ensemble, 319 configurations.",
+            "original": "Configuration ensemble constructed using ATAT SQS code with 88-site supercells. DFT calculations performed using VASP with PAW method, PBE-GGA functional, 600 eV plane-wave cutoff, Gamma-centered Monkhorst-Pack k-mesh."
+          },
+          "Key_Params": {
+            "Supercell_Lattice_Sites": 88,
+            "Unique_Configurations": 319,
+            "Plane_Wave_Cutoff_eV": 600
+          },
+          "Simulation_Metadata": {
+            "Method_Category": "DFT",
+            "Software": "VASP",
+            "Functional_or_Potential": "PBE-GGA (PAW)",
+            "Energy_Cutoff_eV": 600,
+            "K_Points": "Gamma-centered Monkhorst-Pack, 2pi x 0.03 A^-1 resolution",
+            "Model_Size": {
+              "Atoms": 88,
+              "Description": "88 lattice sites supercells, 4x minimum cell"
+            },
+            "Numerical_Control_Params": {
+              "convergence_tolerance_energy_eV": 1e-07,
+              "convergence_tolerance_force_eV_per_A": 0.005
+            },
+            "Simulation_Text": {
+              "original": "Configuration ensembles generated using ATAT SQS code. DFT calculations performed using VASP with PAW method, PBE-GGA functional, 600 eV plane-wave cutoff, Gamma-centered Monkhorst-Pack k-mesh at 2pi x 0.03 A^-1. Full relaxation of lattice parameters and internal atomic positions.",
+              "simplified": "VASP-PAW-PBE DFT with 600 eV cutoff, full geometry relaxation."
+            }
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "simplified": "γ-type configurational ensemble.",
+            "original": "Hypothetically constructed configurational ensemble with randomized occupations of RE elements on the RE sublattice."
+          },
+          "Advanced_Quantitative_Features": {
+            "FWHM_Mixing_Energy": {
+              "Value": 0.67814,
+              "Data_Nature": "Computed"
+            },
+            "RE_Radius_Deviation_sigma_r_Angstrom": {
+              "Value": 0.0215,
+              "Data_Nature": "Computed"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "FWHM_Mixing_Energy_Distribution",
+            "Value": 0.67814,
+            "Unit": "eV",
+            "Data_Nature": "Computed",
+            "Data_Source": "table"
+          },
+          {
+            "Property_Name": "Configurational_Entropy_Convergence",
+            "Value": 18.7,
+            "Unit": "J/mol/K",
+            "Data_Nature": "Computed",
+            "Data_Source": "text",
+            "Note": "Sconfig converges to 18.70 J/mol/K; 18.8% lower than ideal 23.04 J/mol/K"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "14",
+      "Sample_ID": "DFT_beta_GdHoYbLu",
+      "Role": "Target",
+      "Data_Nature": "Computed",
+      "base_material": "Ceramics_Inorganic",
+      "application": "Functional",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "High_Entropy",
+        "Thermal_Barrier_or_EBC"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "β-(Gd0.25Ho0.25Yb0.25Lu0.25)2Si2O7 ... FWHM 0.93006 ... σr 0.03055"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Category": "Functional_Ceramic",
+          "Material_Name_Raw": "β-(Gd0.25Ho0.25Yb0.25Lu0.25)2Si2O7 configuration ensemble",
+          "Stoichiometry": {
+            "Formula_Raw": "(Gd0.25Ho0.25Yb0.25Lu0.25)2Si2O7"
+          }
+        },
+        "Processing": {
+          "Process_Category": "DFT_Calculation",
+          "Process_Text": {
+            "simplified": "β-type DFT ensemble, 558 configurations.",
+            "original": "Configuration ensemble constructed using ATAT SQS code with 88-site supercells. DFT calculations performed using VASP with PAW method, PBE-GGA functional, 600 eV plane-wave cutoff, Gamma-centered Monkhorst-Pack k-mesh."
+          },
+          "Key_Params": {
+            "Supercell_Lattice_Sites": 88,
+            "Unique_Configurations": 558,
+            "Plane_Wave_Cutoff_eV": 600
+          },
+          "Simulation_Metadata": {
+            "Method_Category": "DFT",
+            "Software": "VASP",
+            "Functional_or_Potential": "PBE-GGA (PAW)",
+            "Energy_Cutoff_eV": 600,
+            "K_Points": "Gamma-centered Monkhorst-Pack, 2pi x 0.03 A^-1 resolution",
+            "Model_Size": {
+              "Atoms": 88,
+              "Description": "88 lattice sites supercells, 4x minimum cell"
+            },
+            "Numerical_Control_Params": {
+              "convergence_tolerance_energy_eV": 1e-07,
+              "convergence_tolerance_force_eV_per_A": 0.005
+            },
+            "Simulation_Text": {
+              "original": "Configuration ensembles generated using ATAT SQS code. DFT calculations performed using VASP with PAW method, PBE-GGA functional, 600 eV plane-wave cutoff, Gamma-centered Monkhorst-Pack k-mesh at 2pi x 0.03 A^-1. Full relaxation of lattice parameters and internal atomic positions.",
+              "simplified": "VASP-PAW-PBE DFT with 600 eV cutoff, full geometry relaxation."
+            }
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "simplified": "β-type configurational ensemble.",
+            "original": "Hypothetically constructed configurational ensemble with randomized occupations of RE elements on the RE sublattice."
+          },
+          "Advanced_Quantitative_Features": {
+            "FWHM_Mixing_Energy": {
+              "Value": 0.93006,
+              "Data_Nature": "Computed"
+            },
+            "RE_Radius_Deviation_sigma_r_Angstrom": {
+              "Value": 0.03055,
+              "Data_Nature": "Computed"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "FWHM_Mixing_Energy_Distribution",
+            "Value": 0.93006,
+            "Unit": "eV",
+            "Data_Nature": "Computed",
+            "Data_Source": "table"
+          },
+          {
+            "Property_Name": "Configurational_Entropy_Convergence",
+            "Value": 18.7,
+            "Unit": "J/mol/K",
+            "Data_Nature": "Computed",
+            "Data_Source": "text",
+            "Note": "Sconfig converges to 18.70 J/mol/K; 18.8% lower than ideal 23.04 J/mol/K"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "15",
+      "Sample_ID": "DFT_gamma_GdHoYbLu",
+      "Role": "Target",
+      "Data_Nature": "Computed",
+      "base_material": "Ceramics_Inorganic",
+      "application": "Functional",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "High_Entropy",
+        "Thermal_Barrier_or_EBC"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "γ-(Gd0.25Ho0.25Yb0.25Lu0.25)2Si2O7 ... FWHM 1.23961 ... σr 0.03055"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Category": "Functional_Ceramic",
+          "Material_Name_Raw": "γ-(Gd0.25Ho0.25Yb0.25Lu0.25)2Si2O7 configuration ensemble",
+          "Stoichiometry": {
+            "Formula_Raw": "(Gd0.25Ho0.25Yb0.25Lu0.25)2Si2O7"
+          }
+        },
+        "Processing": {
+          "Process_Category": "DFT_Calculation",
+          "Process_Text": {
+            "simplified": "γ-type DFT ensemble, 319 configurations.",
+            "original": "Configuration ensemble constructed using ATAT SQS code with 88-site supercells. DFT calculations performed using VASP with PAW method, PBE-GGA functional, 600 eV plane-wave cutoff, Gamma-centered Monkhorst-Pack k-mesh."
+          },
+          "Key_Params": {
+            "Supercell_Lattice_Sites": 88,
+            "Unique_Configurations": 319,
+            "Plane_Wave_Cutoff_eV": 600
+          },
+          "Simulation_Metadata": {
+            "Method_Category": "DFT",
+            "Software": "VASP",
+            "Functional_or_Potential": "PBE-GGA (PAW)",
+            "Energy_Cutoff_eV": 600,
+            "K_Points": "Gamma-centered Monkhorst-Pack, 2pi x 0.03 A^-1 resolution",
+            "Model_Size": {
+              "Atoms": 88,
+              "Description": "88 lattice sites supercells, 4x minimum cell"
+            },
+            "Numerical_Control_Params": {
+              "convergence_tolerance_energy_eV": 1e-07,
+              "convergence_tolerance_force_eV_per_A": 0.005
+            },
+            "Simulation_Text": {
+              "original": "Configuration ensembles generated using ATAT SQS code. DFT calculations performed using VASP with PAW method, PBE-GGA functional, 600 eV plane-wave cutoff, Gamma-centered Monkhorst-Pack k-mesh at 2pi x 0.03 A^-1. Full relaxation of lattice parameters and internal atomic positions.",
+              "simplified": "VASP-PAW-PBE DFT with 600 eV cutoff, full geometry relaxation."
+            }
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "simplified": "γ-type configurational ensemble.",
+            "original": "Hypothetically constructed configurational ensemble with randomized occupations of RE elements on the RE sublattice."
+          },
+          "Advanced_Quantitative_Features": {
+            "FWHM_Mixing_Energy": {
+              "Value": 1.23961,
+              "Data_Nature": "Computed"
+            },
+            "RE_Radius_Deviation_sigma_r_Angstrom": {
+              "Value": 0.03055,
+              "Data_Nature": "Computed"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "FWHM_Mixing_Energy_Distribution",
+            "Value": 1.23961,
+            "Unit": "eV",
+            "Data_Nature": "Computed",
+            "Data_Source": "table"
+          },
+          {
+            "Property_Name": "Configurational_Entropy_Convergence",
+            "Value": 18.7,
+            "Unit": "J/mol/K",
+            "Data_Nature": "Computed",
+            "Data_Source": "text",
+            "Note": "Sconfig converges to 18.70 J/mol/K; 18.8% lower than ideal 23.04 J/mol/K"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "16",
+      "Sample_ID": "DFT_beta_LaCeYbLu",
+      "Role": "Target",
+      "Data_Nature": "Computed",
+      "base_material": "Ceramics_Inorganic",
+      "application": "Functional",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "High_Entropy",
+        "Thermal_Barrier_or_EBC"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "β-(La0.25Ce0.25Yb0.25Lu0.25)2Si2O7 ... FWHM 6.91337 ... σr 0.07867"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Category": "Functional_Ceramic",
+          "Material_Name_Raw": "β-(La0.25Ce0.25Yb0.25Lu0.25)2Si2O7 configuration ensemble",
+          "Stoichiometry": {
+            "Formula_Raw": "(La0.25Ce0.25Yb0.25Lu0.25)2Si2O7"
+          }
+        },
+        "Processing": {
+          "Process_Category": "DFT_Calculation",
+          "Process_Text": {
+            "simplified": "β-type DFT ensemble, 558 configurations.",
+            "original": "Configuration ensemble constructed using ATAT SQS code with 88-site supercells. DFT calculations performed using VASP with PAW method, PBE-GGA functional, 600 eV plane-wave cutoff, Gamma-centered Monkhorst-Pack k-mesh."
+          },
+          "Key_Params": {
+            "Supercell_Lattice_Sites": 88,
+            "Unique_Configurations": 558,
+            "Plane_Wave_Cutoff_eV": 600
+          },
+          "Simulation_Metadata": {
+            "Method_Category": "DFT",
+            "Software": "VASP",
+            "Functional_or_Potential": "PBE-GGA (PAW)",
+            "Energy_Cutoff_eV": 600,
+            "K_Points": "Gamma-centered Monkhorst-Pack, 2pi x 0.03 A^-1 resolution",
+            "Model_Size": {
+              "Atoms": 88,
+              "Description": "88 lattice sites supercells, 4x minimum cell"
+            },
+            "Numerical_Control_Params": {
+              "convergence_tolerance_energy_eV": 1e-07,
+              "convergence_tolerance_force_eV_per_A": 0.005
+            },
+            "Simulation_Text": {
+              "original": "Configuration ensembles generated using ATAT SQS code. DFT calculations performed using VASP with PAW method, PBE-GGA functional, 600 eV plane-wave cutoff, Gamma-centered Monkhorst-Pack k-mesh at 2pi x 0.03 A^-1. Full relaxation of lattice parameters and internal atomic positions.",
+              "simplified": "VASP-PAW-PBE DFT with 600 eV cutoff, full geometry relaxation."
+            }
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "simplified": "β-type configurational ensemble with very wide energy distribution.",
+            "original": "Hypothetically constructed configurational ensemble with randomized occupations of RE elements on the RE sublattice."
+          },
+          "Advanced_Quantitative_Features": {
+            "FWHM_Mixing_Energy": {
+              "Value": 6.91337,
+              "Data_Nature": "Computed"
+            },
+            "RE_Radius_Deviation_sigma_r_Angstrom": {
+              "Value": 0.07867,
+              "Data_Nature": "Computed"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "FWHM_Mixing_Energy_Distribution",
+            "Value": 6.91337,
+            "Unit": "eV",
+            "Data_Nature": "Computed",
+            "Data_Source": "table"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "17",
+      "Sample_ID": "DFT_gamma_LaCeYbLu",
+      "Role": "Target",
+      "Data_Nature": "Computed",
+      "base_material": "Ceramics_Inorganic",
+      "application": "Functional",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "High_Entropy",
+        "Thermal_Barrier_or_EBC"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "γ-(La0.25Ce0.25Yb0.25Lu0.25)2Si2O7 ... FWHM 10.25844 ... σr 0.07867"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Category": "Functional_Ceramic",
+          "Material_Name_Raw": "γ-(La0.25Ce0.25Yb0.25Lu0.25)2Si2O7 configuration ensemble",
+          "Stoichiometry": {
+            "Formula_Raw": "(La0.25Ce0.25Yb0.25Lu0.25)2Si2O7"
+          }
+        },
+        "Processing": {
+          "Process_Category": "DFT_Calculation",
+          "Process_Text": {
+            "simplified": "γ-type DFT ensemble, 319 configurations.",
+            "original": "Configuration ensemble constructed using ATAT SQS code with 88-site supercells. DFT calculations performed using VASP with PAW method, PBE-GGA functional, 600 eV plane-wave cutoff, Gamma-centered Monkhorst-Pack k-mesh."
+          },
+          "Key_Params": {
+            "Supercell_Lattice_Sites": 88,
+            "Unique_Configurations": 319,
+            "Plane_Wave_Cutoff_eV": 600
+          },
+          "Simulation_Metadata": {
+            "Method_Category": "DFT",
+            "Software": "VASP",
+            "Functional_or_Potential": "PBE-GGA (PAW)",
+            "Energy_Cutoff_eV": 600,
+            "K_Points": "Gamma-centered Monkhorst-Pack, 2pi x 0.03 A^-1 resolution",
+            "Model_Size": {
+              "Atoms": 88,
+              "Description": "88 lattice sites supercells, 4x minimum cell"
+            },
+            "Numerical_Control_Params": {
+              "convergence_tolerance_energy_eV": 1e-07,
+              "convergence_tolerance_force_eV_per_A": 0.005
+            },
+            "Simulation_Text": {
+              "original": "Configuration ensembles generated using ATAT SQS code. DFT calculations performed using VASP with PAW method, PBE-GGA functional, 600 eV plane-wave cutoff, Gamma-centered Monkhorst-Pack k-mesh at 2pi x 0.03 A^-1. Full relaxation of lattice parameters and internal atomic positions.",
+              "simplified": "VASP-PAW-PBE DFT with 600 eV cutoff, full geometry relaxation."
+            }
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "simplified": "γ-type configurational ensemble with extremely wide energy distribution.",
+            "original": "Hypothetically constructed configurational ensemble with randomized occupations of RE elements on the RE sublattice."
+          },
+          "Advanced_Quantitative_Features": {
+            "FWHM_Mixing_Energy": {
+              "Value": 10.25844,
+              "Data_Nature": "Computed"
+            },
+            "RE_Radius_Deviation_sigma_r_Angstrom": {
+              "Value": 0.07867,
+              "Data_Nature": "Computed"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "FWHM_Mixing_Energy_Distribution",
+            "Value": 10.25844,
+            "Unit": "eV",
+            "Data_Nature": "Computed",
+            "Data_Source": "table"
+          }
+        ]
+      }
+    }
+  ]
+}

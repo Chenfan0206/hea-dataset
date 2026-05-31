@@ -1,0 +1,331 @@
+{
+  "Paper_Metadata": {
+    "Paper_Title": "Microstructural evolution and mechanical properties of differently heat-treated binder jet printed samples from gas- and water-atomized alloy 625 powders",
+    "DOI": "10.1016/j.actamat.2016.11.021"
+  },
+  "items": [
+    {
+      "Sample_ID": "Reference_Nominal_625",
+      "Gradient_Material": false,
+      "Composition_Info": {
+        "Role": "Reference",
+        "Alloy_Name_Raw": "Nominal alloy 625",
+        "Nominal_Composition": {
+          "Composition_Type": "wt%",
+          "Elements_Normalized": {
+            "Ni": ">58",
+            "Cr": "20-23",
+            "Fe": "<5",
+            "Nb": "3.1-4.1",
+            "Mo": "8-10",
+            "Al": "<0.4",
+            "Ti": "<0.4",
+            "Co": "<1.0",
+            "Mn": "<0.5",
+            "Si": "<0.5"
+          }
+        },
+        "Note": "Reference composition based on ASTM standards."
+      },
+      "Process_Info": null,
+      "Microstructure_Info": null,
+      "Properties_Info": []
+    },
+    {
+      "Sample_ID": "GA_Sintered_1285",
+      "Gradient_Material": false,
+      "Composition_Info": {
+        "Role": "Target",
+        "Alloy_Name_Raw": "Gas-atomized (GA) alloy 625",
+        "Measured_Composition": {
+          "Composition_Type": "wt%",
+          "Elements_Normalized": {
+            "Ni": 61.04,
+            "Cr": 21.8,
+            "Fe": 4.4,
+            "Nb": 3.6,
+            "Mo": 8.0,
+            "Al": 0.02,
+            "Ti": 0.02,
+            "Co": 0.22,
+            "Mn": 0.4,
+            "Si": 0.5
+          },
+          "Measurement_Method": "EDS"
+        },
+        "Note": "Oxygen 0.01 wt%, Carbon 0.04 wt% in as-received powder"
+      },
+      "Process_Info": {
+        "Process_Category": "Binder Jet Printing + Sintering",
+        "Process_Text": {
+          "original": "M-Flex ExOne binder jet printer was used. After printing, parts were cured at 175°C and then sintered in an alumina powder bed under vacuum: heating at 5°C/min to 600°C, 3.2°C/min to 1000°C, 2.8°C/min to the holding temperature 1285°C for 4 h, then cooling at 1°C/min to 1200°C, 3.1°C/min to 500°C and finally cooling to RT.",
+          "simplified": "Binder Jet Printing; Curing (175°C); Vacuum Sintering (1285°C, 4h, Alumina bed)."
+        },
+        "Key_Params": {
+          "Curing_Temperature_K": 448.15,
+          "Sintering_Temperature_K": 1558.15,
+          "Sintering_Time_h": 4.0,
+          "Protective_Atmosphere": "Vacuum"
+        }
+      },
+      "Microstructure_Info": {
+        "Main_Phase": "Gamma (γ)",
+        "Relative_Density_pct": 99.2,
+        "Grain_Size_avg_um": 89.0,
+        "Microstructure_Text": {
+          "original": "GA samples fully densified, showed no depletion zones and formed small amounts of fine precipitates. Grain sizes of GA samples at their highest density were 89±21 μm.",
+          "simplified": "Fully densified (99.2%), no depletion zones, fine precipitates."
+        }
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Yield_Strength",
+          "Value_Numeric": 376.0,
+          "Value_StdDev": 14.0,
+          "Unit": "MPa",
+          "Test_Temperature_K": 298.15
+        },
+        {
+          "Property_Name": "Ultimate_Tensile_Strength",
+          "Value_Numeric": 644.0,
+          "Value_StdDev": 16.0,
+          "Unit": "MPa",
+          "Test_Temperature_K": 298.15
+        },
+        {
+          "Property_Name": "Elongation_Total",
+          "Value_Numeric": 47.0,
+          "Value_StdDev": 2.7,
+          "Unit": "%",
+          "Test_Temperature_K": 298.15
+        },
+        {
+          "Property_Name": "Hardness_HV",
+          "Value_Numeric": 213.0,
+          "Value_StdDev": 6.0,
+          "Unit": "HV0.1"
+        }
+      ]
+    },
+    {
+      "Sample_ID": "GA_Aged_1285",
+      "Gradient_Material": false,
+      "Composition_Info": {
+        "Role": "Target",
+        "Alloy_Name_Raw": "Gas-atomized (GA) alloy 625",
+        "Measured_Composition": {
+          "Composition_Type": "wt%",
+          "Elements_Normalized": {
+            "Ni": 61.04,
+            "Cr": 21.8,
+            "Fe": 4.4,
+            "Nb": 3.6,
+            "Mo": 8.0,
+            "Al": 0.02,
+            "Ti": 0.02,
+            "Co": 0.22,
+            "Mn": 0.4,
+            "Si": 0.5
+          },
+          "Measurement_Method": "EDS"
+        }
+      },
+      "Process_Info": {
+        "Process_Category": "BJP + Sintering + Solution + Aging",
+        "Process_Text": {
+          "original": "After sintering at 1285°C for 4 h, samples were solution treated at 1150°C for 2 h and aged at 745°C for 20 h.",
+          "simplified": "Sintering (1285°C); Solution (1150°C, 2h); Aging (745°C, 20h)."
+        },
+        "Key_Params": {
+          "Solution_Temperature_K": 1423.15,
+          "Solution_Time_h": 2.0,
+          "Aging_Temperature_K": 1018.15,
+          "Aging_Time_h": 20.0
+        }
+      },
+      "Microstructure_Info": {
+        "Main_Phase": "Gamma (γ)",
+        "Relative_Density_pct": 99.2,
+        "Microstructure_Text": {
+          "original": "Aging further improved microstructure. GA samples form only small carbide and oxide particles during aging within grains and at grain boundaries.",
+          "simplified": "Fine carbides/oxides within grains and at boundaries."
+        }
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Yield_Strength",
+          "Value_Numeric": 394.0,
+          "Value_StdDev": 15.0,
+          "Unit": "MPa",
+          "Test_Temperature_K": 298.15
+        },
+        {
+          "Property_Name": "Ultimate_Tensile_Strength",
+          "Value_Numeric": 718.0,
+          "Value_StdDev": 14.0,
+          "Unit": "MPa",
+          "Test_Temperature_K": 298.15
+        },
+        {
+          "Property_Name": "Elongation_Total",
+          "Value_Numeric": 29.0,
+          "Value_StdDev": 3.1,
+          "Unit": "%",
+          "Test_Temperature_K": 298.15
+        },
+        {
+          "Property_Name": "Hardness_HV",
+          "Value_Numeric": 327.0,
+          "Value_StdDev": 7.0,
+          "Unit": "HV0.1"
+        }
+      ]
+    },
+    {
+      "Sample_ID": "WA_Sintered_1270",
+      "Gradient_Material": false,
+      "Composition_Info": {
+        "Role": "Target",
+        "Alloy_Name_Raw": "Water-atomized (WA) alloy 625",
+        "Measured_Composition": {
+          "Composition_Type": "wt%",
+          "Elements_Normalized": {
+            "Ni": 64.67,
+            "Cr": 16.9,
+            "Fe": 3.7,
+            "Nb": 3.7,
+            "Mo": 8.7,
+            "Al": 0.05,
+            "Ti": 0.16,
+            "Co": 0.62,
+            "Mn": 0.8,
+            "Si": 0.7
+          },
+          "Measurement_Method": "EDS"
+        },
+        "Note": "Oxygen 0.09 wt%, Carbon 1.90 wt% in as-received powder"
+      },
+      "Process_Info": {
+        "Process_Category": "Binder Jet Printing + Sintering",
+        "Process_Text": {
+          "original": "Sintered at 1270°C for 4 h under vacuum following the same BJP and curing steps as GA.",
+          "simplified": "Binder Jet Printing; Curing (175°C); Vacuum Sintering (1270°C, 4h)."
+        },
+        "Key_Params": {
+          "Sintering_Temperature_K": 1543.15,
+          "Sintering_Time_h": 4.0,
+          "Protective_Atmosphere": "Vacuum"
+        }
+      },
+      "Microstructure_Info": {
+        "Main_Phase": "Gamma (γ)",
+        "Relative_Density_pct": 95.0,
+        "Grain_Size_avg_um": 88.0,
+        "Microstructure_Text": {
+          "original": "WA samples did not fully densify and formed large amounts of carbide and oxide precipitates with large Cr, Nb, and Mo depleted zones. Grain size 88±26 μm.",
+          "simplified": "Incomplete densification (95%), large precipitates, solute depletion zones."
+        }
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Yield_Strength",
+          "Value_Numeric": 287.0,
+          "Value_StdDev": 11.0,
+          "Unit": "MPa",
+          "Test_Temperature_K": 298.15
+        },
+        {
+          "Property_Name": "Ultimate_Tensile_Strength",
+          "Value_Numeric": 386.0,
+          "Value_StdDev": 15.0,
+          "Unit": "MPa",
+          "Test_Temperature_K": 298.15
+        },
+        {
+          "Property_Name": "Elongation_Total",
+          "Value_Numeric": 11.6,
+          "Value_StdDev": 2.2,
+          "Unit": "%",
+          "Test_Temperature_K": 298.15
+        },
+        {
+          "Property_Name": "Hardness_HV",
+          "Value_Numeric": 191.0,
+          "Value_StdDev": 7.0,
+          "Unit": "HV0.1"
+        }
+      ]
+    },
+    {
+      "Sample_ID": "WA_Aged_1270",
+      "Gradient_Material": false,
+      "Composition_Info": {
+        "Role": "Target",
+        "Alloy_Name_Raw": "Water-atomized (WA) alloy 625",
+        "Measured_Composition": {
+          "Composition_Type": "wt%",
+          "Elements_Normalized": {
+            "Ni": 64.67,
+            "Cr": 16.9,
+            "Fe": 3.7,
+            "Nb": 3.7,
+            "Mo": 8.7,
+            "Al": 0.05,
+            "Ti": 0.16,
+            "Co": 0.62,
+            "Mn": 0.8,
+            "Si": 0.7
+          },
+          "Measurement_Method": "EDS"
+        }
+      },
+      "Process_Info": {
+        "Process_Category": "BJP + Sintering + Solution + Aging",
+        "Process_Text": {
+          "original": "Sintered at 1270°C for 4 h, then solution treated (1150°C, 2h) and aged at 745°C for 20 h.",
+          "simplified": "Sintering (1270°C); Solution (1150°C, 2h); Aging (745°C, 20h)."
+        },
+        "Key_Params": {
+          "Aging_Temperature_K": 1018.15,
+          "Aging_Time_h": 20.0
+        }
+      },
+      "Microstructure_Info": {
+        "Relative_Density_pct": 95.0,
+        "Microstructure_Text": {
+          "original": "WA samples have a large amount of carbides and oxides at the grain boundaries resulting in a Cr, Nb, Mo depleted zone around the grain boundaries.",
+          "simplified": "Abundant boundary carbides/oxides, depletion zones."
+        }
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Yield_Strength",
+          "Value_Numeric": 298.0,
+          "Value_StdDev": 13.0,
+          "Unit": "MPa",
+          "Test_Temperature_K": 298.15
+        },
+        {
+          "Property_Name": "Ultimate_Tensile_Strength",
+          "Value_Numeric": 405.0,
+          "Value_StdDev": 14.0,
+          "Unit": "MPa",
+          "Test_Temperature_K": 298.15
+        },
+        {
+          "Property_Name": "Elongation_Total",
+          "Value_Numeric": 7.5,
+          "Value_StdDev": 1.9,
+          "Unit": "%",
+          "Test_Temperature_K": 298.15
+        },
+        {
+          "Property_Name": "Hardness_HV",
+          "Value_Numeric": 225.0,
+          "Value_StdDev": 6.0,
+          "Unit": "HV0.1"
+        }
+      ]
+    }
+  ]
+}

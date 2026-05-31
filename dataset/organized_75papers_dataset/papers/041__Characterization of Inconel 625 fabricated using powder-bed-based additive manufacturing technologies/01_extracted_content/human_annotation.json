@@ -1,0 +1,301 @@
+{
+  "Paper_Metadata": {
+    "Paper_Title": "Characterization of Inconel 625 fabricated using powder-bed-based additive manufacturing technologies",
+    "DOI": "10.1016/j.jmatprotec.2018.08.031"
+  },
+  "items": [
+    {
+      "Sample_ID": "EPBF-X",
+      "Gradient_Material": false,
+      "Gradient_Group_ID": null,
+      "Composition_Info": {
+        "Role": "Target",
+        "Alloy_Name_Raw": "Inconel 625",
+        "Nominal_Composition": {
+          "Composition_Type": "wt%",
+          "Elements_Normalized": null
+        },
+        "Measured_Composition": {
+          "Composition_Type": "wt%",
+          "Elements_Normalized": {
+            "Ni": 61.3,
+            "Cr": 21.01,
+            "Mo": 9.8,
+            "Nb": 4.1,
+            "Fe": 0.3,
+            "Mn": 0.33,
+            "Si": 0.4
+          },
+          "Measurement_Method": "ICP (Inferred from Table 2)"
+        },
+        "Note": "Powder provided by Carpenter Powder Products. Data from Table 2."
+      },
+      "Process_Info": {
+        "Process_Category": "EPBF + HIP",
+        "Process_Text": {
+          "original": "EPBF specimens were printed using an Arcam A2 system... parameters included a powder bed preheat temperature target of ~850°C, a beam speed of 500 mm/s, an average current of 14 mA, and a focus offset of 20 mA.",
+          "simplified": "EPBF (Arcam A2) with preheat ~850°C, beam speed 500mm/s, current 14mA."
+        },
+        "Equipment": "Arcam A2",
+        "Key_Params": {
+          "Build_Plate_Temperature_K": 1123.15,
+          "Scanning_Speed_mm_s": 500.0,
+          "Focus_Offset_mA": 20.0,
+          "Average_Current_mA": 14.0,
+          "HIP_Temperature_K": 1436.15,
+          "HIP_Pressure_MPa": 102.0,
+          "HIP_Time_h": 3.0
+        }
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": "EPBF fabricated components has distinct characteristics... perpendicular to the build direction the microstructure appears with a textured columnar grain morphology... The dark linear areas visible... are the columns of γ'' precipitates, following the build direction.",
+          "simplified": "Columnar grain morphology with γ'' precipitates following build direction."
+        },
+        "Main_Phase": "Gamma (γ)",
+        "Precipitates": [
+          {
+            "Phase_Type": "Gamma Double Prime (γ'')",
+            "Volume_Fraction_pct": null
+          }
+        ],
+        "Porosity_pct": null,
+        "Relative_Density_pct": 99.9,
+        "Grain_Size_avg_um": 356.0,
+        "Advanced_Quantitative_Features": {
+          "Columnar_Grain_Width_um": 16.0
+        }
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Ultimate_Tensile_Strength",
+          "Test_Condition": "X orientation, RT",
+          "Value_Numeric": 849.0,
+          "Value_StdDev": 37.0,
+          "Unit": "MPa",
+          "Test_Temperature_K": 298.15,
+          "Data_Source": "text",
+          "Note": "Average value from Table 3"
+        },
+        {
+          "Property_Name": "Yield_Strength",
+          "Test_Condition": "X orientation, RT",
+          "Value_Numeric": 367.0,
+          "Value_StdDev": 33.0,
+          "Unit": "MPa",
+          "Test_Temperature_K": 298.15,
+          "Data_Source": "text"
+        },
+        {
+          "Property_Name": "Elongation_Total",
+          "Test_Condition": "X orientation, RT",
+          "Value_Numeric": 44.32,
+          "Value_StdDev": 4.95,
+          "Unit": "%",
+          "Test_Temperature_K": 298.15,
+          "Data_Source": "text"
+        },
+        {
+          "Property_Name": "Elastic_Modulus",
+          "Test_Condition": "X orientation, RT",
+          "Value_Numeric": 484.0,
+          "Value_StdDev": 52.0,
+          "Unit": "MPa",
+          "Test_Temperature_K": 298.15,
+          "Data_Source": "text"
+        }
+      ]
+    },
+    {
+      "Sample_ID": "LPBF-X",
+      "Gradient_Material": false,
+      "Gradient_Group_ID": null,
+      "Composition_Info": {
+        "Role": "Target",
+        "Alloy_Name_Raw": "Inconel 625",
+        "Nominal_Composition": {
+          "Composition_Type": "wt%",
+          "Elements_Normalized": null
+        },
+        "Measured_Composition": {
+          "Composition_Type": "wt%",
+          "Elements_Normalized": {
+            "Ni": 61.55,
+            "Cr": 21.25,
+            "Mo": 9.55,
+            "Nb": 4.05,
+            "Fe": 2.8,
+            "Mn": 0.5,
+            "Si": 0.2
+          },
+          "Measurement_Method": "ICP (Inferred from Table 2)"
+        },
+        "Note": "Powder provided by SLM Solutions GmbH. Data from Table 2."
+      },
+      "Process_Info": {
+        "Process_Category": "LPBF + HIP",
+        "Process_Text": {
+          "original": "LPBF parts were fabricated in an SLM Solutions 125HI system... parameters consisted of a power of 175 W, laser speed of 600 mm/s, and hatching space of 0.14 mm.",
+          "simplified": "LPBF (SLM 125HI) P=175W, v=600mm/s, hatch=0.14mm."
+        },
+        "Equipment": "SLM Solutions 125HI",
+        "Key_Params": {
+          "Laser_Power_W": 175.0,
+          "Scanning_Speed_mm_s": 600.0,
+          "Hatch_Spacing_um": 140.0,
+          "Layer_Thickness_um": 30.0,
+          "HIP_Temperature_K": 1436.15,
+          "HIP_Pressure_MPa": 102.0,
+          "HIP_Time_h": 3.0
+        }
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": "The microstructure of LPBF fabricated parts appears homogenous and with equiaxed grains... The average grain size... was 27 μm.",
+          "simplified": "Homogenous equiaxed grains."
+        },
+        "Main_Phase": "Gamma (γ)",
+        "Precipitates": [],
+        "Porosity_pct": null,
+        "Relative_Density_pct": 99.9,
+        "Grain_Size_avg_um": 27.0
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Ultimate_Tensile_Strength",
+          "Test_Condition": "X orientation, RT",
+          "Value_Numeric": 906.0,
+          "Value_StdDev": 28.0,
+          "Unit": "MPa",
+          "Test_Temperature_K": 298.15,
+          "Data_Source": "text",
+          "Note": "Average value from Table 3"
+        },
+        {
+          "Property_Name": "Yield_Strength",
+          "Test_Condition": "X orientation, RT",
+          "Value_Numeric": 396.0,
+          "Value_StdDev": 33.0,
+          "Unit": "MPa",
+          "Test_Temperature_K": 298.15,
+          "Data_Source": "text"
+        },
+        {
+          "Property_Name": "Elongation_Total",
+          "Test_Condition": "X orientation, RT",
+          "Value_Numeric": 62.34,
+          "Value_StdDev": 1.98,
+          "Unit": "%",
+          "Test_Temperature_K": 298.15,
+          "Data_Source": "text"
+        },
+        {
+          "Property_Name": "Elastic_Modulus",
+          "Test_Condition": "X orientation, RT",
+          "Value_Numeric": 561.0,
+          "Value_StdDev": 14.0,
+          "Unit": "MPa",
+          "Test_Temperature_K": 298.15,
+          "Data_Source": "text"
+        }
+      ]
+    },
+    {
+      "Sample_ID": "BJ-X",
+      "Gradient_Material": false,
+      "Gradient_Group_ID": null,
+      "Composition_Info": {
+        "Role": "Target",
+        "Alloy_Name_Raw": "Inconel 625",
+        "Nominal_Composition": {
+          "Composition_Type": "wt%",
+          "Elements_Normalized": null
+        },
+        "Measured_Composition": {
+          "Composition_Type": "wt%",
+          "Elements_Normalized": {
+            "Ni": 60.12,
+            "Cr": 22.84,
+            "Mo": 9.16,
+            "Nb": 4.15,
+            "Fe": 2.93,
+            "Mn": 0.42,
+            "Si": 0.32
+          },
+          "Measurement_Method": "ICP (Inferred from Table 2)"
+        },
+        "Note": "Powder provided by ExOne. Data from Table 2."
+      },
+      "Process_Info": {
+        "Process_Category": "Binder Jetting + Sintering + HIP",
+        "Process_Text": {
+          "original": "Binder jetting specimens were fabricated by the ExOne Company using an M-Flex system... green body products were sintered utilizing a sintering profile that reached maximum temperatures of 1310°C (with a dwell time of 2h)... All specimens underwent HIP at 1393 K (1120 °C) and 100 MPa for 4 h.",
+          "simplified": "BJ (M-Flex) with sintering at 1310°C and HIP."
+        },
+        "Equipment": "ExOne M-Flex",
+        "Key_Params": {
+          "Sintering_Temperature_K": 1583.15,
+          "Sintering_Time_h": 2.0,
+          "HIP_Temperature_K": 1393.0,
+          "HIP_Pressure_MPa": 100.0,
+          "HIP_Time_h": 4.0
+        }
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": "Samples produced through binder jetting showed... larger grains... average grain diameter of 57 μm... annealed twins within the austenitic grains.",
+          "simplified": "Larger grains with annealed twins."
+        },
+        "Main_Phase": "Gamma (γ)",
+        "Precipitates": [
+          {
+            "Phase_Type": "Annealed Twins",
+            "Volume_Fraction_pct": null
+          }
+        ],
+        "Porosity_pct": null,
+        "Relative_Density_pct": 98.3,
+        "Grain_Size_avg_um": 57.0
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Ultimate_Tensile_Strength",
+          "Test_Condition": "X orientation, RT",
+          "Value_Numeric": 707.0,
+          "Value_StdDev": 12.0,
+          "Unit": "MPa",
+          "Test_Temperature_K": 298.15,
+          "Data_Source": "text",
+          "Note": "Average value from Table 3"
+        },
+        {
+          "Property_Name": "Yield_Strength",
+          "Test_Condition": "X orientation, RT",
+          "Value_Numeric": 320.0,
+          "Value_StdDev": 14.0,
+          "Unit": "MPa",
+          "Test_Temperature_K": 298.15,
+          "Data_Source": "text"
+        },
+        {
+          "Property_Name": "Elongation_Total",
+          "Test_Condition": "X orientation, RT",
+          "Value_Numeric": 58.74,
+          "Value_StdDev": 2.14,
+          "Unit": "%",
+          "Test_Temperature_K": 298.15,
+          "Data_Source": "text"
+        },
+        {
+          "Property_Name": "Elastic_Modulus",
+          "Test_Condition": "X orientation, RT",
+          "Value_Numeric": 524.0,
+          "Value_StdDev": 47.0,
+          "Unit": "MPa",
+          "Test_Temperature_K": 298.15,
+          "Data_Source": "text"
+        }
+      ]
+    }
+  ]
+}

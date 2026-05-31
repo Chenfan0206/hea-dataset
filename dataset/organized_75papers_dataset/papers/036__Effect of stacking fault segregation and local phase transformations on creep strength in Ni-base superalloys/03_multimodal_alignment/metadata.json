@@ -1,0 +1,7 @@
+{
+  "paper_dir": "2-2019-acta_美Smith_M",
+  "figures": 10,
+  "direct_pairs": 10,
+  "topk_pairs": 50,
+  "sentences": 45
+}

@@ -1,0 +1,1736 @@
+{
+"Paper_Metadata": {
+"Paper_Title": "Phase formation capability and compositional design of β-phase multiple rare-earth principal component disilicates",
+"DOI": "10.1038/s41467-023-36947-6"
+},
+"items": [
+{
+"Sample_ID": "T01",
+"Gradient_Material": false,
+"Gradient_Group_ID": null,
+"Composition_Info": {
+"Role": "Target",
+"Alloy_Name_Raw": "(Dy0.25Tm0.25Yb0.25Lu0.25)2Si2O7 powder",
+"Nominal_Composition": {
+"Composition_Type": "at%",
+"Elements_Normalized": {
+"Dy": 4.5455,
+"Tm": 4.5455,
+"Yb": 4.5455,
+"Lu": 4.5455,
+"Si": 18.1818,
+"O": 63.6362
+}
+},
+"Measured_Composition": {
+"Composition_Type": null,
+"Elements_Normalized": null,
+"Measurement_Method": "SEM-EDS"
+},
+"Note": "Nominal equimolar four-RE principal-component disilicate. The paper states homogeneous RE distribution and pure single-phase β solid solution for the as-synthesized powder, but no full overall measured elemental normalization was reported for the powder."
+},
+"Process_Info": {
+"Process_Category": "Solid-state synthesis",
+"Process_Text": {
+"original": "Commercial rare-earth oxides and SiO2 powders were mixed according to the stoichiometry of (Dy0.25Tm0.25Yb0.25Lu0.25)2Si2O7, ball milled for 24 h in a Si3N4 jar with Si3N4 balls and ethanol solution, dried at 60 °C for 24 h, passed through a 120-mesh sieve, and then synthesized by pressure-less synthesis at 1550 °C for 6 h.",
+"simplified": "Stoichiometric rare-earth oxide plus SiO2 mixture, 24 h ball milling in Si3N4 jar/balls with ethanol, dried at 60 °C for 24 h, sieved through 120 mesh, then pressure-less synthesized at 1550 °C for 6 h."
+},
+"Equipment": "Si3N4 jar and Si3N4 balls; X-ray diffractometer D/max-2400 (Rigaku, Tokyo, Japan); SEM SUPRA 35 (Zeiss, Oberkochen, Germany) with INCAx-sight EDS",
+"Key_Params": {
+"Annealing_Temperature_K": 1823.15,
+"Annealing_Time_h": 6.0,
+"Ball_Milling_Time_h": 24.0,
+"Drying_Temperature_K": 333.15,
+"Drying_Time_h": 24.0,
+"Sieve_Mesh": 120
+}
+},
+"Microstructure_Info": {
+"Microstructure_Text": {
+"original": "All the detected peaks for the (Dy0.25Tm0.25Yb0.25Lu0.25)2Si2O7 sample could be indexed to β-Yb2Si2O7. The homogeneous distribution of the RE elements is further confirmed by the SEM-EDS analysis. These observations illustrate that the as-synthesized powders are pure single-phase β-(Dy0.25Tm0.25Yb0.25Lu0.25)2Si2O7 solid solutions.",
+"simplified": "Pure single-phase β-type disilicate with homogeneous RE distribution."
+},
+"Main_Phase": "Beta (β)-RE2Si2O7",
+"Precipitates": [],
+"Porosity_pct": null,
+"Relative_Density_pct": null,
+"Grain_Size_avg_um": null,
+"Precipitate_Size_avg_nm": null,
+"Advanced_Quantitative_Features": {}
+},
+"Properties_Info": [
+{
+"Property_Name": "Beta_Phase_Fraction_pct",
+"Test_Condition": "Room-temperature XRD phase identification after powder synthesis at 1550 °C for 6 h",
+"Value_Numeric": 100.0,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "%",
+"Test_Temperature_K": 298.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": null,
+"Note": "Reported as pure single-phase β solid solution."
+}
+]
+},
+{
+"Sample_ID": "T02",
+"Gradient_Material": false,
+"Gradient_Group_ID": null,
+"Composition_Info": {
+"Role": "Target",
+"Alloy_Name_Raw": "(Dy0.25Tm0.25Yb0.25Lu0.25)2Si2O7 bulk, hot-pressed at 1860 °C",
+"Nominal_Composition": {
+"Composition_Type": "at%",
+"Elements_Normalized": {
+"Dy": 4.5455,
+"Tm": 4.5455,
+"Yb": 4.5455,
+"Lu": 4.5455,
+"Si": 18.1818,
+"O": 63.6362
+}
+},
+"Measured_Composition": {
+"Composition_Type": null,
+"Elements_Normalized": null,
+"Measurement_Method": "SEM-EDS point analysis"
+},
+"Note": "SEM-EDS point analysis on the hot-pressed bulk sample gave RE ratio Dy0.26Tm0.26Yb0.24Lu0.24."
+},
+"Process_Info": {
+"Process_Category": "Solid-state synthesis plus hot-pressing sintering",
+"Process_Text": {
+"original": "Rare-earth oxides and SiO2 powders were mixed according to the stoichiometry of (Dy0.25Tm0.25Yb0.25Lu0.25)2Si2O7, ball milled for 24 h in a Si3N4 jar with Si3N4 balls and ethanol solution, dried at 60 °C for 24 h, passed through a 120-mesh sieve, synthesized by pressure-less synthesis, and then hot-pressed in a BN-coated graphite mold at 1860 °C under 30 MPa to fabricate the bulk sample.",
+"simplified": "Stoichiometric powder processing followed by hot pressing in BN-coated graphite mold at 1860 °C under 30 MPa to obtain bulk β-phase material."
+},
+"Equipment": "Si3N4 jar and Si3N4 balls; BN-coated graphite mold; X-ray diffractometer D/max-2400 (Rigaku, Tokyo, Japan); SEM SUPRA 35 (Zeiss, Oberkochen, Germany) with INCAx-sight EDS",
+"Key_Params": {
+"Annealing_Temperature_K": 2133.15,
+"Ball_Milling_Time_h": 24.0,
+"Drying_Temperature_K": 333.15,
+"Drying_Time_h": 24.0,
+"Pressure_MPa": 30.0,
+"Sieve_Mesh": 120
+}
+},
+"Microstructure_Info": {
+"Microstructure_Text": {
+"original": "The corresponding hot-pressed bulk material is also pure single-phase β-(Dy0.25Tm0.25Yb0.25Lu0.25)2Si2O7 solid solution. SEM-EDS point analysis gave the atomic ratio Dy:Tm:Yb:Lu nearly 1:1:1:1.",
+"simplified": "Hot-pressed bulk remained pure single-phase β with nearly equimolar RE distribution."
+},
+"Main_Phase": "Beta (β)-RE2Si2O7",
+"Precipitates": [],
+"Porosity_pct": null,
+"Relative_Density_pct": null,
+"Grain_Size_avg_um": null,
+"Precipitate_Size_avg_nm": null,
+"Advanced_Quantitative_Features": {}
+},
+"Properties_Info": [
+{
+"Property_Name": "Beta_Phase_Fraction_pct",
+"Test_Condition": "Room-temperature XRD phase identification after hot pressing at 1860 °C",
+"Value_Numeric": 100.0,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "%",
+"Test_Temperature_K": 298.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": "Hot-pressed bulk sample",
+"Note": "Reported as pure single-phase β solid solution."
+}
+]
+},
+{
+"Sample_ID": "T03",
+"Gradient_Material": false,
+"Gradient_Group_ID": null,
+"Composition_Info": {
+"Role": "Target",
+"Alloy_Name_Raw": "(Dy0.25Ho0.25Yb0.25Lu0.25)2Si2O7 powder",
+"Nominal_Composition": {
+"Composition_Type": "at%",
+"Elements_Normalized": {
+"Dy": 4.5455,
+"Ho": 4.5455,
+"Yb": 4.5455,
+"Lu": 4.5455,
+"Si": 18.1818,
+"O": 63.6362
+}
+},
+"Measured_Composition": {
+"Composition_Type": null,
+"Elements_Normalized": null,
+"Measurement_Method": "Rietveld analysis of XRD"
+},
+"Note": "As-synthesized powder at 1550 °C contained mixed β and γ phases."
+},
+"Process_Info": {
+"Process_Category": "Solid-state synthesis",
+"Process_Text": {
+"original": "Commercial rare-earth oxides and SiO2 powders were mixed according to the stoichiometry of (Dy0.25Ho0.25Yb0.25Lu0.25)2Si2O7, ball milled for 24 h in a Si3N4 jar with Si3N4 balls and ethanol solution, dried at 60 °C for 24 h, passed through a 120-mesh sieve, and then synthesized by pressure-less synthesis at 1550 °C for 6 h.",
+"simplified": "Stoichiometric oxide mixture processed by 24 h ball milling, drying, sieving, and pressure-less synthesis at 1550 °C for 6 h."
+},
+"Equipment": "Si3N4 jar and Si3N4 balls; X-ray diffractometer D/max-2400 (Rigaku, Tokyo, Japan); GSAS for Rietveld refinement",
+"Key_Params": {
+"Annealing_Temperature_K": 1823.15,
+"Annealing_Time_h": 6.0,
+"Ball_Milling_Time_h": 24.0,
+"Drying_Temperature_K": 333.15,
+"Drying_Time_h": 24.0,
+"Sieve_Mesh": 120
+}
+},
+"Microstructure_Info": {
+"Microstructure_Text": {
+"original": "The powders synthesized at 1550 °C contain a dual-phase mixture of β-type solid solution as major phase, together with a decent amount of γ-type solid solution. Quantitative phase analysis based on the Rietveld method shows that the β-phase accounts for 61.15 wt% in the mixture, whereas the γ-phase accounts for 38.85 wt%.",
+"simplified": "1550 °C powder is a β + γ dual-phase mixture, with β as the major phase."
+},
+"Main_Phase": "Beta (β)-RE2Si2O7",
+"Precipitates": [],
+"Porosity_pct": null,
+"Relative_Density_pct": null,
+"Grain_Size_avg_um": null,
+"Precipitate_Size_avg_nm": null,
+"Advanced_Quantitative_Features": {}
+},
+"Properties_Info": [
+{
+"Property_Name": "Beta_Phase_Fraction_pct",
+"Test_Condition": "Room-temperature Rietveld refinement of as-synthesized powder after 1550 °C synthesis",
+"Value_Numeric": 61.15,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "wt%",
+"Test_Temperature_K": 298.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": "As-synthesized powder",
+"Note": null
+},
+{
+"Property_Name": "Gamma_Phase_Fraction_pct",
+"Test_Condition": "Room-temperature Rietveld refinement of as-synthesized powder after 1550 °C synthesis",
+"Value_Numeric": 38.85,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "wt%",
+"Test_Temperature_K": 298.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": "As-synthesized powder",
+"Note": null
+}
+]
+},
+{
+"Sample_ID": "T04",
+"Gradient_Material": false,
+"Gradient_Group_ID": null,
+"Composition_Info": {
+"Role": "Target",
+"Alloy_Name_Raw": "(Dy0.25Ho0.25Yb0.25Lu0.25)2Si2O7 bulk, hot-pressed at 1650 °C",
+"Nominal_Composition": {
+"Composition_Type": "at%",
+"Elements_Normalized": {
+"Dy": 4.5455,
+"Ho": 4.5455,
+"Yb": 4.5455,
+"Lu": 4.5455,
+"Si": 18.1818,
+"O": 63.6362
+}
+},
+"Measured_Composition": {
+"Composition_Type": null,
+"Elements_Normalized": null,
+"Measurement_Method": "SEM-EDS point analysis and TEM-EDS mapping"
+},
+"Note": "SEM-EDS point analysis for both β and γ phases in the 1650 °C hot-pressed bulk sample gave RE ratio approximately Dy0.27Ho0.26Yb0.25Lu0.22. TEM-EDS mapping confirmed atomic-scale compositional homogeneity of Dy, Ho, Yb, and Lu in both β and γ lattices."
+},
+"Process_Info": {
+"Process_Category": "Solid-state synthesis plus hot-pressing sintering",
+"Process_Text": {
+"original": "Rare-earth oxides and SiO2 powders were mixed according to the stoichiometry of (Dy0.25Ho0.25Yb0.25Lu0.25)2Si2O7, ball milled for 24 h in a Si3N4 jar with Si3N4 balls and ethanol solution, dried at 60 °C for 24 h, passed through a 120-mesh sieve, synthesized by pressure-less reaction, and then fabricated via hot-pressing sintering at 1650 °C under 30 MPa to produce the bulk sample used for XRD, SEM-EDS, and aberration-corrected STEM characterization.",
+"simplified": "Stoichiometric precursor powder followed by hot pressing at 1650 °C under 30 MPa; bulk sample characterized by XRD, SEM-EDS, and aberration-corrected STEM."
+},
+"Equipment": "Si3N4 jar and Si3N4 balls; BN-coated graphite mold; X-ray diffractometer D/max-2400 (Rigaku, Tokyo, Japan); SEM SUPRA 35 (Zeiss, Oberkochen, Germany); double aberration-corrected STEM Titan Themis Z (Thermo Fisher Scientific, Waltham, USA)",
+"Key_Params": {
+"Annealing_Temperature_K": 1923.15,
+"Ball_Milling_Time_h": 24.0,
+"Drying_Temperature_K": 333.15,
+"Drying_Time_h": 24.0,
+"Pressure_MPa": 30.0,
+"Sieve_Mesh": 120
+}
+},
+"Microstructure_Info": {
+"Microstructure_Text": {
+"original": "Fabricating the sample via hot-pressing sintering method at 1650 °C results in decreased amount of β-phase down to 33.16 wt%, compensated by increased amount of γ-phase up to 66.84 wt%. Both β-phase and γ-phase in the 1650 °C hot-pressed bulk samples exhibit homogeneous RE elemental distributions. Aberration-corrected STEM resolved phase 1 as β-(Dy0.25Ho0.25Yb0.25Lu0.25)2Si2O7 in the [112] zone axis and phase 2 as γ-(Dy0.25Ho0.25Yb0.25Lu0.25)2Si2O7 in the [100] zone axis; atomic-resolution EDS maps directly visualized compositional homogeneity of Dy, Ho, Yb and Lu on the lattices of both phases.",
+"simplified": "1650 °C hot-pressed bulk is a γ-major mixed β + γ material. Both polymorphs are chemically homogeneous at SEM/TEM scales."
+},
+"Main_Phase": "Gamma (γ)-RE2Si2O7",
+"Precipitates": [],
+"Porosity_pct": null,
+"Relative_Density_pct": null,
+"Grain_Size_avg_um": null,
+"Precipitate_Size_avg_nm": null,
+"Advanced_Quantitative_Features": {}
+},
+"Properties_Info": [
+{
+"Property_Name": "Gamma_Phase_Fraction_pct",
+"Test_Condition": "Room-temperature Rietveld refinement of bulk sample hot-pressed at 1650 °C",
+"Value_Numeric": 66.84,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "wt%",
+"Test_Temperature_K": 298.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": "Hot-pressed bulk sample",
+"Note": null
+},
+{
+"Property_Name": "Beta_Phase_Fraction_pct",
+"Test_Condition": "Room-temperature Rietveld refinement of bulk sample hot-pressed at 1650 °C",
+"Value_Numeric": 33.16,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "wt%",
+"Test_Temperature_K": 298.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": "Hot-pressed bulk sample",
+"Note": null
+}
+]
+},
+{
+"Sample_ID": "T05",
+"Gradient_Material": false,
+"Gradient_Group_ID": null,
+"Composition_Info": {
+"Role": "Target",
+"Alloy_Name_Raw": "(Dy0.25Ho0.25Yb0.25Lu0.25)2Si2O7 bulk, hot-pressed at 1860 °C for 2 h",
+"Nominal_Composition": {
+"Composition_Type": "at%",
+"Elements_Normalized": {
+"Dy": 4.5455,
+"Ho": 4.5455,
+"Yb": 4.5455,
+"Lu": 4.5455,
+"Si": 18.1818,
+"O": 63.6362
+}
+},
+"Measured_Composition": {
+"Composition_Type": null,
+"Elements_Normalized": null,
+"Measurement_Method": "SEM-EDS point analysis"
+},
+"Note": "SEM-EDS point analysis on the 1860 °C hot-pressed sample gave RE ratio approximately Dy0.27Ho0.26Yb0.24Lu0.23."
+},
+"Process_Info": {
+"Process_Category": "Solid-state synthesis plus hot-pressing sintering",
+"Process_Text": {
+"original": "Rare-earth oxides and SiO2 powders were mixed according to the stoichiometry of (Dy0.25Ho0.25Yb0.25Lu0.25)2Si2O7, ball milled for 24 h in a Si3N4 jar with Si3N4 balls and ethanol solution, dried at 60 °C for 24 h, passed through a 120-mesh sieve, and the bulk material was hot-pressed at 1860 °C for 2 h under 30 MPa.",
+"simplified": "Stoichiometric precursor followed by hot pressing at 1860 °C for 2 h under 30 MPa."
+},
+"Equipment": "Si3N4 jar and Si3N4 balls; BN-coated graphite mold; X-ray diffractometer D/max-2400 (Rigaku, Tokyo, Japan); SEM SUPRA 35 (Zeiss, Oberkochen, Germany)",
+"Key_Params": {
+"Annealing_Temperature_K": 2133.15,
+"Annealing_Time_h": 2.0,
+"Ball_Milling_Time_h": 24.0,
+"Drying_Temperature_K": 333.15,
+"Drying_Time_h": 24.0,
+"Pressure_MPa": 30.0,
+"Sieve_Mesh": 120
+}
+},
+"Microstructure_Info": {
+"Microstructure_Text": {
+"original": "After hot-pressed at 1860 °C for 2 h, the bulk material turns into a single-phase γ-type solid solution.",
+"simplified": "1860 °C hot pressing for 2 h converts the material to single-phase γ."
+},
+"Main_Phase": "Gamma (γ)-RE2Si2O7",
+"Precipitates": [],
+"Porosity_pct": null,
+"Relative_Density_pct": null,
+"Grain_Size_avg_um": null,
+"Precipitate_Size_avg_nm": null,
+"Advanced_Quantitative_Features": {}
+},
+"Properties_Info": [
+{
+"Property_Name": "Gamma_Phase_Fraction_pct",
+"Test_Condition": "Room-temperature XRD phase identification after hot pressing at 1860 °C for 2 h",
+"Value_Numeric": 100.0,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "%",
+"Test_Temperature_K": 298.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": "Hot-pressed bulk sample",
+"Note": "Reported as single-phase γ solid solution."
+}
+]
+},
+{
+"Sample_ID": "T06",
+"Gradient_Material": false,
+"Gradient_Group_ID": null,
+"Composition_Info": {
+"Role": "Target",
+"Alloy_Name_Raw": "(Gd0.25Ho0.25Yb0.25Lu0.25)2Si2O7 powder",
+"Nominal_Composition": {
+"Composition_Type": "at%",
+"Elements_Normalized": {
+"Gd": 4.5455,
+"Ho": 4.5455,
+"Yb": 4.5455,
+"Lu": 4.5455,
+"Si": 18.1818,
+"O": 63.6362
+}
+},
+"Measured_Composition": {
+"Composition_Type": null,
+"Elements_Normalized": null,
+"Measurement_Method": "SEM-EDS point analysis and Rietveld analysis of XRD"
+},
+"Note": "SEM-EDS confirmed Gd:Ho:Yb:Lu nearly 1:1:1:1 in the as-synthesized powder."
+},
+"Process_Info": {
+"Process_Category": "Solid-state synthesis",
+"Process_Text": {
+"original": "Commercial rare-earth oxides and SiO2 powders were mixed according to the stoichiometry of (Gd0.25Ho0.25Yb0.25Lu0.25)2Si2O7, ball milled for 24 h in a Si3N4 jar with Si3N4 balls and ethanol solution, dried at 60 °C for 24 h, passed through a 120-mesh sieve, and then synthesized by pressure-less synthesis at 1550 °C for 6 h.",
+"simplified": "Stoichiometric oxide mixture processed by 24 h ball milling, drying, sieving, and pressure-less synthesis at 1550 °C for 6 h."
+},
+"Equipment": "Si3N4 jar and Si3N4 balls; X-ray diffractometer D/max-2400 (Rigaku, Tokyo, Japan); GSAS for Rietveld refinement; SEM SUPRA 35 (Zeiss, Oberkochen, Germany)",
+"Key_Params": {
+"Annealing_Temperature_K": 1823.15,
+"Annealing_Time_h": 6.0,
+"Ball_Milling_Time_h": 24.0,
+"Drying_Temperature_K": 333.15,
+"Drying_Time_h": 24.0,
+"Sieve_Mesh": 120
+}
+},
+"Microstructure_Info": {
+"Microstructure_Text": {
+"original": "The as-synthesized powders exhibit γ-(Gd0.25Ho0.25Yb0.25Lu0.25)2Si2O7 solid solution with very few β-(Gd0.25Ho0.25Yb0.25Lu0.25)2Si2O7. Quantitative phase analysis shows that the γ-phase accounts for 91.21 wt% in the mixture, whereas the β-phase accounts for 8.79 wt%.",
+"simplified": "1550 °C powder is predominantly γ with a minor β fraction."
+},
+"Main_Phase": "Gamma (γ)-RE2Si2O7",
+"Precipitates": [],
+"Porosity_pct": null,
+"Relative_Density_pct": null,
+"Grain_Size_avg_um": null,
+"Precipitate_Size_avg_nm": null,
+"Advanced_Quantitative_Features": {}
+},
+"Properties_Info": [
+{
+"Property_Name": "Gamma_Phase_Fraction_pct",
+"Test_Condition": "Room-temperature Rietveld refinement of as-synthesized powder after 1550 °C synthesis",
+"Value_Numeric": 91.21,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "wt%",
+"Test_Temperature_K": 298.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": "As-synthesized powder",
+"Note": null
+},
+{
+"Property_Name": "Beta_Phase_Fraction_pct",
+"Test_Condition": "Room-temperature Rietveld refinement of as-synthesized powder after 1550 °C synthesis",
+"Value_Numeric": 8.79,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "wt%",
+"Test_Temperature_K": 298.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": "As-synthesized powder",
+"Note": null
+}
+]
+},
+{
+"Sample_ID": "T07",
+"Gradient_Material": false,
+"Gradient_Group_ID": null,
+"Composition_Info": {
+"Role": "Target",
+"Alloy_Name_Raw": "(Gd0.25Ho0.25Yb0.25Lu0.25)2Si2O7 bulk, hot-pressed at 1860 °C",
+"Nominal_Composition": {
+"Composition_Type": "at%",
+"Elements_Normalized": {
+"Gd": 4.5455,
+"Ho": 4.5455,
+"Yb": 4.5455,
+"Lu": 4.5455,
+"Si": 18.1818,
+"O": 63.6362
+}
+},
+"Measured_Composition": {
+"Composition_Type": null,
+"Elements_Normalized": null,
+"Measurement_Method": "SEM-EDS point analysis"
+},
+"Note": "SEM-EDS point analysis on the 1860 °C hot-pressed bulk sample gave RE ratio approximately Gd0.27Ho0.24Yb0.25Lu0.24."
+},
+"Process_Info": {
+"Process_Category": "Solid-state synthesis plus hot-pressing sintering",
+"Process_Text": {
+"original": "Rare-earth oxides and SiO2 powders were mixed according to the stoichiometry of (Gd0.25Ho0.25Yb0.25Lu0.25)2Si2O7, ball milled for 24 h in a Si3N4 jar with Si3N4 balls and ethanol solution, dried at 60 °C for 24 h, passed through a 120-mesh sieve, synthesized by pressure-less reaction, and then hot-pressed at 1860 °C under 30 MPa to eliminate the residual β-phase.",
+"simplified": "Stoichiometric precursor followed by hot pressing at 1860 °C under 30 MPa to obtain single-phase γ bulk material."
+},
+"Equipment": "Si3N4 jar and Si3N4 balls; BN-coated graphite mold; X-ray diffractometer D/max-2400 (Rigaku, Tokyo, Japan); SEM SUPRA 35 (Zeiss, Oberkochen, Germany)",
+"Key_Params": {
+"Annealing_Temperature_K": 2133.15,
+"Ball_Milling_Time_h": 24.0,
+"Drying_Temperature_K": 333.15,
+"Drying_Time_h": 24.0,
+"Pressure_MPa": 30.0,
+"Sieve_Mesh": 120
+}
+},
+"Microstructure_Info": {
+"Microstructure_Text": {
+"original": "The small amount of β-phase is completely eliminated after hot-pressed at 1860 °C, due to the β to γ polymorphic transformation.",
+"simplified": "Hot pressing at 1860 °C yields single-phase γ."
+},
+"Main_Phase": "Gamma (γ)-RE2Si2O7",
+"Precipitates": [],
+"Porosity_pct": null,
+"Relative_Density_pct": null,
+"Grain_Size_avg_um": null,
+"Precipitate_Size_avg_nm": null,
+"Advanced_Quantitative_Features": {}
+},
+"Properties_Info": [
+{
+"Property_Name": "Gamma_Phase_Fraction_pct",
+"Test_Condition": "Room-temperature XRD phase identification after hot pressing at 1860 °C",
+"Value_Numeric": 100.0,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "%",
+"Test_Temperature_K": 298.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": "Hot-pressed bulk sample",
+"Note": "Single-phase γ after β to γ transformation."
+}
+]
+},
+{
+"Sample_ID": "T08",
+"Gradient_Material": false,
+"Gradient_Group_ID": null,
+"Composition_Info": {
+"Role": "Target",
+"Alloy_Name_Raw": "(La0.25Ce0.25Yb0.25Lu0.25)2Si2O7 powder",
+"Nominal_Composition": {
+"Composition_Type": "at%",
+"Elements_Normalized": {
+"La": 4.5455,
+"Ce": 4.5455,
+"Yb": 4.5455,
+"Lu": 4.5455,
+"Si": 18.1818,
+"O": 63.6362
+}
+},
+"Measured_Composition": {
+"Composition_Type": null,
+"Elements_Normalized": null,
+"Measurement_Method": "Rietveld analysis of XRD"
+},
+"Note": "The designed equimolar composition could not form homogeneous iso-stoichiometric solid solution; as-synthesized powder contained β and G phases."
+},
+"Process_Info": {
+"Process_Category": "Solid-state synthesis",
+"Process_Text": {
+"original": "Commercial rare-earth oxides and SiO2 powders were mixed according to the stoichiometry of (La0.25Ce0.25Yb0.25Lu0.25)2Si2O7, ball milled for 24 h in a Si3N4 jar with Si3N4 balls and ethanol solution, dried at 60 °C for 24 h, passed through a 120-mesh sieve, and synthesized by pressure-less synthesis at 1550 °C for 6 h.",
+"simplified": "Stoichiometric oxide mixture processed by 24 h ball milling, drying, sieving, and pressure-less synthesis at 1550 °C for 6 h."
+},
+"Equipment": "Si3N4 jar and Si3N4 balls; X-ray diffractometer D/max-2400 (Rigaku, Tokyo, Japan); GSAS for Rietveld refinement",
+"Key_Params": {
+"Annealing_Temperature_K": 1823.15,
+"Annealing_Time_h": 6.0,
+"Ball_Milling_Time_h": 24.0,
+"Drying_Temperature_K": 333.15,
+"Drying_Time_h": 24.0,
+"Sieve_Mesh": 120
+}
+},
+"Microstructure_Info": {
+"Microstructure_Text": {
+"original": "Both the as-synthesized powders and the hot-pressed bulk material are mixtures of β-type and G-type disilicates. Quantitative phase analysis further reveals that the as-synthesized powders contain G-phase in 72.60 wt% and β-phase in 27.40 wt%, respectively.",
+"simplified": "As-synthesized powder is a G-major β + G mixed material."
+},
+"Main_Phase": "G-type RE2Si2O7",
+"Precipitates": [],
+"Porosity_pct": null,
+"Relative_Density_pct": null,
+"Grain_Size_avg_um": null,
+"Precipitate_Size_avg_nm": null,
+"Advanced_Quantitative_Features": {}
+},
+"Properties_Info": [
+{
+"Property_Name": "G_Phase_Fraction_pct",
+"Test_Condition": "Room-temperature Rietveld refinement of as-synthesized powder after 1550 °C synthesis",
+"Value_Numeric": 72.60,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "wt%",
+"Test_Temperature_K": 298.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": "As-synthesized powder",
+"Note": null
+},
+{
+"Property_Name": "Beta_Phase_Fraction_pct",
+"Test_Condition": "Room-temperature Rietveld refinement of as-synthesized powder after 1550 °C synthesis",
+"Value_Numeric": 27.40,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "wt%",
+"Test_Temperature_K": 298.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": "As-synthesized powder",
+"Note": null
+}
+]
+},
+{
+"Sample_ID": "T09",
+"Gradient_Material": false,
+"Gradient_Group_ID": null,
+"Composition_Info": {
+"Role": "Target",
+"Alloy_Name_Raw": "(La0.25Ce0.25Yb0.25Lu0.25)2Si2O7 bulk, hot-pressed at 1650 °C for 2 h",
+"Nominal_Composition": {
+"Composition_Type": "at%",
+"Elements_Normalized": {
+"La": 4.5455,
+"Ce": 4.5455,
+"Yb": 4.5455,
+"Lu": 4.5455,
+"Si": 18.1818,
+"O": 63.6362
+}
+},
+"Measured_Composition": {
+"Composition_Type": null,
+"Elements_Normalized": null,
+"Measurement_Method": "SEM-EDS point analysis and atomic-resolution TEM-EDS mapping"
+},
+"Note": "Phase-separated bulk sample showed obvious elemental segregation. SEM-EDS gave β-phase RE ratio La0.05Ce0.06Yb0.43Lu0.46 and G-phase RE ratio La0.35Ce0.35Yb0.16Lu0.14. The β-phase is enriched in Yb and Lu, whereas the G-phase is enriched in La and Ce."
+},
+"Process_Info": {
+"Process_Category": "Solid-state synthesis plus hot-pressing sintering",
+"Process_Text": {
+"original": "Rare-earth oxides and SiO2 powders were mixed according to the stoichiometry of (La0.25Ce0.25Yb0.25Lu0.25)2Si2O7, ball milled for 24 h in a Si3N4 jar with Si3N4 balls and ethanol solution, dried at 60 °C for 24 h, passed through a 120-mesh sieve, and then hot-pressed at 1650 °C for 2 h under 30 MPa in a BN-coated graphite mold.",
+"simplified": "Stoichiometric precursor followed by hot pressing at 1650 °C for 2 h under 30 MPa."
+},
+"Equipment": "Si3N4 jar and Si3N4 balls; BN-coated graphite mold; X-ray diffractometer D/max-2400 (Rigaku, Tokyo, Japan); SEM SUPRA 35 (Zeiss, Oberkochen, Germany); double aberration-corrected STEM Titan Themis Z (Thermo Fisher Scientific, Waltham, USA)",
+"Key_Params": {
+"Annealing_Temperature_K": 1923.15,
+"Annealing_Time_h": 2.0,
+"Ball_Milling_Time_h": 24.0,
+"Drying_Temperature_K": 333.15,
+"Drying_Time_h": 24.0,
+"Pressure_MPa": 30.0,
+"Sieve_Mesh": 120
+}
+},
+"Microstructure_Info": {
+"Microstructure_Text": {
+"original": "The phase composition remains almost unchanged after hot-pressed at 1650 °C for 2 h, with G-phase in 72.15 wt% and β-phase in 27.85 wt%. SEM-EDS analysis shows obvious elemental segregation in both phases, i.e., the β-phase is enriched with Yb and Lu elements, whereas the G-phase is enriched with La and Ce elements. STEM and atomic-resolution EDS maps confirm compositional uniformity of La, Ce, Yb and Lu within each β and G lattice despite their non-stoichiometric distributions in different phases.",
+"simplified": "1650 °C bulk remains a G-major β + G mixed material with strong phase segregation: β enriched in Yb/Lu and G enriched in La/Ce."
+},
+"Main_Phase": "G-type RE2Si2O7",
+"Precipitates": [],
+"Porosity_pct": null,
+"Relative_Density_pct": null,
+"Grain_Size_avg_um": null,
+"Precipitate_Size_avg_nm": null,
+"Advanced_Quantitative_Features": {}
+},
+"Properties_Info": [
+{
+"Property_Name": "G_Phase_Fraction_pct",
+"Test_Condition": "Room-temperature Rietveld refinement of hot-pressed bulk sample at 1650 °C for 2 h",
+"Value_Numeric": 72.15,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "wt%",
+"Test_Temperature_K": 298.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": "Hot-pressed bulk sample",
+"Note": null
+},
+{
+"Property_Name": "Beta_Phase_Fraction_pct",
+"Test_Condition": "Room-temperature Rietveld refinement of hot-pressed bulk sample at 1650 °C for 2 h",
+"Value_Numeric": 27.85,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "wt%",
+"Test_Temperature_K": 298.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": "Hot-pressed bulk sample",
+"Note": null
+}
+]
+},
+{
+"Sample_ID": "T10",
+"Gradient_Material": false,
+"Gradient_Group_ID": null,
+"Composition_Info": {
+"Role": "Target",
+"Alloy_Name_Raw": "β-(Dy0.25Tm0.25Yb0.25Lu0.25)2Si2O7 configuration ensemble",
+"Nominal_Composition": {
+"Composition_Type": "at%",
+"Elements_Normalized": {
+"Dy": 4.5455,
+"Tm": 4.5455,
+"Yb": 4.5455,
+"Lu": 4.5455,
+"Si": 18.1818,
+"O": 63.6362
+}
+},
+"Measured_Composition": {
+"Composition_Type": null,
+"Elements_Normalized": null,
+"Measurement_Method": null
+},
+"Note": "Theoretical high-throughput DFT ensemble for β polymorph."
+},
+"Process_Info": {
+"Process_Category": "High-throughput DFT calculation",
+"Process_Text": {
+"original": "The configuration ensemble of β-(Dy0.25Tm0.25Yb0.25Lu0.25)2Si2O7 was constructed using stochastically generated special quasirandom structures. Supercells with 88 lattice sites were used. For the β-type structures, 558 unique configurations were included. DFT calculations were performed using VASP with the PAW method, PBE-GGA functional, 600 eV plane-wave cutoff, and a Gamma-centered Monkhorst-Pack k-mesh in the resolution of 2π × 0.03 Å−1.",
+"simplified": "β-phase SQS/DFT ensemble with 88-site supercells and 558 unique configurations, calculated by VASP-PAW-PBE at 600 eV."
+},
+"Equipment": "ATAT SQS generation code; VASP",
+"Key_Params": {
+"Supercell_Lattice_Sites": 88,
+"Unique_Configurations": 558,
+"Plane_Wave_Cutoff_eV": 600.0,
+"Kmesh_Resolution_2pi_A1": 0.03
+}
+},
+"Microstructure_Info": {
+"Microstructure_Text": {
+"original": "A hypothetically constructed β-type ensemble with randomized occupations of Dy, Tm, Yb and Lu on the RE sublattice was used to calculate the mixing-energy distribution and configurational entropy of mixing.",
+"simplified": "Randomized β-phase configurational ensemble on RE sites."
+},
+"Main_Phase": "Beta (β)-RE2Si2O7",
+"Precipitates": [],
+"Porosity_pct": null,
+"Relative_Density_pct": null,
+"Grain_Size_avg_um": null,
+"Precipitate_Size_avg_nm": null,
+"Advanced_Quantitative_Features": {}
+},
+"Properties_Info": [
+{
+"Property_Name": "FWHM_Mixing_Energy_Distribution",
+"Test_Condition": "Gaussian fitting of DFT mixing-energy distribution for β-type ensemble",
+"Value_Numeric": 0.36121,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "meV·atom^-1",
+"Test_Temperature_K": null,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": null,
+"Note": null
+},
+{
+"Property_Name": "RE_Radius_Deviation_sigma_r",
+"Test_Condition": "Calculated from RE3+ cationic radii for β-type ensemble",
+"Value_Numeric": 0.01955,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "Å",
+"Test_Temperature_K": null,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": null,
+"Note": null
+},
+{
+"Property_Name": "Configurational_Entropy_Convergence",
+"Test_Condition": "Sconfig versus kBT curve for the DyTmYbLu system",
+"Value_Numeric": 18.70,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "J·mol^-1·K^-1",
+"Test_Temperature_K": null,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": null,
+"Note": "The paper states that the DyTmYbLu system converges to 18.70 J·mol^-1·K^-1."
+}
+]
+},
+{
+"Sample_ID": "T11",
+"Gradient_Material": false,
+"Gradient_Group_ID": null,
+"Composition_Info": {
+"Role": "Target",
+"Alloy_Name_Raw": "γ-(Dy0.25Tm0.25Yb0.25Lu0.25)2Si2O7 configuration ensemble",
+"Nominal_Composition": {
+"Composition_Type": "at%",
+"Elements_Normalized": {
+"Dy": 4.5455,
+"Tm": 4.5455,
+"Yb": 4.5455,
+"Lu": 4.5455,
+"Si": 18.1818,
+"O": 63.6362
+}
+},
+"Measured_Composition": {
+"Composition_Type": null,
+"Elements_Normalized": null,
+"Measurement_Method": null
+},
+"Note": "Theoretical high-throughput DFT ensemble for γ polymorph."
+},
+"Process_Info": {
+"Process_Category": "High-throughput DFT calculation",
+"Process_Text": {
+"original": "The configuration ensemble of γ-(Dy0.25Tm0.25Yb0.25Lu0.25)2Si2O7 was constructed using stochastically generated special quasirandom structures. Supercells with 88 lattice sites were used. For the γ-type structures, 319 unique configurations were included. DFT calculations were performed using VASP with the PAW method, PBE-GGA functional, 600 eV plane-wave cutoff, and a Gamma-centered Monkhorst-Pack k-mesh in the resolution of 2π × 0.03 Å−1.",
+"simplified": "γ-phase SQS/DFT ensemble with 88-site supercells and 319 unique configurations, calculated by VASP-PAW-PBE at 600 eV."
+},
+"Equipment": "ATAT SQS generation code; VASP",
+"Key_Params": {
+"Supercell_Lattice_Sites": 88,
+"Unique_Configurations": 319,
+"Plane_Wave_Cutoff_eV": 600.0,
+"Kmesh_Resolution_2pi_A1": 0.03
+}
+},
+"Microstructure_Info": {
+"Microstructure_Text": {
+"original": "A hypothetically constructed γ-type ensemble with randomized occupations of Dy, Tm, Yb and Lu on the RE sublattice was used to calculate the mixing-energy distribution and configurational entropy of mixing.",
+"simplified": "Randomized γ-phase configurational ensemble on RE sites."
+},
+"Main_Phase": "Gamma (γ)-RE2Si2O7",
+"Precipitates": [],
+"Porosity_pct": null,
+"Relative_Density_pct": null,
+"Grain_Size_avg_um": null,
+"Precipitate_Size_avg_nm": null,
+"Advanced_Quantitative_Features": {}
+},
+"Properties_Info": [
+{
+"Property_Name": "FWHM_Mixing_Energy_Distribution",
+"Test_Condition": "Gaussian fitting of DFT mixing-energy distribution for γ-type ensemble",
+"Value_Numeric": 0.46106,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "meV·atom^-1",
+"Test_Temperature_K": null,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": null,
+"Note": null
+},
+{
+"Property_Name": "RE_Radius_Deviation_sigma_r",
+"Test_Condition": "Calculated from RE3+ cationic radii for γ-type ensemble",
+"Value_Numeric": 0.01955,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "Å",
+"Test_Temperature_K": null,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": null,
+"Note": null
+},
+{
+"Property_Name": "Configurational_Entropy_Convergence",
+"Test_Condition": "Sconfig versus kBT curve for the DyTmYbLu system",
+"Value_Numeric": 18.70,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "J·mol^-1·K^-1",
+"Test_Temperature_K": null,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": null,
+"Note": "The paper states that the DyTmYbLu system converges to 18.70 J·mol^-1·K^-1."
+}
+]
+},
+{
+"Sample_ID": "T12",
+"Gradient_Material": false,
+"Gradient_Group_ID": null,
+"Composition_Info": {
+"Role": "Target",
+"Alloy_Name_Raw": "β-(Dy0.25Ho0.25Yb0.25Lu0.25)2Si2O7 configuration ensemble",
+"Nominal_Composition": {
+"Composition_Type": "at%",
+"Elements_Normalized": {
+"Dy": 4.5455,
+"Ho": 4.5455,
+"Yb": 4.5455,
+"Lu": 4.5455,
+"Si": 18.1818,
+"O": 63.6362
+}
+},
+"Measured_Composition": {
+"Composition_Type": null,
+"Elements_Normalized": null,
+"Measurement_Method": null
+},
+"Note": "Theoretical high-throughput DFT ensemble for β polymorph."
+},
+"Process_Info": {
+"Process_Category": "High-throughput DFT calculation",
+"Process_Text": {
+"original": "The configuration ensemble of β-(Dy0.25Ho0.25Yb0.25Lu0.25)2Si2O7 was constructed using stochastically generated special quasirandom structures. Supercells with 88 lattice sites were used. For the β-type structures, 558 unique configurations were included. DFT calculations were performed using VASP with the PAW method, PBE-GGA functional, 600 eV plane-wave cutoff, and a Gamma-centered Monkhorst-Pack k-mesh in the resolution of 2π × 0.03 Å−1.",
+"simplified": "β-phase SQS/DFT ensemble with 88-site supercells and 558 unique configurations, calculated by VASP-PAW-PBE at 600 eV."
+},
+"Equipment": "ATAT SQS generation code; VASP",
+"Key_Params": {
+"Supercell_Lattice_Sites": 88,
+"Unique_Configurations": 558,
+"Plane_Wave_Cutoff_eV": 600.0,
+"Kmesh_Resolution_2pi_A1": 0.03
+}
+},
+"Microstructure_Info": {
+"Microstructure_Text": {
+"original": "A hypothetically constructed β-type ensemble with randomized occupations of Dy, Ho, Yb and Lu on the RE sublattice was used to calculate the mixing-energy distribution and configurational entropy of mixing.",
+"simplified": "Randomized β-phase configurational ensemble on RE sites."
+},
+"Main_Phase": "Beta (β)-RE2Si2O7",
+"Precipitates": [],
+"Porosity_pct": null,
+"Relative_Density_pct": null,
+"Grain_Size_avg_um": null,
+"Precipitate_Size_avg_nm": null,
+"Advanced_Quantitative_Features": {}
+},
+"Properties_Info": [
+{
+"Property_Name": "FWHM_Mixing_Energy_Distribution",
+"Test_Condition": "Gaussian fitting of DFT mixing-energy distribution for β-type ensemble",
+"Value_Numeric": 0.47613,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "meV·atom^-1",
+"Test_Temperature_K": null,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": null,
+"Note": null
+},
+{
+"Property_Name": "RE_Radius_Deviation_sigma_r",
+"Test_Condition": "Calculated from RE3+ cationic radii for β-type ensemble",
+"Value_Numeric": 0.0215,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "Å",
+"Test_Temperature_K": null,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": null,
+"Note": null
+},
+{
+"Property_Name": "Configurational_Entropy_Convergence",
+"Test_Condition": "Sconfig versus kBT curve for the DyHoYbLu system",
+"Value_Numeric": 18.70,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "J·mol^-1·K^-1",
+"Test_Temperature_K": null,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": null,
+"Note": "The paper states that the DyHoYbLu system converges to 18.70 J·mol^-1·K^-1."
+},
+{
+"Property_Name": "Relative_Sconfig_Beta_vs_Gamma",
+"Test_Condition": "Comparison of Sconfig for DyHoYbLu below 300 K",
+"Value_Numeric": null,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "qualitative",
+"Test_Temperature_K": 300.0,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": null,
+"Note": "Sconfig(beta-type) is greater than Sconfig(gamma-type) within T < 300 K; configurational entropy tends to delay the β to γ polymorphic transformation."
+}
+]
+},
+{
+"Sample_ID": "T13",
+"Gradient_Material": false,
+"Gradient_Group_ID": null,
+"Composition_Info": {
+"Role": "Target",
+"Alloy_Name_Raw": "γ-(Dy0.25Ho0.25Yb0.25Lu0.25)2Si2O7 configuration ensemble",
+"Nominal_Composition": {
+"Composition_Type": "at%",
+"Elements_Normalized": {
+"Dy": 4.5455,
+"Ho": 4.5455,
+"Yb": 4.5455,
+"Lu": 4.5455,
+"Si": 18.1818,
+"O": 63.6362
+}
+},
+"Measured_Composition": {
+"Composition_Type": null,
+"Elements_Normalized": null,
+"Measurement_Method": null
+},
+"Note": "Theoretical high-throughput DFT ensemble for γ polymorph."
+},
+"Process_Info": {
+"Process_Category": "High-throughput DFT calculation",
+"Process_Text": {
+"original": "The configuration ensemble of γ-(Dy0.25Ho0.25Yb0.25Lu0.25)2Si2O7 was constructed using stochastically generated special quasirandom structures. Supercells with 88 lattice sites were used. For the γ-type structures, 319 unique configurations were included. DFT calculations were performed using VASP with the PAW method, PBE-GGA functional, 600 eV plane-wave cutoff, and a Gamma-centered Monkhorst-Pack k-mesh in the resolution of 2π × 0.03 Å−1.",
+"simplified": "γ-phase SQS/DFT ensemble with 88-site supercells and 319 unique configurations, calculated by VASP-PAW-PBE at 600 eV."
+},
+"Equipment": "ATAT SQS generation code; VASP",
+"Key_Params": {
+"Supercell_Lattice_Sites": 88,
+"Unique_Configurations": 319,
+"Plane_Wave_Cutoff_eV": 600.0,
+"Kmesh_Resolution_2pi_A1": 0.03
+}
+},
+"Microstructure_Info": {
+"Microstructure_Text": {
+"original": "A hypothetically constructed γ-type ensemble with randomized occupations of Dy, Ho, Yb and Lu on the RE sublattice was used to calculate the mixing-energy distribution and configurational entropy of mixing.",
+"simplified": "Randomized γ-phase configurational ensemble on RE sites."
+},
+"Main_Phase": "Gamma (γ)-RE2Si2O7",
+"Precipitates": [],
+"Porosity_pct": null,
+"Relative_Density_pct": null,
+"Grain_Size_avg_um": null,
+"Precipitate_Size_avg_nm": null,
+"Advanced_Quantitative_Features": {}
+},
+"Properties_Info": [
+{
+"Property_Name": "FWHM_Mixing_Energy_Distribution",
+"Test_Condition": "Gaussian fitting of DFT mixing-energy distribution for γ-type ensemble",
+"Value_Numeric": 0.67814,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "meV·atom^-1",
+"Test_Temperature_K": null,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": null,
+"Note": null
+},
+{
+"Property_Name": "RE_Radius_Deviation_sigma_r",
+"Test_Condition": "Calculated from RE3+ cationic radii for γ-type ensemble",
+"Value_Numeric": 0.0215,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "Å",
+"Test_Temperature_K": null,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": null,
+"Note": null
+},
+{
+"Property_Name": "Configurational_Entropy_Convergence",
+"Test_Condition": "Sconfig versus kBT curve for the DyHoYbLu system",
+"Value_Numeric": 18.70,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "J·mol^-1·K^-1",
+"Test_Temperature_K": null,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": null,
+"Note": "The paper states that the DyHoYbLu system converges to 18.70 J·mol^-1·K^-1."
+},
+{
+"Property_Name": "Relative_Sconfig_Beta_vs_Gamma",
+"Test_Condition": "Comparison of Sconfig for DyHoYbLu below 300 K",
+"Value_Numeric": null,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "qualitative",
+"Test_Temperature_K": 300.0,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": null,
+"Note": "Sconfig(beta-type) is greater than Sconfig(gamma-type) within T < 300 K; configurational entropy tends to delay the β to γ polymorphic transformation."
+}
+]
+},
+{
+"Sample_ID": "T14",
+"Gradient_Material": false,
+"Gradient_Group_ID": null,
+"Composition_Info": {
+"Role": "Target",
+"Alloy_Name_Raw": "β-(Gd0.25Ho0.25Yb0.25Lu0.25)2Si2O7 configuration ensemble",
+"Nominal_Composition": {
+"Composition_Type": "at%",
+"Elements_Normalized": {
+"Gd": 4.5455,
+"Ho": 4.5455,
+"Yb": 4.5455,
+"Lu": 4.5455,
+"Si": 18.1818,
+"O": 63.6362
+}
+},
+"Measured_Composition": {
+"Composition_Type": null,
+"Elements_Normalized": null,
+"Measurement_Method": null
+},
+"Note": "Theoretical high-throughput DFT ensemble for β polymorph."
+},
+"Process_Info": {
+"Process_Category": "High-throughput DFT calculation",
+"Process_Text": {
+"original": "The configuration ensemble of β-(Gd0.25Ho0.25Yb0.25Lu0.25)2Si2O7 was constructed using stochastically generated special quasirandom structures. Supercells with 88 lattice sites were used. For the β-type structures, 558 unique configurations were included. DFT calculations were performed using VASP with the PAW method, PBE-GGA functional, 600 eV plane-wave cutoff, and a Gamma-centered Monkhorst-Pack k-mesh in the resolution of 2π × 0.03 Å−1.",
+"simplified": "β-phase SQS/DFT ensemble with 88-site supercells and 558 unique configurations, calculated by VASP-PAW-PBE at 600 eV."
+},
+"Equipment": "ATAT SQS generation code; VASP",
+"Key_Params": {
+"Supercell_Lattice_Sites": 88,
+"Unique_Configurations": 558,
+"Plane_Wave_Cutoff_eV": 600.0,
+"Kmesh_Resolution_2pi_A1": 0.03
+}
+},
+"Microstructure_Info": {
+"Microstructure_Text": {
+"original": "A hypothetically constructed β-type ensemble with randomized occupations of Gd, Ho, Yb and Lu on the RE sublattice was used to calculate the mixing-energy distribution and configurational entropy of mixing.",
+"simplified": "Randomized β-phase configurational ensemble on RE sites."
+},
+"Main_Phase": "Beta (β)-RE2Si2O7",
+"Precipitates": [],
+"Porosity_pct": null,
+"Relative_Density_pct": null,
+"Grain_Size_avg_um": null,
+"Precipitate_Size_avg_nm": null,
+"Advanced_Quantitative_Features": {}
+},
+"Properties_Info": [
+{
+"Property_Name": "FWHM_Mixing_Energy_Distribution",
+"Test_Condition": "Gaussian fitting of DFT mixing-energy distribution for β-type ensemble",
+"Value_Numeric": 0.93006,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "meV·atom^-1",
+"Test_Temperature_K": null,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": null,
+"Note": null
+},
+{
+"Property_Name": "RE_Radius_Deviation_sigma_r",
+"Test_Condition": "Calculated from RE3+ cationic radii for β-type ensemble",
+"Value_Numeric": 0.03055,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "Å",
+"Test_Temperature_K": null,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": null,
+"Note": null
+},
+{
+"Property_Name": "Configurational_Entropy_Convergence",
+"Test_Condition": "Sconfig versus kBT curve for the GdHoYbLu system",
+"Value_Numeric": 18.70,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "J·mol^-1·K^-1",
+"Test_Temperature_K": null,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": null,
+"Note": "The paper states that the GdHoYbLu system converges to 18.70 J·mol^-1·K^-1."
+},
+{
+"Property_Name": "Relative_Sconfig_Beta_vs_Gamma",
+"Test_Condition": "Comparison of Sconfig for GdHoYbLu",
+"Value_Numeric": null,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "qualitative",
+"Test_Temperature_K": null,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": null,
+"Note": "Sconfig(gamma-type) is greater than Sconfig(beta-type); configurational entropy may accelerate the β to γ polymorphic transformation."
+}
+]
+},
+{
+"Sample_ID": "T15",
+"Gradient_Material": false,
+"Gradient_Group_ID": null,
+"Composition_Info": {
+"Role": "Target",
+"Alloy_Name_Raw": "γ-(Gd0.25Ho0.25Yb0.25Lu0.25)2Si2O7 configuration ensemble",
+"Nominal_Composition": {
+"Composition_Type": "at%",
+"Elements_Normalized": {
+"Gd": 4.5455,
+"Ho": 4.5455,
+"Yb": 4.5455,
+"Lu": 4.5455,
+"Si": 18.1818,
+"O": 63.6362
+}
+},
+"Measured_Composition": {
+"Composition_Type": null,
+"Elements_Normalized": null,
+"Measurement_Method": null
+},
+"Note": "Theoretical high-throughput DFT ensemble for γ polymorph."
+},
+"Process_Info": {
+"Process_Category": "High-throughput DFT calculation",
+"Process_Text": {
+"original": "The configuration ensemble of γ-(Gd0.25Ho0.25Yb0.25Lu0.25)2Si2O7 was constructed using stochastically generated special quasirandom structures. Supercells with 88 lattice sites were used. For the γ-type structures, 319 unique configurations were included. DFT calculations were performed using VASP with the PAW method, PBE-GGA functional, 600 eV plane-wave cutoff, and a Gamma-centered Monkhorst-Pack k-mesh in the resolution of 2π × 0.03 Å−1.",
+"simplified": "γ-phase SQS/DFT ensemble with 88-site supercells and 319 unique configurations, calculated by VASP-PAW-PBE at 600 eV."
+},
+"Equipment": "ATAT SQS generation code; VASP",
+"Key_Params": {
+"Supercell_Lattice_Sites": 88,
+"Unique_Configurations": 319,
+"Plane_Wave_Cutoff_eV": 600.0,
+"Kmesh_Resolution_2pi_A1": 0.03
+}
+},
+"Microstructure_Info": {
+"Microstructure_Text": {
+"original": "A hypothetically constructed γ-type ensemble with randomized occupations of Gd, Ho, Yb and Lu on the RE sublattice was used to calculate the mixing-energy distribution and configurational entropy of mixing.",
+"simplified": "Randomized γ-phase configurational ensemble on RE sites."
+},
+"Main_Phase": "Gamma (γ)-RE2Si2O7",
+"Precipitates": [],
+"Porosity_pct": null,
+"Relative_Density_pct": null,
+"Grain_Size_avg_um": null,
+"Precipitate_Size_avg_nm": null,
+"Advanced_Quantitative_Features": {}
+},
+"Properties_Info": [
+{
+"Property_Name": "FWHM_Mixing_Energy_Distribution",
+"Test_Condition": "Gaussian fitting of DFT mixing-energy distribution for γ-type ensemble",
+"Value_Numeric": 1.23961,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "meV·atom^-1",
+"Test_Temperature_K": null,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": null,
+"Note": null
+},
+{
+"Property_Name": "RE_Radius_Deviation_sigma_r",
+"Test_Condition": "Calculated from RE3+ cationic radii for γ-type ensemble",
+"Value_Numeric": 0.03055,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "Å",
+"Test_Temperature_K": null,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": null,
+"Note": null
+},
+{
+"Property_Name": "Configurational_Entropy_Convergence",
+"Test_Condition": "Sconfig versus kBT curve for the GdHoYbLu system",
+"Value_Numeric": 18.70,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "J·mol^-1·K^-1",
+"Test_Temperature_K": null,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": null,
+"Note": "The paper states that the GdHoYbLu system converges to 18.70 J·mol^-1·K^-1."
+},
+{
+"Property_Name": "Relative_Sconfig_Beta_vs_Gamma",
+"Test_Condition": "Comparison of Sconfig for GdHoYbLu",
+"Value_Numeric": null,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "qualitative",
+"Test_Temperature_K": null,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": null,
+"Note": "Sconfig(gamma-type) is greater than Sconfig(beta-type); configurational entropy may accelerate the β to γ polymorphic transformation."
+}
+]
+},
+{
+"Sample_ID": "T16",
+"Gradient_Material": false,
+"Gradient_Group_ID": null,
+"Composition_Info": {
+"Role": "Target",
+"Alloy_Name_Raw": "β-(La0.25Ce0.25Yb0.25Lu0.25)2Si2O7 configuration ensemble",
+"Nominal_Composition": {
+"Composition_Type": "at%",
+"Elements_Normalized": {
+"La": 4.5455,
+"Ce": 4.5455,
+"Yb": 4.5455,
+"Lu": 4.5455,
+"Si": 18.1818,
+"O": 63.6362
+}
+},
+"Measured_Composition": {
+"Composition_Type": null,
+"Elements_Normalized": null,
+"Measurement_Method": null
+},
+"Note": "Theoretical high-throughput DFT ensemble for β polymorph."
+},
+"Process_Info": {
+"Process_Category": "High-throughput DFT calculation",
+"Process_Text": {
+"original": "The configuration ensemble of β-(La0.25Ce0.25Yb0.25Lu0.25)2Si2O7 was constructed using stochastically generated special quasirandom structures. Supercells with 88 lattice sites were used. For the β-type structures, 558 unique configurations were included. DFT calculations were performed using VASP with the PAW method, PBE-GGA functional, 600 eV plane-wave cutoff, and a Gamma-centered Monkhorst-Pack k-mesh in the resolution of 2π × 0.03 Å−1.",
+"simplified": "β-phase SQS/DFT ensemble with 88-site supercells and 558 unique configurations, calculated by VASP-PAW-PBE at 600 eV."
+},
+"Equipment": "ATAT SQS generation code; VASP",
+"Key_Params": {
+"Supercell_Lattice_Sites": 88,
+"Unique_Configurations": 558,
+"Plane_Wave_Cutoff_eV": 600.0,
+"Kmesh_Resolution_2pi_A1": 0.03
+}
+},
+"Microstructure_Info": {
+"Microstructure_Text": {
+"original": "A hypothetically constructed β-type ensemble with randomized occupations of La, Ce, Yb and Lu on the RE sublattice was used to calculate the mixing-energy distribution and configurational entropy of mixing.",
+"simplified": "Randomized β-phase configurational ensemble on RE sites."
+},
+"Main_Phase": "Beta (β)-RE2Si2O7",
+"Precipitates": [],
+"Porosity_pct": null,
+"Relative_Density_pct": null,
+"Grain_Size_avg_um": null,
+"Precipitate_Size_avg_nm": null,
+"Advanced_Quantitative_Features": {}
+},
+"Properties_Info": [
+{
+"Property_Name": "FWHM_Mixing_Energy_Distribution",
+"Test_Condition": "Gaussian fitting of DFT mixing-energy distribution for β-type ensemble",
+"Value_Numeric": 6.91337,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "meV·atom^-1",
+"Test_Temperature_K": null,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": null,
+"Note": "Markedly broader energy distribution than the other prototype compositions."
+},
+{
+"Property_Name": "RE_Radius_Deviation_sigma_r",
+"Test_Condition": "Calculated from RE3+ cationic radii for β-type ensemble",
+"Value_Numeric": 0.07867,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "Å",
+"Test_Temperature_K": null,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": null,
+"Note": null
+},
+{
+"Property_Name": "Solid_Solution_Formation_Possibility",
+"Test_Condition": "Sconfig versus kBT curve for the LaCeYbLu system",
+"Value_Numeric": null,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "qualitative",
+"Test_Temperature_K": null,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": null,
+"Note": "The paper states that the Sconfig of the LaCeYbLu system is far from approaching convergence at physically realizable temperatures, meaning it is highly impossible to form homogeneous solid solution with homogeneous RE distribution."
+}
+]
+},
+{
+"Sample_ID": "T17",
+"Gradient_Material": false,
+"Gradient_Group_ID": null,
+"Composition_Info": {
+"Role": "Target",
+"Alloy_Name_Raw": "γ-(La0.25Ce0.25Yb0.25Lu0.25)2Si2O7 configuration ensemble",
+"Nominal_Composition": {
+"Composition_Type": "at%",
+"Elements_Normalized": {
+"La": 4.5455,
+"Ce": 4.5455,
+"Yb": 4.5455,
+"Lu": 4.5455,
+"Si": 18.1818,
+"O": 63.6362
+}
+},
+"Measured_Composition": {
+"Composition_Type": null,
+"Elements_Normalized": null,
+"Measurement_Method": null
+},
+"Note": "Theoretical high-throughput DFT ensemble for γ polymorph."
+},
+"Process_Info": {
+"Process_Category": "High-throughput DFT calculation",
+"Process_Text": {
+"original": "The configuration ensemble of γ-(La0.25Ce0.25Yb0.25Lu0.25)2Si2O7 was constructed using stochastically generated special quasirandom structures. Supercells with 88 lattice sites were used. For the γ-type structures, 319 unique configurations were included. DFT calculations were performed using VASP with the PAW method, PBE-GGA functional, 600 eV plane-wave cutoff, and a Gamma-centered Monkhorst-Pack k-mesh in the resolution of 2π × 0.03 Å−1.",
+"simplified": "γ-phase SQS/DFT ensemble with 88-site supercells and 319 unique configurations, calculated by VASP-PAW-PBE at 600 eV."
+},
+"Equipment": "ATAT SQS generation code; VASP",
+"Key_Params": {
+"Supercell_Lattice_Sites": 88,
+"Unique_Configurations": 319,
+"Plane_Wave_Cutoff_eV": 600.0,
+"Kmesh_Resolution_2pi_A1": 0.03
+}
+},
+"Microstructure_Info": {
+"Microstructure_Text": {
+"original": "A hypothetically constructed γ-type ensemble with randomized occupations of La, Ce, Yb and Lu on the RE sublattice was used to calculate the mixing-energy distribution and configurational entropy of mixing.",
+"simplified": "Randomized γ-phase configurational ensemble on RE sites."
+},
+"Main_Phase": "Gamma (γ)-RE2Si2O7",
+"Precipitates": [],
+"Porosity_pct": null,
+"Relative_Density_pct": null,
+"Grain_Size_avg_um": null,
+"Precipitate_Size_avg_nm": null,
+"Advanced_Quantitative_Features": {}
+},
+"Properties_Info": [
+{
+"Property_Name": "FWHM_Mixing_Energy_Distribution",
+"Test_Condition": "Gaussian fitting of DFT mixing-energy distribution for γ-type ensemble",
+"Value_Numeric": 10.25844,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "meV·atom^-1",
+"Test_Temperature_K": null,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": null,
+"Note": "Markedly broader energy distribution than the other prototype compositions."
+},
+{
+"Property_Name": "RE_Radius_Deviation_sigma_r",
+"Test_Condition": "Calculated from RE3+ cationic radii for γ-type ensemble",
+"Value_Numeric": 0.07867,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "Å",
+"Test_Temperature_K": null,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": null,
+"Note": null
+},
+{
+"Property_Name": "Solid_Solution_Formation_Possibility",
+"Test_Condition": "Sconfig versus kBT curve for the LaCeYbLu system",
+"Value_Numeric": null,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "qualitative",
+"Test_Temperature_K": null,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": null,
+"Note": "The paper states that the Sconfig of the LaCeYbLu system is far from approaching convergence at physically realizable temperatures, meaning it is highly impossible to form homogeneous solid solution with homogeneous RE distribution."
+}
+]
+},
+{
+"Sample_ID": "R01",
+"Gradient_Material": false,
+"Gradient_Group_ID": null,
+"Composition_Info": {
+"Role": "Reference",
+"Alloy_Name_Raw": "(Yb0.2Y0.2Lu0.2Sc0.2Gd0.2)2Si2O7 solid solution",
+"Nominal_Composition": {
+"Composition_Type": "at%",
+"Elements_Normalized": {
+"Yb": 3.6364,
+"Y": 3.6364,
+"Lu": 3.6364,
+"Sc": 3.6364,
+"Gd": 3.6364,
+"Si": 18.1818,
+"O": 63.6362
+}
+},
+"Measured_Composition": {
+"Composition_Type": null,
+"Elements_Normalized": null,
+"Measurement_Method": null
+},
+"Note": "Literature benchmark cited in this paper as a five-RE principal-component disilicate used to verify the generality of the r-bar criterion around 0.885 Å. Detailed synthesis and property data were not provided in this paper."
+},
+"Process_Info": {
+"Process_Category": "Reported in literature",
+"Process_Text": {
+"original": "This paper cites (Yb0.2Y0.2Lu0.2Sc0.2Gd0.2)2Si2O7 as a five-RE-principal-component disilicate solid solution in the discussion of the generality of the r-bar criterion.",
+"simplified": "Reference five-RE disilicate cited for the radius criterion."
+},
+"Equipment": null,
+"Key_Params": {}
+},
+"Microstructure_Info": {
+"Microstructure_Text": {
+"original": "Used as a reference data point in the r-bar versus sigma-r comparison for multicomponent disilicates.",
+"simplified": "Reference solid solution used for design-criterion comparison."
+},
+"Main_Phase": null,
+"Precipitates": [],
+"Porosity_pct": null,
+"Relative_Density_pct": null,
+"Grain_Size_avg_um": null,
+"Precipitate_Size_avg_nm": null,
+"Advanced_Quantitative_Features": {}
+},
+"Properties_Info": []
+},
+{
+"Sample_ID": "R02",
+"Gradient_Material": false,
+"Gradient_Group_ID": null,
+"Composition_Info": {
+"Role": "Reference",
+"Alloy_Name_Raw": "(Gd1/6Tb1/6Dy1/6Tm1/6Yb1/6Lu1/6)2Si2O7 solid solution",
+"Nominal_Composition": {
+"Composition_Type": "at%",
+"Elements_Normalized": {
+"Gd": 3.0303,
+"Tb": 3.0303,
+"Dy": 3.0303,
+"Tm": 3.0303,
+"Yb": 3.0303,
+"Lu": 3.0303,
+"Si": 18.1818,
+"O": 63.6364
+}
+},
+"Measured_Composition": {
+"Composition_Type": null,
+"Elements_Normalized": null,
+"Measurement_Method": null
+},
+"Note": "Literature benchmark cited in this paper as a six-RE principal-component disilicate used to verify the generality of the r-bar criterion around 0.885 Å. Detailed synthesis and property data were not provided in this paper."
+},
+"Process_Info": {
+"Process_Category": "Reported in literature",
+"Process_Text": {
+"original": "This paper cites (Gd1/6Tb1/6Dy1/6Tm1/6Yb1/6Lu1/6)2Si2O7 as a six-RE-principal-component disilicate solid solution in the discussion of the generality of the r-bar criterion.",
+"simplified": "Reference six-RE disilicate cited for the radius criterion."
+},
+"Equipment": null,
+"Key_Params": {}
+},
+"Microstructure_Info": {
+"Microstructure_Text": {
+"original": "Used as a reference data point in the r-bar versus sigma-r comparison for multicomponent disilicates.",
+"simplified": "Reference solid solution used for design-criterion comparison."
+},
+"Main_Phase": null,
+"Precipitates": [],
+"Porosity_pct": null,
+"Relative_Density_pct": null,
+"Grain_Size_avg_um": null,
+"Precipitate_Size_avg_nm": null,
+"Advanced_Quantitative_Features": {}
+},
+"Properties_Info": []
+}
+]
+}

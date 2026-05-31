@@ -1,0 +1,1054 @@
+{
+  "Paper_Metadata": {
+    "Paper_Title": "Grain boundaries are Brownian ratchets",
+    "DOI": "10.1126/science.adp1516"
+  },
+  "Paper_Routing": {
+    "base_material": "Metals",
+    "application": "Structural",
+    "research_paradigm": "Hybrid",
+    "Supplements_Loaded": [
+      "directions/base/Metals.txt",
+      "directions/application/Structural.txt",
+      "directions/paradigm/Hybrid.txt"
+    ],
+    "Patch_Tags": [],
+    "Needs_Mixed_Routing_Check": false,
+    "Mixed_Signals": []
+  },
+  "items": [
+    {
+      "Item_ID": "MD-ATGB-Cu-Sigma27",
+      "Sample_ID": "Σ27 [110] ATGB in Cu",
+      "Role": "Target",
+      "Data_Nature": "Computed",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Fig. 1A and Fig. 1F"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Pure metal",
+          "Material_Name_Raw": "Cu",
+          "Nominal_Composition": {
+            "Cu": "Balance"
+          }
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "MD simulations of Σ27 [110] asymmetric tilt GB in Cu driven by free energy density jump γ",
+            "simplified": "MD simulation of GB migration under synthetic driving force in Cu bicrystal"
+          },
+          "Simulation_Metadata": {
+            "Method": "Molecular Dynamics",
+            "Temperature": "0.5 T_m",
+            "Driving_Force_Type": "free energy density jump γ"
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Σ27 [110] ATGB dissociates into a twin boundary and another GB when it migrates in one direction while remaining undissociated when migration is in the opposite direction",
+            "simplified": "ATGB shows structural dissociation dependent on migration direction"
+          },
+          "Main_Phase": {
+            "Phase_Name": "FCC Cu matrix",
+            "Crystal_Structure": "FCC"
+          },
+          "Advanced_Quantitative_Features": {
+            "GB_Type": "Σ27 [110] asymmetric tilt GB",
+            "Dissociation_Behavior": "direction-dependent: dissociates into twin boundary + another GB in one direction, remains undissociated in opposite direction"
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "GB Migration Rate",
+            "Value": null,
+            "Unit": "m/s",
+            "Test_Condition": {
+              "Driving_Force": "γ",
+              "Temperature": "0.5 T_m"
+            },
+            "Data_Source": "image",
+            "Note": "from caption; |v_+| ≠ |v_-| demonstrated; actual driving forces from thermodynamic integration provided in table S2"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "MD-ATGB-Al-Sigma11",
+      "Sample_ID": "Σ11 [110] ATGB in Al",
+      "Role": "Target",
+      "Data_Nature": "Computed",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Fig. 1B and Fig. 1G"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Pure metal",
+          "Material_Name_Raw": "Al",
+          "Nominal_Composition": {
+            "Al": "Balance"
+          }
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "MD simulations of Σ11 [110] ATGB in Al driven by γ",
+            "simplified": "MD simulation of GB migration under synthetic driving force in Al bicrystal"
+          },
+          "Simulation_Metadata": {
+            "Method": "Molecular Dynamics",
+            "Temperature": "0.5 T_m",
+            "Driving_Force_Type": "free energy density jump γ"
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Migration dominated by motion of one single set of facets in one direction and by motion of two distinct sets of facets in the other",
+            "simplified": "Facet-mediated migration with direction-dependent number of active facet sets"
+          },
+          "Main_Phase": {
+            "Phase_Name": "FCC Al matrix",
+            "Crystal_Structure": "FCC"
+          },
+          "Advanced_Quantitative_Features": {
+            "GB_Type": "Σ11 [110] asymmetric tilt GB",
+            "Facet_Configuration": "single set of facets for one direction, two distinct sets for opposite direction",
+            "ATGB_Inclination_Angle": "φ₀ = 46.7°"
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "GB Migration Rate",
+            "Value": null,
+            "Unit": "m/s",
+            "Test_Condition": {
+              "Driving_Force": "γ",
+              "Temperature": "0.5 T_m"
+            },
+            "Data_Source": "image",
+            "Note": "from caption; |v_+| ≠ |v_-| demonstrated"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "MD-ATGB-Al-Sigma19",
+      "Sample_ID": "Σ19 [110] ATGB in Al",
+      "Role": "Target",
+      "Data_Nature": "Computed",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Fig. 1C and Fig. 1H"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Pure metal",
+          "Material_Name_Raw": "Al",
+          "Nominal_Composition": {
+            "Al": "Balance"
+          }
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "MD simulations of Σ19 [110] ATGB in Al driven by γ",
+            "simplified": "MD simulation of GB migration under synthetic driving force in Al bicrystal"
+          },
+          "Simulation_Metadata": {
+            "Method": "Molecular Dynamics",
+            "Temperature": "0.5 T_m",
+            "Driving_Force_Type": "free energy density jump γ"
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Migration controlled by motion of different sets of facets when migrating in opposite directions",
+            "simplified": "Different facet sets active depending on migration direction"
+          },
+          "Main_Phase": {
+            "Phase_Name": "FCC Al matrix",
+            "Crystal_Structure": "FCC"
+          },
+          "Advanced_Quantitative_Features": {
+            "GB_Type": "Σ19 [110] asymmetric tilt GB"
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "GB Migration Rate",
+            "Value": null,
+            "Unit": "m/s",
+            "Test_Condition": {
+              "Driving_Force": "γ",
+              "Temperature": "0.5 T_m"
+            },
+            "Data_Source": "image",
+            "Note": "from caption; |v_+| ≠ |v_-| demonstrated"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "MD-STGB-Cu-Sigma99",
+      "Sample_ID": "Σ99 [110] STGB in Cu",
+      "Role": "Variant",
+      "Data_Nature": "Computed",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Fig. 1D and Fig. 1I"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Pure metal",
+          "Material_Name_Raw": "Cu",
+          "Nominal_Composition": {
+            "Cu": "Balance"
+          }
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "MD simulations of Σ99 [110] STGB in Cu driven by shear stress τ",
+            "simplified": "MD simulation of symmetric GB migration under shear stress in Cu bicrystal"
+          },
+          "Simulation_Metadata": {
+            "Method": "Molecular Dynamics",
+            "Temperature": "0.5 T_m",
+            "Driving_Force_Type": "shear stress τ"
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "STGB exhibits a 9R phase which is microscopically nonsymmetric — the width of the 9R phase is different when it migrates in different directions",
+            "simplified": "Macroscopically symmetric but microscopically nonsymmetric due to 9R phase"
+          },
+          "Main_Phase": {
+            "Phase_Name": "FCC Cu matrix",
+            "Crystal_Structure": "FCC"
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "9R phase",
+              "Crystal_Structure": "9R",
+              "Location": "at GB"
+            }
+          ],
+          "Advanced_Quantitative_Features": {
+            "GB_Type": "Σ99 [110] symmetric tilt GB",
+            "Symmetry_Note": "macroscopically symmetric but microscopically nonsymmetric due to 9R phase width asymmetry"
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "GB Migration Rate",
+            "Value": null,
+            "Unit": "m/s",
+            "Test_Condition": {
+              "Driving_Force": "τ",
+              "Temperature": "0.5 T_m"
+            },
+            "Data_Source": "image",
+            "Note": "from caption; direction-dependent due to microscopic 9R phase asymmetry; long-time averaging should yield direction-independent mobility"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "MD-ATGB-Al-Sigma25",
+      "Sample_ID": "Σ25 [100] ATGB in Al",
+      "Role": "Target",
+      "Data_Nature": "Computed",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Fig. 1E and Fig. 1J"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Pure metal",
+          "Material_Name_Raw": "Al",
+          "Nominal_Composition": {
+            "Al": "Balance"
+          }
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "MD simulations of Σ25 [100] ATGB in Al driven by shear stress τ",
+            "simplified": "MD simulation of low-angle ATGB migration under shear stress in Al bicrystal"
+          },
+          "Simulation_Metadata": {
+            "Method": "Molecular Dynamics",
+            "Temperature": "0.5 T_m",
+            "Driving_Force_Type": "shear stress τ"
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Migrates through glide of different sets of GB dislocations when migrating in opposite directions",
+            "simplified": "Direction-dependent GB dislocation glide mechanism"
+          },
+          "Main_Phase": {
+            "Phase_Name": "FCC Al matrix",
+            "Crystal_Structure": "FCC"
+          },
+          "Advanced_Quantitative_Features": {
+            "GB_Type": "Σ25 [100] ATGB (low-angle)",
+            "Migration_Mechanism": "glide of different GB dislocation sets depending on direction"
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "GB Migration Rate",
+            "Value": null,
+            "Unit": "m/s",
+            "Test_Condition": {
+              "Driving_Force": "τ",
+              "Temperature": "0.5 T_m"
+            },
+            "Data_Source": "image",
+            "Note": "from caption; |v_+| ≠ |v_-| demonstrated"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "MD-Sigma39-STGB-Al",
+      "Sample_ID": "Σ39 [111] STGB in Al",
+      "Role": "Target",
+      "Data_Nature": "Computed",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Fig. 2A and Fig. 2F"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Pure metal",
+          "Material_Name_Raw": "Al",
+          "Nominal_Composition": {
+            "Al": "Balance"
+          }
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "MD simulations for Σ39 [111] STGB at 0.5 T_m, six simulations with different initial conditions",
+            "simplified": "MD simulation of Σ39 [111] STGB in Al bicrystal"
+          },
+          "Simulation_Metadata": {
+            "Method": "Molecular Dynamics",
+            "Temperature": "0.5 T_m",
+            "Repetitions": 6,
+            "Driving_Force_Type": "γ"
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Σ39 [111] STGB — symmetric, both m' and 2' exist",
+            "simplified": "Symmetric GB with mirror and 2'-fold symmetry"
+          },
+          "Main_Phase": {
+            "Phase_Name": "FCC Al matrix",
+            "Crystal_Structure": "FCC"
+          },
+          "Advanced_Quantitative_Features": {
+            "GB_Type": "Σ39 [111] STGB",
+            "Symmetry": "symmetric (both m' and 2' exist)"
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "GB Migration Rate Ratio |v₊/v₋|",
+            "Value": null,
+            "Unit": "dimensionless",
+            "Test_Condition": {
+              "Temperature": "0.5 T_m",
+              "Driving_Force": "γ"
+            },
+            "Data_Source": "image",
+            "Note": "from caption; |v₊/v₋| = 1 within standard deviation"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "MD-Sigma39-ATGB-Al",
+      "Sample_ID": "Σ39 [111] ATGB (φ₀ = 9.8°) in Al",
+      "Role": "Target",
+      "Data_Nature": "Computed",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Fig. 2B and Fig. 2G"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Pure metal",
+          "Material_Name_Raw": "Al",
+          "Nominal_Composition": {
+            "Al": "Balance"
+          }
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "MD simulations for Σ39 [111] ATGB (φ₀ = 9.8°) at 0.5 T_m, six simulations with different initial conditions",
+            "simplified": "MD simulation of Σ39 [111] ATGB in Al bicrystal"
+          },
+          "Simulation_Metadata": {
+            "Method": "Molecular Dynamics",
+            "Temperature": "0.5 T_m",
+            "Repetitions": 6,
+            "Driving_Force_Type": "γ"
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Σ39 [111] ATGB with φ₀ = 9.8° — nonsymmetric",
+            "simplified": "Asymmetric tilt GB with inclination angle φ₀ = 9.8°"
+          },
+          "Main_Phase": {
+            "Phase_Name": "FCC Al matrix",
+            "Crystal_Structure": "FCC"
+          },
+          "Advanced_Quantitative_Features": {
+            "GB_Type": "Σ39 [111] ATGB",
+            "Tilt_Angle": "φ₀ = 9.8°",
+            "Symmetry": "nonsymmetric"
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "GB Migration Rate Ratio |v₊/v₋|",
+            "Value": null,
+            "Unit": "dimensionless",
+            "Test_Condition": {
+              "Temperature": "0.5 T_m",
+              "Driving_Force": "γ"
+            },
+            "Data_Source": "image",
+            "Note": "from caption; |v₊/v₋| > 1 in every individual simulation"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "MD-Sigma39-SMGB-Al",
+      "Sample_ID": "Σ39 [111] SMGB (φₚ = 36.3°) in Al",
+      "Role": "Target",
+      "Data_Nature": "Computed",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Fig. 2C and Fig. 2H"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Pure metal",
+          "Material_Name_Raw": "Al",
+          "Nominal_Composition": {
+            "Al": "Balance"
+          }
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "MD simulations for Σ39 [111] SMGB (φₚ = 36.3°) at 0.5 T_m, six simulations with different initial conditions",
+            "simplified": "MD simulation of Σ39 [111] SMGB in Al bicrystal"
+          },
+          "Simulation_Metadata": {
+            "Method": "Molecular Dynamics",
+            "Temperature": "0.5 T_m",
+            "Repetitions": 6,
+            "Driving_Force_Type": "γ"
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Σ39 [111] SMGB with φₚ = 36.3° — 2' preserved",
+            "simplified": "Symmetric mixed GB with 2'-fold axis preserved"
+          },
+          "Main_Phase": {
+            "Phase_Name": "FCC Al matrix",
+            "Crystal_Structure": "FCC"
+          },
+          "Advanced_Quantitative_Features": {
+            "GB_Type": "Σ39 [111] SMGB",
+            "Tilt_Angle": "φₚ = 36.3°",
+            "Symmetry": "2' preserved"
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "GB Migration Rate Ratio |v₊/v₋|",
+            "Value": null,
+            "Unit": "dimensionless",
+            "Test_Condition": {
+              "Temperature": "0.5 T_m",
+              "Driving_Force": "γ"
+            },
+            "Data_Source": "image",
+            "Note": "from caption; |v₊/v₋| = 1 within standard deviation"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "MD-Sigma39-AMGB-Al",
+      "Sample_ID": "Σ39 [111] AMGB in Al",
+      "Role": "Target",
+      "Data_Nature": "Computed",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Fig. 2D and Fig. 2I"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Pure metal",
+          "Material_Name_Raw": "Al",
+          "Nominal_Composition": {
+            "Al": "Balance"
+          }
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "MD simulations for Σ39 [111] AMGB (φ₀ = 9.8° and φₚ = 36.3°) at 0.5 T_m, six simulations with different initial conditions",
+            "simplified": "MD simulation of Σ39 [111] AMGB in Al bicrystal"
+          },
+          "Simulation_Metadata": {
+            "Method": "Molecular Dynamics",
+            "Temperature": "0.5 T_m",
+            "Repetitions": 6,
+            "Driving_Force_Type": "γ"
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Σ39 [111] AMGB combining φ₀ = 9.8° and φₚ = 36.3° — nonsymmetric",
+            "simplified": "Asymmetric mixed GB combining both tilt components"
+          },
+          "Main_Phase": {
+            "Phase_Name": "FCC Al matrix",
+            "Crystal_Structure": "FCC"
+          },
+          "Advanced_Quantitative_Features": {
+            "GB_Type": "Σ39 [111] AMGB",
+            "Tilt_Angles": "φ₀ = 9.8° and φₚ = 36.3°",
+            "Symmetry": "nonsymmetric"
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "GB Migration Rate Ratio |v₊/v₋|",
+            "Value": null,
+            "Unit": "dimensionless",
+            "Test_Condition": {
+              "Temperature": "0.5 T_m",
+              "Driving_Force": "γ"
+            },
+            "Data_Source": "image",
+            "Note": "from caption; |v₊/v₋| > 1 in every individual simulation"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "MD-HalfLoop-Al-Sigma13",
+      "Sample_ID": "Σ13 GB half-loop in Al",
+      "Role": "Target",
+      "Data_Nature": "Computed",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Fig. 2E and Fig. 2J"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Pure metal",
+          "Material_Name_Raw": "Al",
+          "Nominal_Composition": {
+            "Al": "Balance"
+          }
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "MD simulations of Σ13 GB half-loop in Al at 0.7 T_m under capillary-driven migration",
+            "simplified": "MD simulation of curved GB migration in Al half-loop configuration"
+          },
+          "Simulation_Metadata": {
+            "Method": "Molecular Dynamics",
+            "Temperature": "0.7 T_m",
+            "Driving_Force_Type": "capillarity (curvature flow)"
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "GB half-loop configuration where GB is curved and migrates at constant rate; two cases with reversed crystal orientations outside/inside the half-loop",
+            "simplified": "Curved GB half-loop with reversed capillary driving force direction"
+          },
+          "Main_Phase": {
+            "Phase_Name": "FCC Al matrix",
+            "Crystal_Structure": "FCC"
+          },
+          "Advanced_Quantitative_Features": {
+            "GB_Configuration": "Σ13 GB half-loop",
+            "Curvature": "1/w"
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "GB Migration Rate Ratio |vₓ/v_y|",
+            "Value": null,
+            "Unit": "dimensionless",
+            "Test_Condition": {
+              "Temperature": "0.7 T_m",
+              "Driving_Force": "capillarity"
+            },
+            "Data_Source": "image",
+            "Note": "from caption; |vₓ/v_y| ≠ 1 for all curvatures studied; migration rate always larger for one orientation configuration"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "MD-Oscillatory-Sigma39-Al",
+      "Sample_ID": "Σ39 [111] STGB and ATGB in Al under oscillatory loading",
+      "Role": "Target",
+      "Data_Nature": "Computed",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Fig. 4A-D"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Pure metal",
+          "Material_Name_Raw": "Al",
+          "Nominal_Composition": {
+            "Al": "Balance"
+          }
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "MD simulations on Σ39 [111] STGB and ATGB under oscillatory γ and τ driving forces at 0.6 T_m",
+            "simplified": "MD simulation of GB migration under oscillatory driving forces"
+          },
+          "Simulation_Metadata": {
+            "Method": "Molecular Dynamics",
+            "Temperature": "0.6 T_m",
+            "Driving_Force_Type": "oscillatory γ and oscillatory τ",
+            "Oscillatory_γ": "15 × (-1)^|ft| meV/atom",
+            "Oscillatory_τ": "150 × (-1)^|ft| MPa",
+            "Oscillation_Frequency": "1 ns⁻¹"
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Σ39 [111] STGB and ATGB in Al under oscillatory loading",
+            "simplified": "Oscillatory loading test on STGB and ATGB"
+          },
+          "Main_Phase": {
+            "Phase_Name": "FCC Al matrix",
+            "Crystal_Structure": "FCC"
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "GB Mean Velocity under Oscillatory γ",
+            "Value": 0,
+            "Unit": "m/s",
+            "Original_Values": "zero net velocity",
+            "Test_Condition": {
+              "GB_Type": "Σ39 [111] STGB",
+              "Driving_Force": "oscillatory γ = 15 × (-1)^|ft| meV/atom",
+              "Temperature": "0.6 T_m",
+              "Frequency": "1 ns⁻¹"
+            },
+            "Data_Source": "text",
+            "Note": "STGB does not drift; zero average velocity"
+          },
+          {
+            "Property_Name": "GB Mean Velocity under Oscillatory γ",
+            "Value": 0.45,
+            "Unit": "m/s",
+            "Original_Values": "~0.45 m/s",
+            "Test_Condition": {
+              "GB_Type": "Σ39 [111] ATGB",
+              "Driving_Force": "oscillatory γ = 15 × (-1)^|ft| meV/atom",
+              "Temperature": "0.6 T_m",
+              "Frequency": "1 ns⁻¹"
+            },
+            "Data_Source": "text",
+            "Note": "approximate value from text; consistent with ||v₊| - |v₋|| × 10 = 0.523 ± 0.204 m/s from Fig. 2G data"
+          },
+          {
+            "Property_Name": "GB Mean Velocity under Oscillatory τ",
+            "Value": 0,
+            "Unit": "m/s",
+            "Original_Values": "zero net velocity",
+            "Test_Condition": {
+              "GB_Type": "Σ39 [111] STGB",
+              "Driving_Force": "oscillatory τ = 150 × (-1)^|ft| MPa",
+              "Temperature": "0.6 T_m",
+              "Frequency": "1 ns⁻¹"
+            },
+            "Data_Source": "text",
+            "Note": "STGB does not drift under oscillatory shear stress"
+          },
+          {
+            "Property_Name": "GB Mean Velocity under Oscillatory τ",
+            "Value": 0.16,
+            "Unit": "m/s",
+            "Original_Values": "~0.16 m/s",
+            "Test_Condition": {
+              "GB_Type": "Σ39 [111] ATGB",
+              "Driving_Force": "oscillatory τ = 150 × (-1)^|ft| MPa",
+              "Temperature": "0.6 T_m",
+              "Frequency": "1 ns⁻¹"
+            },
+            "Data_Source": "text",
+            "Note": "approximate value from text"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "PFC-Cyclic-Sigma39-Al",
+      "Sample_ID": "Σ39 [111] STGB and ATGB in Al under cyclic annealing (PFC)",
+      "Role": "Target",
+      "Data_Nature": "Computed",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Fig. 4E-F"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Pure metal",
+          "Material_Name_Raw": "Al",
+          "Nominal_Composition": {
+            "Al": "Balance"
+          }
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "Phase-field crystal simulations of Σ39 [111] STGB and ATGB in Al with temperature cycling frequency of 3.7 × 10³ s⁻¹",
+            "simplified": "PFC simulation of GB migration under cyclic annealing"
+          },
+          "Simulation_Metadata": {
+            "Method": "Phase-Field Crystal",
+            "Driving_Force_Type": "cyclic temperature variation",
+            "Temperature_Cycling_Frequency": "3.7 × 10³ s⁻¹",
+            "Note": "absolute temperature is a phenomenological parameter in PFC; see table S4"
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Σ39 [111] STGB and ATGB under cyclic annealing",
+            "simplified": "Cyclic annealing test on STGB and ATGB via PFC"
+          },
+          "Main_Phase": {
+            "Phase_Name": "FCC Al matrix",
+            "Crystal_Structure": "FCC"
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "GB Migration Velocity under Cyclic Annealing",
+            "Value": 0,
+            "Unit": "m/s",
+            "Test_Condition": {
+              "GB_Type": "Σ39 [111] STGB",
+              "Cycling_Frequency": "3.7 × 10³ s⁻¹",
+              "Simulation_Method": "PFC"
+            },
+            "Data_Source": "text",
+            "Note": "STGB does not migrate under cyclic annealing"
+          },
+          {
+            "Property_Name": "GB Migration Velocity under Cyclic Annealing",
+            "Value": 1.5e-08,
+            "Unit": "m/s",
+            "Original_Values": "~1.5 × 10⁻⁸ m/s",
+            "Test_Condition": {
+              "GB_Type": "Σ39 [111] ATGB",
+              "Cycling_Frequency": "3.7 × 10³ s⁻¹",
+              "Simulation_Method": "PFC"
+            },
+            "Data_Source": "text",
+            "Note": "approximate value from text; constant unidirectional velocity"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "STEM-Ni-ATGB",
+      "Sample_ID": "Ni bicrystal ATGB (in situ STEM)",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Fig. 4G-H"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Pure metal",
+          "Material_Name_Raw": "Ni bicrystal",
+          "Nominal_Composition": {
+            "Ni": "Balance"
+          }
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "In situ STEM observation of ATGB migration in Ni bicrystal. Upper grain zone axis close to [112], lower grain close to [110]. Three annealing stages: (1) constant 400°C for 20 min; (2) cyclic annealing between 350°C and 450°C at 0.33 Hz from 20 to 129 min; (3) constant 450°C from 129 to 157 min.",
+            "simplified": "In situ STEM observation of ATGB under constant and cyclic annealing in Ni bicrystal"
+          },
+          "Equipment": [
+            {
+              "Name": "STEM",
+              "Category": "Characterization"
+            }
+          ],
+          "Key_Params": {
+            "Stage1": {
+              "Type": "Constant temperature annealing",
+              "Temperature_Original": "400°C",
+              "Temperature_K": 673.15,
+              "Duration": "20 min"
+            },
+            "Stage2": {
+              "Type": "Cyclic annealing",
+              "Temperature_Range_Original": "350-450°C",
+              "Temperature_Range_K": [623.15, 723.15],
+              "Frequency": "0.33 Hz",
+              "Duration": "109 min (20-129 min)"
+            },
+            "Stage3": {
+              "Type": "Constant temperature annealing",
+              "Temperature_Original": "450°C",
+              "Temperature_K": 723.15,
+              "Duration": "28 min (129-157 min)"
+            }
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Nonsymmetric ATGB in Ni bicrystal; upper grain zone axis close to [112], lower grain close to [110]",
+            "simplified": "Asymmetric tilt GB in Ni bicrystal with distinct grain orientations"
+          },
+          "Main_Phase": {
+            "Phase_Name": "FCC Ni matrix",
+            "Crystal_Structure": "FCC"
+          },
+          "Texture_or_Orientation": {
+            "Upper_Grain_Zone_Axis": "[112]",
+            "Lower_Grain_Zone_Axis": "[110]"
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "GB Migration Rate",
+            "Value": 0.08,
+            "Unit": "nm/min",
+            "Value_StdDev": 0.05,
+            "Original_Values": "0.08 ± 0.05 nm/min",
+            "Test_Condition": {
+              "Annealing_Condition": "Constant 400°C",
+              "Duration": "0-20 min",
+              "Specimen": "Ni bicrystal ATGB"
+            },
+            "Data_Source": "text",
+            "Note": "negligible migration rate under constant temperature"
+          },
+          {
+            "Property_Name": "GB Migration Rate",
+            "Value": 5.61,
+            "Unit": "nm/min",
+            "Value_StdDev": 0.32,
+            "Original_Values": "5.61 ± 0.32 nm/min",
+            "Test_Condition": {
+              "Annealing_Condition": "Cyclic 350-450°C at 0.33 Hz",
+              "Duration": "20-129 min",
+              "Specimen": "Ni bicrystal ATGB"
+            },
+            "Data_Source": "text",
+            "Note": "unidirectional migration under cyclic annealing; rate cannot be explained by surface energy difference alone"
+          },
+          {
+            "Property_Name": "GB Migration Rate",
+            "Value": 1.32,
+            "Unit": "nm/min",
+            "Value_StdDev": 0.06,
+            "Original_Values": "1.32 ± 0.06 nm/min",
+            "Test_Condition": {
+              "Annealing_Condition": "Constant 450°C",
+              "Duration": "129-157 min",
+              "Specimen": "Ni bicrystal ATGB"
+            },
+            "Data_Source": "text",
+            "Note": "small migration rate likely driven by surface energy difference of two grains"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "MD-Polycrystalline-Al",
+      "Sample_ID": "3D polycrystalline Al (MD)",
+      "Role": "Target",
+      "Data_Nature": "Computed",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Fig. 4I"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Pure metal",
+          "Material_Name_Raw": "Al",
+          "Nominal_Composition": {
+            "Al": "Balance"
+          }
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "MD simulations of grain growth in polycrystalline Al at 0.6 T_m under oscillatory shear stress with zero mean, stress amplitude below yield strength, oscillation frequency 1.0 ns⁻¹",
+            "simplified": "MD simulation of grain growth in 3D polycrystalline Al with/without oscillatory shear stress"
+          },
+          "Simulation_Metadata": {
+            "Method": "Molecular Dynamics",
+            "Temperature": "0.6 T_m",
+            "Driving_Force": "oscillatory shear stress",
+            "Oscillation_Frequency": "1.0 ns⁻¹",
+            "Stress_Amplitude": "below yield strength",
+            "Mean_Stress": 0
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "3D polycrystalline Al; no substantial dislocation plasticity or twinning observed",
+            "simplified": "3D polycrystalline Al microstructure evolution"
+          },
+          "Main_Phase": {
+            "Phase_Name": "FCC Al matrix",
+            "Crystal_Structure": "FCC"
+          },
+          "Advanced_Quantitative_Features": {
+            "Plasticity_Observation": "no substantial dislocation plasticity or twinning observed"
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Mean Grain Growth Rate dR²/dt",
+            "Value": null,
+            "Unit": "nm²/ns",
+            "Test_Condition": {
+              "Temperature": "0.6 T_m",
+              "Condition": "with oscillatory shear stress vs without"
+            },
+            "Data_Source": "image",
+            "Note": "from caption; growth rate with oscillatory shear is ~2 times that without oscillatory shear; exact values not given in text"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "PFC-Polycrystalline-Al",
+      "Sample_ID": "2D polycrystalline Al (PFC)",
+      "Role": "Target",
+      "Data_Nature": "Computed",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Fig. 4J"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Pure metal",
+          "Material_Name_Raw": "Al",
+          "Nominal_Composition": {
+            "Al": "Balance"
+          }
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "PFC simulations of grain growth in 2D polycrystalline Al with and without cyclic temperature variation",
+            "simplified": "PFC simulation of grain growth under cyclic vs constant annealing"
+          },
+          "Simulation_Metadata": {
+            "Method": "Phase-Field Crystal",
+            "Configuration": "2D polycrystalline"
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "2D polycrystalline Al microstructure evolution under cyclic and constant annealing",
+            "simplified": "2D polycrystalline Al"
+          },
+          "Main_Phase": {
+            "Phase_Name": "FCC Al matrix",
+            "Crystal_Structure": "FCC"
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Mean Squared Grain Size evolution",
+            "Value": null,
+            "Unit": null,
+            "Test_Condition": {
+              "Conditions": "cyclic annealing vs constant high/low/mean temperature vs average of high and low"
+            },
+            "Data_Source": "image",
+            "Note": "from caption; cyclic annealing at finite frequency accelerates grain growth compared to constant temperature; maximum growth rate at a certain finite frequency; exact values not extractable from text"
+          }
+        ]
+      }
+    }
+  ]
+}

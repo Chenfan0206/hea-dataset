@@ -1,0 +1,179 @@
+{
+  "Paper_Metadata": {
+    "Paper_Title": "Active learning framework to optimize process parameters for additive-manufactured Ti-6Al-4V with high strength and ductility",
+    "DOI": "10.1038/s41467-025-56267-1"
+  },
+  "items": [
+    {
+      "Sample_ID": "Ref_Suppl_T1",
+      "Gradient_Material": false,
+      "Gradient_Group_ID": null,
+      "Composition_Info": {
+        "Role": "Reference",
+        "Alloy_Name_Raw": "Ti-6Al-4V",
+        "Nominal_Composition": {
+          "Composition_Type": "wt%",
+          "Elements_Normalized": {
+            "Ti": "Balance",
+            "Al": 6.0,
+            "V": 4.0
+          }
+        },
+        "Measured_Composition": null,
+        "Note": "Data extracted from Supplementary Table 1 (Initial Dataset). This data point was used as historical/reference data for the Active Learning model, not as the optimized result of this study."
+      },
+      "Process_Info": {
+        "Process_Category": "LPBF + Heat Treatment",
+        "Process_Text": {
+          "original": "From Supplementary Table 1: Laser Power: 375 W, Scan Speed: 1125 mm/s, HT Temp: 920 °C, HT Time: 2 h.",
+          "simplified": "LPBF (P=375W, v=1125mm/s) + Annealing (920°C/2h)"
+        },
+        "Equipment": null,
+        "Key_Params": {
+          "Laser_Power_W": 375.0,
+          "Scanning_Speed_mm_s": 1125.0,
+          "Hatch_Spacing_um": 48.0,
+          "Layer_Thickness_um": 50.0,
+          "Annealing_Temperature_K": 1193.15,
+          "Annealing_Time_h": 2.0,
+          "Cooling_Medium": "Furnace cooling"
+        }
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": "Not explicitly described in main text for this specific data point. Listed as 'Annealed' in dataset.",
+          "simplified": "Annealed microstructure (Reference data from dataset)."
+        },
+        "Main_Phase": null,
+        "Precipitates": [],
+        "Porosity_pct": null,
+        "Relative_Density_pct": null,
+        "Grain_Size_avg_um": null,
+        "Precipitate_Size_avg_nm": null,
+        "Advanced_Quantitative_Features": null
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Ultimate_Tensile_Strength",
+          "Test_Condition": "Reference value from initial dataset",
+          "Value_Numeric": 1064.0,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "MPa",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": "UTS value for the reference data point (375W, 1125mm/s, 920°C) is 1064 MPa, not 1190 MPa."
+        },
+        {
+          "Property_Name": "Elongation_Total",
+          "Test_Condition": "Reference value from initial dataset",
+          "Value_Numeric": 18.0,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "%",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": "TE value for the reference data point (375W, 1125mm/s, 920°C) is 18.0%."
+        }
+      ]
+    },
+    {
+      "Sample_ID": "4-1",
+      "Gradient_Material": false,
+      "Gradient_Group_ID": null,
+      "Composition_Info": {
+        "Role": "Target",
+        "Alloy_Name_Raw": "Ti-6Al-4V",
+        "Nominal_Composition": {
+          "Composition_Type": "wt%",
+          "Elements_Normalized": {
+            "Ti": "Balance",
+            "Al": 6.0,
+            "V": 4.0
+          }
+        },
+        "Measured_Composition": null,
+        "Note": "Optimized sample identified by the Pareto Active Learning framework."
+      },
+      "Process_Info": {
+        "Process_Category": "LPBF + Heat Treatment",
+        "Process_Text": {
+          "original": "From Table 1: Laser Power: 200 W, Scan Speed: 1900 mm/s, HT Temp: 595 °C, HT Time: 2 h.",
+          "simplified": "LPBF (P=200W, v=1900mm/s) + Annealing (595°C/2h)"
+        },
+        "Equipment": "Concept Laser M2",
+        "Key_Params": {
+          "Laser_Power_W": 200.0,
+          "Scanning_Speed_mm_s": 1900.0,
+          "Hatch_Spacing_um": 48.0,
+          "Layer_Thickness_um": 50.0,
+          "Annealing_Temperature_K": 868.15,
+          "Annealing_Time_h": 2.0,
+          "Cooling_Medium": "Furnace cooling"
+        }
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": "The 4-1 sample exhibited a fully acicular microstructure, and the frequency of SF values between 0.4 and 0.5 was 46.38%.",
+          "simplified": "Fully acicular alpha laths with high Schmid factor frequency (46.38%)."
+        },
+        "Main_Phase": "Alpha (α)",
+        "Precipitates": [
+          {
+            "Phase_Type": "Beta (β)",
+            "Volume_Fraction_pct": null
+          }
+        ],
+        "Porosity_pct": null,
+        "Relative_Density_pct": null,
+        "Grain_Size_avg_um": null,
+        "Precipitate_Size_avg_nm": null,
+        "Advanced_Quantitative_Features": "Schmid_Factor_Frequency_0.4-0.5_pct: 46.38"
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Ultimate_Tensile_Strength",
+          "Test_Condition": "Optimized result",
+          "Value_Numeric": 1190.0,
+          "Value_Range": null,
+          "Value_StdDev": 12.4,
+          "Unit": "MPa",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": "5×10⁻³",
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "Table 1",
+          "Test_Specimen": "Dog-bone shaped",
+          "Note": "Optimized strength achieved by the framework."
+        },
+        {
+          "Property_Name": "Elongation_Total",
+          "Test_Condition": "Optimized result",
+          "Value_Numeric": 16.5,
+          "Value_Range": null,
+          "Value_StdDev": 1.3,
+          "Unit": "%",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": "5×10⁻³",
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "Table 1",
+          "Test_Specimen": "Dog-bone shaped",
+          "Note": "Optimized ductility achieved by the framework."
+        }
+      ]
+    }
+  ]
+}

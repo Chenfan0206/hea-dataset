@@ -1,0 +1,689 @@
+{
+"Paper_Metadata": {
+"Paper_Title": "Magnesia-stabilized zirconia (MSZ) thermal barrier coatings by suspension plasma spraying: Coating properties and service life behavior",
+"DOI": "10.1016/j.jeurceramsoc.2025.117790"
+},
+"items": [
+{
+"Sample_ID": "MZ",
+"Gradient_Material": false,
+"Gradient_Group_ID": null,
+"Composition_Info": {
+"Role": "Target",
+"Alloy_Name_Raw": "System A single-layer APS MSZ topcoat; commercial magnesia-stabilized zirconia (MSZ, 24 wt%), Metco 210NS-1, on NiCoCrAlHfYSi-type bond coat (Amdry 386) / IN738 substrate",
+"Nominal_Composition": {
+"Composition_Type": null,
+"Elements_Normalized": null
+},
+"Measured_Composition": {
+"Composition_Type": null,
+"Elements_Normalized": null,
+"Measurement_Method": "EDS"
+},
+"Note": "Commercial oxide feedstock reported as 24 wt% MSZ (Metco 210NS-1); oxide-level composition is given in the paper, not element-normalized composition. Bond coat text is written once as NiCoCrAlHfSi in the abstract and as NiCoCrAlHfYSi-type (Amdry 386) in Materials and methods."
+},
+"Process_Info": {
+"Process_Category": "Thermal barrier coating fabrication by atmospheric plasma spray (APS)",
+"Process_Text": {
+"original": "System A is a single-layered APS MSZ topcoat and is used as the reference. The coatings were deposited onto bond coated button-shaped nickel-based superalloy – IN 738 (Ø30 mm × 3 mm) used as substrate for morphological analysis, phase identification and in the thermal cycling tests. The inconel substrates were provided with a NiCoCrAlHfYSi-type bond coat (Amdry 386, Oerlikon Metco), sprayed with an F4-VB torch in a LPPS/VPS facility. The bond coat layer is about 150 µm thickness. All samples were cleaned in an ultrasonic bath in ethanol prior the spray stage. A TriplexPro™ plasma torch with a 9 mm nozzle (Oerlikon Metco), mounted on a six-axis robot in a thermal spray system Multicoat™, was used to spray the topcoat. Based on pretests, the spray conditions were set by varying the spray distance and power to obtain coatings with a target porosity of about 18 %. Processing of the single-layered coatings was preceded by a feed rate measurement of around 34 g/min. The parameters used to produce the APS single-layered coatings were a spray distance of 200 mm and a current of 373 A, while Ar/He ratio was maintained at 46 nlpm/4 nlpm and the robot speed at 500 mm/s. This led to a deposition efficiency of around 44 % and 19 kW of net power.",
+"simplified": "Single-layer APS MSZ reference coating on Amdry 386 bond coat / IN738. APS deposition used TriplexPro torch (9 mm nozzle) on Multicoat system. Parameters: current 373 A, spray distance 200 mm, robot speed 500 mm/s, Ar/He 46/4 nlpm, powder feed rate about 34 g/min. Conditions selected to target about 18% porosity."
+},
+"Equipment": "TriplexPro plasma torch with 9 mm nozzle (Oerlikon Metco), six-axis robot, Multicoat thermal spray system; F4-VB torch in LPPS/VPS facility for Amdry 386 bond coat deposition",
+"Key_Params": {
+"Current_A": 373.0,
+"Spray_Distance_mm": 200.0,
+"Robot_Speed_mm_s": 500.0,
+"Powder_Feed_Rate_g_min": 34.0,
+"Protective_Atmosphere": null,
+"Plasma_Gas_Ar_nlpm": 46.0,
+"Plasma_Gas_He_nlpm": 4.0,
+"Net_Power_kW": 19.4,
+"Deposition_Efficiency_pct": 44.47,
+"Bond_Coat_Thickness_um": 150.0
+}
+},
+"Microstructure_Info": {
+"Microstructure_Text": {
+"original": "The target porosity of about 18 % was obtained by setting the spray distance to 200 mm and the current to 373 A, which were the parameters used to produce the APS single-layered coatings. This led to a deposition efficiency of around 44 % and 19 kW of net power. Fig. 5(a-c) shows SEM images of the MSZ coating sprayed by the APS system A at different magnifications. The images reveal a lamellar morphology that is well bonded to the substrate, as well as dendritic formations similar to those observed in the original powder. Microcracks were also detected dispersed in the coating. Additionally, isolated and connected voids are present within the coating. While discrete spherical pores may decrease the coating’s thermal conductivity, connected voids may increase convective heat transfer, leading to high thermal conductivity. Furthermore, cracks may accelerate spalling and lead to coating failure. Fig. 5(d) shows the inhomogeneous distribution of the coating composition, as expected, since the coating microstructure is strongly influenced by the feedstock powder.",
+"simplified": "APS MSZ coating showed lamellar morphology, good bonding to substrate, dendritic features inherited from feedstock, dispersed microcracks, and both isolated and connected voids. Composition distribution was inhomogeneous."
+},
+"Main_Phase": null,
+"Precipitates": [],
+"Porosity_pct": 18.3,
+"Relative_Density_pct": null,
+"Grain_Size_avg_um": null,
+"Precipitate_Size_avg_nm": null,
+"Advanced_Quantitative_Features": {}
+},
+"Phases_Info":{
+{"Sample_ID": "MSZ Powder",
+"Phase content(wt%)of MgZr4O9": 25,
+"Phase content(wt%)of Mg2Zr5O12": 41,
+"Phase content(wt%)of MgO": 19,
+"Phase content(wt%)of m-ZrO2": 3,
+"Phase content(wt%)of t-ZrO2": 12,
+"Phase content(wt%)of Al2O3": 0,
+"Phase content(wt%)of MgAl2O4": 0,
+},
+{"Sample_ID": "APS 3",
+"Phase content(wt%)of MgZr4O9": 28,
+"Phase content(wt%)of Mg2Zr5O12": 39,
+"Phase content(wt%)of MgO": 16,
+"Phase content(wt%)of m-ZrO2": 1,
+"Phase content(wt%)of t-ZrO2": 16,
+"Phase content(wt%)of Al2O3": 0,
+"Phase content(wt%)of MgAl2O4": 0,
+},
+{"Sample_ID": "APS 2",
+"Phase content(wt%)of MgZr4O9": 24,
+"Phase content(wt%)of Mg2Zr5O12": 37,
+"Phase content(wt%)of MgO": 16,
+"Phase content(wt%)of m-ZrO2": 1,
+"Phase content(wt%)of t-ZrO2": 22,
+"Phase content(wt%)of Al2O3": 0,
+"Phase content(wt%)of MgAl2O4": 0,
+},
+{"Sample_ID": "APS 1",
+"Phase content(wt%)of MgZr4O9": 45,
+"Phase content(wt%)of Mg2Zr5O12": 13,
+"Phase content(wt%)of MgO": 20,
+"Phase content(wt%)of m-ZrO2": 1,
+"Phase content(wt%)of t-ZrO2": 21,
+"Phase content(wt%)of Al2O3": 0,
+"Phase content(wt%)of MgAl2O4": 0,
+},
+{"Sample_ID": "SPS MSZ",
+"Phase content(wt%)of MgZr4O9": 37,
+"Phase content(wt%)of Mg2Zr5O12": 63,
+"Phase content(wt%)of MgO": 0,
+"Phase content(wt%)of m-ZrO2": 0,
+"Phase content(wt%)of t-ZrO2": 0,
+"Phase content(wt%)of Al2O3": 0,
+"Phase content(wt%)of MgAl2O4": 0,
+},
+{"Sample_ID": "APS MSZ cycled",
+"Phase content(wt%)of MgZr4O9": 14,
+"Phase content(wt%)of Mg2Zr5O12": 0,
+"Phase content(wt%)of MgO": 27,
+"Phase content(wt%)of m-ZrO2": 59,
+"Phase content(wt%)of t-ZrO2": 0,
+"Phase content(wt%)of Al2O3": 0,
+"Phase content(wt%)of MgAl2O4": 0,
+},
+{"Sample_ID": "SPS MSZ cycled",
+"Phase content(wt%)of MgZr4O9": 6,
+"Phase content(wt%)of Mg2Zr5O12": 0,
+"Phase content(wt%)of MgO": 13,
+"Phase content(wt%)of m-ZrO2": 62,
+"Phase content(wt%)of t-ZrO2": 0,
+"Phase content(wt%)of Al2O3": 7,
+"Phase content(wt%)of MgAl2O4": 12,
+},
+},
+"Properties_Info": [
+
+{
+"Property_Name": "Thermal_Cycling_Lifetime_Cycles",
+"Test_Condition": "Furnace cycling test: 2 h at 1100°C in synthetic air, then fan cooling outside furnace for 15 min; repeated until failure; failure defined as spallation of approximately 20% of sample surface; 1st tested specimen",
+"Value_Numeric": 80.0,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "cycles",
+"Test_Temperature_K": 1373.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": "1st tested specimen, total coating thickness 516 μm",
+"Note": "Failure mode: blue."
+},
+{
+"Property_Name": "Thermal_Cycling_Lifetime_Cycles",
+"Test_Condition": "Furnace cycling test: 2 h at 1100°C in synthetic air, then fan cooling outside furnace for 15 min; repeated until failure; failure defined as spallation of approximately 20% of sample surface; 2nd tested specimen",
+"Value_Numeric": 80.0,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "cycles",
+"Test_Temperature_K": 1373.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": "2nd tested specimen, total coating thickness 478 μm",
+"Note": "Failure mode: blue."
+}
+]
+},
+{
+"Sample_ID": "DL_MZ",
+"Gradient_Material": false,
+"Gradient_Group_ID": null,
+"Composition_Info": {
+"Role": "Target",
+"Alloy_Name_Raw": "System B double-layer coating: APS YSZ under-layer + SPS MSZ top-layer on NiCoCrAlHfYSi-type bond coat (Amdry 386) / IN738 substrate",
+"Nominal_Composition": {
+"Composition_Type": null,
+"Elements_Normalized": null
+},
+"Measured_Composition": {
+"Composition_Type": null,
+"Elements_Normalized": null,
+"Measurement_Method": "EDS"
+},
+"Note": "Topcoat is multilayer and built from commercial oxide feedstocks: YSZ underlayer from Metco 204NS (8 wt% YSZ) and SPS MSZ top layer from 5 wt% solids suspension prepared from Metco 210NS-1 (24 wt% MSZ). Element-normalized composition not directly provided."
+},
+"Process_Info": {
+"Process_Category": "Multilayer thermal barrier coating fabrication by APS + SPS",
+"Process_Text": {
+"original": "System B is a double-layered topcoat consisting of an APS YSZ sublayer and an SPS MSZ/MSZ-Ti top layer. The coatings were deposited onto bond coated button-shaped nickel-based superalloy – IN 738 (Ø30 mm × 3 mm) substrates. The inconel substrates were provided with a NiCoCrAlHfYSi-type bond coat (Amdry 386, Oerlikon Metco), sprayed with an F4-VB torch in a LPPS/VPS facility. The bond coat layer is about 150 µm thickness. The YSZ sublayer of the double-layer coatings was sprayed with APS using standard methodology to produce a dense layer. After APS deposition, the average thickness of the YSZ layer was about 150 µm. The SPS outer layer was deposited using the Axial III Torch Spray System (Northwest Mettech Corp.), which feeds the spray material axially to ensure consistent particle heating. The system was mounted on a six-axis robot. The suspension was fed using an in-house feeding system developed by Forschungszentrum Jülich. The suspension was stirred throughout the coating process to prevent line clogging and feedstock agglomeration. The samples were sprayed with a suspension of 5 wt% MSZ solids, using the following parameters: a 220 A current, a 140 V voltage, a 92.4 kW power, a 70 mm distance, a 1000 mm/s robot speed, and a calculated net power of 31.1 kW. These parameters were chosen based on preliminary tests to decrease porosity and produce a well-defined, columnar structure. The working gas was a mixture of Ar (75 vol%), H2 (15 vol%), and N2 (10 vol%) with a total flow rate of 245 standard liters per minute (SLPM). Table 1 lists for the YSZ APS underlayer: robot speed 500 mm/s, spray distance 200 mm, current 420 A.",
+"simplified": "Double-layer TBC with dense APS YSZ underlayer (~150 μm) and SPS MSZ top layer. SPS top layer used Axial III torch, in-house suspension feeder, 5 wt% solids MSZ suspension, current 220 A, voltage 140 V, power 92.4 kW, net power 31.1 kW, spray distance 70 mm, robot speed 1000 mm/s, gas Ar/H2/N2 = 75/15/10 vol% at 245 SLPM. APS YSZ underlayer used 420 A, 200 mm spray distance, 500 mm/s robot speed."
+},
+"Equipment": "Axial III Torch Spray System (Northwest Mettech Corp.), six-axis robot, in-house suspension feeding system from Forschungszentrum Jülich; F4-VB torch in LPPS/VPS facility for bond coat",
+"Key_Params": {
+"APS_Underlayer_Current_A": 420.0,
+"APS_Underlayer_Spray_Distance_mm": 200.0,
+"APS_Underlayer_Robot_Speed_mm_s": 500.0,
+"APS_Underlayer_Thickness_um": 150.0,
+"Current_A": 220.0,
+"Voltage_V": 140.0,
+"Power_kW": 92.4,
+"Spray_Distance_mm": 70.0,
+"Robot_Speed_mm_s": 1000.0,
+"Net_Power_kW": 31.1,
+"Suspension_Solid_Load_wt%": 5.0,
+"Protective_Atmosphere": null,
+"Working_Gas_Ar_vol%": 75.0,
+"Working_Gas_H2_vol%": 15.0,
+"Working_Gas_N2_vol%": 10.0,
+"Total_Gas_Flow_SLPM": 245.0,
+"Bond_Coat_Thickness_um": 150.0
+}
+},
+"Microstructure_Info": {
+"Microstructure_Text": {
+"original": "Cross-sectional images of the MSZ coatings sprayed by SPS were investigated. The microstructure was relatively porous with a typical columnar structure, with columns separated by porous gaps that emerged from the surface. While these gaps can provide a path for hot gas and corrosive media, they also increase the top coats’ strain tolerance, leading to a better thermal cycling lifetime. No vertical cracks were noted in the topcoat layer. According to the literature, low-viscosity suspensions tend to produce columnar structures. Elemental analysis by EDX shows homogeneous distribution of Mg and Zr. Traces of Al were also noted. Debris from the alumina milling balls is an inevitable and well-known effect present in the milled powder. However, the debris is distributed so inhomogeneously that quantification by EDS was not possible. Nevertheless, the amount is assumed low because significant alumina peaks were not detected in the XRD results for the as-sprayed samples. The column density is 11 cracks/mm for sample MSZ.",
+"simplified": "SPS MSZ top layer showed a relatively porous columnar structure with porous inter-column gaps emerging from the surface, no vertical cracks in the topcoat, homogeneous Mg and Zr distribution by EDX, and traces of Al. Column density was 11 cracks/mm."
+},
+"Main_Phase": null,
+"Precipitates": [],
+"Porosity_pct": null,
+"Relative_Density_pct": null,
+"Grain_Size_avg_um": null,
+"Precipitate_Size_avg_nm": null,
+"Advanced_Quantitative_Features": {
+"Column_Density_cracks_per_mm": 11.0
+}
+},
+"Properties_Info": [
+{
+"Property_Name": "Thermal_Cycling_Lifetime_Cycles",
+"Test_Condition": "Furnace cycling test: 2 h at 1100°C in synthetic air, then fan cooling outside furnace for 15 min; repeated until failure; failure defined as spallation of approximately 20% of sample surface; 1st tested specimen",
+"Value_Numeric": 140.0,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "cycles",
+"Test_Temperature_K": 1373.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": "1st tested specimen, total thickness 388 μm (243 μm MSZ / 145 μm YSZ)",
+"Note": "Failure mode: blue, complete spallation."
+},
+{
+"Property_Name": "Thermal_Cycling_Lifetime_Cycles",
+"Test_Condition": "Furnace cycling test: 2 h at 1100°C in synthetic air, then fan cooling outside furnace for 15 min; repeated until failure; failure defined as spallation of approximately 20% of sample surface; 2nd tested specimen",
+"Value_Numeric": 140.0,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "cycles",
+"Test_Temperature_K": 1373.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": "2nd tested specimen, total thickness 398 μm (230 μm MSZ / 168 μm YSZ)",
+"Note": "Failure mode: blue, partial spallation."
+}
+]
+},
+{
+"Sample_ID": "DL_MZT",
+"Gradient_Material": false,
+"Gradient_Group_ID": null,
+"Composition_Info": {
+"Role": "Target",
+"Alloy_Name_Raw": "System B double-layer coating: APS YSZ under-layer + SPS MSZ-7.5TiO2 top-layer on NiCoCrAlHfYSi-type bond coat (Amdry 386) / IN738 substrate",
+"Nominal_Composition": {
+"Composition_Type": null,
+"Elements_Normalized": null
+},
+"Measured_Composition": {
+"Composition_Type": null,
+"Elements_Normalized": null,
+"Measurement_Method": "EDS"
+},
+"Note": "Top-layer suspension composition was 7.5 TiO2 / 92.5 MSZ by powder composition, prepared as a 5 wt% solids suspension in ethanol. Commercial oxide feedstocks used; element-normalized composition not directly provided."
+},
+"Process_Info": {
+"Process_Category": "Multilayer thermal barrier coating fabrication by APS + SPS with titania-doped MSZ top layer",
+"Process_Text": {
+"original": "System B is a double-layered topcoat consisting of an APS YSZ sublayer and an SPS MSZ/MSZ-Ti top layer. In this study, two suspensions were prepared: one (S1) containing only MSZ particles and the other (S2) containing 7.5 TiO2/92.5 MSZ. To produce a homogeneously dispersed suspension (30 wt% solid content in ethanol), the powders were ground in a PE bottle with a 3D shaker mixer (Turbula, WAB-GROUP), using 1.5 wt% dispersant agent (polyethylenimine, Polysciences) and 3 mm diameter alumina balls as milling media. After milling, the solid load content was maintained at 5 wt% by diluting the 30 wt% suspensions in ethanol for the columnar SPS coatings. The YSZ sublayer of the double-layer coatings was sprayed with APS using standard methodology to produce a dense layer. After APS deposition, the average thickness of the YSZ layer was about 150 µm. The SPS outer layer was deposited using the Axial III Torch Spray System (Northwest Mettech Corp.). The suspension was stirred throughout the coating process to prevent line clogging and feedstock agglomeration. The samples were sprayed with a suspension of 5 wt% MSZ-7.5TiO2 solids, using the following parameters: a 220 A current, a 140 V voltage, a 92.4 kW power, a 70 mm distance, a 1000 mm/s robot speed, and a calculated net power of 31.1 kW. The working gas was a mixture of Ar (75 vol%), H2 (15 vol%), and N2 (10 vol%) with a total flow rate of 245 standard liters per minute (SLPM). Table 1 lists for the YSZ APS underlayer: robot speed 500 mm/s, spray distance 200 mm, current 420 A.",
+"simplified": "Double-layer TBC with dense APS YSZ underlayer (~150 μm) and SPS MSZ-7.5TiO2 top layer. Suspension preparation: 7.5 TiO2/92.5 MSZ blend, 30 wt% solids in ethanol, 1.5 wt% PEI dispersant, 3 mm alumina milling balls, later diluted to 5 wt% solids. SPS parameters: 220 A, 140 V, 92.4 kW, net power 31.1 kW, 70 mm spray distance, 1000 mm/s robot speed, Ar/H2/N2 = 75/15/10 vol% at 245 SLPM. APS YSZ underlayer: 420 A, 200 mm spray distance, 500 mm/s robot speed."
+},
+"Equipment": "Turbula 3D shaker mixer (WAB-GROUP) for suspension preparation; Axial III Torch Spray System (Northwest Mettech Corp.), six-axis robot, in-house suspension feeding system from Forschungszentrum Jülich; F4-VB torch in LPPS/VPS facility for bond coat",
+"Key_Params": {
+"APS_Underlayer_Current_A": 420.0,
+"APS_Underlayer_Spray_Distance_mm": 200.0,
+"APS_Underlayer_Robot_Speed_mm_s": 500.0,
+"APS_Underlayer_Thickness_um": 150.0,
+"Current_A": 220.0,
+"Voltage_V": 140.0,
+"Power_kW": 92.4,
+"Spray_Distance_mm": 70.0,
+"Robot_Speed_mm_s": 1000.0,
+"Net_Power_kW": 31.1,
+"Suspension_Solid_Load_wt%": 5.0,
+"Initial_Suspension_Solid_Load_wt%": 30.0,
+"Dispersant_Content_wt%": 1.5,
+"Milling_Ball_Diameter_mm": 3.0,
+"Protective_Atmosphere": null,
+"Working_Gas_Ar_vol%": 75.0,
+"Working_Gas_H2_vol%": 15.0,
+"Working_Gas_N2_vol%": 10.0,
+"Total_Gas_Flow_SLPM": 245.0,
+"Bond_Coat_Thickness_um": 150.0
+}
+},
+"Microstructure_Info": {
+"Microstructure_Text": {
+"original": "Cross-sectional images of the MSZ-7.5TiO2 coatings sprayed by SPS were investigated. The microstructure was relatively porous with a typical columnar structure, with columns separated by porous gaps that emerged from the surface. No vertical cracks were noted in the topcoat layer. Elemental analysis by EDX shows homogeneous distribution of Mg, Zr, and Ti, especially in coatings prepared with an MSZ7.5TiO2 suspension. Additionally, the addition of TiO2 is not related to any improvement in the microstructure of the coating. Traces of Al were also noted. Debris from the alumina milling balls is an inevitable and well-known effect present in the milled powder. However, the debris is distributed so inhomogeneously that quantification by EDS was not possible. The column density is 8 cracks/mm for sample MSZ-7.5TiO2.",
+"simplified": "SPS MSZ-7.5TiO2 top layer showed a relatively porous columnar structure with porous inter-column gaps and no vertical cracks. EDX showed homogeneous Mg, Zr, and Ti distribution. TiO2 addition did not improve microstructure. Traces of Al were present. Column density was 8 cracks/mm."
+},
+"Main_Phase": null,
+"Precipitates": [],
+"Porosity_pct": null,
+"Relative_Density_pct": null,
+"Grain_Size_avg_um": null,
+"Precipitate_Size_avg_nm": null,
+"Advanced_Quantitative_Features": {
+"Column_Density_cracks_per_mm": 8.0
+}
+},
+"Properties_Info": [
+{
+"Property_Name": "Thermal_Cycling_Lifetime_Cycles",
+"Test_Condition": "Furnace cycling test: 2 h at 1100°C in synthetic air, then fan cooling outside furnace for 15 min; repeated until failure; failure defined as spallation of approximately 20% of sample surface; 1st tested specimen",
+"Value_Numeric": 130.0,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "cycles",
+"Test_Temperature_K": 1373.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": "1st tested specimen, total thickness 456 μm (297 μm MSZTi / 159 μm YSZ)",
+"Note": "Failure mode: blue, complete spallation."
+},
+{
+"Property_Name": "Thermal_Cycling_Lifetime_Cycles",
+"Test_Condition": "Furnace cycling test: 2 h at 1100°C in synthetic air, then fan cooling outside furnace for 15 min; repeated until failure; failure defined as spallation of approximately 20% of sample surface; 2nd tested specimen",
+"Value_Numeric": 120.0,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "cycles",
+"Test_Temperature_K": 1373.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": "2nd tested specimen, total thickness 435 μm (272 μm MSZTi / 163 μm YSZ)",
+"Note": "Failure mode: blue, complete spallation."
+}
+]
+},
+{
+"Sample_ID": "PO_MZ",
+"Gradient_Material": false,
+"Gradient_Group_ID": null,
+"Composition_Info": {
+"Role": "Target",
+"Alloy_Name_Raw": "System C pre-oxidized bond coat + SPS MSZ topcoat on NiCoCrAlHfYSi-type bond coat (Amdry 386) / IN738 substrate",
+"Nominal_Composition": {
+"Composition_Type": null,
+"Elements_Normalized": null
+},
+"Measured_Composition": {
+"Composition_Type": null,
+"Elements_Normalized": null,
+"Measurement_Method": "EDS"
+},
+"Note": "Commercial oxide feedstock reported as MSZ (24 wt%, Metco 210NS-1). SPS topcoat was deposited on a pre-oxidized Amdry 386 bond coat; element-normalized composition not directly provided."
+},
+"Process_Info": {
+"Process_Category": "Pre-oxidized bond coat + SPS thermal barrier coating fabrication",
+"Process_Text": {
+"original": "System C uses as-sprayed bond coat substrates that were previously oxidized and coated with an SPS MSZ/MSZ-Ti topcoat. To produce coatings of system C, the bond-coated substrates were first subjected to a heat treatment in a 99.999 % pure argon atmosphere at 1 atm for two hours at 1140 °C, followed by 16 h at 870 °C, according to the parameters previously defined by Joeris et al. [26]. Then, an SPS MSZ layer of approximately 500 µm was sprayed onto the pre-oxidized substrate using the same spray conditions as those used for the aforementioned bi-layered samples. The SPS outer layer was deposited using the Axial III Torch Spray System (Northwest Mettech Corp.), mounted on a six-axis robot, with an in-house feeding system developed by Forschungszentrum Jülich. The suspension was 5 wt% MSZ solids and the spray parameters were a 220 A current, a 140 V voltage, a 92.4 kW power, a 70 mm distance, a 1000 mm/s robot speed, and a calculated net power of 31.1 kW. The working gas was a mixture of Ar (75 vol%), H2 (15 vol%), and N2 (10 vol%) with a total flow rate of 245 SLPM.",
+"simplified": "Pre-oxidized Amdry 386 bond coat was heat treated in 99.999% Ar at 1 atm for 2 h at 1140°C, then 16 h at 870°C. After pre-oxidation, an SPS MSZ layer (~500 μm) was deposited using the same SPS conditions as system B: 5 wt% solids MSZ suspension, 220 A, 140 V, 92.4 kW, net power 31.1 kW, 70 mm spray distance, 1000 mm/s robot speed, Ar/H2/N2 = 75/15/10 vol% at 245 SLPM."
+},
+"Equipment": "Axial III Torch Spray System (Northwest Mettech Corp.), six-axis robot, in-house suspension feeding system from Forschungszentrum Jülich; furnace for pre-oxidation heat treatment",
+"Key_Params": {
+"Preoxidation_Temperature_Stage1_K": 1413.15,
+"Preoxidation_Time_Stage1_h": 2.0,
+"Preoxidation_Temperature_Stage2_K": 1143.15,
+"Preoxidation_Time_Stage2_h": 16.0,
+"Protective_Atmosphere": "Argon (99.999% purity, 1 atm)",
+"Current_A": 220.0,
+"Voltage_V": 140.0,
+"Power_kW": 92.4,
+"Spray_Distance_mm": 70.0,
+"Robot_Speed_mm_s": 1000.0,
+"Net_Power_kW": 31.1,
+"Suspension_Solid_Load_wt%": 5.0,
+"Working_Gas_Ar_vol%": 75.0,
+"Working_Gas_H2_vol%": 15.0,
+"Working_Gas_N2_vol%": 10.0,
+"Total_Gas_Flow_SLPM": 245.0
+}
+},
+"Microstructure_Info": {
+"Microstructure_Text": {
+"original": "System C uses as-sprayed bond coat substrates that were previously oxidized and coated with an SPS MSZ/MSZ-Ti topcoat. The SPS MSZ coatings show a relatively porous microstructure with a typical columnar structure, with columns separated by porous gaps that emerged from the surface. No vertical cracks were noted in the topcoat layer. In the as-cycled SPS sample, alumina and Al-Mg spinel formed due to the diffusion of Al from the bond coat. Initially, only Al2O3 forms as a thermally grown oxide (TGO). Later, when aluminum is depleted in the bond coat, other oxides, such as spinels, grow quickly.",
+"simplified": "Pre-oxidized SPS MSZ coating is based on a columnar SPS topcoat. After cycling, alumina and MgAl2O4 spinel formed due to Al diffusion from the bond coat/TGO evolution."
+},
+"Main_Phase": null,
+"Precipitates": [
+{
+"Phase_Type": "Al2O3",
+"Volume_Fraction_pct": null
+},
+{
+"Phase_Type": "MgAl2O4",
+"Volume_Fraction_pct": null
+}
+],
+"Porosity_pct": null,
+"Relative_Density_pct": null,
+"Grain_Size_avg_um": null,
+"Precipitate_Size_avg_nm": null,
+"Advanced_Quantitative_Features": {}
+},
+"Properties_Info": [
+{
+"Property_Name": "Thermal_Cycling_Lifetime_Cycles",
+"Test_Condition": "Furnace cycling test: 2 h at 1100°C in synthetic air, then fan cooling outside furnace for 15 min; repeated until failure; failure defined as spallation of approximately 20% of sample surface; 1st tested specimen",
+"Value_Numeric": 80.0,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "cycles",
+"Test_Temperature_K": 1373.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": "1st tested specimen, total coating thickness 529 μm",
+"Note": "Failure mode: blue, complete spallation."
+},
+{
+"Property_Name": "Thermal_Cycling_Lifetime_Cycles",
+"Test_Condition": "Furnace cycling test: 2 h at 1100°C in synthetic air, then fan cooling outside furnace for 15 min; repeated until failure; failure defined as spallation of approximately 20% of sample surface; 2nd tested specimen",
+"Value_Numeric": 80.0,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "cycles",
+"Test_Temperature_K": 1373.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": "2nd tested specimen, total coating thickness 469 μm",
+"Note": "Failure mode: blue."
+}
+]
+},
+{
+"Sample_ID": "PO_MZT",
+"Gradient_Material": false,
+"Gradient_Group_ID": null,
+"Composition_Info": {
+"Role": "Target",
+"Alloy_Name_Raw": "System C pre-oxidized bond coat + SPS MSZ-7.5TiO2 topcoat on NiCoCrAlHfYSi-type bond coat (Amdry 386) / IN738 substrate",
+"Nominal_Composition": {
+"Composition_Type": null,
+"Elements_Normalized": null
+},
+"Measured_Composition": {
+"Composition_Type": null,
+"Elements_Normalized": null,
+"Measurement_Method": "EDS"
+},
+"Note": "Top-layer suspension composition was 7.5 TiO2 / 92.5 MSZ by powder composition, deposited on a pre-oxidized bond coat. Element-normalized composition not directly provided."
+},
+"Process_Info": {
+"Process_Category": "Pre-oxidized bond coat + SPS thermal barrier coating fabrication with titania-doped MSZ top layer",
+"Process_Text": {
+"original": "To produce coatings of system C, the bond-coated substrates were first subjected to a heat treatment in a 99.999 % pure argon atmosphere at 1 atm for two hours at 1140 °C, followed by 16 h at 870 °C, according to the parameters previously defined by Joeris et al. [26]. Then, an SPS MSZ-Ti layer was sprayed onto the pre-oxidized substrate using the same spray conditions as those used for the aforementioned bi-layered samples. The topcoat suspension composition was 7.5 TiO2/92.5 MSZ, prepared in ethanol and diluted to 5 wt% solids for spraying. The SPS deposition used the Axial III Torch Spray System (Northwest Mettech Corp.), mounted on a six-axis robot, with an in-house suspension feeding system developed by Forschungszentrum Jülich. The spray parameters were a 220 A current, a 140 V voltage, a 92.4 kW power, a 70 mm distance, a 1000 mm/s robot speed, and a calculated net power of 31.1 kW. The working gas was a mixture of Ar (75 vol%), H2 (15 vol%), and N2 (10 vol%) with a total flow rate of 245 SLPM.",
+"simplified": "Pre-oxidized Amdry 386 bond coat was heat treated in 99.999% Ar at 1 atm for 2 h at 1140°C, then 16 h at 870°C. Afterwards, an SPS MSZ-7.5TiO2 topcoat was deposited using 5 wt% solids suspension and SPS parameters identical to system B: 220 A, 140 V, 92.4 kW, net power 31.1 kW, 70 mm spray distance, 1000 mm/s robot speed, Ar/H2/N2 = 75/15/10 vol% at 245 SLPM."
+},
+"Equipment": "Axial III Torch Spray System (Northwest Mettech Corp.), six-axis robot, in-house suspension feeding system from Forschungszentrum Jülich; furnace for pre-oxidation heat treatment",
+"Key_Params": {
+"Preoxidation_Temperature_Stage1_K": 1413.15,
+"Preoxidation_Time_Stage1_h": 2.0,
+"Preoxidation_Temperature_Stage2_K": 1143.15,
+"Preoxidation_Time_Stage2_h": 16.0,
+"Protective_Atmosphere": "Argon (99.999% purity, 1 atm)",
+"Current_A": 220.0,
+"Voltage_V": 140.0,
+"Power_kW": 92.4,
+"Spray_Distance_mm": 70.0,
+"Robot_Speed_mm_s": 1000.0,
+"Net_Power_kW": 31.1,
+"Suspension_Solid_Load_wt%": 5.0,
+"Working_Gas_Ar_vol%": 75.0,
+"Working_Gas_H2_vol%": 15.0,
+"Working_Gas_N2_vol%": 10.0,
+"Total_Gas_Flow_SLPM": 245.0
+}
+},
+"Microstructure_Info": {
+"Microstructure_Text": {
+"original": "The SPS MSZ-7.5TiO2 coatings show a relatively porous microstructure with a typical columnar structure, with columns separated by porous gaps that emerged from the surface. No vertical cracks were noted in the topcoat layer. EDX shows homogeneous distribution of Mg, Zr, and Ti, especially in coatings prepared with an MSZ7.5TiO2 suspension. Additionally, the addition of TiO2 is not related to any improvement in the microstructure of the coating.",
+"simplified": "Pre-oxidized SPS MSZ-7.5TiO2 coating is based on a porous columnar SPS microstructure with homogeneous Mg, Zr, and Ti distribution. TiO2 addition did not improve microstructure."
+},
+"Main_Phase": null,
+"Precipitates": [],
+"Porosity_pct": null,
+"Relative_Density_pct": null,
+"Grain_Size_avg_um": null,
+"Precipitate_Size_avg_nm": null,
+"Advanced_Quantitative_Features": {}
+},
+"Properties_Info": [
+{
+"Property_Name": "Thermal_Cycling_Lifetime_Cycles",
+"Test_Condition": "Furnace cycling test: 2 h at 1100°C in synthetic air, then fan cooling outside furnace for 15 min; repeated until failure; failure defined as spallation of approximately 20% of sample surface; 1st tested specimen",
+"Value_Numeric": 80.0,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "cycles",
+"Test_Temperature_K": 1373.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": "1st tested specimen, total coating thickness 399 μm",
+"Note": "Failure mode: blue."
+},
+{
+"Property_Name": "Thermal_Cycling_Lifetime_Cycles",
+"Test_Condition": "Furnace cycling test: 2 h at 1100°C in synthetic air, then fan cooling outside furnace for 15 min; repeated until failure; failure defined as spallation of approximately 20% of sample surface; 2nd tested specimen",
+"Value_Numeric": 80.0,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "cycles",
+"Test_Temperature_K": 1373.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": "2nd tested specimen, total coating thickness 379 μm",
+"Note": "Failure mode: blue."
+}
+]
+},
+{
+"Sample_ID": "REF_AHMANIEMI_22MgO_ZrO2_APS",
+"Gradient_Material": false,
+"Gradient_Group_ID": null,
+"Composition_Info": {
+"Role": "Reference",
+"Alloy_Name_Raw": "22MgO-ZrO2 thick thermal barrier coating sprayed by APS for diesel engine applications",
+"Nominal_Composition": {
+"Composition_Type": null,
+"Elements_Normalized": null
+},
+"Measured_Composition": {
+"Composition_Type": null,
+"Elements_Normalized": null,
+"Measurement_Method": null
+},
+"Note": "Reference literature data cited in the introduction; oxide-level composition only."
+},
+"Process_Info": {
+"Process_Category": "Reference APS thermal spray coating",
+"Process_Text": {
+"original": "Ahmaniemi et al. [19] studied 22MgO-ZrO2 thick thermal barrier coatings sprayed by atmospheric plasma spraying (APS) for diesel engine applications.",
+"simplified": "Reference APS 22MgO-ZrO2 thick TBC for diesel engine applications."
+},
+"Equipment": null,
+"Key_Params": {}
+},
+"Microstructure_Info": {
+"Microstructure_Text": {
+"original": "Cubic zirconia peaks were detected in the as-sprayed coatings.",
+"simplified": "As-sprayed reference coating showed cubic zirconia peaks."
+},
+"Main_Phase": null,
+"Precipitates": [],
+"Porosity_pct": null,
+"Relative_Density_pct": null,
+"Grain_Size_avg_um": null,
+"Precipitate_Size_avg_nm": null,
+"Advanced_Quantitative_Features": {}
+},
+"Properties_Info": []
+},
+{
+"Sample_ID": "REF_BAIG_24MgO_ZrO2_APS",
+"Gradient_Material": false,
+"Gradient_Group_ID": null,
+"Composition_Info": {
+"Role": "Reference",
+"Alloy_Name_Raw": "24 MgO-ZrO2 coatings with different architectures prepared by APS",
+"Nominal_Composition": {
+"Composition_Type": null,
+"Elements_Normalized": null
+},
+"Measured_Composition": {
+"Composition_Type": null,
+"Elements_Normalized": null,
+"Measurement_Method": null
+},
+"Note": "Reference literature data cited in the introduction; oxide-level composition only."
+},
+"Process_Info": {
+"Process_Category": "Reference APS thermal spray coating",
+"Process_Text": {
+"original": "Baig et al. [18] reported on a study of 24 MgO-ZrO2 coatings with different architectures prepared by APS. The system they designed had a multilayer top coat that showed lower residual stress.",
+"simplified": "Reference APS 24 MgO-ZrO2 coating architectures; multilayer top coat showed lower residual stress."
+},
+"Equipment": null,
+"Key_Params": {}
+},
+"Microstructure_Info": {
+"Microstructure_Text": {
+"original": "The system they designed had a multilayer top coat that showed lower residual stress.",
+"simplified": "Multilayer top-coat architecture reduced residual stress."
+},
+"Main_Phase": null,
+"Precipitates": [],
+"Porosity_pct": null,
+"Relative_Density_pct": null,
+"Grain_Size_avg_um": null,
+"Precipitate_Size_avg_nm": null,
+"Advanced_Quantitative_Features": {}
+},
+"Properties_Info": [
+{
+"Property_Name": "Residual_Stress",
+"Test_Condition": null,
+"Value_Numeric": null,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "unspecified",
+"Test_Temperature_K": null,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": null,
+"Note": "Reference statement only: multilayer top coat showed lower residual stress; no numeric value provided."
+}
+]
+},
+{
+"Sample_ID": "REF_LI_APS_MSZ_SALT_SPRAY",
+"Gradient_Material": false,
+"Gradient_Group_ID": null,
+"Composition_Info": {
+"Role": "Reference",
+"Alloy_Name_Raw": "APS MSZ coatings in a neutral salt spray environment",
+"Nominal_Composition": {
+"Composition_Type": null,
+"Elements_Normalized": null
+},
+"Measured_Composition": {
+"Composition_Type": null,
+"Elements_Normalized": null,
+"Measurement_Method": null
+},
+"Note": "Reference literature data cited in the introduction; exact composition not specified in the citing sentence."
+},
+"Process_Info": {
+"Process_Category": "Reference APS thermal spray coating",
+"Process_Text": {
+"original": "Li et al. [15] explored the behavior of APS MSZ coatings in a neutral salt spray environment.",
+"simplified": "Reference APS MSZ coating evaluated in neutral salt spray environment."
+},
+"Equipment": null,
+"Key_Params": {}
+},
+"Microstructure_Info": {
+"Microstructure_Text": {
+"original": "",
+"simplified": ""
+},
+"Main_Phase": null,
+"Precipitates": [],
+"Porosity_pct": null,
+"Relative_Density_pct": null,
+"Grain_Size_avg_um": null,
+"Precipitate_Size_avg_nm": null,
+"Advanced_Quantitative_Features": {}
+},
+"Properties_Info": []
+}
+]
+}

@@ -1,0 +1,1001 @@
+{
+  "Paper_Metadata": {
+    "Paper_Title": "Additive manufacturing Ti-22Al-25Nb alloy with excellent high temperature tensile properties by electron beam powder bed fusion",
+    "DOI": null,
+    "DOI_Note": "DOI not found in OCR text"
+  },
+  "Paper_Routing": {
+    "base_material": "Metals",
+    "application": "Structural",
+    "research_paradigm": "Hybrid",
+    "Supplements_Loaded": [
+      "directions/base/Metals.txt",
+      "directions/application/Structural.txt",
+      "directions/paradigm/Hybrid.txt"
+    ],
+    "Patch_Tags": [
+      "Additive_Manufacturing",
+      "Laser_Assisted"
+    ],
+    "Needs_Mixed_Routing_Check": false
+  },
+  "items": [
+    {
+      "Item_ID": "PBF-LB",
+      "Sample_ID": "PBF-LB as-printed Ti-22Al-25Nb",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Additive_Manufacturing",
+        "Laser_Assisted"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 1",
+        "Table 2",
+        "Table 3",
+        "Table 4",
+        "Fig. 4(a)",
+        "Fig. 5(a)",
+        "Fig. 5(g)"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Ti₂AlNb-based intermetallic",
+          "Material_Name_Raw": "Ti-22Al-25Nb",
+          "Nominal_Composition": {
+            "System": "Ti-Al-Nb",
+            "Unit": "at%",
+            "Elements": {
+              "Ti": "Balance",
+              "Al": 22,
+              "Nb": 25
+            },
+            "Original_Values": "Ti-22Al-25Nb (at%)",
+            "Data_Source": "text"
+          },
+          "Measured_Composition": {
+            "System": "Ti-Al-Nb",
+            "Unit": "at%",
+            "Elements": {
+              "Ti": "Balance",
+              "Al": 20.47,
+              "O": 0.16,
+              "Nb": 24.38,
+              "N": 0.06,
+              "H": null
+            },
+            "Note": "H: <0.004 at%; upper limit value, not precise measurement",
+            "Original_Values": "Ti: Bal., Al: 20.47, O: 0.16, Nb: 24.38, N: 0.06, H: <0.004",
+            "Data_Source": "table",
+            "Source_Table": "Table 3"
+          },
+          "Note": "Ti = Balance; normalized ≈ 54.9 at% (computed from 100 - 20.47 - 0.16 - 24.38 - 0.06 = 54.93, Data_Nature: Computed)"
+        },
+        "Processing": {
+          "Process_Category": "Additive_Manufacturing",
+          "Process_Text": {
+            "original": "Laser beam powder bed fusion (PBF-LB) using Renishaw AM-400 system with pre-heating temperature of 170°C, 67° layer rotation strategy.",
+            "simplified": "PBF-LB fabrication of Ti-22Al-25Nb with low pre-heating temperature"
+          },
+          "Equipment": [
+            {
+              "Name": "Renishaw AM-400",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "EIGA (electrode induction melting gas atomization)",
+              "Category": "Preparation",
+              "Note": "Powder production method by Guangzhou Sailing Additive Manufacturing Co., Ltd"
+            },
+            {
+              "Name": "Zeiss Sigma 300 SEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Tecnai G2 F30 TEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Bruker e-FlashFS EBSD with Esprit software",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Bruker D8 Advance XRD",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "NanoVoxel 3000 micro-CT",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "HORIBA EMGA 930",
+              "Category": "Testing",
+              "Note": "Chemical composition testing"
+            },
+            {
+              "Name": "Thermo ICAP 7200",
+              "Category": "Testing",
+              "Note": "Chemical composition testing"
+            },
+            {
+              "Name": "Lishi LD26",
+              "Category": "Testing",
+              "Note": "RT tensile testing machine"
+            },
+            {
+              "Name": "Instron 5582",
+              "Category": "Testing",
+              "Note": "High-temperature tensile testing machine"
+            }
+          ],
+          "Key_Params": {
+            "Stage": "PBF-LB printing",
+            "Power_W": 140,
+            "Scanning_Speed_m_s": 0.6,
+            "Hatch_Distance_mm": 0.12,
+            "Layer_Thickness_um": 30,
+            "Pre_Heating_Temperature_C": 170,
+            "Beam_Diameter_um": 70,
+            "Layer_Rotation_deg": 67,
+            "Data_Source": "table",
+            "Source_Table": "Table 1"
+          },
+          "Powder": {
+            "Production_Method": "EIGA (electrode induction melting gas atomization)",
+            "Average_Particle_Size_um": 39.17,
+            "Particle_Size_Type": "average",
+            "Powder_Measured_Composition": {
+              "System": "Ti-Al-Nb",
+              "Unit": "at%",
+              "Elements": {
+                "Ti": "Balance",
+                "Al": 23.60,
+                "O": 0.11,
+                "Nb": 26.10,
+                "N": null,
+                "H": null
+              },
+              "Note": "N: <0.04 at%; H: <0.004 at%; upper limit values. Powder classified for PBF-LB process.",
+              "Original_Values": "Ti: Bal., Al: 23.60, O: 0.11, Nb: 26.10, N: <0.04, H: <0.004",
+              "Data_Source": "table",
+              "Source_Table": "Table 3"
+            },
+            "Data_Source": "text"
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "The as-printed PBF-LB sample contained O phase and β phase dispersed in the β phase matrix. No α₂ phase detected. Epitaxial growth of β phase observed along building direction with columnar crystal morphology.",
+            "simplified": "PBF-LB: β matrix + small amount of O phase, no α₂; columnar β grains along BD"
+          },
+          "Main_Phase": {
+            "Phase_Name": "β/B2",
+            "Crystal_Structure": "BCC",
+            "Area_Fraction_pct": 92.66,
+            "Area_Fraction_Note": "Area fraction normal to BD",
+            "Data_Source": "table",
+            "Source_Table": "Table 2"
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "O phase (Ti₂AlNb)",
+              "Crystal_Structure": "Orthorhombic",
+              "Area_Fraction_pct": 7.34,
+              "Area_Fraction_Note": "Area fraction normal to BD",
+              "Average_Grain_Diameter_um": null,
+              "Average_Grain_Diameter_Note": "<0.05 μm; inequality value, not precise",
+              "Size_Type": "diameter",
+              "Data_Source": "table",
+              "Source_Table": "Table 2"
+            }
+          ],
+          "Grain_Size": {
+            "Phase": "β/B2",
+            "Average_Grain_Diameter_um": 67.2,
+            "Size_Type": "diameter",
+            "Direction": "normal to BD",
+            "Data_Source": "table",
+            "Source_Table": "Table 2"
+          },
+          "Relative_Density": {
+            "Value_pct": 99.94,
+            "Data_Source": "text",
+            "Measurement_Method": "micro-CT"
+          },
+          "Texture_or_Orientation": {
+            "Preferred_Orientation": "(101) and (111) directions for β phase",
+            "Data_Source": "text"
+          },
+          "Advanced_Quantitative_Features": {
+            "O_phase_area_fraction_normal_BD_pct": 7.34,
+            "B2_phase_area_fraction_normal_BD_pct": 92.66,
+            "B2_average_grain_diameter_normal_BD_um": 67.2,
+            "O_phase_average_grain_diameter_normal_BD_um": null,
+            "O_phase_grain_diameter_note": "<0.05 μm, inequality value",
+            "Data_Source": "table",
+            "Source_Table": "Table 2"
+          },
+          "Phase_Constitution_Note": "Only O and β phases detected by XRD; α₂ phase was suppressed during high-speed cooling. TEM SAED confirmed O and β phases. O phase nucleates at grain boundaries of β phase with Burgers orientation relationships: (100)O//(001)β, (001)O//(110)β, (010)O//(110)β."
+        },
+        "Properties": [
+          {
+            "Test_Type": "Tensile",
+            "Loading_Mode": "Tension",
+            "Test_Temperature_C": 25,
+            "Test_Temperature_Original": "RT (room temperature)",
+            "Strain_Rate_s1": 0.00025,
+            "Strain_Rate_Original": "2.5 × 10⁻⁴ s⁻¹",
+            "Direction": "Horizontal",
+            "Specimen_State": "As-printed",
+            "Yield_Strength_MPa": {
+              "Value": 939,
+              "Value_StdDev": 18,
+              "Original_Values": "939 ±18 MPa",
+              "Data_Source": "table",
+              "Source_Table": "Table 4"
+            },
+            "Ultimate_Tensile_Strength_MPa": {
+              "Value": 947,
+              "Value_StdDev": 20,
+              "Original_Values": "947 ±20 MPa",
+              "Data_Source": "table",
+              "Source_Table": "Table 4"
+            },
+            "Elongation_Total_pct": {
+              "Value": 15,
+              "Value_StdDev": 2.1,
+              "Original_Values": "15 ±2.1%",
+              "Note": "Original text uses 'EL (%)'; not specified whether uniform or total. Defaulted to Elongation_Total per Structural supplement rule.",
+              "Data_Source": "table",
+              "Source_Table": "Table 4"
+            },
+            "Fracture_Mode": "Ductile fracture with dimples",
+            "Test_Repeat_Count": 3,
+            "Data_Source": "table",
+            "Source_Table": "Table 4"
+          },
+          {
+            "Test_Type": "Tensile",
+            "Loading_Mode": "Tension",
+            "Test_Temperature_C": 650,
+            "Test_Temperature_K": 923,
+            "Test_Temperature_Original": "650°C",
+            "Strain_Rate_s1": 0.001,
+            "Strain_Rate_Original": "1 × 10⁻³ s⁻¹",
+            "Direction": "Horizontal",
+            "Specimen_State": "As-printed",
+            "Pre_Test_Soak": "15 min at 650°C in testing furnace",
+            "Yield_Strength_MPa": {
+              "Value": null,
+              "Note": "Not reported (shown as '/' in Table 4)"
+            },
+            "Ultimate_Tensile_Strength_MPa": {
+              "Value": 411,
+              "Value_StdDev": 29,
+              "Original_Values": "411 ±29 MPa",
+              "Data_Source": "table",
+              "Source_Table": "Table 4"
+            },
+            "Elongation_Total_pct": {
+              "Value": 0.4,
+              "Value_StdDev": 0.1,
+              "Original_Values": "0.4 ±0.1%",
+              "Note": "Original text uses 'EL (%)'; not specified whether uniform or total. Defaulted to Elongation_Total per Structural supplement rule.",
+              "Data_Source": "table",
+              "Source_Table": "Table 4"
+            },
+            "Fracture_Mode": "Brittle intergranular fracture with obvious cleavage facets",
+            "Test_Repeat_Count": 3,
+            "Data_Source": "table",
+            "Source_Table": "Table 4"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "PBF-EB",
+      "Sample_ID": "PBF-EB as-printed Ti-22Al-25Nb",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Additive_Manufacturing"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 1",
+        "Table 2",
+        "Table 3",
+        "Table 4",
+        "Fig. 4(b)",
+        "Fig. 5(b)",
+        "Fig. 5(h)"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Ti₂AlNb-based intermetallic",
+          "Material_Name_Raw": "Ti-22Al-25Nb",
+          "Nominal_Composition": {
+            "System": "Ti-Al-Nb",
+            "Unit": "at%",
+            "Elements": {
+              "Ti": "Balance",
+              "Al": 22,
+              "Nb": 25
+            },
+            "Original_Values": "Ti-22Al-25Nb (at%)",
+            "Data_Source": "text"
+          },
+          "Measured_Composition": {
+            "System": "Ti-Al-Nb",
+            "Unit": "at%",
+            "Elements": {
+              "Ti": "Balance",
+              "Al": 16.85,
+              "O": 0.22,
+              "Nb": 21.93,
+              "N": null,
+              "H": null
+            },
+            "Note": "N: <0.04 at%; H: <0.004 at%; upper limit values, not precise measurements. Significant Al loss in PBF-EB samples related to overheating within molten pool at higher preheating temperature.",
+            "Original_Values": "Ti: Bal., Al: 16.85, O: 0.22, Nb: 21.93, N: <0.04, H: <0.004",
+            "Data_Source": "table",
+            "Source_Table": "Table 3"
+          },
+          "Note": "Ti = Balance; normalized ≈ 61.0 at% (computed from 100 - 16.85 - 0.22 - 21.93 = 61.00, Data_Nature: Computed). Significant Al loss compared to powder composition (23.60 at%) and PBF-LB (20.47 at%)."
+        },
+        "Processing": {
+          "Process_Category": "Additive_Manufacturing",
+          "Process_Text": {
+            "original": "Electron beam powder bed fusion (PBF-EB) using Sailong Y150 machine with high pre-heating temperature of 830°C, 90° layer rotation strategy. Pre-heating from top via electron beam.",
+            "simplified": "PBF-EB fabrication of Ti-22Al-25Nb with high pre-heating temperature near O-phase precipitation range"
+          },
+          "Equipment": [
+            {
+              "Name": "Sailong Y150 (PBF-EB machine)",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "EIGA (electrode induction melting gas atomization)",
+              "Category": "Preparation",
+              "Note": "Powder production method by Guangzhou Sailing Additive Manufacturing Co., Ltd"
+            },
+            {
+              "Name": "Zeiss Sigma 300 SEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Tecnai G2 F30 TEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Bruker e-FlashFS EBSD with Esprit software",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Bruker D8 Advance XRD",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "NanoVoxel 3000 micro-CT",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "HORIBA EMGA 930",
+              "Category": "Testing",
+              "Note": "Chemical composition testing"
+            },
+            {
+              "Name": "Thermo ICAP 7200",
+              "Category": "Testing",
+              "Note": "Chemical composition testing"
+            },
+            {
+              "Name": "Lishi LD26",
+              "Category": "Testing",
+              "Note": "RT tensile testing machine"
+            },
+            {
+              "Name": "Instron 5582",
+              "Category": "Testing",
+              "Note": "High-temperature tensile testing machine"
+            }
+          ],
+          "Key_Params": {
+            "Stage": "PBF-EB printing",
+            "Power_W": 1050,
+            "Scanning_Speed_m_s": 5.8,
+            "Hatch_Distance_mm": 0.11,
+            "Layer_Thickness_um": 50,
+            "Pre_Heating_Temperature_C": 830,
+            "Beam_Diameter_um": 220,
+            "Layer_Rotation_deg": 90,
+            "Data_Source": "table",
+            "Source_Table": "Table 1"
+          },
+          "Powder": {
+            "Production_Method": "EIGA (electrode induction melting gas atomization)",
+            "Average_Particle_Size_um": 59.03,
+            "Particle_Size_Type": "average",
+            "Powder_Measured_Composition": {
+              "System": "Ti-Al-Nb",
+              "Unit": "at%",
+              "Elements": {
+                "Ti": "Balance",
+                "Al": 23.60,
+                "O": 0.11,
+                "Nb": 26.10,
+                "N": null,
+                "H": null
+              },
+              "Note": "N: <0.04 at%; H: <0.004 at%; upper limit values. Powder classified for PBF-EB process.",
+              "Original_Values": "Ti: Bal., Al: 23.60, O: 0.11, Nb: 26.10, N: <0.04, H: <0.004",
+              "Data_Source": "table",
+              "Source_Table": "Table 3"
+            },
+            "Data_Source": "text"
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "The as-printed PBF-EB sample contained O phase and β phase with area fraction ratio approximately 1:1. No α₂ phase detected. Equiaxed β-phase grain morphology in different directions. β-phase grains tended to grow along (001) direction.",
+            "simplified": "PBF-EB: β matrix + large amount of O phase (~42%), no α₂; equiaxed β grains, uniform grain morphology"
+          },
+          "Main_Phase": {
+            "Phase_Name": "β/B2",
+            "Crystal_Structure": "BCC",
+            "Area_Fraction_pct": 57.7,
+            "Area_Fraction_Note": "Area fraction normal to BD",
+            "Data_Source": "table",
+            "Source_Table": "Table 2"
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "O phase (Ti₂AlNb)",
+              "Crystal_Structure": "Orthorhombic",
+              "Area_Fraction_pct": 42.3,
+              "Area_Fraction_Note": "Area fraction normal to BD",
+              "Average_Grain_Diameter_um": null,
+              "Average_Grain_Diameter_Note": ">0.5 μm; inequality value, not precise",
+              "Size_Type": "diameter",
+              "Data_Source": "table",
+              "Source_Table": "Table 2"
+            }
+          ],
+          "Grain_Size": {
+            "Phase": "β/B2",
+            "Average_Grain_Diameter_um": 46.5,
+            "Size_Type": "diameter",
+            "Direction": "normal to BD",
+            "Data_Source": "table",
+            "Source_Table": "Table 2",
+            "Note": "Approximately 30% smaller than PBF-LB β-phase grain size (67.2 μm)"
+          },
+          "Relative_Density": {
+            "Value_pct": 99.2,
+            "Data_Source": "text",
+            "Measurement_Method": "micro-CT"
+          },
+          "Porosity": {
+            "Note": "Small pores (~3 μm) observed due to insufficient heat input; also metal vapor porosity present",
+            "Data_Source": "text"
+          },
+          "Texture_or_Orientation": {
+            "Preferred_Orientation": "(001) direction for β phase",
+            "Data_Source": "text"
+          },
+          "Advanced_Quantitative_Features": {
+            "O_phase_area_fraction_normal_BD_pct": 42.3,
+            "B2_phase_area_fraction_normal_BD_pct": 57.7,
+            "B2_average_grain_diameter_normal_BD_um": 46.5,
+            "O_phase_average_grain_diameter_normal_BD_um": null,
+            "O_phase_grain_diameter_note": ">0.5 μm, inequality value",
+            "Data_Source": "table",
+            "Source_Table": "Table 2"
+          },
+          "Phase_Constitution_Note": "Only O and β phases detected by XRD; α₂ phase was suppressed. TEM SAED confirmed O and β phases. O phase nucleates at grain boundaries of β phase with Burgers orientation relationships: (100)O//(001)β, (001)O//(110)β, (010)O//(110)β. TEM-EDX indicates Al enriched in O phase, Nb enriched in β phase."
+        },
+        "Properties": [
+          {
+            "Test_Type": "Tensile",
+            "Loading_Mode": "Tension",
+            "Test_Temperature_C": 25,
+            "Test_Temperature_Original": "RT (room temperature)",
+            "Strain_Rate_s1": 0.00025,
+            "Strain_Rate_Original": "2.5 × 10⁻⁴ s⁻¹",
+            "Direction": "Horizontal",
+            "Specimen_State": "As-printed",
+            "Yield_Strength_MPa": {
+              "Value": 943,
+              "Value_StdDev": 20,
+              "Original_Values": "943 ±20 MPa",
+              "Data_Source": "table",
+              "Source_Table": "Table 4"
+            },
+            "Ultimate_Tensile_Strength_MPa": {
+              "Value": 989,
+              "Value_StdDev": 22,
+              "Original_Values": "989 ±22 MPa",
+              "Data_Source": "table",
+              "Source_Table": "Table 4"
+            },
+            "Elongation_Total_pct": {
+              "Value": 2.5,
+              "Value_StdDev": 0.3,
+              "Original_Values": "2.5 ±0.3%",
+              "Note": "Original text uses 'EL (%)'; not specified whether uniform or total. Defaulted to Elongation_Total per Structural supplement rule.",
+              "Data_Source": "table",
+              "Source_Table": "Table 4"
+            },
+            "Fracture_Mode": "Brittle fracture with traces of strip-shaped O phase peeled off",
+            "Test_Repeat_Count": 3,
+            "Data_Source": "table",
+            "Source_Table": "Table 4"
+          },
+          {
+            "Test_Type": "Tensile",
+            "Loading_Mode": "Tension",
+            "Test_Temperature_C": 650,
+            "Test_Temperature_K": 923,
+            "Test_Temperature_Original": "650°C",
+            "Strain_Rate_s1": 0.001,
+            "Strain_Rate_Original": "1 × 10⁻³ s⁻¹",
+            "Direction": "Horizontal",
+            "Specimen_State": "As-printed",
+            "Pre_Test_Soak": "15 min at 650°C in testing furnace",
+            "Yield_Strength_MPa": {
+              "Value": 741,
+              "Value_StdDev": 24,
+              "Original_Values": "741 ±24 MPa",
+              "Data_Source": "table",
+              "Source_Table": "Table 4"
+            },
+            "Ultimate_Tensile_Strength_MPa": {
+              "Value": 803,
+              "Value_StdDev": 30,
+              "Original_Values": "803 ±30 MPa",
+              "Data_Source": "table",
+              "Source_Table": "Table 4"
+            },
+            "Elongation_Total_pct": {
+              "Value": 3,
+              "Value_StdDev": 0.5,
+              "Original_Values": "3 ±0.5%",
+              "Note": "Original text uses 'EL (%)'; not specified whether uniform or total. Defaulted to Elongation_Total per Structural supplement rule.",
+              "Data_Source": "table",
+              "Source_Table": "Table 4"
+            },
+            "Fracture_Mode": "Transgranular fracture with dimples, indicating improved plastic deformation ability",
+            "Test_Repeat_Count": 3,
+            "Data_Source": "table",
+            "Source_Table": "Table 4"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "DFT_O_beta",
+      "Sample_ID": "DFT model: O-β phase interaction",
+      "Role": "Target",
+      "Data_Nature": "Computed",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Additive_Manufacturing"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 5",
+        "Fig. 11",
+        "Fig. 12",
+        "Section 3.6"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Ti₂AlNb-based intermetallic",
+          "Material_Name_Raw": "O phase and β phase models",
+          "Note": "DFT calculation on structural models of O phase unit cell and β phase unit cell"
+        },
+        "Processing": {
+          "Process_Category": "Simulation",
+          "Process_Text": {
+            "original": "First-principles method based on density functional theory (DFT) using Materials Studio software (BIOVIA, France) to calculate interaction energy between O phase and β phase.",
+            "simplified": "DFT calculation of O-β phase interaction energies at RT, 650°C, and 900°C"
+          },
+          "Equipment": [
+            {
+              "Name": "Materials Studio (BIOVIA, France)",
+              "Category": "Software",
+              "Note": "DFT simulation software"
+            }
+          ],
+          "Simulation_Metadata": {
+            "Method": "DFT (density functional theory)",
+            "Software": "Materials Studio (BIOVIA, France)",
+            "Model_Description": "Structural models of O-phase and β-phase unit cells; O-β phase boundary, β-β phase boundary, and O-O phase boundary models. O(100) and β(001) planes used based on Burgers orientation relationships.",
+            "Computed_Properties": [
+              "Interaction energy (E_inter) at RT, 650°C, and 900°C",
+              "Energy of total system of O phase (E_O)",
+              "Energy of total system of β phase (E_β)",
+              "Interaction energy O-β (E_O-β)",
+              "Interaction energy β-β (E_β-β)",
+              "Interaction energy O-O (E_O-O)"
+            ]
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "O(100) and β(001) planes taken as examples based on Burgers orientation relationships. O phase unit cell and β phase unit cell models established for DFT calculations.",
+            "simplified": "DFT models: O(100)//β(001) interface, β-β, and O-O interfaces"
+          }
+        },
+        "Properties": [
+          {
+            "Test_Type": "DFT Calculation",
+            "Data_Nature": "Computed",
+            "Temperature_C": 25,
+            "Computed_Energies": {
+              "E_O_eV": -38.614,
+              "E_beta_eV": -31.657,
+              "E_O_beta_eV": -12.463,
+              "E_beta_beta_eV": -11.367,
+              "E_O_O_eV": -5.232,
+              "Note": "'-' represents exothermic reaction",
+              "Data_Source": "table",
+              "Source_Table": "Table 5"
+            }
+          },
+          {
+            "Test_Type": "DFT Calculation",
+            "Data_Nature": "Computed",
+            "Temperature_C": 650,
+            "Computed_Energies": {
+              "E_O_eV": -33.497,
+              "E_beta_eV": -26.961,
+              "E_O_beta_eV": -10.324,
+              "E_beta_beta_eV": -6.532,
+              "E_O_O_eV": -3.836,
+              "Note": "'-' represents exothermic reaction. At 650°C, |E_O-β| > |E_β-β|, indicating O-β bonding strength exceeds β-β bonding strength at high temperature.",
+              "Data_Source": "table",
+              "Source_Table": "Table 5"
+            }
+          },
+          {
+            "Test_Type": "DFT Calculation",
+            "Data_Nature": "Computed",
+            "Temperature_C": 900,
+            "Computed_Energies": {
+              "E_O_eV": -30.057,
+              "E_beta_eV": -24.037,
+              "E_O_beta_eV": -4.392,
+              "E_beta_beta_eV": -1.743,
+              "E_O_O_eV": -0.632,
+              "Note": "'-' represents exothermic reaction",
+              "Data_Source": "table",
+              "Source_Table": "Table 5"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "REF_Ti-48Al-2Nb-2Cr_PBF-EB",
+      "Sample_ID": "Ti-48Al-2Nb-2Cr (Ref [16])",
+      "Role": "Reference",
+      "Data_Nature": "Literature_Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 6"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Name_Raw": "Ti-48Al-2Nb-2Cr"
+        },
+        "Processing": {
+          "Process_Category": "Additive_Manufacturing",
+          "Process_Text": {
+            "original": "PBF-EB",
+            "simplified": "PBF-EB"
+          }
+        },
+        "Properties": [
+          {
+            "Test_Type": "Tensile",
+            "Loading_Mode": "Tension",
+            "Test_Temperature_Range_C": "600-800",
+            "Yield_Strength_MPa": {
+              "Value": null,
+              "Note": "<700 MPa; inequality value, not precise"
+            },
+            "Elongation_Total_pct": {
+              "Value": null,
+              "Note": "<3%; inequality value, not precise"
+            },
+            "Data_Source": "table",
+            "Source_Table": "Table 6",
+            "Reference": "[16]"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "REF_Ti-5.54Al-3.38Sn-3.34Zr-0.37Mo-0.46Si_PBF-LB",
+      "Sample_ID": "Ti-5.54Al-3.38Sn-3.34Zr-0.37Mo-0.46Si (Ref [57])",
+      "Role": "Reference",
+      "Data_Nature": "Literature_Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 6"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Name_Raw": "Ti-5.54Al-3.38Sn-3.34Zr-0.37Mo-0.46Si"
+        },
+        "Processing": {
+          "Process_Category": "Additive_Manufacturing",
+          "Process_Text": {
+            "original": "PBF-LB",
+            "simplified": "PBF-LB"
+          }
+        },
+        "Properties": [
+          {
+            "Test_Type": "Tensile",
+            "Loading_Mode": "Tension",
+            "Test_Temperature_C": 600,
+            "Yield_Strength_MPa": {
+              "Value": 513,
+              "Data_Source": "table",
+              "Source_Table": "Table 6"
+            },
+            "Ultimate_Tensile_Strength_MPa": {
+              "Value": 655,
+              "Data_Source": "table",
+              "Source_Table": "Table 6"
+            },
+            "Elongation_Total_pct": {
+              "Value": 14,
+              "Note": "Original text uses 'EL (%)'; defaulted to Elongation_Total per Structural supplement rule.",
+              "Data_Source": "table",
+              "Source_Table": "Table 6"
+            },
+            "Reference": "[57]"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "REF_Ti-48Al-2Cr-5Nb_PBF-LB",
+      "Sample_ID": "Ti-48Al-2Cr-5Nb (Ref [58])",
+      "Role": "Reference",
+      "Data_Nature": "Literature_Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 6"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Name_Raw": "Ti-48Al-2Cr-5Nb"
+        },
+        "Processing": {
+          "Process_Category": "Additive_Manufacturing",
+          "Process_Text": {
+            "original": "PBF-LB",
+            "simplified": "PBF-LB"
+          }
+        },
+        "Properties": [
+          {
+            "Test_Type": "Tensile",
+            "Loading_Mode": "Tension",
+            "Test_Temperature_Range_C": "750-850",
+            "Ultimate_Tensile_Strength_MPa": {
+              "Value": null,
+              "Note": "<620 MPa; inequality value, not precise"
+            },
+            "Elongation_Total_pct": {
+              "Value": null,
+              "Note": "<5%; inequality value, not precise"
+            },
+            "Data_Source": "table",
+            "Source_Table": "Table 6",
+            "Reference": "[58]"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "REF_Ti-43Al-9V-0.3Y_PBF-LB",
+      "Sample_ID": "Ti-43Al-9V-0.3Y (Ref [59])",
+      "Role": "Reference",
+      "Data_Nature": "Literature_Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 6"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Name_Raw": "Ti-43Al-9V-0.3Y"
+        },
+        "Processing": {
+          "Process_Category": "Additive_Manufacturing",
+          "Process_Text": {
+            "original": "PBF-LB",
+            "simplified": "PBF-LB"
+          }
+        },
+        "Properties": [
+          {
+            "Test_Type": "Tensile",
+            "Loading_Mode": "Tension",
+            "Test_Temperature_Range_C": "700-750",
+            "Yield_Strength_MPa": {
+              "Value": null,
+              "Note": "<600 MPa; inequality value, not precise"
+            },
+            "Ultimate_Tensile_Strength_MPa": {
+              "Value": null,
+              "Note": "<700 MPa; inequality value, not precise"
+            },
+            "Elongation_Total_pct": {
+              "Value": null,
+              "Note": "<30%; inequality value, not precise"
+            },
+            "Data_Source": "table",
+            "Source_Table": "Table 6",
+            "Reference": "[59]"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "REF_Ti-44Al-4.9Nb-1Mo-0.1B_PBF-LB",
+      "Sample_ID": "Ti-44Al-4.9Nb-1Mo-0.1B (Ref [5])",
+      "Role": "Reference",
+      "Data_Nature": "Literature_Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 6"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Name_Raw": "Ti-44Al-4.9Nb-1Mo-0.1B"
+        },
+        "Processing": {
+          "Process_Category": "Additive_Manufacturing",
+          "Process_Text": {
+            "original": "PBF-LB",
+            "simplified": "PBF-LB"
+          }
+        },
+        "Properties": [
+          {
+            "Test_Type": "Tensile",
+            "Loading_Mode": "Tension",
+            "Test_Temperature_Range_C": "600-750",
+            "Note": "No specific tensile property values reported in Table 6 for this reference",
+            "Data_Source": "table",
+            "Source_Table": "Table 6",
+            "Reference": "[5]"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "REF_Ti-47.5Al-5.5Nb-0.5W_HIP",
+      "Sample_ID": "Ti-47.5Al-5.5Nb-0.5W (Ref [6])",
+      "Role": "Reference",
+      "Data_Nature": "Literature_Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 6"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Name_Raw": "Ti-47.5Al-5.5Nb-0.5W"
+        },
+        "Processing": {
+          "Process_Category": "Powder_Processing",
+          "Process_Text": {
+            "original": "HIP (hot isostatic pressing)",
+            "simplified": "HIP"
+          }
+        },
+        "Properties": [
+          {
+            "Test_Type": "Tensile",
+            "Loading_Mode": "Tension",
+            "Test_Temperature_Range_C": "300-850",
+            "Yield_Strength_MPa": {
+              "Value": null,
+              "Note": "<800 MPa; inequality value, not precise"
+            },
+            "Ultimate_Tensile_Strength_MPa": {
+              "Value": null,
+              "Note": "<800 MPa; inequality value, not precise"
+            },
+            "Data_Source": "table",
+            "Source_Table": "Table 6",
+            "Reference": "[6]"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "REF_Ti-22Al-25Nb_HEBM",
+      "Sample_ID": "Ti-22Al-25Nb (Ref [8])",
+      "Role": "Reference",
+      "Data_Nature": "Literature_Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 6"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Name_Raw": "Ti-22Al-25Nb"
+        },
+        "Processing": {
+          "Process_Category": "Powder_Processing",
+          "Process_Text": {
+            "original": "HEBM (high-energy ball milling)",
+            "simplified": "HEBM"
+          }
+        },
+        "Properties": [
+          {
+            "Test_Type": "Tensile",
+            "Loading_Mode": "Tension",
+            "Test_Temperature_C": 650,
+            "Note": "No specific tensile property values reported in Table 6 for this reference",
+            "Data_Source": "table",
+            "Source_Table": "Table 6",
+            "Reference": "[8]"
+          }
+        ]
+      }
+    }
+  ]
+}

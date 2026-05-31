@@ -1,0 +1,2343 @@
+{
+  "Paper_Metadata": {
+    "Paper_Title": "Powder recycling for electron beam powder bed fusion of TiAl alloy",
+    "DOI": "10.1016/j.matdes.2025.114473"
+  },
+  "Paper_Routing": {
+    "base_material": "Metals",
+    "application": "Structural",
+    "research_paradigm": "Experimental",
+    "Supplements_Loaded": [
+      "directions/base/Metals.txt",
+      "directions/application/Structural.txt",
+      "directions/paradigm/Experimental.txt"
+    ],
+    "Patch_Tags": [
+      "Additive_Manufacturing"
+    ],
+    "Needs_Mixed_Routing_Check": false
+  },
+  "items": [
+    {
+      "Item_ID": "P_R0",
+      "Sample_ID": "Powder_R0",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Ti-48Al-2Cr-2Nb powders, produced by EIGA with particle size ranging from 53–150 μm",
+        "New powders were labeled as R0"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Ti_Alloy",
+          "Material_Name_Raw": "Ti-48Al-2Cr-2Nb (at.%)",
+          "Nominal_Composition": {
+            "Composition_Type": "at%",
+            "Composition_Source_Type": "nominal_inferred",
+            "Elements": {
+              "Ti": "Balance",
+              "Al": 48.0,
+              "Cr": 2.0,
+              "Nb": 2.0
+            }
+          },
+          "Measured_Composition": {
+            "Composition_Type": "at%",
+            "Composition_Source_Type": "measured",
+            "Elements": {
+              "Al": 48.43,
+              "O_ppm": 560
+            },
+            "Measurement_Method": "titration (Al); OH-300 oxygen analyzer (O)",
+            "Note": "Al content 48.43±0.12 at.% from Table 2; Ti, Cr, Nb measured for samples only, not for individual powders"
+          },
+          "Note": "Nominal = powder design composition; Measured = powder composition after production"
+        },
+        "Processing": {
+          "Process_Category": "AM_EBM",
+          "Process_Text": {
+            "original": "Ti-48Al-2Cr-2Nb powders, produced by EIGA with particle size ranging from 53–150 μm were supplied by the Institute of Metal Research, Chinese Academy of Sciences. New powders were labeled as R0.",
+            "simplified": "EIGA-produced Ti-48Al-2Cr-2Nb virgin powder (53-150 μm), labeled R0 (0 recycling cycles)."
+          },
+          "Equipment": [
+            {
+              "Instrument_Name": "EB-PBF System",
+              "Manufacturer": "Beijing Quick Beam Technology Co.",
+              "Model": "Qbeam S200"
+            },
+            {
+              "Instrument_Name": "SEM",
+              "Manufacturer": "Zeiss",
+              "Model": "Sigma360"
+            },
+            {
+              "Instrument_Name": "SEM",
+              "Manufacturer": "Zeiss",
+              "Model": "SUPRA 55",
+              "Note": "BSE mode, 20 kV, WD=10 mm; equipped with EDS"
+            },
+            {
+              "Instrument_Name": "SEM",
+              "Manufacturer": "Zeiss",
+              "Model": "Gemini 450",
+              "Note": "EBSD analysis, step sizes 0.8-2.5 μm, 20 kV"
+            },
+            {
+              "Instrument_Name": "TEM",
+              "Manufacturer": "FEI",
+              "Model": "Tecnai Cube"
+            },
+            {
+              "Instrument_Name": "TEM",
+              "Model": "Titan G260-300",
+              "Note": "Aberration-corrected"
+            },
+            {
+              "Instrument_Name": "XPS",
+              "Manufacturer": "Thermo Scientific",
+              "Model": "K-Alpha"
+            },
+            {
+              "Instrument_Name": "XRD",
+              "Note": "JADE 6.5 software for phase analysis"
+            },
+            {
+              "Instrument_Name": "EBSD",
+              "Note": "Aztec Crystal software for analysis"
+            },
+            {
+              "Instrument_Name": "Oxygen Analyzer",
+              "Model": "OH-300"
+            },
+            {
+              "Instrument_Name": "Hall Flowmeter",
+              "Manufacturer": "LICHEN",
+              "Model": "XF-02"
+            },
+            {
+              "Instrument_Name": "Laser Particle Analyzer",
+              "Note": "For D10/D50/D90 parameters"
+            },
+            {
+              "Instrument_Name": "SEM-EDS",
+              "Note": "For Ti, Al, Cr, Nb, C elemental composition"
+            },
+            {
+              "Instrument_Name": "Tensile Testing Machine",
+              "Model": "YSL-100",
+              "Note": "±20 kN load capacity, quasi-static"
+            },
+            {
+              "Instrument_Name": "White Light Interferometer",
+              "Model": "MICROXAM-3D"
+            },
+            {
+              "Instrument_Name": "Contact Profilometer",
+              "Model": "Time-3231",
+              "Note": "U-diamond stylus: 5 μm tip; 8 mm traverse"
+            },
+            {
+              "Instrument_Name": "Tilting Mixer",
+              "Note": "30 r/min, 30-45 min under inert gas atmosphere"
+            },
+            {
+              "Instrument_Name": "ICP-AES",
+              "Note": "For Cr, Nb bulk composition"
+            },
+            {
+              "Instrument_Name": "FIB-TEM",
+              "Note": "Focused Ion Beam sample preparation for TEM"
+            }
+          ],
+          "Key_Params": {
+            "Recycling_Cycles": 0,
+            "Powder_Size_Range_um": "53-150",
+            "Powder_Production_Method": "EIGA"
+          },
+          "Note": "As-built, no heat treatment applied. Virgin powder characterization."
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Initially, the new powders consisted of γ and α/α₂ phases primarily, with the distinction between α and α₂ phases being challenging via XRD. The results by comparing the characteristic peaks showed that the initial powders were dominated by disordered α and γ phases. EIGA-produced powders exhibited high sphericity, with hollow and satellite particles being the primary defects in virgin powders. Powder particles exhibited a dendritic microstructure with dark solidification segregation (S-segregation) enriched in Al and bright β segregation enriched in Ti and Cr.",
+            "simplified": "Virgin powder: disordered α + γ phases, dendritic microstructure with Al-rich S-segregation and Ti/Cr-rich β segregation, high sphericity."
+          },
+          "Main_Phase": "γ+α",
+          "Advanced_Quantitative_Features": {
+            "Irregular_Powder_Fraction_pct": 3,
+            "Sub_50um_Fines_Fraction_pct": 3,
+            "Oversized_Particles_Fraction_pct": 5
+          },
+          "Note": "Irregular powder fraction ~3% estimated from text describing initial powder characteristics. Sub-50μm fines ~3% and oversized particles ~5% from text."
+        },
+        "Properties": [
+          {
+            "Property_Name": "Oxygen_Content",
+            "Value": 560,
+            "Unit": "ppm",
+            "Data_Source": "table",
+            "Data_Nature": "Experimental",
+            "Note": "Table 2: O content in new powders"
+          },
+          {
+            "Property_Name": "Al_Content",
+            "Value": 48.43,
+            "Value_StdDev": 0.12,
+            "Unit": "at%",
+            "Data_Source": "table",
+            "Data_Nature": "Experimental",
+            "Note": "Table 2: Al content in new powders (titration)"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "P_R1",
+      "Sample_ID": "Powder_R1",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "first recycled powders as R1",
+        "R1: O 580 ppm, Al 48.47±0.2 at.%"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Ti_Alloy",
+          "Material_Name_Raw": "Ti-48Al-2Cr-2Nb (at.%)",
+          "Nominal_Composition": {
+            "Composition_Type": "at%",
+            "Composition_Source_Type": "nominal_inferred",
+            "Elements": {
+              "Ti": "Balance",
+              "Al": 48.0,
+              "Cr": 2.0,
+              "Nb": 2.0
+            }
+          },
+          "Measured_Composition": {
+            "Composition_Type": "at%",
+            "Composition_Source_Type": "measured",
+            "Elements": {
+              "Al": 48.43,
+              "O_ppm": 580
+            },
+            "Measurement_Method": "titration (Al); OH-300 oxygen analyzer (O)",
+            "Note": "Al content 48.47±0.2 at.% from Table 2"
+          }
+        },
+        "Processing": {
+          "Process_Category": "AM_EBM",
+          "Process_Text": {
+            "original": "After exposure to high temperatures and cooled to RT, both the powders in the hoppers and the un-melted powders were processed in the powder recovery system (PRS). The resulting blended powders were sieved, mixed, stored, and reloaded. First recycled powders as R1.",
+            "simplified": "1st recycling cycle: powders exposed to EB-PBF thermal cycle (900-1150°C, ~20h), then recovered via PRS, sieved and mixed."
+          },
+          "Key_Params": {
+            "Recycling_Cycles": 1,
+            "Thermal_Exposure_Temperature_K": "1173.15-1423.15",
+            "Thermal_Exposure_Time_h": 20
+          },
+          "Note": "As-built, no heat treatment applied"
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "In powders from R1 to R15, the α/α₂ phase gradually decreased with increasing recycling number, and the interdendritic γ-region expanded. A small amount of irregular particles were observed in R1.",
+            "simplified": "α/α₂ decreasing, γ expanding. Minimal irregular particles."
+          },
+          "Main_Phase": "γ+α"
+        },
+        "Properties": [
+          {
+            "Property_Name": "Oxygen_Content",
+            "Value": 580,
+            "Unit": "ppm",
+            "Data_Source": "table",
+            "Data_Nature": "Experimental",
+            "Note": "Table 2"
+          },
+          {
+            "Property_Name": "Al_Content",
+            "Value": 48.47,
+            "Value_StdDev": 0.2,
+            "Unit": "at%",
+            "Data_Source": "table",
+            "Data_Nature": "Experimental",
+            "Note": "Table 2: 48.47±0.2 at.%"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "P_R5",
+      "Sample_ID": "Powder_R5",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "R5: O 660 ppm, Al 48.32±0.2 at.%"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Ti_Alloy",
+          "Material_Name_Raw": "Ti-48Al-2Cr-2Nb (at.%)",
+          "Nominal_Composition": {
+            "Composition_Type": "at%",
+            "Composition_Source_Type": "nominal_inferred",
+            "Elements": {
+              "Ti": "Balance",
+              "Al": 48.0,
+              "Cr": 2.0,
+              "Nb": 2.0
+            }
+          },
+          "Measured_Composition": {
+            "Composition_Type": "at%",
+            "Composition_Source_Type": "measured",
+            "Elements": {
+              "Al": 48.32,
+              "O_ppm": 660
+            },
+            "Measurement_Method": "titration (Al); OH-300 oxygen analyzer (O)",
+            "Note": "Al content 48.32±0.2 at.% from Table 2"
+          }
+        },
+        "Processing": {
+          "Process_Category": "AM_EBM",
+          "Process_Text": {
+            "original": "After 5 recycling cycles. Minimal Al loss (<0.5 at.%) occurred within 5 cycles.",
+            "simplified": "5 recycling cycles, minimal Al depletion."
+          },
+          "Key_Params": {
+            "Recycling_Cycles": 5,
+            "Thermal_Exposure_Temperature_K": "1173.15-1423.15"
+          },
+          "Note": "As-built, no heat treatment applied"
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "In powders from R1 to R15, the α/α₂ phase gradually decreased with increasing recycling number, and the interdendritic γ-region expanded. A small amount of irregular particles were observed in R5.",
+            "simplified": "α/α₂ decreasing, γ expanding. Minimal irregular particles."
+          },
+          "Main_Phase": "γ+α"
+        },
+        "Properties": [
+          {
+            "Property_Name": "Oxygen_Content",
+            "Value": 660,
+            "Unit": "ppm",
+            "Data_Source": "table",
+            "Data_Nature": "Experimental",
+            "Note": "Table 2"
+          },
+          {
+            "Property_Name": "Al_Content",
+            "Value": 48.32,
+            "Value_StdDev": 0.2,
+            "Unit": "at%",
+            "Data_Source": "table",
+            "Data_Nature": "Experimental",
+            "Note": "Table 2: 48.32±0.2 at.%"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "P_R15",
+      "Sample_ID": "Powder_R15",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "R15: O 890 ppm, Al 47.24±0.1 at.%",
+        "After 15 cycles, the proportion of powders irradiated by EB exceeds 93%"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Ti_Alloy",
+          "Material_Name_Raw": "Ti-48Al-2Cr-2Nb (at.%)",
+          "Nominal_Composition": {
+            "Composition_Type": "at%",
+            "Composition_Source_Type": "nominal_inferred",
+            "Elements": {
+              "Ti": "Balance",
+              "Al": 48.0,
+              "Cr": 2.0,
+              "Nb": 2.0
+            }
+          },
+          "Measured_Composition": {
+            "Composition_Type": "at%",
+            "Composition_Source_Type": "measured",
+            "Elements": {
+              "Al": 47.24,
+              "O_ppm": 890
+            },
+            "Measurement_Method": "titration (Al); OH-300 oxygen analyzer (O)",
+            "Note": "Al content 47.24±0.1 at.% from Table 2"
+          }
+        },
+        "Processing": {
+          "Process_Category": "AM_EBM",
+          "Process_Text": {
+            "original": "After 15 recycling cycles. Oxygen uptake progressed at 22 ppm/cycle during initial 15 cycles. After 15 cycles, the proportion of powders irradiated by EB exceeds 93%. At R15, two distinct types of irregular particles emerged: (1) fused satellite particles adhering to larger counterparts, and (2) particles with partial surface melting traces without complete fusion.",
+            "simplified": "15 cycles, O uptake 22 ppm/cycle, >93% EB-irradiated powders. Two types of irregular particles emerge."
+          },
+          "Key_Params": {
+            "Recycling_Cycles": 15,
+            "Thermal_Exposure_Temperature_K": "1173.15-1423.15",
+            "Oxygen_Uptake_Rate_ppm_per_cycle": 22
+          },
+          "Note": "As-built, no heat treatment applied"
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "In powders from R1 to R15, the α/α₂ phase gradually decreased with increasing recycling number, and the interdendritic γ-region expanded. At R15, two distinct types of irregular particles emerged: (1) fused satellite particles adhering to larger counterparts and (2) particles with partial surface melting traces. TEM characterization identified Cr-Ti Laves phases (10-20 nm at R15).",
+            "simplified": "α/α₂ decreasing, γ expanding. Cr-Ti Laves phases (10-20 nm). Two types of irregular particles."
+          },
+          "Main_Phase": "γ+α",
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "C14/C15 Laves",
+              "Size_Range_Low_nm": 10,
+              "Size_Range_High_nm": 20,
+              "Size_Type": "undefined",
+              "Note": "Cr-Ti Laves phases identified by TEM at R15"
+            }
+          ],
+          "Advanced_Quantitative_Features": {
+            "Oxide_Surface_TiO2_Fraction_pct": 46.02,
+            "Oxide_Surface_Al2O3_Fraction_pct": 53.98,
+            "EB_Irradiated_Powder_Fraction_pct": 93
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Oxygen_Content",
+            "Value": 890,
+            "Unit": "ppm",
+            "Data_Source": "table",
+            "Data_Nature": "Experimental",
+            "Note": "Table 2"
+          },
+          {
+            "Property_Name": "Al_Content",
+            "Value": 47.24,
+            "Value_StdDev": 0.1,
+            "Unit": "at%",
+            "Data_Source": "table",
+            "Data_Nature": "Experimental",
+            "Note": "Table 2: 47.24±0.1 at.%"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "P_R30",
+      "Sample_ID": "Powder_R30",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "R30: O 1200 ppm, Al 46.81±0.7 at.%",
+        "After 30 cycles, more than 99.6% of the powders were irradiated with EB at least once"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Ti_Alloy",
+          "Material_Name_Raw": "Ti-48Al-2Cr-2Nb (at.%)",
+          "Nominal_Composition": {
+            "Composition_Type": "at%",
+            "Composition_Source_Type": "nominal_inferred",
+            "Elements": {
+              "Ti": "Balance",
+              "Al": 48.0,
+              "Cr": 2.0,
+              "Nb": 2.0
+            }
+          },
+          "Measured_Composition": {
+            "Composition_Type": "at%",
+            "Composition_Source_Type": "measured",
+            "Elements": {
+              "Al": 46.81,
+              "O_ppm": 1200
+            },
+            "Measurement_Method": "titration (Al); OH-300 oxygen analyzer (O)",
+            "Note": "Al content 46.81±0.7 at.% from Table 2; Al depletion escalated to 1.62-2 at.% after 30 cycles"
+          }
+        },
+        "Processing": {
+          "Process_Category": "AM_EBM",
+          "Process_Text": {
+            "original": "After 30 recycling cycles. Oxygen uptake accelerated to 27.33 ppm/cycle in cycles 15-30. After 30 cycles, more than 99.6% of the powders were irradiated with EB at least once. Rod-shaped particles dominated in R30 irregular particles.",
+            "simplified": "30 cycles, O uptake 27.33 ppm/cycle (cycles 15-30), >99.6% EB-irradiated. Rod-shaped irregular particles."
+          },
+          "Key_Params": {
+            "Recycling_Cycles": 30,
+            "Thermal_Exposure_Temperature_K": "1173.15-1423.15",
+            "Oxygen_Uptake_Rate_ppm_per_cycle": 27.33
+          },
+          "Note": "As-built, no heat treatment applied"
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "By R30, the powder was predominantly composed of the γ phase, with S-segregation disappeared due to the high diffusion rate of Al at temperatures of approximately 900-1150°C. The bright dendritic structure caused by β segregation transformed into a block-like morphology (α₂). Rod-shaped particles dominated in R30 irregular particles.",
+            "simplified": "Predominantly γ phase, β segregation transformed to blocky α₂, rod-shaped irregular particles, S-segregation disappeared."
+          },
+          "Main_Phase": "γ",
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "α₂",
+              "Distribution": "block-like morphology transformed from β segregation"
+            }
+          ],
+          "Advanced_Quantitative_Features": {
+            "EB_Irradiated_Powder_Fraction_pct": 99.6,
+            "Al_Depletion_at_pct": 1.62
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Oxygen_Content",
+            "Value": 1200,
+            "Unit": "ppm",
+            "Data_Source": "table",
+            "Data_Nature": "Experimental",
+            "Note": "Table 2"
+          },
+          {
+            "Property_Name": "Al_Content",
+            "Value": 46.81,
+            "Value_StdDev": 0.7,
+            "Unit": "at%",
+            "Data_Source": "table",
+            "Data_Nature": "Experimental",
+            "Note": "Table 2: 46.81±0.7 at.%"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "P_R30b",
+      "Sample_ID": "Powder_R30b",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "mixed with 10 kg of new powders (from the original batch). Following remixing (termed R30b)",
+        "Post-mixing, the new powders comprised approximately 30.3% of the mixture"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Ti_Alloy",
+          "Material_Name_Raw": "Ti-48Al-2Cr-2Nb (at.%)",
+          "Nominal_Composition": {
+            "Composition_Type": "at%",
+            "Composition_Source_Type": "nominal_inferred",
+            "Elements": {
+              "Ti": "Balance",
+              "Al": 48.0,
+              "Cr": 2.0,
+              "Nb": 2.0
+            }
+          },
+          "Measured_Composition": {
+            "Composition_Type": "at%",
+            "Composition_Source_Type": "measured",
+            "Elements": {
+              "Al": 47.86,
+              "O_ppm": 860
+            },
+            "Measurement_Method": "titration (Al); OH-300 oxygen analyzer (O)",
+            "Note": "Al content 47.86±0.5 at.% from Table 2; mixed with 30.3% fresh powder"
+          }
+        },
+        "Processing": {
+          "Process_Category": "AM_EBM",
+          "Process_Text": {
+            "original": "Before the 31st building, mixed with 10 kg of new powders (from the original batch). Following remixing (termed R30b), the 31st building process (S30b) was conducted. Post-mixing, the new powders comprised approximately 30.3% of the mixture.",
+            "simplified": "After 30 cycles, 10 kg fresh powder added (30.3% of mixture), remixed as R30b."
+          },
+          "Key_Params": {
+            "Recycling_Cycles": 30,
+            "Fresh_Powder_Addition_kg": 10,
+            "Fresh_Powder_Ratio_pct": 30.3,
+            "Thermal_Exposure_Temperature_K": "1173.15-1423.15"
+          },
+          "Note": "Powder remixed with 30.3% fresh powder after 30 cycles"
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "After adding new powders, three structures were observed. Some powder particles lost their dendritic structure completely, showing dispersed bright spots enriched with Cr, with decreased Ti and Al content.",
+            "simplified": "Mixed microstructure: fully transformed particles + Cr-rich bright spots + remnant dendritic structures."
+          },
+          "Main_Phase": "γ"
+        },
+        "Properties": [
+          {
+            "Property_Name": "Oxygen_Content",
+            "Value": 860,
+            "Unit": "ppm",
+            "Data_Source": "table",
+            "Data_Nature": "Experimental",
+            "Note": "Table 2: O decreased from 1200 (R30) to 860 (R30b) after fresh powder addition"
+          },
+          {
+            "Property_Name": "Al_Content",
+            "Value": 47.86,
+            "Value_StdDev": 0.5,
+            "Unit": "at%",
+            "Data_Source": "table",
+            "Data_Nature": "Experimental",
+            "Note": "Table 2: 47.86±0.5 at.%"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "P_R45",
+      "Sample_ID": "Powder_R45",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "R45: O 1300 ppm, Al 47.12±0.6 at.%",
+        "By the 45th cycle, this ratio was reduced to 2.4%"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Ti_Alloy",
+          "Material_Name_Raw": "Ti-48Al-2Cr-2Nb (at.%)",
+          "Nominal_Composition": {
+            "Composition_Type": "at%",
+            "Composition_Source_Type": "nominal_inferred",
+            "Elements": {
+              "Ti": "Balance",
+              "Al": 48.0,
+              "Cr": 2.0,
+              "Nb": 2.0
+            }
+          },
+          "Measured_Composition": {
+            "Composition_Type": "at%",
+            "Composition_Source_Type": "measured",
+            "Elements": {
+              "Al": 47.12,
+              "O_ppm": 1300
+            },
+            "Measurement_Method": "titration (Al); OH-300 oxygen analyzer (O)",
+            "Note": "Al content 47.12±0.6 at.% from Table 2; achieving 48.12 at.% Al in R45 but subsequent cycles exhibited renewed oxygen increase (28 ppm/cycle)"
+          }
+        },
+        "Processing": {
+          "Process_Category": "AM_EBM",
+          "Process_Text": {
+            "original": "After 45 recycling cycles. By the 45th cycle, the fresh powder ratio was reduced to 2.4%. R45-R70 powders exhibited semi-molten agglomerates with elongated structures that evaded sieving despite exceeding nominal size thresholds. The proportion of R45-R70 irregular powder is all greater than 30%.",
+            "simplified": "45 cycles, fresh powder ratio reduced to 2.4%, >30% irregular particles, semi-molten agglomerates."
+          },
+          "Key_Params": {
+            "Recycling_Cycles": 45,
+            "Thermal_Exposure_Temperature_K": "1173.15-1423.15",
+            "Oxygen_Uptake_Rate_ppm_per_cycle": 28
+          },
+          "Note": "As-built, no heat treatment applied"
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "R45-R70 powders exhibited semi-molten agglomerates with elongated structures that evaded sieving despite exceeding nominal size thresholds. The proportion of R45-R70 irregular powder is all greater than 30%.",
+            "simplified": ">30% irregular particles, semi-molten agglomerates, elongated structures."
+          },
+          "Main_Phase": "γ",
+          "Advanced_Quantitative_Features": {
+            "Irregular_Powder_Fraction_pct": 30,
+            "Fresh_Powder_Ratio_pct": 2.4
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Oxygen_Content",
+            "Value": 1300,
+            "Unit": "ppm",
+            "Data_Source": "table",
+            "Data_Nature": "Experimental",
+            "Note": "Table 2"
+          },
+          {
+            "Property_Name": "Al_Content",
+            "Value": 47.12,
+            "Value_StdDev": 0.6,
+            "Unit": "at%",
+            "Data_Source": "table",
+            "Data_Nature": "Experimental",
+            "Note": "Table 2: 47.12±0.6 at.%"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "P_R70",
+      "Sample_ID": "Powder_R70",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "R70: O 2000 ppm, Al 46.31±3 at.%",
+        "decreased further to 0.04% by the 70th cycle",
+        "progressive Al depletion (48.43 → 46.31 at.%) and oxygen uptake (560 → 2000 ppm)"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Ti_Alloy",
+          "Material_Name_Raw": "Ti-48Al-2Cr-2Nb (at.%)",
+          "Nominal_Composition": {
+            "Composition_Type": "at%",
+            "Composition_Source_Type": "nominal_inferred",
+            "Elements": {
+              "Ti": "Balance",
+              "Al": 48.0,
+              "Cr": 2.0,
+              "Nb": 2.0
+            }
+          },
+          "Measured_Composition": {
+            "Composition_Type": "at%",
+            "Composition_Source_Type": "measured",
+            "Elements": {
+              "Al": 46.31,
+              "O_ppm": 2000
+            },
+            "Measurement_Method": "titration (Al); OH-300 oxygen analyzer (O)",
+            "Note": "Al content 46.31±3 at.% from Table 2; Al content spanning 42.12-49.52 at.% reflecting heterogeneous irradiation history"
+          }
+        },
+        "Processing": {
+          "Process_Category": "AM_EBM",
+          "Process_Text": {
+            "original": "After 70 recycling cycles. Fresh powder ratio decreased to 0.04% by the 70th cycle. Extreme variations emerged at R70, with Al content spanning 42.12-49.52 at.%, reflecting heterogeneous irradiation and melting histories across particles. The proportion of R45-R70 irregular powder is all greater than 30%.",
+            "simplified": "70 cycles, fresh powder ratio 0.04%, >30% irregular particles, highly heterogeneous Al content (42.12-49.52 at.%)."
+          },
+          "Key_Params": {
+            "Recycling_Cycles": 70,
+            "Thermal_Exposure_Temperature_K": "1173.15-1423.15"
+          },
+          "Note": "As-built, no heat treatment applied"
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "In R70 powders, irregularly shaped particles increased, along with powder particles containing aggregated bright spots. Microstructures of irregular powders were non-uniform due to varying Al loss, appearing as lamellar agglomerates (α₂+γ) in Al-poor areas. XPS demonstrated progressive transition from mixed TiO₂/Al₂O₃ to Al₂O₃-dominated (82.11%) surface oxides after 70 cycles. TEM revealed Cr-Ti Laves phases and Ti-Nb-Cr precipitates (R70). FIB-TEM identified Ti/O-rich regions at R70 particle edges despite lacking continuous oxide films.",
+            "simplified": "Al₂O₃-dominated surface oxide (82.11%), C14 Laves phase, Ti-Nb-Cr precipitates, non-uniform microstructure, α₂+γ lamellar in Al-poor regions."
+          },
+          "Main_Phase": "γ",
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "C14 Laves",
+              "Note": "TiNbCr4 composition identified by TEM"
+            },
+            {
+              "Phase_Name": "B2",
+              "Note": "Cr-Ti B2/β₀ phase"
+            }
+          ],
+          "Advanced_Quantitative_Features": {
+            "Oxide_Surface_Al2O3_Fraction_pct": 82.11,
+            "Al_Content_Range_Low_at_pct": 42.12,
+            "Al_Content_Range_High_at_pct": 49.52,
+            "Fresh_Powder_Ratio_pct": 0.04,
+            "Irregular_Powder_Fraction_pct": 30
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Oxygen_Content",
+            "Value": 2000,
+            "Unit": "ppm",
+            "Data_Source": "table",
+            "Data_Nature": "Experimental",
+            "Note": "Table 2: O uptake 560→2000 ppm over 70 cycles"
+          },
+          {
+            "Property_Name": "Al_Content",
+            "Value": 46.31,
+            "Value_StdDev": 3.0,
+            "Unit": "at%",
+            "Data_Source": "table",
+            "Data_Nature": "Experimental",
+            "Note": "Table 2: 46.31±3 at.%; Al content range 42.12-49.52 at.%"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "S_S0",
+      "Sample_ID": "Sample_S0",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "parts processed from new powders were labeled as S0",
+        "S0: O 680 ppm, Al 47.51 at.%"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Ti_Alloy",
+          "Material_Name_Raw": "Ti-48Al-2Cr-2Nb (at.%)",
+          "Nominal_Composition": {
+            "Composition_Type": "at%",
+            "Composition_Source_Type": "nominal_inferred",
+            "Elements": {
+              "Ti": "Balance",
+              "Al": 48.0,
+              "Cr": 2.0,
+              "Nb": 2.0
+            },
+            "Note": "Powder design composition"
+          },
+          "Measured_Composition": {
+            "Composition_Type": "at%",
+            "Composition_Source_Type": "measured_inferred",
+            "Elements": {
+              "Al": 47.51,
+              "Cr": 2.12,
+              "Nb": 2.04,
+              "O_ppm": 680
+            },
+            "Measurement_Method": "titration (Al); ICP-AES (Cr, Nb); OH-300 oxygen analyzer (O)",
+            "Note": "From Table 3: bulk part composition"
+          },
+          "Note": "Nominal = powder design composition; Measured = bulk part composition"
+        },
+        "Processing": {
+          "Process_Category": "AM_EBM",
+          "Process_Text": {
+            "original": "The Ti-48Al-2Cr-2Nb parts were fabricated using EB-PBF equipment (Qbeam S200, Beijing Quick Beam Technology Co.) with a constant accelerating voltage of 60 kV. The layer thickness was 50 μm, and the powder-bed temperature ranged from 900 °C to 1150 °C during building. Materialise Magics (version 24.0) was used for slice processing and model creation. Dense building process: Substrate preheating temperature 1070°C, powder bed preheating temperature 900-1150°C, building temperature 900-1100°C, layer thickness 50 μm, scanning speed 1.8-2.3 m/s, mean beam current 5.40-8.60 mA, line offset 0.1 mm, energy density 1.80-2.24 J/mm².",
+            "simplified": "EB-PBF using Qbeam S200, 60 kV, 50 μm layer, 900-1150°C powder bed, 900-1100°C build temp, 1.8-2.3 m/s scan speed, 5.4-8.6 mA beam current, 1.80-2.24 J/mm² energy density. Built from virgin powder (R0)."
+          },
+          "Equipment": [
+            {
+              "Instrument_Name": "EB-PBF System",
+              "Manufacturer": "Beijing Quick Beam Technology Co.",
+              "Model": "Qbeam S200"
+            },
+            {
+              "Instrument_Name": "SEM",
+              "Manufacturer": "Zeiss",
+              "Model": "SUPRA 55",
+              "Note": "BSE mode, 20 kV, WD=10 mm; equipped with EDS"
+            },
+            {
+              "Instrument_Name": "SEM",
+              "Manufacturer": "Zeiss",
+              "Model": "Gemini 450",
+              "Note": "EBSD analysis, step sizes 0.8-2.5 μm, 20 kV"
+            },
+            {
+              "Instrument_Name": "TEM",
+              "Manufacturer": "FEI",
+              "Model": "Tecnai Cube"
+            },
+            {
+              "Instrument_Name": "TEM",
+              "Note": "Titan G260-300, aberration-corrected"
+            },
+            {
+              "Instrument_Name": "XPS",
+              "Manufacturer": "Thermo Scientific",
+              "Model": "K-Alpha"
+            },
+            {
+              "Instrument_Name": "XRD",
+              "Note": "JADE 6.5 software"
+            },
+            {
+              "Instrument_Name": "EBSD",
+              "Note": "Aztec Crystal software"
+            },
+            {
+              "Instrument_Name": "Oxygen Analyzer",
+              "Model": "OH-300"
+            },
+            {
+              "Instrument_Name": "SEM-EDS",
+              "Note": "For Ti, Al, Cr, Nb, C"
+            },
+            {
+              "Instrument_Name": "Tensile Testing Machine",
+              "Model": "YSL-100",
+              "Note": "±20 kN, quasi-static"
+            },
+            {
+              "Instrument_Name": "White Light Interferometer",
+              "Model": "MICROXAM-3D"
+            },
+            {
+              "Instrument_Name": "Contact Profilometer",
+              "Model": "Time-3231"
+            },
+            {
+              "Instrument_Name": "ICP-AES",
+              "Note": "For Cr, Nb"
+            },
+            {
+              "Instrument_Name": "FIB-TEM",
+              "Note": "Focused Ion Beam sample preparation"
+            }
+          ],
+          "Key_Params": {
+            "Accelerating_Voltage_kV": 60,
+            "Layer_Thickness_um": 50,
+            "Build_Plate_Temperature_K": 1343.15,
+            "Powder_Bed_Temperature_Range_K": [
+              1173.15,
+              1423.15
+            ],
+            "Building_Temperature_Range_K": [
+              1173.15,
+              1373.15
+            ],
+            "Scanning_Speed_Range_mm_s": [
+              1800,
+              2300
+            ],
+            "Mean_Beam_Current_Range_mA": [
+              5.4,
+              8.6
+            ],
+            "Line_Offset_mm": 0.1,
+            "Volumetric_Energy_Density_Range_J_mm3": [
+              1.8,
+              2.24
+            ],
+            "Scanning_Line_Length_Range_mm": [
+              10,
+              40
+            ],
+            "Recycling_Cycles_of_Powder": 0
+          },
+          "Original_Values": {
+            "Build_Plate_Temperature": "1070 °C",
+            "Powder_Bed_Temperature": "900-1150 °C",
+            "Building_Temperature": "900-1100 °C",
+            "Layer_Thickness": "50 μm",
+            "Scanning_Speed": "1.8-2.3 m/s",
+            "Mean_Beam_Current": "5.40-8.60 mA",
+            "Line_Offset": "0.1 mm",
+            "Volumetric_Energy_Density": "1.80-2.24 J/mm²"
+          },
+          "Note": "As-built, no heat treatment applied"
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "XRD and SEM analyses of S0 revealed γ and α₂ phases in all samples. BSE analysis showed equiaxed γ grains, fine lamellar colonies (α₂+γ), and dispersed bright spots (β₀/B2) along lamellar colony boundaries. EBSD analysis revealed pronounced γ bands in S0. No stress concentration was observed near γ bands but numerous γ [110]70° twin boundaries were present. HAGB accounted for 94.8% of total grain boundaries. Twin boundary fraction γ [110]70° was 12.5%. TEM showed dual-phase structure of lamellar colonies (α₂+γ) and equiaxed γ grains, with cubic β₀/B2 phase between lamellar colonies and γ grain boundaries.",
+            "simplified": "γ + α₂ phases, equiaxed γ grains + lamellar colonies (α₂+γ), β₀/B2 precipitates at boundaries, pronounced γ bands with annealing twins, 94.8% HAGB, 12.5% twin boundaries."
+          },
+          "Main_Phase": "γ+α₂",
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "B2/β₀",
+              "Size_Type": "undefined",
+              "Distribution": "between lamellar colonies and γ grain boundaries"
+            }
+          ],
+          "Grain_Size": {
+            "Grain_Size_Type": "undefined",
+            "Grain_Structure": "mixed",
+            "Note": "Equiaxed γ grains and lamellar colonies"
+          },
+          "Advanced_Quantitative_Features": {
+            "HAGB_Fraction_pct": 94.8,
+            "LAGB_Fraction_pct": 5.2,
+            "Twin_Boundary_Fraction_pct": 12.5,
+            "Twin_Boundary_Type": "γ [110]70°"
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Ultimate_Tensile_Strength",
+            "Value": 750,
+            "Unit": "MPa",
+            "Test_Temperature_K": 298.15,
+            "Test_Temperature_Original": "RT",
+            "Strain_Rate_s1": "1×10⁻⁴",
+            "Data_Source": "text",
+            "Data_Nature": "Experimental",
+            "Test_Specimen": {
+              "Specimen_Geometry": "flat",
+              "Gauge_Length_mm": 12,
+              "Width_mm": 2,
+              "Thickness_mm": 1
+            },
+            "Original_Values": "750 MPa",
+            "Note": "From text: 'room temperature ultimate tensile strength (750 MPa)'. Fig. 10(a) stress-strain curves."
+          },
+          {
+            "Property_Name": "Elongation_Total",
+            "Value": 2.1,
+            "Unit": "%",
+            "Test_Temperature_K": 298.15,
+            "Test_Temperature_Original": "RT",
+            "Strain_Rate_s1": "1×10⁻⁴",
+            "Data_Source": "text",
+            "Data_Nature": "Experimental",
+            "Test_Specimen": {
+              "Specimen_Geometry": "flat",
+              "Gauge_Length_mm": 12,
+              "Width_mm": 2,
+              "Thickness_mm": 1
+            },
+            "Original_Values": "2.1%",
+            "Note": "From text: 'reduced by 40%' and '60% reduction from 2.1%' implies S0 elongation was 2.1%"
+          },
+          {
+            "Property_Name": "Oxygen_Content",
+            "Value": 680,
+            "Unit": "ppm",
+            "Data_Source": "table",
+            "Data_Nature": "Experimental",
+            "Note": "Table 3: O content in S0 part"
+          },
+          {
+            "Property_Name": "Al_Content",
+            "Value": 47.51,
+            "Unit": "at%",
+            "Data_Source": "table",
+            "Data_Nature": "Experimental",
+            "Note": "Table 3: Al content in S0 part"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "S_S5",
+      "Sample_ID": "Sample_S5",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "S5: O 680 ppm, Al 47.67 at.%, Cr 2.03 at.%, Nb 2.04 at.%"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Ti_Alloy",
+          "Material_Name_Raw": "Ti-48Al-2Cr-2Nb (at.%)",
+          "Nominal_Composition": {
+            "Composition_Type": "at%",
+            "Composition_Source_Type": "nominal_inferred",
+            "Elements": {
+              "Ti": "Balance",
+              "Al": 48.0,
+              "Cr": 2.0,
+              "Nb": 2.0
+            }
+          },
+          "Measured_Composition": {
+            "Composition_Type": "at%",
+            "Composition_Source_Type": "measured_inferred",
+            "Elements": {
+              "Al": 47.67,
+              "Cr": 2.03,
+              "Nb": 2.04,
+              "O_ppm": 680
+            },
+            "Measurement_Method": "titration (Al); ICP-AES (Cr, Nb); OH-300 oxygen analyzer (O)",
+            "Note": "From Table 3"
+          }
+        },
+        "Processing": {
+          "Process_Category": "AM_EBM",
+          "Process_Text": {
+            "original": "Same EB-PBF parameters as S0, built from R5 powder (5 recycling cycles).",
+            "simplified": "EB-PBF with same parameters, powder recycled 5 times."
+          },
+          "Key_Params": {
+            "Recycling_Cycles_of_Powder": 5
+          },
+          "Note": "As-built, no heat treatment applied",
+          "Equipment": [
+            {
+              "Instrument_Name": "EB-PBF System",
+              "Manufacturer": "Beijing Quick Beam Technology Co.",
+              "Model": "Qbeam S200"
+            },
+            {
+              "Instrument_Name": "SEM",
+              "Manufacturer": "Zeiss",
+              "Model": "SUPRA 55",
+              "Note": "BSE mode, 20 kV, WD=10 mm; equipped with EDS"
+            },
+            {
+              "Instrument_Name": "SEM",
+              "Manufacturer": "Zeiss",
+              "Model": "Gemini 450",
+              "Note": "EBSD analysis, step sizes 0.8-2.5 μm, 20 kV"
+            },
+            {
+              "Instrument_Name": "TEM",
+              "Manufacturer": "FEI",
+              "Model": "Tecnai Cube"
+            },
+            {
+              "Instrument_Name": "TEM",
+              "Note": "Titan G260-300, aberration-corrected"
+            },
+            {
+              "Instrument_Name": "XPS",
+              "Manufacturer": "Thermo Scientific",
+              "Model": "K-Alpha"
+            },
+            {
+              "Instrument_Name": "XRD",
+              "Note": "JADE 6.5 software"
+            },
+            {
+              "Instrument_Name": "EBSD",
+              "Note": "Aztec Crystal software"
+            },
+            {
+              "Instrument_Name": "Oxygen Analyzer",
+              "Model": "OH-300"
+            },
+            {
+              "Instrument_Name": "SEM-EDS",
+              "Note": "For Ti, Al, Cr, Nb, C"
+            },
+            {
+              "Instrument_Name": "Tensile Testing Machine",
+              "Model": "YSL-100",
+              "Note": "±20 kN, quasi-static"
+            },
+            {
+              "Instrument_Name": "White Light Interferometer",
+              "Model": "MICROXAM-3D"
+            },
+            {
+              "Instrument_Name": "Contact Profilometer",
+              "Model": "Time-3231"
+            },
+            {
+              "Instrument_Name": "ICP-AES",
+              "Note": "For Cr, Nb"
+            },
+            {
+              "Instrument_Name": "FIB-TEM",
+              "Note": "Focused Ion Beam sample preparation"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "S5 exhibited distinct 'γ bands' with annealed twins.",
+            "simplified": "γ bands with annealing twins."
+          },
+          "Main_Phase": "γ+α₂"
+        },
+        "Properties": [
+          {
+            "Property_Name": "Oxygen_Content",
+            "Value": 680,
+            "Unit": "ppm",
+            "Data_Source": "table",
+            "Data_Nature": "Experimental",
+            "Note": "Table 3"
+          },
+          {
+            "Property_Name": "Al_Content",
+            "Value": 47.67,
+            "Unit": "at%",
+            "Data_Source": "table",
+            "Data_Nature": "Experimental",
+            "Note": "Table 3"
+          },
+          {
+            "Property_Name": "Cr_Content",
+            "Value": 2.03,
+            "Unit": "at%",
+            "Data_Source": "table",
+            "Data_Nature": "Experimental",
+            "Note": "Table 3"
+          },
+          {
+            "Property_Name": "Nb_Content",
+            "Value": 2.04,
+            "Unit": "at%",
+            "Data_Source": "table",
+            "Data_Nature": "Experimental",
+            "Note": "Table 3"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "S_S10",
+      "Sample_ID": "Sample_S10",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "S10: O 730 ppm, Al 47.56 at.%, Cr 1.98 at.%, Nb 2.04 at.%"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Ti_Alloy",
+          "Material_Name_Raw": "Ti-48Al-2Cr-2Nb (at.%)",
+          "Nominal_Composition": {
+            "Composition_Type": "at%",
+            "Composition_Source_Type": "nominal_inferred",
+            "Elements": {
+              "Ti": "Balance",
+              "Al": 48.0,
+              "Cr": 2.0,
+              "Nb": 2.0
+            }
+          },
+          "Measured_Composition": {
+            "Composition_Type": "at%",
+            "Composition_Source_Type": "measured_inferred",
+            "Elements": {
+              "Al": 47.56,
+              "Cr": 1.98,
+              "Nb": 2.04,
+              "O_ppm": 730
+            },
+            "Measurement_Method": "titration (Al); ICP-AES (Cr, Nb); OH-300 oxygen analyzer (O)",
+            "Note": "From Table 3"
+          }
+        },
+        "Processing": {
+          "Process_Category": "AM_EBM",
+          "Process_Text": {
+            "original": "Same EB-PBF parameters as S0, built from R10 powder (10 recycling cycles).",
+            "simplified": "EB-PBF with same parameters, powder recycled 10 times."
+          },
+          "Key_Params": {
+            "Recycling_Cycles_of_Powder": 10
+          },
+          "Note": "As-built, no heat treatment applied",
+          "Equipment": [
+            {
+              "Instrument_Name": "EB-PBF System",
+              "Manufacturer": "Beijing Quick Beam Technology Co.",
+              "Model": "Qbeam S200"
+            },
+            {
+              "Instrument_Name": "SEM",
+              "Manufacturer": "Zeiss",
+              "Model": "SUPRA 55",
+              "Note": "BSE mode, 20 kV, WD=10 mm; equipped with EDS"
+            },
+            {
+              "Instrument_Name": "SEM",
+              "Manufacturer": "Zeiss",
+              "Model": "Gemini 450",
+              "Note": "EBSD analysis, step sizes 0.8-2.5 μm, 20 kV"
+            },
+            {
+              "Instrument_Name": "TEM",
+              "Manufacturer": "FEI",
+              "Model": "Tecnai Cube"
+            },
+            {
+              "Instrument_Name": "TEM",
+              "Note": "Titan G260-300, aberration-corrected"
+            },
+            {
+              "Instrument_Name": "XPS",
+              "Manufacturer": "Thermo Scientific",
+              "Model": "K-Alpha"
+            },
+            {
+              "Instrument_Name": "XRD",
+              "Note": "JADE 6.5 software"
+            },
+            {
+              "Instrument_Name": "EBSD",
+              "Note": "Aztec Crystal software"
+            },
+            {
+              "Instrument_Name": "Oxygen Analyzer",
+              "Model": "OH-300"
+            },
+            {
+              "Instrument_Name": "SEM-EDS",
+              "Note": "For Ti, Al, Cr, Nb, C"
+            },
+            {
+              "Instrument_Name": "Tensile Testing Machine",
+              "Model": "YSL-100",
+              "Note": "±20 kN, quasi-static"
+            },
+            {
+              "Instrument_Name": "White Light Interferometer",
+              "Model": "MICROXAM-3D"
+            },
+            {
+              "Instrument_Name": "Contact Profilometer",
+              "Model": "Time-3231"
+            },
+            {
+              "Instrument_Name": "ICP-AES",
+              "Note": "For Cr, Nb"
+            },
+            {
+              "Instrument_Name": "FIB-TEM",
+              "Note": "Focused Ion Beam sample preparation"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "S10 exhibited distinct 'γ bands' with annealed twins.",
+            "simplified": "γ bands with annealing twins."
+          },
+          "Main_Phase": "γ+α₂"
+        },
+        "Properties": [
+          {
+            "Property_Name": "Oxygen_Content",
+            "Value": 730,
+            "Unit": "ppm",
+            "Data_Source": "table",
+            "Data_Nature": "Experimental",
+            "Note": "Table 3"
+          },
+          {
+            "Property_Name": "Al_Content",
+            "Value": 47.56,
+            "Unit": "at%",
+            "Data_Source": "table",
+            "Data_Nature": "Experimental",
+            "Note": "Table 3"
+          },
+          {
+            "Property_Name": "Cr_Content",
+            "Value": 1.98,
+            "Unit": "at%",
+            "Data_Source": "table",
+            "Data_Nature": "Experimental",
+            "Note": "Table 3"
+          },
+          {
+            "Property_Name": "Nb_Content",
+            "Value": 2.04,
+            "Unit": "at%",
+            "Data_Source": "table",
+            "Data_Nature": "Experimental",
+            "Note": "Table 3"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "S_S15",
+      "Sample_ID": "Sample_S15",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "S15: O 740 ppm, Al 46.95 at.%, Cr 1.92 at.%, Nb 2.06 at.%"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Ti_Alloy",
+          "Material_Name_Raw": "Ti-48Al-2Cr-2Nb (at.%)",
+          "Nominal_Composition": {
+            "Composition_Type": "at%",
+            "Composition_Source_Type": "nominal_inferred",
+            "Elements": {
+              "Ti": "Balance",
+              "Al": 48.0,
+              "Cr": 2.0,
+              "Nb": 2.0
+            }
+          },
+          "Measured_Composition": {
+            "Composition_Type": "at%",
+            "Composition_Source_Type": "measured_inferred",
+            "Elements": {
+              "Al": 46.95,
+              "Cr": 1.92,
+              "Nb": 2.06,
+              "O_ppm": 740
+            },
+            "Measurement_Method": "titration (Al); ICP-AES (Cr, Nb); OH-300 oxygen analyzer (O)",
+            "Note": "From Table 3"
+          }
+        },
+        "Processing": {
+          "Process_Category": "AM_EBM",
+          "Process_Text": {
+            "original": "Same EB-PBF parameters as S0, built from R15 powder (15 recycling cycles).",
+            "simplified": "EB-PBF with same parameters, powder recycled 15 times."
+          },
+          "Key_Params": {
+            "Recycling_Cycles_of_Powder": 15
+          },
+          "Note": "As-built, no heat treatment applied",
+          "Equipment": [
+            {
+              "Instrument_Name": "EB-PBF System",
+              "Manufacturer": "Beijing Quick Beam Technology Co.",
+              "Model": "Qbeam S200"
+            },
+            {
+              "Instrument_Name": "SEM",
+              "Manufacturer": "Zeiss",
+              "Model": "SUPRA 55",
+              "Note": "BSE mode, 20 kV, WD=10 mm; equipped with EDS"
+            },
+            {
+              "Instrument_Name": "SEM",
+              "Manufacturer": "Zeiss",
+              "Model": "Gemini 450",
+              "Note": "EBSD analysis, step sizes 0.8-2.5 μm, 20 kV"
+            },
+            {
+              "Instrument_Name": "TEM",
+              "Manufacturer": "FEI",
+              "Model": "Tecnai Cube"
+            },
+            {
+              "Instrument_Name": "TEM",
+              "Note": "Titan G260-300, aberration-corrected"
+            },
+            {
+              "Instrument_Name": "XPS",
+              "Manufacturer": "Thermo Scientific",
+              "Model": "K-Alpha"
+            },
+            {
+              "Instrument_Name": "XRD",
+              "Note": "JADE 6.5 software"
+            },
+            {
+              "Instrument_Name": "EBSD",
+              "Note": "Aztec Crystal software"
+            },
+            {
+              "Instrument_Name": "Oxygen Analyzer",
+              "Model": "OH-300"
+            },
+            {
+              "Instrument_Name": "SEM-EDS",
+              "Note": "For Ti, Al, Cr, Nb, C"
+            },
+            {
+              "Instrument_Name": "Tensile Testing Machine",
+              "Model": "YSL-100",
+              "Note": "±20 kN, quasi-static"
+            },
+            {
+              "Instrument_Name": "White Light Interferometer",
+              "Model": "MICROXAM-3D"
+            },
+            {
+              "Instrument_Name": "Contact Profilometer",
+              "Model": "Time-3231"
+            },
+            {
+              "Instrument_Name": "ICP-AES",
+              "Note": "For Cr, Nb"
+            },
+            {
+              "Instrument_Name": "FIB-TEM",
+              "Note": "Focused Ion Beam sample preparation"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "S15 showed more pronounced lamellar clusters. No γ bands observed (distinct from S0, S5, S10). EBSD revealed grain size <10 μm. LAGB accounted for 7.40%. More special boundaries in the γ [111]60° plane. TEM showed dual-phase structure with precipitates predominantly of Ti and Cr without significant enrichment of Al and Nb elements, corresponding to C15 Laves phase (Cr₁.₉₃Ti₁.₀₇). Precipitates were dispersed around the boundaries and within the α₂ regions of the lamellar colonies.",
+            "simplified": "Fine grains (<10 μm), lamellar clusters, no γ bands, LAGB 7.40%, C15 Laves phase (Cr₁.₉₃Ti₁.₀₇) precipitates at boundaries and within α₂ regions."
+          },
+          "Main_Phase": "γ+α₂",
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "C15 Laves",
+              "Distribution": "around boundaries and within α₂ regions of lamellar colonies",
+              "Note": "Cr₁.₉₃Ti₁.₀₇ composition"
+            }
+          ],
+          "Grain_Size": {
+            "Grain_Size_Type": "undefined",
+            "Note": "Average grain size ≤10 μm, excellent uniformity"
+          },
+          "Advanced_Quantitative_Features": {
+            "LAGB_Fraction_pct": 7.4
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Ultimate_Tensile_Strength",
+            "Value": 682,
+            "Unit": "MPa",
+            "Test_Temperature_K": 298.15,
+            "Test_Temperature_Original": "RT",
+            "Strain_Rate_s1": "1×10⁻⁴",
+            "Data_Source": "text",
+            "Data_Nature": "Experimental",
+            "Test_Specimen": {
+              "Specimen_Geometry": "flat",
+              "Gauge_Length_mm": 12,
+              "Width_mm": 2,
+              "Thickness_mm": 1
+            },
+            "Original_Values": "682 MPa",
+            "Note": "From text: tensile strength ranged between 682 and 750 MPa"
+          },
+          {
+            "Property_Name": "Elongation_Total",
+            "Value": 2.0,
+            "Unit": "%",
+            "Test_Temperature_K": 298.15,
+            "Test_Temperature_Original": "RT",
+            "Strain_Rate_s1": "1×10⁻⁴",
+            "Data_Source": "text",
+            "Data_Nature": "Experimental",
+            "Test_Specimen": {
+              "Specimen_Geometry": "flat",
+              "Gauge_Length_mm": 12,
+              "Width_mm": 2,
+              "Thickness_mm": 1
+            },
+            "Original_Values": "2.0%",
+            "Note": "S15 exhibited the highest plasticity"
+          },
+          {
+            "Property_Name": "Oxygen_Content",
+            "Value": 740,
+            "Unit": "ppm",
+            "Data_Source": "table",
+            "Data_Nature": "Experimental",
+            "Note": "Table 3"
+          },
+          {
+            "Property_Name": "Al_Content",
+            "Value": 46.95,
+            "Unit": "at%",
+            "Data_Source": "table",
+            "Data_Nature": "Experimental",
+            "Note": "Table 3"
+          },
+          {
+            "Property_Name": "Cr_Content",
+            "Value": 1.92,
+            "Unit": "at%",
+            "Data_Source": "table",
+            "Data_Nature": "Experimental",
+            "Note": "Table 3"
+          },
+          {
+            "Property_Name": "Nb_Content",
+            "Value": 2.06,
+            "Unit": "at%",
+            "Data_Source": "table",
+            "Data_Nature": "Experimental",
+            "Note": "Table 3"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "S_S30",
+      "Sample_ID": "Sample_S30",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "S30: O 860±10 ppm, Al 46.89±0.6 at.%, Cr 2.02 at.%, Nb 2.01 at.%"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Ti_Alloy",
+          "Material_Name_Raw": "Ti-48Al-2Cr-2Nb (at.%)",
+          "Nominal_Composition": {
+            "Composition_Type": "at%",
+            "Composition_Source_Type": "nominal_inferred",
+            "Elements": {
+              "Ti": "Balance",
+              "Al": 48.0,
+              "Cr": 2.0,
+              "Nb": 2.0
+            }
+          },
+          "Measured_Composition": {
+            "Composition_Type": "at%",
+            "Composition_Source_Type": "measured_inferred",
+            "Elements": {
+              "Al": 46.89,
+              "Cr": 2.02,
+              "Nb": 2.01,
+              "O_ppm": 860
+            },
+            "Measurement_Method": "titration (Al); ICP-AES (Cr, Nb); OH-300 oxygen analyzer (O)",
+            "Note": "From Table 3: Al 46.89±0.6, O 860±10"
+          }
+        },
+        "Processing": {
+          "Process_Category": "AM_EBM",
+          "Process_Text": {
+            "original": "Same EB-PBF parameters as S0, built from R30 powder (30 recycling cycles).",
+            "simplified": "EB-PBF with same parameters, powder recycled 30 times."
+          },
+          "Key_Params": {
+            "Recycling_Cycles_of_Powder": 30
+          },
+          "Note": "As-built, no heat treatment applied",
+          "Equipment": [
+            {
+              "Instrument_Name": "EB-PBF System",
+              "Manufacturer": "Beijing Quick Beam Technology Co.",
+              "Model": "Qbeam S200"
+            },
+            {
+              "Instrument_Name": "SEM",
+              "Manufacturer": "Zeiss",
+              "Model": "SUPRA 55",
+              "Note": "BSE mode, 20 kV, WD=10 mm; equipped with EDS"
+            },
+            {
+              "Instrument_Name": "SEM",
+              "Manufacturer": "Zeiss",
+              "Model": "Gemini 450",
+              "Note": "EBSD analysis, step sizes 0.8-2.5 μm, 20 kV"
+            },
+            {
+              "Instrument_Name": "TEM",
+              "Manufacturer": "FEI",
+              "Model": "Tecnai Cube"
+            },
+            {
+              "Instrument_Name": "TEM",
+              "Note": "Titan G260-300, aberration-corrected"
+            },
+            {
+              "Instrument_Name": "XPS",
+              "Manufacturer": "Thermo Scientific",
+              "Model": "K-Alpha"
+            },
+            {
+              "Instrument_Name": "XRD",
+              "Note": "JADE 6.5 software"
+            },
+            {
+              "Instrument_Name": "EBSD",
+              "Note": "Aztec Crystal software"
+            },
+            {
+              "Instrument_Name": "Oxygen Analyzer",
+              "Model": "OH-300"
+            },
+            {
+              "Instrument_Name": "SEM-EDS",
+              "Note": "For Ti, Al, Cr, Nb, C"
+            },
+            {
+              "Instrument_Name": "Tensile Testing Machine",
+              "Model": "YSL-100",
+              "Note": "±20 kN, quasi-static"
+            },
+            {
+              "Instrument_Name": "White Light Interferometer",
+              "Model": "MICROXAM-3D"
+            },
+            {
+              "Instrument_Name": "Contact Profilometer",
+              "Model": "Time-3231"
+            },
+            {
+              "Instrument_Name": "ICP-AES",
+              "Note": "For Cr, Nb"
+            },
+            {
+              "Instrument_Name": "FIB-TEM",
+              "Note": "Focused Ion Beam sample preparation"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "S30 exhibited β₀/B2 phase peaks in XRD patterns. Bright spots (β₀/B2) along lamellar colony boundaries and inside γ bulk. EBSD revealed γ bands. β₀/B2 phase content increasing from S0 to S30.",
+            "simplified": "γ bands, increased β₀/B2 phase at boundaries and within γ bulk."
+          },
+          "Main_Phase": "γ+α₂",
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "B2/β₀",
+              "Distribution": "along lamellar colony boundaries and inside γ bulk"
+            }
+          ]
+        },
+        "Properties": [
+          {
+            "Property_Name": "Oxygen_Content",
+            "Value": 860,
+            "Value_StdDev": 10,
+            "Unit": "ppm",
+            "Data_Source": "table",
+            "Data_Nature": "Experimental",
+            "Note": "Table 3: 860±10 ppm"
+          },
+          {
+            "Property_Name": "Al_Content",
+            "Value": 46.89,
+            "Value_StdDev": 0.6,
+            "Unit": "at%",
+            "Data_Source": "table",
+            "Data_Nature": "Experimental",
+            "Note": "Table 3: 46.89±0.6 at.%"
+          },
+          {
+            "Property_Name": "Cr_Content",
+            "Value": 2.02,
+            "Unit": "at%",
+            "Data_Source": "table",
+            "Data_Nature": "Experimental",
+            "Note": "Table 3"
+          },
+          {
+            "Property_Name": "Nb_Content",
+            "Value": 2.01,
+            "Unit": "at%",
+            "Data_Source": "table",
+            "Data_Nature": "Experimental",
+            "Note": "Table 3"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "S_S30b",
+      "Sample_ID": "Sample_S30b",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Following remixing (termed R30b), the 31st building process (S30b) was conducted",
+        "S30b: O 760±15 ppm, Al 47.56±0.2 at.%, Cr 2.14 at.%, Nb 2.03 at.%"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Ti_Alloy",
+          "Material_Name_Raw": "Ti-48Al-2Cr-2Nb (at.%)",
+          "Nominal_Composition": {
+            "Composition_Type": "at%",
+            "Composition_Source_Type": "nominal_inferred",
+            "Elements": {
+              "Ti": "Balance",
+              "Al": 48.0,
+              "Cr": 2.0,
+              "Nb": 2.0
+            }
+          },
+          "Measured_Composition": {
+            "Composition_Type": "at%",
+            "Composition_Source_Type": "measured_inferred",
+            "Elements": {
+              "Al": 47.56,
+              "Cr": 2.14,
+              "Nb": 2.03,
+              "O_ppm": 760
+            },
+            "Measurement_Method": "titration (Al); ICP-AES (Cr, Nb); OH-300 oxygen analyzer (O)",
+            "Note": "From Table 3: Al 47.56±0.2, O 760±15"
+          }
+        },
+        "Processing": {
+          "Process_Category": "AM_EBM",
+          "Process_Text": {
+            "original": "Same EB-PBF parameters, built from R30b powder (30 cycles + 30.3% fresh powder remix).",
+            "simplified": "EB-PBF with same parameters, powder recycled 30 times then mixed with 30.3% fresh powder."
+          },
+          "Key_Params": {
+            "Recycling_Cycles_of_Powder": 30,
+            "Fresh_Powder_Ratio_pct": 30.3
+          },
+          "Note": "As-built, no heat treatment applied",
+          "Equipment": [
+            {
+              "Instrument_Name": "EB-PBF System",
+              "Manufacturer": "Beijing Quick Beam Technology Co.",
+              "Model": "Qbeam S200"
+            },
+            {
+              "Instrument_Name": "SEM",
+              "Manufacturer": "Zeiss",
+              "Model": "SUPRA 55",
+              "Note": "BSE mode, 20 kV, WD=10 mm; equipped with EDS"
+            },
+            {
+              "Instrument_Name": "SEM",
+              "Manufacturer": "Zeiss",
+              "Model": "Gemini 450",
+              "Note": "EBSD analysis, step sizes 0.8-2.5 μm, 20 kV"
+            },
+            {
+              "Instrument_Name": "TEM",
+              "Manufacturer": "FEI",
+              "Model": "Tecnai Cube"
+            },
+            {
+              "Instrument_Name": "TEM",
+              "Note": "Titan G260-300, aberration-corrected"
+            },
+            {
+              "Instrument_Name": "XPS",
+              "Manufacturer": "Thermo Scientific",
+              "Model": "K-Alpha"
+            },
+            {
+              "Instrument_Name": "XRD",
+              "Note": "JADE 6.5 software"
+            },
+            {
+              "Instrument_Name": "EBSD",
+              "Note": "Aztec Crystal software"
+            },
+            {
+              "Instrument_Name": "Oxygen Analyzer",
+              "Model": "OH-300"
+            },
+            {
+              "Instrument_Name": "SEM-EDS",
+              "Note": "For Ti, Al, Cr, Nb, C"
+            },
+            {
+              "Instrument_Name": "Tensile Testing Machine",
+              "Model": "YSL-100",
+              "Note": "±20 kN, quasi-static"
+            },
+            {
+              "Instrument_Name": "White Light Interferometer",
+              "Model": "MICROXAM-3D"
+            },
+            {
+              "Instrument_Name": "Contact Profilometer",
+              "Model": "Time-3231"
+            },
+            {
+              "Instrument_Name": "ICP-AES",
+              "Note": "For Cr, Nb"
+            },
+            {
+              "Instrument_Name": "FIB-TEM",
+              "Note": "Focused Ion Beam sample preparation"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "S30b exhibited γ bands reappeared, and more pronounced lamellar clusters. Fewer bright spots (β₀/B2) than S30.",
+            "simplified": "γ bands reappeared, lamellar clusters, reduced β₀/B2 phase."
+          },
+          "Main_Phase": "γ+α₂"
+        },
+        "Properties": [
+          {
+            "Property_Name": "Oxygen_Content",
+            "Value": 760,
+            "Value_StdDev": 15,
+            "Unit": "ppm",
+            "Data_Source": "table",
+            "Data_Nature": "Experimental",
+            "Note": "Table 3: 760±15 ppm"
+          },
+          {
+            "Property_Name": "Al_Content",
+            "Value": 47.56,
+            "Value_StdDev": 0.2,
+            "Unit": "at%",
+            "Data_Source": "table",
+            "Data_Nature": "Experimental",
+            "Note": "Table 3: 47.56±0.2 at.%"
+          },
+          {
+            "Property_Name": "Cr_Content",
+            "Value": 2.14,
+            "Unit": "at%",
+            "Data_Source": "table",
+            "Data_Nature": "Experimental",
+            "Note": "Table 3"
+          },
+          {
+            "Property_Name": "Nb_Content",
+            "Value": 2.03,
+            "Unit": "at%",
+            "Data_Source": "table",
+            "Data_Nature": "Experimental",
+            "Note": "Table 3"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "S_S45",
+      "Sample_ID": "Sample_S45",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "S45: O 900 ppm, Al 47.35 at.%, Cr 1.98 at.%, Nb 2.04 at.%"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Ti_Alloy",
+          "Material_Name_Raw": "Ti-48Al-2Cr-2Nb (at.%)",
+          "Nominal_Composition": {
+            "Composition_Type": "at%",
+            "Composition_Source_Type": "nominal_inferred",
+            "Elements": {
+              "Ti": "Balance",
+              "Al": 48.0,
+              "Cr": 2.0,
+              "Nb": 2.0
+            }
+          },
+          "Measured_Composition": {
+            "Composition_Type": "at%",
+            "Composition_Source_Type": "measured_inferred",
+            "Elements": {
+              "Al": 47.35,
+              "Cr": 1.98,
+              "Nb": 2.04,
+              "O_ppm": 900
+            },
+            "Measurement_Method": "titration (Al); ICP-AES (Cr, Nb); OH-300 oxygen analyzer (O)",
+            "Note": "From Table 3"
+          }
+        },
+        "Processing": {
+          "Process_Category": "AM_EBM",
+          "Process_Text": {
+            "original": "Same EB-PBF parameters as S0, built from R45 powder (45 recycling cycles).",
+            "simplified": "EB-PBF with same parameters, powder recycled 45 times."
+          },
+          "Key_Params": {
+            "Recycling_Cycles_of_Powder": 45
+          },
+          "Note": "As-built, no heat treatment applied",
+          "Equipment": [
+            {
+              "Instrument_Name": "EB-PBF System",
+              "Manufacturer": "Beijing Quick Beam Technology Co.",
+              "Model": "Qbeam S200"
+            },
+            {
+              "Instrument_Name": "SEM",
+              "Manufacturer": "Zeiss",
+              "Model": "SUPRA 55",
+              "Note": "BSE mode, 20 kV, WD=10 mm; equipped with EDS"
+            },
+            {
+              "Instrument_Name": "SEM",
+              "Manufacturer": "Zeiss",
+              "Model": "Gemini 450",
+              "Note": "EBSD analysis, step sizes 0.8-2.5 μm, 20 kV"
+            },
+            {
+              "Instrument_Name": "TEM",
+              "Manufacturer": "FEI",
+              "Model": "Tecnai Cube"
+            },
+            {
+              "Instrument_Name": "TEM",
+              "Note": "Titan G260-300, aberration-corrected"
+            },
+            {
+              "Instrument_Name": "XPS",
+              "Manufacturer": "Thermo Scientific",
+              "Model": "K-Alpha"
+            },
+            {
+              "Instrument_Name": "XRD",
+              "Note": "JADE 6.5 software"
+            },
+            {
+              "Instrument_Name": "EBSD",
+              "Note": "Aztec Crystal software"
+            },
+            {
+              "Instrument_Name": "Oxygen Analyzer",
+              "Model": "OH-300"
+            },
+            {
+              "Instrument_Name": "SEM-EDS",
+              "Note": "For Ti, Al, Cr, Nb, C"
+            },
+            {
+              "Instrument_Name": "Tensile Testing Machine",
+              "Model": "YSL-100",
+              "Note": "±20 kN, quasi-static"
+            },
+            {
+              "Instrument_Name": "White Light Interferometer",
+              "Model": "MICROXAM-3D"
+            },
+            {
+              "Instrument_Name": "Contact Profilometer",
+              "Model": "Time-3231"
+            },
+            {
+              "Instrument_Name": "ICP-AES",
+              "Note": "For Cr, Nb"
+            },
+            {
+              "Instrument_Name": "FIB-TEM",
+              "Note": "Focused Ion Beam sample preparation"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "S45 showed more pronounced lamellar clusters. β/Laves phase peaks appeared in XRD patterns. γ bands barely visible. Addition of new powders slightly reduced the number of bright spots in S45 compared to S30.",
+            "simplified": "Lamellar clusters, B2/Laves phases, γ bands barely visible."
+          },
+          "Main_Phase": "γ+α₂",
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "B2/β₀"
+            },
+            {
+              "Phase_Name": "Laves"
+            }
+          ]
+        },
+        "Properties": [
+          {
+            "Property_Name": "Oxygen_Content",
+            "Value": 900,
+            "Unit": "ppm",
+            "Data_Source": "table",
+            "Data_Nature": "Experimental",
+            "Note": "Table 3"
+          },
+          {
+            "Property_Name": "Al_Content",
+            "Value": 47.35,
+            "Unit": "at%",
+            "Data_Source": "table",
+            "Data_Nature": "Experimental",
+            "Note": "Table 3"
+          },
+          {
+            "Property_Name": "Cr_Content",
+            "Value": 1.98,
+            "Unit": "at%",
+            "Data_Source": "table",
+            "Data_Nature": "Experimental",
+            "Note": "Table 3"
+          },
+          {
+            "Property_Name": "Nb_Content",
+            "Value": 2.04,
+            "Unit": "at%",
+            "Data_Source": "table",
+            "Data_Nature": "Experimental",
+            "Note": "Table 3"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "S_S70",
+      "Sample_ID": "Sample_S70",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "S70 showing the highest strength",
+        "β₀/B2 phase content reached 4.6% in S70",
+        "grain refinement (≤ 10 μm)",
+        "ductility (reduced by 40 %)",
+        "two parallel specimens experienced brittle fracture"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Ti_Alloy",
+          "Material_Name_Raw": "Ti-48Al-2Cr-2Nb (at.%)",
+          "Nominal_Composition": {
+            "Composition_Type": "at%",
+            "Composition_Source_Type": "nominal_inferred",
+            "Elements": {
+              "Ti": "Balance",
+              "Al": 48.0,
+              "Cr": 2.0,
+              "Nb": 2.0
+            }
+          },
+          "Measured_Composition": {
+            "Composition_Type": "at%",
+            "Composition_Source_Type": "measured_inferred",
+            "Elements": {
+              "O_ppm": 900
+            },
+            "Measurement_Method": "OH-300 oxygen analyzer (O)",
+            "Note": "From Table 3: O content in S70 part"
+          }
+        },
+        "Processing": {
+          "Process_Category": "AM_EBM",
+          "Process_Text": {
+            "original": "Same EB-PBF parameters as S0, built from R70 powder (70 recycling cycles).",
+            "simplified": "EB-PBF with same parameters, powder recycled 70 times."
+          },
+          "Key_Params": {
+            "Recycling_Cycles_of_Powder": 70
+          },
+          "Note": "As-built, no heat treatment applied",
+          "Equipment": [
+            {
+              "Instrument_Name": "EB-PBF System",
+              "Manufacturer": "Beijing Quick Beam Technology Co.",
+              "Model": "Qbeam S200"
+            },
+            {
+              "Instrument_Name": "SEM",
+              "Manufacturer": "Zeiss",
+              "Model": "SUPRA 55",
+              "Note": "BSE mode, 20 kV, WD=10 mm; equipped with EDS"
+            },
+            {
+              "Instrument_Name": "SEM",
+              "Manufacturer": "Zeiss",
+              "Model": "Gemini 450",
+              "Note": "EBSD analysis, step sizes 0.8-2.5 μm, 20 kV"
+            },
+            {
+              "Instrument_Name": "TEM",
+              "Manufacturer": "FEI",
+              "Model": "Tecnai Cube"
+            },
+            {
+              "Instrument_Name": "TEM",
+              "Note": "Titan G260-300, aberration-corrected"
+            },
+            {
+              "Instrument_Name": "XPS",
+              "Manufacturer": "Thermo Scientific",
+              "Model": "K-Alpha"
+            },
+            {
+              "Instrument_Name": "XRD",
+              "Note": "JADE 6.5 software"
+            },
+            {
+              "Instrument_Name": "EBSD",
+              "Note": "Aztec Crystal software"
+            },
+            {
+              "Instrument_Name": "Oxygen Analyzer",
+              "Model": "OH-300"
+            },
+            {
+              "Instrument_Name": "SEM-EDS",
+              "Note": "For Ti, Al, Cr, Nb, C"
+            },
+            {
+              "Instrument_Name": "Tensile Testing Machine",
+              "Model": "YSL-100",
+              "Note": "±20 kN, quasi-static"
+            },
+            {
+              "Instrument_Name": "White Light Interferometer",
+              "Model": "MICROXAM-3D"
+            },
+            {
+              "Instrument_Name": "Contact Profilometer",
+              "Model": "Time-3231"
+            },
+            {
+              "Instrument_Name": "ICP-AES",
+              "Note": "For Cr, Nb"
+            },
+            {
+              "Instrument_Name": "FIB-TEM",
+              "Note": "Focused Ion Beam sample preparation"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "S70 exhibited highest strength but brittle fracture. EBSD showed β₀/B2 phase content 4.6%, grain size <10 μm with even finer grains, over 60% of grains <5 μm. LAGB 8.15%. Twin boundary fraction γ [110]70° decreased to 5.61%. TEM revealed C14 Laves phase precipitates 2-3 μm in size (TiNbCr4 composition). Microstructure showed spheroidized and agglomerated β₀/B2 phase, γ bands barely visible. Precipitates rich in Ti, Cr, and Nb with notable depletion of Al.",
+            "simplified": "Fine grains (≤10 μm, >60% <5 μm), 4.6% B2/β₀ phase, C14 Laves precipitates (2-3 μm, TiNbCr4), twin boundary 5.61%, LAGB 8.15%, brittle fracture."
+          },
+          "Main_Phase": "γ+α₂",
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "B2/β₀",
+              "Volume_Fraction_pct": 4.6,
+              "Distribution": "spheroidized and agglomerated, at lamellar colony boundaries and in γ bulk"
+            },
+            {
+              "Phase_Name": "C14 Laves",
+              "Size_Range_Low_nm": 2000,
+              "Size_Range_High_nm": 3000,
+              "Size_Type": "undefined",
+              "Note": "TiNbCr4 composition identified by TEM"
+            }
+          ],
+          "Grain_Size": {
+            "Grain_Size_Type": "undefined",
+            "Note": "Average grain size ≤10 μm, excellent uniformity, >60% grains <5 μm"
+          },
+          "Advanced_Quantitative_Features": {
+            "LAGB_Fraction_pct": 8.15,
+            "Twin_Boundary_Fraction_pct": 5.61,
+            "Twin_Boundary_Type": "γ [110]70°",
+            "Grains_Under_5um_Fraction_pct": 60,
+            "Laves_Phase_Size_Range_um": "2-3",
+            "Al_Loss_Rate_at_pct_per_cycle": "0.05-0.08",
+            "UTS_Increase_per_01at_pct_Al_Loss_MPa": 3.2,
+            "UTS_Increase_StdDev_MPa": 0.5,
+            "Ductility_Decrease_per_01at_pct_Al_Loss_pct": 0.8,
+            "Ductility_Decrease_StdDev_pct": 0.2,
+            "Critical_Al_Loss_at_pct": 1.5,
+            "Critical_Cycles": 30,
+            "Laves_Phase_Increase_per_01at_pct_Al_Loss_vol_pct": 1.2,
+            "O_Effect_Amplification_per_100ppm_pct": 12
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Ultimate_Tensile_Strength",
+            "Value": 750,
+            "Unit": "MPa",
+            "Test_Temperature_K": 298.15,
+            "Test_Temperature_Original": "RT",
+            "Strain_Rate_s1": "1×10⁻⁴",
+            "Data_Source": "text",
+            "Data_Nature": "Experimental",
+            "Test_Specimen": {
+              "Specimen_Geometry": "flat",
+              "Gauge_Length_mm": 12,
+              "Width_mm": 2,
+              "Thickness_mm": 1
+            },
+            "Original_Values": "750 MPa",
+            "Note": "From text: 'S70 showing the highest strength'; 'room temperature ultimate tensile strength (750 MPa)'. Two parallel specimens experienced brittle fracture."
+          },
+          {
+            "Property_Name": "Elongation_Total",
+            "Value": 0.8,
+            "Unit": "%",
+            "Test_Temperature_K": 298.15,
+            "Test_Temperature_Original": "RT",
+            "Strain_Rate_s1": "1×10⁻⁴",
+            "Data_Source": "text",
+            "Data_Nature": "Experimental",
+            "Test_Specimen": {
+              "Specimen_Geometry": "flat",
+              "Gauge_Length_mm": 12,
+              "Width_mm": 2,
+              "Thickness_mm": 1
+            },
+            "Original_Values": "0.8%",
+            "Note": "From text: '60% reduction in elongation (2.1%→0.8%)'. Brittle fracture observed."
+          },
+          {
+            "Property_Name": "Oxygen_Content",
+            "Value": 900,
+            "Unit": "ppm",
+            "Data_Source": "table",
+            "Data_Nature": "Experimental",
+            "Note": "Table 3: O content in S70 part"
+          }
+        ]
+      }
+    }
+  ]
+}

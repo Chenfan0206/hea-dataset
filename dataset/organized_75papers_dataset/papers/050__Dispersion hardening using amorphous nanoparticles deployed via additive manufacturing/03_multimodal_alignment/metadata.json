@@ -1,0 +1,7 @@
+{
+  "paper_dir": "论文5",
+  "figures": 5,
+  "direct_pairs": 5,
+  "topk_pairs": 25,
+  "sentences": 25
+}

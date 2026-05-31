@@ -1,0 +1,1494 @@
+{
+  "Paper_Metadata": {
+    "Paper_Title": "The crack formation, propagation and healing mechanisms of plasma sprayed multi-layer thermal/environmental barrier coatings during heat treatment",
+    "DOI": null
+  },
+  "Paper_Routing": {
+    "base_material": "Ceramics_Inorganic",
+    "application": "Structural",
+    "research_paradigm": "Experimental",
+    "Supplements_Loaded": [
+      "directions/base/Ceramics_Inorganic.txt",
+      "directions/application/Structural.txt",
+      "directions/paradigm/Experimental.txt",
+      "directions/domain/Coating.txt"
+    ],
+    "Patch_Tags": [
+      "Thermal_Barrier_or_EBC"
+    ],
+    "Needs_Mixed_Routing_Check": false,
+    "Mixed_Signals": []
+  },
+  "items": [
+    {
+      "Item_ID": "TEBC_AsDeposited",
+      "Sample_ID": "TEBC_AsDeposited",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Ceramics_Inorganic",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Thermal_Barrier_or_EBC"
+      ],
+      "Gradient_Material": true,
+      "Gradient_Group_ID": "TEBC_System",
+      "Raw_Evidence_Span": [
+        "Si/Yb₂Si₂O₇-Yb₂SiO₅/Yb₂SiO₅/LaMgAl₁₁O₁₉ thermal and environmental barrier coatings (TEBCs) were fabricated on the SiC₆/SiC using atmospheric plasma spraying.",
+        "The thickness of Si, YbDS-YbMS, YbMS and LMA coating is about 100 μm, 50 μm, 50 μm and 100 μm, respectively."
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Category": "Functional_Ceramic",
+          "Material_Name_Raw": "Si/Yb₂Si₂O₇-Yb₂SiO₅/Yb₂SiO₅/LaMgAl₁₁O₁₉ multi-layer TEBC on SiCf/SiC",
+          "Phase_Composition": [
+            {
+              "Phase_Name": "Si bond coat",
+              "Chemical_Formula": "Si",
+              "Note": "Commercial Si feedstock (30-60 μm)"
+            },
+            {
+              "Phase_Name": "YbDS-YbMS mixed layer",
+              "Chemical_Formula": "Yb₂Si₂O₇-Yb₂SiO₅",
+              "Note": "YbMS/YbDS phase ratio about 0.17 estimated from XRD peak intensity ratio; feedstock 32-125 μm"
+            },
+            {
+              "Phase_Name": "YbMS layer",
+              "Chemical_Formula": "Yb₂SiO₅",
+              "Note": "Pure Yb₂SiO₅ feedstock, 32-125 μm"
+            },
+            {
+              "Phase_Name": "LMA top coat",
+              "Chemical_Formula": "LaMgAl₁₁O₁₉",
+              "Note": "Self-synthesized feedstock, 32-125 μm; as-sprayed powder contained La₂O₃ phase"
+            }
+          ],
+          "Stoichiometry": {
+            "Formula_Raw": "Si / Yb₂Si₂O₇-Yb₂SiO₅ / Yb₂SiO₅ / LaMgAl₁₁O₁₉"
+          },
+          "Composition_Source_Type": "nominal_inferred",
+          "Note": "Multi-layer coating architecture; composition derived from feedstock powder specifications. Substrate: SiCf/SiC ceramic composite."
+        },
+        "Processing": {
+          "Process_Category": "Other",
+          "Coating_Processing": {
+            "Deposition_Method": "APS",
+            "Process_Text": {
+              "original": "Multi-layer Si/YbDS-YbMS/YbMS/LMA TEBCs was prepared on the surface of the SiCf/SiC by the method of atmospheric plasma spraying using the Multicoat Plasma Spray Unit (F4 gun, Multicoat, Oerlikon Metco, Switzerland). Before coating deposition, all SiCf/SiC substrates were sandblasted using 150 mesh corundum grits at 0.4 MPa for 30 s to remove SiC sealing layer and increase the surface roughness. Subsequently, the SiCf/SiC substrate was ultrasonically cleaned by deionized water and alcohol, and dried at 110 °C.",
+              "simplified": "APS-deposited Si/Yb₂Si₂O₇-Yb₂SiO₅/Yb₂SiO₅/LaMgAl₁₁O₁₉ TEBC on SiCf/SiC using Multicoat F4 plasma gun. Substrate prep: sandblasted with 150 mesh corundum at 0.4 MPa for 30 s, ultrasonic cleaned, dried at 110 °C."
+            },
+            "Key_Params": {
+              "Substrate_Preparation": "Sandblasted with 150 mesh corundum grits at 0.4 MPa for 30 s, ultrasonically cleaned, dried at 110 °C",
+              "Primary_Gas_Ar_SLPM": 35,
+              "Secondary_Gas_H2_SLPM": 12,
+              "Feeding_Rate_pct": 6,
+              "Si_Powder_Power_kW": 32,
+              "YbDS_YbMS_Powder_Power_kW": 36,
+              "YbMS_Powder_Power_kW": 36,
+              "LMA_Powder_Power_kW": 36
+            }
+          },
+          "Equipment": [
+            {
+              "Instrument_Name": "Plasma Spray Unit",
+              "Manufacturer": "Oerlikon Metco",
+              "Model": "Multicoat with F4 gun",
+              "Note": "Switzerland"
+            },
+            {
+              "Instrument_Name": "XRD",
+              "Manufacturer": "Rigaku",
+              "Model": "Smart Lab",
+              "Note": "Japan; λ = 0.15406 nm"
+            },
+            {
+              "Instrument_Name": "SEM",
+              "Manufacturer": "Zeiss",
+              "Model": "EVO 10",
+              "Note": "Germany"
+            },
+            {
+              "Instrument_Name": "TG-DSC",
+              "Manufacturer": "Netzsch",
+              "Model": "STA449F3",
+              "Note": "Germany"
+            }
+          ],
+          "Note": "As-deposited state, no heat treatment applied to this item. Powder sizes: Si 30-60 μm (Shanghai ST-NANO); YbDS-YbMS 32-125 μm (Beijing Sunspraying); YbMS 32-125 μm (Beijing Sunspraying); LMA 32-125 μm (self-synthesized)."
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Two kinds of microcracks including vertical crack (crack I) and horizontal crack (crack II) can be observed at YbDS-YbMS, YbMS and LMA coating after deposition. The shrinkage solidification of splat and CTE mismatch of coating between substrate would produce residual stress during coating deposition, which formed microcracks in the coating to release stress. The Si bond coat provided excellent bonding strength between EBCs system and SiCf/SiC, and no evident microcracks in ceramic coating were observed at the Si bond coat. The CTE of Si is lower than that of SiCf/SiC, indicating the compressive stress was formed at the Si bond coat and effectively restrain the crack formation. The quenching stress of as-deposited Si, YbDS, YbMS, and LMA coating prepared on SiCf/SiC surface is about 0.26 GPa, 0.35 GPa, 0.89 GPa, 1.11 GPa, respectively.",
+            "simplified": "As-deposited ceramic layers (YbDS-YbMS, YbMS, LMA) contained vertical and horizontal microcracks from quenching stress and CTE mismatch. Si bond coat was crack-free due to compressive stress. Quenching stresses: Si 0.26, YbDS 0.35, YbMS 0.89, LMA 1.11 GPa."
+          },
+          "Crystalline_Phases": [
+            {
+              "Phase_Name": "Si",
+              "Chemical_Formula": "Si",
+              "Note": "Bond coat; good crystallinity after deposition"
+            },
+            {
+              "Phase_Name": "YbDS",
+              "Chemical_Formula": "Yb₂Si₂O₇",
+              "Note": "Mixed with YbMS; partial decomposition during APS"
+            },
+            {
+              "Phase_Name": "YbMS",
+              "Chemical_Formula": "Yb₂SiO₅",
+              "Note": "Pure phase in feedstock; decomposition during APS produced Yb₂O₃"
+            },
+            {
+              "Phase_Name": "LMA",
+              "Chemical_Formula": "LaMgAl₁₁O₁₉",
+              "Note": "Contained La₂O₃ impurity in as-sprayed powder"
+            },
+            {
+              "Phase_Name": "Yb₂O₃",
+              "Chemical_Formula": "Yb₂O₃",
+              "Note": "Decomposition product of YbMS during APS"
+            },
+            {
+              "Phase_Name": "amorphous",
+              "Chemical_Formula": "amorphous",
+              "Note": "Amorphous phase present in all ceramic layers due to rapid cooling (>10⁶ K⁻¹)"
+            }
+          ],
+          "Advanced_Quantitative_Features": {
+            "Si_Layer_Thickness_um": 100,
+            "YbDS_YbMS_Layer_Thickness_um": 50,
+            "YbMS_Layer_Thickness_um": 50,
+            "LMA_Layer_Thickness_um": 100,
+            "Total_Ceramic_Thickness_um": 300,
+            "Quenching_Stress_Si_GPa": 0.26,
+            "Quenching_Stress_YbDS_GPa": 0.35,
+            "Quenching_Stress_YbMS_GPa": 0.89,
+            "Quenching_Stress_LMA_GPa": 1.11,
+            "Thermal_Mismatch_Stress_Si_MPa": -136,
+            "Thermal_Mismatch_Stress_YbDS_MPa": -96,
+            "Thermal_Mismatch_Stress_YbMS_MPa": 410,
+            "Thermal_Mismatch_Stress_LMA_MPa": 204,
+            "CTE_Si_10e-6_per_K": 4.2,
+            "CTE_YbDS_10e-6_per_K": 4.1,
+            "CTE_YbMS_10e-6_per_K": 7.2,
+            "CTE_LMA_10e-6_per_K": 10.1,
+            "YbMS_to_YbDS_Peak_Intensity_Ratio": 0.17,
+            "As_Deposited_LMA_Porosity_pct": 10.2,
+            "As_Deposited_LMA_Crack_Width_um": 0.44,
+            "As_Deposited_YbMS_Porosity_pct": 6.3,
+            "As_Deposited_YbDS_YbMS_Porosity_pct": 7.23,
+            "As_Deposited_YbDS_YbMS_Crack_Width_um": 0.45
+          },
+          "Note": "Quenching stresses calculated using pure-phase parameters per Eq. 1. Thermal mismatch stresses from Ref. [3]. CTE values from Ref. [3]. Porosity and crack width data from image analysis (Image J) of 10 SEM images. The YbMS as-deposited crack width not explicitly stated in text; YbDS-YbMS as-deposited crack width ~0.45 μm and porosity ~7.23% from Fig. 14."
+        },
+        "Properties": [
+          {
+            "Property_Name": "Residual_Stress",
+            "Value": 260,
+            "Unit": "MPa",
+            "Original_Values": "0.26 GPa",
+            "Test_Condition": "As-deposited Si coating on SiCf/SiC, calculated using Eq. (1)",
+            "Data_Source": "text",
+            "Data_Nature": "Computed",
+            "Note": "Quenching stress; calculated using pure-phase parameters"
+          },
+          {
+            "Property_Name": "Residual_Stress",
+            "Value": 350,
+            "Unit": "MPa",
+            "Original_Values": "0.35 GPa",
+            "Test_Condition": "As-deposited YbDS coating on SiCf/SiC, calculated using Eq. (1)",
+            "Data_Source": "text",
+            "Data_Nature": "Computed",
+            "Note": "Quenching stress; calculated using pure-phase parameters"
+          },
+          {
+            "Property_Name": "Residual_Stress",
+            "Value": 890,
+            "Unit": "MPa",
+            "Original_Values": "0.89 GPa",
+            "Test_Condition": "As-deposited YbMS coating on SiCf/SiC, calculated using Eq. (1)",
+            "Data_Source": "text",
+            "Data_Nature": "Computed",
+            "Note": "Quenching stress; calculated using pure-phase parameters"
+          },
+          {
+            "Property_Name": "Residual_Stress",
+            "Value": 1110,
+            "Unit": "MPa",
+            "Original_Values": "1.11 GPa",
+            "Test_Condition": "As-deposited LMA coating on SiCf/SiC, calculated using Eq. (1)",
+            "Data_Source": "text",
+            "Data_Nature": "Computed",
+            "Note": "Quenching stress; calculated using pure-phase parameters"
+          },
+          {
+            "Property_Name": "Residual_Stress",
+            "Value": -136,
+            "Unit": "MPa",
+            "Test_Condition": "As-deposited Si coating on SiCf/SiC, thermal mismatch stress",
+            "Data_Source": "text",
+            "Data_Nature": "Literature_Experimental",
+            "Note": "Thermal mismatch stress from Ref. [3]; negative = compressive"
+          },
+          {
+            "Property_Name": "Residual_Stress",
+            "Value": -96,
+            "Unit": "MPa",
+            "Original_Values": "-96 MPa",
+            "Test_Condition": "As-deposited YbDS coating on SiCf/SiC, thermal mismatch stress",
+            "Data_Source": "text",
+            "Data_Nature": "Literature_Experimental",
+            "Note": "Thermal mismatch stress from Ref. [3]; negative = compressive"
+          },
+          {
+            "Property_Name": "Residual_Stress",
+            "Value": 410,
+            "Unit": "MPa",
+            "Original_Values": "+410 MPa",
+            "Test_Condition": "As-deposited YbMS coating on SiCf/SiC, thermal mismatch stress",
+            "Data_Source": "text",
+            "Data_Nature": "Literature_Experimental",
+            "Note": "Thermal mismatch stress from Ref. [3]; tensile"
+          },
+          {
+            "Property_Name": "Residual_Stress",
+            "Value": 204,
+            "Unit": "MPa",
+            "Original_Values": "+204 MPa",
+            "Test_Condition": "As-deposited LMA coating on SiCf/SiC, thermal mismatch stress",
+            "Data_Source": "text",
+            "Data_Nature": "Literature_Experimental",
+            "Note": "Thermal mismatch stress from Ref. [3]; tensile"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "TEBC_HT_950C",
+      "Sample_ID": "TEBC_HT_950C",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Ceramics_Inorganic",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Thermal_Barrier_or_EBC"
+      ],
+      "Gradient_Material": true,
+      "Gradient_Group_ID": "TEBC_System",
+      "Raw_Evidence_Span": [
+        "The coated sample was heat treated at 950 °C for 10 h in air atmosphere.",
+        "Fig. 7. The cross-sectional microstructure of Si/YbDS-YbMS/YbMS/LMA coating after heat treatment at 950 °C for 10 h in atmospheric environment."
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Category": "Functional_Ceramic",
+          "Material_Name_Raw": "Si/Yb₂Si₂O₇-Yb₂SiO₅/Yb₂SiO₅/LaMgAl₁₁O₁₉ TEBC after heat treatment at 950 °C",
+          "Phase_Composition": [
+            {
+              "Phase_Name": "Si bond coat",
+              "Chemical_Formula": "Si"
+            },
+            {
+              "Phase_Name": "β-YbDS",
+              "Chemical_Formula": "β-Yb₂Si₂O₇",
+              "Note": "PDF 82-0734; crystallized from amorphous"
+            },
+            {
+              "Phase_Name": "X1-YbMS metastable",
+              "Chemical_Formula": "X1-Yb₂SiO₅",
+              "Note": "PDF 40-0386; metastable phase"
+            },
+            {
+              "Phase_Name": "α-YbDS metastable",
+              "Chemical_Formula": "α-Yb₂Si₂O₇",
+              "Note": "PDF 30-1439; metastable phase"
+            },
+            {
+              "Phase_Name": "YbMS",
+              "Chemical_Formula": "Yb₂SiO₅",
+              "Note": "X1-YbMS metastable phase crystallized at 950-1050 °C"
+            },
+            {
+              "Phase_Name": "Yb₂O₃",
+              "Chemical_Formula": "Yb₂O₃"
+            },
+            {
+              "Phase_Name": "LMA",
+              "Chemical_Formula": "LaMgAl₁₁O₁₉"
+            },
+            {
+              "Phase_Name": "Al₂O₃",
+              "Chemical_Formula": "Al₂O₃",
+              "Note": "From LMA decomposition during APS"
+            },
+            {
+              "Phase_Name": "amorphous",
+              "Chemical_Formula": "amorphous",
+              "Note": "Still present; amorphous humps observed in XRD"
+            }
+          ],
+          "Composition_Source_Type": "nominal_inferred",
+          "Note": "Phase composition determined by XRD after heat treatment at 950 °C."
+        },
+        "Processing": {
+          "Process_Category": "Other",
+          "Coating_Processing": {
+            "Deposition_Method": "APS",
+            "Process_Text": {
+              "original": "The coated sample was heat treated at 950 °C for 10 h in air atmosphere. The heating rate and cooling rate of box furnace is about 5 °C/min.",
+              "simplified": "Heat treatment at 950 °C (1223.15 K) for 10 h in air, heating/cooling rate ~5 °C/min."
+            },
+            "Key_Params": {
+              "Post_Treatment": "Heat treatment at 950 °C for 10 h in air",
+              "Heating_Rate_K_min": 5,
+              "Cooling_Rate_K_min": 5,
+              "Heat_Treatment_Temperature_K": 1223.15,
+              "Heat_Treatment_Time_h": 10,
+              "Heat_Treatment_Atmosphere": "Air"
+            }
+          },
+          "Equipment": [
+            {
+              "Instrument_Name": "Box Furnace",
+              "Note": "Used for heat treatment"
+            },
+            {
+              "Instrument_Name": "Plasma Spray Unit",
+              "Manufacturer": "Oerlikon Metco",
+              "Model": "Multicoat with F4 gun"
+            },
+            {
+              "Instrument_Name": "XRD",
+              "Manufacturer": "Rigaku",
+              "Model": "Smart Lab"
+            },
+            {
+              "Instrument_Name": "SEM",
+              "Manufacturer": "Zeiss",
+              "Model": "EVO 10"
+            },
+            {
+              "Instrument_Name": "TG-DSC",
+              "Manufacturer": "Netzsch",
+              "Model": "STA449F3"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Vertical crack was formed in the heat-treated LMA coating due to crystallization of amorphous phase and release of residual stress. The vertical crack was deflected at YbMS-LMA interface, and bridged with crack in the YbMS layer. The vertical crack did not connect with crack in the YbDS-YbMS layer. The bifurcation of cracks can be observed at the heat-treated YbDS-YbMS layer. A good interfacial bonding still can be observed at interface between Si layer and SiCf/SiC substrate. The crack width of LMA layer increased from 0.44 μm to 2.01 μm. The porosity of LMA layer increased to 13.7%. The porosity of YbMS layer decreased to 5.4% from 6.3% (spray conditions). Mud cracks with different modes were formed at YbDS-YbMS layer.",
+            "simplified": "After 950 °C heat treatment: LMA layer showed vertical cracks from crystallization shrinkage, porosity increased to 13.7%, crack width to 2.01 μm. YbMS layer porosity decreased to 5.4% via viscous flow. YbDS-YbMS layer showed mud cracks and bifurcation. Cracks in LMA bridged into YbMS but terminated at YbDS-YbMS. Si bond coat maintained good bonding."
+          },
+          "Crystalline_Phases": [
+            {
+              "Phase_Name": "β-Yb₂Si₂O₇",
+              "Chemical_Formula": "β-Yb₂Si₂O₇"
+            },
+            {
+              "Phase_Name": "α-Yb₂Si₂O₇ metastable",
+              "Chemical_Formula": "α-Yb₂Si₂O₇"
+            },
+            {
+              "Phase_Name": "X1-Yb₂SiO₅ metastable",
+              "Chemical_Formula": "X1-Yb₂SiO₅"
+            },
+            {
+              "Phase_Name": "Yb₂O₃",
+              "Chemical_Formula": "Yb₂O₃"
+            },
+            {
+              "Phase_Name": "LMA",
+              "Chemical_Formula": "LaMgAl₁₁O₁₉"
+            },
+            {
+              "Phase_Name": "Al₂O₃",
+              "Chemical_Formula": "Al₂O₃"
+            },
+            {
+              "Phase_Name": "amorphous",
+              "Chemical_Formula": "amorphous",
+              "Note": "Still present; not fully crystallized"
+            }
+          ],
+          "Porosity": {
+            "Total_Porosity_pct": 13.7,
+            "Note": "LMA layer porosity; increased from 10.2% as-deposited due to crystallization-induced shrinkage and channel crack formation. YbMS layer porosity decreased to 5.4%."
+          },
+          "Advanced_Quantitative_Features": {
+            "LMA_Porosity_pct": 13.7,
+            "LMA_Crack_Width_um": 2.01,
+            "YbMS_Porosity_pct": 5.4,
+            "YbDS_YbMS_Crack_Width_um": 1.03
+          },
+          "Note": "LMA porosity and crack width data from Fig. 12. YbMS porosity data from Fig. 13. YbDS-YbMS data from Fig. 14."
+        }
+      }
+    },
+    {
+      "Item_ID": "TEBC_HT_1050C",
+      "Sample_ID": "TEBC_HT_1050C",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Ceramics_Inorganic",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Thermal_Barrier_or_EBC"
+      ],
+      "Gradient_Material": true,
+      "Gradient_Group_ID": "TEBC_System",
+      "Raw_Evidence_Span": [
+        "Fig. 8. The cross-sectional microstructure of Si/YbDS-YbMS/YbMS/LMA coating after heat treatment at 1050 °C for 10 h in atmospheric environment."
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Category": "Functional_Ceramic",
+          "Material_Name_Raw": "Si/Yb₂Si₂O₇-Yb₂SiO₅/Yb₂SiO₅/LaMgAl₁₁O₁₉ TEBC after heat treatment at 1050 °C",
+          "Phase_Composition": [
+            {
+              "Phase_Name": "Si bond coat",
+              "Chemical_Formula": "Si"
+            },
+            {
+              "Phase_Name": "β-YbDS",
+              "Chemical_Formula": "β-Yb₂Si₂O₇"
+            },
+            {
+              "Phase_Name": "X1-YbMS metastable",
+              "Chemical_Formula": "X1-Yb₂SiO₅",
+              "Note": "Mostly crystallized but not fully"
+            },
+            {
+              "Phase_Name": "α-YbDS metastable",
+              "Chemical_Formula": "α-Yb₂Si₂O₇"
+            },
+            {
+              "Phase_Name": "YbMS",
+              "Chemical_Formula": "Yb₂SiO₅"
+            },
+            {
+              "Phase_Name": "Yb₂O₃",
+              "Chemical_Formula": "Yb₂O₃"
+            },
+            {
+              "Phase_Name": "LMA",
+              "Chemical_Formula": "LaMgAl₁₁O₁₉"
+            },
+            {
+              "Phase_Name": "LaAlO₃",
+              "Chemical_Formula": "LaAlO₃",
+              "Note": "Detected at LMA coating after heat treatment at 1050 °C"
+            },
+            {
+              "Phase_Name": "amorphous",
+              "Chemical_Formula": "amorphous",
+              "Note": "Amorphous humps still observed"
+            }
+          ],
+          "Composition_Source_Type": "nominal_inferred"
+        },
+        "Processing": {
+          "Process_Category": "Other",
+          "Coating_Processing": {
+            "Deposition_Method": "APS",
+            "Process_Text": {
+              "original": "The coated sample was heat treated at 1050 °C for 10 h in air atmosphere. The heating rate and cooling rate of box furnace is about 5 °C/min.",
+              "simplified": "Heat treatment at 1050 °C (1323.15 K) for 10 h in air, heating/cooling rate ~5 °C/min."
+            },
+            "Key_Params": {
+              "Post_Treatment": "Heat treatment at 1050 °C for 10 h in air",
+              "Heating_Rate_K_min": 5,
+              "Cooling_Rate_K_min": 5,
+              "Heat_Treatment_Temperature_K": 1323.15,
+              "Heat_Treatment_Time_h": 10,
+              "Heat_Treatment_Atmosphere": "Air"
+            }
+          },
+          "Equipment": [
+            {
+              "Instrument_Name": "Box Furnace"
+            },
+            {
+              "Instrument_Name": "Plasma Spray Unit",
+              "Manufacturer": "Oerlikon Metco",
+              "Model": "Multicoat with F4 gun"
+            },
+            {
+              "Instrument_Name": "XRD",
+              "Manufacturer": "Rigaku",
+              "Model": "Smart Lab"
+            },
+            {
+              "Instrument_Name": "SEM",
+              "Manufacturer": "Zeiss",
+              "Model": "EVO 10"
+            },
+            {
+              "Instrument_Name": "TG-DSC",
+              "Manufacturer": "Netzsch",
+              "Model": "STA449F3"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "The vertical crack formed at 950 °C would continue to propagate into YbDS-YbMS layer with the heat-treated temperature up to 1050 °C. Many vertical cracks were formed at YbDS-YbMS layer after heat treatment at 1050 °C rather than horizontal cracks. Crack spheroidization was observed at YbDS-YbMS coating. The LMA layer porosity decreased to 8.2% and crack width decreased to 1.29 μm attributed to viscous flow. LaAlO₃ phase was detected at LMA coating.",
+            "simplified": "At 1050 °C: vertical cracks propagated further into YbDS-YbMS layer; many vertical cracks formed in YbDS-YbMS. LMA porosity decreased to 8.2%, crack width to 1.29 μm via viscous flow. Crack spheroidization in YbDS-YbMS. LaAlO₃ appeared in LMA layer."
+          },
+          "Crystalline_Phases": [
+            {
+              "Phase_Name": "LaAlO₃",
+              "Chemical_Formula": "LaAlO₃",
+              "Note": "New phase detected at 1050 °C in LMA layer"
+            }
+          ],
+          "Porosity": {
+            "Total_Porosity_pct": 8.2,
+            "Note": "LMA layer porosity; decreased from 13.7% at 950 °C attributed to viscous flow"
+          },
+          "Advanced_Quantitative_Features": {
+            "LMA_Porosity_pct": 8.2,
+            "LMA_Crack_Width_um": 1.29,
+            "YbMS_Porosity_pct": 4.33,
+            "YbMS_Crack_Width_um": 1.25,
+            "YbDS_YbMS_Porosity_pct": 6.33,
+            "YbDS_YbMS_Crack_Width_um": 1.62
+          }
+        }
+      }
+    },
+    {
+      "Item_ID": "TEBC_HT_1200C",
+      "Sample_ID": "TEBC_HT_1200C",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Ceramics_Inorganic",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Thermal_Barrier_or_EBC"
+      ],
+      "Gradient_Material": true,
+      "Gradient_Group_ID": "TEBC_System",
+      "Raw_Evidence_Span": [
+        "Fig. 9. The cross-sectional microstructure of Si/YbDS-YbMS/YbMS/LMA coating after heat treatment at 1200 °C for 10 h.",
+        "The optimized heat treatment is about 1200 °C, due to ratio of crack width to porosity of coating is lower than other temperature."
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Category": "Functional_Ceramic",
+          "Material_Name_Raw": "Si/Yb₂Si₂O₇-Yb₂SiO₅/Yb₂SiO₅/LaMgAl₁₁O₁₉ TEBC after heat treatment at 1200 °C",
+          "Phase_Composition": [
+            {
+              "Phase_Name": "Si bond coat",
+              "Chemical_Formula": "Si"
+            },
+            {
+              "Phase_Name": "β-YbDS",
+              "Chemical_Formula": "β-Yb₂Si₂O₇",
+              "Note": "Stable phase; amorphous and metastable phases disappeared"
+            },
+            {
+              "Phase_Name": "X2-YbMS",
+              "Chemical_Formula": "X2-Yb₂SiO₅",
+              "Note": "Stable phase; all X1-YbMS transformed to X2-YbMS"
+            },
+            {
+              "Phase_Name": "Yb₂O₃",
+              "Chemical_Formula": "Yb₂O₃"
+            },
+            {
+              "Phase_Name": "LMA",
+              "Chemical_Formula": "LaMgAl₁₁O₁₉"
+            }
+          ],
+          "Composition_Source_Type": "nominal_inferred",
+          "Note": "At 1200 °C: amorphous phase and metastable phases disappeared; only β-YbDS and X2-YbMS in YbDS-YbMS coating. YbMS coating composed of YbMS (X2) and Yb₂O₃."
+        },
+        "Processing": {
+          "Process_Category": "Other",
+          "Coating_Processing": {
+            "Deposition_Method": "APS",
+            "Process_Text": {
+              "original": "The coated sample was heat treated at 1200 °C for 10 h in air atmosphere. The heating rate and cooling rate of box furnace is about 5 °C/min.",
+              "simplified": "Heat treatment at 1200 °C (1473.15 K) for 10 h in air, heating/cooling rate ~5 °C/min. Optimized heat treatment temperature."
+            },
+            "Key_Params": {
+              "Post_Treatment": "Heat treatment at 1200 °C for 10 h in air",
+              "Heating_Rate_K_min": 5,
+              "Cooling_Rate_K_min": 5,
+              "Heat_Treatment_Temperature_K": 1473.15,
+              "Heat_Treatment_Time_h": 10,
+              "Heat_Treatment_Atmosphere": "Air"
+            }
+          },
+          "Equipment": [
+            {
+              "Instrument_Name": "Box Furnace"
+            },
+            {
+              "Instrument_Name": "Plasma Spray Unit",
+              "Manufacturer": "Oerlikon Metco",
+              "Model": "Multicoat with F4 gun"
+            },
+            {
+              "Instrument_Name": "XRD",
+              "Manufacturer": "Rigaku",
+              "Model": "Smart Lab"
+            },
+            {
+              "Instrument_Name": "SEM",
+              "Manufacturer": "Zeiss",
+              "Model": "EVO 10"
+            },
+            {
+              "Instrument_Name": "TG-DSC",
+              "Manufacturer": "Netzsch",
+              "Model": "STA449F3"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "The cracks were firstly formed in the LMA coating due to the lower crystallization temperature and higher CTE, and continued to propagate into YbMS layer form bridging crack. The penetrated crack in the coating cannot heal due to the large crack width prevent sintering. Many pores still existed in the YbDS-YbMS layer due to the lacking of driving force of sintering. A good interfacial bonding still can be observed at interface between Si layer and SiC/SiC substrate. The ratio of crack width to porosity of LMA, YbDS-YbMS and YbMS layer is about 0.33, 0.63 and 0.21, respectively.",
+            "simplified": "At 1200 °C: cracks propagated from LMA into YbMS via bridging. Penetrated cracks could not heal. YbDS-YbMS retained pores from insufficient sintering. Crack width to porosity ratios: LMA 0.33, YbDS-YbMS 0.63, YbMS 0.21. Si bond coat still well bonded. M→T phase transformation accompanied by 9.24% and 5.01 vol% expansion for YbDS and YbMS respectively."
+          },
+          "Crystalline_Phases": [
+            {
+              "Phase_Name": "β-Yb₂Si₂O₇",
+              "Chemical_Formula": "β-Yb₂Si₂O₇",
+              "Note": "Stable; all metastable phases transformed"
+            },
+            {
+              "Phase_Name": "X2-Yb₂SiO₅",
+              "Chemical_Formula": "X2-Yb₂SiO₅",
+              "Note": "Stable; all X1 transformed to X2"
+            },
+            {
+              "Phase_Name": "Yb₂O₃",
+              "Chemical_Formula": "Yb₂O₃"
+            }
+          ],
+          "Porosity": {
+            "Total_Porosity_pct": 9.91,
+            "Note": "LMA layer porosity; decreased slightly from higher values but retained due to sintering resistance"
+          },
+          "Advanced_Quantitative_Features": {
+            "LMA_Porosity_pct": 9.91,
+            "LMA_Crack_Width_um": 3.34,
+            "YbMS_Porosity_pct": 2.09,
+            "YbMS_Crack_Width_um": 1.32,
+            "YbDS_YbMS_Porosity_pct": 4.68,
+            "YbDS_YbMS_Crack_Width_um": 0.96,
+            "LMA_Crack_Width_to_Porosity_Ratio": 0.33,
+            "YbDS_YbMS_Crack_Width_to_Porosity_Ratio": 0.63,
+            "YbMS_Crack_Width_to_Porosity_Ratio": 0.21,
+            "YbDS_M_to_T_Phase_Transformation_Volume_Expansion_pct": 9.24,
+            "YbMS_M_to_T_Phase_Transformation_Volume_Expansion_pct": 5.01
+          },
+          "Note": "Phase transformation volume expansion values from Ref. [35]. Crack width to porosity ratio values from text."
+        },
+        "Properties": [
+          {
+            "Property_Name": "Optimized_Heat_Treatment_Temperature",
+            "Value": 1473.15,
+            "Unit": "K",
+            "Original_Values": "about 1200 °C",
+            "Data_Source": "text",
+            "Data_Nature": "Experimental",
+            "Note": "The optimized heat treatment is about 1200 °C because the ratio of crack width to porosity of coating is lower than other temperatures and vertical cracks terminated within the YbDS-YbMS layer."
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "TEBC_HT_1300C",
+      "Sample_ID": "TEBC_HT_1300C",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Ceramics_Inorganic",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Thermal_Barrier_or_EBC"
+      ],
+      "Gradient_Material": true,
+      "Gradient_Group_ID": "TEBC_System",
+      "Raw_Evidence_Span": [
+        "Fig. 10. The cross-sectional microstructure of Si/YbDS-YbMS/YbMS/LMA coating after heat treatment at 1300 °C for 10 h.",
+        "The vertical crack penetrated through ceramic coating."
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Category": "Functional_Ceramic",
+          "Material_Name_Raw": "Si/Yb₂Si₂O₇-Yb₂SiO₅/Yb₂SiO₅/LaMgAl₁₁O₁₉ TEBC after heat treatment at 1300 °C",
+          "Phase_Composition": [
+            {
+              "Phase_Name": "Si bond coat",
+              "Chemical_Formula": "Si"
+            },
+            {
+              "Phase_Name": "β-YbDS",
+              "Chemical_Formula": "β-Yb₂Si₂O₇"
+            },
+            {
+              "Phase_Name": "X2-YbMS",
+              "Chemical_Formula": "X2-Yb₂SiO₅"
+            },
+            {
+              "Phase_Name": "Yb₂O₃",
+              "Chemical_Formula": "Yb₂O₃",
+              "Note": "Diffraction peak intensities increased at 1300 °C"
+            },
+            {
+              "Phase_Name": "LMA",
+              "Chemical_Formula": "LaMgAl₁₁O₁₉"
+            },
+            {
+              "Phase_Name": "La₂O₃",
+              "Chemical_Formula": "La₂O₃",
+              "Note": "Second phase appeared in LMA coating at 1300-1350 °C; Al₂O₃ and LaAlO₃ disappeared"
+            }
+          ],
+          "Composition_Source_Type": "nominal_inferred"
+        },
+        "Processing": {
+          "Process_Category": "Other",
+          "Coating_Processing": {
+            "Deposition_Method": "APS",
+            "Process_Text": {
+              "original": "The coated sample was heat treated at 1300 °C for 10 h in air atmosphere. The heating rate and cooling rate of box furnace is about 5 °C/min.",
+              "simplified": "Heat treatment at 1300 °C (1573.15 K) for 10 h in air, heating/cooling rate ~5 °C/min."
+            },
+            "Key_Params": {
+              "Post_Treatment": "Heat treatment at 1300 °C for 10 h in air",
+              "Heating_Rate_K_min": 5,
+              "Cooling_Rate_K_min": 5,
+              "Heat_Treatment_Temperature_K": 1573.15,
+              "Heat_Treatment_Time_h": 10,
+              "Heat_Treatment_Atmosphere": "Air"
+            }
+          },
+          "Equipment": [
+            {
+              "Instrument_Name": "Box Furnace"
+            },
+            {
+              "Instrument_Name": "Plasma Spray Unit",
+              "Manufacturer": "Oerlikon Metco",
+              "Model": "Multicoat with F4 gun"
+            },
+            {
+              "Instrument_Name": "XRD",
+              "Manufacturer": "Rigaku",
+              "Model": "Smart Lab"
+            },
+            {
+              "Instrument_Name": "SEM",
+              "Manufacturer": "Zeiss",
+              "Model": "EVO 10"
+            },
+            {
+              "Instrument_Name": "TG-DSC",
+              "Manufacturer": "Netzsch",
+              "Model": "STA449F3"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "The vertical crack penetrated through ceramic coating. The formation and growth of the vertical crack mainly caused by the crack bridging in every layer rather than completely caused by the excessive thermal stress. Horizontal cracks can be observed at the interface between YbMS region and YbDS region in YbDS-YbMS layer. The Si layer showed compressive stress (~136 MPa) and vertical cracks terminated at the Si surface. Al₂O₃ and LaAlO₃ phases disappeared and La₂O₃ second phase appeared in LMA coating.",
+            "simplified": "At 1300 °C: vertical cracks penetrated through entire ceramic coating via bridging mechanism. Horizontal cracks at YbMS-YbDS interfaces in mixed layer. La₂O₃ appeared, Al₂O₃ and LaAlO₃ disappeared in LMA. Si bond coat still crack-free with compressive stress."
+          },
+          "Crystalline_Phases": [
+            {
+              "Phase_Name": "La₂O₃",
+              "Chemical_Formula": "La₂O₃",
+              "Note": "New phase appeared in LMA coating; Al₂O₃ and LaAlO₃ disappeared"
+            }
+          ],
+          "Porosity": {
+            "Total_Porosity_pct": 9.66,
+            "Note": "LMA layer porosity"
+          },
+          "Advanced_Quantitative_Features": {
+            "LMA_Porosity_pct": 9.66,
+            "LMA_Crack_Width_um": 3.06,
+            "YbMS_Porosity_pct": 2.04,
+            "YbMS_Crack_Width_um": 1.53,
+            "YbDS_YbMS_Porosity_pct": 4.75,
+            "YbDS_YbMS_Crack_Width_um": 0.95,
+            "Tensile_Stress_LMA_Coating_MPa": 1116,
+            "Tensile_Stress_YbMS_Coating_MPa": 410
+          },
+          "Note": "Tensile stress values from text: thermal-aged LMA coating ~1116 MPa and as-deposited YbMS coating ~410 MPa per Eq. 2 from Ref. [3]."
+        }
+      }
+    },
+    {
+      "Item_ID": "TEBC_HT_1350C",
+      "Sample_ID": "TEBC_HT_1350C",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Ceramics_Inorganic",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Thermal_Barrier_or_EBC"
+      ],
+      "Gradient_Material": true,
+      "Gradient_Group_ID": "TEBC_System",
+      "Raw_Evidence_Span": [
+        "Fig. 11. The cross-sectional microstructure of Si/YDJS-YDMS/YDMS/LMA coating after heat treatment at 1350 °C for 10 h.",
+        "At 1350 °C slight oxidation of Si caused micro-crack formation at the interface between Si layer and YbDS-YbMS layer."
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Category": "Functional_Ceramic",
+          "Material_Name_Raw": "Si/Yb₂Si₂O₇-Yb₂SiO₅/Yb₂SiO₅/LaMgAl₁₁O₁₉ TEBC after heat treatment at 1350 °C",
+          "Phase_Composition": [
+            {
+              "Phase_Name": "Si bond coat",
+              "Chemical_Formula": "Si",
+              "Note": "Slight oxidation observed"
+            },
+            {
+              "Phase_Name": "LMA",
+              "Chemical_Formula": "LaMgAl₁₁O₁₉"
+            },
+            {
+              "Phase_Name": "La₂O₃",
+              "Chemical_Formula": "La₂O₃",
+              "Note": "Second phase in LMA coating"
+            }
+          ],
+          "Composition_Source_Type": "nominal_inferred"
+        },
+        "Processing": {
+          "Process_Category": "Other",
+          "Coating_Processing": {
+            "Deposition_Method": "APS",
+            "Process_Text": {
+              "original": "The coated sample was heat treated at 1350 °C for 10 h in air atmosphere. The heating rate and cooling rate of box furnace is about 5 °C/min.",
+              "simplified": "Heat treatment at 1350 °C (1623.15 K) for 10 h in air, heating/cooling rate ~5 °C/min."
+            },
+            "Key_Params": {
+              "Post_Treatment": "Heat treatment at 1350 °C for 10 h in air",
+              "Heating_Rate_K_min": 5,
+              "Cooling_Rate_K_min": 5,
+              "Heat_Treatment_Temperature_K": 1623.15,
+              "Heat_Treatment_Time_h": 10,
+              "Heat_Treatment_Atmosphere": "Air"
+            }
+          },
+          "Equipment": [
+            {
+              "Instrument_Name": "Box Furnace"
+            },
+            {
+              "Instrument_Name": "Plasma Spray Unit",
+              "Manufacturer": "Oerlikon Metco",
+              "Model": "Multicoat with F4 gun"
+            },
+            {
+              "Instrument_Name": "XRD",
+              "Manufacturer": "Rigaku",
+              "Model": "Smart Lab"
+            },
+            {
+              "Instrument_Name": "SEM",
+              "Manufacturer": "Zeiss",
+              "Model": "EVO 10"
+            },
+            {
+              "Instrument_Name": "TG-DSC",
+              "Manufacturer": "Netzsch",
+              "Model": "STA449F3"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "The vertical crack was also formed at coating but the crack density did not increase with the increasing of temperature. Horizontal crack and bifurcated crack were also formed at YbMS layer and YbDS-YbMS layer. The vertical cracks provide fast diffusion path for oxygen into Si layer, thus the Si was subjected to slight oxidation. The micro-crack then was formed at the interface between Si layer and YbDS-YbMS layer due to the oxidation of Si. Spallation crack was occurred at Si surface.",
+            "simplified": "At 1350 °C: vertical crack density did not increase vs 1300 °C. Si bond coat showed slight oxidation, causing interfacial micro-cracks between Si and YbDS-YbMS. Spallation crack appeared at Si surface. Horizontal and bifurcated cracks in YbMS and YbDS-YbMS layers."
+          },
+          "Porosity": {
+            "Total_Porosity_pct": 8.78,
+            "Note": "LMA layer porosity"
+          },
+          "Advanced_Quantitative_Features": {
+            "LMA_Porosity_pct": 8.78,
+            "LMA_Crack_Width_um": 3.28,
+            "YbMS_Porosity_pct": 2.19,
+            "YbMS_Crack_Width_um": 1.46,
+            "YbDS_YbMS_Porosity_pct": 5.29,
+            "YbDS_YbMS_Crack_Width_um": 0.9
+          },
+          "Note": "LMA crack width 3.28 μm is the largest among all heat-treated conditions. Spallation crack at Si surface indicates onset of coating failure."
+        }
+      }
+    },
+    {
+      "Item_ID": "TG_DSC_Si",
+      "Sample_ID": "TG_DSC_Si",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Ceramics_Inorganic",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Thermal_Barrier_or_EBC"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "The test of Si coating was conducted at room temperature to 1350 °C and the weak exothermal peak can be found at 751 °C due to the crystallization of amorphous Si."
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Category": "Functional_Ceramic",
+          "Material_Name_Raw": "Free-standing Si coating",
+          "Phase_Composition": [
+            {
+              "Phase_Name": "Si",
+              "Chemical_Formula": "Si"
+            }
+          ],
+          "Composition_Source_Type": "nominal_inferred"
+        },
+        "Processing": {
+          "Process_Category": "Other",
+          "Coating_Processing": {
+            "Deposition_Method": "APS",
+            "Process_Text": {
+              "original": "TG-DSC testing of Si coating was performed in argon environment from room temperature to 1350 °C at heating rate of 10 °C/min. Free-standing coating fabricated on graphite substrate.",
+              "simplified": "TG-DSC of Si coating in argon, RT to 1350 °C, 10 °C/min heating rate."
+            },
+            "Key_Params": {
+              "TG_DSC_Atmosphere": "Argon",
+              "TG_DSC_Temperature_Range_K": "298.15-1623.15",
+              "TG_DSC_Heating_Rate_K_min": 10
+            }
+          },
+          "Equipment": [
+            {
+              "Instrument_Name": "TG-DSC",
+              "Manufacturer": "Netzsch",
+              "Model": "STA449F3"
+            },
+            {
+              "Instrument_Name": "Plasma Spray Unit",
+              "Manufacturer": "Oerlikon Metco",
+              "Model": "Multicoat with F4 gun"
+            }
+          ]
+        },
+        "Properties": [
+          {
+            "Property_Name": "Crystallization_Temperature",
+            "Value": 1024.15,
+            "Unit": "K",
+            "Original_Values": "751 °C",
+            "Test_Condition": "TG-DSC in argon, RT to 1350 °C, 10 °C/min",
+            "Data_Source": "text",
+            "Data_Nature": "Experimental",
+            "Note": "Weak exothermal peak at 751 °C due to crystallization of amorphous Si"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "TG_DSC_YbDS_YbMS",
+      "Sample_ID": "TG_DSC_YbDS_YbMS",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Ceramics_Inorganic",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Thermal_Barrier_or_EBC"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "The TG-DSC curves of YbDS-YbMS coating are shown in Fig. 4b. The first exothermal peak was appeared at 1051 °C and second exothermal peak was appeared at 1211 °C."
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Category": "Functional_Ceramic",
+          "Material_Name_Raw": "Free-standing Yb₂Si₂O₇-Yb₂SiO₅ coating",
+          "Phase_Composition": [
+            {
+              "Phase_Name": "YbDS-YbMS",
+              "Chemical_Formula": "Yb₂Si₂O₇-Yb₂SiO₅"
+            }
+          ],
+          "Composition_Source_Type": "nominal_inferred"
+        },
+        "Processing": {
+          "Process_Category": "Other",
+          "Coating_Processing": {
+            "Deposition_Method": "APS",
+            "Process_Text": {
+              "original": "TG-DSC testing of the YbDS-YbMS coating was conducted from room temperature to 1450 °C in air environment with a heating rate of 10 °C/min. Free-standing coating fabricated on graphite substrate.",
+              "simplified": "TG-DSC of YbDS-YbMS coating in air, RT to 1450 °C, 10 °C/min."
+            },
+            "Key_Params": {
+              "TG_DSC_Atmosphere": "Air",
+              "TG_DSC_Temperature_Range_K": "298.15-1723.15",
+              "TG_DSC_Heating_Rate_K_min": 10
+            }
+          },
+          "Equipment": [
+            {
+              "Instrument_Name": "TG-DSC",
+              "Manufacturer": "Netzsch",
+              "Model": "STA449F3"
+            },
+            {
+              "Instrument_Name": "Plasma Spray Unit",
+              "Manufacturer": "Oerlikon Metco",
+              "Model": "Multicoat with F4 gun"
+            }
+          ]
+        },
+        "Properties": [
+          {
+            "Property_Name": "Crystallization_Temperature",
+            "Value": 1324.15,
+            "Unit": "K",
+            "Original_Values": "1051 °C",
+            "Test_Condition": "TG-DSC in air, RT to 1450 °C, 10 °C/min",
+            "Data_Source": "text",
+            "Data_Nature": "Experimental",
+            "Note": "First exothermal peak at 1051 °C attributed to crystallization of amorphous phase"
+          },
+          {
+            "Property_Name": "Phase_Transformation_Temperature",
+            "Value": 1484.15,
+            "Unit": "K",
+            "Original_Values": "1211 °C",
+            "Test_Condition": "TG-DSC in air, RT to 1450 °C, 10 °C/min",
+            "Data_Source": "text",
+            "Data_Nature": "Experimental",
+            "Note": "Second exothermal peak at 1211 °C attributed to secondary crystallization and phase transformation (M→S)"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "TG_DSC_YbMS",
+      "Sample_ID": "TG_DSC_YbMS",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Ceramics_Inorganic",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Thermal_Barrier_or_EBC"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "The first exothermal peak was appeared at 963 °C, which is related to crystallization of amorphous phase in YbMS coating. The second exothermal peak was appeared at 1123 °C."
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Category": "Functional_Ceramic",
+          "Material_Name_Raw": "Free-standing Yb₂SiO₅ coating",
+          "Phase_Composition": [
+            {
+              "Phase_Name": "YbMS",
+              "Chemical_Formula": "Yb₂SiO₅"
+            }
+          ],
+          "Composition_Source_Type": "nominal_inferred"
+        },
+        "Processing": {
+          "Process_Category": "Other",
+          "Coating_Processing": {
+            "Deposition_Method": "APS",
+            "Process_Text": {
+              "original": "TG-DSC testing of the YbMS coating was conducted from room temperature to 1450 °C in air environment with a heating rate of 10 °C/min.",
+              "simplified": "TG-DSC of YbMS coating in air, RT to 1450 °C, 10 °C/min."
+            },
+            "Key_Params": {
+              "TG_DSC_Atmosphere": "Air",
+              "TG_DSC_Temperature_Range_K": "298.15-1723.15",
+              "TG_DSC_Heating_Rate_K_min": 10
+            }
+          },
+          "Equipment": [
+            {
+              "Instrument_Name": "TG-DSC",
+              "Manufacturer": "Netzsch",
+              "Model": "STA449F3"
+            },
+            {
+              "Instrument_Name": "Plasma Spray Unit",
+              "Manufacturer": "Oerlikon Metco",
+              "Model": "Multicoat with F4 gun"
+            }
+          ]
+        },
+        "Properties": [
+          {
+            "Property_Name": "Crystallization_Temperature",
+            "Value": 1236.15,
+            "Unit": "K",
+            "Original_Values": "963 °C",
+            "Test_Condition": "TG-DSC in air, RT to 1450 °C, 10 °C/min",
+            "Data_Source": "text",
+            "Data_Nature": "Experimental",
+            "Note": "First exothermal peak at 963 °C attributed to crystallization of amorphous phase"
+          },
+          {
+            "Property_Name": "Phase_Transformation_Temperature",
+            "Value": 1396.15,
+            "Unit": "K",
+            "Original_Values": "1123 °C",
+            "Test_Condition": "TG-DSC in air, RT to 1450 °C, 10 °C/min",
+            "Data_Source": "text",
+            "Data_Nature": "Experimental",
+            "Note": "Second exothermal peak at 1123 °C attributed to phase transformation and secondary crystallization"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "TG_DSC_LMA",
+      "Sample_ID": "TG_DSC_LMA",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Ceramics_Inorganic",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Thermal_Barrier_or_EBC"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Fig. 4d shows the TG-DSC curves of LMA coating from room temperature to 1450 °C. The appearance of exothermal peak at 900 °C and 1164 °C in the as-deposited LMA coating due to the crystallization of amorphous phase with different La element content. The other three exothermic peaks were appeared at the 1248 °C and 1311 °C."
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Category": "Functional_Ceramic",
+          "Material_Name_Raw": "Free-standing LaMgAl₁₁O₁₉ coating",
+          "Phase_Composition": [
+            {
+              "Phase_Name": "LMA",
+              "Chemical_Formula": "LaMgAl₁₁O₁₉"
+            }
+          ],
+          "Composition_Source_Type": "nominal_inferred"
+        },
+        "Processing": {
+          "Process_Category": "Other",
+          "Coating_Processing": {
+            "Deposition_Method": "APS",
+            "Process_Text": {
+              "original": "TG-DSC testing of the LMA coating was conducted from room temperature to 1450 °C in air environment with a heating rate of 10 °C/min.",
+              "simplified": "TG-DSC of LMA coating in air, RT to 1450 °C, 10 °C/min."
+            },
+            "Key_Params": {
+              "TG_DSC_Atmosphere": "Air",
+              "TG_DSC_Temperature_Range_K": "298.15-1723.15",
+              "TG_DSC_Heating_Rate_K_min": 10
+            }
+          },
+          "Equipment": [
+            {
+              "Instrument_Name": "TG-DSC",
+              "Manufacturer": "Netzsch",
+              "Model": "STA449F3"
+            },
+            {
+              "Instrument_Name": "Plasma Spray Unit",
+              "Manufacturer": "Oerlikon Metco",
+              "Model": "Multicoat with F4 gun"
+            }
+          ]
+        },
+        "Properties": [
+          {
+            "Property_Name": "Crystallization_Temperature",
+            "Value": 1173.15,
+            "Unit": "K",
+            "Original_Values": "900 °C",
+            "Test_Condition": "TG-DSC in air, RT to 1450 °C, 10 °C/min",
+            "Data_Source": "text",
+            "Data_Nature": "Experimental",
+            "Note": "First exothermal peak at 900 °C due to crystallization of amorphous phase"
+          },
+          {
+            "Property_Name": "Crystallization_Temperature",
+            "Value": 1437.15,
+            "Unit": "K",
+            "Original_Values": "1164 °C",
+            "Test_Condition": "TG-DSC in air, RT to 1450 °C, 10 °C/min",
+            "Data_Source": "text",
+            "Data_Nature": "Experimental",
+            "Note": "Exothermal peak at 1164 °C due to crystallization of amorphous phase with different La content"
+          },
+          {
+            "Property_Name": "Reaction_Peak_Temperature",
+            "Value": 1521.15,
+            "Unit": "K",
+            "Original_Values": "1248 °C",
+            "Test_Condition": "TG-DSC in air, RT to 1450 °C, 10 °C/min",
+            "Data_Source": "text",
+            "Data_Nature": "Experimental",
+            "Note": "Exothermal peak at 1248 °C attributed to reaction of LaAlO₃ to re-form LMA"
+          },
+          {
+            "Property_Name": "Reaction_Peak_Temperature",
+            "Value": 1584.15,
+            "Unit": "K",
+            "Original_Values": "1311 °C",
+            "Test_Condition": "TG-DSC in air, RT to 1450 °C, 10 °C/min",
+            "Data_Source": "text",
+            "Data_Nature": "Experimental",
+            "Note": "Exothermal peak at 1311 °C attributed to reaction of secondary phases"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "Ref_YbMS_Properties",
+      "Sample_ID": "Ref_YbMS_Properties",
+      "Role": "Reference",
+      "Data_Nature": "Literature_Experimental",
+      "base_material": "Ceramics_Inorganic",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Thermal_Barrier_or_EBC"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "The elastic modulus of deposited YbMS and Yb₂O₃ coating is 97.3 GPa [32] and 100.8 GPa [29], respectively.",
+        "the YbMS coating (7.50–8.67 × 10⁻⁶ K⁻¹) has similar CTE with Yb₂O₃ coating (7–8 × 10⁻⁶ K⁻¹) in the range of 200–1400 °C [29]"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Category": "Functional_Ceramic",
+          "Material_Name_Raw": "Yb₂SiO₅ coating (literature values)",
+          "Phase_Composition": [
+            {
+              "Phase_Name": "YbMS",
+              "Chemical_Formula": "Yb₂SiO₅"
+            }
+          ],
+          "Composition_Source_Type": "nominal_inferred"
+        },
+        "Processing": {
+          "Process_Category": "Other",
+          "Coating_Processing": {
+            "Deposition_Method": "APS",
+            "Process_Text": {
+              "original": "Literature values for YbMS coating from Refs. [29, 32, 44].",
+              "simplified": "Reference values for Yb₂SiO₅ coating from literature."
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Elastic_Modulus",
+            "Value": 97.3,
+            "Unit": "GPa",
+            "Original_Values": "97.3 GPa",
+            "Data_Source": "text",
+            "Data_Nature": "Literature_Experimental",
+            "Note": "From Ref. [32]"
+          },
+          {
+            "Property_Name": "CTE",
+            "Value": null,
+            "Unit": "10⁻⁶ K⁻¹",
+            "Value_Range": [
+              "7.50 × 10⁻⁶ K⁻¹",
+              "8.67 × 10⁻⁶ K⁻¹"
+            ],
+            "Original_Values": "7.50–8.67 × 10⁻⁶ K⁻¹ in the range of 200–1400 °C",
+            "Data_Source": "text",
+            "Data_Nature": "Literature_Experimental",
+            "Note": "CTE range from Ref. [44]"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "Ref_Yb2O3_Properties",
+      "Sample_ID": "Ref_Yb2O3_Properties",
+      "Role": "Reference",
+      "Data_Nature": "Literature_Experimental",
+      "base_material": "Ceramics_Inorganic",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Thermal_Barrier_or_EBC"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "The elastic modulus of deposited YbMS and Yb₂O₃ coating is 97.3 GPa [32] and 100.8 GPa [29], respectively.",
+        "Yb₂O₃ coating (7–8 × 10⁻⁶ K⁻¹) [29]"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Category": "Functional_Ceramic",
+          "Material_Name_Raw": "Yb₂O₃ coating (literature values)",
+          "Phase_Composition": [
+            {
+              "Phase_Name": "Yb₂O₃",
+              "Chemical_Formula": "Yb₂O₃"
+            }
+          ],
+          "Composition_Source_Type": "nominal_inferred"
+        },
+        "Processing": {
+          "Process_Category": "Other",
+          "Coating_Processing": {
+            "Deposition_Method": "APS",
+            "Process_Text": {
+              "original": "Literature values for Yb₂O₃ coating from Ref. [29].",
+              "simplified": "Reference values for Yb₂O₃ coating from literature."
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Elastic_Modulus",
+            "Value": 100.8,
+            "Unit": "GPa",
+            "Original_Values": "100.8 GPa",
+            "Data_Source": "text",
+            "Data_Nature": "Literature_Experimental",
+            "Note": "From Ref. [29]"
+          },
+          {
+            "Property_Name": "CTE",
+            "Value": null,
+            "Unit": "10⁻⁶ K⁻¹",
+            "Value_Range": [
+              "7 × 10⁻⁶ K⁻¹",
+              "8 × 10⁻⁶ K⁻¹"
+            ],
+            "Original_Values": "7–8 × 10⁻⁶ K⁻¹",
+            "Data_Source": "text",
+            "Data_Nature": "Literature_Experimental",
+            "Note": "CTE range from Ref. [29]"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "Ref_Si_BDTT",
+      "Sample_ID": "Ref_Si_BDTT",
+      "Role": "Reference",
+      "Data_Nature": "Literature_Experimental",
+      "base_material": "Ceramics_Inorganic",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Thermal_Barrier_or_EBC"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "the silicon exhibited excellent ductility like metal when the heat-treated temperature is higher than the brittle-ductile transition temperature (~898 K) [47] of silicon."
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Category": "Functional_Ceramic",
+          "Material_Name_Raw": "Si (literature value)",
+          "Phase_Composition": [
+            {
+              "Phase_Name": "Si",
+              "Chemical_Formula": "Si"
+            }
+          ]
+        },
+        "Processing": {
+          "Process_Category": "Other",
+          "Coating_Processing": {
+            "Deposition_Method": "N/A",
+            "Process_Text": {
+              "original": "Literature value for Si brittle-ductile transition temperature from Ref. [47].",
+              "simplified": "Reference Si property from literature."
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Brittle_Ductile_Transition_Temperature",
+            "Value": 898,
+            "Unit": "K",
+            "Original_Values": "~898 K",
+            "Data_Source": "text",
+            "Data_Nature": "Literature_Experimental",
+            "Note": "From Ref. [47]"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "Ref_Phase_Transformation_Volume",
+      "Sample_ID": "Ref_Phase_Transformation_Volume",
+      "Role": "Reference",
+      "Data_Nature": "Literature_Experimental",
+      "base_material": "Ceramics_Inorganic",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Thermal_Barrier_or_EBC"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "the M→T phase transformation of YbDS and YbMS are accompanied by 9.24 % and 5.01 vol expansion [35], respectively."
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Category": "Functional_Ceramic",
+          "Material_Name_Raw": "YbDS and YbMS (literature values for phase transformation)",
+          "Phase_Composition": [
+            {
+              "Phase_Name": "YbDS",
+              "Chemical_Formula": "Yb₂Si₂O₇"
+            },
+            {
+              "Phase_Name": "YbMS",
+              "Chemical_Formula": "Yb₂SiO₅"
+            }
+          ]
+        },
+        "Processing": {
+          "Process_Category": "Other",
+          "Coating_Processing": {
+            "Deposition_Method": "N/A",
+            "Process_Text": {
+              "original": "Literature values for M→T phase transformation volume expansion from Ref. [35].",
+              "simplified": "Reference phase transformation volume expansion from literature."
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Phase_Transformation_Volume_Expansion",
+            "Value": 9.24,
+            "Unit": "vol%",
+            "Original_Values": "9.24 %",
+            "Data_Source": "text",
+            "Data_Nature": "Literature_Experimental",
+            "Note": "M→T phase transformation of YbDS, from Ref. [35]"
+          },
+          {
+            "Property_Name": "Phase_Transformation_Volume_Expansion",
+            "Value": 5.01,
+            "Unit": "vol%",
+            "Original_Values": "5.01 %",
+            "Data_Source": "text",
+            "Data_Nature": "Literature_Experimental",
+            "Note": "M→T phase transformation of YbMS, from Ref. [35]"
+          }
+        ]
+      }
+    }
+  ]
+}

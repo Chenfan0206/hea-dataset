@@ -1,0 +1,7 @@
+{
+  "paper_dir": "刘尚宇_储能材料模型-COF固态电解质",
+  "figures": 5,
+  "direct_pairs": 5,
+  "topk_pairs": 25,
+  "sentences": 20
+}

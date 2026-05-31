@@ -1,0 +1,7 @@
+{
+  "paper_dir": "3_Stress_engineering",
+  "figures": 8,
+  "direct_pairs": 8,
+  "topk_pairs": 40,
+  "sentences": 37
+}

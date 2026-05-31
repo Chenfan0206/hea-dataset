@@ -1,0 +1,956 @@
+{
+  "Paper_Metadata": {
+    "Paper_Title": "Ultrahigh room and high–temperature mechanical properties of SiC_f/SiC composites prepared by hybrid CVI and PIP methods: Effects of PIP temperature",
+    "DOI": "10.1016/j.compositesa.2024.108502"
+  },
+  "Paper_Routing": {
+    "base_material": "Composites",
+    "application": "Structural",
+    "research_paradigm": "Experimental",
+    "Supplements_Loaded": [
+      "directions/base/Composites.txt",
+      "directions/application/Structural.txt",
+      "directions/paradigm/Experimental.txt"
+    ],
+    "Patch_Tags": [
+      "Interface_Dominated"
+    ],
+    "Needs_Mixed_Routing_Check": false,
+    "Mixed_Signals": []
+  },
+  "items": [
+    {
+      "Item_ID": "1100PIP",
+      "Sample_ID": "1100PIP",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Composites",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [],
+      "Extracted_Data": {
+        "Composition": {
+          "Composite_Category": "CMC",
+          "Composite_System_Raw": "UD SiC_f/SiC composite (CVI-PIP hybrid)",
+          "Matrix": [
+            {
+              "Component": "CVI SiC",
+              "Phase_Name": "SiC",
+              "Crystal_Structure": "β-SiC"
+            },
+            {
+              "Component": "PIP SiC",
+              "Phase_Name": "SiC",
+              "Crystal_Structure": "β-SiC"
+            }
+          ],
+          "Reinforcement": [
+            {
+              "Type": "Fiber",
+              "Name": "Cansas 3303 3rd SiC fiber",
+              "Manufacturer": "Leaosaia New Material Co. Ltd., China",
+              "C_Si_ratio": 1.05,
+              "Oxygen_content_wt_pct": {
+                "Value": "<1",
+                "Original_Values": "<1 wt.%"
+              },
+              "Fiber_Density": {
+                "Value": 3.0,
+                "Unit": "g/cm³"
+              },
+              "Fiber_Strength": {
+                "Value": 3.5,
+                "Unit": "GPa"
+              },
+              "Fiber_Modulus": {
+                "Value": 373.0,
+                "Unit": "GPa"
+              },
+              "Filaments_Per_Tow": 500
+            }
+          ],
+          "Interface_or_Interphase": [
+            {
+              "Type": "Interphase",
+              "Material": "BN",
+              "Thickness": {
+                "Value_Range": {
+                  "Min": 100,
+                  "Max": 150
+                },
+                "Unit": "nm",
+                "Original_Values": "100 ~ 150 nm"
+              }
+            }
+          ],
+          "Fiber_Volume_Fraction": {
+            "Value": 40.0,
+            "Unit": "%",
+            "Original_Values": "40.0%"
+          },
+          "CVI_SiC_Volume_Fraction": {
+            "Value": 28.5,
+            "Unit": "%",
+            "Data_Source": "table"
+          },
+          "PIP_SiC_Volume_Fraction": {
+            "Value": 23.3,
+            "Unit": "%",
+            "Data_Source": "table"
+          },
+          "Density": {
+            "Value": 2.69,
+            "Unit": "g/cm³",
+            "Data_Source": "table"
+          },
+          "Total_Porosity": {
+            "Value": 8.2,
+            "Unit": "%",
+            "Data_Source": "table"
+          }
+        },
+        "Processing": {
+          "Process_Category": "CVI-PIP hybrid",
+          "Process_Text": {
+            "original": "UD SiC preform → BN interphase deposition (BCl₃-NH₃-H₂-Ar, 650°C, 20h) → CVI SiC deposition (MTS precursor, H₂ reducing gas, Ar carrier, ~1000°C, repeated until porosity <35%, total 60h) → PIP densification (liquid PCS, MW 6000-10000, 1100°C, 1h per cycle, 11 cycles until weight gain <1%)",
+            "simplified": "CVI-PIP hybrid: BN interphase → CVI SiC → PIP SiC at 1100°C (11 cycles)"
+          },
+          "Equipment": [
+            {
+              "Name": "CVI furnace",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "PIP furnace",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Hysitron TI 950 TriboIndenter (flat punch 10μm)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Hysitron TI 950 TriboIndenter (cube corner diamond tip)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Universal tensile testing machine (electromechanical)",
+              "Category": "Testing"
+            },
+            {
+              "Name": "HD-609B universal testing machine (Haida)",
+              "Category": "Testing"
+            },
+            {
+              "Name": "High temperature universal testing machine (CERA)",
+              "Category": "Testing"
+            },
+            {
+              "Name": "SEM S-2700 (Hitachi) with EDS",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "TEM Themis Z (FEI)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "FIB FEI Versa Dual Beam",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Thermal dilatometer DIL 402C (NETZSCH)",
+              "Category": "Testing"
+            },
+            {
+              "Name": "Laser flash thermal conductivity meter LFA427 (NETZSCH)",
+              "Category": "Testing"
+            }
+          ],
+          "Key_Params": {
+            "Stage1_BN_Deposition": {
+              "Temperature": {
+                "Value": 650,
+                "Unit": "°C"
+              },
+              "Time": {
+                "Value": 20,
+                "Unit": "h"
+              },
+              "Precursors": "BCl₃-NH₃-H₂-Ar"
+            },
+            "Stage2_CVI_SiC": {
+              "Temperature": {
+                "Value": 1000,
+                "Unit": "°C",
+                "Original_Values": "about 1000 °C"
+              },
+              "Precursor": "MTS",
+              "Reducing_Gas": "H₂",
+              "Carrier_Gas": "Ar",
+              "Total_Deposition_Time": {
+                "Value": 60,
+                "Unit": "h"
+              },
+              "Target_Porosity": {
+                "Value": 35,
+                "Unit": "%",
+                "Original_Values": "below 35%"
+              }
+            },
+            "Stage3_PIP": {
+              "Temperature": {
+                "Value": 1100,
+                "Unit": "°C"
+              },
+              "Time_Per_Cycle": {
+                "Value": 1,
+                "Unit": "h"
+              },
+              "Precursor": "Liquid polycarbosilane (PCS)",
+              "Precursor_MW": {
+                "Value_Range": {
+                  "Min": 6000,
+                  "Max": 10000
+                }
+              },
+              "Total_Cycles": 11,
+              "Termination_Criterion": "weight gain < 1%"
+            }
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "SiC fiber in 1100PIP contained many SiC nanocrystals; SAED showed diffraction rings and spots. SiC grain size 4-16 nm, average 9.20±2.50 nm. BN interphase intact, well-combined with SiC fiber and CVI SiC. PIP SiC matrix average grain size 4.25±0.93 nm. Carbon layers present in CVI SiC and PIP SiC matrix.",
+            "simplified": "Fiber nanocrystalline SiC (avg 9.20 nm); BN interphase intact; PIP SiC nanocrystalline (avg 4.25 nm); free C layers at CVI-PIP interface"
+          },
+          "Fiber_Architecture": "Unidirectional (UD)",
+          "Phases": [
+            {
+              "Phase_Name": "SiC (fiber)",
+              "Crystal_Structure": "β-SiC (nanocrystalline)",
+              "Location": "Reinforcement fiber"
+            },
+            {
+              "Phase_Name": "BN",
+              "Crystal_Structure": "amorphous/low-crystallinity",
+              "Location": "Interphase"
+            },
+            {
+              "Phase_Name": "SiC (CVI matrix)",
+              "Crystal_Structure": "β-SiC (crystalline)",
+              "Location": "Matrix"
+            },
+            {
+              "Phase_Name": "SiC (PIP matrix)",
+              "Crystal_Structure": "β-SiC (nanocrystalline)",
+              "Location": "Matrix"
+            },
+            {
+              "Phase_Name": "C layers",
+              "Crystal_Structure": "amorphous carbon",
+              "Location": "CVI SiC and PIP SiC matrix"
+            }
+          ],
+          "Interface_Features": [
+            {
+              "Interface": "F/B (fiber/BN)",
+              "State": "Intact, well-combined"
+            },
+            {
+              "Interface": "C/P (CVI SiC/PIP SiC)",
+              "State": "Free carbon layers enable crack deflection"
+            }
+          ],
+          "Advanced_Quantitative_Features": {
+            "SiC_fiber_avg_grain_size": {
+              "Value": 9.2,
+              "Value_StdDev": 2.5,
+              "Unit": "nm",
+              "Location": "SiC fiber"
+            },
+            "SiC_fiber_grain_size_range": {
+              "Min": 4,
+              "Max": 16,
+              "Unit": "nm"
+            },
+            "PIP_SiC_avg_grain_size": {
+              "Value": 4.25,
+              "Value_StdDev": 0.93,
+              "Unit": "nm",
+              "Location": "PIP SiC matrix"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Interfacial_Shear_Strength",
+            "Value": 239.6,
+            "Value_StdDev": 30.2,
+            "Unit": "MPa",
+            "Test_Condition": "push-in test, flat punch 10μm, displacement control, 1000nm depth, 10nm/s rate",
+            "Data_Source": "table",
+            "Note": "IFSS measured by push-in test; at least 10 valid fibers tested"
+          },
+          {
+            "Property_Name": "Elastic_Modulus",
+            "Value": 375.6,
+            "Value_StdDev": 4.0,
+            "Unit": "GPa",
+            "Test_Condition": "nanoindentation, cube corner diamond tip, load control, peak load 10mN",
+            "Test_Object": "SiC fiber",
+            "Data_Source": "table"
+          },
+          {
+            "Property_Name": "Elastic_Modulus",
+            "Value": 436.7,
+            "Value_StdDev": 8.7,
+            "Unit": "GPa",
+            "Test_Condition": "nanoindentation, cube corner diamond tip, load control, peak load 10mN",
+            "Test_Object": "CVI SiC matrix",
+            "Data_Source": "table"
+          },
+          {
+            "Property_Name": "Elastic_Modulus",
+            "Value": 222.9,
+            "Value_StdDev": 36.1,
+            "Unit": "GPa",
+            "Test_Condition": "nanoindentation, cube corner diamond tip, load control, peak load 10mN",
+            "Test_Object": "PIP SiC matrix",
+            "Data_Source": "table"
+          },
+          {
+            "Property_Name": "Ultimate_Tensile_Strength",
+            "Value": 901.0,
+            "Value_StdDev": 87.7,
+            "Unit": "MPa",
+            "Test_Condition": "grip speed 0.5 mm/min, specimen 120×10×3 mm, strain gage 1.5% over 10mm gage length, n=3",
+            "Data_Source": "table"
+          },
+          {
+            "Property_Name": "Tensile_Modulus",
+            "Value": 279.1,
+            "Value_StdDev": 7.7,
+            "Unit": "GPa",
+            "Test_Condition": "grip speed 0.5 mm/min, specimen 120×10×3 mm, UD fiber direction",
+            "Data_Source": "table"
+          },
+          {
+            "Property_Name": "Proportional_Limit_Stress",
+            "Value": 722.4,
+            "Value_StdDev": 87.1,
+            "Unit": "MPa",
+            "Test_Condition": "tensile test, UD fiber direction",
+            "Data_Source": "table"
+          },
+          {
+            "Property_Name": "Flexural_Strength",
+            "Value": 2186.5,
+            "Value_StdDev": 192.5,
+            "Unit": "MPa",
+            "Test_Condition": "three-point bending, span 32mm, crosshead speed 0.5mm/min, specimen 45×5×2 mm, fiber parallel to axial direction, n=5, ASTM C1161",
+            "Data_Source": "table"
+          },
+          {
+            "Property_Name": "Fracture_Toughness",
+            "Value": 80.6,
+            "Value_StdDev": 12.0,
+            "Unit": "MPa·m^{-1/2}",
+            "Test_Condition": "single edge notch beam, span 30mm, crosshead speed 0.05mm/min, specimen 40×3×5 mm, notch depth 2.5mm, notch width 0.3mm, n=5, ASTM C1421",
+            "Data_Source": "table"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "1300PIP",
+      "Sample_ID": "1300PIP",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Composites",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [],
+      "Extracted_Data": {
+        "Composition": {
+          "Composite_Category": "CMC",
+          "Composite_System_Raw": "UD SiC_f/SiC composite (CVI-PIP hybrid)",
+          "Matrix": [
+            {
+              "Component": "CVI SiC",
+              "Phase_Name": "SiC",
+              "Crystal_Structure": "β-SiC"
+            },
+            {
+              "Component": "PIP SiC",
+              "Phase_Name": "SiC",
+              "Crystal_Structure": "β-SiC"
+            }
+          ],
+          "Reinforcement": [
+            {
+              "Type": "Fiber",
+              "Name": "Cansas 3303 3rd SiC fiber"
+            }
+          ],
+          "Interface_or_Interphase": [
+            {
+              "Type": "Interphase",
+              "Material": "BN",
+              "Thickness": {
+                "Value_Range": {
+                  "Min": 100,
+                  "Max": 150
+                },
+                "Unit": "nm"
+              }
+            }
+          ],
+          "Fiber_Volume_Fraction": {
+            "Value": 40.0,
+            "Unit": "%"
+          },
+          "CVI_SiC_Volume_Fraction": {
+            "Value": 25.3,
+            "Unit": "%",
+            "Data_Source": "table"
+          },
+          "PIP_SiC_Volume_Fraction": {
+            "Value": 26.8,
+            "Unit": "%",
+            "Data_Source": "table"
+          },
+          "Density": {
+            "Value": 2.7,
+            "Unit": "g/cm³",
+            "Data_Source": "table"
+          },
+          "Total_Porosity": {
+            "Value": 7.9,
+            "Unit": "%",
+            "Data_Source": "table"
+          }
+        },
+        "Processing": {
+          "Process_Category": "CVI-PIP hybrid",
+          "Process_Text": {
+            "original": "Same as 1100PIP except PIP temperature 1300°C, total CVI time 80h, 13 PIP cycles",
+            "simplified": "CVI-PIP hybrid: BN interphase → CVI SiC (80h) → PIP SiC at 1300°C (13 cycles)"
+          },
+          "Key_Params": {
+            "Stage1_BN_Deposition": {
+              "Temperature": {
+                "Value": 650,
+                "Unit": "°C"
+              },
+              "Time": {
+                "Value": 20,
+                "Unit": "h"
+              }
+            },
+            "Stage2_CVI_SiC": {
+              "Temperature": {
+                "Value": 1000,
+                "Unit": "°C"
+              },
+              "Total_Deposition_Time": {
+                "Value": 80,
+                "Unit": "h"
+              }
+            },
+            "Stage3_PIP": {
+              "Temperature": {
+                "Value": 1300,
+                "Unit": "°C"
+              },
+              "Time_Per_Cycle": {
+                "Value": 1,
+                "Unit": "h"
+              },
+              "Total_Cycles": 13
+            }
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "SiC fiber in 1300PIP showed no obvious change from 1100PIP. SAED showed diffraction rings and spots. SiC grain size 3-18 nm, average 9.13±2.74 nm. BN interphase intact, higher crystallinity than 1100PIP. PIP SiC avg grain size 6.06±1.61 nm.",
+            "simplified": "Fiber nanocrystalline SiC (avg 9.13 nm, thermally stable); BN interphase crystallized; PIP SiC (avg 6.06 nm)"
+          },
+          "Fiber_Architecture": "Unidirectional (UD)",
+          "Phases": [
+            {
+              "Phase_Name": "SiC (fiber)",
+              "Crystal_Structure": "β-SiC (nanocrystalline)",
+              "Location": "Reinforcement fiber"
+            },
+            {
+              "Phase_Name": "BN",
+              "Crystal_Structure": "partially crystallized",
+              "Location": "Interphase"
+            },
+            {
+              "Phase_Name": "SiC (CVI matrix)",
+              "Crystal_Structure": "β-SiC (crystalline)",
+              "Location": "Matrix"
+            },
+            {
+              "Phase_Name": "SiC (PIP matrix)",
+              "Crystal_Structure": "β-SiC (nanocrystalline)",
+              "Location": "Matrix"
+            },
+            {
+              "Phase_Name": "C layers",
+              "Crystal_Structure": "amorphous carbon",
+              "Location": "CVI SiC and PIP SiC matrix"
+            }
+          ],
+          "Interface_Features": [
+            {
+              "Interface": "F/B (fiber/BN)",
+              "State": "Intact, BN crystallization increased"
+            },
+            {
+              "Interface": "C/P (CVI SiC/PIP SiC)",
+              "State": "Crack deflection evident but decreased vs 1100PIP"
+            }
+          ],
+          "Advanced_Quantitative_Features": {
+            "SiC_fiber_avg_grain_size": {
+              "Value": 9.13,
+              "Value_StdDev": 2.74,
+              "Unit": "nm"
+            },
+            "PIP_SiC_avg_grain_size": {
+              "Value": 6.06,
+              "Value_StdDev": 1.61,
+              "Unit": "nm"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Interfacial_Shear_Strength",
+            "Value": 169.6,
+            "Value_StdDev": 28.4,
+            "Unit": "MPa",
+            "Test_Condition": "push-in test, flat punch 10μm",
+            "Data_Source": "table"
+          },
+          {
+            "Property_Name": "Elastic_Modulus",
+            "Value": 372.5,
+            "Value_StdDev": 6.3,
+            "Unit": "GPa",
+            "Test_Object": "SiC fiber",
+            "Data_Source": "table"
+          },
+          {
+            "Property_Name": "Elastic_Modulus",
+            "Value": 427.6,
+            "Value_StdDev": 11.4,
+            "Unit": "GPa",
+            "Test_Object": "CVI SiC matrix",
+            "Data_Source": "table"
+          },
+          {
+            "Property_Name": "Elastic_Modulus",
+            "Value": 283.5,
+            "Value_StdDev": 7.3,
+            "Unit": "GPa",
+            "Test_Object": "PIP SiC matrix",
+            "Data_Source": "table"
+          },
+          {
+            "Property_Name": "Ultimate_Tensile_Strength",
+            "Value": 789.8,
+            "Value_StdDev": 42.9,
+            "Unit": "MPa",
+            "Test_Condition": "grip speed 0.5 mm/min, specimen 120×10×3 mm, n=3",
+            "Data_Source": "table"
+          },
+          {
+            "Property_Name": "Tensile_Modulus",
+            "Value": 300.3,
+            "Value_StdDev": 10.0,
+            "Unit": "GPa",
+            "Test_Condition": "tensile test, UD fiber direction",
+            "Data_Source": "table"
+          },
+          {
+            "Property_Name": "Proportional_Limit_Stress",
+            "Value": 628.1,
+            "Value_StdDev": 50.3,
+            "Unit": "MPa",
+            "Test_Condition": "tensile test, UD fiber direction",
+            "Data_Source": "table"
+          },
+          {
+            "Property_Name": "Flexural_Strength",
+            "Value": 1935.9,
+            "Value_StdDev": 163.2,
+            "Unit": "MPa",
+            "Test_Condition": "three-point bending, span 32mm, 0.5mm/min, specimen 45×5×2 mm, n=5, ASTM C1161",
+            "Data_Source": "table"
+          },
+          {
+            "Property_Name": "Fracture_Toughness",
+            "Value": 58.2,
+            "Value_StdDev": 4.0,
+            "Unit": "MPa·m^{-1/2}",
+            "Test_Condition": "single edge notch beam, span 30mm, 0.05mm/min, specimen 40×3×5 mm, n=5, ASTM C1421",
+            "Data_Source": "table"
+          },
+          {
+            "Property_Name": "Flexural_Strength",
+            "Value": 1575.0,
+            "Value_StdDev": 84.0,
+            "Unit": "MPa",
+            "Test_Condition": "test temperature 1200°C, three-point bending, span 60mm, 0.5mm/min, specimen 70×5×3 mm, Ar atmosphere",
+            "Data_Source": "table"
+          },
+          {
+            "Property_Name": "Flexural_Modulus",
+            "Value": 279.4,
+            "Value_StdDev": 17.7,
+            "Unit": "GPa",
+            "Test_Condition": "test temperature 1200°C, three-point bending, span 60mm, specimen 70×5×3 mm, Ar atmosphere",
+            "Data_Source": "table"
+          },
+          {
+            "Property_Name": "Flexural_Strength",
+            "Value": 1529.0,
+            "Value_StdDev": 73.0,
+            "Unit": "MPa",
+            "Test_Condition": "test temperature 1350°C, three-point bending, span 60mm, 0.5mm/min, specimen 70×5×3 mm, Ar atmosphere",
+            "Data_Source": "table"
+          },
+          {
+            "Property_Name": "Flexural_Modulus",
+            "Value": 250.0,
+            "Value_StdDev": 8.5,
+            "Unit": "GPa",
+            "Test_Condition": "test temperature 1350°C, three-point bending, span 60mm, specimen 70×5×3 mm, Ar atmosphere",
+            "Data_Source": "table"
+          },
+          {
+            "Property_Name": "Flexural_Strength",
+            "Value": 1223.1,
+            "Value_StdDev": 81.1,
+            "Unit": "MPa",
+            "Test_Condition": "test temperature 1500°C, three-point bending, span 60mm, 0.5mm/min, specimen 70×5×3 mm, Ar atmosphere",
+            "Data_Source": "table"
+          },
+          {
+            "Property_Name": "Flexural_Modulus",
+            "Value": 196.4,
+            "Value_StdDev": 9.4,
+            "Unit": "GPa",
+            "Test_Condition": "test temperature 1500°C, three-point bending, span 60mm, specimen 70×5×3 mm, Ar atmosphere",
+            "Data_Source": "table"
+          },
+          {
+            "Property_Name": "Thermal_Conductivity",
+            "Value": 6.71,
+            "Unit": "W/(m·K)",
+            "Test_Condition": "room temperature",
+            "Test_Object": "Composite",
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Thermal_Conductivity",
+            "Value": 6.04,
+            "Unit": "W/(m·K)",
+            "Test_Condition": "1300°C",
+            "Test_Object": "Composite",
+            "Data_Source": "text"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "1500PIP",
+      "Sample_ID": "1500PIP",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Composites",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [],
+      "Extracted_Data": {
+        "Composition": {
+          "Composite_Category": "CMC",
+          "Composite_System_Raw": "UD SiC_f/SiC composite (CVI-PIP hybrid)",
+          "Matrix": [
+            {
+              "Component": "CVI SiC",
+              "Phase_Name": "SiC",
+              "Crystal_Structure": "β-SiC"
+            },
+            {
+              "Component": "PIP SiC",
+              "Phase_Name": "SiC",
+              "Crystal_Structure": "β-SiC"
+            }
+          ],
+          "Reinforcement": [
+            {
+              "Type": "Fiber",
+              "Name": "Cansas 3303 3rd SiC fiber"
+            }
+          ],
+          "Interface_or_Interphase": [
+            {
+              "Type": "Interphase",
+              "Material": "BN",
+              "Thickness": {
+                "Value_Range": {
+                  "Min": 100,
+                  "Max": 150
+                },
+                "Unit": "nm"
+              }
+            }
+          ],
+          "Fiber_Volume_Fraction": {
+            "Value": 40.0,
+            "Unit": "%"
+          },
+          "CVI_SiC_Volume_Fraction": {
+            "Value": 26.6,
+            "Unit": "%",
+            "Data_Source": "table"
+          },
+          "PIP_SiC_Volume_Fraction": {
+            "Value": 23.9,
+            "Unit": "%",
+            "Data_Source": "table"
+          },
+          "Density": {
+            "Value": 2.71,
+            "Unit": "g/cm³",
+            "Data_Source": "table"
+          },
+          "Total_Porosity": {
+            "Value": 9.5,
+            "Unit": "%",
+            "Data_Source": "table"
+          }
+        },
+        "Processing": {
+          "Process_Category": "CVI-PIP hybrid",
+          "Process_Text": {
+            "original": "Same as 1100PIP except PIP temperature 1500°C, total CVI time 60h, 14 PIP cycles",
+            "simplified": "CVI-PIP hybrid: BN interphase → CVI SiC (60h) → PIP SiC at 1500°C (14 cycles)"
+          },
+          "Key_Params": {
+            "Stage1_BN_Deposition": {
+              "Temperature": {
+                "Value": 650,
+                "Unit": "°C"
+              },
+              "Time": {
+                "Value": 20,
+                "Unit": "h"
+              }
+            },
+            "Stage2_CVI_SiC": {
+              "Temperature": {
+                "Value": 1000,
+                "Unit": "°C"
+              },
+              "Total_Deposition_Time": {
+                "Value": 60,
+                "Unit": "h"
+              }
+            },
+            "Stage3_PIP": {
+              "Temperature": {
+                "Value": 1500,
+                "Unit": "°C"
+              },
+              "Time_Per_Cycle": {
+                "Value": 1,
+                "Unit": "h"
+              },
+              "Total_Cycles": 14
+            }
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "SiC fiber in 1500PIP: grain growth evident, grain size 12-34 nm, average 21.8±5.26 nm. BN interphase had cracks with gap within BN. SiC entered BN interior. PIP SiC avg grain size 22.0±6.4 nm. Fiber not thermally stable at 1500°C - ceramization and decomposition occurred.",
+            "simplified": "Fiber grain growth (avg 21.8 nm, ceramization); BN interphase cracked; PIP SiC grain growth (avg 22.0 nm)"
+          },
+          "Fiber_Architecture": "Unidirectional (UD)",
+          "Phases": [
+            {
+              "Phase_Name": "SiC (fiber)",
+              "Crystal_Structure": "β-SiC (coarsened grains)",
+              "Location": "Reinforcement fiber"
+            },
+            {
+              "Phase_Name": "BN",
+              "Crystal_Structure": "crystallized",
+              "Location": "Interphase",
+              "Note": "Cracks/gap within BN interphase due to crystallization shrinkage"
+            },
+            {
+              "Phase_Name": "SiC (CVI matrix)",
+              "Crystal_Structure": "β-SiC (crystalline, thermally stable)",
+              "Location": "Matrix"
+            },
+            {
+              "Phase_Name": "SiC (PIP matrix)",
+              "Crystal_Structure": "β-SiC (crystalline, grain growth)",
+              "Location": "Matrix"
+            },
+            {
+              "Phase_Name": "C layers",
+              "Crystal_Structure": "amorphous carbon",
+              "Location": "CVI SiC and PIP SiC matrix"
+            }
+          ],
+          "Interface_Features": [
+            {
+              "Interface": "F/B (fiber/BN)",
+              "State": "Gap/cracks within BN interphase"
+            },
+            {
+              "Interface": "C/P (CVI SiC/PIP SiC)",
+              "State": "No crack deflection observed at C/P interface"
+            }
+          ],
+          "Defects": [
+            {
+              "Type": "Gap",
+              "Location": "BN interphase",
+              "Cause": "Crystallization shrinkage of BN and SiC fiber at 1500°C"
+            },
+            {
+              "Type": "Micro-holes",
+              "Location": "SiC fiber",
+              "Cause": "Volume shrinkage from ceramization at 1500°C"
+            }
+          ],
+          "Advanced_Quantitative_Features": {
+            "SiC_fiber_avg_grain_size": {
+              "Value": 21.8,
+              "Value_StdDev": 5.26,
+              "Unit": "nm"
+            },
+            "SiC_fiber_grain_size_range": {
+              "Min": 12,
+              "Max": 34,
+              "Unit": "nm"
+            },
+            "PIP_SiC_avg_grain_size": {
+              "Value": 22.0,
+              "Value_StdDev": 6.4,
+              "Unit": "nm"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Interfacial_Shear_Strength",
+            "Value": 44.7,
+            "Value_StdDev": 8.5,
+            "Unit": "MPa",
+            "Test_Condition": "push-in test, flat punch 10μm",
+            "Data_Source": "table"
+          },
+          {
+            "Property_Name": "Elastic_Modulus",
+            "Value": 388.7,
+            "Value_StdDev": 7.7,
+            "Unit": "GPa",
+            "Test_Object": "SiC fiber",
+            "Data_Source": "table"
+          },
+          {
+            "Property_Name": "Elastic_Modulus",
+            "Value": 431.9,
+            "Value_StdDev": 12.5,
+            "Unit": "GPa",
+            "Test_Object": "CVI SiC matrix",
+            "Data_Source": "table"
+          },
+          {
+            "Property_Name": "Elastic_Modulus",
+            "Value": 365.9,
+            "Value_StdDev": 12.9,
+            "Unit": "GPa",
+            "Test_Object": "PIP SiC matrix",
+            "Data_Source": "table"
+          },
+          {
+            "Property_Name": "Ultimate_Tensile_Strength",
+            "Value": 466.6,
+            "Value_StdDev": 55.1,
+            "Unit": "MPa",
+            "Test_Condition": "grip speed 0.5 mm/min, specimen 120×10×3 mm, n=3",
+            "Data_Source": "table"
+          },
+          {
+            "Property_Name": "Tensile_Modulus",
+            "Value": 287.7,
+            "Value_StdDev": 14.3,
+            "Unit": "GPa",
+            "Test_Condition": "tensile test, UD fiber direction",
+            "Data_Source": "table"
+          },
+          {
+            "Property_Name": "Proportional_Limit_Stress",
+            "Value": 373.9,
+            "Value_StdDev": 67.3,
+            "Unit": "MPa",
+            "Test_Condition": "tensile test, UD fiber direction",
+            "Data_Source": "table"
+          },
+          {
+            "Property_Name": "Flexural_Strength",
+            "Value": 1175.8,
+            "Value_StdDev": 128.4,
+            "Unit": "MPa",
+            "Test_Condition": "three-point bending, span 32mm, 0.5mm/min, specimen 45×5×2 mm, n=5, ASTM C1161",
+            "Data_Source": "table"
+          },
+          {
+            "Property_Name": "Fracture_Toughness",
+            "Value": 37.1,
+            "Value_StdDev": 5.9,
+            "Unit": "MPa·m^{-1/2}",
+            "Test_Condition": "single edge notch beam, span 30mm, 0.05mm/min, specimen 40×3×5 mm, n=5, ASTM C1421",
+            "Data_Source": "table"
+          },
+          {
+            "Property_Name": "Thermal_Conductivity",
+            "Value": 12.98,
+            "Unit": "W/(m·K)",
+            "Test_Condition": "room temperature",
+            "Test_Object": "Composite",
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Thermal_Conductivity",
+            "Value": 8.93,
+            "Unit": "W/(m·K)",
+            "Test_Condition": "1300°C",
+            "Test_Object": "Composite",
+            "Data_Source": "text"
+          }
+        ]
+      }
+    }
+  ]
+}

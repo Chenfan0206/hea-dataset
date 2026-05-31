@@ -1,0 +1,627 @@
+{
+  "Paper_Metadata": {
+    "Paper_Title": "Investigation on the machinability of SiCp/Al composite by in-situ laser assisted diamond cutting",
+    "DOI": "10.1016/j.jmatprotec.2023.118044"
+  },
+  "Paper_Routing": {
+    "base_material": "Composites",
+    "application": "Structural",
+    "research_paradigm": "Experimental",
+    "Supplements_Loaded": [
+      "directions/base/Composites.txt",
+      "directions/application/Structural.txt",
+      "directions/paradigm/Experimental.txt",
+      "directions/domain/Machining.txt"
+    ],
+    "Patch_Tags": [
+      "Laser_Assisted"
+    ],
+    "Needs_Mixed_Routing_Check": false
+  },
+  "items": [
+    {
+      "Item_ID": "item_01",
+      "Sample_ID": "SiCp_Al_45vol_conventional_cutting",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Composites",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Laser_Assisted"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 2.1 Material properties",
+        "Section 2.2 Experimental setup",
+        "Section 2.3 Experimental procedure",
+        "Section 3.1 Influence of machining parameters on surface quality",
+        "Section 3.2 Analysis of tool wear mechanism",
+        "Section 3.3 Analysis of residual stress distribution",
+        "Section 3.4 Analysis of microstructure deformation",
+        "Table 1"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Composite_Category": "MMC",
+          "Composite_System_Raw": "SiCp/Al composite",
+          "Matrix": {
+            "Matrix_Material": "Al alloy",
+            "Detail": "Al matrix; elemental composition includes Al, Si, and O per EDS; Si originally present in alloy matrix; small amount of O due to slight oxidation of surface material"
+          },
+          "Reinforcement": {
+            "Reinforcement_Type": "Particle",
+            "Reinforcement_Material": "SiC",
+            "Volume_Fraction": {
+              "Value": 45,
+              "Unit": "vol%",
+              "Original_Values": "45%"
+            },
+            "Particle_Size": {
+              "Value": null,
+              "Unit": "μm",
+              "Note": "maximum size of about 7 μm; exact average not given",
+              "Original_Values": "maximum size of about 7 μm"
+            },
+            "Polytype": "6H-SiC",
+            "EDS_Composition": "Si, C, Al (Al from adhesion during polishing)"
+          },
+          "Workpiece_Material": "SiCp/Al composite, 45 vol% SiC, max particle size ~7 μm, round bulk of 20 mm in diameter",
+          "Tool_Material": "Synthetic single crystal diamond",
+          "Tool_Geometry": {
+            "Cutting_Edge_Radius": {
+              "Value": 100,
+              "Unit": "nm",
+              "Original_Values": "100 nm"
+            },
+            "Nose_Radius": {
+              "Value": 0.5,
+              "Unit": "mm",
+              "Original_Values": "0.5 mm"
+            },
+            "Rake_Angle": {
+              "Value": -35,
+              "Unit": "°",
+              "Original_Values": "-35°"
+            },
+            "Clearance_Angle": {
+              "Value": 10,
+              "Unit": "°",
+              "Original_Values": "10°"
+            }
+          }
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "SiCp/Al composite machined by conventional diamond cutting (0 W laser) and in-situ laser assisted diamond cutting (2-8 W laser), using Precitech Nanoform X ultra-precision machine tool with continuous-wave laser YLM-50-AC (1070 nm, max 50 W)",
+            "simplified": "Diamond cutting and in-situ laser assisted diamond cutting of SiCp/Al composite with varying laser power (0-8 W), cutting speed (60-120 m/min), DOC (1-3 μm), feed speed (1-3 μm/r)"
+          },
+          "Equipment": [
+            {
+              "Name": "Precitech Nanoform X",
+              "Category": "Preparation",
+              "Detail": "Ultra-precision machine tool, position resolution 1 nm"
+            },
+            {
+              "Name": "YLM-50-AC (IPG Photonics)",
+              "Category": "Preparation",
+              "Detail": "Continuous-wave laser, wavelength 1070 nm, max average output power 50 W, M² < 1.1, Gaussian distribution"
+            },
+            {
+              "Name": "Helios NanoLab G3 CX (FEI)",
+              "Category": "Characterization",
+              "Detail": "Focusing ion and electron double beam system, for surface morphology, EDS mapping, and TEM sample preparation"
+            },
+            {
+              "Name": "ZYGO Newview 9000",
+              "Category": "Testing",
+              "Detail": "White light interferometer (WLI), for surface roughness Sa measurement"
+            },
+            {
+              "Name": "ZEISS Axiolab 5",
+              "Category": "Characterization",
+              "Detail": "Optical microscope, for tool flank wear land width VB measurement"
+            },
+            {
+              "Name": "X'pert3 powder (PANalytical B.V.)",
+              "Category": "Characterization",
+              "Detail": "X-ray diffractometer, for residual stress and phase composition measurement"
+            },
+            {
+              "Name": "inVia Reflex (Renishaw)",
+              "Category": "Characterization",
+              "Detail": "Raman spectrometer, 532 nm laser wavelength, for Raman spectrum measurement"
+            },
+            {
+              "Name": "Talos F200X (FEI)",
+              "Category": "Characterization",
+              "Detail": "TEM, for subsurface damage observation"
+            },
+            {
+              "Name": "CCD camera",
+              "Category": "Preparation",
+              "Detail": "Real-time machining condition monitoring during processing"
+            }
+          ],
+          "Machining_Method": [
+            {
+              "Method_Name": "Conventional diamond cutting",
+              "Key_Params": {
+                "Laser_Power_W": 0,
+                "Cutting_Speed_m_min": 60,
+                "Depth_of_Cut_um": 1,
+                "Feed_Speed_um_r": 1,
+                "Spot_Diameter_um": null,
+                "Cooling_or_Lubrication": null
+              },
+              "Source": "Table 1, No. 1"
+            },
+            {
+              "Method_Name": "In-situ laser assisted diamond cutting",
+              "Key_Params": {
+                "Laser_Power_W": 2,
+                "Cutting_Speed_m_min": 60,
+                "Depth_of_Cut_um": 1,
+                "Feed_Speed_um_r": 1,
+                "Spot_Diameter_um": 80,
+                "Cooling_or_Lubrication": null
+              },
+              "Source": "Table 1, No. 2"
+            },
+            {
+              "Method_Name": "In-situ laser assisted diamond cutting",
+              "Key_Params": {
+                "Laser_Power_W": 4,
+                "Cutting_Speed_m_min": 60,
+                "Depth_of_Cut_um": 1,
+                "Feed_Speed_um_r": 1,
+                "Spot_Diameter_um": 80,
+                "Cooling_or_Lubrication": null
+              },
+              "Source": "Table 1, No. 3"
+            },
+            {
+              "Method_Name": "In-situ laser assisted diamond cutting",
+              "Key_Params": {
+                "Laser_Power_W": 6,
+                "Cutting_Speed_m_min": 60,
+                "Depth_of_Cut_um": 1,
+                "Feed_Speed_um_r": 1,
+                "Spot_Diameter_um": 80,
+                "Cooling_or_Lubrication": null
+              },
+              "Source": "Table 1, No. 4"
+            },
+            {
+              "Method_Name": "In-situ laser assisted diamond cutting",
+              "Key_Params": {
+                "Laser_Power_W": 8,
+                "Cutting_Speed_m_min": 60,
+                "Depth_of_Cut_um": 1,
+                "Feed_Speed_um_r": 1,
+                "Spot_Diameter_um": 80,
+                "Cooling_or_Lubrication": null
+              },
+              "Source": "Table 1, No. 5"
+            },
+            {
+              "Method_Name": "In-situ laser assisted diamond cutting",
+              "Key_Params": {
+                "Laser_Power_W": 4,
+                "Cutting_Speed_m_min": 60,
+                "Depth_of_Cut_um": 1,
+                "Feed_Speed_um_r": 3,
+                "Spot_Diameter_um": 80,
+                "Cooling_or_Lubrication": null
+              },
+              "Source": "Table 1, No. 6"
+            },
+            {
+              "Method_Name": "In-situ laser assisted diamond cutting",
+              "Key_Params": {
+                "Laser_Power_W": 4,
+                "Cutting_Speed_m_min": 60,
+                "Depth_of_Cut_um": 3,
+                "Feed_Speed_um_r": 1,
+                "Spot_Diameter_um": 80,
+                "Cooling_or_Lubrication": null
+              },
+              "Source": "Table 1, No. 7"
+            },
+            {
+              "Method_Name": "In-situ laser assisted diamond cutting",
+              "Key_Params": {
+                "Laser_Power_W": 4,
+                "Cutting_Speed_m_min": 120,
+                "Depth_of_Cut_um": 1,
+                "Feed_Speed_um_r": 1,
+                "Spot_Diameter_um": 80,
+                "Cooling_or_Lubrication": null
+              },
+              "Source": "Table 1, No. 8"
+            }
+          ],
+          "Laser_Assist": {
+            "Laser_Type": "Continuous-wave",
+            "Wavelength_nm": 1070,
+            "Max_Output_Power_W": 50,
+            "Beam_Quality_Factor_M2": {
+              "Inequality": "<1.1",
+              "Original_Values": "M² < 1.1"
+            },
+            "Energy_Distribution": "Gaussian",
+            "Spot_Diameter_um": {
+              "Value": 80,
+              "Original_Values": "80 μm"
+            },
+            "Focusing_Position": "Cutting edge through transparent diamond tool"
+          },
+          "Workpiece_Dimension": {
+            "Shape": "Round bulk",
+            "Diameter_mm": 20,
+            "Original_Values": "round bulk of 20 mm in diameter"
+          },
+          "Tool_Wear_Test_Condition": {
+            "Feed_Speed_um_r": 1,
+            "Cutting_Speed_m_min": 60,
+            "Cumulative_Cutting_Distance_m": {
+              "Value": 628,
+              "Note": "about 628 m; end face cut twice per process with feed 1 μm/r on 20 mm diameter round bulk",
+              "Original_Values": "about 628 m"
+            }
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "SiCp/Al composite consists of Al matrix and SiC particles (6H-SiC polytype). XRD spectrum confirms phase composition. TEM reveals amorphous layer of ~40 nm on machined surface, with subsurface defects including SiC particle fracture, micro-cracks, dislocations, and stacking faults at SiC/Al interface. No debonding at two-phase interface. 6H-SiC lattice spacing 2.36 Å, plane index (103); Al matrix lattice spacing 2.02 Å, plane index (200).",
+            "simplified": "Matrix: Al (FCC, a spacing 2.02 Å, plane (200)); Reinforcement: 6H-SiC (HCP, a spacing 2.36 Å, plane (103)); Amorphous layer ~40 nm on machined surface; Subsurface defects: particle fracture, micro-crack, dislocations, stacking faults"
+          },
+          "Phase_Composition": [
+            {
+              "Phase_Name": "Al matrix",
+              "Crystal_Structure": "FCC",
+              "Lattice_Spacing_Angstrom": {
+                "Value": 2.02,
+                "Plane_Index": "(200)",
+                "Original_Values": "2.02 Å, crystal plane index (200)",
+                "Data_Source": "text",
+                "Method": "TEM (Talos F200X)"
+              },
+              "Location": "Matrix"
+            },
+            {
+              "Phase_Name": "6H-SiC",
+              "Crystal_Structure": "HCP",
+              "Lattice_Spacing_Angstrom": {
+                "Value": 2.36,
+                "Plane_Index": "(103)",
+                "Original_Values": "2.36 Å, crystal plane index (103)",
+                "Data_Source": "text",
+                "Method": "HRTEM"
+              },
+              "Location": "Reinforcement particles"
+            }
+          ],
+          "Raman_Characterization_of_SiC": {
+            "Polytype": "6H-SiC",
+            "Characteristic_Peaks": {
+              "FTA_cm-1": 148,
+              "FTO_cm-1": [
+                765,
+                788
+              ],
+              "FLO_cm-1": 969,
+              "Note": "FTA = folded modes of transverse acoustic; FTO = transverse optic; FLO = longitudinal optic; FTO at 788 cm⁻¹ has maximum intensity, reduced wave vector x=1/3, confirming 6H-SiC"
+            },
+            "Phase_Stability": "6H-SiC not transformed into other polytypes after processing at any laser power (0-8 W)",
+            "Frequency_Shift_at_4W": {
+              "FTO_x1_3_cm-1": 1,
+              "FLO_x0_cm-1": 3,
+              "Direction": "high frequency shift",
+              "Interpretation": "Small compressive stress at SiC particles"
+            }
+          },
+          "Surface_Integrity": {
+            "Amorphous_Layer": {
+              "Thickness_nm": {
+                "Value": 40,
+                "Note": "approximately 40 nm; attributed to interaction between laser irradiation, diamond tool, and workpiece; TEM observation from machined surface at 4 W laser power (Fig. 12); conclusion states as general finding",
+                "Original_Values": "about 40 nm",
+                "Data_Source": "text"
+              },
+              "Location": "Machined surface, present on both SiC particle and Al matrix"
+            },
+            "Subsurface_Defects": [
+              "SiC particle fracture",
+              "Amorphous transformation",
+              "Micro-crack",
+              "Stacking faults",
+              "Dislocations"
+            ],
+            "Interface_Condition": "No debonding at SiC/Al interface; crystal twins and dislocations on SiC side near grain boundary; small crystalline region on Al side; grain boundary clearly identified",
+            "Data_Source": "text",
+            "Method": "TEM (Talos F200X) + FIB sample preparation at junction of SiC particles and Al matrix"
+          },
+          "Surface_Morphology": {
+            "Condition_0W": {
+              "Defects": [
+                "pits",
+                "scratches",
+                "SiC particle breakage",
+                "fluxion defects"
+              ],
+              "Note": "Main surface defects in conventional diamond cutting",
+              "Data_Source": "text"
+            },
+            "Condition_2W": {
+              "Defects": [
+                "pits",
+                "scratches"
+              ],
+              "Note": "Insufficient energy for material softening; particle pulled-out still occurs",
+              "Data_Source": "text"
+            },
+            "Condition_4W": {
+              "Note": "No large-sized pits and scratches; Al matrix plastically flows to fill pits; SiC particles fractured or pressed into matrix; best surface quality",
+              "Data_Source": "text"
+            },
+            "Condition_6W": {
+              "Note": "No large-sized pits and scratches; small particles pressed into matrix; cracks appear when pit size too large to fill",
+              "Data_Source": "text"
+            },
+            "Condition_8W": {
+              "Defects": [
+                "pits",
+                "scratches"
+              ],
+              "Note": "Al softening accelerated, bonding force decreases, particles pulled out again",
+              "Data_Source": "text"
+            },
+            "Condition_4W_f3": {
+              "Note": "No obvious feed marks; size and number of defects increase including pits, breakage, and scratches compared to No. 3 (f=1 μm/r)",
+              "Data_Source": "text",
+              "Table_1_No": 6
+            },
+            "Condition_4W_d3": {
+              "Note": "Size and number of surface defects increase significantly compared to No. 3 (d=1 μm)",
+              "Data_Source": "text",
+              "Table_1_No": 7
+            },
+            "Condition_4W_v120": {
+              "Note": "Machining quality worse than No. 3 (v=60 m/min); material cannot be effectively softened at higher cutting speed, surface quality deteriorates",
+              "Data_Source": "text",
+              "Table_1_No": 8
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Surface_Roughness_Sa",
+            "Value": 97.6,
+            "Unit": "nm",
+            "Original_Values": "97.6 nm",
+            "Data_Source": "text",
+            "Test_Condition": {
+              "Machining_Method": "Conventional diamond cutting",
+              "Laser_Power_W": 0,
+              "Cutting_Speed_m_min": 60,
+              "Depth_of_Cut_um": 1,
+              "Feed_Speed_um_r": 1,
+              "Table_1_No": 1
+            },
+            "Measurement": {
+              "Instrument": "ZYGO Newview 9000 (WLI)",
+              "Repetitions": 5,
+              "Statistic": "average"
+            }
+          },
+          {
+            "Property_Name": "Surface_Roughness_Sa",
+            "Value": null,
+            "Unit": "nm",
+            "Note": "Value not explicitly given in text for 2 W condition; described qualitatively as still having pits and scratches",
+            "Data_Source": "text",
+            "Test_Condition": {
+              "Machining_Method": "In-situ laser assisted diamond cutting",
+              "Laser_Power_W": 2,
+              "Cutting_Speed_m_min": 60,
+              "Depth_of_Cut_um": 1,
+              "Feed_Speed_um_r": 1,
+              "Table_1_No": 2
+            }
+          },
+          {
+            "Property_Name": "Surface_Roughness_Sa",
+            "Value": 10.2,
+            "Unit": "nm",
+            "Original_Values": "10.2 nm",
+            "Data_Source": "text",
+            "Test_Condition": {
+              "Machining_Method": "In-situ laser assisted diamond cutting",
+              "Laser_Power_W": 4,
+              "Cutting_Speed_m_min": 60,
+              "Depth_of_Cut_um": 1,
+              "Feed_Speed_um_r": 1,
+              "Table_1_No": 3
+            },
+            "Note": "Best surface roughness; minimum within selected parameter range; 89.5% decrease compared to conventional diamond cutting (97.6 nm to 10.2 nm)",
+            "Measurement": {
+              "Instrument": "ZYGO Newview 9000 (WLI)",
+              "Repetitions": 5,
+              "Statistic": "average"
+            }
+          },
+          {
+            "Property_Name": "Surface_Roughness_Sa",
+            "Value": null,
+            "Unit": "nm",
+            "Note": "Value not explicitly given in text for 6 W condition; described qualitatively as no large-sized pits and scratches",
+            "Data_Source": "text",
+            "Test_Condition": {
+              "Machining_Method": "In-situ laser assisted diamond cutting",
+              "Laser_Power_W": 6,
+              "Cutting_Speed_m_min": 60,
+              "Depth_of_Cut_um": 1,
+              "Feed_Speed_um_r": 1,
+              "Table_1_No": 4
+            }
+          },
+          {
+            "Property_Name": "Surface_Roughness_Sa",
+            "Value": null,
+            "Unit": "nm",
+            "Note": "Value not explicitly given in text for 8 W condition; described qualitatively as pits and scratches appearing again",
+            "Data_Source": "text",
+            "Test_Condition": {
+              "Machining_Method": "In-situ laser assisted diamond cutting",
+              "Laser_Power_W": 8,
+              "Cutting_Speed_m_min": 60,
+              "Depth_of_Cut_um": 1,
+              "Feed_Speed_um_r": 1,
+              "Table_1_No": 5
+            }
+          },
+          {
+            "Property_Name": "Tool_Flank_Wear_VB",
+            "Value": 22.6,
+            "Unit": "μm",
+            "Original_Values": "22.6 μm",
+            "Data_Source": "text",
+            "Test_Condition": {
+              "Machining_Method": "Conventional diamond cutting",
+              "Laser_Power_W": 0,
+              "Cutting_Speed_m_min": 60,
+              "Feed_Speed_um_r": 1,
+              "Cumulative_Cutting_Distance_m": 628,
+              "Workpiece": "Round bulk, 20 mm diameter, 2 cuts per process"
+            },
+            "Measurement": {
+              "Instrument": "ZEISS Axiolab 5 (optical microscope)"
+            },
+            "Tool_Wear_Form": "Flank wear (flat, no scratches)",
+            "Wear_Mechanism": "Abrasive wear"
+          },
+          {
+            "Property_Name": "Tool_Flank_Wear_VB",
+            "Value": 24.8,
+            "Unit": "μm",
+            "Original_Values": "24.8 μm",
+            "Data_Source": "text",
+            "Test_Condition": {
+              "Machining_Method": "In-situ laser assisted diamond cutting",
+              "Laser_Power_W": 4,
+              "Cutting_Speed_m_min": 60,
+              "Feed_Speed_um_r": 1,
+              "Cumulative_Cutting_Distance_m": 628,
+              "Workpiece": "Round bulk, 20 mm diameter, 2 cuts per process"
+            },
+            "Measurement": {
+              "Instrument": "ZEISS Axiolab 5 (optical microscope)"
+            },
+            "Tool_Wear_Form": "Flank wear (smooth part + non-flat area with scratches)",
+            "Wear_Mechanism": "Abrasive wear + chemical wear; lattice distortion induced by laser irradiation, cutting heat, and pressure",
+            "Note": "Slightly more severe than conventional diamond cutting; Raman spectroscopy shows no obvious graphitization but significantly reduced Raman band intensity due to lattice distortion"
+          },
+          {
+            "Property_Name": "Residual_Stress",
+            "Value": 296.55,
+            "Unit": "MPa",
+            "Original_Values": "296.55 MPa",
+            "Data_Source": "text",
+            "Stress_Type": "Tensile",
+            "Test_Condition": {
+              "Surface_Condition": "Polished surface (before machining)",
+              "Measurement_Method": "XRD sin²ψ method"
+            },
+            "Measurement": {
+              "Instrument": "X'pert3 powder (PANalytical B.V.)",
+              "Diffraction_Peak_Angle_deg": 78.2,
+              "Scan_Range_deg": "20-100",
+              "Elastic_Modulus_GPa": 160,
+              "Poisson_Ratio": 0.32
+            }
+          },
+          {
+            "Property_Name": "Residual_Stress",
+            "Value": null,
+            "Unit": "MPa",
+            "Note": "Described as residual tensile stress; exact value for 0 W conventional cutting not given in text; stated as roughly equivalent to 8 W condition (434.64 MPa)",
+            "Data_Source": "text",
+            "Stress_Type": "Tensile",
+            "Test_Condition": {
+              "Machining_Method": "Conventional diamond cutting",
+              "Laser_Power_W": 0,
+              "Cutting_Speed_m_min": 60,
+              "Depth_of_Cut_um": 1,
+              "Feed_Speed_um_r": 1,
+              "Table_1_No": 1
+            },
+            "Measurement": {
+              "Instrument": "X'pert3 powder (PANalytical B.V.)",
+              "Diffraction_Peak_Angle_deg": 78.2
+            }
+          },
+          {
+            "Property_Name": "Residual_Stress",
+            "Value": 254.3,
+            "Unit": "MPa",
+            "Original_Values": "254.3 MPa",
+            "Data_Source": "text",
+            "Stress_Type": "Tensile",
+            "Test_Condition": {
+              "Machining_Method": "In-situ laser assisted diamond cutting",
+              "Laser_Power_W": 4,
+              "Cutting_Speed_m_min": 60,
+              "Depth_of_Cut_um": 1,
+              "Feed_Speed_um_r": 1,
+              "Table_1_No": 3
+            },
+            "Note": "Decreased by 42% compared with conventional diamond cutting; even slightly smaller than polished surface (296.55 MPa)",
+            "Measurement": {
+              "Instrument": "X'pert3 powder (PANalytical B.V.)",
+              "Diffraction_Peak_Angle_deg": 78.2,
+              "Elastic_Modulus_GPa": 160,
+              "Poisson_Ratio": 0.32
+            }
+          },
+          {
+            "Property_Name": "Residual_Stress",
+            "Value": 434.64,
+            "Unit": "MPa",
+            "Original_Values": "434.64 MPa",
+            "Data_Source": "text",
+            "Stress_Type": "Tensile",
+            "Test_Condition": {
+              "Machining_Method": "In-situ laser assisted diamond cutting",
+              "Laser_Power_W": 8,
+              "Cutting_Speed_m_min": 60,
+              "Depth_of_Cut_um": 1,
+              "Feed_Speed_um_r": 1,
+              "Table_1_No": 5
+            },
+            "Note": "Roughly equivalent to conventional diamond cutting; numerous SiC particles pulled out again, increasing residual stress",
+            "Measurement": {
+              "Instrument": "X'pert3 powder (PANalytical B.V.)",
+              "Diffraction_Peak_Angle_deg": 78.2
+            }
+          },
+          {
+            "Property_Name": "Elastic_Modulus",
+            "Value": 160,
+            "Unit": "GPa",
+            "Original_Values": "160 GPa",
+            "Data_Source": "text",
+            "Note": "Material constant of 45 vol% SiCp/Al composite, used as input parameter for XRD residual stress calculation"
+          },
+          {
+            "Property_Name": "Poisson_Ratio",
+            "Value": 0.32,
+            "Original_Values": "0.32",
+            "Data_Source": "text",
+            "Note": "Material constant of 45 vol% SiCp/Al composite, used as input parameter for XRD residual stress calculation"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,899 @@
+{
+"Paper_Metadata": {
+"Paper_Title": "Revealing the oxidation growth mechanism and crack evolution law of novel Si–HfO2/Yb2Si2O7/Yb2SiO5 environmental barrier coatings during thermal cycling",
+"DOI": "10.26599/JAC.2024.9220969"
+},
+"items": [
+{
+"Sample_ID": "Target-1",
+"Gradient_Material": false,
+"Gradient_Group_ID": null,
+"Composition_Info": {
+"Role": "Target",
+"Alloy_Name_Raw": "Si–HfO2/Yb2Si2O7/Yb2SiO5 trilayer environmental barrier coating on SiCf/SiC CMC substrate",
+"Nominal_Composition": {
+"Composition_Type": null,
+"Elements_Normalized": null
+},
+"Measured_Composition": {
+"Composition_Type": null,
+"Elements_Normalized": null,
+"Measurement_Method": "EDS and XRD/Rietveld"
+},
+"Note": "Layered EBC system rather than a single homogeneous alloy. Bond-coat starting powder was 85 mol% Si + 15 mol% HfO2; Yb2SiO5 and Yb2Si2O7 powders were synthesized from Yb2O3 and SiO2. Measured feedstock phase compositions: Yb2SiO5 feedstock = pure X2-Yb2SiO5; Yb2Si2O7 feedstock = 94.4 mol% beta-Yb2Si2O7 + 5.6 mol% X2-Yb2SiO5; Si–HfO2 feedstock = 85.3 mol% cubic Si + 14.7 mol% monoclinic HfO2. After thermal cycling, the bond coat transformed into m-TGO consisting of SiO2, HfSiO4, and residual HfO2."
+},
+"Process_Info": {
+"Process_Category": "Powder synthesis + spray granulation + PS-PVD trilayer EBC deposition + thermal cycling in air",
+"Process_Text": {
+"original": "Si–HfO2/Yb2Si2O7/Yb2SiO5 EBC samples were deposited on the surface of 15 mm × 15 mm bulk SiCf/SiC substrates (surface roughness, Ra = 5 μm) via plasma spraying physical vapor deposition (PS-PVD). Commercial Yb2O3 and SiO2 powders (99.99% purity) were mixed at 1:1 and 1:2 ratios, respectively, wet-milled at 450 r/min for 7 h in a ball mill equipped with zirconia balls, dried, and then reacted in a high-temperature furnace at 1400 °C for 2 h to synthesize Yb2SiO5 and Yb2Si2O7 initial powders. Initial Si–HfO2 powders were produced by blending 15 mol% HfO2 (99.95% purity) with 85 mol% Si (99.99% purity), ball-milling at 500 r/min for 12 h, and drying. The three initial powders were then converted into spherical feedstocks by spray granulation with slurry solid content 40%–50%, binder content 4%–6%, inlet air temperature 200–300 °C, outlet air temperature 90–120 °C, atomization disk frequency 20–50 Hz, and feed pump speed 30–50 r/min. The trilayer EBC was fabricated on the CMC substrate via PS-PVD; deposition parameters for PS-PVD were not reported in this paper and were said to be detailed in Ref. [34]. Thermal cycling consisted of isothermal heating for 1 h at 1400, 1450, or 1500 °C, followed by rapid cooling in a stream of air to room temperature for 10 min. Cycling continued until visible spallation or a preset 200 cycles.",
+"simplified": "Yb2SiO5 and Yb2Si2O7 powders were synthesized by wet milling Yb2O3/SiO2 mixtures and reacting at 1400 °C for 2 h. Si–HfO2 bond-coat powder was prepared from 85 mol% Si + 15 mol% HfO2 by ball milling for 12 h. All powders were spray-granulated to spherical feedstocks, then deposited as a Si–HfO2/Yb2Si2O7/Yb2SiO5 trilayer on SiCf/SiC by PS-PVD. Thermal cycling in air used 1 h holds at 1400, 1450, or 1500 °C plus 10 min air cooling to room temperature, up to 200 cycles."
+},
+"Equipment": "Ball mill with zirconia balls; high-temperature furnace; PS-PVD system (model not specified); XRD D8-ADVANCE (Bruker, USA) for phase analysis; SEM/FIB Scios 2 DualBeam (Thermo Scientific, USA); TEM Talos F200X (FEI, USA)",
+"Key_Params": {
+"Substrate_Size_mm": "15×15",
+"Surface_Roughness_Ra_um": 5.0,
+"Yb_Powder_Ball_Milling_Speed_r_min": 450.0,
+"Yb_Powder_Ball_Milling_Time_h": 7.0,
+"Solid_State_Reaction_Temperature_K": 1673.15,
+"Solid_State_Reaction_Time_h": 2.0,
+"Si_HfO2_Ball_Milling_Speed_r_min": 500.0,
+"Si_HfO2_Ball_Milling_Time_h": 12.0,
+"Spray_Granulation_Slurry_Solid_Content_pct": "40-50",
+"Spray_Granulation_Binder_Content_pct": "4-6",
+"Spray_Granulation_Inlet_Air_Temperature_K": "473.15-573.15",
+"Spray_Granulation_Outlet_Air_Temperature_K": "363.15-393.15",
+"Spray_Granulation_Atomization_Disk_Frequency_Hz": "20-50",
+"Spray_Granulation_Feed_Pump_Speed_r_min": "30-50",
+"Protective_Atmosphere": "Air",
+"Thermal_Cycling_Hold_Time_h": 1.0,
+"Cooling_Time_min": 10.0,
+"Thermal_Cycling_Temperature_K": "1673.15, 1723.15, 1773.15"
+}
+},
+"Microstructure_Info": {
+"Microstructure_Text": {
+"original": "The as-sprayed trilayer coating had a dense structure with tight adhesion to the CMC substrate and no apparent cracks at the layer interfaces. The thicknesses of Si–HfO2, Yb2Si2O7, and Yb2SiO5 layers were about 40, 119, and 75 μm, respectively. A few encapsulated pores existed in the Yb2Si2O7 layer. The Si–HfO2 bond coat showed largely uniform mixing of Si and HfO2 phases. Yb2Si2O7 and Yb2SiO5 layers showed typical layered microstructures; Yb2SiO7 contained a small amount of light-gray lamellar secondary phase and Yb2SiO5 contained a small amount of dark-gray lamellar secondary phase related to partial dissociation/reaction behavior during spraying. The coating surface consisted of fully melted and partially melted particles, with surface porosity of 3.68%. During thermal cycling, the bond coat evolved into a mixed thermally grown oxide (m-TGO) with a dual-phase duplex structure of HfSiO4 particles dispersed in SiO2 cristobalite mortar. After 25 h at 1450 °C, TEM showed standing free light-gray precipitates composed of Hf, Si, and O within a Si–O matrix; SAED confirmed tetragonal HfSiO4, and the average HfSiO4 precipitate size was about 1.16 μm. Throughout thermal cycling, Hf-rich precipitates remained generally uniformly distributed and no distinct independent SiO2 scale was observed. At later stages, oriented cracks formed within m-TGO; vertical mud cracks formed in the Yb2SiO5 layer and bifurcated near the Yb2SiO7/Yb2SiO5 interface. Twins and dislocations were observed in Yb2SiO7 after 1450 °C thermal cycling.",
+"simplified": "As-sprayed PS-PVD coating was dense and well adhered, with approximate layer thicknesses of 40 μm (Si–HfO2), 119 μm (Yb2Si2O7), and 75 μm (Yb2SiO5). Surface porosity was 3.68%. The bond coat was compositionally uniform and transformed during cycling into m-TGO made of HfSiO4 precipitates in SiO2 cristobalite mortar. HfSiO4 precipitates averaged about 1.16 μm after 25 h at 1450 °C. No independent SiO2 scale was detected; instead, oriented cracks formed in m-TGO and vertical mud cracks formed in Yb2SiO5, later bifurcating at the Yb2Si2O7/Yb2SiO5 interface."
+},
+"Main_Phase": null,
+"Precipitates": [
+{
+"Phase_Type": "HfSiO4",
+"Volume_Fraction_pct": null
+}
+],
+"Porosity_pct": 3.68,
+"Relative_Density_pct": null,
+"Grain_Size_avg_um": null,
+"Precipitate_Size_avg_nm": 1160.0,
+"Advanced_Quantitative_Features": {
+"As_Sprayed_Si_HfO2_Layer_Thickness_um": 40.0,
+"As_Sprayed_Yb2Si2O7_Layer_Thickness_um": 119.0,
+"As_Sprayed_Yb2SiO5_Layer_Thickness_um": 75.0,
+"Feedstock_Particle_Size_Range_um": 11.0,
+"Feedstock_Particle_Size_Range_Upper_um": 55.0
+}
+},
+"Properties_Info": [
+{
+"Property_Name": "Thermal_Cycling_Durability",
+"Test_Condition": "Thermal cycling in air at 1400 °C; 1 h hold + 10 min air cooling to room temperature; completed preset test duration",
+"Value_Numeric": 200.0,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "h",
+"Test_Temperature_K": 1673.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": "15 mm × 15 mm bulk SiCf/SiC substrate, Ra = 5 μm",
+"Note": "Corresponds to 200 thermal cycles under the study protocol."
+},
+{
+"Property_Name": "Thermal_Cycling_Durability",
+"Test_Condition": "Thermal cycling in air at 1450 °C; 1 h hold + 10 min air cooling to room temperature; completed preset test duration",
+"Value_Numeric": 200.0,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "h",
+"Test_Temperature_K": 1723.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": "15 mm × 15 mm bulk SiCf/SiC substrate, Ra = 5 μm",
+"Note": "Corresponds to 200 thermal cycles under the study protocol."
+},
+{
+"Property_Name": "Thermal_Cycling_Durability",
+"Test_Condition": "Thermal cycling in air at 1500 °C; 1 h hold + 10 min air cooling to room temperature; completed preset test duration",
+"Value_Numeric": 200.0,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "h",
+"Test_Temperature_K": 1773.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": "15 mm × 15 mm bulk SiCf/SiC substrate, Ra = 5 μm",
+"Note": "Corresponds to 200 thermal cycles under the study protocol; by 200 h at 1500 °C interlaminar cracks indicated compromised protection."
+},
+{
+"Property_Name": "m_TGO_Thickness",
+"Test_Condition": "Thermal cycling in air for 50 h",
+"Value_Numeric": 44.87,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "μm",
+"Test_Temperature_K": 1673.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": null,
+"Note": null
+},
+{
+"Property_Name": "m_TGO_Thickness",
+"Test_Condition": "Thermal cycling in air for 100 h",
+"Value_Numeric": 46.81,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "μm",
+"Test_Temperature_K": 1673.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": null,
+"Note": null
+},
+{
+"Property_Name": "m_TGO_Thickness",
+"Test_Condition": "Thermal cycling in air for 150 h",
+"Value_Numeric": 49.11,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "μm",
+"Test_Temperature_K": 1673.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": null,
+"Note": null
+},
+{
+"Property_Name": "m_TGO_Thickness",
+"Test_Condition": "Thermal cycling in air for 200 h",
+"Value_Numeric": 50.43,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "μm",
+"Test_Temperature_K": 1673.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": null,
+"Note": null
+},
+{
+"Property_Name": "m_TGO_Thickness",
+"Test_Condition": "Thermal cycling in air for 50 h",
+"Value_Numeric": 45.81,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "μm",
+"Test_Temperature_K": 1723.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": null,
+"Note": null
+},
+{
+"Property_Name": "m_TGO_Thickness",
+"Test_Condition": "Thermal cycling in air for 100 h",
+"Value_Numeric": 48.24,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "μm",
+"Test_Temperature_K": 1723.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": null,
+"Note": null
+},
+{
+"Property_Name": "m_TGO_Thickness",
+"Test_Condition": "Thermal cycling in air for 150 h",
+"Value_Numeric": 50.21,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "μm",
+"Test_Temperature_K": 1723.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": null,
+"Note": null
+},
+{
+"Property_Name": "m_TGO_Thickness",
+"Test_Condition": "Thermal cycling in air for 200 h",
+"Value_Numeric": 51.73,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "μm",
+"Test_Temperature_K": 1723.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": null,
+"Note": null
+},
+{
+"Property_Name": "m_TGO_Thickness",
+"Test_Condition": "Thermal cycling in air for 50 h",
+"Value_Numeric": 46.49,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "μm",
+"Test_Temperature_K": 1773.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": null,
+"Note": null
+},
+{
+"Property_Name": "m_TGO_Thickness",
+"Test_Condition": "Thermal cycling in air for 100 h",
+"Value_Numeric": 49.1,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "μm",
+"Test_Temperature_K": 1773.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": null,
+"Note": null
+},
+{
+"Property_Name": "m_TGO_Thickness",
+"Test_Condition": "Thermal cycling in air for 150 h",
+"Value_Numeric": 51.71,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "μm",
+"Test_Temperature_K": 1773.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": null,
+"Note": null
+},
+{
+"Property_Name": "m_TGO_Thickness",
+"Test_Condition": "Thermal cycling in air for 200 h",
+"Value_Numeric": 53.34,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "μm",
+"Test_Temperature_K": 1773.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": null,
+"Note": null
+},
+{
+"Property_Name": "Parabolic_Rate_Constant_kp",
+"Test_Condition": "Parabolic m-TGO growth fitting during thermal cycling",
+"Value_Numeric": 0.52306,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "μm^2/h",
+"Test_Temperature_K": 1673.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": null,
+"Note": null
+},
+{
+"Property_Name": "Parabolic_Rate_Constant_kp",
+"Test_Condition": "Parabolic m-TGO growth fitting during thermal cycling",
+"Value_Numeric": 0.69133,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "μm^2/h",
+"Test_Temperature_K": 1723.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": null,
+"Note": null
+},
+{
+"Property_Name": "Parabolic_Rate_Constant_kp",
+"Test_Condition": "Parabolic m-TGO growth fitting during thermal cycling",
+"Value_Numeric": 0.84419,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "μm^2/h",
+"Test_Temperature_K": 1773.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": null,
+"Note": null
+},
+{
+"Property_Name": "Oxygen_Diffusion_Activation_Energy_m_TGO",
+"Test_Condition": "Arrhenius analysis of m-TGO growth between 1400 and 1450 °C",
+"Value_Numeric": 133.69,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "kJ/mol",
+"Test_Temperature_K": null,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": null,
+"Note": "Associated with molecular oxygen transport control."
+},
+{
+"Property_Name": "Oxygen_Diffusion_Activation_Energy_m_TGO",
+"Test_Condition": "Arrhenius analysis of m-TGO growth between 1450 and 1500 °C",
+"Value_Numeric": 101.47,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "kJ/mol",
+"Test_Temperature_K": null,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": null,
+"Note": "Associated with molecular oxygen transport control."
+},
+{
+"Property_Name": "Thermal_Mismatch_Stress_m_TGO_CMC",
+"Test_Condition": "Calculated after cooling to room temperature during thermal cycling from 1400 °C over 0-200 h",
+"Value_Numeric": 459.5,
+"Value_Range": "449-470",
+"Value_StdDev": null,
+"Unit": "MPa",
+"Test_Temperature_K": null,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": null,
+"Note": "Calculated value range for m-TGO versus CMC substrate."
+},
+{
+"Property_Name": "Thermal_Mismatch_Stress_m_TGO_CMC",
+"Test_Condition": "Calculated after cooling to room temperature during thermal cycling from 1450 °C over 0-200 h",
+"Value_Numeric": 475.5,
+"Value_Range": "465-486",
+"Value_StdDev": null,
+"Unit": "MPa",
+"Test_Temperature_K": null,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": null,
+"Note": "Calculated value range for m-TGO versus CMC substrate."
+},
+{
+"Property_Name": "Thermal_Mismatch_Stress_m_TGO_CMC",
+"Test_Condition": "Calculated after cooling to room temperature during thermal cycling from 1500 °C over 0-200 h",
+"Value_Numeric": 492.5,
+"Value_Range": "482-503",
+"Value_StdDev": null,
+"Unit": "MPa",
+"Test_Temperature_K": null,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": null,
+"Note": "Calculated value range for m-TGO versus CMC substrate."
+},
+{
+"Property_Name": "Interfacial_Residual_Stress_CMC_m_TGO",
+"Test_Condition": "Calculated during cooling; CMC/m-TGO interface above 700 °C",
+"Value_Numeric": null,
+"Value_Range": ">350",
+"Value_StdDev": null,
+"Unit": "MPa",
+"Test_Temperature_K": null,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": null,
+"Note": "Residual stress rose rapidly and exceeded 350 MPa."
+},
+{
+"Property_Name": "Interfacial_Residual_Stress_CMC_m_TGO",
+"Test_Condition": "Calculated during cooling; CMC/m-TGO interface between 200~400 °C",
+"Value_Numeric": null,
+"Value_Range": "250",
+"Value_StdDev": null,
+"Unit": "MPa",
+"Test_Temperature_K": null,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": null,
+"Note": "Residual stress reached 250 MPa."
+},
+{
+"Property_Name": "Interfacial_Residual_Stress_CMC_m_TGO",
+"Test_Condition": "Calculated during cooling; CMC/m-TGO interface between 400~700 °C",
+"Value_Numeric": null,
+"Value_Range": "50",
+"Value_StdDev": null,
+"Unit": "MPa",
+"Test_Temperature_K": null,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": null,
+"Note": "Residual stress decreased 50 MPa."
+},
+{
+"Property_Name": "Strain_Energy_Release_Rate_CMC_m_TGO",
+"Test_Condition": "Near cristobalite phase transition temperature during thermal cycling from 1400 °C",
+"Value_Numeric": 14.2,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "J/m^2",
+"Test_Temperature_K": 543.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": null,
+"Note": "Calculated ERR between m-TGO and CMC."
+},
+{
+"Property_Name": "Strain_Energy_Release_Rate_CMC_m_TGO",
+"Test_Condition": "Near cristobalite phase transition temperature during thermal cycling from 1450 °C",
+"Value_Numeric": 15.1,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "J/m^2",
+"Test_Temperature_K": 543.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": null,
+"Note": "Calculated ERR between m-TGO and CMC."
+},
+{
+"Property_Name": "Strain_Energy_Release_Rate_CMC_m_TGO",
+"Test_Condition": "Near cristobalite phase transition temperature during thermal cycling from 1500 °C",
+"Value_Numeric": 16.3,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "J/m^2",
+"Test_Temperature_K": 543.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": null,
+"Note": "Calculated ERR between m-TGO and CMC."
+},
+{
+"Property_Name": "Strain_Energy_Release_Rate_CMC_m_TGO",
+"Test_Condition": "Peak ERR in 700-900 °C range during thermal cycling from 1400 °C",
+"Value_Numeric": 18.1,
+"Value_Range": "700-900 °C",
+"Value_StdDev": null,
+"Unit": "J/m^2",
+"Test_Temperature_K": null,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": null,
+"Note": "Most likely temperature range for crack propagation or delamination at the CMC/m-TGO interface."
+},
+{
+"Property_Name": "Strain_Energy_Release_Rate_CMC_m_TGO",
+"Test_Condition": "Peak ERR in 700-900 °C range during thermal cycling from 1450 °C",
+"Value_Numeric": 19.7,
+"Value_Range": "700-900 °C",
+"Value_StdDev": null,
+"Unit": "J/m^2",
+"Test_Temperature_K": null,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": null,
+"Note": "Most likely temperature range for crack propagation or delamination at the CMC/m-TGO interface."
+},
+{
+"Property_Name": "Strain_Energy_Release_Rate_CMC_m_TGO",
+"Test_Condition": "Peak ERR in 700-900 °C range during thermal cycling from 1500 °C",
+"Value_Numeric": 20.4,
+"Value_Range": "700-900 °C",
+"Value_StdDev": null,
+"Unit": "J/m^2",
+"Test_Temperature_K": null,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": null,
+"Note": "Most likely temperature range for crack propagation or delamination at the CMC/m-TGO interface."
+},
+{
+"Property_Name": "Strain_Energy_Release_Rate_m_TGO_Yb2Si2O7",
+"Test_Condition": "High-temperature stage above 1300 °C during thermal cycling from 1400 °C",
+"Value_Numeric": 4.7,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "J/m^2",
+"Test_Temperature_K": null,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": null,
+"Note": "Calculated ERR between m-TGO and Yb2Si2O7; lower than CMC/m-TGO interface."
+},
+{
+"Property_Name": "Strain_Energy_Release_Rate_m_TGO_Yb2Si2O7",
+"Test_Condition": "High-temperature stage above 1300 °C during thermal cycling from 1450 °C",
+"Value_Numeric": 5.2,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "J/m^2",
+"Test_Temperature_K": null,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": null,
+"Note": "Calculated ERR between m-TGO and Yb2Si2O7; lower than CMC/m-TGO interface."
+},
+{
+"Property_Name": "Strain_Energy_Release_Rate_m_TGO_Yb2Si2O7",
+"Test_Condition": "High-temperature stage above 1300 °C during thermal cycling from 1500 °C",
+"Value_Numeric": 5.8,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "J/m^2",
+"Test_Temperature_K": null,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": null,
+"Note": "Calculated ERR between m-TGO and Yb2Si2O7; lower than CMC/m-TGO interface."
+}
+]
+},
+{
+"Sample_ID": "Reference-1",
+"Gradient_Material": false,
+"Gradient_Group_ID": null,
+"Composition_Info": {
+"Role": "Reference",
+"Alloy_Name_Raw": "Si/Yb2Si2O7/Yb2SiO5 EBC on SiC substrate",
+"Nominal_Composition": {
+"Composition_Type": null,
+"Elements_Normalized": null
+},
+"Measured_Composition": {
+"Composition_Type": null,
+"Elements_Normalized": null,
+"Measurement_Method": null
+},
+"Note": "Reference benchmark from cited literature; detailed elemental composition not provided in this paper."
+},
+"Process_Info": {
+"Process_Category": "APS coating deposition + thermal cycling",
+"Process_Text": {
+"original": "Si/Yb2Si2O7/Yb2SiO5 system was applied to SiC substrates using atmospheric plasma spraying (APS) and thermally cycled at 1350 °C for 15 min followed by cooling to 25 °C.",
+"simplified": "APS-coated Si/Yb2Si2O7/Yb2SiO5 on SiC; 1350 °C thermal cycling, 15 min dwell, cooled to 25 °C."
+},
+"Equipment": null,
+"Key_Params": {
+"Protective_Atmosphere": "Air",
+"Thermal_Cycling_Temperature_K": 1623.15,
+"Thermal_Cycling_Hold_Time_min": 15.0,
+"Cooling_Target_Temperature_K": 298.15
+}
+},
+"Microstructure_Info": {
+"Microstructure_Text": {
+"original": "The reference system showed obvious edge spalling and cracking after thermal cycling.",
+"simplified": "Edge spalling and cracking occurred."
+},
+"Main_Phase": null,
+"Precipitates": [],
+"Porosity_pct": null,
+"Relative_Density_pct": null,
+"Grain_Size_avg_um": null,
+"Precipitate_Size_avg_nm": null,
+"Advanced_Quantitative_Features": {}
+},
+"Properties_Info": [
+{
+"Property_Name": "Thermal_Cycling_Lifetime",
+"Test_Condition": "Thermal cycling at 1350 °C for 15 min, cooled to 25 °C",
+"Value_Numeric": 40.0,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "cycles",
+"Test_Temperature_K": 1623.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": null,
+"Note": "Obvious edge spalling and cracking after 40 cycles."
+}
+]
+},
+{
+"Sample_ID": "Reference-2",
+"Gradient_Material": false,
+"Gradient_Group_ID": null,
+"Composition_Info": {
+"Role": "Reference",
+"Alloy_Name_Raw": "80 wt% HfO2–Si/YbSi1.5/Yb2SiO5/LaMgAl11O19 EBC on CMC substrate",
+"Nominal_Composition": {
+"Composition_Type": null,
+"Elements_Normalized": null
+},
+"Measured_Composition": {
+"Composition_Type": null,
+"Elements_Normalized": null,
+"Measurement_Method": null
+},
+"Note": "Reference benchmark from cited literature; bond coat described as 80 wt% HfO2–Si."
+},
+"Process_Info": {
+"Process_Category": "APS coating deposition + thermal cycling",
+"Process_Text": {
+"original": "A new 80 wt% HfO2–Si/YbSi1.5/Yb2SiO5/LaMgAl11O19 system prepared using APS technology was heated to 1300 °C for 55 min and air-cooled for 5 min.",
+"simplified": "APS-coated multilayer EBC with 80 wt% HfO2–Si bond coat; 1300 °C thermal cycling, 55 min dwell, 5 min air cooling."
+},
+"Equipment": null,
+"Key_Params": {
+"Protective_Atmosphere": "Air",
+"Thermal_Cycling_Temperature_K": 1573.15,
+"Thermal_Cycling_Hold_Time_min": 55.0,
+"Cooling_Time_min": 5.0
+}
+},
+"Microstructure_Info": {
+"Microstructure_Text": {
+"original": "This reference system exhibited severe spalling at both YbSi1.5/HfO2–Si and HfO2–Si/substrate interfaces, as well as vertical cracks that completely penetrated the layers.",
+"simplified": "Severe interface spalling and through-thickness vertical cracking occurred."
+},
+"Main_Phase": null,
+"Precipitates": [],
+"Porosity_pct": null,
+"Relative_Density_pct": null,
+"Grain_Size_avg_um": null,
+"Precipitate_Size_avg_nm": null,
+"Advanced_Quantitative_Features": {}
+},
+"Properties_Info": [
+{
+"Property_Name": "Thermal_Cycling_Lifetime",
+"Test_Condition": "Thermal cycling at 1300 °C for 55 min, air-cooled for 5 min",
+"Value_Numeric": 171.0,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "cycles",
+"Test_Temperature_K": 1573.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": null,
+"Note": "Severe spalling occurred at YbSi1.5/HfO2–Si and HfO2–Si/substrate interfaces; vertical cracks completely penetrated the layers."
+}
+]
+},
+{
+"Sample_ID": "Reference-3",
+"Gradient_Material": false,
+"Gradient_Group_ID": null,
+"Composition_Info": {
+"Role": "Reference",
+"Alloy_Name_Raw": "70 mol% HfO2–SiO2/Yb2Si2O7 EBC on SiC substrate",
+"Nominal_Composition": {
+"Composition_Type": null,
+"Elements_Normalized": null
+},
+"Measured_Composition": {
+"Composition_Type": null,
+"Elements_Normalized": null,
+"Measurement_Method": null
+},
+"Note": "Reference benchmark from cited literature; bond coat composition specified as 70 mol% HfO2–SiO2."
+},
+"Process_Info": {
+"Process_Category": "APS coating deposition + steam thermal cycling",
+"Process_Text": {
+"original": "A SiO2–HfO2/Yb2Si2O7 system prepared by APS was subjected to steam cycling at 1475 °C for 10 h followed by cooling to room temperature at 5 °C/min; the 70 mol% HfO2–SiO2/Yb2Si2O7 variant completely delaminated at the SiC substrate.",
+"simplified": "APS-coated 70 mol% HfO2–SiO2/Yb2Si2O7 on SiC; steam cycling at 1475 °C for 10 h, cooled at 5 °C/min to room temperature."
+},
+"Equipment": null,
+"Key_Params": {
+"Protective_Atmosphere": "Steam",
+"Thermal_Cycling_Temperature_K": 1748.15,
+"Thermal_Cycling_Hold_Time_h": 10.0,
+"Cooling_Rate_C_min": 5.0,
+"Cooling_Target_Temperature_K": 298.15
+}
+},
+"Microstructure_Info": {
+"Microstructure_Text": {
+"original": "The 70 mol% HfO2–SiO2/Yb2Si2O7 reference coating completely delaminated at the SiC substrate after steam cycling.",
+"simplified": "Complete delamination at the SiC substrate occurred."
+},
+"Main_Phase": null,
+"Precipitates": [],
+"Porosity_pct": null,
+"Relative_Density_pct": null,
+"Grain_Size_avg_um": null,
+"Precipitate_Size_avg_nm": null,
+"Advanced_Quantitative_Features": {}
+},
+"Properties_Info": [
+{
+"Property_Name": "Thermal_Cycling_Lifetime",
+"Test_Condition": "Steam cycling at 1475 °C for 10 h, cooled at 5 °C/min to 25 °C",
+"Value_Numeric": 22.0,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "cycles",
+"Test_Temperature_K": 1748.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": null,
+"Note": "Complete delamination of the coating at the SiC substrate."
+}
+]
+},
+{
+"Sample_ID": "Reference-4",
+"Gradient_Material": false,
+"Gradient_Group_ID": null,
+"Composition_Info": {
+"Role": "Reference",
+"Alloy_Name_Raw": "50 mol% HfO2–SiO2/Yb2Si2O7 EBC on SiC substrate",
+"Nominal_Composition": {
+"Composition_Type": null,
+"Elements_Normalized": null
+},
+"Measured_Composition": {
+"Composition_Type": null,
+"Elements_Normalized": null,
+"Measurement_Method": null
+},
+"Note": "Reference benchmark from cited literature; bond coat composition specified as 50 mol% HfO2–SiO2."
+},
+"Process_Info": {
+"Process_Category": "APS coating deposition + steam thermal cycling",
+"Process_Text": {
+"original": "A SiO2–HfO2/Yb2Si2O7 system prepared by APS was subjected to steam cycling at 1475 °C for 10 h followed by cooling to room temperature at 5 °C/min; the 50 mol% HfO2–SiO2/Yb2Si2O7 variant did not delaminate but developed cracks in the TGO layer.",
+"simplified": "APS-coated 50 mol% HfO2–SiO2/Yb2Si2O7 on SiC; steam cycling at 1475 °C for 10 h, cooled at 5 °C/min to room temperature."
+},
+"Equipment": null,
+"Key_Params": {
+"Protective_Atmosphere": "Steam",
+"Thermal_Cycling_Temperature_K": 1748.15,
+"Thermal_Cycling_Hold_Time_h": 10.0,
+"Cooling_Rate_C_min": 5.0,
+"Cooling_Target_Temperature_K": 298.15
+}
+},
+"Microstructure_Info": {
+"Microstructure_Text": {
+"original": "The 50 mol% HfO2–SiO2/Yb2Si2O7 reference coating did not delaminate after steam cycling, but cracks developed in the TGO layer, reducing protective performance.",
+"simplified": "No complete delamination, but TGO cracking reduced protection."
+},
+"Main_Phase": null,
+"Precipitates": [],
+"Porosity_pct": null,
+"Relative_Density_pct": null,
+"Grain_Size_avg_um": null,
+"Precipitate_Size_avg_nm": null,
+"Advanced_Quantitative_Features": {}
+},
+"Properties_Info": [
+{
+"Property_Name": "Thermal_Cycling_Lifetime",
+"Test_Condition": "Steam cycling at 1475 °C for 10 h, cooled at 5 °C/min to 25 °C",
+"Value_Numeric": 22.0,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "cycles",
+"Test_Temperature_K": 1748.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": null,
+"Note": "Coating did not delaminate completely, but cracks formed in the TGO layer and reduced protective performance."
+}
+]
+}
+]
+}

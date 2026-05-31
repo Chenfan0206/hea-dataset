@@ -1,0 +1,693 @@
+{
+  "Paper_Metadata": {
+    "Paper_Title": "Tailoring thickness debit for high-temperature fatigue resistance of Inconel 718 superalloy fabricated by laser powder bed fusion",
+    "DOI": "10.1016/j.ijplas.2024.104137"
+  },
+  "Paper_Routing": {
+    "base_material": "Metals",
+    "application": "Structural",
+    "research_paradigm": "Experimental",
+    "Supplements_Loaded": [
+      "directions/base/Metals.txt",
+      "directions/application/Structural.txt",
+      "directions/paradigm/Experimental.txt"
+    ],
+    "Patch_Tags": [
+      "Additive_Manufacturing"
+    ],
+    "Needs_Mixed_Routing_Check": false,
+    "Mixed_Signals": []
+  },
+  "items": [
+    {
+      "Item_ID": "01",
+      "Sample_ID": "HA1065",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 2.2: two groups of specimens designated HA1065 and HA1100 were homogenized at 1065 °C and 1100 °C for 1 h",
+        "Section 3.4: The average yield strength, ultimate tensile strength and fracture elongation were 1067.6 ± 81.1 MPa, 1215.7 ± 36.6 MPa and 9.1 ± 1.1 % for the HA1065 specimen"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Ni-based superalloy",
+          "Material_Name_Raw": "Inconel 718",
+          "Nominal_Composition": {
+            "Note": "Chemical composition had been presented in previous work (Ma et al., 2022); not reproduced in this paper. Argon-atomized Inconel 718 powder with median diameter D50 = 24.10 μm was used."
+          }
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "Argon-atomized Inconel 718 powder was used to fabricate a block (60 mm × 45 mm × 45 mm) by LPBF (EOSINT M270D, EOS, Germany) with Yb fiber laser. Parameters: laser power 285 W, scanning speed 960 mm/s, hatch spacing 0.100 mm, layer thickness 0.040 mm, rotation angle 67°. Stress relief: heated at 600 °C for 2 h, furnace cooled. Homogenization at 1065 °C for 1 h. Two-step aging: 760 °C - 10 h / furnace cooling to 650 °C at 55 °C/h + 650 °C - 8 h / air cooling to RT. Specimens wire-electrical-discharge cut and ground and electropolished.",
+            "simplified": "LPBF fabrication → stress relief (600 °C/2 h/FC) → homogenization (1065 °C/1 h) → two-step aging (760 °C/10 h + 650 °C/8 h) → wire-EDM cutting, machining and electropolishing"
+          },
+          "Equipment": [
+            {
+              "Name": "EOSINT M270D (EOS, Germany) with Yb fiber laser",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Zeiss LSM700 CLSM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Versa XRM-500 3D X-ray tomography",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Avizo fire version 7.1",
+              "Category": "Software"
+            },
+            {
+              "Name": "LEO Supra 35 FE-SEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "EBSD (TSL-OIM)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Self-developed testing machine",
+              "Category": "Testing"
+            },
+            {
+              "Name": "Instron 8862",
+              "Category": "Testing"
+            },
+            {
+              "Name": "TEM (for precipitate observation)",
+              "Category": "Characterization"
+            }
+          ],
+          "Key_Params": {
+            "LPBF_Fabrication": {
+              "Laser_Power_W": 285,
+              "Scanning_Speed_mm_s": 960,
+              "Hatch_Spacing_mm": 0.1,
+              "Layer_Thickness_mm": 0.04,
+              "Rotation_Angle_deg": 67,
+              "Block_Dimensions_mm": "60 × 45 × 45",
+              "Loading_Direction": "BD (building direction)"
+            },
+            "Stress_Relief": {
+              "Temperature_K": 873.15,
+              "Temperature_Original": "600 °C",
+              "Holding_Time_h": 2,
+              "Cooling": "furnace cooling"
+            },
+            "Homogenization": {
+              "Temperature_K": 1338.15,
+              "Temperature_Original": "1065 °C",
+              "Holding_Time_h": 1,
+              "Cooling": null,
+              "Note": "Designated as HA1065; based on AMS5664 specification"
+            },
+            "Aging_Step1": {
+              "Temperature_K": 1033.15,
+              "Temperature_Original": "760 °C",
+              "Holding_Time_h": 10,
+              "Cooling": "furnace cooling to 650 °C at 55 °C/h"
+            },
+            "Aging_Step2": {
+              "Temperature_K": 923.15,
+              "Temperature_Original": "650 °C",
+              "Holding_Time_h": 8,
+              "Cooling": "air cooling to RT"
+            },
+            "Specimen_Preparation": {
+              "Cutting_Method": "wire-electrical-discharge cutting",
+              "Specimen_Thickness_mm": [
+                0.25,
+                0.5,
+                0.75,
+                1.0,
+                2.0
+              ],
+              "Thickness_Tolerance_mm": "± 0.05",
+              "Surface_Finish": "ground and electropolished",
+              "Surface_Roughness_Sa_um": {
+                "Value": 0.121,
+                "Value_StdDev": 0.026,
+                "Original_Values": "0.121 ± 0.026 μm"
+              }
+            }
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "HA1065 specimen consists of epitaxial columnar and V-shaped grains. ~94% of grains divided into (001), (101), (111) and (112) types. A small number of columnar grains with (001)//BD and a large amount of V-shaped grains with (101)//BD are distributed alternately. Many elongated Laves phases along dendritic boundaries, irregular particle-like Laves phases at GBs, rod-like or needle-like δ phases at GBs. Few spherical γ' phases and lots of ellipsoidal γ'' phases present.",
+            "simplified": "Columnar + V-shaped grains with mixed texture (001)//BD and (101)//BD; Laves, δ, γ'', γ' precipitates at grain/dendrite boundaries"
+          },
+          "Main_Phase": {
+            "Phase_Name": "γ matrix",
+            "Crystal_Structure": "FCC"
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "Laves phase",
+              "Crystal_Structure": "not specified",
+              "Morphology": "elongated along dendritic boundaries and irregular particle-like at GBs",
+              "Location": "dendrite boundaries and grain boundaries",
+              "Note": "Crystal structure not explicitly stated in paper"
+            },
+            {
+              "Phase_Name": "δ phase",
+              "Crystal_Structure": "not specified",
+              "Morphology": "rod-like or needle-like",
+              "Location": "grain boundaries",
+              "Note": "Crystal structure not explicitly stated in paper"
+            },
+            {
+              "Phase_Name": "γ'' phase",
+              "Crystal_Structure": "BCT (DO22)",
+              "Morphology": "ellipsoidal",
+              "Note": "Often occurs in sandwiched configuration between two γ'' phases or side-by-side with single γ''"
+            },
+            {
+              "Phase_Name": "γ' phase",
+              "Crystal_Structure": "L12",
+              "Morphology": "spherical",
+              "Note": "Few spherical γ' phases present; weak strengthening effect compared to γ'' usually ignored"
+            }
+          ],
+          "Grain_Size": {
+            "Area_Weighted_Diameter_um": {
+              "Value": 58.5,
+              "Original_Values": "d_HA1065 = 58.5 μm",
+              "Measurement_Plane": "Y-Z plane",
+              "Method": "area-weighted grain diameter from EBSD, d = Σ(d_i × P_i)",
+              "Note": "Grains with equivalent diameter < 6 μm (3× EBSD step size) eliminated"
+            },
+            "size_type": "diameter",
+            "EBSD_Step_Size_um": 2
+          },
+          "Porosity": {
+            "Value": 0.01,
+            "Unit": "%",
+            "Original_Values": "porosity is 0.01%",
+            "Method": "3D X-ray tomography (Versa XRM-500)",
+            "Note": "Pores are near-spherical gas pores; 95% of pores have equivalent diameter < 24 μm; only defects with equivalent diameter > 9.06 μm (3× voxel size) analyzed"
+          },
+          "Relative_Density": {
+            "Value": 99.99,
+            "Unit": "%",
+            "Original_Values": "calculation density of the specimen is 99.99%",
+            "Method": "calculated from 3D XRT porosity data"
+          },
+          "Texture_or_Orientation": {
+            "Description": "~94% of grains: small number of columnar grains with (001)//BD and large amount of V-shaped grains with (101)//BD distributed alternately",
+            "Note": "Schmid factors of {111}<101> slip systems: 0.41-0.5 for (001)//BD grains and 0.25-0.5 for (101)//BD grains"
+          },
+          "Advanced_Quantitative_Features": {
+            "Precipitate_at_GB_spacing_um": {
+              "Note": "See Fig. S3(a) and Table S1 in SI; spacing between adjacent precipitates at GBs in HA1065 is much smaller than in HA1100"
+            },
+            "Precipitate_at_GB_aspect_ratio": {
+              "Note": "See Fig. S3(b) in SI; aspect ratio of precipitates in HA1065 is larger than in HA1100"
+            },
+            "gamma_double_prime_average_length": {
+              "Note": "See Fig. S4 and Table S1 in SI; average length of γ'' in HA1065 is shorter than in HA1100"
+            },
+            "gamma_double_prime_average_spacing": {
+              "Note": "See Fig. S4 and Table S1 in SI; average spacing of γ'' in HA1065 is close to that in HA1100"
+            },
+            "Grain_Shape_Aspect_Ratio_GSAR": {
+              "Note": "See Fig. S1 in SI; grains with high GSAR in HA1065 are more than in HA1100"
+            },
+            "Precipitate_volume_fraction_gamma_prime": {
+              "Note": "See Table S1 in SI; volume fraction of γ' in HA1065 is lower than in HA1100"
+            },
+            "Predicted_max_pore_size_by_thickness_um": {
+              "Note": "Predicted maximum pore sizes in specimens with t = 0.25, 0.50, 0.75, 1.00, 2.00 mm are 21.7, 22.0, 22.3, 22.6, 23.6 μm respectively, based on 3D-XRT data and extreme value method"
+            },
+            "GB_affected_region_characteristic_width_um": {
+              "Value": 17.3,
+              "Original_Values": "l_Gbar (923 K) = 17.3 μm",
+              "Note": "Characteristic width of GB-affected region at 923 K (650 °C); shared system parameter for Inconel 718 at 650 °C, also applicable to HA1100"
+            },
+            "Model_parameters": {
+              "k": {
+                "Value": 6.25e-08,
+                "Note": "CDM model fitting parameter for HA1065"
+              },
+              "alpha": {
+                "Value": 3.35,
+                "Note": "CDM model fitting parameter for HA1065"
+              },
+              "x_surface_layer_coefficient": {
+                "Value": 0.3,
+                "Note": "h = xd, x for HA1065 specimen; derived from l_Gbar/d = 17.3/58.5"
+              }
+            },
+            "Critical_scale_ratio_td": {
+              "Value": 8.8,
+              "Note": "Critical t/d for transition from scale-independent fatigue life region (SIR) to size-affected region (SAR)"
+            },
+            "Critical_thickness_mm": {
+              "Value": 0.515,
+              "Note": "Critical thickness for HA1065 based on grain size d = 58.5 μm and critical t/d = 8.8"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Type": "Tensile",
+            "Test_Temperature_K": 923.15,
+            "Test_Temperature_Original": "650 °C",
+            "Loading_Mode": "tension",
+            "Strain_Rate_s1": 0.005,
+            "Direction": "BD (building direction)",
+            "Specimen_State": "ground and electropolished, gauge dimensions 6 mm × 1.5 mm × 1.1 mm (polished to 0.75 mm thickness)",
+            "Environment": "air",
+            "Data_Source": "text",
+            "Yield_Strength_MPa": {
+              "Value": 1067.6,
+              "Value_StdDev": 81.1,
+              "Original_Values": "1067.6 ± 81.1 MPa"
+            },
+            "Ultimate_Tensile_Strength_MPa": {
+              "Value": 1215.7,
+              "Value_StdDev": 36.6,
+              "Original_Values": "1215.7 ± 36.6 MPa"
+            },
+            "Elongation_At_Fracture_pct": {
+              "Value": 9.1,
+              "Value_StdDev": 1.1,
+              "Original_Values": "9.1 ± 1.1%"
+            },
+            "Note": "Average values for HA1065 thin-walled specimens at 650 °C"
+          },
+          {
+            "Property_Type": "Fatigue",
+            "Test_Temperature_K": 923.15,
+            "Test_Temperature_Original": "650 °C",
+            "Loading_Mode": "axial force-controlled",
+            "Stress_Ratio_R": 0.1,
+            "Frequency_Hz": 1,
+            "Stress_Amplitude_MPa": 405,
+            "Maximum_Stress_MPa": 900,
+            "Direction": "BD (building direction)",
+            "Environment": "air",
+            "Data_Source": "text",
+            "Test_Standard": "ASTM E739-23",
+            "Replicates": 3,
+            "Preheat_Time_min": 25,
+            "Hold_Time_before_Test_min": 30,
+            "Specimen_State": "ground and electropolished, five thickness groups: 0.25, 0.50, 0.75, 1.00, 2.00 mm (± 0.05 mm tolerance)",
+            "Note": "High-cycle fatigue regime at high stress level; maximum stress set at 85% of lower yield strength (1067.6 MPa). Test conditions from text; individual Nf values only available in Fig. 6(b) and not extracted. Fatigue life decreases as t/d decreases from 34.5 to 4.5.",
+            "Fatigue_Life_Summary": {
+              "Trend": "N_f decreases as t/d value decreases from 34.5 to 4.5",
+              "Stress_Amplitude_MPa": 405,
+              "Test_Temperature_Original": "650 °C",
+              "Note": "Fatigue life data points shown in Fig. 6(b); individual N_f values for each thickness not explicitly listed in text or table but shown in figure"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "02",
+      "Sample_ID": "HA1100",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 2.2: two groups of specimens designated HA1065 and HA1100 were homogenized at 1065 °C and 1100 °C for 1 h",
+        "Section 3.4: 1109.8 ± 40.6 MPa, 1222.3 ± 40.6 MPa and 7.4 ± 0.2 % for the HA1100 specimen"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Ni-based superalloy",
+          "Material_Name_Raw": "Inconel 718",
+          "Nominal_Composition": {
+            "Note": "Same powder and block source as HA1065; chemical composition presented in previous work (Ma et al., 2022)"
+          }
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "Argon-atomized Inconel 718 powder was used to fabricate a block (60 mm × 45 mm × 45 mm) by LPBF (EOSINT M270D, EOS, Germany) with Yb fiber laser. Parameters: laser power 285 W, scanning speed 960 mm/s, hatch spacing 0.100 mm, layer thickness 0.040 mm, rotation angle 67°. Stress relief: heated at 600 °C for 2 h, furnace cooled. Homogenization at 1100 °C for 1 h. Two-step aging: 760 °C - 10 h / furnace cooling to 650 °C at 55 °C/h + 650 °C - 8 h / air cooling to RT. Specimens wire-electrical-discharge cut and ground and electropolished.",
+            "simplified": "LPBF fabrication → stress relief (600 °C/2 h/FC) → homogenization (1100 °C/1 h) → two-step aging (760 °C/10 h + 650 °C/8 h) → wire-EDM cutting, machining and electropolishing"
+          },
+          "Equipment": [
+            {
+              "Name": "EOSINT M270D (EOS, Germany) with Yb fiber laser",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Zeiss LSM700 CLSM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Versa XRM-500 3D X-ray tomography",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Avizo fire version 7.1",
+              "Category": "Software"
+            },
+            {
+              "Name": "LEO Supra 35 FE-SEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "EBSD (TSL-OIM)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Self-developed testing machine",
+              "Category": "Testing"
+            },
+            {
+              "Name": "Instron 8862",
+              "Category": "Testing"
+            },
+            {
+              "Name": "TEM (for precipitate observation)",
+              "Category": "Characterization"
+            }
+          ],
+          "Key_Params": {
+            "LPBF_Fabrication": {
+              "Laser_Power_W": 285,
+              "Scanning_Speed_mm_s": 960,
+              "Hatch_Spacing_mm": 0.1,
+              "Layer_Thickness_mm": 0.04,
+              "Rotation_Angle_deg": 67,
+              "Block_Dimensions_mm": "60 × 45 × 45",
+              "Loading_Direction": "BD (building direction)",
+              "Note": "Same LPBF parameters as HA1065; shared from same Inconel 718 block"
+            },
+            "Stress_Relief": {
+              "Temperature_K": 873.15,
+              "Temperature_Original": "600 °C",
+              "Holding_Time_h": 2,
+              "Cooling": "furnace cooling",
+              "Note": "Shared with HA1065 from same block"
+            },
+            "Homogenization": {
+              "Temperature_K": 1373.15,
+              "Temperature_Original": "1100 °C",
+              "Holding_Time_h": 1,
+              "Cooling": null,
+              "Note": "Designated as HA1100; 1100 °C selected as onset temperature of recrystallization of AM Inconel 718"
+            },
+            "Aging_Step1": {
+              "Temperature_K": 1033.15,
+              "Temperature_Original": "760 °C",
+              "Holding_Time_h": 10,
+              "Cooling": "furnace cooling to 650 °C at 55 °C/h",
+              "Note": "Same aging as HA1065"
+            },
+            "Aging_Step2": {
+              "Temperature_K": 923.15,
+              "Temperature_Original": "650 °C",
+              "Holding_Time_h": 8,
+              "Cooling": "air cooling to RT",
+              "Note": "Same aging as HA1065"
+            },
+            "Specimen_Preparation": {
+              "Cutting_Method": "wire-electrical-discharge cutting",
+              "Specimen_Thickness_mm": [
+                0.25,
+                0.5,
+                0.75,
+                1.0,
+                2.0
+              ],
+              "Thickness_Tolerance_mm": "± 0.05",
+              "Surface_Finish": "ground and electropolished",
+              "Surface_Roughness_Sa_um": {
+                "Value": 0.121,
+                "Value_StdDev": 0.026,
+                "Original_Values": "0.121 ± 0.026 μm",
+                "Note": "Shared surface roughness measurement with HA1065; same polishing procedure"
+              }
+            }
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "HA1100 specimen has relatively equiaxed grains due to recrystallization and grain growth. There are lots of annealing twins. Many particle-like carbides distributing at the GBs. Few spherical γ' phases and lots of ellipsoidal γ'' phases present. Volume fraction of γ' phases in HA1100 is higher than in HA1065.",
+            "simplified": "Equiaxed grains with annealing twins (recrystallized); carbides at GBs; γ'' and γ' precipitates; higher γ' volume fraction than HA1065"
+          },
+          "Main_Phase": {
+            "Phase_Name": "γ matrix",
+            "Crystal_Structure": "FCC"
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "carbides",
+              "Crystal_Structure": "not specified",
+              "Morphology": "particle-like",
+              "Location": "grain boundaries"
+            },
+            {
+              "Phase_Name": "γ'' phase",
+              "Crystal_Structure": "BCT (DO22)",
+              "Morphology": "ellipsoidal",
+              "Note": "Average length of γ'' in HA1100 is longer than in HA1065; average spacing close to HA1065"
+            },
+            {
+              "Phase_Name": "γ' phase",
+              "Crystal_Structure": "L12",
+              "Morphology": "spherical",
+              "Note": "Volume fraction of γ' in HA1100 is higher than in HA1065"
+            }
+          ],
+          "Grain_Size": {
+            "Area_Weighted_Diameter_um": {
+              "Value": 54.1,
+              "Original_Values": "d_HA1100 = 54.1 μm",
+              "Measurement_Plane": "Y-Z plane",
+              "Method": "area-weighted grain diameter from EBSD, d = Σ(d_i × P_i)",
+              "Note": "Grains with equivalent diameter < 6 μm (3× EBSD step size) eliminated"
+            },
+            "size_type": "diameter",
+            "EBSD_Step_Size_um": 2
+          },
+          "Porosity": {
+            "Value": 0.01,
+            "Unit": "%",
+            "Original_Values": "porosity is 0.01%",
+            "Note": "Same block as HA1065; porosity data from 3D-XRT of same LPBF-fabricated block"
+          },
+          "Relative_Density": {
+            "Value": 99.99,
+            "Unit": "%",
+            "Original_Values": "calculation density of the specimen is 99.99%",
+            "Note": "Same block as HA1065"
+          },
+          "Texture_or_Orientation": {
+            "Description": "statistically random orientation of grains due to recrystallization; no specific tendency toward TB cracking",
+            "Special_Features": "annealing twins present (highlighted by red lines in Fig. 3(d))"
+          },
+          "Advanced_Quantitative_Features": {
+            "Model_parameters": {
+              "k": {
+                "Value": 1.84e-27,
+                "Note": "CDM model fitting parameter for HA1100"
+              },
+              "alpha": {
+                "Value": 33.9,
+                "Note": "CDM model fitting parameter for HA1100"
+              },
+              "x_surface_layer_coefficient": {
+                "Value": 0.32,
+                "Note": "h = xd, x for HA1100 specimen; derived from l_Gbar/d = 17.3/54.1"
+              }
+            },
+            "Critical_scale_ratio_td": {
+              "Value": 6.2,
+              "Note": "Critical t/d for transition from scale-independent fatigue life region (SIR) to size-affected region (SAR)"
+            },
+            "Critical_thickness_mm": {
+              "Value": 0.335,
+              "Note": "Critical thickness for HA1100 based on grain size d = 54.1 μm and critical t/d = 6.2"
+            },
+            "Precipitate_volume_fraction_gamma_prime": {
+              "Note": "See Table S1 in SI; volume fraction of γ' in HA1100 is higher than in HA1065"
+            },
+            "gamma_double_prime_average_length": {
+              "Note": "See Fig. S4 and Table S1 in SI; average length of γ'' in HA1100 is longer than in HA1065"
+            },
+            "gamma_double_prime_average_spacing": {
+              "Note": "See Fig. S4 and Table S1 in SI; average spacing of γ'' in HA1100 is close to that in HA1065"
+            },
+            "Precipitate_at_GB_spacing_um": {
+              "Note": "See Fig. S3(a) and Table S1 in SI; spacing between adjacent precipitates at GBs in HA1100 is much larger than in HA1065"
+            },
+            "GB_affected_region_characteristic_width_um": {
+              "Value": 17.3,
+              "Original_Values": "l_Gbar (923 K) = 17.3 μm",
+              "Note": "Characteristic width of GB-affected region at 923 K (650 °C); shared system parameter for Inconel 718 at 650 °C, also applicable to HA1065"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Type": "Tensile",
+            "Test_Temperature_K": 923.15,
+            "Test_Temperature_Original": "650 °C",
+            "Loading_Mode": "tension",
+            "Strain_Rate_s1": 0.005,
+            "Direction": "BD (building direction)",
+            "Specimen_State": "ground and electropolished, gauge dimensions 6 mm × 1.5 mm × 1.1 mm (polished to 0.75 mm thickness)",
+            "Environment": "air",
+            "Data_Source": "text",
+            "Yield_Strength_MPa": {
+              "Value": 1109.8,
+              "Value_StdDev": 40.6,
+              "Original_Values": "1109.8 ± 40.6 MPa"
+            },
+            "Ultimate_Tensile_Strength_MPa": {
+              "Value": 1222.3,
+              "Value_StdDev": 40.6,
+              "Original_Values": "1222.3 ± 40.6 MPa"
+            },
+            "Elongation_At_Fracture_pct": {
+              "Value": 7.4,
+              "Value_StdDev": 0.2,
+              "Original_Values": "7.4 ± 0.2%"
+            },
+            "Note": "Average values for HA1100 thin-walled specimens at 650 °C"
+          },
+          {
+            "Property_Type": "Fatigue",
+            "Test_Temperature_K": 923.15,
+            "Test_Temperature_Original": "650 °C",
+            "Loading_Mode": "axial force-controlled",
+            "Stress_Ratio_R": 0.1,
+            "Frequency_Hz": 1,
+            "Stress_Amplitude_MPa": 405,
+            "Maximum_Stress_MPa": 900,
+            "Direction": "BD (building direction)",
+            "Environment": "air",
+            "Data_Source": "text",
+            "Test_Standard": "ASTM E739-23",
+            "Replicates": 3,
+            "Preheat_Time_min": 25,
+            "Hold_Time_before_Test_min": 30,
+            "Specimen_State": "ground and electropolished, five thickness groups: 0.25, 0.50, 0.75, 1.00, 2.00 mm (± 0.05 mm tolerance)",
+            "Note": "High-cycle fatigue regime at high stress level. Test conditions from text; individual Nf values only available in Fig. 6(b) and not extracted. Fatigue life decreases as t/d decreases from 37.6 to 4.9. N_f of HA1100 specimen is longer than that of HA1065 specimen for specimens with same thickness.",
+            "Fatigue_Life_Summary": {
+              "Trend": "N_f decreases as t/d value decreases from 37.6 to 4.9",
+              "Stress_Amplitude_MPa": 405,
+              "Test_Temperature_Original": "650 °C",
+              "Note": "Fatigue life data points shown in Fig. 6(b); individual N_f values for each thickness not explicitly listed in text or table but shown in figure"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "03",
+      "Sample_ID": "As-built_block",
+      "Role": "Comparator",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 2.1: An LPBF machine (EOSINT M270D, EOS, Germany) equipped with a Yb fiber laser source was selected to fabricate an Inconel 718 block with dimensions of 60 mm × 45 mm × 45 mm",
+        "Section 3.1: A typical 3D-XRT image of the pores in the cylindrical specimen"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Ni-based superalloy",
+          "Material_Name_Raw": "Inconel 718",
+          "Nominal_Composition": {
+            "Note": "Chemical composition presented in previous work (Ma et al., 2022); argon-atomized powder with D50 = 24.10 μm"
+          }
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "LPBF fabrication of Inconel 718 block (60 mm × 45 mm × 45 mm) followed by stress relief at 600 °C for 2 h, furnace cooled.",
+            "simplified": "LPBF fabrication → stress relief (600 °C/2 h/FC)"
+          },
+          "Equipment": [
+            {
+              "Name": "EOSINT M270D (EOS, Germany) with Yb fiber laser",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Versa XRM-500 3D X-ray tomography",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Avizo fire version 7.1",
+              "Category": "Software"
+            }
+          ],
+          "Key_Params": {
+            "LPBF_Fabrication": {
+              "Laser_Power_W": 285,
+              "Scanning_Speed_mm_s": 960,
+              "Hatch_Spacing_mm": 0.1,
+              "Layer_Thickness_mm": 0.04,
+              "Rotation_Angle_deg": 67,
+              "Block_Dimensions_mm": "60 × 45 × 45",
+              "Powder_Median_Diameter_D50_um": 24.1,
+              "Powder_Type": "Argon-atomized Inconel 718 powder"
+            },
+            "Stress_Relief": {
+              "Temperature_K": 873.15,
+              "Temperature_Original": "600 °C",
+              "Holding_Time_h": 2,
+              "Cooling": "furnace cooling"
+            },
+            "XRT_Characterization": {
+              "Voxel_Size_um": 3.02,
+              "Number_of_Projected_Images": 996,
+              "Minimum_Detected_Defect_Diameter_um": 9.06,
+              "Note": "Only defects with equivalent diameter > 9.06 μm (3× voxel size) used in analysis"
+            }
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Pores in the as-fabricated block: near-spherical gas pores uniformly distributed; 95% of pores have equivalent diameter < 24 μm; porosity 0.01%; calculation density 99.99%.",
+            "simplified": "Near-spherical gas pores uniformly distributed; very low porosity"
+          },
+          "Porosity": {
+            "Value": 0.01,
+            "Unit": "%",
+            "Original_Values": "porosity is 0.01%",
+            "Method": "3D X-ray tomography",
+            "Pore_Type": "near-spherical gas pores (sphericity > 0.8)"
+          },
+          "Relative_Density": {
+            "Value": 99.99,
+            "Unit": "%",
+            "Original_Values": "calculation density of the specimen is 99.99%"
+          },
+          "Advanced_Quantitative_Features": {
+            "Pore_equivalent_diameter_95th_percentile_um": {
+              "Value": 24,
+              "Note": "95% of the pores have an equivalent diameter of < 24 μm"
+            },
+            "Predicted_max_pore_size_by_thickness_um": {
+              "Note": "For specimens with t = 0.25, 0.50, 0.75, 1.00, 2.00 mm: predicted maximum pore sizes are 21.7, 22.0, 22.3, 22.6, 23.6 μm respectively (from extreme value method)"
+            }
+          }
+        }
+      }
+    }
+  ]
+}

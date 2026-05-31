@@ -1,0 +1,451 @@
+{
+  "Paper_Metadata": {
+    "Paper_Title": "Zwitterionic Engineering of Vinylene-Linked Covalent Organic Frameworks for Superior Protonic Electrolytes",
+    "DOI": "10.1002/anie.7677012"
+  },
+  "items": [
+    {
+      "Sample_ID": "ZVCOF",
+      "Component_Type": "Electrolyte",
+      "Gradient_Material": false,
+      "Gradient_Group_ID": null,
+      "Composition_Info": {
+        "Role": "Target",
+        "Material_Name_Raw": "Zwitterionic vinylene-linked COF (ZVCOF) functionalized with sulfobetaine moieties",
+        "Nominal_Composition": {
+          "Composition_Type": null,
+          "Elements_Normalized": null
+        },
+        "Measured_Composition": {
+          "Composition_Type": null,
+          "Elements_Normalized": null,
+          "Measurement_Method": null
+        },
+        "Note": "Synthesized by Knoevenagel condensation between 1,3,5-tri(4-formylphenyl)triazine (TFPT) and N-sulfopropyl-2,4,6-trimethylpyridinium (SPTMP). Features sulfobetaine zwitterionic functionalities."
+      },
+      "Process_Info": {
+        "Process_Category": "Knoevenagel condensation",
+        "Process_Text": {
+          "original": "ZVCOF was synthesized through a Knoevenagel condensation reaction between 1,3,5-tri(4-formylphenyl)triazine (TFPT) and N-sulfopropyl-2,4,6-trimethylpyridinium (SPTMP).",
+          "simplified": "Knoevenagel condensation of TFPT and SPTMP to form vinylene-linked COF with sulfobetaine functionalities."
+        },
+        "Equipment": null,
+        "Key_Params": {
+          "Synthesis_Method": "Knoevenagel condensation",
+          "Calcination_Temperature_K": null,
+          "Calcination_Time_h": null,
+          "Sintering_Temperature_K": null,
+          "Sintering_Time_h": null,
+          "Sintering_Pressure_MPa": null,
+          "Heating_Rate_K_min": null,
+          "Cooling_Medium": null,
+          "Protective_Atmosphere": null,
+          "Ball_Milling_Speed_rpm": null,
+          "Ball_Milling_Time_h": null,
+          "Ball_Milling_Medium": null,
+          "Cold_Pressing_Pressure_MPa": null,
+          "Stack_Pressure_MPa": null,
+          "CAM_Particle_Size_um": null,
+          "SE_Particle_Size_um": null,
+          "Particle_Size_Ratio_Lambda": null,
+          "CAM_Loading_wt_pct": null,
+          "SE_Loading_wt_pct": null,
+          "Conductor_Loading_wt_pct": null,
+          "Cathode_Mass_mg": null,
+          "Cathode_Area_cm2": null
+        }
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": "PXRD patterns revealed high crystallinity. Pawley refinement indicates eclipsed AA stacking model. Characteristic diffraction peaks at approximately 5.6°, 9.8°, 11.4°, 15.0°, and 26.0°, corresponding to (100), (110), (200), (210), and (001) crystal planes. N2 adsorption-desorption isotherms showed typical type I behavior, suggesting microporous structures. BET surface area: 502 m²/g, pore volume: 0.29 cm³/g, pore diameter: 1.3 nm.",
+          "simplified": "Highly crystalline with eclipsed AA stacking. Characteristic PXRD peaks at 5.6°, 9.8°, 11.4°, 15.0°, 26.0°. Microporous with BET surface area 502 m²/g, pore volume 0.29 cm³/g, pore diameter 1.3 nm."
+        },
+        "Main_Phase": "Vinylene-linked COF (eclipsed AA stacking)",
+        "Coating_Material": null,
+        "Coating_Thickness_nm": null,
+        "Percolation_Network_Qualitative": null,
+        "Porosity_pct": null,
+        "Relative_Density_pct": null,
+        "Grain_Size_avg_um": null,
+        "Grain_Boundary_Phase": null,
+        "Secondary_Phase_Type": null,
+        "Secondary_Phase_Volume_Fraction_pct": null,
+        "Secondary_Phase_Size_avg_nm": null,
+        "Advanced_Quantitative_Features": {
+          "BET_Surface_Area_m2_g": 502,
+          "Pore_Volume_cm3_g": 0.29,
+          "Pore_Diameter_nm": 1.3
+        }
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Proton_Conductivity",
+          "Test_Condition": "Pristine ZVCOF without PA loading",
+          "Battery_Configuration": null,
+          "Value_Numeric": 1e-08,
+          "Value_Range": "10^-8 to 10^-5",
+          "Value_StdDev": null,
+          "Unit": "S/cm",
+          "Test_Temperature_K": 298.15,
+          "Current_Density_mA_cm2": null,
+          "C_Rate": null,
+          "Voltage_Range_V": null,
+          "Cycle_Number": null,
+          "Frequency_Range_Hz": null,
+          "AC_Amplitude_mV": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": "Poor conductivity due to insufficient proton sources"
+        }
+      ]
+    },
+    {
+      "Sample_ID": "PA_ZVCOF_80",
+      "Component_Type": "Electrolyte",
+      "Gradient_Material": false,
+      "Gradient_Group_ID": null,
+      "Composition_Info": {
+        "Role": "Target",
+        "Material_Name_Raw": "Phosphoric acid-modified ZVCOF (PA@ZVCOF-80) with 80 wt% PA loading",
+        "Nominal_Composition": {
+          "Composition_Type": "wt%",
+          "Elements_Normalized": null
+        },
+        "Measured_Composition": {
+          "Composition_Type": null,
+          "Elements_Normalized": null,
+          "Measurement_Method": null
+        },
+        "Note": "PA incorporated into ZVCOF by mechanically grinding. 80 wt% PA loading. Maintains solid-state morphology. Highest proton conductivity among all COF-based electrolytes under ambient conditions."
+      },
+      "Process_Info": {
+        "Process_Category": "Mechanical grinding",
+        "Process_Text": {
+          "original": "Phosphoric acid (PA) was incorporated into the COFs by mechanically grinding the COFs with varying amounts of PA, resulting in a series of composites denoted as PA@ZVCOF-X (X = 40, 60, and 80, representing the mass percentage of PA).",
+          "simplified": "Mechanical grinding of ZVCOF with phosphoric acid to achieve 80 wt% PA loading."
+        },
+        "Equipment": null,
+        "Key_Params": {
+          "Synthesis_Method": "Mechanical grinding",
+          "PA_Loading_wt_pct": 80
+        }
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": "PXRD analysis revealed diminished crystallinity with PA loading. Upon removal of PA via washing, diffraction patterns were restored, confirming structural robustness. N2 adsorption-desorption measurements showed very low BET surface area (9.6–26.3 m²/g) and pore volume (0.001–0.01 cm³/g), suggesting negligible residual porosity upon PA loading. FT-IR spectra displayed new absorption bands at 990 and 493 cm⁻¹ corresponding to P=O bonds, confirming PA presence.",
+          "simplified": "Diminished crystallinity with PA loading but structural robustness confirmed. Very low BET surface area (9.6-26.3 m²/g) and pore volume (0.001-0.01 cm³/g). P=O bonds confirmed by FT-IR."
+        },
+        "Main_Phase": "PA-impregnated ZVCOF",
+        "Advanced_Quantitative_Features": {
+          "BET_Surface_Area_m2_g": 26.3,
+          "Pore_Volume_cm3_g": 0.01
+        }
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Proton_Conductivity",
+          "Test_Condition": "Ambient conditions (298 K)",
+          "Battery_Configuration": null,
+          "Value_Numeric": 0.0534,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "S/cm",
+          "Test_Temperature_K": 298.15,
+          "Current_Density_mA_cm2": null,
+          "C_Rate": null,
+          "Voltage_Range_V": null,
+          "Cycle_Number": null,
+          "Frequency_Range_Hz": null,
+          "AC_Amplitude_mV": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": "Highest proton conductivity among all reported COF-based protonic electrolytes under ambient conditions"
+        },
+        {
+          "Property_Name": "Proton_Conductivity",
+          "Test_Condition": "Elevated temperature (373 K)",
+          "Battery_Configuration": null,
+          "Value_Numeric": 0.161,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "S/cm",
+          "Test_Temperature_K": 373.15,
+          "Current_Density_mA_cm2": null,
+          "C_Rate": null,
+          "Voltage_Range_V": null,
+          "Cycle_Number": null,
+          "Frequency_Range_Hz": null,
+          "AC_Amplitude_mV": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": "High temperature proton conductivity"
+        },
+        {
+          "Property_Name": "Proton_Conductivity",
+          "Test_Condition": "Peak conductivity (413 K)",
+          "Battery_Configuration": null,
+          "Value_Numeric": 0.179,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "S/cm",
+          "Test_Temperature_K": 413.15,
+          "Current_Density_mA_cm2": null,
+          "C_Rate": null,
+          "Voltage_Range_V": null,
+          "Cycle_Number": null,
+          "Frequency_Range_Hz": null,
+          "AC_Amplitude_mV": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": "Peak proton conductivity at 413 K"
+        },
+        {
+          "Property_Name": "Activation_Energy",
+          "Test_Condition": "From Arrhenius plot",
+          "Battery_Configuration": null,
+          "Value_Numeric": 0.12,
+          "Value_Range": "0.12-0.15",
+          "Value_StdDev": null,
+          "Unit": "eV",
+          "Test_Temperature_K": null,
+          "Current_Density_mA_cm2": null,
+          "C_Rate": null,
+          "Voltage_Range_V": null,
+          "Cycle_Number": null,
+          "Frequency_Range_Hz": null,
+          "AC_Amplitude_mV": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": "Low activation energy (< 0.4 eV) indicates Grotthuss-type hopping mechanism"
+        },
+        {
+          "Property_Name": "Voltage_Window",
+          "Test_Condition": "Electrochemical stability window",
+          "Battery_Configuration": null,
+          "Value_Numeric": 2.7,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "V",
+          "Test_Temperature_K": 298.15,
+          "Current_Density_mA_cm2": null,
+          "C_Rate": null,
+          "Voltage_Range_V": null,
+          "Cycle_Number": null,
+          "Frequency_Range_Hz": null,
+          "AC_Amplitude_mV": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": "Wide electrochemical stability window (2.7 V), significantly wider than 1.7 V for 5.0 M PA aqueous solution"
+        }
+      ]
+    },
+    {
+      "Sample_ID": "PA_NVCOF_60",
+      "Component_Type": "Electrolyte",
+      "Gradient_Material": false,
+      "Gradient_Group_ID": null,
+      "Composition_Info": {
+        "Role": "Reference",
+        "Material_Name_Raw": "Phosphoric acid-modified NVCOF (PA@NVCOF-60) with 60 wt% PA loading",
+        "Nominal_Composition": {
+          "Composition_Type": "wt%",
+          "Elements_Normalized": null
+        },
+        "Measured_Composition": {
+          "Composition_Type": null,
+          "Elements_Normalized": null,
+          "Measurement_Method": null
+        },
+        "Note": "Non-zwitterionic counterpart synthesized from TFPT and 2,4,6-trimethylpyridine (TMP). 60 wt% PA loading. Shows inferior proton conductivity compared to zwitterionic ZVCOF."
+      },
+      "Process_Info": {
+        "Process_Category": "Mechanical grinding",
+        "Process_Text": {
+          "original": "NVCOF synthesized by Knoevenagel condensation between TFPT and TMP. PA incorporated by mechanical grinding.",
+          "simplified": "Mechanical grinding of NVCOF with phosphoric acid to achieve 60 wt% PA loading."
+        },
+        "Equipment": null,
+        "Key_Params": {
+          "Synthesis_Method": "Knoevenagel condensation + mechanical grinding",
+          "PA_Loading_wt_pct": 60
+        }
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": "BET surface area: 937 m²/g, pore volume: 0.32 cm³/g, pore diameter: 1.7 nm for pristine NVCOF. With PA loading, similar low surface area and pore volume as ZVCOF composites.",
+          "simplified": "Pristine NVCOF has higher BET surface area (937 m²/g) than ZVCOF. With PA loading, similar porosity reduction observed."
+        },
+        "Main_Phase": "PA-impregnated NVCOF",
+        "Advanced_Quantitative_Features": {
+          "BET_Surface_Area_m2_g": 937,
+          "Pore_Volume_cm3_g": 0.32,
+          "Pore_Diameter_nm": 1.7
+        }
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Proton_Conductivity",
+          "Test_Condition": "Ambient conditions",
+          "Battery_Configuration": null,
+          "Value_Numeric": null,
+          "Value_Range": "10^-6 to 10^-4",
+          "Value_StdDev": null,
+          "Unit": "S/cm",
+          "Test_Temperature_K": 298.15,
+          "Data_Source": "text",
+          "Note": "PA@NVCOF-40 shows conductivities 10^-6 to 10^-4 S/cm. PA@NVCOF-60 shows 2-3 orders of magnitude improvement but still significantly lower than PA@ZVCOF."
+        },
+        {
+          "Property_Name": "Activation_Energy",
+          "Test_Condition": "From Arrhenius plot",
+          "Battery_Configuration": null,
+          "Value_Numeric": 0.22,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "eV",
+          "Test_Temperature_K": null,
+          "Data_Source": "text",
+          "Note": "Higher activation energy (0.22 eV for PA@NVCOF-60) compared to PA@ZVCOF (0.12-0.15 eV), suggesting less efficient proton-transfer process"
+        }
+      ]
+    },
+    {
+      "Sample_ID": "SSPB_MoO3_HVHCF_PAZVCOF80",
+      "Component_Type": "Composite_Cathode",
+      "Gradient_Material": false,
+      "Gradient_Group_ID": null,
+      "Composition_Info": {
+        "Role": "Target",
+        "Material_Name_Raw": "Solid-state proton battery: MoO3 anode / PA@ZVCOF-80 electrolyte / H-VHCF cathode",
+        "Nominal_Composition": {
+          "Composition_Type": null,
+          "Elements_Normalized": null
+        },
+        "Measured_Composition": {
+          "Composition_Type": null,
+          "Elements_Normalized": null,
+          "Measurement_Method": null
+        },
+        "Note": "Prototype solid-state proton battery assembled with PA@ZVCOF-80 electrolyte membrane (with 4 wt% PTFE binder), MoO3 anode, and vanadium hexacyanoferrate (H-VHCF) cathode."
+      },
+      "Process_Info": {
+        "Process_Category": "Membrane fabrication and cell assembly",
+        "Process_Text": {
+          "original": "PA@ZVCOF-80 was mixed with a small amount (4 wt%) of polytetrafluoroethylene (PTFE) binder and processed into a membrane by rolling. The resulting membrane exhibits remarkable thermal stability, good mechanical flexibility, and can be easily bent or crimped without damage. SEM analysis discloses a dense and homogeneous morphology, with an overall thickness of approximately 100 μm. Prototype solid-state proton batteries were assembled by integrating the electrolyte membrane with a MoO3 anode and a Prussian blue analogue (vanadium hexacyanoferrate, H-VHCF) cathode.",
+          "simplified": "PA@ZVCOF-80 mixed with 4 wt% PTFE binder, rolled into membrane (~100 μm thickness). Cell assembled with MoO3 anode and H-VHCF cathode."
+        },
+        "Equipment": null,
+        "Key_Params": {
+          "Synthesis_Method": "Rolling with PTFE binder",
+          "PTFE_Loading_wt_pct": 4,
+          "Electrode_Thickness_um": 100
+        }
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": "SEM analysis discloses a dense and homogeneous morphology. EDS mapping certifies homogeneous distribution of N, O, S, F, and P elements.",
+          "simplified": "Dense and homogeneous morphology. Homogeneous distribution of N, O, S, F, P elements confirmed by EDS."
+        },
+        "Main_Phase": "PA-impregnated ZVCOF with PTFE binder",
+        "Advanced_Quantitative_Features": {}
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Specific_Capacity",
+          "Test_Condition": "At 1.0 A/g current density",
+          "Battery_Configuration": "MoO3 | PA@ZVCOF-80 | H-VHCF",
+          "Value_Numeric": 108.5,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "mAh/g",
+          "Test_Temperature_K": 298.15,
+          "Current_Density_mA_cm2": null,
+          "C_Rate": null,
+          "Voltage_Range_V": null,
+          "Cycle_Number": null,
+          "Frequency_Range_Hz": null,
+          "AC_Amplitude_mV": null,
+          "Data_Source": "text",
+          "Test_Specimen": "Solid-state proton battery",
+          "Note": "Record-high specific capacity among all reported solid-state proton batteries"
+        },
+        {
+          "Property_Name": "Rate_Catebability",
+          "Test_Condition": "Various current densities",
+          "Battery_Configuration": "MoO3 | PA@ZVCOF-80 | H-VHCF",
+          "Value_Numeric": null,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "mAh/g",
+          "Test_Temperature_K": 298.15,
+          "Current_Density_mA_cm2": null,
+          "C_Rate": null,
+          "Voltage_Range_V": null,
+          "Cycle_Number": null,
+          "Frequency_Range_Hz": null,
+          "AC_Amplitude_mV": null,
+          "Data_Source": "text",
+          "Test_Specimen": "Solid-state proton battery",
+          "Note": "Reversible specific capacities: 108.5 (1.0 A/g), 98.6 (2.0 A/g), 92.6 (3.0 A/g), 88.3 (4.0 A/g), 84.3 (5.0 A/g) mAh/g"
+        },
+        {
+          "Property_Name": "Capacity_Retention",
+          "Test_Condition": "After 2000 cycles at 1.0 A/g",
+          "Battery_Configuration": "MoO3 | PA@ZVCOF-80 | H-VHCF",
+          "Value_Numeric": 90,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "%",
+          "Test_Temperature_K": 298.15,
+          "Current_Density_mA_cm2": null,
+          "C_Rate": null,
+          "Voltage_Range_V": null,
+          "Cycle_Number": 2000,
+          "Frequency_Range_Hz": null,
+          "AC_Amplitude_mV": null,
+          "Data_Source": "text",
+          "Test_Specimen": "Solid-state proton battery",
+          "Note": "Excellent cycling durability with 90% capacity retention after 2000 cycles"
+        },
+        {
+          "Property_Name": "Coulombic_Efficiency",
+          "Test_Condition": "At 1.0 A/g",
+          "Battery_Configuration": "MoO3 | PA@ZVCOF-80 | H-VHCF",
+          "Value_Numeric": 98.9,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "%",
+          "Test_Temperature_K": 298.15,
+          "Current_Density_mA_cm2": null,
+          "C_Rate": null,
+          "Voltage_Range_V": null,
+          "Cycle_Number": null,
+          "Frequency_Range_Hz": null,
+          "AC_Amplitude_mV": null,
+          "Data_Source": "text",
+          "Test_Specimen": "Solid-state proton battery",
+          "Note": "High Coulombic efficiency maintained during cycling"
+        },
+        {
+          "Property_Name": "Proton_Diffusion_Coefficient",
+          "Test_Condition": "GITT analysis during charge-discharge cycles",
+          "Battery_Configuration": "MoO3 | PA@ZVCOF-80 | H-VHCF",
+          "Value_Numeric": null,
+          "Value_Range": "10^-9 to 10^-6",
+          "Value_StdDev": null,
+          "Unit": "cm²/s",
+          "Test_Temperature_K": 298.15,
+          "Current_Density_mA_cm2": null,
+          "C_Rate": null,
+          "Voltage_Range_V": null,
+          "Cycle_Number": null,
+          "Frequency_Range_Hz": null,
+          "AC_Amplitude_mV": null,
+          "Data_Source": "text",
+          "Test_Specimen": "Solid-state proton battery",
+          "Note": "Fast proton reaction kinetics indicated by high proton diffusion coefficient"
+        }
+      ]
+    }
+  ]
+}

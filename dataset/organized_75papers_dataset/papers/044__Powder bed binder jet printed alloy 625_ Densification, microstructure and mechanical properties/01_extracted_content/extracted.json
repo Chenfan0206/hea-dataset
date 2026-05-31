@@ -1,0 +1,1380 @@
+{
+  "Paper_Metadata": {
+    "Paper_Title": "Powder bed binder jet printed alloy 625: Densification, microstructure and mechanical properties",
+    "DOI": null
+  },
+  "Paper_Routing": {
+    "base_material": "Metals",
+    "application": "Structural",
+    "research_paradigm": "Experimental",
+    "Supplements_Loaded": [
+      "directions/base/Metals.txt",
+      "directions/application/Structural.txt",
+      "directions/paradigm/Experimental.txt"
+    ],
+    "Patch_Tags": [
+      "Additive_Manufacturing",
+      "Porous"
+    ],
+    "Needs_Mixed_Routing_Check": false
+  },
+  "items": [
+    {
+      "Item_ID": "item_01_powder",
+      "Sample_ID": "As-received powder",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 1",
+        "Fig. 2",
+        "Fig. 3",
+        "Section 3.1"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Ni-based superalloy",
+          "Material_Name_Raw": "Alloy 625 / Inconel 625",
+          "Nominal_Composition": {
+            "Source": "Manufacturer analysis (Carpenter Technology Corporation)",
+            "Ni": "Balance",
+            "Cr": 21.2,
+            "Fe": 3.09,
+            "Nb": 3.63,
+            "Mo": 8.91,
+            "Al": 0.05,
+            "Ti": 0.01,
+            "C": 0.03,
+            "Co": "<0.01",
+            "Mn": "<0.01",
+            "Si": "<0.01",
+            "P": "<0.004",
+            "Unit": "wt.%"
+          },
+          "Measured_Composition": {
+            "Method": "EDS",
+            "Ni": "Balance",
+            "Cr": 21.01,
+            "Fe": 2.67,
+            "Nb": 3.99,
+            "Mo": 8.46,
+            "Al": 0.04,
+            "Ti": 0.2,
+            "C": 0.14,
+            "Co": 0.21,
+            "Mn": 0.2,
+            "Si": 0.13,
+            "P": 0.02,
+            "Unit": "wt.%"
+          },
+          "Note": "Nominal composition from manufacturer analysis; Measured by EDS with relative error up to 2%. Standard alloy 625 ranges given in Table 1 are specification limits, not precise values."
+        },
+        "Processing": {
+          "Process_Category": "Powder production",
+          "Process_Text": {
+            "original": "vacuum-melted argon atomized alloy 625 powder from Carpenter Technology Corporation",
+            "simplified": "Vacuum-melted argon atomization"
+          },
+          "Equipment": [
+            "Microtrac S3500 tri-laser diffraction particle analysis system (particle size)",
+            "JEOL JSM 6510 SEM with EDS (morphology and composition)",
+            "PANanalytical X-ray diffractometer with Co Kα (λ=1.79 Å) at 40 kV and 40 mA (XRD)",
+            "Bruker SkyScan1272 microCT at 100 kV and 100 μA with 0.11 mm Cu filter",
+            "TA instrument Q 600 Series DSC"
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Most powder particles are spherical in shape with particle size distribution of 16-53 μm. The individual powder has a dendritic structure typical of rapid solidification and a large amount of precipitates exist in the interdendritic area. These precipitates have script morphology and exist throughout the entire interdendritic area. Laves phase assumed. The main XRD peaks are related to fcc γ-Ni phase.",
+            "simplified": "Spherical argon-atomized powder with dendritic microstructure; interdendritic Laves phase precipitates; fcc γ-Ni main phase"
+          },
+          "Main_Phase": {
+            "Phase_Name": "γ-Ni (FCC)",
+            "Crystal_Structure": "FCC",
+            "Lattice_Parameter": {
+              "Value": 3.5996,
+              "Unit": "Å",
+              "Original_Values": "3.5996 Å",
+              "Data_Source": "table"
+            },
+            "Note": "0.52% larger than reference lattice parameter of 3.581 Å (Reference code: 98-011-6293) due to dissolved alloying elements"
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "Laves phase",
+              "Note": "Assumed based on interdendritic precipitates with script morphology; not confirmed by XRD",
+              "Location": "interdendritic area"
+            }
+          ],
+          "Grain_Size": {
+            "Note": "Not applicable to powder; powder particle size distribution reported",
+            "Particle_Size_Distribution": {
+              "d10": {
+                "Value": 21,
+                "Unit": "μm",
+                "diameter_or_radius": "undefined"
+              },
+              "d50": {
+                "Value": 31.8,
+                "Unit": "μm",
+                "diameter_or_radius": "undefined"
+              },
+              "d90": {
+                "Value": 45.1,
+                "Unit": "μm",
+                "diameter_or_radius": "undefined"
+              },
+              "Range": "14-65 μm",
+              "Data_Source": "text"
+            }
+          },
+          "DSC_Results": {
+            "Solidus": {
+              "Value": 1577.15,
+              "Unit": "K",
+              "Original_Values": "1304 °C",
+              "Data_Source": "text"
+            },
+            "Liquidus": {
+              "Value": 1607.15,
+              "Unit": "K",
+              "Original_Values": "1334 °C",
+              "Data_Source": "text"
+            }
+          },
+          "Advanced_Quantitative_Features": {
+            "XRD_d_spacing_111": {
+              "Value": 2.0782,
+              "Unit": "Å",
+              "Data_Source": "table"
+            },
+            "XRD_d_spacing_200": {
+              "Value": 1.8017,
+              "Unit": "Å",
+              "Data_Source": "table"
+            },
+            "XRD_d_spacing_220": {
+              "Value": 1.271,
+              "Unit": "Å",
+              "Data_Source": "table"
+            },
+            "XRD_d_spacing_311": {
+              "Value": 1.0851,
+              "Unit": "Å",
+              "Data_Source": "table"
+            }
+          }
+        }
+      }
+    },
+    {
+      "Item_ID": "item_02_green",
+      "Sample_ID": "As-printed (green part)",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 2",
+        "Fig. 7"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Ni-based superalloy",
+          "Material_Name_Raw": "Alloy 625",
+          "Note": "Same powder composition as item_01_powder. C and O content measured as 0.47 wt.% C and 0.23 wt.% O in printed and cured samples (increased from powder values of 0.04 wt.% C and 0.02 wt.% O), attributed to binder residue."
+        },
+        "Processing": {
+          "Process_Category": "Binder jet printing",
+          "Process_Text": {
+            "original": "M-Flex ExOne powder bed binder jet printer; layer height of 100 μm, recoat speed of 130 mm/s, oscillator speed of 2050 rpm, roller speed of 250 rpm, roller traverse speed of 15 mm/s, and drying speed of 17 mm/s",
+            "simplified": "Binder jet printing with ExOne M-Flex"
+          },
+          "Key_Params": {
+            "Layer_Height": {
+              "Value": 100,
+              "Unit": "μm",
+              "Original_Values": "100 μm",
+              "Data_Source": "text"
+            },
+            "Recoat_Speed": {
+              "Value": 130,
+              "Unit": "mm/s",
+              "Data_Source": "text"
+            },
+            "Oscillator_Speed": {
+              "Value": 2050,
+              "Unit": "rpm",
+              "Data_Source": "text"
+            },
+            "Roller_Speed": {
+              "Value": 250,
+              "Unit": "rpm",
+              "Data_Source": "text"
+            },
+            "Roller_Traverse_Speed": {
+              "Value": 15,
+              "Unit": "mm/s",
+              "Data_Source": "text"
+            },
+            "Drying_Speed": {
+              "Value": 17,
+              "Unit": "mm/s",
+              "Data_Source": "text"
+            }
+          },
+          "Binder": {
+            "Type": "Water based",
+            "Provider": "ExOne Company",
+            "Components": [
+              {
+                "Name": "Ethylene glycol monobutyl ether",
+                "Content": 10,
+                "Unit": "vol.%",
+                "CAS": "111-76-2"
+              },
+              {
+                "Name": "Ethylene glycol",
+                "Content": 20,
+                "Unit": "vol.%",
+                "CAS": "107-21-1"
+              }
+            ]
+          },
+          "Equipment": [
+            "M-Flex ExOne powder bed binder jet printer"
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "MicroCT cross sectional image of a green (as-printed) part with a density of about 60%. Lower density parallel lines indicate an irregular powder distribution potentially caused by the oscillator.",
+            "simplified": "Green part with ~60% density from microCT; 53% from immersion testing"
+          },
+          "Relative_Density": {
+            "MicroCT": {
+              "Value": 60,
+              "Unit": "%",
+              "Original_Values": "about 60%",
+              "Data_Source": "text"
+            },
+            "Immersion": {
+              "Value": 53,
+              "Unit": "%",
+              "Original_Values": "53% overall density",
+              "Data_Source": "text"
+            }
+          }
+        }
+      }
+    },
+    {
+      "Item_ID": "item_03_s1200",
+      "Sample_ID": "Sintered 1200C",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Fig. 5a",
+        "Fig. 8a",
+        "Fig. 10",
+        "Fig. 11",
+        "Table 4"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Ni-based superalloy",
+          "Material_Name_Raw": "Alloy 625"
+        },
+        "Processing": {
+          "Process_Category": "Curing + Sintering",
+          "Process_Text": {
+            "original": "Cured at 175 °C in a JPW Design & Manufacturing furnace and then sintered in a Lindberg tube furnace in an alumina powder bed under vacuum. Heating at 5 °C/min from RT to 600 °C, 3.2 °C/min to 1000 °C, 2.8 °C/min to 1200 °C, holding for 4 h, then cooling at 1 °C/min to 1200 °C, 3.1 °C/min to 500 °C and finally to RT inside the furnace.",
+            "simplified": "Cure at 175 °C, sinter at 1200 °C / 4 h under high vacuum with controlled heating/cooling"
+          },
+          "Stage1_Curing": {
+            "Temperature": {
+              "Value": 448.15,
+              "Unit": "K",
+              "Original_Values": "175 °C"
+            },
+            "Equipment": "JPW Design & Manufacturing furnace"
+          },
+          "Stage2_Sintering": {
+            "Temperature": {
+              "Value": 1473.15,
+              "Unit": "K",
+              "Original_Values": "1200 °C"
+            },
+            "Holding_Time": {
+              "Value": 4,
+              "Unit": "h"
+            },
+            "Atmosphere": "High vacuum",
+            "Heating_Profile": {
+              "RT_to_600C": {
+                "Rate": 5,
+                "Unit": "°C/min"
+              },
+              "600C_to_1000C": {
+                "Rate": 3.2,
+                "Unit": "°C/min"
+              },
+              "1000C_to_Hold": {
+                "Rate": 2.8,
+                "Unit": "°C/min"
+              }
+            },
+            "Cooling_Profile": {
+              "Hold_to_1200C": {
+                "Rate": 1,
+                "Unit": "°C/min"
+              },
+              "1200C_to_500C": {
+                "Rate": 3.1,
+                "Unit": "°C/min"
+              },
+              "500C_to_RT": "furnace cooled"
+            },
+            "Powder_Bed": "Alumina",
+            "Equipment": "Lindberg tube furnace"
+          },
+          "Equipment": [
+            "JPW Design & Manufacturing furnace (curing)",
+            "Lindberg tube furnace (sintering)"
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Highly porous samples with interconnected pores. The sintering temperature was not high enough to eliminate porosity between the sintered powder particles. Small, light-colored precipitates inside the grains and in the grain boundaries enriched in Nb and C, suggesting NbC carbide formation.",
+            "simplified": "Highly porous with interconnected pores; NbC precipitates at grain boundaries and inside grains"
+          },
+          "Main_Phase": {
+            "Phase_Name": "γ-Ni (FCC)",
+            "Crystal_Structure": "FCC",
+            "Lattice_Parameter": {
+              "Value": 3.57171,
+              "Unit": "Å",
+              "Original_Values": "3.57171 Å",
+              "Data_Source": "table"
+            }
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "δ (Ni₃Nb)",
+              "Note": "Detected by XRD in all sintered samples",
+              "Data_Source": "text"
+            },
+            {
+              "Phase_Name": "Cr₂O₃",
+              "Note": "Identified by XRD, formed due to oxidation during sintering",
+              "Data_Source": "text"
+            }
+          ],
+          "Relative_Density": {
+            "Archimedes": {
+              "Value": null,
+              "Unit": "%",
+              "Note": "approximately 79% from Fig. 8a; exact value from chart not extracted"
+            },
+            "OM_ImageJ": {
+              "Value": null,
+              "Unit": "%",
+              "Note": "approximately 79% from Fig. 8a; exact value from chart not extracted"
+            }
+          },
+          "Advanced_Quantitative_Features": {
+            "XRD_2theta_111": {
+              "Value": 51.415,
+              "Unit": "°",
+              "Data_Source": "table"
+            },
+            "XRD_d_spacing_111": {
+              "Value": 2.0621,
+              "Unit": "Å",
+              "Data_Source": "table"
+            },
+            "Lattice_Parameter": {
+              "Value": 3.57171,
+              "Unit": "Å",
+              "Data_Source": "table"
+            },
+            "Shrinkage": {
+              "Value": 5,
+              "Unit": "%",
+              "Original_Values": "about 5% dimension change (14% volume reduction)",
+              "Data_Source": "text",
+              "Note": "Linear shrinkage ~5%, volume reduction ~14%"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Hardness",
+            "Value": 107.2,
+            "Value_StdDev": 24.7,
+            "Unit": "HV0.1",
+            "Original_Values": "107.2 ± 24.7 HV0.1",
+            "Data_Source": "text",
+            "Test_Conditions": {
+              "Test_Temperature_Original": "RT",
+              "Load": 100,
+              "Load_Unit": "gf",
+              "Dwell_Time": 10,
+              "Dwell_Time_Unit": "s",
+              "Equipment": "Leco LM 800 microhardness tester"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "item_04_s1220",
+      "Sample_ID": "Sintered 1220C",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Fig. 5b",
+        "Fig. 8a",
+        "Fig. 10",
+        "Fig. 11",
+        "Table 4"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Ni-based superalloy",
+          "Material_Name_Raw": "Alloy 625"
+        },
+        "Processing": {
+          "Process_Category": "Curing + Sintering",
+          "Process_Text": {
+            "original": "Cured at 175 °C, sintered at 1220 °C for 4 h under high vacuum in alumina powder bed. Same heating/cooling profile as item_03.",
+            "simplified": "Cure at 175 °C, sinter at 1220 °C / 4 h under high vacuum"
+          },
+          "Stage1_Curing": {
+            "Temperature": {
+              "Value": 448.15,
+              "Unit": "K",
+              "Original_Values": "175 °C"
+            },
+            "Equipment": "JPW Design & Manufacturing furnace"
+          },
+          "Stage2_Sintering": {
+            "Temperature": {
+              "Value": 1493.15,
+              "Unit": "K",
+              "Original_Values": "1220 °C"
+            },
+            "Holding_Time": {
+              "Value": 4,
+              "Unit": "h"
+            },
+            "Atmosphere": "High vacuum",
+            "Powder_Bed": "Alumina",
+            "Equipment": "Lindberg tube furnace",
+            "Note": "Same heating/cooling profile as item_03_s1200; only holding temperature differs"
+          }
+        },
+        "Structure": {
+          "Main_Phase": {
+            "Phase_Name": "γ-Ni (FCC)",
+            "Lattice_Parameter": {
+              "Value": 3.57261,
+              "Unit": "Å",
+              "Original_Values": "3.57261 Å",
+              "Data_Source": "table"
+            }
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "δ (Ni₃Nb)",
+              "Note": "Detected by XRD",
+              "Data_Source": "text"
+            },
+            {
+              "Phase_Name": "Cr₂O₃",
+              "Note": "Identified by XRD",
+              "Data_Source": "text"
+            }
+          ],
+          "Relative_Density": {
+            "Note": "approximately 79% from Fig. 8a; exact value from chart not extracted"
+          },
+          "Advanced_Quantitative_Features": {
+            "XRD_2theta_111": {
+              "Value": 51.401,
+              "Unit": "°",
+              "Data_Source": "table"
+            },
+            "XRD_d_spacing_111": {
+              "Value": 2.063,
+              "Unit": "Å",
+              "Data_Source": "table"
+            },
+            "Lattice_Parameter": {
+              "Value": 3.57261,
+              "Unit": "Å",
+              "Data_Source": "table"
+            }
+          }
+        }
+      }
+    },
+    {
+      "Item_ID": "item_05_s1240",
+      "Sample_ID": "Sintered 1240C",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Fig. 5c",
+        "Fig. 8a",
+        "Fig. 9b",
+        "Fig. 10",
+        "Table 4"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Ni-based superalloy",
+          "Material_Name_Raw": "Alloy 625"
+        },
+        "Processing": {
+          "Process_Category": "Curing + Sintering",
+          "Process_Text": {
+            "original": "Cured at 175 °C, sintered at 1240 °C for 4 h under high vacuum in alumina powder bed.",
+            "simplified": "Cure at 175 °C, sinter at 1240 °C / 4 h under high vacuum"
+          },
+          "Stage1_Curing": {
+            "Temperature": {
+              "Value": 448.15,
+              "Unit": "K",
+              "Original_Values": "175 °C"
+            }
+          },
+          "Stage2_Sintering": {
+            "Temperature": {
+              "Value": 1513.15,
+              "Unit": "K",
+              "Original_Values": "1240 °C"
+            },
+            "Holding_Time": {
+              "Value": 4,
+              "Unit": "h"
+            },
+            "Atmosphere": "High vacuum",
+            "Powder_Bed": "Alumina",
+            "Equipment": "Lindberg tube furnace",
+            "Note": "Same heating/cooling profile as item_03_s1200; only holding temperature differs"
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Reduction in the porosity with closed and disconnected pores confirming OM and density measurement findings. Number and size of light-colored precipitates in the grain boundaries increase with increasing sintering temperature, suggesting formation of MC type NbC.",
+            "simplified": "Reduced porosity with closed pores; MC-type NbC precipitates at grain boundaries"
+          },
+          "Main_Phase": {
+            "Phase_Name": "γ-Ni (FCC)",
+            "Lattice_Parameter": {
+              "Value": 3.57325,
+              "Unit": "Å",
+              "Original_Values": "3.57325 Å",
+              "Data_Source": "table"
+            }
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "δ (Ni₃Nb)",
+              "Note": "Detected by XRD",
+              "Data_Source": "text"
+            },
+            {
+              "Phase_Name": "Cr₂O₃",
+              "Note": "Identified by XRD",
+              "Data_Source": "text"
+            }
+          ],
+          "Advanced_Quantitative_Features": {
+            "XRD_2theta_111": {
+              "Value": 51.391,
+              "Unit": "°",
+              "Data_Source": "table"
+            },
+            "XRD_d_spacing_111": {
+              "Value": 2.0631,
+              "Unit": "Å",
+              "Data_Source": "table"
+            },
+            "Lattice_Parameter": {
+              "Value": 3.57325,
+              "Unit": "Å",
+              "Data_Source": "table"
+            }
+          }
+        }
+      }
+    },
+    {
+      "Item_ID": "item_06_s1260",
+      "Sample_ID": "Sintered 1260C",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Fig. 5d",
+        "Fig. 8a",
+        "Fig. 10",
+        "Table 4"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Ni-based superalloy",
+          "Material_Name_Raw": "Alloy 625"
+        },
+        "Processing": {
+          "Process_Category": "Curing + Sintering",
+          "Process_Text": {
+            "original": "Cured at 175 °C, sintered at 1260 °C for 4 h under high vacuum in alumina powder bed.",
+            "simplified": "Cure at 175 °C, sinter at 1260 °C / 4 h under high vacuum"
+          },
+          "Stage2_Sintering": {
+            "Temperature": {
+              "Value": 1533.15,
+              "Unit": "K",
+              "Original_Values": "1260 °C"
+            },
+            "Holding_Time": {
+              "Value": 4,
+              "Unit": "h"
+            },
+            "Atmosphere": "High vacuum",
+            "Powder_Bed": "Alumina",
+            "Equipment": "Lindberg tube furnace",
+            "Note": "Same heating/cooling profile as item_03_s1200; only holding temperature differs"
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Sintered above 1260 °C, NbC peaks were detected by XRD, indicating that the carbide has enough time to form while above the solidus temperature, and during cooling.",
+            "simplified": "NbC carbide peaks detected by XRD above 1260 °C sintering"
+          },
+          "Main_Phase": {
+            "Phase_Name": "γ-Ni (FCC)",
+            "Lattice_Parameter": {
+              "Value": 3.57383,
+              "Unit": "Å",
+              "Original_Values": "3.57383 Å",
+              "Data_Source": "table"
+            }
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "δ (Ni₃Nb)",
+              "Note": "Detected by XRD",
+              "Data_Source": "text"
+            },
+            {
+              "Phase_Name": "NbC",
+              "Note": "NbC peaks detected by XRD above 1260 °C",
+              "Data_Source": "text"
+            },
+            {
+              "Phase_Name": "Cr₂O₃",
+              "Note": "Identified by XRD",
+              "Data_Source": "text"
+            }
+          ],
+          "Advanced_Quantitative_Features": {
+            "XRD_2theta_111": {
+              "Value": 51.382,
+              "Unit": "°",
+              "Data_Source": "table"
+            },
+            "XRD_d_spacing_111": {
+              "Value": 2.0634,
+              "Unit": "Å",
+              "Data_Source": "table"
+            },
+            "Lattice_Parameter": {
+              "Value": 3.57383,
+              "Unit": "Å",
+              "Data_Source": "table"
+            }
+          }
+        }
+      }
+    },
+    {
+      "Item_ID": "item_07_s1280",
+      "Sample_ID": "Sintered 1280C",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Fig. 5e",
+        "Fig. 6a",
+        "Fig. 8",
+        "Fig. 9c",
+        "Fig. 10",
+        "Fig. 11",
+        "Fig. 12",
+        "Table 3",
+        "Table 4",
+        "Table 5"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Ni-based superalloy",
+          "Material_Name_Raw": "Alloy 625"
+        },
+        "Processing": {
+          "Process_Category": "Curing + Sintering",
+          "Process_Text": {
+            "original": "Cured at 175 °C, sintered at 1280 °C for 4 h under high vacuum in alumina powder bed.",
+            "simplified": "Cure at 175 °C, sinter at 1280 °C / 4 h under high vacuum (optimum condition)"
+          },
+          "Stage2_Sintering": {
+            "Temperature": {
+              "Value": 1553.15,
+              "Unit": "K",
+              "Original_Values": "1280 °C"
+            },
+            "Holding_Time": {
+              "Value": 4,
+              "Unit": "h"
+            },
+            "Atmosphere": "High vacuum",
+            "Powder_Bed": "Alumina",
+            "Equipment": "Lindberg tube furnace",
+            "Note": "Same heating/cooling profile as item_03_s1200; only holding temperature differs"
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Fully densified with densities of up to 99.6%. Spherical pores mostly inside the grains. Equiaxial grains with average grain size of 55 ± 15 μm. Bright light structures at grain boundaries with increased Nb, Cr, Mo content (probably liquid phase during sintering). NbC carbide at grain boundaries (point 1). M₆C-type carbide at grain boundary precipitates (point 3). δ phase (Ni₃Nb) at point 4.",
+            "simplified": "Fully dense (99.6%); equiaxed grains 55±15 μm; NbC, M₆C, δ phase at grain boundaries; spherical pores inside grains"
+          },
+          "Main_Phase": {
+            "Phase_Name": "γ-Ni (FCC)",
+            "Lattice_Parameter": {
+              "Value": 3.57455,
+              "Unit": "Å",
+              "Original_Values": "3.57455 Å",
+              "Data_Source": "table"
+            }
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "NbC (MC type)",
+              "Location": "grain boundaries",
+              "Note": "Enriched in Nb and C, EDS point 1",
+              "Data_Source": "table"
+            },
+            {
+              "Phase_Name": "M₆C",
+              "Location": "grain boundary precipitates",
+              "Note": "EDS point 3; compositional formula suggests M₆C; forms in alloys with >6-8% Mo",
+              "Data_Source": "text"
+            },
+            {
+              "Phase_Name": "δ (Ni₃Nb)",
+              "Location": "grain boundaries",
+              "Note": "Detected by XRD in all sintered samples; EDS point 4 shows Ni and Nb dominant",
+              "Data_Source": "text"
+            },
+            {
+              "Phase_Name": "Cr₂O₃",
+              "Note": "Identified by XRD; highest amount at 1280 °C",
+              "Data_Source": "text"
+            }
+          ],
+          "Grain_Size": {
+            "Value": 55,
+            "Value_StdDev": 15,
+            "Unit": "μm",
+            "Original_Values": "55 ± 15 μm",
+            "diameter_or_radius": "undefined",
+            "Data_Source": "text",
+            "ASTM_Grain_Size_Number": "5-6",
+            "Note": "Analyzed with ImageJ on SEM micrographs; comparable to powder particle size"
+          },
+          "Porosity": {
+            "Pore_Diameter": {
+              "Value": null,
+              "Note": "average pore diameter <4 μm",
+              "Original_Values": "<4 μm",
+              "diameter_or_radius": "undefined",
+              "Data_Source": "text"
+            }
+          },
+          "Relative_Density": {
+            "Archimedes": {
+              "Value": 99.6,
+              "Unit": "%",
+              "Original_Values": "up to 99.6%",
+              "Data_Source": "text"
+            },
+            "Note": "Highest density achieved at this sintering temperature"
+          },
+          "Advanced_Quantitative_Features": {
+            "XRD_2theta_111": {
+              "Value": 51.371,
+              "Unit": "°",
+              "Data_Source": "table"
+            },
+            "XRD_d_spacing_111": {
+              "Value": 2.0638,
+              "Unit": "Å",
+              "Data_Source": "table"
+            },
+            "Lattice_Parameter": {
+              "Value": 3.57455,
+              "Unit": "Å",
+              "Data_Source": "table"
+            },
+            "Shrinkage": {
+              "Value": 18.7,
+              "Unit": "%",
+              "Original_Values": "about 18.7% (about 46.3% volume change)",
+              "Data_Source": "text",
+              "Note": "Maximum shrinkage at 1280 °C and higher; linear shrinkage ~18.7%, volume change ~46.3%"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Hardness",
+            "Value": 237.4,
+            "Value_StdDev": 4.9,
+            "Unit": "HV0.1",
+            "Original_Values": "237.4 ± 4.9 HV0.1",
+            "Data_Source": "text",
+            "Test_Conditions": {
+              "Test_Temperature_Original": "RT",
+              "Load": 100,
+              "Load_Unit": "gf",
+              "Dwell_Time": 10,
+              "Dwell_Time_Unit": "s",
+              "Equipment": "Leco LM 800 microhardness tester"
+            }
+          },
+          {
+            "Property_Name": "Ultimate_Tensile_Strength",
+            "Value": 612,
+            "Unit": "MPa",
+            "Original_Values": "612 MPa",
+            "Data_Source": "text",
+            "Test_Conditions": {
+              "Test_Temperature_Original": "RT",
+              "Loading_Mode": "Tension",
+              "Crosshead_Speed": 5,
+              "Crosshead_Speed_Unit": "mm/min",
+              "Equipment": "MTS 880",
+              "Standard": "ASTM E8-04"
+            }
+          },
+          {
+            "Property_Name": "Yield_Strength",
+            "Value": 327,
+            "Unit": "MPa",
+            "Original_Values": "327 MPa",
+            "Data_Source": "text",
+            "Test_Conditions": {
+              "Test_Temperature_Original": "RT",
+              "Loading_Mode": "Tension",
+              "Crosshead_Speed": 5,
+              "Crosshead_Speed_Unit": "mm/min",
+              "Equipment": "MTS 880",
+              "Standard": "ASTM E8-04"
+            }
+          },
+          {
+            "Property_Name": "Elongation_At_Fracture",
+            "Value": 41,
+            "Unit": "%",
+            "Original_Values": "41% elongation",
+            "Data_Source": "text",
+            "Test_Conditions": {
+              "Test_Temperature_Original": "RT",
+              "Loading_Mode": "Tension",
+              "Crosshead_Speed": 5,
+              "Crosshead_Speed_Unit": "mm/min",
+              "Equipment": "MTS 880",
+              "Standard": "ASTM E8-04"
+            },
+            "Note": "Also stated as 40.9% in Conclusions; 41% used from text body"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "item_08_s1290",
+      "Sample_ID": "Sintered 1290C",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Fig. 5f",
+        "Fig. 6b",
+        "Fig. 8",
+        "Fig. 9d",
+        "Fig. 10",
+        "Fig. 11",
+        "Table 3",
+        "Table 4"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Ni-based superalloy",
+          "Material_Name_Raw": "Alloy 625"
+        },
+        "Processing": {
+          "Process_Category": "Curing + Sintering",
+          "Process_Text": {
+            "original": "Cured at 175 °C, sintered at 1290 °C for 4 h under high vacuum in alumina powder bed.",
+            "simplified": "Cure at 175 °C, sinter at 1290 °C / 4 h under high vacuum"
+          },
+          "Stage2_Sintering": {
+            "Temperature": {
+              "Value": 1563.15,
+              "Unit": "K",
+              "Original_Values": "1290 °C"
+            },
+            "Holding_Time": {
+              "Value": 4,
+              "Unit": "h"
+            },
+            "Atmosphere": "High vacuum",
+            "Powder_Bed": "Alumina",
+            "Equipment": "Lindberg tube furnace",
+            "Note": "Same heating/cooling profile as item_03_s1200; only holding temperature differs"
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Pore coarsening observed above 1290 °C. Pores mostly inside the grains. Equiaxial grains with average grain size of 103 ± 32 μm. Bright spots in the grain boundaries enriched in Nb and C, suggesting NbC carbide formation. Part distortion and shape changes seen.",
+            "simplified": "Pore coarsening; equiaxed grains 103±32 μm; NbC at grain boundaries; part distortion observed"
+          },
+          "Main_Phase": {
+            "Phase_Name": "γ-Ni (FCC)",
+            "Lattice_Parameter": {
+              "Value": 3.57545,
+              "Unit": "Å",
+              "Original_Values": "3.57545 Å",
+              "Data_Source": "table"
+            }
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "NbC",
+              "Location": "grain boundaries",
+              "Note": "Enriched in Nb and C, EDS points 5 and 7",
+              "Data_Source": "table"
+            },
+            {
+              "Phase_Name": "δ (Ni₃Nb)",
+              "Note": "Detected by XRD",
+              "Data_Source": "text"
+            },
+            {
+              "Phase_Name": "Cr₂O₃",
+              "Note": "Amount decreased from 1280 °C to 1300 °C, possibly due to evaporation as CrO₃ gas",
+              "Data_Source": "text"
+            },
+            {
+              "Phase_Name": "Laves phase",
+              "Note": "Proposed to form at grain boundaries enriched with Nb and Mo",
+              "Data_Source": "text"
+            }
+          ],
+          "Grain_Size": {
+            "Value": 103,
+            "Value_StdDev": 32,
+            "Unit": "μm",
+            "Original_Values": "103 ± 32 μm",
+            "diameter_or_radius": "undefined",
+            "Data_Source": "text",
+            "ASTM_Grain_Size_Number": "3-4"
+          },
+          "Relative_Density": {
+            "Note": "Density lower than 99% when measured via immersion; steady in OM observations. Exact value in Fig. 8a not extracted."
+          },
+          "Advanced_Quantitative_Features": {
+            "XRD_2theta_111": {
+              "Value": 51.357,
+              "Unit": "°",
+              "Data_Source": "table"
+            },
+            "XRD_d_spacing_111": {
+              "Value": 2.0645,
+              "Unit": "Å",
+              "Data_Source": "table"
+            },
+            "Lattice_Parameter": {
+              "Value": 3.57545,
+              "Unit": "Å",
+              "Data_Source": "table"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Ultimate_Tensile_Strength",
+            "Value": 588,
+            "Unit": "MPa",
+            "Original_Values": "588 MPa",
+            "Data_Source": "text",
+            "Test_Conditions": {
+              "Test_Temperature_Original": "RT",
+              "Loading_Mode": "Tension",
+              "Crosshead_Speed": 5,
+              "Crosshead_Speed_Unit": "mm/min",
+              "Equipment": "MTS 880",
+              "Standard": "ASTM E8-04"
+            }
+          },
+          {
+            "Property_Name": "Elongation_At_Fracture",
+            "Value": 45.0,
+            "Unit": "%",
+            "Original_Values": "45.0%",
+            "Data_Source": "text",
+            "Test_Conditions": {
+              "Test_Temperature_Original": "RT",
+              "Loading_Mode": "Tension",
+              "Crosshead_Speed": 5,
+              "Crosshead_Speed_Unit": "mm/min",
+              "Equipment": "MTS 880",
+              "Standard": "ASTM E8-04"
+            },
+            "Note": "Fracture strain increased to 45.0% for the 1290 °C sample"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "item_09_s1300",
+      "Sample_ID": "Sintered 1300C",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Fig. 5g",
+        "Fig. 6c",
+        "Fig. 8",
+        "Fig. 9e",
+        "Fig. 10",
+        "Fig. 11",
+        "Table 3",
+        "Table 4"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Ni-based superalloy",
+          "Material_Name_Raw": "Alloy 625"
+        },
+        "Processing": {
+          "Process_Category": "Curing + Sintering",
+          "Process_Text": {
+            "original": "Cured at 175 °C, sintered at 1300 °C for 4 h under high vacuum in alumina powder bed.",
+            "simplified": "Cure at 175 °C, sinter at 1300 °C / 4 h under high vacuum"
+          },
+          "Stage2_Sintering": {
+            "Temperature": {
+              "Value": 1573.15,
+              "Unit": "K",
+              "Original_Values": "1300 °C"
+            },
+            "Holding_Time": {
+              "Value": 4,
+              "Unit": "h"
+            },
+            "Atmosphere": "High vacuum",
+            "Powder_Bed": "Alumina",
+            "Equipment": "Lindberg tube furnace",
+            "Note": "Same heating/cooling profile as item_03_s1200; only holding temperature differs"
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Pore coarsening to a diameter of 10 μm. Pores between grains at 1300 °C. Equiaxial grains with average grain size of 182 ± 31 μm. Bright spots in the grain boundaries enriched in Nb and C (NbC), with higher amount than at 1290 °C. Liquid phase formation in grain boundaries enriched in Nb, Cr, Mo. Less uniformity of elements: decreased within grains, increased at grain boundaries.",
+            "simplified": "Severe pore coarsening (10 μm); equiaxed grains 182±31 μm; significant NbC, liquid phase at grain boundaries; elemental segregation"
+          },
+          "Main_Phase": {
+            "Phase_Name": "γ-Ni (FCC)",
+            "Lattice_Parameter": {
+              "Value": 3.57714,
+              "Unit": "Å",
+              "Original_Values": "3.57714 Å",
+              "Data_Source": "table"
+            }
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "NbC",
+              "Location": "grain boundaries",
+              "Note": "Higher amount than at 1290 °C; EDS points 5 and 7 enriched in Nb and C",
+              "Data_Source": "table"
+            },
+            {
+              "Phase_Name": "δ (Ni₃Nb)",
+              "Note": "Detected by XRD",
+              "Data_Source": "text"
+            },
+            {
+              "Phase_Name": "Cr₂O₃",
+              "Note": "Decreased from 1280 °C; evaporation as CrO₃ gas above 1280 °C",
+              "Data_Source": "text"
+            },
+            {
+              "Phase_Name": "Laves phase",
+              "Note": "Proposed to form at grain boundaries enriched with Nb and Mo",
+              "Data_Source": "text"
+            }
+          ],
+          "Grain_Size": {
+            "Value": 182,
+            "Value_StdDev": 31,
+            "Unit": "μm",
+            "Original_Values": "182 ± 31 μm",
+            "diameter_or_radius": "undefined",
+            "Data_Source": "text",
+            "ASTM_Grain_Size_Number": "1.5-2.5"
+          },
+          "Porosity": {
+            "Pore_Diameter": {
+              "Value": 10,
+              "Unit": "μm",
+              "Original_Values": "10 μm",
+              "diameter_or_radius": "undefined",
+              "Data_Source": "text",
+              "Note": "Pore coarsening at 1300 °C"
+            }
+          },
+          "Relative_Density": {
+            "Note": "Density lower than 99% when measured via immersion; steady in OM observations. Exact value in Fig. 8a not extracted."
+          },
+          "Advanced_Quantitative_Features": {
+            "XRD_2theta_111": {
+              "Value": 51.331,
+              "Unit": "°",
+              "Data_Source": "table"
+            },
+            "XRD_d_spacing_111": {
+              "Value": 2.0653,
+              "Unit": "Å",
+              "Data_Source": "table"
+            },
+            "Lattice_Parameter": {
+              "Value": 3.57714,
+              "Unit": "Å",
+              "Data_Source": "table"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Hardness",
+            "Value": 185.4,
+            "Value_StdDev": 4.2,
+            "Unit": "HV0.1",
+            "Original_Values": "185.4 ± 4.2 HV0.1",
+            "Data_Source": "text",
+            "Test_Conditions": {
+              "Test_Temperature_Original": "RT",
+              "Load": 100,
+              "Load_Unit": "gf",
+              "Dwell_Time": 10,
+              "Dwell_Time_Unit": "s",
+              "Equipment": "Leco LM 800 microhardness tester"
+            }
+          },
+          {
+            "Property_Name": "Ultimate_Tensile_Strength",
+            "Value": 522,
+            "Unit": "MPa",
+            "Original_Values": "522 MPa",
+            "Data_Source": "text",
+            "Test_Conditions": {
+              "Test_Temperature_Original": "RT",
+              "Loading_Mode": "Tension",
+              "Crosshead_Speed": 5,
+              "Crosshead_Speed_Unit": "mm/min",
+              "Equipment": "MTS 880",
+              "Standard": "ASTM E8-04"
+            }
+          },
+          {
+            "Property_Name": "Elongation_At_Fracture",
+            "Value": 35.6,
+            "Unit": "%",
+            "Original_Values": "35.6%",
+            "Data_Source": "text",
+            "Test_Conditions": {
+              "Test_Temperature_Original": "RT",
+              "Loading_Mode": "Tension",
+              "Crosshead_Speed": 5,
+              "Crosshead_Speed_Unit": "mm/min",
+              "Equipment": "MTS 880",
+              "Standard": "ASTM E8-04"
+            },
+            "Note": "Fracture strain declined to 35.6% for the 1300 °C sample"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "item_10_ref_cast625",
+      "Sample_ID": "Cast alloy 625 (literature)",
+      "Role": "Reference",
+      "Data_Nature": "Literature_Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 3.5.2"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Ni-based superalloy",
+          "Material_Name_Raw": "Cast alloy 625",
+          "Note": "Referenced from [11] R.C. Reed, The Superalloys"
+        },
+        "Processing": {
+          "Process_Category": "Casting"
+        },
+        "Properties": [
+          {
+            "Property_Name": "Ultimate_Tensile_Strength",
+            "Value": 710,
+            "Unit": "MPa",
+            "Original_Values": "710 MPa",
+            "Data_Source": "text",
+            "Note": "Literature value from [11]"
+          },
+          {
+            "Property_Name": "Elongation_At_Fracture",
+            "Value": 48,
+            "Unit": "%",
+            "Original_Values": "48% elongation",
+            "Data_Source": "text",
+            "Note": "Literature value from [11]"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "item_11_ref_pim625",
+      "Sample_ID": "PIM alloy 625 (literature)",
+      "Role": "Reference",
+      "Data_Nature": "Literature_Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 3.5.2"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Ni-based superalloy",
+          "Material_Name_Raw": "PIM alloy 625",
+          "Note": "Referenced from Ozgun et al. [12]"
+        },
+        "Processing": {
+          "Process_Category": "Powder injection molding (PIM)",
+          "Process_Text": {
+            "original": "PIM prepared alloy 625 samples sintered at 1300 °C for 3 h",
+            "simplified": "Powder injection molding, sintered at 1300 °C / 3 h"
+          }
+        },
+        "Structure": {
+          "Grain_Size": {
+            "Value": null,
+            "Note": "100-150 μm (range value)",
+            "Original_Values": "100-150 μm",
+            "diameter_or_radius": "undefined",
+            "Data_Source": "text"
+          },
+          "Relative_Density": {
+            "Value": 98,
+            "Unit": "%",
+            "Original_Values": "98% density",
+            "Data_Source": "text"
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Ultimate_Tensile_Strength",
+            "Value": 650,
+            "Unit": "MPa",
+            "Original_Values": "650 MPa",
+            "Data_Source": "text",
+            "Note": "Literature value from Ozgun et al. [12]"
+          },
+          {
+            "Property_Name": "Elongation_At_Fracture",
+            "Value": 45,
+            "Unit": "%",
+            "Original_Values": "45% elongation",
+            "Data_Source": "text",
+            "Note": "Literature value from Ozgun et al. [12]"
+          }
+        ]
+      }
+    }
+  ]
+}

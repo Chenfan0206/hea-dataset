@@ -1,0 +1,82 @@
+{
+  "Paper_Metadata": {
+    "Paper_Title": "Grain boundaries are Brownian ratchets",
+    "DOI": "10.1126/science.adp1516"
+  },
+  "items": [
+    {
+      "Sample_ID": "Cu_Sigma27_ATGB",
+      "Gradient_Material": false,
+      "Composition_Info": {
+        "Role": "Target",
+        "Alloy_Name_Raw": "Pure Copper",
+        "Common_Name": "Copper (Cu)",
+        "Nominal_Composition": {
+          "Cu": 100.0
+        },
+        "Note": "Used for atomistic molecular dynamics simulations of GB migration."
+      },
+      "Process_Info": {
+        "Process_Category": "Molecular Dynamics & Phase-Field Crystal Simulation",
+        "Process_Text": {
+          "original": "GB migration is driven by creating a free energy density jump across the GB. Simulations include oscillatory driving forces and cyclic thermal annealing.",
+          "simplified": "通过在晶界两侧产生自由能密度跃迁驱动迁移。模拟包括振荡驱动力和循环热退火。"
+        },
+        "Parameter_Info": {
+          "Simulation_Method": "MD / PFC / Markov chain model",
+          "Driving_Force_Type": "Configurational force / Oscillatory"
+        }
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": "Nonsymmetric Sigma 27 [110] asymmetric tilt GB (ATGB). Contrast between symmetric and nonsymmetric structures.",
+          "simplified": "非对称Σ27 [110] 倾斜晶界。对比了对称与非对称结构的棘轮行为。"
+        },
+        "Main_Phase": "FCC",
+        "Note": "GBs behave as Brownian ratchets exhibiting direction-dependent mobilities."
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "GB_Mobility_Ratio",
+          "Test_Condition": "Positive vs Negative driving force direction",
+          "Value_Numeric": null,
+          "Value_Range": "> 1.0",
+          "Unit": "Dimensionless",
+          "Note": "Direction-dependent mobility is observed in nearly all nonsymmetric GBs."
+        },
+        {
+          "Property_Name": "Net_GB_Displacement",
+          "Test_Condition": "After multiple cycles of oscillatory force",
+          "Value_Numeric": null,
+          "Unit": "nm",
+          "Data_Source": "text",
+          "Note": "Resulting from the rectifying effect of the Brownian ratchet mechanism."
+        }
+      ]
+    },
+    {
+      "Sample_ID": "Ref_Al_Polycrystal",
+      "Composition_Info": {
+        "Role": "Reference",
+        "Common_Name": "Aluminum (Al)",
+        "Note": "Used for in situ experimental validation of simulation results."
+      },
+      "Process_Info": {
+        "Process_Category": "In situ experiment",
+        "Process_Text": {
+          "original": "In situ experimental observations of grain-coarsening behavior under cyclic annealing.",
+          "simplified": "循环退火下晶粒粗化行为的原位实验观察。"
+        }
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Grain_Growth_Behavior",
+          "Test_Condition": "Cyclic thermal annealing",
+          "Value_Numeric": null,
+          "Unit": null,
+          "Note": "Experimental results corroborate simulation predictions of unidirectional GB motion."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,356 @@
+{
+  "Paper_Metadata": {
+    "Paper_Title": "Mechanisms in the machinability improvement of Inconel 718 superalloy through ultra-high-speed grinding",
+    "DOI": "10.1016/j.jmatprotec.2024.118614"
+  },
+  "items": [
+    {
+      "Sample_ID": "Sample_40",
+      "Gradient_Material": false,
+      "Gradient_Group_ID": null,
+      "Composition_Info": {
+        "Role": "Target",
+        "Alloy_Name_Raw": "Inconel 718 (IN718)",
+        "Nominal_Composition": {
+          "Composition_Type": "wt%",
+          "Elements_Normalized": null
+        },
+        "Measured_Composition": {
+          "Composition_Type": "wt%",
+          "Elements_Normalized": [
+            null
+          ],
+          "Measurement_Method": "EDS (Table 1)"
+        },
+        "Note": "Composition calculated based on Table 1 values. Ni calculated by difference (Bal.)."
+      },
+      "Process_Info": {
+        "Process_Category": "Ultra-High-Speed Grinding (UHSM)",
+        "Process_Text": {
+          "original": "Grinding speed 40 m/s (Conventional grinding zone), water-based coolant was employed at a flow rate of 10L/min,total grinding depth for each group was set at 500 μm.",
+          "simplified": "Conventional grinding"
+        },
+        "Equipment": "Hardinge GT27 high-speed grinder with TDM hydrostatic spindle",
+        "Key_Params": {
+          "Grinding_Speed_m_s": 40,
+          "Wheel_Speed_m_s": 20,
+          "Workpiece_Speed_m_s": 20,
+          "Grinding_Depth_um": 5,
+          "Total Grinding_Depth_um": 500,
+          "Feed_Rate_mm_min": 150,
+          "Water_Flow_Rate_L_min": 10
+        }
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": "At 40 m/s, severe material smearing on the surface occurs... The WPSD ranges from 20 to 24 μm... The grain refinement layer has an average depth of 1.68 μm...",
+          "simplified": "Conventional grinding: Severe smearing, deep white layer."
+        },
+        "Main_Phase": "Gamma (γ)",
+        "Precipitates": [
+          null
+        ],
+        "Grain_Size_avg_um": null,
+        "Advanced_Quantitative_Features": {
+          "White_and_Severe_Deformation_Depth_um": "20-24",
+          "Grain_Refinement_Layer_Depth_um": 1.68
+        }
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Surface_Roughness_Sa",
+          "Value_Numeric": 0.3,
+          "Unit": "μm"
+        },
+        {
+          "Property_Name": "Surface_Microhardness",
+          "Value_Numeric": null,
+          "Unit": "HV"
+        }
+      ]
+    },
+    {
+      "Sample_ID": "Sample_70",
+      "Gradient_Material": false,
+      "Gradient_Group_ID": null,
+      "Composition_Info": {
+        "Alloy_Name_Raw": "Inconel 718 (IN718)",
+        "Note": "Same composition as Sample_40"
+      },
+      "Process_Info": {
+        "Process_Category": "Ultra-High-Speed Grinding (UHSM)",
+        "Process_Text": {
+          "original": "Grinding speed 70 m/s",
+          "simplified": "High-speed grinding"
+        },
+        "Equipment": "Hardinge GT27 high-speed grinder with TDM hydrostatic spindle",
+        "Key_Params": {
+          "Grinding_Speed_m_s": 70
+        }
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": "Intermediate state between 40 and 100 m/s",
+          "simplified": "Transition zone microstructure"
+        },
+        "Advanced_Quantitative_Features": {
+          "White_and_Severe_Deformation_Depth_um": "20-24"
+        }
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Surface_Roughness_Sa",
+          "Value_Numeric": null,
+          "Unit": "μm"
+        },
+        {
+          "Property_Name": "Surface_Microhardness",
+          "Value_Numeric": null,
+          "Unit": "HV"
+        }
+      ]
+    },
+    {
+      "Sample_ID": "Sample_100",
+      "Gradient_Material": false,
+      "Gradient_Group_ID": null,
+      "Composition_Info": {
+        "Alloy_Name_Raw": "Inconel 718 (IN718)",
+        "Note": "Same composition as Sample_40"
+      },
+      "Process_Info": {
+        "Process_Category": "Ultra-High-Speed Grinding (UHSM)",
+        "Process_Text": {
+          "original": "Grinding speed 100 m/s (High-speed grinding zone)",
+          "simplified": "High-speed grinding"
+        },
+        "Key_Params": {
+          "Grinding_Speed_m_s": 100
+        }
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": "Surface smearing reduced",
+          "simplified": "Reduced smearing, plastic flow"
+        },
+        "Advanced_Quantitative_Features": {
+          "White_and_Severe_Deformation_Depth_um": "16-20"
+        }
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Surface_Roughness_Sa",
+          "Value_Numeric": null,
+          "Unit": "μm"
+        },
+        {
+          "Property_Name": "Surface_Microhardness",
+          "Value_Numeric": 485,
+          "Unit": "HV"
+        }
+      ]
+    },
+    {
+      "Sample_ID": "Sample_130",
+      "Gradient_Material": false,
+      "Gradient_Group_ID": null,
+      "Composition_Info": {
+        "Alloy_Name_Raw": "Inconel 718 (IN718)",
+        "Note": "Same composition as Sample_40"
+      },
+      "Process_Info": {
+        "Process_Category": "Ultra-High-Speed Grinding (UHSM)",
+        "Process_Text": {
+          "original": "Grinding speed 130 m/s",
+          "simplified": "High-speed grinding"
+        },
+        "Key_Params": {
+          "Grinding_Speed_m_s": 130
+        }
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": "Further reduction in smearing impact...",
+          "simplified": "Intermediate high-speed structure"
+        },
+        "Advanced_Quantitative_Features": {
+          "White_and_Severe_Deformation_Depth_um": "16-20"
+        }
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Surface_Roughness_Sa",
+          "Value_Numeric": null,
+          "Unit": "μm"
+        },
+        {
+          "Property_Name": "Surface_Microhardness",
+          "Value_Numeric": null,
+          "Unit": "HV"
+        }
+      ]
+    },
+    {
+      "Sample_ID": "Sample_160",
+      "Gradient_Material": false,
+      "Gradient_Group_ID": null,
+      "Composition_Info": {
+        "Alloy_Name_Raw": "Inconel 718 (IN718)",
+        "Note": "Same composition as Sample_40"
+      },
+      "Process_Info": {
+        "Process_Category": "Ultra-High-Speed Grinding (UHSM)",
+        "Process_Text": {
+          "original": "Grinding speed 160 m/s (High-speed grinding zone)",
+          "simplified": "High-speed grinding"
+        },
+        "Key_Params": {
+          "Grinding_Speed_m_s": 160
+        }
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": "Smearing particles greatly reduced... Deformation twins... widths within 60-70 nm.",
+          "simplified": "Onset of deformation twins"
+        },
+        "Advanced_Quantitative_Features": {
+          "White_and_Severe_Deformation_Depth_um": "16-20",
+          "Grain_Refinement_Layer_Depth_um": 1.25
+        }
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Surface_Roughness_Sa",
+          "Value_Numeric": null,
+          "Unit": "μm"
+        },
+        {
+          "Property_Name": "Surface_Microhardness",
+          "Value_Numeric": null,
+          "Unit": "HV"
+        }
+      ]
+    },
+    {
+      "Sample_ID": "Sample_190",
+      "Gradient_Material": false,
+      "Gradient_Group_ID": null,
+      "Composition_Info": {
+        "Alloy_Name_Raw": "Inconel 718 (IN718)",
+        "Note": "Same composition as Sample_40"
+      },
+      "Process_Info": {
+        "Process_Category": "Ultra-High-Speed Grinding (UHSM)",
+        "Process_Text": {
+          "original": "Grinding speed 190 m/s",
+          "simplified": "Ultra-high-speed transition"
+        },
+        "Key_Params": {
+          "Grinding_Speed_m_s": 190
+        }
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": "Continued refinement of microstructure",
+          "simplified": "Refined microstructure"
+        },
+        "Advanced_Quantitative_Features": {
+          "White_and_Severe_Deformation_Depth_um": "16-20"
+        }
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Surface_Roughness_Sa",
+          "Value_Numeric": null,
+          "Unit": "μm"
+        },
+        {
+          "Property_Name": "Surface_Microhardness",
+          "Value_Numeric": null,
+          "Unit": "HV"
+        }
+      ]
+    },
+    {
+      "Sample_ID": "Sample_220",
+      "Gradient_Material": false,
+      "Gradient_Group_ID": null,
+      "Composition_Info": {
+        "Alloy_Name_Raw": "Inconel 718 (IN718)",
+        "Note": "Same composition as Sample_40"
+      },
+      "Process_Info": {
+        "Process_Category": "Ultra-High-Speed Grinding (UHSM)",
+        "Process_Text": {
+          "original": "Grinding speed 220 m/s (Ultra-high-speed grinding zone)",
+          "simplified": "Ultra-high-speed grinding"
+        },
+        "Key_Params": {
+          "Grinding_Speed_m_s": 220
+        }
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": "WPSD confined to within 10 μm... Multifold nanoscale twins... twin widths ranging from 4 to 5 nm...",
+          "simplified": "Nano-twins formed"
+        },
+        "Advanced_Quantitative_Features": {
+          "White_and_Severe_Deformation_Depth_um": 10
+        }
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Surface_Roughness_Sa",
+          "Value_Numeric": 0.21,
+          "Unit": "μm"
+        },
+        {
+          "Property_Name": "Surface_Microhardness",
+          "Value_Numeric": 425,
+          "Unit": "HV"
+        }
+      ]
+    },
+    {
+      "Sample_ID": "Sample_240",
+      "Gradient_Material": false,
+      "Gradient_Group_ID": null,
+      "Composition_Info": {
+        "Alloy_Name_Raw": "Inconel 718 (IN718)",
+        "Note": "Same composition as Sample_40"
+      },
+      "Process_Info": {
+        "Process_Category": "Ultra-High-Speed Grinding (UHSM)",
+        "Process_Text": {
+          "original": "Grinding speed 240 m/s (Ultra-high-speed grinding zone)",
+          "simplified": "Ultra-high-speed grinding"
+        },
+        "Key_Params": {
+          "Grinding_Speed_m_s": 240
+        }
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": "Similar microstructure to 220 m/s... WPSD < 10 μm...",
+          "simplified": "Minimal deformation layer"
+        },
+        "Advanced_Quantitative_Features": {
+          "White_and_Severe_Deformation_Depth_um": 10,
+          "Grain_Refinement_Layer_Depth_um": 1.2
+        }
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Surface_Roughness_Sa",
+          "Value_Numeric": null,
+          "Unit": "μm"
+        },
+        {
+          "Property_Name": "Surface_Microhardness",
+          "Value_Numeric": 425,
+          "Unit": "HV"
+        }
+      ]
+    }
+  ]
+}

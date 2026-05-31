@@ -1,0 +1,720 @@
+{
+  "Paper_Metadata": {
+    "Paper_Title": "The mechanical, thermophysical and electromagnetic properties of UD SiCf/SiC composites in different directions",
+    "DOI": null
+  },
+  "Paper_Routing": {
+    "base_material": "Composites",
+    "application": "Functional",
+    "research_paradigm": "Experimental",
+    "Supplements_Loaded": [
+      "directions/base/Composites.txt",
+      "directions/application/Functional.txt",
+      "directions/paradigm/Experimental.txt"
+    ],
+    "Patch_Tags": [
+      "Directional_Anisotropy",
+      "Interface_Dominated"
+    ],
+    "Needs_Mixed_Routing_Check": false,
+    "Mixed_Signals": []
+  },
+  "items": [
+    {
+      "Item_ID": "1",
+      "Sample_ID": "SS0",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Composites",
+      "application": "Functional",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Directional_Anisotropy",
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 1",
+        "Table 2",
+        "Table 3",
+        "Fig. 1",
+        "Fig. 6",
+        "Fig. 9"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Composite_Category": "CMC",
+          "Composite_System_Raw": "UD SiCf/SiC",
+          "Matrix": "Polymer-derived SiC (PDC SiC)",
+          "Reinforcement": {
+            "Type": "Continuous fiber",
+            "Material": "Cansas 3303 3rd SiC fibers",
+            "Fiber_Volume_Fraction": {
+              "Value": 46,
+              "Unit": "%"
+            },
+            "Fiber_Architecture": "Unidirectional (UD)"
+          },
+          "Interface_or_Interphase": "BN interphase"
+        },
+        "Processing": {
+          "Process_Category": "PIP",
+          "Process_Text": {
+            "original": "BN interphase was deposited on SiC fibers by chemical vapor infiltration (CVI) method from BCl3-NH3-H2-Ar systems... SiC fiber performs were dipped into PCS solution by a vacuum infiltration method and pyrolyzed at 900 °C in argon atmosphere... The cycle of infiltration and pyrolysis was repeated 13 times.",
+            "simplified": "1. Fiber stacking in one direction. 2. CVI BN interphase deposition for 30 h. 3. Vacuum infiltration of PCS/xylene solution (mass ratio 1:1). 4. Pyrolysis at 900 °C in Ar. 5. Repeat infiltration and pyrolysis for 13 cycles."
+          },
+          "Equipment": [
+            {
+              "Name": "CVI furnace",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Universal testing machine (HD-609B; Haida Qualitative Analysis)",
+              "Category": "Testing"
+            },
+            {
+              "Name": "Four-point probe setup (ET9000; East changing)",
+              "Category": "Testing"
+            },
+            {
+              "Name": "Vector network analyzer (MS4644A; Anritsu)",
+              "Category": "Testing"
+            },
+            {
+              "Name": "Thermal dilatometer (DIL 402C; NETZSCH)",
+              "Category": "Testing"
+            },
+            {
+              "Name": "Scanning electron microscope (SEM, S-2700, Hitachi)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Philips X'Pert PRO X-ray diffraction system",
+              "Category": "Characterization"
+            }
+          ],
+          "Key_Params": [
+            {
+              "Stage": "Stage1_Interphase_Deposition",
+              "Process": "CVI",
+              "Time": {
+                "Value": 30,
+                "Unit": "h"
+              },
+              "Atmosphere": "BCl3-NH3-H2-Ar systems"
+            },
+            {
+              "Stage": "Stage2_Matrix_Infiltration_Pyrolysis",
+              "Process": "PIP",
+              "Temperature": {
+                "Value": 900,
+                "Unit": "°C"
+              },
+              "Atmosphere": "Argon",
+              "Precursor": "PCS/xylene solution (mass ratio 1:1)",
+              "Number_of_Cycles": 13
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "The fiber volume fraction of UD SiCf/SiC composites is 46%. And the porosity and density are 5.3 % and 2.3 g/cm³, respectively.",
+            "simplified": "UD SiC/SiC composite with 46 vol% SiC fibers, 5.3% porosity, and density of 2.3 g/cm³."
+          },
+          "Porosity": {
+            "Value": 5.3,
+            "Unit": "%"
+          },
+          "Density": {
+            "Value": 2.3,
+            "Unit": "g/cm³"
+          },
+          "Advanced_Quantitative_Features": {
+            "Fiber_Density": {
+              "Value": 3.1,
+              "Unit": "g/cm³"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Flexural_Strength",
+            "Value": 813.0,
+            "Value_StdDev": 32.4,
+            "Unit": "MPa",
+            "Test_Condition": {
+              "Loading_Direction": "Parallel to fiber axial direction (SS0)",
+              "Test_Method": "Three-point bending",
+              "Support_Span_Length": "30 mm",
+              "Cross_Head_Speed": "0.5 mm/min",
+              "Specimen_Size": "40 mm × 5 mm × 3 mm"
+            },
+            "Data_Source": "table"
+          },
+          {
+            "Property_Name": "Fracture_Toughness",
+            "Value": 26.1,
+            "Value_StdDev": 2.9,
+            "Unit": "MPa·m^1/2",
+            "Test_Condition": {
+              "Loading_Direction": "Parallel to fiber axial direction (SS0)",
+              "Test_Method": "Single edge notch beam (SENB)",
+              "Support_Span_Length": "30 mm",
+              "Cross_Head_Speed": "0.05 mm/min",
+              "Notch_Depth": "2.5 mm",
+              "Notch_Width": "0.3 mm",
+              "Specimen_Size": "40 mm × 3 mm × 5 mm"
+            },
+            "Data_Source": "table"
+          },
+          {
+            "Property_Name": "Electronic_Conductivity",
+            "Value": 0.36,
+            "Unit": "S/m",
+            "Test_Condition": {
+              "Measurement_Direction": "Parallel to fiber axial direction (SS0)",
+              "Method": "Two-wire method"
+            },
+            "Data_Source": "table"
+          },
+          {
+            "Property_Name": "EMI_Shielding_Effectiveness_Total",
+            "Value": 29,
+            "Unit": "dB",
+            "Test_Condition": {
+              "Electric_Field_Direction": "Parallel to fiber axial direction",
+              "Frequency_Range": "8.2–12.4 GHz (X-band)"
+            },
+            "Data_Source": "text",
+            "Note": "Value reported in Conclusions. SET of UD SiCf/SiC are 32 dB and 29 dB in the directions of SiC fibers perpendicular and parallel to the electric field direction, respectively."
+          },
+          {
+            "Property_Name": "Coefficient_of_Thermal_Expansion",
+            "Value": 4.5e-06,
+            "Unit": "K^-1",
+            "Test_Condition": {
+              "Measurement_Direction": "Parallel to fiber axial direction (SS0)",
+              "Temperature_Range": "Room temperature to 900 °C",
+              "Atmosphere": "Ar"
+            },
+            "Data_Source": "text",
+            "Note": "CTE is flat and around 4.5 × 10⁻⁶ K⁻¹ in Region I (RT to 900 °C)."
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "2",
+      "Sample_ID": "SS90",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Composites",
+      "application": "Functional",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Directional_Anisotropy",
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 1",
+        "Table 2",
+        "Table 3",
+        "Fig. 1",
+        "Fig. 6",
+        "Fig. 9"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Composite_Category": "CMC",
+          "Composite_System_Raw": "UD SiCf/SiC",
+          "Matrix": "Polymer-derived SiC (PDC SiC)",
+          "Reinforcement": {
+            "Type": "Continuous fiber",
+            "Material": "Cansas 3303 3rd SiC fibers",
+            "Fiber_Volume_Fraction": {
+              "Value": 46,
+              "Unit": "%"
+            },
+            "Fiber_Architecture": "Unidirectional (UD)"
+          },
+          "Interface_or_Interphase": "BN interphase"
+        },
+        "Processing": {
+          "Process_Category": "PIP",
+          "Process_Text": {
+            "original": "BN interphase was deposited on SiC fibers by chemical vapor infiltration (CVI) method from BCl3-NH3-H2-Ar systems... SiC fiber performs were dipped into PCS solution by a vacuum infiltration method and pyrolyzed at 900 °C in argon atmosphere... The cycle of infiltration and pyrolysis was repeated 13 times.",
+            "simplified": "1. Fiber stacking in one direction. 2. CVI BN interphase deposition for 30 h. 3. Vacuum infiltration of PCS/xylene solution (mass ratio 1:1). 4. Pyrolysis at 900 °C in Ar. 5. Repeat infiltration and pyrolysis for 13 cycles."
+          },
+          "Equipment": [
+            {
+              "Name": "CVI furnace",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Universal testing machine (HD-609B; Haida Qualitative Analysis)",
+              "Category": "Testing"
+            },
+            {
+              "Name": "Four-point probe setup (ET9000; East changing)",
+              "Category": "Testing"
+            },
+            {
+              "Name": "Vector network analyzer (MS4644A; Anritsu)",
+              "Category": "Testing"
+            },
+            {
+              "Name": "Thermal dilatometer (DIL 402C; NETZSCH)",
+              "Category": "Testing"
+            },
+            {
+              "Name": "Scanning electron microscope (SEM, S-2700, Hitachi)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Philips X'Pert PRO X-ray diffraction system",
+              "Category": "Characterization"
+            }
+          ],
+          "Key_Params": [
+            {
+              "Stage": "Stage1_Interphase_Deposition",
+              "Process": "CVI",
+              "Time": {
+                "Value": 30,
+                "Unit": "h"
+              },
+              "Atmosphere": "BCl3-NH3-H2-Ar systems"
+            },
+            {
+              "Stage": "Stage2_Matrix_Infiltration_Pyrolysis",
+              "Process": "PIP",
+              "Temperature": {
+                "Value": 900,
+                "Unit": "°C"
+              },
+              "Atmosphere": "Argon",
+              "Precursor": "PCS/xylene solution (mass ratio 1:1)",
+              "Number_of_Cycles": 13
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "The fiber volume fraction of UD SiCf/SiC composites is 46%. And the porosity and density are 5.3 % and 2.3 g/cm³, respectively.",
+            "simplified": "UD SiC/SiC composite with 46 vol% SiC fibers, 5.3% porosity, and density of 2.3 g/cm³."
+          },
+          "Porosity": {
+            "Value": 5.3,
+            "Unit": "%"
+          },
+          "Density": {
+            "Value": 2.3,
+            "Unit": "g/cm³"
+          },
+          "Advanced_Quantitative_Features": {
+            "Fiber_Density": {
+              "Value": 3.1,
+              "Unit": "g/cm³"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Flexural_Strength",
+            "Value": 36.6,
+            "Value_StdDev": 6.9,
+            "Unit": "MPa",
+            "Test_Condition": {
+              "Loading_Direction": "Perpendicular to fiber axial direction (SS90)",
+              "Test_Method": "Three-point bending",
+              "Support_Span_Length": "30 mm",
+              "Cross_Head_Speed": "0.5 mm/min",
+              "Specimen_Size": "40 mm × 5 mm × 3 mm"
+            },
+            "Data_Source": "table"
+          },
+          {
+            "Property_Name": "Fracture_Toughness",
+            "Value": 0.9,
+            "Value_StdDev": 0.5,
+            "Unit": "MPa·m^1/2",
+            "Test_Condition": {
+              "Loading_Direction": "Perpendicular to fiber axial direction (SS90)",
+              "Test_Method": "Single edge notch beam (SENB)",
+              "Support_Span_Length": "30 mm",
+              "Cross_Head_Speed": "0.05 mm/min",
+              "Notch_Depth": "2.5 mm",
+              "Notch_Width": "0.3 mm",
+              "Specimen_Size": "40 mm × 3 mm × 5 mm"
+            },
+            "Data_Source": "table"
+          },
+          {
+            "Property_Name": "Electronic_Conductivity",
+            "Value": 3.6,
+            "Unit": "S/m",
+            "Test_Condition": {
+              "Measurement_Direction": "Perpendicular to fiber axial direction (SS90)",
+              "Method": "Two-wire method"
+            },
+            "Data_Source": "table"
+          },
+          {
+            "Property_Name": "EMI_Shielding_Effectiveness_Total",
+            "Value": 32,
+            "Unit": "dB",
+            "Test_Condition": {
+              "Electric_Field_Direction": "Perpendicular to fiber axial direction",
+              "Frequency_Range": "8.2–12.4 GHz (X-band)"
+            },
+            "Data_Source": "text",
+            "Note": "Value reported in Conclusions. SET of UD SiCf/SiC are 32 dB and 29 dB in the directions of SiC fibers perpendicular and parallel to the electric field direction, respectively."
+          },
+          {
+            "Property_Name": "Coefficient_of_Thermal_Expansion",
+            "Value": 4.5e-06,
+            "Unit": "K^-1",
+            "Test_Condition": {
+              "Measurement_Direction": "Perpendicular to fiber axial direction (SS90)",
+              "Temperature_Range": "Room temperature to 900 °C",
+              "Atmosphere": "Ar"
+            },
+            "Data_Source": "text",
+            "Note": "CTE is flat and around 4.5 × 10⁻⁶ K⁻¹ in Region I (RT to 900 °C)."
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "3",
+      "Sample_ID": "PDC_SiC",
+      "Role": "Comparator",
+      "Data_Nature": "Experimental",
+      "base_material": "Ceramics_Inorganic",
+      "application": "Functional",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 1",
+        "Table 2",
+        "Table 3",
+        "Fig. 6",
+        "Fig. 9"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Matrix": "Polymer-derived SiC (PDC SiC)"
+        },
+        "Processing": {
+          "Process_Category": "PIP",
+          "Process_Text": {
+            "original": "Polymer-derived SiC bulk ceramic (PDC SiC) was also fabricated in advance under the same condition as PIP SiC matrix for comparison.",
+            "simplified": "Pyrolysis of PCS/xylene solution at 900 °C in Ar."
+          },
+          "Equipment": [
+            {
+              "Name": "CVI furnace",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Universal testing machine (HD-609B; Haida Qualitative Analysis)",
+              "Category": "Testing"
+            },
+            {
+              "Name": "Four-point probe setup (ET9000; East changing)",
+              "Category": "Testing"
+            },
+            {
+              "Name": "Vector network analyzer (MS4644A; Anritsu)",
+              "Category": "Testing"
+            },
+            {
+              "Name": "Thermal dilatometer (DIL 402C; NETZSCH)",
+              "Category": "Testing"
+            },
+            {
+              "Name": "Scanning electron microscope (SEM, S-2700, Hitachi)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Philips X'Pert PRO X-ray diffraction system",
+              "Category": "Characterization"
+            }
+          ],
+          "Key_Params": [
+            {
+              "Stage": "Stage1_Pyrolysis",
+              "Process": "PIP",
+              "Temperature": {
+                "Value": 900,
+                "Unit": "°C"
+              },
+              "Atmosphere": "Argon",
+              "Precursor": "PCS/xylene solution (mass ratio 1:1)"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "PDC SiC was prepared with the same porosity as UD SiCf/SiC composites... The density of PDC SiC is 2.1 g/cm³...",
+            "simplified": "Bulk PDC SiC with 5.3% porosity and density of 2.1 g/cm³."
+          },
+          "Porosity": {
+            "Value": 5.3,
+            "Unit": "%"
+          },
+          "Density": {
+            "Value": 2.1,
+            "Unit": "g/cm³"
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Flexural_Strength",
+            "Value": 119.0,
+            "Value_StdDev": 13.6,
+            "Unit": "MPa",
+            "Test_Condition": {
+              "Test_Method": "Three-point bending",
+              "Support_Span_Length": "30 mm",
+              "Cross_Head_Speed": "0.5 mm/min",
+              "Specimen_Size": "40 mm × 5 mm × 3 mm"
+            },
+            "Data_Source": "table"
+          },
+          {
+            "Property_Name": "Fracture_Toughness",
+            "Value": 2.5,
+            "Value_StdDev": 0.3,
+            "Unit": "MPa·m^1/2",
+            "Test_Condition": {
+              "Test_Method": "Single edge notch beam (SENB)",
+              "Support_Span_Length": "30 mm",
+              "Cross_Head_Speed": "0.05 mm/min",
+              "Notch_Depth": "2.5 mm",
+              "Notch_Width": "0.3 mm",
+              "Specimen_Size": "40 mm × 3 mm × 5 mm"
+            },
+            "Data_Source": "table"
+          },
+          {
+            "Property_Name": "Electronic_Conductivity",
+            "Value": 0.29,
+            "Unit": "S/m",
+            "Test_Condition": {
+              "Method": "Two-wire method"
+            },
+            "Data_Source": "table"
+          },
+          {
+            "Property_Name": "EMI_Shielding_Effectiveness_Total",
+            "Value": 25,
+            "Unit": "dB",
+            "Test_Condition": {
+              "Frequency_Range": "8.2–12.4 GHz (X-band)"
+            },
+            "Data_Source": "text",
+            "Note": "The SET, SEA and SER values of PDC SiC are about 25 dB, 20 dB and 5 dB."
+          },
+          {
+            "Property_Name": "EMI_Shielding_Effectiveness_Absorption",
+            "Value": 20,
+            "Unit": "dB",
+            "Test_Condition": {
+              "Frequency_Range": "8.2–12.4 GHz (X-band)"
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "EMI_Shielding_Effectiveness_Reflection",
+            "Value": 5,
+            "Unit": "dB",
+            "Test_Condition": {
+              "Frequency_Range": "8.2–12.4 GHz (X-band)"
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Coefficient_of_Thermal_Expansion",
+            "Value": 4.5e-06,
+            "Unit": "K^-1",
+            "Test_Condition": {
+              "Temperature_Range": "Room temperature to 900 °C",
+              "Atmosphere": "Ar"
+            },
+            "Data_Source": "text",
+            "Note": "CTE is flat and around 4.5 × 10⁻⁶ K⁻¹ in Region I (RT to 900 °C)."
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "4",
+      "Sample_ID": "F0",
+      "Role": "Comparator",
+      "Data_Nature": "Experimental",
+      "base_material": "Composites",
+      "application": "Functional",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Directional_Anisotropy"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 1",
+        "Table 3",
+        "Fig. 9"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Composite_Category": "PMC",
+          "Composite_System_Raw": "UD SiCf/epoxy",
+          "Matrix": "Epoxy resin (Epolam2051)",
+          "Reinforcement": {
+            "Type": "Continuous fiber",
+            "Material": "Cansas 3303 3rd SiC fibers",
+            "Fiber_Volume_Fraction": {
+              "Value": 46,
+              "Unit": "%"
+            },
+            "Fiber_Architecture": "Unidirectional (UD)"
+          }
+        },
+        "Processing": {
+          "Process_Category": "Casting",
+          "Process_Text": {
+            "original": "UD SiCf/epoxy composites were prepared by pouring the epoxy resin (Epolam2051, Sino Composite Co., LTD.) into the stacked SiC fibers and then curing at 80 °C for 12 h.",
+            "simplified": "1. Pouring epoxy resin into stacked SiC fibers. 2. Curing at 80 °C for 12 h."
+          },
+          "Equipment": [
+            {
+              "Name": "Four-point probe setup (ET9000; East changing)",
+              "Category": "Testing"
+            },
+            {
+              "Name": "Vector network analyzer (MS4644A; Anritsu)",
+              "Category": "Testing"
+            }
+          ],
+          "Key_Params": [
+            {
+              "Stage": "Stage1_Curing",
+              "Process": "Casting/Curing",
+              "Temperature": {
+                "Value": 80,
+                "Unit": "°C"
+              },
+              "Time": {
+                "Value": 12,
+                "Unit": "h"
+              }
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "The fiber volume fraction of UD SiCf/epoxy is the same as that of UD SiCf/SiC composites, which is 46%.",
+            "simplified": "UD SiC/epoxy composite with 46 vol% SiC fibers."
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Electronic_Conductivity",
+            "Value": 8.1e-05,
+            "Unit": "S/m",
+            "Test_Condition": {
+              "Measurement_Direction": "Perpendicular to fiber axial direction (F0)",
+              "Method": "Two-wire method"
+            },
+            "Data_Source": "table"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "5",
+      "Sample_ID": "F90",
+      "Role": "Comparator",
+      "Data_Nature": "Experimental",
+      "base_material": "Composites",
+      "application": "Functional",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Directional_Anisotropy"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 1",
+        "Table 3",
+        "Fig. 9"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Composite_Category": "PMC",
+          "Composite_System_Raw": "UD SiCf/epoxy",
+          "Matrix": "Epoxy resin (Epolam2051)",
+          "Reinforcement": {
+            "Type": "Continuous fiber",
+            "Material": "Cansas 3303 3rd SiC fibers",
+            "Fiber_Volume_Fraction": {
+              "Value": 46,
+              "Unit": "%"
+            },
+            "Fiber_Architecture": "Unidirectional (UD)"
+          }
+        },
+        "Processing": {
+          "Process_Category": "Casting",
+          "Process_Text": {
+            "original": "UD SiCf/epoxy composites were prepared by pouring the epoxy resin (Epolam2051, Sino Composite Co., LTD.) into the stacked SiC fibers and then curing at 80 °C for 12 h.",
+            "simplified": "1. Pouring epoxy resin into stacked SiC fibers. 2. Curing at 80 °C for 12 h."
+          },
+          "Equipment": [
+            {
+              "Name": "Four-point probe setup (ET9000; East changing)",
+              "Category": "Testing"
+            },
+            {
+              "Name": "Vector network analyzer (MS4644A; Anritsu)",
+              "Category": "Testing"
+            }
+          ],
+          "Key_Params": [
+            {
+              "Stage": "Stage1_Curing",
+              "Process": "Casting/Curing",
+              "Temperature": {
+                "Value": 80,
+                "Unit": "°C"
+              },
+              "Time": {
+                "Value": 12,
+                "Unit": "h"
+              }
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "The fiber volume fraction of UD SiCf/epoxy is the same as that of UD SiCf/SiC composites, which is 46%.",
+            "simplified": "UD SiC/epoxy composite with 46 vol% SiC fibers."
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Electronic_Conductivity",
+            "Value": 0.09,
+            "Unit": "S/m",
+            "Test_Condition": {
+              "Measurement_Direction": "Parallel to fiber axial direction (F90)",
+              "Method": "Two-wire method"
+            },
+            "Data_Source": "table"
+          }
+        ]
+      }
+    }
+  ]
+}

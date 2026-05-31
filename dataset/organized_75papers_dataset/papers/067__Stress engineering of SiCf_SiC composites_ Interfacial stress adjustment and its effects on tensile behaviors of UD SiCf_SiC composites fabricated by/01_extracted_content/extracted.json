@@ -1,0 +1,1135 @@
+{
+  "Paper_Metadata": {
+    "Paper_Title": "Stress engineering of SiCf/SiC composites: Interfacial stress adjustment and its effects on tensile behaviors of UD SiCf/SiC composites fabricated by hybrid CVI and PIP methods",
+    "DOI": null
+  },
+  "Paper_Routing": {
+    "base_material": "Composites",
+    "application": "Structural",
+    "research_paradigm": "Experimental",
+    "Supplements_Loaded": [
+      "directions/base/Composites.txt",
+      "directions/application/Structural.txt",
+      "directions/paradigm/Experimental.txt"
+    ],
+    "Patch_Tags": [
+      "Interface_Dominated"
+    ],
+    "Needs_Mixed_Routing_Check": false,
+    "Mixed_Signals": []
+  },
+  "items": [
+    {
+      "Item_ID": "B100C20",
+      "Sample_ID": "B100C20",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Composites",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 1",
+        "Table 2",
+        "Table 3",
+        "Table 5"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Composite_Category": "CMC",
+          "Composite_System_Raw": "SiCf/SiC",
+          "Matrix": "Hybrid CVI SiC and PIP SiC",
+          "Reinforcement": {
+            "Material": "SiC fiber",
+            "Commercial_Name": "Cansas 3303 3rd",
+            "Fiber_Volume_Fraction": {
+              "Value": 40,
+              "Unit": "%"
+            },
+            "Fiber_Architecture": "Unidirectional (UD)"
+          },
+          "Interface_or_Interphase": {
+            "Material": "BN",
+            "Thickness": {
+              "Value": 100,
+              "Unit": "nm"
+            },
+            "Volume_Fraction": {
+              "Value": 1.2,
+              "Unit": "%"
+            }
+          },
+          "Filler_or_Modifier": null,
+          "CVI_SiC_Volume_Fraction": {
+            "Value": 20.1,
+            "Unit": "%"
+          },
+          "PIP_SiC_Volume_Fraction": {
+            "Value": 30.1,
+            "Unit": "%"
+          }
+        },
+        "Processing": {
+          "Process_Category": "Hybrid CVI and PIP",
+          "Process_Text": {
+            "original": "UD SiCf/SiC composites were fabricated by hybrid CVI and PIP methods. BCl3-NH3-H2-Ar systems were used for the deposition of Boron nitride (BN) interphase... CVI-SiC matrix... was deposited... Liquid polycarbosilane (PCS)... was pyrolyzed at 1000 °C for 1 h to further densify the composites. The PIP process was repeated until the weight gain of the composites was less than 1 %.",
+            "simplified": "BN deposition via CVI -> CVI SiC deposition -> PIP SiC impregnation and pyrolysis at 1000 C for 1h, repeated until <1% weight gain."
+          },
+          "Equipment": [
+            {
+              "Name": "Micro-Raman spectrometer (Alpha300R)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "FEI Versa Dual Beam (FIB)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Hysitron nano-indenter",
+              "Category": "Testing"
+            },
+            {
+              "Name": "Universal tensile testing machine with electromechanical actuator",
+              "Category": "Testing"
+            },
+            {
+              "Name": "Scanning electron microscope (FEI Versa Dual Beam)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Thermal dilatometer (DIL 402C; NETZSCH)",
+              "Category": "Testing"
+            }
+          ],
+          "Key_Params": [
+            {
+              "Stage": "BN Deposition",
+              "Precursors": "BCl3-NH3-H2-Ar"
+            },
+            {
+              "Stage": "CVI SiC Deposition",
+              "Precursors": "MTS (methyltrichlorosilane)",
+              "Carrier_Gas": "Ar",
+              "Reducing_Gas": "H2"
+            },
+            {
+              "Stage": "PIP SiC Impregnation",
+              "Precursor": "Liquid polycarbosilane (PCS)",
+              "Molecular_Weight_Range": "6000-10000"
+            },
+            {
+              "Stage": "PIP SiC Pyrolysis",
+              "Temperature": {
+                "Value": 1000,
+                "Unit": "°C"
+              },
+              "Time": {
+                "Value": 1,
+                "Unit": "h"
+              },
+              "Repetition_Condition": "weight gain < 1%"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "SiC fibers are uniformly distributed in the composites. BN interphase and CVI SiC are wrapped on the surface of the fiber. PIP SiC fills the remaining pores. Black stripes can then be seen in the PIP SiC matrix, which have been reported to be carbon-rich regions. CVI SiC has a complete structure.",
+            "simplified": "Uniform fiber distribution. Complete CVI SiC structure. PIP SiC contains carbon-rich black stripes."
+          },
+          "Porosity": {
+            "Value": 8.6,
+            "Unit": "%",
+            "Measurement_Method": "Archimedes method"
+          },
+          "Interface_Features": {
+            "Compressive_Stress": {
+              "Value": 1127.7,
+              "Unit": "MPa",
+              "Measurement_Method": "Raman spectroscopy (TO mode of beta-SiC)"
+            }
+          },
+          "Matrix_Structure": {
+            "Axial_Residual_Stress": {
+              "Value": 0,
+              "Unit": "MPa",
+              "Note": "Close to 0 MPa based on cyclic reloading-unloading tensile curve."
+            }
+          },
+          "Advanced_Quantitative_Features": {
+            "Saturated_Crack_Density": {
+              "Value": 40,
+              "Unit": "1/mm"
+            },
+            "Saturated_Crack_Length": {
+              "Value": 25,
+              "Unit": "µm"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Interfacial_Shear_Strength",
+            "Value": 139.8,
+            "Value_StdDev": 34.8,
+            "Unit": "MPa",
+            "Test_Condition": {
+              "Test_Method": "Micro-shear test",
+              "Specimen_Type": "Double microcantilever beam",
+              "Indentation_Depth": {
+                "Value": 1000,
+                "Unit": "nm"
+              },
+              "Indentation_Rate": {
+                "Value": 2,
+                "Unit": "nm/s"
+              }
+            },
+            "Data_Source": "table"
+          },
+          {
+            "Property_Name": "Interfacial_Dynamic_Friction_Strength",
+            "Value": 44.2,
+            "Value_StdDev": 5.5,
+            "Unit": "MPa",
+            "Test_Condition": {
+              "Test_Method": "Micro-shear test",
+              "Displacement_at_Measurement": {
+                "Value": 700,
+                "Unit": "nm"
+              }
+            },
+            "Data_Source": "table"
+          },
+          {
+            "Property_Name": "Ultimate_Tensile_Strength",
+            "Value": 962.6,
+            "Value_StdDev": 75.5,
+            "Unit": "MPa",
+            "Test_Condition": {
+              "Test_Method": "Tensile test",
+              "Loading_Rate": {
+                "Value": 0.5,
+                "Unit": "mm/min"
+              },
+              "Specimen_Dimensions": "120 mm × 10 mm × 3 mm",
+              "Orientation": "Axial (UD)"
+            },
+            "Data_Source": "table"
+          },
+          {
+            "Property_Name": "Proportional_Limit_Stress",
+            "Value": 729.8,
+            "Value_StdDev": 9.2,
+            "Unit": "MPa",
+            "Test_Condition": {
+              "Test_Method": "Tensile test",
+              "Determination_Method": "Offset strain construct (0.005%)"
+            },
+            "Data_Source": "table"
+          },
+          {
+            "Property_Name": "Elongation_At_Fracture",
+            "Value": 0.42,
+            "Value_StdDev": 0.02,
+            "Unit": "%",
+            "Test_Condition": {
+              "Test_Method": "Tensile test"
+            },
+            "Data_Source": "table",
+            "Note": "Reported as Tensile strain in Table 5."
+          },
+          {
+            "Property_Name": "Elastic_Modulus",
+            "Value": 288.0,
+            "Value_StdDev": 7.9,
+            "Unit": "GPa",
+            "Test_Condition": {
+              "Test_Method": "Tensile test"
+            },
+            "Data_Source": "table",
+            "Note": "Reported as Tensile modulus in Table 5."
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "B100C40",
+      "Sample_ID": "B100C40",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Composites",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 1",
+        "Table 2",
+        "Table 3",
+        "Table 5"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Composite_Category": "CMC",
+          "Composite_System_Raw": "SiCf/SiC",
+          "Matrix": "CVI SiC",
+          "Reinforcement": {
+            "Material": "SiC fiber",
+            "Commercial_Name": "Cansas 3303 3rd",
+            "Fiber_Volume_Fraction": {
+              "Value": 40,
+              "Unit": "%"
+            },
+            "Fiber_Architecture": "Unidirectional (UD)"
+          },
+          "Interface_or_Interphase": {
+            "Material": "BN",
+            "Thickness": {
+              "Value": 100,
+              "Unit": "nm"
+            },
+            "Volume_Fraction": {
+              "Value": 1.2,
+              "Unit": "%"
+            }
+          },
+          "CVI_SiC_Volume_Fraction": {
+            "Value": 40.3,
+            "Unit": "%"
+          },
+          "PIP_SiC_Volume_Fraction": {
+            "Value": 0,
+            "Unit": "%"
+          }
+        },
+        "Processing": {
+          "Process_Category": "CVI",
+          "Process_Text": {
+            "original": "UD SiCf/SiC composites were fabricated by hybrid CVI and PIP methods. BCl3-NH3-H2-Ar systems were used for the deposition of Boron nitride (BN) interphase... CVI-SiC matrix... was deposited...",
+            "simplified": "BN deposition via CVI -> CVI SiC deposition. No PIP."
+          },
+          "Equipment": [
+            {
+              "Name": "Micro-Raman spectrometer (Alpha300R)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "FEI Versa Dual Beam (FIB)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Hysitron nano-indenter",
+              "Category": "Testing"
+            },
+            {
+              "Name": "Universal tensile testing machine with electromechanical actuator",
+              "Category": "Testing"
+            },
+            {
+              "Name": "Scanning electron microscope (FEI Versa Dual Beam)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Thermal dilatometer (DIL 402C; NETZSCH)",
+              "Category": "Testing"
+            }
+          ],
+          "Key_Params": [
+            {
+              "Stage": "BN Deposition",
+              "Precursors": "BCl3-NH3-H2-Ar"
+            },
+            {
+              "Stage": "CVI SiC Deposition",
+              "Precursors": "MTS (methyltrichlorosilane)",
+              "Carrier_Gas": "Ar",
+              "Reducing_Gas": "H2"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "SiC fibers are uniformly distributed in the composites. BN interphase and CVI SiC are wrapped on the surface of the fiber. CVI SiC has a complete structure.",
+            "simplified": "Uniform fiber distribution. Complete CVI SiC structure."
+          },
+          "Porosity": {
+            "Value": 18.5,
+            "Unit": "%",
+            "Measurement_Method": "Archimedes method"
+          },
+          "Interface_Features": {
+            "Compressive_Stress": {
+              "Value": 698.1,
+              "Unit": "MPa",
+              "Measurement_Method": "Raman spectroscopy (TO mode of beta-SiC)"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Interfacial_Shear_Strength",
+            "Value": 52.6,
+            "Value_StdDev": 13.0,
+            "Unit": "MPa",
+            "Test_Condition": {
+              "Test_Method": "Micro-shear test",
+              "Specimen_Type": "Double microcantilever beam",
+              "Indentation_Depth": {
+                "Value": 1000,
+                "Unit": "nm"
+              },
+              "Indentation_Rate": {
+                "Value": 2,
+                "Unit": "nm/s"
+              }
+            },
+            "Data_Source": "table"
+          },
+          {
+            "Property_Name": "Interfacial_Dynamic_Friction_Strength",
+            "Value": 21.7,
+            "Value_StdDev": 4.9,
+            "Unit": "MPa",
+            "Test_Condition": {
+              "Test_Method": "Micro-shear test",
+              "Displacement_at_Measurement": {
+                "Value": 700,
+                "Unit": "nm"
+              }
+            },
+            "Data_Source": "table"
+          },
+          {
+            "Property_Name": "Ultimate_Tensile_Strength",
+            "Value": 626.6,
+            "Value_StdDev": 63.2,
+            "Unit": "MPa",
+            "Test_Condition": {
+              "Test_Method": "Tensile test",
+              "Loading_Rate": {
+                "Value": 0.5,
+                "Unit": "mm/min"
+              },
+              "Specimen_Dimensions": "120 mm × 10 mm × 3 mm",
+              "Orientation": "Axial (UD)"
+            },
+            "Data_Source": "table"
+          },
+          {
+            "Property_Name": "Proportional_Limit_Stress",
+            "Value": 544.9,
+            "Value_StdDev": 37.8,
+            "Unit": "MPa",
+            "Test_Condition": {
+              "Test_Method": "Tensile test",
+              "Determination_Method": "Offset strain construct (0.005%)"
+            },
+            "Data_Source": "table"
+          },
+          {
+            "Property_Name": "Elongation_At_Fracture",
+            "Value": 0.34,
+            "Value_StdDev": 0.03,
+            "Unit": "%",
+            "Test_Condition": {
+              "Test_Method": "Tensile test"
+            },
+            "Data_Source": "table",
+            "Note": "Reported as Tensile strain in Table 5."
+          },
+          {
+            "Property_Name": "Elastic_Modulus",
+            "Value": 256.5,
+            "Value_StdDev": 3.4,
+            "Unit": "GPa",
+            "Test_Condition": {
+              "Test_Method": "Tensile test"
+            },
+            "Data_Source": "table",
+            "Note": "Reported as Tensile modulus in Table 5."
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "B200C31",
+      "Sample_ID": "B200C31",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Composites",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 1",
+        "Table 2",
+        "Table 3",
+        "Table 4",
+        "Table 5"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Composite_Category": "CMC",
+          "Composite_System_Raw": "SiCf/SiC",
+          "Matrix": "Hybrid CVI SiC and PIP SiC",
+          "Reinforcement": {
+            "Material": "SiC fiber",
+            "Commercial_Name": "Cansas 3303 3rd",
+            "Fiber_Volume_Fraction": {
+              "Value": 40,
+              "Unit": "%"
+            },
+            "Fiber_Architecture": "Unidirectional (UD)"
+          },
+          "Interface_or_Interphase": {
+            "Material": "BN",
+            "Thickness": {
+              "Value": 200,
+              "Unit": "nm"
+            },
+            "Volume_Fraction": {
+              "Value": 2.5,
+              "Unit": "%"
+            }
+          },
+          "CVI_SiC_Volume_Fraction": {
+            "Value": 30.7,
+            "Unit": "%"
+          },
+          "PIP_SiC_Volume_Fraction": {
+            "Value": 19.1,
+            "Unit": "%"
+          }
+        },
+        "Processing": {
+          "Process_Category": "Hybrid CVI and PIP",
+          "Process_Text": {
+            "original": "UD SiCf/SiC composites were fabricated by hybrid CVI and PIP methods. BCl3-NH3-H2-Ar systems were used for the deposition of Boron nitride (BN) interphase... CVI-SiC matrix... was deposited... Liquid polycarbosilane (PCS)... was pyrolyzed at 1000 °C for 1 h to further densify the composites. The PIP process was repeated until the weight gain of the composites was less than 1 %.",
+            "simplified": "BN deposition via CVI -> CVI SiC deposition -> PIP SiC impregnation and pyrolysis at 1000 C for 1h, repeated until <1% weight gain."
+          },
+          "Equipment": [
+            {
+              "Name": "Micro-Raman spectrometer (Alpha300R)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "FEI Versa Dual Beam (FIB)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Hysitron nano-indenter",
+              "Category": "Testing"
+            },
+            {
+              "Name": "Universal tensile testing machine with electromechanical actuator",
+              "Category": "Testing"
+            },
+            {
+              "Name": "Scanning electron microscope (FEI Versa Dual Beam)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Thermal dilatometer (DIL 402C; NETZSCH)",
+              "Category": "Testing"
+            }
+          ],
+          "Key_Params": [
+            {
+              "Stage": "BN Deposition",
+              "Precursors": "BCl3-NH3-H2-Ar"
+            },
+            {
+              "Stage": "CVI SiC Deposition",
+              "Precursors": "MTS (methyltrichlorosilane)",
+              "Carrier_Gas": "Ar",
+              "Reducing_Gas": "H2"
+            },
+            {
+              "Stage": "PIP SiC Impregnation",
+              "Precursor": "Liquid polycarbosilane (PCS)",
+              "Molecular_Weight_Range": "6000-10000"
+            },
+            {
+              "Stage": "PIP SiC Pyrolysis",
+              "Temperature": {
+                "Value": 1000,
+                "Unit": "°C"
+              },
+              "Time": {
+                "Value": 1,
+                "Unit": "h"
+              },
+              "Repetition_Condition": "weight gain < 1%"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "SiC fibers are uniformly distributed in the composites. BN interphase and CVI SiC are wrapped on the surface of the fiber. PIP SiC fills the remaining pores. Black stripes can then be seen in the PIP SiC matrix, which have been reported to be carbon-rich regions. CVI SiC has a complete structure.",
+            "simplified": "Uniform fiber distribution. Complete CVI SiC structure. PIP SiC contains carbon-rich black stripes."
+          },
+          "Porosity": {
+            "Value": 7.7,
+            "Unit": "%",
+            "Measurement_Method": "Archimedes method"
+          },
+          "Interface_Features": {
+            "Compressive_Stress": {
+              "Value": 662.3,
+              "Unit": "MPa",
+              "Measurement_Method": "Raman spectroscopy (TO mode of beta-SiC)"
+            }
+          },
+          "Matrix_Structure": {
+            "Axial_Residual_Stress": {
+              "Value": 67.5,
+              "Unit": "MPa",
+              "Note": "Compressive stress determined by cyclic reloading-unloading tensile curve."
+            }
+          },
+          "Advanced_Quantitative_Features": {
+            "Saturated_Crack_Density": {
+              "Value": 20,
+              "Unit": "1/mm"
+            },
+            "Saturated_Crack_Length": {
+              "Value": 50,
+              "Unit": "µm"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Interfacial_Shear_Strength",
+            "Value": 41.0,
+            "Value_StdDev": 6.3,
+            "Unit": "MPa",
+            "Test_Condition": {
+              "Test_Method": "Micro-shear test",
+              "Specimen_Type": "Double microcantilever beam",
+              "Indentation_Depth": {
+                "Value": 1000,
+                "Unit": "nm"
+              },
+              "Indentation_Rate": {
+                "Value": 2,
+                "Unit": "nm/s"
+              }
+            },
+            "Data_Source": "table"
+          },
+          {
+            "Property_Name": "Interfacial_Dynamic_Friction_Strength",
+            "Value": 24.8,
+            "Value_StdDev": 5.4,
+            "Unit": "MPa",
+            "Test_Condition": {
+              "Test_Method": "Micro-shear test",
+              "Displacement_at_Measurement": {
+                "Value": 700,
+                "Unit": "nm"
+              }
+            },
+            "Data_Source": "table"
+          },
+          {
+            "Property_Name": "Ultimate_Tensile_Strength",
+            "Value": 826.4,
+            "Value_StdDev": 63.2,
+            "Unit": "MPa",
+            "Test_Condition": {
+              "Test_Method": "Tensile test",
+              "Loading_Rate": {
+                "Value": 0.5,
+                "Unit": "mm/min"
+              },
+              "Specimen_Dimensions": "120 mm × 10 mm × 3 mm",
+              "Orientation": "Axial (UD)"
+            },
+            "Data_Source": "table"
+          },
+          {
+            "Property_Name": "Proportional_Limit_Stress",
+            "Value": 613.3,
+            "Value_StdDev": 25.2,
+            "Unit": "MPa",
+            "Test_Condition": {
+              "Test_Method": "Tensile test",
+              "Determination_Method": "Offset strain construct (0.005%)"
+            },
+            "Data_Source": "table"
+          },
+          {
+            "Property_Name": "Elongation_At_Fracture",
+            "Value": 0.47,
+            "Value_StdDev": 0.03,
+            "Unit": "%",
+            "Test_Condition": {
+              "Test_Method": "Tensile test"
+            },
+            "Data_Source": "table",
+            "Note": "Reported as Tensile strain in Table 5."
+          },
+          {
+            "Property_Name": "Elastic_Modulus",
+            "Value": 302.0,
+            "Value_StdDev": 14.5,
+            "Unit": "GPa",
+            "Test_Condition": {
+              "Test_Method": "Tensile test"
+            },
+            "Data_Source": "table",
+            "Note": "Reported as Tensile modulus in Table 5."
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "B350C12",
+      "Sample_ID": "B350C12",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Composites",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 1",
+        "Table 2",
+        "Table 3",
+        "Table 5"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Composite_Category": "CMC",
+          "Composite_System_Raw": "SiCf/SiC",
+          "Matrix": "Hybrid CVI SiC and PIP SiC",
+          "Reinforcement": {
+            "Material": "SiC fiber",
+            "Commercial_Name": "Cansas 3303 3rd",
+            "Fiber_Volume_Fraction": {
+              "Value": 40,
+              "Unit": "%"
+            },
+            "Fiber_Architecture": "Unidirectional (UD)"
+          },
+          "Interface_or_Interphase": {
+            "Material": "BN",
+            "Thickness": {
+              "Value": 350,
+              "Unit": "nm"
+            },
+            "Volume_Fraction": {
+              "Value": 4.4,
+              "Unit": "%"
+            }
+          },
+          "CVI_SiC_Volume_Fraction": {
+            "Value": 12.4,
+            "Unit": "%"
+          },
+          "PIP_SiC_Volume_Fraction": {
+            "Value": 35.7,
+            "Unit": "%"
+          }
+        },
+        "Processing": {
+          "Process_Category": "Hybrid CVI and PIP",
+          "Process_Text": {
+            "original": "UD SiCf/SiC composites were fabricated by hybrid CVI and PIP methods. BCl3-NH3-H2-Ar systems were used for the deposition of Boron nitride (BN) interphase... CVI-SiC matrix... was deposited... Liquid polycarbosilane (PCS)... was pyrolyzed at 1000 °C for 1 h to further densify the composites. The PIP process was repeated until the weight gain of the composites was less than 1 %.",
+            "simplified": "BN deposition via CVI -> CVI SiC deposition -> PIP SiC impregnation and pyrolysis at 1000 C for 1h, repeated until <1% weight gain."
+          },
+          "Equipment": [
+            {
+              "Name": "Micro-Raman spectrometer (Alpha300R)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "FEI Versa Dual Beam (FIB)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Hysitron nano-indenter",
+              "Category": "Testing"
+            },
+            {
+              "Name": "Universal tensile testing machine with electromechanical actuator",
+              "Category": "Testing"
+            },
+            {
+              "Name": "Scanning electron microscope (FEI Versa Dual Beam)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Thermal dilatometer (DIL 402C; NETZSCH)",
+              "Category": "Testing"
+            }
+          ],
+          "Key_Params": [
+            {
+              "Stage": "BN Deposition",
+              "Precursors": "BCl3-NH3-H2-Ar"
+            },
+            {
+              "Stage": "CVI SiC Deposition",
+              "Precursors": "MTS (methyltrichlorosilane)",
+              "Carrier_Gas": "Ar",
+              "Reducing_Gas": "H2"
+            },
+            {
+              "Stage": "PIP SiC Impregnation",
+              "Precursor": "Liquid polycarbosilane (PCS)",
+              "Molecular_Weight_Range": "6000-10000"
+            },
+            {
+              "Stage": "PIP SiC Pyrolysis",
+              "Temperature": {
+                "Value": 1000,
+                "Unit": "°C"
+              },
+              "Time": {
+                "Value": 1,
+                "Unit": "h"
+              },
+              "Repetition_Condition": "weight gain < 1%"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "SiC fibers are uniformly distributed in the composites. BN interphase and CVI SiC are wrapped on the surface of the fiber. PIP SiC fills the remaining pores. Black stripes can then be seen in the PIP SiC matrix, which have been reported to be carbon-rich regions. In B350C12, damaged CVI SiC can be seen. The reason should be that the volume fraction of CVI SiC (12.4 %) is much lower than that of PIP SiC (35.7 %) in B350C12. Thus, CVI SiC layer cannot withstand the high shrinkage stress generated during the polymer-to-ceramic transformation process of PIP SiC matrix.",
+            "simplified": "Uniform fiber distribution. Damaged CVI SiC structure due to high PIP SiC content. PIP SiC contains carbon-rich black stripes."
+          },
+          "Porosity": {
+            "Value": 7.5,
+            "Unit": "%",
+            "Measurement_Method": "Archimedes method"
+          },
+          "Interface_Features": {
+            "Compressive_Stress": {
+              "Value": 1235.1,
+              "Unit": "MPa",
+              "Measurement_Method": "Raman spectroscopy (TO mode of beta-SiC)"
+            }
+          },
+          "Defects": {
+            "CVI_SiC_Damage": "Small fraction of CVI SiC is damaged due to high shrinkage stress from PIP process."
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Interfacial_Shear_Strength",
+            "Value": 74.2,
+            "Value_StdDev": 24.2,
+            "Unit": "MPa",
+            "Test_Condition": {
+              "Test_Method": "Micro-shear test",
+              "Specimen_Type": "Double microcantilever beam",
+              "Indentation_Depth": {
+                "Value": 1000,
+                "Unit": "nm"
+              },
+              "Indentation_Rate": {
+                "Value": 2,
+                "Unit": "nm/s"
+              }
+            },
+            "Data_Source": "table"
+          },
+          {
+            "Property_Name": "Interfacial_Dynamic_Friction_Strength",
+            "Value": 29.2,
+            "Value_StdDev": 1.9,
+            "Unit": "MPa",
+            "Test_Condition": {
+              "Test_Method": "Micro-shear test",
+              "Displacement_at_Measurement": {
+                "Value": 700,
+                "Unit": "nm"
+              }
+            },
+            "Data_Source": "table"
+          },
+          {
+            "Property_Name": "Ultimate_Tensile_Strength",
+            "Value": 805.9,
+            "Value_StdDev": 24.2,
+            "Unit": "MPa",
+            "Test_Condition": {
+              "Test_Method": "Tensile test",
+              "Loading_Rate": {
+                "Value": 0.5,
+                "Unit": "mm/min"
+              },
+              "Specimen_Dimensions": "120 mm × 10 mm × 3 mm",
+              "Orientation": "Axial (UD)"
+            },
+            "Data_Source": "table"
+          },
+          {
+            "Property_Name": "Proportional_Limit_Stress",
+            "Value": 622.5,
+            "Value_StdDev": 101.5,
+            "Unit": "MPa",
+            "Test_Condition": {
+              "Test_Method": "Tensile test",
+              "Determination_Method": "Offset strain construct (0.005%)"
+            },
+            "Data_Source": "table"
+          },
+          {
+            "Property_Name": "Elongation_At_Fracture",
+            "Value": 0.4,
+            "Value_StdDev": 0.02,
+            "Unit": "%",
+            "Test_Condition": {
+              "Test_Method": "Tensile test"
+            },
+            "Data_Source": "table",
+            "Note": "Reported as Tensile strain in Table 5."
+          },
+          {
+            "Property_Name": "Elastic_Modulus",
+            "Value": 235.4,
+            "Value_StdDev": 9.6,
+            "Unit": "GPa",
+            "Test_Condition": {
+              "Test_Method": "Tensile test"
+            },
+            "Data_Source": "table",
+            "Note": "Reported as Tensile modulus in Table 5."
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "B350C24",
+      "Sample_ID": "B350C24",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Composites",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 1",
+        "Table 2",
+        "Table 3",
+        "Table 5"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Composite_Category": "CMC",
+          "Composite_System_Raw": "SiCf/SiC",
+          "Matrix": "Hybrid CVI SiC and PIP SiC",
+          "Reinforcement": {
+            "Material": "SiC fiber",
+            "Commercial_Name": "Cansas 3303 3rd",
+            "Fiber_Volume_Fraction": {
+              "Value": 40,
+              "Unit": "%"
+            },
+            "Fiber_Architecture": "Unidirectional (UD)"
+          },
+          "Interface_or_Interphase": {
+            "Material": "BN",
+            "Thickness": {
+              "Value": 350,
+              "Unit": "nm"
+            },
+            "Volume_Fraction": {
+              "Value": 4.4,
+              "Unit": "%"
+            }
+          },
+          "CVI_SiC_Volume_Fraction": {
+            "Value": 24.1,
+            "Unit": "%"
+          },
+          "PIP_SiC_Volume_Fraction": {
+            "Value": 22.8,
+            "Unit": "%"
+          }
+        },
+        "Processing": {
+          "Process_Category": "Hybrid CVI and PIP",
+          "Process_Text": {
+            "original": "UD SiCf/SiC composites were fabricated by hybrid CVI and PIP methods. BCl3-NH3-H2-Ar systems were used for the deposition of Boron nitride (BN) interphase... CVI-SiC matrix... was deposited... Liquid polycarbosilane (PCS)... was pyrolyzed at 1000 °C for 1 h to further densify the composites. The PIP process was repeated until the weight gain of the composites was less than 1 %.",
+            "simplified": "BN deposition via CVI -> CVI SiC deposition -> PIP SiC impregnation and pyrolysis at 1000 C for 1h, repeated until <1% weight gain."
+          },
+          "Equipment": [
+            {
+              "Name": "Micro-Raman spectrometer (Alpha300R)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "FEI Versa Dual Beam (FIB)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Hysitron nano-indenter",
+              "Category": "Testing"
+            },
+            {
+              "Name": "Universal tensile testing machine with electromechanical actuator",
+              "Category": "Testing"
+            },
+            {
+              "Name": "Scanning electron microscope (FEI Versa Dual Beam)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Thermal dilatometer (DIL 402C; NETZSCH)",
+              "Category": "Testing"
+            }
+          ],
+          "Key_Params": [
+            {
+              "Stage": "BN Deposition",
+              "Precursors": "BCl3-NH3-H2-Ar"
+            },
+            {
+              "Stage": "CVI SiC Deposition",
+              "Precursors": "MTS (methyltrichlorosilane)",
+              "Carrier_Gas": "Ar",
+              "Reducing_Gas": "H2"
+            },
+            {
+              "Stage": "PIP SiC Impregnation",
+              "Precursor": "Liquid polycarbosilane (PCS)",
+              "Molecular_Weight_Range": "6000-10000"
+            },
+            {
+              "Stage": "PIP SiC Pyrolysis",
+              "Temperature": {
+                "Value": 1000,
+                "Unit": "°C"
+              },
+              "Time": {
+                "Value": 1,
+                "Unit": "h"
+              },
+              "Repetition_Condition": "weight gain < 1%"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "SiC fibers are uniformly distributed in the composites. BN interphase and CVI SiC are wrapped on the surface of the fiber. PIP SiC fills the remaining pores. Black stripes can then be seen in the PIP SiC matrix, which have been reported to be carbon-rich regions. CVI SiC has a complete structure.",
+            "simplified": "Uniform fiber distribution. Complete CVI SiC structure. PIP SiC contains carbon-rich black stripes."
+          },
+          "Porosity": {
+            "Value": 8.7,
+            "Unit": "%",
+            "Measurement_Method": "Archimedes method"
+          },
+          "Interface_Features": {
+            "Compressive_Stress": {
+              "Value": 912.9,
+              "Unit": "MPa",
+              "Measurement_Method": "Raman spectroscopy (TO mode of beta-SiC)"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Interfacial_Shear_Strength",
+            "Value": 34.7,
+            "Value_StdDev": 7.3,
+            "Unit": "MPa",
+            "Test_Condition": {
+              "Test_Method": "Micro-shear test",
+              "Specimen_Type": "Double microcantilever beam",
+              "Indentation_Depth": {
+                "Value": 1000,
+                "Unit": "nm"
+              },
+              "Indentation_Rate": {
+                "Value": 2,
+                "Unit": "nm/s"
+              }
+            },
+            "Data_Source": "table"
+          },
+          {
+            "Property_Name": "Interfacial_Dynamic_Friction_Strength",
+            "Value": 17.4,
+            "Value_StdDev": 3.8,
+            "Unit": "MPa",
+            "Test_Condition": {
+              "Test_Method": "Micro-shear test",
+              "Displacement_at_Measurement": {
+                "Value": 700,
+                "Unit": "nm"
+              }
+            },
+            "Data_Source": "table"
+          },
+          {
+            "Property_Name": "Ultimate_Tensile_Strength",
+            "Value": 848.1,
+            "Value_StdDev": 37.0,
+            "Unit": "MPa",
+            "Test_Condition": {
+              "Test_Method": "Tensile test",
+              "Loading_Rate": {
+                "Value": 0.5,
+                "Unit": "mm/min"
+              },
+              "Specimen_Dimensions": "120 mm × 10 mm × 3 mm",
+              "Orientation": "Axial (UD)"
+            },
+            "Data_Source": "table"
+          },
+          {
+            "Property_Name": "Proportional_Limit_Stress",
+            "Value": 639.4,
+            "Value_StdDev": 33.2,
+            "Unit": "MPa",
+            "Test_Condition": {
+              "Test_Method": "Tensile test",
+              "Determination_Method": "Offset strain construct (0.005%)"
+            },
+            "Data_Source": "table"
+          },
+          {
+            "Property_Name": "Elongation_At_Fracture",
+            "Value": 0.46,
+            "Value_StdDev": 0.03,
+            "Unit": "%",
+            "Test_Condition": {
+              "Test_Method": "Tensile test"
+            },
+            "Data_Source": "table",
+            "Note": "Reported as Tensile strain in Table 5."
+          },
+          {
+            "Property_Name": "Elastic_Modulus",
+            "Value": 233.7,
+            "Value_StdDev": 15.0,
+            "Unit": "GPa",
+            "Test_Condition": {
+              "Test_Method": "Tensile test"
+            },
+            "Data_Source": "table",
+            "Note": "Reported as Tensile modulus in Table 5."
+          }
+        ]
+      }
+    }
+  ]
+}

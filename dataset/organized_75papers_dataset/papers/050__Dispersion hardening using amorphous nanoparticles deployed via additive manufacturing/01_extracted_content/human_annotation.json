@@ -1,0 +1,550 @@
+{
+  "Paper_Metadata": {
+    "Paper_Title": "Dispersion hardening using amorphous nanoparticles deployed via additive manufacturing",
+    "DOI": "10.1038/s41467-025-58893-1",
+    "Source_Citation": ""
+  },
+  "Extraction_Note": {
+    "Note": "本JSON仅提取正文与当前可访问内容中明确给出的数据。Supplementary Table 1中的精确LPBF扫描参数未出现在当前可访问文本中，因此相关字段置为null。文中Ed单位在当前片段中按印刷形式记录为J/m3，但公式Ed=P/vhd通常对应J/mm3，因此此处不自行更正，仅在备注中保留原文写法。",
+    "Source_Citation": ""
+  },
+  "items": [
+    {
+      "Material_ID": "Cu_12volpct_B4C_ANP_as_built",
+      "Composition_Info": {
+        "Role": "Target",
+        "Alloy_Designation": "Cu-12%-ANP",
+        "Matrix_Material": "high-purity copper",
+        "Reinforcement_Material": "amorphous B4C nanoparticles",
+        "Reinforcement_Volume_Fraction_pct": 12,
+        "Composition_Type": "matrix plus reinforcement volume fraction; full bulk elemental composition not explicitly tabulated in accessible text",
+        "Elements_Normalized_pct": null,
+        "Measured_Local_Composition": {
+          "Nanoparticle_Formula_APT": "B3.89C",
+          "Cu_In_Nanoparticle_at_pct": 8
+        },
+        "Source_Citations": [
+          "",
+          ""
+        ]
+      },
+      "Process_Info": {
+        "Process_Category": "powder mixing + laser powder bed fusion",
+        "Process_Text": {
+          "original": "Gas-atomized Cu powder was mixed with crystalline B4C particles, then the composite was built by L-PBF under high-purity argon with a cooled substrate and layer rotation.",
+          "simplified": "Cu/B4C mixed powder processed by L-PBF."
+        },
+        "Equipment": {
+          "Powder_Mixing_Equipment": "Nobilta, Hosokawa Micron Ltd., Japan",
+          "LPBF_Machine": "S210, BLT, China",
+          "Laser_Type": "single-mode fibre laser"
+        },
+        "Key_Params": {
+          "Cu_Powder_Size_um": "≈30 in Methods; ≈35 in Results",
+          "B4C_Particle_Size_um": "2–4 in Methods; ≈4 average in Results",
+          "Powder_Mixing_Time_min": 20,
+          "Powder_Mixing_Rotation_rpm": 1600,
+          "Protective_Atmosphere": "high-purity argon",
+          "Oxygen_Content_ppm_max": 50,
+          "Laser_Power_W": 500,
+          "Laser_Wavelength_nm": 1064,
+          "Laser_Spot_Size_um": 60,
+          "Substrate_Temperature_C": -20,
+          "Layer_Rotation_deg": 67,
+          "Scan_Speed_mm_per_s": null,
+          "Hatch_Spacing_mm": null,
+          "Layer_Thickness_um": null
+        },
+        "Energy_Density_Study_as_Printed": [
+          "86.9 J/m3",
+          "118.1 J/m3",
+          "149.4 J/m3",
+          "180.6 J/m3"
+        ],
+        "Post_Process": null,
+        "Source_Citations": [
+          "",
+          "",
+          ""
+        ]
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": "The as-built bulk composite is porosity-free to near-full density, with dense and uniform quasi-amorphous B4C nanoparticles dispersed in an equiaxed ultrafine Cu matrix.",
+          "simplified": "Equiaxed ultrafine Cu matrix with dense amorphous/quasi-amorphous B4C nanoparticles."
+        },
+        "Relative_Density_pct": ">99.8",
+        "Porosity_pct": null,
+        "Main_Phase": "FCC Cu matrix + amorphous/quasi-amorphous B4C nanoparticles",
+        "Grain_Size_avg_um": 0.39,
+        "Grain_Size_Std_um": 0.14,
+        "Nanoparticle_Size_avg_nm": 47,
+        "Nanocrystal_Size_avg_nm": 2.9,
+        "Advanced_Quantitative_Features": {
+          "B_C_Diffusion_Length_into_Cu_nm": "~5",
+          "As_Built_Dislocation_Density_m^-2": "(2.3 ± 0.3) × 10^14",
+          "Deformed_Dislocation_Density_at_3pctStrain_m^-2": "~1.1 × 10^15",
+          "Point_to_Point_Misorientation_Across_Interface_deg": "<0.5",
+          "Maximum_Local_Temperature_during_Single_Track_K": 3800,
+          "Thermal_Gradient_K_per_m": "10^8",
+          "Cooling_Rate_K_per_s": "10^8",
+          "Volumetric_Energy_Density_for_Nanoscale_Refinement_as_Printed": "180.6 J/m3"
+        },
+        "Source_Citations": [
+          "",
+          "",
+          "",
+          ""
+        ]
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Yield_Strength",
+          "Value": 729,
+          "Unit": "MPa",
+          "Scatter": "±27",
+          "Test_Temperature_K": null,
+          "Test_Method": "quasi-static uniaxial tensile test",
+          "Condition": "as-built Cu-12%-ANP",
+          "Source_Citation": ""
+        },
+        {
+          "Property_Name": "Ultimate_Tensile_Strength",
+          "Value": 1036,
+          "Unit": "MPa",
+          "Scatter": "±35",
+          "Test_Temperature_K": null,
+          "Test_Method": "quasi-static uniaxial tensile test",
+          "Condition": "as-built Cu-12%-ANP",
+          "Source_Citation": ""
+        },
+        {
+          "Property_Name": "Elongation_Uniform",
+          "Value": 7.2,
+          "Unit": "%",
+          "Scatter": "±0.4",
+          "Test_Temperature_K": null,
+          "Test_Method": "quasi-static uniaxial tensile test",
+          "Condition": "as-built Cu-12%-ANP",
+          "Source_Citation": ""
+        },
+        {
+          "Property_Name": "Elongation_Total",
+          "Value": 9.7,
+          "Unit": "%",
+          "Scatter": "±0.4",
+          "Test_Temperature_K": null,
+          "Test_Method": "quasi-static uniaxial tensile test",
+          "Condition": "as-built Cu-12%-ANP",
+          "Source_Citation": ""
+        },
+        {
+          "Property_Name": "Fatigue_Strength_Limit_to_UTS_Ratio",
+          "Value": ">70",
+          "Unit": "%",
+          "Test_Temperature_K": null,
+          "Test_Method": "pull-pull fatigue, ASTM E466-21, R=0.1",
+          "Condition": "reported for as-built bulk nanocomposites; Fig. 3d includes Cu-12%-ANP but exact numeric point is not tabulated in accessible text",
+          "Source_Citation": ""
+        },
+        {
+          "Property_Name": "Strength_Retention_after_1h_Annealing_at_1173K",
+          "Value": 90,
+          "Unit": "%",
+          "Test_Temperature_K": 1173,
+          "Test_Method": "annealing plus Vickers hardness retention",
+          "Condition": "L-PBF copper nanocomposites",
+          "Source_Citation": ""
+        }
+      ],
+      "Mechanism_or_Model_Derived_Data": {
+        "Estimated_Yield_Strength_MPa": "~730",
+        "Strengthening_Contribution_MPa": {
+          "Orowan": 318,
+          "Dislocation": 115.8,
+          "Hall_Petch": 249.2
+        },
+        "Model_Input_Used_in_Estimation": {
+          "Shear_Modulus_GPa": 47.7,
+          "Burgers_Vector_nm": 0.256,
+          "Particle_Volume_Fraction": 0.12,
+          "Particle_Size_nm": 82.6,
+          "Hall_Petch_k_MPa_m^1/2": 0.14,
+          "Lattice_Friction_Stress_MPa": 25
+        },
+        "Source_Citation": ""
+      },
+      "Source_Citations": [
+        "",
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "Material_ID": "Cu_8volpct_B4C_ANP_as_built",
+      "Composition_Info": {
+        "Role": "Target",
+        "Alloy_Designation": "Cu-8%-ANP",
+        "Matrix_Material": "high-purity copper",
+        "Reinforcement_Material": "amorphous B4C nanoparticles",
+        "Reinforcement_Volume_Fraction_pct": 8,
+        "Composition_Type": "matrix plus reinforcement volume fraction; full bulk elemental composition not explicitly tabulated in accessible text",
+        "Elements_Normalized_pct": null,
+        "Measured_Local_Composition": null,
+        "Source_Citations": [
+          "",
+          ""
+        ]
+      },
+      "Process_Info": {
+        "Process_Category": "powder mixing + laser powder bed fusion",
+        "Process_Text": {
+          "original": "Prepared by the same Cu/B4C powder mixing and L-PBF route as the main Cu-ANP composites.",
+          "simplified": "Same route as other Cu-ANP materials."
+        },
+        "Equipment": {
+          "Powder_Mixing_Equipment": "Nobilta, Hosokawa Micron Ltd., Japan",
+          "LPBF_Machine": "S210, BLT, China"
+        },
+        "Key_Params": {
+          "Laser_Power_W": 500,
+          "Laser_Wavelength_nm": 1064,
+          "Laser_Spot_Size_um": 60,
+          "Substrate_Temperature_C": -20,
+          "Layer_Rotation_deg": 67,
+          "Scan_Speed_mm_per_s": null,
+          "Hatch_Spacing_mm": null,
+          "Layer_Thickness_um": null
+        },
+        "Post_Process": null,
+        "Source_Citation": ""
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": "Used as an amorphous-nanoparticle copper nanocomposite for in situ diffraction, CPFE, and activation-volume analyses.",
+          "simplified": "Cu matrix reinforced by 8 vol.% amorphous nanoparticles."
+        },
+        "Relative_Density_pct": ">99.5",
+        "Porosity_pct": null,
+        "Main_Phase": "FCC Cu matrix + amorphous B4C nanoparticles",
+        "Grain_Size_avg_um": null,
+        "Advanced_Quantitative_Features": {
+          "ANP_Strain_Hardening_Contribution_pct": 61,
+          "Physical_Activation_Volume_b3": "~20"
+        },
+        "Source_Citations": [
+          "",
+          "",
+          ""
+        ]
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Physical_Activation_Volume",
+          "Value": "~20",
+          "Unit": "b^3",
+          "Test_Temperature_K": null,
+          "Test_Method": "multiple stress relaxation test",
+          "Condition": "representative Cu-8%-ANP nanocomposite",
+          "Source_Citation": ""
+        },
+        {
+          "Property_Name": "ANP_Contribution_to_Strain_Hardening",
+          "Value": 61,
+          "Unit": "%",
+          "Test_Temperature_K": null,
+          "Test_Method": "in situ synchrotron XRD + CPFE",
+          "Condition": "true strain range 1% to 7%",
+          "Source_Citation": ""
+        }
+      ],
+      "Source_Citations": [
+        "",
+        "",
+        ""
+      ]
+    },
+    {
+      "Material_ID": "Cu_4volpct_B4C_ANP_as_built",
+      "Composition_Info": {
+        "Role": "Target",
+        "Alloy_Designation": "Cu-4%-ANP",
+        "Matrix_Material": "high-purity copper",
+        "Reinforcement_Material": "amorphous B4C nanoparticles",
+        "Reinforcement_Volume_Fraction_pct": 4,
+        "Composition_Type": "matrix plus reinforcement volume fraction; full bulk elemental composition not explicitly tabulated in accessible text",
+        "Elements_Normalized_pct": null,
+        "Measured_Local_Composition": null,
+        "Source_Citation": ""
+      },
+      "Process_Info": {
+        "Process_Category": "powder mixing + laser powder bed fusion",
+        "Process_Text": {
+          "original": "Prepared by the same Cu/B4C powder mixing and L-PBF route as the other Cu-ANP materials.",
+          "simplified": "Same route as other Cu-ANP materials."
+        },
+        "Equipment": {
+          "Powder_Mixing_Equipment": "Nobilta, Hosokawa Micron Ltd., Japan",
+          "LPBF_Machine": "S210, BLT, China"
+        },
+        "Key_Params": {
+          "Laser_Power_W": 500,
+          "Laser_Wavelength_nm": 1064,
+          "Laser_Spot_Size_um": 60,
+          "Substrate_Temperature_C": -20,
+          "Layer_Rotation_deg": 67,
+          "Scan_Speed_mm_per_s": null,
+          "Hatch_Spacing_mm": null,
+          "Layer_Thickness_um": null
+        },
+        "Post_Process": null,
+        "Source_Citation": ""
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": "Used as the representative composition for cyclic deformation stability and fatigue discussion.",
+          "simplified": "Cu matrix reinforced by 4 vol.% amorphous nanoparticles."
+        },
+        "Relative_Density_pct": ">99.5",
+        "Porosity_pct": null,
+        "Main_Phase": "FCC Cu matrix + amorphous B4C nanoparticles",
+        "Grain_Size_avg_um": null,
+        "Source_Citation": ""
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Stable_Hysteresis_Loop_after_1e7_Cycles",
+          "Value": true,
+          "Unit": null,
+          "Test_Temperature_K": null,
+          "Test_Method": "cyclic loading",
+          "Condition": "ascending and descending branches overlap even after 10^7 cycles at maximum stress = 70% of tensile strength",
+          "Source_Citation": ""
+        },
+        {
+          "Property_Name": "Maximum_Stress_in_Stable_Cyclic_Test_to_UTS_Ratio",
+          "Value": 70,
+          "Unit": "%",
+          "Test_Temperature_K": null,
+          "Test_Method": "cyclic loading",
+          "Condition": "representative Cu-4%-ANP",
+          "Source_Citation": ""
+        },
+        {
+          "Property_Name": "Fatigue_Strength_Limit_to_UTS_Ratio",
+          "Value": ">70",
+          "Unit": "%",
+          "Test_Temperature_K": null,
+          "Test_Method": "pull-pull fatigue, ASTM E466-21, R=0.1",
+          "Condition": "as-built bulk nanocomposites; Cu-4%-ANP included in Fig. 3d",
+          "Source_Citation": ""
+        }
+      ],
+      "Source_Citations": [
+        "",
+        ""
+      ]
+    },
+    {
+      "Material_ID": "Cu_12volpct_B4C_CNP_annealed_1173K_6h",
+      "Composition_Info": {
+        "Role": "Reference",
+        "Alloy_Designation": "Cu-12%-CNP",
+        "Matrix_Material": "high-purity copper",
+        "Reinforcement_Material": "crystallized B4C nanoparticles",
+        "Reinforcement_Volume_Fraction_pct": 12,
+        "Composition_Type": "annealed comparator derived from as-built Cu-12%-ANP",
+        "Elements_Normalized_pct": null,
+        "Measured_Local_Composition": null,
+        "Source_Citations": [
+          "",
+          ""
+        ]
+      },
+      "Process_Info": {
+        "Process_Category": "post-annealed comparator",
+        "Process_Text": {
+          "original": "As-built Cu-12%-ANP was annealed at 1173 K for 6 h to crystallize the B4C nanoparticles.",
+          "simplified": "1173 K for 6 h annealing converted ANP to CNP."
+        },
+        "Equipment": null,
+        "Key_Params": {
+          "Annealing_Temperature_K": 1173,
+          "Annealing_Time_h": 6,
+          "Annealing_Atmosphere": "glove box",
+          "Glove_Box_O2_ppm_max": 0.5,
+          "Glove_Box_H2O_ppm_max": 0.5
+        },
+        "Post_Process": "nanoparticle crystallization",
+        "Source_Citation": ""
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": "After annealing, the amorphous B4C nanoparticles became crystallized nanoparticles, while grain size remained almost unchanged because of strong particle pinning.",
+          "simplified": "ANP transformed to CNP; grain size nearly unchanged."
+        },
+        "Relative_Density_pct": null,
+        "Porosity_pct": null,
+        "Main_Phase": "FCC Cu matrix + crystallized B4C nanoparticles",
+        "Grain_Size_avg_um": null,
+        "Advanced_Quantitative_Features": {
+          "Grain_Size_Change_after_Annealing": "almost unchanged"
+        },
+        "Source_Citation": ""
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Elongation_Total",
+          "Value": "~3",
+          "Unit": "%",
+          "Test_Temperature_K": null,
+          "Test_Method": "quasi-static uniaxial tensile test",
+          "Condition": "Cu-12%-CNP",
+          "Source_Citation": ""
+        }
+      ],
+      "Source_Citations": [
+        "",
+        ""
+      ]
+    },
+    {
+      "Material_ID": "high_strength_pure_Cu_cold_rolled_reference",
+      "Composition_Info": {
+        "Role": "Reference",
+        "Alloy_Designation": "conventional high-strength pure copper",
+        "Matrix_Material": "high-purity copper",
+        "Reinforcement_Material": null,
+        "Reinforcement_Volume_Fraction_pct": 0,
+        "Composition_Type": "high-purity Cu; no explicit numeric impurity table in accessible text",
+        "Elements_Normalized_pct": null,
+        "Measured_Local_Composition": null,
+        "Source_Citation": ""
+      },
+      "Process_Info": {
+        "Process_Category": "cold rolling",
+        "Process_Text": {
+          "original": "Conventional high-strength copper was produced by cold rolling high-purity copper.",
+          "simplified": "High-purity Cu, 70% thickness reduction by cold rolling."
+        },
+        "Equipment": null,
+        "Key_Params": {
+          "Thickness_Reduction_pct": 70
+        },
+        "Post_Process": null,
+        "Source_Citation": ""
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": "This reference copper had a grain size similar to Cu-12%-ANP.",
+          "simplified": "Reference fine-grained pure Cu."
+        },
+        "Relative_Density_pct": null,
+        "Porosity_pct": null,
+        "Main_Phase": "FCC Cu",
+        "Grain_Size_avg_um": "~0.4",
+        "Advanced_Quantitative_Features": null,
+        "Source_Citation": ""
+      },
+      "Properties_Info": [],
+      "Source_Citations": [
+        ""
+      ]
+    },
+    {
+      "Material_ID": "Al_B4C_ANP_as_built_demo",
+      "Composition_Info": {
+        "Role": "Target",
+        "Alloy_Designation": "Al-B4C composite with ANPs",
+        "Matrix_Material": "pure aluminium",
+        "Reinforcement_Material": "amorphous B4C nanoparticles",
+        "Reinforcement_Volume_Fraction_pct": null,
+        "Composition_Type": "demonstration system in same paper; local nanoparticle composition reported by EDS",
+        "Elements_Normalized_pct": null,
+        "Measured_Local_Composition": {
+          "Nanoparticle_B_at_pct": 78.7,
+          "Nanoparticle_B_at_pct_Scatter": "±3.5",
+          "Nanoparticle_C_at_pct": 18.8,
+          "Nanoparticle_C_at_pct_Scatter": "±3.6",
+          "Nanoparticle_Al_at_pct": 2.5,
+          "Nanoparticle_Al_at_pct_Scatter": "±0.7"
+        },
+        "Source_Citation": ""
+      },
+      "Process_Info": {
+        "Process_Category": "in situ nanofragmentation demonstration by L-PBF",
+        "Process_Text": {
+          "original": "The same in situ nano-fragmentation strategy was applied in Al-B4C.",
+          "simplified": "Generality demonstration in Al-B4C."
+        },
+        "Equipment": null,
+        "Key_Params": null,
+        "Post_Process": null,
+        "Source_Citation": ""
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": "Al-B4C also showed in situ nanofragmentation and formed ANPs.",
+          "simplified": "Al matrix with ANPs formed by the same mechanism."
+        },
+        "Relative_Density_pct": null,
+        "Porosity_pct": null,
+        "Main_Phase": "Al matrix + amorphous B4C nanoparticles",
+        "Grain_Size_avg_um": null,
+        "Nanoparticle_Size_avg_nm": 200,
+        "Advanced_Quantitative_Features": {
+          "Elemental_Diffusion_or_Reaction_at_Interface": "little"
+        },
+        "Source_Citation": ""
+      },
+      "Properties_Info": [],
+      "Source_Citations": [
+        ""
+      ]
+    },
+    {
+      "Material_ID": "Cu_CrB2_ANP_as_built_demo",
+      "Composition_Info": {
+        "Role": "Target",
+        "Alloy_Designation": "Cu-CrB2 composite with ANPs",
+        "Matrix_Material": "copper",
+        "Reinforcement_Material": "amorphous CrB2 nanoparticles",
+        "Reinforcement_Volume_Fraction_pct": null,
+        "Composition_Type": "demonstration system in same paper",
+        "Elements_Normalized_pct": null,
+        "Measured_Local_Composition": null,
+        "Source_Citation": ""
+      },
+      "Process_Info": {
+        "Process_Category": "in situ nanofragmentation demonstration by L-PBF",
+        "Process_Text": {
+          "original": "The same in situ nano-fragmentation strategy was applied in Cu-CrB2.",
+          "simplified": "Generality demonstration in Cu-CrB2."
+        },
+        "Equipment": null,
+        "Key_Params": null,
+        "Post_Process": null,
+        "Source_Citation": ""
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": "Micron-sized CrB2 particles were turned into amorphous nanoparticles in copper.",
+          "simplified": "Cu matrix with amorphous CrB2 nanoparticles."
+        },
+        "Relative_Density_pct": null,
+        "Porosity_pct": null,
+        "Main_Phase": "Cu matrix + amorphous CrB2 nanoparticles",
+        "Grain_Size_avg_um": null,
+        "Starting_Reinforcement_Size_um": 10,
+        "Nanoparticle_Size_avg_nm": 40,
+        "Advanced_Quantitative_Features": null,
+        "Source_Citation": ""
+      },
+      "Properties_Info": [],
+      "Source_Citations": [
+        ""
+      ]
+    }
+  ]
+}

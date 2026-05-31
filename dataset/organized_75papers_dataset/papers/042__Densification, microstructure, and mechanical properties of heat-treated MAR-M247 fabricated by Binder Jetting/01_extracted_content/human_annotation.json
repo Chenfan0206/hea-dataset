@@ -1,0 +1,327 @@
+{
+  "Paper_Metadata": {
+    "Paper_Title": "Densification, microstructure, and mechanical properties of heat-treated MAR-M247 fabricated by Binder Jetting",
+    "DOI": "10.1016/j.addma.2021.101912"
+  },
+  "items": [
+    {
+      "Sample_ID": "BJ-Sintered",
+      "Gradient_Material": false,
+      "Gradient_Group_ID": null,
+      "Composition_Info": {
+        "Role": "Target",
+        "Alloy_Name_Raw": "MAR-M247",
+        "Nominal_Composition": null,
+        "Measured_Composition": {
+          "Composition_Type": "wt%",
+          "Elements_Normalized": {
+            "Ni": 59.86,
+            "Co": 10.06,
+            "W": 9.98,
+            "Cr": 8.53,
+            "Al": 5.46,
+            "Ta": 3.02,
+            "Hf": 1.32,
+            "Ti": 1.05,
+            "Mo": 0.62,
+            "C": 0.133,
+            "Zr": 0.05,
+            "Fe": 0.03,
+            "B": 0.01
+          },
+          "Measurement_Method": "ICP-MS"
+        },
+        "Note": "Powder composition matches MAR-M247 specifications. Carbon content reduced from 0.15 wt% to 0.133 wt% after sintering."
+      },
+      "Process_Info": {
+        "Process_Category": "Binder Jetting followed by Sintering",
+        "Process_Text": {
+          "original": "Gas-atomized MAR-M247 powder... Manufactured on a DMP2500 system with a layer thickness of 42 µm... Sintering: 1320°C for 6 h in vacuum.",
+          "simplified": "Binder Jetting (DMP2500) with layer thickness 42µm, sintered at 1320°C for 6h in vacuum."
+        },
+        "Equipment": "DMP2500 (Digital Metal AB, Sweden)",
+        "Key_Params": {
+          "Layer_Thickness_um": 42.0,
+          "Sintering_Temperature_K": 1593.15,
+          "Sintering_Time_h": 6.0,
+          "Protective_Atmosphere": "Vacuum (< 1e-4 mbar)",
+          "Powder_Size_avg_um": 15.0
+        }
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": "The as-sintered density reached approximately 98% (8.405 g/cm³)... Gamma prime precipitates exist in coarse (1-2 µm) and fine (< 1 µm) fractions.",
+          "simplified": "As-sintered density ~98%. Microstructure shows bimodal gamma prime distribution (coarse 1-2µm, fine <1µm)."
+        },
+        "Main_Phase": "Gamma (γ)",
+        "Precipitates": [
+          {
+            "Phase_Type": "Gamma Prime (γ')",
+            "Volume_Fraction_pct": null
+          },
+          {
+            "Phase_Type": "MC Carbide",
+            "Volume_Fraction_pct": null
+          }
+        ],
+        "Porosity_pct": 2.0,
+        "Relative_Density_pct": 98.0,
+        "Grain_Size_avg_um": 17.5,
+        "Advanced_Quantitative_Features": {
+          "Specific_Density_g_cm3": 8.405
+        }
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Hardness_HV",
+          "Test_Condition": "Sintered state",
+          "Value_Numeric": null,
+          "Value_StdDev": null,
+          "Unit": "HV0.1",
+          "Test_Temperature_K": 298.15,
+          "Data_Source": "text",
+          "Note": "Exact hardness not provided in text, only mentioned that HIP increases hardness by ~50 HV0.1."
+        }
+      ]
+    },
+    {
+      "Sample_ID": "BJ-HIP2-HT2-Vertical",
+      "Gradient_Material": false,
+      "Gradient_Group_ID": null,
+      "Composition_Info": {
+        "Role": "Target",
+        "Alloy_Name_Raw": "MAR-M247",
+        "Nominal_Composition": null,
+        "Measured_Composition": {
+          "Composition_Type": "wt%",
+          "Elements_Normalized": {
+            "Ni": 59.86,
+            "Co": 10.06,
+            "W": 9.98,
+            "Cr": 8.53,
+            "Al": 5.46,
+            "Ta": 3.02,
+            "Hf": 1.32,
+            "Ti": 1.05,
+            "Mo": 0.62,
+            "C": 0.133,
+            "Zr": 0.05,
+            "Fe": 0.03,
+            "B": 0.01
+          },
+          "Measurement_Method": "ICP-MS"
+        },
+        "Note": null
+      },
+      "Process_Info": {
+        "Process_Category": "Binder Jetting + Sintering + HIP + Heat Treatment",
+        "Process_Text": {
+          "original": "Sintered at 1320°C/6h. HIP2: 1180°C, 1500 bar, 4h. Heat Treatment (HT2): Solution treated at 1250°C for 4h (air cooling), followed by double aging at 1000°C for 24h and 870°C for 24h (air cooling).",
+          "simplified": "Sintered, HIP (1180°C, 1500bar, 4h), Solution (1250°C/4h), Double aging (1000°C/24h + 870°C/24h)."
+        },
+        "Equipment": null,
+        "Key_Params": {
+          "Sintering_Temperature_K": 1593.15,
+          "HIP_Temperature_K": 1453.15,
+          "HIP_Pressure_bar": 1500.0,
+          "HIP_Time_h": 4.0,
+          "Solution_Temperature_K": 1523.15,
+          "Solution_Time_h": 4.0,
+          "Aging_Temperature_Stage1_K": 1273.15,
+          "Aging_Time_Stage1_h": 24.0,
+          "Aging_Temperature_Stage2_K": 1143.15,
+          "Aging_Time_Stage2_h": 24.0,
+          "Cooling_Medium": "Air cooling"
+        }
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": "HIP2 treatment... Density increased to 8.579 g/cm³ (>99.9%). Microstructure after HT2 reveals a bimodal distribution of gamma prime.",
+          "simplified": "HIP2 + HT2 results in density >99.9% (8.579 g/cm³) and bimodal gamma prime distribution."
+        },
+        "Main_Phase": "Gamma (γ)",
+        "Precipitates": [
+          {
+            "Phase_Type": "Gamma Prime (γ')",
+            "Volume_Fraction_pct": null
+          }
+        ],
+        "Porosity_pct": 0.1,
+        "Relative_Density_pct": 99.9,
+        "Grain_Size_avg_um": null,
+        "Advanced_Quantitative_Features": {
+          "Specific_Density_g_cm3": 8.579
+        }
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Yield_Strength",
+          "Test_Condition": "Vertical build direction",
+          "Value_Numeric": 1000.0,
+          "Value_StdDev": null,
+          "Unit": "MPa",
+          "Test_Temperature_K": 298.15,
+          "Data_Source": "text",
+          "Note": "Value taken from Conclusion (Section 5), not from Table 3."
+        },
+        {
+          "Property_Name": "Ultimate_Tensile_Strength",
+          "Test_Condition": "Vertical build direction",
+          "Value_Numeric": 1105.0,
+          "Value_StdDev": 27.0,
+          "Unit": "MPa",
+          "Test_Temperature_K": 298.15,
+          "Data_Source": "text",
+          "Note": "Value and StdDev taken from Table 3 (HT2 condition)."
+        },
+        {
+          "Property_Name": "Elongation_Total",
+          "Test_Condition": "Vertical build direction",
+          "Value_Numeric": 3.1,
+          "Value_StdDev": 0.4,
+          "Unit": "%",
+          "Test_Temperature_K": 298.15,
+          "Data_Source": "text",
+          "Note": "Value and StdDev taken from Table 3 (HT2 condition)."
+        }
+      ]
+    },
+    {
+      "Sample_ID": "REF-VIC-M247",
+      "Gradient_Material": false,
+      "Gradient_Group_ID": null,
+      "Composition_Info": {
+        "Role": "Reference",
+        "Alloy_Name_Raw": "Vacuum Investment Cast (VIC) MAR-M247",
+        "Nominal_Composition": null,
+        "Measured_Composition": null,
+        "Note": "Commercially available cast material."
+      },
+      "Process_Info": {
+        "Process_Category": "Vacuum Investment Casting + HIP + Heat Treatment",
+        "Process_Text": {
+          "original": "Conventionally manufactured by vacuum investment casting, followed by HIP at 1185°C/4h/170MPa and full heat treatment.",
+          "simplified": "VIC with HIP (1185°C/4h/170MPa) and heat treatment."
+        },
+        "Equipment": null,
+        "Key_Params": {
+          "HIP_Temperature_K": 1458.15,
+          "HIP_Time_h": 4.0,
+          "HIP_Pressure_MPa": 170.0
+        }
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": "Characterized by high volume fraction of gamma prime in gamma matrix with carbides at grain boundaries.",
+          "simplified": "Gamma matrix with high volume fraction of gamma prime and grain boundary carbides."
+        },
+        "Main_Phase": "Gamma (γ)",
+        "Precipitates": [
+          {
+            "Phase_Type": "Gamma Prime (γ')",
+            "Volume_Fraction_pct": null
+          }
+        ],
+        "Porosity_pct": null,
+        "Relative_Density_pct": null,
+        "Grain_Size_avg_um": null
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Yield_Strength",
+          "Test_Condition": null,
+          "Value_Numeric": 1003.0,
+          "Value_StdDev": null,
+          "Unit": "MPa",
+          "Test_Temperature_K": 298.15,
+          "Data_Source": "text",
+          "Note": "Reference data from literature [5119, 5130]"
+        },
+        {
+          "Property_Name": "Ultimate_Tensile_Strength",
+          "Test_Condition": null,
+          "Value_Numeric": 1113.0,
+          "Value_StdDev": null,
+          "Unit": "MPa",
+          "Test_Temperature_K": 298.15,
+          "Data_Source": "text",
+          "Note": "Reference data from literature [5119, 5130]"
+        },
+        {
+          "Property_Name": "Elongation_Total",
+          "Test_Condition": null,
+          "Value_Numeric": 4.5,
+          "Value_StdDev": null,
+          "Unit": "%",
+          "Test_Temperature_K": 298.15,
+          "Data_Source": "text",
+          "Note": "Reference data from literature [5119, 5130]"
+        }
+      ]
+    },
+    {
+      "Sample_ID": "REF-MIM-M247",
+      "Gradient_Material": false,
+      "Gradient_Group_ID": null,
+      "Composition_Info": {
+        "Role": "Reference",
+        "Alloy_Name_Raw": "Metal Injection Molded (MIM) MAR-M247",
+        "Nominal_Composition": null,
+        "Measured_Composition": null,
+        "Note": "Comparison data from literature on MIM processing."
+      },
+      "Process_Info": {
+        "Process_Category": "Metal Injection Molding + HIP + Heat Treatment",
+        "Process_Text": {
+          "original": "Processed by Metal Injection Molding, followed by HIP and solution/aging treatments.",
+          "simplified": "MIM with HIP and solution/aging treatments."
+        },
+        "Equipment": null,
+        "Key_Params": null
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": null,
+          "simplified": null
+        },
+        "Main_Phase": "Gamma (γ)",
+        "Precipitates": null,
+        "Porosity_pct": null,
+        "Relative_Density_pct": null,
+        "Grain_Size_avg_um": null
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Yield_Strength",
+          "Test_Condition": null,
+          "Value_Numeric": 794.0,
+          "Value_StdDev": null,
+          "Unit": "MPa",
+          "Test_Temperature_K": 298.15,
+          "Data_Source": "text",
+          "Note": "Reference data from literature [5120]"
+        },
+        {
+          "Property_Name": "Ultimate_Tensile_Strength",
+          "Test_Condition": null,
+          "Value_Numeric": 1305.0,
+          "Value_StdDev": null,
+          "Unit": "MPa",
+          "Test_Temperature_K": 298.15,
+          "Data_Source": "text",
+          "Note": "Reference data from literature [5120]"
+        },
+        {
+          "Property_Name": "Elongation_Total",
+          "Test_Condition": null,
+          "Value_Numeric": 16.5,
+          "Value_StdDev": null,
+          "Unit": "%",
+          "Test_Temperature_K": 298.15,
+          "Data_Source": "text",
+          "Note": "Reference data from literature [5120]"
+        }
+      ]
+    }
+  ]
+}

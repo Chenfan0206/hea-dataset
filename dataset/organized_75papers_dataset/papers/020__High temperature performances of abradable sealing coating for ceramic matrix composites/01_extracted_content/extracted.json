@@ -1,0 +1,1180 @@
+{
+  "Paper_Metadata": {
+    "Paper_Title": "High temperature performances of abradable sealing coating for ceramic matrix composites",
+    "DOI": null,
+    "Note": "DOI not found in OCR text"
+  },
+  "Paper_Routing": {
+    "base_material": "Ceramics_Inorganic",
+    "application": "Structural",
+    "research_paradigm": "Experimental",
+    "Supplements_Loaded": [
+      "directions/base/Ceramics_Inorganic.txt",
+      "directions/application/Structural.txt",
+      "directions/paradigm/Experimental.txt",
+      "directions/domain/Coating.txt"
+    ],
+    "Patch_Tags": [
+      "Thermal_Barrier_or_EBC",
+      "Interface_Dominated",
+      "Thermal_Cycling"
+    ],
+    "Needs_Mixed_Routing_Check": false
+  },
+  "items": [
+    {
+      "Item_ID": "ZC20_as_sprayed",
+      "Sample_ID": "ZC20",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Ceramics_Inorganic",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Thermal_Barrier_or_EBC",
+        "Interface_Dominated",
+        "Thermal_Cycling"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 2.1 Material preparation",
+        "Section 3.1 Microstructure of powders and coatings",
+        "Section 3.2 The porosity and Rockwell hardness"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Category": "Composite ceramic coating",
+          "Material_Name_Raw": "YSZ-20 vol% CaF₂ (ZC20)",
+          "Phase_Composition": {
+            "Nominal": [
+              {
+                "Phase_Name": "tetragonal ZrO₂ (YSZ)",
+                "Phase_Formula": "ZrO₂ (Y-stabilized, tetragonal)",
+                "Volume_Fraction": "80 vol%"
+              },
+              {
+                "Phase_Name": "CaF₂",
+                "Phase_Formula": "CaF₂",
+                "Volume_Fraction": "20 vol%"
+              }
+            ]
+          },
+          "Coating_Composition": {
+            "Substrate_Material": "Graphite disc (Φ51 × 10 mm) for tribological tests; SiC/SiC CMC for oxidation and thermal shock tests",
+            "Coating_Layers": [
+              {
+                "Layer_Name": "Si bonding layer",
+                "Layer_Role": "Bond_Coat"
+              },
+              {
+                "Layer_Name": "YSZ-20 vol% CaF₂ top coat",
+                "Layer_Role": "Top_Coat",
+                "Composition": "YSZ-20 vol% CaF₂"
+              }
+            ]
+          },
+          "Raw_Materials": [
+            {
+              "Name": "YSZ powder",
+              "Supplier": "Oerlikon Metco Surface Technology Co., Ltd., Switzerland"
+            },
+            {
+              "Name": "CaF₂ powder",
+              "Supplier": "Shanghai Aladdin Biochemical Technology Co., Ltd., China"
+            }
+          ]
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "The YSZ-20 vol% CaF₂ powders were mixed in alcohol, spray dried by spray drier (LPG-5) and sintered using a furnace (KSL170) at 1100 °C for the fabrication of coatings. The Si bonding and top layers were deposited by the APS system (A-2000, Sulzer Metco AG, Switzerland).",
+            "simplified": "YSZ-20 vol% CaF₂ mixed in alcohol → spray dried → sintered at 1100 °C → APS deposited Si bond coat + ZC20 top coat"
+          },
+          "Stages": {
+            "Stage1_Powder_Preparation": {
+              "Process": "Mixing in alcohol and spray drying",
+              "Temperature": null,
+              "Atmosphere": null
+            },
+            "Stage2_Sintering": {
+              "Process": "Sintering of spray-dried powders",
+              "Temperature": {
+                "Value": 1373.15,
+                "Unit": "K",
+                "Original_Values": "1100 °C"
+              },
+              "Atmosphere": null
+            },
+            "Stage3_Deposition": {
+              "Process": "Atmospheric Plasma Spray (APS) deposition of Si bonding layer and ZC20 top coat",
+              "Method": "APS",
+              "Equipment_Reference": "parameters can be found in references [35,36]"
+            }
+          },
+          "Equipment": [
+            {
+              "Name": "Spray drier LPG-5",
+              "Category": "Preparation",
+              "Manufacturer": "Wuxi Chenying Machinery Technology Co., Ltd, China"
+            },
+            {
+              "Name": "Furnace KSL170",
+              "Category": "Preparation",
+              "Manufacturer": "Hefei Kejing Material Technology Co., Ltd, China"
+            },
+            {
+              "Name": "APS system A-2000",
+              "Category": "Preparation",
+              "Manufacturer": "Sulzer Metco AG, Switzerland"
+            },
+            {
+              "Name": "XRD D8 ADVANCE",
+              "Category": "Characterization",
+              "Manufacturer": "Bruker, Germany"
+            },
+            {
+              "Name": "SEM Magellan 400",
+              "Category": "Characterization",
+              "Manufacturer": "FEI, USA"
+            },
+            {
+              "Name": "EDS",
+              "Category": "Characterization",
+              "Manufacturer": "Oxford, England"
+            },
+            {
+              "Name": "Rockwell hardness gauge",
+              "Category": "Testing",
+              "Manufacturer": "SHIMADZU, Japan"
+            },
+            {
+              "Name": "E3CMOS optical microscope",
+              "Category": "Characterization",
+              "Manufacturer": "Ningbo Sunyu Instrument Co., Ltd, China"
+            },
+            {
+              "Name": "Tribometer UMT-2",
+              "Category": "Testing",
+              "Manufacturer": "Bruker, Germany"
+            },
+            {
+              "Name": "Probe profiler DektakXTL",
+              "Category": "Characterization",
+              "Manufacturer": "Bruker, Germany"
+            },
+            {
+              "Name": "Furnace KSL170",
+              "Category": "Testing",
+              "Manufacturer": "Hefei Kejing Material Technology Co., Ltd, China"
+            },
+            {
+              "Name": "Furnace RZR1600",
+              "Category": "Testing",
+              "Manufacturer": "Shanghai Junke Instrument Technology Co., Ltd, China"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "The main phases of the ZC20 coating are the same with the powder (tetragonal ZrO₂ and CaF₂). Amorphous phase present due to decomposition and rapid cooling during plasma spraying.",
+            "simplified": "As-sprayed ZC20: tetragonal ZrO₂ + CaF₂ + amorphous phase"
+          },
+          "Crystalline_Phases": [
+            {
+              "Phase_Name": "tetragonal ZrO₂",
+              "Crystal_Structure": "Tetragonal",
+              "Role": "Primary phase"
+            },
+            {
+              "Phase_Name": "CaF₂",
+              "Crystal_Structure": "Fluorite (Cubic)",
+              "Role": "Lubricant phase"
+            }
+          ],
+          "Amorphous_Phase": {
+            "Present": true,
+            "Note": "attributed to decomposition and rapid cooling of molten particles during plasma spraying"
+          },
+          "Microstructure_Features": {
+            "Surface": "Good molten state; molten particles spread out and overlapped; completely melted and partially melted regions",
+            "Cross_Section": "Few pores and microcracks inside the coating; different contrast differences due to CaF₂ content and decomposition",
+            "CaF₂_Distribution": "Ca and F elements presented strip-like aggregation, mainly distributed in deep gray region (Region 4); more microcracks and micropores around CaF₂"
+          },
+          "Porosity": {
+            "Value": null,
+            "Value_Range": {
+              "Upper_Bound": 10,
+              "Unit": "%"
+            },
+            "Original_Values": "less than 10%",
+            "Note": "porosity < 10% stated for all three coatings"
+          },
+          "Coating_Layer_Details": [
+            {
+              "Layer_Name": "Si bonding layer",
+              "Thickness": null
+            },
+            {
+              "Layer_Name": "YSZ-20 vol% CaF₂ top coat",
+              "Thickness": null,
+              "Note": "thickness close to other coatings per Section 3.3.3"
+            }
+          ]
+        },
+        "Properties": [
+          {
+            "Property_Name": "Rockwell Hardness",
+            "Value": 89.3,
+            "Value_StdDev": 3.2,
+            "Unit": "HR45Y",
+            "Test_Condition": {
+              "Load": "45 kg",
+              "Dwell_Time": "10 s"
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Average Friction Coefficient",
+            "Value": null,
+            "Test_Condition": {
+              "Test_Temperature_Original": "room temperature",
+              "Counterpart": "Al₂O₃ ball Φ10 mm",
+              "Substrate": "Graphite disc Φ51 × 10 mm",
+              "Load": "15 N",
+              "Linear_Velocity": "0.5 m/s",
+              "Wear_Time": "300 s"
+            },
+            "Note": "highest average friction coefficient among three coatings at room temperature; exact value from Fig. 5(c) not extractable from text",
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Average Friction Coefficient",
+            "Value": null,
+            "Test_Condition": {
+              "Test_Temperature_Original": "900 °C",
+              "Counterpart": "Al₂O₃ ball Φ10 mm",
+              "Substrate": "Graphite disc Φ51 × 10 mm",
+              "Load": "15 N",
+              "Linear_Velocity": "0.5 m/s",
+              "Wear_Time": "300 s"
+            },
+            "Note": "friction coefficient at 900 °C lower than room temperature for ZC20; exact value from Fig. 5(c) not extractable from text",
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Volume Wear Rate",
+            "Value": null,
+            "Test_Condition": {
+              "Test_Temperature_Original": "room temperature",
+              "Counterpart": "Al₂O₃ ball Φ10 mm",
+              "Load": "15 N",
+              "Linear_Velocity": "0.5 m/s",
+              "Wear_Time": "300 s",
+              "Wear_Track_Radius": "16 mm"
+            },
+            "Note": "exact value from Fig. 5(d) not extractable from text",
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Volume Wear Rate",
+            "Value": null,
+            "Test_Condition": {
+              "Test_Temperature_Original": "900 °C",
+              "Counterpart": "Al₂O₃ ball Φ10 mm",
+              "Load": "15 N",
+              "Linear_Velocity": "0.5 m/s",
+              "Wear_Time": "300 s",
+              "Wear_Track_Radius": "16 mm"
+            },
+            "Note": "volume wear rate decreased at 900 °C compared to room temperature; exact value from Fig. 5(d) not extractable from text",
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "CTE (Coefficient of Thermal Expansion)",
+            "Value": 12.33,
+            "Unit": "×10⁻⁶ K⁻¹",
+            "Note": "Computed from rule-of-mixtures; see Table 6",
+            "Data_Source": "table",
+            "Data_Nature": "Computed"
+          },
+          {
+            "Property_Name": "Elastic Modulus",
+            "Value": 146.51,
+            "Unit": "GPa",
+            "Note": "Computed from rule-of-mixtures; see Table 6",
+            "Data_Source": "table",
+            "Data_Nature": "Computed"
+          },
+          {
+            "Property_Name": "Poisson Ratio",
+            "Value": 0.25,
+            "Data_Source": "table",
+            "Note": "Computed from rule-of-mixtures; see Table 6",
+            "Data_Nature": "Computed"
+          },
+          {
+            "Property_Name": "Thermal Mismatch Stress",
+            "Value": 1350,
+            "Unit": "MPa",
+            "Stress_Type": "tensile",
+            "Note": "Computed from thin film approximation relative to SiC substrate; see Table 6",
+            "Data_Source": "table",
+            "Data_Nature": "Computed"
+          },
+          {
+            "Property_Name": "Long-term Oxidation Resistance",
+            "Test_Condition": {
+              "Test_Temperature_Original": "1100 °C",
+              "Duration": "100 h",
+              "Heating_Cooling_Rate": "5 °C/min",
+              "Atmosphere": "atmospheric pressure (air)"
+            },
+            "Result": "Structurally intact after 1100 °C for 100 h",
+            "Post_Oxidation_Phases": [
+              {
+                "Phase_Name": "Ca₀.₁₅Zr₀.₈₅O₁.₈₅ solid solution",
+                "Crystal_Structure": "Fluorite-type (solid solution with ZrO₂)",
+                "Note": "crystal structure inferred from solid-solution with fluorite-structured ZrO₂; not explicitly named in paper"
+              }
+            ],
+            "TGO_Thickness": {
+              "Value": 15,
+              "Unit": "μm",
+              "Note": "approximately; approximate value from text"
+            },
+            "Note": "CaSiO₃ phase formed between TGO and coating; good bonding between coating and Si bonding layer; CaF₂ phase was not detected after oxidation at 1100 °C for 100 h (confirmed by XRD, Fig. 9(a))",
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Long-term Oxidation Resistance",
+            "Test_Condition": {
+              "Test_Temperature_Original": "1200 °C",
+              "Duration": "100 h",
+              "Heating_Cooling_Rate": "5 °C/min",
+              "Atmosphere": "atmospheric pressure (air)"
+            },
+            "Result": "Cracked and peeled off; coating system failed",
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Long-term Oxidation Resistance",
+            "Test_Condition": {
+              "Test_Temperature_Original": "1300 °C",
+              "Duration": "100 h",
+              "Heating_Cooling_Rate": "5 °C/min",
+              "Atmosphere": "atmospheric pressure (air)"
+            },
+            "Result": "Cracked and spalled; coating system failed",
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Thermal Shock Resistance",
+            "Test_Condition": {
+              "Test_Temperature_Original": "1100 °C",
+              "Holding_Time": "15 min",
+              "Cooling_Method": "wind cooling for 15 min",
+              "Total_Cycles": 40,
+              "Failure_Criterion": "visible loss of coating area > 10%"
+            },
+            "Result_20_Cycles": "Cracks on surface; spalling at edge position",
+            "Result_40_Cycles": "Completely peeled off; coating system failed",
+            "Data_Source": "text"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "MC20_as_sprayed",
+      "Sample_ID": "MC20",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Ceramics_Inorganic",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Thermal_Barrier_or_EBC",
+        "Interface_Dominated",
+        "Thermal_Cycling"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 2.1 Material preparation",
+        "Section 3.1 Microstructure of powders and coatings",
+        "Section 3.2 The porosity and Rockwell hardness"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Category": "Composite ceramic coating",
+          "Material_Name_Raw": "Yb₂SiO₅-20 vol% CaF₂ (MC20)",
+          "Phase_Composition": {
+            "Nominal": [
+              {
+                "Phase_Name": "Yb₂SiO₅",
+                "Phase_Formula": "Yb₂SiO₅",
+                "Volume_Fraction": "80 vol%"
+              },
+              {
+                "Phase_Name": "CaF₂",
+                "Phase_Formula": "CaF₂",
+                "Volume_Fraction": "20 vol%"
+              }
+            ]
+          },
+          "Coating_Composition": {
+            "Substrate_Material": "Graphite disc (Φ51 × 10 mm) for tribological tests; SiC/SiC CMC for oxidation and thermal shock tests",
+            "Coating_Layers": [
+              {
+                "Layer_Name": "Si bonding layer",
+                "Layer_Role": "Bond_Coat"
+              },
+              {
+                "Layer_Name": "Yb₂SiO₅-20 vol% CaF₂ top coat",
+                "Layer_Role": "Top_Coat",
+                "Composition": "Yb₂SiO₅-20 vol% CaF₂"
+              }
+            ]
+          },
+          "Raw_Materials": [
+            {
+              "Name": "Yb₂SiO₅ powder",
+              "Preparation": "Solid-state reaction from SiO₂ and Yb₂O₃"
+            },
+            {
+              "Name": "SiO₂ raw material",
+              "Supplier": "Slno pharm Chemical Reagent Co., Ltd., China"
+            },
+            {
+              "Name": "Yb₂O₃ raw material",
+              "Supplier": "Shanghai Heli Rare Earth Material Co., Ltd., China"
+            },
+            {
+              "Name": "CaF₂ powder",
+              "Supplier": "Shanghai Aladdin Biochemical Technology Co., Ltd., China"
+            }
+          ]
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "Yb₂SiO₅ and Yb₂Si₂O₇ powder were prepared by solid-state reaction, using SiO₂ and Yb₂O₃ as raw materials. The Yb₂SiO₅-20 vol% CaF₂ powders were mixed in alcohol, spray dried by spray drier (LPG-5) and sintered using a furnace (KSL170) at 1100 °C for the fabrication of coatings. The Si bonding and top layers were deposited by the APS system (A-2000, Sulzer Metco AG, Switzerland).",
+            "simplified": "Yb₂SiO₅ synthesized by solid-state reaction → mixed with 20 vol% CaF₂ in alcohol → spray dried → sintered at 1100 °C → APS deposited Si bond coat + MC20 top coat"
+          },
+          "Stages": {
+            "Stage1_Powder_Synthesis": {
+              "Process": "Solid-state reaction synthesis of Yb₂SiO₅",
+              "Raw_Materials": "SiO₂ and Yb₂O₃"
+            },
+            "Stage2_Mixing_and_Spray_Drying": {
+              "Process": "Mixing in alcohol and spray drying"
+            },
+            "Stage3_Sintering": {
+              "Process": "Sintering of spray-dried powders",
+              "Temperature": {
+                "Value": 1373.15,
+                "Unit": "K",
+                "Original_Values": "1100 °C"
+              }
+            },
+            "Stage4_Deposition": {
+              "Process": "APS deposition of Si bonding layer and MC20 top coat",
+              "Method": "APS",
+              "Equipment_Reference": "parameters can be found in references [35,36]"
+            }
+          },
+          "Equipment": [
+            {
+              "Name": "Spray drier LPG-5",
+              "Category": "Preparation",
+              "Manufacturer": "Wuxi Chenying Machinery Technology Co., Ltd, China"
+            },
+            {
+              "Name": "Furnace KSL170",
+              "Category": "Preparation",
+              "Manufacturer": "Hefei Kejing Material Technology Co., Ltd, China"
+            },
+            {
+              "Name": "APS system A-2000",
+              "Category": "Preparation",
+              "Manufacturer": "Sulzer Metco AG, Switzerland"
+            },
+            {
+              "Name": "XRD D8 ADVANCE",
+              "Category": "Characterization",
+              "Manufacturer": "Bruker, Germany"
+            },
+            {
+              "Name": "SEM Magellan 400",
+              "Category": "Characterization",
+              "Manufacturer": "FEI, USA"
+            },
+            {
+              "Name": "EDS",
+              "Category": "Characterization",
+              "Manufacturer": "Oxford, England"
+            },
+            {
+              "Name": "Rockwell hardness gauge",
+              "Category": "Testing",
+              "Manufacturer": "SHIMADZU, Japan"
+            },
+            {
+              "Name": "E3CMOS optical microscope",
+              "Category": "Characterization",
+              "Manufacturer": "Ningbo Sunyu Instrument Co., Ltd, China"
+            },
+            {
+              "Name": "Tribometer UMT-2",
+              "Category": "Testing",
+              "Manufacturer": "Bruker, Germany"
+            },
+            {
+              "Name": "Probe profiler DektakXTL",
+              "Category": "Characterization",
+              "Manufacturer": "Bruker, Germany"
+            },
+            {
+              "Name": "Furnace KSL170",
+              "Category": "Testing",
+              "Manufacturer": "Hefei Kejing Material Technology Co., Ltd, China"
+            },
+            {
+              "Name": "Furnace RZR1600",
+              "Category": "Testing",
+              "Manufacturer": "Shanghai Junke Instrument Technology Co., Ltd, China"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "MC20 coating also contained the Yb₂O₃ phase in addition to Yb₂SiO₅ and CaF₂ from the powder. Amorphous phase present due to decomposition and rapid cooling during plasma spraying.",
+            "simplified": "As-sprayed MC20: Yb₂SiO₅ + CaF₂ + Yb₂O₃ + amorphous phase"
+          },
+          "Crystalline_Phases": [
+            {
+              "Phase_Name": "Yb₂SiO₅",
+              "Crystal_Structure": "Monoclinic (RE-monosilicate)",
+              "Role": "Primary phase"
+            },
+            {
+              "Phase_Name": "CaF₂",
+              "Crystal_Structure": "Fluorite (Cubic)",
+              "Role": "Lubricant phase"
+            },
+            {
+              "Phase_Name": "Yb₂O₃",
+              "Crystal_Structure": "Cubic (C-type rare earth)",
+              "Role": "Additional phase in coating (not in powder)"
+            }
+          ],
+          "Amorphous_Phase": {
+            "Present": true,
+            "Note": "attributed to decomposition and rapid cooling of molten particles during plasma spraying"
+          },
+          "Microstructure_Features": {
+            "Surface": "Good molten state; completely melted and partially melted regions",
+            "Cross_Section": "Few pores and microcracks; different contrast due to CaF₂ content and decomposition of Yb₂SiO₅"
+          },
+          "Porosity": {
+            "Value": null,
+            "Value_Range": {
+              "Upper_Bound": 10,
+              "Unit": "%"
+            },
+            "Original_Values": "less than 10%",
+            "Note": "porosity < 10% stated for all three coatings; MC20 slightly lower porosity than others"
+          },
+          "Coating_Layer_Details": [
+            {
+              "Layer_Name": "Si bonding layer",
+              "Thickness": null
+            },
+            {
+              "Layer_Name": "Yb₂SiO₅-20 vol% CaF₂ top coat",
+              "Thickness": null,
+              "Note": "thickness close to other coatings per Section 3.3.3"
+            }
+          ]
+        },
+        "Properties": [
+          {
+            "Property_Name": "Rockwell Hardness",
+            "Value": 97.0,
+            "Value_StdDev": 0.2,
+            "Unit": "HR45Y",
+            "Test_Condition": {
+              "Load": "45 kg",
+              "Dwell_Time": "10 s"
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Average Friction Coefficient",
+            "Value": null,
+            "Test_Condition": {
+              "Test_Temperature_Original": "room temperature",
+              "Counterpart": "Al₂O₃ ball Φ10 mm",
+              "Substrate": "Graphite disc Φ51 × 10 mm",
+              "Load": "15 N",
+              "Linear_Velocity": "0.5 m/s",
+              "Wear_Time": "300 s"
+            },
+            "Note": "MC20 friction coefficient between ZC20 and YC20 at room temperature; exact value from Fig. 5(c) not extractable from text",
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Average Friction Coefficient",
+            "Value": null,
+            "Test_Condition": {
+              "Test_Temperature_Original": "900 °C",
+              "Counterpart": "Al₂O₃ ball Φ10 mm",
+              "Substrate": "Graphite disc Φ51 × 10 mm",
+              "Load": "15 N",
+              "Linear_Velocity": "0.5 m/s",
+              "Wear_Time": "300 s"
+            },
+            "Note": "friction coefficient at 900 °C lower than room temperature; exact value not extractable from text",
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Volume Wear Rate",
+            "Value": null,
+            "Test_Condition": {
+              "Test_Temperature_Original": "room temperature",
+              "Counterpart": "Al₂O₃ ball Φ10 mm",
+              "Load": "15 N",
+              "Linear_Velocity": "0.5 m/s",
+              "Wear_Time": "300 s",
+              "Wear_Track_Radius": "16 mm"
+            },
+            "Note": "exact value from Fig. 5(d) not extractable from text",
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Volume Wear Rate",
+            "Value": null,
+            "Test_Condition": {
+              "Test_Temperature_Original": "900 °C",
+              "Counterpart": "Al₂O₃ ball Φ10 mm",
+              "Load": "15 N",
+              "Linear_Velocity": "0.5 m/s",
+              "Wear_Time": "300 s",
+              "Wear_Track_Radius": "16 mm"
+            },
+            "Note": "volume wear rate decreased at 900 °C compared to room temperature; exact value not extractable from text",
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "CTE (Coefficient of Thermal Expansion)",
+            "Value": 9.56,
+            "Unit": "×10⁻⁶ K⁻¹",
+            "Note": "Computed from rule-of-mixtures; see Table 6",
+            "Data_Source": "table",
+            "Data_Nature": "Computed"
+          },
+          {
+            "Property_Name": "Elastic Modulus",
+            "Value": 101.15,
+            "Unit": "GPa",
+            "Note": "Computed from rule-of-mixtures; see Table 6",
+            "Data_Source": "table",
+            "Data_Nature": "Computed"
+          },
+          {
+            "Property_Name": "Poisson Ratio",
+            "Value": 0.24,
+            "Data_Source": "table",
+            "Note": "Computed from rule-of-mixtures; see Table 6",
+            "Data_Nature": "Computed"
+          },
+          {
+            "Property_Name": "Thermal Mismatch Stress",
+            "Value": 524,
+            "Unit": "MPa",
+            "Stress_Type": "tensile",
+            "Note": "Computed from thin film approximation relative to SiC substrate; see Table 6",
+            "Data_Source": "table",
+            "Data_Nature": "Computed"
+          },
+          {
+            "Property_Name": "Long-term Oxidation Resistance",
+            "Test_Condition": {
+              "Test_Temperature_Original": "1100 °C",
+              "Duration": "100 h",
+              "Heating_Cooling_Rate": "5 °C/min",
+              "Atmosphere": "atmospheric pressure (air)"
+            },
+            "Result": "Structurally intact",
+            "Post_Oxidation_Phases": [
+              {
+                "Phase_Name": "Yb₂O₃",
+                "Crystal_Structure": "Cubic (C-type rare earth)",
+                "Note": "identified in Region 1"
+              },
+              {
+                "Phase_Name": "Yb₂SiO₅",
+                "Crystal_Structure": "Monoclinic",
+                "Note": "identified in Region 2"
+              },
+              {
+                "Phase_Name": "Ca₂Yb₈(SiO₄)₆O₂ (apatite)",
+                "Crystal_Structure": "Apatite",
+                "Note": "formed by reaction of CaF₂ with Yb₂SiO₅; identified in Regions 3-4; original EDS section writes Ca₂Yb₆(SiO₄)₆O₂ but XRD (Fig. 9(b)) and reaction equations consistently use Ca₂Yb₈(SiO₄)₆O₂"
+              }
+            ],
+            "TGO_Thickness": {
+              "Value": 20,
+              "Unit": "μm",
+              "Note": "approximately; approximate value from text"
+            },
+            "Note": "Significant regions of intensive porosity inside coating; good bonding between coating and Si bonding layer; no CaSiO₃ phase",
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Long-term Oxidation Resistance",
+            "Test_Condition": {
+              "Test_Temperature_Original": "1200 °C",
+              "Duration": "100 h",
+              "Heating_Cooling_Rate": "5 °C/min",
+              "Atmosphere": "atmospheric pressure (air)"
+            },
+            "Result": "Structurally intact; significant penetrating cracks inside coating; thicker TGO layer; horizontal cracks and intensive porosity regions",
+            "Post_Oxidation_Phases": [
+              {
+                "Phase_Name": "Yb₂SiO₅",
+                "Crystal_Structure": "Monoclinic",
+                "Note": "Region 1 in Fig. 14, EDS consistent with Yb₂SiO₅"
+              },
+              {
+                "Phase_Name": "Ca₂Yb₈(SiO₄)₆O₂ (apatite)",
+                "Crystal_Structure": "Apatite",
+                "Note": "Regions 2-8 in Fig. 14; apatite-structured phase from reaction with CaO"
+              }
+            ],
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Long-term Oxidation Resistance",
+            "Test_Condition": {
+              "Test_Temperature_Original": "1300 °C",
+              "Duration": "100 h",
+              "Heating_Cooling_Rate": "5 °C/min",
+              "Atmosphere": "atmospheric pressure (air)"
+            },
+            "Result": "Structurally intact; porous reaction layer formed in upper region of coating; horizontal cracks at interface between bonding layer and substrate; bonding layer and coating well bonded; TGO layer formed",
+            "Post_Oxidation_Phases": [
+              {
+                "Phase_Name": "Ca₂Yb₈(SiO₄)₆O₂ (apatite)",
+                "Crystal_Structure": "Apatite",
+                "Note": "uniformly distributed reaction product"
+              }
+            ],
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Thermal Shock Resistance",
+            "Test_Condition": {
+              "Test_Temperature_Original": "1100 °C",
+              "Holding_Time": "15 min",
+              "Cooling_Method": "wind cooling for 15 min",
+              "Total_Cycles": 40,
+              "Failure_Criterion": "visible loss of coating area > 10%"
+            },
+            "Result_20_Cycles": "Morphology remained good and structurally intact",
+            "Result_40_Cycles": "Cracked and slightly peeled off at edge position",
+            "Data_Source": "text"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "YC20_as_sprayed",
+      "Sample_ID": "YC20",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Ceramics_Inorganic",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Thermal_Barrier_or_EBC",
+        "Interface_Dominated",
+        "Thermal_Cycling"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 2.1 Material preparation",
+        "Section 3.1 Microstructure of powders and coatings",
+        "Section 3.2 The porosity and Rockwell hardness"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Category": "Composite ceramic coating",
+          "Material_Name_Raw": "Yb₂Si₂O₇-20 vol% CaF₂ (YC20)",
+          "Phase_Composition": {
+            "Nominal": [
+              {
+                "Phase_Name": "Yb₂Si₂O₇",
+                "Phase_Formula": "Yb₂Si₂O₇",
+                "Volume_Fraction": "80 vol%"
+              },
+              {
+                "Phase_Name": "CaF₂",
+                "Phase_Formula": "CaF₂",
+                "Volume_Fraction": "20 vol%"
+              }
+            ]
+          },
+          "Coating_Composition": {
+            "Substrate_Material": "Graphite disc (Φ51 × 10 mm) for tribological tests; SiC/SiC CMC for oxidation and thermal shock tests",
+            "Coating_Layers": [
+              {
+                "Layer_Name": "Si bonding layer",
+                "Layer_Role": "Bond_Coat"
+              },
+              {
+                "Layer_Name": "Yb₂Si₂O₇-20 vol% CaF₂ top coat",
+                "Layer_Role": "Top_Coat",
+                "Composition": "Yb₂Si₂O₇-20 vol% CaF₂"
+              }
+            ]
+          },
+          "Raw_Materials": [
+            {
+              "Name": "Yb₂Si₂O₇ powder",
+              "Preparation": "Solid-state reaction from SiO₂ and Yb₂O₃"
+            },
+            {
+              "Name": "SiO₂ raw material",
+              "Supplier": "Slno pharm Chemical Reagent Co., Ltd., China"
+            },
+            {
+              "Name": "Yb₂O₃ raw material",
+              "Supplier": "Shanghai Heli Rare Earth Material Co., Ltd., China"
+            },
+            {
+              "Name": "CaF₂ powder",
+              "Supplier": "Shanghai Aladdin Biochemical Technology Co., Ltd., China"
+            }
+          ]
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "Yb₂SiO₅ and Yb₂Si₂O₇ powder were prepared by solid-state reaction, using SiO₂ and Yb₂O₃ as raw materials. The Yb₂Si₂O₇-20 vol% CaF₂ powders were mixed in alcohol, spray dried by spray drier (LPG-5) and sintered using a furnace (KSL170) at 1100 °C for the fabrication of coatings. The Si bonding and top layers were deposited by the APS system (A-2000, Sulzer Metco AG, Switzerland).",
+            "simplified": "Yb₂Si₂O₇ synthesized by solid-state reaction → mixed with 20 vol% CaF₂ in alcohol → spray dried → sintered at 1100 °C → APS deposited Si bond coat + YC20 top coat"
+          },
+          "Stages": {
+            "Stage1_Powder_Synthesis": {
+              "Process": "Solid-state reaction synthesis of Yb₂Si₂O₇",
+              "Raw_Materials": "SiO₂ and Yb₂O₃"
+            },
+            "Stage2_Mixing_and_Spray_Drying": {
+              "Process": "Mixing in alcohol and spray drying"
+            },
+            "Stage3_Sintering": {
+              "Process": "Sintering of spray-dried powders",
+              "Temperature": {
+                "Value": 1373.15,
+                "Unit": "K",
+                "Original_Values": "1100 °C"
+              }
+            },
+            "Stage4_Deposition": {
+              "Process": "APS deposition of Si bonding layer and YC20 top coat",
+              "Method": "APS",
+              "Equipment_Reference": "parameters can be found in references [35,36]"
+            }
+          },
+          "Equipment": [
+            {
+              "Name": "Spray drier LPG-5",
+              "Category": "Preparation",
+              "Manufacturer": "Wuxi Chenying Machinery Technology Co., Ltd, China"
+            },
+            {
+              "Name": "Furnace KSL170",
+              "Category": "Preparation",
+              "Manufacturer": "Hefei Kejing Material Technology Co., Ltd, China"
+            },
+            {
+              "Name": "APS system A-2000",
+              "Category": "Preparation",
+              "Manufacturer": "Sulzer Metco AG, Switzerland"
+            },
+            {
+              "Name": "XRD D8 ADVANCE",
+              "Category": "Characterization",
+              "Manufacturer": "Bruker, Germany"
+            },
+            {
+              "Name": "SEM Magellan 400",
+              "Category": "Characterization",
+              "Manufacturer": "FEI, USA"
+            },
+            {
+              "Name": "EDS",
+              "Category": "Characterization",
+              "Manufacturer": "Oxford, England"
+            },
+            {
+              "Name": "Rockwell hardness gauge",
+              "Category": "Testing",
+              "Manufacturer": "SHIMADZU, Japan"
+            },
+            {
+              "Name": "E3CMOS optical microscope",
+              "Category": "Characterization",
+              "Manufacturer": "Ningbo Sunyu Instrument Co., Ltd, China"
+            },
+            {
+              "Name": "Tribometer UMT-2",
+              "Category": "Testing",
+              "Manufacturer": "Bruker, Germany"
+            },
+            {
+              "Name": "Probe profiler DektakXTL",
+              "Category": "Characterization",
+              "Manufacturer": "Bruker, Germany"
+            },
+            {
+              "Name": "Furnace KSL170",
+              "Category": "Testing",
+              "Manufacturer": "Hefei Kejing Material Technology Co., Ltd, China"
+            },
+            {
+              "Name": "Furnace RZR1600",
+              "Category": "Testing",
+              "Manufacturer": "Shanghai Junke Instrument Technology Co., Ltd, China"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "YC20 coating additionally possessed the Yb₂SiO₅ phase compared to powder. Amorphous phase present due to decomposition and rapid cooling during plasma spraying.",
+            "simplified": "As-sprayed YC20: Yb₂Si₂O₇ + CaF₂ + Yb₂SiO₅ + amorphous phase"
+          },
+          "Crystalline_Phases": [
+            {
+              "Phase_Name": "Yb₂Si₂O₇",
+              "Crystal_Structure": "Monoclinic (RE-disilicate)",
+              "Role": "Primary phase"
+            },
+            {
+              "Phase_Name": "CaF₂",
+              "Crystal_Structure": "Fluorite (Cubic)",
+              "Role": "Lubricant phase"
+            },
+            {
+              "Phase_Name": "Yb₂SiO₅",
+              "Crystal_Structure": "Monoclinic (RE-monosilicate)",
+              "Role": "Additional phase in coating (not in powder)"
+            }
+          ],
+          "Amorphous_Phase": {
+            "Present": true,
+            "Note": "attributed to decomposition and rapid cooling of molten particles during plasma spraying"
+          },
+          "Microstructure_Features": {
+            "Surface": "Good molten state; completely melted and partially melted regions",
+            "Cross_Section": "Few pores and microcracks; different contrast due to CaF₂ content and decomposition of Yb₂Si₂O₇"
+          },
+          "Porosity": {
+            "Value": null,
+            "Value_Range": {
+              "Upper_Bound": 10,
+              "Unit": "%"
+            },
+            "Original_Values": "less than 10%",
+            "Note": "porosity < 10% stated for all three coatings; YC20 possessed larger porosity compared to ZC20 and MC20"
+          },
+          "Coating_Layer_Details": [
+            {
+              "Layer_Name": "Si bonding layer",
+              "Thickness": null
+            },
+            {
+              "Layer_Name": "Yb₂Si₂O₇-20 vol% CaF₂ top coat",
+              "Thickness": null,
+              "Note": "thickness close to other coatings per Section 3.3.3"
+            }
+          ]
+        },
+        "Properties": [
+          {
+            "Property_Name": "Rockwell Hardness",
+            "Value": 88.5,
+            "Value_StdDev": 0.9,
+            "Unit": "HR45Y",
+            "Test_Condition": {
+              "Load": "45 kg",
+              "Dwell_Time": "10 s"
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Average Friction Coefficient",
+            "Value": null,
+            "Test_Condition": {
+              "Test_Temperature_Original": "room temperature",
+              "Counterpart": "Al₂O₃ ball Φ10 mm",
+              "Substrate": "Graphite disc Φ51 × 10 mm",
+              "Load": "15 N",
+              "Linear_Velocity": "0.5 m/s",
+              "Wear_Time": "300 s"
+            },
+            "Note": "lowest average friction coefficient among three coatings at room temperature; exact value from Fig. 5(c) not extractable from text",
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Average Friction Coefficient",
+            "Value": null,
+            "Test_Condition": {
+              "Test_Temperature_Original": "900 °C",
+              "Counterpart": "Al₂O₃ ball Φ10 mm",
+              "Substrate": "Graphite disc Φ51 × 10 mm",
+              "Load": "15 N",
+              "Linear_Velocity": "0.5 m/s",
+              "Wear_Time": "300 s"
+            },
+            "Note": "lowest friction coefficient among three coatings at 900 °C; relatively stable friction curve; exact value not extractable from text",
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Volume Wear Rate",
+            "Value": null,
+            "Test_Condition": {
+              "Test_Temperature_Original": "room temperature",
+              "Counterpart": "Al₂O₃ ball Φ10 mm",
+              "Load": "15 N",
+              "Linear_Velocity": "0.5 m/s",
+              "Wear_Time": "300 s",
+              "Wear_Track_Radius": "16 mm"
+            },
+            "Note": "largest volume wear rate among three coatings at room temperature; exact value from Fig. 5(d) not extractable from text",
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Volume Wear Rate",
+            "Value": null,
+            "Test_Condition": {
+              "Test_Temperature_Original": "900 °C",
+              "Counterpart": "Al₂O₃ ball Φ10 mm",
+              "Load": "15 N",
+              "Linear_Velocity": "0.5 m/s",
+              "Wear_Time": "300 s",
+              "Wear_Track_Radius": "16 mm"
+            },
+            "Note": "volume wear rate decreased at 900 °C compared to room temperature; largest volume wear rate among three coatings; exact value not extractable from text",
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "CTE (Coefficient of Thermal Expansion)",
+            "Value": 7.17,
+            "Unit": "×10⁻⁶ K⁻¹",
+            "Note": "Computed from rule-of-mixtures; see Table 6",
+            "Data_Source": "table",
+            "Data_Nature": "Computed"
+          },
+          {
+            "Property_Name": "Elastic Modulus",
+            "Value": 77.3,
+            "Unit": "GPa",
+            "Note": "Computed from rule-of-mixtures; see Table 6",
+            "Data_Source": "table",
+            "Data_Nature": "Computed"
+          },
+          {
+            "Property_Name": "Poisson Ratio",
+            "Value": 0.29,
+            "Data_Source": "table",
+            "Note": "Computed from rule-of-mixtures; see Table 6",
+            "Data_Nature": "Computed"
+          },
+          {
+            "Property_Name": "Thermal Mismatch Stress",
+            "Value": 149,
+            "Unit": "MPa",
+            "Stress_Type": "tensile",
+            "Note": "Computed from thin film approximation relative to SiC substrate; see Table 6; lowest mismatch stress among three coatings",
+            "Data_Source": "table",
+            "Data_Nature": "Computed"
+          },
+          {
+            "Property_Name": "Long-term Oxidation Resistance",
+            "Test_Condition": {
+              "Test_Temperature_Original": "1100 °C",
+              "Duration": "100 h",
+              "Heating_Cooling_Rate": "5 °C/min",
+              "Atmosphere": "atmospheric pressure (air)"
+            },
+            "Result": "Structurally intact; more pores inside coating",
+            "Post_Oxidation_Phases": [
+              {
+                "Phase_Name": "Yb₂Si₂O₇",
+                "Crystal_Structure": "Monoclinic",
+                "Note": "retained phase"
+              },
+              {
+                "Phase_Name": "Ca₂Yb₈(SiO₄)₆O₂ (apatite)",
+                "Crystal_Structure": "Apatite",
+                "Note": "formed by reaction of CaF₂ with Yb₂Si₂O₇; identified in Regions 5-6"
+              }
+            ],
+            "TGO_Thickness": {
+              "Value": 20,
+              "Unit": "μm",
+              "Note": "approximately; approximate value from text"
+            },
+            "Note": "Excellent bonding between coating and Si bonding layer; TGO internal microcracks existed; no CaSiO₃ phase",
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Long-term Oxidation Resistance",
+            "Test_Condition": {
+              "Test_Temperature_Original": "1200 °C",
+              "Duration": "100 h",
+              "Heating_Cooling_Rate": "5 °C/min",
+              "Atmosphere": "atmospheric pressure (air)"
+            },
+            "Result": "Structurally intact; significant penetrating cracks; good combination between coating and Si bonding layer",
+            "Post_Oxidation_Phases": [
+              {
+                "Phase_Name": "Ca₂Yb₈(SiO₄)₆O₂ (apatite)",
+                "Crystal_Structure": "Apatite",
+                "Note": "reaction product from CaO with Yb₂Si₂O₇ and Yb₂SiO₅"
+              }
+            ],
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Long-term Oxidation Resistance",
+            "Test_Condition": {
+              "Test_Temperature_Original": "1300 °C",
+              "Duration": "100 h",
+              "Heating_Cooling_Rate": "5 °C/min",
+              "Atmosphere": "atmospheric pressure (air)"
+            },
+            "Result": "Structurally intact; significant number of pores uniformly distributed throughout coating; horizontal cracks at interface between bonding layer and substrate; bonding layer and coating well bonded; TGO layer formed",
+            "Post_Oxidation_Phases": [
+              {
+                "Phase_Name": "Ca₂Yb₈(SiO₄)₆O₂ (apatite)",
+                "Crystal_Structure": "Apatite",
+                "Note": "uniformly distributed reaction product"
+              }
+            ],
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Thermal Shock Resistance",
+            "Test_Condition": {
+              "Test_Temperature_Original": "1100 °C",
+              "Holding_Time": "15 min",
+              "Cooling_Method": "wind cooling for 15 min",
+              "Total_Cycles": 40,
+              "Failure_Criterion": "visible loss of coating area > 10%"
+            },
+            "Result_20_Cycles": "Morphology remained good and structurally intact",
+            "Result_40_Cycles": "Cracked on surface without widespread spalling; best thermal shock resistance among three coatings",
+            "Data_Source": "text"
+          }
+        ]
+      }
+    }
+  ]
+}

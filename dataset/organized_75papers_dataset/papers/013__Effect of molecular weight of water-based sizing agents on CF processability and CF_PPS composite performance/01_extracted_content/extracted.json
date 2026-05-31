@@ -1,0 +1,1646 @@
+{
+  "Paper_Metadata": {
+    "Paper_Title": "Effect of molecular weight of water-based sizing agents on CF processability and CF/PPS composite performance",
+    "DOI": null,
+    "Note": "DOI not found in OCR text"
+  },
+  "Paper_Routing": {
+    "base_material": "Composites",
+    "application": "Structural",
+    "research_paradigm": "Experimental",
+    "Supplements_Loaded": [
+      "/home/cs/.codex/skills/material-extractor/references/directions/base/Composites.txt",
+      "/home/cs/.codex/skills/material-extractor/references/directions/application/Structural.txt",
+      "/home/cs/.codex/skills/material-extractor/references/directions/paradigm/Experimental.txt",
+      "/home/cs/.codex/skills/material-extractor/references/directions/domain/Coating.txt"
+    ],
+    "Patch_Tags": [
+      "Interface_Dominated"
+    ],
+    "Needs_Mixed_Routing_Check": true,
+    "Mixed_Signals": [
+      "The root route is Composites because the title, abstract and main performance target are CF/PPS composites, but the paper also reports standalone PAAs sizing-agent properties and sized CF processability items.",
+      "A Coating overlay is loaded because PAAs are explicitly described as a sizing layer/film on the CF surface."
+    ]
+  },
+  "items": [
+    {
+      "Item_ID": "item-001",
+      "Sample_ID": "L-PAAs",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Polymers",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "PAAs with various molecular weights were synthesized by mixing PDA and BPDA with ratios outlined in Table 1.",
+        "After sizing with L-PAAs, M-PAAs, and H-PAAs, the carbon fibers were designated as L-CF, M-CF, and H-CF, respectively."
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Polymer_Type": "water-soluble polyamic acid salt (PAAs)",
+          "Monomers": [
+            "p-phenylenediamine (PDA)",
+            "3'3'4'4-biphenyl tetracarboxylic acid dianhydride (BPDA)",
+            "4-methylphthalic anhydride (4-MPA)"
+          ],
+          "Monomer_Ratio": {
+            "BPDA:PDA:4-MPA": "4:5:2",
+            "Data_Source": "table"
+          },
+          "Expected_Polymerization_Degree_n": {
+            "Value": 4,
+            "Original_Values": "4",
+            "Data_Source": "table"
+          },
+          "Intrinsic_Viscosity": {
+            "Value": 0.11,
+            "Unit": "dL/g",
+            "Original_Values": "0.11 dL/g",
+            "Data_Source": "table"
+          },
+          "Viscosity_Average_Molecular_Weight": {
+            "Value": 1000,
+            "Unit": "g/mol",
+            "Original_Values": "1000 g/mol",
+            "Data_Source": "table"
+          },
+          "Reagents_or_Additives": [
+            {
+              "Name": "triethylamine (TEA)",
+              "Role": "excess reagent / protonated amine salt former",
+              "Original_Values": "An excess of TEA was introduced; the protonated amines of TEA exhibit chemical shifts between 10.4 and 11.0 ppm.",
+              "Data_Source": "text"
+            }
+          ]
+        },
+        "Processing": {
+          "Process_Category": "aqueous synthesis and thermal imidization mimic treatment",
+          "Process_Text": {
+            "original": "PDA and BPDA were mixed according to Table 1, excess TEA was introduced, the mixture was stirred at 0 °C for 18 h, 4-MPA was incorporated as a capping agent, solid content was maintained at 15 wt%, and an intentional heat treatment was performed in an oven at 320 °C for 2 h to mimic thermal imidization.",
+            "simplified": "Synthesize PAAs in water with BPDA:PDA:4-MPA = 4:5:2, TEA, 0 °C for 18 h, 15 wt% solids; heat treat at 320 °C for 2 h to form L-PI mimic."
+          },
+          "Key_Params": {
+            "Stage1_Synthesis": {
+              "Temperature_K": 273.15,
+              "Temperature_Original": "0 °C",
+              "Time_h": 18,
+              "Solid_Content_wt_percent": 15
+            },
+            "Stage2_Thermal_Imidization_Mimic": {
+              "Temperature_K": 593.15,
+              "Temperature_Original": "320 °C",
+              "Time_h": 2,
+              "Equipment": "oven"
+            }
+          },
+          "Equipment": [
+            {
+              "Name": "Unbeholden viscometer KVL2000H",
+              "Category": "Testing"
+            },
+            {
+              "Name": "Nicolet IS50 FT-IR",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "AVANCE 400 NMR",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "TG 209 F1 Libra TGA",
+              "Category": "Testing"
+            },
+            {
+              "Name": "DSC 200F3",
+              "Category": "Testing"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "FT-IR and 1H NMR confirmed that PAAs had been successfully synthesized and fully thermally imidized at 320 °C. Molecular weight has little influence on the chemical structure of PAAs.",
+            "simplified": "PAAs chemistry confirmed; imidized PI formed after 320 °C heat treatment."
+          },
+          "Chemical_Structure_Features": [
+            {
+              "Feature": "PAAs amide N-H stretching vibration",
+              "Value": 3366,
+              "Unit": "cm^-1",
+              "Data_Source": "text"
+            },
+            {
+              "Feature": "carboxyl C=O stretching vibration",
+              "Value": 1710,
+              "Unit": "cm^-1",
+              "Data_Source": "text"
+            },
+            {
+              "Feature": "amide III C-N stretching vibration",
+              "Value": 1220,
+              "Unit": "cm^-1",
+              "Data_Source": "text"
+            }
+          ],
+          "Phases": [
+            {
+              "Phase_Name": "polyamic acid salt sizing agent",
+              "Crystal_Structure": null,
+              "Note": "Crystal structure / polymer morphology was not explicitly reported in the OCR text; unsupported common-knowledge label removed during revision."
+            },
+            {
+              "Phase_Name": "polyimide after thermal imidization",
+              "Crystal_Structure": null,
+              "Note": "Crystal structure / polymer morphology was not explicitly reported in the OCR text; unsupported common-knowledge label removed during revision."
+            }
+          ]
+        },
+        "Properties": [
+          {
+            "Property_Name": "decomposition onset temperature",
+            "Value": 440,
+            "Unit": "°C",
+            "Value_K": 713.15,
+            "Original_Values": "started to decompose at 440 °C",
+            "Test_Condition": {
+              "Atmosphere": "nitrogen",
+              "Heating_Rate": "10 °C/min",
+              "Temperature_Range_Original": "50 °C to 800 °C"
+            },
+            "Data_Source": "text",
+            "Specimen_State": "thermally imidized L-PI sample",
+            "Note": "TGA/DSC properties were measured on PI/imidized PAAs after the 320 °C, 2 h mimic thermal imidization treatment."
+          },
+          {
+            "Property_Name": "T_d5%",
+            "Value": 513,
+            "Unit": "°C",
+            "Value_K": 786.15,
+            "Original_Values": "T_d5% of 513 °C",
+            "Data_Source": "text",
+            "Specimen_State": "thermally imidized L-PI sample",
+            "Note": "TGA/DSC properties were measured on PI/imidized PAAs after the 320 °C, 2 h mimic thermal imidization treatment."
+          },
+          {
+            "Property_Name": "char yield at 800 °C",
+            "Value": 50.9,
+            "Unit": "%",
+            "Original_Values": "char yield of 50.9 % at 800 °C",
+            "Data_Source": "text",
+            "Specimen_State": "thermally imidized L-PI sample",
+            "Note": "TGA/DSC properties were measured on PI/imidized PAAs after the 320 °C, 2 h mimic thermal imidization treatment."
+          },
+          {
+            "Property_Name": "glass transition temperature",
+            "Value": 256,
+            "Unit": "°C",
+            "Value_K": 529.15,
+            "Original_Values": "L-PAAs had a Tg of 256 °C",
+            "Note": "The paper describes the DSC finding as preliminary. TGA/DSC properties were measured on PI/imidized PAAs after the 320 °C, 2 h mimic thermal imidization treatment.",
+            "Data_Source": "text",
+            "Specimen_State": "thermally imidized L-PI sample"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "item-002",
+      "Sample_ID": "M-PAAs",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Polymers",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "The results demonstrated that CF sized with M-PAAs (PAAs with medium polymerization degree) exhibited best processability.",
+        "Medium molecular weight PAAs had demonstrated superior film-forming characteristics."
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Polymer_Type": "water-soluble polyamic acid salt (PAAs)",
+          "Monomers": [
+            "p-phenylenediamine (PDA)",
+            "3'3'4'4-biphenyl tetracarboxylic acid dianhydride (BPDA)",
+            "4-methylphthalic anhydride (4-MPA)"
+          ],
+          "Monomer_Ratio": {
+            "BPDA:PDA:4-MPA": "9:10:2",
+            "Data_Source": "table"
+          },
+          "Expected_Polymerization_Degree_n": {
+            "Value": 9,
+            "Original_Values": "9",
+            "Data_Source": "table"
+          },
+          "Intrinsic_Viscosity": {
+            "Value": 0.31,
+            "Unit": "dL/g",
+            "Original_Values": "0.31 dL/g",
+            "Data_Source": "table"
+          },
+          "Viscosity_Average_Molecular_Weight": {
+            "Value": 4003,
+            "Unit": "g/mol",
+            "Original_Values": "4003 g/mol",
+            "Data_Source": "table"
+          },
+          "Reagents_or_Additives": [
+            {
+              "Name": "triethylamine (TEA)",
+              "Role": "excess reagent / protonated amine salt former",
+              "Original_Values": "An excess of TEA was introduced; the protonated amines of TEA exhibit chemical shifts between 10.4 and 11.0 ppm.",
+              "Data_Source": "text"
+            }
+          ]
+        },
+        "Processing": {
+          "Process_Category": "aqueous synthesis and thermal imidization mimic treatment",
+          "Process_Text": {
+            "original": "PDA and BPDA were mixed according to Table 1, excess TEA was introduced, the mixture was stirred at 0 °C for 18 h, 4-MPA was incorporated as a capping agent, solid content was maintained at 15 wt%, and an intentional heat treatment was performed in an oven at 320 °C for 2 h to mimic thermal imidization.",
+            "simplified": "Synthesize PAAs in water with BPDA:PDA:4-MPA = 9:10:2, TEA, 0 °C for 18 h, 15 wt% solids; heat treat at 320 °C for 2 h to form M-PI mimic."
+          },
+          "Key_Params": {
+            "Stage1_Synthesis": {
+              "Temperature_K": 273.15,
+              "Temperature_Original": "0 °C",
+              "Time_h": 18,
+              "Solid_Content_wt_percent": 15
+            },
+            "Stage2_Thermal_Imidization_Mimic": {
+              "Temperature_K": 593.15,
+              "Temperature_Original": "320 °C",
+              "Time_h": 2,
+              "Equipment": "oven"
+            }
+          },
+          "Equipment": [
+            {
+              "Name": "Unbeholden viscometer KVL2000H",
+              "Category": "Testing"
+            },
+            {
+              "Name": "Nicolet IS50 FT-IR",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "AVANCE 400 NMR",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "TG 209 F1 Libra TGA",
+              "Category": "Testing"
+            },
+            {
+              "Name": "DSC 200F3",
+              "Category": "Testing"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "FT-IR and 1H NMR confirmed that PAAs had been successfully synthesized and fully thermally imidized at 320 °C. Molecular weight has little influence on the chemical structure of PAAs.",
+            "simplified": "PAAs chemistry confirmed; imidized PI formed after 320 °C heat treatment."
+          },
+          "Chemical_Structure_Features": [
+            {
+              "Feature": "PAAs amide N-H stretching vibration",
+              "Value": 3366,
+              "Unit": "cm^-1",
+              "Data_Source": "text"
+            },
+            {
+              "Feature": "carboxyl C=O stretching vibration",
+              "Value": 1710,
+              "Unit": "cm^-1",
+              "Data_Source": "text"
+            },
+            {
+              "Feature": "amide III C-N stretching vibration",
+              "Value": 1220,
+              "Unit": "cm^-1",
+              "Data_Source": "text"
+            }
+          ],
+          "Phases": [
+            {
+              "Phase_Name": "polyamic acid salt sizing agent",
+              "Crystal_Structure": null,
+              "Note": "Crystal structure / polymer morphology was not explicitly reported in the OCR text; unsupported common-knowledge label removed during revision."
+            },
+            {
+              "Phase_Name": "polyimide after thermal imidization",
+              "Crystal_Structure": null,
+              "Note": "Crystal structure / polymer morphology was not explicitly reported in the OCR text; unsupported common-knowledge label removed during revision."
+            }
+          ]
+        },
+        "Properties": [
+          {
+            "Property_Name": "decomposition onset temperature",
+            "Value": 446,
+            "Unit": "°C",
+            "Value_K": 719.15,
+            "Original_Values": "initiated decomposition at 446 °C",
+            "Test_Condition": {
+              "Atmosphere": "nitrogen",
+              "Heating_Rate": "10 °C/min",
+              "Temperature_Range_Original": "50 °C to 800 °C"
+            },
+            "Data_Source": "text",
+            "Specimen_State": "thermally imidized M-PI sample",
+            "Note": "TGA/DSC properties were measured on PI/imidized PAAs after the 320 °C, 2 h mimic thermal imidization treatment."
+          },
+          {
+            "Property_Name": "T_d5%",
+            "Value": 533,
+            "Unit": "°C",
+            "Value_K": 806.15,
+            "Original_Values": "T_d5% of 533 °C",
+            "Data_Source": "text",
+            "Specimen_State": "thermally imidized M-PI sample",
+            "Note": "TGA/DSC properties were measured on PI/imidized PAAs after the 320 °C, 2 h mimic thermal imidization treatment."
+          },
+          {
+            "Property_Name": "char yield at 800 °C",
+            "Value": 62.2,
+            "Unit": "%",
+            "Original_Values": "char yield of 62.2 % at 800 °C",
+            "Data_Source": "text",
+            "Specimen_State": "thermally imidized M-PI sample",
+            "Note": "TGA/DSC properties were measured on PI/imidized PAAs after the 320 °C, 2 h mimic thermal imidization treatment."
+          },
+          {
+            "Property_Name": "glass transition temperature",
+            "Value": 258,
+            "Unit": "°C",
+            "Value_K": 531.15,
+            "Original_Values": "M-PAAs exhibited a Tg of 258 °C",
+            "Note": "The paper describes the DSC finding as preliminary. TGA/DSC properties were measured on PI/imidized PAAs after the 320 °C, 2 h mimic thermal imidization treatment.",
+            "Data_Source": "text",
+            "Specimen_State": "thermally imidized M-PI sample"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "item-003",
+      "Sample_ID": "H-PAAs",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Polymers",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "PAAs with various molecular weights were synthesized by mixing PDA and BPDA with ratios outlined in Table 1.",
+        "H-PAAs demonstrating superior thermal stability and the highest char retention, followed by M-PAAs and L-PAAs."
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Polymer_Type": "water-soluble polyamic acid salt (PAAs)",
+          "Monomers": [
+            "p-phenylenediamine (PDA)",
+            "3'3'4'4-biphenyl tetracarboxylic acid dianhydride (BPDA)",
+            "4-methylphthalic anhydride (4-MPA)"
+          ],
+          "Monomer_Ratio": {
+            "BPDA:PDA:4-MPA": "16:17:2",
+            "Data_Source": "table"
+          },
+          "Expected_Polymerization_Degree_n": {
+            "Value": 16,
+            "Original_Values": "16",
+            "Data_Source": "table"
+          },
+          "Intrinsic_Viscosity": {
+            "Value": 1.11,
+            "Unit": "dL/g",
+            "Original_Values": "1.11 dL/g",
+            "Data_Source": "table"
+          },
+          "Viscosity_Average_Molecular_Weight": {
+            "Value": 23539,
+            "Unit": "g/mol",
+            "Original_Values": "23,539 g/mol",
+            "Data_Source": "table"
+          },
+          "Reagents_or_Additives": [
+            {
+              "Name": "triethylamine (TEA)",
+              "Role": "excess reagent / protonated amine salt former",
+              "Original_Values": "An excess of TEA was introduced; the protonated amines of TEA exhibit chemical shifts between 10.4 and 11.0 ppm.",
+              "Data_Source": "text"
+            }
+          ]
+        },
+        "Processing": {
+          "Process_Category": "aqueous synthesis and thermal imidization mimic treatment",
+          "Process_Text": {
+            "original": "PDA and BPDA were mixed according to Table 1, excess TEA was introduced, the mixture was stirred at 0 °C for 18 h, 4-MPA was incorporated as a capping agent, solid content was maintained at 15 wt%, and an intentional heat treatment was performed in an oven at 320 °C for 2 h to mimic thermal imidization.",
+            "simplified": "Synthesize PAAs in water with BPDA:PDA:4-MPA = 16:17:2, TEA, 0 °C for 18 h, 15 wt% solids; heat treat at 320 °C for 2 h to form H-PI mimic."
+          },
+          "Key_Params": {
+            "Stage1_Synthesis": {
+              "Temperature_K": 273.15,
+              "Temperature_Original": "0 °C",
+              "Time_h": 18,
+              "Solid_Content_wt_percent": 15
+            },
+            "Stage2_Thermal_Imidization_Mimic": {
+              "Temperature_K": 593.15,
+              "Temperature_Original": "320 °C",
+              "Time_h": 2,
+              "Equipment": "oven"
+            }
+          },
+          "Equipment": [
+            {
+              "Name": "Unbeholden viscometer KVL2000H",
+              "Category": "Testing"
+            },
+            {
+              "Name": "Nicolet IS50 FT-IR",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "AVANCE 400 NMR",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "TG 209 F1 Libra TGA",
+              "Category": "Testing"
+            },
+            {
+              "Name": "DSC 200F3",
+              "Category": "Testing"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "FT-IR and 1H NMR confirmed that PAAs had been successfully synthesized and fully thermally imidized at 320 °C. Molecular weight has little influence on the chemical structure of PAAs.",
+            "simplified": "PAAs chemistry confirmed; imidized PI formed after 320 °C heat treatment."
+          },
+          "Chemical_Structure_Features": [
+            {
+              "Feature": "PAAs amide N-H stretching vibration",
+              "Value": 3366,
+              "Unit": "cm^-1",
+              "Data_Source": "text"
+            },
+            {
+              "Feature": "carboxyl C=O stretching vibration",
+              "Value": 1710,
+              "Unit": "cm^-1",
+              "Data_Source": "text"
+            },
+            {
+              "Feature": "amide III C-N stretching vibration",
+              "Value": 1220,
+              "Unit": "cm^-1",
+              "Data_Source": "text"
+            }
+          ],
+          "Phases": [
+            {
+              "Phase_Name": "polyamic acid salt sizing agent",
+              "Crystal_Structure": null,
+              "Note": "Crystal structure / polymer morphology was not explicitly reported in the OCR text; unsupported common-knowledge label removed during revision."
+            },
+            {
+              "Phase_Name": "polyimide after thermal imidization",
+              "Crystal_Structure": null,
+              "Note": "Crystal structure / polymer morphology was not explicitly reported in the OCR text; unsupported common-knowledge label removed during revision."
+            }
+          ]
+        },
+        "Properties": [
+          {
+            "Property_Name": "decomposition onset temperature",
+            "Value": 555,
+            "Unit": "°C",
+            "Value_K": 828.15,
+            "Original_Values": "commenced decomposition at 555 °C",
+            "Test_Condition": {
+              "Atmosphere": "nitrogen",
+              "Heating_Rate": "10 °C/min",
+              "Temperature_Range_Original": "50 °C to 800 °C"
+            },
+            "Data_Source": "text",
+            "Specimen_State": "thermally imidized H-PI sample",
+            "Note": "TGA/DSC properties were measured on PI/imidized PAAs after the 320 °C, 2 h mimic thermal imidization treatment."
+          },
+          {
+            "Property_Name": "T_d5%",
+            "Value": 587,
+            "Unit": "°C",
+            "Value_K": 860.15,
+            "Original_Values": "T_d5% of 587 °C",
+            "Data_Source": "text",
+            "Specimen_State": "thermally imidized H-PI sample",
+            "Note": "TGA/DSC properties were measured on PI/imidized PAAs after the 320 °C, 2 h mimic thermal imidization treatment."
+          },
+          {
+            "Property_Name": "char yield at 800 °C",
+            "Value": 65.6,
+            "Unit": "%",
+            "Original_Values": "char yield of 65.6 % at 800 °C",
+            "Data_Source": "text",
+            "Specimen_State": "thermally imidized H-PI sample",
+            "Note": "TGA/DSC properties were measured on PI/imidized PAAs after the 320 °C, 2 h mimic thermal imidization treatment."
+          },
+          {
+            "Property_Name": "glass transition temperature",
+            "Value": 300,
+            "Unit": "°C",
+            "Value_K": 573.15,
+            "Original_Values": "Tg of H-PAAs was approximately 300 °C",
+            "Note": "Approximate value; the paper describes the DSC finding as preliminary. TGA/DSC properties were measured on PI/imidized PAAs after the 320 °C, 2 h mimic thermal imidization treatment.",
+            "Data_Source": "text",
+            "Specimen_State": "thermally imidized H-PI sample"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "item-004",
+      "Sample_ID": "DCF",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Composites",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "CF fabric was subjected to a desizing process by refluxing in acetone at 70 °C for 12 h.",
+        "Fig. 4(a) showed that DCF exhibited more numerous and profound grooves along the fiber axis."
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Composite_Category": "carbon fiber reinforcement without PPS matrix",
+          "Composite_System_Raw": "desized CF (DCF)",
+          "Reinforcement": {
+            "Material": "carbon fiber fabric",
+            "Original_Description": "3 K-T300, 5-harness satin fabric, 300 g/m²"
+          },
+          "Fiber_Architecture": "5-harness satin fabric"
+        },
+        "Processing": {
+          "Process_Category": "desizing",
+          "Process_Text": {
+            "original": "CF fabric was subjected to a desizing process by refluxing in acetone at 70 °C for 12 h. Subsequent to this, the fabric was thoroughly rinsed with deionized water and was dried at 90 °C, yielding desized CF (DCF).",
+            "simplified": "Desize CF fabric in acetone at 70 °C for 12 h, rinse with deionized water, dry at 90 °C."
+          },
+          "Key_Params": {
+            "Stage1_Desizing": {
+              "Solvent": "acetone",
+              "Temperature_K": 343.15,
+              "Temperature_Original": "70 °C",
+              "Time_h": 12,
+              "Method": "refluxing"
+            },
+            "Stage2_Drying": {
+              "Temperature_K": 363.15,
+              "Temperature_Original": "90 °C"
+            }
+          },
+          "Equipment": [
+            {
+              "Name": "SEM S-4800",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "OCA40Micro contact angle tester",
+              "Category": "Testing"
+            },
+            {
+              "Name": "HM-410 composite interface property evaluation device",
+              "Category": "Testing"
+            },
+            {
+              "Name": "custom-built laboratory measuring devices for CF processability",
+              "Category": "Testing"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "DCF exhibited more numerous and profound grooves along the fiber axis, a byproduct of the wet spinning process.",
+            "simplified": "Desized CF surface has many deep axial grooves."
+          },
+          "Fiber_Architecture": "3 K-T300, 5-harness satin fabric, 300 g/m²",
+          "Interface_Features": [
+            "uncoated CF/PPS resin droplet boundary clearly visible before IFSS",
+            "no resin residue found on DCF surface at the original position of PPS droplet after IFSS"
+          ],
+          "Phases": [
+            {
+              "Phase_Name": "carbon fiber",
+              "Crystal_Structure": null,
+              "Note": "Crystal structure / polymer morphology was not explicitly reported in the OCR text; unsupported common-knowledge label removed during revision."
+            }
+          ],
+          "Advanced_Quantitative_Features": [
+            {
+              "Feature": "C-C/C-H binding energy",
+              "Value": 284.9,
+              "Unit": "eV",
+              "Data_Source": "text"
+            },
+            {
+              "Feature": "C-O/C-N binding energy",
+              "Value": 285.8,
+              "Unit": "eV",
+              "Data_Source": "text"
+            },
+            {
+              "Feature": "C=O binding energy",
+              "Value": 287.1,
+              "Unit": "eV",
+              "Data_Source": "text"
+            },
+            {
+              "Feature": "O-C=O binding energy",
+              "Value": 289.1,
+              "Unit": "eV",
+              "Data_Source": "text"
+            }
+          ]
+        },
+        "Properties": {
+          "Note": "No structured numeric property value was extracted for this item because the relevant values are only shown in figures or described as trends without explicit text/table numbers. Removed placeholders: reference DCF; yarn spreading width, fuzziness, stiffness and moisture absorption were shown in Fig. 5 without text numeric values; IFSS for CF with different sizing conditions shown in Fig. 6(a)."
+        }
+      }
+    },
+    {
+      "Item_ID": "item-005",
+      "Sample_ID": "L-CF",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Composites",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "After sizing with L-PAAs, M-PAAs, and H-PAAs, the carbon fibers were designated as L-CF, M-CF, and H-CF, respectively.",
+        "L-CF's surface could not be adequately covered by the sizing agent L-PAAs, leaving grooves and some filamentous traces of L-PAAs clearly visible."
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Composite_Category": "sized carbon fiber reinforcement",
+          "Composite_System_Raw": "L-PAAs sized CF",
+          "Reinforcement": {
+            "Material": "carbon fiber fabric",
+            "Original_Description": "3 K-T300, 5-harness satin fabric, 300 g/m²"
+          },
+          "Interface_or_Interphase": {
+            "Material": "L-PAAs sizing layer",
+            "Sizing_Agent_Molecular_Weight": {
+              "Value": 1000,
+              "Unit": "g/mol",
+              "Original_Values": "1000 g/mol"
+            }
+          },
+          "Fiber_Architecture": "5-harness satin fabric",
+          "Coating_Composition": {
+            "Substrate_Material": "carbon fiber",
+            "Coating_Layers": [
+              {
+                "Layer_Name": "L-PAAs sizing layer",
+                "Layer_Material": "polyamic acid salt"
+              }
+            ]
+          }
+        },
+        "Processing": {
+          "Process_Category": "desizing and PAAs sizing",
+          "Process_Text": {
+            "original": "The 15 wt% PAA solution was diluted with water to prepare a sizing agent with a concentration of 1 wt%, and the desized CF was then immersed in these PAAs solutions of a same concentration but different molecular weights, followed by removal of excessive sizing agent and drying at 80 °C. The sizing time for DCF fabric was 5 min, while the sizing time for the extracted DCF tows was only 8 s.",
+            "simplified": "Desized CF was sized in 1 wt% L-PAAs solution, excess removed, then dried at 80 °C; sizing time was 5 min for fabric or 8 s for extracted tows."
+          },
+          "Key_Params": {
+            "Stage1_Desizing": {
+              "Solvent": "acetone",
+              "Temperature_K": 343.15,
+              "Temperature_Original": "70 °C",
+              "Time_h": 12
+            },
+            "Stage2_Sizing": {
+              "Sizing_Agent_Concentration_wt_percent": 1,
+              "Fabric_Sizing_Time_min": 5,
+              "Tow_Sizing_Time_s": 8
+            },
+            "Stage3_Drying": {
+              "Temperature_K": 353.15,
+              "Temperature_Original": "80 °C"
+            }
+          },
+          "Equipment": [
+            {
+              "Name": "SEM S-4800",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "OCA40Micro contact angle tester",
+              "Category": "Testing"
+            },
+            {
+              "Name": "HM-410 composite interface property evaluation device",
+              "Category": "Testing"
+            },
+            {
+              "Name": "custom-built laboratory measuring devices for CF processability",
+              "Category": "Testing"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "L-CF's surface could not be adequately covered by the sizing agent L-PAAs, leaving grooves and some filamentous traces of L-PAAs clearly visible.",
+            "simplified": "L-PAAs forms a very thin, incomplete sizing film on CF."
+          },
+          "Coating_Structure": {
+            "Coating_Layer_Details": [
+              {
+                "Layer_Name": "L-PAAs sizing layer",
+                "Layer_Material": "polyamic acid salt",
+                "Coverage": "incomplete coverage; grooves and filamentous traces visible"
+              }
+            ]
+          },
+          "Phases": [
+            {
+              "Phase_Name": "carbon fiber",
+              "Crystal_Structure": null,
+              "Note": "Crystal structure / polymer morphology was not explicitly reported in the OCR text; unsupported common-knowledge label removed during revision."
+            },
+            {
+              "Phase_Name": "L-PAAs sizing layer",
+              "Crystal_Structure": null,
+              "Note": "Crystal structure / polymer morphology was not explicitly reported in the OCR text; unsupported common-knowledge label removed during revision."
+            }
+          ]
+        },
+        "Properties": {
+          "Note": "No structured numeric property value was extracted for this item because the relevant values are only shown in figures or described as trends without explicit text/table numbers. Removed placeholders: yarn spreading width diminished with the increase in molecular weight; fuzz amount decreased as molecular weight increased; stiffness progressively augmented as molecular weight increased; moisture absorption showed a slight increase post-sizing."
+        }
+      }
+    },
+    {
+      "Item_ID": "item-006",
+      "Sample_ID": "M-CF",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Composites",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "M-CF developed a more uniform and thicker resin film, which mitigated the visibility of grooves.",
+        "M-PAAs demonstrates superior film-forming capability, which leads to a more complete and uniform coverage and the most hydrophilic CF surface."
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Composite_Category": "sized carbon fiber reinforcement",
+          "Composite_System_Raw": "M-PAAs sized CF",
+          "Reinforcement": {
+            "Material": "carbon fiber fabric",
+            "Original_Description": "3 K-T300, 5-harness satin fabric, 300 g/m²"
+          },
+          "Interface_or_Interphase": {
+            "Material": "M-PAAs sizing layer",
+            "Sizing_Agent_Molecular_Weight": {
+              "Value": 4003,
+              "Unit": "g/mol",
+              "Original_Values": "4003 g/mol"
+            }
+          },
+          "Fiber_Architecture": "5-harness satin fabric",
+          "Coating_Composition": {
+            "Substrate_Material": "carbon fiber",
+            "Coating_Layers": [
+              {
+                "Layer_Name": "M-PAAs sizing layer",
+                "Layer_Material": "polyamic acid salt"
+              }
+            ]
+          },
+          "Note": "Non-numeric plotted/trend-only property placeholders were removed during revision: M-PAAs exhibited comparable characteristics to commercially sized CF and offered optimal improvements in CF processability."
+        },
+        "Processing": {
+          "Process_Category": "desizing and PAAs sizing",
+          "Process_Text": {
+            "original": "The 15 wt% PAA solution was diluted with water to prepare a sizing agent with a concentration of 1 wt%, and the desized CF was then immersed in these PAAs solutions of a same concentration but different molecular weights, followed by removal of excessive sizing agent and drying at 80 °C. The sizing time for DCF fabric was 5 min, while the sizing time for the extracted DCF tows was only 8 s.",
+            "simplified": "Desized CF was sized in 1 wt% M-PAAs solution, excess removed, then dried at 80 °C; sizing time was 5 min for fabric or 8 s for extracted tows."
+          },
+          "Key_Params": {
+            "Stage1_Desizing": {
+              "Solvent": "acetone",
+              "Temperature_K": 343.15,
+              "Temperature_Original": "70 °C",
+              "Time_h": 12
+            },
+            "Stage2_Sizing": {
+              "Sizing_Agent_Concentration_wt_percent": 1,
+              "Fabric_Sizing_Time_min": 5,
+              "Tow_Sizing_Time_s": 8
+            },
+            "Stage3_Drying": {
+              "Temperature_K": 353.15,
+              "Temperature_Original": "80 °C"
+            }
+          },
+          "Equipment": [
+            {
+              "Name": "SEM S-4800",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "OCA40Micro contact angle tester",
+              "Category": "Testing"
+            },
+            {
+              "Name": "HM-410 composite interface property evaluation device",
+              "Category": "Testing"
+            },
+            {
+              "Name": "custom-built laboratory measuring devices for CF processability",
+              "Category": "Testing"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "M-CF developed a more uniform and thicker resin film, which mitigated the visibility of grooves. After IFSS tests, much resin is left over on M-CF surface.",
+            "simplified": "M-PAAs forms a uniform, thicker sizing film on CF and leaves PPS residue after IFSS, indicating improved bonding."
+          },
+          "Coating_Structure": {
+            "Coating_Layer_Details": [
+              {
+                "Layer_Name": "M-PAAs sizing layer",
+                "Layer_Material": "polyamic acid salt",
+                "Coverage": "more complete, uniform and thicker resin film"
+              }
+            ]
+          },
+          "Interface_Features": [
+            "boundary between sized CF and PPS resin droplet can hardly be seen",
+            "much resin left over on M-CF surface after IFSS"
+          ],
+          "Phases": [
+            {
+              "Phase_Name": "carbon fiber",
+              "Crystal_Structure": null,
+              "Note": "Crystal structure / polymer morphology was not explicitly reported in the OCR text; unsupported common-knowledge label removed during revision."
+            },
+            {
+              "Phase_Name": "M-PAAs sizing layer",
+              "Crystal_Structure": null,
+              "Note": "Crystal structure / polymer morphology was not explicitly reported in the OCR text; unsupported common-knowledge label removed during revision."
+            }
+          ]
+        },
+        "Properties": [
+          {
+            "Property_Name": "IFSS relative improvement",
+            "Value": 68.2,
+            "Unit": "%",
+            "Original_Values": "IFSS ... enhanced by 68.2%",
+            "Test_Condition": {
+              "Counter_Material": "PPS resin droplet in single-fiber interfacial shear test"
+            },
+            "Data_Source": "text",
+            "Note": "Relative IFSS improvement is bound to the sized CF/PPS resin droplet interface test, not to laminate bulk mechanical properties; absolute IFSS values are not extracted from the plot."
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "item-007",
+      "Sample_ID": "H-CF",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Composites",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "H-CF again presented a rough and uneven morphology, where many small granules of H-PAAs scattered onto the grooved surface.",
+        "H-PAAs develop thicker, porous adsorption layers due to chain entanglement, leading to higher moisture absorption rates."
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Composite_Category": "sized carbon fiber reinforcement",
+          "Composite_System_Raw": "H-PAAs sized CF",
+          "Reinforcement": {
+            "Material": "carbon fiber fabric",
+            "Original_Description": "3 K-T300, 5-harness satin fabric, 300 g/m²"
+          },
+          "Interface_or_Interphase": {
+            "Material": "H-PAAs sizing layer",
+            "Sizing_Agent_Molecular_Weight": {
+              "Value": 23539,
+              "Unit": "g/mol",
+              "Original_Values": "23,539 g/mol"
+            }
+          },
+          "Fiber_Architecture": "5-harness satin fabric",
+          "Coating_Composition": {
+            "Substrate_Material": "carbon fiber",
+            "Coating_Layers": [
+              {
+                "Layer_Name": "H-PAAs sizing layer",
+                "Layer_Material": "polyamic acid salt"
+              }
+            ]
+          }
+        },
+        "Processing": {
+          "Process_Category": "desizing and PAAs sizing",
+          "Process_Text": {
+            "original": "The 15 wt% PAA solution was diluted with water to prepare a sizing agent with a concentration of 1 wt%, and the desized CF was then immersed in these PAAs solutions of a same concentration but different molecular weights, followed by removal of excessive sizing agent and drying at 80 °C. The sizing time for DCF fabric was 5 min, while the sizing time for the extracted DCF tows was only 8 s.",
+            "simplified": "Desized CF was sized in 1 wt% H-PAAs solution, excess removed, then dried at 80 °C; sizing time was 5 min for fabric or 8 s for extracted tows."
+          },
+          "Key_Params": {
+            "Stage1_Desizing": {
+              "Solvent": "acetone",
+              "Temperature_K": 343.15,
+              "Temperature_Original": "70 °C",
+              "Time_h": 12
+            },
+            "Stage2_Sizing": {
+              "Sizing_Agent_Concentration_wt_percent": 1,
+              "Fabric_Sizing_Time_min": 5,
+              "Tow_Sizing_Time_s": 8
+            },
+            "Stage3_Drying": {
+              "Temperature_K": 353.15,
+              "Temperature_Original": "80 °C"
+            }
+          },
+          "Equipment": [
+            {
+              "Name": "SEM S-4800",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "OCA40Micro contact angle tester",
+              "Category": "Testing"
+            },
+            {
+              "Name": "HM-410 composite interface property evaluation device",
+              "Category": "Testing"
+            },
+            {
+              "Name": "custom-built laboratory measuring devices for CF processability",
+              "Category": "Testing"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "H-CF again presented a rough and uneven morphology, where many small granules of H-PAAs scattered onto the grooved surface.",
+            "simplified": "H-PAAs forms a rough, uneven sizing layer with granules on CF."
+          },
+          "Coating_Structure": {
+            "Coating_Layer_Details": [
+              {
+                "Layer_Name": "H-PAAs sizing layer",
+                "Layer_Material": "polyamic acid salt",
+                "Coverage": "rough and uneven morphology with scattered granules"
+              }
+            ]
+          },
+          "Phases": [
+            {
+              "Phase_Name": "carbon fiber",
+              "Crystal_Structure": null,
+              "Note": "Crystal structure / polymer morphology was not explicitly reported in the OCR text; unsupported common-knowledge label removed during revision."
+            },
+            {
+              "Phase_Name": "H-PAAs sizing layer",
+              "Crystal_Structure": null,
+              "Note": "Crystal structure / polymer morphology was not explicitly reported in the OCR text; unsupported common-knowledge label removed during revision."
+            }
+          ]
+        },
+        "Properties": {
+          "Note": "No structured numeric property value was extracted for this item because the relevant values are only shown in figures or described as trends without explicit text/table numbers. Removed placeholders: as molecular weight increased, yarn spreading width diminished, fuzz amount decreased, stiffness progressively augmented, and H-PAAs developed thicker, porous adsorption layers leading to higher moisture absorption rates."
+        }
+      }
+    },
+    {
+      "Item_ID": "item-008",
+      "Sample_ID": "ECF",
+      "Role": "Comparator",
+      "Data_Nature": "Experimental",
+      "base_material": "Composites",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "For comparison, a commercial CF fabric sized by epoxy resin (named as ECF) was purchased from Weihai Guangwei Composites Co., Ltd.",
+        "A comparison with commercially sized CF was performed, revealing that those sized with M-PAAs exhibited comparable characteristics."
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Composite_Category": "commercially sized carbon fiber reinforcement",
+          "Composite_System_Raw": "commercial CF fabric sized by epoxy resin",
+          "Reinforcement": {
+            "Material": "carbon fiber fabric"
+          },
+          "Interface_or_Interphase": {
+            "Material": "epoxy resin sizing"
+          },
+          "Coating_Composition": {
+            "Substrate_Material": "carbon fiber",
+            "Coating_Layers": [
+              {
+                "Layer_Name": "epoxy resin sizing layer",
+                "Layer_Material": "epoxy resin"
+              }
+            ]
+          }
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "A commercial CF fabric sized by epoxy resin (named as ECF) was purchased from Weihai Guangwei Composites Co., Ltd., and CF tows were extracted from the fabric to evaluate the processability as a reference.",
+            "simplified": "Commercial epoxy-sized CF used as processability reference."
+          },
+          "Equipment": [
+            {
+              "Name": "custom-built laboratory measuring devices for CF processability",
+              "Category": "Testing"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "commercial CF fabric sized by epoxy resin",
+            "simplified": "Commercial epoxy-sized carbon fiber."
+          },
+          "Phases": [
+            {
+              "Phase_Name": "carbon fiber",
+              "Crystal_Structure": null,
+              "Note": "Crystal structure / polymer morphology was not explicitly reported in the OCR text; unsupported common-knowledge label removed during revision."
+            },
+            {
+              "Phase_Name": "epoxy sizing layer",
+              "Crystal_Structure": null,
+              "Note": "Crystal structure / polymer morphology was not explicitly reported in the OCR text; unsupported common-knowledge label removed during revision."
+            }
+          ],
+          "Coating_Structure": {
+            "Coating_Layer_Details": [
+              {
+                "Layer_Name": "epoxy resin sizing layer",
+                "Layer_Material": "epoxy resin",
+                "Coverage": "commercial epoxy-sized carbon fiber; no layer thickness or morphology value reported"
+              }
+            ]
+          }
+        },
+        "Properties": {
+          "Note": "No structured numeric property value was extracted for this item because the relevant values are only shown in figures or described as trends without explicit text/table numbers. Removed placeholders: M-PAAs sized CF exhibited comparable characteristics to commercially sized CF."
+        }
+      }
+    },
+    {
+      "Item_ID": "item-009",
+      "Sample_ID": "DCF/PPS",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Composites",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "A total of four composite laminates with differing molecular weights of PAAs were produced by hot pressing at 350 °C ... and denoted as DCF/PPS, L-CF/PPS, M-CF/PPS, and H-CF/PPS, respectively.",
+        "In DCF/PPS composites, the fracture surfaces displayed reduced resin content and substantial gaps between CF and the PPS matrix."
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Composite_Category": "carbon fiber reinforced thermoplastic polymer matrix composite",
+          "Composite_System_Raw": "DCF/PPS",
+          "Matrix": {
+            "Material": "polyphenylene sulfide (PPS)",
+            "Original_Description": "PPS film, 1.3 g/cm³"
+          },
+          "Reinforcement": {
+            "Material": "desized carbon fiber fabric",
+            "Original_Description": "3 K-T300, 5-harness satin fabric, 300 g/m²"
+          },
+          "Fiber_Architecture": "5-harness satin fabric",
+          "Fiber_Volume_Fraction": null,
+          "Note": "Fiber volume fraction was not reported in the OCR text."
+        },
+        "Processing": {
+          "Process_Category": "compression molding",
+          "Process_Text": {
+            "original": "CF/PPS composites were fabricated via compression molding, a process that involved the sequential stacking of nine layers of PPS film and eight layers of CF fabric, each measuring 200 × 200 mm. A total of four composite laminates ... were produced by hot pressing at 350 °C (following a preheat of 30 min) under a pressure of 2.5 MPa.",
+            "simplified": "Stack 9 PPS films and 8 CF fabric layers of 200 × 200 mm, preheat 30 min, hot press at 350 °C and 2.5 MPa."
+          },
+          "Key_Params": {
+            "Stage1_Layup": {
+              "PPS_Film_Layers": 9,
+              "CF_Fabric_Layers": 8,
+              "Layer_Size": "200 × 200 mm"
+            },
+            "Stage2_Compression_Molding": {
+              "Preheat_Time_min": 30,
+              "Temperature_K": 623.15,
+              "Temperature_Original": "350 °C",
+              "Pressure_MPa": 2.5
+            }
+          },
+          "Equipment": [
+            {
+              "Name": "hot press",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "SEM S-4800",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "LD26.105 universal testing machine",
+              "Category": "Testing"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "In DCF/PPS composites, the fracture surfaces displayed reduced resin content and substantial gaps between CF and the PPS matrix, leading to delamination and CF pull-out under stress, which created voids.",
+            "simplified": "DCF/PPS has weak CF/PPS interface with gaps, delamination, CF pull-out and voids after flexural fracture."
+          },
+          "Fiber_Architecture": "eight layers of 5-harness satin CF fabric with nine PPS film layers",
+          "Interface_Features": [
+            "reduced resin content on fracture surface",
+            "substantial gaps between CF and PPS matrix",
+            "delamination",
+            "CF pull-out",
+            "voids under stress"
+          ],
+          "Phases": [
+            {
+              "Phase_Name": "carbon fiber reinforcement",
+              "Crystal_Structure": null,
+              "Note": "Crystal structure / polymer morphology was not explicitly reported in the OCR text; unsupported common-knowledge label removed during revision."
+            },
+            {
+              "Phase_Name": "PPS matrix",
+              "Crystal_Structure": null,
+              "Note": "Crystal structure / polymer morphology was not explicitly reported in the OCR text; unsupported common-knowledge label removed during revision."
+            }
+          ]
+        },
+        "Properties": {
+          "Note": "No structured numeric property value was extracted for this item because the relevant values are only shown in figures or described as trends without explicit text/table numbers. Removed placeholders: ILSS shown in Fig. 7(a); flexural strength and moduli shown in Fig. 7(b)."
+        }
+      }
+    },
+    {
+      "Item_ID": "item-010",
+      "Sample_ID": "L-CF/PPS",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Composites",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "A total of four composite laminates with differing molecular weights of PAAs were produced ... and denoted as DCF/PPS, L-CF/PPS, M-CF/PPS, and H-CF/PPS, respectively.",
+        "The non-uniform sizing layers formed by L-PAAs and H-PAAs molecular weight PAAs on CF could have led to stress concentration in the composite."
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Composite_Category": "carbon fiber reinforced thermoplastic polymer matrix composite",
+          "Composite_System_Raw": "L-CF/PPS",
+          "Matrix": {
+            "Material": "polyphenylene sulfide (PPS)",
+            "Original_Description": "PPS film, 1.3 g/cm³"
+          },
+          "Reinforcement": {
+            "Material": "L-PAAs sized carbon fiber fabric",
+            "Original_Description": "3 K-T300, 5-harness satin fabric, 300 g/m²"
+          },
+          "Interface_or_Interphase": {
+            "Material": "L-PAAs-derived PI sizing layer after molding"
+          },
+          "Fiber_Architecture": "5-harness satin fabric",
+          "Fiber_Volume_Fraction": null,
+          "Note": "Fiber volume fraction was not reported in the OCR text.",
+          "Coating_Composition": {
+            "Substrate_Material": "carbon fiber reinforced PPS composite interface",
+            "Coating_Layers": [
+              {
+                "Layer_Name": "L-PAAs-derived interphase",
+                "Layer_Material": "polyimide from thermally imidized PAAs"
+              }
+            ]
+          }
+        },
+        "Processing": {
+          "Process_Category": "PAAs sizing and compression molding",
+          "Process_Text": {
+            "original": "The desized CF was immersed in PAAs solution, dried at 80 °C, and CF/PPS composites were fabricated by stacking nine layers of PPS film and eight layers of CF fabric and hot pressing at 350 °C after a preheat of 30 min under 2.5 MPa.",
+            "simplified": "Use L-PAAs sized CF in 9 PPS film/8 CF fabric laminate; hot press at 350 °C and 2.5 MPa after 30 min preheat."
+          },
+          "Key_Params": {
+            "Stage1_Sizing": {
+              "Sizing_Agent": "L-PAAs",
+              "Sizing_Agent_Concentration_wt_percent": 1,
+              "Fabric_Sizing_Time_min": 5,
+              "Drying_Temperature_K": 353.15,
+              "Drying_Temperature_Original": "80 °C"
+            },
+            "Stage2_Layup": {
+              "PPS_Film_Layers": 9,
+              "CF_Fabric_Layers": 8,
+              "Layer_Size": "200 × 200 mm"
+            },
+            "Stage3_Compression_Molding": {
+              "Preheat_Time_min": 30,
+              "Temperature_K": 623.15,
+              "Temperature_Original": "350 °C",
+              "Pressure_MPa": 2.5
+            }
+          },
+          "Equipment": [
+            {
+              "Name": "hot press",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "SEM S-4800",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "LD26.105 universal testing machine",
+              "Category": "Testing"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "The non-uniform sizing layers formed by L-PAAs and H-PAAs molecular weight PAAs on CF could have led to stress concentration in the composite, thereby diminishing its mechanical properties.",
+            "simplified": "L-CF/PPS contains a non-uniform sizing-derived interphase that may create stress concentration."
+          },
+          "Coating_Structure": {
+            "Coating_Layer_Details": [
+              {
+                "Layer_Name": "L-PAAs-derived interphase",
+                "Layer_Material": "polyimide from thermally imidized PAAs",
+                "Coverage": "non-uniform sizing layer"
+              }
+            ]
+          },
+          "Phases": [
+            {
+              "Phase_Name": "carbon fiber reinforcement",
+              "Crystal_Structure": null,
+              "Note": "Crystal structure / polymer morphology was not explicitly reported in the OCR text; unsupported common-knowledge label removed during revision."
+            },
+            {
+              "Phase_Name": "PPS matrix",
+              "Crystal_Structure": null,
+              "Note": "Crystal structure / polymer morphology was not explicitly reported in the OCR text; unsupported common-knowledge label removed during revision."
+            },
+            {
+              "Phase_Name": "L-PAAs-derived PI interphase",
+              "Crystal_Structure": null,
+              "Note": "Crystal structure / polymer morphology was not explicitly reported in the OCR text; unsupported common-knowledge label removed during revision."
+            }
+          ]
+        },
+        "Properties": {
+          "Note": "No structured numeric property value was extracted for this item because the relevant values are only shown in figures or described as trends without explicit text/table numbers. Removed placeholders: ILSS, flexural strength and moduli shown in Fig. 7."
+        }
+      }
+    },
+    {
+      "Item_ID": "item-011",
+      "Sample_ID": "M-CF/PPS",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Composites",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "The corresponding CF/PPS composites achieved improvements in interlaminar shear strength (ILSS), flexural strength, and flexural modulus by 66.5 %, 62.1 %, and 22.3 %, respectively.",
+        "As shown in Fig. 6(a) and Figs. 7(a,b), the IFSS, ILSS, flexural strength, and modulus of composites utilizing M-PAAs had been enhanced by 68.2%, 62.1%, 66.5%, and 22.3%, respectively.",
+        "M-CF/PPS composites exhibited a compact interface with the PPS matrix, reduced CF pull-out, and minimized gaps."
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Composite_Category": "carbon fiber reinforced thermoplastic polymer matrix composite",
+          "Composite_System_Raw": "M-CF/PPS",
+          "Matrix": {
+            "Material": "polyphenylene sulfide (PPS)",
+            "Original_Description": "PPS film, 1.3 g/cm³"
+          },
+          "Reinforcement": {
+            "Material": "M-PAAs sized carbon fiber fabric",
+            "Original_Description": "3 K-T300, 5-harness satin fabric, 300 g/m²"
+          },
+          "Interface_or_Interphase": {
+            "Material": "M-PAAs-derived PI sizing layer after molding",
+            "Mechanistic_Description": "dense and flexible layer on the CF surface"
+          },
+          "Fiber_Architecture": "5-harness satin fabric",
+          "Fiber_Volume_Fraction": null,
+          "Note": "Fiber volume fraction was not reported in the OCR text.",
+          "Coating_Composition": {
+            "Substrate_Material": "carbon fiber reinforced PPS composite interface",
+            "Coating_Layers": [
+              {
+                "Layer_Name": "M-PAAs-derived interphase",
+                "Layer_Material": "polyimide from thermally imidized PAAs"
+              }
+            ]
+          }
+        },
+        "Processing": {
+          "Process_Category": "PAAs sizing and compression molding",
+          "Process_Text": {
+            "original": "The desized CF was immersed in PAAs solution, dried at 80 °C, and CF/PPS composites were fabricated by stacking nine layers of PPS film and eight layers of CF fabric and hot pressing at 350 °C after a preheat of 30 min under 2.5 MPa.",
+            "simplified": "Use M-PAAs sized CF in 9 PPS film/8 CF fabric laminate; hot press at 350 °C and 2.5 MPa after 30 min preheat."
+          },
+          "Key_Params": {
+            "Stage1_Sizing": {
+              "Sizing_Agent": "M-PAAs",
+              "Sizing_Agent_Concentration_wt_percent": 1,
+              "Fabric_Sizing_Time_min": 5,
+              "Drying_Temperature_K": 353.15,
+              "Drying_Temperature_Original": "80 °C"
+            },
+            "Stage2_Layup": {
+              "PPS_Film_Layers": 9,
+              "CF_Fabric_Layers": 8,
+              "Layer_Size": "200 × 200 mm"
+            },
+            "Stage3_Compression_Molding": {
+              "Preheat_Time_min": 30,
+              "Temperature_K": 623.15,
+              "Temperature_Original": "350 °C",
+              "Pressure_MPa": 2.5
+            }
+          },
+          "Equipment": [
+            {
+              "Name": "hot press",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "SEM S-4800",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "LD26.105 universal testing machine",
+              "Category": "Testing"
+            },
+            {
+              "Name": "HM-410 composite interface property evaluation device",
+              "Category": "Testing"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "M-CF/PPS composites exhibited a compact interface with the PPS matrix, reduced CF pull-out, and minimized gaps. Stress transfer to CF was facilitated, shifting the failure mode from debonding and pull-out to matrix fracture.",
+            "simplified": "M-CF/PPS has compact CF/PPS interface, reduced pull-out, minimized gaps, and matrix-fracture-dominated failure."
+          },
+          "Coating_Structure": {
+            "Coating_Layer_Details": [
+              {
+                "Layer_Name": "M-PAAs-derived interphase",
+                "Layer_Material": "polyimide from thermally imidized PAAs",
+                "Coverage": "dense, flexible and uniform surface layer"
+              }
+            ]
+          },
+          "Interface_Features": [
+            "compact interface with PPS matrix",
+            "reduced CF pull-out",
+            "minimized gaps",
+            "failure mode shifted from debonding and pull-out to matrix fracture"
+          ],
+          "Phases": [
+            {
+              "Phase_Name": "carbon fiber reinforcement",
+              "Crystal_Structure": null,
+              "Note": "Crystal structure / polymer morphology was not explicitly reported in the OCR text; unsupported common-knowledge label removed during revision."
+            },
+            {
+              "Phase_Name": "PPS matrix",
+              "Crystal_Structure": null,
+              "Note": "Crystal structure / polymer morphology was not explicitly reported in the OCR text; unsupported common-knowledge label removed during revision."
+            },
+            {
+              "Phase_Name": "M-PAAs-derived PI interphase",
+              "Crystal_Structure": null,
+              "Note": "Crystal structure / polymer morphology was not explicitly reported in the OCR text; unsupported common-knowledge label removed during revision."
+            }
+          ]
+        },
+        "Properties": [
+          {
+            "Property_Name": "Interlaminar_Shear_Strength relative improvement",
+            "Value": 62.1,
+            "Unit": "%",
+            "Original_Values": "ILSS ... enhanced by 62.1%",
+            "Test_Condition": {
+              "Standard": "ASTM D234",
+              "Device": "LD26.105 universal testing machine"
+            },
+            "Data_Source": "text",
+            "Note": "The abstract reports ILSS, flexural strength, and flexural modulus improvements as 66.5 %, 62.1 %, and 22.3 %, respectively, while the Results/Conclusion order reports IFSS, ILSS, flexural strength, and modulus as 68.2 %, 62.1 %, 66.5 %, and 22.3 %; this record follows the Results/Conclusion assignment."
+          },
+          {
+            "Property_Name": "Flexural_Strength relative improvement",
+            "Value": 66.5,
+            "Unit": "%",
+            "Original_Values": "flexural strength ... enhanced by 66.5%",
+            "Test_Condition": {
+              "Standard": "ASTM D7264",
+              "Device": "LD26.105 universal testing machine"
+            },
+            "Data_Source": "text",
+            "Note": "The abstract reports ILSS, flexural strength, and flexural modulus improvements as 66.5 %, 62.1 %, and 22.3 %, respectively, while the Results/Conclusion order reports IFSS, ILSS, flexural strength, and modulus as 68.2 %, 62.1 %, 66.5 %, and 22.3 %; this record follows the Results/Conclusion assignment."
+          },
+          {
+            "Property_Name": "Flexural_Modulus relative improvement",
+            "Value": 22.3,
+            "Unit": "%",
+            "Original_Values": "modulus ... enhanced by 22.3%",
+            "Test_Condition": {
+              "Standard": "ASTM D7264",
+              "Device": "LD26.105 universal testing machine"
+            },
+            "Data_Source": "text",
+            "Note": "The abstract reports ILSS, flexural strength, and flexural modulus improvements as 66.5 %, 62.1 %, and 22.3 %, respectively, while the Results/Conclusion order reports IFSS, ILSS, flexural strength, and modulus as 68.2 %, 62.1 %, 66.5 %, and 22.3 %; this record follows the Results/Conclusion assignment."
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "item-012",
+      "Sample_ID": "H-CF/PPS",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Composites",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "A total of four composite laminates with differing molecular weights of PAAs were produced ... and denoted as DCF/PPS, L-CF/PPS, M-CF/PPS, and H-CF/PPS, respectively.",
+        "The non-uniform sizing layers formed by L-PAAs and H-PAAs molecular weight PAAs on CF could have led to stress concentration in the composite."
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Composite_Category": "carbon fiber reinforced thermoplastic polymer matrix composite",
+          "Composite_System_Raw": "H-CF/PPS",
+          "Matrix": {
+            "Material": "polyphenylene sulfide (PPS)",
+            "Original_Description": "PPS film, 1.3 g/cm³"
+          },
+          "Reinforcement": {
+            "Material": "H-PAAs sized carbon fiber fabric",
+            "Original_Description": "3 K-T300, 5-harness satin fabric, 300 g/m²"
+          },
+          "Interface_or_Interphase": {
+            "Material": "H-PAAs-derived PI sizing layer after molding"
+          },
+          "Fiber_Architecture": "5-harness satin fabric",
+          "Fiber_Volume_Fraction": null,
+          "Note": "Fiber volume fraction was not reported in the OCR text.",
+          "Coating_Composition": {
+            "Substrate_Material": "carbon fiber reinforced PPS composite interface",
+            "Coating_Layers": [
+              {
+                "Layer_Name": "H-PAAs-derived interphase",
+                "Layer_Material": "polyimide from thermally imidized PAAs"
+              }
+            ]
+          }
+        },
+        "Processing": {
+          "Process_Category": "PAAs sizing and compression molding",
+          "Process_Text": {
+            "original": "The desized CF was immersed in PAAs solution, dried at 80 °C, and CF/PPS composites were fabricated by stacking nine layers of PPS film and eight layers of CF fabric and hot pressing at 350 °C after a preheat of 30 min under 2.5 MPa.",
+            "simplified": "Use H-PAAs sized CF in 9 PPS film/8 CF fabric laminate; hot press at 350 °C and 2.5 MPa after 30 min preheat."
+          },
+          "Key_Params": {
+            "Stage1_Sizing": {
+              "Sizing_Agent": "H-PAAs",
+              "Sizing_Agent_Concentration_wt_percent": 1,
+              "Fabric_Sizing_Time_min": 5,
+              "Drying_Temperature_K": 353.15,
+              "Drying_Temperature_Original": "80 °C"
+            },
+            "Stage2_Layup": {
+              "PPS_Film_Layers": 9,
+              "CF_Fabric_Layers": 8,
+              "Layer_Size": "200 × 200 mm"
+            },
+            "Stage3_Compression_Molding": {
+              "Preheat_Time_min": 30,
+              "Temperature_K": 623.15,
+              "Temperature_Original": "350 °C",
+              "Pressure_MPa": 2.5
+            }
+          },
+          "Equipment": [
+            {
+              "Name": "hot press",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "SEM S-4800",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "LD26.105 universal testing machine",
+              "Category": "Testing"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "The non-uniform sizing layers formed by L-PAAs and H-PAAs molecular weight PAAs on CF could have led to stress concentration in the composite, thereby diminishing its mechanical properties.",
+            "simplified": "H-CF/PPS contains a non-uniform sizing-derived interphase that may create stress concentration."
+          },
+          "Coating_Structure": {
+            "Coating_Layer_Details": [
+              {
+                "Layer_Name": "H-PAAs-derived interphase",
+                "Layer_Material": "polyimide from thermally imidized PAAs",
+                "Coverage": "non-uniform sizing layer"
+              }
+            ]
+          },
+          "Phases": [
+            {
+              "Phase_Name": "carbon fiber reinforcement",
+              "Crystal_Structure": null,
+              "Note": "Crystal structure / polymer morphology was not explicitly reported in the OCR text; unsupported common-knowledge label removed during revision."
+            },
+            {
+              "Phase_Name": "PPS matrix",
+              "Crystal_Structure": null,
+              "Note": "Crystal structure / polymer morphology was not explicitly reported in the OCR text; unsupported common-knowledge label removed during revision."
+            },
+            {
+              "Phase_Name": "H-PAAs-derived PI interphase",
+              "Crystal_Structure": null,
+              "Note": "Crystal structure / polymer morphology was not explicitly reported in the OCR text; unsupported common-knowledge label removed during revision."
+            }
+          ]
+        },
+        "Properties": {
+          "Note": "No structured numeric property value was extracted for this item because the relevant values are only shown in figures or described as trends without explicit text/table numbers. Removed placeholders: ILSS, flexural strength and moduli shown in Fig. 7."
+        }
+      }
+    }
+  ]
+}

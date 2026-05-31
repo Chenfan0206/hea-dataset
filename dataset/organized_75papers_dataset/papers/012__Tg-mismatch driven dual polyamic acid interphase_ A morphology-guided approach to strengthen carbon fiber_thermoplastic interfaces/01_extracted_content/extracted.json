@@ -1,0 +1,2137 @@
+{
+  "Paper_Metadata": {
+    "Paper_Title": "Tg-mismatch driven dual polyamic acid interphase: A morphology-guided approach to strengthen carbon fiber/thermoplastic interfaces",
+    "DOI": "10.1016/j.compositesb.2025.112924"
+  },
+  "Paper_Routing": {
+    "base_material": "Composites",
+    "application": "Structural",
+    "research_paradigm": "Experimental",
+    "Supplements_Loaded": [
+      "directions/base/Composites.txt",
+      "directions/application/Structural.txt",
+      "directions/paradigm/Experimental.txt"
+    ],
+    "Patch_Tags": [
+      "Interface_Dominated"
+    ],
+    "Needs_Mixed_Routing_Check": false,
+    "Mixed_Signals": []
+  },
+  "items": [
+    {
+      "Item_ID": "01",
+      "Sample_ID": "Bare-CF/PEI",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Composites",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Bare-CF samples were immersed ... dried and labeled as Bare-CF",
+        "CF/PEI composites were fabricated using a vacuum hot-pressing technique at 330 °C under a pressure of 4 MPa",
+        "Bare-CF/PEI composites, the ILSS is 58.9 MPa",
+        "Bare-CF/PEI exhibits the lowest flexural strength at 572.4 MPa"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Composite_Category": "PMC",
+          "Composite_System_Raw": "CF/PEI",
+          "Matrix": {
+            "Material": "PEI (polyetherimide)",
+            "Form": "film",
+            "Thickness": "0.15 mm",
+            "Supplier": "GE Advanced Materials (USA)"
+          },
+          "Reinforcement": {
+            "Material": "T300-3K carbon fabric",
+            "Form": "woven fabric",
+            "Supplier": "Toray Industries, Japan",
+            "Pretreatment": "refluxed in acetone at 80 °C for 24 h to remove original commercial sizing"
+          },
+          "Fiber_Mass_Fraction": {
+            "Value": 50,
+            "Unit": "wt%",
+            "Original_Values": "~50%",
+            "Note": "approximately 50 wt% fiber mass fraction"
+          },
+          "Fiber_Volume_Fraction": {
+            "Value": null,
+            "Unit": "vol%",
+            "Note": "论文未给出体积分数，仅给出 ~50 wt% 质量分数"
+          }
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "Bare-CF samples ... refluxed in acetone at 80 °C for 24 h to remove the original commercial sizing, then dried and labeled as Bare-CF. CF/PEI composites were fabricated using a vacuum hot-pressing technique at 330 °C under a pressure of 4 MPa. The laminates consisted of alternating 9 layers of PEI films and 8 layers of carbon fiber fabrics, yielding a fiber mass fraction of approximately 50%.",
+            "simplified": "T300-3K CF desized by acetone reflux → laminated with PEI films (9 layers PEI / 8 layers CF) → vacuum hot-pressed at 330 °C / 4 MPa"
+          },
+          "Key_Params": {
+            "Stage1_Desizing": {
+              "Solvent": "acetone",
+              "Temperature": {
+                "Value": 353.15,
+                "Unit": "K",
+                "Original_Values": "80 °C"
+              },
+              "Time": "24 h",
+              "Method": "reflux"
+            },
+            "Stage2_Composite_Fabrication": {
+              "Method": "vacuum hot-pressing",
+              "Temperature": {
+                "Value": 603.15,
+                "Unit": "K",
+                "Original_Values": "330 °C"
+              },
+              "Pressure": {
+                "Value": 4,
+                "Unit": "MPa",
+                "Original_Values": "4 MPa"
+              },
+              "Layup": "9 layers PEI film / 8 layers CF fabric, alternating",
+              "Fiber_Mass_Fraction": "~50%"
+            }
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "The untreated Bare-CF surface exhibited longitudinal grooves typical of fibers produced via wet spinning and carbonization, resulting in a relatively rough but chemically inert surface lacking polar functional groups.",
+            "simplified": "Bare-CF: longitudinal grooves on surface, chemically inert, graphitic surface dominated by C–C bonds (80.12%)"
+          },
+          "Fiber_Architecture": "woven fabric",
+          "Interface_Features": {
+            "Interphase_Width_nm": {
+              "Value": 110,
+              "Unit": "nm",
+              "Original_Values": "110 nm",
+              "Data_Source": "text",
+              "Note": "Bare-CF/PEI interphase width from PF-QNM modulus profile"
+            }
+          },
+          "Advanced_Quantitative_Features": {
+            "Surface_XPS_C1s": {
+              "C_C_Percent": 80.12,
+              "C_O_Percent": 8.89,
+              "C_O_Double_Bond_Percent": 10.09,
+              "Note": "Bare-CF surface composition from XPS C1s high-resolution spectra, Table S3"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Interlaminar_Shear_Strength",
+            "Value": 58.9,
+            "Unit": "MPa",
+            "Original_Values": "58.9 MPa",
+            "Data_Source": "text",
+            "Test_Condition": {
+              "Loading_Mode": "interlaminar shear",
+              "Test_Temperature_Original": "room temperature"
+            }
+          },
+          {
+            "Property_Name": "Flexural_Strength",
+            "Value": 572.4,
+            "Unit": "MPa",
+            "Original_Values": "572.4 MPa",
+            "Data_Source": "text",
+            "Test_Condition": {
+              "Loading_Mode": "three-point bending"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "02",
+      "Sample_ID": "PI1-CF/PEI",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Composites",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "PAAs synthesized from PMDA and ODA was designated as PAAs1 after neutralization",
+        "The resulting modified fibers were designated as PI1-CF",
+        "PI1-CF/PEI, reaching 56.1 MPa",
+        "PI1-CF/PEI improves to 693.9 MPa"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Composite_Category": "PMC",
+          "Composite_System_Raw": "CF/PEI with PI1 sizing",
+          "Matrix": {
+            "Material": "PEI (polyetherimide)",
+            "Form": "film",
+            "Thickness": "0.15 mm",
+            "Supplier": "GE Advanced Materials (USA)"
+          },
+          "Reinforcement": {
+            "Material": "T300-3K carbon fabric",
+            "Form": "woven fabric",
+            "Supplier": "Toray Industries, Japan",
+            "Sizing": "PI1 (from PAAs1: PMDA + ODA, neutralized with TEA, imidized at 300 °C)"
+          },
+          "Interface_or_Interphase": {
+            "Sizing_Agent": {
+              "Designation": "PAAs1 → PI1 after imidization",
+              "Monomers": "PMDA (dianhydride) + ODA (diamine)",
+              "Molar_Ratio": "dianhydride:diamine = 1.01:1",
+              "Neutralization": "TEA, molar ratio TEA:dianhydride = 2:1",
+              "Solvent": "DMAc (for synthesis), deionized water (for sizing solution)",
+              "Sizing_Concentration": "1 wt%",
+              "Imidization": {
+                "Temperature": {
+                  "Value": 573.15,
+                  "Unit": "K",
+                  "Original_Values": "300 °C"
+                },
+                "Time": "60 min"
+              }
+            }
+          },
+          "Fiber_Mass_Fraction": {
+            "Value": 50,
+            "Unit": "wt%",
+            "Original_Values": "~50%",
+            "Note": "approximately 50 wt% fiber mass fraction"
+          },
+          "Fiber_Volume_Fraction": {
+            "Value": null,
+            "Unit": "vol%",
+            "Note": "论文未给出体积分数，仅给出 ~50 wt% 质量分数"
+          }
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "PAAs synthesized from PMDA and ODA was designated as PAAs1 after neutralization. PAAs1 was dissolved in deionized water at 70 °C to obtain 1 wt% sizing solution. Bare-CF samples were immersed in PAAs1 solution for 20 min, then dried and subsequently heated to 300 °C for 60 min to induce imidization. The resulting modified fibers were designated as PI1-CF. CF/PEI composites were fabricated using a vacuum hot-pressing technique at 330 °C under a pressure of 4 MPa.",
+            "simplified": "PAA synthesis (PMDA+ODA in DMAc, neutralize with TEA) → dissolve in water (1 wt%, 70 °C) → immerse CF 20 min → imidize 300 °C/60 min → vacuum hot-press with PEI at 330 °C/4 MPa"
+          },
+          "Key_Params": {
+            "Stage1_PAA_Synthesis": {
+              "Monomers": "PMDA (dianhydride) + ODA (diamine)",
+              "Molar_Ratio_Dianhydride_Diamine": "1.01:1",
+              "Solvent": "DMAc",
+              "Temperature": "ice-water bath",
+              "Dianhydride_Addition_Time": "2 h",
+              "Post_Addition_Reaction_Time": "4 h",
+              "Neutralization_Agent": "TEA",
+              "TEA_to_Dianhydride_Ratio": "2:1",
+              "Precipitation_Solvent": "acetone"
+            },
+            "Stage2_Sizing_Application": {
+              "Sizing_Solution_Concentration": "1 wt%",
+              "Dissolution_Temperature": {
+                "Value": 343.15,
+                "Unit": "K",
+                "Original_Values": "70 °C"
+              },
+              "Immersion_Time": "20 min"
+            },
+            "Stage3_Imidization": {
+              "Temperature": {
+                "Value": 573.15,
+                "Unit": "K",
+                "Original_Values": "300 °C"
+              },
+              "Time": "60 min"
+            },
+            "Stage4_Composite_Fabrication": {
+              "Method": "vacuum hot-pressing",
+              "Temperature": {
+                "Value": 603.15,
+                "Unit": "K",
+                "Original_Values": "330 °C"
+              },
+              "Pressure": {
+                "Value": 4,
+                "Unit": "MPa",
+                "Original_Values": "4 MPa"
+              },
+              "Layup": "9 layers PEI film / 8 layers CF fabric",
+              "Fiber_Mass_Fraction": "~50%"
+            }
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "PI1 exhibits no discernible glass transition below 380 °C (Tg > 380 °C), which can be attributed to its highly rigid molecular backbone formed by the condensation of PMDA and ODA. After PI coating, the groove structures became visibly shallower, indicating the formation of a polymeric film layer on the fiber surface.",
+            "simplified": "PI1: highly rigid backbone, Tg > 380 °C; PI1 coating fills CF surface grooves"
+          },
+          "Fiber_Architecture": "woven fabric",
+          "Interface_Features": {
+            "Sizing_Layer_Tg": {
+              "Value": null,
+              "Unit": "K",
+              "Original_Values": "> 380 °C",
+              "Note": "Tg > 380 °C; not observed below 380 °C, so exact value unknown"
+            }
+          },
+          "Advanced_Quantitative_Features": {
+            "FTIR_Imide_Characteristic": {
+              "C_O_Asymmetric": "1775 cm⁻¹",
+              "C_O_Symmetric": "1715 cm⁻¹",
+              "Note": "confirms complete imidization; applies to all three PIs"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Interlaminar_Shear_Strength",
+            "Value": 56.1,
+            "Unit": "MPa",
+            "Original_Values": "56.1 MPa",
+            "Data_Source": "text",
+            "Test_Condition": {
+              "Loading_Mode": "interlaminar shear"
+            },
+            "Note": "slightly lower ILSS than Bare-CF/PEI (58.9 MPa) despite improved flexural strength; attributed to high Tg of PI1 limiting interdiffusion with matrix"
+          },
+          {
+            "Property_Name": "Flexural_Strength",
+            "Value": 693.9,
+            "Unit": "MPa",
+            "Original_Values": "693.9 MPa",
+            "Data_Source": "text",
+            "Test_Condition": {
+              "Loading_Mode": "three-point bending"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "03",
+      "Sample_ID": "PI2-CF/PEI",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Composites",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "PAAs from OPDA and ODA was named PAAs2",
+        "the resulting modified fibers were designated as PI2-CF",
+        "PI2-CF/PEI show marked improvements, reaching 76.4 MPa",
+        "PI2-CF/PEI ... reach 854.7 MPa"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Composite_Category": "PMC",
+          "Composite_System_Raw": "CF/PEI with PI2 sizing",
+          "Matrix": {
+            "Material": "PEI (polyetherimide)",
+            "Form": "film",
+            "Thickness": "0.15 mm",
+            "Supplier": "GE Advanced Materials (USA)"
+          },
+          "Reinforcement": {
+            "Material": "T300-3K carbon fabric",
+            "Form": "woven fabric",
+            "Supplier": "Toray Industries, Japan",
+            "Sizing": "PI2 (from PAAs2: OPDA + ODA, neutralized with TEA, imidized at 300 °C)"
+          },
+          "Interface_or_Interphase": {
+            "Sizing_Agent": {
+              "Designation": "PAAs2 → PI2 after imidization",
+              "Monomers": "OPDA (dianhydride, note: text uses OPDA for 4,4'-biphenyltetracarboxylic dianhydride = BPDA) + ODA (diamine)",
+              "Molar_Ratio": "dianhydride:diamine = 1.01:1",
+              "Neutralization": "TEA, molar ratio TEA:dianhydride = 2:1",
+              "Sizing_Concentration": "1 wt%",
+              "Imidization": {
+                "Temperature": {
+                  "Value": 573.15,
+                  "Unit": "K",
+                  "Original_Values": "300 °C"
+                },
+                "Time": "60 min"
+              }
+            }
+          },
+          "Fiber_Mass_Fraction": {
+            "Value": 50,
+            "Unit": "wt%",
+            "Original_Values": "~50%"
+          },
+          "Fiber_Volume_Fraction": {
+            "Value": null,
+            "Unit": "vol%",
+            "Note": "论文未给出体积分数，仅给出 ~50 wt% 质量分数"
+          }
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "PAAs from OPDA and ODA was named PAAs2. PAAs2 was dissolved in deionized water at 70 °C to obtain 1 wt% sizing solution. Bare-CF samples were immersed in PAAs2 solution for 20 min, then dried and subsequently heated to 300 °C for 60 min to induce imidization. The resulting modified fibers were designated as PI2-CF. CF/PEI composites were fabricated using a vacuum hot-pressing technique at 330 °C under a pressure of 4 MPa.",
+            "simplified": "PAA synthesis (OPDA+ODA in DMAc, neutralize with TEA) → dissolve in water (1 wt%, 70 °C) → immerse CF 20 min → imidize 300 °C/60 min → vacuum hot-press with PEI at 330 °C/4 MPa"
+          },
+          "Key_Params": {
+            "Stage1_PAA_Synthesis": {
+              "Monomers": "OPDA (dianhydride) + ODA (diamine)",
+              "Molar_Ratio_Dianhydride_Diamine": "1.01:1",
+              "Solvent": "DMAc",
+              "Temperature": "ice-water bath",
+              "Neutralization_Agent": "TEA",
+              "TEA_to_Dianhydride_Ratio": "2:1"
+            },
+            "Stage2_Sizing_Application": {
+              "Sizing_Solution_Concentration": "1 wt%",
+              "Dissolution_Temperature": {
+                "Value": 343.15,
+                "Unit": "K",
+                "Original_Values": "70 °C"
+              },
+              "Immersion_Time": "20 min"
+            },
+            "Stage3_Imidization": {
+              "Temperature": {
+                "Value": 573.15,
+                "Unit": "K",
+                "Original_Values": "300 °C"
+              },
+              "Time": "60 min"
+            },
+            "Stage4_Composite_Fabrication": {
+              "Method": "vacuum hot-pressing",
+              "Temperature": {
+                "Value": 603.15,
+                "Unit": "K",
+                "Original_Values": "330 °C"
+              },
+              "Pressure": {
+                "Value": 4,
+                "Unit": "MPa",
+                "Original_Values": "4 MPa"
+              },
+              "Layup": "9 layers PEI film / 8 layers CF fabric"
+            }
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "PI2, synthesized from OPDA and ODA, exhibits a Tg around 266 °C (Tg ≈ 266 °C). While still containing conjugated aromatic units, the introduction of biphenyl linkages enhances flexibility and confers moderate segmental mobility.",
+            "simplified": "PI2: semi-rigid backbone, Tg ≈ 266 °C; moderate segmental mobility"
+          },
+          "Fiber_Architecture": "woven fabric",
+          "Interface_Features": {
+            "Sizing_Layer_Tg": {
+              "Value": 539.15,
+              "Unit": "K",
+              "Original_Values": "~266 °C",
+              "Note": "approximate value"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Interlaminar_Shear_Strength",
+            "Value": 76.4,
+            "Unit": "MPa",
+            "Original_Values": "76.4 MPa",
+            "Data_Source": "text",
+            "Test_Condition": {
+              "Loading_Mode": "interlaminar shear"
+            }
+          },
+          {
+            "Property_Name": "Flexural_Strength",
+            "Value": 854.7,
+            "Unit": "MPa",
+            "Original_Values": "854.7 MPa",
+            "Data_Source": "text",
+            "Test_Condition": {
+              "Loading_Mode": "three-point bending"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "04",
+      "Sample_ID": "PI3-CF/PEI",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Composites",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "PAAs from OPDA and BAB was named PAAs3",
+        "the resulting modified fibers were designated as PI3-CF",
+        "PI3-CF/PEI show marked improvements, reaching ... 82.1 MPa",
+        "PI3-CF/PEI ... reach ... 802.8 MPa"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Composite_Category": "PMC",
+          "Composite_System_Raw": "CF/PEI with PI3 sizing",
+          "Matrix": {
+            "Material": "PEI (polyetherimide)",
+            "Form": "film",
+            "Thickness": "0.15 mm",
+            "Supplier": "GE Advanced Materials (USA)"
+          },
+          "Reinforcement": {
+            "Material": "T300-3K carbon fabric",
+            "Form": "woven fabric",
+            "Supplier": "Toray Industries, Japan",
+            "Sizing": "PI3 (from PAAs3: OPDA + BAB, neutralized with TEA, imidized at 300 °C)"
+          },
+          "Interface_or_Interphase": {
+            "Sizing_Agent": {
+              "Designation": "PAAs3 → PI3 after imidization",
+              "Monomers": "OPDA (dianhydride) + BAB (diamine, 1,4-bis(4-aminophenoxy)benzene)",
+              "Molar_Ratio": "dianhydride:diamine = 1.01:1",
+              "Neutralization": "TEA, molar ratio TEA:dianhydride = 2:1",
+              "Sizing_Concentration": "1 wt%",
+              "Imidization": {
+                "Temperature": {
+                  "Value": 573.15,
+                  "Unit": "K",
+                  "Original_Values": "300 °C"
+                },
+                "Time": "60 min"
+              }
+            }
+          },
+          "Fiber_Mass_Fraction": {
+            "Value": 50,
+            "Unit": "wt%",
+            "Original_Values": "~50%"
+          },
+          "Fiber_Volume_Fraction": {
+            "Value": null,
+            "Unit": "vol%",
+            "Note": "论文未给出体积分数，仅给出 ~50 wt% 质量分数"
+          }
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "PAAs from OPDA and BAB was named PAAs3. PAAs3 was dissolved in deionized water at 70 °C to obtain 1 wt% sizing solution. Bare-CF samples were immersed in PAAs3 solution for 20 min, then dried and subsequently heated to 300 °C for 60 min to induce imidization. The resulting modified fibers were designated as PI3-CF. CF/PEI composites were fabricated using a vacuum hot-pressing technique at 330 °C under a pressure of 4 MPa.",
+            "simplified": "PAA synthesis (OPDA+BAB in DMAc, neutralize with TEA) → dissolve in water (1 wt%, 70 °C) → immerse CF 20 min → imidize 300 °C/60 min → vacuum hot-press with PEI at 330 °C/4 MPa"
+          },
+          "Key_Params": {
+            "Stage1_PAA_Synthesis": {
+              "Monomers": "OPDA (dianhydride) + BAB (diamine)",
+              "Molar_Ratio_Dianhydride_Diamine": "1.01:1",
+              "Solvent": "DMAc",
+              "Temperature": "ice-water bath",
+              "Neutralization_Agent": "TEA",
+              "TEA_to_Dianhydride_Ratio": "2:1"
+            },
+            "Stage2_Sizing_Application": {
+              "Sizing_Solution_Concentration": "1 wt%",
+              "Dissolution_Temperature": {
+                "Value": 343.15,
+                "Unit": "K",
+                "Original_Values": "70 °C"
+              },
+              "Immersion_Time": "20 min"
+            },
+            "Stage3_Imidization": {
+              "Temperature": {
+                "Value": 573.15,
+                "Unit": "K",
+                "Original_Values": "300 °C"
+              },
+              "Time": "60 min"
+            },
+            "Stage4_Composite_Fabrication": {
+              "Method": "vacuum hot-pressing",
+              "Temperature": {
+                "Value": 603.15,
+                "Unit": "K",
+                "Original_Values": "330 °C"
+              },
+              "Pressure": {
+                "Value": 4,
+                "Unit": "MPa",
+                "Original_Values": "4 MPa"
+              },
+              "Layup": "9 layers PEI film / 8 layers CF fabric"
+            }
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "PI3, derived from OPDA and BAB, shows a Tg near 235 °C (Tg ≈ 235 °C). The incorporation of flexible ether linkages (-O-Ph-O-) in its backbone significantly increases chain flexibility compared to PI1 and PI2.",
+            "simplified": "PI3: flexible backbone with ether linkages, Tg ≈ 235 °C"
+          },
+          "Fiber_Architecture": "woven fabric",
+          "Interface_Features": {
+            "Sizing_Layer_Tg": {
+              "Value": 508.15,
+              "Unit": "K",
+              "Original_Values": "~235 °C",
+              "Note": "approximate value"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Interlaminar_Shear_Strength",
+            "Value": 82.1,
+            "Unit": "MPa",
+            "Original_Values": "82.1 MPa",
+            "Data_Source": "text",
+            "Test_Condition": {
+              "Loading_Mode": "interlaminar shear"
+            }
+          },
+          {
+            "Property_Name": "Flexural_Strength",
+            "Value": 802.8,
+            "Unit": "MPa",
+            "Original_Values": "802.8 MPa",
+            "Data_Source": "text",
+            "Test_Condition": {
+              "Loading_Mode": "three-point bending"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "05",
+      "Sample_ID": "PI1/PI2-CF/PEI",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Composites",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "PAAs1 and PAAs2 were mixed at a mass ratio of 8:2 at room temperature to prepare a 1 wt% water-based sizing solution",
+        "The resulting fibers were designated as PI1/PI2-CF",
+        "PI1/PI2-CF/PEI reach 66.1 MPa",
+        "PI1/PI3-CF/PEI ... 62.8 MPa"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Composite_Category": "PMC",
+          "Composite_System_Raw": "CF/PEI with PI1/PI2 binary sizing",
+          "Matrix": {
+            "Material": "PEI (polyetherimide)",
+            "Form": "film",
+            "Thickness": "0.15 mm",
+            "Supplier": "GE Advanced Materials (USA)"
+          },
+          "Reinforcement": {
+            "Material": "T300-3K carbon fabric",
+            "Form": "woven fabric",
+            "Supplier": "Toray Industries, Japan",
+            "Sizing": "PI1/PI2 binary (PAAs1:PAAs2 = 8:2 mass ratio, imidized at 300 °C)"
+          },
+          "Interface_or_Interphase": {
+            "Sizing_Agent": {
+              "Designation": "PAAs1/PAAs2 binary blend → PI1/PI2 after imidization",
+              "Components": "PAAs1 (PMDA+ODA) + PAAs2 (OPDA+ODA)",
+              "Mass_Ratio": "PAAs1:PAAs2 = 8:2",
+              "Sizing_Concentration": "1 wt%",
+              "Imidization": {
+                "Temperature": {
+                  "Value": 573.15,
+                  "Unit": "K",
+                  "Original_Values": "300 °C"
+                },
+                "Time": "60 min"
+              }
+            }
+          },
+          "Fiber_Mass_Fraction": {
+            "Value": 50,
+            "Unit": "wt%",
+            "Original_Values": "~50%"
+          },
+          "Fiber_Volume_Fraction": {
+            "Value": null,
+            "Unit": "vol%",
+            "Note": "论文未给出体积分数，仅给出 ~50 wt% 质量分数"
+          }
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "PAAs1 and PAAs2 were mixed at a mass ratio of 8:2 at room temperature to prepare a 1 wt% water-based sizing solution. The impregnation and imidization procedures were identical to the single-component cases. The resulting fibers were designated as PI1/PI2-CF. CF/PEI composites were fabricated using a vacuum hot-pressing technique at 330 °C under a pressure of 4 MPa.",
+            "simplified": "Mix PAAs1:PAAs2 = 8:2 → 1 wt% water-based sizing → immerse CF 20 min → imidize 300 °C/60 min → vacuum hot-press with PEI at 330 °C/4 MPa"
+          },
+          "Key_Params": {
+            "Stage1_Sizing_Preparation": {
+              "Components": "PAAs1 + PAAs2",
+              "Mass_Ratio": "8:2",
+              "Concentration": "1 wt%",
+              "Solvent": "deionized water"
+            },
+            "Stage2_Sizing_Application": {
+              "Immersion_Time": "20 min"
+            },
+            "Stage3_Imidization": {
+              "Temperature": {
+                "Value": 573.15,
+                "Unit": "K",
+                "Original_Values": "300 °C"
+              },
+              "Time": "60 min"
+            },
+            "Stage4_Composite_Fabrication": {
+              "Method": "vacuum hot-pressing",
+              "Temperature": {
+                "Value": 603.15,
+                "Unit": "K",
+                "Original_Values": "330 °C"
+              },
+              "Pressure": {
+                "Value": 4,
+                "Unit": "MPa",
+                "Original_Values": "4 MPa"
+              }
+            }
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "SAXS results: the PI1/PI2 curve exhibits a larger exponent (-3.01) compared with PI1 (-2.56) and PI2 (-2.62), indicating the presence of multiscale structures arising from interfacial heterogeneity.",
+            "simplified": "PI1/PI2 blended film shows multiscale structures from interfacial heterogeneity, confirmed by SAXS power law exponent -3.01"
+          },
+          "Fiber_Architecture": "woven fabric",
+          "Advanced_Quantitative_Features": {
+            "SAXS_Power_Law_Exponent": {
+              "PI1_PI2_Blend": -3.01,
+              "PI1": -2.56,
+              "PI2": -2.62,
+              "Note": "larger exponent for blend indicates multiscale structures from interfacial heterogeneity"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Interlaminar_Shear_Strength",
+            "Value": 66.1,
+            "Unit": "MPa",
+            "Original_Values": "66.1 MPa",
+            "Data_Source": "text",
+            "Test_Condition": {
+              "Loading_Mode": "interlaminar shear"
+            },
+            "Note": "slightly lower than single-component PI2 or PI3 systems"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "06",
+      "Sample_ID": "PI1/PI3-CF/PEI",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Composites",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "fibers treated with PAAs1/PAAs3 (8:2) ... were named PI1/PI3-CF",
+        "PI1/PI3-CF/PEI ... 62.8 MPa",
+        "PI1/PI3-CF exhibited the highest C-O content (17.23%)"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Composite_Category": "PMC",
+          "Composite_System_Raw": "CF/PEI with PI1/PI3 binary sizing",
+          "Matrix": {
+            "Material": "PEI (polyetherimide)",
+            "Form": "film",
+            "Thickness": "0.15 mm",
+            "Supplier": "GE Advanced Materials (USA)"
+          },
+          "Reinforcement": {
+            "Material": "T300-3K carbon fabric",
+            "Form": "woven fabric",
+            "Supplier": "Toray Industries, Japan",
+            "Sizing": "PI1/PI3 binary (PAAs1:PAAs3 = 8:2 mass ratio, imidized at 300 °C)"
+          },
+          "Interface_or_Interphase": {
+            "Sizing_Agent": {
+              "Designation": "PAAs1/PAAs3 binary blend → PI1/PI3 after imidization",
+              "Components": "PAAs1 (PMDA+ODA) + PAAs3 (OPDA+BAB)",
+              "Mass_Ratio": "PAAs1:PAAs3 = 8:2",
+              "Sizing_Concentration": "1 wt%",
+              "Imidization": {
+                "Temperature": {
+                  "Value": 573.15,
+                  "Unit": "K",
+                  "Original_Values": "300 °C"
+                },
+                "Time": "60 min"
+              }
+            }
+          },
+          "Fiber_Mass_Fraction": {
+            "Value": 50,
+            "Unit": "wt%",
+            "Original_Values": "~50%"
+          },
+          "Fiber_Volume_Fraction": {
+            "Value": null,
+            "Unit": "vol%",
+            "Note": "论文未给出体积分数，仅给出 ~50 wt% 质量分数"
+          }
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "fibers treated with PAAs1/PAAs3 (8:2) solutions were named PI1/PI3-CF. CF/PEI composites were fabricated using a vacuum hot-pressing technique at 330 °C under a pressure of 4 MPa.",
+            "simplified": "Mix PAAs1:PAAs3 = 8:2 → 1 wt% sizing → immerse CF 20 min → imidize 300 °C/60 min → vacuum hot-press with PEI at 330 °C/4 MPa"
+          },
+          "Key_Params": {
+            "Stage1_Sizing_Preparation": {
+              "Components": "PAAs1 + PAAs3",
+              "Mass_Ratio": "8:2",
+              "Concentration": "1 wt%",
+              "Solvent": "deionized water"
+            },
+            "Stage2_Imidization": {
+              "Temperature": {
+                "Value": 573.15,
+                "Unit": "K",
+                "Original_Values": "300 °C"
+              },
+              "Time": "60 min"
+            },
+            "Stage3_Composite_Fabrication": {
+              "Method": "vacuum hot-pressing",
+              "Temperature": {
+                "Value": 603.15,
+                "Unit": "K",
+                "Original_Values": "330 °C"
+              },
+              "Pressure": {
+                "Value": 4,
+                "Unit": "MPa",
+                "Original_Values": "4 MPa"
+              }
+            }
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "PI1/PI3-CF exhibited the highest C-O content (17.23%), indicating the greatest surface polarity. Nitrogen content remained at 6.01%.",
+            "simplified": "PI1/PI3-CF has highest C-O content (17.23%) among all samples, indicating greatest surface polarity"
+          },
+          "Fiber_Architecture": "woven fabric",
+          "Advanced_Quantitative_Features": {
+            "Surface_XPS_C1s": {
+              "C_O_Percent": 17.23,
+              "N_Content_Percent": 6.01,
+              "Note": "highest surface polarity among all blended systems"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Interlaminar_Shear_Strength",
+            "Value": 62.8,
+            "Unit": "MPa",
+            "Original_Values": "62.8 MPa",
+            "Data_Source": "text",
+            "Test_Condition": {
+              "Loading_Mode": "interlaminar shear"
+            },
+            "Note": "lower than single-component PI2 or PI3 systems"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "07",
+      "Sample_ID": "PI2/PI3-CF/PEI",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Composites",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "fibers treated with PAAs2/PAAs3 (8:2) solutions were named PI2/PI3-CF",
+        "PI2/PI3-CF/PEI achieves the highest ILSS of 92.9 MPa",
+        "PI2/PI3-CF/PEI composite displays the highest flexural strength of 1049.9 MPa and a flexural modulus of 75 GPa"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Composite_Category": "PMC",
+          "Composite_System_Raw": "CF/PEI with PI2/PI3 binary sizing",
+          "Matrix": {
+            "Material": "PEI (polyetherimide)",
+            "Form": "film",
+            "Thickness": "0.15 mm",
+            "Supplier": "GE Advanced Materials (USA)"
+          },
+          "Reinforcement": {
+            "Material": "T300-3K carbon fabric",
+            "Form": "woven fabric",
+            "Supplier": "Toray Industries, Japan",
+            "Sizing": "PI2/PI3 binary (PAAs2:PAAs3 = 8:2 mass ratio, imidized at 300 °C)"
+          },
+          "Interface_or_Interphase": {
+            "Sizing_Agent": {
+              "Designation": "PAAs2/PAAs3 binary blend → PI2/PI3 after imidization",
+              "Components": "PAAs2 (OPDA+ODA) + PAAs3 (OPDA+BAB)",
+              "Mass_Ratio": "PAAs2:PAAs3 = 8:2",
+              "Sizing_Concentration": "1 wt%",
+              "Imidization": {
+                "Temperature": {
+                  "Value": 573.15,
+                  "Unit": "K",
+                  "Original_Values": "300 °C"
+                },
+                "Time": "60 min"
+              }
+            }
+          },
+          "Fiber_Mass_Fraction": {
+            "Value": 50,
+            "Unit": "wt%",
+            "Original_Values": "~50%"
+          },
+          "Fiber_Volume_Fraction": {
+            "Value": null,
+            "Unit": "vol%",
+            "Note": "论文未给出体积分数，仅给出 ~50 wt% 质量分数"
+          }
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "fibers treated with PAAs2/PAAs3 (8:2) solutions were named PI2/PI3-CF. CF/PEI composites were fabricated using a vacuum hot-pressing technique at 330 °C under a pressure of 4 MPa.",
+            "simplified": "Mix PAAs2:PAAs3 = 8:2 → 1 wt% sizing → immerse CF 20 min → imidize 300 °C/60 min → vacuum hot-press with PEI at 330 °C/4 MPa"
+          },
+          "Key_Params": {
+            "Stage1_Sizing_Preparation": {
+              "Components": "PAAs2 + PAAs3",
+              "Mass_Ratio": "8:2",
+              "Concentration": "1 wt%",
+              "Solvent": "deionized water"
+            },
+            "Stage2_Imidization": {
+              "Temperature": {
+                "Value": 573.15,
+                "Unit": "K",
+                "Original_Values": "300 °C"
+              },
+              "Time": "60 min"
+            },
+            "Stage3_Composite_Fabrication": {
+              "Method": "vacuum hot-pressing",
+              "Temperature": {
+                "Value": 603.15,
+                "Unit": "K",
+                "Original_Values": "330 °C"
+              },
+              "Pressure": {
+                "Value": 4,
+                "Unit": "MPa",
+                "Original_Values": "4 MPa"
+              }
+            }
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "The blended film displayed pronounced surface undulations and increased roughness. AFM phase image shows distinct phase contrast and bright-dark microdomains, confirming the coexistence of two separate phases. The interphase width extended to 230 nm.",
+            "simplified": "PI2/PI3 blended film shows microphase separation: PI2-rich rigid domains + PI3-rich flexible domains; interphase width 230 nm"
+          },
+          "Fiber_Architecture": "woven fabric",
+          "Interface_Features": {
+            "Interphase_Width_nm": {
+              "Value": 230,
+              "Unit": "nm",
+              "Original_Values": "230 nm",
+              "Data_Source": "text",
+              "Note": "from PF-QNM modulus profile; significantly broader than Bare-CF/PEI (110 nm)"
+            },
+            "Microphase_Separation": "confirmed by AFM phase contrast and height undulation"
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Interlaminar_Shear_Strength",
+            "Value": 92.9,
+            "Unit": "MPa",
+            "Original_Values": "92.9 MPa",
+            "Data_Source": "text",
+            "Test_Condition": {
+              "Loading_Mode": "interlaminar shear"
+            },
+            "Note": "highest ILSS among all CF/PEI samples"
+          },
+          {
+            "Property_Name": "Flexural_Strength",
+            "Value": 1049.9,
+            "Unit": "MPa",
+            "Original_Values": "1049.9 MPa",
+            "Data_Source": "text",
+            "Test_Condition": {
+              "Loading_Mode": "three-point bending"
+            },
+            "Note": "highest flexural strength among all CF/PEI samples"
+          },
+          {
+            "Property_Name": "Flexural_Modulus",
+            "Value": 75,
+            "Unit": "GPa",
+            "Original_Values": "75 GPa",
+            "Data_Source": "text",
+            "Test_Condition": {
+              "Loading_Mode": "three-point bending"
+            }
+          },
+          {
+            "Property_Name": "Flexural_Strength_High_Temperature",
+            "Value": null,
+            "Unit": "MPa",
+            "Original_Values": null,
+            "Data_Source": "text",
+            "Test_Condition": {
+              "Loading_Mode": "three-point bending",
+              "Test_Temperature_Original": "180 °C",
+              "Test_Temperature_K": 453.15
+            },
+            "Note": "text states 'significantly higher flexural strength and fracture strain compared to Bare-CF/PEI' at 180 °C but no exact value given"
+          },
+          {
+            "Property_Name": "DMA_Storage_Modulus_Glassy_Region",
+            "Value": null,
+            "Unit": "MPa",
+            "Data_Source": "text",
+            "Test_Condition": {
+              "Method": "DMA"
+            },
+            "Note": "comparable to Bare-CF/PEI in glassy region but exact value not stated; see Fig. 7d"
+          },
+          {
+            "Property_Name": "DMA_Storage_Modulus_Rubbery_Region",
+            "Value": null,
+            "Unit": "MPa",
+            "Data_Source": "text",
+            "Test_Condition": {
+              "Method": "DMA"
+            },
+            "Note": "significantly higher than Bare-CF/PEI in rubbery region but exact value not stated; see Fig. 7d"
+          },
+          {
+            "Property_Name": "DMA_Loss_Modulus_Peak_Temperature_Shift",
+            "Value": null,
+            "Unit": "K",
+            "Data_Source": "text",
+            "Test_Condition": {
+              "Method": "DMA"
+            },
+            "Note": "slightly right-shifted peak temperature compared to Bare-CF/PEI with marginally lower peak height"
+          },
+          {
+            "Property_Name": "DMA_Tan_Delta_Peak",
+            "Value": null,
+            "Data_Source": "text",
+            "Test_Condition": {
+              "Method": "DMA"
+            },
+            "Note": "higher tan δ peak compared to Bare-CF/PEI; exact value not stated"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "08",
+      "Sample_ID": "O-PI2-CF/PEI",
+      "Role": "Comparator",
+      "Data_Nature": "Experimental",
+      "base_material": "Composites",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "single-component (O-PI2, O-PI3) and binary-component (O-PI2/PI3) sizing treatments",
+        "oil-soluble sizing agents moderately enhanced both interlaminar shear strength and flexural strength"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Composite_Category": "PMC",
+          "Composite_System_Raw": "CF/PEI with O-PI2 sizing (oil-based)",
+          "Matrix": {
+            "Material": "PEI (polyetherimide)",
+            "Form": "film",
+            "Thickness": "0.15 mm",
+            "Supplier": "GE Advanced Materials (USA)"
+          },
+          "Reinforcement": {
+            "Material": "T300-3K carbon fabric",
+            "Sizing": "O-PI2 (oil-soluble, DMF as solvent)"
+          },
+          "Interface_or_Interphase": {
+            "Sizing_Agent": {
+              "Designation": "O-PI2 (oil-soluble PAAs2)",
+              "Solvent": "DMF (N,N-dimethylformamide)",
+              "Note": "same PAAs2 precursor but using DMF instead of water as solvent"
+            }
+          },
+          "Fiber_Volume_Fraction": {
+            "Value": null,
+            "Unit": "vol%",
+            "Note": "论文未给出体积分数，仅给出 ~50 wt% 质量分数"
+          }
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "the same PAA precursors were transitioned from a water-based formulation to an oil-based one using DMF as the solvent. These were applied to carbon fibers using single-component (O-PI2, O-PI3) and binary-component (O-PI2/PI3) sizing treatments.",
+            "simplified": "PAAs2 dissolved in DMF → apply to CF → imidize → composite with PEI"
+          },
+          "Key_Params": {
+            "Sizing_Solvent": "DMF"
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "AFM characterization: the oil-soluble sizing agents formed smooth topography, AFM phase image showed no significant phase contrast, suggesting good miscibility in DMF solution.",
+            "simplified": "O-PI2 oil-based film: smooth surface, no microphase separation"
+          },
+          "Fiber_Architecture": "woven fabric"
+        },
+        "Properties": [
+          {
+            "Property_Name": "Interlaminar_Shear_Strength",
+            "Value": null,
+            "Unit": "MPa",
+            "Original_Values": null,
+            "Data_Source": "image",
+            "Note": "ILSS value shown in Fig. 5d but exact number not stated in text for O-PI2 single component; text states 'moderately enhanced' compared to Bare-CF/PEI"
+          },
+          {
+            "Property_Name": "Flexural_Strength",
+            "Value": null,
+            "Unit": "MPa",
+            "Original_Values": null,
+            "Data_Source": "image",
+            "Note": "flexural strength shown in Fig. 5e but exact number not stated in text for O-PI2"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "09",
+      "Sample_ID": "O-PI3-CF/PEI",
+      "Role": "Comparator",
+      "Data_Nature": "Experimental",
+      "base_material": "Composites",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "single-component (O-PI2, O-PI3) and binary-component (O-PI2/PI3) sizing treatments"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Composite_Category": "PMC",
+          "Composite_System_Raw": "CF/PEI with O-PI3 sizing (oil-based)",
+          "Matrix": {
+            "Material": "PEI (polyetherimide)",
+            "Form": "film",
+            "Thickness": "0.15 mm",
+            "Supplier": "GE Advanced Materials (USA)"
+          },
+          "Reinforcement": {
+            "Material": "T300-3K carbon fabric",
+            "Sizing": "O-PI3 (oil-soluble, DMF as solvent)"
+          },
+          "Interface_or_Interphase": {
+            "Sizing_Agent": {
+              "Designation": "O-PI3 (oil-soluble PAAs3)",
+              "Solvent": "DMF",
+              "Note": "same PAAs3 precursor but using DMF instead of water"
+            }
+          },
+          "Fiber_Volume_Fraction": {
+            "Value": null,
+            "Unit": "vol%",
+            "Note": "论文未给出体积分数，仅给出 ~50 wt% 质量分数"
+          }
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "the same PAA precursors were transitioned from a water-based formulation to an oil-based one using DMF as the solvent. These were applied to carbon fibers using single-component (O-PI2, O-PI3) and binary-component (O-PI2/PI3) sizing treatments.",
+            "simplified": "PAAs3 dissolved in DMF → apply to CF → imidize → composite with PEI"
+          }
+        },
+        "Structure": {
+          "Fiber_Architecture": "woven fabric"
+        },
+        "Properties": [
+          {
+            "Property_Name": "Interlaminar_Shear_Strength",
+            "Value": null,
+            "Unit": "MPa",
+            "Data_Source": "image",
+            "Note": "shown in Fig. 5d but exact number not stated in text"
+          },
+          {
+            "Property_Name": "Flexural_Strength",
+            "Value": null,
+            "Unit": "MPa",
+            "Data_Source": "image",
+            "Note": "shown in Fig. 5e but exact number not stated in text"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "10",
+      "Sample_ID": "O-PI2/PI3-CF/PEI",
+      "Role": "Comparator",
+      "Data_Nature": "Experimental",
+      "base_material": "Composites",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "the highest ILSS achieved by the O-PI2/PI3-CF/PEI composite was 76.2 MPa, significantly lower than the 92.9 MPa obtained using the water-soluble PI2/PI3 system"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Composite_Category": "PMC",
+          "Composite_System_Raw": "CF/PEI with O-PI2/PI3 binary sizing (oil-based)",
+          "Matrix": {
+            "Material": "PEI (polyetherimide)",
+            "Form": "film",
+            "Thickness": "0.15 mm",
+            "Supplier": "GE Advanced Materials (USA)"
+          },
+          "Reinforcement": {
+            "Material": "T300-3K carbon fabric",
+            "Sizing": "O-PI2/PI3 binary (oil-soluble, DMF as solvent)"
+          },
+          "Interface_or_Interphase": {
+            "Sizing_Agent": {
+              "Designation": "O-PI2/PI3 (oil-soluble PAAs2/PAAs3 blend)",
+              "Solvent": "DMF"
+            }
+          },
+          "Fiber_Volume_Fraction": {
+            "Value": null,
+            "Unit": "vol%",
+            "Note": "论文未给出体积分数，仅给出 ~50 wt% 质量分数"
+          }
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "the same PAA precursors were transitioned from a water-based formulation to an oil-based one using DMF as the solvent. These were applied to carbon fibers using single-component (O-PI2, O-PI3) and binary-component (O-PI2/PI3) sizing treatments.",
+            "simplified": "PAAs2+PAAs3 blend dissolved in DMF → apply to CF → imidize → composite with PEI"
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "AFM characterization: the height image and surface roughness analysis revealed a smooth topography, with Ra of only 0.192 nm. AFM phase image showed no significant phase contrast.",
+            "simplified": "O-PI2/PI3 oil-based blend film: smooth surface (Ra = 0.192 nm), no microphase separation"
+          },
+          "Fiber_Architecture": "woven fabric",
+          "Advanced_Quantitative_Features": {
+            "AFM_Surface_Roughness_Ra_nm": {
+              "Value": 0.192,
+              "Unit": "nm",
+              "Original_Values": "0.192 nm",
+              "Note": "for O-PI2/PI3 blend film, indicating lack of microphase-separated domains"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Interlaminar_Shear_Strength",
+            "Value": 76.2,
+            "Unit": "MPa",
+            "Original_Values": "76.2 MPa",
+            "Data_Source": "text"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "11",
+      "Sample_ID": "Bare-CF/PEEK",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Composites",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Bare-CF/PEEK samples",
+        "CF/PEEK composites were similarly fabricated via vacuum hot-pressing at 375 °C and 3.5 MPa"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Composite_Category": "PMC",
+          "Composite_System_Raw": "CF/PEEK",
+          "Matrix": {
+            "Material": "PEEK (polyetheretherketone)",
+            "Form": "film",
+            "Thickness": "0.15 mm",
+            "Supplier": "Evonik Industries (Germany)"
+          },
+          "Reinforcement": {
+            "Material": "T300-3K carbon fabric",
+            "Form": "woven fabric",
+            "Supplier": "Toray Industries, Japan",
+            "Pretreatment": "refluxed in acetone at 80 °C for 24 h to remove original commercial sizing"
+          },
+          "Fiber_Mass_Fraction": {
+            "Value": 50,
+            "Unit": "wt%",
+            "Original_Values": "~50%"
+          },
+          "Fiber_Volume_Fraction": {
+            "Value": null,
+            "Unit": "vol%",
+            "Note": "论文未给出体积分数，仅给出 ~50 wt% 质量分数"
+          }
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "Bare-CF samples ... refluxed in acetone at 80 °C for 24 h to remove the original commercial sizing, then dried and labeled as Bare-CF. CF/PEEK composites were similarly fabricated via vacuum hot-pressing at 375 °C and 3.5 MPa. Each laminate was composed of 9 layers of PEEK films and 8 layers of carbon fiber fabrics, also with a fiber mass fraction of ~50%.",
+            "simplified": "T300-3K CF desized by acetone reflux → laminated with PEEK films (9 layers PEEK / 8 layers CF) → vacuum hot-pressed at 375 °C / 3.5 MPa"
+          },
+          "Key_Params": {
+            "Stage1_Desizing": {
+              "Solvent": "acetone",
+              "Temperature": {
+                "Value": 353.15,
+                "Unit": "K",
+                "Original_Values": "80 °C"
+              },
+              "Time": "24 h"
+            },
+            "Stage2_Composite_Fabrication": {
+              "Method": "vacuum hot-pressing",
+              "Temperature": {
+                "Value": 648.15,
+                "Unit": "K",
+                "Original_Values": "375 °C"
+              },
+              "Pressure": {
+                "Value": 3.5,
+                "Unit": "MPa",
+                "Original_Values": "3.5 MPa"
+              },
+              "Layup": "9 layers PEEK film / 8 layers CF fabric",
+              "Fiber_Mass_Fraction": "~50%"
+            }
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "the untreated Bare-CF/PEEK composites exhibited abrupt modulus transitions at the fiber–matrix interface, with the modulus gradient completing within narrow widths of only 180 nm.",
+            "simplified": "Bare-CF/PEEK: abrupt modulus transition at interface, interphase width 180 nm"
+          },
+          "Fiber_Architecture": "woven fabric",
+          "Interface_Features": {
+            "Interphase_Width_nm": {
+              "Value": 180,
+              "Unit": "nm",
+              "Original_Values": "180 nm",
+              "Data_Source": "text",
+              "Note": "from PF-QNM modulus profile for Bare-CF/PEEK"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Interlaminar_Shear_Strength",
+            "Value": null,
+            "Unit": "MPa",
+            "Original_Values": null,
+            "Data_Source": "image",
+            "Note": "Bare-CF/PEEK ILSS shown in Fig. 6c but exact value not stated in text"
+          },
+          {
+            "Property_Name": "Flexural_Strength",
+            "Value": null,
+            "Unit": "MPa",
+            "Original_Values": null,
+            "Data_Source": "image",
+            "Note": "Bare-CF/PEEK flexural strength shown in Fig. 6d but exact value not stated in text"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "12",
+      "Sample_ID": "PI1-CF/PEEK",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Composites",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "PI1-CF/PEEK fractures appear clean and featureless, consistent with weaker interfacial interactions"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Composite_Category": "PMC",
+          "Composite_System_Raw": "CF/PEEK with PI1 sizing",
+          "Matrix": {
+            "Material": "PEEK (polyetheretherketone)",
+            "Form": "film",
+            "Thickness": "0.15 mm",
+            "Supplier": "Evonik Industries (Germany)"
+          },
+          "Reinforcement": {
+            "Material": "T300-3K carbon fabric",
+            "Sizing": "PI1 (from PAAs1: PMDA + ODA, imidized at 300 °C)"
+          },
+          "Fiber_Mass_Fraction": {
+            "Value": 50,
+            "Unit": "wt%",
+            "Original_Values": "~50%"
+          },
+          "Fiber_Volume_Fraction": {
+            "Value": null,
+            "Unit": "vol%",
+            "Note": "论文未给出体积分数，仅给出 ~50 wt% 质量分数"
+          }
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "CF/PEEK composites were similarly fabricated via vacuum hot-pressing at 375 °C and 3.5 MPa. Each laminate was composed of 9 layers of PEEK films and 8 layers of carbon fiber fabrics, also with a fiber mass fraction of ~50%.",
+            "simplified": "CF with PI1 sizing → vacuum hot-press with PEEK at 375 °C / 3.5 MPa"
+          },
+          "Key_Params": {
+            "Stage_Composite_Fabrication": {
+              "Method": "vacuum hot-pressing",
+              "Temperature": {
+                "Value": 648.15,
+                "Unit": "K",
+                "Original_Values": "375 °C"
+              },
+              "Pressure": {
+                "Value": 3.5,
+                "Unit": "MPa",
+                "Original_Values": "3.5 MPa"
+              }
+            }
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "PI1-CF/PEEK fractures appear clean and featureless, consistent with weaker interfacial interactions.",
+            "simplified": "PI1-CF/PEEK: clean and featureless fracture surface, indicating weak interfacial bonding"
+          },
+          "Fiber_Architecture": "woven fabric"
+        },
+        "Properties": [
+          {
+            "Property_Name": "Interlaminar_Shear_Strength",
+            "Value": null,
+            "Unit": "MPa",
+            "Data_Source": "image",
+            "Note": "shown in Fig. 6c but exact value not stated in text; text notes weaker interfacial interactions for PI1-CF/PEEK"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "13",
+      "Sample_ID": "PI1/PI2-CF/PEEK",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Composites",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "PI1/PI2 ... shear strengths reaching 71.9 MPa"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Composite_Category": "PMC",
+          "Composite_System_Raw": "CF/PEEK with PI1/PI2 binary sizing",
+          "Matrix": {
+            "Material": "PEEK (polyetheretherketone)",
+            "Form": "film",
+            "Thickness": "0.15 mm",
+            "Supplier": "Evonik Industries (Germany)"
+          },
+          "Reinforcement": {
+            "Material": "T300-3K carbon fabric",
+            "Sizing": "PI1/PI2 binary (PAAs1:PAAs2 = 8:2 mass ratio)"
+          },
+          "Fiber_Mass_Fraction": {
+            "Value": 50,
+            "Unit": "wt%",
+            "Original_Values": "~50%"
+          },
+          "Fiber_Volume_Fraction": {
+            "Value": null,
+            "Unit": "vol%",
+            "Note": "论文未给出体积分数，仅给出 ~50 wt% 质量分数"
+          }
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "CF/PEEK composites were similarly fabricated via vacuum hot-pressing at 375 °C and 3.5 MPa. Each laminate was composed of 9 layers of PEEK films and 8 layers of carbon fiber fabrics, also with a fiber mass fraction of ~50%.",
+            "simplified": "CF with PI1/PI2 sizing → vacuum hot-press with PEEK at 375 °C / 3.5 MPa"
+          },
+          "Key_Params": {
+            "Stage_Composite_Fabrication": {
+              "Method": "vacuum hot-pressing",
+              "Temperature": {
+                "Value": 648.15,
+                "Unit": "K",
+                "Original_Values": "375 °C"
+              },
+              "Pressure": {
+                "Value": 3.5,
+                "Unit": "MPa",
+                "Original_Values": "3.5 MPa"
+              }
+            }
+          }
+        },
+        "Structure": {
+          "Fiber_Architecture": "woven fabric"
+        },
+        "Properties": [
+          {
+            "Property_Name": "Interlaminar_Shear_Strength",
+            "Value": 71.9,
+            "Unit": "MPa",
+            "Original_Values": "71.9 MPa",
+            "Data_Source": "text",
+            "Test_Condition": {
+              "Loading_Mode": "interlaminar shear"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "14",
+      "Sample_ID": "PI1/PI3-CF/PEEK",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Composites",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "PI1/PI3-CF/PEEK achieved the highest shear strength of 80.8 MPa",
+        "PI1/PI3-sized CF/PEEK ... interphase widths extending to ... 240 nm",
+        "PI1/PI3-CF/PEEK showed substantially reduced wear rates of ... 1.6 × 10⁻⁶ mm³/N·m"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Composite_Category": "PMC",
+          "Composite_System_Raw": "CF/PEEK with PI1/PI3 binary sizing",
+          "Matrix": {
+            "Material": "PEEK (polyetheretherketone)",
+            "Form": "film",
+            "Thickness": "0.15 mm",
+            "Supplier": "Evonik Industries (Germany)"
+          },
+          "Reinforcement": {
+            "Material": "T300-3K carbon fabric",
+            "Sizing": "PI1/PI3 binary (PAAs1:PAAs3 = 8:2 mass ratio)"
+          },
+          "Fiber_Mass_Fraction": {
+            "Value": 50,
+            "Unit": "wt%",
+            "Original_Values": "~50%"
+          },
+          "Fiber_Volume_Fraction": {
+            "Value": null,
+            "Unit": "vol%",
+            "Note": "论文未给出体积分数，仅给出 ~50 wt% 质量分数"
+          }
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "CF/PEEK composites were similarly fabricated via vacuum hot-pressing at 375 °C and 3.5 MPa. Each laminate was composed of 9 layers of PEEK films and 8 layers of carbon fiber fabrics, also with a fiber mass fraction of ~50%.",
+            "simplified": "CF with PI1/PI3 sizing → vacuum hot-press with PEEK at 375 °C / 3.5 MPa"
+          },
+          "Key_Params": {
+            "Stage_Composite_Fabrication": {
+              "Method": "vacuum hot-pressing",
+              "Temperature": {
+                "Value": 648.15,
+                "Unit": "K",
+                "Original_Values": "375 °C"
+              },
+              "Pressure": {
+                "Value": 3.5,
+                "Unit": "MPa",
+                "Original_Values": "3.5 MPa"
+              }
+            }
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "the PI1/PI3-sized CF/PEEK composites displayed significantly broader modulus transition zones, with interphase widths extending to 240 nm.",
+            "simplified": "PI1/PI3-CF/PEEK: broadened modulus transition zone, interphase width 240 nm"
+          },
+          "Fiber_Architecture": "woven fabric",
+          "Interface_Features": {
+            "Interphase_Width_nm": {
+              "Value": 240,
+              "Unit": "nm",
+              "Original_Values": "240 nm",
+              "Data_Source": "text",
+              "Note": "from PF-QNM modulus profile; significantly broader than Bare-CF/PEEK (180 nm)"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Interlaminar_Shear_Strength",
+            "Value": 80.8,
+            "Unit": "MPa",
+            "Original_Values": "80.8 MPa",
+            "Data_Source": "text",
+            "Test_Condition": {
+              "Loading_Mode": "interlaminar shear"
+            },
+            "Note": "highest ILSS among CF/PEEK samples; text also mentions 80.3 MPa in a comparative context ('shear strengths reaching 71.9 MPa and 80.3 MPa, respectively'), likely reflecting different measurement points or sources"
+          },
+          {
+            "Property_Name": "Flexural_Strength_High_Temperature",
+            "Value": null,
+            "Unit": "MPa",
+            "Original_Values": null,
+            "Data_Source": "text",
+            "Test_Condition": {
+              "Loading_Mode": "three-point bending",
+              "Test_Temperature_Original": "180 °C",
+              "Test_Temperature_K": 453.15
+            },
+            "Note": "text states 'slightly improved flexural strength over Bare-CF/PEEK at 180 °C' but no exact value given"
+          },
+          {
+            "Property_Name": "DMA_Storage_Modulus_Decline_Onset",
+            "Value": null,
+            "Unit": "K",
+            "Data_Source": "text",
+            "Test_Condition": {
+              "Method": "DMA"
+            },
+            "Note": "rapid decline in storage modulus above 150 °C (423.15 K); exact value from Fig. 7g not stated"
+          },
+          {
+            "Property_Name": "DMA_Tan_Delta_Peak_Temperature",
+            "Value": null,
+            "Unit": "K",
+            "Original_Values": "~143 °C",
+            "Data_Source": "text",
+            "Test_Condition": {
+              "Method": "DMA"
+            },
+            "Note": "sharp tan δ increase near PEEK glass transition temperature (~143 °C / ~416.15 K); reflects rapid softening of amorphous phase"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "15",
+      "Sample_ID": "PI2/PI3-CF/PEEK",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Composites",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "the reinforcing effect of PI2/PI3 in the PEEK system was relatively limited",
+        "PI2/PI3-CF/PEI exhibited significantly higher flexural strength"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Composite_Category": "PMC",
+          "Composite_System_Raw": "CF/PEEK with PI2/PI3 binary sizing",
+          "Matrix": {
+            "Material": "PEEK (polyetheretherketone)",
+            "Form": "film",
+            "Thickness": "0.15 mm",
+            "Supplier": "Evonik Industries (Germany)"
+          },
+          "Reinforcement": {
+            "Material": "T300-3K carbon fabric",
+            "Sizing": "PI2/PI3 binary (PAAs2:PAAs3 = 8:2 mass ratio)"
+          },
+          "Fiber_Mass_Fraction": {
+            "Value": 50,
+            "Unit": "wt%",
+            "Original_Values": "~50%"
+          },
+          "Fiber_Volume_Fraction": {
+            "Value": null,
+            "Unit": "vol%",
+            "Note": "论文未给出体积分数，仅给出 ~50 wt% 质量分数"
+          }
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "CF/PEEK composites were similarly fabricated via vacuum hot-pressing at 375 °C and 3.5 MPa. Each laminate was composed of 9 layers of PEEK films and 8 layers of carbon fiber fabrics, also with a fiber mass fraction of ~50%.",
+            "simplified": "CF with PI2/PI3 sizing → vacuum hot-press with PEEK at 375 °C / 3.5 MPa"
+          },
+          "Key_Params": {
+            "Stage_Composite_Fabrication": {
+              "Method": "vacuum hot-pressing",
+              "Temperature": {
+                "Value": 648.15,
+                "Unit": "K",
+                "Original_Values": "375 °C"
+              },
+              "Pressure": {
+                "Value": 3.5,
+                "Unit": "MPa",
+                "Original_Values": "3.5 MPa"
+              }
+            }
+          }
+        },
+        "Structure": {
+          "Fiber_Architecture": "woven fabric"
+        },
+        "Properties": [
+          {
+            "Property_Name": "Interlaminar_Shear_Strength",
+            "Value": null,
+            "Unit": "MPa",
+            "Data_Source": "image",
+            "Note": "shown in Fig. 6c but exact value not stated in text; text notes 'relatively limited' reinforcement in PEEK system"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "16",
+      "Sample_ID": "PI_Polymer_Properties",
+      "Role": "Target",
+      "Data_Nature": "Computed",
+      "base_material": "Polymers",
+      "application": "Structural",
+      "research_paradigm": "Pure_Simulation",
+      "Patch_Tags": [],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Molecular dynamics simulations were conducted to evaluate the occupied volume and free volume distributions",
+        "At 298.15 K, the FFVs of PI3, PI2, and PI1 are calculated as 16.85%, 18.14%, and 19.99%, respectively"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Description": "Three polyimides with different backbone rigidity: PI1 (PMDA+ODA), PI2 (OPDA+ODA), PI3 (OPDA+BAB)"
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "Molecular dynamics simulations were conducted to evaluate the occupied volume and free volume distributions across a temperature range of 298.15–648.15 K.",
+            "simplified": "MD simulations at 298.15–648.15 K for FFV calculation"
+          },
+          "Simulation_Metadata": {
+            "Method": "molecular dynamics simulation",
+            "Temperature_Range": "298.15–648.15 K"
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Fractional_Free_Volume",
+            "Value": 19.99,
+            "Unit": "%",
+            "Original_Values": "19.99%",
+            "Data_Source": "text",
+            "Test_Condition": {
+              "Material": "PI1",
+              "Test_Temperature_K": 298.15
+            }
+          },
+          {
+            "Property_Name": "Fractional_Free_Volume",
+            "Value": 18.14,
+            "Unit": "%",
+            "Original_Values": "18.14%",
+            "Data_Source": "text",
+            "Test_Condition": {
+              "Material": "PI2",
+              "Test_Temperature_K": 298.15
+            }
+          },
+          {
+            "Property_Name": "Fractional_Free_Volume",
+            "Value": 16.85,
+            "Unit": "%",
+            "Original_Values": "16.85%",
+            "Data_Source": "text",
+            "Test_Condition": {
+              "Material": "PI3",
+              "Test_Temperature_K": 298.15
+            }
+          },
+          {
+            "Property_Name": "FFV_Increase_From_298K_to_603K",
+            "Value": 0.47,
+            "Unit": "%",
+            "Original_Values": "0.47%",
+            "Data_Source": "text",
+            "Test_Condition": {
+              "Material": "PI1",
+              "Temperature_Range": "298.15 K to 603.15 K"
+            }
+          },
+          {
+            "Property_Name": "FFV_Increase_From_298K_to_603K",
+            "Value": 4.45,
+            "Unit": "%",
+            "Original_Values": "4.45%",
+            "Data_Source": "text",
+            "Test_Condition": {
+              "Material": "PI2",
+              "Temperature_Range": "298.15 K to 603.15 K"
+            }
+          },
+          {
+            "Property_Name": "FFV_Increase_From_298K_to_603K",
+            "Value": 5.18,
+            "Unit": "%",
+            "Original_Values": "5.18%",
+            "Data_Source": "text",
+            "Test_Condition": {
+              "Material": "PI3",
+              "Temperature_Range": "298.15 K to 603.15 K"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "17",
+      "Sample_ID": "Bare-CF/PEI_SCF_Wear",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Composites",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "short-cut CF reinforced composites",
+        "Bare-CF/PEI and Bare-CF/PEEK showed wear rates as high as 3.6 × 10⁻⁶ and 2.0 × 10⁻⁶ mm³/N·m"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Composite_Category": "PMC",
+          "Composite_System_Raw": "SCF/PEI (short-cut CF/PEI)",
+          "Matrix": {
+            "Material": "PEI"
+          },
+          "Reinforcement": {
+            "Material": "T300-3K carbon fiber, milled",
+            "Average_Length": {
+              "Value": 300,
+              "Unit": "μm",
+              "Original_Values": "~300 μm",
+              "Note": "approximate average length"
+            }
+          },
+          "SCF_to_Matrix_Mass_Ratio": "2:8"
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "short carbon fibers (SCF) and PEI were blended at a mass ratio of 2:8, followed by compression molding at 10 MPa under ambient conditions. The mixture was then subjected to thermal processing at 330 °C under vacuum for 30 min. After natural cooling to room temperature.",
+            "simplified": "SCF + PEI (2:8 mass) → compression mold 10 MPa, RT → thermal process 330 °C, vacuum, 30 min → cool"
+          },
+          "Key_Params": {
+            "Stage1_Blending": {
+              "SCF_to_PEI_Mass_Ratio": "2:8"
+            },
+            "Stage2_Compression_Molding": {
+              "Pressure": {
+                "Value": 10,
+                "Unit": "MPa",
+                "Original_Values": "10 MPa"
+              },
+              "Temperature": "ambient"
+            },
+            "Stage3_Thermal_Processing": {
+              "Temperature": {
+                "Value": 603.15,
+                "Unit": "K",
+                "Original_Values": "330 °C"
+              },
+              "Atmosphere": "vacuum",
+              "Time": "30 min"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Specific_Wear_Rate",
+            "Value": 3.6e-06,
+            "Unit": "mm³/(N·m)",
+            "Original_Values": "3.6 × 10⁻⁶ mm³/N·m",
+            "Data_Source": "text"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "18",
+      "Sample_ID": "Bare-CF/PEEK_SCF_Wear",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Composites",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "SCF/PEEK composites were prepared by blending SCF with PEEK at the same mass ratio of 2:8",
+        "Bare-CF/PEEK showed wear rates as high as 2.0 × 10⁻⁶ mm³/N·m"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Composite_Category": "PMC",
+          "Composite_System_Raw": "SCF/PEEK (short-cut CF/PEEK)",
+          "Matrix": {
+            "Material": "PEEK"
+          },
+          "Reinforcement": {
+            "Material": "T300-3K carbon fiber, milled",
+            "Average_Length": {
+              "Value": 300,
+              "Unit": "μm",
+              "Original_Values": "~300 μm",
+              "Note": "approximate average length"
+            }
+          },
+          "SCF_to_Matrix_Mass_Ratio": "2:8"
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "SCF/PEEK composites were prepared by blending SCF with PEEK at the same mass ratio of 2:8. The mixture was compacted at 10 MPa at room temperature, followed by vacuum-assisted thermal processing at 375 °C for 30 min. The final SCF/PEEK composites were obtained after cooling to room temperature under ambient conditions.",
+            "simplified": "SCF + PEEK (2:8 mass) → compression mold 10 MPa, RT → thermal process 375 °C, vacuum, 30 min → cool"
+          },
+          "Key_Params": {
+            "Stage1_Blending": {
+              "SCF_to_PEEK_Mass_Ratio": "2:8"
+            },
+            "Stage2_Compression_Molding": {
+              "Pressure": {
+                "Value": 10,
+                "Unit": "MPa",
+                "Original_Values": "10 MPa"
+              },
+              "Temperature": "room temperature"
+            },
+            "Stage3_Thermal_Processing": {
+              "Temperature": {
+                "Value": 648.15,
+                "Unit": "K",
+                "Original_Values": "375 °C"
+              },
+              "Atmosphere": "vacuum",
+              "Time": "30 min"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Specific_Wear_Rate",
+            "Value": 2e-06,
+            "Unit": "mm³/(N·m)",
+            "Original_Values": "2.0 × 10⁻⁶ mm³/N·m",
+            "Data_Source": "text"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "19",
+      "Sample_ID": "PI2/PI3-CF/PEI_SCF_Wear",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Composites",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "The modified carbon fibers were milled to an average length of approximately 300 μm",
+        "PI2/PI3-CF/PEI showed substantially reduced wear rates of 2.8 × 10⁻⁶ mm³/N·m"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Composite_Category": "PMC",
+          "Composite_System_Raw": "SCF/PEI with PI2/PI3 sizing (short-cut CF/PEI)",
+          "Matrix": {
+            "Material": "PEI"
+          },
+          "Reinforcement": {
+            "Material": "T300-3K carbon fiber, PI2/PI3-sized, milled",
+            "Average_Length": {
+              "Value": 300,
+              "Unit": "μm",
+              "Original_Values": "~300 μm",
+              "Note": "approximate average length"
+            }
+          },
+          "SCF_to_Matrix_Mass_Ratio": "2:8"
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "The modified carbon fibers were milled to an average length of approximately 300 μm. Short carbon fibers (SCF) and PEI were blended at a mass ratio of 2:8, followed by compression molding at 10 MPa under ambient conditions. The mixture was then subjected to thermal processing at 330 °C under vacuum for 30 min.",
+            "simplified": "PI2/PI3-sized CF milled to ~300 μm → blend with PEI (2:8) → compression mold 10 MPa → thermal process 330 °C, vacuum, 30 min"
+          },
+          "Key_Params": {
+            "Stage1_Blending": {
+              "SCF_to_PEI_Mass_Ratio": "2:8"
+            },
+            "Stage2_Compression_Molding": {
+              "Pressure": {
+                "Value": 10,
+                "Unit": "MPa",
+                "Original_Values": "10 MPa"
+              },
+              "Temperature": "ambient"
+            },
+            "Stage3_Thermal_Processing": {
+              "Temperature": {
+                "Value": 603.15,
+                "Unit": "K",
+                "Original_Values": "330 °C"
+              },
+              "Atmosphere": "vacuum",
+              "Time": "30 min"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Specific_Wear_Rate",
+            "Value": 2.8e-06,
+            "Unit": "mm³/(N·m)",
+            "Original_Values": "2.8 × 10⁻⁶ mm³/N·m",
+            "Data_Source": "text"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "20",
+      "Sample_ID": "PI1/PI3-CF/PEEK_SCF_Wear",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Composites",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "The modified carbon fibers were milled to an average length of approximately 300 μm",
+        "PI1/PI3-CF/PEEK showed substantially reduced wear rates of 1.6 × 10⁻⁶ mm³/N·m"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Composite_Category": "PMC",
+          "Composite_System_Raw": "SCF/PEEK with PI1/PI3 sizing (short-cut CF/PEEK)",
+          "Matrix": {
+            "Material": "PEEK"
+          },
+          "Reinforcement": {
+            "Material": "T300-3K carbon fiber, PI1/PI3-sized, milled",
+            "Average_Length": {
+              "Value": 300,
+              "Unit": "μm",
+              "Original_Values": "~300 μm",
+              "Note": "approximate average length"
+            }
+          },
+          "SCF_to_Matrix_Mass_Ratio": "2:8"
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "The modified carbon fibers were milled to an average length of approximately 300 μm. SCF/PEEK composites were prepared by blending SCF with PEEK at the same mass ratio of 2:8. The mixture was compacted at 10 MPa at room temperature, followed by vacuum-assisted thermal processing at 375 °C for 30 min.",
+            "simplified": "PI1/PI3-sized CF milled to ~300 μm → blend with PEEK (2:8) → compression mold 10 MPa → thermal process 375 °C, vacuum, 30 min"
+          },
+          "Key_Params": {
+            "Stage1_Blending": {
+              "SCF_to_PEEK_Mass_Ratio": "2:8"
+            },
+            "Stage2_Compression_Molding": {
+              "Pressure": {
+                "Value": 10,
+                "Unit": "MPa",
+                "Original_Values": "10 MPa"
+              },
+              "Temperature": "room temperature"
+            },
+            "Stage3_Thermal_Processing": {
+              "Temperature": {
+                "Value": 648.15,
+                "Unit": "K",
+                "Original_Values": "375 °C"
+              },
+              "Atmosphere": "vacuum",
+              "Time": "30 min"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Specific_Wear_Rate",
+            "Value": 1.6e-06,
+            "Unit": "mm³/(N·m)",
+            "Original_Values": "1.6 × 10⁻⁶ mm³/N·m",
+            "Data_Source": "text"
+          }
+        ]
+      }
+    }
+  ]
+}

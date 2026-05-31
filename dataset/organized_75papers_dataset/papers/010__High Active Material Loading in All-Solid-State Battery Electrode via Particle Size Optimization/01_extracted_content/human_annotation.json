@@ -1,0 +1,518 @@
+{
+  "Paper_Metadata": {
+    "Paper_Title": "High Active Material Loading in All-Solid-State Battery Electrode via Particle Size Optimization",
+    "DOI": "10.1002/aenm.201902881"
+  },
+  "items": [
+    {
+      "Sample_ID": "LPS_8um",
+      "Component_Type": "Electrolyte",
+      "Gradient_Material": false,
+      "Gradient_Group_ID": null,
+      "Composition_Info": {
+        "Role": "Target",
+        "Material_Name_Raw": "75Li₂S–25P₂S₅ (LPS) amorphous solid electrolyte, D ≈ 8 μm",
+        "Nominal_Composition": {
+          "Composition_Type": "mol%",
+          "Elements_Normalized": null
+        },
+        "Measured_Composition": {
+          "Composition_Type": null,
+          "Elements_Normalized": null,
+          "Measurement_Method": null
+        },
+        "Note": "Amorphous sulfide solid electrolyte prepared by wet ball milling. Used as catholyte in composite cathode."
+      },
+      "Process_Info": {
+        "Process_Category": "Wet ball milling",
+        "Process_Text": {
+          "original": "The small-particle-size LPS used in the cathode composite was prepared by wet ball milling the LPS SE with heptane and dibutyl ether using a Retsch PM200 ball mill. LPS particles with different average diameters were prepared using ZrO2 balls ranging in size from 1 to 10 mm under different ball-milling conditions.",
+          "simplified": "Wet ball milling of LPS with heptane and dibutyl ether using Retsch PM200 ball mill with ZrO2 balls (1-10 mm)."
+        },
+        "Equipment": "Retsch PM200 ball mill",
+        "Key_Params": {
+          "Synthesis_Method": "Wet ball milling",
+          "Ball_Milling_Medium": "Heptane and dibutyl ether with ZrO2 balls (1-10 mm)",
+          "SE_Particle_Size_um": 8
+        }
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": "Amorphous structure confirmed by XRD. SEM images show particle morphology.",
+          "simplified": "Amorphous sulfide structure."
+        },
+        "Main_Phase": "Amorphous 75Li₂S–25P₂S₅",
+        "Grain_Size_avg_um": 8,
+        "Advanced_Quantitative_Features": {}
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Ionic_Conductivity",
+          "Test_Condition": "Room temperature",
+          "Battery_Configuration": null,
+          "Value_Numeric": null,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "mS/cm",
+          "Test_Temperature_K": 298.15,
+          "Data_Source": "text",
+          "Note": "Ionic conductivity decreases with smaller particle sizes due to increased grain boundary resistance and residual solvent effects"
+        }
+      ]
+    },
+    {
+      "Sample_ID": "LPS_5um",
+      "Component_Type": "Electrolyte",
+      "Gradient_Material": false,
+      "Gradient_Group_ID": null,
+      "Composition_Info": {
+        "Role": "Target",
+        "Material_Name_Raw": "75Li₂S–25P₂S₅ (LPS) amorphous solid electrolyte, D ≈ 5 μm",
+        "Nominal_Composition": {
+          "Composition_Type": "mol%",
+          "Elements_Normalized": null
+        },
+        "Measured_Composition": {
+          "Composition_Type": null,
+          "Elements_Normalized": null,
+          "Measurement_Method": null
+        },
+        "Note": "Amorphous sulfide solid electrolyte prepared by wet ball milling."
+      },
+      "Process_Info": {
+        "Process_Category": "Wet ball milling",
+        "Process_Text": {
+          "original": "Wet ball milling using Retsch PM200 ball mill with different conditions.",
+          "simplified": "Wet ball milling with different milling conditions to achieve smaller particle size."
+        },
+        "Equipment": "Retsch PM200 ball mill",
+        "Key_Params": {
+          "Synthesis_Method": "Wet ball milling",
+          "SE_Particle_Size_um": 5
+        }
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": "Amorphous structure.",
+          "simplified": "Amorphous sulfide structure."
+        },
+        "Main_Phase": "Amorphous 75Li₂S–25P₂S₅",
+        "Grain_Size_avg_um": 5,
+        "Advanced_Quantitative_Features": {}
+      },
+      "Properties_Info": []
+    },
+    {
+      "Sample_ID": "LPS_3um",
+      "Component_Type": "Electrolyte",
+      "Gradient_Material": false,
+      "Gradient_Group_ID": null,
+      "Composition_Info": {
+        "Role": "Target",
+        "Material_Name_Raw": "75Li₂S–25P₂S₅ (LPS) amorphous solid electrolyte, D ≈ 3 μm",
+        "Nominal_Composition": {
+          "Composition_Type": "mol%",
+          "Elements_Normalized": null
+        },
+        "Measured_Composition": {
+          "Composition_Type": null,
+          "Elements_Normalized": null,
+          "Measurement_Method": null
+        },
+        "Note": "Amorphous sulfide solid electrolyte prepared by wet ball milling."
+      },
+      "Process_Info": {
+        "Process_Category": "Wet ball milling",
+        "Process_Text": {
+          "original": "Wet ball milling using Retsch PM200 ball mill.",
+          "simplified": "Wet ball milling."
+        },
+        "Equipment": "Retsch PM200 ball mill",
+        "Key_Params": {
+          "Synthesis_Method": "Wet ball milling",
+          "SE_Particle_Size_um": 3
+        }
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": "Amorphous structure.",
+          "simplified": "Amorphous sulfide structure."
+        },
+        "Main_Phase": "Amorphous 75Li₂S–25P₂S₅",
+        "Grain_Size_avg_um": 3,
+        "Advanced_Quantitative_Features": {}
+      },
+      "Properties_Info": []
+    },
+    {
+      "Sample_ID": "LPS_1.5um",
+      "Component_Type": "Electrolyte",
+      "Gradient_Material": false,
+      "Gradient_Group_ID": null,
+      "Composition_Info": {
+        "Role": "Target",
+        "Material_Name_Raw": "75Li₂S–25P₂S₅ (LPS) amorphous solid electrolyte, D ≈ 1.5 μm",
+        "Nominal_Composition": {
+          "Composition_Type": "mol%",
+          "Elements_Normalized": null
+        },
+        "Measured_Composition": {
+          "Composition_Type": null,
+          "Elements_Normalized": null,
+          "Measurement_Method": null
+        },
+        "Note": "Smallest particle size LPS used in the study. Amorphous sulfide solid electrolyte."
+      },
+      "Process_Info": {
+        "Process_Category": "Wet ball milling",
+        "Process_Text": {
+          "original": "Wet ball milling using Retsch PM200 ball mill.",
+          "simplified": "Wet ball milling to achieve smallest particle size."
+        },
+        "Equipment": "Retsch PM200 ball mill",
+        "Key_Params": {
+          "Synthesis_Method": "Wet ball milling",
+          "SE_Particle_Size_um": 1.5
+        }
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": "Amorphous structure.",
+          "simplified": "Amorphous sulfide structure."
+        },
+        "Main_Phase": "Amorphous 75Li₂S–25P₂S₅",
+        "Grain_Size_avg_um": 1.5,
+        "Advanced_Quantitative_Features": {}
+      },
+      "Properties_Info": []
+    },
+    {
+      "Sample_ID": "LZO_NMC_5um",
+      "Component_Type": "Cathode",
+      "Gradient_Material": false,
+      "Gradient_Group_ID": null,
+      "Composition_Info": {
+        "Role": "Target",
+        "Material_Name_Raw": "LZO-coated LiNi₀.₅Mn₀.₃Co₀.₂O₂ (NMC) cathode active material, D ≈ 5 μm",
+        "Nominal_Composition": {
+          "Composition_Type": null,
+          "Elements_Normalized": null
+        },
+        "Measured_Composition": {
+          "Composition_Type": null,
+          "Elements_Normalized": null,
+          "Measurement_Method": null
+        },
+        "Note": "Small-sized NMC powder (DCAM ≈ 5 μm) provided by Samsung Research Japan. 6-8 nm LZO coating applied by Samsung Research Japan to minimize interfacial reaction between NMC and LPS."
+      },
+      "Process_Info": {
+        "Process_Category": "Coating",
+        "Process_Text": {
+          "original": "Small-sized NMC powder (DCAM ≈ 5 μm) was provided by Samsung Research Japan. The 6–8 nm LZO coating was applied to both NMC powders by Samsung Research Japan using the procedure described by Ito et al.",
+          "simplified": "6-8 nm LZO coating applied to NMC by Samsung Research Japan using Ito et al. procedure."
+        },
+        "Equipment": null,
+        "Key_Params": {
+          "Synthesis_Method": "Coating procedure (Ito et al.)",
+          "Coating_Thickness_nm": 6,
+          "CAM_Particle_Size_um": 5
+        }
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": "LZO-coated NMC particles with average diameter of 5 μm. LZO coating minimizes interfacial reaction between NMC and LPS.",
+          "simplified": "LZO-coated NMC with 5 μm average diameter."
+        },
+        "Main_Phase": "Layered NMC (R-3m)",
+        "Coating_Material": "Li₂O-ZrO₂ (LZO)",
+        "Coating_Thickness_nm": 6,
+        "Grain_Size_avg_um": 5,
+        "Advanced_Quantitative_Features": {}
+      },
+      "Properties_Info": []
+    },
+    {
+      "Sample_ID": "LZO_NMC_12um",
+      "Component_Type": "Cathode",
+      "Gradient_Material": false,
+      "Gradient_Group_ID": null,
+      "Composition_Info": {
+        "Role": "Target",
+        "Material_Name_Raw": "LZO-coated LiNi₀.₅Mn₀.₃Co₀.₂O₂ (NMC) cathode active material, D ≈ 12 μm",
+        "Nominal_Composition": {
+          "Composition_Type": null,
+          "Elements_Normalized": null
+        },
+        "Measured_Composition": {
+          "Composition_Type": null,
+          "Elements_Normalized": null,
+          "Measurement_Method": null
+        },
+        "Note": "Large-sized NMC powder (DCAM ≈ 12 μm) purchased from MSE Supplies LLC. 6-8 nm LZO coating applied."
+      },
+      "Process_Info": {
+        "Process_Category": "Coating",
+        "Process_Text": {
+          "original": "Large-sized NMC powder (DCAM = ≈12 μm) was purchased from MSE Supplies LLC. The 6–8 nm LZO coating was applied.",
+          "simplified": "6-8 nm LZO coating applied to 12 μm NMC."
+        },
+        "Equipment": null,
+        "Key_Params": {
+          "Synthesis_Method": "Coating procedure",
+          "Coating_Thickness_nm": 8,
+          "CAM_Particle_Size_um": 12
+        }
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": "LZO-coated NMC particles with average diameter of 12 μm.",
+          "simplified": "LZO-coated NMC with 12 μm average diameter."
+        },
+        "Main_Phase": "Layered NMC (R-3m)",
+        "Coating_Material": "Li₂O-ZrO₂ (LZO)",
+        "Coating_Thickness_nm": 8,
+        "Grain_Size_avg_um": 12,
+        "Advanced_Quantitative_Features": {}
+      },
+      "Properties_Info": []
+    },
+    {
+      "Sample_ID": "Composite_NMC5um_LPS8um_fCAM60",
+      "Component_Type": "Composite_Cathode",
+      "Gradient_Material": false,
+      "Gradient_Group_ID": null,
+      "Composition_Info": {
+        "Role": "Target",
+        "Material_Name_Raw": "LZO-NMC (5 μm) / LPS (8 μm) / CNF composite cathode, fCAM = 60 wt% (60:35:5)",
+        "Nominal_Composition": {
+          "Composition_Type": "wt%",
+          "Elements_Normalized": null
+        },
+        "Measured_Composition": {
+          "Composition_Type": null,
+          "Elements_Normalized": null,
+          "Measurement_Method": null
+        },
+        "Note": "Composite cathode: 60 wt% NMC (5 μm) + 35 wt% LPS (8 μm) + 5 wt% CNF. Particle size ratio λ = DCAM/DSE = 5/8 = 0.625. Low λ results in poor cathode utilization."
+      },
+      "Process_Info": {
+        "Process_Category": "Hand mixing",
+        "Process_Text": {
+          "original": "The composite cathode was fabricated by first hand-mixing the LZO-coated NMC particles and LPS for ≈10 min and then mixing them for another ≈10 min after adding 5 wt% CNFs. The cell was assembled using a custom-made pressure cell consisting of a polyether ether ketone (PEEK) cylinder with an inner diameter of 8 mm and two 8-mm-diameter stainless-steel rods as current collectors. Bulk LPS electrolyte (35 mg) was added and compressed under ≈100-MPa pressure. The cathode composite (≈5 mg) was then spread evenly on top and compacted under ≈200-MPa pressure. Finally, an 8-mm-diameter piece of In metal was attached as the anode, and ≈200-MPa pressure was again applied.",
+          "simplified": "Hand-mix NMC + LPS for 10 min, then add 5 wt% CNF and mix 10 min. Cell assembly: 35 mg bulk LPS compressed at 100 MPa, 5 mg composite added and pressed at 200 MPa, In anode added and pressed at 200 MPa."
+        },
+        "Equipment": "Custom-made pressure cell with PEEK cylinder",
+        "Key_Params": {
+          "Synthesis_Method": "Hand mixing",
+          "Cold_Pressing_Pressure_MPa": 200,
+          "Stack_Pressure_MPa": 5,
+          "CAM_Particle_Size_um": 5,
+          "SE_Particle_Size_um": 8,
+          "Particle_Size_Ratio_Lambda": 0.625,
+          "CAM_Loading_wt_pct": 60,
+          "SE_Loading_wt_pct": 35,
+          "Conductor_Loading_wt_pct": 5,
+          "Cathode_Mass_mg": 5,
+          "Cathode_Area_cm2": 0.5
+        }
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": "Modeling shows that for λ < 1, percolation significantly worsens. The SE percolating network becomes smaller upon increasing the SE particle size. Most of the active CAM is limited to the volume near the separator, leading to low cathode utilization.",
+          "simplified": "Poor percolation due to λ < 1. SE network smaller, most active CAM limited to separator vicinity."
+        },
+        "Main_Phase": "NMC + LPS + CNF composite",
+        "Percolation_Network_Qualitative": "Poor percolation, fragmented SE network",
+        "Advanced_Quantitative_Features": {
+          "Cathode_Utilization_pct": 50
+        }
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Discharge_Capacity",
+          "Test_Condition": "First cycle",
+          "Battery_Configuration": "In | bulk LPS | composite cathode",
+          "Value_Numeric": 75,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "mAh/g",
+          "Test_Temperature_K": 298.15,
+          "Current_Density_mA_cm2": 0.05,
+          "C_Rate": null,
+          "Voltage_Range_V": "2.0-3.7 V vs In",
+          "Cycle_Number": 1,
+          "Frequency_Range_Hz": null,
+          "AC_Amplitude_mV": null,
+          "Data_Source": "text",
+          "Test_Specimen": "5 mg composite cathode",
+          "Note": "Low discharge capacity due to poor cathode utilization (λ = 0.625 < 1)"
+        }
+      ]
+    },
+    {
+      "Sample_ID": "Composite_NMC5um_LPS1.5um_fCAM80",
+      "Component_Type": "Composite_Cathode",
+      "Gradient_Material": false,
+      "Gradient_Group_ID": null,
+      "Composition_Info": {
+        "Role": "Target",
+        "Material_Name_Raw": "LZO-NMC (5 μm) / LPS (1.5 μm) / CNF composite cathode, fCAM = 80 wt% (80:15:5)",
+        "Nominal_Composition": {
+          "Composition_Type": "wt%",
+          "Elements_Normalized": null
+        },
+        "Measured_Composition": {
+          "Composition_Type": null,
+          "Elements_Normalized": null,
+          "Measurement_Method": null
+        },
+        "Note": "Composite cathode: 80 wt% NMC (5 μm) + 15 wt% LPS (1.5 μm) + 5 wt% CNF. Particle size ratio λ = DCAM/DSE = 5/1.5 = 3.33. High λ enables high cathode loading with full utilization."
+      },
+      "Process_Info": {
+        "Process_Category": "Hand mixing",
+        "Process_Text": {
+          "original": "Hand-mixing NMC and LPS for 10 min, then adding 5 wt% CNF and mixing for another 10 min. Cell assembly with 200 MPa pressing pressure.",
+          "simplified": "Hand mixing with 200 MPa pressing pressure."
+        },
+        "Equipment": "Custom-made pressure cell",
+        "Key_Params": {
+          "Synthesis_Method": "Hand mixing",
+          "Cold_Pressing_Pressure_MPa": 200,
+          "Stack_Pressure_MPa": 5,
+          "CAM_Particle_Size_um": 5,
+          "SE_Particle_Size_um": 1.5,
+          "Particle_Size_Ratio_Lambda": 3.33,
+          "CAM_Loading_wt_pct": 80,
+          "SE_Loading_wt_pct": 15,
+          "Conductor_Loading_wt_pct": 5,
+          "Cathode_Mass_mg": 5,
+          "Cathode_Area_cm2": 0.5
+        }
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": "With high λ = 3.33, percolation improves significantly. The SE percolating network is well-connected, enabling full cathode utilization even at high loading (80 wt%). Modeling shows that for λ > 2, full utilization can be achieved at this loading.",
+          "simplified": "Good percolation due to high λ = 3.33. Well-connected SE network enables full cathode utilization at high loading."
+        },
+        "Main_Phase": "NMC + LPS + CNF composite",
+        "Percolation_Network_Qualitative": "Well-connected SE percolation network",
+        "Advanced_Quantitative_Features": {
+          "Cathode_Utilization_pct": 98
+        }
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Discharge_Capacity",
+          "Test_Condition": "First cycle",
+          "Battery_Configuration": "In | bulk LPS | composite cathode",
+          "Value_Numeric": 155,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "mAh/g",
+          "Test_Temperature_K": 298.15,
+          "Current_Density_mA_cm2": 0.05,
+          "C_Rate": null,
+          "Voltage_Range_V": "2.0-3.7 V vs In",
+          "Cycle_Number": 1,
+          "Frequency_Range_Hz": null,
+          "AC_Amplitude_mV": null,
+          "Data_Source": "text",
+          "Test_Specimen": "5 mg composite cathode",
+          "Note": "High discharge capacity with near-full cathode utilization due to high λ = 3.33"
+        },
+        {
+          "Property_Name": "Cathode_Volume_Loading",
+          "Test_Condition": "Calculated from weight loading",
+          "Battery_Configuration": null,
+          "Value_Numeric": 50,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "vol%",
+          "Test_Temperature_K": null,
+          "Current_Density_mA_cm2": null,
+          "C_Rate": null,
+          "Voltage_Range_V": null,
+          "Cycle_Number": null,
+          "Frequency_Range_Hz": null,
+          "AC_Amplitude_mV": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": "For fCAM = 80 wt%, the volume loading is ≈50 vol%, comparable to liquid cell cathodes (>45 vol%)"
+        }
+      ]
+    },
+    {
+      "Sample_ID": "Composite_NMC12um_LPS1.5um_fCAM80",
+      "Component_Type": "Composite_Cathode",
+      "Gradient_Material": false,
+      "Gradient_Group_ID": null,
+      "Composition_Info": {
+        "Role": "Target",
+        "Material_Name_Raw": "LZO-NMC (12 μm) / LPS (1.5 μm) / CNF composite cathode, fCAM = 80 wt% (80:15:5)",
+        "Nominal_Composition": {
+          "Composition_Type": "wt%",
+          "Elements_Normalized": null
+        },
+        "Measured_Composition": {
+          "Composition_Type": null,
+          "Elements_Normalized": null,
+          "Measurement_Method": null
+        },
+        "Note": "Composite cathode with large CAM particles: 80 wt% NMC (12 μm) + 15 wt% LPS (1.5 μm) + 5 wt% CNF. Particle size ratio λ = DCAM/DSE = 12/1.5 = 8. Very high λ enables highest cathode loading with full utilization."
+      },
+      "Process_Info": {
+        "Process_Category": "Hand mixing",
+        "Process_Text": {
+          "original": "Hand-mixing NMC and LPS for 10 min, then adding 5 wt% CNF and mixing for another 10 min. Cell assembly with 200 MPa pressing pressure.",
+          "simplified": "Hand mixing with 200 MPa pressing pressure."
+        },
+        "Equipment": "Custom-made pressure cell",
+        "Key_Params": {
+          "Synthesis_Method": "Hand mixing",
+          "Cold_Pressing_Pressure_MPa": 200,
+          "Stack_Pressure_MPa": 5,
+          "CAM_Particle_Size_um": 12,
+          "SE_Particle_Size_um": 1.5,
+          "Particle_Size_Ratio_Lambda": 8,
+          "CAM_Loading_wt_pct": 80,
+          "SE_Loading_wt_pct": 15,
+          "Conductor_Loading_wt_pct": 5,
+          "Cathode_Mass_mg": 5,
+          "Cathode_Area_cm2": 0.5
+        }
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": "With very high λ = 8, excellent percolation achieved. The SE percolating network is well-connected throughout the composite, enabling full cathode utilization even at very high loading. This demonstrates that commercially-relevant, energy-dense cathode composite is achievable through simple mixing and pressing method.",
+          "simplified": "Excellent percolation due to very high λ = 8. Well-connected SE network enables full utilization at high loading."
+        },
+        "Main_Phase": "NMC + LPS + CNF composite",
+        "Percolation_Network_Qualitative": "Excellent SE percolation network",
+        "Advanced_Quantitative_Features": {
+          "Cathode_Utilization_pct": 100
+        }
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Discharge_Capacity",
+          "Test_Condition": "First cycle",
+          "Battery_Configuration": "In | bulk LPS | composite cathode",
+          "Value_Numeric": 155,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "mAh/g",
+          "Test_Temperature_K": 298.15,
+          "Current_Density_mA_cm2": 0.05,
+          "C_Rate": null,
+          "Voltage_Range_V": "2.0-3.7 V vs In",
+          "Cycle_Number": 1,
+          "Frequency_Range_Hz": null,
+          "AC_Amplitude_mV": null,
+          "Data_Source": "text",
+          "Test_Specimen": "5 mg composite cathode",
+          "Note": "Full discharge capacity achieved with λ = 8, demonstrating liquid-cell-level cathode volume loading (≈50 vol%) is achievable in SSBs"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1531 @@
+{
+  "Paper_Metadata": {
+    "Paper_Title": "Controlling strength and ductility: Dislocation-based model of necking instability and its verification for ultrafine grain 316L steel",
+    "DOI": null
+  },
+  "Paper_Routing": {
+    "base_material": "Metals",
+    "application": "Structural",
+    "research_paradigm": "Hybrid",
+    "Supplements_Loaded": [
+      "directions/base/Metals.txt",
+      "directions/application/Structural.txt",
+      "directions/paradigm/Hybrid.txt"
+    ],
+    "Patch_Tags": [
+      "SPD"
+    ],
+    "Needs_Mixed_Routing_Check": false
+  },
+  "items": [
+    {
+      "Item_ID": "item_01",
+      "Sample_ID": "316L_as-annealed",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 3: The steel plates were annealed at 1323 K for 1 h in vacuum.",
+        "Fig. 1 caption",
+        "Table 1: Chemical composition"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Austenitic stainless steel",
+          "Material_Name_Raw": "SUS316L",
+          "Measured_Composition": {
+            "Type": "wt%",
+            "C": {
+              "Value": 0.007,
+              "Unit": "wt%",
+              "Original_Values": "0.007"
+            },
+            "Si": {
+              "Value": 0.68,
+              "Unit": "wt%",
+              "Original_Values": "0.68"
+            },
+            "Mn": {
+              "Value": 1.15,
+              "Unit": "wt%",
+              "Original_Values": "1.15"
+            },
+            "P": {
+              "Value": 0.032,
+              "Unit": "wt%",
+              "Original_Values": "0.032"
+            },
+            "S": {
+              "Value": 0.001,
+              "Unit": "wt%",
+              "Original_Values": "0.001"
+            },
+            "Ni": {
+              "Value": 12.1,
+              "Unit": "wt%",
+              "Original_Values": "12.1"
+            },
+            "Cr": {
+              "Value": 17.42,
+              "Unit": "wt%",
+              "Original_Values": "17.42"
+            },
+            "Mo": {
+              "Value": 2.05,
+              "Unit": "wt%",
+              "Original_Values": "2.05"
+            },
+            "Fe": "Balance"
+          },
+          "Note": "Fe = Balance; normalized ≈ 66.56 wt% (Computed). Composition from Table 1 is shared for all samples in this study."
+        },
+        "Processing": {
+          "Process_Category": "Annealing (initial state)",
+          "Process_Text": {
+            "original": "The steel plates were annealed at 1323 K for 1 h in vacuum.",
+            "simplified": "Initial annealing at 1323 K for 1 h in vacuum"
+          },
+          "Stages": {
+            "Stage1": {
+              "Operation": "Annealing",
+              "Temperature_K": 1323,
+              "Time_h": 1,
+              "Atmosphere": "vacuum",
+              "Original_Values": "1323 K, 1 h, vacuum"
+            }
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "As-annealed condition (initial state before ECAP).",
+            "simplified": "Coarse-grained austenitic 316L, annealed state"
+          },
+          "Main_Phase": {
+            "Phase_Name": "austenite (γ)",
+            "Crystal_Structure": "FCC"
+          }
+        },
+        "Properties": [
+          {
+            "Property_Type": "Tensile",
+            "Yield_Strength": {
+              "Value_MPa": 270,
+              "Original_Values": "270 MPa",
+              "Note": "σ₀.₂ in as-annealed state, from text"
+            },
+            "Data_Source": "text",
+            "Test_Condition": {
+              "Loading_Mode": "tension",
+              "Test_Temperature_Original": "room temperature",
+              "Strain_Rate_s1": 0.001,
+              "Strain_Rate_Original": "10⁻³ s⁻¹",
+              "Environment": "air"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "item_02",
+      "Sample_ID": "316L_as-ECAP",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "SPD"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 3: ECAP processing details",
+        "Table 2: as ECAP row",
+        "Fig. 4: TEM micrographs"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Austenitic stainless steel",
+          "Material_Name_Raw": "SUS316L",
+          "Note": "Same composition as Table 1; shared with item_01."
+        },
+        "Processing": {
+          "Process_Category": "ECAP (Equal Channel Angular Pressing)",
+          "Process_Text": {
+            "original": "The billets for ECAP processing 4×4×40 mm³ in size were cut by spark erosion. They were then pressed at 423 K through an ECAP die with 4×4 mm² square channels intersecting at 90° with sharp corners.",
+            "simplified": "ECAP at 423 K, 1 pass, die angle 90°, sharp corners, billet 4×4×40 mm³"
+          },
+          "Stages": {
+            "Stage1": {
+              "Operation": "Pre-annealing",
+              "Temperature_K": 1323,
+              "Time_h": 1,
+              "Atmosphere": "vacuum",
+              "Original_Values": "1323 K, 1 h, vacuum",
+              "Note": "Shared initial heat treatment per Section 3."
+            },
+            "Stage2": {
+              "Operation": "Billet cutting",
+              "Method": "spark erosion",
+              "Billet_Size": "4×4×40 mm³"
+            },
+            "Stage3": {
+              "Operation": "ECAP",
+              "Number_of_Passes": 1,
+              "ECAP_Temperature_K": 423,
+              "Die_Channel_Size": "4×4 mm²",
+              "Die_Channel_Angle_deg": 90,
+              "Corner_Type": "sharp",
+              "Original_Values": "423 K, 1 pass, 90°, sharp corners"
+            }
+          },
+          "Equipment": [
+            {
+              "Name": "ECAP die",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Shimadzu AGI-20 kN screw-driven machine",
+              "Category": "Testing"
+            },
+            {
+              "Name": "JEOL JEM-2100 TEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "spark erosion machine",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "twin-jet electrolytic polisher",
+              "Category": "Characterization"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "The ECAP processed samples contained large populations of very thin deformation twins, and non-twinned regions with severely distorted grain microstructures and a high dislocation density. The microstructure appears to be non-homogeneous, comprising two major constituents with approximately equal volume fractions.",
+            "simplified": "UFG 316L after 1 ECAP pass: heterogeneous microstructure with ~50 vol% deformation twins and ~50 vol% dislocation-rich non-twinned regions"
+          },
+          "Main_Phase": {
+            "Phase_Name": "austenite (γ)",
+            "Crystal_Structure": "FCC"
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "deformation twins",
+              "Crystal_Structure": "FCC (coherent twin boundary)",
+              "Volume_Fraction": {
+                "Value": null,
+                "Original_Values": "approximately equal volume fractions",
+                "Note": "Twinned and non-twinned regions each approximately 50 vol%"
+              }
+            }
+          ],
+          "Advanced_Quantitative_Features": {
+            "microstructure_heterogeneity": "two major constituents with approximately equal volume fractions: thin deformation twins and severely distorted dislocation-rich regions"
+          }
+        },
+        "Properties": [
+          {
+            "Property_Type": "Tensile",
+            "Yield_Strength": {
+              "Value_MPa": 921,
+              "Original_Values": "921 MPa"
+            },
+            "Elongation_Uniform": {
+              "Value_pct": 2.1,
+              "Original_Values": "0.021 (engineering strain)"
+            },
+            "Data_Source": "table",
+            "Test_Condition": {
+              "Loading_Mode": "tension",
+              "Test_Temperature_Original": "room temperature",
+              "Strain_Rate_s1": 0.001,
+              "Strain_Rate_Original": "10⁻³ s⁻¹",
+              "Environment": "air",
+              "Specimen_Dimensions": "1.5×1.5 mm² cross section, 5 mm gauge length, longitudinal axis parallel to extrusion direction"
+            },
+            "Note": "Yield strength from text (σ₀.₂ = 921 MPa after a single ECAP pass). Uniform elongation from Table 2 (as ECAP row).",
+            "True_Necking_Strain": {
+              "Value": 0.021,
+              "Original_Values": "0.021 (true strain εₙ)"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "item_03",
+      "Sample_ID": "316L_ECAP_573K_ann",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "SPD"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 3: annealed in vacuum at different temperatures varied from 573 K to 1073 K for 1 h",
+        "Table 2: 573 K row"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Austenitic stainless steel",
+          "Material_Name_Raw": "SUS316L",
+          "Note": "Same composition as Table 1."
+        },
+        "Processing": {
+          "Process_Category": "ECAP + Annealing",
+          "Process_Text": {
+            "original": "The ECAP processed billets were annealed in vacuum at different temperatures varied from 573 K to 1073 K for 1 h.",
+            "simplified": "ECAP (1 pass, 423 K) followed by annealing at 573 K for 1 h in vacuum"
+          },
+          "Stages": {
+            "Stage1": {
+              "Operation": "Pre-annealing",
+              "Temperature_K": 1323,
+              "Time_h": 1,
+              "Atmosphere": "vacuum",
+              "Note": "Shared initial treatment per Section 3."
+            },
+            "Stage2": {
+              "Operation": "ECAP",
+              "Number_of_Passes": 1,
+              "ECAP_Temperature_K": 423,
+              "Original_Values": "423 K, 1 pass, 90° die"
+            },
+            "Stage3": {
+              "Operation": "Post-ECAP Annealing",
+              "Temperature_K": 573,
+              "Time_h": 1,
+              "Atmosphere": "vacuum",
+              "Original_Values": "573 K, 1 h, vacuum"
+            }
+          },
+          "Equipment": [
+            {
+              "Name": "ECAP die",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Shimadzu AGI-20 kN screw-driven machine",
+              "Category": "Testing"
+            },
+            {
+              "Name": "JEOL JEM-2100 TEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "spark erosion machine",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "twin-jet electrolytic polisher",
+              "Category": "Characterization"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Annealing below 773 K did not result in any notable change of the yield stress or the ultimate tensile strength, although the strain hardening behaviour was affected appreciably.",
+            "simplified": "UFG structure retained after 573 K anneal; no significant microstructural change"
+          },
+          "Main_Phase": {
+            "Phase_Name": "austenite (γ)",
+            "Crystal_Structure": "FCC"
+          }
+        },
+        "Properties": [
+          {
+            "Property_Type": "Tensile",
+            "Elongation_Uniform": {
+              "Value_pct": 2.2,
+              "Original_Values": "0.022 (engineering strain)"
+            },
+            "Data_Source": "table",
+            "Test_Condition": {
+              "Loading_Mode": "tension",
+              "Test_Temperature_Original": "room temperature",
+              "Strain_Rate_s1": 0.001,
+              "Strain_Rate_Original": "10⁻³ s⁻¹",
+              "Environment": "air",
+              "Specimen_Dimensions": "1.5×1.5 mm² cross section, 5 mm gauge length"
+            },
+            "True_Necking_Strain": {
+              "Value": 0.022,
+              "Original_Values": "0.022 (true strain εₙ)"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "item_04",
+      "Sample_ID": "316L_ECAP_673K_ann",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "SPD"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 3",
+        "Table 2: 673 K row"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Austenitic stainless steel",
+          "Material_Name_Raw": "SUS316L",
+          "Note": "Same composition as Table 1."
+        },
+        "Processing": {
+          "Process_Category": "ECAP + Annealing",
+          "Process_Text": {
+            "original": "The ECAP processed billets were annealed in vacuum at different temperatures varied from 573 K to 1073 K for 1 h.",
+            "simplified": "ECAP (1 pass, 423 K) followed by annealing at 673 K for 1 h in vacuum"
+          },
+          "Stages": {
+            "Stage1": {
+              "Operation": "Pre-annealing",
+              "Temperature_K": 1323,
+              "Time_h": 1,
+              "Atmosphere": "vacuum",
+              "Note": "Shared initial treatment per Section 3."
+            },
+            "Stage2": {
+              "Operation": "ECAP",
+              "Number_of_Passes": 1,
+              "ECAP_Temperature_K": 423,
+              "Original_Values": "423 K, 1 pass"
+            },
+            "Stage3": {
+              "Operation": "Post-ECAP Annealing",
+              "Temperature_K": 673,
+              "Time_h": 1,
+              "Atmosphere": "vacuum",
+              "Original_Values": "673 K, 1 h, vacuum"
+            }
+          },
+          "Equipment": [
+            {
+              "Name": "ECAP die",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Shimadzu AGI-20 kN screw-driven machine",
+              "Category": "Testing"
+            },
+            {
+              "Name": "JEOL JEM-2100 TEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "spark erosion machine",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "twin-jet electrolytic polisher",
+              "Category": "Characterization"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "simplified": "UFG structure retained after 673 K anneal; no significant microstructural change",
+            "original": "Annealing below 773 K did not result in any notable change of the yield stress or the ultimate tensile strength, although the strain hardening behaviour was affected appreciably."
+          },
+          "Main_Phase": {
+            "Phase_Name": "austenite (γ)",
+            "Crystal_Structure": "FCC"
+          }
+        },
+        "Properties": [
+          {
+            "Property_Type": "Tensile",
+            "Elongation_Uniform": {
+              "Value_pct": 2.6,
+              "Original_Values": "0.026 (engineering strain)"
+            },
+            "Data_Source": "table",
+            "Test_Condition": {
+              "Loading_Mode": "tension",
+              "Test_Temperature_Original": "room temperature",
+              "Strain_Rate_s1": 0.001,
+              "Strain_Rate_Original": "10⁻³ s⁻¹",
+              "Environment": "air",
+              "Specimen_Dimensions": "1.5×1.5 mm² cross section, 5 mm gauge length"
+            },
+            "True_Necking_Strain": {
+              "Value": 0.026,
+              "Original_Values": "0.026 (true strain εₙ)"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "item_05",
+      "Sample_ID": "316L_ECAP_773K_ann",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "SPD"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 3",
+        "Table 2: 773 K row"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Austenitic stainless steel",
+          "Material_Name_Raw": "SUS316L",
+          "Note": "Same composition as Table 1."
+        },
+        "Processing": {
+          "Process_Category": "ECAP + Annealing",
+          "Process_Text": {
+            "simplified": "ECAP (1 pass, 423 K) followed by annealing at 773 K for 1 h in vacuum",
+            "original": "The ECAP processed billets were annealed in vacuum at different temperatures varied from 573 K to 1073 K for 1 h."
+          },
+          "Stages": {
+            "Stage1": {
+              "Operation": "Pre-annealing",
+              "Temperature_K": 1323,
+              "Time_h": 1,
+              "Atmosphere": "vacuum",
+              "Note": "Shared initial treatment per Section 3."
+            },
+            "Stage2": {
+              "Operation": "ECAP",
+              "Number_of_Passes": 1,
+              "ECAP_Temperature_K": 423
+            },
+            "Stage3": {
+              "Operation": "Post-ECAP Annealing",
+              "Temperature_K": 773,
+              "Time_h": 1,
+              "Atmosphere": "vacuum",
+              "Original_Values": "773 K, 1 h, vacuum"
+            }
+          },
+          "Equipment": [
+            {
+              "Name": "ECAP die",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Shimadzu AGI-20 kN screw-driven machine",
+              "Category": "Testing"
+            },
+            {
+              "Name": "JEOL JEM-2100 TEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "spark erosion machine",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "twin-jet electrolytic polisher",
+              "Category": "Characterization"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "simplified": "UFG structure; onset of dislocation recovery but no recrystallization yet",
+            "original": "The uniform elongation was improved by annealing, the effect being particularly pronounced for annealing temperatures above 773 K. The increase in uniform elongation should also be attributed to dislocation recovery."
+          },
+          "Main_Phase": {
+            "Phase_Name": "austenite (γ)",
+            "Crystal_Structure": "FCC"
+          }
+        },
+        "Properties": [
+          {
+            "Property_Type": "Tensile",
+            "Elongation_Uniform": {
+              "Value_pct": 4.5,
+              "Original_Values": "0.045 (engineering strain)"
+            },
+            "Data_Source": "table",
+            "Test_Condition": {
+              "Loading_Mode": "tension",
+              "Test_Temperature_Original": "room temperature",
+              "Strain_Rate_s1": 0.001,
+              "Strain_Rate_Original": "10⁻³ s⁻¹",
+              "Environment": "air",
+              "Specimen_Dimensions": "1.5×1.5 mm² cross section, 5 mm gauge length"
+            },
+            "True_Necking_Strain": {
+              "Value": 0.044,
+              "Original_Values": "0.044 (true strain εₙ)"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "item_06",
+      "Sample_ID": "316L_ECAP_823K_ann",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "SPD"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 3",
+        "Table 2: 823 K row"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Austenitic stainless steel",
+          "Material_Name_Raw": "SUS316L",
+          "Note": "Same composition as Table 1."
+        },
+        "Processing": {
+          "Process_Category": "ECAP + Annealing",
+          "Process_Text": {
+            "simplified": "ECAP (1 pass, 423 K) followed by annealing at 823 K for 1 h in vacuum",
+            "original": "The ECAP processed billets were annealed in vacuum at different temperatures varied from 573 K to 1073 K for 1 h."
+          },
+          "Stages": {
+            "Stage1": {
+              "Operation": "Pre-annealing",
+              "Temperature_K": 1323,
+              "Time_h": 1,
+              "Atmosphere": "vacuum",
+              "Note": "Shared initial treatment per Section 3."
+            },
+            "Stage2": {
+              "Operation": "ECAP",
+              "Number_of_Passes": 1,
+              "ECAP_Temperature_K": 423
+            },
+            "Stage3": {
+              "Operation": "Post-ECAP Annealing",
+              "Temperature_K": 823,
+              "Time_h": 1,
+              "Atmosphere": "vacuum",
+              "Original_Values": "823 K, 1 h, vacuum"
+            }
+          },
+          "Equipment": [
+            {
+              "Name": "ECAP die",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Shimadzu AGI-20 kN screw-driven machine",
+              "Category": "Testing"
+            },
+            {
+              "Name": "JEOL JEM-2100 TEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "spark erosion machine",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "twin-jet electrolytic polisher",
+              "Category": "Characterization"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "simplified": "Partial dislocation recovery; no recrystallization",
+            "original": "A remarkable result is that uniform elongation improved considerably even after annealing well below 973 K, i.e. below the temperature at which the first indications of recrystallization were noticed in TEM observations. The increase in uniform elongation should also be attributed to dislocation recovery."
+          },
+          "Main_Phase": {
+            "Phase_Name": "austenite (γ)",
+            "Crystal_Structure": "FCC"
+          }
+        },
+        "Properties": [
+          {
+            "Property_Type": "Tensile",
+            "Elongation_Uniform": {
+              "Value_pct": 6.7,
+              "Original_Values": "0.067 (engineering strain)"
+            },
+            "Data_Source": "table",
+            "Test_Condition": {
+              "Loading_Mode": "tension",
+              "Test_Temperature_Original": "room temperature",
+              "Strain_Rate_s1": 0.001,
+              "Strain_Rate_Original": "10⁻³ s⁻¹",
+              "Environment": "air",
+              "Specimen_Dimensions": "1.5×1.5 mm² cross section, 5 mm gauge length"
+            },
+            "True_Necking_Strain": {
+              "Value": 0.065,
+              "Original_Values": "0.065 (true strain εₙ)"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "item_07",
+      "Sample_ID": "316L_ECAP_873K_ann",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "SPD"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 3",
+        "Fig. 2 caption",
+        "Fig. 5a",
+        "Table 2: 873 K row"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Austenitic stainless steel",
+          "Material_Name_Raw": "SUS316L",
+          "Note": "Same composition as Table 1."
+        },
+        "Processing": {
+          "Process_Category": "ECAP + Annealing",
+          "Process_Text": {
+            "simplified": "ECAP (1 pass, 423 K) followed by annealing at 873 K for 1 h in vacuum",
+            "original": "The ECAP processed billets were annealed in vacuum at different temperatures varied from 573 K to 1073 K for 1 h."
+          },
+          "Stages": {
+            "Stage1": {
+              "Operation": "Pre-annealing",
+              "Temperature_K": 1323,
+              "Time_h": 1,
+              "Atmosphere": "vacuum",
+              "Note": "Shared initial treatment per Section 3."
+            },
+            "Stage2": {
+              "Operation": "ECAP",
+              "Number_of_Passes": 1,
+              "ECAP_Temperature_K": 423
+            },
+            "Stage3": {
+              "Operation": "Post-ECAP Annealing",
+              "Temperature_K": 873,
+              "Time_h": 1,
+              "Atmosphere": "vacuum",
+              "Original_Values": "873 K, 1 h, vacuum"
+            }
+          },
+          "Equipment": [
+            {
+              "Name": "ECAP die",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Shimadzu AGI-20 kN screw-driven machine",
+              "Category": "Testing"
+            },
+            {
+              "Name": "JEOL JEM-2100 TEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "spark erosion machine",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "twin-jet electrolytic polisher",
+              "Category": "Characterization"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "After annealing at 873 K, the twinned regions and the non-twinned dislocation-rich regions still appear concurrently on TEM images in nearly the same surface fractions. Dislocation recovery manifests itself in TEM images as well-defined regions with a bright uniform contrast.",
+            "simplified": "Twinned and non-twinned regions coexist; partial dislocation recovery visible"
+          },
+          "Main_Phase": {
+            "Phase_Name": "austenite (γ)",
+            "Crystal_Structure": "FCC"
+          }
+        },
+        "Properties": [
+          {
+            "Property_Type": "Tensile",
+            "Elongation_Uniform": {
+              "Value_pct": 11.7,
+              "Original_Values": "0.117 (engineering strain)"
+            },
+            "Data_Source": "table",
+            "Test_Condition": {
+              "Loading_Mode": "tension",
+              "Test_Temperature_Original": "room temperature",
+              "Strain_Rate_s1": 0.001,
+              "Strain_Rate_Original": "10⁻³ s⁻¹",
+              "Environment": "air",
+              "Specimen_Dimensions": "1.5×1.5 mm² cross section, 5 mm gauge length"
+            },
+            "True_Necking_Strain": {
+              "Value": 0.111,
+              "Original_Values": "0.111 (true strain εₙ)"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "item_08",
+      "Sample_ID": "316L_ECAP_923K_ann",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "SPD"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 3",
+        "Fig. 5b",
+        "Table 2: 923 K row"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Austenitic stainless steel",
+          "Material_Name_Raw": "SUS316L",
+          "Note": "Same composition as Table 1."
+        },
+        "Processing": {
+          "Process_Category": "ECAP + Annealing",
+          "Process_Text": {
+            "simplified": "ECAP (1 pass, 423 K) followed by annealing at 923 K for 1 h in vacuum"
+          },
+          "Stages": {
+            "Stage1": {
+              "Operation": "Pre-annealing",
+              "Temperature_K": 1323,
+              "Time_h": 1,
+              "Atmosphere": "vacuum",
+              "Note": "Shared initial treatment per Section 3."
+            },
+            "Stage2": {
+              "Operation": "ECAP",
+              "Number_of_Passes": 1,
+              "ECAP_Temperature_K": 423
+            },
+            "Stage3": {
+              "Operation": "Post-ECAP Annealing",
+              "Temperature_K": 923,
+              "Time_h": 1,
+              "Atmosphere": "vacuum",
+              "Original_Values": "923 K, 1 h, vacuum"
+            }
+          },
+          "Equipment": [
+            {
+              "Name": "ECAP die",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Shimadzu AGI-20 kN screw-driven machine",
+              "Category": "Testing"
+            },
+            {
+              "Name": "JEOL JEM-2100 TEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "spark erosion machine",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "twin-jet electrolytic polisher",
+              "Category": "Characterization"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "After annealing at 923 K, the twinned regions and the non-twinned dislocation-rich regions still appear concurrently on TEM images in nearly the same surface fractions.",
+            "simplified": "Twinned and non-twinned regions coexist; partial dislocation recovery"
+          },
+          "Main_Phase": {
+            "Phase_Name": "austenite (γ)",
+            "Crystal_Structure": "FCC"
+          }
+        },
+        "Properties": [
+          {
+            "Property_Type": "Tensile",
+            "Elongation_Uniform": {
+              "Value_pct": 10.2,
+              "Original_Values": "0.102 (engineering strain)"
+            },
+            "Data_Source": "table",
+            "Test_Condition": {
+              "Loading_Mode": "tension",
+              "Test_Temperature_Original": "room temperature",
+              "Strain_Rate_s1": 0.001,
+              "Strain_Rate_Original": "10⁻³ s⁻¹",
+              "Environment": "air",
+              "Specimen_Dimensions": "1.5×1.5 mm² cross section, 5 mm gauge length"
+            },
+            "True_Necking_Strain": {
+              "Value": 0.097,
+              "Original_Values": "0.097 (true strain εₙ)"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "item_09",
+      "Sample_ID": "316L_ECAP_973K_ann",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "SPD"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 3",
+        "Fig. 5c",
+        "Section 5: specimen annealed at 973 K detailed example",
+        "Table 2: 973 K row"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Austenitic stainless steel",
+          "Material_Name_Raw": "SUS316L",
+          "Note": "Same composition as Table 1."
+        },
+        "Processing": {
+          "Process_Category": "ECAP + Annealing",
+          "Process_Text": {
+            "simplified": "ECAP (1 pass, 423 K) followed by annealing at 973 K for 1 h in vacuum"
+          },
+          "Stages": {
+            "Stage1": {
+              "Operation": "Pre-annealing",
+              "Temperature_K": 1323,
+              "Time_h": 1,
+              "Atmosphere": "vacuum",
+              "Note": "Shared initial treatment per Section 3."
+            },
+            "Stage2": {
+              "Operation": "ECAP",
+              "Number_of_Passes": 1,
+              "ECAP_Temperature_K": 423
+            },
+            "Stage3": {
+              "Operation": "Post-ECAP Annealing",
+              "Temperature_K": 973,
+              "Time_h": 1,
+              "Atmosphere": "vacuum",
+              "Original_Values": "973 K, 1 h, vacuum"
+            }
+          },
+          "Equipment": [
+            {
+              "Name": "ECAP die",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Shimadzu AGI-20 kN screw-driven machine",
+              "Category": "Testing"
+            },
+            {
+              "Name": "JEOL JEM-2100 TEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "spark erosion machine",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "twin-jet electrolytic polisher",
+              "Category": "Characterization"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "After annealing at 973 K, fine recrystallized grains with average diameter of about 1 μm are observed in the microstructure. Annealing resulted in dislocation recovery and recrystallization, whilst the microstructure remained fine and the deformation twins were retained.",
+            "simplified": "Partially recrystallized; fine recrystallized grains ~1 μm avg diameter; deformation twins retained; onset of recrystallization"
+          },
+          "Main_Phase": {
+            "Phase_Name": "austenite (γ)",
+            "Crystal_Structure": "FCC"
+          },
+          "Grain_Size": {
+            "Value_um": 1,
+            "Dimension_Type": "diameter",
+            "Original_Values": "about 1 μm average diameter",
+            "Note": "Average diameter of recrystallized grains; approximate value"
+          }
+        },
+        "Properties": [
+          {
+            "Property_Type": "Tensile",
+            "Elongation_Uniform": {
+              "Value_pct": 18.6,
+              "Original_Values": "0.186 (engineering strain)"
+            },
+            "Data_Source": "table",
+            "Test_Condition": {
+              "Loading_Mode": "tension",
+              "Test_Temperature_Original": "room temperature",
+              "Strain_Rate_s1": 0.001,
+              "Strain_Rate_Original": "10⁻³ s⁻¹",
+              "Environment": "air",
+              "Specimen_Dimensions": "1.5×1.5 mm² cross section, 5 mm gauge length"
+            },
+            "True_Necking_Strain": {
+              "Value": 0.171,
+              "Original_Values": "0.171 (true strain εₙ)"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "item_10",
+      "Sample_ID": "316L_ECAP_1023K_ann",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "SPD"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 3",
+        "Fig. 5d",
+        "Table 2: 1023 K row"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Austenitic stainless steel",
+          "Material_Name_Raw": "SUS316L",
+          "Note": "Same composition as Table 1."
+        },
+        "Processing": {
+          "Process_Category": "ECAP + Annealing",
+          "Process_Text": {
+            "simplified": "ECAP (1 pass, 423 K) followed by annealing at 1023 K for 1 h in vacuum"
+          },
+          "Stages": {
+            "Stage1": {
+              "Operation": "Pre-annealing",
+              "Temperature_K": 1323,
+              "Time_h": 1,
+              "Atmosphere": "vacuum",
+              "Note": "Shared initial treatment per Section 3."
+            },
+            "Stage2": {
+              "Operation": "ECAP",
+              "Number_of_Passes": 1,
+              "ECAP_Temperature_K": 423
+            },
+            "Stage3": {
+              "Operation": "Post-ECAP Annealing",
+              "Temperature_K": 1023,
+              "Time_h": 1,
+              "Atmosphere": "vacuum",
+              "Original_Values": "1023 K, 1 h, vacuum"
+            }
+          },
+          "Equipment": [
+            {
+              "Name": "ECAP die",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Shimadzu AGI-20 kN screw-driven machine",
+              "Category": "Testing"
+            },
+            {
+              "Name": "JEOL JEM-2100 TEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "spark erosion machine",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "twin-jet electrolytic polisher",
+              "Category": "Characterization"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Only after annealing at 1023 K did the area fraction of the recrystallized regions with coarsened grains increase appreciably.",
+            "simplified": "Significant increase in recrystallized area fraction; grain coarsening observed"
+          },
+          "Main_Phase": {
+            "Phase_Name": "austenite (γ)",
+            "Crystal_Structure": "FCC"
+          }
+        },
+        "Properties": [
+          {
+            "Property_Type": "Tensile",
+            "Elongation_Uniform": {
+              "Value_pct": 43.8,
+              "Original_Values": "0.438 (engineering strain)"
+            },
+            "Data_Source": "table",
+            "Test_Condition": {
+              "Loading_Mode": "tension",
+              "Test_Temperature_Original": "room temperature",
+              "Strain_Rate_s1": 0.001,
+              "Strain_Rate_Original": "10⁻³ s⁻¹",
+              "Environment": "air",
+              "Specimen_Dimensions": "1.5×1.5 mm² cross section, 5 mm gauge length"
+            },
+            "True_Necking_Strain": {
+              "Value": 0.363,
+              "Original_Values": "0.363 (true strain εₙ)"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "item_11",
+      "Sample_ID": "316L_ECAP_1073K_ann",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "SPD"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 3",
+        "Fig. 5e",
+        "Table 2: 1073 K row"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Austenitic stainless steel",
+          "Material_Name_Raw": "SUS316L",
+          "Note": "Same composition as Table 1."
+        },
+        "Processing": {
+          "Process_Category": "ECAP + Annealing",
+          "Process_Text": {
+            "simplified": "ECAP (1 pass, 423 K) followed by annealing at 1073 K for 1 h in vacuum"
+          },
+          "Stages": {
+            "Stage1": {
+              "Operation": "Pre-annealing",
+              "Temperature_K": 1323,
+              "Time_h": 1,
+              "Atmosphere": "vacuum",
+              "Note": "Shared initial treatment per Section 3."
+            },
+            "Stage2": {
+              "Operation": "ECAP",
+              "Number_of_Passes": 1,
+              "ECAP_Temperature_K": 423
+            },
+            "Stage3": {
+              "Operation": "Post-ECAP Annealing",
+              "Temperature_K": 1073,
+              "Time_h": 1,
+              "Atmosphere": "vacuum",
+              "Original_Values": "1073 K, 1 h, vacuum"
+            }
+          },
+          "Equipment": [
+            {
+              "Name": "ECAP die",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Shimadzu AGI-20 kN screw-driven machine",
+              "Category": "Testing"
+            },
+            {
+              "Name": "JEOL JEM-2100 TEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "spark erosion machine",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "twin-jet electrolytic polisher",
+              "Category": "Characterization"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "The ECAP processed samples were fully recrystallized after annealing at 1073 K.",
+            "simplified": "Fully recrystallized microstructure after 1073 K anneal"
+          },
+          "Main_Phase": {
+            "Phase_Name": "austenite (γ)",
+            "Crystal_Structure": "FCC"
+          }
+        },
+        "Properties": [
+          {
+            "Property_Type": "Tensile",
+            "Elongation_Uniform": {
+              "Value_pct": 51.3,
+              "Original_Values": "0.513 (engineering strain)"
+            },
+            "Data_Source": "table",
+            "Test_Condition": {
+              "Loading_Mode": "tension",
+              "Test_Temperature_Original": "room temperature",
+              "Strain_Rate_s1": 0.001,
+              "Strain_Rate_Original": "10⁻³ s⁻¹",
+              "Environment": "air",
+              "Specimen_Dimensions": "1.5×1.5 mm² cross section, 5 mm gauge length"
+            },
+            "True_Necking_Strain": {
+              "Value": 0.414,
+              "Original_Values": "0.414 (true strain εₙ)"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "item_12_model",
+      "Sample_ID": "Kocks-Mecking_dislocation_model",
+      "Role": "Target",
+      "Data_Nature": "Computed",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Pure_Simulation",
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 2: Theoretical consideration",
+        "Section 5: Model verification",
+        "Table 2: Model necking strain columns"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Austenitic stainless steel",
+          "Material_Name_Raw": "SUS316L",
+          "Note": "Model applied to SUS316L steel; same composition as Table 1."
+        },
+        "Processing": {
+          "Simulation_Metadata": {
+            "Model_Type": "Phenomenological dislocation-based constitutive model (Kocks-Mecking one-internal-variable approach)",
+            "Key_Equations": "Eq. (8): σ(ε) = σ₀ + σₛ(1 - exp(-ε/ε̃)); Eq. (12): necking strain prediction; Eq. (13): Considère necking strain",
+            "Fitting_Method": "Non-linear curve fitting of experimental true stress–true strain data using Eq. (8)",
+            "Constitutive_Assumptions": [
+              "Single internal variable (total dislocation density ρ)",
+              "Taylor relation: τ = α₀Gb√ρ",
+              "Dislocation evolution: dρ/dγ = k₁√ρ - k₂ρ",
+              "Strain rate insensitive material (1/m << 1)",
+              "Considère criterion for necking onset"
+            ],
+            "Key_Model_Parameters": {
+              "sigma_S_definition": "Saturation stress = MαGbk₁/k₂",
+              "epsilon_tilde_definition": "Characteristic strain = 2/(k₂M)",
+              "sigma_0_definition": "Back-extrapolated yield stress (includes Hall-Petch grain boundary strengthening)"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Type": "Model_Fitting",
+            "Description": "Curve fitting results for as-ECAP 316L steel",
+            "Corresponding_Item": "item_02",
+            "sigma_S_MPa": {
+              "Value": 33.772,
+              "Original_Values": "33.772"
+            },
+            "inverse_epsilon_tilde": {
+              "Value": 170.449,
+              "Original_Values": "170.449"
+            },
+            "sigma_0_MPa": {
+              "Value": 800,
+              "Original_Values": "800"
+            },
+            "Predicted_Necking_Strain_True": {
+              "Value": 0.011,
+              "Original_Values": "0.011 (ε_NC, Considère necking true strain from Table 2)"
+            },
+            "Dynamic_Recovery_Rate_k2": {
+              "Value": 111.404,
+              "Original_Values": "111.404"
+            },
+            "Data_Source": "table",
+            "Note": "All values from Table 2, as ECAP row."
+          },
+          {
+            "Property_Type": "Model_Fitting",
+            "Description": "Curve fitting results for ECAP + 573 K anneal",
+            "Corresponding_Item": "item_03",
+            "sigma_S_MPa": {
+              "Value": 28.439,
+              "Original_Values": "28.439"
+            },
+            "inverse_epsilon_tilde": {
+              "Value": 142.413,
+              "Original_Values": "142.413"
+            },
+            "sigma_0_MPa": {
+              "Value": 700,
+              "Original_Values": "700"
+            },
+            "Predicted_Necking_Strain_True": {
+              "Value": 0.012,
+              "Original_Values": "0.012 (ε_NC, Considère necking true strain from Table 2)"
+            },
+            "Dynamic_Recovery_Rate_k2": {
+              "Value": 93.08,
+              "Original_Values": "93.080"
+            },
+            "Data_Source": "table"
+          },
+          {
+            "Property_Type": "Model_Fitting",
+            "Description": "Curve fitting results for ECAP + 673 K anneal",
+            "Corresponding_Item": "item_04",
+            "sigma_S_MPa": {
+              "Value": 33.553,
+              "Original_Values": "33.553"
+            },
+            "inverse_epsilon_tilde": {
+              "Value": 115.733,
+              "Original_Values": "115.733"
+            },
+            "sigma_0_MPa": {
+              "Value": 660,
+              "Original_Values": "660"
+            },
+            "Predicted_Necking_Strain_True": {
+              "Value": 0.015,
+              "Original_Values": "0.015 (ε_NC, Considère necking true strain from Table 2)"
+            },
+            "Dynamic_Recovery_Rate_k2": {
+              "Value": 75.642,
+              "Original_Values": "75.642"
+            },
+            "Data_Source": "table"
+          },
+          {
+            "Property_Type": "Model_Fitting",
+            "Description": "Curve fitting results for ECAP + 773 K anneal",
+            "Corresponding_Item": "item_05",
+            "sigma_S_MPa": {
+              "Value": 77.253,
+              "Original_Values": "77.253"
+            },
+            "inverse_epsilon_tilde": {
+              "Value": 61.288,
+              "Original_Values": "61.288"
+            },
+            "sigma_0_MPa": {
+              "Value": 630,
+              "Original_Values": "630"
+            },
+            "Predicted_Necking_Strain_True": {
+              "Value": 0.033,
+              "Original_Values": "0.033 (ε_NC, Considère necking true strain from Table 2)"
+            },
+            "Dynamic_Recovery_Rate_k2": {
+              "Value": 40.065,
+              "Original_Values": "40.065"
+            },
+            "Data_Source": "table"
+          },
+          {
+            "Property_Type": "Model_Fitting",
+            "Description": "Curve fitting results for ECAP + 823 K anneal",
+            "Corresponding_Item": "item_06",
+            "sigma_S_MPa": {
+              "Value": 127.85,
+              "Original_Values": "127.850"
+            },
+            "inverse_epsilon_tilde": {
+              "Value": 17.673,
+              "Original_Values": "17.673"
+            },
+            "sigma_0_MPa": {
+              "Value": 630,
+              "Original_Values": "630"
+            },
+            "Predicted_Necking_Strain_True": {
+              "Value": 0.065,
+              "Original_Values": "0.065 (ε_NC, Considère necking true strain from Table 2)"
+            },
+            "Dynamic_Recovery_Rate_k2": {
+              "Value": 11.551,
+              "Original_Values": "11.551"
+            },
+            "Data_Source": "table"
+          },
+          {
+            "Property_Type": "Model_Fitting",
+            "Description": "Curve fitting results for ECAP + 873 K anneal",
+            "Corresponding_Item": "item_07",
+            "sigma_S_MPa": {
+              "Value": 222.357,
+              "Original_Values": "222.357"
+            },
+            "inverse_epsilon_tilde": {
+              "Value": 12.671,
+              "Original_Values": "12.671"
+            },
+            "sigma_0_MPa": {
+              "Value": 600,
+              "Original_Values": "600"
+            },
+            "Predicted_Necking_Strain_True": {
+              "Value": 0.103,
+              "Original_Values": "0.103 (ε_NC, Considère necking true strain from Table 2)"
+            },
+            "Dynamic_Recovery_Rate_k2": {
+              "Value": 8.281,
+              "Original_Values": "8.281"
+            },
+            "Data_Source": "table"
+          },
+          {
+            "Property_Type": "Model_Fitting",
+            "Description": "Curve fitting results for ECAP + 923 K anneal",
+            "Corresponding_Item": "item_08",
+            "sigma_S_MPa": {
+              "Value": 204.019,
+              "Original_Values": "204.019"
+            },
+            "inverse_epsilon_tilde": {
+              "Value": 12.879,
+              "Original_Values": "12.879"
+            },
+            "sigma_0_MPa": {
+              "Value": 600,
+              "Original_Values": "600"
+            },
+            "Predicted_Necking_Strain_True": {
+              "Value": 0.098,
+              "Original_Values": "0.098 (ε_NC, Considère necking true strain from Table 2)"
+            },
+            "Dynamic_Recovery_Rate_k2": {
+              "Value": 8.417,
+              "Original_Values": "8.417"
+            },
+            "Data_Source": "table"
+          },
+          {
+            "Property_Type": "Model_Fitting",
+            "Description": "Curve fitting results for ECAP + 973 K anneal",
+            "Corresponding_Item": "item_09",
+            "sigma_S_MPa": {
+              "Value": 400.917,
+              "Original_Values": "400.917"
+            },
+            "inverse_epsilon_tilde": {
+              "Value": 8.113,
+              "Original_Values": "8.113"
+            },
+            "sigma_0_MPa": {
+              "Value": 590,
+              "Original_Values": "590"
+            },
+            "Predicted_Necking_Strain_True": {
+              "Value": 0.161,
+              "Original_Values": "0.161 (ε_NC, Considère necking true strain from Table 2)"
+            },
+            "Dynamic_Recovery_Rate_k2": {
+              "Value": 5.303,
+              "Original_Values": "5.303"
+            },
+            "Data_Source": "table",
+            "Note": "r² = 0.9997 (regression coefficient for curve fitting, from Section 5 text). All values from Table 2, 973 K row."
+          },
+          {
+            "Property_Type": "Model_Fitting",
+            "Description": "Curve fitting results for ECAP + 1023 K anneal",
+            "Corresponding_Item": "item_10",
+            "sigma_S_MPa": {
+              "Value": 907.861,
+              "Original_Values": "907.861"
+            },
+            "inverse_epsilon_tilde": {
+              "Value": 2.846,
+              "Original_Values": "2.846"
+            },
+            "sigma_0_MPa": {
+              "Value": 330,
+              "Original_Values": "330"
+            },
+            "Predicted_Necking_Strain_True": {
+              "Value": 0.364,
+              "Original_Values": "0.364 (ε_NC, Considère necking true strain from Table 2)"
+            },
+            "Dynamic_Recovery_Rate_k2": {
+              "Value": 1.86,
+              "Original_Values": "1.860"
+            },
+            "Data_Source": "table"
+          },
+          {
+            "Property_Type": "Model_Fitting",
+            "Description": "Curve fitting results for ECAP + 1073 K anneal",
+            "Corresponding_Item": "item_11",
+            "sigma_S_MPa": {
+              "Value": 1204.991,
+              "Original_Values": "1204.991"
+            },
+            "inverse_epsilon_tilde": {
+              "Value": 2.042,
+              "Original_Values": "2.042"
+            },
+            "sigma_0_MPa": {
+              "Value": 330,
+              "Original_Values": "330"
+            },
+            "Predicted_Necking_Strain_True": {
+              "Value": 0.424,
+              "Original_Values": "0.424 (ε_NC, Considère necking true strain from Table 2)"
+            },
+            "Dynamic_Recovery_Rate_k2": {
+              "Value": 1.334,
+              "Original_Values": "1.334"
+            },
+            "Data_Source": "table"
+          }
+        ]
+      }
+    }
+  ]
+}

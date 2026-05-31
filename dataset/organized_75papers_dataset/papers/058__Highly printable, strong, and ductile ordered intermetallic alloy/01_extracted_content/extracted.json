@@ -1,0 +1,610 @@
+{
+  "Paper_Metadata": {
+    "Paper_Title": "Highly printable, strong, and ductile ordered intermetallic alloy",
+    "DOI": "10.1038/s41467-025-56355-2"
+  },
+  "Paper_Routing": {
+    "base_material": "Metals",
+    "application": "Structural",
+    "research_paradigm": "Hybrid",
+    "Supplements_Loaded": [
+      "directions/base/Metals.txt",
+      "directions/application/Structural.txt",
+      "directions/paradigm/Hybrid.txt"
+    ],
+    "Patch_Tags": [
+      "High_Entropy",
+      "Additive_Manufacturing",
+      "Laser_Assisted"
+    ],
+    "Needs_Mixed_Routing_Check": false
+  },
+  "items": [
+    {
+      "Item_ID": "CCIMA_AsPrinted",
+      "Sample_ID": "CCIMA_AsPrinted",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "High_Entropy",
+        "Additive_Manufacturing",
+        "Laser_Assisted"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Results and Discussion",
+        "Methods"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Chemically complex intermetallic alloy (CCIMA)",
+          "Material_Name_Raw": "Ni58.48Co18.9Si11.6Ti6.6Al4.4B0.02 (at. %)",
+          "Nominal_Composition": {
+            "Unit": "at.%",
+            "Elements": [
+              {
+                "Element": "Ni",
+                "Value": "Balance",
+                "Note": "Balance; normalized ≈ 58.48 at.%; Data_Nature: Computed"
+              },
+              {
+                "Element": "Co",
+                "Value": 18.9
+              },
+              {
+                "Element": "Si",
+                "Value": 11.6
+              },
+              {
+                "Element": "Ti",
+                "Value": 6.6
+              },
+              {
+                "Element": "Al",
+                "Value": 4.4
+              },
+              {
+                "Element": "B",
+                "Value": 0.02
+              }
+            ]
+          },
+          "Note": "Pre-alloyed powder composition. The same nominal composition is used for both as-printed and thermal-stabilized items."
+        },
+        "Processing": {
+          "Process_Category": "Additive_Manufacturing",
+          "Process_Text": {
+            "original": "Pre-alloyed CCIMA powder fabricated by EIGA, then manufactured by LPBF (SLM 125HL, IPG fiber laser, max 400 W, beam diameter 64 μm). Argon atmosphere, O2 < 400 ppm. 316L substrate heated to 200 °C. Layer thickness 0.03 mm, hatch distance 0.12 mm, laser beam rotation 67° for consecutive layers.",
+            "simplified": "EIGA pre-alloyed powder → LPBF (SLM 125HL, IPG fiber laser)"
+          },
+          "Equipment": [
+            {
+              "Name": "SLM 125HL LPBF machine",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "IPG fiber laser",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "EIGA (electrode induction melting gas atomization)",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Mastersizer 3000 laser particle size analyzer",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "ICP-OES (inductively coupled plasma-optical emission spectrometry)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Diondo D2 micro-CT",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Optical microscopy",
+              "Category": "Characterization"
+            }
+          ],
+          "Key_Params": {
+            "Stage1_Powder_Production": {
+              "Method": "Electrode induction melting gas atomization (EIGA)",
+              "Particle_Size_Range_um": {
+                "Value": null,
+                "Value_Range": [
+                  24.2,
+                  58.2
+                ],
+                "Original_Values": "24.2 to 58.2 μm"
+              },
+              "D50_um": 37.6,
+              "Note": "Powder composition measured by ICP-OES"
+            },
+            "Stage2_LPBF": {
+              "Method": "Laser powder bed fusion (LPBF)",
+              "Laser_Power_W": 200,
+              "Scanning_Speed_mm_s": 900,
+              "Layer_Thickness_mm": 0.03,
+              "Hatch_Distance_mm": 0.12,
+              "Laser_Beam_Rotation_deg": 67,
+              "Laser_Beam_Diameter_um": 64,
+              "Atmosphere": "Argon, O2 < 400 ppm",
+              "Substrate": "316L stainless steel, heated to 200 °C",
+              "Scanning_Speed_Range_mm_s": {
+                "Value": null,
+                "Value_Range": [
+                  500,
+                  1000
+                ],
+                "Original_Values": "500 to 1000 mm/s with a permanent increase of 100 mm/s",
+                "Note": "Range for forming ability study; optimized speed for tensile samples: 900 mm/s"
+              }
+            }
+          },
+          "Note": "As-printed state: no post-processing heat treatment. As-printed samples cut from substrate by wire electrical discharge machining."
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Nearly fully dense samples obtained at scanning speeds 600-1000 mm/s. No micro-cracks detected by micro-CT or optical microscopy. Dendritic microstructure consisting of brittle G phase existed in the as-printed CCIMA.",
+            "simplified": "Near-fully dense, crack-free as-printed CCIMA with dendritic G phase microstructure"
+          },
+          "Porosity": {
+            "Value": 0.005,
+            "Unit": "%",
+            "Original_Values": "0.005%",
+            "Data_Source": "text"
+          },
+          "Average_Pore_Diameter": {
+            "Value": 22.0,
+            "Unit": "μm",
+            "Size_Type": "diameter",
+            "Data_Source": "text"
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "G phase",
+              "Crystal_Structure": "undefined",
+              "Note": "Brittle dendritic G phase present in the as-printed state; effectively eliminated after thermal stabilization"
+            }
+          ],
+          "Note": "No micro-cracks detected by micro-CT or optical microscopy."
+        },
+        "Properties": [
+          {
+            "Property_Name": "Porosity",
+            "Value": 0.005,
+            "Unit": "%",
+            "Test_Condition": {
+              "Scanning_Speed_mm_s": 900
+            },
+            "Data_Source": "text",
+            "Note": "From micro-CT measurement of sample fabricated at 900 mm/s"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "CCIMA_ThermalStabilized",
+      "Sample_ID": "CCIMA_ThermalStabilized",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "High_Entropy",
+        "Additive_Manufacturing",
+        "Laser_Assisted"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Results and Discussion",
+        "Methods"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Chemically complex intermetallic alloy (CCIMA)",
+          "Material_Name_Raw": "Ni58.48Co18.9Si11.6Ti6.6Al4.4B0.02 (at. %)",
+          "Nominal_Composition": {
+            "Unit": "at.%",
+            "Elements": [
+              {
+                "Element": "Ni",
+                "Value": "Balance",
+                "Note": "Balance; normalized ≈ 58.48 at.%; Data_Nature: Computed"
+              },
+              {
+                "Element": "Co",
+                "Value": 18.9
+              },
+              {
+                "Element": "Si",
+                "Value": 11.6
+              },
+              {
+                "Element": "Ti",
+                "Value": 6.6
+              },
+              {
+                "Element": "Al",
+                "Value": 4.4
+              },
+              {
+                "Element": "B",
+                "Value": 0.02
+              }
+            ]
+          },
+          "Measured_Composition": {
+            "Unit": "at.%",
+            "Method": "SEM-EDS",
+            "Elements": [
+              {
+                "Element": "Ni",
+                "Value": 58.1
+              },
+              {
+                "Element": "Co",
+                "Value": 19.5
+              },
+              {
+                "Element": "Si",
+                "Value": 11.5
+              },
+              {
+                "Element": "Ti",
+                "Value": 6.6
+              },
+              {
+                "Element": "Al",
+                "Value": 4.3
+              }
+            ],
+            "Note": "Overall chemical composition of thermal-stabilized CCIMA measured by SEM-EDS. B not measured by EDS. Very small chemical change compared with pre-alloyed powder."
+          },
+          "Note": "Nominal composition from pre-alloyed powder; measured composition from SEM-EDS on thermal-stabilized sample."
+        },
+        "Processing": {
+          "Process_Category": "Additive_Manufacturing + Heat_Treatment",
+          "Process_Text": {
+            "original": "LPBF followed by single-step thermal stabilization treatment at 1000 °C for 2 h, air cooling. Tensile samples: flat dog-bone-shaped, gauge length 12.5 mm, cross-section ~3.2 x 3 mm^2, printed perpendicular to building direction.",
+            "simplified": "EIGA pre-alloyed powder → LPBF (200 W, 900 mm/s) → Thermal stabilization (1000 °C / 2 h / air cooling)"
+          },
+          "Equipment": [
+            {
+              "Name": "SLM 125HL LPBF machine",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "IPG fiber laser",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "EIGA (electrode induction melting gas atomization)",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Wire electrical discharge machining",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Rigaku SmartLab XRD",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "FEI Scios SEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "EDAX Velocity EBSD camera",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "JEOL 2100 F TEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Talos F200 TEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "FEI Titan Themis G2 AC-STEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "CAMECA LEAP 5000 XR APT",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "FEI Scios FIB/SEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Gatan PIPS II Model 695 ion polishing system",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "VibroMet 2 Vibratory Polisher",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Mastersizer 3000 laser particle size analyzer",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "ICP-OES",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Diondo D2 micro-CT",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "MTS (Material Testing System)",
+              "Category": "Testing"
+            },
+            {
+              "Name": "AP Suite 6.1",
+              "Category": "Software"
+            }
+          ],
+          "Key_Params": {
+            "Stage1_Powder_Production": {
+              "Method": "Electrode induction melting gas atomization (EIGA)",
+              "Particle_Size_Range_um": {
+                "Value": null,
+                "Value_Range": [
+                  24.2,
+                  58.2
+                ],
+                "Original_Values": "24.2 to 58.2 μm"
+              },
+              "D50_um": 37.6
+            },
+            "Stage2_LPBF": {
+              "Method": "Laser powder bed fusion (LPBF)",
+              "Laser_Power_W": 200,
+              "Scanning_Speed_mm_s": 900,
+              "Layer_Thickness_mm": 0.03,
+              "Hatch_Distance_mm": 0.12,
+              "Laser_Beam_Rotation_deg": 67,
+              "Laser_Beam_Diameter_um": 64,
+              "Atmosphere": "Argon, O2 < 400 ppm",
+              "Substrate": "316L stainless steel, heated to 200 °C"
+            },
+            "Stage3_Thermal_Stabilization": {
+              "Method": "Thermal stabilization treatment",
+              "Temperature_C": 1000,
+              "Time_h": 2,
+              "Cooling": "Air cooling",
+              "Purpose": "Eliminate non-equilibrium brittle phase and residual stress"
+            }
+          },
+          "Specimen_Geometry": {
+            "Shape": "Flat dog-bone-shaped",
+            "Gauge_Length_mm": 12.5,
+            "Cross_Section_mm2": {
+              "Original_Values": "~3.2 x 3 mm^2",
+              "Note": "Cross-section dimension approximately 3.2 x 3 mm^2"
+            },
+            "Orientation": "Perpendicular to building direction"
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Thermal-stabilized CCIMA exhibits an ordered L12-type crystal structure without any other detrimental phases. Fine equiaxed grains with random distribution (max texture index 2.56). Ordered L12 grains decorated with disordered interfacial nanolayer (DINL) at grain boundaries. DINL is Co- and B-rich, disordered FCC solid-solution (γ phase), ~5 nm thick, volume fraction ~0.08%. No G phase after thermal stabilization.",
+            "simplified": "Ordered L12 matrix + disordered FCC nanolayer (DINL) at grain boundaries; no detrimental phases"
+          },
+          "Main_Phase": {
+            "Phase_Name": "L12 ordered superlattice ((Ni,Co)₃(Si,Ti,Al) type)",
+            "Crystal_Structure": "L12",
+            "Sublattice_Occupancy": "Ni and Co on face centers (A-type); Si, Ti, Al on vertices (B-type)",
+            "Data_Source": "text"
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "Disordered interfacial nanolayer (DINL) / γ phase",
+              "Crystal_Structure": "FCC",
+              "Location": "Grain boundary",
+              "Thickness_nm": {
+                "Value": 5,
+                "Size_Type": "undefined",
+                "Data_Source": "text",
+                "Note": "Thickness based on 3D-APT and atomic-resolution STEM-HAADF images"
+              },
+              "Volume_Fraction_pct": {
+                "Value": 0.08,
+                "Original_Values": "0.08%",
+                "Data_Source": "text",
+                "Note": "Calculated by equation f_DINL = 1 - (1 - t/d)^3, where t = 5 nm, d = 17.7 μm; Data_Nature: Computed"
+              },
+              "Chemical_Features": "Co- and B-rich; Ni, Si, Ti, Al depleted"
+            }
+          ],
+          "Grain_Size": {
+            "Value": 17.7,
+            "Unit": "μm",
+            "Size_Type": "diameter",
+            "Distribution": "Fine equiaxed grains, random orientation",
+            "Max_Texture_Index": 2.56,
+            "Data_Source": "text"
+          },
+          "DINL_Local_Composition": {
+            "Method": "3D-APT",
+            "Note": "Local composition across grain boundary nanolayer, not bulk composition",
+            "Elements_In_Nanolayer": [
+              {
+                "Element": "Co",
+                "Value": 50.64,
+                "Value_StdDev": 1.23,
+                "Unit": "at.%"
+              },
+              {
+                "Element": "B",
+                "Value": 0.85,
+                "Value_StdDev": 0.22,
+                "Unit": "at.%",
+                "Note": "Maximum B segregation in DINL"
+              }
+            ],
+            "Elements_In_Grain_Interior_From_APT": [
+              {
+                "Element": "Co",
+                "Value": 18.95,
+                "Value_StdDev": 2.04,
+                "Unit": "at.%",
+                "Note": "For comparison with DINL Co content"
+              },
+              {
+                "Element": "B",
+                "Value": 0.02,
+                "Value_StdDev": 0.01,
+                "Unit": "at.%"
+              }
+            ]
+          },
+          "Advanced_Quantitative_Features": {
+            "Dislocation_Density_Range": {
+              "Note": "From XRD modified Williamson-Hall method, thermal-stabilized CCIMA under deformation strains 5% to 35%",
+              "Min_At_5pct_Strain_per_m2": "0.16e15",
+              "Max_At_35pct_Strain_per_m2": "5.34e15",
+              "Original_Values": "0.16 to 5.34 x 10^15 m^-2",
+              "Data_Source": "text"
+            },
+            "Max_Work_Hardening_Rate_GPa": 5.1,
+            "Max_Work_Hardening_Exponent": 0.6,
+            "Note": "DFT-calculated planar fault energies (APB, SISF) and elastic constant (C44) are in Item CCIMA_DFT_Computed"
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Ultimate_Tensile_Strength",
+            "Value": 1620,
+            "Value_StdDev": 30,
+            "Unit": "MPa",
+            "Test_Condition": {
+              "Test_Temperature_Original": "Room temperature",
+              "Loading_Mode": "Tension",
+              "Strain_Rate_s1": "1e-3",
+              "Specimen_State": "Thermal-stabilized (1000 °C / 2 h / air cooling)",
+              "Orientation": "Perpendicular to building direction",
+              "Number_of_Specimens": "At least four"
+            },
+            "Data_Source": "text",
+            "Note": "Flat dog-bone-shaped tensile samples with gauge length 12.5 mm and cross-section ~3.2 x 3 mm^2 directly fabricated by LPBF"
+          },
+          {
+            "Property_Name": "Elongation_Uniform",
+            "Value": 35,
+            "Value_StdDev": 3,
+            "Unit": "%",
+            "Test_Condition": {
+              "Test_Temperature_Original": "Room temperature",
+              "Loading_Mode": "Tension",
+              "Strain_Rate_s1": "1e-3",
+              "Specimen_State": "Thermal-stabilized (1000 °C / 2 h / air cooling)",
+              "Orientation": "Perpendicular to building direction",
+              "Number_of_Specimens": "At least four"
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "True_Stress_Yield_Approx",
+            "Value": 730,
+            "Unit": "MPa",
+            "Test_Condition": {
+              "Test_Temperature_Original": "Room temperature",
+              "Loading_Mode": "Tension",
+              "Specimen_State": "Thermal-stabilized"
+            },
+            "Data_Source": "text",
+            "Note": "True stress at yield (~730 MPa), from true stress-strain curve description. Approximate value."
+          },
+          {
+            "Property_Name": "True_Stress_Max_Hardened",
+            "Value": 2190,
+            "Unit": "MPa",
+            "Test_Condition": {
+              "Test_Temperature_Original": "Room temperature",
+              "Loading_Mode": "Tension",
+              "Specimen_State": "Thermal-stabilized"
+            },
+            "Data_Source": "text",
+            "Note": "True stress hardened from 730 to 2190 MPa after yielding; 2190 MPa is the peak value."
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "CCIMA_DFT_Computed",
+      "Sample_ID": "CCIMA_DFT_Computed",
+      "Role": "Demonstration",
+      "Data_Nature": "Computed",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "High_Entropy",
+        "Additive_Manufacturing",
+        "Laser_Assisted"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Results and Discussion",
+        "Supplementary Note 4"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Chemically complex intermetallic alloy (CCIMA)",
+          "Material_Name_Raw": "(Ni,Co)₃(Si,Ti,Al)-type L12",
+          "Note": "DFT calculations performed on the CCIMA L12 structure. Same nominal composition as Item 1 and 2."
+        },
+        "Processing": {
+          "Process_Category": "Simulation",
+          "Simulation_Metadata": {
+            "Method": "Density functional theory (DFT)",
+            "Purpose": "Calculate planar fault energies (APB, SISF) and elastic constants to understand deformation mechanisms",
+            "Note": "Detailed calculation method provided in Supplementary Note 4"
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "APB_Energy_111",
+            "Value": 301,
+            "Unit": "mJ/m²",
+            "Data_Nature": "Computed",
+            "Data_Source": "text",
+            "Note": "Antiphase boundary energy on (111) plane, DFT calculated"
+          },
+          {
+            "Property_Name": "SISF_Energy_111",
+            "Value": 200,
+            "Unit": "mJ/m²",
+            "Data_Nature": "Computed",
+            "Data_Source": "text",
+            "Note": "Superlattice intrinsic stacking fault energy on (111) plane, DFT calculated"
+          },
+          {
+            "Property_Name": "Elastic_Constant_C44",
+            "Value": 130.0,
+            "Unit": "GPa",
+            "Data_Nature": "Computed",
+            "Data_Source": "text",
+            "Note": "DFT calculated elastic constant C44"
+          }
+        ]
+      },
+      "Experiment_Link": {
+        "Related_Item_IDs": [
+          "CCIMA_ThermalStabilized"
+        ],
+        "Description": "DFT calculations of planar fault energies and elastic constants to rationalize the experimentally observed deformation mechanisms in the thermal-stabilized CCIMA",
+        "Validation_Target": "Deformation mode (APB-type dissociation) predicted by DFT energy criterion matches experimental TEM observations"
+      }
+    }
+  ]
+}

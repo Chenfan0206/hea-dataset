@@ -1,0 +1,7 @@
+{
+  "paper_dir": "复合固态电解质",
+  "figures": 7,
+  "direct_pairs": 7,
+  "topk_pairs": 35,
+  "sentences": 30
+}

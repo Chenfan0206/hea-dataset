@@ -1,0 +1,7 @@
+{
+  "paper_dir": "Controlling_strength",
+  "figures": 7,
+  "direct_pairs": 7,
+  "topk_pairs": 35,
+  "sentences": 25
+}

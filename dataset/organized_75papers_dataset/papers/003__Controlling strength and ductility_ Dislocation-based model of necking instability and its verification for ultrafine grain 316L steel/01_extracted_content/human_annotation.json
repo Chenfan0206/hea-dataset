@@ -1,0 +1,1159 @@
+{
+  "Paper_Metadata": {
+    "Paper_Title": "Controlling strength and ductility: Dislocation-based model of necking instability and its verification for ultrafine grain 316L steel",
+    "DOI": "10.1016/j.actamat.2016.01.005"
+  },
+  "items": [
+    {
+      "Sample_ID": "As-annealed",
+      "Gradient_Material": false,
+      "Gradient_Group_ID": null,
+      "Composition_Info": {
+        "Role": "Target",
+        "Alloy_Name_Raw": "SUS316L steel",
+        "Nominal_Composition": null,
+        "Measured_Composition": {
+          "Composition_Type": "wt%",
+          "Elements_Normalized": {
+            "C": 0.007,
+            "Si": 0.68,
+            "Mn": 1.15,
+            "P": 0.032,
+            "S": 0.001,
+            "Ni": 12.1,
+            "Cr": 17.42,
+            "Mo": 2.05,
+            "Fe": 66.56
+          },
+          "Measurement_Method": null
+        },
+        "Note": null
+      },
+      "Process_Info": {
+        "Process_Category": "Annealing",
+        "Process_Text": {
+          "original": "The steel plates were annealed at 1323 K for 1 h in vacuum.",
+          "simplified": "Annealed in vacuum at 1323 K for 1 hour."
+        },
+        "Equipment": null,
+        "Process_Steps": [
+          {
+            "Step_Name": "Initial_Annealing",
+            "Temperature_K": 1323,
+            "Time_h": 1,
+            "Atmosphere": "vacuum"
+          }
+        ],
+        "Key_Params": {}
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": "fcc austenitic 316L stainless steel",
+          "simplified": "fcc austenitic structure"
+        },
+        "Main_Phase": "Gamma (γ)",
+        "Precipitates": [],
+        "Porosity_pct": null,
+        "Relative_Density_pct": null,
+        "Grain_Size_avg_um": null,
+        "Precipitate_Size_avg_nm": null,
+        "Phase_Fraction_pct": null,
+        "Advanced_Quantitative_Features": {}
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Yield_Strength",
+          "Test_Condition": "Monotonic tensile test in air at room temperature",
+          "Value_Numeric": 270.0,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "MPa",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": 0.001,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": "1.5x1.5 mm2 cross section and 5 mm gauge length",
+          "Note": "Conventional yield stress σ0.2"
+        }
+      ]
+    },
+    {
+      "Sample_ID": "As-ECAPed",
+      "Gradient_Material": false,
+      "Gradient_Group_ID": null,
+      "Composition_Info": {
+        "Role": "Target",
+        "Alloy_Name_Raw": "SUS316L steel",
+        "Nominal_Composition": null,
+        "Measured_Composition": {
+          "Composition_Type": "wt%",
+          "Elements_Normalized": {
+            "C": 0.007,
+            "Si": 0.68,
+            "Mn": 1.15,
+            "P": 0.032,
+            "S": 0.001,
+            "Ni": 12.1,
+            "Cr": 17.42,
+            "Mo": 2.05,
+            "Fe": 66.56
+          },
+          "Measurement_Method": null
+        },
+        "Note": null
+      },
+      "Process_Info": {
+        "Process_Category": "Severe Plastic Deformation",
+        "Process_Text": {
+          "original": "The steel plates were annealed at 1323 K for 1 h in vacuum. The billets for ECAP processing 4x4x40 mm3 in size were cut by spark erosion. They were then pressed at 423 K through an ECAP die with 4x4 mm2 square channels intersecting at 90° with sharp corners.",
+          "simplified": "Annealed at 1323 K, then subjected to ECAP at 423 K."
+        },
+        "Equipment": "ECAP die with 90° channel intersection, sharp corners",
+        "Process_Steps": [
+          {
+            "Step_Name": "Initial_Annealing",
+            "Temperature_K": 1323,
+            "Time_h": 1,
+            "Atmosphere": "vacuum"
+          },
+          {
+            "Step_Name": "ECAP",
+            "Temperature_K": 423,
+            "Passes": 1,
+            "Die_Angle_deg": 90,
+            "Cross_Section_mm": "4x4"
+          }
+        ],
+        "Key_Params": {
+          "Number_of_ECAP_Passes": 1
+        }
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": "This microstructure appears to be non-homogeneous, comprising two major constituents with approximately equal volume fractions. First, the ECAP processed samples contained large populations of very thin deformation twins, Fig. 4a. Second, then non-twinned regions with severely distorted grain microstructures and a high dislocation density were observed, Fig. 4b.",
+          "simplified": "Non-homogeneous: thin deformation twins and non-twinned regions with distorted grains and high dislocation density."
+        },
+        "Main_Phase": "Gamma (γ)",
+        "Precipitates": [],
+        "Porosity_pct": null,
+        "Relative_Density_pct": null,
+        "Grain_Size_avg_um": null,
+        "Precipitate_Size_avg_nm": null,
+        "Phase_Fraction_pct": {
+          "Deformation_Twins_vol%": 50,
+          "Non-twinned_Dislocation_Rich_vol%": 50
+        },
+        "Advanced_Quantitative_Features": {
+          "Dislocation_Density": "high (not quantified)"
+        }
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Yield_Strength",
+          "Test_Condition": "Monotonic tensile test in air at room temperature",
+          "Value_Numeric": 921.0,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "MPa",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": 0.001,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": "1.5x1.5 mm2 cross section and 5 mm gauge length",
+          "Note": "σ0.2 after ECAP (engineering stress)"
+        },
+        {
+          "Property_Name": "Elongation_Uniform",
+          "Test_Condition": "Monotonic tensile test in air at room temperature",
+          "Value_Numeric": 2.1,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "%",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": 0.001,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": "1.5x1.5 mm2 cross section and 5 mm gauge length",
+          "Note": "Engineering uniform elongation ε_U from Table 2"
+        }
+      ],
+      "Constitutive_Model_Params": {
+        "Model_Name": "Kocks-Mecking type (one-internal-variable)",
+        "Parameters": {
+          "sigma_0_MPa": 800,
+          "sigma_S_MPa": 133.77,
+          "k1_dislocation_storage": null,
+          "k2_dynamic_recovery": 111.404,
+          "m_strain_rate_sensitivity": null,
+          "Taylor_factor_M": null,
+          "characteristic_strain_epsilon_bar": 0.018
+        },
+        "Validation_Data": [
+          {
+            "Predicted_Necking_Strain_epsilon_NC": 0.011,
+            "Experimental_Necking_Strain_epsilon_n": 0.021,
+            "Condition": "as ECAP"
+          }
+        ],
+        "Note": "k2 from Table 2; sigma_0 and sigma_S from curve fitting (Table 2). Characteristic strain epsilon_bar = 2/(k2*M), M not specified."
+      }
+    },
+    {
+      "Sample_ID": "ECAP+573K",
+      "Gradient_Material": false,
+      "Gradient_Group_ID": null,
+      "Composition_Info": {
+        "Role": "Target",
+        "Alloy_Name_Raw": "SUS316L steel",
+        "Nominal_Composition": null,
+        "Measured_Composition": {
+          "Composition_Type": "wt%",
+          "Elements_Normalized": {
+            "C": 0.007,
+            "Si": 0.68,
+            "Mn": 1.15,
+            "P": 0.032,
+            "S": 0.001,
+            "Ni": 12.1,
+            "Cr": 17.42,
+            "Mo": 2.05,
+            "Fe": 66.56
+          },
+          "Measurement_Method": null
+        },
+        "Note": null
+      },
+      "Process_Info": {
+        "Process_Category": "ECAP + Annealing",
+        "Process_Text": {
+          "original": "The ECAP processed billets were annealed in vacuum at different temperatures varied from 573 K to 1073 K for 1 h.",
+          "simplified": "ECAP processed material annealed in vacuum at 573 K for 1 hour."
+        },
+        "Equipment": null,
+        "Process_Steps": [
+          {
+            "Step_Name": "Initial_Annealing",
+            "Temperature_K": 1323,
+            "Time_h": 1,
+            "Atmosphere": "vacuum"
+          },
+          {
+            "Step_Name": "ECAP",
+            "Temperature_K": 423,
+            "Passes": 1,
+            "Die_Angle_deg": 90
+          },
+          {
+            "Step_Name": "Post_ECAP_Annealing",
+            "Temperature_K": 573,
+            "Time_h": 1,
+            "Atmosphere": "vacuum"
+          }
+        ],
+        "Key_Params": {
+          "Annealing_Temperature_K": 573,
+          "Annealing_Time_h": 1
+        }
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": null,
+          "simplified": "Not described in detail; likely similar to as-ECAPed with partial recovery."
+        },
+        "Main_Phase": "Gamma (γ)",
+        "Precipitates": [],
+        "Porosity_pct": null,
+        "Relative_Density_pct": null,
+        "Grain_Size_avg_um": null,
+        "Precipitate_Size_avg_nm": null,
+        "Advanced_Quantitative_Features": {}
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Elongation_Uniform",
+          "Test_Condition": "Monotonic tensile test in air at room temperature",
+          "Value_Numeric": 2.2,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "%",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": 0.001,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": "1.5x1.5 mm2 cross section and 5 mm gauge length",
+          "Note": "Engineering uniform elongation from Table 2"
+        }
+      ],
+      "Constitutive_Model_Params": {
+        "Model_Name": "Kocks-Mecking type",
+        "Parameters": {
+          "sigma_0_MPa": 700,
+          "sigma_S_MPa": 28.439,
+          "k2_dynamic_recovery": 93.080,
+          "characteristic_strain_epsilon_bar": 0.0215
+        },
+        "Validation_Data": [
+          {
+            "Predicted_Necking_Strain_epsilon_NC": 0.0129,
+            "Experimental_Necking_Strain_epsilon_n": 0.022,
+            "Condition": "annealed 573 K"
+          }
+        ]
+      }
+    },
+    {
+      "Sample_ID": "ECAP+673K",
+      "Gradient_Material": false,
+      "Gradient_Group_ID": null,
+      "Composition_Info": {
+        "Role": "Target",
+        "Alloy_Name_Raw": "SUS316L steel",
+        "Nominal_Composition": null,
+        "Measured_Composition": {
+          "Composition_Type": "wt%",
+          "Elements_Normalized": {
+            "C": 0.007,
+            "Si": 0.68,
+            "Mn": 1.15,
+            "P": 0.032,
+            "S": 0.001,
+            "Ni": 12.1,
+            "Cr": 17.42,
+            "Mo": 2.05,
+            "Fe": 66.56
+          },
+          "Measurement_Method": null
+        },
+        "Note": null
+      },
+      "Process_Info": {
+        "Process_Category": "ECAP + Annealing",
+        "Process_Text": {
+          "original": "The ECAP processed billets were annealed in vacuum at different temperatures varied from 573 K to 1073 K for 1 h.",
+          "simplified": "ECAP processed material annealed in vacuum at 673 K for 1 hour."
+        },
+        "Equipment": null,
+        "Process_Steps": [
+          {
+            "Step_Name": "Initial_Annealing",
+            "Temperature_K": 1323,
+            "Time_h": 1,
+            "Atmosphere": "vacuum"
+          },
+          {
+            "Step_Name": "ECAP",
+            "Temperature_K": 423,
+            "Passes": 1
+          },
+          {
+            "Step_Name": "Post_ECAP_Annealing",
+            "Temperature_K": 673,
+            "Time_h": 1,
+            "Atmosphere": "vacuum"
+          }
+        ],
+        "Key_Params": {
+          "Annealing_Temperature_K": 673,
+          "Annealing_Time_h": 1
+        }
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": null,
+          "simplified": "Not described."
+        },
+        "Main_Phase": "Gamma (γ)",
+        "Precipitates": [],
+        "Porosity_pct": null,
+        "Relative_Density_pct": null,
+        "Grain_Size_avg_um": null,
+        "Precipitate_Size_avg_nm": null,
+        "Advanced_Quantitative_Features": {}
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Elongation_Uniform",
+          "Test_Condition": "Monotonic tensile test in air at room temperature",
+          "Value_Numeric": 2.6,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "%",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": 0.001,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": "1.5x1.5 mm2 cross section and 5 mm gauge length",
+          "Note": "Engineering uniform elongation from Table 2"
+        }
+      ],
+      "Constitutive_Model_Params": {
+        "Model_Name": "Kocks-Mecking type",
+        "Parameters": {
+          "sigma_0_MPa": 660,
+          "sigma_S_MPa": 33.553,
+          "k2_dynamic_recovery": 75.642,
+          "characteristic_strain_epsilon_bar": 0.0264
+        },
+        "Validation_Data": [
+          {
+            "Predicted_Necking_Strain_epsilon_NC": 0.0157,
+            "Experimental_Necking_Strain_epsilon_n": 0.026,
+            "Condition": "annealed 673 K"
+          }
+        ]
+      }
+    },
+    {
+      "Sample_ID": "ECAP+773K",
+      "Gradient_Material": false,
+      "Gradient_Group_ID": null,
+      "Composition_Info": {
+        "Role": "Target",
+        "Alloy_Name_Raw": "SUS316L steel",
+        "Nominal_Composition": null,
+        "Measured_Composition": {
+          "Composition_Type": "wt%",
+          "Elements_Normalized": {
+            "C": 0.007,
+            "Si": 0.68,
+            "Mn": 1.15,
+            "P": 0.032,
+            "S": 0.001,
+            "Ni": 12.1,
+            "Cr": 17.42,
+            "Mo": 2.05,
+            "Fe": 66.56
+          },
+          "Measurement_Method": null
+        },
+        "Note": null
+      },
+      "Process_Info": {
+        "Process_Category": "ECAP + Annealing",
+        "Process_Text": {
+          "original": "The ECAP processed billets were annealed in vacuum at different temperatures varied from 573 K to 1073 K for 1 h.",
+          "simplified": "ECAP processed material annealed in vacuum at 773 K for 1 hour."
+        },
+        "Equipment": null,
+        "Process_Steps": [
+          {
+            "Step_Name": "Initial_Annealing",
+            "Temperature_K": 1323,
+            "Time_h": 1,
+            "Atmosphere": "vacuum"
+          },
+          {
+            "Step_Name": "ECAP",
+            "Temperature_K": 423,
+            "Passes": 1
+          },
+          {
+            "Step_Name": "Post_ECAP_Annealing",
+            "Temperature_K": 773,
+            "Time_h": 1,
+            "Atmosphere": "vacuum"
+          }
+        ],
+        "Key_Params": {
+          "Annealing_Temperature_K": 773,
+          "Annealing_Time_h": 1
+        }
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": null,
+          "simplified": "Not described."
+        },
+        "Main_Phase": "Gamma (γ)",
+        "Precipitates": [],
+        "Porosity_pct": null,
+        "Relative_Density_pct": null,
+        "Grain_Size_avg_um": null,
+        "Precipitate_Size_avg_nm": null,
+        "Advanced_Quantitative_Features": {}
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Elongation_Uniform",
+          "Test_Condition": "Monotonic tensile test in air at room temperature",
+          "Value_Numeric": 4.5,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "%",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": 0.001,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": "1.5x1.5 mm2 cross section and 5 mm gauge length",
+          "Note": "Engineering uniform elongation from Table 2"
+        }
+      ],
+      "Constitutive_Model_Params": {
+        "Model_Name": "Kocks-Mecking type",
+        "Parameters": {
+          "sigma_0_MPa": 630,
+          "sigma_S_MPa": 77.253,
+          "k2_dynamic_recovery": 40.065,
+          "characteristic_strain_epsilon_bar": 0.0499
+        },
+        "Validation_Data": [
+          {
+            "Predicted_Necking_Strain_epsilon_NC": 0.033,
+            "Experimental_Necking_Strain_epsilon_n": 0.0447,
+            "Condition": "annealed 773 K"
+          }
+        ]
+      }
+    },
+    {
+      "Sample_ID": "ECAP+823K",
+      "Gradient_Material": false,
+      "Gradient_Group_ID": null,
+      "Composition_Info": {
+        "Role": "Target",
+        "Alloy_Name_Raw": "SUS316L steel",
+        "Nominal_Composition": null,
+        "Measured_Composition": {
+          "Composition_Type": "wt%",
+          "Elements_Normalized": {
+            "C": 0.007,
+            "Si": 0.68,
+            "Mn": 1.15,
+            "P": 0.032,
+            "S": 0.001,
+            "Ni": 12.1,
+            "Cr": 17.42,
+            "Mo": 2.05,
+            "Fe": 66.56
+          },
+          "Measurement_Method": null
+        },
+        "Note": null
+      },
+      "Process_Info": {
+        "Process_Category": "ECAP + Annealing",
+        "Process_Text": {
+          "original": "The ECAP processed billets were annealed in vacuum at different temperatures varied from 573 K to 1073 K for 1 h.",
+          "simplified": "ECAP processed material annealed in vacuum at 823 K for 1 hour."
+        },
+        "Equipment": null,
+        "Process_Steps": [
+          {
+            "Step_Name": "Initial_Annealing",
+            "Temperature_K": 1323,
+            "Time_h": 1,
+            "Atmosphere": "vacuum"
+          },
+          {
+            "Step_Name": "ECAP",
+            "Temperature_K": 423,
+            "Passes": 1
+          },
+          {
+            "Step_Name": "Post_ECAP_Annealing",
+            "Temperature_K": 823,
+            "Time_h": 1,
+            "Atmosphere": "vacuum"
+          }
+        ],
+        "Key_Params": {
+          "Annealing_Temperature_K": 823,
+          "Annealing_Time_h": 1
+        }
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": null,
+          "simplified": "Not described."
+        },
+        "Main_Phase": "Gamma (γ)",
+        "Precipitates": [],
+        "Porosity_pct": null,
+        "Relative_Density_pct": null,
+        "Grain_Size_avg_um": null,
+        "Precipitate_Size_avg_nm": null,
+        "Advanced_Quantitative_Features": {}
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Elongation_Uniform",
+          "Test_Condition": "Monotonic tensile test in air at room temperature",
+          "Value_Numeric": 6.7,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "%",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": 0.001,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": "1.5x1.5 mm2 cross section and 5 mm gauge length",
+          "Note": "Engineering uniform elongation from Table 2"
+        }
+      ],
+      "Constitutive_Model_Params": {
+        "Model_Name": "Kocks-Mecking type",
+        "Parameters": {
+          "sigma_0_MPa": 630,
+          "sigma_S_MPa": 127.85,
+          "k2_dynamic_recovery": 11.551,
+          "characteristic_strain_epsilon_bar": 0.173
+        },
+        "Validation_Data": [
+          {
+            "Predicted_Necking_Strain_epsilon_NC": 0.065,
+            "Experimental_Necking_Strain_epsilon_n": 0.065,
+            "Condition": "annealed 823 K"
+          }
+        ]
+      }
+    },
+    {
+      "Sample_ID": "ECAP+873K",
+      "Gradient_Material": false,
+      "Gradient_Group_ID": null,
+      "Composition_Info": {
+        "Role": "Target",
+        "Alloy_Name_Raw": "SUS316L steel",
+        "Nominal_Composition": null,
+        "Measured_Composition": {
+          "Composition_Type": "wt%",
+          "Elements_Normalized": {
+            "C": 0.007,
+            "Si": 0.68,
+            "Mn": 1.15,
+            "P": 0.032,
+            "S": 0.001,
+            "Ni": 12.1,
+            "Cr": 17.42,
+            "Mo": 2.05,
+            "Fe": 66.56
+          },
+          "Measurement_Method": null
+        },
+        "Note": null
+      },
+      "Process_Info": {
+        "Process_Category": "ECAP + Annealing",
+        "Process_Text": {
+          "original": "The ECAP processed billets were annealed in vacuum at different temperatures varied from 573 K to 1073 K for 1 h.",
+          "simplified": "ECAP processed material annealed in vacuum at 873 K for 1 hour."
+        },
+        "Equipment": null,
+        "Process_Steps": [
+          {
+            "Step_Name": "Initial_Annealing",
+            "Temperature_K": 1323,
+            "Time_h": 1,
+            "Atmosphere": "vacuum"
+          },
+          {
+            "Step_Name": "ECAP",
+            "Temperature_K": 423,
+            "Passes": 1
+          },
+          {
+            "Step_Name": "Post_ECAP_Annealing",
+            "Temperature_K": 873,
+            "Time_h": 1,
+            "Atmosphere": "vacuum"
+          }
+        ],
+        "Key_Params": {
+          "Annealing_Temperature_K": 873,
+          "Annealing_Time_h": 1
+        }
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": "After annealing at 873 K and 923 K, Fig. 5a and b, respectively, the twinned regions and the non-twinned dislocation-rich regions still appear concurrently on TEM images in nearly the same surface fractions. Dislocation recovery manifests itself in TEM images as well-defined regions with a bright uniform contrast.",
+          "simplified": "Twinned and non-twinned regions persist; dislocation recovery visible as bright uniform contrast regions."
+        },
+        "Main_Phase": "Gamma (γ)",
+        "Precipitates": [],
+        "Porosity_pct": null,
+        "Relative_Density_pct": null,
+        "Grain_Size_avg_um": null,
+        "Precipitate_Size_avg_nm": null,
+        "Phase_Fraction_pct": {
+          "Deformation_Twins_vol%": 50,
+          "Non-twinned_Recovered_vol%": 50
+        },
+        "Advanced_Quantitative_Features": {}
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Elongation_Uniform",
+          "Test_Condition": "Monotonic tensile test in air at room temperature",
+          "Value_Numeric": 11.1,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "%",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": 0.001,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": "1.5x1.5 mm2 cross section and 5 mm gauge length",
+          "Note": "Engineering uniform elongation from Table 2"
+        }
+      ],
+      "Constitutive_Model_Params": {
+        "Model_Name": "Kocks-Mecking type",
+        "Parameters": {
+          "sigma_0_MPa": 600,
+          "sigma_S_MPa": 222.357,
+          "k2_dynamic_recovery": 8.281,
+          "characteristic_strain_epsilon_bar": 0.242
+        },
+        "Validation_Data": [
+          {
+            "Predicted_Necking_Strain_epsilon_NC": 0.103,
+            "Experimental_Necking_Strain_epsilon_n": 0.111,
+            "Condition": "annealed 873 K"
+          }
+        ]
+      }
+    },
+    {
+      "Sample_ID": "ECAP+923K",
+      "Gradient_Material": false,
+      "Gradient_Group_ID": null,
+      "Composition_Info": {
+        "Role": "Target",
+        "Alloy_Name_Raw": "SUS316L steel",
+        "Nominal_Composition": null,
+        "Measured_Composition": {
+          "Composition_Type": "wt%",
+          "Elements_Normalized": {
+            "C": 0.007,
+            "Si": 0.68,
+            "Mn": 1.15,
+            "P": 0.032,
+            "S": 0.001,
+            "Ni": 12.1,
+            "Cr": 17.42,
+            "Mo": 2.05,
+            "Fe": 66.56
+          },
+          "Measurement_Method": null
+        },
+        "Note": null
+      },
+      "Process_Info": {
+        "Process_Category": "ECAP + Annealing",
+        "Process_Text": {
+          "original": "The ECAP processed billets were annealed in vacuum at different temperatures varied from 573 K to 1073 K for 1 h.",
+          "simplified": "ECAP processed material annealed in vacuum at 923 K for 1 hour."
+        },
+        "Equipment": null,
+        "Process_Steps": [
+          {
+            "Step_Name": "Initial_Annealing",
+            "Temperature_K": 1323,
+            "Time_h": 1,
+            "Atmosphere": "vacuum"
+          },
+          {
+            "Step_Name": "ECAP",
+            "Temperature_K": 423,
+            "Passes": 1
+          },
+          {
+            "Step_Name": "Post_ECAP_Annealing",
+            "Temperature_K": 923,
+            "Time_h": 1,
+            "Atmosphere": "vacuum"
+          }
+        ],
+        "Key_Params": {
+          "Annealing_Temperature_K": 923,
+          "Annealing_Time_h": 1
+        }
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": "After annealing at 873 K and 923 K, Fig. 5a and b, respectively, the twinned regions and the non-twinned dislocation-rich regions still appear concurrently on TEM images in nearly the same surface fractions. Dislocation recovery manifests itself in TEM images as well-defined regions with a bright uniform contrast.",
+          "simplified": "Similar to 873 K: twinned and recovered regions coexist."
+        },
+        "Main_Phase": "Gamma (γ)",
+        "Precipitates": [],
+        "Porosity_pct": null,
+        "Relative_Density_pct": null,
+        "Grain_Size_avg_um": null,
+        "Precipitate_Size_avg_nm": null,
+        "Advanced_Quantitative_Features": {}
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Elongation_Uniform",
+          "Test_Condition": "Monotonic tensile test in air at room temperature",
+          "Value_Numeric": 9.7,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "%",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": 0.001,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": "1.5x1.5 mm2 cross section and 5 mm gauge length",
+          "Note": "Engineering uniform elongation from Table 2"
+        }
+      ],
+      "Constitutive_Model_Params": {
+        "Model_Name": "Kocks-Mecking type",
+        "Parameters": {
+          "sigma_0_MPa": 600,
+          "sigma_S_MPa": 204.019,
+          "k2_dynamic_recovery": 8.417,
+          "characteristic_strain_epsilon_bar": 0.238
+        },
+        "Validation_Data": [
+          {
+            "Predicted_Necking_Strain_epsilon_NC": 0.098,
+            "Experimental_Necking_Strain_epsilon_n": 0.102,
+            "Condition": "annealed 923 K"
+          }
+        ]
+      }
+    },
+    {
+      "Sample_ID": "ECAP+973K",
+      "Gradient_Material": false,
+      "Gradient_Group_ID": null,
+      "Composition_Info": {
+        "Role": "Target",
+        "Alloy_Name_Raw": "SUS316L steel",
+        "Nominal_Composition": null,
+        "Measured_Composition": {
+          "Composition_Type": "wt%",
+          "Elements_Normalized": {
+            "C": 0.007,
+            "Si": 0.68,
+            "Mn": 1.15,
+            "P": 0.032,
+            "S": 0.001,
+            "Ni": 12.1,
+            "Cr": 17.42,
+            "Mo": 2.05,
+            "Fe": 66.56
+          },
+          "Measurement_Method": null
+        },
+        "Note": null
+      },
+      "Process_Info": {
+        "Process_Category": "ECAP + Annealing",
+        "Process_Text": {
+          "original": "The ECAP processed billets were annealed in vacuum at different temperatures varied from 573 K to 1073 K for 1 h.",
+          "simplified": "ECAP processed material annealed in vacuum at 973 K for 1 hour."
+        },
+        "Equipment": null,
+        "Process_Steps": [
+          {
+            "Step_Name": "Initial_Annealing",
+            "Temperature_K": 1323,
+            "Time_h": 1,
+            "Atmosphere": "vacuum"
+          },
+          {
+            "Step_Name": "ECAP",
+            "Temperature_K": 423,
+            "Passes": 1
+          },
+          {
+            "Step_Name": "Post_ECAP_Annealing",
+            "Temperature_K": 973,
+            "Time_h": 1,
+            "Atmosphere": "vacuum"
+          }
+        ],
+        "Key_Params": {
+          "Annealing_Temperature_K": 973,
+          "Annealing_Time_h": 1
+        }
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": "After annealing at 973 K, Fig. 5c, fine recrystallized grains with average diameter of about 1 μm are observed in the microstructure. Evidently, annealing resulted in dislocation recovery and recrystallization, whilst the microstructure remained fine and the deformation twins were retained.",
+          "simplified": "Fine recrystallized grains (1 μm) with retained deformation twins."
+        },
+        "Main_Phase": "Gamma (γ)",
+        "Precipitates": [],
+        "Porosity_pct": null,
+        "Relative_Density_pct": null,
+        "Grain_Size_avg_um": 1.0,
+        "Precipitate_Size_avg_nm": null,
+        "Phase_Fraction_pct": {
+          "Recrystallized_Fraction": null,
+          "Deformation_Twins_Retained": "present"
+        },
+        "Advanced_Quantitative_Features": {}
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Elongation_Uniform",
+          "Test_Condition": "Monotonic tensile test in air at room temperature",
+          "Value_Numeric": 18.6,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "%",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": 0.001,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": "1.5x1.5 mm2 cross section and 5 mm gauge length",
+          "Note": "Engineering uniform elongation from Table 2"
+        }
+      ],
+      "Constitutive_Model_Params": {
+        "Model_Name": "Kocks-Mecking type",
+        "Parameters": {
+          "sigma_0_MPa": 590,
+          "sigma_S_MPa": 400.917,
+          "k2_dynamic_recovery": 5.303,
+          "characteristic_strain_epsilon_bar": 0.377
+        },
+        "Validation_Data": [
+          {
+            "Predicted_Necking_Strain_epsilon_NC": 0.161,
+            "Experimental_Necking_Strain_epsilon_n": 0.171,
+            "Condition": "annealed 973 K"
+          }
+        ]
+      }
+    },
+    {
+      "Sample_ID": "ECAP+1023K",
+      "Gradient_Material": false,
+      "Gradient_Group_ID": null,
+      "Composition_Info": {
+        "Role": "Target",
+        "Alloy_Name_Raw": "SUS316L steel",
+        "Nominal_Composition": null,
+        "Measured_Composition": {
+          "Composition_Type": "wt%",
+          "Elements_Normalized": {
+            "C": 0.007,
+            "Si": 0.68,
+            "Mn": 1.15,
+            "P": 0.032,
+            "S": 0.001,
+            "Ni": 12.1,
+            "Cr": 17.42,
+            "Mo": 2.05,
+            "Fe": 66.56
+          },
+          "Measurement_Method": null
+        },
+        "Note": null
+      },
+      "Process_Info": {
+        "Process_Category": "ECAP + Annealing",
+        "Process_Text": {
+          "original": "The ECAP processed billets were annealed in vacuum at different temperatures varied from 573 K to 1073 K for 1 h.",
+          "simplified": "ECAP processed material annealed in vacuum at 1023 K for 1 hour."
+        },
+        "Equipment": null,
+        "Process_Steps": [
+          {
+            "Step_Name": "Initial_Annealing",
+            "Temperature_K": 1323,
+            "Time_h": 1,
+            "Atmosphere": "vacuum"
+          },
+          {
+            "Step_Name": "ECAP",
+            "Temperature_K": 423,
+            "Passes": 1
+          },
+          {
+            "Step_Name": "Post_ECAP_Annealing",
+            "Temperature_K": 1023,
+            "Time_h": 1,
+            "Atmosphere": "vacuum"
+          }
+        ],
+        "Key_Params": {
+          "Annealing_Temperature_K": 1023,
+          "Annealing_Time_h": 1
+        }
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": "Only after annealing at 1023 K did the area fraction of the recrystallized regions with coarsened grains increase appreciably",
+          "simplified": "Increased recrystallized area fraction with coarsened grains."
+        },
+        "Main_Phase": "Gamma (γ)",
+        "Precipitates": [],
+        "Porosity_pct": null,
+        "Relative_Density_pct": null,
+        "Grain_Size_avg_um": null,
+        "Precipitate_Size_avg_nm": null,
+        "Phase_Fraction_pct": {
+          "Recrystallized_Area_Fraction": "increased appreciably (not quantified)"
+        },
+        "Advanced_Quantitative_Features": {}
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Elongation_Uniform",
+          "Test_Condition": "Monotonic tensile test in air at room temperature",
+          "Value_Numeric": 43.8,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "%",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": 0.001,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": "1.5x1.5 mm2 cross section and 5 mm gauge length",
+          "Note": "Engineering uniform elongation from Table 2"
+        }
+      ],
+      "Constitutive_Model_Params": {
+        "Model_Name": "Kocks-Mecking type",
+        "Parameters": {
+          "sigma_0_MPa": 330,
+          "sigma_S_MPa": 907.861,
+          "k2_dynamic_recovery": 1.860,
+          "characteristic_strain_epsilon_bar": 1.075
+        },
+        "Validation_Data": [
+          {
+            "Predicted_Necking_Strain_epsilon_NC": 0.364,
+            "Experimental_Necking_Strain_epsilon_n": 0.363,
+            "Condition": "annealed 1023 K"
+          }
+        ]
+      }
+    },
+    {
+      "Sample_ID": "ECAP+1073K",
+      "Gradient_Material": false,
+      "Gradient_Group_ID": null,
+      "Composition_Info": {
+        "Role": "Target",
+        "Alloy_Name_Raw": "SUS316L steel",
+        "Nominal_Composition": null,
+        "Measured_Composition": {
+          "Composition_Type": "wt%",
+          "Elements_Normalized": {
+            "C": 0.007,
+            "Si": 0.68,
+            "Mn": 1.15,
+            "P": 0.032,
+            "S": 0.001,
+            "Ni": 12.1,
+            "Cr": 17.42,
+            "Mo": 2.05,
+            "Fe": 66.56
+          },
+          "Measurement_Method": null
+        },
+        "Note": null
+      },
+      "Process_Info": {
+        "Process_Category": "ECAP + Annealing",
+        "Process_Text": {
+          "original": "The ECAP processed billets were annealed in vacuum at different temperatures varied from 573 K to 1073 K for 1 h.",
+          "simplified": "ECAP processed material annealed in vacuum at 1073 K for 1 hour."
+        },
+        "Equipment": null,
+        "Process_Steps": [
+          {
+            "Step_Name": "Initial_Annealing",
+            "Temperature_K": 1323,
+            "Time_h": 1,
+            "Atmosphere": "vacuum"
+          },
+          {
+            "Step_Name": "ECAP",
+            "Temperature_K": 423,
+            "Passes": 1
+          },
+          {
+            "Step_Name": "Post_ECAP_Annealing",
+            "Temperature_K": 1073,
+            "Time_h": 1,
+            "Atmosphere": "vacuum"
+          }
+        ],
+        "Key_Params": {
+          "Annealing_Temperature_K": 1073,
+          "Annealing_Time_h": 1
+        }
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": "the ECAP processed samples were fully recrystallized after annealing at 1073 K, Fig. 5e.",
+          "simplified": "Fully recrystallized microstructure."
+        },
+        "Main_Phase": "Gamma (γ)",
+        "Precipitates": [],
+        "Porosity_pct": null,
+        "Relative_Density_pct": null,
+        "Grain_Size_avg_um": null,
+        "Precipitate_Size_avg_nm": null,
+        "Phase_Fraction_pct": {
+          "Recrystallized_Area_Fraction": 100
+        },
+        "Advanced_Quantitative_Features": {}
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Elongation_Uniform",
+          "Test_Condition": "Monotonic tensile test in air at room temperature",
+          "Value_Numeric": 41.4,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "%",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": 0.001,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": "1.5x1.5 mm2 cross section and 5 mm gauge length",
+          "Note": "Engineering uniform elongation from Table 2"
+        }
+      ],
+      "Constitutive_Model_Params": {
+        "Model_Name": "Kocks-Mecking type",
+        "Parameters": {
+          "sigma_0_MPa": 330,
+          "sigma_S_MPa": 1204.99,
+          "k2_dynamic_recovery": 1.334,
+          "characteristic_strain_epsilon_bar": 1.499
+        },
+        "Validation_Data": [
+          {
+            "Predicted_Necking_Strain_epsilon_NC": 0.424,
+            "Experimental_Necking_Strain_epsilon_n": 0.414,
+            "Condition": "annealed 1073 K"
+          }
+        ]
+      }
+    }
+  ]
+}

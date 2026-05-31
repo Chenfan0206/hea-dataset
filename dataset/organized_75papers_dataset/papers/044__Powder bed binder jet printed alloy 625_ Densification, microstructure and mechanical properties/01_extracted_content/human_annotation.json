@@ -1,0 +1,325 @@
+{
+  "Paper_Metadata": {
+    "Paper_Title": "Powder bed binder jet printed alloy 625: Densification, microstructure and mechanical properties",
+    "DOI": "10.1016/j.matdes.2016.06.067"
+  },
+  "items": [
+    {
+      "Sample_ID": "BJP-625-1280C",
+      "Gradient_Material": false,
+      "Composition_Info": {
+        "Role": "Target",
+        "Alloy_Name_Raw": "Alloy 625",
+        "Nominal_Composition": {
+          "Composition_Type": "wt%",
+          "Elements_Normalized": {
+            "Ni": ">58",
+            "Cr": "20-23",
+            "Fe": "<5",
+            "Nb": "3.15-4.15",
+            "Mo": "8-10",
+            "Al": "<0.4",
+            "Ti": "<0.4",
+            "C": "<0.1",
+            "Co": "<1.0",
+            "Mn": "<0.5",
+            "Si": "<0.5",
+            "P": "<0.015"
+          },
+          "Source": "Standard values from Table 1"
+        },
+        "Measured_Composition": {
+          "Composition_Type": "wt%",
+          "Elements_Normalized": {
+            "Ni": 60.97,
+            "Cr": 21.01,
+            "Fe": 2.67,
+            "Nb": 3.99,
+            "Mo": 8.46,
+            "Al": 0.04,
+            "Ti": 0.2,
+            "C": 0.14,
+            "Co": 0.21,
+            "Mn": 0.2,
+            "Si": 0.13,
+            "P": 0.02
+          },
+          "Measurement_Method": "EDS"
+        }
+      },
+      "Process_Info": {
+        "Process_Category": "Powder bed binder jet printing and sintering",
+        "Process_Text": {
+          "original": "An M-Flex ExOne powder bed binder jet printer was used... green parts were cured at 175 °C... and then sintered in a Lindberg tube furnace... under vacuum: heating at 5 °C/min to 600 °C, 3.2 °C/min to 1000 °C, 2.8 °C/min to 1280 °C, holding for 4 h, cooling at 1 °C/min to 1200 °C, 3.1 °C/min to 500 °C and finally to RT.",
+          "simplified": "Binder jet printing; Curing (175°C); Vacuum Sintering (1280°C, 4h)."
+        },
+        "Key_Params": {
+          "Layer_Thickness_um": 100.0,
+          "Scanning_Speed_mm_s": 130.0,
+          "Oscillator_Speed_rpm": 2050.0,
+          "Roller_Speed_rpm": 250.0,
+          "Roller_Traverse_Speed_mm_s": 15.0,
+          "Drying_Speed_mm_s": 17.0,
+          "Curing_Temperature_K": 448.15,
+          "Sintering_Temperature_K": 1553.15,
+          "Sintering_Time_h": 4.0,
+          "Protective_Atmosphere": "High vacuum",
+          "Powder_Size_avg_um": "16-53"
+        }
+      },
+      "Microstructure_Info": {
+        "Main_Phase": "Gamma (γ)",
+        "Precipitates": [
+          {
+            "Phase_Type": "MC Carbide",
+            "Phase_Composition": "NbC",
+            "Location": "Grain boundaries and within grains"
+          },
+          {
+            "Phase_Type": "MoC",
+            "Location": "Grain boundaries"
+          },
+          {
+            "Phase_Type": "Oxide",
+            "Phase_Composition": "Cr2O3",
+            "Location": "Grain boundaries"
+          },
+          {
+            "Phase_Type": "Delta",
+            "Phase_Composition": "Ni3Nb",
+            "Location": "Grain boundaries"
+          }
+        ],
+        "Porosity_pct": 0.4,
+        "Relative_Density_pct": 99.6,
+        "Grain_Size_avg_um": 55.0,
+        "Grain_Size_std_um": 15.0,
+        "Microstructure_Text": {
+          "simplified": "Fully densified (99.6%), equiaxed grains (55±15 µm), presence of MC, M6C, Delta, and Gamma Prime precipitates."
+        }
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Yield_Strength",
+          "Value_Numeric": 327.0,
+          "Value_StdDev": 24.7,
+          "Unit": "MPa",
+          "Test_Temperature_K": 298.15
+        },
+        {
+          "Property_Name": "Ultimate_Tensile_Strength",
+          "Value_Numeric": 612.0,
+          "Value_StdDev": 24.7,
+          "Unit": "MPa",
+          "Test_Temperature_K": 298.15
+        },
+        {
+          "Property_Name": "Elongation_Total",
+          "Value_Numeric": 40.9,
+          "Value_StdDev": null,
+          "Unit": "%",
+          "Test_Temperature_K": 298.15,
+          "Note": "Reported as 40.9% fracture strain."
+        },
+        {
+          "Property_Name": "Hardness_HV",
+          "Value_Numeric": 237.4,
+          "Value_StdDev": 4.9,
+          "Unit": "HV0.1",
+          "Test_Temperature_K": 298.15
+        }
+      ]
+    },
+    {
+      "Sample_ID": "BJP-625-1290C",
+      "Gradient_Material": false,
+      "Composition_Info": {
+        "Role": "Target",
+        "Alloy_Name_Raw": "Alloy 625",
+        "Measured_Composition": {
+          "Composition_Type": "wt%",
+          "Elements_Normalized": {
+            "Ni": 60.97,
+            "Cr": 21.01,
+            "Fe": 2.67,
+            "Nb": 3.99,
+            "Mo": 8.46,
+            "Al": 0.04,
+            "Ti": 0.2,
+            "C": 0.14,
+            "Co": 0.21,
+            "Mn": 0.2,
+            "Si": 0.13,
+            "P": 0.02
+          },
+          "Measurement_Method": "EDS"
+        }
+      },
+      "Process_Info": {
+        "Process_Category": "Powder bed binder jet printing and sintering",
+        "Process_Text": {
+          "original": "Sintered at 1290 °C for 4 h under vacuum.",
+          "simplified": "BJP followed by vacuum sintering at 1290°C for 4 hours."
+        },
+        "Key_Params": {
+          "Sintering_Temperature_K": 1563.15,
+          "Sintering_Time_h": 4.0
+        }
+      },
+      "Microstructure_Info": {
+        "Relative_Density_pct": 98.0,
+        "Grain_Size_avg_um": 103.0,
+        "Grain_Size_std_um": 32.0,
+        "Microstructure_Text": {
+          "simplified": "Grain growth observed (103±32 µm), density <99%, part distortion."
+        }
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Ultimate_Tensile_Strength",
+          "Value_Numeric": 588.0,
+          "Value_StdDev": 24.7,
+          "Unit": "MPa",
+          "Test_Temperature_K": 298.15
+        },
+        {
+          "Property_Name": "Elongation_Total",
+          "Value_Numeric": 45.0,
+          "Value_StdDev": null,
+          "Unit": "%",
+          "Test_Temperature_K": 298.15
+        }
+      ]
+    },
+    {
+      "Sample_ID": "BJP-625-1300C",
+      "Gradient_Material": false,
+      "Composition_Info": {
+        "Role": "Target",
+        "Alloy_Name_Raw": "Alloy 625",
+        "Measured_Composition": {
+          "Composition_Type": "wt%",
+          "Elements_Normalized": {
+            "Ni": 60.97,
+            "Cr": 21.01,
+            "Fe": 2.67,
+            "Nb": 3.99,
+            "Mo": 8.46,
+            "Al": 0.04,
+            "Ti": 0.2,
+            "C": 0.14,
+            "Co": 0.21,
+            "Mn": 0.2,
+            "Si": 0.13,
+            "P": 0.02
+          },
+          "Measurement_Method": "EDS"
+        }
+      },
+      "Process_Info": {
+        "Process_Category": "Powder bed binder jet printing and sintering",
+        "Process_Text": {
+          "original": "Sintered at 1300 °C for 4 h under vacuum.",
+          "simplified": "BJP followed by vacuum sintering at 1300°C for 4 hours."
+        },
+        "Key_Params": {
+          "Sintering_Temperature_K": 1573.15,
+          "Sintering_Time_h": 4.0
+        }
+      },
+      "Microstructure_Info": {
+        "Relative_Density_pct": 98.0,
+        "Grain_Size_avg_um": 182.0,
+        "Grain_Size_std_um": 31.0,
+        "Microstructure_Text": {
+          "simplified": "Significant grain growth (182±31 µm) and density loss (<99%)."
+        }
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Ultimate_Tensile_Strength",
+          "Value_Numeric": 522.0,
+          "Value_StdDev": 24.7,
+          "Unit": "MPa",
+          "Test_Temperature_K": 298.15
+        },
+        {
+          "Property_Name": "Elongation_Total",
+          "Value_Numeric": 35.6,
+          "Value_StdDev": null,
+          "Unit": "%",
+          "Test_Temperature_K": 298.15
+        }
+      ]
+    },
+    {
+      "Sample_ID": "REF-PIM-625",
+      "Gradient_Material": false,
+      "Composition_Info": {
+        "Role": "Reference",
+        "Alloy_Name_Raw": "Powder injection molded alloy 625",
+        "Nominal_Composition": null
+      },
+      "Process_Info": {
+        "Process_Category": "Powder injection molding",
+        "Process_Text": {
+          "original": "Ozgun et al. [12] reported that samples prepared by powder injection molding (PIM) sintered at 1290 °C for 3 h.",
+          "simplified": "PIM process sintered at 1290°C for 3 hours."
+        },
+        "Key_Params": {
+          "Sintering_Temperature_K": 1563.15,
+          "Sintering_Time_h": 3.0
+        }
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "simplified": "Reference data."
+        }
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Ultimate_Tensile_Strength",
+          "Value_Numeric": 650.0,
+          "Unit": "MPa",
+          "Data_Source": "literature [12]"
+        },
+        {
+          "Property_Name": "Elongation_Total",
+          "Value_Numeric": 45.0,
+          "Unit": "%",
+          "Data_Source": "literature [12]"
+        }
+      ]
+    },
+    {
+      "Sample_ID": "REF-CAST-625",
+      "Gradient_Material": false,
+      "Composition_Info": {
+        "Role": "Reference",
+        "Alloy_Name_Raw": "Cast alloy 625",
+        "Nominal_Composition": null
+      },
+      "Process_Info": {
+        "Process_Category": "Casting",
+        "Process_Text": {
+          "original": "Cast alloy 625 [11].",
+          "simplified": "Conventional casting."
+        }
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Ultimate_Tensile_Strength",
+          "Value_Numeric": 710.0,
+          "Unit": "MPa",
+          "Data_Source": "literature [11]"
+        },
+        {
+          "Property_Name": "Elongation_Total",
+          "Value_Numeric": 48.0,
+          "Unit": "%",
+          "Data_Source": "literature [11]"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1224 @@
+{
+  "Paper_Metadata": {
+    "Paper_Title": "High strength Al–Li alloy development for laser powder bed fusion",
+    "DOI": null,
+    "Note": "DOI not found in OCR text"
+  },
+  "Paper_Routing": {
+    "base_material": "Metals",
+    "application": "Structural",
+    "research_paradigm": "Experimental",
+    "Supplements_Loaded": [
+      "directions/base/Metals.txt",
+      "directions/application/Structural.txt",
+      "directions/paradigm/Experimental.txt"
+    ],
+    "Patch_Tags": [
+      "Additive_Manufacturing",
+      "Laser_Assisted"
+    ],
+    "Needs_Mixed_Routing_Check": false,
+    "Mixed_Signals": []
+  },
+  "items": [
+    {
+      "Item_ID": "1",
+      "Sample_ID": "Ingot #1",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing",
+        "Laser_Assisted"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 1"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Al-Cu-Li alloy",
+          "Material_Name_Raw": "Al-4Cu-1.25Li",
+          "Nominal_Composition": {
+            "unit": "wt%",
+            "Cu": {
+              "Value": 4.0
+            },
+            "Li": {
+              "Value": 1.25
+            },
+            "Sc": {
+              "Value": 0.0,
+              "Note": "No Sc addition"
+            },
+            "Zr": {
+              "Value": 0.0,
+              "Note": "No Zr addition"
+            },
+            "Al": "Balance"
+          }
+        },
+        "Processing": {
+          "Process_Category": "Casting + Laser Glazing",
+          "Process_Text": {
+            "original": "Ingots prepared with high purity aluminum (99.99%), Al-10Li, Al-50Cu, and Al-2Sc-1Zr (wt%) master alloy. After casting, ingots sectioned into thin cylinders (diameter 30 mm, thickness 5 mm), polished to P800 grit. Laser glazed with square area 8 mm x 8 mm.",
+            "simplified": "Casting of ingot followed by laser glazing for screening"
+          },
+          "Stage1_Casting": {
+            "Raw_Materials": "High purity aluminum (99.99%), Al-10Li master alloy, Al-50Cu master alloy",
+            "Specimen_Geometry": "Cylinders, diameter 30 mm, thickness 5 mm",
+            "Surface_Finish": "Polished to P800 grit"
+          },
+          "Stage2_Laser_Glazing": {
+            "Laser_Power_W": {
+              "Value": 500,
+              "Original_Values": "500 W"
+            },
+            "Scanning_Velocity_mm_s": {
+              "Original_Values": "400, 600, 800 mm/s",
+              "Value": null,
+              "Note": "Three discrete velocities tested per Table 2; 800 mm/s excluded from analysis (shallow molten pools in conduction mode, Section 3.1)"
+            },
+            "Hatch_Spacing_mm": {
+              "Value": 0.1,
+              "Original_Values": "0.1 mm"
+            },
+            "Beam_Defocusing_Distance_mm": {
+              "Value": 0,
+              "Original_Values": "0 mm"
+            },
+            "Glazing_Area": "8 mm x 8 mm square"
+          },
+          "Equipment": [
+            {
+              "Name": "In-house LPBF machine with IPG YLR-500 fiber laser",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Wire electrical discharge machine",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Nikon EPIPHOT 300 optical microscope",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Zeiss EVO 18 SEM with EDS",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Zeiss Gemini 300 SEM with Oxford EBSD detector",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "AZtecCrystal software",
+              "Category": "Software"
+            },
+            {
+              "Name": "JMatPro (Scheil-Gulliver model)",
+              "Category": "Software"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Cast region showed typical dendrite structure with white phases along dendrite boundaries. Laser glazing region nearly absent of interdendritic phases. Cracks found in molten pools.",
+            "simplified": "Dendritic cast microstructure; laser glazing dissolved interdendritic phases; cracking observed"
+          },
+          "Main_Phase": {
+            "Phase_Name": "Al matrix",
+            "Crystal_Structure": "FCC"
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "Al2Cu",
+              "Crystal_Structure": null,
+              "Note": "Identified as white interdendritic phases; similar phases observed in Al-Cu alloys by LPBF [41,42]; crystal structure not explicitly given in paper"
+            }
+          ],
+          "Grain_Size": {
+            "Cast_Region": {
+              "Average_Equivalent_Circle_Diameter_um": {
+                "Value": 257.9,
+                "Original_Values": "257.9 μm",
+                "size_type": "diameter"
+              },
+              "Average_Fitted_Ellipse_Aspect_Ratio": null,
+              "Note": "From text: aspect ratios around 2 for cast regions of all samples"
+            },
+            "Laser_Glazing_Region": {
+              "Average_Equivalent_Circle_Diameter_um": {
+                "Value": 16.0,
+                "Original_Values": "16.0 μm",
+                "size_type": "diameter"
+              },
+              "Grain_Morphology": "Large grains with some small grains randomly distributed"
+            }
+          },
+          "Crack_Behavior": "Cracks found in laser glazing regions"
+        },
+        "Properties": [
+          {
+            "Property_Category": "Computed_Thermophysical",
+            "Data_Nature": "Computed",
+            "Data_Source": "table",
+            "Note": "Calculated by JMatPro using Scheil-Gulliver solidification model (Table 4)",
+            "Density_kg_m3": {
+              "Value": 2647,
+              "Data_Source": "table",
+              "Data_Nature": "Computed"
+            },
+            "Thermal_Conductivity_W_mK": {
+              "Value": 126,
+              "Data_Source": "table",
+              "Data_Nature": "Computed"
+            },
+            "Specific_Heat_Capacity_J_kgK": {
+              "Value": 914,
+              "Data_Source": "table",
+              "Data_Nature": "Computed"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "2",
+      "Sample_ID": "Ingot #2",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing",
+        "Laser_Assisted"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 1"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Al-Cu-Li-Sc-Zr alloy",
+          "Material_Name_Raw": "Al-4Cu-1.25Li-0.4Sc-0.2Zr",
+          "Nominal_Composition": {
+            "unit": "wt%",
+            "Cu": {
+              "Value": 4.0
+            },
+            "Li": {
+              "Value": 1.25
+            },
+            "Sc": {
+              "Value": 0.4
+            },
+            "Zr": {
+              "Value": 0.2
+            },
+            "Al": "Balance"
+          }
+        },
+        "Processing": {
+          "Process_Category": "Casting + Laser Glazing",
+          "Process_Text": {
+            "original": "Same casting and laser glazing procedure as Ingot #1.",
+            "simplified": "Casting of ingot followed by laser glazing for screening"
+          },
+          "Stage1_Casting": {
+            "Raw_Materials": "High purity aluminum (99.99%), Al-10Li, Al-50Cu, Al-2Sc-1Zr master alloy",
+            "Specimen_Geometry": "Cylinders, diameter 30 mm, thickness 5 mm",
+            "Surface_Finish": "Polished to P800 grit"
+          },
+          "Stage2_Laser_Glazing": {
+            "Laser_Power_W": {
+              "Value": 500,
+              "Original_Values": "500 W"
+            },
+            "Scanning_Velocity_mm_s": {
+              "Original_Values": "400, 600, 800 mm/s",
+              "Value": null,
+              "Note": "Three discrete velocities tested per Table 2; 800 mm/s excluded from analysis (shallow molten pools in conduction mode, Section 3.1)"
+            },
+            "Hatch_Spacing_mm": {
+              "Value": 0.1,
+              "Original_Values": "0.1 mm"
+            },
+            "Beam_Defocusing_Distance_mm": {
+              "Value": 0,
+              "Original_Values": "0 mm"
+            },
+            "Glazing_Area": "8 mm x 8 mm square"
+          },
+          "Equipment": [
+            {
+              "Name": "In-house LPBF machine with IPG YLR-500 fiber laser",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Wire electrical discharge machine",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Nikon EPIPHOT 300 optical microscope",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Zeiss EVO 18 SEM with EDS",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Zeiss Gemini 300 SEM with Oxford EBSD detector",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "AZtecCrystal software",
+              "Category": "Software"
+            },
+            {
+              "Name": "JMatPro (Scheil-Gulliver model)",
+              "Category": "Software"
+            }
+          ],
+          "Note": "Same processing method and equipment as Ingot #1; paper states same procedure for all five ingots"
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Cast region consisted of fine equiaxed grains with intergranular phases and polygonal phases inside equiaxed grains. Laser glazing region: intergranular phases nearly absent, some polygonal phases remained. Cracks found in molten pools.",
+            "simplified": "Fine equiaxed grains in cast region; cracking observed in laser glazing region"
+          },
+          "Main_Phase": {
+            "Phase_Name": "Al matrix",
+            "Crystal_Structure": "FCC"
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "Al3(Sc, Zr)",
+              "Crystal_Structure": "L12",
+              "Note": "Polygonal phases inside equiaxed grains; EDS on sample #5 confirmed composition"
+            },
+            {
+              "Phase_Name": "Cu-containing phases",
+              "Crystal_Structure": null,
+              "Note": "Intergranular phases in cast region; identified by EDS on sample #5; crystal structure not explicitly given in paper"
+            }
+          ],
+          "Grain_Size": {
+            "Cast_Region": {
+              "Average_Equivalent_Circle_Diameter_um": {
+                "Value": 15.6,
+                "Original_Values": "15.6 μm",
+                "size_type": "diameter"
+              },
+              "Average_Fitted_Ellipse_Aspect_Ratio": null,
+              "Note": "From text: aspect ratios around 2 for cast regions of all samples"
+            },
+            "Laser_Glazing_Region": {
+              "Grain_Morphology": "Columnar grains preferentially advancing along normal direction of molten pool boundaries; fine equiaxed grains occasionally at molten pool boundaries"
+            }
+          },
+          "Crack_Behavior": "Cracks found in laser glazing regions"
+        },
+        "Properties": [
+          {
+            "Property_Category": "Computed_Thermophysical",
+            "Data_Nature": "Computed",
+            "Data_Source": "table",
+            "Note": "Calculated by JMatPro using Scheil-Gulliver solidification model (Table 4)",
+            "Density_kg_m3": {
+              "Value": 2650,
+              "Data_Source": "table",
+              "Data_Nature": "Computed"
+            },
+            "Thermal_Conductivity_W_mK": {
+              "Value": 124,
+              "Data_Source": "table",
+              "Data_Nature": "Computed"
+            },
+            "Specific_Heat_Capacity_J_kgK": {
+              "Value": 912,
+              "Data_Source": "table",
+              "Data_Nature": "Computed"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "3",
+      "Sample_ID": "Ingot #3",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing",
+        "Laser_Assisted"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 1"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Al-Cu-Li-Sc-Zr alloy",
+          "Material_Name_Raw": "Al-4Cu-1.25Li-0.6Sc-0.3Zr",
+          "Nominal_Composition": {
+            "unit": "wt%",
+            "Cu": {
+              "Value": 4.0
+            },
+            "Li": {
+              "Value": 1.25
+            },
+            "Sc": {
+              "Value": 0.6
+            },
+            "Zr": {
+              "Value": 0.3
+            },
+            "Al": "Balance"
+          }
+        },
+        "Processing": {
+          "Process_Category": "Casting + Laser Glazing",
+          "Process_Text": {
+            "original": "Same casting and laser glazing procedure as Ingot #1.",
+            "simplified": "Casting of ingot followed by laser glazing for screening"
+          },
+          "Stage1_Casting": {
+            "Raw_Materials": "High purity aluminum (99.99%), Al-10Li, Al-50Cu, Al-2Sc-1Zr master alloy",
+            "Specimen_Geometry": "Cylinders, diameter 30 mm, thickness 5 mm",
+            "Surface_Finish": "Polished to P800 grit"
+          },
+          "Stage2_Laser_Glazing": {
+            "Laser_Power_W": {
+              "Value": 500,
+              "Original_Values": "500 W"
+            },
+            "Scanning_Velocity_mm_s": {
+              "Original_Values": "400, 600, 800 mm/s",
+              "Value": null,
+              "Note": "Three discrete velocities tested per Table 2; 800 mm/s excluded from analysis (shallow molten pools in conduction mode, Section 3.1)"
+            },
+            "Hatch_Spacing_mm": {
+              "Value": 0.1,
+              "Original_Values": "0.1 mm"
+            },
+            "Beam_Defocusing_Distance_mm": {
+              "Value": 0,
+              "Original_Values": "0 mm"
+            },
+            "Glazing_Area": "8 mm x 8 mm square"
+          },
+          "Equipment": [
+            {
+              "Name": "In-house LPBF machine with IPG YLR-500 fiber laser",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Wire electrical discharge machine",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Nikon EPIPHOT 300 optical microscope",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Zeiss EVO 18 SEM with EDS",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Zeiss Gemini 300 SEM with Oxford EBSD detector",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "AZtecCrystal software",
+              "Category": "Software"
+            },
+            {
+              "Name": "JMatPro (Scheil-Gulliver model)",
+              "Category": "Software"
+            }
+          ],
+          "Note": "Same processing method and equipment as Ingot #1; paper states same procedure for all five ingots"
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Cast region: fine equiaxed grains with intergranular and polygonal phases. Laser glazing: intergranular phases nearly absent, polygonal phases remained. Cracks found in molten pools.",
+            "simplified": "Fine equiaxed grains in cast region; cracking observed in laser glazing region"
+          },
+          "Main_Phase": {
+            "Phase_Name": "Al matrix",
+            "Crystal_Structure": "FCC"
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "Al3(Sc, Zr)",
+              "Crystal_Structure": "L12",
+              "Note": "Polygonal phases inside equiaxed grains"
+            },
+            {
+              "Phase_Name": "Cu-containing phases",
+              "Crystal_Structure": null,
+              "Note": "Intergranular phases in cast region; crystal structure not explicitly given in paper"
+            }
+          ],
+          "Grain_Size": {
+            "Cast_Region": {
+              "Average_Equivalent_Circle_Diameter_um": {
+                "Value": 13.8,
+                "Original_Values": "13.8 μm",
+                "size_type": "diameter"
+              },
+              "Average_Fitted_Ellipse_Aspect_Ratio": null,
+              "Note": "From text: aspect ratios around 2 for cast regions of all samples"
+            },
+            "Laser_Glazing_Region": {
+              "Grain_Morphology": "Columnar grains; finer and shorter than sample #2; more equiaxed grains than sample #2"
+            }
+          },
+          "Crack_Behavior": "Cracks found in laser glazing regions"
+        },
+        "Properties": [
+          {
+            "Property_Category": "Computed_Thermophysical",
+            "Data_Nature": "Computed",
+            "Data_Source": "table",
+            "Note": "Calculated by JMatPro using Scheil-Gulliver solidification model (Table 4)",
+            "Density_kg_m3": {
+              "Value": 2653,
+              "Data_Source": "table",
+              "Data_Nature": "Computed"
+            },
+            "Thermal_Conductivity_W_mK": {
+              "Value": 123,
+              "Data_Source": "table",
+              "Data_Nature": "Computed"
+            },
+            "Specific_Heat_Capacity_J_kgK": {
+              "Value": 911,
+              "Data_Source": "table",
+              "Data_Nature": "Computed"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "4",
+      "Sample_ID": "Ingot #4",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing",
+        "Laser_Assisted"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 1"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Al-Cu-Li-Sc-Zr alloy",
+          "Material_Name_Raw": "Al-4Cu-1.25Li-0.8Sc-0.4Zr",
+          "Nominal_Composition": {
+            "unit": "wt%",
+            "Cu": {
+              "Value": 4.0
+            },
+            "Li": {
+              "Value": 1.25
+            },
+            "Sc": {
+              "Value": 0.8
+            },
+            "Zr": {
+              "Value": 0.4
+            },
+            "Al": "Balance"
+          }
+        },
+        "Processing": {
+          "Process_Category": "Casting + Laser Glazing",
+          "Process_Text": {
+            "original": "Same casting and laser glazing procedure as Ingot #1.",
+            "simplified": "Casting of ingot followed by laser glazing for screening"
+          },
+          "Stage1_Casting": {
+            "Raw_Materials": "High purity aluminum (99.99%), Al-10Li, Al-50Cu, Al-2Sc-1Zr master alloy",
+            "Specimen_Geometry": "Cylinders, diameter 30 mm, thickness 5 mm",
+            "Surface_Finish": "Polished to P800 grit"
+          },
+          "Stage2_Laser_Glazing": {
+            "Laser_Power_W": {
+              "Value": 500,
+              "Original_Values": "500 W"
+            },
+            "Scanning_Velocity_mm_s": {
+              "Original_Values": "400, 600, 800 mm/s",
+              "Value": null,
+              "Note": "Three discrete velocities tested per Table 2; 800 mm/s excluded from analysis (shallow molten pools in conduction mode, Section 3.1)"
+            },
+            "Hatch_Spacing_mm": {
+              "Value": 0.1,
+              "Original_Values": "0.1 mm"
+            },
+            "Beam_Defocusing_Distance_mm": {
+              "Value": 0,
+              "Original_Values": "0 mm"
+            },
+            "Glazing_Area": "8 mm x 8 mm square"
+          },
+          "Equipment": [
+            {
+              "Name": "In-house LPBF machine with IPG YLR-500 fiber laser",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Wire electrical discharge machine",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Nikon EPIPHOT 300 optical microscope",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Zeiss EVO 18 SEM with EDS",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Zeiss Gemini 300 SEM with Oxford EBSD detector",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "AZtecCrystal software",
+              "Category": "Software"
+            },
+            {
+              "Name": "JMatPro (Scheil-Gulliver model)",
+              "Category": "Software"
+            }
+          ],
+          "Note": "Same processing method and equipment as Ingot #1; paper states same procedure for all five ingots"
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Cast region: fine equiaxed grains. Laser glazing: intergranular phases nearly absent, polygonal phases remained. No cracks in molten pools.",
+            "simplified": "Fine equiaxed grains; crack-free in laser glazing region"
+          },
+          "Main_Phase": {
+            "Phase_Name": "Al matrix",
+            "Crystal_Structure": "FCC"
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "Al3(Sc, Zr)",
+              "Crystal_Structure": "L12",
+              "Note": "Polygonal phases inside equiaxed grains"
+            },
+            {
+              "Phase_Name": "Cu-containing phases",
+              "Crystal_Structure": null,
+              "Note": "Intergranular phases in cast region; crystal structure not explicitly given in paper"
+            }
+          ],
+          "Grain_Size": {
+            "Cast_Region": {
+              "Average_Equivalent_Circle_Diameter_um": {
+                "Value": 11.7,
+                "Original_Values": "11.7 μm",
+                "size_type": "diameter"
+              },
+              "Average_Fitted_Ellipse_Aspect_Ratio": null,
+              "Note": "From text: aspect ratios around 2 for cast regions of all samples"
+            },
+            "Laser_Glazing_Region": {
+              "Grain_Morphology": "Columnar grains; finer and shorter than sample #3"
+            }
+          },
+          "Crack_Behavior": "No cracks in laser glazing regions"
+        },
+        "Properties": [
+          {
+            "Property_Category": "Computed_Thermophysical",
+            "Data_Nature": "Computed",
+            "Data_Source": "table",
+            "Note": "Calculated by JMatPro using Scheil-Gulliver solidification model (Table 4)",
+            "Density_kg_m3": {
+              "Value": 2656,
+              "Data_Source": "table",
+              "Data_Nature": "Computed"
+            },
+            "Thermal_Conductivity_W_mK": {
+              "Value": 122,
+              "Data_Source": "table",
+              "Data_Nature": "Computed"
+            },
+            "Specific_Heat_Capacity_J_kgK": {
+              "Value": 910,
+              "Data_Source": "table",
+              "Data_Nature": "Computed"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "5",
+      "Sample_ID": "Ingot #5",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing",
+        "Laser_Assisted"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 1"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Al-Cu-Li-Sc-Zr alloy",
+          "Material_Name_Raw": "Al-4Cu-1.25Li-1Sc-0.5Zr",
+          "Nominal_Composition": {
+            "unit": "wt%",
+            "Cu": {
+              "Value": 4.0
+            },
+            "Li": {
+              "Value": 1.25
+            },
+            "Sc": {
+              "Value": 1.0
+            },
+            "Zr": {
+              "Value": 0.5
+            },
+            "Al": "Balance"
+          }
+        },
+        "Processing": {
+          "Process_Category": "Casting + Laser Glazing",
+          "Process_Text": {
+            "original": "Same casting and laser glazing procedure as Ingot #1.",
+            "simplified": "Casting of ingot followed by laser glazing for screening"
+          },
+          "Stage1_Casting": {
+            "Raw_Materials": "High purity aluminum (99.99%), Al-10Li, Al-50Cu, Al-2Sc-1Zr master alloy",
+            "Specimen_Geometry": "Cylinders, diameter 30 mm, thickness 5 mm",
+            "Surface_Finish": "Polished to P800 grit"
+          },
+          "Stage2_Laser_Glazing": {
+            "Laser_Power_W": {
+              "Value": 500,
+              "Original_Values": "500 W"
+            },
+            "Scanning_Velocity_mm_s": {
+              "Original_Values": "400, 600, 800 mm/s",
+              "Value": null,
+              "Note": "Three discrete velocities tested per Table 2; 800 mm/s excluded from analysis (shallow molten pools in conduction mode, Section 3.1)"
+            },
+            "Hatch_Spacing_mm": {
+              "Value": 0.1,
+              "Original_Values": "0.1 mm"
+            },
+            "Beam_Defocusing_Distance_mm": {
+              "Value": 0,
+              "Original_Values": "0 mm"
+            },
+            "Glazing_Area": "8 mm x 8 mm square"
+          },
+          "Equipment": [
+            {
+              "Name": "In-house LPBF machine with IPG YLR-500 fiber laser",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Wire electrical discharge machine",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Nikon EPIPHOT 300 optical microscope",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Zeiss EVO 18 SEM with EDS",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Zeiss Gemini 300 SEM with Oxford EBSD detector",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "AZtecCrystal software",
+              "Category": "Software"
+            },
+            {
+              "Name": "JMatPro (Scheil-Gulliver model)",
+              "Category": "Software"
+            }
+          ],
+          "Note": "Same processing method and equipment as Ingot #1; paper states same procedure for all five ingots"
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Cast region: fine equiaxed grains with relatively large and clustered polygonal phases. Laser glazing: grains nearly fully equiaxed. No cracks in molten pools.",
+            "simplified": "Fully equiaxed fine grains in laser glazing; crack-free"
+          },
+          "Main_Phase": {
+            "Phase_Name": "Al matrix",
+            "Crystal_Structure": "FCC"
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "Al3(Sc, Zr)",
+              "Crystal_Structure": "L12",
+              "Note": "Polygonal phases inside equiaxed grains; confirmed by EDS line scanning (Fig. 4); amount and size increased compared to samples #2-#4"
+            },
+            {
+              "Phase_Name": "Cu-containing phases",
+              "Crystal_Structure": null,
+              "Note": "Intergranular phases in cast region; confirmed by EDS line scanning (Fig. 4); crystal structure not explicitly given in paper"
+            }
+          ],
+          "Grain_Size": {
+            "Cast_Region": {
+              "Average_Equivalent_Circle_Diameter_um": {
+                "Value": 18.2,
+                "Original_Values": "18.2 μm",
+                "size_type": "diameter"
+              },
+              "Average_Fitted_Ellipse_Aspect_Ratio": null,
+              "Note": "From text: aspect ratios around 2 for cast regions of all samples; larger than samples #2-#4 indicating 1Sc-0.5Zr severely exceeded grain refinement limit in casting"
+            },
+            "Laser_Glazing_Region": {
+              "Average_Equivalent_Circle_Diameter_um": {
+                "Value": 1.4,
+                "Original_Values": "1.4 μm",
+                "size_type": "diameter"
+              },
+              "Average_Fitted_Ellipse_Aspect_Ratio": {
+                "Value": 1.65,
+                "Original_Values": "1.65"
+              },
+              "Grain_Morphology": "Nearly fully equiaxed grains"
+            }
+          },
+          "Crack_Behavior": "No cracks in laser glazing regions"
+        },
+        "Properties": [
+          {
+            "Property_Category": "Computed_Thermophysical",
+            "Data_Nature": "Computed",
+            "Data_Source": "table",
+            "Note": "Calculated by JMatPro using Scheil-Gulliver solidification model (Table 4)",
+            "Density_kg_m3": {
+              "Value": 2660,
+              "Data_Source": "table",
+              "Data_Nature": "Computed"
+            },
+            "Thermal_Conductivity_W_mK": {
+              "Value": 120,
+              "Data_Source": "table",
+              "Data_Nature": "Computed"
+            },
+            "Specific_Heat_Capacity_J_kgK": {
+              "Value": 909,
+              "Data_Source": "table",
+              "Data_Nature": "Computed"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "6",
+      "Sample_ID": "LPBF Al-Cu-Li-Sc-Zr (as-fabricated)",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing",
+        "Laser_Assisted"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 3",
+        "Section 4"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Al-Cu-Li-Sc-Zr alloy",
+          "Material_Name_Raw": "Al-Cu-Li-Sc-Zr",
+          "Nominal_Composition": {
+            "unit": "wt%",
+            "Cu": {
+              "Value": 4.0
+            },
+            "Li": {
+              "Value": 1.25
+            },
+            "Sc": {
+              "Value": 1.0
+            },
+            "Zr": {
+              "Value": 0.5
+            },
+            "Al": "Balance",
+            "Note": "Based on Ingot #5 optimized composition"
+          },
+          "Measured_Composition": {
+            "unit": "wt%",
+            "Powder_ICP_OES": {
+              "Cu": {
+                "Value": 3.89
+              },
+              "Li": {
+                "Value": 1.22
+              },
+              "Sc": {
+                "Value": 0.98
+              },
+              "Zr": {
+                "Value": 0.43
+              },
+              "Al": "Balance",
+              "Note": "Measured by ICP-OES; Data_Source: table"
+            },
+            "LPBF_Sample_ICP_OES": {
+              "Cu": {
+                "Value": 3.93
+              },
+              "Li": {
+                "Value": 1.11
+              },
+              "Sc": {
+                "Value": 0.97
+              },
+              "Zr": {
+                "Value": 0.42
+              },
+              "Al": "Balance",
+              "Note": "Measured by ICP-OES; Data_Source: table"
+            }
+          }
+        },
+        "Processing": {
+          "Process_Category": "LPBF (Additive Manufacturing)",
+          "Process_Text": {
+            "original": "Powder produced by inert gas atomization (Hunan Hengji Powder Technology). LPBF by commercial LiM-X260A machine. Optimized parameters: laser power 300 W, scanning velocity 1200 mm/s, hatch spacing 0.1 mm, layer thickness 40 μm, hatch style rotation 90°. Tensile test samples per ASTM B557M-10. Tensile tests quasistatically by Zwick/Roell tester with 25 mm clip gauge extensometer.",
+            "simplified": "Gas atomized powder; LPBF fabrication; as-fabricated condition (no heat treatment)"
+          },
+          "Stage1_Powder_Production": {
+            "Method": "Inert gas atomization",
+            "Provider": "Hunan Hengji Powder Technology",
+            "Particle_Size_Distribution": "See Fig. 1(b)"
+          },
+          "Stage2_LPBF": {
+            "Machine": "LiM-X260A",
+            "Laser_Type": "Same laser and optical system as in-house LPBF machine (IPG YLR-500 fiber laser)",
+            "Laser_Power_W": {
+              "Value": 300,
+              "Original_Values": "300 W"
+            },
+            "Scanning_Velocity_mm_s": {
+              "Value": 1200,
+              "Original_Values": "1200 mm/s"
+            },
+            "Hatch_Spacing_mm": {
+              "Value": 0.1,
+              "Original_Values": "0.1 mm"
+            },
+            "Layer_Thickness_um": {
+              "Value": 40,
+              "Original_Values": "40 μm"
+            },
+            "Hatch_Style_Rotation_deg": {
+              "Value": 90,
+              "Original_Values": "90°"
+            },
+            "Processing_Efficiency_mm3_s": {
+              "Value": 4.8,
+              "Original_Values": "4.8 mm³/s"
+            },
+            "Specimen_Geometry": {
+              "Cuboid": "8 mm (length) x 8 mm (width) x 6 mm (height)",
+              "Tensile_Plate": "84 mm (length) x 5 mm (width) x 11 mm (height)"
+            },
+            "Li_Loss_Rate_pct": {
+              "Value": 9,
+              "Original_Values": "9%",
+              "Note": "Li loss rate after LPBF processing; lower than 24% for LPBF AA2195 [34]"
+            }
+          },
+          "Equipment": [
+            {
+              "Name": "LiM-X260A LPBF machine",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Nikon EPIPHOT 300 optical microscope",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Zeiss EVO 18 SEM with EDS",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Zeiss Gemini 300 SEM with Oxford EBSD detector",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "AZtecCrystal software",
+              "Category": "Software"
+            },
+            {
+              "Name": "JMatPro (Scheil-Gulliver model)",
+              "Category": "Software"
+            },
+            {
+              "Name": "ImagePro software",
+              "Category": "Software"
+            },
+            {
+              "Name": "Mastersizer 3000 laser particle size analyzer",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "ICP-OES",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Wire electrical discharge machine",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Zwick/Roell tester with 25 mm clip gauge extensometer",
+              "Category": "Testing"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "LPBF sample displayed bimodal grain microstructure: fine equiaxed grains at molten pool boundaries and fine columnar grains inside molten pools. Average equivalent circle diameters of equiaxed grains 0.6 μm and columnar grains 2.5 μm. No cracks observed.",
+            "simplified": "Bimodal grain microstructure: fine equiaxed + columnar grains; crack-free; relative density >99.9%"
+          },
+          "Main_Phase": {
+            "Phase_Name": "Al matrix (supersaturated solid solution)",
+            "Crystal_Structure": "FCC",
+            "Note": "Supersaturated solid solution formed by rapid solidification during LPBF"
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "Primary Al3(Sc, Zr)",
+              "Crystal_Structure": "L12",
+              "Note": "Heterogeneous nucleation sites for equiaxed grains; high number density at molten pool boundaries"
+            }
+          ],
+          "Grain_Size": {
+            "Equiaxed_Grains": {
+              "Average_Equivalent_Circle_Diameter_um": {
+                "Value": 0.6,
+                "Original_Values": "0.6 μm",
+                "size_type": "diameter"
+              },
+              "Area_Fraction_alpha": {
+                "Value": 0.75,
+                "Original_Values": "α = 0.75"
+              },
+              "Location": "Molten pool boundaries"
+            },
+            "Columnar_Grains": {
+              "Average_Equivalent_Circle_Diameter_um": {
+                "Value": 2.5,
+                "Original_Values": "2.5 μm",
+                "size_type": "diameter"
+              },
+              "Average_Width_um": {
+                "Value": 1.6,
+                "Original_Values": "D2 = 1.6 μm"
+              },
+              "Location": "Inside molten pools"
+            }
+          },
+          "Relative_Density": {
+            "Value": 99.9,
+            "Unit": "%",
+            "Original_Values": "above 99.9%",
+            "Data_Source": "text",
+            "Note": "Confirmed by ImagePro software"
+          },
+          "Crack_Behavior": "No cracks observed in LPBF samples",
+          "Advanced_Quantitative_Features": {
+            "Grain_Boundary_Strengthening_MPa": {
+              "Value": 198,
+              "Data_Nature": "Computed",
+              "Note": "Calculated via modified Hall-Petch relation; σ0 = 20 MPa, k = 0.17 MPa m^1/2"
+            },
+            "Hall_Petch_Friction_Stress_MPa": {
+              "Value": 20,
+              "Data_Nature": "Computed",
+              "Note": "Friction stress of pure aluminum"
+            },
+            "Hall_Petch_Coefficient_MPa_m05": {
+              "Value": 0.17,
+              "Original_Values": "0.17 MPa m^{1/2}"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Test_Type": "Tensile",
+            "Specimen_State": "As-fabricated",
+            "Test_Standard": "ASTM B557M-10",
+            "Test_Condition": {
+              "Loading_Mode": "Tension",
+              "Strain_Rate": "quasistatic",
+              "Extensometer_Gauge_Length_mm": 25,
+              "Test_Temperature_K": null,
+              "Note": "Tested at room temperature (not explicitly stated)"
+            },
+            "Yield_Strength_MPa": {
+              "Value": 482,
+              "Value_StdDev": 1,
+              "Original_Values": "482 ± 1 MPa",
+              "Data_Source": "text"
+            },
+            "Ultimate_Tensile_Strength_MPa": {
+              "Value": 539,
+              "Value_StdDev": 1,
+              "Original_Values": "539 ± 1 MPa",
+              "Data_Source": "text"
+            },
+            "Elongation_Total_pct": {
+              "Value": 8.8,
+              "Value_StdDev": 0.7,
+              "Original_Values": "8.8 ± 0.7%",
+              "Data_Source": "text",
+              "Note": "Reported as 'elongation'; not distinguished between uniform and total elongation"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "7",
+      "Sample_ID": "Cast Al-Cu-Li-Sc-Zr",
+      "Role": "Comparator",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing",
+        "Laser_Assisted"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 4.4",
+        "Fig. 13(a)"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Al-Cu-Li-Sc-Zr alloy",
+          "Material_Name_Raw": "Cast Al-Cu-Li-Sc-Zr",
+          "Note": "Same composition as LPBF Al-Cu-Li-Sc-Zr but in cast condition; exact measured composition not separately reported"
+        },
+        "Processing": {
+          "Process_Category": "Casting",
+          "Process_Text": {
+            "original": "Cast Al-Cu-Li-Sc-Zr alloy",
+            "simplified": "Cast condition"
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Cast Al-Cu-Li-Sc-Zr alloy showed large amount of coarse Al3(Sc, Zr) particles and possible metallurgical defects.",
+            "simplified": "Coarse Al3(Sc, Zr) particles; metallurgical defects"
+          },
+          "Main_Phase": {
+            "Phase_Name": "Al matrix",
+            "Crystal_Structure": "FCC"
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "Al3(Sc, Zr)",
+              "Crystal_Structure": "L12",
+              "Note": "Coarse particles"
+            }
+          ]
+        },
+        "Properties": [
+          {
+            "Test_Type": "Tensile",
+            "Specimen_State": "As-cast",
+            "Test_Condition": {
+              "Loading_Mode": "Tension",
+              "Note": "Test conditions assumed same as LPBF sample but not explicitly stated for cast sample"
+            },
+            "Note": "Paper states 'much worse tensile properties' compared to LPBF Al-Cu-Li-Sc-Zr alloy; no specific numerical values given for YS, UTS, or elongation of the cast sample"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "8",
+      "Sample_ID": "LPBF 2195 (literature reference)",
+      "Role": "Reference",
+      "Data_Nature": "Literature_Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing",
+        "Laser_Assisted"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Ref [34]"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Al-Cu-Li alloy",
+          "Material_Name_Raw": "AA2195",
+          "Note": "Referenced from [34]; no specific composition given in this paper"
+        },
+        "Structure": {
+          "Grain_Size": {
+            "Average_Equivalent_Circle_Diameter_um": {
+              "Value": 37.9,
+              "Original_Values": "37.9 μm",
+              "size_type": "diameter",
+              "Note": "From Ref [34]"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Test_Type": "Tensile",
+            "Specimen_State": "As-fabricated",
+            "Yield_Strength_MPa": {
+              "Value": 208,
+              "Original_Values": "208 MPa",
+              "Data_Source": "text",
+              "Note": "From Ref [34]"
+            },
+            "Note": "Li loss rate of LPBF AA2195 was 24% [34]; relative density 99.9%"
+          }
+        ]
+      }
+    }
+  ]
+}

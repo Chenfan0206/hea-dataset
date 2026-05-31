@@ -1,0 +1,7 @@
+{
+  "paper_dir": "文献4",
+  "figures": 14,
+  "direct_pairs": 14,
+  "topk_pairs": 70,
+  "sentences": 48
+}

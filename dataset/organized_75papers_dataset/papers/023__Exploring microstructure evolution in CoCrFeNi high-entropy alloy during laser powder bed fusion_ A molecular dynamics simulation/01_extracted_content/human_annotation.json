@@ -1,0 +1,70 @@
+{
+  "Paper_Metadata": {
+    "Paper_Title": "Exploring microstructure evolution in CoCrFeNi high-entropy alloy during laser powder bed fusion: A molecular dynamics simulation",
+    "DOI": "10.1016/j.jalcom.2024.179955"
+  },
+  "items": [
+    {
+      "Sample_ID": "CoCrFeNi_LPBF_Sim",
+      "Gradient_Material": false,
+      "Composition_Info": {
+        "Role": "Target",
+        "Alloy_Name_Raw": "CoCrFeNi high-entropy alloy",
+        "Common_Name": "Equiatomic CoCrFeNi HEA",
+        "Nominal_Composition": {
+          "Composition_Type": "at%",
+          "Elements_Normalized": {
+            "Co": 25.0,
+            "Cr": 25.0,
+            "Fe": 25.0,
+            "Ni": 25.0
+          }
+        }
+      },
+      "Process_Info": {
+        "Process_Category": "Laser Powder Bed Fusion (LPBF) Simulation",
+        "Process_Text": {
+          "original": "Large-scale molecular dynamics (MD) simulation using EAM potential. Laser power ranges from 200W to 400W, and scanning speed ranges from 400mm/s to 800mm/s.",
+          "simplified": "采用EAM势的大规模分子动力学模拟。激光功率200-400W，扫描速度400-800mm/s。"
+        },
+        "Parameter_Info": {
+          "Laser_Power_W": "200-400",
+          "Scanning_Speed_mm_s": "400-800",
+          "Energy_Density_J_m": "0.25-1.0"
+        }
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": "The molten pool presents an elliptical shape. Rapid solidification leads to FCC as the dominant phase with perfect and partial dislocations.",
+          "simplified": "熔池呈椭圆形。快速凝固导致FCC为主相，包含全位错和不全位错。"
+        },
+        "Main_Phase": "FCC",
+        "Note": "Perfect dislocations primarily at GBs; partial dislocations within grains."
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Maximum_Temperature",
+          "Test_Condition": "At the center of laser spot, P=400W, v=400mm/s",
+          "Value_Numeric": 3500.0,
+          "Unit": "K",
+          "Note": "Reaches the boiling point of the alloy."
+        },
+        {
+          "Property_Name": "Cooling_Rate",
+          "Test_Condition": "Solidification stage",
+          "Value_Numeric": null,
+          "Value_Range": "10^10 - 10^12",
+          "Unit": "K/s",
+          "Data_Source": "text"
+        },
+        {
+          "Property_Name": "Molten_Pool_Depth",
+          "Test_Condition": "Laser energy density of 1.0 J/m",
+          "Value_Numeric": 15.1,
+          "Unit": "nm",
+          "Note": "Measured in the MD simulation cell."
+        }
+      ]
+    }
+  ]
+}

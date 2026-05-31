@@ -1,0 +1,2193 @@
+{
+  "Paper_Metadata": {
+    "Paper_Title": "Dual-layer hybrid solid electrolyte for improved interfacial stability in solid-state lithium batteries",
+    "DOI": "10.1016/j.jcis.2026.140236"
+  },
+  "Paper_Routing": {
+    "base_material": "Composites",
+    "application": "Functional",
+    "research_paradigm": "Hybrid",
+    "Supplements_Loaded": [
+      "directions/base/Composites.txt",
+      "directions/application/Functional.txt",
+      "directions/paradigm/Hybrid.txt",
+      "directions/domain/Battery.txt"
+    ],
+    "Patch_Tags": [
+      "Battery",
+      "Interface_Dominated"
+    ],
+    "Needs_Mixed_Routing_Check": false
+  },
+  "items": [
+    {
+      "Item_ID": "EXP-001",
+      "Sample_ID": "LAZTP-0.075-powder",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Composites",
+      "application": "Functional",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Battery"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 2.1",
+        "Section 2.3",
+        "Section 3.2"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Composite_Category": "Inorganic ceramic filler",
+          "Chemical_Formula_nominal": "Li1.3Al0.3Zr0.075Ti1.625(PO4)3",
+          "Formula_Note": "x=0.075 in Li1.3Al0.3ZrxTi1.7-x(PO4)3 series; LiNO3 added with 10 mol% excess to compensate for Li loss during calcination"
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "Pechini sol-gel method: solvent mixture of deionized water and HNO3 (3:1 v/v), Ti(CaH2O)4 added under stirring, citric acid chelating agent (2:1 molar ratio to total metal cations), LiNO3 (99%, Sigma Aldrich) with 10 mol% excess, Al(NO3)3·9H2O, ZrO(NO3)2·xH2O (x=4, 99%, Sigma Aldrich) dissolved in DI water, pH adjusted to 5 with NH4OH, NH4H2PO4 added, ethylene glycol (1:1 M ratio with citric acid) as dispersant, heated at 85 °C for 48 h for gel formation, pre-calcined in muffle furnace at 250 °C for 5 h, calcined at 850 °C for 5 h in air in tube furnace",
+            "simplified": "Pechini sol-gel synthesis of LAZTP powder: precursors dissolved in HNO3/water, chelated with citric acid, pH=5, dried at 85 °C/48 h, pre-calcined 250 °C/5 h, calcined 850 °C/5 h in air"
+          },
+          "Stages": {
+            "Stage1_Sol_preparation": {
+              "Process_Category": "Sol-gel precursor preparation",
+              "Key_Params": {
+                "Solvent": "Deionized water / HNO3 (70%) 3:1 v/v",
+                "Chelating_Agent": "Citric acid, 2:1 molar ratio to total metal cations",
+                "pH": 5,
+                "Dispersant": "Ethylene glycol, 1:1 M ratio with citric acid"
+              }
+            },
+            "Stage2_Gel_formation": {
+              "Process_Category": "Gel formation",
+              "Key_Params": {
+                "Temperature_K": 358.15,
+                "Time_h": 48,
+                "Original_Temperature": "85 °C"
+              }
+            },
+            "Stage3_Pre_calcination": {
+              "Process_Category": "Pre-calcination",
+              "Key_Params": {
+                "Temperature_K": 523.15,
+                "Time_h": 5,
+                "Atmosphere": "air",
+                "Original_Temperature": "250 °C"
+              }
+            },
+            "Stage4_Calcination": {
+              "Process_Category": "Calcination",
+              "Key_Params": {
+                "Temperature_K": 1123.15,
+                "Time_h": 5,
+                "Atmosphere": "air",
+                "Crucible": "alumina crucible",
+                "Original_Temperature": "850 °C"
+              }
+            }
+          },
+          "Equipment": [
+            {
+              "Name": "Muffle furnace",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Tube furnace",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Alumina crucible",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "XRD D2 PHASER (Bruker AXS)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "FE-SEM GeminiSEM 300 (ZEISS)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "EDS Xflash Detector 6-30 (Bruker)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "XPS K-alpha (Thermo Fisher Scientific)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Cs-TEM JEOL ARM200F",
+              "Category": "Characterization"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "All samples indexed to the rhombohedral LiTi2(PO4)3 phase with the R-3c space group (COD 7222155). No Zr-related impurity phases detected. Lattice expansion confirmed by systematic shift of (113) peak to lower 2θ with increasing Zr content. Interplanar distance for (113) plane increased to 0.366 nm for LAZTP-0.075. Powders consisted of nanometer-sized primary particles agglomerated into secondary particles with diameters below approximately 3–5 μm.",
+            "simplified": "NASICON-type rhombohedral phase (R-3c, COD 7222155), single phase at 850 °C, lattice expanded by Zr doping, (113) d-spacing = 0.366 nm, agglomerated particles ~3–5 μm"
+          },
+          "Phase_Composition": [
+            {
+              "Phase_Name": "NASICON-type LATP (Zr-doped)",
+              "Crystal_Structure": "Rhombohedral, R-3c",
+              "Space_Group": "R-3c",
+              "COD_ID": "7222155",
+              "Purity": "Single phase at 850 °C, no Zr-related impurity"
+            }
+          ],
+          "Morphology": {
+            "Particle_Size": {
+              "Value_um": null,
+              "Value_Range_um": [
+                3,
+                5
+              ],
+              "Original_Values": "below approximately 3–5 μm (secondary particle agglomerates)",
+              "Note": "Nanometer-sized primary particles agglomerated into secondary particles"
+            }
+          },
+          "Advanced_Quantitative_Features": {
+            "Lattice_spacing_113_nm": {
+              "Value": 0.366,
+              "Sample": "LAZTP-0.075",
+              "Note": "HRTEM measured; slightly increased relative to undoped LATP"
+            }
+          }
+        }
+      }
+    },
+    {
+      "Item_ID": "EXP-002",
+      "Sample_ID": "LATP-powder",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Composites",
+      "application": "Functional",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Battery"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 2.1",
+        "Section 3.2"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Composite_Category": "Inorganic ceramic filler",
+          "Chemical_Formula_nominal": "Li1.3Al0.3Ti1.7(PO4)3",
+          "Formula_Note": "x=0 in Li1.3Al0.3ZrxTi1.7-x(PO4)3 series; undoped LATP baseline"
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "Same Pechini sol-gel method as LAZTP-0.075 but without ZrO(NO3)2 addition; calcined at 850 °C for 5 h",
+            "simplified": "Pechini sol-gel, same procedure as LAZTP-0.075 without Zr doping, calcined 850 °C/5 h"
+          },
+          "Stages": {
+            "Stage1_Calcination": {
+              "Process_Category": "Calcination",
+              "Key_Params": {
+                "Temperature_K": 1123.15,
+                "Time_h": 5,
+                "Atmosphere": "air",
+                "Original_Temperature": "850 °C"
+              }
+            }
+          },
+          "Note": "Processing parameters shared with LAZTP-0.075-powder as stated in Section 2.1, except no ZrO(NO3)2 added"
+        },
+        "Structure": {
+          "Phase_Composition": [
+            {
+              "Phase_Name": "NASICON-type LATP",
+              "Crystal_Structure": "Rhombohedral, R-3c",
+              "Space_Group": "R-3c",
+              "COD_ID": "7222155"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "Item_ID": "EXP-003",
+      "Sample_ID": "PVDF-HFP-SPE",
+      "Role": "Comparator",
+      "Data_Nature": "Experimental",
+      "base_material": "Composites",
+      "application": "Functional",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Battery"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 2.2",
+        "Section 2.3",
+        "Section 2.4",
+        "Section 3.3",
+        "Section 3.4",
+        "Section 3.5"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Composite_Category": "Solid polymer electrolyte",
+          "Component_Type": "Electrolyte",
+          "Matrix": {
+            "Material": "PVDF-HFP",
+            "Full_Name": "Poly(vinylidene fluoride-co-hexafluoropropylene)",
+            "Mw_Note": "average Mw approximately ~400,000, Sigma Aldrich, pellet"
+          },
+          "Lithium_Salt": {
+            "Material": "LiTFSI",
+            "Full_Name": "Lithium bis(trifluoromethanesulfonyl)imide",
+            "Loading": "60 wt% relative to PVDF-HFP",
+            "Purity": "99.95%, Sigma Aldrich"
+          },
+          "Solvent_for_Casting": "N,N-dimethylacetamide (DMAc, 99.8%, Samchun)",
+          "Note": "No oxide filler; pure polymer electrolyte membrane"
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "PVDF-HFP and LiTFSI dissolved in DMAc at 50 °C under stirring, cast onto glass Petri dish, vacuum-dried at 50 °C for 24 h",
+            "simplified": "Solution casting in DMAc at 50 °C, vacuum-dried 50 °C/24 h"
+          },
+          "Stages": {
+            "Stage1_Dissolution": {
+              "Process_Category": "Solution preparation",
+              "Key_Params": {
+                "Temperature_K": 323.15,
+                "Original_Temperature": "50 °C"
+              }
+            },
+            "Stage2_Drying": {
+              "Process_Category": "Vacuum drying",
+              "Key_Params": {
+                "Temperature_K": 323.15,
+                "Time_h": 24,
+                "Original_Temperature": "50 °C"
+              }
+            }
+          },
+          "Equipment": [
+            {
+              "Name": "EIS Zive SP1 (Wonatech)",
+              "Category": "Testing"
+            },
+            {
+              "Name": "UTM TD-U02 (T&DORF)",
+              "Category": "Testing"
+            },
+            {
+              "Name": "TGA 2 (Mettler Toledo)",
+              "Category": "Testing"
+            },
+            {
+              "Name": "DSC 3 (Mettler Toledo)",
+              "Category": "Testing"
+            },
+            {
+              "Name": "AFM Park NX10 (Park Systems)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Raman inVia (Renishaw)",
+              "Category": "Characterization"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "PVDF-HFP SPE is transparent due to absence of LAZTP. Surface SEM shows spherical crystalline domains with average diameter of 9.3 μm, accompanied by micropores generated during solvent evaporation.",
+            "simplified": "Transparent membrane, spherical crystalline domains avg 9.3 μm, micropores present"
+          },
+          "Morphology": {
+            "Crystalline_Domain_Size": {
+              "Value_um": 9.3,
+              "Note": "Average diameter, surface SEM observation"
+            }
+          },
+          "Advanced_Quantitative_Features": {
+            "Surface_Roughness_Ra_um": {
+              "Value": 1.21,
+              "Method": "AFM"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Ionic_Conductivity",
+            "Value": 7e-05,
+            "Unit": "S cm-1",
+            "Original_Values": "0.7 × 10⁻⁴ S cm⁻¹",
+            "Test_Condition": {
+              "Test_Temperature_K": 298.15,
+              "Original_Temperature": "25 °C (room temperature)",
+              "Cell_Configuration": "SS/SSE/SS symmetric cell",
+              "Method": "EIS"
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Activation_Energy",
+            "Value": 0.25,
+            "Unit": "eV",
+            "Original_Values": "0.25 eV",
+            "Test_Condition": {
+              "Test_Temperature_Range_K": [
+                298.15,
+                378.15
+              ],
+              "Original_Temperature_Range": "25–105 °C",
+              "Method": "Arrhenius equation from EIS"
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Electronic_Conductivity",
+            "Value": null,
+            "Unit": "S cm-1",
+            "Original_Values": null,
+            "Test_Condition": {
+              "Cell_Configuration": "Cu/SSE/Cu",
+              "Method": "DC polarization, 1 V, 1 h"
+            },
+            "Data_Source": "unknown",
+            "Note": "Not individually reported for PVDF-HFP SPE"
+          },
+          {
+            "Property_Name": "Electrochemical_Oxidation_Onset_Voltage",
+            "Value": 4.5,
+            "Unit": "V vs Li/Li+",
+            "Original_Values": "4.5 V",
+            "Test_Condition": {
+              "Test_Temperature_K": 328.15,
+              "Original_Temperature": "55 °C",
+              "Method": "LSV, 10 mV s-1, Li/SSE/SS cell, 2–7 V range"
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Oxidation_Stability_RT",
+            "Value": null,
+            "Unit": "V vs Li/Li+",
+            "Original_Values": "above 4.7 V",
+            "Test_Condition": {
+              "Test_Temperature_K": 298.15,
+              "Original_Temperature": "room temperature",
+              "Method": "LSV"
+            },
+            "Data_Source": "text",
+            "Note": "Original expression is inequality: above 4.7 V at room temperature"
+          },
+          {
+            "Property_Name": "Exchange_Current_Density",
+            "Value": 0.09,
+            "Unit": "mA cm-2",
+            "Original_Values": "0.09 mA cm⁻²",
+            "Test_Condition": {
+              "Method": "Tafel plot from LSV (-0.2 to 0.2 V, 1 mV s-1)"
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Li_Transference_Number",
+            "Value": 0.2,
+            "Unit": null,
+            "Original_Values": "0.20",
+            "Test_Condition": {
+              "Test_Temperature_K": 328.15,
+              "Original_Temperature": "55 °C",
+              "Method": "Bruce-Vincent equation, DC polarization + EIS, Li symmetric cell, ΔV = 10 mV"
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Free_TFSI_Ratio",
+            "Value": 71.2,
+            "Unit": "%",
+            "Original_Values": "71.2%",
+            "Test_Condition": {
+              "Method": "Raman spectroscopy, 532 nm laser, 720–770 cm-1"
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Tensile_Strength",
+            "Value": 4.95,
+            "Unit": "MPa",
+            "Original_Values": "4.95 MPa",
+            "Test_Condition": {
+              "Specimen_Shape": "dog-bone",
+              "Gauge_Length_mm": 24,
+              "Gauge_Width_mm": 3.18,
+              "Strain_Rate": "20 mm min-1",
+              "Method": "UTM"
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Elongation_at_Break",
+            "Value": 186,
+            "Unit": "%",
+            "Original_Values": "186%",
+            "Test_Condition": {
+              "Specimen_Shape": "dog-bone",
+              "Method": "UTM"
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Youngs_Modulus",
+            "Value": 13.7,
+            "Unit": "MPa",
+            "Original_Values": "13.7 MPa",
+            "Test_Condition": {
+              "Specimen_Shape": "dog-bone",
+              "Method": "UTM"
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Melting_Temperature",
+            "Value": 411.15,
+            "Unit": "K",
+            "Original_Values": "138 °C",
+            "Test_Condition": {
+              "Method": "DSC, 25 to 200 °C under N2"
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Li_Salt_Decomposition_Temperature",
+            "Value": 593.15,
+            "Unit": "K",
+            "Original_Values": "320 °C",
+            "Test_Condition": {
+              "Method": "TGA, 25 to 900 °C in air"
+            },
+            "Data_Source": "text"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "EXP-004",
+      "Sample_ID": "LATP-50%-HSE",
+      "Role": "Comparator",
+      "Data_Nature": "Experimental",
+      "base_material": "Composites",
+      "application": "Functional",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Battery"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 2.2",
+        "Section 3.3"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Composite_Category": "Hybrid solid electrolyte (single-layer)",
+          "Component_Type": "Electrolyte",
+          "Matrix": {
+            "Material": "PVDF-HFP",
+            "Full_Name": "Poly(vinylidene fluoride-co-hexafluoropropylene)",
+            "Mw_Note": "average Mw approximately ~400,000, Sigma Aldrich, pellet"
+          },
+          "Filler_or_Modifier": {
+            "Material": "LATP (undoped)",
+            "Loading": "50 wt% relative to combined weight of polymer and oxide"
+          },
+          "Lithium_Salt": {
+            "Material": "LiTFSI",
+            "Full_Name": "Lithium bis(trifluoromethanesulfonyl)imide",
+            "Loading": "60 wt% relative to PVDF-HFP",
+            "Purity": "99.95%, Sigma Aldrich"
+          },
+          "Solvent_for_Casting": "N,N-dimethylacetamide (DMAc, 99.8%, Samchun)",
+          "Note": "Single-layer membrane with 50 wt% undoped LATP"
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "PVDF-HFP and LiTFSI dissolved in DMAc at 50 °C under stirring, LATP powders incorporated at 50 wt% relative to combined weight of polymer and oxide, stirred for 12 h, cast onto glass Petri dish, vacuum-dried at 50 °C for 6 h",
+            "simplified": "Solution casting with 50 wt% LATP in DMAc at 50 °C, stirred 12 h, vacuum-dried 50 °C/6 h"
+          },
+          "Stages": {
+            "Stage1_Dissolution_and_Mixing": {
+              "Process_Category": "Solution preparation",
+              "Key_Params": {
+                "Temperature_K": 323.15,
+                "Stirring_Time_h": 12,
+                "Original_Temperature": "50 °C"
+              }
+            },
+            "Stage2_Casting_and_Drying": {
+              "Process_Category": "Casting and vacuum drying",
+              "Key_Params": {
+                "Temperature_K": 323.15,
+                "Time_h": 6,
+                "Original_Temperature": "50 °C"
+              }
+            }
+          },
+          "Equipment": [
+            {
+              "Name": "EIS Zive SP1 (Wonatech)",
+              "Category": "Testing"
+            }
+          ]
+        },
+        "Properties": [
+          {
+            "Property_Name": "Ionic_Conductivity",
+            "Value": 0.00035,
+            "Unit": "S cm-1",
+            "Original_Values": "3.5 × 10⁻⁴ S cm⁻¹",
+            "Test_Condition": {
+              "Test_Temperature_K": 298.15,
+              "Original_Temperature": "25 °C (room temperature)",
+              "Cell_Configuration": "SS/SSE/SS symmetric cell",
+              "Method": "EIS"
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Electronic_Conductivity",
+            "Value": 3.2e-09,
+            "Unit": "S cm-1",
+            "Original_Values": "3.2 × 10⁻⁹ S cm⁻¹",
+            "Test_Condition": {
+              "Test_Temperature_K": 298.15,
+              "Original_Temperature": "25 °C",
+              "Cell_Configuration": "Cu/SSE/Cu",
+              "Method": "DC polarization, 1 V, 1 h"
+            },
+            "Data_Source": "text"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "EXP-005",
+      "Sample_ID": "LAZTP-Dual-HSE",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Composites",
+      "application": "Functional",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Battery",
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 2.2",
+        "Section 2.3",
+        "Section 2.4",
+        "Section 3.1",
+        "Section 3.4",
+        "Section 3.5"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Composite_Category": "Dual-layer hybrid solid electrolyte",
+          "Component_Type": "Electrolyte",
+          "Layer_Structure": {
+            "Layer_1_Oxide_Rich": {
+              "Matrix": {
+                "Material": "PVDF-HFP",
+                "Full_Name": "Poly(vinylidene fluoride-co-hexafluoropropylene)",
+                "Mw_Note": "average Mw approximately ~400,000, Sigma Aldrich, pellet"
+              },
+              "Filler_or_Modifier": {
+                "Material": "LAZTP (Zr-doped LATP, x=0.075)",
+                "Chemical_Formula": "Li1.3Al0.3Zr0.075Ti1.625(PO4)3",
+                "Loading": "50 wt% relative to combined weight of polymer and oxide"
+              },
+              "Lithium_Salt": {
+                "Material": "LiTFSI",
+                "Loading": "60 wt% relative to PVDF-HFP",
+                "Purity": "99.95%, Sigma Aldrich"
+              },
+              "Thickness_um": 69,
+              "Layer_Role": "Oxide-rich bottom layer; enhances ionic transport, electrochemical oxidative stability, and mechanical strength; faces cathode side"
+            },
+            "Layer_2_Polymer_Rich": {
+              "Matrix": {
+                "Material": "PVDF-HFP",
+                "Full_Name": "Poly(vinylidene fluoride-co-hexafluoropropylene)"
+              },
+              "Filler_or_Modifier": {
+                "Material": "None",
+                "Note": "No oxide fillers in the polymer-rich top layer"
+              },
+              "Lithium_Salt": {
+                "Material": "LiTFSI",
+                "Loading": "60 wt% relative to PVDF-HFP"
+              },
+              "Thickness_um": 48,
+              "Layer_Role": "Polymer-rich top layer; provides smooth and uniform interface with Li metal anode, blocks side reactions with LAZTP"
+            }
+          },
+          "Solvent_for_Casting": "N,N-dimethylacetamide (DMAc, 99.8%, Samchun)",
+          "Note": "Dual-layer membrane: oxide-rich layer (69 μm) + polymer-rich layer (48 μm); total thickness approximately 117 μm (derived from layer thicknesses)"
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "PVDF-HFP and LiTFSI dissolved in DMAc at 50 °C. LAZTP powders incorporated at 50 wt% relative to combined weight of polymer and oxide, stirred 12 h. Oxide-rich slurry cast onto glass Petri dish and vacuum-dried at 50 °C for 6 h. Polymer solution without oxide fillers cast on top, vacuum-dried at 50 °C for 24 h. Peeled off at room temperature and stored in Ar-filled glovebox.",
+            "simplified": "Two-step solution casting: first cast oxide-rich (50 wt% LAZTP) slurry, vacuum-dry 50 °C/6 h, then cast polymer-rich solution on top, vacuum-dry 50 °C/24 h, peel at RT, store in Ar glovebox"
+          },
+          "Stages": {
+            "Stage1_Oxide_rich_layer_preparation": {
+              "Process_Category": "Solution casting of oxide-rich layer",
+              "Key_Params": {
+                "Temperature_K": 323.15,
+                "Stirring_Time_h": 12,
+                "Vacuum_Drying_Time_h": 6,
+                "Original_Temperature": "50 °C"
+              }
+            },
+            "Stage2_Polymer_rich_layer_deposition": {
+              "Process_Category": "Solution casting of polymer-rich layer",
+              "Key_Params": {
+                "Vacuum_Drying_Time_h": 24,
+                "Vacuum_Drying_Temperature_K": 323.15,
+                "Original_Temperature": "50 °C"
+              }
+            },
+            "Stage3_Membrane_handling": {
+              "Process_Category": "Post-processing",
+              "Key_Params": {
+                "Peeling_Temperature": "room temperature",
+                "Storage": "Ar-filled glovebox"
+              }
+            }
+          },
+          "Equipment": [
+            {
+              "Name": "Glass Petri dish",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Vacuum oven",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Ar-filled glovebox",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "XRD D2 PHASER (Bruker AXS)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "FE-SEM GeminiSEM 300 (ZEISS)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "AFM Park NX10 (Park Systems)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Raman inVia (Renishaw)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "EIS Zive SP1 (Wonatech)",
+              "Category": "Testing"
+            },
+            {
+              "Name": "UTM TD-U02 (T&DORF)",
+              "Category": "Testing"
+            },
+            {
+              "Name": "TGA 2 (Mettler Toledo)",
+              "Category": "Testing"
+            },
+            {
+              "Name": "DSC 3 (Mettler Toledo)",
+              "Category": "Testing"
+            },
+            {
+              "Name": "Multi-channel tester WBCS300L (Wonatech)",
+              "Category": "Testing"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Cross-sectional SEM clearly reveals distinct dual-layer structure with oxide-rich layer (69 μm) and polymer-rich layer (48 μm). Surface of polymer-rich layer shows smaller crystallites (~8.2 μm) and reduced porosity. XRD shows characteristic peaks of PVDF-HFP at 2θ = 18°, 20°, 39° corresponding to α and β phases along with LAZTP peaks.",
+            "simplified": "Dual-layer structure: oxide-rich 69 μm + polymer-rich 48 μm; surface crystallites ~8.2 μm; PVDF-HFP α and β phases + LAZTP NASICON peaks in XRD"
+          },
+          "Phase_Composition": [
+            {
+              "Phase_Name": "PVDF-HFP α phase",
+              "Crystal_Structure": null,
+              "Note": "Peaks at 2θ = 18° [α(100)] and 39° [α(002)]; crystal system not explicitly stated in paper"
+            },
+            {
+              "Phase_Name": "PVDF-HFP β phase",
+              "Crystal_Structure": null,
+              "Note": "Peak at 2θ = 20° [β(200/110)]; crystal system not explicitly stated in paper"
+            },
+            {
+              "Phase_Name": "LAZTP (NASICON-type)",
+              "Crystal_Structure": "Rhombohedral, R-3c"
+            }
+          ],
+          "Layered_Structure": {
+            "Number_of_Layers": 2,
+            "Layer_1_Oxide_Rich": {
+              "Thickness_um": 69,
+              "Method": "Cross-sectional SEM",
+              "Filler_Content": "50 wt% LAZTP"
+            },
+            "Layer_2_Polymer_Rich": {
+              "Thickness_um": 48,
+              "Method": "Cross-sectional SEM",
+              "Filler_Content": "0 wt% (no oxide filler)"
+            }
+          },
+          "Morphology": {
+            "Crystalline_Domain_Size_Polymer_Surface": {
+              "Value_um": 8.2,
+              "Note": "Approximate average diameter, surface of polymer-rich layer, SEM"
+            }
+          },
+          "Advanced_Quantitative_Features": {
+            "Surface_Roughness_Ra_um": {
+              "Value": 0.706,
+              "Method": "AFM",
+              "Note": "Lowest surface roughness among all samples"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Ionic_Conductivity",
+            "Value": 0.0005,
+            "Unit": "S cm-1",
+            "Original_Values": "5.0 × 10⁻⁴ S cm⁻¹",
+            "Test_Condition": {
+              "Test_Temperature_K": 298.15,
+              "Original_Temperature": "25 °C (room temperature)",
+              "Cell_Configuration": "SS/SSE/SS symmetric cell",
+              "Method": "EIS"
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Activation_Energy",
+            "Value": 0.18,
+            "Unit": "eV",
+            "Original_Values": "0.18 eV",
+            "Test_Condition": {
+              "Test_Temperature_Range_K": [
+                298.15,
+                378.15
+              ],
+              "Original_Temperature_Range": "25–105 °C",
+              "Method": "Arrhenius equation from EIS"
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Electronic_Conductivity",
+            "Value": 1.1e-09,
+            "Unit": "S cm-1",
+            "Original_Values": "1.1 × 10⁻⁹ S cm⁻¹",
+            "Test_Condition": {
+              "Test_Temperature_K": 298.15,
+              "Original_Temperature": "25 °C",
+              "Cell_Configuration": "Cu/SSE/Cu",
+              "Method": "DC polarization, 1 V, 1 h"
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Electronic_Conductivity",
+            "Value": 2.2e-09,
+            "Unit": "S cm-1",
+            "Original_Values": "2.2 × 10⁻⁹ S cm⁻¹",
+            "Test_Condition": {
+              "Test_Temperature_K": 328.15,
+              "Original_Temperature": "55 °C",
+              "Cell_Configuration": "Cu/SSE/Cu",
+              "Method": "DC polarization"
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Electrochemical_Oxidation_Onset_Voltage",
+            "Value": 4.6,
+            "Unit": "V vs Li/Li+",
+            "Original_Values": "4.6 V",
+            "Test_Condition": {
+              "Test_Temperature_K": 328.15,
+              "Original_Temperature": "55 °C",
+              "Method": "LSV, 10 mV s-1, Li/SSE/SS cell"
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Oxidation_Stability_RT",
+            "Value": null,
+            "Unit": "V vs Li/Li+",
+            "Original_Values": "above 4.7 V",
+            "Test_Condition": {
+              "Test_Temperature_K": 298.15,
+              "Original_Temperature": "room temperature",
+              "Method": "LSV"
+            },
+            "Data_Source": "text",
+            "Note": "Original expression is inequality: above 4.7 V at room temperature"
+          },
+          {
+            "Property_Name": "Exchange_Current_Density",
+            "Value": 0.12,
+            "Unit": "mA cm-2",
+            "Original_Values": "0.12 mA cm⁻²",
+            "Test_Condition": {
+              "Method": "Tafel plot from LSV"
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Li_Transference_Number",
+            "Value": 0.38,
+            "Unit": null,
+            "Original_Values": "0.38",
+            "Test_Condition": {
+              "Test_Temperature_K": 328.15,
+              "Original_Temperature": "55 °C",
+              "Method": "Bruce-Vincent equation, DC polarization + EIS, Li symmetric cell, ΔV = 10 mV"
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Interface_Resistance_Before_Polarization",
+            "Value": 126.9,
+            "Unit": "Ω",
+            "Original_Values": "126.9 Ω",
+            "Test_Condition": {
+              "Test_Temperature_K": 328.15,
+              "Original_Temperature": "55 °C",
+              "Method": "EIS, Li symmetric cell"
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Interface_Resistance_After_Polarization",
+            "Value": 125.0,
+            "Unit": "Ω",
+            "Original_Values": "125.0 Ω",
+            "Test_Condition": {
+              "Test_Temperature_K": 328.15,
+              "Original_Temperature": "55 °C",
+              "Method": "EIS, Li symmetric cell"
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Free_TFSI_Ratio",
+            "Value": 78.6,
+            "Unit": "%",
+            "Original_Values": "78.6%",
+            "Test_Condition": {
+              "Method": "Raman spectroscopy, 532 nm laser, 720–770 cm-1"
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Tensile_Strength",
+            "Value": 6.32,
+            "Unit": "MPa",
+            "Original_Values": "6.32 MPa",
+            "Test_Condition": {
+              "Specimen_Shape": "dog-bone",
+              "Gauge_Length_mm": 24,
+              "Gauge_Width_mm": 3.18,
+              "Strain_Rate": "20 mm min-1",
+              "Method": "UTM"
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Elongation_at_Break",
+            "Value": 148,
+            "Unit": "%",
+            "Original_Values": "148%",
+            "Test_Condition": {
+              "Specimen_Shape": "dog-bone",
+              "Method": "UTM"
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Youngs_Modulus",
+            "Value": 30.9,
+            "Unit": "MPa",
+            "Original_Values": "30.9 MPa",
+            "Test_Condition": {
+              "Specimen_Shape": "dog-bone",
+              "Method": "UTM"
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Melting_Temperature",
+            "Value": 403.15,
+            "Unit": "K",
+            "Original_Values": "130 °C",
+            "Test_Condition": {
+              "Method": "DSC, 25 to 200 °C under N2"
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Li_Salt_Decomposition_Temperature",
+            "Value": 598.15,
+            "Unit": "K",
+            "Original_Values": "325 °C",
+            "Test_Condition": {
+              "Method": "TGA, 25 to 900 °C in air"
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Critical_Current_Density",
+            "Value": 0.7,
+            "Unit": "mA cm-2",
+            "Original_Values": "0.7 mA cm-2",
+            "Test_Condition": {
+              "Test_Temperature_K": 328.15,
+              "Original_Temperature": "55 °C",
+              "Cell_Configuration": "Li symmetric cell, polymer-rich side facing Li metal"
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Li_Plating_Stripping_Cycling_Lifetime",
+            "Value": 500,
+            "Unit": "h",
+            "Original_Values": "over 500 h without short-circuiting",
+            "Test_Condition": {
+              "Current_Density": "0.2 mA cm-2",
+              "Areal_Capacity": "0.2 mAh cm-2",
+              "Cell_Configuration": "Li symmetric cell, polymer-rich side facing Li metal",
+              "Failure_Mode": "No short-circuit observed up to 500 h"
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Discharge_Capacity_Rate",
+            "Value": 165.2,
+            "Unit": "mAh g-1",
+            "Original_Values": "165.2 mAh g⁻¹",
+            "Test_Condition": {
+              "C_Rate": "0.1C",
+              "Test_Temperature_K": 328.15,
+              "Original_Temperature": "55 °C",
+              "Cell_Configuration": "LFP/LAZTP Dual HSE/Li SSLB, CR2032 coin cell",
+              "Voltage_Range_V": [
+                2.8,
+                4.0
+              ],
+              "Cathode_Loading": "~2 mg cm-2"
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Discharge_Capacity_Rate",
+            "Value": 162.2,
+            "Unit": "mAh g-1",
+            "Original_Values": "162.2 mAh g⁻¹",
+            "Test_Condition": {
+              "C_Rate": "0.2C",
+              "Test_Temperature_K": 328.15,
+              "Original_Temperature": "55 °C",
+              "Cell_Configuration": "LFP/LAZTP Dual HSE/Li SSLB"
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Discharge_Capacity_Rate",
+            "Value": 155.7,
+            "Unit": "mAh g-1",
+            "Original_Values": "155.7 mAh g⁻¹",
+            "Test_Condition": {
+              "C_Rate": "0.5C",
+              "Test_Temperature_K": 328.15,
+              "Original_Temperature": "55 °C",
+              "Cell_Configuration": "LFP/LAZTP Dual HSE/Li SSLB"
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Discharge_Capacity_Rate",
+            "Value": 148.1,
+            "Unit": "mAh g-1",
+            "Original_Values": "148.1 mAh g⁻¹",
+            "Test_Condition": {
+              "C_Rate": "1.0C",
+              "Test_Temperature_K": 328.15,
+              "Original_Temperature": "55 °C",
+              "Cell_Configuration": "LFP/LAZTP Dual HSE/Li SSLB"
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Discharge_Capacity_Rate",
+            "Value": 137.0,
+            "Unit": "mAh g-1",
+            "Original_Values": "137.0 mAh g⁻¹",
+            "Test_Condition": {
+              "C_Rate": "2.0C",
+              "Test_Temperature_K": 328.15,
+              "Original_Temperature": "55 °C",
+              "Cell_Configuration": "LFP/LAZTP Dual HSE/Li SSLB"
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Discharge_Capacity_Rate_Recovery",
+            "Value": 164.6,
+            "Unit": "mAh g-1",
+            "Original_Values": "164.6 mAh g⁻¹",
+            "Test_Condition": {
+              "C_Rate": "0.1C (recovery)",
+              "Test_Temperature_K": 328.15,
+              "Original_Temperature": "55 °C",
+              "Capacity_Retention_Ratio": "99.6%"
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Cycling_Initial_Discharge_Capacity",
+            "Value": 154.6,
+            "Unit": "mAh g-1",
+            "Original_Values": "154.6 mAh g⁻¹ (1st cycle)",
+            "Test_Condition": {
+              "C_Rate": "0.5C",
+              "Test_Temperature_K": 328.15,
+              "Original_Temperature": "55 °C",
+              "Cell_Configuration": "LFP/LAZTP Dual HSE/Li SSLB",
+              "Voltage_Range_V": [
+                2.8,
+                4.0
+              ],
+              "Cycle_Number": 1
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Cycling_Discharge_Capacity_200th",
+            "Value": 143.2,
+            "Unit": "mAh g-1",
+            "Original_Values": "143.2 mAh g⁻¹ (200th cycle)",
+            "Test_Condition": {
+              "C_Rate": "0.5C",
+              "Test_Temperature_K": 328.15,
+              "Original_Temperature": "55 °C",
+              "Cycle_Number": 200
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Capacity_Retention",
+            "Value": 92.6,
+            "Unit": "%",
+            "Original_Values": "92.6% after 200 cycles",
+            "Test_Condition": {
+              "C_Rate": "0.5C",
+              "Test_Temperature_K": 328.15,
+              "Original_Temperature": "55 °C",
+              "Cycle_Number": 200
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Average_Coulombic_Efficiency",
+            "Value": 99.4,
+            "Unit": "%",
+            "Original_Values": "99.4%",
+            "Test_Condition": {
+              "C_Rate": "0.5C",
+              "Test_Temperature_K": 328.15,
+              "Original_Temperature": "55 °C",
+              "Cycle_Number": 200
+            },
+            "Data_Source": "text"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "EXP-006",
+      "Sample_ID": "LAZTP-Dual-HSE-R",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Composites",
+      "application": "Functional",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Battery",
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 3.5"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Composite_Category": "Dual-layer hybrid solid electrolyte (reversed orientation)",
+          "Component_Type": "Electrolyte",
+          "Note": "Same membrane as LAZTP Dual HSE but oxide-rich layer placed in direct contact with Li metal (reversed orientation)"
+        },
+        "Processing": {
+          "Note": "Same fabrication as LAZTP Dual HSE; reversed during cell assembly only"
+        },
+        "Structure": {
+          "Advanced_Quantitative_Features": {
+            "XPS_Ti2p_Ti4_plus_peaks_eV": {
+              "Original_Values": "464.6 and 458.9 eV",
+              "Assignment": "Ti4+"
+            },
+            "XPS_Ti2p_Ti3_plus_peaks_eV": {
+              "Original_Values": "462.9 and 457.2 eV",
+              "Assignment": "Ti3+"
+            }
+          },
+          "Note": "Ex-situ XPS analysis of Ti 2p confirmed Ti reduction upon direct contact with Li metal; Ti4+ and Ti3+ peaks both detected"
+        },
+        "Properties": [
+          {
+            "Property_Name": "Critical_Current_Density",
+            "Value": 0.6,
+            "Unit": "mA cm-2",
+            "Original_Values": "0.6 mA cm-2",
+            "Test_Condition": {
+              "Cell_Configuration": "Li symmetric cell, oxide-rich side facing Li metal",
+              "Note": "Gradual increase in polarization owing to interfacial side reactions"
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Li_Plating_Stripping_Cycling_Lifetime",
+            "Value": 134,
+            "Unit": "h",
+            "Original_Values": "short-circuited at 134 h",
+            "Test_Condition": {
+              "Current_Density": "0.2 mA cm-2",
+              "Areal_Capacity": "0.2 mAh cm-2",
+              "Cell_Configuration": "Li symmetric cell, oxide-rich side facing Li metal",
+              "Failure_Mode": "Sharp rise in polarization after ~100 h, short-circuited at 134 h"
+            },
+            "Data_Source": "text"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "EXP-007",
+      "Sample_ID": "LAZTP-50%-HSE-optimal",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Composites",
+      "application": "Functional",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Battery"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 2.2",
+        "Section 3.3",
+        "Section 3.4",
+        "Section 3.5"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Composite_Category": "Hybrid solid electrolyte (single-layer, optimal LAZTP-0.075)",
+          "Component_Type": "Electrolyte",
+          "Matrix": {
+            "Material": "PVDF-HFP"
+          },
+          "Filler_or_Modifier": {
+            "Material": "LAZTP (Zr-doped, x=0.075)",
+            "Loading": "50 wt% relative to combined weight of polymer and oxide"
+          },
+          "Lithium_Salt": {
+            "Material": "LiTFSI",
+            "Loading": "60 wt% relative to PVDF-HFP"
+          },
+          "Note": "Designated as LAZTP 50% HSE in the paper; the optimal Zr doping level (x=0.075) was selected for this single-layer variant"
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "Same solution casting method as the oxide-rich layer of LAZTP Dual HSE: PVDF-HFP and LiTFSI dissolved in DMAc at 50 °C, LAZTP powders incorporated at 50 wt%, stirred 12 h, cast onto glass Petri dish, vacuum-dried at 50 °C for 6 h (single-layer, no polymer-rich top layer)",
+            "simplified": "Solution casting with 50 wt% LAZTP in DMAc at 50 °C, stirred 12 h, vacuum-dried 50 °C/6 h (single-layer membrane)"
+          },
+          "Note": "Same fabrication as the oxide-rich layer of LAZTP Dual HSE (EXP-005) but without subsequent polymer-rich layer deposition; single-layer membrane",
+          "Equipment": [
+            {
+              "Name": "FE-SEM GeminiSEM 300 (ZEISS)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "AFM Park NX10 (Park Systems)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Raman inVia (Renishaw)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "EIS Zive SP1 (Wonatech)",
+              "Category": "Testing"
+            },
+            {
+              "Name": "UTM TD-U02 (T&DORF)",
+              "Category": "Testing"
+            },
+            {
+              "Name": "TGA 2 (Mettler Toledo)",
+              "Category": "Testing"
+            },
+            {
+              "Name": "DSC 3 (Mettler Toledo)",
+              "Category": "Testing"
+            },
+            {
+              "Name": "Multi-channel tester WBCS300L (Wonatech)",
+              "Category": "Testing"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "For the LAZTP 50% HSE, the average crystalline domain size increased significantly to 19.1 μm. AFM topography measured surface roughness of 0.947 μm.",
+            "simplified": "Larger crystalline domains (19.1 μm) and higher surface roughness (0.947 μm) than dual-layer membrane"
+          },
+          "Morphology": {
+            "Crystalline_Domain_Size": {
+              "Value_um": 19.1,
+              "Note": "Average crystalline domain size, surface SEM"
+            }
+          },
+          "Advanced_Quantitative_Features": {
+            "Surface_Roughness_Ra_um": {
+              "Value": 0.947,
+              "Method": "AFM"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Ionic_Conductivity",
+            "Value": 0.00072,
+            "Unit": "S cm-1",
+            "Original_Values": "7.2 × 10⁻⁴ S cm⁻¹",
+            "Test_Condition": {
+              "Test_Temperature_K": 298.15,
+              "Original_Temperature": "25 °C (room temperature)",
+              "Cell_Configuration": "SS/SSE/SS symmetric cell",
+              "Method": "EIS"
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Activation_Energy",
+            "Value": 0.15,
+            "Unit": "eV",
+            "Original_Values": "0.15 eV",
+            "Test_Condition": {
+              "Test_Temperature_Range_K": [
+                298.15,
+                378.15
+              ],
+              "Original_Temperature_Range": "25–105 °C",
+              "Method": "Arrhenius equation from EIS"
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Electronic_Conductivity",
+            "Value": 2.5e-09,
+            "Unit": "S cm-1",
+            "Original_Values": "2.5 × 10⁻⁹ S cm⁻¹",
+            "Test_Condition": {
+              "Test_Temperature_K": 298.15,
+              "Original_Temperature": "25 °C",
+              "Cell_Configuration": "Cu/SSE/Cu",
+              "Method": "DC polarization, 1 V, 1 h"
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Oxidation_Stability_RT",
+            "Value": null,
+            "Unit": "V vs Li/Li+",
+            "Original_Values": "above 4.7 V",
+            "Test_Condition": {
+              "Test_Temperature_K": 298.15,
+              "Original_Temperature": "room temperature",
+              "Method": "LSV"
+            },
+            "Data_Source": "text",
+            "Note": "Original expression is inequality: above 4.7 V at room temperature"
+          },
+          {
+            "Property_Name": "Electrochemical_Oxidation_Onset_Voltage",
+            "Value": 4.8,
+            "Unit": "V vs Li/Li+",
+            "Original_Values": "4.8 V",
+            "Test_Condition": {
+              "Test_Temperature_K": 328.15,
+              "Original_Temperature": "55 °C",
+              "Method": "LSV, 10 mV s-1, Li/SSE/SS cell"
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Exchange_Current_Density",
+            "Value": 0.16,
+            "Unit": "mA cm-2",
+            "Original_Values": "0.16 mA cm⁻²",
+            "Test_Condition": {
+              "Method": "Tafel plot from LSV"
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Free_TFSI_Ratio",
+            "Value": 84.2,
+            "Unit": "%",
+            "Original_Values": "84.2%",
+            "Test_Condition": {
+              "Method": "Raman spectroscopy, 532 nm laser, 720–770 cm-1"
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Tensile_Strength",
+            "Value": 4.46,
+            "Unit": "MPa",
+            "Original_Values": "4.46 MPa",
+            "Test_Condition": {
+              "Specimen_Shape": "dog-bone",
+              "Gauge_Length_mm": 24,
+              "Gauge_Width_mm": 3.18,
+              "Strain_Rate": "20 mm min-1",
+              "Method": "UTM"
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Elongation_at_Break",
+            "Value": 111,
+            "Unit": "%",
+            "Original_Values": "111%",
+            "Test_Condition": {
+              "Specimen_Shape": "dog-bone",
+              "Method": "UTM"
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Youngs_Modulus",
+            "Value": 21.9,
+            "Unit": "MPa",
+            "Original_Values": "21.9 MPa",
+            "Test_Condition": {
+              "Specimen_Shape": "dog-bone",
+              "Method": "UTM"
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Melting_Temperature",
+            "Value": 400.15,
+            "Unit": "K",
+            "Original_Values": "127 °C",
+            "Test_Condition": {
+              "Method": "DSC, 25 to 200 °C under N2"
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Li_Salt_Decomposition_Temperature",
+            "Value": 602.15,
+            "Unit": "K",
+            "Original_Values": "329 °C",
+            "Test_Condition": {
+              "Method": "TGA, 25 to 900 °C in air"
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Critical_Current_Density",
+            "Value": 0.6,
+            "Unit": "mA cm-2",
+            "Original_Values": "0.6 mA cm-2",
+            "Test_Condition": {
+              "Test_Temperature_K": 328.15,
+              "Original_Temperature": "55 °C",
+              "Cell_Configuration": "Li symmetric cell, stacked two sheets"
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Li_Plating_Stripping_Cycling_Lifetime",
+            "Value": 290,
+            "Unit": "h",
+            "Original_Values": "approximately ~290 h",
+            "Test_Condition": {
+              "Current_Density": "0.2 mA cm-2",
+              "Areal_Capacity": "0.2 mAh cm-2",
+              "Cell_Configuration": "Li symmetric cell",
+              "Failure_Mode": "Short-circuited after ~290 h"
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Discharge_Capacity_Rate",
+            "Value": 163.3,
+            "Unit": "mAh g-1",
+            "Original_Values": "163.3 mAh g⁻¹",
+            "Test_Condition": {
+              "C_Rate": "0.1C",
+              "Test_Temperature_K": 328.15,
+              "Original_Temperature": "55 °C",
+              "Cell_Configuration": "LFP/LAZTP 50% HSE/Li SSLB, CR2032 coin cell",
+              "Voltage_Range_V": [
+                2.8,
+                4.0
+              ],
+              "Cathode_Loading": "~2 mg cm-2"
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Discharge_Capacity_Rate",
+            "Value": 158.4,
+            "Unit": "mAh g-1",
+            "Original_Values": "158.4 mAh g⁻¹",
+            "Test_Condition": {
+              "C_Rate": "0.2C",
+              "Test_Temperature_K": 328.15,
+              "Original_Temperature": "55 °C",
+              "Cell_Configuration": "LFP/LAZTP 50% HSE/Li SSLB"
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Discharge_Capacity_Rate",
+            "Value": 149.1,
+            "Unit": "mAh g-1",
+            "Original_Values": "149.1 mAh g⁻¹",
+            "Test_Condition": {
+              "C_Rate": "0.5C",
+              "Test_Temperature_K": 328.15,
+              "Original_Temperature": "55 °C",
+              "Cell_Configuration": "LFP/LAZTP 50% HSE/Li SSLB"
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Discharge_Capacity_Rate",
+            "Value": 138.3,
+            "Unit": "mAh g-1",
+            "Original_Values": "138.3 mAh g⁻¹",
+            "Test_Condition": {
+              "C_Rate": "1.0C",
+              "Test_Temperature_K": 328.15,
+              "Original_Temperature": "55 °C",
+              "Cell_Configuration": "LFP/LAZTP 50% HSE/Li SSLB"
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Discharge_Capacity_Rate",
+            "Value": 126.1,
+            "Unit": "mAh g-1",
+            "Original_Values": "126.1 mAh g⁻¹",
+            "Test_Condition": {
+              "C_Rate": "2.0C",
+              "Test_Temperature_K": 328.15,
+              "Original_Temperature": "55 °C",
+              "Cell_Configuration": "LFP/LAZTP 50% HSE/Li SSLB"
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Discharge_Capacity_Rate_Recovery",
+            "Value": 161.0,
+            "Unit": "mAh g-1",
+            "Original_Values": "161.0 mAh g⁻¹",
+            "Test_Condition": {
+              "C_Rate": "0.1C (recovery)",
+              "Test_Temperature_K": 328.15,
+              "Original_Temperature": "55 °C",
+              "Capacity_Retention_Ratio": "98.6%"
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Initial_Discharge_Capacity_Cycling",
+            "Value": 148.2,
+            "Unit": "mAh g-1",
+            "Original_Values": "148.2 mAh g⁻¹",
+            "Test_Condition": {
+              "C_Rate": "0.5C",
+              "Test_Temperature_K": 328.15,
+              "Original_Temperature": "55 °C",
+              "Voltage_Range_V": [
+                2.8,
+                4.0
+              ]
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Capacity_Fade",
+            "Value": 93.7,
+            "Unit": "mAh g-1",
+            "Original_Values": "93.7 mAh g⁻¹ at the 58th cycle, followed by cell failure",
+            "Test_Condition": {
+              "C_Rate": "0.5C",
+              "Cycle_Number": 58,
+              "Failure_Mode": "cell failure due to poor interfacial contact and unstable voltage behavior"
+            },
+            "Data_Source": "text"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "EXP-008",
+      "Sample_ID": "LAZTP-x-HSE-series",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Composites",
+      "application": "Functional",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Battery"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 3.3"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Composite_Category": "Hybrid solid electrolyte series with varying Zr doping",
+          "Component_Type": "Electrolyte",
+          "Note": "Li1.3Al0.3ZrxTi1.7-x(PO4)3 with x = 0 (LATP), 0.050, 0.075, 0.100; all at 50 wt% loading in PVDF-HFP/LiTFSI matrix"
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "Solution casting method: PVDF-HFP and LiTFSI dissolved in DMAc at 50 °C, LAZTP powders incorporated at 50 wt%, stirred 12 h, cast onto glass Petri dish, vacuum-dried at 50 °C for 6 h",
+            "simplified": "Solution casting with 50 wt% filler in DMAc, same method as single-layer membranes"
+          },
+          "Note": "Same solution casting procedure for all Zr doping levels as described in Section 2.2"
+        },
+        "Structure": {
+          "Note": "All LAZTP powders indexed to rhombohedral LiTi2(PO4)3 phase (R-3c); see EXP-001 and EXP-002 for powder phase data"
+        },
+        "Properties": [
+          {
+            "Property_Name": "Ionic_Conductivity_Series",
+            "Value": 0.00035,
+            "Unit": "S cm-1",
+            "Original_Values": "3.5 × 10⁻⁴ S cm⁻¹",
+            "Test_Condition": {
+              "Sample": "LATP 50% HSE (x=0)",
+              "Test_Temperature_K": 298.15,
+              "Original_Temperature": "25 °C (room temperature)",
+              "Method": "EIS"
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Ionic_Conductivity_Series",
+            "Value": 0.00045,
+            "Unit": "S cm-1",
+            "Original_Values": "4.5 × 10⁻⁴ S cm⁻¹",
+            "Test_Condition": {
+              "Sample": "LAZTP 0.050 HSE (x=0.050)",
+              "Test_Temperature_K": 298.15,
+              "Original_Temperature": "room temperature",
+              "Method": "EIS"
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Ionic_Conductivity_Series",
+            "Value": 0.00072,
+            "Unit": "S cm-1",
+            "Original_Values": "7.2 × 10⁻⁴ S cm⁻¹",
+            "Test_Condition": {
+              "Sample": "LAZTP-0.075 HSE (x=0.075)",
+              "Test_Temperature_K": 298.15,
+              "Original_Temperature": "room temperature",
+              "Method": "EIS"
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Ionic_Conductivity_Series",
+            "Value": 0.00046,
+            "Unit": "S cm-1",
+            "Original_Values": "4.6 × 10⁻⁴ S cm⁻¹",
+            "Test_Condition": {
+              "Sample": "LAZTP-0.100 HSE (x=0.100)",
+              "Test_Temperature_K": 298.15,
+              "Original_Temperature": "room temperature",
+              "Method": "EIS"
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Electronic_Conductivity_Series",
+            "Value": 3.2e-09,
+            "Unit": "S cm-1",
+            "Original_Values": "3.2 × 10⁻⁹ S cm⁻¹",
+            "Test_Condition": {
+              "Sample": "LATP 50% HSE (x=0)",
+              "Test_Temperature_K": 298.15,
+              "Original_Temperature": "25 °C",
+              "Method": "DC polarization"
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Electronic_Conductivity_Series",
+            "Value": 2.8e-09,
+            "Unit": "S cm-1",
+            "Original_Values": "2.8 × 10⁻⁹ S cm⁻¹",
+            "Test_Condition": {
+              "Sample": "LAZTP 0.050 HSE (x=0.050)",
+              "Test_Temperature_K": 298.15,
+              "Original_Temperature": "25 °C",
+              "Method": "DC polarization"
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Electronic_Conductivity_Series",
+            "Value": 2.5e-09,
+            "Unit": "S cm-1",
+            "Original_Values": "2.5 × 10⁻⁹ S cm⁻¹",
+            "Test_Condition": {
+              "Sample": "LAZTP-0.075 HSE (x=0.075)",
+              "Test_Temperature_K": 298.15,
+              "Original_Temperature": "25 °C",
+              "Method": "DC polarization"
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Electronic_Conductivity_Series",
+            "Value": 2.4e-09,
+            "Unit": "S cm-1",
+            "Original_Values": "2.4 × 10⁻⁹ S cm⁻¹",
+            "Test_Condition": {
+              "Sample": "LAZTP-0.100 HSE (x=0.100)",
+              "Test_Temperature_K": 298.15,
+              "Original_Temperature": "25 °C",
+              "Method": "DC polarization"
+            },
+            "Data_Source": "text"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "EXP-009",
+      "Sample_ID": "LAZTP-Dual-HSE-O29",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Composites",
+      "application": "Functional",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Battery"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 3.4",
+        "Section 3.5"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Composite_Category": "Dual-layer hybrid solid electrolyte (thinner oxide-rich layer)",
+          "Note": "Same composition as LAZTP Dual HSE but with oxide-rich layer thickness of 29 μm"
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "Same two-step solution casting as LAZTP Dual HSE with adjusted oxide-rich layer thickness to 29 μm",
+            "simplified": "Same as LAZTP Dual HSE with oxide-rich layer 29 μm"
+          },
+          "Note": "Same fabrication as LAZTP Dual HSE (EXP-005); only the oxide-rich layer casting volume adjusted for different thickness"
+        },
+        "Structure": {
+          "Layered_Structure": {
+            "Number_of_Layers": 2,
+            "Layer_1_Oxide_Rich": {
+              "Thickness_um": 29,
+              "Method": "Cross-sectional SEM"
+            }
+          },
+          "Note": "Same dual-layer structure as LAZTP Dual HSE with oxide-rich layer thickness of 29 μm"
+        },
+        "Properties": [
+          {
+            "Property_Name": "Tensile_Strength",
+            "Value": 5.09,
+            "Unit": "MPa",
+            "Original_Values": "5.09 MPa",
+            "Test_Condition": {
+              "Specimen_Shape": "dog-bone",
+              "Method": "UTM"
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Elongation_at_Break",
+            "Value": 207,
+            "Unit": "%",
+            "Original_Values": "207%",
+            "Test_Condition": {
+              "Specimen_Shape": "dog-bone",
+              "Method": "UTM"
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Youngs_Modulus",
+            "Value": 20.4,
+            "Unit": "MPa",
+            "Original_Values": "20.4 MPa",
+            "Test_Condition": {
+              "Specimen_Shape": "dog-bone",
+              "Method": "UTM"
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Ionic_Conductivity",
+            "Value": 0.00016,
+            "Unit": "S cm-1",
+            "Original_Values": "1.6 × 10⁻⁴ S cm⁻¹",
+            "Test_Condition": {
+              "Test_Temperature_K": 298.15,
+              "Original_Temperature": "room temperature"
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Li_Plating_Stripping_Lifetime",
+            "Value": null,
+            "Unit": "h",
+            "Original_Values": "failure at ~410 h",
+            "Test_Condition": {
+              "Current_Density": "0.2 mA cm-2",
+              "Failure_Mode": "Increase in polarization followed by failure at ~410 h"
+            },
+            "Data_Source": "text",
+            "Note": "Approximate value; failure attributed to lower tensile strength (5.09 MPa)"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "EXP-010",
+      "Sample_ID": "LAZTP-Dual-HSE-O97",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Composites",
+      "application": "Functional",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Battery"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 3.4",
+        "Section 3.5"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Composite_Category": "Dual-layer hybrid solid electrolyte (thicker oxide-rich layer)",
+          "Note": "Same composition as LAZTP Dual HSE but with oxide-rich layer thickness of 97 μm"
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "Same two-step solution casting as LAZTP Dual HSE with adjusted oxide-rich layer thickness to 97 μm",
+            "simplified": "Same as LAZTP Dual HSE with oxide-rich layer 97 μm"
+          },
+          "Note": "Same fabrication as LAZTP Dual HSE (EXP-005); only the oxide-rich layer casting volume adjusted for different thickness"
+        },
+        "Structure": {
+          "Layered_Structure": {
+            "Number_of_Layers": 2,
+            "Layer_1_Oxide_Rich": {
+              "Thickness_um": 97,
+              "Method": "Cross-sectional SEM"
+            }
+          },
+          "Note": "Same dual-layer structure as LAZTP Dual HSE with oxide-rich layer thickness of 97 μm"
+        },
+        "Properties": [
+          {
+            "Property_Name": "Tensile_Strength",
+            "Value": 4.69,
+            "Unit": "MPa",
+            "Original_Values": "4.69 MPa",
+            "Test_Condition": {
+              "Specimen_Shape": "dog-bone",
+              "Method": "UTM"
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Elongation_at_Break",
+            "Value": 135,
+            "Unit": "%",
+            "Original_Values": "135%",
+            "Test_Condition": {
+              "Specimen_Shape": "dog-bone",
+              "Method": "UTM"
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Youngs_Modulus",
+            "Value": 23.3,
+            "Unit": "MPa",
+            "Original_Values": "23.3 MPa",
+            "Test_Condition": {
+              "Specimen_Shape": "dog-bone",
+              "Method": "UTM"
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Ionic_Conductivity",
+            "Value": 0.00055,
+            "Unit": "S cm-1",
+            "Original_Values": "5.5 × 10⁻⁴ S cm⁻¹",
+            "Test_Condition": {
+              "Test_Temperature_K": 298.15,
+              "Original_Temperature": "room temperature"
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Li_Plating_Stripping_Lifetime",
+            "Value": 310,
+            "Unit": "h",
+            "Original_Values": "premature short-circuit after approximately 310 h",
+            "Test_Condition": {
+              "Current_Density": "0.2 mA cm-2",
+              "Failure_Mode": "Short-circuit; insufficient mechanical robustness (4.69 MPa)"
+            },
+            "Data_Source": "text"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "EXP-011",
+      "Sample_ID": "LFP-LAZTP-Dual-HSE-Li-pouch",
+      "Role": "Demonstration",
+      "Data_Nature": "Experimental",
+      "base_material": "Composites",
+      "application": "Functional",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Battery"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 2.4",
+        "Section 3.5",
+        "Fig. 8f, g"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Component_Type": "Full_Cell",
+          "Cathode": {
+            "Material": "LiFePO4 (LFP)",
+            "Formulation": "LFP : Super P : PVDF binder = 8:1:1 ratio",
+            "Active_Material_Loading": "~2 mg cm-2",
+            "Substrate": "Al foil",
+            "Solvent": "N-methyl-2-pyrrolidone (NMP)"
+          },
+          "Electrolyte": "LAZTP Dual HSE",
+          "Anode": "Li metal",
+          "Cell_Format": "Prototype pouch cell, 4.5 × 6.2 cm2"
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "LFP cathodes prepared by mixing LFP, Super P, and PVDF binder in 8:1:1 ratio with NMP using paste mixer. Slurry bladecast on Al foil, dried under vacuum at 80 °C overnight, punched into 13 mm discs. Pouch cell (4.5 × 6.2 cm²) assembled with LFP cathode, LAZTP Dual HSE, and Li metal anode.",
+            "simplified": "LFP cathode 8:1:1 in NMP, bladecast on Al foil, vacuum-dried 80 °C overnight; pouch cell assembly"
+          },
+          "Stages": {
+            "Stage1_Cathode_Preparation": {
+              "Process_Category": "Electrode preparation",
+              "Key_Params": {
+                "Mixing_Ratio": "LFP : Super P : PVDF = 8:1:1",
+                "Solvent": "NMP",
+                "Substrate": "Al foil",
+                "Drying_Temperature_K": 353.15,
+                "Drying_Condition": "vacuum, overnight",
+                "Original_Temperature": "80 °C"
+              }
+            },
+            "Stage2_Cell_Assembly": {
+              "Process_Category": "Cell assembly",
+              "Key_Params": {
+                "Cell_Format": "Pouch cell, 4.5 × 6.2 cm²",
+                "Cathode": "LFP",
+                "Electrolyte": "LAZTP Dual HSE",
+                "Anode": "Li metal"
+              }
+            }
+          },
+          "Equipment": [
+            {
+              "Name": "Multi-channel tester WBCS300L (Wonatech)",
+              "Category": "Testing"
+            }
+          ]
+        },
+        "Properties": [
+          {
+            "Property_Name": "Open_Circuit_Voltage",
+            "Value": 3.2,
+            "Unit": "V",
+            "Original_Values": "approximately ~3.2 V",
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Initial_Discharge_Capacity_Pouch",
+            "Value": 160.4,
+            "Unit": "mAh g-1",
+            "Original_Values": "160.4 mAh g⁻¹",
+            "Test_Condition": {
+              "C_Rate": "0.1C",
+              "Cycle_Number": 1
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Cycling_Lifetime_Pouch",
+            "Value": 30,
+            "Unit": "cycles",
+            "Original_Values": "operated stably for 30 cycles",
+            "Test_Condition": {
+              "C_Rate": "0.1C"
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Flexibility_and_Safety",
+            "Value": null,
+            "Unit": null,
+            "Original_Values": "LED remained illuminated when pouch cell was folded, rolled, or cut",
+            "Data_Source": "text",
+            "Note": "Qualitative demonstration; no numerical value"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "EXP-012",
+      "Sample_ID": "LFP-LAZTP-Dual-HSE-Li-high-loading",
+      "Role": "Demonstration",
+      "Data_Nature": "Experimental",
+      "base_material": "Composites",
+      "application": "Functional",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Battery"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 2.4",
+        "Section 3.5"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Component_Type": "Full_Cell",
+          "Cathode": {
+            "Material": "LiFePO4 (LFP)",
+            "Active_Material_Loading": "10.17 mg cm-2",
+            "Note": "High loading cathode (>10 mg cm-2)"
+          },
+          "Electrolyte": "LAZTP Dual HSE",
+          "Anode": "Li metal"
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "Same electrode preparation as EXP-011 but with higher cathode loading (10.17 mg cm-2)",
+            "simplified": "Same as pouch cell with high loading cathode"
+          },
+          "Note": "Same electrode preparation and cell assembly as LFP/LAZTP Dual HSE/Li pouch cell (EXP-011) but with higher cathode loading"
+        },
+        "Properties": [
+          {
+            "Property_Name": "Initial_Discharge_Capacity",
+            "Value": 120.7,
+            "Unit": "mAh g-1",
+            "Original_Values": "120.7 mAh g⁻¹",
+            "Test_Condition": {
+              "C_Rate": "0.1C",
+              "Cycle_Number": 1
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Discharge_Capacity_After_30_Cycles",
+            "Value": 100.7,
+            "Unit": "mAh g-1",
+            "Original_Values": "100.7 mAh g⁻¹",
+            "Test_Condition": {
+              "C_Rate": "0.1C",
+              "Cycle_Number": 30
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Capacity_Retention",
+            "Value": 83.4,
+            "Unit": "%",
+            "Original_Values": "83.4%",
+            "Test_Condition": {
+              "C_Rate": "0.1C",
+              "Cycle_Number": 30
+            },
+            "Data_Source": "text"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "DFT-001",
+      "Sample_ID": "LATP-DFT-model",
+      "Role": "Target",
+      "Data_Nature": "Computed",
+      "base_material": "Composites",
+      "application": "Functional",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Battery"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 2.5",
+        "Section 3.3"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Chemical_Formula_computed": "Li8Al2Ti10P18O72",
+          "Note": "LATP model: LTP conventional cell (ID: mp-18640) from Materials Project; two Ti substituted by Al with two additional Li for charge compensation"
+        },
+        "Processing": {
+          "Simulation_Metadata": {
+            "Software": "Quantum ESPRESSO (QE)",
+            "Platform": "Materials Square",
+            "Functional": "GGA-PBE",
+            "Plane_Wave_Cutoff_eV": 680,
+            "Original_Cutoff": "~50 Ry",
+            "K_Point_Grid": "3 × 3 × 1 Monkhorst-Pack",
+            "Energy_Convergence_Criterion_Ry": 1e-06,
+            "Reference": "[28, 29]"
+          }
+        },
+        "Structure": {
+          "Initial_Structure": {
+            "Source": "Materials Project database",
+            "ID": "mp-18640",
+            "Note": "LTP conventional cell"
+          },
+          "Structure_Modification": "Two Ti atoms substituted with Al; two Li atoms added for charge compensation; 110 atoms total in LAZTP model"
+        },
+        "Properties": [
+          {
+            "Property_Name": "Band_Gap_Energy",
+            "Value": 2.18,
+            "Unit": "eV",
+            "Original_Values": "2.18 eV",
+            "Test_Condition": {
+              "Method": "DFT DOS calculation",
+              "Model": "Li8Al2Ti10P18O72 (LATP)"
+            },
+            "Data_Source": "text"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "DFT-002",
+      "Sample_ID": "LAZTP-DFT-model",
+      "Role": "Target",
+      "Data_Nature": "Computed",
+      "base_material": "Composites",
+      "application": "Functional",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Battery"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 2.5",
+        "Section 3.3"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Chemical_Formula_computed": "Li8Al2Zr1Ti9P18O72",
+          "Note": "LAZTP model: LATP structure with one Ti replaced by Zr; 110 atoms total"
+        },
+        "Processing": {
+          "Simulation_Metadata": {
+            "Software": "Quantum ESPRESSO (QE)",
+            "Platform": "Materials Square",
+            "Functional": "GGA-PBE",
+            "Plane_Wave_Cutoff_eV": 680,
+            "Original_Cutoff": "~50 Ry",
+            "K_Point_Grid": "3 × 3 × 1 Monkhorst-Pack",
+            "Energy_Convergence_Criterion_Ry": 1e-06
+          }
+        },
+        "Structure": {
+          "Structure_Modification": "One Ti atom in LATP model replaced by Zr atom; structure with lowest total energy selected (Fig. S8)"
+        },
+        "Properties": [
+          {
+            "Property_Name": "Band_Gap_Energy",
+            "Value": 2.28,
+            "Unit": "eV",
+            "Original_Values": "2.28 eV",
+            "Test_Condition": {
+              "Method": "DFT DOS calculation",
+              "Model": "Li8Al2Zr1Ti9P18O72 (LAZTP)"
+            },
+            "Data_Source": "text"
+          }
+        ],
+        "Experiment_Link": {
+          "Related_Item_IDs": [
+            "EXP-001",
+            "DFT-001"
+          ],
+          "Description": "DFT calculations verified that Zr doping increases band gap energy (2.18 → 2.28 eV), confirming suppression of electronic conductivity observed experimentally",
+          "Validation_Target": "Electronic conductivity reduction upon Zr doping"
+        }
+      }
+    }
+  ]
+}

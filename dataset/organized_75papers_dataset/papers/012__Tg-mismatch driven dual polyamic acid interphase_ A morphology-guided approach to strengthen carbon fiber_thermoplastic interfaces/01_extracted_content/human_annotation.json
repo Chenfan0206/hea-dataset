@@ -1,0 +1,477 @@
+﻿公 开
+{
+  "Paper_Metadata": {
+    "Paper_Title": "Tg-mismatch driven dual polyamic acid interphase: A morphology-guided approach to strengthen carbon fiber/thermoplastic interfaces",
+    "DOI": "10.1016/j.compositesb.2025.112924"
+  },
+  "items": [
+    {
+      "Sample_ID": "PI1-CF/PEI_Composite",
+      "Gradient_Material": false,
+      "Gradient_Group_ID": null,
+      "Composition_Info": {
+        "Role": "Target",
+        "Name_Raw": "CF/PEI Composite with PI1 Sizing",
+        "Nominal_Composition": {
+          "Composition_Type": "wt%",
+          "Elements_Normalized": {
+            "CF": 50,
+            "PEI": 50
+          }
+        },
+        "Measured_Composition": {
+          "Composition_Type": null,
+          "Elements_Normalized": null,
+          "Measurement_Method": null
+        },
+        "Note": "Matrix: PEI; Reinforcement: Carbon Fiber (T300-3K); Sizing: PI1 (derived from PMDA/ODA)"
+      },
+      "Process_Info": {
+        "Process_Category": "Composite Fabrication",
+        "Process_Text": {
+          "original": "CF/PEI composites were fabricated using a vacuum hot-pressing technique at 330 °C under a pressure of 4 MPa. The laminates consisted of alternating 9 layers of PEI films and 8 layers of sized carbon fiber fabrics... The impregnation and imidization procedures were identical to the single-component cases. The resulting fibers were designated as PI1-CF.",
+          "simplified": "Vacuum hot-pressing at 330°C, 4 MPa. Laminate: 9 PEI layers / 8 PI1-CF fabric layers. Fiber volume fraction ~50%."
+        },
+        "Equipment": null,
+        "Key_Params": {
+          "Molding_Temperature_K": 603.15,
+          "Molding_Pressure_MPa": 4
+        }
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": "PI1 exhibits no discernible glass transition below 380 °C (Tg > 380 °C)... The FFVs increase by... only 0.47% (PI1)... indicating a rigid molecular structure.",
+          "simplified": "Highly rigid molecular backbone. Very low free volume expansion."
+        },
+        "Main_Phase": null,
+        "Precipitates": [],
+        "Porosity_pct": null,
+        "Relative_Density_pct": null,
+        "Grain_Size_avg_um": null,
+        "Precipitate_Size_avg_nm": null,
+        "Advanced_Quantitative_Features": {
+          "Tg_K": " > 653.15",
+          "FFV_Change_pct": 0.47
+        }
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Flexural_Strength",
+          "Test_Condition": null,
+          "Value_Numeric": 693.9,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "MPa",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": null
+        },
+        {
+          "Property_Name": "Interlaminar_Shear_Strength",
+          "Test_Condition": null,
+          "Value_Numeric": 56.1,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "MPa",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": null
+        },
+        {
+          "Property_Name": "Flexural_Strength",
+          "Test_Condition": "High Temperature",
+          "Value_Numeric": null,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "MPa",
+          "Test_Temperature_K": 453.15,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": "Data not explicitly quantified in text for this specific blend at high temp, only comparative trend mentioned."
+        }
+      ]
+    },
+    {
+      "Sample_ID": "PI2-CF/PEI_Composite",
+      "Gradient_Material": false,
+      "Gradient_Group_ID": null,
+      "Composition_Info": {
+        "Role": "Target",
+        "Composites_Name_Raw": "CF/PEI Composite with PI2 Sizing",
+        "Nominal_Composition": {
+          "Composition_Type": "wt%",
+          "Elements_Normalized": {
+            "CF": 50,
+            "PEI": 50
+          }
+        },
+        "Measured_Composition": {
+          "Composition_Type": null,
+          "Elements_Normalized": null,
+          "Measurement_Method": null
+        },
+        "Note": "Matrix: PEI; Reinforcement: Carbon Fiber (T300-3K); Sizing: PI2 (derived from OPDA/ODA)"
+      },
+      "Process_Info": {
+        "Process_Category": "Composite Fabrication",
+        "Process_Text": {
+          "original": "Vacuum hot-pressing at 330 °C under 4 MPa. Laminate: 9 PEI layers / 8 PI2-CF fabric layers.",
+          "simplified": "Vacuum hot-pressing at 330°C, 4 MPa. Laminate: 9 PEI layers / 8 PI2-CF fabric layers."
+        },
+        "Equipment": null,
+        "Key_Params": {
+          "Molding_Temperature_K": 603.15,
+          "Molding_Pressure_MPa": 4
+        }
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": "PI2, synthesized from OPDA and ODA, exhibits a Tg around 266 °C... The introduction of biphenyl linkages enhances flexibility... The FFVs increase by 4.45% (PI2).",
+          "simplified": "Semi-rigid structure with biphenyl linkages. Moderate segmental mobility."
+        },
+        "Main_Phase": null,
+        "Precipitates": [],
+        "Porosity_pct": null,
+        "Relative_Density_pct": null,
+        "Grain_Size_avg_um": null,
+        "Precipitate_Size_avg_nm": null,
+        "Advanced_Quantitative_Features": {
+          "Tg_K": 539.15,
+          "FFV_Change_pct": 4.45
+        }
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Flexural_Strength",
+          "Test_Condition": null,
+          "Value_Numeric": 854.7,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "MPa",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": null
+        },
+        {
+          "Property_Name": "Interlaminar_Shear_Strength",
+          "Test_Condition": null,
+          "Value_Numeric": 76.4,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "MPa",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": null
+        }
+      ]
+    },
+    {
+      "Sample_ID": "PI3-CF/PEI_Composite",
+      "Gradient_Material": false,
+      "Gradient_Group_ID": null,
+      "Composition_Info": {
+        "Role": "Target",
+        "Composites_Name_Raw": "CF/PEI Composite with PI3 Sizing",
+        "Nominal_Composition": {
+          "Composition_Type": "wt%",
+          "Elements_Normalized": {
+            "CF": 50,
+            "PEI": 50
+          }
+        },
+        "Measured_Composition": {
+          "Composition_Type": null,
+          "Elements_Normalized": null,
+          "Measurement_Method": null
+        },
+        "Note": "Matrix: PEI; Reinforcement: Carbon Fiber (T300-3K); Sizing: PI3 (derived from OPDA/BAB)"
+      },
+      "Process_Info": {
+        "Process_Category": "Composite Fabrication",
+        "Process_Text": {
+          "original": "Vacuum hot-pressing at 330 °C under 4 MPa. Laminate: 9 PEI layers / 8 PI3-CF fabric layers.",
+          "simplified": "Vacuum hot-pressing at 330°C, 4 MPa. Laminate: 9 PEI layers / 8 PI3-CF fabric layers."
+        },
+        "Equipment": null,
+        "Key_Params": {
+          "Molding_Temperature_K": 603.15,
+          "Molding_Pressure_MPa": 4
+        }
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Flexural_Strength",
+          "Test_Condition": null,
+          "Value_Numeric": 802.8,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "MPa",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": null
+        },
+        {
+          "Property_Name": "Interlaminar_Shear_Strength",
+          "Test_Condition": null,
+          "Value_Numeric": 82.1,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "MPa",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": null
+        }
+      ]
+    },
+    {
+      "Sample_ID": "PI2/PI3-CF/PEI_Composite",
+      "Gradient_Material": false,
+      "Gradient_Group_ID": null,
+      "Composition_Info": {
+        "Role": "Target",
+        "Alloy_Name_Raw": "CF/PEI Composite with PI2/PI3 Blend Sizing",
+        "Nominal_Composition": {
+          "Composition_Type": "wt%",
+          "Elements_Normalized": {
+            "CF": 50,
+            "PEI": 50
+          }
+        },
+        "Measured_Composition": {
+          "Composition_Type": null,
+          "Elements_Normalized": null,
+          "Measurement_Method": null
+        },
+        "Note": "Matrix: PEI; Reinforcement: Carbon Fiber (T300-3K); Sizing: Binary blend of PI2 and PI3 (8:2 ratio)"
+      },
+      "Process_Info": {
+        "Process_Category": "Composite Fabrication",
+        "Process_Text": {
+          "original": "Vacuum hot-pressing at 330 °C under 4 MPa. Laminate: 9 PEI layers / 8 PI2/PI3-CF fabric layers. Binary sizing agents: PAAs1 and PAAs2 mixed at 8:2.",
+          "simplified": "Vacuum hot-pressing at 330°C, 4 MPa. Laminate: 9 PEI layers / 8 PI2/PI3-CF fabric layers. 8:2 blend ratio."
+        },
+        "Equipment": null,
+        "Key_Params": {
+          "Molding_Temperature_K": 603.15,
+          "Molding_Pressure_MPa": 4
+        }
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": "The blended film displayed pronounced surface undulations and increased roughness... Tg mismatch and segmental mobility differences... PI2 (higher Tg) and PI3 (lower Tg) lead to spontaneous phase separation... multiscale structures.",
+          "simplified": "Phase-separated morphology due to Tg mismatch. High surface roughness and interfacial complexity."
+        },
+        "Main_Phase": null,
+        "Precipitates": [],
+        "Porosity_pct": null,
+        "Relative_Density_pct": null,
+        "Grain_Size_avg_um": null,
+        "Precipitate_Size_avg_nm": null,
+        "Advanced_Quantitative_Features": {
+          "Blend_Ratio": "8:2",
+          "Interphase_Type": "Morphology-guided dual-phase"
+        }
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Flexural_Strength",
+          "Test_Condition": null,
+          "Value_Numeric": 1049.9,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "MPa",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": null
+        },
+        {
+          "Property_Name": "Flexural_Modulus",
+          "Test_Condition": null,
+          "Value_Numeric": 75,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "GPa",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": null
+        },
+        {
+          "Property_Name": "Interlaminar_Shear_Strength",
+          "Test_Condition": null,
+          "Value_Numeric": 92.9,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "MPa",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": null
+        },
+        {
+          "Property_Name": "Flexural_Strength",
+          "Test_Condition": "High Temperature",
+          "Value_Numeric": null,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "MPa",
+          "Test_Temperature_K": 453.15,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": "Exhibits significantly higher flexural strength and fracture strain compared to Bare-CF/PEI at 180°C."
+        },
+        {
+          "Property_Name": "Wear_Rate",
+          "Test_Condition": null,
+          "Value_Numeric": 2.8e-6,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "mm3/N·m",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": "Short-cut CF/PEI composite data extracted from wear test section."
+        }
+      ]
+    },
+    {
+      "Sample_ID": "PI1/PI3-CF/PEEK_Composite",
+      "Gradient_Material": false,
+      "Gradient_Group_ID": null,
+      "Composition_Info": {
+        "Role": "Target",
+        "Alloy_Name_Raw": "CF/PEEK Composite with PI1/PI3 Blend Sizing",
+        "Nominal_Composition": {
+          "Composition_Type": "wt%",
+          "Elements_Normalized": {
+            "CF": 50,
+            "PEEK": 50
+          }
+        },
+        "Measured_Composition": {
+          "Composition_Type": null,
+          "Elements_Normalized": null,
+          "Measurement_Method": null
+        },
+        "Note": "Matrix: PEEK; Reinforcement: Carbon Fiber (T300-3K); Sizing: Binary blend of PI1 and PI3 (8:2 ratio)"
+      },
+      "Process_Info": {
+        "Process_Category": "Composite Fabrication",
+        "Process_Text": {
+          "original": "CF/PEEK composites were similarly fabricated via vacuum hot-pressing at 375 °C and 3.5 MPa. Laminate: 9 PEEK layers / 8 PI1/PI3-CF fabric layers.",
+          "simplified": "Vacuum hot-pressing at 375°C, 3.5 MPa. Laminate: 9 PEEK layers / 8 PI1/PI3-CF fabric layers."
+        },
+        "Equipment": null,
+        "Key_Params": {
+          "Molding_Temperature_K": 648.15,
+          "Molding_Pressure_MPa": 3.5
+        }
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": "In high melting temperature matrices such as PEEK, only systems with significant Tg mismatch... can effectively induce hierarchical interfacial architectures... PI1 (rigid) and PI3 (flexible) contrast.",
+          "simplified": "Hierarchical interfacial architecture induced by Tg mismatch between rigid PI1 and flexible PI3."
+        },
+        "Main_Phase": null,
+        "Precipitates": [],
+        "Porosity_pct": null,
+        "Relative_Density_pct": null,
+        "Grain_Size_avg_um": null,
+        "Precipitate_Size_avg_nm": null,
+        "Advanced_Quantitative_Features": {
+          "Blend_Ratio": "8:2",
+          "Interphase_Type": "Hierarchical"
+        }
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Interlaminar_Shear_Strength",
+          "Test_Condition": null,
+          "Value_Numeric": 80.8,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "MPa",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": null
+        },
+        {
+          "Property_Name": "Flexural_Strength",
+          "Test_Condition": null,
+          "Value_Numeric": null,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "MPa",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": "Flexural strength value not explicitly stated for this specific blend in the text, only shear strength highlighted."
+        },
+      ]
+    }
+  ]
+}

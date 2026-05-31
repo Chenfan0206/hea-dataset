@@ -1,0 +1,57 @@
+{
+  "Paper_Metadata": {
+    "Paper_Title": "Multiscale modeling of hydrogen diffusion in iron: Effect of applied stresses and dislocations",
+    "DOI": "10.1016/j.ijhydene.2024.11.233"
+  },
+  "items": [
+    {
+      "Sample_ID": "BCC-Fe_H_Diffusion_Model",
+      "Gradient_Material": false,
+      "Composition_Info": {
+        "Role": "Target",
+        "Alloy_Name_Raw": "α-iron",
+        "Common_Name": "BCC Iron",
+        "Nominal_Composition": null,
+        "Note": "Study on interstitial hydrogen diffusion in pure BCC-Fe lattice."
+      },
+      "Process_Info": {
+        "Process_Category": "Multiscale Modeling (DFT/OkMC/PF)",
+        "Process_Text": {
+          "original": "A multiscale approach combining DFT-calculated interaction energies, object kinetic Monte Carlo (OkMC), and a phase-field (PF) model for dislocations.",
+          "simplified": "结合DFT计算的相互作用能、对象动力学蒙特卡洛(OkMC)和位错相场(PF)模型的多尺度模拟方法。"
+        },
+        "Parameter_Info": {
+          "Lattice_Type": "BCC",
+          "External_Stress_State": "Applied strain field"
+        }
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": "Iron lattice containing dislocations creating complex stress fields.",
+          "simplified": "包含位错产生的复杂应力场的铁晶格。"
+        },
+        "Main_Phase": "BCC (α-Fe)",
+        "Advanced_Quantitative_Features": {
+          "Dislocation_Density": null
+        }
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Hydrogen_Binding_Energy",
+          "Test_Condition": "Hydrogen at edge dislocation core in BCC-Fe",
+          "Value_Numeric": -0.52,
+          "Unit": "eV",
+          "Data_Source": "text",
+          "Note": "Binding energy between hydrogen and dislocation core calculated via DFT/Multiscale."
+        },
+        {
+          "Property_Name": "Effective_Diffusion_Coefficient",
+          "Test_Condition": "With and without dislocation effects at variable temperatures",
+          "Value_Numeric": null,
+          "Unit": "m2/s",
+          "Note": "The model predicts significant reduction in H diffusivity near dislocation cores due to trapping effects."
+        }
+      ]
+    }
+  ]
+}

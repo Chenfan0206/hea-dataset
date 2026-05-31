@@ -1,0 +1,1185 @@
+{
+  "Paper_Metadata": {
+    "Paper_Title": "A phase-field approach to fatigue analysis: Bridging theory and simulation",
+    "DOI": null,
+    "DOI_Note": "DOI not found in OCR text"
+  },
+  "Paper_Routing": {
+    "base_material": "Metals",
+    "application": "Structural",
+    "research_paradigm": "Hybrid",
+    "Supplements_Loaded": [
+      "directions/base/Metals.txt",
+      "directions/application/Structural.txt",
+      "directions/paradigm/Hybrid.txt"
+    ],
+    "Patch_Tags": [],
+    "Needs_Mixed_Routing_Check": false,
+    "Mixed_Signals": []
+  },
+  "items": [
+    {
+      "Item_ID": "TPB_Variational",
+      "Sample_ID": "Three-point bending - variational solver",
+      "Role": "Target",
+      "Data_Nature": "Computed",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 5.1"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Generic linear elastic (no specific alloy)",
+          "Note": "Benchmark specimen with generic material properties; no real alloy composition specified"
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "Three-point bending specimen with a centrally located notch, simulated with variational energy-controlled PFF solver on a 400x100 grid of square elements",
+            "simplified": "Three-point bending PFF simulation with variational solver"
+          },
+          "Equipment": [
+            {
+              "Name": "PhaseFieldX v0.2.0 (built on FEniCSx)",
+              "Category": "Software"
+            }
+          ],
+          "Key_Params": {
+            "Stage1": {
+              "Stage_Name": "Simulation setup",
+              "Specimen_Geometry": {
+                "Span_s": {
+                  "Value": 8.0,
+                  "Unit": "mm",
+                  "Original_Values": "s = 8.0 mm"
+                },
+                "Width_W": {
+                  "Value": 1.0,
+                  "Unit": "mm",
+                  "Original_Values": "W = 1.0 mm"
+                },
+                "Thickness_B": {
+                  "Value": 1.0,
+                  "Unit": "mm",
+                  "Original_Values": "B = 1.0 mm"
+                },
+                "Span_to_Width_Ratio_s_W": {
+                  "Value": 8.0,
+                  "Original_Values": "s/W = 8"
+                },
+                "Initial_Crack_Length_a0": {
+                  "Value": 0.2,
+                  "Unit": "mm",
+                  "Original_Values": "a0 = 0.2 mm"
+                }
+              },
+              "Mesh": {
+                "Grid": "400 x 100 square elements",
+                "Element_Size_h": {
+                  "Value": 0.01,
+                  "Unit": "mm",
+                  "Original_Values": "h = 0.01 mm"
+                }
+              },
+              "Material_Properties": {
+                "Critical_Energy_Release_Rate_Gc": {
+                  "Value": 0.0005,
+                  "Unit": "kN/mm",
+                  "Original_Values": "Gc = 0.0005 kN/mm"
+                },
+                "Youngs_Modulus_E": {
+                  "Value": 20.8,
+                  "Unit": "kN/mm^2",
+                  "Original_Values": "E = 20.8 kN/mm^2"
+                },
+                "Poissons_Ratio_nu": {
+                  "Value": 0.3,
+                  "Original_Values": "v = 0.3"
+                }
+              },
+              "Phase_Field_Params": {
+                "Length_Scale_l": {
+                  "Value": 0.03,
+                  "Unit": "mm",
+                  "Original_Values": "l = 0.03 mm"
+                },
+                "Length_Scale_to_Mesh_Ratio_l_h": {
+                  "Value": 3.0,
+                  "Original_Values": "l/h = 3"
+                }
+              },
+              "Solver_Params": {
+                "Scheme": "Variational",
+                "c1": {
+                  "Value": 35.0,
+                  "Unit": "kN/mm",
+                  "Original_Values": "c1 = 35.0 kN/mm"
+                },
+                "c2": {
+                  "Value": 1.0,
+                  "Original_Values": "c2 = 1.0"
+                },
+                "Delta_tau_initial": {
+                  "Value": 0.001,
+                  "Unit": "kN*mm",
+                  "Original_Values": "Delta_t = 0.001 kN*mm"
+                }
+              }
+            }
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Rectangular plate with centrally located notch; straight crack path propagating from notch under three-point bending",
+            "simplified": "Straight crack propagation from central notch in three-point bending"
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Fracture_Analysis",
+            "Property_Type": "Fracture",
+            "Data_Nature": "Computed",
+            "Data_Source": "text",
+            "Note": "Validated against LEFM analytical solution; variational solver output requires post-processing correction via scaling factor alpha to recover constant Gc response. Peak force overestimated by diffuse crack representation; corrected with Bourdin factor F_corr = 1 + 2h/(2l)",
+            "Simulation_Metadata": {
+              "Method": "Phase-field fracture (PFF) with variational energy-controlled solver",
+              "Software": "PhaseFieldX v0.2.0 (FEniCSx-based)",
+              "Loading": "Monotonic, energy-controlled (crack area control)"
+            }
+          }
+        ]
+      },
+      "Experiment_Link": {
+        "Related_Item_IDs": [
+          "TPB_NonVariational"
+        ],
+        "Description": "Variational solver results compared with non-variational solver and LEFM analytical solution",
+        "Validation_Target": "LEFM analytical force-displacement curve with snap-back",
+        "Agreement_or_Error": "Both solvers show excellent agreement with each other; peak force overestimated vs LEFM, corrected by Bourdin factor"
+      }
+    },
+    {
+      "Item_ID": "TPB_NonVariational",
+      "Sample_ID": "Three-point bending - non-variational solver",
+      "Role": "Target",
+      "Data_Nature": "Computed",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 5.1"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Generic linear elastic (no specific alloy)",
+          "Note": "Benchmark specimen with generic material properties; no real alloy composition specified"
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "Three-point bending specimen with a centrally located notch, simulated with non-variational energy-controlled PFF solver on a 400x100 grid of square elements",
+            "simplified": "Three-point bending PFF simulation with non-variational solver"
+          },
+          "Equipment": [
+            {
+              "Name": "PhaseFieldX v0.2.0 (built on FEniCSx)",
+              "Category": "Software"
+            }
+          ],
+          "Key_Params": {
+            "Stage1": {
+              "Stage_Name": "Simulation setup",
+              "Specimen_Geometry": {
+                "Span_s": {
+                  "Value": 8.0,
+                  "Unit": "mm",
+                  "Original_Values": "s = 8.0 mm"
+                },
+                "Width_W": {
+                  "Value": 1.0,
+                  "Unit": "mm",
+                  "Original_Values": "W = 1.0 mm"
+                },
+                "Thickness_B": {
+                  "Value": 1.0,
+                  "Unit": "mm",
+                  "Original_Values": "B = 1.0 mm"
+                },
+                "Initial_Crack_Length_a0": {
+                  "Value": 0.2,
+                  "Unit": "mm",
+                  "Original_Values": "a0 = 0.2 mm"
+                }
+              },
+              "Material_Properties": {
+                "Critical_Energy_Release_Rate_Gc": {
+                  "Value": 0.0005,
+                  "Unit": "kN/mm",
+                  "Original_Values": "Gc = 0.0005 kN/mm"
+                },
+                "Youngs_Modulus_E": {
+                  "Value": 20.8,
+                  "Unit": "kN/mm^2",
+                  "Original_Values": "E = 20.8 kN/mm^2"
+                },
+                "Poissons_Ratio_nu": {
+                  "Value": 0.3,
+                  "Original_Values": "v = 0.3"
+                }
+              },
+              "Solver_Params": {
+                "Scheme": "Non-variational",
+                "c1": {
+                  "Value": 1.0,
+                  "Unit": "kN/mm",
+                  "Original_Values": "c1 = 1.0 kN/mm"
+                },
+                "c2": {
+                  "Value": 1.0,
+                  "Original_Values": "c2 = 1.0"
+                },
+                "Delta_tau_initial": {
+                  "Value": 0.001,
+                  "Unit": "kN*mm"
+                }
+              }
+            }
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Same geometry as variational solver benchmark; straight crack path",
+            "simplified": "Straight crack propagation from central notch"
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Fracture_Analysis",
+            "Property_Type": "Fracture",
+            "Data_Nature": "Computed",
+            "Data_Source": "text",
+            "Note": "Non-variational solver directly computes physical response for constant Gc without post-processing correction",
+            "Simulation_Metadata": {
+              "Method": "Phase-field fracture (PFF) with non-variational energy-controlled solver",
+              "Software": "PhaseFieldX v0.2.0 (FEniCSx-based)",
+              "Loading": "Monotonic, energy-controlled (crack area control)"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "CCS_l2_a03",
+      "Sample_ID": "Center-cracked tension specimen - l=0.0025mm, a0=0.3mm",
+      "Role": "Target",
+      "Data_Nature": "Computed",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 5.2"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Generic linear elastic (no specific alloy)",
+          "Note": "Benchmark specimen with generic material properties; no real alloy composition specified"
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "Center-cracked tension specimen with total width 2W=2.0mm, total height 2H=6.0mm, simulated with non-variational PFF solver; mesh size refined proportionally to length scale parameter to maintain l/h=2.5",
+            "simplified": "Center-cracked tension PFF simulation with non-variational solver"
+          },
+          "Equipment": [
+            {
+              "Name": "PhaseFieldX v0.2.0 (built on FEniCSx)",
+              "Category": "Software"
+            }
+          ],
+          "Key_Params": {
+            "Stage1": {
+              "Stage_Name": "Simulation setup",
+              "Specimen_Geometry": {
+                "Total_Width_2W": {
+                  "Value": 2.0,
+                  "Unit": "mm",
+                  "Original_Values": "2W = 2.0mm"
+                },
+                "Total_Height_2H": {
+                  "Value": 6.0,
+                  "Unit": "mm",
+                  "Original_Values": "2H = 6.0mm"
+                },
+                "Aspect_Ratio_H_W": {
+                  "Value": 3.0,
+                  "Original_Values": "H/W = 3"
+                },
+                "Initial_Crack_Length_a0": {
+                  "Value": 0.3,
+                  "Unit": "mm",
+                  "Original_Values": "a0 = 0.3 mm"
+                }
+              },
+              "Material_Properties": {
+                "Critical_Energy_Release_Rate_Gc": {
+                  "Value": 0.0027,
+                  "Unit": "kN/mm",
+                  "Original_Values": "Gc = 0.0027 kN/mm"
+                },
+                "Youngs_Modulus_E": {
+                  "Value": 210.0,
+                  "Unit": "kN/mm^2",
+                  "Original_Values": "E = 210 kN/mm^2"
+                },
+                "Poissons_Ratio_nu": {
+                  "Value": 0.3,
+                  "Original_Values": "v = 0.3"
+                }
+              },
+              "Phase_Field_Params": {
+                "Length_Scale_l": {
+                  "Value": 0.0025,
+                  "Unit": "mm",
+                  "Original_Values": "l = 0.0025 mm"
+                },
+                "Length_Scale_to_Mesh_Ratio_l_h": {
+                  "Value": 2.5,
+                  "Original_Values": "l/h = 2.5"
+                }
+              },
+              "Solver_Params": {
+                "Scheme": "Non-variational",
+                "c1": {
+                  "Value": 1.0,
+                  "Unit": "kN/mm"
+                },
+                "c2": {
+                  "Value": 1.0,
+                  "Original_Values": "dimensionless"
+                }
+              }
+            }
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Center-cracked tension specimen; straight crack propagation along symmetry plane",
+            "simplified": "Straight crack propagation in center-cracked tension geometry"
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Fatigue_Life",
+            "Property_Type": "Fatigue",
+            "Data_Nature": "Computed",
+            "Data_Source": "text",
+            "Test_Condition": {
+              "Paris_Exponent_n": {
+                "Value": 2.5,
+                "Original_Values": "n = 2.5"
+              },
+              "Paris_Constant_C_Paris": {
+                "Value": 1e-09,
+                "Unit": "mm^((2+3*2.5)/2) * cycle^-1 * kN^-2.5",
+                "Original_Values": "C_Paris = 10^-9 mm^((2+3n)/2) * cycle^-1 * kN^-n"
+              },
+              "Cyclic_Load_Range_Delta_P": {
+                "Value": 33.0,
+                "Unit": "kN",
+                "Original_Values": "Delta_P = 33 kN"
+              },
+              "Load_Min_P_min": {
+                "Value": 0.0,
+                "Unit": "kN",
+                "Original_Values": "P_min = 0 kN"
+              },
+              "Load_Max_P_max": {
+                "Value": 33.0,
+                "Unit": "kN",
+                "Original_Values": "P_max = 33 kN"
+              },
+              "Initial_Crack_Length_a": {
+                "Value": 0.4,
+                "Unit": "mm",
+                "Original_Values": "a = 0.4 mm"
+              },
+              "Loading_Mode": "Cyclic tension",
+              "Fatigue_Model": "Paris' law"
+            },
+            "Note": "Fatigue analysis starting from a=0.4mm (simulation used a0=0.3mm for PFF). Crack length corrected using Bourdin and skeletonization methods. FEM with explicit crack and LEFM analytical solution used as references. Corrected phase-field predictions show excellent agreement with theoretical solution.",
+            "Simulation_Metadata": {
+              "Method": "Phase-field fracture (PFF) combined with Paris' law integration",
+              "Software": "PhaseFieldX v0.2.0 (FEniCSx-based)",
+              "Loading": "Single quasi-static simulation; fatigue life integrated from compliance derivative"
+            }
+          }
+        ]
+      },
+      "Experiment_Link": {
+        "Related_Item_IDs": [
+          "CCS_l1_a03",
+          "CCS_l2_a05",
+          "CCS_l2_a07"
+        ],
+        "Description": "Primary center-cracked specimen simulation for length scale and crack measurement validation",
+        "Validation_Target": "LEFM analytical solution for center-cracked tension specimen"
+      }
+    },
+    {
+      "Item_ID": "CCS_l1_a03",
+      "Sample_ID": "Center-cracked tension specimen - l=0.025mm, a0=0.3mm",
+      "Role": "Variant",
+      "Data_Nature": "Computed",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 5.2.2"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Generic linear elastic (no specific alloy)",
+          "Note": "Same material properties as CCS_l2_a03"
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "Center-cracked tension specimen with larger length scale l1=0.025mm, initial crack a0=0.3mm",
+            "simplified": "Center-cracked tension PFF simulation with larger length scale"
+          },
+          "Equipment": [
+            {
+              "Name": "PhaseFieldX v0.2.0 (built on FEniCSx)",
+              "Category": "Software"
+            }
+          ],
+          "Key_Params": {
+            "Stage1": {
+              "Stage_Name": "Simulation setup",
+              "Phase_Field_Params": {
+                "Length_Scale_l": {
+                  "Value": 0.025,
+                  "Unit": "mm",
+                  "Original_Values": "l1 = 0.025 mm"
+                },
+                "Length_Scale_to_Mesh_Ratio_l_h": {
+                  "Value": 2.5,
+                  "Original_Values": "l/h = 2.5"
+                }
+              },
+              "Specimen_Geometry": {
+                "Initial_Crack_Length_a0": {
+                  "Value": 0.3,
+                  "Unit": "mm"
+                }
+              }
+            }
+          },
+          "Note": "Material properties identical to CCS_l2_a03 as stated in Section 5.2.2: Gc=0.0027 kN/mm, E=210 kN/mm^2, nu=0.3"
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Larger length scale leads to more pronounced premature damage accumulation and gradual stiffness reduction before fracture",
+            "simplified": "Premature damage accumulation more pronounced at larger length scale"
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Fracture_Analysis",
+            "Property_Type": "Fracture",
+            "Data_Nature": "Computed",
+            "Data_Source": "text",
+            "Note": "Comparison with smaller length scale l2; larger l1 shows more premature damage accumulation and greater deviation from LEFM stiffness response"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "CCS_l2_a05",
+      "Sample_ID": "Center-cracked tension specimen - l=0.0025mm, a0=0.5mm",
+      "Role": "Variant",
+      "Data_Nature": "Computed",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 5.2.2"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Generic linear elastic (no specific alloy)",
+          "Note": "Same material properties as CCS_l2_a03"
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "Center-cracked tension specimen with l=0.0025mm, initial crack a0=0.5mm",
+            "simplified": "Center-cracked tension PFF simulation with a0=0.5mm"
+          },
+          "Equipment": [
+            {
+              "Name": "PhaseFieldX v0.2.0 (built on FEniCSx)",
+              "Category": "Software"
+            }
+          ],
+          "Key_Params": {
+            "Stage1": {
+              "Stage_Name": "Simulation setup",
+              "Specimen_Geometry": {
+                "Initial_Crack_Length_a0": {
+                  "Value": 0.5,
+                  "Unit": "mm",
+                  "Original_Values": "a0 = 0.5 mm"
+                }
+              }
+            }
+          },
+          "Note": "Material properties and solver settings identical to CCS_l2_a03 as stated in Section 5.2.2"
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Equilibrium paths converge as crack propagates regardless of initial crack size",
+            "simplified": "Equilibrium path independent of initial crack size after convergence"
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Fracture_Analysis",
+            "Property_Type": "Fracture",
+            "Data_Nature": "Computed",
+            "Data_Source": "text",
+            "Note": "Initial response depends on a0 but equilibrium paths converge as crack propagates (Fig. 6)"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "CCS_l2_a07",
+      "Sample_ID": "Center-cracked tension specimen - l=0.0025mm, a0=0.7mm",
+      "Role": "Variant",
+      "Data_Nature": "Computed",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 5.2.2"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Generic linear elastic (no specific alloy)",
+          "Note": "Same material properties as CCS_l2_a03"
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "Center-cracked tension specimen with l=0.0025mm, initial crack a0=0.7mm",
+            "simplified": "Center-cracked tension PFF simulation with a0=0.7mm"
+          },
+          "Equipment": [
+            {
+              "Name": "PhaseFieldX v0.2.0 (built on FEniCSx)",
+              "Category": "Software"
+            }
+          ],
+          "Key_Params": {
+            "Stage1": {
+              "Stage_Name": "Simulation setup",
+              "Specimen_Geometry": {
+                "Initial_Crack_Length_a0": {
+                  "Value": 0.7,
+                  "Unit": "mm",
+                  "Original_Values": "a0 = 0.7 mm"
+                }
+              }
+            }
+          },
+          "Note": "Material properties and solver settings identical to CCS_l2_a03 as stated in Section 5.2.2"
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Equilibrium paths converge as crack propagates regardless of initial crack size",
+            "simplified": "Equilibrium path independent of initial crack size after convergence"
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Fracture_Analysis",
+            "Property_Type": "Fracture",
+            "Data_Nature": "Computed",
+            "Data_Source": "text",
+            "Note": "Initial response depends on a0 but equilibrium paths converge as crack propagates (Fig. 6)"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "CT_Standard_Specimen1_PFF",
+      "Sample_ID": "Standard CT Specimen 1 - PFF simulation",
+      "Role": "Target",
+      "Data_Nature": "Computed",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 6.1"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Ni-based superalloy",
+          "Material_Name_Raw": "Haynes 230",
+          "Note": "Elastic properties from Wagner et al. [22,23]; fatigue parameters estimated from literature [24,25] with C_Paris adjusted to match reference fatigue life data"
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "Standard compact tension specimen (ASTM-E647) without additional holes, with centered initial crack H=0.60W; PFF simulation with non-variational solver on quadrilateral mesh",
+            "simplified": "Standard CT Specimen 1 PFF simulation with centered crack"
+          },
+          "Equipment": [
+            {
+              "Name": "PhaseFieldX v0.2.0 (built on FEniCSx)",
+              "Category": "Software"
+            }
+          ],
+          "Key_Params": {
+            "Stage1": {
+              "Stage_Name": "Simulation setup",
+              "Specimen_Geometry": {
+                "Width_W": {
+                  "Value": 40.0,
+                  "Unit": "mm",
+                  "Original_Values": "W = 40.0 mm"
+                },
+                "Thickness_B": {
+                  "Value": null,
+                  "Unit": "mm",
+                  "Original_Values": "B = 0.08W",
+                  "Note": "B = 0.08 * W = 0.08 * 40.0 = 3.2 mm (Computed from 0.08W ratio)"
+                },
+                "Initial_Crack_Position_H": {
+                  "Value": null,
+                  "Original_Values": "H = 0.60W",
+                  "Note": "H = 0.60 * 40.0 = 24.0 mm (centered configuration)"
+                },
+                "Initial_Crack_Length_a0": {
+                  "Value": 8.0,
+                  "Unit": "mm",
+                  "Original_Values": "a0 = 0.2W = 8.0 mm"
+                }
+              },
+              "Material_Properties": {
+                "Youngs_Modulus_E": {
+                  "Value": 211.0,
+                  "Unit": "kN/mm^2",
+                  "Original_Values": "E = 211 kN/mm^2"
+                },
+                "Poissons_Ratio_nu": {
+                  "Value": 0.3,
+                  "Original_Values": "v = 0.3"
+                },
+                "Critical_Energy_Release_Rate_Gc": {
+                  "Value": 0.073,
+                  "Unit": "kN/mm",
+                  "Original_Values": "Gc = 0.073 kN/mm"
+                }
+              },
+              "Phase_Field_Params": {
+                "Length_Scale_l": {
+                  "Value": 0.1,
+                  "Unit": "mm",
+                  "Original_Values": "l = 0.0025W = 0.1 mm"
+                },
+                "Element_Size_h": {
+                  "Value": 0.04,
+                  "Unit": "mm",
+                  "Original_Values": "h = 0.001W = 0.04 mm"
+                },
+                "Length_Scale_to_Mesh_Ratio_l_h": {
+                  "Value": 2.5,
+                  "Original_Values": "l/h = 2.5"
+                }
+              },
+              "Solver_Params": {
+                "Scheme": "Non-variational",
+                "c1": {
+                  "Value": 1.0,
+                  "Unit": "kN/mm"
+                },
+                "c2": {
+                  "Value": 1.0,
+                  "Original_Values": "dimensionless"
+                }
+              }
+            },
+            "Stage2": {
+              "Stage_Name": "Fatigue analysis",
+              "Fatigue_Model": "Paris' law with variable SIF (ASTM-E647 exponential increase)",
+              "Paris_Exponent_n": {
+                "Value": 2.08,
+                "Original_Values": "n = 2.08"
+              },
+              "Paris_Constant_C_Paris": {
+                "Value": 2.129e-05,
+                "Unit": "mm^((2+3*2.08)/2) * cycle^-1 * kN^-2.08",
+                "Original_Values": "C_Paris = 2.129 x 10^-5 mm^((2+3n)/2) * cycle^-1 * kN^-n"
+              },
+              "Initial_SIF_K0": {
+                "Value": 0.474,
+                "Unit": "kN/mm^(3/2)",
+                "Original_Values": "K0 = 0.474 kN/mm^(3/2)"
+              },
+              "Load_Ratio_R": {
+                "Value": 0.1,
+                "Original_Values": "R = 0.1"
+              },
+              "Scaling_Parameter_theta": {
+                "Value": 0.04,
+                "Unit": "mm^-1",
+                "Original_Values": "theta = 0.04 mm^-1"
+              },
+              "Initial_Crack_Length_ai": {
+                "Value": 11.5,
+                "Unit": "mm",
+                "Original_Values": "ai = 11.5 mm"
+              }
+            }
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Straight crack path predicted; slight upward deviation at beginning attributed to mesh effects",
+            "simplified": "Predominantly straight crack propagation with minor mesh-induced deviation"
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Fatigue_Life_Prediction",
+            "Property_Type": "Fatigue",
+            "Data_Nature": "Computed",
+            "Data_Source": "text",
+            "Test_Condition": {
+              "Fatigue_Model": "Paris' law with exponentially increasing SIF (ASTM-E647)",
+              "Stress_Intensity_Factor_Range": "Delta_K(a) = (1-R)*K0*exp(theta*(a-ai))",
+              "Initial_SIF_K0": {
+                "Value": 0.474,
+                "Unit": "kN/mm^(3/2)"
+              },
+              "Load_Ratio_R": 0.1,
+              "Initial_Crack_Length_ai": {
+                "Value": 11.5,
+                "Unit": "mm"
+              },
+              "Paris_Exponent_n": 2.08,
+              "Paris_Constant_C_Paris": {
+                "Value": 2.129e-05,
+                "Unit": "mm^((2+3*2.08)/2) * cycle^-1 * kN^-2.08"
+              }
+            },
+            "Note": "Skeleton-corrected phase-field results align more closely with LEFM and elasticity solutions than Bourdin-corrected results. Small variations in dC/da amplified by Paris exponent n cause more pronounced differences in fatigue life prediction.",
+            "Simulation_Metadata": {
+              "Method": "Phase-field fracture (PFF) combined with Paris' law integration",
+              "Software": "PhaseFieldX v0.2.0 (FEniCSx-based)",
+              "Loading": "Single quasi-static energy-controlled simulation; fatigue life from compliance derivative"
+            }
+          }
+        ]
+      },
+      "Experiment_Link": {
+        "Related_Item_IDs": [
+          "CT_Standard_Specimen1_Exp"
+        ],
+        "Description": "PFF simulation of standard CT specimen validated against LEFM analytical solution and literature experimental data",
+        "Validation_Target": "LEFM analytical solution for standard CT specimen",
+        "Agreement_or_Error": "Skeleton crack length measurement provides closer results to theoretical solution than Bourdin correction for unstructured mesh"
+      }
+    },
+    {
+      "Item_ID": "CT_Standard_Specimen1_Exp",
+      "Sample_ID": "Standard CT Specimen 1 - Experimental (Wagner et al.)",
+      "Role": "Reference",
+      "Data_Nature": "Literature_Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 6.1"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Ni-based superalloy",
+          "Material_Name_Raw": "Haynes 230",
+          "Note": "Experimental data from Wagner et al. [22,23]"
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "Standard compact tension specimen (ASTM-E647) tested with exponentially increasing SIF range",
+            "simplified": "Standard CT fatigue test per ASTM-E647"
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Fatigue_Life",
+            "Property_Type": "Fatigue",
+            "Data_Nature": "Literature_Experimental",
+            "Data_Source": "text",
+            "Note": "Experimental fatigue life data from Wagner et al. [22,23]; used for comparison but specific numerical values reported in figures only (Fig. 12(b))",
+            "Reference": "Wagner D. et al., Int. J. Fatigue, 2019 [22]; Wagner D., Ph.D. thesis, UTSA, 2018 [23]"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "CT_Modified_Specimen2_PFF",
+      "Sample_ID": "Modified CT Specimen 2 - H=0.56W, PFF",
+      "Role": "Target",
+      "Data_Nature": "Computed",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 6.2"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Ni-based superalloy",
+          "Material_Name_Raw": "Haynes 230",
+          "Note": "Material properties, boundary conditions, and solver settings identical to standard CT specimen (Section 6.1) as stated in Section 6.2"
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "Modified CT specimen with internal holes and initial crack position H=0.56W; PFF simulation with non-variational solver",
+            "simplified": "Modified CT Specimen 2 PFF simulation with H=0.56W"
+          },
+          "Equipment": [
+            {
+              "Name": "PhaseFieldX v0.2.0 (built on FEniCSx)",
+              "Category": "Software"
+            }
+          ],
+          "Key_Params": {
+            "Stage1": {
+              "Stage_Name": "Simulation setup",
+              "Specimen_Geometry": {
+                "Width_W": {
+                  "Value": 40.0,
+                  "Unit": "mm"
+                },
+                "Initial_Crack_Position_H": {
+                  "Value": null,
+                  "Original_Values": "H = 0.56W",
+                  "Note": "H = 0.56 * 40.0 = 22.4 mm (Computed from 0.56W ratio)"
+                }
+              }
+            },
+            "Stage2": {
+              "Stage_Name": "Fatigue analysis",
+              "Fatigue_Model": "Paris' law with exponentially increasing SIF (same as standard CT)",
+              "Initial_Crack_Length_ai": {
+                "Value": 11.5,
+                "Unit": "mm"
+              }
+            }
+          },
+          "Note": "Material properties (E=211 kN/mm^2, nu=0.3, Gc=0.073 kN/mm), boundary conditions, and solver settings shared with standard CT specimen per Section 6.2"
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Crack correctly propagates to hole 'a', matching experimental observations",
+            "simplified": "Crack path to hole 'a' predicted correctly"
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Fatigue_Life_Prediction",
+            "Property_Type": "Fatigue",
+            "Data_Nature": "Computed",
+            "Data_Source": "text",
+            "Note": "Excellent agreement with experimental data; final life prediction error less than 4%",
+            "Simulation_Metadata": {
+              "Method": "Phase-field fracture (PFF) combined with Paris' law integration",
+              "Software": "PhaseFieldX v0.2.0 (FEniCSx-based)"
+            }
+          }
+        ]
+      },
+      "Experiment_Link": {
+        "Related_Item_IDs": [
+          "CT_Modified_Specimen2_Exp"
+        ],
+        "Description": "PFF simulation of modified CT specimen validated against experimental data",
+        "Validation_Target": "Experimental crack path and fatigue life from Wagner et al. [22,23]",
+        "Agreement_or_Error": "Final fatigue life prediction error less than 4%; crack path correctly predicted to hole 'a'"
+      }
+    },
+    {
+      "Item_ID": "CT_Modified_Specimen2_Exp",
+      "Sample_ID": "Modified CT Specimen 2 - Experimental (Wagner et al.)",
+      "Role": "Reference",
+      "Data_Nature": "Literature_Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 6.2"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Ni-based superalloy",
+          "Material_Name_Raw": "Haynes 230",
+          "Note": "Experimental data from Wagner et al. [22,23]"
+        },
+        "Properties": [
+          {
+            "Property_Name": "Fatigue_Life",
+            "Property_Type": "Fatigue",
+            "Data_Nature": "Literature_Experimental",
+            "Data_Source": "text",
+            "Note": "Experimental crack path to hole 'a' and fatigue life data from Wagner et al. [22,23]; specific numerical values in figures only (Fig. 13(a), Fig. 14)",
+            "Reference": "Wagner D. et al., Int. J. Fatigue, 2019 [22]; Wagner D., Ph.D. thesis, UTSA, 2018 [23]"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "CT_Modified_Specimen3_PFF",
+      "Sample_ID": "Modified CT Specimen 3 - H=0.58W, PFF",
+      "Role": "Target",
+      "Data_Nature": "Computed",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 6.2"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Ni-based superalloy",
+          "Material_Name_Raw": "Haynes 230",
+          "Note": "Material properties identical to standard CT specimen per Section 6.2"
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "Modified CT specimen with internal holes and initial crack position H=0.58W; PFF simulation with non-variational solver",
+            "simplified": "Modified CT Specimen 3 PFF simulation with H=0.58W"
+          },
+          "Equipment": [
+            {
+              "Name": "PhaseFieldX v0.2.0 (built on FEniCSx)",
+              "Category": "Software"
+            }
+          ],
+          "Key_Params": {
+            "Stage1": {
+              "Stage_Name": "Simulation setup",
+              "Specimen_Geometry": {
+                "Initial_Crack_Position_H": {
+                  "Value": null,
+                  "Original_Values": "H = 0.58W",
+                  "Note": "H = 0.58 * 40.0 = 23.2 mm (Computed from 0.58W ratio)"
+                }
+              }
+            },
+            "Stage2": {
+              "Stage_Name": "Fatigue analysis",
+              "Fatigue_Model": "Paris' law with exponentially increasing SIF",
+              "Initial_Crack_Length_ai": {
+                "Value": 11.5,
+                "Unit": "mm",
+                "Original_Values": "ai = 11.5 mm (shared with standard CT specimen per Section 6.2)"
+              }
+            }
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Simulation predicts crack path toward hole 'a', deviating from experimental observation where crack terminates at hole 'b'; case is particularly complicated due to centered initial crack position relative to upper/lower holes",
+            "simplified": "Predicted crack path to hole 'a' differs from experimental path to hole 'b'"
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Fatigue_Life_Prediction",
+            "Property_Type": "Fatigue",
+            "Data_Nature": "Computed",
+            "Data_Source": "text",
+            "Note": "Incorrect crack path leads to deviation in predicted fatigue life. Case exhibits instability in crack propagation; higher sensitivity to simulation conditions. Other numerical fracture approaches also show larger differences for this configuration.",
+            "Simulation_Metadata": {
+              "Method": "Phase-field fracture (PFF) combined with Paris' law integration",
+              "Software": "PhaseFieldX v0.2.0 (FEniCSx-based)"
+            }
+          }
+        ]
+      },
+      "Experiment_Link": {
+        "Related_Item_IDs": [
+          "CT_Modified_Specimen3_Exp"
+        ],
+        "Description": "PFF simulation of modified CT specimen; crack path prediction disagrees with experiment",
+        "Validation_Target": "Experimental crack path and fatigue life from Wagner et al. [22,23]",
+        "Agreement_or_Error": "Simulation predicts crack to hole 'a' but experiment shows crack to hole 'b'; indicates crack propagation instability"
+      }
+    },
+    {
+      "Item_ID": "CT_Modified_Specimen3_Exp",
+      "Sample_ID": "Modified CT Specimen 3 - Experimental (Wagner et al.)",
+      "Role": "Reference",
+      "Data_Nature": "Literature_Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 6.2"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Ni-based superalloy",
+          "Material_Name_Raw": "Haynes 230",
+          "Note": "Experimental data from Wagner et al. [22,23]"
+        },
+        "Properties": [
+          {
+            "Property_Name": "Fatigue_Life",
+            "Property_Type": "Fatigue",
+            "Data_Nature": "Literature_Experimental",
+            "Data_Source": "text",
+            "Note": "Experimental crack path terminates at hole 'b'; fatigue life data from Wagner et al. [22,23] (Fig. 13(b), Fig. 14)",
+            "Reference": "Wagner D. et al., Int. J. Fatigue, 2019 [22]; Wagner D., Ph.D. thesis, UTSA, 2018 [23]"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "CT_Modified_Specimen4_PFF",
+      "Sample_ID": "Modified CT Specimen 4 - H=0.64W, PFF",
+      "Role": "Target",
+      "Data_Nature": "Computed",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 6.2"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Ni-based superalloy",
+          "Material_Name_Raw": "Haynes 230",
+          "Note": "Material properties identical to standard CT specimen per Section 6.2"
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "Modified CT specimen with internal holes and initial crack position H=0.64W; PFF simulation with non-variational solver; approximately 9000 adaptive steps required",
+            "simplified": "Modified CT Specimen 4 PFF simulation with H=0.64W"
+          },
+          "Equipment": [
+            {
+              "Name": "PhaseFieldX v0.2.0 (built on FEniCSx)",
+              "Category": "Software"
+            }
+          ],
+          "Key_Params": {
+            "Stage1": {
+              "Stage_Name": "Simulation setup",
+              "Specimen_Geometry": {
+                "Initial_Crack_Position_H": {
+                  "Value": null,
+                  "Original_Values": "H = 0.64W",
+                  "Note": "H = 0.64 * 40.0 = 25.6 mm (Computed from 0.64W ratio)"
+                }
+              }
+            },
+            "Stage2": {
+              "Stage_Name": "Fatigue analysis",
+              "Fatigue_Model": "Paris' law with exponentially increasing SIF",
+              "Initial_Crack_Length_ai": {
+                "Value": 11.5,
+                "Unit": "mm",
+                "Original_Values": "ai = 11.5 mm (shared with standard CT specimen per Section 6.2)"
+              }
+            }
+          },
+          "Note": "Approximately 9000 adaptive steps required; equivalent to 4,000,000-8,000,000 steps in cycle-by-cycle simulation, a reduction of over 400-800 times"
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Crack correctly propagates to hole 'c', matching experimental observations",
+            "simplified": "Crack path to hole 'c' predicted correctly"
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Fatigue_Life_Prediction",
+            "Property_Type": "Fatigue",
+            "Data_Nature": "Computed",
+            "Data_Source": "text",
+            "Note": "Excellent agreement with experimental data; final life prediction error less than 4%. Predicted fatigue life on the order of 10^6 cycles. Computational cost reduction over 400 times vs cycle-by-cycle approach.",
+            "Simulation_Metadata": {
+              "Method": "Phase-field fracture (PFF) combined with Paris' law integration",
+              "Software": "PhaseFieldX v0.2.0 (FEniCSx-based)",
+              "Computational_Cost": "Approximately 9000 adaptive steps vs 4,000,000+ for cycle-by-cycle"
+            }
+          }
+        ]
+      },
+      "Experiment_Link": {
+        "Related_Item_IDs": [
+          "CT_Modified_Specimen4_Exp"
+        ],
+        "Description": "PFF simulation of modified CT specimen validated against experimental data",
+        "Validation_Target": "Experimental crack path and fatigue life from Wagner et al. [22,23]",
+        "Agreement_or_Error": "Final fatigue life prediction error less than 4%; crack path correctly predicted to hole 'c'"
+      }
+    },
+    {
+      "Item_ID": "CT_Modified_Specimen4_Exp",
+      "Sample_ID": "Modified CT Specimen 4 - Experimental (Wagner et al.)",
+      "Role": "Reference",
+      "Data_Nature": "Literature_Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 6.2"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Ni-based superalloy",
+          "Material_Name_Raw": "Haynes 230",
+          "Note": "Experimental data from Wagner et al. [22,23]"
+        },
+        "Properties": [
+          {
+            "Property_Name": "Fatigue_Life",
+            "Property_Type": "Fatigue",
+            "Data_Nature": "Literature_Experimental",
+            "Data_Source": "text",
+            "Note": "Experimental crack path to hole 'c' and fatigue life on the order of 10^6 cycles from Wagner et al. [22,23] (Fig. 13(c), Fig. 14)",
+            "Reference": "Wagner D. et al., Int. J. Fatigue, 2019 [22]; Wagner D., Ph.D. thesis, UTSA, 2018 [23]"
+          }
+        ]
+      }
+    }
+  ]
+}

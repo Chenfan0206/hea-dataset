@@ -1,0 +1,487 @@
+{
+    "Paper_Metadata": {
+        "Paper_Title": "Stress engineering of SiCf/SiC composites: Interfacial stress adjustment and its effects on tensile behaviors of UD SiCf/SiC composites fabricated by hybrid CVI and PIP methods",
+        "DOI": "10.1016/j.compositesb.2024.111711"
+    },
+    "items": [
+        {
+            "Sample_ID": "B100C20",
+            "Gradient_Material": false,
+            "Gradient_Group_ID": null,
+            "Composition_Info": {
+                "Role": "Target",
+                "Alloy_Name_Raw": "UD SiCf/SiC composite",
+                "Nominal_Composition": {
+                    "Composition_Type": "vol%",
+                    "Elements_Normalized": {
+                        "SiC_fiber": 40.0,
+                        "BN_interphase": 1.2,
+                        "CVI_SiC": 20.1,
+                        "PIP_SiC": 30.1,
+                        "porosity": 8.6
+                    }
+                },
+                "Measured_Composition": {
+                    "Composition_Type": null,
+                    "Elements_Normalized": null,
+                    "Measurement_Method": null
+                },
+                "Note": "BN interphase thickness 100 nm; SiC fiber volume fraction fixed at 40%"
+            },
+            "Process_Info": {
+                "Process_Category": "Hybrid CVI + PIP",
+                "Process_Text": {
+                    "original": "Cansas 3303 3rd SiC fiber used to prepare UD SiC preform; BN interphase deposited via BCl3-NH3-H2-Ar system; CVI-SiC matrix deposited using methyltrichlorosilane (MTS) as precursor, H2 as reducing gas, Ar as carrier gas; liquid polycarbosilane (PCS) pyrolyzed at 1000 °C for 1 h for PIP process; PIP repeated until weight gain < 1%",
+                    "simplified": "SiC fiber preform → BN interphase deposition → CVI SiC matrix → PIP SiC densification (1000 °C pyrolysis, repeated to weight gain < 1%)"
+                },
+                "Equipment": "FEI Versa Dual Beam (FIB), Hysitron nano-indenter, Alpha300R micro-Raman spectrometer, DIL 402C thermal dilatometer",
+                "Key_Params": {
+                    "BN_thickness_nm": 100,
+                    "CVI_SiC_vol_pct": 20.1,
+                    "PIP_SiC_vol_pct": 30.1,
+                    "PIP_pyrolysis_temperature_K": 1273.15,
+                    "PIP_pyrolysis_time_h": 1.0
+                }
+            },
+            "Microstructure_Info": {
+                "Microstructure_Text": {
+                    "original": "Neat microstructure; SiC fibers uniformly distributed; BN interphase and CVI SiC wrapped on fiber surface; PIP SiC fills remaining pores; carbon-rich black stripes in PIP SiC matrix; CVI SiC complete structure; SiC fiber and BN interphase intact",
+                    "simplified": "Uniform SiC fiber distribution; complete CVI SiC layer; PIP SiC with carbon-rich regions; intact fiber and BN interphase"
+                },
+                "Main_Phase": "SiC",
+                "Precipitates": [],
+                "Porosity_pct": 8.6,
+                "Relative_Density_pct": null,
+                "Grain_Size_avg_um": null,
+                "Precipitate_Size_avg_nm": null,
+                "Advanced_Quantitative_Features": {
+                    "Interfacial_compressive_stress_MPa": 1127.7,
+                    "SiC_fiber_compressive_modulus_GPa": 378.0,
+                    "CVI_SiC_compressive_modulus_GPa": 478.0,
+                    "PIP_SiC_compressive_modulus_GPa": 213.0
+                }
+            },
+            "Properties_Info": [
+                {
+                    "Property_Name": "Interfacial_Shear_Strength",
+                    "Test_Condition": "Micro-shear test (double microcantilever beam)",
+                    "Value_Numeric": 139.8,
+                    "Value_Range": null,
+                    "Value_StdDev": 34.8,
+                    "Unit": "MPa",
+                    "Test_Temperature_K": 298.15,
+                    "Strain_Rate_s1": null,
+                    "Tensile_Speed_mm_min": null,
+                    "Hardness_Load": null,
+                    "Hardness_Dwell_Time_s": null,
+                    "Data_Source": "text",
+                    "Test_Specimen": "FIB prepared micro-shear specimen",
+                    "Note": null
+                },
+                {
+                    "Property_Name": "Interfacial_Dynamic_Friction_Shear_Strength",
+                    "Test_Condition": "Micro-shear test at 700 nm displacement",
+                    "Value_Numeric": 44.2,
+                    "Value_Range": null,
+                    "Value_StdDev": 5.5,
+                    "Unit": "MPa",
+                    "Test_Temperature_K": 298.15,
+                    "Strain_Rate_s1": null,
+                    "Tensile_Speed_mm_min": null,
+                    "Hardness_Load": null,
+                    "Hardness_Dwell_Time_s": null,
+                    "Data_Source": "text",
+                    "Test_Specimen": "FIB prepared micro-shear specimen",
+                    "Note": null
+                },
+                {
+                    "Property_Name": "Ultimate_Tensile_Strength",
+                    "Test_Condition": "Uniaxial tensile test",
+                    "Value_Numeric": 962.6,
+                    "Value_Range": null,
+                    "Value_StdDev": 75.5,
+                    "Unit": "MPa",
+                    "Test_Temperature_K": 298.15,
+                    "Strain_Rate_s1": null,
+                    "Tensile_Speed_mm_min": 0.5,
+                    "Hardness_Load": null,
+                    "Hardness_Dwell_Time_s": null,
+                    "Data_Source": "text",
+                    "Test_Specimen": "120 mm × 10 mm × 3 mm, 10 mm gage length",
+                    "Note": null
+                },
+                {
+                    "Property_Name": "Proportional_Limit_Stress",
+                    "Test_Condition": "0.005% offset strain",
+                    "Value_Numeric": 729.8,
+                    "Value_Range": null,
+                    "Value_StdDev": 9.2,
+                    "Unit": "MPa",
+                    "Test_Temperature_K": 298.15,
+                    "Strain_Rate_s1": null,
+                    "Tensile_Speed_mm_min": 0.5,
+                    "Hardness_Load": null,
+                    "Hardness_Dwell_Time_s": null,
+                    "Data_Source": "text",
+                    "Test_Specimen": "120 mm × 10 mm × 3 mm, 10 mm gage length",
+                    "Note": null
+                },
+                {
+                    "Property_Name": "Elastic_Modulus",
+                    "Test_Condition": "Uniaxial tensile test",
+                    "Value_Numeric": 288.0,
+                    "Value_Range": null,
+                    "Value_StdDev": 7.9,
+                    "Unit": "GPa",
+                    "Test_Temperature_K": 298.15,
+                    "Strain_Rate_s1": null,
+                    "Tensile_Speed_mm_min": 0.5,
+                    "Hardness_Load": null,
+                    "Hardness_Dwell_Time_s": null,
+                    "Data_Source": "text",
+                    "Test_Specimen": "120 mm × 10 mm × 3 mm, 10 mm gage length",
+                    "Note": null
+                },
+                {
+                    "Property_Name": "Elongation_At_Fracture",
+                    "Test_Condition": "Uniaxial tensile test",
+                    "Value_Numeric": 0.42,
+                    "Value_Range": null,
+                    "Value_StdDev": 0.02,
+                    "Unit": "%",
+                    "Test_Temperature_K": 298.15,
+                    "Strain_Rate_s1": null,
+                    "Tensile_Speed_mm_min": 0.5,
+                    "Hardness_Load": null,
+                    "Hardness_Dwell_Time_s": null,
+                    "Data_Source": "text",
+                    "Test_Specimen": "120 mm × 10 mm × 3 mm, 10 mm gage length",
+                    "Note": null
+                },
+                {
+                    "Property_Name": "Matrix_Axial_Residual_Stress",
+                    "Test_Condition": "Cyclic reloading-unloading tensile test",
+                    "Value_Numeric": 0.0,
+                    "Value_Range": null,
+                    "Value_StdDev": null,
+                    "Unit": "MPa",
+                    "Test_Temperature_K": 298.15,
+                    "Strain_Rate_s1": null,
+                    "Tensile_Speed_mm_min": 0.5,
+                    "Hardness_Load": null,
+                    "Hardness_Dwell_Time_s": null,
+                    "Data_Source": "text",
+                    "Test_Specimen": "120 mm × 10 mm × 3 mm, 10 mm gage length",
+                    "Note": null
+                }
+            ]
+        },
+        {
+            "Sample_ID": "B100C40",
+            "Gradient_Material": false,
+            "Gradient_Group_ID": null,
+            "Composition_Info": {
+                "Role": "Target",
+                "Alloy_Name_Raw": "UD SiCf/SiC composite",
+                "Nominal_Composition": {
+                    "Composition_Type": "vol%",
+                    "Elements_Normalized": {
+                        "SiC_fiber": 40.0,
+                        "BN_interphase": 1.2,
+                        "CVI_SiC": 40.3,
+                        "PIP_SiC": 0.0,
+                        "porosity": 18.5
+                    }
+                },
+                "Measured_Composition": {
+                    "Composition_Type": null,
+                    "Elements_Normalized": null,
+                    "Measurement_Method": null
+                },
+                "Note": "BN interphase thickness 100 nm; no PIP SiC; SiC fiber volume fraction fixed at 40%"
+            },
+            "Process_Info": {
+                "Process_Category": "CVI only",
+                "Process_Text": {
+                    "original": "Cansas 3303 3rd SiC fiber used to prepare UD SiC preform; BN interphase deposited via BCl3-NH3-H2-Ar system; CVI-SiC matrix deposited using methyltrichlorosilane (MTS) as precursor, H2 as reducing gas, Ar as carrier gas; no PIP process",
+                    "simplified": "SiC fiber preform → BN interphase deposition → CVI SiC matrix only (no PIP)"
+                },
+                "Equipment": "FEI Versa Dual Beam (FIB), Hysitron nano-indenter, Alpha300R micro-Raman spectrometer, DIL 402C thermal dilatometer",
+                "Key_Params": {
+                    "BN_thickness_nm": 100,
+                    "CVI_SiC_vol_pct": 40.3,
+                    "PIP_SiC_vol_pct": 0.0
+                }
+            },
+            "Microstructure_Info": {
+                "Microstructure_Text": {
+                    "original": "Neat microstructure; SiC fibers uniformly distributed; BN interphase and CVI SiC wrapped on fiber surface; no PIP SiC; highest porosity; SiC fiber and BN interphase intact",
+                    "simplified": "Uniform SiC fiber distribution; complete CVI SiC layer; no PIP SiC; highest porosity; intact fiber and BN interphase"
+                },
+                "Main_Phase": "SiC",
+                "Precipitates": [],
+                "Porosity_pct": 18.5,
+                "Relative_Density_pct": null,
+                "Grain_Size_avg_um": null,
+                "Precipitate_Size_avg_nm": null,
+                "Advanced_Quantitative_Features": {
+                    "Interfacial_compressive_stress_MPa": 698.1
+                }
+            },
+            "Properties_Info": [
+                {
+                    "Property_Name": "Interfacial_Shear_Strength",
+                    "Test_Condition": "Micro-shear test (double microcantilever beam)",
+                    "Value_Numeric": 52.6,
+                    "Value_Range": null,
+                    "Value_StdDev": 13.0,
+                    "Unit": "MPa",
+                    "Test_Temperature_K": 298.15,
+                    "Strain_Rate_s1": null,
+                    "Tensile_Speed_mm_min": null,
+                    "Hardness_Load": null,
+                    "Hardness_Dwell_Time_s": null,
+                    "Data_Source": "text",
+                    "Test_Specimen": "FIB prepared micro-shear specimen",
+                    "Note": null
+                },
+                {
+                    "Property_Name": "Interfacial_Dynamic_Friction_Shear_Strength",
+                    "Test_Condition": "Micro-shear test at 700 nm displacement",
+                    "Value_Numeric": 21.7,
+                    "Value_Range": null,
+                    "Value_StdDev": 4.9,
+                    "Unit": "MPa",
+                    "Test_Temperature_K": 298.15,
+                    "Strain_Rate_s1": null,
+                    "Tensile_Speed_mm_min": null,
+                    "Hardness_Load": null,
+                    "Hardness_Dwell_Time_s": null,
+                    "Data_Source": "text",
+                    "Test_Specimen": "FIB prepared micro-shear specimen",
+                    "Note": null
+                },
+                {
+                    "Property_Name": "Ultimate_Tensile_Strength",
+                    "Test_Condition": "Uniaxial tensile test",
+                    "Value_Numeric": 626.6,
+                    "Value_Range": null,
+                    "Value_StdDev": 63.2,
+                    "Unit": "MPa",
+                    "Test_Temperature_K": 298.15,
+                    "Strain_Rate_s1": null,
+                    "Tensile_Speed_mm_min": 0.5,
+                    "Hardness_Load": null,
+                    "Hardness_Dwell_Time_s": null,
+                    "Data_Source": "text",
+                    "Test_Specimen": "120 mm × 10 mm × 3 mm, 10 mm gage length",
+                    "Note": null
+                },
+                {
+                    "Property_Name": "Proportional_Limit_Stress",
+                    "Test_Condition": "0.005% offset strain",
+                    "Value_Numeric": 544.9,
+                    "Value_Range": null,
+                    "Value_StdDev": 37.8,
+                    "Unit": "MPa",
+                    "Test_Temperature_K": 298.15,
+                    "Strain_Rate_s1": null,
+                    "Tensile_Speed_mm_min": 0.5,
+                    "Hardness_Load": null,
+                    "Hardness_Dwell_Time_s": null,
+                    "Data_Source": "text",
+                    "Test_Specimen": "120 mm × 10 mm × 3 mm, 10 mm gage length",
+                    "Note": null
+                },
+                {
+                    "Property_Name": "Elastic_Modulus",
+                    "Test_Condition": "Uniaxial tensile test",
+                    "Value_Numeric": 256.5,
+                    "Value_Range": null,
+                    "Value_StdDev": 3.4,
+                    "Unit": "GPa",
+                    "Test_Temperature_K": 298.15,
+                    "Strain_Rate_s1": null,
+                    "Tensile_Speed_mm_min": 0.5,
+                    "Hardness_Load": null,
+                    "Hardness_Dwell_Time_s": null,
+                    "Data_Source": "text",
+                    "Test_Specimen": "120 mm × 10 mm × 3 mm, 10 mm gage length",
+                    "Note": null
+                },
+                {
+                    "Property_Name": "Elongation_At_Fracture",
+                    "Test_Condition": "Uniaxial tensile test",
+                    "Value_Numeric": 0.34,
+                    "Value_Range": null,
+                    "Value_StdDev": 0.03,
+                    "Unit": "%",
+                    "Test_Temperature_K": 298.15,
+                    "Strain_Rate_s1": null,
+                    "Tensile_Speed_mm_min": 0.5,
+                    "Hardness_Load": null,
+                    "Hardness_Dwell_Time_s": null,
+                    "Data_Source": "text",
+                    "Test_Specimen": "120 mm × 10 mm × 3 mm, 10 mm gage length",
+                    "Note": null
+                }
+            ]
+        },
+        {
+            "Sample_ID": "B200C31",
+            "Gradient_Material": false,
+            "Gradient_Group_ID": null,
+            "Composition_Info": {
+                "Role": "Target",
+                "Alloy_Name_Raw": "UD SiCf/SiC composite",
+                "Nominal_Composition": {
+                    "Composition_Type": "vol%",
+                    "Elements_Normalized": {
+                        "SiC_fiber": 40.0,
+                        "BN_interphase": 2.5,
+                        "CVI_SiC": 30.7,
+                        "PIP_SiC": 19.1,
+                        "porosity": 7.7
+                    }
+                },
+                "Measured_Composition": {
+                    "Composition_Type": null,
+                    "Elements_Normalized": null,
+                    "Measurement_Method": null
+                },
+                "Note": "BN interphase thickness 200 nm; SiC fiber volume fraction fixed at 40%"
+            },
+            "Process_Info": {
+                "Process_Category": "Hybrid CVI + PIP",
+                "Process_Text": {
+                    "original": "Cansas 3303 3rd SiC fiber used to prepare UD SiC preform; BN interphase deposited via BCl3-NH3-H2-Ar system; CVI-SiC matrix deposited using methyltrichlorosilane (MTS) as precursor, H2 as reducing gas, Ar as carrier gas; liquid polycarbosilane (PCS) pyrolyzed at 1000 °C for 1 h for PIP process; PIP repeated until weight gain < 1%",
+                    "simplified": "SiC fiber preform → BN interphase deposition → CVI SiC matrix → PIP SiC densification (1000 °C pyrolysis, repeated to weight gain < 1%)"
+                },
+                "Equipment": "FEI Versa Dual Beam (FIB), Hysitron nano-indenter, Alpha300R micro-Raman spectrometer, DIL 402C thermal dilatometer",
+                "Key_Params": {
+                    "BN_thickness_nm": 200,
+                    "CVI_SiC_vol_pct": 30.7,
+                    "PIP_SiC_vol_pct": 19.1,
+                    "PIP_pyrolysis_temperature_K": 1273.15,
+                    "PIP_pyrolysis_time_h": 1.0
+                }
+            },
+            "Microstructure_Info": {
+                "Microstructure_Text": {
+                    "original": "Neat microstructure; SiC fibers uniformly distributed; BN interphase and CVI SiC wrapped on fiber surface; PIP SiC fills remaining pores; carbon-rich black stripes in PIP SiC matrix; CVI SiC complete structure; SiC fiber and BN interphase intact",
+                    "simplified": "Uniform SiC fiber distribution; complete CVI SiC layer; PIP SiC with carbon-rich regions; intact fiber and BN interphase"
+                },
+                "Main_Phase": "SiC",
+                "Precipitates": [],
+                "Porosity_pct": 7.7,
+                "Relative_Density_pct": null,
+                "Grain_Size_avg_um": null,
+                "Precipitate_Size_avg_nm": null,
+                "Advanced_Quantitative_Features": {
+                    "Interfacial_compressive_stress_MPa": 662.3,
+                    "SiC_fiber_compressive_modulus_GPa": 378.0,
+                    "CVI_SiC_compressive_modulus_GPa": 478.0,
+                    "PIP_SiC_compressive_modulus_GPa": 213.0
+                }
+            },
+            "Properties_Info": [
+                {
+                    "Property_Name": "Interfacial_Shear_Strength",
+                    "Test_Condition": "Micro-shear test (double microcantilever beam)",
+                    "Value_Numeric": 41.0,
+                    "Value_Range": null,
+                    "Value_StdDev": 6.3,
+                    "Unit": "MPa",
+                    "Test_Temperature_K": 298.15,
+                    "Strain_Rate_s1": null,
+                    "Tensile_Speed_mm_min": null,
+                    "Hardness_Load": null,
+                    "Hardness_Dwell_Time_s": null,
+                    "Data_Source": "text",
+                    "Test_Specimen": "FIB prepared micro-shear specimen",
+                    "Note": null
+                },
+                {
+                    "Property_Name": "Interfacial_Dynamic_Friction_Shear_Strength",
+                    "Test_Condition": "Micro-shear test at 700 nm displacement",
+                    "Value_Numeric": 24.8,
+                    "Value_Range": null,
+                    "Value_StdDev": 5.4,
+                    "Unit": "MPa",
+                    "Test_Temperature_K": 298.15,
+                    "Strain_Rate_s1": null,
+                    "Tensile_Speed_mm_min": null,
+                    "Hardness_Load": null,
+                    "Hardness_Dwell_Time_s": null,
+                    "Data_Source": "text",
+                    "Test_Specimen": "FIB prepared micro-shear specimen",
+                    "Note": null
+                },
+                {
+                    "Property_Name": "Ultimate_Tensile_Strength",
+                    "Test_Condition": "Uniaxial tensile test",
+                    "Value_Numeric": 895.3,
+                    "Value_Range": null,
+                    "Value_StdDev": 58.6,
+                    "Unit": "MPa",
+                    "Test_Temperature_K": 298.15,
+                    "Strain_Rate_s1": null,
+                    "Tensile_Speed_mm_min": 0.5,
+                    "Hardness_Load": null,
+                    "Hardness_Dwell_Time_s": null,
+                    "Data_Source": "text",
+                    "Test_Specimen": "120 mm × 10 mm × 3 mm, 10 mm gage length",
+                    "Note": null
+                },
+                {
+                    "Property_Name": "Proportional_Limit_Stress",
+                    "Test_Condition": "0.005% offset strain",
+                    "Value_Numeric": 688.5,
+                    "Value_Range": null,
+                    "Value_StdDev": 22.3,
+                    "Unit": "MPa",
+                    "Test_Temperature_K": 298.15,
+                    "Strain_Rate_s1": null,
+                    "Tensile_Speed_mm_min": 0.5,
+                    "Hardness_Load": null,
+                    "Hardness_Dwell_Time_s": null,
+                    "Data_Source": "text",
+                    "Test_Specimen": "120 mm × 10 mm × 3 mm, 10 mm gage length",
+                    "Note": null
+                },
+                {
+                    "Property_Name": "Elastic_Modulus",
+                    "Test_Condition": "Uniaxial tensile test",
+                    "Value_Numeric": 279.5,
+                    "Value_Range": null,
+                    "Value_StdDev": 4.1,
+                    "Unit": "GPa",
+                    "Test_Temperature_K": 298.15,
+                    "Strain_Rate_s1": null,
+                    "Tensile_Speed_mm_min": 0.5,
+                    "Hardness_Load": null,
+                    "Hardness_Dwell_Time_s": null,
+                    "Data_Source": "text",
+                    "Test_Specimen": "120 mm × 10 mm × 3 mm, 10 mm gage length",
+                    "Note": null
+                },
+                {
+                    "Property_Name": "Elongation_At_Fracture",
+                    "Test_Condition": "Uniaxial tensile test",
+                    "Value_Numeric": 0.40,
+                    "Value_Range": null,
+                    "Value_StdDev": 0.01,
+                    "Unit": "%",
+                    "Test_Temperature_K": 298.15,
+                    "Strain_Rate_s1": null,
+                    "Tensile_Speed_mm_min": 0.5,
+                    "Hardness_Load": null,
+                    "Hardness_Dwell_Time_s": null,
+                    "Data_Source": "text",
+                    "Test_Specimen": "120 mm × 10 mm × 3 mm, 10 mm gage length",
+                    "Note": null
+                }
+            ]
+        }
+    ]
+}

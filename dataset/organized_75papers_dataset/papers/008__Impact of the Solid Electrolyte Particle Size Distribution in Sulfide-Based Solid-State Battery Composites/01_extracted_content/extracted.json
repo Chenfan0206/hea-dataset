@@ -1,0 +1,1359 @@
+{
+  "Paper_Metadata": {
+    "Paper_Title": "Impact of the Solid Electrolyte Particle Size Distribution in Sulfide-Based Solid-State Battery Composites",
+    "DOI": null,
+    "Note": "DOI not found in OCR text"
+  },
+  "Paper_Routing": {
+    "base_material": "Ceramics_Inorganic",
+    "application": "Functional",
+    "research_paradigm": "Hybrid",
+    "Supplements_Loaded": [
+      "directions/base/Ceramics_Inorganic.txt",
+      "directions/application/Functional.txt",
+      "directions/paradigm/Hybrid.txt",
+      "directions/domain/Battery.txt"
+    ],
+    "Patch_Tags": [
+      "Battery",
+      "Interface_Dominated"
+    ],
+    "Needs_Mixed_Routing_Check": false,
+    "Mixed_Signals": []
+  },
+  "items": [
+    {
+      "Item_ID": "1",
+      "Sample_ID": "Li6PS5Cl-S",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Ceramics_Inorganic",
+      "application": "Functional",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Battery",
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 2: Results and Discussion, Figure 2, Section 4: Experimental Section - Synthesis of Solid Electrolyte"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Category": "Solid electrolyte (catholyte)",
+          "Material_Name_Raw": "Li6PS5Cl",
+          "Stoichiometry": "Li6PS5Cl",
+          "Source": "AMG Lithium"
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "Li6PS5Cl (provided by AMG Lithium) was used as a catholyte. The analysis of the particle sizes was performed with a static laser diffraction particle size analyzer from Sympatec Helos.",
+            "simplified": "Commercial Li6PS5Cl from AMG Lithium, used as received with different particle size distributions"
+          },
+          "Equipment": [
+            {
+              "Name": "Sympatec Helos static laser diffraction particle size analyzer",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "STOE StadiP diffractometer",
+              "Category": "Characterization",
+              "Note": "XRD (Cu-Kα) and PDF (Ag Kα₁) analysis; described in X-Ray Diffraction and PDF Analyses sections"
+            },
+            {
+              "Name": "Carl Zeiss AURIGA CrossBeam workstation",
+              "Category": "Characterization",
+              "Note": "SEM/EDS; described in Scanning Electron Microscopy section"
+            },
+            {
+              "Name": "TOPAS Academic V7",
+              "Category": "Software",
+              "Note": "Small box modeling for PDF analysis"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Powder X-ray diffraction indicates phase purity of the Li6PS5Cl and no differences in the average structure and lattice parameters can be found for the different particle sizes. Pair distribution function analyses show no difference in the local structure or coherency despite the different particle sizes.",
+            "simplified": "Phase-pure Li6PS5Cl argyrodite with no structural differences across particle sizes"
+          },
+          "Particle_Size_Distribution": {
+            "D50_um": 4,
+            "Original_Values": "D50 = 4 μm",
+            "Size_Designation": "S"
+          },
+          "Crystalline_Phases": [
+            {
+              "Phase_Name": "argyrodite Li6PS5Cl",
+              "Crystal_Structure": "cubic",
+              "Phase_Purity": "phase-pure (by XRD)"
+            }
+          ],
+          "Microstructure_Features": "No impact of particle size on the average and local structure confirmed by XRD, PDF, and Raman spectroscopy"
+        },
+        "Properties": [
+          {
+            "Property_Type": "Ionic_Conductivity",
+            "Value": 0.0022,
+            "Unit": "S cm⁻¹",
+            "Original_Values": "2.2 mS cm⁻¹",
+            "Test_Temperature_K": 298.15,
+            "Test_Condition": {
+              "Measurement_Method": "EIS",
+              "Cell_Configuration": "blocking electrode",
+              "Equivalent_Circuit": "R-CPE"
+            },
+            "Data_Source": "text",
+            "Note": "Room temperature; same for all Li6PS5Cl samples except 20 μm variant"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "2",
+      "Sample_ID": "Li6PS5Cl-M",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Ceramics_Inorganic",
+      "application": "Functional",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Battery",
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 2: Results and Discussion, Figure 2"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Category": "Solid electrolyte (catholyte)",
+          "Material_Name_Raw": "Li6PS5Cl",
+          "Stoichiometry": "Li6PS5Cl",
+          "Source": "AMG Lithium"
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "Li6PS5Cl (provided by AMG Lithium) was used as a catholyte.",
+            "simplified": "Commercial Li6PS5Cl from AMG Lithium, used as received with different particle size distributions"
+          },
+          "Equipment": [
+            {
+              "Name": "Sympatec Helos static laser diffraction particle size analyzer",
+              "Category": "Characterization",
+              "Note": "Shared characterization; Section 4 describes particle size analysis for all Li6PS5Cl variants"
+            },
+            {
+              "Name": "STOE StadiP diffractometer",
+              "Category": "Characterization",
+              "Note": "Shared characterization; XRD section describes setup for all Li6PS5Cl variants"
+            },
+            {
+              "Name": "Carl Zeiss AURIGA CrossBeam workstation",
+              "Category": "Characterization",
+              "Note": "Shared characterization; SEM section states Li6PS5Cl samples analyzed"
+            },
+            {
+              "Name": "TOPAS Academic V7",
+              "Category": "Software",
+              "Note": "Shared; PDF analysis section describes small box modeling for all Li6PS5Cl"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Powder X-ray diffraction indicates phase purity of the Li6PS5Cl and no differences in the average structure and lattice parameters can be found for the different particle sizes. Pair distribution function analyses show no difference in the local structure or coherency despite the different particle sizes.",
+            "simplified": "Same structure as Li6PS5Cl-S; phase-pure argyrodite with no structural differences across particle sizes",
+            "Note": "Shared with Item 1; paper states no structural differences across particle sizes (Section 2)"
+          },
+          "Particle_Size_Distribution": {
+            "D50_um": 11,
+            "Original_Values": "D50 = 11 μm",
+            "Size_Designation": "M"
+          },
+          "Crystalline_Phases": [
+            {
+              "Phase_Name": "argyrodite Li6PS5Cl",
+              "Crystal_Structure": "cubic",
+              "Phase_Purity": "phase-pure (by XRD)",
+              "Note": "Same phase purity as Item 1; paper states no structural differences across particle sizes"
+            }
+          ]
+        },
+        "Properties": [
+          {
+            "Property_Type": "Ionic_Conductivity",
+            "Value": 0.0022,
+            "Unit": "S cm⁻¹",
+            "Original_Values": "2.2 mS cm⁻¹",
+            "Test_Temperature_K": 298.15,
+            "Test_Condition": {
+              "Measurement_Method": "EIS",
+              "Cell_Configuration": "blocking electrode",
+              "Equivalent_Circuit": "R-CPE"
+            },
+            "Data_Source": "text",
+            "Note": "Room temperature; same as S, XL variants"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "3",
+      "Sample_ID": "Li6PS5Cl-L",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Ceramics_Inorganic",
+      "application": "Functional",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Battery",
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 2: Results and Discussion, Figure 2"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Category": "Solid electrolyte (catholyte)",
+          "Material_Name_Raw": "Li6PS5Cl",
+          "Stoichiometry": "Li6PS5Cl",
+          "Source": "AMG Lithium"
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "Li6PS5Cl (provided by AMG Lithium) was used as a catholyte.",
+            "simplified": "Commercial Li6PS5Cl from AMG Lithium, used as received with different particle size distributions"
+          },
+          "Equipment": [
+            {
+              "Name": "Sympatec Helos static laser diffraction particle size analyzer",
+              "Category": "Characterization",
+              "Note": "Shared characterization; Section 4 describes particle size analysis for all Li6PS5Cl variants"
+            },
+            {
+              "Name": "STOE StadiP diffractometer",
+              "Category": "Characterization",
+              "Note": "Shared characterization; XRD section describes setup for all Li6PS5Cl variants"
+            },
+            {
+              "Name": "Carl Zeiss AURIGA CrossBeam workstation",
+              "Category": "Characterization",
+              "Note": "Shared characterization; SEM section states Li6PS5Cl samples analyzed"
+            },
+            {
+              "Name": "TOPAS Academic V7",
+              "Category": "Software",
+              "Note": "Shared; PDF analysis section describes small box modeling for all Li6PS5Cl"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Powder X-ray diffraction indicates phase purity of the Li6PS5Cl and no differences in the average structure and lattice parameters can be found for the different particle sizes. Pair distribution function analyses show no difference in the local structure or coherency despite the different particle sizes.",
+            "simplified": "Same structure as Li6PS5Cl-S; phase-pure argyrodite with no structural differences across particle sizes",
+            "Note": "Shared with Item 1; paper states no structural differences across particle sizes (Section 2)"
+          },
+          "Particle_Size_Distribution": {
+            "D50_um": 20,
+            "Original_Values": "D50 = 20 μm",
+            "Size_Designation": "L"
+          },
+          "Crystalline_Phases": [
+            {
+              "Phase_Name": "argyrodite Li6PS5Cl",
+              "Crystal_Structure": "cubic",
+              "Phase_Purity": "phase-pure (by XRD)",
+              "Note": "Same phase purity as Item 1; paper states no structural differences across particle sizes"
+            }
+          ]
+        },
+        "Properties": [
+          {
+            "Property_Type": "Ionic_Conductivity",
+            "Value": 0.0028,
+            "Unit": "S cm⁻¹",
+            "Original_Values": "2.8 mS cm⁻¹",
+            "Test_Temperature_K": 298.15,
+            "Test_Condition": {
+              "Measurement_Method": "EIS",
+              "Cell_Configuration": "blocking electrode",
+              "Equivalent_Circuit": "R-CPE"
+            },
+            "Data_Source": "text",
+            "Note": "Room temperature; the only exception with higher conductivity, within measurement and sample uncertainty"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "4",
+      "Sample_ID": "Li6PS5Cl-XL",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Ceramics_Inorganic",
+      "application": "Functional",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Battery",
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 2: Results and Discussion, Figure 2"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Category": "Solid electrolyte (catholyte)",
+          "Material_Name_Raw": "Li6PS5Cl",
+          "Stoichiometry": "Li6PS5Cl",
+          "Source": "AMG Lithium"
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "Li6PS5Cl (provided by AMG Lithium) was used as a catholyte.",
+            "simplified": "Commercial Li6PS5Cl from AMG Lithium, used as received with different particle size distributions"
+          },
+          "Equipment": [
+            {
+              "Name": "Sympatec Helos static laser diffraction particle size analyzer",
+              "Category": "Characterization",
+              "Note": "Shared characterization; Section 4 describes particle size analysis for all Li6PS5Cl variants"
+            },
+            {
+              "Name": "STOE StadiP diffractometer",
+              "Category": "Characterization",
+              "Note": "Shared characterization; XRD section describes setup for all Li6PS5Cl variants"
+            },
+            {
+              "Name": "Carl Zeiss AURIGA CrossBeam workstation",
+              "Category": "Characterization",
+              "Note": "Shared characterization; SEM section states Li6PS5Cl samples analyzed"
+            },
+            {
+              "Name": "TOPAS Academic V7",
+              "Category": "Software",
+              "Note": "Shared; PDF analysis section describes small box modeling for all Li6PS5Cl"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Powder X-ray diffraction indicates phase purity of the Li6PS5Cl and no differences in the average structure and lattice parameters can be found for the different particle sizes. Pair distribution function analyses show no difference in the local structure or coherency despite the different particle sizes.",
+            "simplified": "Same structure as Li6PS5Cl-S; phase-pure argyrodite with no structural differences across particle sizes",
+            "Note": "Shared with Item 1; paper states no structural differences across particle sizes (Section 2)"
+          },
+          "Particle_Size_Distribution": {
+            "D50_um": 40,
+            "Original_Values": "D50 = 40 μm",
+            "Size_Designation": "XL"
+          },
+          "Crystalline_Phases": [
+            {
+              "Phase_Name": "argyrodite Li6PS5Cl",
+              "Crystal_Structure": "cubic",
+              "Phase_Purity": "phase-pure (by XRD)",
+              "Note": "Same phase purity as Item 1; paper states no structural differences across particle sizes"
+            }
+          ]
+        },
+        "Properties": [
+          {
+            "Property_Type": "Ionic_Conductivity",
+            "Value": 0.0022,
+            "Unit": "S cm⁻¹",
+            "Original_Values": "2.2 mS cm⁻¹",
+            "Test_Temperature_K": 298.15,
+            "Test_Condition": {
+              "Measurement_Method": "EIS",
+              "Cell_Configuration": "blocking electrode",
+              "Equivalent_Circuit": "R-CPE"
+            },
+            "Data_Source": "text",
+            "Note": "Room temperature; same as S, M variants"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "5",
+      "Sample_ID": "Li5.5PS4.5Cl1.5-separator",
+      "Role": "Comparator",
+      "Data_Nature": "Experimental",
+      "base_material": "Ceramics_Inorganic",
+      "application": "Functional",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Battery",
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 4: Experimental Section - Synthesis of Solid Electrolyte"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Category": "Solid electrolyte (separator)",
+          "Material_Name_Raw": "Li5.5PS4.5Cl1.5",
+          "Stoichiometry": "Li5.5PS4.5Cl1.5",
+          "Battery_Composition": {
+            "Component_Type": "Separator"
+          },
+          "Precursors": {
+            "LiCl": "stoichiometric amount (anhydrous, Alfa Aesar, 99%)",
+            "Li2S": "stoichiometric amount (Alfa Aesar, 99.99%)",
+            "P2S5": "stoichiometric amount (Sigma)"
+          }
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "Li5.5PS4.5Cl1.5 was synthesized by a solid-state synthesis route. A stoichiometric amount of lithium chloride LiCl (anhydrous, Alfa Aesar, 99%) was hand-ground with a mortar and pestle for 15 min. Lithium sulfide (Li2S, Alfa Aesar, 99.99%) and diphosphorus pentasulfide (P2S5, Sigma) were added and ground for another 15 min. The resulting mixture was densified into pellets and put in a silica ampoule with a carbon coating, which was then sealed under a vacuum. In the first reaction step, the ampoule was kept in the furnace for 72 h at 450 °C at a heating rate of 100 °C h⁻¹, followed by natural cooling. The ampoule was then opened, and the obtained pellets were hand-grounded for 15 min. The powder was pressed into pellets again and the first reaction step was repeated.",
+            "simplified": "Two-step solid-state synthesis: hand grinding precursors → pelletize → seal in carbon-coated silica ampoule under vacuum → heat at 450 °C for 72 h (100 °C/h ramp) → natural cooling → regrind and repeat"
+          },
+          "Key_Params": {
+            "Stage1": {
+              "Description": "Precursor grinding",
+              "Duration_min": 15
+            },
+            "Stage2": {
+              "Description": "Additional grinding with all precursors",
+              "Duration_min": 15
+            },
+            "Stage3": {
+              "Description": "First heat treatment",
+              "Temperature_K": 723.15,
+              "Original_Temperature": "450 °C",
+              "Duration_h": 72,
+              "Heating_Rate_C_per_h": 100,
+              "Atmosphere": "sealed silica ampoule under vacuum, carbon-coated",
+              "Cooling": "natural cooling"
+            },
+            "Stage4": {
+              "Description": "Intermediate grinding",
+              "Duration_min": 15
+            },
+            "Stage5": {
+              "Description": "Second heat treatment (repeat of Stage3)",
+              "Temperature_K": 723.15,
+              "Original_Temperature": "450 °C",
+              "Duration_h": 72,
+              "Heating_Rate_C_per_h": 100,
+              "Atmosphere": "sealed silica ampoule under vacuum, carbon-coated",
+              "Cooling": "natural cooling"
+            }
+          },
+          "Equipment": [
+            {
+              "Name": "mortar and pestle",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "furnace",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "silica ampoule with carbon coating",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "STOE StadiP diffractometer",
+              "Category": "Characterization",
+              "Note": "XRD for phase verification after synthesis"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "After the second heating step, the pellets were ground, and the powder was characterized with X-ray diffraction.",
+            "simplified": "XRD characterization performed after synthesis; specific phase results not reported in text"
+          }
+        },
+        "Properties": [
+          {
+            "Property_Type": "Ionic_Conductivity",
+            "Value": 0.008,
+            "Unit": "S cm⁻¹",
+            "Original_Values": "8 mS cm⁻¹",
+            "Test_Temperature_K": 298.15,
+            "Data_Source": "text",
+            "Note": "Room temperature; used as separator because of high conductivity ensuring low separator resistance"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "6",
+      "Sample_ID": "NCM811",
+      "Role": "Comparator",
+      "Data_Nature": "Experimental",
+      "base_material": "Ceramics_Inorganic",
+      "application": "Functional",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Battery",
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 4: Experimental Section - Preparation of Electrode Composites"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Category": "Cathode active material (CAM)",
+          "Material_Name_Raw": "LiNi0.83Co0.11Mn0.06O2 (NCM811)",
+          "Stoichiometry": "LiNi0.83Co0.11Mn0.06O2",
+          "Source": "MSE supplies"
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "MSE supplies, dried overnight in a B-585 oven (Büchi) in dynamic vacuum at 250 °C",
+            "simplified": "NCM811 dried overnight at 250 °C under dynamic vacuum before composite preparation"
+          },
+          "Key_Params": {
+            "Drying": {
+              "Temperature_K": 523.15,
+              "Original_Temperature": "250 °C",
+              "Duration": "overnight",
+              "Atmosphere": "dynamic vacuum"
+            }
+          },
+          "Equipment": [
+            {
+              "Name": "Büchi B-585 oven",
+              "Category": "Preparation"
+            }
+          ]
+        },
+        "Structure": {
+          "Particle_Size_Distribution": {
+            "D50_um": 3.4,
+            "Original_Values": "D50 = 3.4 μm",
+            "Note": "cited in text, see Figure S1 (Supporting Information)"
+          }
+        }
+      }
+    },
+    {
+      "Item_ID": "7",
+      "Sample_ID": "Composite-S",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Ceramics_Inorganic",
+      "application": "Functional",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Battery",
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 2: Results and Discussion, Figure 3-6, Section 4: Experimental Section"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Battery_Composition": {
+            "Component_Type": "Composite_Cathode",
+            "Composite_Formulation": {
+              "NCM811": "70 wt.%",
+              "Li6PS5Cl (S, D50=4 μm)": "30 wt.%"
+            }
+          }
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "Cathode composites were prepared by mixing lithium nickel cobalt manganese oxide and the respective Li6PS5Cl in a weight ratio of 70:30. The two components were transferred into a 15 mL ZrO2 cup with 3 mm sized zirconia spheres and mixed using a frequency ball mill at a frequency of 15 Hz for 15 min.",
+            "simplified": "Dry mixing of NCM811 and Li6PS5Cl (S) at 70:30 wt.% by ball milling at 15 Hz for 15 min"
+          },
+          "Key_Params": {
+            "Mixing": {
+              "Method": "frequency ball milling",
+              "Frequency_Hz": 15,
+              "Duration_min": 15,
+              "Cup_Volume_mL": 15,
+              "Grinding_Media": "zirconia spheres, 3 mm",
+              "Weight_Ratio": "70:30 (NCM811:Li6PS5Cl)"
+            }
+          },
+          "Equipment": [
+            {
+              "Name": "Fritsch pulverisette 23 Mini Mill",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "PEEK lined airtight press cell with stainless steel stamps",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Carl Zeiss AURIGA CrossBeam workstation",
+              "Category": "Characterization",
+              "Note": "SEM/EDS of pressed composites; described in Scanning Electron Microscopy section"
+            },
+            {
+              "Name": "MACCOR",
+              "Category": "Testing",
+              "Note": "Long-term cycling in climate chamber at 25 °C"
+            },
+            {
+              "Name": "Biologic VMP300 potentiostat",
+              "Category": "Testing",
+              "Note": "Rate performance tests and EIS measurements"
+            },
+            {
+              "Name": "RelaxIS 3",
+              "Category": "Software",
+              "Note": "Impedance data evaluation with transmission line model"
+            }
+          ],
+          "Active_Material_Loading_mg_cm2": 10.7,
+          "Original_Active_Material_Loading": "10.7 mg cm⁻²",
+          "Composite_Mass_mg": 12
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "SEM cross-sections with EDS-mapping of the pressed composites indicate a more homogeneous distribution of Li6PS5Cl for smaller particle sizes. The modeled microstructure also indicates a better distribution of Li6PS5Cl with smaller particle sizes of the solid electrolyte.",
+            "simplified": "Most homogeneous distribution of Li6PS5Cl among all composites; smallest void space"
+          },
+          "Microstructure_Features": "More homogeneous distribution of Li6PS5Cl; smallest void space among all composites; better packing with smaller solid electrolyte particles"
+        },
+        "Properties": [
+          {
+            "Property_Type": "Specific_Capacity",
+            "Sub_Type": "Initial charge capacity",
+            "Value": 247,
+            "Unit": "mAh g⁻¹",
+            "Value_StdDev": 24,
+            "Original_Values": "247 mAh g⁻¹ (±24 mAh g⁻¹)",
+            "Test_Condition": {
+              "C_Rate": "0.05 C",
+              "Current_Density": "0.107 mA cm⁻²",
+              "Cell_Type": "half cell",
+              "Voltage_Window": "2.0–3.7 V vs In/LiIn",
+              "Stack_Pressure_MPa": 50,
+              "Equilibration": "6 h at 25 °C"
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Type": "Specific_Capacity",
+            "Sub_Type": "Initial discharge capacity",
+            "Value": 198,
+            "Unit": "mAh g⁻¹",
+            "Value_StdDev": 18,
+            "Original_Values": "198 mAh g⁻¹ (±18 mAh g⁻¹)",
+            "Test_Condition": {
+              "C_Rate": "0.05 C",
+              "Current_Density": "0.107 mA cm⁻²",
+              "Cell_Type": "half cell",
+              "Voltage_Window": "2.0–3.7 V vs In/LiIn",
+              "Stack_Pressure_MPa": 50,
+              "Equilibration": "6 h at 25 °C"
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Type": "Specific_Capacity",
+            "Sub_Type": "Rate capability discharge capacity at 1 C",
+            "Test_Condition": {
+              "C_Rate": "1 C",
+              "Current_Density": "2.14 mA cm⁻²",
+              "Cell_Type": "half cell",
+              "Voltage_Window": "2.0–3.7 V vs In/LiIn",
+              "Stack_Pressure_MPa": 50,
+              "Equilibration": "6 h at 25 °C"
+            },
+            "Data_Source": "text",
+            "Note": "Discharge capacity at 1 C not explicitly stated as a number for composite S; described qualitatively as higher than other composites"
+          },
+          {
+            "Property_Type": "Effective_Ionic_Conductivity",
+            "Value": 0.25,
+            "Unit": "mS cm⁻¹",
+            "Value_StdDev": 0.01,
+            "Original_Values": "0.25 mS cm⁻¹ (±0.01 mS cm⁻¹)",
+            "Test_Condition": {
+              "Measurement_Method": "EIS with transmission line model",
+              "Cell_Configuration": "symmetric electronic blocking cell",
+              "Test_Temperature_K": 298.15,
+              "Composite_Mass_mg": 100,
+              "Stack_Pressure_MPa": 50
+            },
+            "Data_Source": "text",
+            "Note": "Highest effective ionic conductivity among all composites"
+          },
+          {
+            "Property_Type": "Effective_Electronic_Conductivity",
+            "Value": 0.38,
+            "Unit": "mS cm⁻¹",
+            "Value_StdDev": 0.15,
+            "Original_Values": "0.38 mS cm⁻¹ (±0.15 mS cm⁻¹)",
+            "Test_Condition": {
+              "Measurement_Method": "EIS with transmission line model",
+              "Cell_Configuration": "symmetric ionic blocking cell",
+              "Test_Temperature_K": 298.15,
+              "Composite_Mass_mg": 100,
+              "Stack_Pressure_MPa": 50
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Type": "Specific_Active_Interface_Area",
+            "Value": 14270000.0,
+            "Unit": "m⁻¹",
+            "Original_Values": "142.7 × 10⁵ m⁻¹",
+            "Data_Source": "text",
+            "Data_Nature": "Computed",
+            "Note": "From GeoDict simulation (Figure S22); highest among all composites"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "8",
+      "Sample_ID": "Composite-M",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Ceramics_Inorganic",
+      "application": "Functional",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Battery",
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 2: Results and Discussion, Figure 3-6, Section 4: Experimental Section"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Battery_Composition": {
+            "Component_Type": "Composite_Cathode",
+            "Composite_Formulation": {
+              "NCM811": "70 wt.%",
+              "Li6PS5Cl (M, D50=11 μm)": "30 wt.%"
+            }
+          }
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "Cathode composites were prepared by mixing lithium nickel cobalt manganese oxide and the respective Li6PS5Cl in a weight ratio of 70:30. The two components were transferred into a 15 mL ZrO2 cup with 3 mm sized zirconia spheres and mixed using a frequency ball mill at a frequency of 15 Hz for 15 min.",
+            "simplified": "Dry mixing of NCM811 and Li6PS5Cl (M) at 70:30 wt.% by ball milling at 15 Hz for 15 min",
+            "Note": "Shared preparation method; paper describes composite preparation uniformly for all variants (Section 4 - Preparation of Electrode Composites)"
+          },
+          "Key_Params": {
+            "Mixing": {
+              "Method": "frequency ball milling",
+              "Frequency_Hz": 15,
+              "Duration_min": 15,
+              "Weight_Ratio": "70:30 (NCM811:Li6PS5Cl)"
+            }
+          },
+          "Equipment": [
+            {
+              "Name": "Fritsch pulverisette 23 Mini Mill",
+              "Category": "Preparation",
+              "Note": "Shared preparation equipment; described in Preparation of Electrode Composites section"
+            },
+            {
+              "Name": "PEEK lined airtight press cell with stainless steel stamps",
+              "Category": "Preparation",
+              "Note": "Shared cell assembly equipment"
+            },
+            {
+              "Name": "Carl Zeiss AURIGA CrossBeam workstation",
+              "Category": "Characterization",
+              "Note": "Shared characterization; SEM section states pressed composites analyzed"
+            },
+            {
+              "Name": "MACCOR",
+              "Category": "Testing",
+              "Note": "Shared testing; long-term cycling in climate chamber at 25 °C"
+            },
+            {
+              "Name": "Biologic VMP300 potentiostat",
+              "Category": "Testing",
+              "Note": "Shared testing; rate performance tests and EIS"
+            },
+            {
+              "Name": "RelaxIS 3",
+              "Category": "Software",
+              "Note": "Shared software; impedance data evaluation"
+            }
+          ],
+          "Active_Material_Loading_mg_cm2": 10.7,
+          "Composite_Mass_mg": 12
+        },
+        "Structure": {
+          "Microstructure_Features": "Less homogeneous distribution of Li6PS5Cl compared to Composite-S; larger void space than Composite-S"
+        },
+        "Properties": [
+          {
+            "Property_Type": "Specific_Capacity",
+            "Sub_Type": "Initial charge capacity",
+            "Value": 212,
+            "Unit": "mAh g⁻¹",
+            "Value_StdDev": 4,
+            "Original_Values": "212 mAh g⁻¹ (±4 mAh g⁻¹)",
+            "Test_Condition": {
+              "C_Rate": "0.05 C",
+              "Current_Density": "0.107 mA cm⁻²",
+              "Cell_Type": "half cell",
+              "Voltage_Window": "2.0–3.7 V vs In/LiIn",
+              "Stack_Pressure_MPa": 50,
+              "Equilibration": "6 h at 25 °C"
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Type": "Specific_Capacity",
+            "Sub_Type": "Initial discharge capacity",
+            "Value": 165,
+            "Unit": "mAh g⁻¹",
+            "Value_StdDev": 3,
+            "Original_Values": "165 mAh g⁻¹ (±3 mAh g⁻¹)",
+            "Test_Condition": {
+              "C_Rate": "0.05 C",
+              "Current_Density": "0.107 mA cm⁻²",
+              "Cell_Type": "half cell",
+              "Voltage_Window": "2.0–3.7 V vs In/LiIn",
+              "Stack_Pressure_MPa": 50,
+              "Equilibration": "6 h at 25 °C"
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Type": "Specific_Active_Interface_Area",
+            "Value": null,
+            "Unit": "m⁻¹",
+            "Original_Values": "lowered by a factor of 3.5 compared to Composite-S",
+            "Data_Source": "text",
+            "Data_Nature": "Computed",
+            "Note": "From GeoDict simulation (Figure S22); exact value not explicitly stated, described as lowered by a factor of 3.5 compared to Composite-S (142.7 × 10⁵ m⁻¹)"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "9",
+      "Sample_ID": "Composite-L",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Ceramics_Inorganic",
+      "application": "Functional",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Battery",
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 2: Results and Discussion, Figure 3-6, Section 4: Experimental Section"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Battery_Composition": {
+            "Component_Type": "Composite_Cathode",
+            "Composite_Formulation": {
+              "NCM811": "70 wt.%",
+              "Li6PS5Cl (L, D50=20 μm)": "30 wt.%"
+            }
+          }
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "Cathode composites were prepared by mixing lithium nickel cobalt manganese oxide and the respective Li6PS5Cl in a weight ratio of 70:30. The two components were transferred into a 15 mL ZrO2 cup with 3 mm sized zirconia spheres and mixed using a frequency ball mill at a frequency of 15 Hz for 15 min.",
+            "simplified": "Dry mixing of NCM811 and Li6PS5Cl (L) at 70:30 wt.% by ball milling at 15 Hz for 15 min",
+            "Note": "Shared preparation method; paper describes composite preparation uniformly for all variants (Section 4 - Preparation of Electrode Composites)"
+          },
+          "Equipment": [
+            {
+              "Name": "Fritsch pulverisette 23 Mini Mill",
+              "Category": "Preparation",
+              "Note": "Shared preparation equipment"
+            },
+            {
+              "Name": "PEEK lined airtight press cell with stainless steel stamps",
+              "Category": "Preparation",
+              "Note": "Shared cell assembly equipment"
+            },
+            {
+              "Name": "Carl Zeiss AURIGA CrossBeam workstation",
+              "Category": "Characterization",
+              "Note": "Shared characterization"
+            },
+            {
+              "Name": "MACCOR",
+              "Category": "Testing",
+              "Note": "Shared testing"
+            },
+            {
+              "Name": "Biologic VMP300 potentiostat",
+              "Category": "Testing",
+              "Note": "Shared testing"
+            },
+            {
+              "Name": "RelaxIS 3",
+              "Category": "Software",
+              "Note": "Shared software"
+            }
+          ],
+          "Active_Material_Loading_mg_cm2": 10.7,
+          "Composite_Mass_mg": 12
+        },
+        "Structure": {
+          "Microstructure_Features": "Less homogeneous distribution of Li6PS5Cl compared to Composite-S; larger void space than Composite-S"
+        },
+        "Properties": [
+          {
+            "Property_Type": "Specific_Capacity",
+            "Sub_Type": "Initial charge capacity",
+            "Value": 212,
+            "Unit": "mAh g⁻¹",
+            "Value_StdDev": 4,
+            "Original_Values": "212 mAh g⁻¹ (±4 mAh g⁻¹)",
+            "Test_Condition": {
+              "C_Rate": "0.05 C",
+              "Current_Density": "0.107 mA cm⁻²",
+              "Cell_Type": "half cell",
+              "Voltage_Window": "2.0–3.7 V vs In/LiIn",
+              "Stack_Pressure_MPa": 50,
+              "Equilibration": "6 h at 25 °C"
+            },
+            "Data_Source": "text",
+            "Note": "Similar to Composite-M"
+          },
+          {
+            "Property_Type": "Specific_Capacity",
+            "Sub_Type": "Initial discharge capacity",
+            "Value": 165,
+            "Unit": "mAh g⁻¹",
+            "Value_StdDev": 3,
+            "Original_Values": "165 mAh g⁻¹ (±3 mAh g⁻¹)",
+            "Test_Condition": {
+              "C_Rate": "0.05 C",
+              "Current_Density": "0.107 mA cm⁻²",
+              "Cell_Type": "half cell",
+              "Voltage_Window": "2.0–3.7 V vs In/LiIn",
+              "Stack_Pressure_MPa": 50,
+              "Equilibration": "6 h at 25 °C"
+            },
+            "Data_Source": "text",
+            "Note": "Similar to Composite-M"
+          },
+          {
+            "Property_Type": "Effective_Ionic_Conductivity",
+            "Value": 0.16,
+            "Unit": "mS cm⁻¹",
+            "Value_StdDev": 0.03,
+            "Original_Values": "0.16 mS cm⁻¹ (±0.03 mS cm⁻¹)",
+            "Test_Condition": {
+              "Measurement_Method": "EIS with transmission line model",
+              "Cell_Configuration": "symmetric electronic blocking cell",
+              "Test_Temperature_K": 298.15,
+              "Composite_Mass_mg": 100,
+              "Stack_Pressure_MPa": 50
+            },
+            "Data_Source": "text",
+            "Note": "Similar to Composite-XL"
+          },
+          {
+            "Property_Type": "Effective_Electronic_Conductivity",
+            "Value": null,
+            "Unit": "mS cm⁻¹",
+            "Data_Source": "text",
+            "Note": "Not explicitly given individually for Composite-L in the text; overall range reported as 0.40 mS cm⁻¹ (XL) to 0.38 mS cm⁻¹ (S)"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "10",
+      "Sample_ID": "Composite-XL",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Ceramics_Inorganic",
+      "application": "Functional",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Battery",
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 2: Results and Discussion, Figure 3-6, Section 4: Experimental Section"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Battery_Composition": {
+            "Component_Type": "Composite_Cathode",
+            "Composite_Formulation": {
+              "NCM811": "70 wt.%",
+              "Li6PS5Cl (XL, D50=40 μm)": "30 wt.%"
+            }
+          }
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "Cathode composites were prepared by mixing lithium nickel cobalt manganese oxide and the respective Li6PS5Cl in a weight ratio of 70:30. The two components were transferred into a 15 mL ZrO2 cup with 3 mm sized zirconia spheres and mixed using a frequency ball mill at a frequency of 15 Hz for 15 min.",
+            "simplified": "Dry mixing of NCM811 and Li6PS5Cl (XL) at 70:30 wt.% by ball milling at 15 Hz for 15 min",
+            "Note": "Shared preparation method; paper describes composite preparation uniformly for all variants (Section 4 - Preparation of Electrode Composites)"
+          },
+          "Equipment": [
+            {
+              "Name": "Fritsch pulverisette 23 Mini Mill",
+              "Category": "Preparation",
+              "Note": "Shared preparation equipment"
+            },
+            {
+              "Name": "PEEK lined airtight press cell with stainless steel stamps",
+              "Category": "Preparation",
+              "Note": "Shared cell assembly equipment"
+            },
+            {
+              "Name": "Carl Zeiss AURIGA CrossBeam workstation",
+              "Category": "Characterization",
+              "Note": "Shared characterization"
+            },
+            {
+              "Name": "MACCOR",
+              "Category": "Testing",
+              "Note": "Shared testing"
+            },
+            {
+              "Name": "Biologic VMP300 potentiostat",
+              "Category": "Testing",
+              "Note": "Shared testing"
+            },
+            {
+              "Name": "RelaxIS 3",
+              "Category": "Software",
+              "Note": "Shared software"
+            }
+          ],
+          "Active_Material_Loading_mg_cm2": 10.7,
+          "Composite_Mass_mg": 12
+        },
+        "Structure": {
+          "Microstructure_Features": "Least homogeneous distribution of Li6PS5Cl; largest void space; localized ionic current flow through bottleneck particle-to-particle contacts"
+        },
+        "Properties": [
+          {
+            "Property_Type": "Specific_Capacity",
+            "Sub_Type": "Initial charge capacity",
+            "Value": 205,
+            "Unit": "mAh g⁻¹",
+            "Value_StdDev": 4,
+            "Original_Values": "205 mAh g⁻¹ (±4 mAh g⁻¹)",
+            "Test_Condition": {
+              "C_Rate": "0.05 C",
+              "Current_Density": "0.107 mA cm⁻²",
+              "Cell_Type": "half cell",
+              "Voltage_Window": "2.0–3.7 V vs In/LiIn",
+              "Stack_Pressure_MPa": 50,
+              "Equilibration": "6 h at 25 °C"
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Type": "Specific_Capacity",
+            "Sub_Type": "Initial discharge capacity",
+            "Value": 152,
+            "Unit": "mAh g⁻¹",
+            "Value_StdDev": 3,
+            "Original_Values": "152 mAh g⁻¹ (±3 mAh g⁻¹)",
+            "Test_Condition": {
+              "C_Rate": "0.05 C",
+              "Current_Density": "0.107 mA cm⁻²",
+              "Cell_Type": "half cell",
+              "Voltage_Window": "2.0–3.7 V vs In/LiIn",
+              "Stack_Pressure_MPa": 50,
+              "Equilibration": "6 h at 25 °C"
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Type": "Effective_Ionic_Conductivity",
+            "Value": 0.16,
+            "Unit": "mS cm⁻¹",
+            "Value_StdDev": 0.03,
+            "Original_Values": "0.16 mS cm⁻¹ (±0.03 mS cm⁻¹)",
+            "Test_Condition": {
+              "Measurement_Method": "EIS with transmission line model",
+              "Cell_Configuration": "symmetric electronic blocking cell",
+              "Test_Temperature_K": 298.15,
+              "Composite_Mass_mg": 100,
+              "Stack_Pressure_MPa": 50
+            },
+            "Data_Source": "text",
+            "Note": "Similar to Composite-L"
+          },
+          {
+            "Property_Type": "Effective_Electronic_Conductivity",
+            "Value": 0.4,
+            "Unit": "mS cm⁻¹",
+            "Value_StdDev": 0.06,
+            "Original_Values": "0.40 mS cm⁻¹ (±0.06 mS cm⁻¹)",
+            "Test_Condition": {
+              "Measurement_Method": "EIS with transmission line model",
+              "Cell_Configuration": "symmetric ionic blocking cell",
+              "Test_Temperature_K": 298.15,
+              "Composite_Mass_mg": 100,
+              "Stack_Pressure_MPa": 50
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Type": "Specific_Active_Interface_Area",
+            "Value": 1650000.0,
+            "Unit": "m⁻¹",
+            "Original_Values": "16.5 × 10⁵ m⁻¹",
+            "Data_Source": "text",
+            "Data_Nature": "Computed",
+            "Note": "From GeoDict simulation (Figure S22); lowest among all composites"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "11",
+      "Sample_ID": "Composite-S-sim",
+      "Role": "Target",
+      "Data_Nature": "Computed",
+      "base_material": "Ceramics_Inorganic",
+      "application": "Functional",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Battery",
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 4: Experimental Section - Microstructure Modeling and Simulation, Figure 6"
+      ],
+      "Simulation_Metadata": {
+        "Method": "Flux-based voxel simulation (GeoDict)",
+        "Software": "GeoDict (Modules: GrainGeo, ProcessGeo, ConductoDict, MatDict)",
+        "Hardware": "Dell Precision 3650 Tower (96 GB RAM, 11th Gen Intel Core i7-11700 CPU)",
+        "Model_Volume": "(90 μm)³",
+        "Resolution": "300 nm voxel⁻¹",
+        "Input_Parameters": {
+          "Li6PS5Cl_bulk_conductivity": "2.2 mS cm⁻¹",
+          "CAM_bulk_conductivity": "5.2 mS cm⁻¹",
+          "CAM_Young_Modulus_GPa": 194,
+          "Potential_Difference_V": 0.3,
+          "Number_of_models": 3
+        }
+      },
+      "Experiment_Link": {
+        "Related_Item_IDs": [
+          "7"
+        ],
+        "Description": "Simulated ionic and electronic conductivity and current density distribution for Composite-S",
+        "Validation_Target": "Effective ionic and electronic conductivity of composite cathode"
+      },
+      "Extracted_Data": {
+        "Composition": {
+          "Battery_Composition": {
+            "Component_Type": "Composite_Cathode",
+            "Composite_Formulation": {
+              "NCM811": "70 wt.%",
+              "Li6PS5Cl (S, D50=4 μm)": "30 wt.%"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Type": "Simulated_Effective_Ionic_Conductivity",
+            "Test_Condition": {
+              "Simulation_Method": "flux-based voxel simulation",
+              "Bulk_Conductivity_Input_Li6PS5Cl_mS_cm-1": 2.2,
+              "Bulk_Conductivity_Input_CAM_mS_cm-1": 5.2
+            },
+            "Data_Source": "text",
+            "Note": "Simulated value not explicitly stated as a number; trend described as increasing with smaller particle size. See Figure 6a for visual comparison."
+          },
+          {
+            "Property_Type": "Simulated_Electronic_Conductivity",
+            "Test_Condition": {
+              "Simulation_Method": "flux-based voxel simulation"
+            },
+            "Data_Source": "text",
+            "Note": "Simulated electronic conductivity decreases with smaller particle size, in contrast to experimental observation"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "12",
+      "Sample_ID": "Composite-M-sim",
+      "Role": "Variant",
+      "Data_Nature": "Computed",
+      "base_material": "Ceramics_Inorganic",
+      "application": "Functional",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Battery",
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 4: Experimental Section - Microstructure Modeling and Simulation, Figure 6"
+      ],
+      "Simulation_Metadata": {
+        "Method": "Flux-based voxel simulation (GeoDict)",
+        "Software": "GeoDict (Modules: GrainGeo, ProcessGeo, ConductoDict, MatDict)",
+        "Hardware": "Dell Precision 3650 Tower (96 GB RAM, 11th Gen Intel Core i7-11700 CPU)",
+        "Model_Volume": "(300 μm)³",
+        "Resolution": "600 nm voxel⁻¹",
+        "Input_Parameters": {
+          "Li6PS5Cl_bulk_conductivity": "2.2 mS cm⁻¹",
+          "CAM_bulk_conductivity": "5.2 mS cm⁻¹",
+          "CAM_Young_Modulus_GPa": 194,
+          "Potential_Difference_V": 1,
+          "Number_of_models": 3
+        },
+        "Note": "Hardware and input parameters shared with all simulation items; paper describes simulation setup once for all composites (Section 4 - Microstructure Modeling and Simulation)"
+      },
+      "Experiment_Link": {
+        "Related_Item_IDs": [
+          "8"
+        ],
+        "Description": "Simulated ionic and electronic conductivity for Composite-M"
+      },
+      "Extracted_Data": {
+        "Composition": {
+          "Battery_Composition": {
+            "Component_Type": "Composite_Cathode",
+            "Composite_Formulation": {
+              "NCM811": "70 wt.%",
+              "Li6PS5Cl (M, D50=11 μm)": "30 wt.%"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Type": "Simulated_Effective_Ionic_Conductivity",
+            "Data_Source": "text",
+            "Note": "Simulated value not explicitly stated as a number for individual composite; trend shown in Figure 6a"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "13",
+      "Sample_ID": "Composite-L-sim",
+      "Role": "Variant",
+      "Data_Nature": "Computed",
+      "base_material": "Ceramics_Inorganic",
+      "application": "Functional",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Battery",
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 4: Experimental Section - Microstructure Modeling and Simulation, Figure 6"
+      ],
+      "Simulation_Metadata": {
+        "Method": "Flux-based voxel simulation (GeoDict)",
+        "Software": "GeoDict (Modules: GrainGeo, ProcessGeo, ConductoDict, MatDict)",
+        "Hardware": "Dell Precision 3650 Tower (96 GB RAM, 11th Gen Intel Core i7-11700 CPU)",
+        "Model_Volume": "(300 μm)³",
+        "Resolution": "600 nm voxel⁻¹",
+        "Input_Parameters": {
+          "Li6PS5Cl_bulk_conductivity": "2.2 mS cm⁻¹",
+          "CAM_bulk_conductivity": "5.2 mS cm⁻¹",
+          "CAM_Young_Modulus_GPa": 194,
+          "Potential_Difference_V": 1,
+          "Number_of_models": 3
+        },
+        "Note": "Hardware and input parameters shared with all simulation items; paper describes simulation setup once for all composites (Section 4 - Microstructure Modeling and Simulation)"
+      },
+      "Experiment_Link": {
+        "Related_Item_IDs": [
+          "9"
+        ],
+        "Description": "Simulated ionic and electronic conductivity for Composite-L"
+      },
+      "Extracted_Data": {
+        "Composition": {
+          "Battery_Composition": {
+            "Component_Type": "Composite_Cathode",
+            "Composite_Formulation": {
+              "NCM811": "70 wt.%",
+              "Li6PS5Cl (L, D50=20 μm)": "30 wt.%"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Type": "Simulated_Effective_Ionic_Conductivity",
+            "Data_Source": "text",
+            "Note": "Simulated value not explicitly stated as a number; trend shown in Figure 6a"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "14",
+      "Sample_ID": "Composite-XL-sim",
+      "Role": "Variant",
+      "Data_Nature": "Computed",
+      "base_material": "Ceramics_Inorganic",
+      "application": "Functional",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Battery",
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 4: Experimental Section - Microstructure Modeling and Simulation, Figure 6"
+      ],
+      "Simulation_Metadata": {
+        "Method": "Flux-based voxel simulation (GeoDict)",
+        "Software": "GeoDict (Modules: GrainGeo, ProcessGeo, ConductoDict, MatDict)",
+        "Hardware": "Dell Precision 3650 Tower (96 GB RAM, 11th Gen Intel Core i7-11700 CPU)",
+        "Model_Volume": "(300 μm)³",
+        "Resolution": "600 nm voxel⁻¹",
+        "Input_Parameters": {
+          "Li6PS5Cl_bulk_conductivity": "2.2 mS cm⁻¹",
+          "CAM_bulk_conductivity": "5.2 mS cm⁻¹",
+          "CAM_Young_Modulus_GPa": 194,
+          "Potential_Difference_V": 1,
+          "Number_of_models": 3
+        },
+        "Note": "Hardware and input parameters shared with all simulation items; paper describes simulation setup once for all composites (Section 4 - Microstructure Modeling and Simulation)"
+      },
+      "Experiment_Link": {
+        "Related_Item_IDs": [
+          "10"
+        ],
+        "Description": "Simulated ionic and electronic conductivity and current density distribution for Composite-XL"
+      },
+      "Extracted_Data": {
+        "Composition": {
+          "Battery_Composition": {
+            "Component_Type": "Composite_Cathode",
+            "Composite_Formulation": {
+              "NCM811": "70 wt.%",
+              "Li6PS5Cl (XL, D50=40 μm)": "30 wt.%"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Type": "Simulated_Effective_Ionic_Conductivity",
+            "Test_Condition": {
+              "Simulation_Method": "flux-based voxel simulation",
+              "Potential_Difference_V": 1
+            },
+            "Data_Source": "text",
+            "Note": "Localized ionic current flow; Figure 6c shows visual comparison. Numerical value not explicitly stated in text."
+          }
+        ]
+      }
+    }
+  ]
+}

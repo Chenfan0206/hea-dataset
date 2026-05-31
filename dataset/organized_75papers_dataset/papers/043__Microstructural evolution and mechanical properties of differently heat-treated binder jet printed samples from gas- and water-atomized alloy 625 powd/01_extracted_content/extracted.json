@@ -1,0 +1,2452 @@
+{
+  "Paper_Metadata": {
+    "Paper_Title": "Microstructural evolution and mechanical properties of differently heat-treated binder jet printed samples from gas- and water-atomized alloy 625 powders",
+    "DOI": "10.1016/j.actamat.2016.11.021"
+  },
+  "Paper_Routing": {
+    "base_material": "Metals",
+    "application": "Structural",
+    "research_paradigm": "Experimental",
+    "Supplements_Loaded": [
+      "directions/base/Metals.txt",
+      "directions/application/Structural.txt",
+      "directions/paradigm/Experimental.txt"
+    ],
+    "Patch_Tags": [
+      "Additive_Manufacturing"
+    ],
+    "Needs_Mixed_Routing_Check": false,
+    "Mixed_Signals": []
+  },
+  "items": [
+    {
+      "Item_ID": "GA_1225",
+      "Sample_ID": "GA sintered 1225C",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 1",
+        "Table 2",
+        "Fig. 4e",
+        "Section 3.3"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Ni-based superalloy",
+          "Material_Name_Raw": "Alloy 625",
+          "Nominal_Composition": {
+            "Ni": ">58",
+            "Cr": "20-23",
+            "Fe": "<5",
+            "Nb": "3.1-4.1",
+            "Mo": "8-10",
+            "Al": "<0.4",
+            "Ti": "<0.4",
+            "Co": "<1.0",
+            "Mn": "<0.5",
+            "Si": "<0.5",
+            "Unit": "wt%",
+            "Source": "Table 1, nominal composition"
+          },
+          "Provided_Composition": {
+            "Ni": "Balance",
+            "Cr": 21.5,
+            "Fe": 4.2,
+            "Nb": 3.3,
+            "Mo": 8.9,
+            "Mn": 0.4,
+            "Si": 0.4,
+            "Unit": "wt%",
+            "Source": "Table 1, GA powder (provided)"
+          },
+          "Measured_Composition": {
+            "Ni": "Balance",
+            "Cr": 21.8,
+            "Fe": 4.4,
+            "Nb": 3.6,
+            "Mo": 8.0,
+            "Al": 0.02,
+            "Ti": 0.02,
+            "Co": 0.22,
+            "Mn": 0.4,
+            "Si": 0.5,
+            "Method": "EDS",
+            "Unit": "wt%",
+            "Source": "Table 1, GA powder (EDS)"
+          },
+          "Note": "Nominal composition values are specifications/ranges, not precise values. Provided composition from manufacturer. EDS measured composition is local surface/bulk average, not the same as bulk chemical analysis. O and C are listed separately in Table 1 as-received."
+        },
+        "Processing": {
+          "Process_Category": "Binder Jet Printing + Sintering",
+          "Process_Text": {
+            "original": "Gas atomized (GA) nickel-based alloy 625 powders were binder jet printed using an M-Flex ExOne binder jet printer, cured at 175 C, and sintered in a Lindberg tube furnace in an alumina powder bed under vacuum at 1225 C for 4 h.",
+            "simplified": "GA powder -> Binder jet printing -> Curing at 175 C -> Vacuum sintering at 1225 C / 4 h -> Furnace cooling"
+          },
+          "Stages": {
+            "Stage1_Powder_Production": {
+              "Method": "Nitrogen gas atomization",
+              "Supplier": "Carpenter Technology Corporation"
+            },
+            "Stage2_Printing": {
+              "Method": "Binder jet printing",
+              "Equipment_Reference": "M-Flex ExOne binder jet printer"
+            },
+            "Stage3_Curing": {
+              "Temperature_Original": "175 C",
+              "Temperature_K": 448.15,
+              "Atmosphere": "air",
+              "Equipment": "JPW Design & Manufacturing furnace"
+            },
+            "Stage4_Sintering": {
+              "Heating_Profile": "5 C/min from room temperature to 600 C, 3.2 C/min to 1000 C, 2.8 C/min to 1225 C, hold 4 h",
+              "Cooling_Profile": "1 C/min to 1200 C, 3.1 C/min to 500 C, then cooling to room temperature",
+              "Atmosphere": "vacuum",
+              "Holding_Temperature_Original": "1225 C",
+              "Holding_Temperature_K": 1498.15,
+              "Holding_Time_h": 4,
+              "Equipment": "Lindberg tube furnace",
+              "Powder_Bed": "alumina powder bed"
+            }
+          },
+          "Equipment": [
+            {
+              "Name": "M-Flex ExOne binder jet printer",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "JPW Design & Manufacturing furnace",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Lindberg tube furnace",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "JEOL JSM 6510 SEM with EDS",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "PANanalytical EMPYREAN diffractometer",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Microtrac S3500 tri-laser diffraction particle analyzer",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "TA Instruments Q600 DSC",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Bruker SkyScan1272 micro-CT scanner",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "OHAUS AX324 precision balance",
+              "Category": "Testing"
+            },
+            {
+              "Name": "ImageJ image analysis software",
+              "Category": "Software"
+            },
+            {
+              "Name": "Struers Tegramin-25 automatic system",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Keyence digital optical microscope",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "LECO TC600 Oxygen/Nitrogen Analyzer",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "LECO CS844 Carbon/Sulfur Analyzer",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Leco LM 800 microhardness tester",
+              "Category": "Testing"
+            },
+            {
+              "Name": "MTS 880",
+              "Category": "Testing"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "GA samples sintered at 1225 C were porous and partially connected, indicating sub-optimal sintering temperature. Two pore types were present: large pores at grain boundaries and small pores within grains.",
+            "simplified": "Porous, partially connected pores; large pores at grain boundaries and small pores within grains; no visible precipitation of oxides or carbides at low sintering temperature"
+          },
+          "Main_Phase": {
+            "Phase_Name": "gamma-Ni (FCC matrix)",
+            "Crystal_Structure": "FCC"
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "delta-Ni3Nb",
+              "Crystal_Structure": "Orthorhombic",
+              "Note": "Detected as double XRD peak at ~51.5 degrees in sintered at 1225 C sample"
+            }
+          ],
+          "Grain_Size": {
+            "Value": 39.0,
+            "Value_StdDev": 4.0,
+            "Unit": "um",
+            "Method": "ImageJ analysis",
+            "Note": "diameter; measurement method does not distinguish radius vs diameter; classified as undefined per Metals supplement",
+            "Data_Source": "table"
+          },
+          "Grain_Size_ASTM": {
+            "Value_Range": "5.5-6.5",
+            "Unit": "ASTM G (grain size number)",
+            "Method": "ASTM E-112-13",
+            "Data_Source": "table"
+          },
+          "Pore_Size": {
+            "Value": 41.0,
+            "Value_StdDev": 18.0,
+            "Unit": "um",
+            "Data_Source": "table"
+          },
+          "Relative_Density": {
+            "Value": 85.0,
+            "Unit": "%",
+            "Data_Source": "text",
+            "Note": "From text: density increased from 85.0% to 99.2% for GA samples sintered from 1225 to 1300 C"
+          },
+          "Lattice_Parameter": {
+            "Value": 3.5758,
+            "Unit": "Angstrom",
+            "Data_Source": "table",
+            "Source_Table": "Table 4, GA sintered at 1225 C"
+          },
+          "Data_Source": "table"
+        },
+        "Properties": [
+          {
+            "Property_Name": "Hardness",
+            "Value": 160.0,
+            "Value_StdDev": 15.0,
+            "Unit": "HV0.1",
+            "Test_Condition": {
+              "Load_gf": 100,
+              "Dwell_Time_s": 10
+            },
+            "Data_Source": "table",
+            "Source_Table": "Table 2"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "GA_1240",
+      "Sample_ID": "GA sintered 1240C",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 2",
+        "Section 3.3"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Ni-based superalloy",
+          "Material_Name_Raw": "Alloy 625",
+          "Note": "Same GA powder as Item GA_1225. Composition shared per Table 1; see GA_1225 for details."
+        },
+        "Processing": {
+          "Process_Category": "Binder Jet Printing + Sintering",
+          "Process_Text": {
+            "original": "GA powder binder jet printed, cured at 175 C, sintered at 1240 C for 4 h in vacuum.",
+            "simplified": "GA powder -> Binder jet printing -> Curing 175 C -> Vacuum sintering 1240 C / 4 h -> Furnace cooling"
+          },
+          "Stages": {
+            "Stage4_Sintering": {
+              "Holding_Temperature_Original": "1240 C",
+              "Holding_Temperature_K": 1513.15,
+              "Holding_Time_h": 4,
+              "Atmosphere": "vacuum",
+              "Equipment": "Lindberg tube furnace"
+            }
+          },
+          "Note": "Stages 1-3 shared with GA_1225; sintering temperature differs."
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "GA samples sintered at 1240 C showed decreasing porosity with increasing temperature, with pores becoming less connected.",
+            "simplified": "Decreasing porosity; pores becoming less connected; no visible precipitation of oxides or carbides at low sintering temperature"
+          },
+          "Main_Phase": {
+            "Phase_Name": "gamma-Ni (FCC matrix)",
+            "Crystal_Structure": "FCC"
+          },
+          "Grain_Size": {
+            "Value": 45.0,
+            "Value_StdDev": 11.0,
+            "Unit": "um",
+            "Method": "ImageJ analysis",
+            "Data_Source": "table"
+          },
+          "Grain_Size_ASTM": {
+            "Value_Range": "5.0-6.5",
+            "Unit": "ASTM G",
+            "Method": "ASTM E-112-13",
+            "Data_Source": "table"
+          },
+          "Pore_Size": {
+            "Value": 36.0,
+            "Value_StdDev": 10.0,
+            "Unit": "um",
+            "Data_Source": "table"
+          },
+          "Data_Source": "table"
+        },
+        "Properties": [
+          {
+            "Property_Name": "Hardness",
+            "Value": 184.0,
+            "Value_StdDev": 13.0,
+            "Unit": "HV0.1",
+            "Test_Condition": {
+              "Load_gf": 100,
+              "Dwell_Time_s": 10
+            },
+            "Data_Source": "table",
+            "Source_Table": "Table 2"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "GA_1255",
+      "Sample_ID": "GA sintered 1255C",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 2",
+        "Section 3.3"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Ni-based superalloy",
+          "Material_Name_Raw": "Alloy 625",
+          "Note": "Same GA powder as Item GA_1225."
+        },
+        "Processing": {
+          "Process_Category": "Binder Jet Printing + Sintering",
+          "Process_Text": {
+            "simplified": "GA powder -> Binder jet printing -> Curing 175 C -> Vacuum sintering 1255 C / 4 h -> Furnace cooling",
+            "original": "GA powder binder jet printed using an M-Flex ExOne printer, cured at 175 C in a JPW furnace, then sintered in a Lindberg tube furnace in an alumina powder bed under vacuum at 1255 C for 4 h."
+          },
+          "Stages": {
+            "Stage4_Sintering": {
+              "Holding_Temperature_Original": "1255 C",
+              "Holding_Temperature_K": 1528.15,
+              "Holding_Time_h": 4,
+              "Atmosphere": "vacuum"
+            }
+          },
+          "Note": "Stages 1-3 shared with GA_1225."
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "GA samples sintered at 1255 C showed further pore reduction and density increase compared to lower temperatures.",
+            "simplified": "Further pore reduction; increasing density; no visible precipitation"
+          },
+          "Main_Phase": {
+            "Phase_Name": "gamma-Ni (FCC matrix)",
+            "Crystal_Structure": "FCC"
+          },
+          "Grain_Size": {
+            "Value": 62.0,
+            "Value_StdDev": 20.0,
+            "Unit": "um",
+            "Method": "ImageJ analysis",
+            "Data_Source": "table"
+          },
+          "Grain_Size_ASTM": {
+            "Value_Range": "4.5-6.0",
+            "Unit": "ASTM G",
+            "Method": "ASTM E-112-13",
+            "Data_Source": "table"
+          },
+          "Pore_Size": {
+            "Value": 27.0,
+            "Value_StdDev": 13.0,
+            "Unit": "um",
+            "Data_Source": "table"
+          },
+          "Data_Source": "table"
+        },
+        "Properties": [
+          {
+            "Property_Name": "Hardness",
+            "Value": 192.0,
+            "Value_StdDev": 7.0,
+            "Unit": "HV0.1",
+            "Test_Condition": {
+              "Load_gf": 100,
+              "Dwell_Time_s": 10
+            },
+            "Data_Source": "table",
+            "Source_Table": "Table 2"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "GA_1270",
+      "Sample_ID": "GA sintered 1270C",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 2",
+        "Section 3.3"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Ni-based superalloy",
+          "Material_Name_Raw": "Alloy 625",
+          "Note": "Same GA powder as Item GA_1225."
+        },
+        "Processing": {
+          "Process_Category": "Binder Jet Printing + Sintering",
+          "Process_Text": {
+            "simplified": "GA powder -> Binder jet printing -> Curing 175 C -> Vacuum sintering 1270 C / 4 h -> Furnace cooling",
+            "original": "GA powder binder jet printed using an M-Flex ExOne printer, cured at 175 C in a JPW furnace, then sintered in a Lindberg tube furnace in an alumina powder bed under vacuum at 1270 C for 4 h."
+          },
+          "Stages": {
+            "Stage4_Sintering": {
+              "Holding_Temperature_Original": "1270 C",
+              "Holding_Temperature_K": 1543.15,
+              "Holding_Time_h": 4,
+              "Atmosphere": "vacuum"
+            }
+          },
+          "Note": "Stages 1-3 shared with GA_1225."
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Sintering at >= 1270 C resulted in equiaxed grains. GA samples showed nearly all pores disappearing with some carbides and oxides forming.",
+            "simplified": "Equiaxed grains; nearly all pores disappeared; some carbides and oxides forming"
+          },
+          "Main_Phase": {
+            "Phase_Name": "gamma-Ni (FCC matrix)",
+            "Crystal_Structure": "FCC"
+          },
+          "Grain_Size": {
+            "Value": 69.0,
+            "Value_StdDev": 23.0,
+            "Unit": "um",
+            "Method": "ImageJ analysis",
+            "Data_Source": "table"
+          },
+          "Grain_Size_ASTM": {
+            "Value_Range": "4.0-5.5",
+            "Unit": "ASTM G",
+            "Method": "ASTM E-112-13",
+            "Data_Source": "table"
+          },
+          "Pore_Size": {
+            "Value": 20.0,
+            "Value_StdDev": 4.0,
+            "Unit": "um",
+            "Data_Source": "table"
+          },
+          "Data_Source": "table"
+        },
+        "Properties": [
+          {
+            "Property_Name": "Hardness",
+            "Value": 197.0,
+            "Value_StdDev": 8.0,
+            "Unit": "HV0.1",
+            "Test_Condition": {
+              "Load_gf": 100,
+              "Dwell_Time_s": 10
+            },
+            "Data_Source": "table",
+            "Source_Table": "Table 2"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "GA_1285",
+      "Sample_ID": "GA sintered 1285C",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 2",
+        "Table 4",
+        "Table 5",
+        "Fig. 5b",
+        "Fig. 8",
+        "Section 3.3",
+        "Section 3.6"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Ni-based superalloy",
+          "Material_Name_Raw": "Alloy 625",
+          "Oxygen_Content_As_Received": {
+            "GA": 0.04,
+            "Unit": "wt%",
+            "Source": "Table 1"
+          },
+          "Carbon_Content_As_Received": {
+            "GA": 0.01,
+            "Unit": "wt%",
+            "Source": "Table 1"
+          },
+          "Oxygen_Content_Printed_Cured": {
+            "GA": 0.28,
+            "Unit": "wt%",
+            "Source": "Table 1"
+          },
+          "Note": "Same GA powder as Item GA_1225. See GA_1225 for Nominal, Provided, and EDS Measured composition. Oxygen and carbon content included here."
+        },
+        "Processing": {
+          "Process_Category": "Binder Jet Printing + Sintering",
+          "Process_Text": {
+            "original": "GA powder binder jet printed, cured at 175 C, sintered at 1285 C for 4 h under vacuum.",
+            "simplified": "GA powder -> Binder jet printing -> Curing 175 C -> Vacuum sintering 1285 C / 4 h -> Furnace cooling"
+          },
+          "Stages": {
+            "Stage1_Powder_Production": {
+              "Method": "Nitrogen gas atomization",
+              "Supplier": "Carpenter Technology Corporation"
+            },
+            "Stage2_Printing": {
+              "Method": "Binder jet printing",
+              "Equipment_Reference": "M-Flex ExOne binder jet printer"
+            },
+            "Stage3_Curing": {
+              "Temperature_Original": "175 C",
+              "Temperature_K": 448.15,
+              "Atmosphere": "air",
+              "Equipment": "JPW Design & Manufacturing furnace"
+            },
+            "Stage4_Sintering": {
+              "Heating_Profile": "5 C/min RT to 600 C, 3.2 C/min to 1000 C, 2.8 C/min to 1285 C, hold 4 h",
+              "Cooling_Profile": "1 C/min to 1200 C, 3.1 C/min to 500 C, then cool to RT",
+              "Holding_Temperature_Original": "1285 C",
+              "Holding_Temperature_K": 1558.15,
+              "Holding_Time_h": 4,
+              "Atmosphere": "vacuum",
+              "Equipment": "Lindberg tube furnace",
+              "Powder_Bed": "alumina powder bed"
+            }
+          },
+          "Equipment": [
+            {
+              "Name": "M-Flex ExOne binder jet printer",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "JPW Design & Manufacturing furnace",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Lindberg tube furnace",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "JEOL JSM 6510 SEM with EDS",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "PANanalytical EMPYREAN diffractometer",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Microtrac S3500 tri-laser diffraction particle analyzer",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "TA Instruments Q600 DSC",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Bruker SkyScan1272 micro-CT scanner",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "OHAUS AX324 precision balance",
+              "Category": "Testing"
+            },
+            {
+              "Name": "ImageJ image analysis software",
+              "Category": "Software"
+            },
+            {
+              "Name": "Struers Tegramin-25 automatic system",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Keyence digital optical microscope",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "LECO TC600 Oxygen/Nitrogen Analyzer",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "LECO CS844 Carbon/Sulfur Analyzer",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Leco LM 800 microhardness tester",
+              "Category": "Testing"
+            },
+            {
+              "Name": "MTS 880",
+              "Category": "Testing"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "GA samples sintered at 1285 C showed decreased pore size and number, with equiaxed grains. Super solidus liquid phase sintering active since solidus temperature is 1283 C.",
+            "simplified": "Near-fully densified; equiaxed grains; liquid phase sintering active; small pores within grains and at grain boundaries; MC carbides at grain boundaries"
+          },
+          "Main_Phase": {
+            "Phase_Name": "gamma-Ni (FCC matrix)",
+            "Crystal_Structure": "FCC"
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "MC carbide",
+              "Crystal_Structure": "undefined",
+              "Note": "Primary MC carbides at grain boundaries, complex composition including C, Cr, Mo, Nb, Ni; from liquid phase"
+            },
+            {
+              "Phase_Name": "M23C6 carbide",
+              "Crystal_Structure": "FCC",
+              "Note": "Suggested by EDS at points with higher C and Nb besides Mo, Ni and Cr"
+            },
+            {
+              "Phase_Name": "M6C carbide",
+              "Crystal_Structure": "undefined",
+              "Note": "Suggested by higher Mo concentration at grain boundary triple points"
+            },
+            {
+              "Phase_Name": "delta-Ni3Nb",
+              "Crystal_Structure": "Orthorhombic",
+              "Note": "Detected by XRD; increased amount compared to lower sintering temperature"
+            },
+            {
+              "Phase_Name": "Cr2O3",
+              "Crystal_Structure": "Corundum (Rhombohedral)",
+              "Note": "Chromium oxide detected by XRD"
+            }
+          ],
+          "Grain_Size": {
+            "Value": 89.0,
+            "Value_StdDev": 21.0,
+            "Unit": "um",
+            "Method": "ImageJ analysis",
+            "Note": "Highest density GA sample grain size; diameter undefined in original",
+            "Data_Source": "table"
+          },
+          "Grain_Size_ASTM": {
+            "Value_Range": "3.5-4.5",
+            "Unit": "ASTM G",
+            "Method": "ASTM E-112-13",
+            "Data_Source": "table"
+          },
+          "Pore_Size": {
+            "Value": 4.5,
+            "Value_StdDev": 1.2,
+            "Unit": "um",
+            "Data_Source": "table"
+          },
+          "Relative_Density": {
+            "Value": 99.2,
+            "Unit": "%",
+            "Data_Source": "text",
+            "Note": "From text: maximum GA sample density of 99.2% at sintering >= 1285 C"
+          },
+          "Local_Phase_Composition_EDS": {
+            "Source": "Table 3, Fig. 5b",
+            "Points": [
+              {
+                "Point": 1,
+                "Description": "Matrix (GA 1300 C)",
+                "C": 0,
+                "O": 0,
+                "Mo": 8.2,
+                "Nb": 3.1,
+                "Ni": 64.2,
+                "Cr": 21.4,
+                "Mn": 0.4,
+                "Fe": 2.7,
+                "Unit": "wt%"
+              },
+              {
+                "Point": 3,
+                "Description": "Matrix (GA 1300 C)",
+                "C": 0,
+                "O": 0,
+                "Mo": 10.5,
+                "Nb": 3.6,
+                "Ni": 61.7,
+                "Cr": 21.5,
+                "Mn": 0,
+                "Fe": 2.7,
+                "Unit": "wt%"
+              },
+              {
+                "Point": 4,
+                "Description": "Grain boundary carbide (MC/M23C6)",
+                "C": 2.3,
+                "O": 0.9,
+                "Mo": 38.4,
+                "Nb": 31.6,
+                "Ni": 2.7,
+                "Cr": 23.0,
+                "Mn": 0.1,
+                "Fe": 1.0,
+                "Unit": "wt%"
+              },
+              {
+                "Point": 5,
+                "Description": "Grain boundary carbide (MC/M23C6)",
+                "C": 1.4,
+                "O": 0.7,
+                "Mo": 36.1,
+                "Nb": 4.8,
+                "Ni": 32.9,
+                "Cr": 22.6,
+                "Mn": 0.1,
+                "Fe": 1.4,
+                "Unit": "wt%"
+              },
+              {
+                "Point": 6,
+                "Description": "Grain boundary triple point (M6C)",
+                "C": 0.1,
+                "O": 0.1,
+                "Mo": 17.3,
+                "Nb": 2.3,
+                "Ni": 55.7,
+                "Cr": 22.2,
+                "Mn": 0.1,
+                "Fe": 2.2,
+                "Unit": "wt%"
+              }
+            ]
+          },
+          "Data_Source": "table"
+        },
+        "Properties": [
+          {
+            "Property_Name": "Hardness",
+            "Value": 213.0,
+            "Value_StdDev": 6.0,
+            "Unit": "HV0.1",
+            "Test_Condition": {
+              "Load_gf": 100,
+              "Dwell_Time_s": 10
+            },
+            "Data_Source": "table",
+            "Source_Table": "Table 2"
+          },
+          {
+            "Property_Name": "Yield_Strength",
+            "Value": 376.0,
+            "Value_StdDev": 14.0,
+            "Unit": "MPa",
+            "Test_Condition": {
+              "Loading_Mode": "Tension",
+              "Crosshead_Speed": "5 mm/min",
+              "Specimen_Dimensions": "125 mm long, 12.5 mm wide, 7.5 mm thick, gage length 29 mm",
+              "Standard": "ASTM standards for metallic tensile test specimen",
+              "Specimen_State": "sintered at 1285 C"
+            },
+            "Data_Source": "table",
+            "Source_Table": "Table 5"
+          },
+          {
+            "Property_Name": "Ultimate_Tensile_Strength",
+            "Value": 644.0,
+            "Value_StdDev": 16.0,
+            "Unit": "MPa",
+            "Test_Condition": {
+              "Loading_Mode": "Tension",
+              "Crosshead_Speed": "5 mm/min",
+              "Specimen_State": "sintered at 1285 C"
+            },
+            "Data_Source": "table",
+            "Source_Table": "Table 5"
+          },
+          {
+            "Property_Name": "Elongation",
+            "Value": 47.0,
+            "Value_StdDev": 2.7,
+            "Unit": "%",
+            "Test_Condition": {
+              "Loading_Mode": "Tension",
+              "Specimen_State": "sintered at 1285 C"
+            },
+            "Note": "Original text does not distinguish uniform vs total elongation; classified as Elongation_Total per Structural supplement rule",
+            "Data_Source": "table",
+            "Source_Table": "Table 5"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "GA_1300",
+      "Sample_ID": "GA sintered 1300C",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 2",
+        "Table 4",
+        "Section 3.3"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Ni-based superalloy",
+          "Material_Name_Raw": "Alloy 625",
+          "Note": "Same GA powder as Item GA_1225."
+        },
+        "Processing": {
+          "Process_Category": "Binder Jet Printing + Sintering",
+          "Process_Text": {
+            "simplified": "GA powder -> Binder jet printing -> Curing 175 C -> Vacuum sintering 1300 C / 4 h -> Furnace cooling",
+            "original": "GA powder binder jet printed using an M-Flex ExOne printer, cured at 175 C in a JPW furnace, then sintered in a Lindberg tube furnace in an alumina powder bed under vacuum at 1300 C for 4 h."
+          },
+          "Stages": {
+            "Stage4_Sintering": {
+              "Holding_Temperature_Original": "1300 C",
+              "Holding_Temperature_K": 1573.15,
+              "Holding_Time_h": 4,
+              "Atmosphere": "vacuum"
+            }
+          },
+          "Note": "Stages 1-3 shared with GA_1225."
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "GA sample sintered at 1300 C displayed consolidation and elemental segregation at grain boundaries due to liquid phase sintering. Average grain size 106 +/- 27 um, average pore size 2.6 +/- 0.4 um.",
+            "simplified": "Near-fully dense; equiaxed grains; liquid phase sintering; elemental segregation at grain boundaries"
+          },
+          "Main_Phase": {
+            "Phase_Name": "gamma-Ni (FCC matrix)",
+            "Crystal_Structure": "FCC"
+          },
+          "Grain_Size": {
+            "Value": 106.0,
+            "Value_StdDev": 27.0,
+            "Unit": "um",
+            "Method": "ImageJ analysis",
+            "Data_Source": "table"
+          },
+          "Grain_Size_ASTM": {
+            "Value_Range": "2.5-3.5",
+            "Unit": "ASTM G",
+            "Method": "ASTM E-112-13",
+            "Data_Source": "table"
+          },
+          "Pore_Size": {
+            "Value": 2.6,
+            "Value_StdDev": 0.4,
+            "Unit": "um",
+            "Data_Source": "table"
+          },
+          "Relative_Density": {
+            "Value": 99.2,
+            "Unit": "%",
+            "Data_Source": "text",
+            "Note": "From text: maximum GA sample density of 99.2%"
+          },
+          "Lattice_Parameter": {
+            "Value": 3.5784,
+            "Unit": "Angstrom",
+            "Data_Source": "table",
+            "Source_Table": "Table 4, GA sintered at 1300 C"
+          },
+          "Data_Source": "table"
+        },
+        "Properties": [
+          {
+            "Property_Name": "Hardness",
+            "Value": 201.0,
+            "Value_StdDev": 6.0,
+            "Unit": "HV0.1",
+            "Test_Condition": {
+              "Load_gf": 100,
+              "Dwell_Time_s": 10
+            },
+            "Data_Source": "table",
+            "Source_Table": "Table 2"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "GA_1285_aged",
+      "Sample_ID": "GA sintered 1285C + aged 745C/20h",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 4",
+        "Table 5",
+        "Fig. 5c-d",
+        "Fig. 8",
+        "Section 3.5",
+        "Section 3.6"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Ni-based superalloy",
+          "Material_Name_Raw": "Alloy 625",
+          "Note": "Same GA powder as Item GA_1225."
+        },
+        "Processing": {
+          "Process_Category": "Binder Jet Printing + Sintering + Aging",
+          "Process_Text": {
+            "original": "GA sample sintered at 1285 C for 4 h, solution treated at 1150 C for 2 h, aged at 745 C for 20 h.",
+            "simplified": "GA powder -> Binder jet printing -> Curing 175 C -> Vacuum sintering 1285 C / 4 h -> Solution treatment 1150 C / 2 h -> Aging 745 C / 20 h"
+          },
+          "Stages": {
+            "Stage1_Powder_Production": {
+              "Method": "Nitrogen gas atomization",
+              "Supplier": "Carpenter Technology Corporation"
+            },
+            "Stage2_Printing": {
+              "Method": "Binder jet printing",
+              "Equipment_Reference": "M-Flex ExOne binder jet printer"
+            },
+            "Stage3_Curing": {
+              "Temperature_Original": "175 C",
+              "Temperature_K": 448.15,
+              "Equipment": "JPW Design & Manufacturing furnace"
+            },
+            "Stage4_Sintering": {
+              "Holding_Temperature_Original": "1285 C",
+              "Holding_Temperature_K": 1558.15,
+              "Holding_Time_h": 4,
+              "Atmosphere": "vacuum",
+              "Equipment": "Lindberg tube furnace"
+            },
+            "Stage5_Solution_Treatment": {
+              "Temperature_Original": "1150 C",
+              "Temperature_K": 1423.15,
+              "Holding_Time_h": 2,
+              "Note": "Solution treatment applied to highest density samples"
+            },
+            "Stage6_Aging": {
+              "Temperature_Original": "745 C",
+              "Temperature_K": 1018.15,
+              "Holding_Time_h": 20,
+              "Note": "Aging treatment"
+            }
+          },
+          "Equipment": [
+            {
+              "Name": "M-Flex ExOne binder jet printer",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "JPW Design & Manufacturing furnace",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Lindberg tube furnace",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "JEOL JSM 6510 SEM with EDS",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "PANanalytical EMPYREAN diffractometer",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Microtrac S3500 tri-laser diffraction particle analyzer",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "TA Instruments Q600 DSC",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Bruker SkyScan1272 micro-CT scanner",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "OHAUS AX324 precision balance",
+              "Category": "Testing"
+            },
+            {
+              "Name": "ImageJ image analysis software",
+              "Category": "Software"
+            },
+            {
+              "Name": "Struers Tegramin-25 automatic system",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Keyence digital optical microscope",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "LECO TC600 Oxygen/Nitrogen Analyzer",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "LECO CS844 Carbon/Sulfur Analyzer",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Leco LM 800 microhardness tester",
+              "Category": "Testing"
+            },
+            {
+              "Name": "MTS 880",
+              "Category": "Testing"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Aged GA samples formed two kinds of precipitates: at grain boundaries, mainly composed of Mo, Nb and C and 2.5-4.0 um in size; within grains, mainly composed of C, Nb, Mo, Cr and Ni and 0.5-1.0 um in size. These precipitates were identified as MC and M23C6 carbides.",
+            "simplified": "Near-fully dense; MC and M23C6 carbide precipitates at grain boundaries (2.5-4.0 um) and within grains (0.5-1.0 um); gamma-Ni FCC matrix; delta-Ni3Nb; Cr2O3"
+          },
+          "Main_Phase": {
+            "Phase_Name": "gamma-Ni (FCC matrix)",
+            "Crystal_Structure": "FCC"
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "MC carbide",
+              "Crystal_Structure": "undefined",
+              "Size_Range": "2.5-4.0 um (at grain boundaries); 0.5-1.0 um (within grains)",
+              "Note": "Formed during aging; at grain boundaries composed of Mo, Nb, C; within grains composed of C, Nb, Mo, Cr, Ni"
+            },
+            {
+              "Phase_Name": "M23C6 carbide",
+              "Crystal_Structure": "FCC",
+              "Note": "Formed during aging based on morphology and chemistry"
+            },
+            {
+              "Phase_Name": "delta-Ni3Nb",
+              "Crystal_Structure": "Orthorhombic",
+              "Note": "Peak intensity increased in aged samples compared to only sintered"
+            },
+            {
+              "Phase_Name": "Cr2O3",
+              "Crystal_Structure": "Corundum (Rhombohedral)",
+              "Note": "Chromium oxide detected by XRD"
+            }
+          ],
+          "Grain_Size": {
+            "Value": 89.0,
+            "Value_StdDev": 21.0,
+            "Unit": "um",
+            "Note": "Grain size from sintering stage; no density change after aging per text. Value from Table 2 for GA sintered at 1285 C.",
+            "Data_Source": "table"
+          },
+          "Relative_Density": {
+            "Value": 99.2,
+            "Unit": "%",
+            "Note": "No density change after solution treatment and aging per text"
+          },
+          "Lattice_Parameter": {
+            "Value": 3.5741,
+            "Unit": "Angstrom",
+            "Data_Source": "table",
+            "Source_Table": "Table 4, GA sintered at 1285 C and aged at 745 C for 20 h"
+          },
+          "Local_Phase_Composition_EDS": {
+            "Source": "Table 3, Fig. 5c-d",
+            "Points": [
+              {
+                "Point": 7,
+                "Description": "Matrix (GA aged)",
+                "C": 0,
+                "O": 0,
+                "Mo": 0.8,
+                "Nb": 3.2,
+                "Ni": 65.4,
+                "Cr": 20.1,
+                "Mn": 0.3,
+                "Fe": 0.3,
+                "Unit": "wt%"
+              },
+              {
+                "Point": 8,
+                "Description": "Carbide at grain boundary (GA aged)",
+                "C": 27.6,
+                "O": 2.6,
+                "Mo": 35.3,
+                "Nb": 25.9,
+                "Ni": 4.3,
+                "Cr": 2.8,
+                "Mn": 1.0,
+                "Fe": 0.9,
+                "Unit": "wt%",
+                "Size": "2.5-4.0 um"
+              },
+              {
+                "Point": 9,
+                "Description": "Carbide at grain boundary (GA aged)",
+                "C": 31.4,
+                "O": 1.5,
+                "Mo": 32.8,
+                "Nb": 28.7,
+                "Ni": 3.2,
+                "Cr": 1.5,
+                "Mn": 0.4,
+                "Fe": 0.5,
+                "Unit": "wt%",
+                "Size": "2.5-4.0 um"
+              },
+              {
+                "Point": 10,
+                "Description": "Carbide within grain (GA aged)",
+                "C": 39.1,
+                "O": 1.0,
+                "Mo": 14.6,
+                "Nb": 37.7,
+                "Ni": 3.0,
+                "Cr": 3.1,
+                "Mn": 0.2,
+                "Fe": 1.3,
+                "Unit": "wt%",
+                "Size": "0.5-1.0 um"
+              },
+              {
+                "Point": 11,
+                "Description": "Carbide within grain (GA aged)",
+                "C": 33.5,
+                "O": 1.8,
+                "Mo": 11.7,
+                "Nb": 34.0,
+                "Ni": 6.2,
+                "Cr": 11.8,
+                "Mn": 0.3,
+                "Fe": 0.7,
+                "Unit": "wt%",
+                "Size": "0.5-1.0 um"
+              }
+            ]
+          },
+          "Data_Source": "table"
+        },
+        "Properties": [
+          {
+            "Property_Name": "Hardness",
+            "Value": 327.0,
+            "Value_StdDev": 7.0,
+            "Unit": "HV0.1",
+            "Test_Condition": {
+              "Load_gf": 100,
+              "Dwell_Time_s": 10
+            },
+            "Data_Source": "table",
+            "Source_Table": "Table 5"
+          },
+          {
+            "Property_Name": "Yield_Strength",
+            "Value": 394.0,
+            "Value_StdDev": 15.0,
+            "Unit": "MPa",
+            "Test_Condition": {
+              "Loading_Mode": "Tension",
+              "Crosshead_Speed": "5 mm/min",
+              "Specimen_Dimensions": "125 mm long, 12.5 mm wide, 7.5 mm thick, gage length 29 mm",
+              "Standard": "ASTM standards for metallic tensile test specimen",
+              "Specimen_State": "sintered at 1285 C and aged at 745 C for 20 h"
+            },
+            "Data_Source": "table",
+            "Source_Table": "Table 5"
+          },
+          {
+            "Property_Name": "Ultimate_Tensile_Strength",
+            "Value": 718.0,
+            "Value_StdDev": 14.0,
+            "Unit": "MPa",
+            "Test_Condition": {
+              "Loading_Mode": "Tension",
+              "Specimen_State": "sintered at 1285 C and aged at 745 C for 20 h"
+            },
+            "Data_Source": "table",
+            "Source_Table": "Table 5"
+          },
+          {
+            "Property_Name": "Elongation",
+            "Value": 29.1,
+            "Value_StdDev": 3.1,
+            "Unit": "%",
+            "Test_Condition": {
+              "Loading_Mode": "Tension",
+              "Specimen_State": "sintered at 1285 C and aged at 745 C for 20 h"
+            },
+            "Note": "Original text does not distinguish uniform vs total elongation; classified as Elongation_Total per Structural supplement rule",
+            "Data_Source": "table",
+            "Source_Table": "Table 5"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "WA_1225",
+      "Sample_ID": "WA sintered 1225C",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 1",
+        "Table 2",
+        "Fig. 4a",
+        "Section 3.3"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Ni-based superalloy",
+          "Material_Name_Raw": "Alloy 625",
+          "Nominal_Composition": {
+            "Ni": ">58",
+            "Cr": "20-23",
+            "Fe": "<5",
+            "Nb": "3.1-4.1",
+            "Mo": "8-10",
+            "Al": "<0.4",
+            "Ti": "<0.4",
+            "Co": "<1.0",
+            "Mn": "<0.5",
+            "Si": "<0.5",
+            "Unit": "wt%",
+            "Source": "Table 1, nominal composition"
+          },
+          "Provided_Composition": {
+            "Ni": "Balance",
+            "Cr": 21.8,
+            "Fe": 3.6,
+            "Nb": 3.5,
+            "Mo": 9.3,
+            "Al": "<0.4",
+            "Ti": "<0.4",
+            "Co": "<1.0",
+            "Mn": 0.4,
+            "Unit": "wt%",
+            "Source": "Table 1, WA powder (provided)"
+          },
+          "Measured_Composition": {
+            "Ni": "Balance",
+            "Cr": 16.9,
+            "Fe": 3.7,
+            "Nb": 3.7,
+            "Mo": 8.7,
+            "Al": 0.05,
+            "Ti": 0.16,
+            "Co": 0.62,
+            "Mn": 0.8,
+            "Si": 0.7,
+            "Method": "EDS",
+            "Unit": "wt%",
+            "Source": "Table 1, WA powder (EDS)"
+          },
+          "Oxygen_Content_As_Received": {
+            "WA": 1.9,
+            "Unit": "wt%",
+            "Source": "Table 1"
+          },
+          "Carbon_Content_As_Received": {
+            "WA": 0.09,
+            "Unit": "wt%",
+            "Source": "Table 1"
+          },
+          "Note": "O and C content higher in WA than GA powder.",
+          "Oxygen_Content_Printed_Cured": {
+            "WA": 1.43,
+            "Unit": "wt%",
+            "Source": "Table 1"
+          }
+        },
+        "Processing": {
+          "Process_Category": "Binder Jet Printing + Sintering",
+          "Process_Text": {
+            "original": "Water atomized (WA) nickel-based alloy 625 powders were binder jet printed using an M-Flex ExOne binder jet printer, cured at 175 C, and sintered at 1225 C for 4 h under vacuum.",
+            "simplified": "WA powder -> Binder jet printing -> Curing 175 C -> Vacuum sintering 1225 C / 4 h -> Furnace cooling"
+          },
+          "Stages": {
+            "Stage1_Powder_Production": {
+              "Method": "Water atomization",
+              "Supplier": "HAI Advanced Material Specialists, Inc."
+            },
+            "Stage2_Printing": {
+              "Method": "Binder jet printing",
+              "Equipment_Reference": "M-Flex ExOne binder jet printer"
+            },
+            "Stage3_Curing": {
+              "Temperature_Original": "175 C",
+              "Temperature_K": 448.15,
+              "Equipment": "JPW Design & Manufacturing furnace"
+            },
+            "Stage4_Sintering": {
+              "Holding_Temperature_Original": "1225 C",
+              "Holding_Temperature_K": 1498.15,
+              "Holding_Time_h": 4,
+              "Atmosphere": "vacuum",
+              "Equipment": "Lindberg tube furnace"
+            }
+          },
+          "Equipment": [
+            {
+              "Name": "M-Flex ExOne binder jet printer",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "JPW Design & Manufacturing furnace",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Lindberg tube furnace",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "JEOL JSM 6510 SEM with EDS",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "PANanalytical EMPYREAN diffractometer",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Microtrac S3500 tri-laser diffraction particle analyzer",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "TA Instruments Q600 DSC",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Bruker SkyScan1272 micro-CT scanner",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "OHAUS AX324 precision balance",
+              "Category": "Testing"
+            },
+            {
+              "Name": "ImageJ image analysis software",
+              "Category": "Software"
+            },
+            {
+              "Name": "Struers Tegramin-25 automatic system",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Keyence digital optical microscope",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "LECO TC600 Oxygen/Nitrogen Analyzer",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "LECO CS844 Carbon/Sulfur Analyzer",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Leco LM 800 microhardness tester",
+              "Category": "Testing"
+            },
+            {
+              "Name": "MTS 880",
+              "Category": "Testing"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "WA samples sintered at 1225 C had a large number of pores. Bright precipitates at grain boundaries identified as carbide precipitates.",
+            "simplified": "Large number of pores; carbide precipitates at grain boundaries"
+          },
+          "Main_Phase": {
+            "Phase_Name": "gamma-Ni (FCC matrix)",
+            "Crystal_Structure": "FCC"
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "MC carbide",
+              "Crystal_Structure": "undefined",
+              "Note": "Carbide precipitates at grain boundaries"
+            },
+            {
+              "Phase_Name": "delta-Ni3Nb",
+              "Crystal_Structure": "Orthorhombic",
+              "Note": "Detected as double XRD peak at ~51.5 degrees"
+            }
+          ],
+          "Grain_Size": {
+            "Value": 80.0,
+            "Value_StdDev": 25.0,
+            "Unit": "um",
+            "Method": "ImageJ analysis",
+            "Data_Source": "table"
+          },
+          "Grain_Size_ASTM": {
+            "Value_Range": "3.5-5.5",
+            "Unit": "ASTM G",
+            "Method": "ASTM E-112-13",
+            "Data_Source": "table"
+          },
+          "Pore_Size": {
+            "Value": 20.0,
+            "Value_StdDev": 7.0,
+            "Unit": "um",
+            "Data_Source": "table"
+          },
+          "Lattice_Parameter": {
+            "Value": 3.5639,
+            "Unit": "Angstrom",
+            "Data_Source": "table",
+            "Source_Table": "Table 4, WA sintered at 1225 C"
+          },
+          "Data_Source": "table"
+        },
+        "Properties": [
+          {
+            "Property_Name": "Hardness",
+            "Value": 149.0,
+            "Value_StdDev": 12.0,
+            "Unit": "HV0.1",
+            "Test_Condition": {
+              "Load_gf": 100,
+              "Dwell_Time_s": 10
+            },
+            "Data_Source": "table",
+            "Source_Table": "Table 2"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "WA_1240",
+      "Sample_ID": "WA sintered 1240C",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 2",
+        "Section 3.3"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Ni-based superalloy",
+          "Material_Name_Raw": "Alloy 625",
+          "Note": "Same WA powder as Item WA_1225."
+        },
+        "Processing": {
+          "Process_Category": "Binder Jet Printing + Sintering",
+          "Process_Text": {
+            "simplified": "WA powder -> Binder jet printing -> Curing 175 C -> Vacuum sintering 1240 C / 4 h -> Furnace cooling",
+            "original": "WA powder binder jet printed using an M-Flex ExOne printer, cured at 175 C in a JPW furnace, then sintered in a Lindberg tube furnace in an alumina powder bed under vacuum at 1240 C for 4 h."
+          },
+          "Stages": {
+            "Stage4_Sintering": {
+              "Holding_Temperature_Original": "1240 C",
+              "Holding_Temperature_K": 1513.15,
+              "Holding_Time_h": 4,
+              "Atmosphere": "vacuum"
+            }
+          },
+          "Note": "Stages 1-3 shared with WA_1225."
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "WA samples sintered at 1240 C had pores present at all sintering temperatures with bright precipitates at grain boundaries.",
+            "simplified": "Pores present; carbide precipitates at grain boundaries"
+          },
+          "Main_Phase": {
+            "Phase_Name": "gamma-Ni (FCC matrix)",
+            "Crystal_Structure": "FCC"
+          },
+          "Grain_Size": {
+            "Value": 83.0,
+            "Value_StdDev": 25.0,
+            "Unit": "um",
+            "Method": "ImageJ analysis",
+            "Data_Source": "table"
+          },
+          "Grain_Size_ASTM": {
+            "Value_Range": "3.5-5.0",
+            "Unit": "ASTM G",
+            "Method": "ASTM E-112-13",
+            "Data_Source": "table"
+          },
+          "Pore_Size": {
+            "Value": 20.0,
+            "Value_StdDev": 6.0,
+            "Unit": "um",
+            "Data_Source": "table"
+          },
+          "Data_Source": "table"
+        },
+        "Properties": [
+          {
+            "Property_Name": "Hardness",
+            "Value": 163.0,
+            "Value_StdDev": 11.0,
+            "Unit": "HV0.1",
+            "Test_Condition": {
+              "Load_gf": 100,
+              "Dwell_Time_s": 10
+            },
+            "Data_Source": "table",
+            "Source_Table": "Table 2"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "WA_1255",
+      "Sample_ID": "WA sintered 1255C",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 2",
+        "Section 3.3"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Ni-based superalloy",
+          "Material_Name_Raw": "Alloy 625",
+          "Note": "Same WA powder as Item WA_1225."
+        },
+        "Processing": {
+          "Process_Category": "Binder Jet Printing + Sintering",
+          "Process_Text": {
+            "simplified": "WA powder -> Binder jet printing -> Curing 175 C -> Vacuum sintering 1255 C / 4 h -> Furnace cooling",
+            "original": "WA powder binder jet printed using an M-Flex ExOne printer, cured at 175 C in a JPW furnace, then sintered in a Lindberg tube furnace in an alumina powder bed under vacuum at 1255 C for 4 h."
+          },
+          "Stages": {
+            "Stage4_Sintering": {
+              "Holding_Temperature_Original": "1255 C",
+              "Holding_Temperature_K": 1528.15,
+              "Holding_Time_h": 4,
+              "Atmosphere": "vacuum"
+            }
+          },
+          "Note": "Stages 1-3 shared with WA_1225."
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "WA samples sintered at >= 1255 C led to higher segregation of alloying elements at grain boundaries since super-solidus liquid phase sintering was active (solidus 1253 C).",
+            "simplified": "Super-solidus liquid phase sintering active; elemental segregation at grain boundaries; pores present"
+          },
+          "Main_Phase": {
+            "Phase_Name": "gamma-Ni (FCC matrix)",
+            "Crystal_Structure": "FCC"
+          },
+          "Grain_Size": {
+            "Value": 86.0,
+            "Value_StdDev": 25.0,
+            "Unit": "um",
+            "Method": "ImageJ analysis",
+            "Data_Source": "table"
+          },
+          "Grain_Size_ASTM": {
+            "Value_Range": "3.0-5.0",
+            "Unit": "ASTM G",
+            "Method": "ASTM E-112-13",
+            "Data_Source": "table"
+          },
+          "Pore_Size": {
+            "Value": 20.0,
+            "Value_StdDev": 7.0,
+            "Unit": "um",
+            "Data_Source": "table"
+          },
+          "Data_Source": "table"
+        },
+        "Properties": [
+          {
+            "Property_Name": "Hardness",
+            "Value": 183.0,
+            "Value_StdDev": 7.0,
+            "Unit": "HV0.1",
+            "Test_Condition": {
+              "Load_gf": 100,
+              "Dwell_Time_s": 10
+            },
+            "Data_Source": "table",
+            "Source_Table": "Table 2"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "WA_1270",
+      "Sample_ID": "WA sintered 1270C",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 2",
+        "Table 4",
+        "Table 5",
+        "Fig. 8",
+        "Section 3.3",
+        "Section 3.6"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Ni-based superalloy",
+          "Material_Name_Raw": "Alloy 625",
+          "Oxygen_Content_As_Received": {
+            "WA": 1.9,
+            "Unit": "wt%",
+            "Source": "Table 1"
+          },
+          "Carbon_Content_As_Received": {
+            "WA": 0.09,
+            "Unit": "wt%",
+            "Source": "Table 1"
+          },
+          "Oxygen_Content_Printed_Cured": {
+            "WA": 1.43,
+            "Unit": "wt%",
+            "Source": "Table 1"
+          },
+          "Note": "Same WA powder as Item WA_1225. See WA_1225 for Nominal, Provided, and EDS Measured composition. Oxygen and carbon content included here."
+        },
+        "Processing": {
+          "Process_Category": "Binder Jet Printing + Sintering",
+          "Process_Text": {
+            "original": "WA powder binder jet printed, cured at 175 C, sintered at 1270 C for 4 h under vacuum.",
+            "simplified": "WA powder -> Binder jet printing -> Curing 175 C -> Vacuum sintering 1270 C / 4 h -> Furnace cooling"
+          },
+          "Stages": {
+            "Stage1_Powder_Production": {
+              "Method": "Water atomization",
+              "Supplier": "HAI Advanced Material Specialists, Inc."
+            },
+            "Stage2_Printing": {
+              "Method": "Binder jet printing",
+              "Equipment_Reference": "M-Flex ExOne binder jet printer"
+            },
+            "Stage3_Curing": {
+              "Temperature_Original": "175 C",
+              "Temperature_K": 448.15,
+              "Equipment": "JPW Design & Manufacturing furnace"
+            },
+            "Stage4_Sintering": {
+              "Holding_Temperature_Original": "1270 C",
+              "Holding_Temperature_K": 1543.15,
+              "Holding_Time_h": 4,
+              "Atmosphere": "vacuum",
+              "Equipment": "Lindberg tube furnace"
+            }
+          },
+          "Equipment": [
+            {
+              "Name": "M-Flex ExOne binder jet printer",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "JPW Design & Manufacturing furnace",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Lindberg tube furnace",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "JEOL JSM 6510 SEM with EDS",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "PANanalytical EMPYREAN diffractometer",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Microtrac S3500 tri-laser diffraction particle analyzer",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "TA Instruments Q600 DSC",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Bruker SkyScan1272 micro-CT scanner",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "OHAUS AX324 precision balance",
+              "Category": "Testing"
+            },
+            {
+              "Name": "ImageJ image analysis software",
+              "Category": "Software"
+            },
+            {
+              "Name": "Struers Tegramin-25 automatic system",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Keyence digital optical microscope",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "LECO TC600 Oxygen/Nitrogen Analyzer",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "LECO CS844 Carbon/Sulfur Analyzer",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Leco LM 800 microhardness tester",
+              "Category": "Testing"
+            },
+            {
+              "Name": "MTS 880",
+              "Category": "Testing"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "WA samples sintered at 1270 C reached maximum relative density of 95%. Pores present at all sintering temperatures. Higher segregation of alloying elements at grain boundaries due to super-solidus liquid phase sintering active at >= 1255 C.",
+            "simplified": "Maximum density 95%; pores still present; carbide and oxide precipitates at grain boundaries; liquid phase sintering active"
+          },
+          "Main_Phase": {
+            "Phase_Name": "gamma-Ni (FCC matrix)",
+            "Crystal_Structure": "FCC"
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "MC carbide",
+              "Crystal_Structure": "undefined",
+              "Note": "Carbide precipitates at grain boundaries"
+            },
+            {
+              "Phase_Name": "M6C carbide",
+              "Crystal_Structure": "undefined",
+              "Note": "Film-like MC and M6C at grain boundaries"
+            },
+            {
+              "Phase_Name": "delta-Ni3Nb",
+              "Crystal_Structure": "Orthorhombic",
+              "Note": "XRD double peak at ~51.5 degrees"
+            },
+            {
+              "Phase_Name": "Cr2O3",
+              "Crystal_Structure": "Corundum (Rhombohedral)",
+              "Note": "Chromium oxide detected by XRD"
+            }
+          ],
+          "Grain_Size": {
+            "Value": 88.0,
+            "Value_StdDev": 26.0,
+            "Unit": "um",
+            "Method": "ImageJ analysis",
+            "Note": "From abstract: grain sizes of WA samples at highest density were 88 +/- 26 um",
+            "Data_Source": "table"
+          },
+          "Grain_Size_ASTM": {
+            "Value_Range": "3.0-5.0",
+            "Unit": "ASTM G",
+            "Method": "ASTM E-112-13",
+            "Data_Source": "table"
+          },
+          "Pore_Size": {
+            "Value": 21.0,
+            "Value_StdDev": 9.0,
+            "Unit": "um",
+            "Data_Source": "table"
+          },
+          "Relative_Density": {
+            "Value": 95.0,
+            "Unit": "%",
+            "Data_Source": "text",
+            "Note": "WA samples sintered at 1270 C reached maximum relative density of 95%"
+          },
+          "Data_Source": "table"
+        },
+        "Properties": [
+          {
+            "Property_Name": "Hardness",
+            "Value": 191.0,
+            "Value_StdDev": 7.0,
+            "Unit": "HV0.1",
+            "Test_Condition": {
+              "Load_gf": 100,
+              "Dwell_Time_s": 10
+            },
+            "Data_Source": "table",
+            "Source_Table": "Table 2"
+          },
+          {
+            "Property_Name": "Yield_Strength",
+            "Value": 287.0,
+            "Value_StdDev": 11.0,
+            "Unit": "MPa",
+            "Test_Condition": {
+              "Loading_Mode": "Tension",
+              "Crosshead_Speed": "5 mm/min",
+              "Specimen_Dimensions": "125 mm long, 12.5 mm wide, 7.5 mm thick, gage length 29 mm",
+              "Standard": "ASTM standards for metallic tensile test specimen",
+              "Specimen_State": "sintered at 1270 C"
+            },
+            "Data_Source": "table",
+            "Source_Table": "Table 5"
+          },
+          {
+            "Property_Name": "Ultimate_Tensile_Strength",
+            "Value": 386.0,
+            "Value_StdDev": 15.0,
+            "Unit": "MPa",
+            "Test_Condition": {
+              "Loading_Mode": "Tension",
+              "Specimen_State": "sintered at 1270 C"
+            },
+            "Data_Source": "table",
+            "Source_Table": "Table 5"
+          },
+          {
+            "Property_Name": "Elongation",
+            "Value": 11.6,
+            "Value_StdDev": 2.2,
+            "Unit": "%",
+            "Test_Condition": {
+              "Loading_Mode": "Tension",
+              "Specimen_State": "sintered at 1270 C"
+            },
+            "Note": "Original text does not distinguish uniform vs total elongation; classified as Elongation_Total per Structural supplement rule",
+            "Data_Source": "table",
+            "Source_Table": "Table 5"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "WA_1285",
+      "Sample_ID": "WA sintered 1285C",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 2",
+        "Section 3.3"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Ni-based superalloy",
+          "Material_Name_Raw": "Alloy 625",
+          "Note": "Same WA powder as Item WA_1225."
+        },
+        "Processing": {
+          "Process_Category": "Binder Jet Printing + Sintering",
+          "Process_Text": {
+            "simplified": "WA powder -> Binder jet printing -> Curing 175 C -> Vacuum sintering 1285 C / 4 h -> Furnace cooling",
+            "original": "WA powder binder jet printed using an M-Flex ExOne printer, cured at 175 C in a JPW furnace, then sintered in a Lindberg tube furnace in an alumina powder bed under vacuum at 1285 C for 4 h."
+          },
+          "Stages": {
+            "Stage4_Sintering": {
+              "Holding_Temperature_Original": "1285 C",
+              "Holding_Temperature_K": 1558.15,
+              "Holding_Time_h": 4,
+              "Atmosphere": "vacuum"
+            }
+          },
+          "Note": "Stages 1-3 shared with WA_1225."
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "WA samples sintered at 1285 C: pores still present; surface melting caused low density alumina to adhere to powder surface; density dropped slightly compared to 1270 C.",
+            "simplified": "Pores still present; surface melting; alumina contamination; density slightly decreased"
+          },
+          "Main_Phase": {
+            "Phase_Name": "gamma-Ni (FCC matrix)",
+            "Crystal_Structure": "FCC"
+          },
+          "Grain_Size": {
+            "Value": 91.0,
+            "Value_StdDev": 26.0,
+            "Unit": "um",
+            "Method": "ImageJ analysis",
+            "Data_Source": "table"
+          },
+          "Grain_Size_ASTM": {
+            "Value_Range": "3.0-4.5",
+            "Unit": "ASTM G",
+            "Method": "ASTM E-112-13",
+            "Data_Source": "table"
+          },
+          "Pore_Size": {
+            "Value": 22.0,
+            "Value_StdDev": 11.0,
+            "Unit": "um",
+            "Data_Source": "table"
+          },
+          "Data_Source": "table"
+        },
+        "Properties": [
+          {
+            "Property_Name": "Hardness",
+            "Value": 174.0,
+            "Value_StdDev": 9.0,
+            "Unit": "HV0.1",
+            "Test_Condition": {
+              "Load_gf": 100,
+              "Dwell_Time_s": 10
+            },
+            "Data_Source": "table",
+            "Source_Table": "Table 2"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "WA_1300",
+      "Sample_ID": "WA sintered 1300C",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 2",
+        "Table 3",
+        "Table 4",
+        "Fig. 5a",
+        "Section 3.3"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Ni-based superalloy",
+          "Material_Name_Raw": "Alloy 625",
+          "Note": "Same WA powder as Item WA_1225."
+        },
+        "Processing": {
+          "Process_Category": "Binder Jet Printing + Sintering",
+          "Process_Text": {
+            "simplified": "WA powder -> Binder jet printing -> Curing 175 C -> Vacuum sintering 1300 C / 4 h -> Furnace cooling",
+            "original": "WA powder binder jet printed using an M-Flex ExOne printer, cured at 175 C in a JPW furnace, then sintered in a Lindberg tube furnace in an alumina powder bed under vacuum at 1300 C for 4 h."
+          },
+          "Stages": {
+            "Stage4_Sintering": {
+              "Holding_Temperature_Original": "1300 C",
+              "Holding_Temperature_K": 1573.15,
+              "Holding_Time_h": 4,
+              "Atmosphere": "vacuum"
+            }
+          },
+          "Note": "Stages 1-3 shared with WA_1225."
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "WA samples sintered at 1300 C: pores still present, precipitates increased along grain boundaries. Bright areas (point 2) mainly composed of Nb, Mo and C, suggesting MC carbide formation.",
+            "simplified": "Pores still present; MC carbides at grain boundaries; surface oxides; elemental segregation"
+          },
+          "Main_Phase": {
+            "Phase_Name": "gamma-Ni (FCC matrix)",
+            "Crystal_Structure": "FCC"
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "MC carbide",
+              "Crystal_Structure": "undefined",
+              "Note": "Bright areas at grain boundaries composed mainly of Nb, Mo and C"
+            },
+            {
+              "Phase_Name": "M6C carbide",
+              "Crystal_Structure": "undefined",
+              "Note": "Film-like MC and M6C at grain boundaries from carbon segregation"
+            },
+            {
+              "Phase_Name": "delta-Ni3Nb",
+              "Crystal_Structure": "Orthorhombic",
+              "Note": "Amount increased, peaks overlap with gamma-Ni"
+            },
+            {
+              "Phase_Name": "Cr2O3",
+              "Crystal_Structure": "Corundum (Rhombohedral)",
+              "Note": "Amount decreased in samples sintered at 1300 C due to evaporation as CrO3 gas above 1000 C"
+            }
+          ],
+          "Grain_Size": {
+            "Value": 94.0,
+            "Value_StdDev": 27.0,
+            "Unit": "um",
+            "Method": "ImageJ analysis",
+            "Data_Source": "table"
+          },
+          "Grain_Size_ASTM": {
+            "Value_Range": "3.0-4.5",
+            "Unit": "ASTM G",
+            "Method": "ASTM E-112-13",
+            "Data_Source": "table"
+          },
+          "Pore_Size": {
+            "Value": 23.0,
+            "Value_StdDev": 10.0,
+            "Unit": "um",
+            "Data_Source": "table"
+          },
+          "Lattice_Parameter": {
+            "Value": 3.5621,
+            "Unit": "Angstrom",
+            "Data_Source": "table",
+            "Source_Table": "Table 4, WA sintered at 1300 C"
+          },
+          "Local_Phase_Composition_EDS": {
+            "Source": "Table 3, Fig. 5a",
+            "Points": [
+              {
+                "Point": 2,
+                "Description": "Carbide at grain boundary (WA 1300 C)",
+                "C": 11.7,
+                "O": 3.4,
+                "Mo": 32.1,
+                "Nb": 5.4,
+                "Ni": 37.9,
+                "Cr": 7.4,
+                "Mn": 0.4,
+                "Fe": 1.7,
+                "Unit": "wt%"
+              }
+            ]
+          },
+          "Data_Source": "table"
+        },
+        "Properties": [
+          {
+            "Property_Name": "Hardness",
+            "Value": 170.0,
+            "Value_StdDev": 7.0,
+            "Unit": "HV0.1",
+            "Test_Condition": {
+              "Load_gf": 100,
+              "Dwell_Time_s": 10
+            },
+            "Data_Source": "table",
+            "Source_Table": "Table 2"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "WA_1270_aged",
+      "Sample_ID": "WA sintered 1270C + aged 745C/20h",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 4",
+        "Table 5",
+        "Fig. 5e",
+        "Section 3.5",
+        "Section 3.6"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Ni-based superalloy",
+          "Material_Name_Raw": "Alloy 625",
+          "Note": "Same WA powder as Item WA_1225."
+        },
+        "Processing": {
+          "Process_Category": "Binder Jet Printing + Sintering + Aging",
+          "Process_Text": {
+            "original": "WA sample sintered at 1270 C for 4 h, solution treated at 1150 C for 2 h, aged at 745 C for 20 h.",
+            "simplified": "WA powder -> Binder jet printing -> Curing 175 C -> Vacuum sintering 1270 C / 4 h -> Solution treatment 1150 C / 2 h -> Aging 745 C / 20 h"
+          },
+          "Stages": {
+            "Stage1_Powder_Production": {
+              "Method": "Water atomization",
+              "Supplier": "HAI Advanced Material Specialists, Inc."
+            },
+            "Stage2_Printing": {
+              "Method": "Binder jet printing",
+              "Equipment_Reference": "M-Flex ExOne binder jet printer"
+            },
+            "Stage3_Curing": {
+              "Temperature_Original": "175 C",
+              "Temperature_K": 448.15,
+              "Equipment": "JPW Design & Manufacturing furnace"
+            },
+            "Stage4_Sintering": {
+              "Holding_Temperature_Original": "1270 C",
+              "Holding_Temperature_K": 1543.15,
+              "Holding_Time_h": 4,
+              "Atmosphere": "vacuum",
+              "Equipment": "Lindberg tube furnace"
+            },
+            "Stage5_Solution_Treatment": {
+              "Temperature_Original": "1150 C",
+              "Temperature_K": 1423.15,
+              "Holding_Time_h": 2
+            },
+            "Stage6_Aging": {
+              "Temperature_Original": "745 C",
+              "Temperature_K": 1018.15,
+              "Holding_Time_h": 20
+            }
+          },
+          "Equipment": [
+            {
+              "Name": "M-Flex ExOne binder jet printer",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "JPW Design & Manufacturing furnace",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Lindberg tube furnace",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "JEOL JSM 6510 SEM with EDS",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "PANanalytical EMPYREAN diffractometer",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Microtrac S3500 tri-laser diffraction particle analyzer",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "TA Instruments Q600 DSC",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Bruker SkyScan1272 micro-CT scanner",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "OHAUS AX324 precision balance",
+              "Category": "Testing"
+            },
+            {
+              "Name": "ImageJ image analysis software",
+              "Category": "Software"
+            },
+            {
+              "Name": "Struers Tegramin-25 automatic system",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Keyence digital optical microscope",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "LECO TC600 Oxygen/Nitrogen Analyzer",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "LECO CS844 Carbon/Sulfur Analyzer",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Leco LM 800 microhardness tester",
+              "Category": "Testing"
+            },
+            {
+              "Name": "MTS 880",
+              "Category": "Testing"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "WA aged sample shows various precipitates: white precipitates at grain boundaries mainly composed of Ni, Mo, Cr and C; oval shaped precipitates at grain boundaries with Ni, Mo, Cr indicating M6C/MC/M23C6 carbides or Laves; precipitates within grains with mainly Ni, Mo and Cr suggesting M6C/MC/M23C6 carbides or Laves.",
+            "simplified": "Large amount of carbides and oxides at grain boundaries; Cr, Nb, Mo depleted zones; precipitates within grains; M6C/MC/M23C6 carbides or Laves"
+          },
+          "Main_Phase": {
+            "Phase_Name": "gamma-Ni (FCC matrix)",
+            "Crystal_Structure": "FCC"
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "MC carbide",
+              "Crystal_Structure": "undefined",
+              "Note": "White precipitates at grain boundaries composed of Ni, Mo, Cr, C; strong carbide forming elements as high as 87.6%"
+            },
+            {
+              "Phase_Name": "M6C / M23C6 carbide / Laves",
+              "Crystal_Structure": "undefined",
+              "Note": "Oval shaped precipitates at grain boundaries and within grains; cannot be unambiguously distinguished"
+            },
+            {
+              "Phase_Name": "delta-Ni3Nb",
+              "Crystal_Structure": "Orthorhombic",
+              "Note": "Peak intensity increased in aged samples"
+            },
+            {
+              "Phase_Name": "Cr2O3",
+              "Crystal_Structure": "Corundum (Rhombohedral)",
+              "Note": "Chromium oxide detected by XRD"
+            }
+          ],
+          "Grain_Size": {
+            "Value": 88.0,
+            "Value_StdDev": 26.0,
+            "Unit": "um",
+            "Note": "Grain size from sintering stage; no density change after aging per text. Value from Table 2 for WA sintered at 1270 C.",
+            "Data_Source": "table"
+          },
+          "Relative_Density": {
+            "Value": 95.0,
+            "Unit": "%",
+            "Note": "No density change after solution treatment and aging per text"
+          },
+          "Lattice_Parameter": {
+            "Value": 3.5583,
+            "Unit": "Angstrom",
+            "Data_Source": "table",
+            "Source_Table": "Table 4, WA sintered at 1270 C and aged at 745 C for 20 h"
+          },
+          "Local_Phase_Composition_EDS": {
+            "Source": "Table 3, Fig. 5e",
+            "Points": [
+              {
+                "Point": 12,
+                "Description": "Oval precipitates at grain boundary (WA aged)",
+                "C": 12.9,
+                "O": 1.7,
+                "Mo": 35.2,
+                "Nb": 5.2,
+                "Ni": 35.9,
+                "Cr": 7.8,
+                "Mn": 0.2,
+                "Fe": 1.1,
+                "Unit": "wt%"
+              },
+              {
+                "Point": 13,
+                "Description": "Precipitates within grain (WA aged)",
+                "C": 13.1,
+                "O": 2.9,
+                "Mo": 20.7,
+                "Nb": 2.8,
+                "Ni": 50.6,
+                "Cr": 7.7,
+                "Mn": 0.7,
+                "Fe": 1.5,
+                "Unit": "wt%"
+              }
+            ]
+          },
+          "Data_Source": "table"
+        },
+        "Properties": [
+          {
+            "Property_Name": "Hardness",
+            "Value": 225.0,
+            "Value_StdDev": 6.0,
+            "Unit": "HV0.1",
+            "Test_Condition": {
+              "Load_gf": 100,
+              "Dwell_Time_s": 10
+            },
+            "Data_Source": "table",
+            "Source_Table": "Table 5"
+          },
+          {
+            "Property_Name": "Yield_Strength",
+            "Value": 298.0,
+            "Value_StdDev": 13.0,
+            "Unit": "MPa",
+            "Test_Condition": {
+              "Loading_Mode": "Tension",
+              "Crosshead_Speed": "5 mm/min",
+              "Specimen_Dimensions": "125 mm long, 12.5 mm wide, 7.5 mm thick, gage length 29 mm",
+              "Standard": "ASTM standards for metallic tensile test specimen",
+              "Specimen_State": "sintered at 1270 C and aged at 745 C for 20 h"
+            },
+            "Data_Source": "table",
+            "Source_Table": "Table 5"
+          },
+          {
+            "Property_Name": "Ultimate_Tensile_Strength",
+            "Value": 405.0,
+            "Value_StdDev": 14.0,
+            "Unit": "MPa",
+            "Test_Condition": {
+              "Loading_Mode": "Tension",
+              "Specimen_State": "sintered at 1270 C and aged at 745 C for 20 h"
+            },
+            "Data_Source": "table",
+            "Source_Table": "Table 5"
+          },
+          {
+            "Property_Name": "Elongation",
+            "Value": 7.5,
+            "Value_StdDev": 1.9,
+            "Unit": "%",
+            "Test_Condition": {
+              "Loading_Mode": "Tension",
+              "Specimen_State": "sintered at 1270 C and aged at 745 C for 20 h"
+            },
+            "Note": "Original text does not distinguish uniform vs total elongation; classified as Elongation_Total per Structural supplement rule",
+            "Data_Source": "table",
+            "Source_Table": "Table 5"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "Cast_625_Ref",
+      "Sample_ID": "Cast alloy 625 (reference)",
+      "Role": "Comparator",
+      "Data_Nature": "Literature_Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 5",
+        "Ref [6]"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Ni-based superalloy",
+          "Material_Name_Raw": "Cast alloy 625"
+        },
+        "Processing": {
+          "Process_Category": "Casting",
+          "Note": "Cast alloy 625; no processing details given in this paper"
+        },
+        "Properties": [
+          {
+            "Property_Name": "Yield_Strength",
+            "Value": 350.0,
+            "Unit": "MPa",
+            "Data_Source": "table",
+            "Source_Table": "Table 5",
+            "Note": "Literature data from Ref [6]"
+          },
+          {
+            "Property_Name": "Ultimate_Tensile_Strength",
+            "Value": 710.0,
+            "Unit": "MPa",
+            "Data_Source": "table",
+            "Source_Table": "Table 5",
+            "Note": "Literature data from Ref [6]"
+          },
+          {
+            "Property_Name": "Elongation",
+            "Value": 48.0,
+            "Unit": "%",
+            "Data_Source": "table",
+            "Source_Table": "Table 5",
+            "Note": "Literature data from Ref [6]"
+          },
+          {
+            "Property_Name": "Hardness",
+            "Value": 200.0,
+            "Unit": "HV0.1",
+            "Data_Source": "table",
+            "Source_Table": "Table 5",
+            "Note": "Literature data from Ref [6]"
+          }
+        ]
+      }
+    }
+  ]
+}

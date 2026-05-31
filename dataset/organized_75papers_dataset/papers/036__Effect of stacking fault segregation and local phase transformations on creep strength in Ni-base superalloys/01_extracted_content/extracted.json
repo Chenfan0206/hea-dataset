@@ -1,0 +1,727 @@
+{
+  "Paper_Metadata": {
+    "Paper_Title": "Effect of stacking fault segregation and local phase transformations on creep strength in Ni-base superalloys",
+    "DOI": null,
+    "Note": "DOI not found in OCR text"
+  },
+  "Paper_Routing": {
+    "base_material": "Metals",
+    "application": "Structural",
+    "research_paradigm": "Hybrid",
+    "Supplements_Loaded": [
+      "directions/base/Metals.txt",
+      "directions/application/Structural.txt",
+      "directions/paradigm/Hybrid.txt"
+    ],
+    "Patch_Tags": [],
+    "Needs_Mixed_Routing_Check": false,
+    "Mixed_Signals": []
+  },
+  "items": [
+    {
+      "Item_ID": "LSHR_exp",
+      "Sample_ID": "LSHR",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 2.1: sample preparation and creep test",
+        "Table 1: average alloy composition",
+        "Table 2: gamma prime precipitate size and volume fraction",
+        "Fig. 3: tensile creep curves",
+        "Section 3.3: chemical analysis of stacking faults in LSHR",
+        "Section 4.2: chi phase transformation along SISFs in LSHR"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Ni-base superalloy",
+          "Material_Name_Raw": "LSHR",
+          "Nominal_Composition": {
+            "Unit": "wt%",
+            "Ni": "Balance",
+            "Cr": 12.5,
+            "Co": 20.4,
+            "Al": 3.5,
+            "Ti": 3.5,
+            "Nb": 1.5,
+            "Mo": 2.7,
+            "Ta": 1.5,
+            "W": 4.3,
+            "Zr": 0.05,
+            "B": 0.03,
+            "C": 0.045,
+            "Note": "Balance; normalized ≈ 49.975 wt% (Data_Nature: Computed)"
+          },
+          "Data_Source": "table",
+          "Source_Location": "Table 1"
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "LSHR was hot isostatic pressed, extruded, and isothermally forged into a flat pancake. Equivalent rectangular blanks were first subsolvus solution heat treated. They were then supersolvus solution heat treated at 1171 °C using the same fixture and air cooled at the same average rate of approximately 72 °C/min. LSHR was aging heat treated at 855 °C for 4 h plus 775 °C for 8 h.",
+            "simplified": "Powder metallurgy (HIP + extrusion + isothermal forging) → subsolvus solution → supersolvus solution at 1171 °C → air cool (~72 °C/min) → aging at 855 °C/4 h + 775 °C/8 h"
+          },
+          "Stages": {
+            "Stage1_Powder_Consolidation": {
+              "Method": "Hot isostatic pressing, extrusion, isothermal forging",
+              "Product_Form": "Flat pancake"
+            },
+            "Stage2_Subsolvus_Solution": {
+              "Method": "Subsolvus solution heat treatment"
+            },
+            "Stage3_Supersolvus_Solution": {
+              "Temperature": {
+                "Value": 1444.15,
+                "Unit": "K",
+                "Original_Values": "1171 °C"
+              },
+              "Cooling": {
+                "Method": "Air cooling",
+                "Rate": {
+                  "Value": 72,
+                  "Unit": "°C/min",
+                  "Note": "approximately"
+                }
+              }
+            },
+            "Stage4_Aging_1": {
+              "Type": "Aging",
+              "Temperature": {
+                "Value": 1128.15,
+                "Unit": "K",
+                "Original_Values": "855 °C"
+              },
+              "Time": {
+                "Value": 4,
+                "Unit": "h"
+              }
+            },
+            "Stage5_Aging_2": {
+              "Type": "Aging",
+              "Temperature": {
+                "Value": 1048.15,
+                "Unit": "K",
+                "Original_Values": "775 °C"
+              },
+              "Time": {
+                "Value": 8,
+                "Unit": "h"
+              }
+            }
+          },
+          "Equipment": [
+            {
+              "Name": "Zeiss Auriga SEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "TSL EBSD software (EDAX)",
+              "Category": "Software"
+            },
+            {
+              "Name": "FEI Talos TEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Titan3 (probe corrected) TEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Super-X EDS detectors",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "FEI Velox",
+              "Category": "Software"
+            },
+            {
+              "Name": "Bruker Esprit",
+              "Category": "Software"
+            },
+            {
+              "Name": "μSTEM",
+              "Category": "Software"
+            },
+            {
+              "Name": "EDM",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Metcut creep testing system",
+              "Category": "Testing"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "The average grain diameter was calculated to be 59.9 μm in LSHR when excluding twin boundaries. The final volume fraction measurements between the two alloys fall within the measurement error. Secondary γ′ VF = 43.52 ± 1.7%, tertiary γ′ VF = 2.27 ± 0.1%, total γ′ VF = 45.80 ± 1.8%. Average secondary γ′ size = 154 nm, average tertiary γ′ size = 15.9 nm. Tertiary γ particles present inside the γ′ precipitates. Along SISFs: Co and W segregation with Cr segregation; Ni and Al depletion; Co₃W χ phase (D0₁₉) confirmed by HAADF-STEM simulation. Along SESFs: Co, Cr, Nb, Mo, Ti, and W segregation; Al and Ni depletion; η phase formation observed on some sections. Microtwin: 6 atomic layer thick microtwin observed inside γ′ precipitate; γ phase segregation (Co, Cr, Mo rich; Ni, Al, Ti depleted) with W segregated to twin interfaces.",
+            "simplified": "γ matrix (FCC) + γ′ precipitates (L1₂) + stacking fault local phases (χ-D0₁₉ along SISFs; η along SESFs). Grain size ~60 μm (excluding twins). Total γ′ VF ~46%."
+          },
+          "Main_Phase": {
+            "Phase_Name": "γ matrix",
+            "Crystal_Structure": "FCC",
+            "Grain_Size": {
+              "Value": 59.9,
+              "Unit": "μm",
+              "Type": "diameter",
+              "Note": "Average grain diameter excluding twin boundaries",
+              "Data_Source": "text"
+            }
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "γ′ precipitate (Ni₃Al-based)",
+              "Crystal_Structure": "L1₂",
+              "Volume_Fraction": {
+                "Secondary": {
+                  "Value": 43.52,
+                  "Value_StdDev": 1.7,
+                  "Unit": "vol%",
+                  "Data_Source": "table",
+                  "Source_Location": "Table 2"
+                },
+                "Tertiary": {
+                  "Value": 2.27,
+                  "Value_StdDev": 0.1,
+                  "Unit": "vol%",
+                  "Data_Source": "table",
+                  "Source_Location": "Table 2"
+                },
+                "Total": {
+                  "Value": 45.8,
+                  "Value_StdDev": 1.8,
+                  "Unit": "vol%",
+                  "Data_Source": "table",
+                  "Source_Location": "Table 2"
+                }
+              },
+              "Size": {
+                "Average_Secondary": {
+                  "Value": 154,
+                  "Unit": "nm",
+                  "Type": "diameter",
+                  "Data_Source": "table",
+                  "Source_Location": "Table 2"
+                },
+                "Average_Tertiary": {
+                  "Value": 15.9,
+                  "Unit": "nm",
+                  "Type": "diameter",
+                  "Data_Source": "table",
+                  "Source_Location": "Table 2"
+                }
+              }
+            },
+            {
+              "Phase_Name": "χ phase (Co₃W)",
+              "Crystal_Structure": "D0₁₉",
+              "Location": "Along SISFs within γ′ precipitates",
+              "Note": "Confirmed by HAADF-STEM simulation using μSTEM program; Co and W segregation with ordered zig-zag contrast"
+            },
+            {
+              "Phase_Name": "η phase",
+              "Crystal_Structure": "D0₂₄",
+              "Location": "Along some sections of SESFs within γ′ precipitates",
+              "Note": "Ti and Nb segregation detected along SESFs; formation appeared inconsistent along entire fault"
+            }
+          ],
+          "Advanced_Quantitative_Features": {
+            "Creep_deformation_modes": {
+              "SISF_segregation_in_LSHR": {
+                "Segregating_elements": [
+                  "Co",
+                  "W",
+                  "Cr"
+                ],
+                "Depleted_elements": [
+                  "Ni",
+                  "Al"
+                ],
+                "Local_phase": "χ (Co₃W, D0₁₉)",
+                "Data_Source": "text",
+                "Note": "From EDS and HAADF-STEM analysis"
+              },
+              "SESF_segregation_in_LSHR": {
+                "Segregating_elements": [
+                  "Co",
+                  "W",
+                  "Ti",
+                  "Nb",
+                  "Mo"
+                ],
+                "Depleted_elements": [
+                  "Al",
+                  "Ni"
+                ],
+                "Local_phase": "η phase (partial), W-rich γ (partial)",
+                "Data_Source": "text"
+              },
+              "Microtwin_segregation_in_LSHR": {
+                "Segregating_elements": [
+                  "Co",
+                  "Cr",
+                  "Mo"
+                ],
+                "Interface_segregation": [
+                  "W"
+                ],
+                "Depleted_elements": [
+                  "Ni",
+                  "Al",
+                  "Ti"
+                ],
+                "Thickness": "6 atomic layers",
+                "Data_Source": "text",
+                "Source_Location": "Section 4.1, Fig. 10"
+              }
+            },
+            "W_diffusion_rate_SISF_SESF": {
+              "Value": 0.08,
+              "Unit": "nm/s",
+              "Data_Source": "table",
+              "Source_Location": "Table 3",
+              "Note": "Rate limiting diffusion process during creep for LSHR"
+            },
+            "gamma_gamma_prime_lattice_misfit": {
+              "Value": 0.241,
+              "Unit": "%",
+              "Data_Source": "text",
+              "Source_Location": "Section 4.1",
+              "Note": "From Gabb et al. [42], experimentally measured by X-ray diffraction; Literature_Experimental"
+            },
+            "total_Mo_plus_W_in_gamma_phase": {
+              "Value": 9.1,
+              "Unit": "wt%",
+              "Data_Source": "text",
+              "Source_Location": "Section 4.1",
+              "Note": "From Gabb et al. [42]; Literature_Experimental"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Type": "Creep",
+            "Loading_Mode": "Tension",
+            "Test_Temperature_K": {
+              "Value": 1033.15,
+              "Original_Values": "760 °C"
+            },
+            "Test_Condition": {
+              "Stress": {
+                "Value": 552,
+                "Unit": "MPa"
+              },
+              "Interruption_Criterion": "approximately 0.3% plastic strain"
+            },
+            "Creep_Strain_Rate_Note": "LSHR consistently displayed superior creep properties compared to ME3 at 760 °C and 552 MPa",
+            "Data_Source": "text",
+            "Source_Location": "Fig. 3, Section 3.1",
+            "Note": "Specific strain rate values not provided in text or tables; only qualitative comparison shown in Fig. 3. Two different creep tests conducted (T1: 66 h, T2: 118 h). Additional creep tests performed and stopped at same creep test times for comparison."
+          },
+          {
+            "Property_Type": "Room_Temperature_Tensile",
+            "Loading_Mode": "Tension",
+            "Test_Temperature_K": {
+              "Value": 293.15,
+              "Original_Values": "room temperature"
+            },
+            "Note": "0.2% yield strength and ultimate tensile strength differed by less than 15 MPa from ME3 for both values; exact values not provided",
+            "Data_Source": "text",
+            "Source_Location": "Section 4.1"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "ME3_exp",
+      "Sample_ID": "ME3",
+      "Role": "Comparator",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 2.1: sample preparation and creep test",
+        "Table 1: average alloy composition",
+        "Table 2: gamma prime precipitate size and volume fraction",
+        "Fig. 3: tensile creep curves"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Ni-base superalloy",
+          "Material_Name_Raw": "ME3",
+          "Nominal_Composition": {
+            "Unit": "wt%",
+            "Ni": "Balance",
+            "Cr": 13,
+            "Co": 21,
+            "Al": 3.4,
+            "Ti": 3.8,
+            "Nb": 0.8,
+            "Mo": 3.7,
+            "Ta": 2.4,
+            "W": 2.1,
+            "Zr": 0.05,
+            "B": 0.02,
+            "C": 0.05,
+            "Note": "Balance; normalized ≈ 49.68 wt% (Data_Nature: Computed)"
+          },
+          "Data_Source": "table",
+          "Source_Location": "Table 1"
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "ME3 was hot compacted, extruded, and isothermally forged into a flat pancake. Equivalent rectangular blanks were first subsolvus solution heat treated. They were then supersolvus solution heat treated at 1171 °C using the same fixture and air cooled at the same average rate of approximately 72 °C/min. ME3 was aging heat treated at 843 °C for 4 h plus 760 °C for 8 h.",
+            "simplified": "Powder metallurgy (hot compaction + extrusion + isothermal forging) → subsolvus solution → supersolvus solution at 1171 °C → air cool (~72 °C/min) → aging at 843 °C/4 h + 760 °C/8 h"
+          },
+          "Stages": {
+            "Stage1_Powder_Consolidation": {
+              "Method": "Hot compacting, extrusion, isothermal forging",
+              "Product_Form": "Flat pancake"
+            },
+            "Stage2_Subsolvus_Solution": {
+              "Method": "Subsolvus solution heat treatment"
+            },
+            "Stage3_Supersolvus_Solution": {
+              "Temperature": {
+                "Value": 1444.15,
+                "Unit": "K",
+                "Original_Values": "1171 °C"
+              },
+              "Cooling": {
+                "Method": "Air cooling",
+                "Rate": {
+                  "Value": 72,
+                  "Unit": "°C/min",
+                  "Note": "approximately"
+                }
+              }
+            },
+            "Stage4_Aging_1": {
+              "Type": "Aging",
+              "Temperature": {
+                "Value": 1116.15,
+                "Unit": "K",
+                "Original_Values": "843 °C"
+              },
+              "Time": {
+                "Value": 4,
+                "Unit": "h"
+              }
+            },
+            "Stage5_Aging_2": {
+              "Type": "Aging",
+              "Temperature": {
+                "Value": 1033.15,
+                "Unit": "K",
+                "Original_Values": "760 °C"
+              },
+              "Time": {
+                "Value": 8,
+                "Unit": "h"
+              }
+            }
+          },
+          "Equipment": [
+            {
+              "Name": "Zeiss Auriga SEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "TSL EBSD software (EDAX)",
+              "Category": "Software"
+            },
+            {
+              "Name": "FEI Talos TEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Titan3 (probe corrected) TEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Super-X EDS detectors",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "FEI Velox",
+              "Category": "Software"
+            },
+            {
+              "Name": "Bruker Esprit",
+              "Category": "Software"
+            },
+            {
+              "Name": "EDM",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Metcut creep testing system",
+              "Category": "Testing"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "The average grain diameter was calculated to be 59.2 μm in ME3 when excluding twin boundaries. Secondary γ′ VF = 43.97 ± 0.6%, tertiary γ′ VF = 2.65 ± 0.4%, total γ′ VF = 46.61 ± 1.0%. Average secondary γ′ size = 135 nm, average tertiary γ′ size = 15.4 nm. Along SISFs in ME3: Co and Cr segregation and Ni and Al depletion; lack of ordered contrast suggests γ′-to-γ phase transformation. Along SESFs: higher contrast observed but lack of ordered contrast suggesting γ′-to-γ phase transformation.",
+            "simplified": "γ matrix (FCC) + γ′ precipitates (L1₂) + γ-like local phases along stacking faults. Grain size ~59 μm (excluding twins). Total γ′ VF ~47%."
+          },
+          "Main_Phase": {
+            "Phase_Name": "γ matrix",
+            "Crystal_Structure": "FCC",
+            "Grain_Size": {
+              "Value": 59.2,
+              "Unit": "μm",
+              "Type": "diameter",
+              "Note": "Average grain diameter excluding twin boundaries",
+              "Data_Source": "text"
+            }
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "γ′ precipitate (Ni₃Al-based)",
+              "Crystal_Structure": "L1₂",
+              "Volume_Fraction": {
+                "Secondary": {
+                  "Value": 43.97,
+                  "Value_StdDev": 0.6,
+                  "Unit": "vol%",
+                  "Data_Source": "table",
+                  "Source_Location": "Table 2"
+                },
+                "Tertiary": {
+                  "Value": 2.65,
+                  "Value_StdDev": 0.4,
+                  "Unit": "vol%",
+                  "Data_Source": "table",
+                  "Source_Location": "Table 2"
+                },
+                "Total": {
+                  "Value": 46.61,
+                  "Value_StdDev": 1.0,
+                  "Unit": "vol%",
+                  "Data_Source": "table",
+                  "Source_Location": "Table 2"
+                }
+              },
+              "Size": {
+                "Average_Secondary": {
+                  "Value": 135,
+                  "Unit": "nm",
+                  "Type": "diameter",
+                  "Data_Source": "table",
+                  "Source_Location": "Table 2"
+                },
+                "Average_Tertiary": {
+                  "Value": 15.4,
+                  "Unit": "nm",
+                  "Type": "diameter",
+                  "Data_Source": "table",
+                  "Source_Location": "Table 2"
+                }
+              }
+            },
+            {
+              "Phase_Name": "γ phase (local, Co and Cr-rich)",
+              "Crystal_Structure": "FCC",
+              "Location": "Along SISFs and SESFs within γ′ precipitates",
+              "Note": "Inferred from Co and Cr segregation with Ni and Al depletion; lack of ordered contrast in HAADF-STEM"
+            }
+          ],
+          "Advanced_Quantitative_Features": {
+            "Creep_deformation_modes": {
+              "SISF_segregation_in_ME3": {
+                "Segregating_elements": [
+                  "Co",
+                  "Cr"
+                ],
+                "Depleted_elements": [
+                  "Ni",
+                  "Al"
+                ],
+                "Local_phase": "γ-like (Co, Cr rich)",
+                "Data_Source": "text",
+                "Note": "Confirmed by EDS in this study and consistent with previous reports [28,29]"
+              },
+              "SESF_segregation_in_ME3": {
+                "Segregating_elements": [
+                  "Co",
+                  "Cr"
+                ],
+                "Depleted_elements": [
+                  "Ni",
+                  "Al"
+                ],
+                "Local_phase": "γ-like",
+                "Data_Source": "text",
+                "Note": "Consistent with earlier study by Smith et al. [34]"
+              }
+            },
+            "Cottrell_atmosphere_rate": {
+              "Value": 0.2,
+              "Unit": "nm/s",
+              "Data_Source": "table",
+              "Source_Location": "Table 3",
+              "Note": "Cr-rich Cottrell atmosphere (5 at.% Cr); rate limiting diffusion mechanism in ME3"
+            },
+            "Cr_diffusion_rate": {
+              "Value": 0.6,
+              "Unit": "nm/s",
+              "Data_Source": "table",
+              "Source_Location": "Table 3",
+              "Note": "Cr diffusion for γ phase transformation in ME3"
+            },
+            "Re_ordering_rate": {
+              "Value": 28.1,
+              "Unit": "nm/s",
+              "Data_Source": "table",
+              "Source_Location": "Table 3",
+              "Note": "Ni/Al interdiffusivity re-ordering rate; general process applicable to both alloys"
+            },
+            "gamma_gamma_prime_lattice_misfit": {
+              "Value": 0.234,
+              "Unit": "%",
+              "Data_Source": "text",
+              "Source_Location": "Section 4.1",
+              "Note": "From Gabb et al. [42]; Literature_Experimental"
+            },
+            "total_Mo_plus_W_in_gamma_phase": {
+              "Value": 8.8,
+              "Unit": "wt%",
+              "Data_Source": "text",
+              "Source_Location": "Section 4.1",
+              "Note": "From Gabb et al. [42]; Literature_Experimental"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Type": "Creep",
+            "Loading_Mode": "Tension",
+            "Test_Temperature_K": {
+              "Value": 1033.15,
+              "Original_Values": "760 °C"
+            },
+            "Test_Condition": {
+              "Stress": {
+                "Value": 552,
+                "Unit": "MPa"
+              },
+              "Interruption_Criterion": "approximately 0.3% plastic strain"
+            },
+            "Creep_Strain_Rate_Note": "ME3 displayed inferior creep properties compared to LSHR at 760 °C and 552 MPa",
+            "Data_Source": "text",
+            "Source_Location": "Fig. 3, Section 3.1",
+            "Note": "Specific strain rate values not provided in text or tables; qualitative comparison from Fig. 3. Two different creep tests conducted (T1: 66 h, T2: 118 h)."
+          },
+          {
+            "Property_Type": "Room_Temperature_Tensile",
+            "Loading_Mode": "Tension",
+            "Test_Temperature_K": {
+              "Value": 293.15,
+              "Original_Values": "room temperature"
+            },
+            "Note": "0.2% yield strength and ultimate tensile strength differed by less than 15 MPa from LSHR for both values; exact values not provided",
+            "Data_Source": "text",
+            "Source_Location": "Section 4.1"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "DFT_VASP_Ni3Al_APB",
+      "Sample_ID": "Ni₃Al APB cell",
+      "Role": "Target",
+      "Data_Nature": "Computed",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 4.3: DFT calculations on Ni₃Al cells with APB",
+        "Fig. 12: Ni₃Al cell configuration",
+        "Fig. 13: APB energy changes with different segregating elements"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Ni-base superalloy model system",
+          "Material_Name_Raw": "Ni₃Al",
+          "Model_System": {
+            "Base_cell": "144 atom Ni₃Al",
+            "Defect": "Anti-phase boundary (APB) through middle of cell",
+            "Boundary_Conditions": "Periodic"
+          },
+          "Data_Source": "text"
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "144 atom Ni₃Al cells with an APB through their middle were created using CrystalMaker X. The cells were created with periodic boundary conditions. Each cell included an impurity of Cr, Mo, or W either on the APB plane or several {111} planes away from the fault plane. Both cells were relaxed until convergence using the DFT code VASP. Structural relaxations were performed using functionals incorporating the generalized gradient approximation (GGA) and the Projector Augmented Wave (PAW) approach. All calculations were performed using a Gamma-centered 1×1×1 Monkhorst-Pack k point grid.",
+            "simplified": "DFT VASP calculations on 144-atom Ni₃Al supercell with APB; GGA-PBE functional; PAW pseudopotentials; Gamma-centered 1×1×1 k-point grid; impurity (Cr/Mo/W) on or away from APB plane"
+          },
+          "Simulation_Metadata": {
+            "Code": "VASP",
+            "Method": "DFT",
+            "Functional": "GGA (generalized gradient approximation)",
+            "Pseudopotential": "PAW (Projector Augmented Wave)",
+            "K_Point_Grid": "Gamma-centered 1×1×1 Monkhorst-Pack",
+            "Cell_Size": "144 atoms",
+            "Convergence": "Relaxed until convergence",
+            "Structure_Builder": "CrystalMaker X"
+          },
+          "Equipment": [
+            {
+              "Name": "VASP",
+              "Category": "Software"
+            },
+            {
+              "Name": "CrystalMaker X",
+              "Category": "Software"
+            },
+            {
+              "Name": "Ohio Supercomputer Center",
+              "Category": "Preparation"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "144 atom Ni₃Al cells with an APB through their middle. Each cell included an impurity of Cr, Mo, or W either on the APB plane or several {111} planes away from the fault plane.",
+            "simplified": "Ni₃Al L1₂ supercell with APB; impurities (Cr, Mo, W) at APB or away from APB"
+          },
+          "Main_Phase": {
+            "Phase_Name": "Ni₃Al (γ′ model)",
+            "Crystal_Structure": "L1₂"
+          },
+          "Advanced_Quantitative_Features": {
+            "APB_energy_change": {
+              "Description": "Change in APB energy when Cr, Mo, or W segregate to Al-site, or Cr on Ni-site",
+              "Key_Findings": {
+                "W_on_Al_site": "Significantly raises APB energy; enhanced when 2 W atoms are nearest neighbors on APB",
+                "Mo_on_Al_site": "Significantly raises APB energy; enhanced when 2 Mo atoms are nearest neighbors on APB",
+                "Cr_on_Ni_site": "Markedly reduces APB energy",
+                "Cr_on_Al_site": "No energetic change on APB energy"
+              },
+              "Data_Source": "text",
+              "Source_Location": "Fig. 13, Section 4.3",
+              "Note": "Qualitative trends described in Section 4.3 text and supported by Fig. 13 bar chart; exact APB energy values not provided in text or table"
+            }
+          }
+        }
+      },
+      "Experiment_Link": {
+        "Related_Item_IDs": [
+          "LSHR_exp",
+          "ME3_exp"
+        ],
+        "Description": "DFT calculations support the experimental observation that W segregation along SISFs in LSHR raises APB energy, inhibiting stacking fault ribbon advancement; whereas Cr segregation in ME3 reduces or does not affect APB energy, promoting fault ribbon shear",
+        "Validation_Target": "Local phase transformation strengthening mechanism"
+      }
+    }
+  ]
+}

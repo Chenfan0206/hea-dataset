@@ -1,0 +1,804 @@
+{
+  "Paper_Metadata": {
+    "Paper_Title": "Superior corrosion resistance and its origins in an additively manufactured Co-Cr-Ni-Al-Ti high-entropy alloy with nano-lamellar precipitates",
+    "DOI": "10.1016/j.jmst.2024.12.072"
+  },
+  "Paper_Routing": {
+    "base_material": "Metals",
+    "application": "Structural",
+    "research_paradigm": "Experimental",
+    "Supplements_Loaded": [
+      "directions/base/Metals.txt",
+      "directions/application/Structural.txt",
+      "directions/paradigm/Experimental.txt"
+    ],
+    "Patch_Tags": [
+      "High_Entropy",
+      "Additive_Manufacturing"
+    ],
+    "Needs_Mixed_Routing_Check": false,
+    "Mixed_Signals": []
+  },
+  "items": [
+    {
+      "Item_ID": "Item_01_AP",
+      "Sample_ID": "As-printed Al5Ti5 HEA",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "High_Entropy",
+        "Additive_Manufacturing"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 2.1 Alloy fabrication",
+        "Section 3.1.1 Initial microstructure",
+        "Section 3.2 Overview of electrochemical behavior",
+        "Table 2"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "High-entropy alloy (HEA)",
+          "Material_Name_Raw": "Al5Ti5 HEA / Co40Cr20Ni30Al5Ti5 (at.%)",
+          "Nominal_Composition": {
+            "Type": "at%",
+            "Elements": [
+              {
+                "Element": "Co",
+                "Value": 40.0,
+                "Unit": "at%"
+              },
+              {
+                "Element": "Cr",
+                "Value": 20.0,
+                "Unit": "at%"
+              },
+              {
+                "Element": "Ni",
+                "Value": 30.0,
+                "Unit": "at%"
+              },
+              {
+                "Element": "Al",
+                "Value": 5.0,
+                "Unit": "at%"
+              },
+              {
+                "Element": "Ti",
+                "Value": 5.0,
+                "Unit": "at%"
+              }
+            ],
+            "Original_Values": "Co40Cr20Ni30Al5Ti5 (at.%)",
+            "Note": "Gas-atomized powders with average particle size 36.36 μm used as feedstock"
+          }
+        },
+        "Processing": {
+          "Process_Category": "Additive Manufacturing (LPBF/SLM)",
+          "Process_Text": {
+            "original": "The SLM was performed using a laser powder-bed-fusion (LPBF) printer (SLM-100, Guangdong Hanbang) under an argon atmosphere with optimized printing parameters (laser power: 175 W, scan speed: 1000 mm/s, layer thickness: 30 μm, hatching space: 80 μm). Small discs measuring 14 mm (diameter) and 5 mm (thickness) were cut from the as-printed rectangular plates.",
+            "simplified": "LPBF printed from gas-atomized Al5Ti5 HEA powder; no heat treatment applied (as-printed state)"
+          },
+          "Key_Params": {
+            "Stage1_Printing": {
+              "Method": "LPBF/SLM",
+              "Laser_Power_W": 175,
+              "Scan_Speed_mm_s": 1000,
+              "Layer_Thickness_μm": 30,
+              "Hatching_Space_μm": 80,
+              "Atmosphere": "Argon",
+              "Original_Values": "laser power: 175 W, scan speed: 1000 mm/s, layer thickness: 30 μm, hatching space: 80 μm"
+            }
+          },
+          "Equipment": [
+            {
+              "Name": "SLM-100 LPBF printer (Guangdong Hanbang)",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "SmartLab XRD (Rigaku)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Quanta FEG450 SEM (FEI)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "EBSD detector (EDAX Velocity, GATAN)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "2100F TEM (JEOL)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Talos F200X STEM (FEI) with Super-X EDS detector",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "LEAP 5000XR APT (CAMECA)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Scios 2 FIB/SEM dual-beam system (FEI)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "CHI 760E potentiostat",
+              "Category": "Testing"
+            },
+            {
+              "Name": "VKX3000 CLSM (Keyence)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Thermo Scientific Escalab Xi+ XPS spectrometer",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Titan Cubed Themis G2 300 (FEI) spherical aberration-corrected STEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "NanoMill Model 1040 (Fischione) argon ion beam milling equipment",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Smart Coater (JEOL) vacuum sputtering device",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "ZView software",
+              "Category": "Software"
+            },
+            {
+              "Name": "Thermo Avantage software",
+              "Category": "Software"
+            }
+          ],
+          "Note": "Equipment list covers all characterization and testing devices described in Sections 2.2-2.4; shared with Item_02 as both alloys underwent the same characterization methods per Section 2"
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "The as-printed alloy has a conventional polycrystalline morphology with an average grain size of 29.7 μm and an average KAM value of 0.85°. Cellular structures with an average size of ~400 nm prevail inside the grains. The cellular walls were decorated with a high density of dislocations, with relatively few dislocations inside. SADP verifies the single-phase FCC structure without any superlattice spots. The cellular walls are obviously enriched in Ti and slightly depleted in Co and Cr. Ni and Al show no significant partitioning behavior at the cellular walls.",
+            "simplified": "Single-phase FCC polycrystalline alloy with cellular structures (~400 nm), grain size 29.7 μm, KAM 0.85°, Ti-enriched cell walls"
+          },
+          "Main_Phase": {
+            "Phase_Name": "FCC solid solution matrix",
+            "Crystal_Structure": "FCC"
+          },
+          "Grain_Size": {
+            "Value": 29.7,
+            "Unit": "μm",
+            "Size_Type": "undefined",
+            "Note": "average grain size from EBSD IPF map; original text does not specify diameter/radius"
+          },
+          "Cellular_Structure": {
+            "Size_Value": 400,
+            "Unit": "nm",
+            "Note": "average size ~400 nm; approximate value from text",
+            "Size_Type": "undefined"
+          },
+          "Advanced_Quantitative_Features": {
+            "KAM_Value_deg": {
+              "Value": 0.85,
+              "Unit": "°",
+              "Note": "average KAM value"
+            },
+            "Lattice_Mismatch_Pct": null
+          }
+        },
+        "Properties": [
+          {
+            "Property_Category": "Electrochemical",
+            "Property_Name": "Corrosion potential E_corr",
+            "Value": -336,
+            "Value_StdDev": 9,
+            "Unit": "mV_SCE",
+            "Original_Values": "-336 ± 9 mV_SCE",
+            "Test_Condition": {
+              "Test_Temperature_Original": "room temperature",
+              "Environment": "3.5 wt.% NaCl solution",
+              "Test_Method": "Potentiodynamic polarization",
+              "Scan_Rate": "0.1 mV/s",
+              "Specimen_Preparation": "ground to 5000-grit, mirror polished with 1-μm suspension, ultrasonicated in alcohol for 5 min",
+              "Specimen_Dimensions": "14 mm diameter × 5 mm thickness discs",
+              "Exposed_Area": "1 cm²"
+            },
+            "Data_Source": "table",
+            "Data_Source_Detail": "Table 2"
+          },
+          {
+            "Property_Category": "Electrochemical",
+            "Property_Name": "Passivation current density i_pass",
+            "Value": 4.86,
+            "Value_StdDev": 0.23,
+            "Unit": "μA/cm²",
+            "Original_Values": "4.86 ± 0.23 μA/cm²",
+            "Test_Condition": {
+              "Test_Temperature_Original": "room temperature",
+              "Environment": "3.5 wt.% NaCl solution",
+              "Test_Method": "Potentiodynamic polarization",
+              "Scan_Rate": "0.1 mV/s"
+            },
+            "Data_Source": "table",
+            "Data_Source_Detail": "Table 2"
+          },
+          {
+            "Property_Category": "Electrochemical",
+            "Property_Name": "Pitting potential E_pit",
+            "Value": 355,
+            "Value_StdDev": 28,
+            "Unit": "mV_SCE",
+            "Original_Values": "355 ± 28 mV_SCE",
+            "Test_Condition": {
+              "Test_Temperature_Original": "room temperature",
+              "Environment": "3.5 wt.% NaCl solution",
+              "Test_Method": "Potentiodynamic polarization",
+              "Scan_Rate": "0.1 mV/s"
+            },
+            "Data_Source": "table",
+            "Data_Source_Detail": "Table 2"
+          },
+          {
+            "Property_Category": "Electrochemical",
+            "Property_Name": "Passive region ΔE (E_pit - E_corr)",
+            "Value": 691,
+            "Value_StdDev": 20,
+            "Unit": "mV_SCE",
+            "Original_Values": "691 ± 20 mV_SCE",
+            "Test_Condition": {
+              "Test_Temperature_Original": "room temperature",
+              "Environment": "3.5 wt.% NaCl solution",
+              "Test_Method": "Potentiodynamic polarization"
+            },
+            "Data_Source": "table",
+            "Data_Source_Detail": "Table 2"
+          },
+          {
+            "Property_Category": "Electrochemical",
+            "Property_Name": "Solution resistance R_0",
+            "Value": 3.1,
+            "Unit": "Ω·cm²",
+            "Original_Values": "3.10 Ω·cm²",
+            "Test_Condition": {
+              "Test_Temperature_Original": "room temperature",
+              "Environment": "3.5 wt.% NaCl solution",
+              "Test_Method": "EIS after OCP stabilization (3600 s)",
+              "EIS_Frequency_Range": "10⁵ to 10⁻² Hz",
+              "EIS_Excitation_Voltage": "10 mV",
+              "Analysis_Model": "Voigt measurement model / Young model"
+            },
+            "Data_Source": "table",
+            "Data_Source_Detail": "Table 3"
+          },
+          {
+            "Property_Category": "Electrochemical",
+            "Property_Name": "Effective capacitance C_eff",
+            "Value": 7.81,
+            "Unit": "μF·cm⁻²",
+            "Original_Values": "7.81 μF·cm⁻²",
+            "Test_Condition": {
+              "Test_Temperature_Original": "room temperature",
+              "Environment": "3.5 wt.% NaCl solution",
+              "Test_Method": "EIS",
+              "Analysis_Model": "Voigt measurement model / Young model"
+            },
+            "Data_Source": "table",
+            "Data_Source_Detail": "Table 3"
+          },
+          {
+            "Property_Category": "Electrochemical",
+            "Property_Name": "Polarization resistance R_p",
+            "Value": 318000,
+            "Unit": "Ω·cm²",
+            "Original_Values": "3.18 × 10⁵ Ω·cm²",
+            "Test_Condition": {
+              "Test_Temperature_Original": "room temperature",
+              "Environment": "3.5 wt.% NaCl solution",
+              "Test_Method": "EIS",
+              "Analysis_Model": "Voigt measurement model / Young model"
+            },
+            "Data_Source": "table",
+            "Data_Source_Detail": "Table 3"
+          },
+          {
+            "Property_Category": "Electrochemical",
+            "Property_Name": "Resistivity at alloy/passive film interface ρ_0",
+            "Value": 96100000000,
+            "Unit": "Ω·cm",
+            "Original_Values": "9.61 × 10¹⁰ Ω·cm",
+            "Test_Condition": {
+              "Test_Method": "Calculated from Voigt measurement model / Young model"
+            },
+            "Data_Source": "table",
+            "Data_Source_Detail": "Table 3"
+          },
+          {
+            "Property_Category": "Electrochemical",
+            "Property_Name": "Resistivity at solution/passive film interface ρ_δ",
+            "Value": 48300,
+            "Unit": "Ω·cm",
+            "Original_Values": "4.83 × 10⁴ Ω·cm",
+            "Test_Condition": {
+              "Test_Method": "Calculated from Voigt measurement model / Young model"
+            },
+            "Data_Source": "table",
+            "Data_Source_Detail": "Table 3"
+          },
+          {
+            "Property_Category": "Electrochemical",
+            "Property_Name": "Passive film thickness δ",
+            "Value": 2.72,
+            "Unit": "nm",
+            "Original_Values": "2.72 nm",
+            "Test_Condition": {
+              "Test_Method": "Calculated from C_eff via Young model"
+            },
+            "Data_Source": "table",
+            "Data_Source_Detail": "Table 3"
+          },
+          {
+            "Property_Category": "Electrochemical",
+            "Property_Name": "Characteristic distance of resistivity profile λ",
+            "Value": 0.12,
+            "Unit": "nm",
+            "Original_Values": "0.12 nm",
+            "Test_Condition": {
+              "Test_Method": "Young model fitting"
+            },
+            "Data_Source": "table",
+            "Data_Source_Detail": "Table 3"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "Item_02_Aged",
+      "Sample_ID": "Aged Al5Ti5 HEA",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "High_Entropy",
+        "Additive_Manufacturing"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 2.1 Alloy fabrication",
+        "Section 3.1.1 Initial microstructure",
+        "Section 3.1.2 Detailed compositional analysis",
+        "Table 1",
+        "Section 3.2 Overview of electrochemical behavior",
+        "Table 2",
+        "Table 3",
+        "Section 3.3 XPS characterization",
+        "Section 3.4 Comparison of pitting morphologies",
+        "Section 4.1 STEM analysis of passive films",
+        "Section 4.2 Mechanisms"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "High-entropy alloy (HEA)",
+          "Material_Name_Raw": "Al5Ti5 HEA / Co40Cr20Ni30Al5Ti5 (at.%)",
+          "Nominal_Composition": {
+            "Type": "at%",
+            "Elements": [
+              {
+                "Element": "Co",
+                "Value": 40.0,
+                "Unit": "at%"
+              },
+              {
+                "Element": "Cr",
+                "Value": 20.0,
+                "Unit": "at%"
+              },
+              {
+                "Element": "Ni",
+                "Value": 30.0,
+                "Unit": "at%"
+              },
+              {
+                "Element": "Al",
+                "Value": 5.0,
+                "Unit": "at%"
+              },
+              {
+                "Element": "Ti",
+                "Value": 5.0,
+                "Unit": "at%"
+              }
+            ],
+            "Original_Values": "Co40Cr20Ni30Al5Ti5 (at.%)",
+            "Note": "Same nominal composition as as-printed; aged after LPBF"
+          }
+        },
+        "Processing": {
+          "Process_Category": "Additive Manufacturing (LPBF/SLM) + Aging heat treatment",
+          "Process_Text": {
+            "original": "The SLM was performed using a laser powder-bed-fusion (LPBF) printer (SLM-100, Guangdong Hanbang) under an argon atmosphere with optimized printing parameters (laser power: 175 W, scan speed: 1000 mm/s, layer thickness: 30 μm, hatching space: 80 μm). Subsequently, the as-printed specimen was aged at 700 °C for 4 h to introduce the second reinforced phase, i.e., the L12 nanoprecipitates. The aging heat treatment ended with air cooling.",
+            "simplified": "LPBF printed from gas-atomized Al5Ti5 HEA powder, followed by aging at 700 °C for 4 h with air cooling"
+          },
+          "Key_Params": {
+            "Stage1_Printing": {
+              "Method": "LPBF/SLM",
+              "Laser_Power_W": 175,
+              "Scan_Speed_mm_s": 1000,
+              "Layer_Thickness_μm": 30,
+              "Hatching_Space_μm": 80,
+              "Atmosphere": "Argon",
+              "Original_Values": "laser power: 175 W, scan speed: 1000 mm/s, layer thickness: 30 μm, hatching space: 80 μm",
+              "Note": "Same printing parameters as as-printed; shared per Section 2.1"
+            },
+            "Stage2_Aging": {
+              "Method": "Aging heat treatment",
+              "Temperature_K": 973.15,
+              "Temperature_Original": "700 °C",
+              "Time_h": 4,
+              "Cooling": "Air cooling",
+              "Original_Values": "700 °C for 4 h, air cooling"
+            }
+          },
+          "Equipment": [
+            {
+              "Name": "SLM-100 LPBF printer (Guangdong Hanbang)",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "SmartLab XRD (Rigaku)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Quanta FEG450 SEM (FEI)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "EBSD detector (EDAX Velocity, GATAN)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "2100F TEM (JEOL)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Talos F200X STEM (FEI) with Super-X EDS detector",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "LEAP 5000XR APT (CAMECA)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Scios 2 FIB/SEM dual-beam system (FEI)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "CHI 760E potentiostat",
+              "Category": "Testing"
+            },
+            {
+              "Name": "VKX3000 CLSM (Keyence)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Thermo Scientific Escalab Xi+ XPS spectrometer",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Titan Cubed Themis G2 300 (FEI) spherical aberration-corrected STEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "NanoMill Model 1040 (Fischione) argon ion beam milling equipment",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Smart Coater (JEOL) vacuum sputtering device",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "ZView software",
+              "Category": "Software"
+            },
+            {
+              "Name": "Thermo Avantage software",
+              "Category": "Software"
+            }
+          ],
+          "Note": "Equipment list covers all characterization and testing devices described in Sections 2.2-2.4; shared with Item_01 as both alloys underwent the same characterization methods per Section 2"
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "The average grain size of the aged alloy is greatly reduced to 9.2 μm, and the average KAM value is also reduced to 0.67°. The discontinuous precipitation of the L12 phase was identified. Both CP and DP regions show FCC+L12 dual-phase structure. Lamellar L12 nanorods are enriched in Ni, Al, and Ti but depleted in Co and Cr. APT results show L12 phase enriched in Ni (52.8 at.%), Al (10.4 at.%), and Ti (11.7 at.%), while FCC matrix enriched in Co (49.0 at.%) and Cr (31.3 at.%). Volume fraction of L12 particles is ~37%. Lattice mismatch between FCC matrix and L12 phase is δ = 0.28%. The passive film is thin (~2.9 nm by STEM), amorphous, enriched in O and Cr.",
+            "simplified": "Aged alloy: FCC+L12 dual-phase, grain size 9.2 μm, KAM 0.67°, nano-lamellar L12 precipitates with ~37% volume fraction, coherent FCC/L12 interface with 0.28% lattice mismatch, discontinuous and continuous precipitation regions"
+          },
+          "Main_Phase": {
+            "Phase_Name": "FCC solid solution matrix",
+            "Crystal_Structure": "FCC",
+            "Composition_APT": {
+              "Type": "measured",
+              "Method": "APT",
+              "Elements": [
+                {
+                  "Element": "Co",
+                  "Value": 48.99,
+                  "Value_StdDev": 0.37,
+                  "Unit": "at%"
+                },
+                {
+                  "Element": "Cr",
+                  "Value": 31.26,
+                  "Value_StdDev": 0.35,
+                  "Unit": "at%"
+                },
+                {
+                  "Element": "Ni",
+                  "Value": 16.29,
+                  "Value_StdDev": 0.27,
+                  "Unit": "at%"
+                },
+                {
+                  "Element": "Al",
+                  "Value": 2.66,
+                  "Value_StdDev": 0.12,
+                  "Unit": "at%"
+                },
+                {
+                  "Element": "Ti",
+                  "Value": 0.8,
+                  "Value_StdDev": 0.07,
+                  "Unit": "at%"
+                }
+              ],
+              "Original_Values": "Co 48.99±0.37, Cr 31.26±0.35, Ni 16.29±0.27, Al 2.66±0.12, Ti 0.80±0.07 (at%)",
+              "Note": "Local phase composition from APT (Table 1), not bulk composition"
+            }
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "L1₂ precipitate (nano-lamellar)",
+              "Crystal_Structure": "L1₂",
+              "Volume_Fraction_Pct": 37,
+              "Volume_Fraction_Note": "approximate; ~37% calculated from lever rule plot (Fig. S2)",
+              "Morphology": "Lamellar nanorods, coherent with FCC matrix",
+              "Composition_APT": {
+                "Type": "measured",
+                "Method": "APT",
+                "Elements": [
+                  {
+                    "Element": "Co",
+                    "Value": 21.42,
+                    "Value_StdDev": 0.52,
+                    "Unit": "at%"
+                  },
+                  {
+                    "Element": "Cr",
+                    "Value": 3.58,
+                    "Value_StdDev": 0.24,
+                    "Unit": "at%"
+                  },
+                  {
+                    "Element": "Ni",
+                    "Value": 52.83,
+                    "Value_StdDev": 0.63,
+                    "Unit": "at%"
+                  },
+                  {
+                    "Element": "Al",
+                    "Value": 10.43,
+                    "Value_StdDev": 0.39,
+                    "Unit": "at%"
+                  },
+                  {
+                    "Element": "Ti",
+                    "Value": 11.75,
+                    "Value_StdDev": 0.41,
+                    "Unit": "at%"
+                  }
+                ],
+                "Original_Values": "Co 21.42±0.52, Cr 3.58±0.24, Ni 52.83±0.63, Al 10.43±0.39, Ti 11.75±0.41 (at%)",
+                "Note": "Local phase composition from APT (Table 1); enriched in Ni, Al, Ti; depleted in Co, Cr"
+              }
+            }
+          ],
+          "Grain_Size": {
+            "Value": 9.2,
+            "Unit": "μm",
+            "Size_Type": "undefined",
+            "Note": "average grain size from EBSD IPF map; significantly reduced from as-printed due to discontinuous precipitation; original text does not specify diameter/radius"
+          },
+          "Advanced_Quantitative_Features": {
+            "KAM_Value_deg": {
+              "Value": 0.67,
+              "Unit": "°",
+              "Note": "average KAM value; reduced from as-printed (0.85°) due to partial dislocation annihilation during aging"
+            },
+            "Lattice_Mismatch_Pct": {
+              "Value": 0.28,
+              "Unit": "%",
+              "Note": "between FCC matrix and L1₂ precipitates; calculated from (220) peak deconvolution"
+            },
+            "L12_Volume_Fraction_Pct": {
+              "Value": 37,
+              "Note": "approximate; ~37% calculated from lever rule plot (Fig. S2)"
+            },
+            "Passive_Film_Thickness_nm_STEM": {
+              "Value": 2.9,
+              "Note": "approximate; ~2.9 nm from STEM-HAADF image Fig. 12(a); passive film on aged alloy after potentiostatic polarization at 0.15 V_SCE for 7200 s"
+            }
+          },
+          "Note": "Passive film structure is amorphous as determined by FFT of HAADF image (Fig. 13(c)); the passive film is enriched in O and Cr, with Cr₂O₃, Al₂O₃, and TiO₂ as main constituents"
+        },
+        "Properties": [
+          {
+            "Property_Category": "Electrochemical",
+            "Property_Name": "Corrosion potential E_corr",
+            "Value": -311,
+            "Value_StdDev": 15,
+            "Unit": "mV_SCE",
+            "Original_Values": "-311 ± 15 mV_SCE",
+            "Test_Condition": {
+              "Test_Temperature_Original": "room temperature",
+              "Environment": "3.5 wt.% NaCl solution",
+              "Test_Method": "Potentiodynamic polarization",
+              "Scan_Rate": "0.1 mV/s",
+              "Specimen_Preparation": "ground to 5000-grit, mirror polished with 1-μm suspension, ultrasonicated in alcohol for 5 min",
+              "Specimen_Dimensions": "14 mm diameter × 5 mm thickness discs",
+              "Exposed_Area": "1 cm²"
+            },
+            "Data_Source": "table",
+            "Data_Source_Detail": "Table 2"
+          },
+          {
+            "Property_Category": "Electrochemical",
+            "Property_Name": "Passivation current density i_pass",
+            "Value": 4.46,
+            "Value_StdDev": 0.35,
+            "Unit": "μA/cm²",
+            "Original_Values": "4.46 ± 0.35 μA/cm²",
+            "Test_Condition": {
+              "Test_Temperature_Original": "room temperature",
+              "Environment": "3.5 wt.% NaCl solution",
+              "Test_Method": "Potentiodynamic polarization",
+              "Scan_Rate": "0.1 mV/s"
+            },
+            "Data_Source": "table",
+            "Data_Source_Detail": "Table 2"
+          },
+          {
+            "Property_Category": "Electrochemical",
+            "Property_Name": "Pitting potential E_pit",
+            "Value": 477,
+            "Value_StdDev": 34,
+            "Unit": "mV_SCE",
+            "Original_Values": "477 ± 34 mV_SCE",
+            "Test_Condition": {
+              "Test_Temperature_Original": "room temperature",
+              "Environment": "3.5 wt.% NaCl solution",
+              "Test_Method": "Potentiodynamic polarization",
+              "Scan_Rate": "0.1 mV/s"
+            },
+            "Data_Source": "table",
+            "Data_Source_Detail": "Table 2"
+          },
+          {
+            "Property_Category": "Electrochemical",
+            "Property_Name": "Passive region ΔE (E_pit - E_corr)",
+            "Value": 788,
+            "Value_StdDev": 25,
+            "Unit": "mV_SCE",
+            "Original_Values": "788 ± 25 mV_SCE",
+            "Test_Condition": {
+              "Test_Temperature_Original": "room temperature",
+              "Environment": "3.5 wt.% NaCl solution",
+              "Test_Method": "Potentiodynamic polarization"
+            },
+            "Data_Source": "table",
+            "Data_Source_Detail": "Table 2"
+          },
+          {
+            "Property_Category": "Electrochemical",
+            "Property_Name": "Solution resistance R_0",
+            "Value": 3.27,
+            "Unit": "Ω·cm²",
+            "Original_Values": "3.27 Ω·cm²",
+            "Test_Condition": {
+              "Test_Temperature_Original": "room temperature",
+              "Environment": "3.5 wt.% NaCl solution",
+              "Test_Method": "EIS after OCP stabilization (3600 s)",
+              "EIS_Frequency_Range": "10⁵ to 10⁻² Hz",
+              "EIS_Excitation_Voltage": "10 mV",
+              "Analysis_Model": "Voigt measurement model / Young model"
+            },
+            "Data_Source": "table",
+            "Data_Source_Detail": "Table 3"
+          },
+          {
+            "Property_Category": "Electrochemical",
+            "Property_Name": "Effective capacitance C_eff",
+            "Value": 5.96,
+            "Unit": "μF·cm⁻²",
+            "Original_Values": "5.96 μF·cm⁻²",
+            "Test_Condition": {
+              "Test_Temperature_Original": "room temperature",
+              "Environment": "3.5 wt.% NaCl solution",
+              "Test_Method": "EIS",
+              "Analysis_Model": "Voigt measurement model / Young model"
+            },
+            "Data_Source": "table",
+            "Data_Source_Detail": "Table 3"
+          },
+          {
+            "Property_Category": "Electrochemical",
+            "Property_Name": "Polarization resistance R_p",
+            "Value": 487000,
+            "Unit": "Ω·cm²",
+            "Original_Values": "4.87 × 10⁵ Ω·cm²",
+            "Test_Condition": {
+              "Test_Temperature_Original": "room temperature",
+              "Environment": "3.5 wt.% NaCl solution",
+              "Test_Method": "EIS",
+              "Analysis_Model": "Voigt measurement model / Young model"
+            },
+            "Data_Source": "table",
+            "Data_Source_Detail": "Table 3"
+          },
+          {
+            "Property_Category": "Electrochemical",
+            "Property_Name": "Resistivity at alloy/passive film interface ρ_0",
+            "Value": 121000000000,
+            "Unit": "Ω·cm",
+            "Original_Values": "1.21 × 10¹¹ Ω·cm",
+            "Test_Condition": {
+              "Test_Method": "Calculated from Voigt measurement model / Young model"
+            },
+            "Data_Source": "table",
+            "Data_Source_Detail": "Table 3"
+          },
+          {
+            "Property_Category": "Electrochemical",
+            "Property_Name": "Resistivity at solution/passive film interface ρ_δ",
+            "Value": 36800,
+            "Unit": "Ω·cm",
+            "Original_Values": "3.68 × 10⁴ Ω·cm",
+            "Test_Condition": {
+              "Test_Method": "Calculated from Voigt measurement model / Young model"
+            },
+            "Data_Source": "table",
+            "Data_Source_Detail": "Table 3"
+          },
+          {
+            "Property_Category": "Electrochemical",
+            "Property_Name": "Passive film thickness δ",
+            "Value": 3.56,
+            "Unit": "nm",
+            "Original_Values": "3.56 nm",
+            "Test_Condition": {
+              "Test_Method": "Calculated from C_eff via Young model"
+            },
+            "Data_Source": "table",
+            "Data_Source_Detail": "Table 3"
+          },
+          {
+            "Property_Category": "Electrochemical",
+            "Property_Name": "Characteristic distance of resistivity profile λ",
+            "Value": 0.15,
+            "Unit": "nm",
+            "Original_Values": "0.15 nm",
+            "Test_Condition": {
+              "Test_Method": "Young model fitting"
+            },
+            "Data_Source": "table",
+            "Data_Source_Detail": "Table 3"
+          }
+        ]
+      }
+    }
+  ]
+}

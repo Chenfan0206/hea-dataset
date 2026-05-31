@@ -1,0 +1,565 @@
+{
+  "Paper_Metadata": {
+    "Paper_Title": "Combining gradient structure and TRIP effect to produce austenite stainless steel with high strength and ductility",
+    "DOI": "http://dx.doi.org/10.1016/j.actamat.2016.04.045"
+  },
+  "items": [
+    {
+      "Sample_ID": "CG_AISI_304ss",
+      "Gradient_Material": false,
+      "Gradient_Group_ID": null,
+      "Composition_Info": {
+        "Role": "Reference",
+        "Alloy_Name_Raw": "AISI 304ss",
+        "Nominal_Composition": {
+          "Composition_Type": "wt%",
+          "Elements_Normalized": {
+            "C": 0.04,
+            "Si": 0.49,
+            "Mn": 1.65,
+            "Ni": 7.8,
+            "Cr": 16.8,
+            "Mo": 0.37,
+            "Fe": 72.85
+          }
+        },
+        "Measured_Composition": null,
+        "Note": "Fe calculated as balance to 100 wt% from provided values."
+      },
+      "Process_Info": {
+        "Process_Category": "Annealing",
+        "Process_Text": {
+          "original": "as-annealed AISI 304ss disks were used",
+          "simplified": "As-annealed condition"
+        },
+        "Equipment": null,
+        "Key_Params": {}
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": "equi-axial grains of austenite with an average grain size of 25 μm in the central CG layer... presence of α'-martensite with a volume fraction of ~6% in original austenite of CG samples.",
+          "simplified": "Equi-axial austenite grains with a small fraction of α'-martensite."
+        },
+        "Main_Phase": "Austenite (γ)",
+        "Precipitates": [
+          {
+            "Phase_Type": "α'-martensite",
+            "Volume_Fraction_pct": 6.0
+          }
+        ],
+        "Porosity_pct": null,
+        "Relative_Density_pct": null,
+        "Grain_Size_avg_um": 25.0,
+        "Precipitate_Size_avg_nm": null,
+        "Advanced_Quantitative_Features": {}
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Microhardness_HV",
+          "Test_Condition": "Vickers microhardness, load 25g",
+          "Value_Numeric": 2.0,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "GPa",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": "25g",
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": "Measured across the cross-section of the central CG core."
+        },
+        {
+          "Property_Name": "Yield_Strength",
+          "Test_Condition": "Uniaxial tension, strain rate 5e-4 s^{-1}",
+          "Value_Numeric": 280.0,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "MPa",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": "5e-4",
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "image",
+          "Test_Specimen": "dog-bone, gauge length 15 mm, width 3 mm",
+          "Note": "Approximate value from Fig. 1(a)."
+        },
+        {
+          "Property_Name": "Ultimate_Tensile_Strength",
+          "Test_Condition": "Uniaxial tension, strain rate 5e-4 s^{-1}",
+          "Value_Numeric": 650.0,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "MPa",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": "5e-4",
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "image",
+          "Test_Specimen": "dog-bone, gauge length 15 mm, width 3 mm",
+          "Note": "Approximate engineering UTS from Fig. 1(a)."
+        },
+        {
+          "Property_Name": "Elongation_Uniform",
+          "Test_Condition": "Uniaxial tension, strain rate 5e-4 s^{-1}",
+          "Value_Numeric": 0.45,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "%",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": "5e-4",
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "image",
+          "Test_Specimen": "dog-bone, gauge length 15 mm, width 3 mm",
+          "Note": "Uniform elongation ~45% from Fig. 1(a)."
+        }
+      ]
+    },
+    {
+      "Sample_ID": "GS_5_1_full",
+      "Gradient_Material": true,
+      "Gradient_Group_ID": "GS_5_1",
+      "Composition_Info": {
+        "Role": "Target",
+        "Alloy_Name_Raw": "AISI 304ss",
+        "Nominal_Composition": {
+          "Composition_Type": "wt%",
+          "Elements_Normalized": {
+            "C": 0.04,
+            "Si": 0.49,
+            "Mn": 1.65,
+            "Ni": 7.8,
+            "Cr": 16.8,
+            "Mo": 0.37,
+            "Fe": 72.85
+          }
+        },
+        "Measured_Composition": null,
+        "Note": "Fe calculated as balance to 100 wt%."
+      },
+      "Process_Info": {
+        "Process_Category": "Surface Mechanical Attrition Treatment (SMAT)",
+        "Process_Text": {
+          "original": "SMAT processing for 5 minutes on a 1 mm thick disk. spherical steel shots of 3-mm in diameter... frequency of the system (20 kHz).",
+          "simplified": "SMAT for 5 min on both sides of 1 mm thick disk using 3 mm steel shots at 20 kHz."
+        },
+        "Equipment": "High-power ultra-sound SMAT system",
+        "Key_Params": {
+          "Processing_Time_min": 5.0,
+          "Shot_Diameter_mm": 3.0,
+          "Frequency_kHz": 20.0
+        }
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": "gradient structure with a central coarse-grained layer sandwiched between two grain-size gradient layers... The gradient layer is composed of submicron-sized parallelepiped austenite domains separated by intersecting ε-martensite plates, with increasing domain size along the depth.",
+          "simplified": "Gradient structure: coarse-grained core (CG) + two gradient layers (GL). GL consists of parallelepiped austenite domains separated by ε-martensite walls; domain size increases with depth from surface."
+        },
+        "Main_Phase": "Austenite (γ)",
+        "Precipitates": [],
+        "Porosity_pct": null,
+        "Relative_Density_pct": null,
+        "Grain_Size_avg_um": null,
+        "Precipitate_Size_avg_nm": null,
+        "Advanced_Quantitative_Features": {
+          "Domain_Size_Gradient": "Depth from surface (μm) vs side length (μm): 0μm -> ~0.2μm, 50μm -> ~0.4μm, 100μm -> ~0.8μm, 180μm -> ~1.2μm (estimated from Fig. 7)"
+        }
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Yield_Strength",
+          "Test_Condition": "Uniaxial tension, strain rate 5e-4 s^{-1}",
+          "Value_Numeric": 550.0,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "MPa",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": "5e-4",
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "image",
+          "Test_Specimen": "dog-bone, gauge length 15 mm, width 3 mm",
+          "Note": "Approximate from Fig. 1(a)."
+        },
+        {
+          "Property_Name": "Elongation_Uniform",
+          "Test_Condition": "Uniaxial tension, strain rate 5e-4 s^{-1}",
+          "Value_Numeric": 0.30,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "%",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": "5e-4",
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "image",
+          "Test_Specimen": "dog-bone, gauge length 15 mm, width 3 mm",
+          "Note": "Uniform elongation ~30% from Fig. 1(a)."
+        },
+        {
+          "Property_Name": "Microhardness_Profile_Depth",
+          "Test_Condition": "Vickers microhardness, load 25g, before tensile test",
+          "Value_Numeric": null,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "GPa",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": "25g",
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "image",
+          "Test_Specimen": null,
+          "Note": "Depth vs Hv (GPa): 0μm (surface) ~3.5, 50μm ~3.2, 100μm ~2.8, 150μm ~2.5, 200μm ~2.3, 250μm ~2.1 (CG core). Estimated from Fig. 2(a) at strain=0."
+        },
+        {
+          "Property_Name": "Strain_Hardening_Rate_vs_Strain",
+          "Test_Condition": "Uniaxial tension, strain rate 5e-4 s^{-1}",
+          "Value_Numeric": null,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "MPa",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": "5e-4",
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "image",
+          "Test_Specimen": "dog-bone, gauge length 15 mm, width 3 mm",
+          "Note": "True strain vs strain hardening rate (θ) from Fig. 1(d): initial drop, then rise starting at ~0.1 true strain, peak at ~0.22, then drop."
+        }
+      ]
+    },
+    {
+      "Sample_ID": "GS_5_1_gradient_phase_transformation",
+      "Gradient_Material": true,
+      "Gradient_Group_ID": "GS_5_1",
+      "Composition_Info": {
+        "Role": "Target",
+        "Alloy_Name_Raw": "AISI 304ss",
+        "Nominal_Composition": {
+          "Composition_Type": "wt%",
+          "Elements_Normalized": {
+            "C": 0.04,
+            "Si": 0.49,
+            "Mn": 1.65,
+            "Ni": 7.8,
+            "Cr": 16.8,
+            "Mo": 0.37,
+            "Fe": 72.85
+          }
+        },
+        "Measured_Composition": null,
+        "Note": "Fe calculated as balance to 100 wt%."
+      },
+      "Process_Info": {
+        "Process_Category": "Surface Mechanical Attrition Treatment (SMAT) + tensile deformation",
+        "Process_Text": {
+          "original": "SMAT processing for 5 minutes on a 1 mm thick disk, followed by uniaxial tensile testing to various global strains, with phase fraction measured at different depths.",
+          "simplified": "SMAT 5 min + interrupted tensile tests at strains 0, 0.1, 0.22, 0.25, 0.3, 0.35, 0.4; XRD phase analysis at depths 0, 40, 100, 160 μm from surface."
+        },
+        "Equipment": "High-power ultra-sound SMAT system, Philips Xpert X-ray diffractometer",
+        "Key_Params": {
+          "Processing_Time_min": 5.0,
+          "Shot_Diameter_mm": 3.0,
+          "Frequency_kHz": 20.0,
+          "Tensile_Strain_Rate_s1": "5e-4"
+        }
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": "XRD measurements performed at varying depths and applied tensile strains. Volume fraction of α'-martensite (V_α') plotted as function of strain at depths 0, 40, 100, 160 μm (Fig. 9b).",
+          "simplified": "α'-martensite volume fraction increases with strain, but onset and kinetics depend strongly on depth from surface due to gradient structure."
+        },
+        "Main_Phase": "Austenite (γ)",
+        "Precipitates": [],
+        "Porosity_pct": null,
+        "Relative_Density_pct": null,
+        "Grain_Size_avg_um": null,
+        "Precipitate_Size_avg_nm": null,
+        "Advanced_Quantitative_Features": {
+          "Alpha_prime_martensite_volume_fraction_vs_strain_vs_depth": "Depth=0μm (surface): at ε=0: ~45%, ε=0.1: ~50%, ε=0.22: ~70%, ε=0.3: ~85%, ε=0.35: ~95%, ε=0.4: ~97%. Depth=40μm: ε=0: ~35%, ε=0.1: ~40%, ε=0.22: ~55%, ε=0.3: ~75%, ε=0.35: ~90%, ε=0.4: ~95%. Depth=100μm: ε=0: ~20%, ε=0.1: ~25%, ε=0.22: ~40%, ε=0.3: ~60%, ε=0.35: ~80%, ε=0.4: ~90%. Depth=160μm: ε=0: ~10%, ε=0.1: ~15%, ε=0.22: ~25%, ε=0.3: ~45%, ε=0.35: ~65%, ε=0.4: ~80%. Core CG (depth~250μm): ε=0: ~6%, ε=0.1: ~15%, ε=0.22: ~45%, ε=0.25: ~60%, ε=0.3: ~70%, ε=0.35: ~70%, ε=0.4: ~70% (saturation). (Estimates from Fig. 9b)"
+        }
+      },
+      "Properties_Info": []
+    },
+    {
+      "Sample_ID": "GL_5_0.04",
+      "Gradient_Material": true,
+      "Gradient_Group_ID": "GS_5_1",
+      "Composition_Info": {
+        "Role": "Target",
+        "Alloy_Name_Raw": "AISI 304ss",
+        "Nominal_Composition": {
+          "Composition_Type": "wt%",
+          "Elements_Normalized": {
+            "C": 0.04,
+            "Si": 0.49,
+            "Mn": 1.65,
+            "Ni": 7.8,
+            "Cr": 16.8,
+            "Mo": 0.37,
+            "Fe": 72.85
+          }
+        },
+        "Measured_Composition": null,
+        "Note": "Fe calculated as balance to 100 wt%."
+      },
+      "Process_Info": {
+        "Process_Category": "Surface Mechanical Attrition Treatment (SMAT) + polishing",
+        "Process_Text": {
+          "original": "SMAT processing for 5 minutes... Increasing the thickness to 40 μm (GL5^0.04 film)... prepared by polishing away the whole SMAT-processed sample from one side via mechanical polishing and electro-polishing.",
+          "simplified": "SMAT 5 min on 1 mm disk, then one side polished away to leave a free-standing gradient layer of 40 μm thickness."
+        },
+        "Equipment": "High-power ultra-sound SMAT system",
+        "Key_Params": {
+          "Processing_Time_min": 5.0,
+          "Shot_Diameter_mm": 3.0,
+          "Frequency_kHz": 20.0,
+          "Layer_Thickness_um": 40.0
+        }
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": "high density of band-like stripes... intersecting bands of two (111) orientations... subdivide the original coarse grains into a large number of submicron-sized parallelepiped domains with austenite interior.",
+          "simplified": "Submicron-sized parallelepiped austenite domains separated by ε-martensite bands; typical domain size ~0.2-0.4 μm."
+        },
+        "Main_Phase": "Austenite (γ)",
+        "Precipitates": [],
+        "Porosity_pct": null,
+        "Relative_Density_pct": null,
+        "Grain_Size_avg_um": null,
+        "Precipitate_Size_avg_nm": null,
+        "Advanced_Quantitative_Features": {
+          "Initial_alpha_prime_volume_fraction_pct": 45.0,
+          "Saturation_alpha_prime_volume_fraction_pct": 97.0
+        }
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Yield_Strength",
+          "Test_Condition": "Uniaxial tension, strain rate 5e-4 s^{-1}",
+          "Value_Numeric": 1700.0,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "MPa",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": "5e-4",
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": "dog-bone, gauge length 15 mm, width 3 mm",
+          "Note": "Necking occurred soon after yielding."
+        },
+        {
+          "Property_Name": "Ultimate_Tensile_Strength",
+          "Test_Condition": "Uniaxial tension, strain rate 5e-4 s^{-1}",
+          "Value_Numeric": 2000.0,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "MPa",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": "5e-4",
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": "dog-bone, gauge length 15 mm, width 3 mm",
+          "Note": "Flow stress reached 2 GPa (true stress), not necessarily engineering UTS."
+        },
+        {
+          "Property_Name": "Elongation_Uniform",
+          "Test_Condition": "Uniaxial tension, strain rate 5e-4 s^{-1}",
+          "Value_Numeric": 22.0,
+          "Value_Range": ">20",
+          "Value_StdDev": null,
+          "Unit": "%",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": "5e-4",
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": "dog-bone, gauge length 15 mm, width 3 mm",
+          "Note": "Uniform elongation even above 20%."
+        },
+        {
+          "Property_Name": "Alpha_prime_martensite_kinetics",
+          "Test_Condition": "XRD during tensile test",
+          "Value_Numeric": null,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "pct",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": "5e-4",
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "image",
+          "Test_Specimen": null,
+          "Note": "V_α' vs true strain: ε=0: ~45%, ε=0.1: ~50%, ε=0.22: ~70%, ε=0.3: ~85%, ε=0.35: ~95%, ε=0.4: ~97%. Estimated from Fig. 9(b)."
+        }
+      ]
+    },
+    {
+      "Sample_ID": "Ref_GS_304ss_prior",
+      "Gradient_Material": true,
+      "Gradient_Group_ID": null,
+      "Composition_Info": {
+        "Role": "Reference",
+        "Alloy_Name_Raw": "304ss",
+        "Nominal_Composition": null,
+        "Measured_Composition": null,
+        "Note": "Composition not specified in reference [49,50]; assumed similar to AISI 304ss."
+      },
+      "Process_Info": {
+        "Process_Category": "Gradient structuring",
+        "Process_Text": {
+          "original": "gradient structure in 304ss was reported to produce a high yield strength of 950 MPa with a ductility of 30% [49,50]",
+          "simplified": "Gradient structured 304ss reported in early studies (Refs 49,50)."
+        },
+        "Equipment": null,
+        "Key_Params": {}
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": "gradient structure in 304ss",
+          "simplified": "Gradient structure."
+        },
+        "Main_Phase": "Austenite (γ)",
+        "Precipitates": [],
+        "Porosity_pct": null,
+        "Relative_Density_pct": null,
+        "Grain_Size_avg_um": null,
+        "Precipitate_Size_avg_nm": null,
+        "Advanced_Quantitative_Features": {}
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Yield_Strength",
+          "Test_Condition": "Not specified in paper",
+          "Value_Numeric": 950.0,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "MPa",
+          "Test_Temperature_K": null,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": "Extracted from literature references [49,50]."
+        },
+        {
+          "Property_Name": "Elongation_Total",
+          "Test_Condition": "Not specified in paper",
+          "Value_Numeric": 30.0,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "%",
+          "Test_Temperature_K": null,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": "Referred to as ductility in original text, sourced from literature [49,50]."
+        }
+      ]
+    },
+    {
+      "Sample_ID": "GS_15_2",
+      "Gradient_Material": true,
+      "Gradient_Group_ID": null,
+      "Composition_Info": {
+        "Role": "Reference",
+        "Alloy_Name_Raw": "AISI 304ss",
+        "Nominal_Composition": {
+          "Composition_Type": "wt%",
+          "Elements_Normalized": {
+            "C": 0.04,
+            "Si": 0.49,
+            "Mn": 1.65,
+            "Ni": 7.8,
+            "Cr": 16.8,
+            "Mo": 0.37,
+            "Fe": 72.85
+          }
+        },
+        "Measured_Composition": null,
+        "Note": "Fe calculated as balance."
+      },
+      "Process_Info": {
+        "Process_Category": "Surface Mechanical Attrition Treatment (SMAT)",
+        "Process_Text": {
+          "original": "SMAT processing for 15 minutes on a 2 mm thick disk.",
+          "simplified": "SMAT 15 min on both sides of 2 mm thick disk."
+        },
+        "Equipment": "High-power ultra-sound SMAT system",
+        "Key_Params": {
+          "Processing_Time_min": 15.0,
+          "Shot_Diameter_mm": 3.0,
+          "Frequency_kHz": 20.0,
+          "Sample_Thickness_mm": 2.0
+        }
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": "gradient structure with central CG layer and gradient layers",
+          "simplified": "Similar gradient structure as GS_5_1 but thicker sample and longer SMAT time."
+        },
+        "Main_Phase": "Austenite (γ)",
+        "Precipitates": [],
+        "Porosity_pct": null,
+        "Relative_Density_pct": null,
+        "Grain_Size_avg_um": null,
+        "Precipitate_Size_avg_nm": null,
+        "Advanced_Quantitative_Features": {}
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Yield_Strength",
+          "Test_Condition": "Uniaxial tension, strain rate 5e-4 s^{-1}",
+          "Value_Numeric": 400.0,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "MPa",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": "5e-4",
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "image",
+          "Test_Specimen": "dog-bone, gauge length 15 mm, width 3 mm",
+          "Note": "Approximate from Fig. 1(a). Both yield strength and uniform elongation increased over CG."
+        },
+        {
+          "Property_Name": "Elongation_Uniform",
+          "Test_Condition": "Uniaxial tension, strain rate 5e-4 s^{-1}",
+          "Value_Numeric": 0.48,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "%",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": "5e-4",
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "image",
+          "Test_Specimen": "dog-bone, gauge length 15 mm, width 3 mm",
+          "Note": "Uniform elongation ~48% from Fig. 1(a)."
+        }
+      ]
+    }
+  ]
+}

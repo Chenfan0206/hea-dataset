@@ -1,0 +1,956 @@
+{
+  "Paper_Metadata": {
+    "Paper_Title": "Hydrogen-assisted fatigue crack growth: Pre-charging vs in-situ testing in gaseous environments",
+    "DOI": null,
+    "DOI_Note": "DOI not found in OCR text"
+  },
+  "Paper_Routing": {
+    "base_material": "Metals",
+    "application": "Structural",
+    "research_paradigm": "Hybrid",
+    "Supplements_Loaded": [
+      "directions/base/Metals.txt",
+      "directions/application/Structural.txt",
+      "directions/paradigm/Hybrid.txt"
+    ],
+    "Patch_Tags": [
+      "Hydrogen_Assisted"
+    ],
+    "Needs_Mixed_Routing_Check": false,
+    "Mixed_Signals": []
+  },
+  "items": [
+    {
+      "Item_ID": "01_BS",
+      "Sample_ID": "BS",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Hydrogen_Assisted"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 2.1: Steel, heat treatments and properties",
+        "Section 2.2: Fatigue crack growth tests",
+        "Section 3.1: Hydrogen pre-charged specimens",
+        "Section 3.2: Specimens tested in-situ at 35 MPa hydrogen gas",
+        "Table 1",
+        "Table 2"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Low-alloy steel",
+          "Material_Name_Raw": "42CrMo4",
+          "Nominal_Composition": {
+            "C": {
+              "Value": 0.42,
+              "Unit": "wt%",
+              "Original_Values": "0.42%"
+            },
+            "Cr": {
+              "Value": 0.98,
+              "Unit": "wt%",
+              "Original_Values": "0.98%"
+            },
+            "Mo": {
+              "Value": 0.22,
+              "Unit": "wt%",
+              "Original_Values": "0.22%"
+            },
+            "Fe": {
+              "Value": "Balance",
+              "Unit": "wt%",
+              "Note": "Balance; normalized ≈ 98.38 wt%",
+              "Data_Nature": "Computed"
+            }
+          },
+          "Form": "Hot rolled plate (250x250x12 mm3)"
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "250x250x12 mm3 hot rolled plates were austenitized at 845C for 40 min, quenched in water and tempered at 700C for 2 h (base steel, BS).",
+            "simplified": "Hot rolled plate austenitized at 845C/40min, water quenched, tempered at 700C/2h."
+          },
+          "Stage1": {
+            "Label": "Austenitizing",
+            "Temperature": {
+              "Value": 1118.15,
+              "Unit": "K",
+              "Original_Values": "845C"
+            },
+            "Time": {
+              "Value": 40,
+              "Unit": "min"
+            }
+          },
+          "Stage2": {
+            "Label": "Quenching",
+            "Medium": "water"
+          },
+          "Stage3": {
+            "Label": "Tempering",
+            "Temperature": {
+              "Value": 973.15,
+              "Unit": "K",
+              "Original_Values": "700C"
+            },
+            "Time": {
+              "Value": 2,
+              "Unit": "h"
+            }
+          },
+          "Equipment": [
+            {
+              "Name": "Servohydraulic universal MTS testing machine (250 kN)",
+              "Category": "Testing"
+            },
+            {
+              "Name": "High-pressure reactor (for H2 pre-charging)",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Hycomat test bench (Pprime Institute)",
+              "Category": "Testing"
+            },
+            {
+              "Name": "JEOL-JSM5600 scanning electron microscope",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "CTOD extensometer",
+              "Category": "Testing"
+            },
+            {
+              "Name": "DCPD system",
+              "Category": "Testing"
+            }
+          ],
+          "Specimen": {
+            "Type": "Compact-Tension (CT)",
+            "Width_mm": 48,
+            "Thickness_mm": 10,
+            "Note": "Ex-situ specimens: W=48mm, t=10mm. In-situ specimens: W=40mm, t=10mm (to meet dimensional requirements of the in-situ equipment)."
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "The microstructure of both grades was tempered martensite with profuse carbide precipitation being the prior austenitic grain size (PAGS) the only perceptible difference between them. The BS has a fine microstructure with a PAGS of approximately 20 um.",
+            "simplified": "Tempered martensite with profuse carbide precipitation. PAGS ~20 um."
+          },
+          "Main_Phase": {
+            "Phase_Name": "tempered martensite",
+            "Crystal_Structure": "BCT",
+            "Morphology": "lath martensite with fine PAGS"
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "carbides",
+              "Crystal_Structure": null,
+              "Note": "Profuse carbide precipitation mentioned but crystal structure not specified"
+            }
+          ],
+          "Grain_Size": {
+            "PAGS": {
+              "Value": 20,
+              "Unit": "um",
+              "Dimension_Type": "undefined",
+              "Note": "approximately"
+            }
+          },
+          "Advanced_Quantitative_Features": {
+            "Hardness_HV30": {
+              "Value": 207,
+              "Unit": "HV30",
+              "Data_Source": "table"
+            },
+            "Effective_H_Diffusion_Coefficient": {
+              "Value": 4.3e-10,
+              "Unit": "m2/s",
+              "Original_Values": "4.3 x 10^-10 m2/s",
+              "Data_Source": "table"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Hardness_HV30",
+            "Value": 207,
+            "Unit": "HV30",
+            "Data_Source": "table",
+            "Data_Nature": "Experimental",
+            "Test_Condition": {
+              "Load": "30 kgf",
+              "Specimen_State": "quenched and tempered"
+            }
+          },
+          {
+            "Property_Name": "Yield_Strength",
+            "Value": 622,
+            "Unit": "MPa",
+            "Original_Values": "622 MPa",
+            "Data_Source": "table",
+            "Data_Nature": "Experimental",
+            "Test_Condition": {
+              "Specimen_State": "quenched and tempered",
+              "Note": "From previous works [38-40]"
+            }
+          },
+          {
+            "Property_Name": "Ultimate_Tensile_Strength",
+            "Value": 710,
+            "Unit": "MPa",
+            "Original_Values": "710 MPa",
+            "Data_Source": "table",
+            "Data_Nature": "Experimental",
+            "Test_Condition": {
+              "Specimen_State": "quenched and tempered"
+            }
+          },
+          {
+            "Property_Name": "Elongation_Total",
+            "Value": 22.6,
+            "Unit": "%",
+            "Original_Values": "22.6%",
+            "Data_Source": "table",
+            "Data_Nature": "Experimental",
+            "Note": "Original text uses 'e (%)'; not specified whether uniform or total elongation",
+            "Test_Condition": {
+              "Specimen_State": "quenched and tempered"
+            }
+          },
+          {
+            "Property_Name": "Fracture_Toughness_J0.2_BL",
+            "Value": 580,
+            "Unit": "kJ/m2",
+            "Original_Values": "580 kJ/m2",
+            "Data_Source": "table",
+            "Data_Nature": "Experimental",
+            "Test_Condition": {
+              "Specimen_State": "quenched and tempered"
+            }
+          },
+          {
+            "Property_Name": "Fatigue_Crack_Growth_Rate_Paris_Coefficient",
+            "Value": 1.55e-08,
+            "Original_Values": "1.55 x 10^-8",
+            "Data_Source": "table",
+            "Data_Nature": "Experimental",
+            "Test_Condition": {
+              "Environment": "Air (uncharged)",
+              "Load_Ratio_R": 0.1,
+              "Frequency_Hz": 10,
+              "Note": "Uncharged, Air conditions; f=10 Hz per Section 2.2"
+            },
+            "Associated_Property": {
+              "Paris_Coefficient": "C",
+              "Paris_Exponent_m": 2.59
+            }
+          },
+          {
+            "Property_Name": "Fatigue_Crack_Growth_Rate_Paris_Coefficient",
+            "Value": 0.0012,
+            "Data_Source": "table",
+            "Data_Nature": "Experimental",
+            "Test_Condition": {
+              "Environment": "Air (H2 pre-charged, ~1.8 wppm)",
+              "Load_Ratio_R": 0.1,
+              "Frequency_Hz": 0.1,
+              "Hydrogen_Content_wppm": 1.8,
+              "Note": "Ex-situ; plateau region, da/dN = C (constant), m not applicable"
+            },
+            "Associated_Property": {
+              "Paris_Coefficient": "C",
+              "Paris_Exponent_m": null,
+              "Note_Exponent": "m = '-' in Table 2, indicating plateau behavior (constant da/dN)"
+            }
+          },
+          {
+            "Property_Name": "Fatigue_Crack_Growth_Rate_Paris_Coefficient",
+            "Value": 4.24e-07,
+            "Original_Values": "4.24 x 10^-7",
+            "Data_Source": "table",
+            "Data_Nature": "Experimental",
+            "Test_Condition": {
+              "Environment": "35 MPa H2 gas",
+              "Load_Ratio_R": 0.1,
+              "Frequency_Hz": 0.1,
+              "Note": "In-situ testing; f=0.1 Hz per Fig. 11 caption; 0.1 and 1 Hz curves largely overlap"
+            },
+            "Associated_Property": {
+              "Paris_Coefficient": "C",
+              "Paris_Exponent_m": 2.41
+            }
+          },
+          {
+            "Property_Name": "Fatigue_Crack_Growth_Rate",
+            "Data_Nature": "Experimental",
+            "Data_Source": "text",
+            "Test_Condition": {
+              "Environment": "Air (H2 pre-charged, ~1.8 wppm)",
+              "Load_Ratio_R": 0.1,
+              "Frequency_Hz": 1,
+              "Note": "At 1 Hz, FCGR curve overlaps with uncharged specimens (no embrittlement)"
+            },
+            "Note": "At f=1 Hz, hydrogen-assisted FCGR was not observed; FCGR overlaps with uncharged condition"
+          },
+          {
+            "Property_Name": "Fatigue_Crack_Growth_Rate_Acceleration_Factor",
+            "Data_Nature": "Experimental",
+            "Data_Source": "text",
+            "Test_Condition": {
+              "Environment": "Air (H2 pre-charged, ~1.8 wppm)",
+              "Load_Ratio_R": 0.1,
+              "Frequency_Hz": 0.1
+            },
+            "Note": "FCGR increases by roughly one order of magnitude relative to hydrogen-free samples at low-medium deltaK values"
+          },
+          {
+            "Property_Name": "Fatigue_Crack_Growth_Rate_Acceleration_Factor",
+            "Data_Nature": "Experimental",
+            "Data_Source": "text",
+            "Test_Condition": {
+              "Environment": "35 MPa H2 gas",
+              "Load_Ratio_R": 0.1,
+              "Frequency_Hz": null
+            },
+            "Note": "Remarkable increase of FCGR between 12 and 20 times due to 35 MPa H2 atmosphere, observed for all deltaK values and all loading frequencies (0.1 and 1 Hz)"
+          },
+          {
+            "Property_Name": "Hydrogen_Concentration_Precharged",
+            "Value": 4.1,
+            "Unit": "wppm",
+            "Original_Values": "4.1 wppm",
+            "Data_Source": "text",
+            "Data_Nature": "Computed",
+            "Note": "Estimated via Sieverts law at 450C and 19.5 MPa. Actual total hydrogen content in CT specimens at beginning of FCGR tests estimated at ~1.8 wppm by FE analysis. Measured total H content in cylindrical specimens was 1-1.2 wppm by TDA.",
+            "Test_Condition": {
+              "Charging_Temperature_K": 723.15,
+              "Charging_Temperature_Original": "450C",
+              "Charging_Pressure_MPa": 19.5,
+              "Charging_Duration_h": 21,
+              "Charging_Medium": "pure gaseous hydrogen"
+            }
+          },
+          {
+            "Property_Name": "Hydrogen_Concentration_Precharged_CT_Specimen",
+            "Value": 1.8,
+            "Unit": "wppm",
+            "Original_Values": "~1.8 wppm",
+            "Data_Source": "text",
+            "Data_Nature": "Computed",
+            "Note": "Finite element analysis of mass transport estimate; total hydrogen content in CT specimens at beginning of FCGR tests"
+          },
+          {
+            "Property_Name": "Fracture_Micromechanism",
+            "Data_Nature": "Experimental",
+            "Data_Source": "text",
+            "Test_Condition": {
+              "Environment": "Air (uncharged)",
+              "Load_Ratio_R": 0.1,
+              "Frequency_Hz": 10
+            },
+            "Note": "Ductile fracture: plastic tearing and striation marks"
+          },
+          {
+            "Property_Name": "Fracture_Micromechanism",
+            "Data_Nature": "Experimental",
+            "Data_Source": "text",
+            "Test_Condition": {
+              "Environment": "Air (H2 pre-charged, ~1.8 wppm)",
+              "Load_Ratio_R": 0.1,
+              "Frequency_Hz": 0.1
+            },
+            "Note": "Hydrogen-assisted quasi-cleavage; martensitic lath decohesion (MLD). No striation marks observed."
+          },
+          {
+            "Property_Name": "Fracture_Micromechanism",
+            "Data_Nature": "Experimental",
+            "Data_Source": "text",
+            "Test_Condition": {
+              "Environment": "35 MPa H2 gas",
+              "Load_Ratio_R": 0.1,
+              "Frequency_Hz": null
+            },
+            "Note": "Martensitic lath decohesion (MLD) regardless of frequency. Fracture surface topography identical at different crack locations."
+          },
+          {
+            "Property_Name": "Lattice_Hydrogen_Concentration_InSitu",
+            "Value": 0.006,
+            "Unit": "wppm",
+            "Original_Values": "0.006 wppm",
+            "Data_Source": "text",
+            "Data_Nature": "Computed",
+            "Note": "Calculated via Sieverts law for 35 MPa H2 at RT. Trapped hydrogen not included."
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "02_CGHAZ",
+      "Sample_ID": "CGHAZ",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Hydrogen_Assisted"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 2.1: Steel, heat treatments and properties",
+        "Section 2.2: Fatigue crack growth tests",
+        "Section 3.1: Hydrogen pre-charged specimens",
+        "Section 3.2: Specimens tested in-situ at 35 MPa hydrogen gas",
+        "Table 1",
+        "Table 2"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Low-alloy steel",
+          "Material_Name_Raw": "42CrMo4 (CGHAZ simulated)",
+          "Nominal_Composition": {
+            "C": {
+              "Value": 0.42,
+              "Unit": "wt%",
+              "Original_Values": "0.42%"
+            },
+            "Cr": {
+              "Value": 0.98,
+              "Unit": "wt%",
+              "Original_Values": "0.98%"
+            },
+            "Mo": {
+              "Value": 0.22,
+              "Unit": "wt%",
+              "Original_Values": "0.22%"
+            },
+            "Fe": {
+              "Value": "Balance",
+              "Unit": "wt%",
+              "Note": "Balance; normalized ≈ 98.38 wt%. Same base steel 42CrMo4; CGHAZ microstructure reproduced by thermal simulation",
+              "Data_Nature": "Computed"
+            }
+          },
+          "Form": "Simulated CGHAZ coupons (same plate material)"
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "The CGHAZ microstructure was reproduced in large coupons by means of a thermal treatment consisting of austenitizing at 1200C for 20 min and quenching in oil. Then, it was submitted to the same tempering treatment as the BS, 700C for 2 h.",
+            "simplified": "Simulated CGHAZ: austenitized at 1200C/20min, oil quenched, tempered at 700C/2h. Weld bead deposited from carbon steel wire with ~2 kJ/mm heat input."
+          },
+          "Stage0": {
+            "Label": "Welding",
+            "Process": "Weld bead deposited onto plate from carbon steel wire",
+            "Heat_Input": {
+              "Value": 2,
+              "Unit": "kJ/mm",
+              "Original_Values": "~2 kJ/mm",
+              "Note": "approximately"
+            }
+          },
+          "Stage1": {
+            "Label": "Austenitizing (CGHAZ simulation)",
+            "Temperature": {
+              "Value": 1473.15,
+              "Unit": "K",
+              "Original_Values": "1200C"
+            },
+            "Time": {
+              "Value": 20,
+              "Unit": "min"
+            },
+            "Purpose": "Simulate coarse grain heat-affected zone microstructure"
+          },
+          "Stage2": {
+            "Label": "Quenching",
+            "Medium": "oil"
+          },
+          "Stage3": {
+            "Label": "Tempering",
+            "Temperature": {
+              "Value": 973.15,
+              "Unit": "K",
+              "Original_Values": "700C"
+            },
+            "Time": {
+              "Value": 2,
+              "Unit": "h"
+            },
+            "Note": "Same tempering treatment as BS"
+          },
+          "Equipment": [
+            {
+              "Name": "Servohydraulic universal MTS testing machine (250 kN)",
+              "Category": "Testing"
+            },
+            {
+              "Name": "High-pressure reactor (for H2 pre-charging)",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Hycomat test bench (Pprime Institute)",
+              "Category": "Testing"
+            },
+            {
+              "Name": "JEOL-JSM5600 scanning electron microscope",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "CTOD extensometer",
+              "Category": "Testing"
+            },
+            {
+              "Name": "DCPD system",
+              "Category": "Testing"
+            }
+          ],
+          "Specimen": {
+            "Type": "Compact-Tension (CT)",
+            "Width_mm": 48,
+            "Thickness_mm": 10,
+            "Note": "Ex-situ specimens: W=48mm, t=10mm. In-situ specimens: W=40mm, t=10mm."
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "The microstructure of both grades was tempered martensite with profuse carbide precipitation being the prior austenitic grain size (PAGS) the only perceptible difference between them. A coarser microstructure, with PAGS between 100 and 150 um, was measured in the CGHAZ. A similar increase in martensite lath and packet sizes was also observed.",
+            "simplified": "Tempered martensite with profuse carbide precipitation. PAGS 100-150 um. Coarser martensite lath and packet sizes than BS."
+          },
+          "Main_Phase": {
+            "Phase_Name": "tempered martensite",
+            "Crystal_Structure": "BCT",
+            "Morphology": "coarse lath martensite"
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "carbides",
+              "Crystal_Structure": null,
+              "Note": "Profuse carbide precipitation mentioned but crystal structure not specified"
+            }
+          ],
+          "Grain_Size": {
+            "PAGS": {
+              "Value": null,
+              "Unit": "um",
+              "Dimension_Type": "undefined",
+              "Value_Range": {
+                "Min": 100,
+                "Max": 150
+              },
+              "Original_Values": "100-150 um"
+            }
+          },
+          "Advanced_Quantitative_Features": {
+            "Hardness_HV30": {
+              "Value": 230,
+              "Unit": "HV30",
+              "Data_Source": "table"
+            },
+            "Effective_H_Diffusion_Coefficient": {
+              "Value": 2.5e-10,
+              "Unit": "m2/s",
+              "Original_Values": "2.5 x 10^-10 m2/s",
+              "Data_Source": "table"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Hardness_HV30",
+            "Value": 230,
+            "Unit": "HV30",
+            "Data_Source": "table",
+            "Data_Nature": "Experimental",
+            "Test_Condition": {
+              "Load": "30 kgf",
+              "Specimen_State": "simulated CGHAZ, quenched and tempered"
+            }
+          },
+          {
+            "Property_Name": "Yield_Strength",
+            "Value": 600,
+            "Unit": "MPa",
+            "Original_Values": "600 MPa",
+            "Data_Source": "table",
+            "Data_Nature": "Experimental",
+            "Test_Condition": {
+              "Specimen_State": "simulated CGHAZ, quenched and tempered"
+            }
+          },
+          {
+            "Property_Name": "Ultimate_Tensile_Strength",
+            "Value": 750,
+            "Unit": "MPa",
+            "Original_Values": "750 MPa",
+            "Data_Source": "table",
+            "Data_Nature": "Experimental",
+            "Test_Condition": {
+              "Specimen_State": "simulated CGHAZ, quenched and tempered"
+            }
+          },
+          {
+            "Property_Name": "Elongation_Total",
+            "Value": 23.6,
+            "Unit": "%",
+            "Original_Values": "23.6%",
+            "Data_Source": "table",
+            "Data_Nature": "Experimental",
+            "Note": "Original text uses 'e (%)'; not specified whether uniform or total elongation",
+            "Test_Condition": {
+              "Specimen_State": "simulated CGHAZ, quenched and tempered"
+            }
+          },
+          {
+            "Property_Name": "Fracture_Toughness_J0.2_BL",
+            "Value": 488,
+            "Unit": "kJ/m2",
+            "Original_Values": "488 kJ/m2",
+            "Data_Source": "table",
+            "Data_Nature": "Experimental",
+            "Note": "Lower than BS by less than 15%, mainly due to coarser microstructure",
+            "Test_Condition": {
+              "Specimen_State": "simulated CGHAZ, quenched and tempered"
+            }
+          },
+          {
+            "Property_Name": "Fatigue_Crack_Growth_Rate_Paris_Coefficient",
+            "Value": 1.59e-09,
+            "Original_Values": "1.59 x 10^-9",
+            "Data_Source": "table",
+            "Data_Nature": "Experimental",
+            "Test_Condition": {
+              "Environment": "Air (uncharged)",
+              "Load_Ratio_R": 0.1,
+              "Frequency_Hz": 10,
+              "Note": "f=10 Hz per Section 2.2"
+            },
+            "Associated_Property": {
+              "Paris_Coefficient": "C",
+              "Paris_Exponent_m": 3.19
+            }
+          },
+          {
+            "Property_Name": "Fatigue_Crack_Growth_Rate_Paris_Coefficient",
+            "Value": 0.0016,
+            "Data_Source": "table",
+            "Data_Nature": "Experimental",
+            "Test_Condition": {
+              "Environment": "Air (H2 pre-charged, ~1.8 wppm)",
+              "Load_Ratio_R": 0.1,
+              "Frequency_Hz": 0.1,
+              "Note": "Ex-situ; plateau region, da/dN = C (constant), m not applicable"
+            },
+            "Associated_Property": {
+              "Paris_Coefficient": "C",
+              "Paris_Exponent_m": null,
+              "Note_Exponent": "m = '-' in Table 2, indicating plateau behavior (constant da/dN)"
+            }
+          },
+          {
+            "Property_Name": "Fatigue_Crack_Growth_Rate_Paris_Coefficient",
+            "Value": 7.13e-08,
+            "Original_Values": "7.13 x 10^-8",
+            "Data_Source": "table",
+            "Data_Nature": "Experimental",
+            "Test_Condition": {
+              "Environment": "35 MPa H2 gas",
+              "Load_Ratio_R": 0.1,
+              "Frequency_Hz": 0.1,
+              "Note": "In-situ testing; f=0.1 Hz per Fig. 11 caption; 0.1 and 1 Hz curves largely overlap"
+            },
+            "Associated_Property": {
+              "Paris_Coefficient": "C",
+              "Paris_Exponent_m": 2.97
+            }
+          },
+          {
+            "Property_Name": "Fatigue_Crack_Growth_Rate",
+            "Data_Nature": "Experimental",
+            "Data_Source": "text",
+            "Test_Condition": {
+              "Environment": "Air (uncharged)",
+              "Load_Ratio_R": 0.1,
+              "Frequency_Hz": 10
+            },
+            "Note": "BS and CGHAZ show very similar FCGR until intermediate deltaK. From deltaK ~60 MPa*sqrt(m), crack growth rate ~1.5 times higher in CGHAZ."
+          },
+          {
+            "Property_Name": "Fatigue_Crack_Growth_Rate_Acceleration_Factor",
+            "Data_Nature": "Experimental",
+            "Data_Source": "text",
+            "Test_Condition": {
+              "Environment": "35 MPa H2 gas",
+              "Load_Ratio_R": 0.1,
+              "Frequency_Hz": null
+            },
+            "Note": "Remarkable increase of FCGR between 12 and 20 times. FCGR curves of CGHAZ always lie above those of BS, differences increasing with higher deltaK."
+          },
+          {
+            "Property_Name": "Fracture_Micromechanism",
+            "Data_Nature": "Experimental",
+            "Data_Source": "text",
+            "Test_Condition": {
+              "Environment": "Air (uncharged)",
+              "Load_Ratio_R": 0.1,
+              "Frequency_Hz": 10,
+              "Note": "At deltaK > 60 MPa*sqrt(m)"
+            },
+            "Note": "More brittle overall fracture micromechanism for high deltaK values, though significant plasticity and striation marks still visible"
+          },
+          {
+            "Property_Name": "Fracture_Micromechanism",
+            "Data_Nature": "Experimental",
+            "Data_Source": "text",
+            "Test_Condition": {
+              "Environment": "Air (H2 pre-charged, ~1.8 wppm)",
+              "Load_Ratio_R": 0.1,
+              "Frequency_Hz": 0.1
+            },
+            "Note": "Combination of martensitic lath decohesion (MLD) and intergranular (IG) fracture. Clean facets of fractured prior austenitic grains and extensive flat regions observed. Secondary cracking along prior austenite grain boundaries."
+          },
+          {
+            "Property_Name": "Fracture_Micromechanism",
+            "Data_Nature": "Experimental",
+            "Data_Source": "text",
+            "Test_Condition": {
+              "Environment": "35 MPa H2 gas",
+              "Load_Ratio_R": 0.1,
+              "Frequency_Hz": null
+            },
+            "Note": "Combination of MLD and IG fracture across entire deltaK range at both 1 and 0.1 Hz. Abundant secondary cracking for high deltaK. At 1 Hz, secondary cracks propagated mainly along martensite lath interfaces; at 0.1 Hz, secondary cracking predominantly along grain boundaries."
+          },
+          {
+            "Property_Name": "Hydrogen_Concentration_Precharged",
+            "Value": null,
+            "Unit": "wppm",
+            "Data_Source": "text",
+            "Data_Nature": "Computed",
+            "Note": "Total hydrogen content around 1-1.2 wppm measured in cylindrical specimens by TDA; ~1.8 wppm in CT specimens estimated by FE analysis (same as BS).",
+            "Original_Values": "1-1.2 wppm (measured by TDA in cylindrical specimens); ~1.8 wppm (FE estimate for CT specimens)"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "03_FE_Simulation",
+      "Sample_ID": "BS_FE_Model",
+      "Role": "Target",
+      "Data_Nature": "Computed",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Hydrogen_Assisted"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 4: Discussion (FE model description and results)",
+        "Fig. 13"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Low-alloy steel",
+          "Material_Name_Raw": "42CrMo4 BS (model input)",
+          "Note": "FE simulation uses BS material parameters"
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "Coupled deformation-diffusion finite element simulations. Boundary layer model for a given deltaK. Computations for BS with Deff = 4.3 x 10^-10 m2/s.",
+            "simplified": "Coupled deformation-diffusion FE simulation using boundary layer model."
+          },
+          "Simulation_Metadata": {
+            "Method": "Finite Element Method (FEM)",
+            "Model_Type": "Boundary layer model",
+            "Physics": "Coupled deformation-diffusion",
+            "Software": null,
+            "Mesh_Details": null,
+            "Material_Model": {
+              "Effective_Diffusion_Coefficient": {
+                "Value": 4.3e-10,
+                "Unit": "m2/s",
+                "Note": "From BS experimental data (Table 1)"
+              }
+            },
+            "Boundary_Conditions": {
+              "Pre_charged": {
+                "Initial_Lattice_Hydrogen": {
+                  "Value": 1.02,
+                  "Unit": "wppm"
+                },
+                "Surface_BC": {
+                  "Partial_Pressure_H2_Air": 0.061,
+                  "Unit": "Pa",
+                  "Equivalent_Lattice_H": "2.7 x 10^-8 wppm",
+                  "Note": "Assumed partial pressure of hydrogen in lab air"
+                }
+              },
+              "In_Situ": {
+                "Hydrogen_Pressure": 35,
+                "Unit": "MPa",
+                "Solubility_Model": "Sieverts law with Noble-Able equation incorporating hydrostatic stress dependence",
+                "Assumed_Hydrostatic_Stress_Factor": "4 times yield stress",
+                "Note": "sigma_h assumed to be 4*sigma_ys; likely between 2.5-8*sigma_ys"
+              }
+            },
+            "Loading_Conditions": {
+              "Frequency_Hz": 0.1,
+              "Load_Ratio_R": 0.1,
+              "DeltaK": {
+                "Value": 40,
+                "Unit": "MPa*sqrt(m)"
+              }
+            },
+            "Key_Parameters": {
+              "Partial_Molar_Volume_H": {
+                "Value": 0.002,
+                "Unit": "m3/mol"
+              },
+              "Pre_exponential_Sieverts_Constant_S0": {
+                "Value": 104.47,
+                "Unit": "mol H2/(m3*sqrt(MPa))"
+              },
+              "Solution_Energy_Es": {
+                "Value": 28600,
+                "Unit": "J/mol"
+              },
+              "Fugacity_Constant_b": 15.84,
+              "Note": "b valid when pH2 expressed in MPa"
+            },
+            "Output": {
+              "Lattice_H_Concentration_1um_Ahead_of_Crack_Tip": {
+                "Description": "Cyclic variation of lattice H concentration at 1 um ahead of crack tip",
+                "Note": "Pre-charged sample H drops below in-situ level; in-situ remains roughly constant. H in pre-charged assumed higher at beginning."
+              }
+            }
+          },
+          "Experiment_Link": {
+            "Related_Item_IDs": [
+              "01_BS"
+            ],
+            "Description": "FE simulation of hydrogen transport ahead of a stationary crack tip for the BS material",
+            "Validation_Target": "Hydrogen egress from pre-charged CT specimens during fatigue testing",
+            "Agreement_or_Error": "Pre-charged specimens matched uncharged behavior after ~30h of testing, consistent with FE prediction of hydrogen loss"
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Boundary layer model assuming stationary crack. Focus on lattice hydrogen distribution ahead of crack tip. Oriani's equilibrium relates lattice and trap occupancy.",
+            "simplified": "Boundary layer model for stationary crack; lattice H distribution ahead of crack tip"
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Lattice_Hydrogen_Concentration_at_Crack_Tip",
+            "Data_Nature": "Computed",
+            "Data_Source": "text",
+            "Note": "Predicted at 1 um ahead of crack tip as function of time. Pre-charged H drops below in-situ level after several hours. In-situ H remains roughly constant throughout experiment.",
+            "Test_Condition": {
+              "DeltaK": 40,
+              "DeltaK_Unit": "MPa*sqrt(m)",
+              "Frequency_Hz": 0.1,
+              "Load_Ratio_R": 0.1,
+              "Distance_from_Crack_Tip": 1,
+              "Distance_Unit": "um"
+            }
+          },
+          {
+            "Property_Name": "Hydrogen_Egress_Time",
+            "Data_Nature": "Computed",
+            "Data_Source": "text",
+            "Note": "A hydrogen atom at center of 10 mm thick CT specimen would need ~4-7 h to egress based on x = 2*sqrt(Deff*t) with Deff = 2.5-4.3 x 10^-10 m2/s. Pre-charged specimens matched uncharged behavior after ~30h. FE shows small amount of H remains in process zone after 25h.",
+            "Test_Condition": {
+              "Specimen_Thickness_mm": 10,
+              "Note": "Stress-free estimate; actual egress may be faster through crack faces"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "04_Lit_X65_InSitu",
+      "Sample_ID": "X65_in-situ_lit",
+      "Role": "Reference",
+      "Data_Nature": "Literature_Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Hydrogen_Assisted"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 4 Discussion, Fig. 11"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Pipeline steel",
+          "Material_Name_Raw": "X65 pipeline steel",
+          "Note": "Literature data from Ref. [74]"
+        },
+        "Properties": [
+          {
+            "Property_Name": "Yield_Strength",
+            "Value": null,
+            "Unit": "MPa",
+            "Original_Values": "sigma_ys approx 500 MPa",
+            "Data_Source": "text",
+            "Data_Nature": "Literature_Experimental",
+            "Note": "Approximate value; from discussion context for X65 pipeline steel",
+            "Test_Condition": {
+              "Reference": "Ronevich et al. [74]"
+            }
+          },
+          {
+            "Property_Name": "Fatigue_Crack_Growth_Rate",
+            "Data_Nature": "Literature_Experimental",
+            "Data_Source": "text",
+            "Test_Condition": {
+              "Environment": "21 MPa H2 gas",
+              "Reference": "Ronevich et al. [74]"
+            },
+            "Note": "FCGR data included for comparison in Fig. 11"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "05_Lit_X65_ExSitu",
+      "Sample_ID": "X65_pre-charged_lit",
+      "Role": "Reference",
+      "Data_Nature": "Literature_Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Hydrogen_Assisted"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 4 Discussion, Fig. 11"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Pipeline steel",
+          "Material_Name_Raw": "X65 pipeline steel",
+          "Note": "Literature data from Ref. [82]"
+        },
+        "Properties": [
+          {
+            "Property_Name": "Fatigue_Crack_Growth_Rate",
+            "Data_Nature": "Literature_Experimental",
+            "Data_Source": "text",
+            "Test_Condition": {
+              "Environment": "Air (electrochemically pre-charged with ~2 wppm H)",
+              "Reference": "Sciuccati [82]"
+            },
+            "Note": "FCGR data included for comparison in Fig. 11. Similar level of embrittlement at beginning of test, then plateau behavior."
+          }
+        ]
+      }
+    }
+  ]
+}

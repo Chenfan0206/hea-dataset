@@ -1,0 +1,483 @@
+﻿公 开
+{
+  "Paper_Metadata": {
+    "Paper_Title": "PBO ﬁbers/ﬂuorine-containing liquid crystal compound modiﬁed cyanate ester wave-transparent laminated composites with excellent mechanical and ﬂame retardance properties",
+    "DOI": "10.1016/j.jmst.2023.01.007"
+  },
+  "items": [
+    {
+      "Sample_ID": "BADCy",
+      "Gradient_Material": false,
+      "Gradient_Group_ID": null,
+      "Composition_Info": {
+        "Role": "Target",
+        "Resins_Name_Raw": "Bisphenol A dicyanate ester resins",
+        "Nominal_Composition": {
+          "Composition_Type": null,
+          "Elements_Normalized": null
+        },
+        "Measured_Composition": {
+          "Composition_Type": null,
+          "Elements_Normalized": null,
+          "Measurement_Method": null
+        },
+        "Note": "Reference sample without modification"
+      },
+      "Process_Info": {
+        "Process_Category": "Polymer Curing",
+        "Process_Text": {
+          "original": "The prepolymerization temperatures of FE0, LCFE2, and LCFE5 with BADCy resins usually occurs at 110oC and 160oC. The prepolymerization temperatures of FE0, LCFE2, and LCFE5 with BADCy resins are selected as 120oC, 160oC, and 120oC, respectively.",
+          "simplified": "Cured at specific prepolymerization temperatures based on modifier type."
+        },
+      "Properties_Info": [
+        {
+          "Property_Name": "Dielectric_Constant",
+          "Test_Condition": "10^6 Hz, 25oC",
+          "Value_Numeric": 2.92,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "null",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": "Calculated based on |T|^2 of 92.4%"
+        },
+        {
+          "Property_Name": "Flexural_Strength",
+          "Test_Condition": null,
+          "Value_Numeric": 102.4,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "MPa",
+          "Test_Temperature_K": null,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": "Pure BADCy resin"
+        },
+        {
+          "Property_Name": "Impact_Strength",
+          "Test_Condition": null,
+          "Value_Numeric": 9.9,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "kJ/m2",
+          "Test_Temperature_K": null,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": "Pure BADCy resin"
+        },
+        {
+          "Property_Name": "Tensile_Strength",
+          "Test_Condition": null,
+          "Value_Numeric": 36.7,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "MPa",
+          "Test_Temperature_K": null,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": "Pure BADCy resin"
+        },
+        {
+          "Property_Name": "Heat_Resistant_Index",
+          "Test_Condition": null,
+          "Value_Numeric": 197.5,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "\u00b0C",
+          "Test_Temperature_K": null,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": "THR"
+        },
+        {
+          "Property_Name": "Glass_Transition_Temperature",
+          "Test_Condition": null,
+          "Value_Numeric": 271.9,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "\u00b0C",
+          "Test_Temperature_K": null,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": null
+        }
+      ]
+    },
+    {
+      "Sample_ID": "FE0-BADCy",
+      "Gradient_Material": false,
+      "Gradient_Group_ID": null,
+      "Composition_Info": {
+        "Role": "Target",
+        "Alloy_Name_Raw": "FE0 modified Bisphenol A dicyanate ester resins",
+        "Nominal_Composition": {
+          "Composition_Type": "wt%",
+          "Elements_Normalized": null
+        },
+        "Measured_Composition": {
+          "Composition_Type": null,
+          "Elements_Normalized": null,
+          "Measurement_Method": null
+        },
+        "Note": "FE0 mass fraction: 10 wt%"
+      },
+      "Process_Info": {
+        "Process_Category": "Polymer Curing",
+        "Process_Text": {
+          "original": "The prepolymerization temperatures of FE0, LCFE2, and LCFE5 with BADCy resins usually occurs at 110oC 160oC. The prepolymerization temperatures of FE0, LCFE2, and LCFE5 with BADCy resins are selected as 120oC, 160oC, and 120oC, respectively.",
+          "simplified": "Cured at specific prepolymerization temperatures based on modifier type."
+        },
+        "Equipment": null,
+        "Key_Params": {
+          "Solution_Temperature_K": 393.15
+        }
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": "LCFE2 and LCFE5 can form a locally ordered liquid crystal structure during the prepolymerization of BADCy resin compared with FE0, which is a beneﬁt to weakening the dipole polarization of LCFE2-BADCy and LCFE5-BADCy cross-linked networks.",
+          "simplified": "Locally ordered liquid crystal structure formed with modifiers."
+        },
+        "Main_Phase": null,
+        "Precipitates": [],
+        "Porosity_pct": null,
+        "Relative_Density_pct": null,
+        "Grain_Size_avg_um": null,
+        "Precipitate_Size_avg_nm": null,
+        "Advanced_Quantitative_Features": {}
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Dielectric_Constant",
+          "Test_Condition": "10^6 Hz, 25 \u00b0C",
+          "Value_Numeric": 2.75,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "null",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": "Minimum value at 10 wt% FE0"
+        },
+        {
+          "Property_Name": "Flexural_Strength",
+          "Test_Condition": null,
+          "Value_Numeric": 128.4,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "MPa",
+          "Test_Temperature_K": null,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": "Value at 10 wt% FE0"
+        },
+        {
+          "Property_Name": "Impact_Strength",
+          "Test_Condition": null,
+          "Value_Numeric": 13.4,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "kJ/m2",
+          "Test_Temperature_K": null,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": "Value at 10 wt% FE0"
+        },
+        {
+          "Property_Name": "Tensile_Strength",
+          "Test_Condition": null,
+          "Value_Numeric": 43.2,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "MPa",
+          "Test_Temperature_K": null,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": "Value at 10 wt% FE0"
+        },
+        {
+          "Property_Name": "Heat_Resistant_Index",
+          "Test_Condition": null,
+          "Value_Numeric": 190.9,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "\u00b0C",
+          "Test_Temperature_K": null,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": "THR"
+        },
+        {
+          "Property_Name": "Glass_Transition_Temperature",
+          "Test_Condition": null,
+          "Value_Numeric": 270.6,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "\u00b0C",
+          "Test_Temperature_K": null,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": null
+        }
+      ]
+    },
+    {
+      "Sample_ID": "LCFE2-BADCy",
+      "Gradient_Material": false,
+      "Gradient_Group_ID": null,
+      "Composition_Info": {
+        "Role": "Target",
+        "Alloy_Name_Raw": "LCFE2 modified Bisphenol A dicyanate ester resins",
+        "Nominal_Composition": {
+          "Composition_Type": "wt%",
+          "Elements_Normalized": null
+        },
+        "Measured_Composition": {
+          "Composition_Type": null,
+          "Elements_Normalized": null,
+          "Measurement_Method": null
+        },
+        "Note": "LCFE2 mass fraction: 10 wt%"
+      },
+      "Process_Info": {
+        "Process_Category": "Polymer Curing",
+        "Process_Text": {
+          "original": "The prepolymerization temperatures of FE0, LCFE2, and LCFE5 with BADCy resins usually occurs at 110oC and 160oC. The prepolymerization temperatures of FE0, LCFE2, and LCFE5 with BADCy resins are selected as 120 \u00b0C, 160 \u00b0C, and 120 \u00b0C, respectively.",
+          "simplified": "Cured at specific prepolymerization temperatures based on modifier type."
+        },
+        "Equipment": null,
+        "Key_Params": {
+          "Solution_Temperature_K": 433.15
+        }
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": "LCFE2 and LCFE5 can form a locally ordered liquid crystal structure during the prepolymerization of BADCy resin compared with FE0, which is a beneﬁt to weakening the dipole polarization of LCFE2-BADCy and LCFE5-BADCy cross-linked networks.",
+          "simplified": "Locally ordered liquid crystal structure formed with modifiers."
+        },
+        "Main_Phase": null,
+        "Precipitates": [],
+        "Porosity_pct": null,
+        "Relative_Density_pct": null,
+        "Grain_Size_avg_um": null,
+        "Precipitate_Size_avg_nm": null,
+        "Advanced_Quantitative_Features": {}
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Dielectric_Constant",
+          "Test_Condition": "10^6 Hz, 25oC",
+          "Value_Numeric": 2.61,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "null",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": "Minimum value at 10 wt% LCFE2"
+        },
+        {
+          "Property_Name": "Flexural_Strength",
+          "Test_Condition": null,
+          "Value_Numeric": 137.2,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "MPa",
+          "Test_Temperature_K": null,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": "Value at 10 wt% LCFE2"
+        },
+        {
+          "Property_Name": "Impact_Strength",
+          "Test_Condition": null,
+          "Value_Numeric": 14.8,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "kJ/m2",
+          "Test_Temperature_K": null,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": "Value at 10 wt% LCFE2"
+        },
+        {
+          "Property_Name": "Tensile_Strength",
+          "Test_Condition": null,
+          "Value_Numeric": 45.7,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "MPa",
+          "Test_Temperature_K": null,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": "Value at 10 wt% LCFE2"
+        },
+        {
+          "Property_Name": "Heat_Resistant_Index",
+          "Test_Condition": null,
+          "Value_Numeric": 202.8,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "\u00b0C",
+          "Test_Temperature_K": null,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": "THR"
+        },
+        {
+          "Property_Name": "Glass_Transition_Temperature",
+          "Test_Condition": null,
+          "Value_Numeric": 275.0,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "\u00b0C",
+          "Test_Temperature_K": null,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": null
+        }
+      ]
+    },
+    {
+      "Sample_ID": "LCFE5-BADCy",
+      "Gradient_Material": false,
+      "Gradient_Group_ID": null,
+      "Composition_Info": {
+        "Role": "Target",
+        "Alloy_Name_Raw": "LCFE5 modified Bisphenol A dicyanate ester resins",
+        "Nominal_Composition": {
+          "Composition_Type": "wt%",
+          "Elements_Normalized": null
+        },
+        "Measured_Composition": {
+          "Composition_Type": null,
+          "Elements_Normalized": null,
+          "Measurement_Method": null
+        },
+        "Note": "LCFE5 mass fraction: 10 wt%"
+      },
+      "Process_Info": {
+        "Process_Category": "Polymer Curing",
+        "Process_Text": {
+          "original": "The prepolymerization temperatures of FE0, LCFE2, and LCFE5 with BADCy resins usually occurs at 110\u2013160 \u00b0C. The prepolymerization temperatures of FE0, LCFE2, and LCFE5 with BADCy resins are selected as 120 \u00b0C, 160 \u00b0C, and 120 \u00b0C, respectively.",
+          "simplified": "Cured at specific prepolymerization temperatures based on modifier type."
+        },
+        "Equipment": null,
+        "Key_Params": {
+          "Solution_Temperature_K": 393.15
+        }
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": "LCFE2 and LCFE5 can form a locally ordered liquid crystal structure during the prepolymerization of BADCy resin compared with FE0, which is a beneﬁt to weakening the dipole polarization of LCFE2-BADCy and LCFE5-BADCy cross-linked networks.",
+          "simplified": "Locally ordered liquid crystal structure formed with modifiers."
+        },
+        "Main_Phase": null,
+        "Precipitates": [],
+        "Porosity_pct": null,
+        "Relative_Density_pct": null,
+        "Grain_Size_avg_um": null,
+        "Precipitate_Size_avg_nm": null,
+        "Advanced_Quantitative_Features": {}
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Dielectric_Constant",
+          "Test_Condition": "10^6 Hz, 25 \u00b0C",
+          "Value_Numeric": 2.66,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "null",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": "Minimum value at 10 wt% LCFE5"
+        },
+        {
+          "Property_Name": "Flexural_Strength",
+          "Test_Condition": null,
+          "Value_Numeric": 140.2,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "MP   
+      }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "Paper_Metadata": {
+    "Paper_Title": "Overview of constitutive laws, kinematics, homogenization and multiscale methods in crystal plasticity finite-element modeling: Theory, experiments, applications",
+    "DOI": "10.1016/j.actamat.2009.10.058"
+  },
+  "items": [
+    {
+      "Sample_ID": "Ti-18at.%Nb_Sim",
+      "Gradient_Material": false,
+      "Gradient_Group_ID": null,
+      "Composition_Info": {
+        "Role": "Reference",
+        "Alloy_Name_Raw": "Ti-18at.%Nb",
+        "Nominal_Composition": {
+          "Composition_Type": "at%",
+          "Elements_Normalized": {
+            "Ti": 82.0,
+            "Nb": 18.0
+          }
+        },
+        "Measured_Composition": null,
+        "Note": "Beta-Ti alloy used for multiscale CPFE simulations. Elastic constants obtained from ab initio calculations."
+      },
+      "Process_Info": {
+        "Process_Category": "Simulation",
+        "Process_Text": {
+          "original": "The rolling texture simulation was conducted using plane-strain compression boundary conditions and random initial texture.",
+          "simplified": "Rolling texture simulation using plane-strain compression."
+        },
+        "Equipment": null,
+        "Key_Params": {}
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": "Beta-Ti alloys have bcc crystal lattice structure. At room temperature the structure can be stabilized by the addition of Nb or Mo. As slip systems we used {110}, {112} and {123} slip planes, and <111>/2 Burgers vectors.",
+          "simplified": "BCC crystal lattice structure with {110}, {112} and {123} slip planes."
+        },
+        "Main_Phase": "BCC",
+        "Precipitates": [],
+        "Porosity_pct": null,
+        "Relative_Density_pct": null,
+        "Grain_Size_avg_um": null,
+        "Precipitate_Size_avg_nm": null,
+        "Advanced_Quantitative_Features": {
+          "Elastic_Constant_C11_GPa": 49.8,
+          "Elastic_Constant_C12_GPa": 21.4,
+          "Elastic_Constant_C44_GPa": 33.1,
+          "Zener_Anisotropy_Ratio": 2.4
+        }
+      },
+      "Properties_Info": []
+    },
+    {
+      "Sample_ID": "Ti-31at.%Nb_Sim",
+      "Gradient_Material": false,
+      "Gradient_Group_ID": null,
+      "Composition_Info": {
+        "Role": "Reference",
+        "Alloy_Name_Raw": "Ti-31at.%Nb",
+        "Nominal_Composition": {
+          "Composition_Type": "at%",
+          "Elements_Normalized": {
+            "Ti": 69.0,
+            "Nb": 31.0
+          }
+        },
+        "Measured_Composition": null,
+        "Note": "Beta-Ti alloy used for multiscale CPFE simulations. Elastic constants obtained from ab initio calculations."
+      },
+      "Process_Info": {
+        "Process_Category": "Simulation",
+        "Process_Text": {
+          "original": "The rolling texture simulation was conducted using plane-strain compression boundary conditions and random initial texture.",
+          "simplified": "Rolling texture simulation using plane-strain compression."
+        },
+        "Equipment": null,
+        "Key_Params": {}
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": "Beta-Ti alloys have bcc crystal lattice structure. At room temperature the structure can be stabilized by the addition of Nb or Mo.",
+          "simplified": "BCC crystal lattice structure."
+        },
+        "Main_Phase": "BCC",
+        "Precipitates": [],
+        "Porosity_pct": null,
+        "Relative_Density_pct": null,
+        "Grain_Size_avg_um": null,
+        "Precipitate_Size_avg_nm": null,
+        "Advanced_Quantitative_Features": {
+          "Elastic_Constant_C11_GPa": 72.6,
+          "Elastic_Constant_C12_GPa": 31.1,
+          "Elastic_Constant_C44_GPa": 19.3,
+          "Zener_Anisotropy_Ratio": 1.1
+        }
+      },
+      "Properties_Info": []
+    },
+    {
+      "Sample_ID": "X6Cr17_AISI_430",
+      "Gradient_Material": true,
+      "Gradient_Group_ID": null,
+      "Composition_Info": {
+        "Role": "Reference",
+        "Alloy_Name_Raw": "X6Cr17 (AISI 430) stainless steel",
+        "Nominal_Composition": {
+          "Composition_Type": "wt%",
+          "Elements_Normalized": {
+            "Cr": 17.0,
+            "Fe": 83.0
+          }
+        },
+        "Measured_Composition": null,
+        "Note": "Ferritic 17% Cr stainless steel sheet."
+      },
+      "Process_Info": {
+        "Process_Category": "Forming",
+        "Process_Text": {
+          "original": "prediction of earing during forming of a ferritic 17% Cr (X6Cr17, AISI 430) stainless steel sheet considering through-thickness gradients of the crystallographic texture. A texture component CPFE method (TCCP-FEM) is used for the simulation of cup drawing. The simulation includes the through-thickness texture gradient of the starting hot band.",
+          "simplified": "Cup drawing of a hot band sheet."
+        },
+        "Equipment": null,
+        "Key_Params": {}
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": "ferritic 17% Cr ... stainless steel sheet considering through-thickness gradients of the crystallographic texture",
+          "simplified": "Ferritic stainless steel with through-thickness texture gradients."
+        },
+        "Main_Phase": "Ferrite (BCC)",
+        "Precipitates": [],
+        "Porosity_pct": null,
+        "Relative_Density_pct": null,
+        "Grain_Size_avg_um": null,
+        "Precipitate_Size_avg_nm": null,
+        "Advanced_Quantitative_Features": {}
+      },
+      "Properties_Info": []
+    }
+  ]
+}

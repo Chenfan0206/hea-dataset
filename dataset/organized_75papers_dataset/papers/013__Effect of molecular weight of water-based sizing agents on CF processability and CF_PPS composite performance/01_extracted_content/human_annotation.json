@@ -1,0 +1,470 @@
+﻿公 开
+{
+  "Paper_Metadata": {
+    "Paper_Title": "Effect of molecular weight of water-based sizing agents on CF processability and CF/PPS composite performance",
+    "DOI": "10.1016/j.cej.2025.164645"
+  },
+  "items": [
+    {
+      "Sample_ID": "L-PAAs",
+      "Gradient_Material": false,
+      "Gradient_Group_ID": null,
+      "Composition_Info": {
+        "Role": "Target",
+        "Alloy_Name_Raw": "Water-soluble Polyamic Acid Salt (PAAs)",
+        "Nominal_Composition": {
+          "Composition_Type": "mol_ratio",
+          "Elements_Normalized": null
+        },
+        "Measured_Composition": {
+          "Composition_Type": null,
+          "Elements_Normalized": null,
+          "Measurement_Method": null
+        },
+        "Note": "Monomer ratio: BPDA:PDA:4-MPA = 4:5:2; Viscosity-average molecular weight: 1000 g/mol"
+      },
+      "Process_Info": {
+        "Process_Category": "Chemical Synthesis",
+        "Process_Text": {
+          "original": "Synthesized by mixing PDA and BPDA, introducing excess TEA, stirred at 0 ℃ for 18 h. 4-MPA was incorporated as a capping agent. Solid content maintained at 15 wt%.",
+          "simplified": "Polyamic acid salt synthesized via condensation polymerization at 0°C with capping agent."
+        },
+        "Equipment": null,
+        "Key_Params": {
+          "Reaction_Temperature_K": 273.15,
+          "Reaction_Time_h": 18
+        }
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": "L-CF surface could not be adequately covered by the sizing agent L-PAAs, leaving grooves and some filamentous traces of L-PAAs clearly visible. Within limited sizing time L-PAAs could only form a very thin film on CF surface.",
+          "simplified": "Incomplete coverage with visible grooves and filamentous traces; thin film formation."
+        },
+        "Main_Phase": null,
+        "Precipitates": [],
+        "Porosity_pct": null,
+        "Relative_Density_pct": null,
+        "Grain_Size_avg_um": null,
+        "Precipitate_Size_avg_nm": null,
+        "Advanced_Quantitative_Features": {}
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Intrinsic_Viscosity",
+          "Test_Condition": null,
+          "Value_Numeric": 0.11,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "dL/g",
+          "Test_Temperature_K": null,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": null
+        },
+        {
+          "Property_Name": "Thermal_Decomposition_Onset",
+          "Test_Condition": "Nitrogen Atmosphere",
+          "Value_Numeric": 440,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "°C",
+          "Test_Temperature_K": null,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": null
+        },
+        {
+          "Property_Name": "Glass_Transition_Temperature",
+          "Test_Condition": null,
+          "Value_Numeric": 256,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "°C",
+          "Test_Temperature_K": null,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": null
+        },
+    {
+      "Sample_ID": "M-PAAs",
+      "Gradient_Material": false,
+      "Gradient_Group_ID": null,
+      "Composition_Info": {
+        "Role": "Target",
+        "Alloy_Name_Raw": "Water-soluble Polyamic Acid Salt (PAAs)",
+        "Nominal_Composition": {
+          "Composition_Type": "mol_ratio",
+          "Elements_Normalized": null
+        },
+        "Measured_Composition": {
+          "Composition_Type": null,
+          "Elements_Normalized": null,
+          "Measurement_Method": null
+        },
+        "Note": "Monomer ratio: BPDA:PDA:4-MPA = 9:10:2; Viscosity-average molecular weight: 4003 g/mol"
+      },
+      "Process_Info": {
+        "Process_Category": "Chemical Synthesis",
+        "Process_Text": {
+          "original": "Synthesized by mixing PDA and BPDA, introducing excess TEA, stirred at 0 ℃ for 18 h. 4-MPA was incorporated as a capping agent. Solid content maintained at 15 wt%.",
+          "simplified": "Polyamic acid salt synthesized via condensation polymerization at 0°C with capping agent."
+        },
+        "Equipment": null,
+        "Key_Params": {
+          "Reaction_Temperature_K": 273.15,
+          "Reaction_Time_h": 18
+        }
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Intrinsic_Viscosity",
+          "Test_Condition": null,
+          "Value_Numeric": 0.31,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "dL/g",
+          "Test_Temperature_K": null,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": null
+        },
+        {
+          "Property_Name": "Thermal_Decomposition_Onset",
+          "Test_Condition": "Nitrogen Atmosphere",
+          "Value_Numeric": 446,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "°C",
+          "Test_Temperature_K": null,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": null
+        },
+        {
+          "Property_Name": "Glass_Transition_Temperature",
+          "Test_Condition": null,
+          "Value_Numeric": 258,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "°C",
+          "Test_Temperature_K": null,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": null
+        },
+        {
+          "Property_Name": "Char_Yield",
+          "Test_Condition": "800 °C",
+          "Value_Numeric": 62.2,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "wt%",
+          "Test_Temperature_K": null,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": null
+        }
+      ]
+    },
+    {
+      "Sample_ID": "H-PAAs",
+      "Gradient_Material": false,
+      "Gradient_Group_ID": null,
+      "Composition_Info": {
+        "Role": "Target",
+        "Alloy_Name_Raw": "Water-soluble Polyamic Acid Salt (PAAs)",
+        "Nominal_Composition": {
+          "Composition_Type": "mol_ratio",
+          "Elements_Normalized": null
+        },
+        "Measured_Composition": {
+          "Composition_Type": null,
+          "Elements_Normalized": null,
+          "Measurement_Method": null
+        },
+        "Note": "Monomer ratio: BPDA:PDA:4-MPA = 16:17:2; Viscosity-average molecular weight: 23539 g/mol"
+      },
+      "Process_Info": {
+        "Process_Category": "Chemical Synthesis",
+        "Process_Text": {
+          "original": "Synthesized by mixing PDA and BPDA, introducing excess TEA, stirred at 0 ℃ for 18 h. 4-MPA was incorporated as a capping agent. Solid content maintained at 15 wt%.",
+          "simplified": "Polyamic acid salt synthesized via condensation polymerization at 0°C with capping agent."
+        },
+        "Equipment": null,
+        "Key_Params": {
+          "Reaction_Temperature_K": 273.15,
+          "Reaction_Time_h": 18
+        }
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": "H-CF again presented a rough and uneven morphology, where many small granules of H-PAAs scattered onto the grooved surface. The surface is prone to entanglement and concentration fluctuation.",
+          "simplified": "Rough and uneven morphology with scattered granules; prone to entanglement."
+        },
+        "Main_Phase": null,
+        "Precipitates": [],
+        "Porosity_pct": null,
+        "Relative_Density_pct": null,
+        "Grain_Size_avg_um": null,
+        "Precipitate_Size_avg_nm": null,
+        "Advanced_Quantitative_Features": {}
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Intrinsic_Viscosity",
+          "Test_Condition": null,
+          "Value_Numeric": 1.11,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "dL/g",
+          "Test_Temperature_K": null,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": null
+        },
+        {
+          "Property_Name": "Thermal_Decomposition_Onset",
+          "Test_Condition": "Nitrogen Atmosphere",
+          "Value_Numeric": 555,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "°C",
+          "Test_Temperature_K": null,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": null
+        },
+        {
+          "Property_Name": "Glass_Transition_Temperature",
+          "Test_Condition": null,
+          "Value_Numeric": 300,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "°C",
+          "Test_Temperature_K": null,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": null
+        },
+        {
+          "Property_Name": "Char_Yield",
+          "Test_Condition": "800 °C",
+          "Value_Numeric": 69.5,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "wt%",
+          "Test_Temperature_K": null,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": null
+        }
+      ]
+    },
+    {
+      "Sample_ID": "DCF/PPS",
+      "Gradient_Material": false,
+      "Gradient_Group_ID": null,
+      "Composition_Info": {
+        "Role": "Target",
+        "Alloy_Name_Raw": "Desized Carbon Fiber / Polyphenylene Sulfide Composite",
+        "Nominal_Composition": {
+          "Composition_Type": "wt%",
+          "Elements_Normalized": null
+        },
+        "Measured_Composition": {
+          "Composition_Type": null,
+          "Elements_Normalized": null,
+          "Measurement_Method": null
+        },
+        "Note": "Desized CF (3K-T300) reinforced PPS composite without sizing treatment"
+      },
+      "Process_Info": {
+        "Process_Category": "Composite Fabrication",
+        "Process_Text": {
+          "original": "Compression molding: stacking of nine layers of PPS film and eight layers of CF fabric, hot pressing at 350°C (following a preheat of 30 min) under a pressure of 2.5 MPa.",
+          "simplified": "Compression molded at 350°C and 2.5 MPa pressure."
+        },
+        "Equipment": null,
+        "Key_Params": {
+          "Molding_Temperature_K": 623.15,
+          "Molding_Pressure_MPa": 2.5,
+          "Preheat_Time_min": 30
+        }
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": "Fracture surfaces displayed reduced resin content and substantial gaps between CF and the PPS matrix, leading to delamination and CF pull-out under stress, which created voids.",
+          "simplified": "Presence of voids and gaps; fiber pull-out observed."
+        },
+        "Main_Phase": null,
+        "Precipitates": [],
+        "Porosity_pct": null,
+        "Relative_Density_pct": null,
+        "Grain_Size_avg_um": null,
+        "Precipitate_Size_avg_nm": null,
+        "Advanced_Quantitative_Features": {}
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Interlaminar_Shear_Strength",
+          "Test_Condition": "ASTM D234",
+          "Value_Numeric": null,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "MPa",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": "Baseline value not provided, used for comparative improvement calculation"
+        },
+        {
+          "Property_Name": "Flexural_Strength",
+          "Test_Condition": "ASTM D7264",
+          "Value_Numeric": null,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "MPa",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": "Baseline value not provided, used for comparative improvement calculation"
+        },
+        {
+          "Property_Name": "Flexural_Modulus",
+          "Test_Condition": "ASTM D7264",
+          "Value_Numeric": null,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "GPa",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": "Baseline value not provided, used for comparative improvement calculation"
+        },
+        {
+          "Property_Name": "Interfacial_Shear_Strength",
+          "Test_Condition": null,
+          "Value_Numeric": null,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "MPa",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": "Baseline value not provided, used for comparative improvement calculation"
+        }
+      ]
+    },
+    {
+      "Sample_ID": "M-CF/PPS",
+      "Gradient_Material": false,
+      "Gradient_Group_ID": null,
+      "Composition_Info": {
+        "Role": "Target",
+        "Alloy_Name_Raw": "M-PAAs Sized Carbon Fiber / Polyphenylene Sulfide Composite",
+        "Nominal_Composition": {
+          "Composition_Type": "wt%",
+          "Elements_Normalized": null
+        },
+        "Measured_Composition": {
+          "Composition_Type": null,
+          "Elements_Normalized": null,
+          "Measurement_Method": null
+        },
+        "Note": "CF sized with M-PAAs (Medium molecular weight) reinforcing PPS matrix"
+      },
+      "Process_Info": {
+        "Process_Category": "Composite Fabrication",
+        "Process_Text": {
+          "original": "Compression molding: stacking of nine layers of PPS film and eight layers of CF fabric, hot pressing at 350°C (following a preheat of 30 min) under a pressure of 2.5 MPa.",
+          "simplified": "Compression molded at 350°C and 2.5 MPa pressure."
+        },
+        "Equipment": null,
+        "Key_Params": {
+          "Molding_Temperature_K": 623.15,
+          "Molding_Pressure_MPa": 2.5,
+          "Preheat_Time_min": 30
+        }
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Interlaminar_Shear_Strength_Improvement",
+          "Test_Condition": "ASTM D234",
+          "Value_Numeric": 66.5,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "%",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": "Relative improvement compared to DCF/PPS"
+        },
+            }
+      ]
+    }
+  ]
+}

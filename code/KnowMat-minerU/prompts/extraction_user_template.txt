@@ -1,0 +1,77 @@
+You will be provided with OCR-parsed, layout-analyzed, or text-integrated content of a high-entropy alloy paper.
+
+Follow the system prompt and extract step-by-step according to the HEA-focused
+Composition -> Processing -> Structure -> Properties framework.
+
+Input routing hints:
+
+`base_material`: `{target_base_material}`
+`application`: `{target_application}`
+`research_paradigm`: `{target_research_paradigm}`
+
+Allowed patch tags hint:
+`{target_patch_tags}`
+
+Full paper text:
+
+=== INPUT TEXT START ===
+{paper_text}
+=== INPUT TEXT END ===
+
+Step A: Metadata and HEA Scope
+
+1. Extract Paper_Title and DOI.
+2. Confirm whether the paper is about high-entropy alloys, multi-principal-element alloys, or complex concentrated alloys.
+3. If it is not HEA/MPEA/CCA scoped, keep base_material as Metals, set Needs_Mixed_Routing_Check=true, and explain the out-of-scope signal.
+4. Determine application and research_paradigm within the allowed HEA-only routing.
+
+Step B: Item Segmentation
+
+Identify all independent HEA specimens, states, simulations, and literature comparison entries.
+
+Create separate items for:
+
+- different HEA compositions
+- as-built, as-cast, solution-treated, aged, annealed, HIPed, or thermally exposed states
+- additive manufacturing parameter sets when they define distinct specimens
+- different heat-treatment temperatures or times that change microstructure
+- different simulation configurations or phase/interface models
+- literature comparison entries with quantitative values
+
+Keep repeated tests on the same unchanged specimen inside the same item's Properties array.
+
+Step C: Composition
+
+Extract alloy formulas, nominal compositions, measured compositions, phase compositions, and local composition data.
+Preserve source expressions and annotate Composition_Source_Type when supported.
+Do not normalize or back-calculate missing element values.
+
+Step D: Processing
+
+Extract the full HEA preparation and post-processing route, including equipment where stated.
+For additively manufactured HEAs, capture laser power, scan speed, hatch spacing, layer thickness, atmosphere, build direction, powder information, and post-treatment.
+
+Step E: Structure
+
+Extract phases, precipitates, grain/cell/dendrite structure, texture, defects, phase fractions, precipitate size, segregation, and quantitative microstructural descriptors.
+Bind each structure state to the correct processing condition.
+
+Step F: Properties
+
+Extract mechanical, corrosion, oxidation, thermal, electrical, magnetic, electrochemical, or other properties reported for HEAs.
+Bind property values to test conditions and data provenance.
+Do not estimate values from plots or images unless the number is explicitly written in a caption or legend.
+
+Step G: Validation
+
+Before final output:
+
+- remove empty arrays, empty objects, and unsupported null shells
+- ensure every item preserves HEA routing
+- ensure every property has Data_Nature
+- ensure Target, Variant, Reference, Comparator, and Demonstration records are not mixed
+- ensure original units and source expressions are preserved
+
+Final output:
+
+Return only a single valid JSON object, starting with `{` and ending with `}`.

@@ -1,0 +1,2290 @@
+{
+  "Paper_Metadata": {
+    "Paper_Title": "Branched Fluorine/Adamantane Interfacial Compatibilizer for PBO Fibers/Cyanate Ester Wave-Transparent Laminated Composites",
+    "DOI": "10.1002/cjoc.202200749"
+  },
+  "Paper_Routing": {
+    "base_material": "Composites",
+    "application": "Functional",
+    "research_paradigm": "Hybrid",
+    "Supplements_Loaded": [
+      "/home/cs/.codex/skills/material-extractor/references/directions/base/Composites.txt",
+      "/home/cs/.codex/skills/material-extractor/references/directions/application/Functional.txt",
+      "/home/cs/.codex/skills/material-extractor/references/directions/paradigm/Hybrid.txt"
+    ],
+    "Patch_Tags": [
+      "Interface_Dominated"
+    ],
+    "Needs_Mixed_Routing_Check": true,
+    "Mixed_Signals": [
+      "The paper is mainly experimental on PBO fiber/cyanate ester composites, but molecular dynamics, DFT-D3 interaction calculations, and wave-transmission simulations are used for mechanism and performance analysis, so the final paradigm is Hybrid.",
+      "Coating appears in background references to surface modification methods, but the studied material is an interfacial compatibilizer incorporated into BADCy/PBO composites rather than a coating or thin-film system; no Coating overlay was loaded."
+    ]
+  },
+  "items": [
+    {
+      "Item_ID": "ITEM-001",
+      "Sample_ID": "preFABPBO",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Polymers",
+      "application": "Functional",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Branched fluorine/adamantane PBO precursor (preFABPBO), synthesized via random co-condensation between 2,2-bis(3-amino-4-hydroxyphenyl)hexafluoro propane, 1,3-adamantanedicarbonyl dichloride, and trimesoyl chloride, is performed as interfacial compatibilizer.",
+        "GPC analysis shows the Mn and PDI of preFABPBO are respectively 181 000 g/mol and 2.18, and the particle size distribution in N,N-dimethylformamide (DMF) solution (1 mg/mL) is in the narrow range of 396-615 nm."
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Type": "branched fluorine/adamantane PBO precursor interfacial compatibilizer",
+          "Monomers_or_Precursors": [
+            {
+              "Name": "2,2-bis(3-amino-4-hydroxyphenyl)hexafluoro propane",
+              "Abbreviation": "6FAP"
+            },
+            {
+              "Name": "1,3-adamantanedicarbonyl dichloride",
+              "Abbreviation": "ADC"
+            },
+            {
+              "Name": "trimesoyl chloride",
+              "Abbreviation": "TMC"
+            }
+          ],
+          "Functional_Groups_or_Units": [
+            "adamantane unit",
+            "-CF3 group",
+            "PBO-like structure",
+            "terminal epoxy group",
+            "TBS structure"
+          ],
+          "Composition_Basis": "nominal"
+        },
+        "Processing": {
+          "Process_Category": "random co-condensation and terminal functionalization",
+          "Process_Text": {
+            "original": "preFABPBO obtained by random co-condensation between 2,2-bis(3-amino-4-hydroxyphenyl)hexafluoro propane, 1,3-adamantedicarbonyl dichloride, and trimesoyl chloride",
+            "simplified": "Random co-condensation of 6FAP, ADC, and TMC produced branched fluorine/adamantane PBO precursor preFABPBO."
+          },
+          "Key_Params": [
+            {
+              "Parameter": "DMF solution concentration for particle-size distribution",
+              "Value": 1,
+              "Unit": "mg/mL",
+              "Original_Values": "1 mg/mL"
+            }
+          ],
+          "Equipment": [
+            {
+              "Name": "Fourier transform infrared spectroscopy",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "nuclear magnetic resonance",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "dynamic light scattering",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "gel permeation chromatography",
+              "Category": "Characterization"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "The appearance of 2800-3000 cm-1 (-CH2- group in adamantanes) and 1690 cm-1 (carbonyl peak) proves the random co-condensation reaction, and the peak at 918 cm-1 is assigned to epoxy group.",
+            "simplified": "Spectroscopy confirmed adamantane, carbonyl, and epoxy groups in preFABPBO."
+          },
+          "Molecular_Features": [
+            "branched structure",
+            "caged adamantane units",
+            "fluorine-containing groups",
+            "PBO-like structure"
+          ],
+          "Advanced_Quantitative_Features": [
+            {
+              "Feature": "Number-average molecular weight",
+              "Value": 181000,
+              "Unit": "g/mol",
+              "Original_Values": "Mn = 181 000 g/mol",
+              "Data_Source": "text"
+            },
+            {
+              "Feature": "Polydispersity index",
+              "Value": 2.18,
+              "Unit": null,
+              "Original_Values": "PDI = 2.18",
+              "Data_Source": "text"
+            },
+            {
+              "Feature": "Particle size distribution in DMF",
+              "Value": null,
+              "Value_Range": {
+                "Min": 396,
+                "Max": 615,
+                "Unit": "nm"
+              },
+              "Original_Values": "396-615 nm",
+              "Data_Source": "text"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "Item_ID": "ITEM-002",
+      "Sample_ID": "BADCy resin",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Polymers",
+      "application": "Functional",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "When the mass fraction of preFABPBO is 5 wt%, FABPBO-BADCy resin shows ultra-low epsilon (2.38) and tan delta (0.0052) at 10^6 Hz, lower than those of BADCy resin (3.04 and 0.0081), and the corresponding |T|2 is 95.4%, higher than that of BADCy resin (92.6%).",
+        "When the amount of preFABPBO is 7 wt%, the FABPBO-BADCy resins display the maximum flexural strength (148.3 MPa) and impact strength (16.2 kJ/m2), compared with those of BADCy (102.4 MPa and 9.9 kJ/m2).",
+        "When the mass fraction of preFABPBO is 5 wt%, the heat resistance index (THRI) and glass transition temperature (Tg) of FABPBO-BADCy resins are 197.9 and 274.4 °C, respectively, slightly higher than those of pure BADCy resin (197.5 and 272.7 °C). And the corresponding storage modulus is 2684.2 MPa, slightly lower than that of pure BADCy resin (2778.0 MPa)."
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Type": "cyanate ester resin",
+          "Matrix": {
+            "Name": "bisphenol A dicyanate ester",
+            "Abbreviation": "BADCy"
+          },
+          "Composition_Basis": "nominal"
+        },
+        "Processing": {
+          "Process_Category": "resin curing",
+          "Process_Text": {
+            "original": "BADCy resin as polymer matrix",
+            "simplified": "Pure BADCy resin was used as the unmodified resin comparator."
+          },
+          "Equipment": [
+            {
+              "Name": "TGA",
+              "Category": "Testing"
+            },
+            {
+              "Name": "DMA",
+              "Category": "Testing"
+            }
+          ],
+          "Note": "Detailed resin curing parameters are referred to Supporting Information in the OCR text but are not present in the provided paper text."
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "The weight loss of BADCy resin after 400 °C is attributed to the disruption of BADCy network.",
+            "simplified": "BADCy forms a cured resin network."
+          },
+          "Matrix_Structure": "BADCy network"
+        },
+        "Properties": [
+          {
+            "Property_Name": "Dielectric_Constant",
+            "Value": 3.04,
+            "Unit": null,
+            "Original_Values": "3.04",
+            "Test_Condition": {
+              "Frequency_Hz": 1000000
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Dielectric_Loss",
+            "Value": 0.0081,
+            "Unit": null,
+            "Original_Values": "0.0081",
+            "Test_Condition": {
+              "Frequency_Hz": 1000000
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Wave_Transparency",
+            "Value": 92.6,
+            "Unit": "%",
+            "Original_Values": "|T|2 = 92.6%",
+            "Test_Condition": {
+              "Frequency_Hz": 1000000
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Flexural_Strength",
+            "Value": 102.4,
+            "Unit": "MPa",
+            "Original_Values": "102.4 MPa",
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Impact_Strength",
+            "Value": 9.9,
+            "Unit": "kJ/m^2",
+            "Original_Values": "9.9 kJ/m²",
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Heat_Resistance_Index",
+            "Value": 470.65,
+            "Unit": "K",
+            "Original_Values": "197.5 °C",
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Glass_Transition_Temperature",
+            "Value": 545.85,
+            "Unit": "K",
+            "Original_Values": "272.7 °C",
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Storage_Modulus",
+            "Value": 2778.0,
+            "Unit": "MPa",
+            "Original_Values": "2778.0 MPa",
+            "Data_Source": "text"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "ITEM-003",
+      "Sample_ID": "FABPBO-BADCy resin (5 wt% preFABPBO)",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Polymers",
+      "application": "Functional",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "When the mass fraction of preFABPBO is 5 wt%, FABPBO-BADCy resin shows ultra-low epsilon (2.38) and tan delta (0.0052) at 10^6 Hz.",
+        "The flexural and impact strength of FABPBO-BADCy resins with 5 wt% preFABPBO are respectively 142.7 MPa and 15.4 kJ/m2.",
+        "When the mass fraction of preFABPBO is 5 wt%, the heat resistance index (THRI) and glass transition temperature (Tg) of FABPBO-BADCy resins are 197.9 and 274.4 °C, respectively."
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Type": "preFABPBO-modified cyanate ester resin",
+          "Matrix": {
+            "Name": "bisphenol A dicyanate ester",
+            "Abbreviation": "BADCy"
+          },
+          "Filler_or_Modifier": {
+            "Name": "preFABPBO",
+            "Mass_Fraction": {
+              "Value": 5,
+              "Unit": "wt%",
+              "Original_Values": "5 wt%"
+            }
+          },
+          "Composition_Basis": "nominal"
+        },
+        "Processing": {
+          "Process_Category": "resin modification and curing",
+          "Process_Text": {
+            "original": "The effects of different mass fractions of preFABPBO on the dielectric properties, mechanical properties, and heat resistances of the FABPBO-BADCy resin were analyzed.",
+            "simplified": "BADCy resin was modified with 5 wt% preFABPBO and cured for property testing."
+          },
+          "Equipment": [
+            {
+              "Name": "TGA",
+              "Category": "Testing"
+            },
+            {
+              "Name": "DMA",
+              "Category": "Testing"
+            }
+          ],
+          "Note": "Detailed curing schedule is not present in the OCR text."
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "The special branched structures of preFABPBO and large free volume of caged adamantine units reduce the number of polarized molecules.",
+            "simplified": "The resin contains branched preFABPBO with caged adamantane and fluorine groups in the BADCy network."
+          },
+          "Matrix_Structure": "preFABPBO-modified BADCy network",
+          "Interface_Features": "epoxy group of preFABPBO can react with -OCN group in BADCy"
+        },
+        "Properties": [
+          {
+            "Property_Name": "Dielectric_Constant",
+            "Value": 2.38,
+            "Unit": null,
+            "Original_Values": "2.38",
+            "Test_Condition": {
+              "Frequency_Hz": 1000000
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Dielectric_Loss",
+            "Value": 0.0052,
+            "Unit": null,
+            "Original_Values": "0.0052",
+            "Test_Condition": {
+              "Frequency_Hz": 1000000
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Wave_Transparency",
+            "Value": 95.4,
+            "Unit": "%",
+            "Original_Values": "|T|2 = 95.4%",
+            "Test_Condition": {
+              "Frequency_Hz": 1000000
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Flexural_Strength",
+            "Value": 142.7,
+            "Unit": "MPa",
+            "Original_Values": "142.7 MPa",
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Impact_Strength",
+            "Value": 15.4,
+            "Unit": "kJ/m^2",
+            "Original_Values": "15.4 kJ/m²",
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Heat_Resistance_Index",
+            "Value": 471.05,
+            "Unit": "K",
+            "Original_Values": "197.9 °C",
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Glass_Transition_Temperature",
+            "Value": 547.55,
+            "Unit": "K",
+            "Original_Values": "274.4 °C",
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Storage_Modulus",
+            "Value": 2684.2,
+            "Unit": "MPa",
+            "Original_Values": "2684.2 MPa",
+            "Data_Source": "text"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "ITEM-004",
+      "Sample_ID": "FABPBO-BADCy resin (7 wt% preFABPBO)",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Polymers",
+      "application": "Functional",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "When the amount of preFABPBO is 7 wt%, the FABPBO-BADCy resins display the maximum flexural strength (148.3 MPa) and impact strength (16.2 kJ/m²)."
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Type": "preFABPBO-modified cyanate ester resin",
+          "Matrix": {
+            "Name": "bisphenol A dicyanate ester",
+            "Abbreviation": "BADCy"
+          },
+          "Filler_or_Modifier": {
+            "Name": "preFABPBO",
+            "Mass_Fraction": {
+              "Value": 7,
+              "Unit": "wt%",
+              "Original_Values": "7 wt%"
+            }
+          },
+          "Composition_Basis": "nominal"
+        },
+        "Processing": {
+          "Process_Category": "resin modification and curing",
+          "Process_Text": {
+            "original": "When the amount of preFABPBO is 7 wt%, the FABPBO-BADCy resins display the maximum flexural strength.",
+            "simplified": "BADCy resin was modified with 7 wt% preFABPBO and cured for property testing."
+          },
+          "Note": "Detailed curing schedule is not present in the OCR text."
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "The flexural and impact strength of FABPBO-BADCy resins increase with increasing the amount of preFABPBO.",
+            "simplified": "The 7 wt% resin contains a higher preFABPBO modifier fraction than the selected 5 wt% formulation."
+          },
+          "Matrix_Structure": "preFABPBO-modified BADCy network"
+        },
+        "Properties": [
+          {
+            "Property_Name": "Flexural_Strength",
+            "Value": 148.3,
+            "Unit": "MPa",
+            "Original_Values": "148.3 MPa",
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Impact_Strength",
+            "Value": 16.2,
+            "Unit": "kJ/m^2",
+            "Original_Values": "16.2 kJ/m²",
+            "Data_Source": "text"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "ITEM-005",
+      "Sample_ID": "PBO fibers/BADCy micro-composite",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Composites",
+      "application": "Functional",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "The single fiber pull-out strength of PBO fibers/BADCy, PBO fibers/FBPBO-BADCy, and PBO fibers/FABPBO-BADCy micro-composites are 2.9, 3.5, and 4.0 MPa, respectively.",
+        "For PBO fibers/BADCy micro-composites, the elastic modulus of BADCy matrix and PBO fibers are 4.2 and 8.9 GPa, and the corresponding hardness are 0.34 and 0.8 GPa, respectively.",
+        "Due to the extremely poor interfacial compatibility, the elastic modulus and hardness of PBO fibers/BADCy micro-composites interface (4.3 and 0.38 GPa) are close to those of BADCy matrix.",
+        "Transverse tensile strength of the PBO fibers/BADCy is 5.02 MPa."
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Composite_Category": "polymer matrix micro-composite",
+          "Composite_System_Raw": "PBO fibers/BADCy micro-composites",
+          "Matrix": {
+            "Name": "BADCy resin"
+          },
+          "Reinforcement": {
+            "Name": "PBO fibers"
+          },
+          "Fiber_Volume_Fraction": null,
+          "Fiber_Architecture": null,
+          "Composition_Basis": "nominal",
+          "Note": "Fiber volume fraction and architecture are not given in the OCR text."
+        },
+        "Processing": {
+          "Process_Category": "micro-composite preparation",
+          "Process_Text": {
+            "original": "PBO fibers/BADCy micro-composites",
+            "simplified": "PBO fibers were combined with BADCy resin to prepare micro-composite interface test specimens."
+          },
+          "Equipment": [
+            {
+              "Name": "nanoindentation test",
+              "Category": "Testing"
+            },
+            {
+              "Name": "micro-transverse tensile test",
+              "Category": "Testing"
+            },
+            {
+              "Name": "SEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "TEM",
+              "Category": "Characterization"
+            }
+          ],
+          "Note": "Detailed micro-composite fabrication parameters are not present in the OCR text."
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "the corresponding interfacial region (25.8 nm) between BADCy matrix and PBO fibers is narrow",
+            "simplified": "The BADCy/PBO interface has a narrow interfacial region and poor compatibility."
+          },
+          "Interface_Features": [
+            {
+              "Description": "narrow interfacial region between BADCy matrix and PBO fibers",
+              "Thickness": {
+                "Value": 25.8,
+                "Unit": "nm",
+                "Original_Values": "25.8 nm"
+              }
+            },
+            {
+              "Description": "surface of PBO fibers after fracture is smooth without residual BADCy"
+            },
+            {
+              "Description": "micro-pores or defects at the interface are described as caused by weak compatibility"
+            }
+          ]
+        },
+        "Properties": [
+          {
+            "Property_Name": "Single_Fiber_Pull_Out_Strength",
+            "Value": 2.9,
+            "Unit": "MPa",
+            "Original_Values": "2.9 MPa",
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Elastic_Modulus",
+            "Value": 4.2,
+            "Unit": "GPa",
+            "Original_Values": "4.2 GPa",
+            "Test_Condition": {
+              "Location": "BADCy matrix",
+              "Method": "nanoindentation"
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Elastic_Modulus",
+            "Value": 8.9,
+            "Unit": "GPa",
+            "Original_Values": "8.9 GPa",
+            "Test_Condition": {
+              "Location": "PBO fibers",
+              "Method": "nanoindentation"
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Elastic_Modulus",
+            "Value": 4.3,
+            "Unit": "GPa",
+            "Original_Values": "4.3 GPa",
+            "Test_Condition": {
+              "Location": "interface",
+              "Method": "nanoindentation"
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Hardness",
+            "Value": 0.34,
+            "Unit": "GPa",
+            "Original_Values": "0.34 GPa",
+            "Test_Condition": {
+              "Location": "BADCy matrix",
+              "Method": "nanoindentation"
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Hardness",
+            "Value": 0.8,
+            "Unit": "GPa",
+            "Original_Values": "0.8 GPa",
+            "Test_Condition": {
+              "Location": "PBO fibers",
+              "Method": "nanoindentation"
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Hardness",
+            "Value": 0.38,
+            "Unit": "GPa",
+            "Original_Values": "0.38 GPa",
+            "Test_Condition": {
+              "Location": "interface",
+              "Method": "nanoindentation"
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Transverse_Tensile_Strength",
+            "Value": 5.02,
+            "Unit": "MPa",
+            "Original_Values": "5.02 MPa",
+            "Data_Source": "text"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "ITEM-006",
+      "Sample_ID": "PBO fibers/FBPBO-BADCy micro-composite",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Composites",
+      "application": "Functional",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "The single fiber pull-out strength of PBO fibers/BADCy, PBO fibers/FBPBO-BADCy, and PBO fibers/FABPBO-BADCy micro-composites are 2.9, 3.5, and 4.0 MPa, respectively.",
+        "Compared with PBO fibers/BADCy micro-composites, the thickness of interface for PBO fiber/FBPBO-BADCy increases to 49.1 nm.",
+        "The elastic modulus and hardness at the interface of PBO fibers/FBPBO-BADCy and PBO fibers/FABPBO-BADCy micro-composites gradually increased to 5.0 and 5.6 GPa, and 0.45 and 0.50 GPa, respectively.",
+        "the transverse tensile strength of the PBO fibers/FBPBO-BADCy and PBO fibers/FABPBO-BADCy microcomposites are significantly increased to 7.45 and 9.06 MPa, respectively."
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Composite_Category": "polymer matrix micro-composite",
+          "Composite_System_Raw": "PBO fibers/FBPBO-BADCy micro-composites",
+          "Matrix": {
+            "Name": "FBPBO-BADCy"
+          },
+          "Reinforcement": {
+            "Name": "PBO fibers"
+          },
+          "Interface_or_Interphase": {
+            "Name": "preFBPBO-containing interface"
+          },
+          "Fiber_Volume_Fraction": null,
+          "Fiber_Architecture": null,
+          "Composition_Basis": "nominal",
+          "Note": "Fiber volume fraction and architecture are not given in the OCR text."
+        },
+        "Processing": {
+          "Process_Category": "micro-composite preparation",
+          "Process_Text": {
+            "original": "PBO fibers/FBPBO-BADCy micro-composites",
+            "simplified": "PBO fibers were combined with preFBPBO-modified BADCy resin to prepare micro-composite interface test specimens."
+          },
+          "Note": "Detailed micro-composite fabrication parameters are not present in the OCR text. Testing and characterization methods are explicitly given for the Figure 4 micro-composite group: nanoindentation tests, micro-transverse tensile test, SEM fracture images, and TEM interface images.",
+          "Equipment": [
+            {
+              "Name": "nanoindentation test",
+              "Category": "Testing"
+            },
+            {
+              "Name": "micro-transverse tensile test",
+              "Category": "Testing"
+            },
+            {
+              "Name": "SEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "TEM",
+              "Category": "Characterization"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "the thickness of interface for PBO fiber/FBPBO-BADCy increases to 49.1 nm",
+            "simplified": "preFBPBO increases the PBO fiber/BADCy interfacial thickness."
+          },
+          "Interface_Features": [
+            {
+              "Description": "preFBPBO introduces PBO-like structures at interface between BADCy matrix and PBO fibers",
+              "Thickness": {
+                "Value": 49.1,
+                "Unit": "nm",
+                "Original_Values": "49.1 nm"
+              }
+            }
+          ]
+        },
+        "Properties": [
+          {
+            "Property_Name": "Single_Fiber_Pull_Out_Strength",
+            "Value": 3.5,
+            "Unit": "MPa",
+            "Original_Values": "3.5 MPa",
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Elastic_Modulus",
+            "Value": 5.0,
+            "Unit": "GPa",
+            "Original_Values": "5.0 GPa",
+            "Test_Condition": {
+              "Location": "interface",
+              "Method": "nanoindentation"
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Hardness",
+            "Value": 0.45,
+            "Unit": "GPa",
+            "Original_Values": "0.45 GPa",
+            "Test_Condition": {
+              "Location": "interface",
+              "Method": "nanoindentation"
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Transverse_Tensile_Strength",
+            "Value": 7.45,
+            "Unit": "MPa",
+            "Original_Values": "7.45 MPa",
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Contact_Angle",
+            "Value": 98.5,
+            "Unit": "degree",
+            "Original_Values": "98.5°",
+            "Test_Condition": {
+              "Interface": "between PBO fibers and preFBPBO/BADCy"
+            },
+            "Data_Source": "text"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "ITEM-007",
+      "Sample_ID": "PBO fibers/FABPBO-BADCy micro-composite",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Composites",
+      "application": "Functional",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "The single fiber pull-out strength of PBO fibers/BADCy, PBO fibers/FBPBO-BADCy, and PBO fibers/FABPBO-BADCy micro-composites are 2.9, 3.5, and 4.0 MPa, respectively.",
+        "the thickness of interface phase formed by the diffusion between FABPBO-BADCy matrix and PBO fibers is further increased to 58.3 nm",
+        "The elastic modulus and hardness at the interface of PBO fibers/FBPBO-BADCy and PBO fibers/FABPBO-BADCy micro-composites gradually increased to 5.0 and 5.6 GPa, and 0.45 and 0.50 GPa, respectively.",
+        "the transverse tensile strength of the PBO fibers/FBPBO-BADCy and PBO fibers/FABPBO-BADCy microcomposites are significantly increased to 7.45 and 9.06 MPa, respectively.",
+        "In Figure 4i, contact angle between PBO fibers and preFABPBO/BADCy is 94.5°."
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Composite_Category": "polymer matrix micro-composite",
+          "Composite_System_Raw": "PBO fibers/FABPBO-BADCy micro-composites",
+          "Matrix": {
+            "Name": "FABPBO-BADCy"
+          },
+          "Reinforcement": {
+            "Name": "PBO fibers"
+          },
+          "Interface_or_Interphase": {
+            "Name": "preFABPBO-containing interface"
+          },
+          "Fiber_Volume_Fraction": null,
+          "Fiber_Architecture": null,
+          "Composition_Basis": "nominal",
+          "Note": "Fiber volume fraction and architecture are not given in the OCR text."
+        },
+        "Processing": {
+          "Process_Category": "micro-composite preparation",
+          "Process_Text": {
+            "original": "PBO fibers/FABPBO-BADCy micro-composites",
+            "simplified": "PBO fibers were combined with FABPBO-BADCy resin to prepare micro-composite interface test specimens."
+          },
+          "Equipment": [
+            {
+              "Name": "nanoindentation test",
+              "Category": "Testing"
+            },
+            {
+              "Name": "micro-transverse tensile test",
+              "Category": "Testing"
+            },
+            {
+              "Name": "SEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "TEM",
+              "Category": "Characterization"
+            }
+          ],
+          "Note": "Detailed micro-composite fabrication parameters are not present in the OCR text."
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "the thickness of interface phase formed by the diffusion between FABPBO-BADCy matrix and PBO fibers is further increased to 58.3 nm, suggesting the outstanding interfacial compatibility",
+            "simplified": "FABPBO-BADCy forms the thickest measured interfacial phase with PBO fibers among the micro-composites."
+          },
+          "Interface_Features": [
+            {
+              "Description": "interface phase formed by diffusion between FABPBO-BADCy matrix and PBO fibers",
+              "Thickness": {
+                "Value": 58.3,
+                "Unit": "nm",
+                "Original_Values": "58.3 nm"
+              }
+            },
+            {
+              "Description": "residual BADCy resin adhered to the PBO fiber surface after fracture is described as increased"
+            }
+          ]
+        },
+        "Properties": [
+          {
+            "Property_Name": "Single_Fiber_Pull_Out_Strength",
+            "Value": 4.0,
+            "Unit": "MPa",
+            "Original_Values": "4.0 MPa",
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Elastic_Modulus",
+            "Value": 5.6,
+            "Unit": "GPa",
+            "Original_Values": "5.6 GPa",
+            "Test_Condition": {
+              "Location": "interface",
+              "Method": "nanoindentation"
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Hardness",
+            "Value": 0.5,
+            "Unit": "GPa",
+            "Original_Values": "0.50 GPa",
+            "Test_Condition": {
+              "Location": "interface",
+              "Method": "nanoindentation"
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Transverse_Tensile_Strength",
+            "Value": 9.06,
+            "Unit": "MPa",
+            "Original_Values": "9.06 MPa",
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Contact_Angle",
+            "Value": 94.5,
+            "Unit": "degree",
+            "Original_Values": "94.5°",
+            "Test_Condition": {
+              "Interface": "between PBO fibers and preFABPBO/BADCy"
+            },
+            "Data_Source": "text"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "ITEM-008",
+      "Sample_ID": "Sample 0 - PBO fibers/BADCy laminated composite",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Composites",
+      "application": "Functional",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Figure 5 Dielectric properties ... of PBO fibers/BADCy (Sample 0), PBO fibers/FBPBO-BADCy (Sample 1), and PBO fibers/FABPBO-BADCy (Sample 2) composites.",
+        "The epsilon and tan delta of PBO fibers/FABPBO-BADCy composites are 2.53 and 0.003, respectively, lower than those of PBO fibers/BADCy (3.06 and 0.006). The corresponding |T|2 is 94.8%, which is higher than those of PBO fibers/BADCy (92.5%).",
+        "ILSS and flexural strengths of PBO fibers/FABPBO-BADCy composites are 48.9 and 665.3 MPa, increased by 33.2% and 13.3% compared to those of PBO fibers/BADCy composites (36.7 and 587.4 MPa), respectively.",
+        "the volume resistivity, breakdown strength, heat resistance index, and glass transition temperature are respectively 5.17 x 10^15 Ω·cm, 27.21 kV/mm, 229.9 °C, and 247.5 °C, all superior to those of PBO fibers/BADCy composites (2.2 x 10^15 Ω·cm, 17.69 kV/mm, 229.6 °C, and 247.1 °C)."
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Composite_Category": "polymer matrix wave-transparent laminated composite",
+          "Composite_System_Raw": "PBO fibers/BADCy wave-transparent laminated composites",
+          "Matrix": {
+            "Name": "BADCy resin"
+          },
+          "Reinforcement": {
+            "Name": "PBO fibers"
+          },
+          "Fiber_Volume_Fraction": null,
+          "Fiber_Architecture": null,
+          "Composition_Basis": "nominal",
+          "Note": "Fiber volume fraction and fiber architecture are not given in the OCR text."
+        },
+        "Processing": {
+          "Process_Category": "high-temperature molding",
+          "Process_Text": {
+            "original": "PBO fibers/FABPBO-BADCy wave-transparent laminated composites by high temperature molding",
+            "simplified": "PBO fibers/BADCy laminated composites were prepared by high-temperature molding."
+          },
+          "Key_Params": [
+            {
+              "Parameter": "molding method",
+              "Value": "high temperature molding",
+              "Original_Values": "high temperature molding"
+            }
+          ],
+          "Equipment": [
+            {
+              "Name": "TGA",
+              "Category": "Testing"
+            },
+            {
+              "Name": "DMA",
+              "Category": "Testing"
+            },
+            {
+              "Name": "flat plate heat source",
+              "Category": "Testing"
+            },
+            {
+              "Name": "infrared thermography",
+              "Category": "Testing"
+            }
+          ],
+          "Note": "Specific molding temperature, pressure, time, cooling route, and post-cure conditions are not present in the OCR text."
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "PBO fibers/BADCy composites exhibit poor interfacial compatibility; the bulging and stress cracking (composite failure) in PBO fibers/BADCy composites occur at about 210 °C due to the extremely poor interfacial compatibility.",
+            "simplified": "The laminated composite has a PBO fiber/BADCy interface with poor compatibility and interfacial defects."
+          },
+          "Fiber_Architecture": null,
+          "Interface_Features": [
+            "poor interfacial compatibility",
+            "interfacial debonding from PBO fibers at high temperature",
+            "defects and pores at the interface are susceptible to water molecule entry"
+          ],
+          "Defects": [
+            {
+              "Description": "bulging and stress cracking occur at about 210 °C",
+              "Temperature": {
+                "Value": 483.15,
+                "Unit": "K",
+                "Original_Values": "about 210 °C",
+                "Note": "Approximate value converted from °C to K."
+              }
+            }
+          ]
+        },
+        "Properties": [
+          {
+            "Property_Name": "Dielectric_Constant",
+            "Value": 3.06,
+            "Unit": null,
+            "Original_Values": "3.06",
+            "Test_Condition": {
+              "Frequency_Hz": 1000000,
+              "Temperature": {
+                "Original_Values": "room temperature",
+                "Note": "Exact room temperature not specified in OCR text."
+              }
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Dielectric_Loss",
+            "Value": 0.006,
+            "Unit": null,
+            "Original_Values": "0.006",
+            "Test_Condition": {
+              "Frequency_Hz": 1000000,
+              "Temperature": {
+                "Original_Values": "room temperature",
+                "Note": "Exact room temperature not specified in OCR text."
+              }
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Wave_Transparency",
+            "Value": 92.5,
+            "Unit": "%",
+            "Original_Values": "|T|2 = 92.5%",
+            "Test_Condition": {
+              "Frequency_Hz": 1000000,
+              "Temperature": {
+                "Original_Values": "room temperature",
+                "Note": "Exact room temperature not specified in OCR text."
+              }
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Dielectric_Constant",
+            "Value": 3.05,
+            "Unit": null,
+            "Original_Values": "3.05",
+            "Test_Condition": {
+              "Frequency_Hz": 10000000000
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Dielectric_Loss",
+            "Value": 0.0165,
+            "Unit": null,
+            "Original_Values": "0.0165",
+            "Test_Condition": {
+              "Frequency_Hz": 10000000000
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Volume_Resistivity",
+            "Value": 2200000000000000.0,
+            "Unit": "ohm cm",
+            "Original_Values": "2.2 x 10^15 Ω·cm",
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Breakdown_Strength",
+            "Value": 17.69,
+            "Unit": "kV/mm",
+            "Original_Values": "17.69 kV/mm",
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Interlaminar_Shear_Strength",
+            "Value": 36.7,
+            "Unit": "MPa",
+            "Original_Values": "36.7 MPa",
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Flexural_Strength",
+            "Value": 587.4,
+            "Unit": "MPa",
+            "Original_Values": "587.4 MPa",
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Heat_Resistance_Index",
+            "Value": 502.75,
+            "Unit": "K",
+            "Original_Values": "229.6 °C",
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Glass_Transition_Temperature",
+            "Value": 520.25,
+            "Unit": "K",
+            "Original_Values": "247.1 °C",
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Thermal_Conductivity",
+            "Value": 0.87,
+            "Unit": "W/(m K)",
+            "Original_Values": "0.87 W/(m·K)",
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Surface_Temperature_After_Heating",
+            "Value": 350.55,
+            "Unit": "K",
+            "Original_Values": "77.4 °C after 90 s heating",
+            "Test_Condition": {
+              "Heating_Time_s": 90,
+              "Heat_Source": "flat plate heat source"
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "ILSS_Retention_Rate_After_High_Temperature_Aging",
+            "Value": 71.9,
+            "Unit": "%",
+            "Original_Values": "71.9%",
+            "Test_Condition": {
+              "Aging_Time_h": 288,
+              "Temperature": {
+                "Value": 393.15,
+                "Unit": "K",
+                "Original_Values": "120 °C"
+              }
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Flexural_Strength_Retention_Rate_After_High_Temperature_Aging",
+            "Value": 83.7,
+            "Unit": "%",
+            "Original_Values": "83.7%",
+            "Test_Condition": {
+              "Aging_Time_h": 288,
+              "Temperature": {
+                "Value": 393.15,
+                "Unit": "K",
+                "Original_Values": "120 °C"
+              }
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Wave_Transparency_After_High_Temperature_Aging",
+            "Value": 89.4,
+            "Unit": "%",
+            "Original_Values": "89.4%",
+            "Test_Condition": {
+              "Aging_Time_h": 288,
+              "Temperature": {
+                "Value": 393.15,
+                "Unit": "K",
+                "Original_Values": "120 °C"
+              },
+              "Frequency_Hz": 1000000
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "ILSS_Retention_Rate_After_Hydrothermal_Aging",
+            "Value": 42.7,
+            "Unit": "%",
+            "Original_Values": "42.7%",
+            "Test_Condition": {
+              "Aging_Time_h": 288,
+              "Environment": "water bath",
+              "Temperature": {
+                "Value": 353.15,
+                "Unit": "K",
+                "Original_Values": "80 °C"
+              }
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Flexural_Strength_Retention_Rate_After_Hydrothermal_Aging",
+            "Value": 45.7,
+            "Unit": "%",
+            "Original_Values": "45.7%",
+            "Test_Condition": {
+              "Aging_Time_h": 288,
+              "Environment": "water bath",
+              "Temperature": {
+                "Value": 353.15,
+                "Unit": "K",
+                "Original_Values": "80 °C"
+              }
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Wave_Transparency_After_Hydrothermal_Aging",
+            "Value": 87.2,
+            "Unit": "%",
+            "Original_Values": "87.2%",
+            "Test_Condition": {
+              "Aging_Time_h": 288,
+              "Environment": "water bath",
+              "Temperature": {
+                "Value": 353.15,
+                "Unit": "K",
+                "Original_Values": "80 °C"
+              }
+            },
+            "Data_Source": "text"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "ITEM-009",
+      "Sample_ID": "Sample 1 - PBO fibers/FBPBO-BADCy laminated composite",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Composites",
+      "application": "Functional",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "The epsilon and tan delta of PBO fibers/FABPBO-BADCy composites are 2.53 and 0.003, respectively, lower than those of PBO fibers/BADCy (3.06 and 0.006) and PBO fibers/FBPBO-BADCy composites (2.61 and 0.0032). The corresponding |T|2 is 94.8%, which is higher than those of PBO fibers/BADCy (92.5%) and PBO fibers/FBPBO-BADCy composites (94.4%).",
+        "ILSS and flexural strength of PBO fibers/FABPBO-BADCy composites are 48.9 and 665.3 MPa ... also higher than those of PBO fibers/FBPBO-BADCy composites (46.5 and 633.7 MPa).",
+        "The rho_v and E0 values of PBO fibers/FABPBO-BADCy composites are 5.17 x 10^15 Ω·cm and 27.21 kV/mm ... also higher than those of PBO fibers/FBPBO-BADCy composites (5.07 x 10^15 Ω·cm and 26.47 kV/mm)."
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Composite_Category": "polymer matrix wave-transparent laminated composite",
+          "Composite_System_Raw": "PBO fibers/FBPBO-BADCy wave-transparent laminated composites",
+          "Matrix": {
+            "Name": "FBPBO-BADCy resin"
+          },
+          "Reinforcement": {
+            "Name": "PBO fibers"
+          },
+          "Interface_or_Interphase": {
+            "Name": "preFBPBO compatibilized interface"
+          },
+          "Fiber_Volume_Fraction": null,
+          "Fiber_Architecture": null,
+          "Composition_Basis": "nominal",
+          "Note": "Fiber volume fraction and fiber architecture are not given in the OCR text."
+        },
+        "Processing": {
+          "Process_Category": "high-temperature molding",
+          "Process_Text": {
+            "original": "The PBO fibers/FBPBO-BADCy laminated composites were prepared by high temperature molding.",
+            "simplified": "PBO fibers/FBPBO-BADCy laminated composites were prepared by high-temperature molding."
+          },
+          "Key_Params": [
+            {
+              "Parameter": "molding method",
+              "Value": "high temperature molding",
+              "Original_Values": "high temperature molding"
+            }
+          ],
+          "Note": "Specific molding temperature, pressure, time, cooling route, and post-cure conditions are not present in the OCR text."
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "The PBO-like structure in the preFBPBO enhances the interfacial compatibility and weakens the electromagnetic wave reflection at the interface of PBO fibers/FBPBO-BADCy composites.",
+            "simplified": "preFBPBO introduces PBO-like interfacial structure that improves compatibility relative to unmodified BADCy."
+          },
+          "Interface_Features": [
+            "PBO-like structure in preFBPBO",
+            "enhanced interfacial compatibility relative to PBO fibers/BADCy"
+          ]
+        },
+        "Properties": [
+          {
+            "Property_Name": "Dielectric_Constant",
+            "Value": 2.61,
+            "Unit": null,
+            "Original_Values": "2.61",
+            "Test_Condition": {
+              "Frequency_Hz": 1000000,
+              "Temperature": {
+                "Original_Values": "room temperature",
+                "Note": "Exact room temperature not specified in OCR text."
+              }
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Dielectric_Loss",
+            "Value": 0.0032,
+            "Unit": null,
+            "Original_Values": "0.0032",
+            "Test_Condition": {
+              "Frequency_Hz": 1000000,
+              "Temperature": {
+                "Original_Values": "room temperature",
+                "Note": "Exact room temperature not specified in OCR text."
+              }
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Wave_Transparency",
+            "Value": 94.4,
+            "Unit": "%",
+            "Original_Values": "|T|2 = 94.4%",
+            "Test_Condition": {
+              "Frequency_Hz": 1000000,
+              "Temperature": {
+                "Original_Values": "room temperature",
+                "Note": "Exact room temperature not specified in OCR text."
+              }
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Dielectric_Constant",
+            "Value": 2.59,
+            "Unit": null,
+            "Original_Values": "2.59",
+            "Test_Condition": {
+              "Frequency_Hz": 10000000000
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Dielectric_Loss",
+            "Value": 0.0153,
+            "Unit": null,
+            "Original_Values": "0.0153",
+            "Test_Condition": {
+              "Frequency_Hz": 10000000000
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Volume_Resistivity",
+            "Value": 5070000000000000.0,
+            "Unit": "ohm cm",
+            "Original_Values": "5.07 x 10^15 Ω·cm",
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Breakdown_Strength",
+            "Value": 26.47,
+            "Unit": "kV/mm",
+            "Original_Values": "26.47 kV/mm",
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Interlaminar_Shear_Strength",
+            "Value": 46.5,
+            "Unit": "MPa",
+            "Original_Values": "46.5 MPa",
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Flexural_Strength",
+            "Value": 633.7,
+            "Unit": "MPa",
+            "Original_Values": "633.7 MPa",
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Heat_Resistance_Index",
+            "Value": 495.45,
+            "Unit": "K",
+            "Original_Values": "222.3 °C",
+            "Data_Source": "text",
+            "Note": "source text corrupted; value reconstructed from context. The OCR sentence says 'higher than those of PBO fibers/FABPBO-BADCy composites (222.3 and 239.0 °C)', but the sentence compares the highest FABPBO values against PBO fibers/BADCy and the FBPBO comparator; therefore 222.3 °C and 239.0 °C are assigned to PBO fibers/FBPBO-BADCy."
+          },
+          {
+            "Property_Name": "Glass_Transition_Temperature",
+            "Value": 512.15,
+            "Unit": "K",
+            "Original_Values": "239.0 °C",
+            "Data_Source": "text",
+            "Note": "source text corrupted; value reconstructed from context. The OCR sentence says 'higher than those of PBO fibers/FABPBO-BADCy composites (222.3 and 239.0 °C)', but the sentence compares the highest FABPBO values against PBO fibers/BADCy and the FBPBO comparator; therefore 222.3 °C and 239.0 °C are assigned to PBO fibers/FBPBO-BADCy."
+          },
+          {
+            "Property_Name": "Thermal_Conductivity",
+            "Value": 1.08,
+            "Unit": "W/(m K)",
+            "Original_Values": "1.08 W/(m·K)",
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Surface_Temperature_After_Heating",
+            "Value": 356.25,
+            "Unit": "K",
+            "Original_Values": "83.1 °C",
+            "Test_Condition": {
+              "Heating_Time_s": 90,
+              "Heat_Source": "flat plate heat source"
+            },
+            "Data_Source": "text"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "ITEM-010",
+      "Sample_ID": "Sample 2 - PBO fibers/FABPBO-BADCy laminated composite",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Composites",
+      "application": "Functional",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "The dielectric constant and dielectric loss values at 10^6 Hz are 2.53 and 0.003, respectively, lower than those of PBO fibers/BADCy composites (3.06 and 0.006), and the corresponding wave transmission efficiency is 94.8%.",
+        "Meanwhile, the heat resistance index and glass transition temperature are 229.9 °C and 247.5 °C.",
+        "ILSS and flexural strength of PBO fibers/FABPBO-BADCy composites are 48.9 and 665.3 MPa.",
+        "The thermal conductivity coefficient (lambda) values of PBO fibers/BADCy, PBO fibers/FBPBO-BADCy, and PBO fibers/FABPBO-BADCy composites are 0.87, 1.08, and 1.23 W/(m·K), respectively.",
+        "When the aging time is 288 h (120 °C), the ILSS and flexural strengths of PBO fibers/FABPBO-BADCy composites are 41.5 MPa and 571.0 MPa, respectively."
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Composite_Category": "polymer matrix wave-transparent laminated composite",
+          "Composite_System_Raw": "PBO fibers/FABPBO-BADCy wave-transparent laminated composites",
+          "Matrix": {
+            "Name": "FABPBO-BADCy resin"
+          },
+          "Reinforcement": {
+            "Name": "PBO fibers"
+          },
+          "Interface_or_Interphase": {
+            "Name": "preFABPBO compatibilized interface"
+          },
+          "Filler_or_Modifier": {
+            "Name": "preFABPBO",
+            "Mass_Fraction": {
+              "Value": 5,
+              "Unit": "wt%",
+              "Original_Values": "optimal mass fraction of 5 wt% from resin study",
+              "Note": "Linked to resin optimization text: the paper first determines 5 wt% preFABPBO as the optimal mass fraction in FABPBO-BADCy resin, then states that the laminated composite was prepared with the optimal mass fraction of preFABPBO interfacial compatibilizer."
+            }
+          },
+          "Fiber_Volume_Fraction": null,
+          "Fiber_Architecture": null,
+          "Composition_Basis": "nominal",
+          "Note": "Fiber volume fraction and fiber architecture are not given in the OCR text."
+        },
+        "Processing": {
+          "Process_Category": "high-temperature molding",
+          "Process_Text": {
+            "original": "PBO fibers/FABPBO-BADCy wave-transparent laminated composites by high temperature molding",
+            "simplified": "PBO fibers/FABPBO-BADCy laminated composites were prepared by high-temperature molding using the optimal preFABPBO mass fraction."
+          },
+          "Key_Params": [
+            {
+              "Parameter": "molding method",
+              "Value": "high temperature molding",
+              "Original_Values": "high temperature molding"
+            }
+          ],
+          "Equipment": [
+            {
+              "Name": "SEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "TEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "TGA",
+              "Category": "Testing"
+            },
+            {
+              "Name": "DMA",
+              "Category": "Testing"
+            },
+            {
+              "Name": "flat plate heat source",
+              "Category": "Testing"
+            },
+            {
+              "Name": "infrared thermography",
+              "Category": "Testing"
+            }
+          ],
+          "Note": "Specific molding temperature, pressure, time, cooling route, and post-cure conditions are not present in the OCR text."
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "the introduction of preFABPBO improves the interfacial compatibility to avoid stress cracking at the interface after heating",
+            "simplified": "preFABPBO improves compatibility at the PBO fiber/BADCy interface and suppresses interfacial stress cracking after heating."
+          },
+          "Fiber_Architecture": null,
+          "Interface_Features": [
+            "PBO-like structures in preFABPBO enhance interfacial bonding with PBO fibers",
+            "branched structure, adamantane units, and fluorine groups improve wave-transparent performance",
+            "improved interfacial compatibility avoids stress cracking at the interface after heating",
+            "stronger two-phase interfacial interaction attenuates interfacial damage during high and low temperature aging"
+          ]
+        },
+        "Properties": [
+          {
+            "Property_Name": "Dielectric_Constant",
+            "Value": 2.53,
+            "Unit": null,
+            "Original_Values": "2.53",
+            "Test_Condition": {
+              "Frequency_Hz": 1000000,
+              "Temperature": {
+                "Original_Values": "room temperature",
+                "Note": "Exact room temperature not specified in OCR text."
+              }
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Dielectric_Loss",
+            "Value": 0.003,
+            "Unit": null,
+            "Original_Values": "0.003",
+            "Test_Condition": {
+              "Frequency_Hz": 1000000,
+              "Temperature": {
+                "Original_Values": "room temperature",
+                "Note": "Exact room temperature not specified in OCR text."
+              }
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Wave_Transparency",
+            "Value": 94.8,
+            "Unit": "%",
+            "Original_Values": "94.8%",
+            "Test_Condition": {
+              "Frequency_Hz": 1000000,
+              "Temperature": {
+                "Original_Values": "room temperature",
+                "Note": "Exact room temperature not specified in OCR text."
+              }
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Dielectric_Constant",
+            "Value": 2.52,
+            "Unit": null,
+            "Original_Values": "2.52",
+            "Test_Condition": {
+              "Frequency_Hz": 10000000000
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Dielectric_Loss",
+            "Value": 0.0145,
+            "Unit": null,
+            "Original_Values": "0.0145",
+            "Test_Condition": {
+              "Frequency_Hz": 10000000000
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Wave_Transparency",
+            "Value": 93.7,
+            "Unit": "%",
+            "Original_Values": "|T|2 is 93.7%",
+            "Test_Condition": {
+              "Frequency_Hz": 10000000000
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Wave_Transparency_Stability_Range",
+            "Value": null,
+            "Value_Range": {
+              "Temperature_Min_K": 298.15,
+              "Temperature_Max_K": 473.15,
+              "Frequency_Ranges_Hz": [
+                {
+                  "Min": 1000,
+                  "Max": 10000000
+                },
+                {
+                  "Min": 8200000000,
+                  "Max": 12400000000
+                }
+              ]
+            },
+            "Original_Values": "excellent stability over the wide temperature (25-200 °C) and frequency ranges (10^3-10^7 Hz and 8.2-12.4 GHz)",
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Volume_Resistivity",
+            "Value": 5170000000000000.0,
+            "Unit": "ohm cm",
+            "Original_Values": "5.17 x 10^15 Ω·cm",
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Breakdown_Strength",
+            "Value": 27.21,
+            "Unit": "kV/mm",
+            "Original_Values": "27.21 kV/mm",
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Interlaminar_Shear_Strength",
+            "Value": 48.9,
+            "Unit": "MPa",
+            "Original_Values": "48.9 MPa",
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Flexural_Strength",
+            "Value": 665.3,
+            "Unit": "MPa",
+            "Original_Values": "665.3 MPa",
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Heat_Resistance_Index",
+            "Value": 503.05,
+            "Unit": "K",
+            "Original_Values": "229.9 °C",
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Glass_Transition_Temperature",
+            "Value": 520.65,
+            "Unit": "K",
+            "Original_Values": "247.5 °C",
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Thermal_Conductivity",
+            "Value": 1.23,
+            "Unit": "W/(m K)",
+            "Original_Values": "1.23 W/(m·K)",
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Surface_Temperature_After_Heating",
+            "Value": 358.55,
+            "Unit": "K",
+            "Original_Values": "85.4 °C",
+            "Test_Condition": {
+              "Heating_Time_s": 90,
+              "Heat_Source": "flat plate heat source"
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Interlaminar_Shear_Strength_After_High_Temperature_Aging",
+            "Value": 41.5,
+            "Unit": "MPa",
+            "Original_Values": "41.5 MPa",
+            "Test_Condition": {
+              "Aging_Time_h": 288,
+              "Temperature": {
+                "Value": 393.15,
+                "Unit": "K",
+                "Original_Values": "120 °C"
+              }
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Flexural_Strength_After_High_Temperature_Aging",
+            "Value": 571.0,
+            "Unit": "MPa",
+            "Original_Values": "571.0 MPa",
+            "Test_Condition": {
+              "Aging_Time_h": 288,
+              "Temperature": {
+                "Value": 393.15,
+                "Unit": "K",
+                "Original_Values": "120 °C"
+              }
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "ILSS_Retention_Rate_After_High_Temperature_Aging",
+            "Value": 84.8,
+            "Unit": "%",
+            "Original_Values": "84.8%",
+            "Test_Condition": {
+              "Aging_Time_h": 288,
+              "Temperature": {
+                "Value": 393.15,
+                "Unit": "K",
+                "Original_Values": "120 °C"
+              }
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Flexural_Strength_Retention_Rate_After_High_Temperature_Aging",
+            "Value": 85.8,
+            "Unit": "%",
+            "Original_Values": "85.8%",
+            "Test_Condition": {
+              "Aging_Time_h": 288,
+              "Temperature": {
+                "Value": 393.15,
+                "Unit": "K",
+                "Original_Values": "120 °C"
+              }
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Wave_Transparency_After_High_Temperature_Aging",
+            "Value": 92.4,
+            "Unit": "%",
+            "Original_Values": "92.4%",
+            "Test_Condition": {
+              "Aging_Time_h": 288,
+              "Temperature": {
+                "Value": 393.15,
+                "Unit": "K",
+                "Original_Values": "120 °C"
+              },
+              "Frequency_Hz": 1000000
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Interlaminar_Shear_Strength_After_Hydrothermal_Aging",
+            "Value": 30.7,
+            "Unit": "MPa",
+            "Original_Values": "30.7 MPa",
+            "Test_Condition": {
+              "Aging_Time_h": 288,
+              "Environment": "water bath",
+              "Temperature": {
+                "Value": 353.15,
+                "Unit": "K",
+                "Original_Values": "80 °C"
+              }
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Flexural_Strength_After_Hydrothermal_Aging",
+            "Value": 402.1,
+            "Unit": "MPa",
+            "Original_Values": "402.1 MPa",
+            "Test_Condition": {
+              "Aging_Time_h": 288,
+              "Environment": "water bath",
+              "Temperature": {
+                "Value": 353.15,
+                "Unit": "K",
+                "Original_Values": "80 °C"
+              }
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "ILSS_Retention_Rate_After_Hydrothermal_Aging",
+            "Value": 62.8,
+            "Unit": "%",
+            "Original_Values": "62.8%",
+            "Test_Condition": {
+              "Aging_Time_h": 288,
+              "Environment": "water bath",
+              "Temperature": {
+                "Value": 353.15,
+                "Unit": "K",
+                "Original_Values": "80 °C"
+              }
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Flexural_Strength_Retention_Rate_After_Hydrothermal_Aging",
+            "Value": 60.4,
+            "Unit": "%",
+            "Original_Values": "60.4%",
+            "Test_Condition": {
+              "Aging_Time_h": 288,
+              "Environment": "water bath",
+              "Temperature": {
+                "Value": 353.15,
+                "Unit": "K",
+                "Original_Values": "80 °C"
+              }
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Wave_Transparency_After_Hydrothermal_Aging",
+            "Value": 91.6,
+            "Unit": "%",
+            "Original_Values": "91.6%",
+            "Test_Condition": {
+              "Aging_Time_h": 288,
+              "Environment": "water bath",
+              "Temperature": {
+                "Value": 353.15,
+                "Unit": "K",
+                "Original_Values": "80 °C"
+              }
+            },
+            "Data_Source": "text"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "ITEM-011",
+      "Sample_ID": "PBO fibers/BADCy interface model",
+      "Role": "Target",
+      "Data_Nature": "Computed",
+      "base_material": "Composites",
+      "application": "Functional",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "the simulated interfacial bonding energy (Einterf) of PBO fibers/BADCy micro-composites can be calculated according to Equation S8 by the molecular dynamic simulation software (Gromacs-2021.1) in all-atomic force fields (OPLS-AA) after the steady-state optimization of molecular structures.",
+        "the Einterf of PBO fibers/FABPBO-BADCy micro-composites is 234.7 kJ/mol, higher than that of PBO fibers/BADCy (149.3 kJ/mol).",
+        "the weak interaction between PBO fibers/BADCy matrix ... can be simulated by the Gaussian software (Gaussian 16, b3lyp/6-311G) and wave-function resolution software (Multiwfn), respectively, and the interaction energy (Ebinding) is calculated after dispersion correction based on density generalized function theory (DFT-D3).",
+        "between BADCy matrix and PBO fibers, resulting in a low Ebinding of 18.66 kcal/mole."
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Model_System": "PBO fibers/BADCy interface model",
+          "Components": [
+            "PBO fibers",
+            "BADCy matrix"
+          ],
+          "Composition_Basis": "model"
+        },
+        "Processing": {
+          "Simulation_Metadata": {
+            "Simulation_Types": [
+              "molecular dynamics",
+              "DFT-D3 interaction calculation"
+            ],
+            "Software": [
+              "Gromacs-2021.1",
+              "Gaussian 16",
+              "Multiwfn"
+            ],
+            "Force_Field": "OPLS-AA",
+            "DFT_Level": "b3lyp/6-311G",
+            "Dispersion_Correction": "DFT-D3"
+          },
+          "Equipment": [
+            {
+              "Name": "Gromacs-2021.1",
+              "Category": "Software"
+            },
+            {
+              "Name": "Gaussian 16",
+              "Category": "Software"
+            },
+            {
+              "Name": "Multiwfn",
+              "Category": "Software"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "low intermolecular van der Waals forces and a small amount of pi-pi conjugation between benzene rings between BADCy matrix and PBO fibers",
+            "simplified": "The computed BADCy/PBO interface has weak van der Waals interaction and limited pi-pi conjugation."
+          },
+          "Interface_Features": [
+            "low intermolecular van der Waals forces",
+            "small amount of pi-pi conjugation between benzene rings"
+          ]
+        },
+        "Properties": [
+          {
+            "Property_Name": "Interfacial_Bonding_Energy",
+            "Value": 149.3,
+            "Unit": "kJ/mol",
+            "Original_Values": "149.3 kJ/mol",
+            "Test_Condition": {
+              "Method": "molecular dynamics",
+              "Software": "Gromacs-2021.1",
+              "Force_Field": "OPLS-AA"
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Binding_Energy",
+            "Value": 18.66,
+            "Unit": "kcal/mol",
+            "Original_Values": "18.66 kcal/mole",
+            "Test_Condition": {
+              "Method": "DFT-D3",
+              "Software": "Gaussian 16 and Multiwfn",
+              "DFT_Level": "b3lyp/6-311G"
+            },
+            "Data_Source": "text"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "ITEM-012",
+      "Sample_ID": "PBO fiber/preFABPBO interface model",
+      "Role": "Target",
+      "Data_Nature": "Computed",
+      "base_material": "Composites",
+      "application": "Functional",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "the interaction energy (Ebinding) between the PBO fibers and preFABPBO after thermal cyclization is significantly increased to 28.78 kcal/mole.",
+        "This is due to the stronger pi-pi conjugations between the PBO-like structure of the preFABPBO and PBO fibers."
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Model_System": "PBO fiber/preFABPBO interface model after thermal cyclization",
+          "Components": [
+            "PBO fibers",
+            "preFABPBO after thermal cyclization"
+          ],
+          "Composition_Basis": "model"
+        },
+        "Processing": {
+          "Simulation_Metadata": {
+            "Simulation_Type": "DFT-D3 interaction calculation",
+            "Software": [
+              "Gaussian 16",
+              "Multiwfn"
+            ],
+            "DFT_Level": "b3lyp/6-311G",
+            "Dispersion_Correction": "DFT-D3"
+          },
+          "Equipment": [
+            {
+              "Name": "Gaussian 16",
+              "Category": "Software"
+            },
+            {
+              "Name": "Multiwfn",
+              "Category": "Software"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "stronger pi-pi conjugations between the PBO-like structure of the preFABPBO and PBO fibers",
+            "simplified": "The preFABPBO/PBO model shows stronger pi-pi conjugation after thermal cyclization."
+          },
+          "Interface_Features": [
+            "PBO-like structure of preFABPBO",
+            "stronger pi-pi conjugations with PBO fibers"
+          ]
+        },
+        "Properties": [
+          {
+            "Property_Name": "Binding_Energy",
+            "Value": 28.78,
+            "Unit": "kcal/mol",
+            "Original_Values": "28.78 kcal/mole",
+            "Test_Condition": {
+              "Method": "DFT-D3",
+              "Software": "Gaussian 16 and Multiwfn",
+              "DFT_Level": "b3lyp/6-311G"
+            },
+            "Data_Source": "text"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "ITEM-013",
+      "Sample_ID": "PBO fibers/FABPBO-BADCy interface model",
+      "Role": "Target",
+      "Data_Nature": "Computed",
+      "base_material": "Composites",
+      "application": "Functional",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "the Einterf of PBO fibers/FABPBO-BADCy micro-composites is 234.7 kJ/mol, higher than that of PBO fibers/BADCy (149.3 kJ/mol)."
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Model_System": "PBO fibers/FABPBO-BADCy interface model",
+          "Components": [
+            "PBO fibers",
+            "FABPBO-BADCy matrix"
+          ],
+          "Composition_Basis": "model"
+        },
+        "Processing": {
+          "Simulation_Metadata": {
+            "Simulation_Type": "molecular dynamics",
+            "Software": "Gromacs-2021.1",
+            "Force_Field": "OPLS-AA"
+          },
+          "Equipment": [
+            {
+              "Name": "Gromacs-2021.1",
+              "Category": "Software"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "The corresponding theoretical calculations are shown in Figures 4j-k. The Einterf of PBO fibers/FABPBO-BADCy micro-composites is 234.7 kJ/mol (Figure 4j), higher than that of PBO fibers/BADCy (149.3 kJ/mol).",
+            "simplified": "The computed FABPBO-BADCy/PBO interface model has higher interfacial bonding energy than the BADCy/PBO model after steady-state molecular-structure optimization."
+          },
+          "Interface_Features": [
+            "FABPBO compatibilized interface",
+            "PBO-like structure at interface"
+          ]
+        },
+        "Properties": [
+          {
+            "Property_Name": "Interfacial_Bonding_Energy",
+            "Value": 234.7,
+            "Unit": "kJ/mol",
+            "Original_Values": "234.7 kJ/mol",
+            "Test_Condition": {
+              "Method": "molecular dynamics",
+              "Software": "Gromacs-2021.1",
+              "Force_Field": "OPLS-AA"
+            },
+            "Data_Source": "text"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "ITEM-014",
+      "Sample_ID": "Sample 0 wave-transmission model - PBO fibers/BADCy laminated composite",
+      "Role": "Target",
+      "Data_Nature": "Computed",
+      "base_material": "Composites",
+      "application": "Functional",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Based on the wave transmission model established in our previous work, the simulated wave transmission model is further optimized by adding simulation parameters (environmental temperature) to investigate the relationship between simulated wave transmission (ET(simulation)), frequency, temperature, and thickness.",
+        "Figure 6 Simulated wave-transparent performances of PBO fibers/BADCy laminated composite at different temperatures (25 °C, 40 °C, 80 °C, and 120 °C) and thicknesses (1.5-3.5 mm) in 0.3-40 GHz.",
+        "The simulated wave-transparent performance of PBO fibers/BADCy composites presents a gradual decrease with the increase of environmental temperatures at the same thickness and frequency; the black region at 0.3-40 GHz increases with gradual increasing of the environmental temperature."
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Model_System": "wave-transmission simulation model for Sample 0 wave-transmission model - PBO fibers/BADCy laminated composite",
+          "Related_Experimental_Item_ID": "ITEM-008",
+          "Composition_Basis": "model"
+        },
+        "Processing": {
+          "Simulation_Metadata": {
+            "Simulation_Type": "wave transmission model",
+            "Simulation_Parameters": {
+              "Temperature_Set_K": [
+                298.15,
+                313.15,
+                353.15,
+                393.15
+              ],
+              "Original_Temperature_Set": "25 °C, 40 °C, 80 °C, and 120 °C",
+              "Thickness_Range": {
+                "Min": 1.5,
+                "Max": 3.5,
+                "Unit": "mm",
+                "Original_Values": "1.5-3.5 mm"
+              },
+              "Frequency_Range": {
+                "Min": 300000000,
+                "Max": 40000000000,
+                "Unit": "Hz",
+                "Original_Values": "0.3-40 GHz"
+              }
+            }
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "the relationship between simulated wave transmission (ET(simulation)), frequency, temperature, and thickness",
+            "simplified": "The model relates simulated wave transmission to temperature, thickness, and frequency for this laminated composite system."
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Simulated_Wave_Transparent_Performance_Trend",
+            "Value": null,
+            "Original_Values": "The simulated wave-transparent performance of PBO fibers/BADCy composites presents a gradual decrease with the increase of environmental temperatures at the same thickness and frequency; the black region at 0.3-40 GHz increases with gradual increasing of the environmental temperature.",
+            "Test_Condition": {
+              "Temperature_Set_K": [
+                298.15,
+                313.15,
+                353.15,
+                393.15
+              ],
+              "Original_Temperature_Set": "25 °C, 40 °C, 80 °C, and 120 °C",
+              "Frequency_Range": {
+                "Min": 300000000,
+                "Max": 40000000000,
+                "Unit": "Hz",
+                "Original_Values": "0.3-40 GHz"
+              },
+              "Thickness_Range": {
+                "Min": 1.5,
+                "Max": 3.5,
+                "Unit": "mm",
+                "Original_Values": "1.5-3.5 mm"
+              }
+            },
+            "Data_Source": "text",
+            "Note": "No numeric ET(simulation) values are explicitly provided in text; visual chart values were not estimated."
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "ITEM-015",
+      "Sample_ID": "Sample 1 wave-transmission model - PBO fibers/FBPBO-BADCy laminated composite",
+      "Role": "Variant",
+      "Data_Nature": "Computed",
+      "base_material": "Composites",
+      "application": "Functional",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Based on the wave transmission model established in our previous work, the simulated wave transmission model is further optimized by adding simulation parameters (environmental temperature) to investigate the relationship between simulated wave transmission (ET(simulation)), frequency, temperature, and thickness.",
+        "Figure 6 Simulated wave-transparent performances of PBO fibers/FBPBO-BADCy laminated composite at different temperatures (25 °C, 40 °C, 80 °C, and 120 °C) and thicknesses (1.5-3.5 mm) in 0.3-40 GHz.",
+        "The minimal values of ET(simulation) at 20 GHz (1.5-3.5 mm) and 37.5 GHz (2.9-3.5 mm) for PBO fibers/FBPBO-BADCy composites at different temperatures increase significantly; black areas at 20 and 37.5 GHz disappear at 25 °C and 40 °C and reduce significantly at 80 °C and 120 °C."
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Model_System": "wave-transmission simulation model for Sample 1 wave-transmission model - PBO fibers/FBPBO-BADCy laminated composite",
+          "Related_Experimental_Item_ID": "ITEM-009",
+          "Composition_Basis": "model"
+        },
+        "Processing": {
+          "Simulation_Metadata": {
+            "Simulation_Type": "wave transmission model",
+            "Simulation_Parameters": {
+              "Temperature_Set_K": [
+                298.15,
+                313.15,
+                353.15,
+                393.15
+              ],
+              "Original_Temperature_Set": "25 °C, 40 °C, 80 °C, and 120 °C",
+              "Thickness_Range": {
+                "Min": 1.5,
+                "Max": 3.5,
+                "Unit": "mm",
+                "Original_Values": "1.5-3.5 mm"
+              },
+              "Frequency_Range": {
+                "Min": 300000000,
+                "Max": 40000000000,
+                "Unit": "Hz",
+                "Original_Values": "0.3-40 GHz"
+              }
+            }
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "the relationship between simulated wave transmission (ET(simulation)), frequency, temperature, and thickness",
+            "simplified": "The model relates simulated wave transmission to temperature, thickness, and frequency for this laminated composite system."
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Simulated_Wave_Transparent_Performance_Trend",
+            "Value": null,
+            "Original_Values": "The minimal values of ET(simulation) at 20 GHz (1.5-3.5 mm) and 37.5 GHz (2.9-3.5 mm) for PBO fibers/FBPBO-BADCy composites at different temperatures increase significantly; black areas at 20 and 37.5 GHz disappear at 25 °C and 40 °C and reduce significantly at 80 °C and 120 °C.",
+            "Test_Condition": {
+              "Temperature_Set_K": [
+                298.15,
+                313.15,
+                353.15,
+                393.15
+              ],
+              "Original_Temperature_Set": "25 °C, 40 °C, 80 °C, and 120 °C",
+              "Frequency_Range": {
+                "Min": 300000000,
+                "Max": 40000000000,
+                "Unit": "Hz",
+                "Original_Values": "0.3-40 GHz"
+              },
+              "Thickness_Range": {
+                "Min": 1.5,
+                "Max": 3.5,
+                "Unit": "mm",
+                "Original_Values": "1.5-3.5 mm"
+              },
+              "Frequency_Notes": "20 GHz and 37.5 GHz",
+              "Thickness_Notes": "1.5-3.5 mm at 20 GHz; 2.9-3.5 mm at 37.5 GHz"
+            },
+            "Data_Source": "text",
+            "Note": "No numeric ET(simulation) values are explicitly provided in text; visual chart values were not estimated."
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "ITEM-016",
+      "Sample_ID": "Sample 2 wave-transmission model - PBO fibers/FABPBO-BADCy laminated composite",
+      "Role": "Target",
+      "Data_Nature": "Computed",
+      "base_material": "Composites",
+      "application": "Functional",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Based on the wave transmission model established in our previous work, the simulated wave transmission model is further optimized by adding simulation parameters (environmental temperature) to investigate the relationship between simulated wave transmission (ET(simulation)), frequency, temperature, and thickness.",
+        "Figure 6 Simulated wave-transparent performances of PBO fibers/FABPBO-BADCy laminated composite at different temperatures (25 °C, 40 °C, 80 °C, and 120 °C) and thicknesses (1.5-3.5 mm) in 0.3-40 GHz.",
+        "The black areas near 20 and 37.5 GHz disappear completely for PBO fibers/FABPBO-BADCy composites at different temperatures (25-120 °C)."
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Model_System": "wave-transmission simulation model for Sample 2 wave-transmission model - PBO fibers/FABPBO-BADCy laminated composite",
+          "Related_Experimental_Item_ID": "ITEM-010",
+          "Composition_Basis": "model"
+        },
+        "Processing": {
+          "Simulation_Metadata": {
+            "Simulation_Type": "wave transmission model",
+            "Simulation_Parameters": {
+              "Temperature_Set_K": [
+                298.15,
+                313.15,
+                353.15,
+                393.15
+              ],
+              "Original_Temperature_Set": "25 °C, 40 °C, 80 °C, and 120 °C",
+              "Thickness_Range": {
+                "Min": 1.5,
+                "Max": 3.5,
+                "Unit": "mm",
+                "Original_Values": "1.5-3.5 mm"
+              },
+              "Frequency_Range": {
+                "Min": 300000000,
+                "Max": 40000000000,
+                "Unit": "Hz",
+                "Original_Values": "0.3-40 GHz"
+              }
+            }
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "the relationship between simulated wave transmission (ET(simulation)), frequency, temperature, and thickness",
+            "simplified": "The model relates simulated wave transmission to temperature, thickness, and frequency for this laminated composite system."
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Simulated_Wave_Transparent_Performance_Trend",
+            "Value": null,
+            "Original_Values": "The black areas near 20 and 37.5 GHz disappear completely for PBO fibers/FABPBO-BADCy composites at different temperatures (25-120 °C).",
+            "Test_Condition": {
+              "Temperature_Set_K": [
+                298.15,
+                313.15,
+                353.15,
+                393.15
+              ],
+              "Original_Temperature_Set": "25 °C, 40 °C, 80 °C, and 120 °C",
+              "Frequency_Range": {
+                "Min": 300000000,
+                "Max": 40000000000,
+                "Unit": "Hz",
+                "Original_Values": "0.3-40 GHz"
+              },
+              "Thickness_Range": {
+                "Min": 1.5,
+                "Max": 3.5,
+                "Unit": "mm",
+                "Original_Values": "1.5-3.5 mm"
+              },
+              "Temperature_Range": {
+                "Min": 298.15,
+                "Max": 393.15,
+                "Unit": "K",
+                "Original_Values": "25-120 °C"
+              },
+              "Frequency_Notes": "near 20 and 37.5 GHz"
+            },
+            "Data_Source": "text",
+            "Note": "No numeric ET(simulation) values are explicitly provided in text; visual chart values were not estimated."
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,1505 @@
+{
+  "Paper_Metadata": {
+    "Paper_Title": "Surface generation of tungsten carbide in laser-assisted diamond turning",
+    "DOI": "10.1016/j.ijmachtools.2021.103770"
+  },
+  "Paper_Routing": {
+    "base_material": "Metals",
+    "application": "Structural",
+    "research_paradigm": "Hybrid",
+    "Supplements_Loaded": [
+      "directions/base/Metals.txt",
+      "directions/application/Structural.txt",
+      "directions/paradigm/Experimental.txt",
+      "directions/domain/Machining.txt"
+    ],
+    "Patch_Tags": [
+      "Laser_Assisted"
+    ],
+    "Needs_Mixed_Routing_Check": true,
+    "Mixed_Signals": [
+      "Paper is deeply hybrid: MD simulation (LAMMPS) is a core contribution alongside extensive experimental work (nanoindentation, taper cutting, diamond turning, TEM characterization). The simulation is not merely auxiliary — it drives the understanding of material removal mechanism, cutting force, elastic recovery, and residual stress. Should be classified as Hybrid per system prompt rule: '实验与仿真/计算深度结合，仅当计算/模拟是论文核心贡献之一时使用'."
+    ]
+  },
+  "items": [
+    {
+      "Item_ID": "01",
+      "Sample_ID": "Binderless_WC_Nanoindentation",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Laser_Assisted"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 3.1. Nanoindentation",
+        "Table 2 Experimental parameters used in the nanoindentation tests",
+        "Fig. 5. High-temperature nanoindentation test results"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Other",
+          "Material_Name_Raw": "Binderless polycrystalline tungsten carbide (WC)",
+          "Nominal_Composition": {
+            "Composition_Type": null,
+            "Composition_Source_Type": "nominal_inferred",
+            "Elements": {
+              "W": "Balance",
+              "C": "Balance"
+            },
+            "Note": "Binderless polycrystalline WC. Stoichiometric compound WC with no binder phase. Exact wt%/at% not provided in paper."
+          },
+          "Note": "Binderless polycrystalline WC material; no specific composition percentages given."
+        },
+        "Processing": {
+          "Process_Category": "Other",
+          "Process_Text": {
+            "original": "Nanoindentation experiments were conducted based on the nanoindentation platform (Nanotest Vantage), which allows the tests to be carried out at elevated temperatures with low thermal drifts. The ambient temperature (23 °C) and elevated temperatures, including 100 °C, 300 °C, and 500 °C were adopted in the nanoindentation tests. The standard Berkovich diamond indenter with nominal 65.3° centerline-to-face angle was used. The small bulk cylindrical binderless WC sample with 2 mm diameter and 2 mm height was used. Both the indenter and the workpiece were separately heated from room temperature to a maximum of 500 °C with a heating and cooling rate of 1.5 °C/min. After the essential equilibrium stage with the holding time of 30 min at the setting temperatures, nanoindentation was performed eight times. All the tests were carried out in the load control mode with the constant loading/unloading rate of 2 mN/s while the Berkovich indenter was held for 10 s at the maximum load. The maximum load decreases with an increase in test temperature: at 23 °C, 100 °C, 300 °C, and 500 °C, the maximum load of nanoindentation is 1044 mN, 800 mN, 786 mN and 712 mN, respectively.",
+            "simplified": "High-temperature nanoindentation at 23/100/300/500 °C using Berkovich diamond indenter on cylindrical binderless WC (φ=2mm, h=2mm). Load control mode, 2 mN/s loading/unloading rate, 10 s dwell, 8 repetitions per temperature. Max load: 1044/800/786/712 mN at respective temperatures."
+          },
+          "Equipment": [
+            {
+              "Instrument_Name": "Nanoindentation Platform",
+              "Manufacturer": "Micro Materials",
+              "Model": "Nanotest Vantage",
+              "Note": "High-temperature nanoindentation with low thermal drift"
+            }
+          ],
+          "Key_Params": {
+            "Stage1": {
+              "Test_Temperatures_K": [
+                296.15,
+                373.15,
+                573.15,
+                773.15
+              ],
+              "Heating_Rate_K_min": 1.5,
+              "Thermal_Holding_Time_min": 30,
+              "Loading_Rate_mN_s": 2,
+              "Dwell_Time_s": 10,
+              "Max_Load_mN": {
+                "23C": 1044,
+                "100C": 800,
+                "300C": 786,
+                "500C": 712
+              },
+              "Number_of_Indentations": 8,
+              "Load_Control_Mode": true
+            }
+          },
+          "Original_Values": {
+            "Test_Temperatures_Original": "23 °C, 100 °C, 300 °C, 500 °C",
+            "Sample_Dimension": "Cylinder (φ = 2 mm, h = 2 mm)",
+            "Indenter_Type": "Berkovich diamond, 65.3° centerline-to-face angle"
+          },
+          "Note": "Sample dimension: cylinder φ=2mm, h=2mm. Indenter: Berkovich diamond with 65.3° centerline-to-face angle."
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Binderless polycrystalline WC with no binder phase. Each WC grain comprises a hexagonal close-packed lattice and random orientation.",
+            "simplified": "Binderless polycrystalline WC, HCP structure, no binder phase."
+          },
+          "Main_Phase": "HCP"
+        },
+        "Properties": [
+          {
+            "Property_Name": "Nanoindentation_Hardness",
+            "Value": 31.84,
+            "Unit": "GPa",
+            "Test_Temperature_K": 296.15,
+            "Test_Temperature_Original": "23 °C",
+            "Hardness_Load_mN": 1044,
+            "Hardness_Dwell_Time_s": 10,
+            "Data_Source": "text",
+            "Note": "Average of 8 measurements at room temperature"
+          },
+          {
+            "Property_Name": "Nanoindentation_Hardness",
+            "Value": 30.05,
+            "Unit": "GPa",
+            "Test_Temperature_K": 373.15,
+            "Test_Temperature_Original": "100 °C",
+            "Hardness_Load_mN": 800,
+            "Hardness_Dwell_Time_s": 10,
+            "Data_Source": "text",
+            "Note": "Average of 8 measurements"
+          },
+          {
+            "Property_Name": "Nanoindentation_Hardness",
+            "Value": 26.77,
+            "Unit": "GPa",
+            "Test_Temperature_K": 573.15,
+            "Test_Temperature_Original": "300 °C",
+            "Hardness_Load_mN": 786,
+            "Hardness_Dwell_Time_s": 10,
+            "Data_Source": "text",
+            "Note": "Average of 8 measurements"
+          },
+          {
+            "Property_Name": "Nanoindentation_Hardness",
+            "Value": 20.98,
+            "Unit": "GPa",
+            "Test_Temperature_K": 773.15,
+            "Test_Temperature_Original": "500 °C",
+            "Hardness_Load_mN": 712,
+            "Hardness_Dwell_Time_s": 10,
+            "Data_Source": "text",
+            "Note": "Average of 8 measurements"
+          },
+          {
+            "Property_Name": "Elastic_Modulus",
+            "Value": 469.05,
+            "Unit": "GPa",
+            "Test_Temperature_K": 296.15,
+            "Test_Temperature_Original": "23 °C",
+            "Data_Source": "text",
+            "Note": "Young's modulus computed from reduced modulus using equation with WC Poisson's ratio=0.20, diamond E_i=1164 GPa, ν_i=0.0791. Data_Nature: Computed from nanoindentation measurements.",
+            "Data_Nature": "Computed"
+          },
+          {
+            "Property_Name": "Elastic_Modulus",
+            "Value": 397.43,
+            "Unit": "GPa",
+            "Test_Temperature_K": 373.15,
+            "Test_Temperature_Original": "100 °C",
+            "Data_Source": "text",
+            "Note": "Young's modulus computed from reduced modulus. Data_Nature: Computed.",
+            "Data_Nature": "Computed"
+          },
+          {
+            "Property_Name": "Elastic_Modulus",
+            "Value": 315.34,
+            "Unit": "GPa",
+            "Test_Temperature_K": 573.15,
+            "Test_Temperature_Original": "300 °C",
+            "Data_Source": "text",
+            "Note": "Young's modulus computed from reduced modulus. Data_Nature: Computed.",
+            "Data_Nature": "Computed"
+          },
+          {
+            "Property_Name": "Elastic_Modulus",
+            "Value": 296.37,
+            "Unit": "GPa",
+            "Test_Temperature_K": 773.15,
+            "Test_Temperature_Original": "500 °C",
+            "Data_Source": "text",
+            "Note": "Young's modulus computed from reduced modulus. Data_Nature: Computed.",
+            "Data_Nature": "Computed"
+          },
+          {
+            "Property_Name": "Reduced_Modulus",
+            "Value": 488.42,
+            "Unit": "GPa",
+            "Test_Temperature_K": 296.15,
+            "Test_Temperature_Original": "23 °C",
+            "Data_Source": "text",
+            "Note": "Measured reduced modulus from nanoindentation"
+          },
+          {
+            "Property_Name": "Reduced_Modulus",
+            "Value": 413.86,
+            "Unit": "GPa",
+            "Test_Temperature_K": 373.15,
+            "Test_Temperature_Original": "100 °C",
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Reduced_Modulus",
+            "Value": 328.4,
+            "Unit": "GPa",
+            "Test_Temperature_K": 573.15,
+            "Test_Temperature_Original": "300 °C",
+            "Data_Source": "text"
+          },
+          {
+            "Property_Name": "Reduced_Modulus",
+            "Value": 308.65,
+            "Unit": "GPa",
+            "Test_Temperature_K": 773.15,
+            "Test_Temperature_Original": "500 °C",
+            "Data_Source": "text"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "02",
+      "Sample_ID": "Binderless_WC_Conventional_MD",
+      "Role": "Target",
+      "Data_Nature": "Computed",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Laser_Assisted"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 2. In-LAC simulation method",
+        "Table 1 Computational parameters used in MD simulations",
+        "Section 4.1.2. Nanometric cutting simulation"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Other",
+          "Material_Name_Raw": "Binderless polycrystalline tungsten carbide (WC) - MD model",
+          "Nominal_Composition": {
+            "Composition_Type": null,
+            "Composition_Source_Type": "nominal_inferred",
+            "Elements": {
+              "W": "Balance",
+              "C": "Balance"
+            },
+            "Note": "MD simulation model of binderless polycrystalline WC. Stoichiometric WC."
+          },
+          "Note": "MD model: polycrystalline WC with 40 grains and 985,559 atoms."
+        },
+        "Processing": {
+          "Process_Category": "Other",
+          "Machining_Composition": {
+            "Workpiece_Material": {
+              "Material_Name_Raw": "Binderless polycrystalline WC"
+            },
+            "Tool_Material": {
+              "Type": "Diamond",
+              "Grade": "Monocrystalline diamond",
+              "Geometry": {
+                "Tool_Nose_Radius_mm": null,
+                "Rake_Angle_deg": -35,
+                "Clearance_Angle_deg": 10,
+                "Edge_Radius_um": 0.005
+              }
+            }
+          },
+          "Machining_Params": {
+            "Machining_Method": "Turning",
+            "Cutting_Speed_m_min": null,
+            "Cutting_Speed_MDL_m_s": 100,
+            "Depth_of_Cut_nm": 5,
+            "Laser_Power_W": 0,
+            "Note": "Conventional cutting in MD simulation, no laser assistance. Cutting speed 100 m/s (MD simulation constraint)."
+          },
+          "Process_Text": {
+            "original": "Conventional nanometric cutting simulation of binderless polycrystalline WC using LAMMPS. Polycrystalline workpiece following 3D-Voronoi tessellation contains 40 grains and 985,559 atoms, dimension 100 nm × 3.56 nm × 30 nm. Film rigid monocrystalline diamond tool with -35° rake angle, 10° clearance angle, 5 nm edge radius, cutting in -x direction with 5 nm DoC and 100 m/s cutting speed. Tersoff potential function used for W-C-C, C-W-W, C-C-C, W-W-W interactions. Model relaxed by 50,000 steps at initial temperature under NVT ensemble.",
+            "simplified": "MD conventional cutting: LAMMPS, polycrystalline WC (40 grains, 985559 atoms, 100×3.56×30 nm³), diamond tool (-35° rake, 10° clearance, 5nm edge radius), 5nm DoC, 100m/s speed, Tersoff potential."
+          },
+          "Equipment": [
+            {
+              "Instrument_Name": "MD Simulation Software",
+              "Manufacturer": null,
+              "Model": "LAMMPS"
+            }
+          ],
+          "Key_Params": {
+            "Stage1": {
+              "Workpiece_Dimension_nm3": "100 × 3.56 × 30",
+              "Grain_Count": 40,
+              "Atom_Count": 985559,
+              "Cutting_Speed_m_s": 100,
+              "Depth_of_Cut_nm": 5,
+              "Tool_Edge_Radius_nm": 5,
+              "Rake_Angle_deg": -35,
+              "Clearance_Angle_deg": 10,
+              "Laser_Power_W": 0,
+              "Relaxation_Steps": 50000,
+              "Boundary_Condition_y": "Periodic",
+              "Potential_Function": "Tersoff"
+            }
+          },
+          "Original_Values": {
+            "Workpiece_Dimension": "100 × 3.56 × 30 nm³",
+            "Cutting_Direction": "-x direction"
+          },
+          "Note": "Conventional cutting (0W laser). Workpiece dimension scaled down; all geometrical parameters scaled with same ratio."
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Conventional cutting subsurface: The subsurface crystalline structure of conventional cutting is disrupted seriously, leaving an average of ~227.9 nm thickness of the affected layer. There are dense crystal defects in the affected layer due to the severe grain deformation and stress release. Surface grains split into a mass of nanocrystals owing to the large cutting forces. Nanocrystals possess short-ordered structures and random grain orientations. Subsurface crystal presents large deformation and bending. Grain slippage along shear band is the dominant material removal mode. Intensive stacking faults can be activated by diamond tools leading to crystal refinement.",
+            "simplified": "Severe subsurface damage in conventional cutting: ~227.9 nm affected layer, nanocrystallization, crystal bending, dense defects, grain slippage along shear band as dominant removal mode."
+          },
+          "Main_Phase": "HCP",
+          "Grain_Size": {
+            "Grain_Size_avg_um": 0.01,
+            "Grain_Size_Type": "undefined",
+            "Note": "MD model grain feature size approximately 10 nm"
+          },
+          "Advanced_Quantitative_Features": {
+            "Affected_Layer_Thickness_nm": {
+              "Value": 227.9,
+              "Note": "~227.9 nm average affected layer from TEM observation of conventional taper cutting sample"
+            },
+            "Grain_Count": 40,
+            "Atom_Count": 985559,
+            "Elastic_Recovery_nm": 0.52
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Elastic_Recovery",
+            "Value": 0.52,
+            "Unit": "nm",
+            "Data_Source": "image",
+            "Note": "From Fig. 8 caption. Polycrystalline WC workpiece elastic recovery in conventional cutting (0W laser)."
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "03",
+      "Sample_ID": "Binderless_WC_InLAC_MD_5W",
+      "Role": "Target",
+      "Data_Nature": "Computed",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Laser_Assisted"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 2. In-LAC simulation method",
+        "Table 1 Computational parameters used in MD simulations",
+        "Fig. 12a,b In-LAC with 5W"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Other",
+          "Material_Name_Raw": "Binderless polycrystalline WC - MD model",
+          "Nominal_Composition": {
+            "Composition_Source_Type": "nominal_inferred",
+            "Elements": {
+              "W": "Balance",
+              "C": "Balance"
+            }
+          }
+        },
+        "Processing": {
+          "Process_Category": "Other",
+          "Machining_Composition": {
+            "Tool_Material": {
+              "Type": "Diamond",
+              "Grade": "Monocrystalline diamond",
+              "Geometry": {
+                "Rake_Angle_deg": -35,
+                "Clearance_Angle_deg": 10,
+                "Edge_Radius_um": 0.005
+              }
+            }
+          },
+          "Machining_Params": {
+            "Machining_Method": "Laser_Assisted",
+            "Cutting_Speed_MDL_m_s": 100,
+            "Depth_of_Cut_nm": 5,
+            "Laser_Power_W": 5,
+            "Laser_Spot_Diameter_um": 170,
+            "Laser_Wavelength_nm": 1064,
+            "Laser_Penetration_Depth_nm": 5,
+            "Laser_Absorptivity": 0.23,
+            "Accumulated_Temperature_K": 554.0
+          },
+          "Process_Text": {
+            "original": "In-LAC MD simulation with 5W laser power. Workpiece initial temperature predefined at 554.0 K (accumulated temperature for 5W laser-heating). Laser beam center aligned with diamond tool tip. Laser heating region moves with diamond tool synchronously. Nontranslational kinetic energy added to atoms in laser heat region.",
+            "simplified": "MD In-LAC simulation with 5W laser, 170μm spot diameter, 1064nm wavelength, accumulated temperature 554.0K."
+          },
+          "Equipment": [
+            {
+              "Instrument_Name": "MD Simulation Software",
+              "Model": "LAMMPS"
+            }
+          ],
+          "Key_Params": {
+            "Stage1": {
+              "Cutting_Speed_m_s": 100,
+              "Depth_of_Cut_nm": 5,
+              "Laser_Power_W": 5,
+              "Workpiece_Initial_Temperature_K": 554.0,
+              "Laser_Spot_Diameter_um": 170,
+              "Laser_Penetration_Depth_nm": 5
+            }
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "In-LAC with 5W: Shear with grain slippage still dominant due to inadequate thermal softening. Shear band presents irregular curve shape along grain boundaries. Nanocrystal of conventional cutting chip disappears and is replaced by amorphous owing to shear ratio decrease. Only slight crystal bending in cutting chip area, no bending grain in subsurface.",
+            "simplified": "5W In-LAC: grain slippage still dominant, irregular shear band along grain boundaries, slight crystal bending only in chip area."
+          },
+          "Main_Phase": "HCP",
+          "Advanced_Quantitative_Features": {
+            "Elastic_Recovery_nm": 1.08,
+            "Accumulated_Temperature_K": 554.0
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Elastic_Recovery",
+            "Value": 1.08,
+            "Unit": "nm",
+            "Data_Source": "image",
+            "Note": "From Fig. 8 caption. In-LAC with 5W laser."
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "04",
+      "Sample_ID": "Binderless_WC_InLAC_MD_10W",
+      "Role": "Target",
+      "Data_Nature": "Computed",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Laser_Assisted"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 2. In-LAC simulation method",
+        "Table 1",
+        "Fig. 12c,d In-LAC with 10W"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Other",
+          "Material_Name_Raw": "Binderless polycrystalline WC - MD model",
+          "Nominal_Composition": {
+            "Composition_Source_Type": "nominal_inferred",
+            "Elements": {
+              "W": "Balance",
+              "C": "Balance"
+            }
+          }
+        },
+        "Processing": {
+          "Process_Category": "Other",
+          "Machining_Composition": {
+            "Tool_Material": {
+              "Type": "Diamond",
+              "Geometry": {
+                "Rake_Angle_deg": -35,
+                "Clearance_Angle_deg": 10,
+                "Edge_Radius_um": 0.005
+              }
+            }
+          },
+          "Machining_Params": {
+            "Machining_Method": "Laser_Assisted",
+            "Cutting_Speed_MDL_m_s": 100,
+            "Depth_of_Cut_nm": 5,
+            "Laser_Power_W": 10,
+            "Laser_Spot_Diameter_um": 170,
+            "Accumulated_Temperature_K": 802.2
+          },
+          "Process_Text": {
+            "original": "In-LAC MD simulation with 10W laser power. Workpiece initial temperature predefined at 802.2 K. Atomic activation energy increases and atomic binding force decreases at elevated temperature, making it easier to form shear band inside grains. Shear band gradually becomes straight, ignoring grain boundary effect. No crystal bending in the workpiece due to reduced cutting force.",
+            "simplified": "MD In-LAC with 10W, accumulated temperature 802.2K, straight shear band, no crystal bending."
+          },
+          "Equipment": [
+            {
+              "Instrument_Name": "MD Simulation Software",
+              "Model": "LAMMPS"
+            }
+          ],
+          "Key_Params": {
+            "Stage1": {
+              "Laser_Power_W": 10,
+              "Workpiece_Initial_Temperature_K": 802.2
+            }
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "In-LAC with 10W: Shear band gradually becomes straight, ignoring grain boundary effect. No crystal bending in workpiece due to reduced cutting force. Part of grain 1 and 2 pushed out as cutting chips.",
+            "simplified": "10W In-LAC: straight shear band, no crystal bending, grain boundary effect diminished."
+          },
+          "Main_Phase": "HCP",
+          "Advanced_Quantitative_Features": {
+            "Elastic_Recovery_nm": 1.74,
+            "Accumulated_Temperature_K": 802.2
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Elastic_Recovery",
+            "Value": 1.74,
+            "Unit": "nm",
+            "Data_Source": "image",
+            "Note": "From Fig. 8 caption. In-LAC with 10W laser."
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "05",
+      "Sample_ID": "Binderless_WC_InLAC_MD_15W",
+      "Role": "Target",
+      "Data_Nature": "Computed",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Laser_Assisted"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 2. In-LAC simulation method",
+        "Table 1",
+        "Fig. 12e,f In-LAC with 15W"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Other",
+          "Material_Name_Raw": "Binderless polycrystalline WC - MD model",
+          "Nominal_Composition": {
+            "Composition_Source_Type": "nominal_inferred",
+            "Elements": {
+              "W": "Balance",
+              "C": "Balance"
+            }
+          }
+        },
+        "Processing": {
+          "Process_Category": "Other",
+          "Machining_Composition": {
+            "Tool_Material": {
+              "Type": "Diamond",
+              "Geometry": {
+                "Rake_Angle_deg": -35,
+                "Clearance_Angle_deg": 10,
+                "Edge_Radius_um": 0.005
+              }
+            }
+          },
+          "Machining_Params": {
+            "Machining_Method": "Laser_Assisted",
+            "Cutting_Speed_MDL_m_s": 100,
+            "Depth_of_Cut_nm": 5,
+            "Laser_Power_W": 15,
+            "Laser_Spot_Diameter_um": 170,
+            "Accumulated_Temperature_K": 1044.7
+          },
+          "Process_Text": {
+            "original": "In-LAC MD simulation with 15W laser power. Workpiece initial temperature predefined at 1044.7 K. Shear band remains straight. Pure amorphous cutting chip not achieved due to slippage of grain 1 along shear band. Grain near tool tip splits into small grains 2 and 3 along marking line. Weakened internal atomic cohesion and grain strength at elevated temperature.",
+            "simplified": "MD In-LAC with 15W, accumulated temperature 1044.7K, straight shear band, grain splitting near tool tip."
+          },
+          "Equipment": [
+            {
+              "Instrument_Name": "MD Simulation Software",
+              "Model": "LAMMPS"
+            }
+          ],
+          "Key_Params": {
+            "Stage1": {
+              "Laser_Power_W": 15,
+              "Workpiece_Initial_Temperature_K": 1044.7
+            }
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "In-LAC with 15W: Shear band remains straight. Pure amorphous cutting chip not achieved due to slippage of grain 1. Grain near tool tip splits into small grains 2 and 3. Weakened internal atomic cohesion at elevated temperature. In-LAC with 15W presents minimal hydrostatic stress around diamond tool tip owing to grain refinement.",
+            "simplified": "15W In-LAC: straight shear band, grain splitting, minimal hydrostatic stress, grain refinement."
+          },
+          "Main_Phase": "HCP",
+          "Advanced_Quantitative_Features": {
+            "Elastic_Recovery_nm": 1.96,
+            "Accumulated_Temperature_K": 1044.7
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Elastic_Recovery",
+            "Value": 1.96,
+            "Unit": "nm",
+            "Data_Source": "image",
+            "Note": "From Fig. 8 caption. In-LAC with 15W laser."
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "06",
+      "Sample_ID": "Binderless_WC_InLAC_MD_20W",
+      "Role": "Target",
+      "Data_Nature": "Computed",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Laser_Assisted"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 2. In-LAC simulation method",
+        "Table 1",
+        "Fig. 12g,h In-LAC with 20W"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Other",
+          "Material_Name_Raw": "Binderless polycrystalline WC - MD model",
+          "Nominal_Composition": {
+            "Composition_Source_Type": "nominal_inferred",
+            "Elements": {
+              "W": "Balance",
+              "C": "Balance"
+            }
+          }
+        },
+        "Processing": {
+          "Process_Category": "Other",
+          "Machining_Composition": {
+            "Tool_Material": {
+              "Type": "Diamond",
+              "Geometry": {
+                "Rake_Angle_deg": -35,
+                "Clearance_Angle_deg": 10,
+                "Edge_Radius_um": 0.005
+              }
+            }
+          },
+          "Machining_Params": {
+            "Machining_Method": "Laser_Assisted",
+            "Cutting_Speed_MDL_m_s": 100,
+            "Depth_of_Cut_nm": 5,
+            "Laser_Power_W": 20,
+            "Laser_Spot_Diameter_um": 170,
+            "Accumulated_Temperature_K": 1294.9
+          },
+          "Process_Text": {
+            "original": "In-LAC MD simulation with 20W laser power. Workpiece initial temperature predefined at 1294.9 K. No evident shear band appears. Cutting chip composed entirely of amorphous WC, indicating material removal dominated by extrusion instead of shear mode. Main cutting energy consumed by phase transformation of grains near diamond tool, demonstrated by dramatically increasing hydrostatic stress. No sufficient energy for grain slippage and shear band formation. Laser heat exceeds cutting heat becoming dominant thermal input. High-temperature area distributed in chip and machined subsurface, leading to larger thermally affected area and undesired thermal stress.",
+            "simplified": "MD In-LAC with 20W, accumulated temperature 1294.9K, no shear band, amorphous chip, extrusion-dominated removal, thermal damage."
+          },
+          "Equipment": [
+            {
+              "Instrument_Name": "MD Simulation Software",
+              "Model": "LAMMPS"
+            }
+          ],
+          "Key_Params": {
+            "Stage1": {
+              "Laser_Power_W": 20,
+              "Workpiece_Initial_Temperature_K": 1294.9
+            }
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "In-LAC with 20W: No evident shear band. Cutting chip all composed of amorphous WC. Material removal dominated by extrusion. Dramatically increasing hydrostatic stress. Laser heat exceeds cutting heat as dominant thermal source. Larger thermally affected area. Much higher compressive stress value. Stress cannot be released through shear band and dislocations.",
+            "simplified": "20W In-LAC: extrusion-dominated, amorphous chip, thermal damage, high compressive stress."
+          },
+          "Main_Phase": "HCP",
+          "Advanced_Quantitative_Features": {
+            "Elastic_Recovery_nm": 2.73,
+            "Accumulated_Temperature_K": 1294.9
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Elastic_Recovery",
+            "Value": 2.73,
+            "Unit": "nm",
+            "Data_Source": "image",
+            "Note": "From Fig. 8 caption. In-LAC with 20W laser."
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "07",
+      "Sample_ID": "Binderless_WC_Conventional_TaperCut",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Laser_Assisted"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 3.2. Diamond cutting",
+        "Section 4.1.3. Critical depth of no observed surface cracks",
+        "Section 4.2.2. Subsurface damage"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Other",
+          "Material_Name_Raw": "Binderless polycrystalline WC",
+          "Nominal_Composition": {
+            "Composition_Source_Type": "nominal_inferred",
+            "Elements": {
+              "W": "Balance",
+              "C": "Balance"
+            }
+          }
+        },
+        "Processing": {
+          "Process_Category": "Other",
+          "Machining_Composition": {
+            "Workpiece_Material": {
+              "Material_Name_Raw": "Binderless polycrystalline WC"
+            },
+            "Tool_Material": {
+              "Type": "Diamond",
+              "Grade": "Monocrystalline diamond",
+              "Geometry": {
+                "Rake_Angle_deg": -35,
+                "Clearance_Angle_deg": 10,
+                "Tool_Nose_Radius_mm": 0.3
+              }
+            }
+          },
+          "Machining_Params": {
+            "Machining_Method": "Turning",
+            "Cutting_Speed_m_min": null,
+            "Cutting_Speed_m_s": 0.21,
+            "Feed_mm_rev": null,
+            "Depth_of_Cut_um": {
+              "Value_Range": [
+                "0",
+                "1"
+              ]
+            },
+            "Note": "Rotational taper cutting, DoC varies 0-1 μm during process. Linear speed 0.21 m/s."
+          },
+          "Process_Text": {
+            "original": "Rotational taper cutting was adopted with a linear speed of 0.21 m/s. The experiment was set up on a three-axis ultraprecision lathe. Cutting depth of diamond tool varied within 0-1 μm during taper cutting process. Feed distance per revolution enlarged to 150 μm/rev. No cutting fluid used. Conventional taper cutting without laser assistance.",
+            "simplified": "Conventional rotational taper cutting, 0.21 m/s linear speed, 0-1μm DoC, 150μm/rev feed, no cutting fluid."
+          },
+          "Equipment": [
+            {
+              "Instrument_Name": "Ultraprecision Lathe",
+              "Note": "Three-axis ultraprecision lathe with self-developed In-LAT system"
+            },
+            {
+              "Instrument_Name": "Laser Scanning Confocal Microscope",
+              "Manufacturer": "Olympus",
+              "Model": "Lext OLS 4000"
+            },
+            {
+              "Instrument_Name": "SEM-FIB Double Beam System",
+              "Manufacturer": "Zeiss",
+              "Model": "Crossbeam 540",
+              "Note": "TEM sample preparation by FIB machining"
+            },
+            {
+              "Instrument_Name": "HR-TEM",
+              "Manufacturer": "FEI",
+              "Model": "Talos F200X",
+              "Note": "High-resolution transmission electron microscope for subsurface characterization"
+            }
+          ],
+          "Key_Params": {
+            "Stage1": {
+              "Cutting_Speed_m_s": 0.21,
+              "Depth_of_Cut_Range_um": "0-1",
+              "Feed_Distance_per_Rev_um": 150,
+              "Cutting_Fluid": "None",
+              "Laser_Assistance": false
+            }
+          },
+          "Original_Values": {
+            "Cutting_Speed": "0.21 m/s",
+            "Feed_per_Revolution": "150 μm/rev"
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "TEM observation of conventional taper cutting subsurface: The subsurface crystalline structure is disrupted seriously, leaving an average of ~227.9 nm thickness of the affected layer. Dense crystal defects due to severe grain deformation and stress release. Multi intragranular slippage marks identified as parallel lines within same grain. Grain refinement phenomenon: surface grains split into mass of nanocrystals with short-ordered structures and random grain orientations. Subsurface crystal presents large deformation and bending. Large-scale slippage mark defects appear as parallel bright contrast lines under HR-TEM and lead to local nano crack.",
+            "simplified": "Conventional taper cutting: ~227.9 nm affected layer, severe grain deformation, nanocrystallization, crystal bending, intragranular slippage marks, nano cracks."
+          },
+          "Main_Phase": "HCP",
+          "Surface_Integrity": {
+            "Gradient_or_Depth_Profile": [
+              {
+                "Feature": "Work_Hardened_Layer",
+                "Thickness_um": {
+                  "Value": 0.2279,
+                  "Note": "~227.9 nm average affected layer"
+                },
+                "Note": "Severely disrupted crystalline structure with dense crystal defects, nanocrystallization, crystal bending"
+              }
+            ],
+            "Affected_Zone_Depth_um": 0.2279
+          },
+          "Advanced_Quantitative_Features": {
+            "Affected_Layer_Thickness_nm": 227.9,
+            "NOSC_Depth_nm": 26.6
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Critical_Depth_NOSC",
+            "Value": 26.6,
+            "Unit": "nm",
+            "Data_Source": "text",
+            "Note": "Critical depth of no observed surface cracks for conventional taper cutting"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "08",
+      "Sample_ID": "Binderless_WC_InLATC_15W",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Laser_Assisted"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 3.2. Diamond cutting",
+        "Section 4.1.3. Critical depth of no observed surface cracks",
+        "Section 4.2.2. Subsurface damage",
+        "Fig. 10, Fig. 14b, Fig. 16"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Other",
+          "Material_Name_Raw": "Binderless polycrystalline WC",
+          "Nominal_Composition": {
+            "Composition_Source_Type": "nominal_inferred",
+            "Elements": {
+              "W": "Balance",
+              "C": "Balance"
+            }
+          }
+        },
+        "Processing": {
+          "Process_Category": "Other",
+          "Machining_Composition": {
+            "Workpiece_Material": {
+              "Material_Name_Raw": "Binderless polycrystalline WC"
+            },
+            "Tool_Material": {
+              "Type": "Diamond",
+              "Grade": "Monocrystalline diamond",
+              "Geometry": {
+                "Rake_Angle_deg": -35,
+                "Clearance_Angle_deg": 10,
+                "Tool_Nose_Radius_mm": 0.3
+              }
+            }
+          },
+          "Machining_Params": {
+            "Machining_Method": "Laser_Assisted",
+            "Cutting_Speed_m_s": 0.21,
+            "Depth_of_Cut_um": {
+              "Value_Range": [
+                "0",
+                "1"
+              ]
+            },
+            "Laser_Power_W": 15,
+            "Laser_Spot_Diameter_um": 170,
+            "Laser_Wavelength_nm": 1064,
+            "Laser_Type": "Continuous-wave Nd:YAG",
+            "Cooling_or_Lubrication": {
+              "Type": "None",
+              "Note": "No cutting fluid used to minimize thermal stress"
+            }
+          },
+          "Process_Text": {
+            "original": "In-process-heat laser-assisted taper cutting (In-LATC) with 15W laser power, 170 μm-diameter laser beam, 1064 nm wavelength continuous-wave laser (Nd:YAG). Rotational taper cutting with linear speed 0.21 m/s on three-axis ultraprecision lathe with self-developed In-LAT system. Feed distance per revolution 150 μm/rev. No cutting fluid used to minimize thermal stress.",
+            "simplified": "In-LATC: 15W Nd:YAG laser (1064nm, 170μm spot), 0.21 m/s cutting speed, 150μm/rev feed, no cutting fluid."
+          },
+          "Equipment": [
+            {
+              "Instrument_Name": "Ultraprecision Lathe",
+              "Note": "Three-axis ultraprecision lathe with self-developed In-LAT system"
+            },
+            {
+              "Instrument_Name": "CW Laser",
+              "Note": "Continuous-wave Nd:YAG laser, 1064 nm wavelength"
+            },
+            {
+              "Instrument_Name": "Laser Scanning Confocal Microscope",
+              "Manufacturer": "Olympus",
+              "Model": "Lext OLS 4000"
+            },
+            {
+              "Instrument_Name": "SEM-FIB Double Beam System",
+              "Manufacturer": "Zeiss",
+              "Model": "Crossbeam 540",
+              "Note": "TEM sample preparation by FIB machining"
+            },
+            {
+              "Instrument_Name": "HR-TEM",
+              "Manufacturer": "FEI",
+              "Model": "Talos F200X",
+              "Note": "High-resolution transmission electron microscope for subsurface characterization"
+            }
+          ],
+          "Key_Params": {
+            "Stage1": {
+              "Cutting_Speed_m_s": 0.21,
+              "Laser_Power_W": 15,
+              "Laser_Spot_Diameter_um": 170,
+              "Laser_Wavelength_nm": 1064,
+              "Feed_Distance_per_Rev_um": 150
+            }
+          },
+          "Original_Values": {
+            "Laser_Type": "Continuous-wave Nd:YAG, 1064 nm"
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "In-LATC sample possesses a smaller machining affected area and much better crystalline integrity. Averaged ~17.8 nm-thick affected layer in near-surface, uniformly distributed along workpiece surface ignoring grain boundary. Supposed to be locally melted under thermal effect and recrystallized as temperature decreases. Much clearer intragranular slippage marks with straight parallel features due to fewer defects. Deeper subsurface crystalline structure maintained well. Grain refinement phenomenon does not exist, replaced by typical local defects as signal of recrystallization. Grains underneath recrystallization layer act as nuclei during surface recrystallization, resulting in almost similar crystal orientation. High-density stacking faults from inhomogeneous thermal condition during cooling crystallization. Nanoscale twin crystal defects observed. No crystal bending observed in In-LATC subsurface. Laser annealing effect directly proven by cross-section TEM.",
+            "simplified": "In-LATC: ~17.8 nm affected layer, recrystallization, no crystal bending, high-density stacking faults, nanoscale twin crystal defects, laser annealing effect confirmed."
+          },
+          "Main_Phase": "HCP",
+          "Surface_Integrity": {
+            "Gradient_or_Depth_Profile": [
+              {
+                "Feature": "Recrystallized_Layer",
+                "Thickness_um": {
+                  "Value": 0.0178,
+                  "Note": "~17.8 nm recrystallized affected layer"
+                },
+                "Note": "Uniform thermal affected layer, recrystallized with high-density stacking faults"
+              }
+            ],
+            "Affected_Zone_Depth_um": 0.0178
+          },
+          "Advanced_Quantitative_Features": {
+            "Affected_Layer_Thickness_nm": 17.8,
+            "NOSC_Depth_nm": 106.3
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Critical_Depth_NOSC",
+            "Value": 106.3,
+            "Unit": "nm",
+            "Data_Source": "text",
+            "Note": "Critical depth of no observed surface cracks for In-LATC with 15W laser assistance"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "09",
+      "Sample_ID": "Binderless_WC_Conventional_Turning",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Laser_Assisted"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 3.2. Diamond cutting",
+        "Section 4.3.1. Finish quality",
+        "Section 4.3.2. Tool wear"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Other",
+          "Material_Name_Raw": "Binderless polycrystalline WC",
+          "Nominal_Composition": {
+            "Composition_Source_Type": "nominal_inferred",
+            "Elements": {
+              "W": "Balance",
+              "C": "Balance"
+            }
+          }
+        },
+        "Processing": {
+          "Process_Category": "Other",
+          "Machining_Composition": {
+            "Workpiece_Material": {
+              "Material_Name_Raw": "Binderless polycrystalline WC"
+            },
+            "Tool_Material": {
+              "Type": "Diamond",
+              "Geometry": {
+                "Rake_Angle_deg": -35,
+                "Clearance_Angle_deg": 10,
+                "Tool_Nose_Radius_mm": 0.3
+              }
+            }
+          },
+          "Machining_Params": {
+            "Machining_Method": "Turning",
+            "Spindle_Speed_rpm": 2000,
+            "Feed_mm_rev": 0.001,
+            "Depth_of_Cut_um": 2,
+            "Undeformed_Chip_Thickness_nm": 113.6,
+            "Cooling_or_Lubrication": {
+              "Type": "ISOPAR-H"
+            }
+          },
+          "Process_Text": {
+            "original": "Conventional diamond turning of binderless WC workpiece (concave spherical, 8.5 mm aperture, 8 mm curvature radius). Rotation speed 2000 RPM, DoC 2 μm, feedrate 1.0 μm/rev, nominal undeformed chip thickness 113.6 nm. Linear cutting speed ranges from 0.89 m/s to 0 m/s. Cutting fluid (ISOPAR-H) lubrication. Diamond tool with -35° rake angle, 10° clearance angle, 0.3 mm nose radius.",
+            "simplified": "Conventional diamond turning: 2000 RPM, 2μm DoC, 1μm/rev feed, ISOPAR-H cutting fluid."
+          },
+          "Equipment": [
+            {
+              "Instrument_Name": "Ultraprecision Lathe",
+              "Note": "Three-axis ultraprecision lathe"
+            },
+            {
+              "Instrument_Name": "Laser Scanning Confocal Microscope",
+              "Manufacturer": "Olympus",
+              "Model": "Lext OLS 4000"
+            },
+            {
+              "Instrument_Name": "SEM",
+              "Manufacturer": "Zeiss",
+              "Model": "GeminiSEM 500",
+              "Note": "Chip morphology observation"
+            }
+          ],
+          "Key_Params": {
+            "Stage1": {
+              "Spindle_Speed_RPM": 2000,
+              "Depth_of_Cut_um": 2,
+              "Feedrate_um_rev": 1.0,
+              "Undeformed_Chip_Thickness_nm": 113.6,
+              "Cutting_Fluid": "ISOPAR-H"
+            }
+          },
+          "Original_Values": {
+            "Workpiece_Geometry": "Concave spherical, 8.5 mm aperture, 8 mm curvature radius"
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Conventional diamond turning surface: machined surface littered with craters and pits due to grain desquamation and chunk removal. More obvious feed mark than In-LAT. Almost all chips are fragmentized, indicating brittle crack is dominant material removal form.",
+            "simplified": "Conventional turning: surface with craters and pits, fragmentized chips, brittle crack dominant removal."
+          },
+          "Main_Phase": "HCP"
+        },
+        "Properties": [
+          {
+            "Property_Name": "Tool_Wear",
+            "Data_Source": "image",
+            "Note": "Severe tool wear after 1.4 km cutting distance. Cutting edge cracks due to high hardness of WC at ambient temperature. Parallel grooves on wear land indicating abrasive wear pattern.",
+            "Original_Values": {
+              "Cutting_Distance_km": 1.4,
+              "Wear_Pattern": "Severe - cutting edge cracks, parallel grooves (abrasive wear)"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "10",
+      "Sample_ID": "Binderless_WC_InLAT_Turning_12_5W",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Laser_Assisted"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 3.2. Diamond cutting",
+        "Section 4.3.1. Finish quality",
+        "Section 4.3.2. Tool wear",
+        "Fig. 19b, Fig. 20"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Other",
+          "Material_Name_Raw": "Binderless polycrystalline WC",
+          "Nominal_Composition": {
+            "Composition_Source_Type": "nominal_inferred",
+            "Elements": {
+              "W": "Balance",
+              "C": "Balance"
+            }
+          }
+        },
+        "Processing": {
+          "Process_Category": "Other",
+          "Machining_Composition": {
+            "Workpiece_Material": {
+              "Material_Name_Raw": "Binderless polycrystalline WC"
+            },
+            "Tool_Material": {
+              "Type": "Diamond",
+              "Geometry": {
+                "Rake_Angle_deg": -35,
+                "Clearance_Angle_deg": 10,
+                "Tool_Nose_Radius_mm": 0.3
+              }
+            }
+          },
+          "Machining_Params": {
+            "Machining_Method": "Laser_Assisted",
+            "Spindle_Speed_rpm": 2000,
+            "Feed_mm_rev": 0.001,
+            "Depth_of_Cut_um": 1,
+            "Laser_Power_W": 12.5,
+            "Laser_Spot_Diameter_um": 170,
+            "Laser_Wavelength_nm": 1064,
+            "Cooling_or_Lubrication": {
+              "Type": "ISOPAR-H"
+            }
+          },
+          "Process_Text": {
+            "original": "In-process-heat laser-assisted turning (In-LAT) with 12.5 W laser power on concave spherical binderless WC workpiece (8.5 mm aperture, 8 mm curvature radius). Rotation speed 2000 RPM, DoC 1 μm, feedrate 1 μm/rev. Linear cutting speed ranges from 0.89 m/s to 0 m/s. Cutting fluid (ISOPAR-H) lubrication. Continuous-wave Nd:YAG laser, 1064 nm wavelength, 170 μm laser diameter.",
+            "simplified": "In-LAT with 12.5W, 2000 RPM, 1μm DoC, 1μm/rev feed, ISOPAR-H cutting fluid."
+          },
+          "Equipment": [
+            {
+              "Instrument_Name": "Ultraprecision Lathe",
+              "Note": "Three-axis ultraprecision lathe with self-developed In-LAT system"
+            },
+            {
+              "Instrument_Name": "CW Laser",
+              "Note": "Continuous-wave Nd:YAG laser, 1064 nm wavelength"
+            },
+            {
+              "Instrument_Name": "3D Optical Profilometer",
+              "Manufacturer": "Zygo",
+              "Model": "NewView 9000",
+              "Note": "VSI measurement mode for surface roughness measurement"
+            },
+            {
+              "Instrument_Name": "Laser Scanning Confocal Microscope",
+              "Manufacturer": "Olympus",
+              "Model": "Lext OLS 4000"
+            },
+            {
+              "Instrument_Name": "SEM",
+              "Manufacturer": "Zeiss",
+              "Model": "GeminiSEM 500",
+              "Note": "Chip morphology observation"
+            }
+          ],
+          "Key_Params": {
+            "Stage1": {
+              "Spindle_Speed_RPM": 2000,
+              "Depth_of_Cut_um": 1,
+              "Feedrate_um_rev": 1,
+              "Laser_Power_W": 12.5,
+              "Laser_Spot_Diameter_um": 170
+            }
+          },
+          "Original_Values": {
+            "Workpiece_Geometry": "Concave spherical, 8.5 mm aperture, 8 mm curvature radius"
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "In-LAT machined surface: homogeneous surface finish, free of craters. Chips tend to curl with 12.5W laser. Multi shear band observed on backside of curling chips. Sintered cutting chips on diamond tool introduce additional waveform middle-frequency error. Dominant wavelength 86.0 μm from PSD analysis, attributed to sintered high-temperature cutting chips on diamond tool affecting surface morphology. Potential laser cladding effect further smooths the surface.",
+            "simplified": "In-LAT: homogeneous crater-free surface, curling chips with shear bands, slight waveform error (dominant wavelength 86 μm) from sintered chips on tool."
+          },
+          "Main_Phase": "HCP",
+          "Advanced_Quantitative_Features": {
+            "Dominant_Waveform_Wavelength_um": 86.0,
+            "Surface_Field_Area_um2": "434.047 × 434.047"
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Surface_Roughness_Sa",
+            "Value": 4.66,
+            "Unit": "nm",
+            "Test_Temperature_Original": "room temperature",
+            "Data_Source": "text",
+            "Note": "Homogeneous surface finish achieved with 12.5W laser assistance. Measured by Zygo NewView 9000, VSI mode, 434.047 x 434.047 um2 field, 8th-degree polynomial fitting to remove form. Original value: 4.66 nm in Sa."
+          },
+          {
+            "Property_Name": "Tool_Wear",
+            "Data_Source": "image",
+            "Note": "Slight tool wear after 1.4 km cutting distance. No obvious graphitization observed. Close contact between tool and cutting chips creates oxygen-free environment for diamond tip.",
+            "Original_Values": {
+              "Cutting_Distance_km": 1.4,
+              "Wear_Pattern": "Slight - no cutting edge cracks"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "11",
+      "Sample_ID": "Binderless_WC_InLAT_Turning_5W",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Laser_Assisted"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 3.2. Diamond cutting",
+        "Section 4.2.3. Chip morphology",
+        "Fig. 17b"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Other",
+          "Material_Name_Raw": "Binderless polycrystalline WC",
+          "Nominal_Composition": {
+            "Composition_Source_Type": "nominal_inferred",
+            "Elements": {
+              "W": "Balance",
+              "C": "Balance"
+            }
+          }
+        },
+        "Processing": {
+          "Process_Category": "Other",
+          "Machining_Params": {
+            "Machining_Method": "Laser_Assisted",
+            "Spindle_Speed_rpm": 2000,
+            "Depth_of_Cut_um": 2,
+            "Feed_mm_rev": 0.001,
+            "Laser_Power_W": 5,
+            "Laser_Spot_Diameter_um": 170,
+            "Cooling_or_Lubrication": {
+              "Type": "ISOPAR-H"
+            }
+          },
+          "Process_Text": {
+            "simplified": "In-LAT diamond turning with 5W laser, 2000 RPM, 2μm DoC, 1μm/rev feed."
+          },
+          "Equipment": [
+            {
+              "Instrument_Name": "SEM",
+              "Manufacturer": "Zeiss",
+              "Model": "GeminiSEM 500",
+              "Note": "Chip morphology observation"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "simplified": "5W In-LAT: fewer brittle chips than conventional. Sheet chip appears as evidence of ductile machining."
+          },
+          "Main_Phase": "HCP"
+        },
+        "Properties": [
+          {
+            "Property_Name": "Chip_Morphology",
+            "Data_Source": "image",
+            "Note": "Fewer brittle chips compared to conventional turning. Sheet chips appear as evidence of ductile machining with 5W laser-heating."
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "12",
+      "Sample_ID": "Binderless_WC_InLAT_Turning_10W",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Laser_Assisted"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 3.2. Diamond cutting",
+        "Section 4.2.3. Chip morphology",
+        "Fig. 17c, Fig. 18a"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Other",
+          "Material_Name_Raw": "Binderless polycrystalline WC",
+          "Nominal_Composition": {
+            "Composition_Source_Type": "nominal_inferred",
+            "Elements": {
+              "W": "Balance",
+              "C": "Balance"
+            }
+          }
+        },
+        "Processing": {
+          "Process_Category": "Other",
+          "Machining_Params": {
+            "Machining_Method": "Laser_Assisted",
+            "Spindle_Speed_rpm": 2000,
+            "Depth_of_Cut_um": 2,
+            "Feed_mm_rev": 0.001,
+            "Laser_Power_W": 10,
+            "Laser_Spot_Diameter_um": 170,
+            "Cooling_or_Lubrication": {
+              "Type": "ISOPAR-H"
+            }
+          },
+          "Process_Text": {
+            "simplified": "In-LAT diamond turning with 10W laser, 2000 RPM, 2μm DoC, 1μm/rev feed."
+          },
+          "Equipment": [
+            {
+              "Instrument_Name": "SEM",
+              "Manufacturer": "Zeiss",
+              "Model": "GeminiSEM 500",
+              "Note": "Chip morphology observation"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "simplified": "10W In-LAT: cutting chips start to curl. Multi shear band observed on backside of curling chips. Small proportion fragmentized chips from grain desquamation."
+          },
+          "Main_Phase": "HCP"
+        },
+        "Properties": [
+          {
+            "Property_Name": "Chip_Morphology",
+            "Data_Source": "image",
+            "Note": "Cutting chips start to curl with 10W laser. Multi shear band observed on backside of curling chip. Small proportion fragmentized chips from grain desquamation at maximum chip thickness position."
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "13",
+      "Sample_ID": "Binderless_WC_InLAT_Turning_15W",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Laser_Assisted"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 3.2. Diamond cutting",
+        "Section 4.2.3. Chip morphology",
+        "Fig. 17d, Fig. 18b"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Other",
+          "Material_Name_Raw": "Binderless polycrystalline WC",
+          "Nominal_Composition": {
+            "Composition_Source_Type": "nominal_inferred",
+            "Elements": {
+              "W": "Balance",
+              "C": "Balance"
+            }
+          }
+        },
+        "Processing": {
+          "Process_Category": "Other",
+          "Machining_Params": {
+            "Machining_Method": "Laser_Assisted",
+            "Spindle_Speed_rpm": 2000,
+            "Depth_of_Cut_um": 2,
+            "Feed_mm_rev": 0.001,
+            "Laser_Power_W": 15,
+            "Laser_Spot_Diameter_um": 170,
+            "Cooling_or_Lubrication": {
+              "Type": "ISOPAR-H"
+            }
+          },
+          "Process_Text": {
+            "simplified": "In-LAT diamond turning with 15W laser, 2000 RPM, 2μm DoC, 1μm/rev feed."
+          },
+          "Equipment": [
+            {
+              "Instrument_Name": "SEM",
+              "Manufacturer": "Zeiss",
+              "Model": "GeminiSEM 500",
+              "Note": "Chip morphology observation"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "simplified": "15W In-LAT: cutting chips curl. Multi shear band on backside. Small proportion fragmentized chips."
+          },
+          "Main_Phase": "HCP"
+        },
+        "Properties": [
+          {
+            "Property_Name": "Chip_Morphology",
+            "Data_Source": "image",
+            "Note": "Cutting chips curl with 15W laser. Multi shear band observed on backside. Small proportion fragmentized chips."
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "14",
+      "Sample_ID": "Binderless_WC_InLAT_Turning_20W",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Laser_Assisted"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 3.2. Diamond cutting",
+        "Section 4.2.3. Chip morphology",
+        "Fig. 17e"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Other",
+          "Material_Name_Raw": "Binderless polycrystalline WC",
+          "Nominal_Composition": {
+            "Composition_Source_Type": "nominal_inferred",
+            "Elements": {
+              "W": "Balance",
+              "C": "Balance"
+            }
+          }
+        },
+        "Processing": {
+          "Process_Category": "Other",
+          "Machining_Params": {
+            "Machining_Method": "Laser_Assisted",
+            "Spindle_Speed_rpm": 2000,
+            "Depth_of_Cut_um": 2,
+            "Feed_mm_rev": 0.001,
+            "Laser_Power_W": 20,
+            "Laser_Spot_Diameter_um": 170,
+            "Cooling_or_Lubrication": {
+              "Type": "ISOPAR-H"
+            }
+          },
+          "Process_Text": {
+            "simplified": "In-LAT diamond turning with 20W laser, 2000 RPM, 2μm DoC, 1μm/rev feed."
+          },
+          "Equipment": [
+            {
+              "Instrument_Name": "SEM",
+              "Manufacturer": "Zeiss",
+              "Model": "GeminiSEM 500",
+              "Note": "Chip morphology observation"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "simplified": "20W In-LAT: brittle chips with common distribution and large proportion, attributed to thermal damage and diamond tool graphitization wear."
+          },
+          "Main_Phase": "HCP"
+        },
+        "Properties": [
+          {
+            "Property_Name": "Chip_Morphology",
+            "Data_Source": "image",
+            "Note": "Brittle chips with common distribution and large proportion with 20W laser, attributed to undesired thermal damage and diamond tool graphitization wear. Weakened inter-grain cohesion and poor diamond tool cutting edge lead to brittle regime machining."
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,478 @@
+{
+  "Paper_Metadata": {
+    "Paper_Title": "Improving mechanical properties and machining surface quality in a Fe49Mn30Co10Cr10N1 high-entropy alloy sheet by laser-assisted grinding",
+    "DOI": "10.1016/j.jmapro.2025.04.026"
+  },
+  "items": [
+    {
+      "Sample_ID": "N1-HOMO",
+      "Gradient_Material": false,
+      "Gradient_Group_ID": null,
+      "Composition_Info": {
+        "Role": "Target",
+        "Alloy_Name_Raw": "Fe49Mn30Co10Cr10N1 (N1)",
+        "Nominal_Composition": {
+          "Composition_Type": "at%",
+          "Elements_Normalized": {
+            "Fe": 49.0,
+            "Mn": 30.0,
+            "Co": 10.0,
+            "Cr": 10.0,
+            "N": 1.0
+          }
+        },
+        "Measured_Composition": {
+          "Composition_Type": "null",
+          "Elements_Normalized": null,
+          "Measurement_Method": null
+        },
+        "Note": null
+      },
+      "Process_Info": {
+        "Process_Category": "Hot Rolling & Annealing",
+        "Process_Text": {
+          "original": "The ingot was fabricated by vacuum induction melting... Following hot forging at 1200°C, the alloy underwent multi-pass hot rolling to achieve a total reduction of 50 % (initial and terminal rolling temperatures are 1050 ℃ and 900℃, respectively). Subsequently, homogenization treatment was conducted at 1200°C for 2h to obtain the homogenized (HOMO) material.",
+          "simplified": "Vacuum induction melting, hot forging at 1200°C, hot rolling (1050°C to 900°C), homogenization at 1200°C for 2h."
+        },
+        "Equipment": "Vacuum induction melting furnace",
+        "Key_Params": {
+          "Forging_Temperature_K": 1473.15,
+          "Homogenization_Temperature_K": 1473.15,
+          "Homogenization_Time_h": 2
+        }
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": "The N1-HOMO... are in the fully recrystallized state... grain size ~85μm.",
+          "simplified": "Fully recrystallized grains, average size ~85μm."
+        },
+        "Main_Phase": "FCC",
+        "Precipitates": [],
+        "Porosity_pct": null,
+        "Relative_Density_pct": null,
+        "Grain_Size_avg_um": 85,
+        "Precipitate_Size_avg_nm": null,
+        "Advanced_Quantitative_Features": {}
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Yield_Strength",
+          "Test_Condition": "Tensile test",
+          "Value_Numeric": 358,
+          "Value_Range": null,
+          "Value_StdDev": 5,
+          "Unit": "MPa",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": "1e-3",
+          "Data_Source": "text",
+          "Test_Specimen": "Dog-bone shaped, gauge 3mm×2mm",
+          "Note": null
+        },
+        {
+          "Property_Name": "Ultimate_Tensile_Strength",
+          "Test_Condition": "Tensile test",
+          "Value_Numeric": 692,
+          "Value_Range": null,
+          "Value_StdDev": 8,
+          "Unit": "MPa",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": "1e-3",
+          "Data_Source": "text",
+          "Test_Specimen": "Dog-bone shaped, gauge 3mm×2mm",
+          "Note": null
+        },
+        {
+          "Property_Name": "Elongation_Uniform",
+          "Test_Condition": "Tensile test",
+          "Value_Numeric": 108,
+          "Value_Range": null,
+          "Value_StdDev": 0.6,
+          "Unit": "%",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": "1e-3",
+          "Data_Source": "text",
+          "Test_Specimen": "Dog-bone shaped, gauge 3mm×2mm",
+          "Note": null
+        },
+        {
+          "Property_Name": "Elongation_Total",
+          "Test_Condition": "Tensile test",
+          "Value_Numeric": 139,
+          "Value_Range": null,
+          "Value_StdDev": 9,
+          "Unit": "%",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": "1e-3",
+          "Data_Source": "text",
+          "Test_Specimen": "Dog-bone shaped, gauge 3mm×2mm",
+          "Note": null
+        },
+        {
+          "Property_Name": "Hardness",
+          "Test_Condition": "Surface microhardness",
+          "Value_Numeric": 1.8,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "GPa",
+          "Test_Temperature_K": 298.15,
+          "Hardness_Load": "3N",
+          "Data_Source": "text",
+          "Note": null
+        }
+      ]
+    },
+    {
+      "Sample_ID": "N1-CR",
+      "Gradient_Material": false,
+      "Gradient_Group_ID": null,
+      "Composition_Info": {
+        "Role": "Target",
+        "Alloy_Name_Raw": "Fe49Mn30Co10Cr10N1 (N1)",
+        "Nominal_Composition": {
+          "Composition_Type": "at%",
+          "Elements_Normalized": {
+            "Fe": 49.0,
+            "Mn": 30.0,
+            "Co": 10.0,
+            "Cr": 10.0,
+            "N": 1.0
+          }
+        },
+        "Measured_Composition": {
+          "Composition_Type": "null",
+          "Elements_Normalized": null,
+          "Measurement_Method": null
+        },
+        "Note": null
+      },
+      "Process_Info": {
+        "Process_Category": "Cold Rolling",
+        "Process_Text": {
+          "original": "The HOMO material underwent multi-passes cold rolling (CR), achieving an overall thickness reduction of 60 %, and the CR sheet was used for LAG processing.",
+          "simplified": "Multi-pass cold rolling with 60% thickness reduction."
+        },
+        "Equipment": null,
+        "Key_Params": {
+          "Rolling_Reduction_pct": 60
+        }
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": "The N1-CR materials are in the... deformed state.",
+          "simplified": "Deformed microstructure (non-recrystallized)."
+        },
+        "Main_Phase": "FCC",
+        "Precipitates": [],
+        "Porosity_pct": null,
+        "Relative_Density_pct": null,
+        "Grain_Size_avg_um": null,
+        "Precipitate_Size_avg_nm": null,
+        "Advanced_Quantitative_Features": {}
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Yield_Strength",
+          "Test_Condition": "Tensile test",
+          "Value_Numeric": 1385,
+          "Value_Range": null,
+          "Value_StdDev": 7,
+          "Unit": "MPa",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": "1e-3",
+          "Data_Source": "text",
+          "Test_Specimen": "Dog-bone shaped, gauge 3mm×2mm",
+          "Note": null
+        },
+        {
+          "Property_Name": "Ultimate_Tensile_Strength",
+          "Test_Condition": "Tensile test",
+          "Value_Numeric": 1389,
+          "Value_Range": null,
+          "Value_StdDev": 10,
+          "Unit": "MPa",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": "1e-3",
+          "Data_Source": "text",
+          "Test_Specimen": "Dog-bone shaped, gauge 3mm×2mm",
+          "Note": null
+        },
+        {
+          "Property_Name": "Elongation_Uniform",
+          "Test_Condition": "Tensile test",
+          "Value_Numeric": null,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "%",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": "1e-3",
+          "Data_Source": "text",
+          "Test_Specimen": "Dog-bone shaped, gauge 3mm×2mm",
+          "Note": null
+        },
+        {
+          "Property_Name": "Elongation_Total",
+          "Test_Condition": "Tensile test",
+          "Value_Numeric": 22,
+          "Value_Range": null,
+          "Value_StdDev": 3,
+          "Unit": "%",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": "1e-3",
+          "Data_Source": "text",
+          "Test_Specimen": "Dog-bone shaped, gauge 3mm×2mm",
+          "Note": null
+        },
+        {
+          "Property_Name": "Hardness",
+          "Test_Condition": "Surface microhardness",
+          "Value_Numeric": 4.2,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "GPa",
+          "Test_Temperature_K": 298.15,
+          "Hardness_Load": "3N",
+          "Data_Source": "text",
+          "Note": null
+        }
+      ]
+    },
+    {
+      "Sample_ID": "N1-LH",
+      "Gradient_Material": true,
+      "Gradient_Group_ID": "Gradient-Group-1",
+      "Composition_Info": {
+        "Role": "Target",
+        "Alloy_Name_Raw": "Fe49Mn30Co10Cr10N1 (N1)",
+        "Nominal_Composition": {
+          "Composition_Type": "at%",
+          "Elements_Normalized": {
+            "Fe": 49.0,
+            "Mn": 30.0,
+            "Co": 10.0,
+            "Cr": 10.0,
+            "N": 1.0
+          }
+        },
+        "Measured_Composition": {
+          "Composition_Type": "null",
+          "Elements_Normalized": null,
+          "Measurement_Method": null
+        },
+        "Note": "Gradient structure: Recrystallized (RX) surface layer, Partially-recrystallized (PRX) transition layer, Non-recrystallized (NRX) core."
+      },
+      "Process_Info": {
+        "Process_Category": "Laser Heating",
+        "Process_Text": {
+          "original": "The N1-CR sheet that only passed through LH zone without grinding... Laser power: 600 W.",
+          "simplified": "Laser heating (LH) treatment on N1-CR sheet, Laser power 600W."
+        },
+        "Equipment": null,
+        "Key_Params": {
+          "Laser_Power_W": 600,
+          "Feeding_rate_mm_s": 5,
+        }
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": "The N1-LH... shows gradient structures from surface to the core along ND... divided into three layers, i.e. a recrystallized (RX) layer on the material surface, a non-recrystallized (NRX) layer in the core and a partially-recrystallized (PRX) layer in the transition region from the surface to the core.",
+          "simplified": "Three-layer gradient: RX surface, PRX transition, NRX core."
+        },
+        "Main_Phase": "FCC",
+        "Precipitates": [],
+        "Porosity_pct": null,
+        "Relative_Density_pct": null,
+        "Grain_Size_avg_um": null,
+        "Precipitate_Size_avg_nm": null,
+        "Advanced_Quantitative_Features": {
+          "RX_Grain_Size_Surface_um": 38,
+          "PRX_Grain_Size_Transition_um": 5
+        }
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Yield_Strength",
+          "Test_Condition": "Tensile test",
+          "Value_Numeric": 481,
+          "Value_Range": null,
+          "Value_StdDev": 4,
+          "Unit": "MPa",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": "1e-3",
+          "Data_Source": "text",
+          "Test_Specimen": "Dog-bone shaped, gauge 3mm×2mm",
+          "Note": null
+        },
+        {
+          "Property_Name": "Ultimate_Tensile_Strength",
+          "Test_Condition": "Tensile test",
+          "Value_Numeric": 829,
+          "Value_Range": null,
+          "Value_StdDev": 5,
+          "Unit": "MPa",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": "1e-3",
+          "Data_Source": "text",
+          "Test_Specimen": "Dog-bone shaped, gauge 3mm×2mm",
+          "Note": null
+        },
+        {
+          "Property_Name": "Elongation_Uniform",
+          "Test_Condition": "Tensile test",
+          "Value_Numeric": 70,
+          "Value_Range": null,
+          "Value_StdDev": 3,
+          "Unit": "%",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": "1e-3",
+          "Data_Source": "text",
+          "Test_Specimen": "Dog-bone shaped, gauge 3mm×2mm",
+          "Note": null
+        },
+        {
+          "Property_Name": "Elongation_Total",
+          "Test_Condition": "Tensile test",
+          "Value_Numeric": 97,
+          "Value_Range": null,
+          "Value_StdDev": 7,
+          "Unit": "%",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": "1e-3",
+          "Data_Source": "text",
+          "Test_Specimen": "Dog-bone shaped, gauge 3mm×2mm",
+          "Note": null
+        },
+        {
+          "Property_Name": "Hardness",
+          "Test_Condition": "Surface microhardness",
+          "Value_Numeric": 2.2,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "GPa",
+          "Test_Temperature_K": 298.15,
+          "Hardness_Load": "3N",
+          "Data_Source": "text",
+          "Note": null
+        }
+      ]
+    },
+    {
+  "Sample_ID": "N1-LAG",
+  "Gradient_Material": true,
+  "Gradient_Group_ID": "Group_1",
+  "Composition_Info": {
+    "Role": "Target",
+    "Alloy_Name_Raw": "Fe49Mn30Co10Cr10N1 (N1)",
+    "Nominal_Composition": {
+      "Composition_Type": "at%",
+      "Elements_Normalized": {
+        "Fe": 49.0,
+        "Mn": 30.0,
+        "Co": 10.0,
+        "Cr": 10.0,
+        "N": 1.0
+      }
+    },
+    "Measured_Composition": {
+      "Composition_Type": "null",
+      "Elements_Normalized": null,
+      "Measurement_Method": null
+    },
+    "Note": null
+  },
+  "Process_Info": {
+    "Process_Category": "Laser-Assisted Grinding (LAG)",
+    "Process_Text": {
+      "original": "LAG was performed on the RD-TD plane of the N1-CR sheet using a hydraulic surface grinding machine (MY250)... A continuous laser with the power of 600 W... A white corundum grinding wheel with particle size of F60... The rotational speed is 2500 rad/ min... The N1-CR sheet workpiece... along RD at a feed rate of 5mm/s. Micro lubrication water cooling was used during grinding.",
+      "simplified": "Laser-assisted grinding with 600W laser, grinding wheel speed 2500 rad/min, feed rate 5mm/s, micro-lubrication."
+    },
+    "Equipment": "Hydraulic surface grinding machine (MY250)",
+    "Key_Params": {
+      "Laser_Power_W": 600,
+      "Grinding_Speed_rad_min": 2500,
+      "Feeding_rate_mm_s": 5,
+      "Cooling_Method": "Micro lubrication water"
+    }
+  },
+  "Microstructure_Info": {
+    "Microstructure_Text": {
+      "original": "The N1-LAG material... shows a gradient structure along the thickness direction of the material sheet. The gradient structure of N1-LAG material comprises a work hardening layer on the grinding surface, a recrystallized (RX) layer in the grinding subsurface, a partially-recrystallized (PRX) layer in the transition region from surface to the core and a non-recrystallized (NRX) layer in the core.",
+      "simplified": "Gradient structure: Surface work hardening layer, subsurface RX layer, transition PRX layer, core NRX layer."
+    },
+    "Main_Phase": "FCC",
+    "Precipitates": [],
+    "Porosity_pct": null,
+    "Relative_Density_pct": null,
+    "Grain_Size_avg_um": null,
+    "Precipitate_Size_avg_nm": null,
+    "Advanced_Quantitative_Features": {
+     null
+    }
+  },
+  "Properties_Info": [
+    {
+      "Property_Name": "Yield_Strength",
+      "Test_Condition": "Tensile test",
+      "Value_Numeric": 775,
+      "Value_Range": null,
+      "Value_StdDev": 6,
+      "Unit": "MPa",
+      "Test_Temperature_K": 298.15,
+      "Strain_Rate_s1": "1e-3",
+      "Data_Source": "text",
+      "Test_Specimen": "Dog-bone shaped, gauge 3mm×2mm",
+      "Note": null
+    },
+    {
+      "Property_Name": "Ultimate_Tensile_Strength",
+      "Test_Condition": "Tensile test",
+      "Value_Numeric":945,
+      "Value_Range": null,
+      "Value_StdDev": 9,
+      "Unit": "MPa",
+      "Test_Temperature_K": 298.15,
+      "Strain_Rate_s1": "1e-3",
+      "Data_Source": "text",
+      "Test_Specimen": "Dog-bone shaped, gauge 3mm×2mm",
+      "Note": null
+    },
+    {
+      "Property_Name": "Elongation_Uniform",
+      "Test_Condition": "Tensile test",
+      "Value_Numeric": 38,
+      "Value_Range": null,
+      "Value_StdDev": 4,
+      "Unit": "%",
+      "Test_Temperature_K": 298.15,
+      "Strain_Rate_s1": "1e-3",
+      "Data_Source": "text",
+      "Test_Specimen": "Dog-bone shaped, gauge 3mm×2mm",
+      "Note": null
+    },
+    {
+      "Property_Name": "Elongation_Total",
+      "Test_Condition": "Tensile test",
+      "Value_Numeric": 70,
+      "Value_Range": null,
+      "Value_StdDev": 5,
+      "Unit": "%",
+      "Test_Temperature_K": 298.15,
+      "Strain_Rate_s1": "1e-3",
+      "Data_Source": "text",
+      "Test_Specimen": "Dog-bone shaped, gauge 3mm×2mm",
+      "Note": null
+    },
+    {
+      "Property_Name": "Hardness",
+      "Test_Condition": "Surface microhardness",
+      "Value_Numeric": 2.9,
+      "Value_Range": null,
+      "Value_StdDev": null,
+      "Unit": "GPa",
+      "Test_Temperature_K": 298.15,
+      "Hardness_Load": "3N",
+      "Data_Source": "text",
+      "Note": null
+     }
+   ]
+ }
+]

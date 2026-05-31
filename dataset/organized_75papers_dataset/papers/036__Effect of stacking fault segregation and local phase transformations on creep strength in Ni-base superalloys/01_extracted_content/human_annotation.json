@@ -1,0 +1,212 @@
+{
+  "Paper_Metadata": {
+    "Paper_Title": "Effect of stacking fault segregation and local phase transformations on creep strength in Ni-base superalloys",
+    "DOI": "10.1016/j.actamat.2019.04.038"
+  },
+  "items": [
+    {
+      "Sample_ID": "ME3",
+      "Gradient_Material": false,
+      "Gradient_Group_ID": null,
+      "Composition_Info": {
+        "Role": "Target",
+        "Alloy_Name_Raw": "ME3",
+        "Nominal_Composition": {
+          "Composition_Type": "wt%",
+          "Elements_Normalized": {
+            "Ni": 49.68,
+            "Cr": 13.0,
+            "Co": 21.0,
+            "Al": 3.4,
+            "Ti": 3.8,
+            "Nb": 0.8,
+            "Mo": 3.7,
+            "Ta": 2.4,
+            "W": 2.1,
+            "Zr": 0.05,
+            "B": 0.02,
+            "C": 0.05,
+          }
+        },
+        "Measured_Composition": {
+          "Composition_Type": "wt%",
+          "Elements_Normalized": null,
+          "Measurement_Method": null
+        },
+        "Note": "Composition calculated from Table 1. Balance (Other) includes Ni and trace elements not explicitly listed."
+      },
+      "Process_Info": {
+        "Process_Category": "Powder Metallurgy",
+        "Process_Text": {
+          "original": "ME3 was hot compacted, extruded, and isothermally forged into a flat pancake. They were then supersolvus solution heat treated at 1171 °C using the same fixture and air cooled at the same average rate of approximately 72°C/ min. ME3 was aging heat treated at 843°C for 4h plus 760°C for 8h.",
+          "simplified": "Hot compaction, extrusion, isothermal forging. Solution treated at 1171°C, air cooled. Aging: 843°C/4h + 760°C/8h."
+        },
+        "Equipment": null,
+        "Key_Params": {
+          "Solution_Temperature_K": 1444.15,
+          "Aging_Temperature_Stage1_K": 1116.15,
+          "Aging_Time_Stage1_h": 4,
+          "Aging_Temperature_Stage2_K": 1033.15,
+          "Aging_Time_Stage2_h": 8,
+          "Cooling_Medium": "Air"
+        }
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": "From the EBSD scans the average grain diameter was calculated to be 59.2 μm in ME3. The precipitate microstructures between the two alloys are quite similar. In fact, the final volume fraction (VF) measurements between the two alloys fall within the measurement error. The total γ' volume fraction was 46.61% with an average secondary γ' size of 135 nm and tertiary γ' size of 15.4 nm.",
+          "simplified": "Average grain diameter 59.2um. Total γ' VF 46.61%, secondary size 135nm, tertiary size 15.4nm."
+        },
+        "Main_Phase": "Gamma (γ)",
+        "Precipitates": [
+          {
+            "Phase_Type": "Gamma Prime (γ')",
+            "Volume_Fraction_pct": 46.61
+          }
+        ],
+        "Porosity_pct": null,
+        "Relative_Density_pct": null,
+        "Grain_Size_avg_um": 59.2,
+        "Precipitate_Size_avg_nm": 135,
+        "Advanced_Quantitative_Features": {
+          "Tertiary_Precipitate_Size_nm": 15.4
+        }
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Yield_Strength",
+          "Test_Condition": "Room Temperature Tensile Test",
+          "Value_Numeric": null,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "MPa",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": "Differed by less than 15 MPa compared to LSHR."
+        },
+        {
+          "Property_Name": "Ultimate_Tensile_Strength",
+          "Test_Condition": "Room Temperature Tensile Test",
+          "Value_Numeric": null,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "MPa",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": "Differed by less than 15 MPa compared to LSHR."
+        }
+      ]
+    },
+    {
+      "Sample_ID": "LSHR",
+      "Gradient_Material": false,
+      "Gradient_Group_ID": null,
+      "Composition_Info": {
+        "Role": "Target",
+        "Alloy_Name_Raw": "LSHR",
+        "Nominal_Composition": {
+          "Composition_Type": "wt%",
+          "Elements_Normalized": {
+            "Ni": 49.975,
+            "Cr": 12.5,
+            "Co": 20.4,
+            "Al": 3.5,
+            "Ti": 3.5,
+            "Nb": 1.5,
+            "Mo": 2.7,
+            "Ta": 1.5,
+            "W": 4.3,
+            "Zr": 0.05,
+            "B": 0.03,
+            "C": 0.045,
+          }
+        },
+        "Measured_Composition": {
+          "Composition_Type": "wt%",
+          "Elements_Normalized": null,
+          "Measurement_Method": null
+        },
+        "Note": "Composition calculated from Table 1. Balance (Other) includes Ni and trace elements not explicitly listed."
+      },
+      "Process_Info": {
+        "Process_Category": "Powder Metallurgy",
+        "Process_Text": {
+          "original": "LSHR was hot isostatic pressed, extruded, and isothermally forged into a flat pancake. They were then supersolvus solution heat treated at 1171 °C using the same fixture and air cooled at the same average rate of approximately 72°C/ min. LSHR was aging heat treated at 855°C for 4h plus 775°C for 8h.",
+          "simplified": "HIP, extrusion, isothermal forging. Solution treated at 1171°C, air cooled. Aging: 855°C/4h + 775°C/8h."
+        },
+        "Equipment": null,
+        "Key_Params": {
+          "Solution_Temperature_K": 1444.15,
+          "Aging_Temperature_Stage1_K": 1128.15,
+          "Aging_Time_Stage1_h": 4,
+          "Aging_Temperature_Stage2_K": 1048.15,
+          "Aging_Time_Stage2_h": 8,
+          "Cooling_Medium": "Air"
+        }
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": "From the EBSD scans the average grain diameter was calculated to be 59.9 μm in LSHR. The precipitate microstructures between the two alloys are quite similar. In fact, the final volume fraction (VF) measurements between the two alloys fall within the measurement error. The total γ' volume fraction was 45.80% with an average secondary γ' size of 154 nm and tertiary γ' size of 15.9 nm.",
+          "simplified": "Average grain diameter 59.9um. Total γ' VF 45.80%, secondary size 154nm, tertiary size 15.9nm."
+        },
+        "Main_Phase": "Gamma (γ)",
+        "Precipitates": [
+          {
+            "Phase_Type": "Gamma Prime (γ')",
+            "Volume_Fraction_pct": 45.8
+          }
+        ],
+        "Porosity_pct": null,
+        "Relative_Density_pct": null,
+        "Grain_Size_avg_um": 59.9,
+        "Precipitate_Size_avg_nm": 154,
+        "Advanced_Quantitative_Features": {
+          "Tertiary_Precipitate_Size_nm": 15.9
+        }
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Yield_Strength",
+          "Test_Condition": "Room Temperature Tensile Test",
+          "Value_Numeric": null,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "MPa",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": "Differed by less than 15 MPa compared to ME3."
+        },
+        {
+          "Property_Name": "Ultimate_Tensile_Strength",
+          "Test_Condition": "Room Temperature Tensile Test",
+          "Value_Numeric": null,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "MPa",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": "Differed by less than 15 MPa compared to ME3."
+        }
+      ]
+    }
+  ]
+}

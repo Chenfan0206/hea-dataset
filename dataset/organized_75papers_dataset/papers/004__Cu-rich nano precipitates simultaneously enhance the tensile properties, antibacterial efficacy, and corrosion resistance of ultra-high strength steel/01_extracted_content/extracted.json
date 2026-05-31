@@ -1,0 +1,1408 @@
+{
+  "Paper_Metadata": {
+    "Paper_Title": "Cu-rich nano precipitates simultaneously enhance the tensile properties, antibacterial efficacy, and corrosion resistance of ultra-high strength steel",
+    "DOI": "10.1016/j.actamat.2025.121026"
+  },
+  "Paper_Routing": {
+    "base_material": "Metals",
+    "application": "Structural",
+    "research_paradigm": "Experimental",
+    "Supplements_Loaded": [
+      "directions/base/Metals.txt",
+      "directions/application/Structural.txt",
+      "directions/paradigm/Experimental.txt"
+    ],
+    "Patch_Tags": [
+      "Nanomaterial"
+    ],
+    "Needs_Mixed_Routing_Check": false,
+    "Mixed_Signals": []
+  },
+  "items": [
+    {
+      "Item_ID": "1",
+      "Sample_ID": "Cu-free_steel_AQ",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Nanomaterial"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 2.1, Section 3.3, Fig. 4"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Ultra-high strength steel (UHSS)",
+          "Material_Name_Raw": "Cu-free steel",
+          "Measured_Composition": {
+            "Unit": "wt%",
+            "Data_Nature": "Experimental",
+            "Elements": [
+              {
+                "Element": "Fe",
+                "Value": "Balance"
+              },
+              {
+                "Element": "Cr",
+                "Value": 12.85
+              },
+              {
+                "Element": "Ni",
+                "Value": 6.64
+              },
+              {
+                "Element": "Co",
+                "Value": 7.01
+              },
+              {
+                "Element": "Mo",
+                "Value": 2.92
+              },
+              {
+                "Element": "Ti",
+                "Value": 1.44
+              },
+              {
+                "Element": "Cu",
+                "Value": null,
+                "Note": "Not detected (marked as '-' in Table 1)"
+              }
+            ]
+          },
+          "Note": "Chemical compositions determined through chemical analysis (Table 1)"
+        },
+        "Processing": {
+          "Process_Category": "Melting + Hot Forging + Solution Treatment + Quenching",
+          "Process_Text": {
+            "original": "Fabricated using vacuum induction melting and cast into ingots (~10 kg). Homogenized at 1250 °C for 20 h, hot forged into square bars. Solution-treated at 1050 °C for 1 h, air cooled to room temperature, then quenched in liquid nitrogen for 1 h.",
+            "simplified": "VIM → homogenization (1250 °C / 20 h) → hot forging → solution treatment (1050 °C / 1 h) → air cooling → liquid nitrogen quench (1 h). As-quenched (AQ) condition."
+          },
+          "Equipment": [
+            {
+              "Name": "Vacuum induction melting furnace",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Zeiss SEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Oxford EBSD system",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Talos F200X TEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "LEAP 5000XR APT",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Thermo-Calc software (TCFE7 database)",
+              "Category": "Software"
+            },
+            {
+              "Name": "AZtec-Crystal software",
+              "Category": "Software"
+            },
+            {
+              "Name": "APSuite software",
+              "Category": "Software"
+            }
+          ],
+          "Key_Params": [
+            {
+              "Stage": "Melting",
+              "Process": "Vacuum induction melting",
+              "Product": "Ingots (~10 kg)"
+            },
+            {
+              "Stage": "Homogenization",
+              "Temperature_Original": "1250 °C",
+              "Temperature_K": 1523,
+              "Time": "20 h"
+            },
+            {
+              "Stage": "Hot Forging",
+              "Product": "Square bars"
+            },
+            {
+              "Stage": "Solution Treatment",
+              "Temperature_Original": "1050 °C",
+              "Temperature_K": 1323,
+              "Time": "1 h",
+              "Cooling": "Air cooled to room temperature"
+            },
+            {
+              "Stage": "Quenching",
+              "Medium": "Liquid nitrogen",
+              "Time": "1 h"
+            }
+          ],
+          "Shared_Process_Note": "Both Cu-free and Cu-containing steels underwent identical processing; shared per Section 2.1"
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Both steels exhibit a tempered martensite microstructure with a comparable average grain size of around 60 μm. XRD patterns in AQ condition show only martensitic phase diffraction peaks, with no detectable austenite.",
+            "simplified": "Fully martensitic microstructure in AQ condition. No austenite detected by XRD."
+          },
+          "Main_Phase": {
+            "Phase_Name": "Martensite (α')",
+            "Crystal_Structure": "BCT",
+            "Grain_Size": {
+              "Value": 60,
+              "Unit": "μm",
+              "Size_Type": "diameter",
+              "Note": "Estimated using EBSD software after prior austenite grain reconstruction; comparable for both steels"
+            }
+          },
+          "Advanced_Quantitative_Features": {
+            "Austenite_Volume_Fraction_AQ_pct": {
+              "Value": 0,
+              "Note": "No detectable austenite in AQ condition by XRD (Supplementary Fig. S3)"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Test_Type": "Tensile",
+            "Condition": "As-quenched",
+            "Test_Temperature_Original": "Room temperature",
+            "Strain_Rate_s1": 0.002,
+            "Specimen_Geometry": "Cylindrical, diameter 5 mm, gauge length 25 mm",
+            "Yield_Strength": {
+              "Value": 766,
+              "Unit": "MPa",
+              "Value_StdDev": 17,
+              "Data_Source": "text"
+            },
+            "Ultimate_Tensile_Strength": {
+              "Value": 1034,
+              "Unit": "MPa",
+              "Value_StdDev": 21,
+              "Data_Source": "text"
+            },
+            "Data_Source": "text",
+            "Note": "Section 3.3; AQ condition"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "2",
+      "Sample_ID": "Cu-free_steel_aged",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Nanomaterial"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 2.1, Section 3.1-3.5, Fig. 1, Fig. 2a, Fig. 3a, Fig. 4, Table 1, Table 2, Table 3"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Ultra-high strength steel (UHSS)",
+          "Material_Name_Raw": "Cu-free steel",
+          "Measured_Composition": {
+            "Unit": "wt%",
+            "Data_Nature": "Experimental",
+            "Elements": [
+              {
+                "Element": "Fe",
+                "Value": "Balance"
+              },
+              {
+                "Element": "Cr",
+                "Value": 12.85
+              },
+              {
+                "Element": "Ni",
+                "Value": 6.64
+              },
+              {
+                "Element": "Co",
+                "Value": 7.01
+              },
+              {
+                "Element": "Mo",
+                "Value": 2.92
+              },
+              {
+                "Element": "Ti",
+                "Value": 1.44
+              },
+              {
+                "Element": "Cu",
+                "Value": null,
+                "Note": "Not detected (marked as '-' in Table 1)"
+              }
+            ]
+          },
+          "Note": "Same measured composition as Item 1 (Table 1)"
+        },
+        "Processing": {
+          "Process_Category": "Melting + Hot Forging + Solution Treatment + Quenching + Aging",
+          "Process_Text": {
+            "original": "Fabricated using vacuum induction melting and cast into ingots (~10 kg). Homogenized at 1250 °C for 20 h, hot forged into square bars. Solution-treated at 1050 °C for 1 h, air cooled to room temperature, then quenched in liquid nitrogen for 1 h. Aged at 480 °C for 16 h.",
+            "simplified": "VIM → homogenization (1250 °C / 20 h) → hot forging → solution treatment (1050 °C / 1 h) → air cooling → LN2 quench (1 h) → aging (480 °C / 16 h)"
+          },
+          "Equipment": [
+            {
+              "Name": "Vacuum induction melting furnace",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Zeiss SEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Oxford EBSD system",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Talos F200X TEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "LEAP 5000XR APT",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Gamry Reference 600+ potentiostat",
+              "Category": "Testing"
+            },
+            {
+              "Name": "ESCALAB 250 XPS (Thermo VG)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "ION-TOF ToF-SIMS",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Cypher S Oxford AFM (SKPFM)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Zeiss LSM 800 CLSM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Agilent 8900 ICP-MS",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "BacLight Live/Dead staining kit (CLSM)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Thermo-Calc software (TCFE7 database)",
+              "Category": "Software"
+            },
+            {
+              "Name": "AZtec-Crystal software",
+              "Category": "Software"
+            },
+            {
+              "Name": "APSuite software",
+              "Category": "Software"
+            },
+            {
+              "Name": "XPSPEAK software",
+              "Category": "Software"
+            }
+          ],
+          "Key_Params": [
+            {
+              "Stage": "Melting",
+              "Process": "Vacuum induction melting",
+              "Product": "Ingots (~10 kg)"
+            },
+            {
+              "Stage": "Homogenization",
+              "Temperature_Original": "1250 °C",
+              "Temperature_K": 1523,
+              "Time": "20 h"
+            },
+            {
+              "Stage": "Hot Forging",
+              "Product": "Square bars"
+            },
+            {
+              "Stage": "Solution Treatment",
+              "Temperature_Original": "1050 °C",
+              "Temperature_K": 1323,
+              "Time": "1 h",
+              "Cooling": "Air cooled to room temperature"
+            },
+            {
+              "Stage": "Quenching",
+              "Medium": "Liquid nitrogen",
+              "Time": "1 h"
+            },
+            {
+              "Stage": "Aging",
+              "Temperature_Original": "480 °C",
+              "Temperature_K": 753,
+              "Time": "16 h"
+            }
+          ],
+          "Shared_Process_Note": "Both steels underwent identical processing; shared per Section 2.1"
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Tempered martensite microstructure with average grain size ~60 μm. Austenite volume fraction 8.3 ± 0.8%, distributed along martensite laths (from phase reversion during aging). Ni₃Ti (η-phase, DO24) precipitates observed. No Cu-rich precipitates.",
+            "simplified": "Tempered martensite matrix + reverted austenite (8.3 ± 0.8 vol%) + η-Ni₃Ti precipitates (DO24 structure). No Cu-rich precipitates."
+          },
+          "Main_Phase": {
+            "Phase_Name": "Tempered martensite (α')",
+            "Crystal_Structure": "BCT",
+            "Grain_Size": {
+              "Value": 60,
+              "Unit": "μm",
+              "Size_Type": "diameter",
+              "Note": "Estimated using EBSD software after prior austenite grain reconstruction"
+            }
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "Reverted austenite (γ)",
+              "Crystal_Structure": "FCC",
+              "Volume_Fraction": {
+                "Value": 8.3,
+                "Unit": "%",
+                "Value_StdDev": 0.8,
+                "Note": "Measured by EBSD; originates from phase reversion during aging"
+              },
+              "Distribution": "Randomly distributed along martensite laths"
+            },
+            {
+              "Phase_Name": "η-Ni₃Ti precipitate",
+              "Crystal_Structure": "DO24",
+              "Average_Radius": {
+                "Value": 3.1,
+                "Unit": "nm",
+                "Size_Type": "radius",
+                "Measurement_Method": "APT"
+              },
+              "Number_Density": {
+                "Value": 2.5e+23,
+                "Unit": "m⁻³"
+              },
+              "Volume_Fraction": {
+                "Value": 3.1,
+                "Unit": "%"
+              },
+              "Orientation_Relationship": {
+                "Original": "(001)_α // (0001)_η and [-111]_α // [11-20]_η",
+                "Type": "Burgers relationship"
+              },
+              "Note": "From APT (Fig. 3a). Number density: 2.5 × 10²³ m⁻³ from Results section (Discussion mentions 1.9 × 10²³ m⁻³ in a different context). APT core composition not separately reported for Cu-free steel; the composition profile in Fig. 3d is from a Cu-rich/Ni₃Ti co-precipitate in the Cu-containing steel."
+            }
+          ],
+          "Advanced_Quantitative_Features": {
+            "Austenite_Volume_Fraction_aged_pct": {
+              "Value": 8.3,
+              "Value_StdDev": 0.8
+            },
+            "EBSD_Scan_Step_Size_um": {
+              "Value": 0.05
+            },
+            "Electropolishing_Voltage_V": {
+              "Value": 25
+            },
+            "Electropolishing_Temperature_C": {
+              "Value": -25
+            },
+            "Electropolishing_Time_s": {
+              "Value": 60
+            },
+            "APT_Isoconcentration_Surface_Ni3Ti_at_pct": {
+              "Value": 30,
+              "Note": "30 at.% Ni for visualizing Ni₃Ti precipitates"
+            },
+            "APT_Temperature_K": {
+              "Value": 60,
+              "Note": "Shared APT setup per Section 2.2; same parameters for both steels"
+            },
+            "APT_Pulse_Repetition_Rate_kHz": {
+              "Value": 200
+            },
+            "APT_Pulse_Fraction_pct": {
+              "Value": 20
+            },
+            "APT_Ion_Collection_Rate_pct": {
+              "Value": 0.3
+            }
+          },
+          "Passive_Film": {
+            "Thickness_TofSIMS_nm": {
+              "Value": 4.5,
+              "Unit": "nm",
+              "Note": "Estimated from ToF-SIMS sputtering time (300 s at 0.015 nm/s), after exposure to 3.5% NaCl at 0 V (vs. SCE) for 1 h (Section 4.3)"
+            }
+          }        },
+        "Properties": [
+          {
+            "Test_Type": "Tensile",
+            "Condition": "Aged (480 °C / 16 h)",
+            "Test_Temperature_Original": "Room temperature",
+            "Strain_Rate_s1": 0.002,
+            "Specimen_Geometry": "Cylindrical, diameter 5 mm, gauge length 25 mm",
+            "Yield_Strength": {
+              "Value": 1764,
+              "Unit": "MPa",
+              "Value_StdDev": 23,
+              "Data_Source": "text"
+            },
+            "Ultimate_Tensile_Strength": {
+              "Value": 1802,
+              "Unit": "MPa",
+              "Data_Source": "text"
+            },
+            "Elongation_Uniform": {
+              "Value": 5,
+              "Unit": "%",
+              "Data_Source": "text"
+            },
+            "Data_Source": "text",
+            "Note": "Section 3.3; aged condition"
+          },
+          {
+            "Test_Type": "Weight loss corrosion",
+            "Condition": "Aged",
+            "Environment": "SRB-inoculated culture medium (Desulfovibrio vulgaris), 10⁶ cfu/mL initial concentration",
+            "Test_Temperature_Original": "25 °C",
+            "Test_Temperature_K": 298,
+            "Duration": "14 days",
+            "Weight_Loss": {
+              "Value": 0.733,
+              "Unit": "mg·cm⁻²",
+              "Value_StdDev": 0.053,
+              "Data_Source": "text"
+            },
+            "Data_Source": "text",
+            "Note": "Section 3.5.1, Fig. 6"
+          },
+          {
+            "Test_Type": "Electrochemical corrosion",
+            "Condition": "Aged, 14 days immersion",
+            "Environment": "SRB-inoculated solution",
+            "Test_Temperature_Original": "30 ± 3 °C",
+            "Measurement_Method": "Cyclic potentiodynamic polarization (CPP)",
+            "Scan_Rate": "0.167 mV/s",
+            "Reference_Electrode": "SCE",
+            "Counter_Electrode": "Platinum mesh",
+            "E_corr": {
+              "Value": -0.66,
+              "Unit": "V vs. SCE",
+              "Data_Source": "table"
+            },
+            "i_corr": {
+              "Value": 7.6e-07,
+              "Unit": "A·cm⁻²",
+              "Data_Source": "table"
+            },
+            "E_p": {
+              "Value": 0.1,
+              "Unit": "V vs. SCE",
+              "Data_Source": "table"
+            },
+            "E_rep": {
+              "Value": -0.38,
+              "Unit": "V vs. SCE",
+              "Data_Source": "table"
+            },
+            "Data_Source": "table",
+            "Note": "Table 3; after 14 days of immersion"
+          },
+          {
+            "Test_Type": "Pitting analysis",
+            "Condition": "Aged, 14 days immersion in SRB solution",
+            "Maximum_Pit_Depth": {
+              "Value": 5.3,
+              "Unit": "μm",
+              "Value_StdDev": 0.8,
+              "Data_Source": "text"
+            },
+            "Average_Pit_Depth_10_largest": {
+              "Value": 4.44,
+              "Unit": "μm",
+              "Data_Source": "text"
+            },
+            "Measurement_Method": "CLSM (Zeiss LSM 800)",
+            "Data_Source": "text",
+            "Note": "Section 3.5.4, Fig. 9"
+          },
+          {
+            "Test_Type": "EDS analysis of corrosion product film",
+            "Condition": "Aged, 14 days immersion in SRB solution",
+            "Data_Source": "table",
+            "EDS_Composition": {
+              "Unit": "wt%",
+              "Elements": [
+                {
+                  "Element": "C",
+                  "Value": 13.21
+                },
+                {
+                  "Element": "O",
+                  "Value": 2.17
+                },
+                {
+                  "Element": "Si",
+                  "Value": 0.66
+                },
+                {
+                  "Element": "S",
+                  "Value": 1.12
+                },
+                {
+                  "Element": "Cr",
+                  "Value": 11.36
+                },
+                {
+                  "Element": "Fe",
+                  "Value": 57.51
+                },
+                {
+                  "Element": "Co",
+                  "Value": 7.36
+                },
+                {
+                  "Element": "Ni",
+                  "Value": 6.61
+                }
+              ]
+            },
+            "Note": "Table 2"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "3",
+      "Sample_ID": "Cu-containing_steel_AQ",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Nanomaterial"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 2.1, Section 3.3, Fig. 4, Section 4.2"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Ultra-high strength steel (UHSS)",
+          "Material_Name_Raw": "Cu-containing steel",
+          "Nominal_Design": "Fe-13Cr-7.0Ni-7.0Co-3.0Mo-1.5Ti with 1 wt.% Cu",
+          "Measured_Composition": {
+            "Unit": "wt%",
+            "Data_Nature": "Experimental",
+            "Elements": [
+              {
+                "Element": "Fe",
+                "Value": "Balance"
+              },
+              {
+                "Element": "Cr",
+                "Value": 12.71
+              },
+              {
+                "Element": "Ni",
+                "Value": 6.85
+              },
+              {
+                "Element": "Co",
+                "Value": 7.14
+              },
+              {
+                "Element": "Mo",
+                "Value": 2.94
+              },
+              {
+                "Element": "Ti",
+                "Value": 1.47
+              },
+              {
+                "Element": "Cu",
+                "Value": 0.97
+              }
+            ]
+          },
+          "Note": "Chemical compositions determined through chemical analysis (Table 1)"
+        },
+        "Processing": {
+          "Process_Category": "Melting + Hot Forging + Solution Treatment + Quenching",
+          "Process_Text": {
+            "original": "Fabricated using vacuum induction melting and cast into ingots (~10 kg). Homogenized at 1250 °C for 20 h, hot forged into square bars. Solution-treated at 1050 °C for 1 h, air cooled to room temperature, then quenched in liquid nitrogen for 1 h.",
+            "simplified": "VIM → homogenization (1250 °C / 20 h) → hot forging → solution treatment (1050 °C / 1 h) → air cooling → LN2 quench (1 h). As-quenched (AQ) condition."
+          },
+          "Equipment": [
+            {
+              "Name": "Vacuum induction melting furnace",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Zeiss SEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Oxford EBSD system",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Talos F200X TEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "LEAP 5000XR APT",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Thermo-Calc software (TCFE7 database)",
+              "Category": "Software"
+            },
+            {
+              "Name": "AZtec-Crystal software",
+              "Category": "Software"
+            },
+            {
+              "Name": "APSuite software",
+              "Category": "Software"
+            }
+          ],
+          "Key_Params": [
+            {
+              "Stage": "Melting",
+              "Process": "Vacuum induction melting",
+              "Product": "Ingots (~10 kg)"
+            },
+            {
+              "Stage": "Homogenization",
+              "Temperature_Original": "1250 °C",
+              "Temperature_K": 1523,
+              "Time": "20 h"
+            },
+            {
+              "Stage": "Hot Forging",
+              "Product": "Square bars"
+            },
+            {
+              "Stage": "Solution Treatment",
+              "Temperature_Original": "1050 °C",
+              "Temperature_K": 1323,
+              "Time": "1 h",
+              "Cooling": "Air cooled to room temperature"
+            },
+            {
+              "Stage": "Quenching",
+              "Medium": "Liquid nitrogen",
+              "Time": "1 h"
+            }
+          ],
+          "Shared_Process_Note": "Both Cu-free and Cu-containing steels underwent identical processing; shared per Section 2.1"
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "XRD patterns in AQ condition show only martensitic phase diffraction peaks, with no detectable austenite.",
+            "simplified": "Fully martensitic in AQ condition. No austenite detected. Cu remains in solid solution (no Cu-rich precipitates formed yet)."
+          },
+          "Main_Phase": {
+            "Phase_Name": "Martensite (α')",
+            "Crystal_Structure": "BCT",
+            "Grain_Size": {
+              "Value": 60,
+              "Unit": "μm",
+              "Size_Type": "diameter",
+              "Note": "Comparable grain size to Cu-free steel"
+            }
+          },
+          "Advanced_Quantitative_Features": {
+            "Austenite_Volume_Fraction_AQ_pct": {
+              "Value": 0,
+              "Note": "No detectable austenite in AQ condition by XRD (Supplementary Fig. S3)"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Test_Type": "Tensile",
+            "Condition": "As-quenched",
+            "Test_Temperature_Original": "Room temperature",
+            "Strain_Rate_s1": 0.002,
+            "Specimen_Geometry": "Cylindrical, diameter 5 mm, gauge length 25 mm",
+            "Yield_Strength": {
+              "Value": 716,
+              "Unit": "MPa",
+              "Value_StdDev": 20,
+              "Data_Source": "text"
+            },
+            "Ultimate_Tensile_Strength": {
+              "Value": 991,
+              "Unit": "MPa",
+              "Value_StdDev": 16,
+              "Data_Source": "text"
+            },
+            "Data_Source": "text",
+            "Note": "Section 3.3; AQ condition"
+          },
+          {
+            "Test_Type": "Electrochemical corrosion",
+            "Condition": "As-quenched (AQ), 14 days immersion",
+            "Environment": "SRB-inoculated solution",
+            "Measurement_Method": "Potentiodynamic polarization",
+            "i_corr": {
+              "Value": 6.8e-06,
+              "Unit": "A·cm⁻²",
+              "Data_Source": "text"
+            },
+            "Data_Source": "text",
+            "Note": "Section 4.3; Supplementary Fig. S10. AQ condition i_corr is an order of magnitude higher than aged condition."
+          },
+          {
+            "Test_Type": "Antibacterial",
+            "Condition": "As-quenched (AQ), 24 h immersion in SRB solution",
+            "Observation": "Biofilm forms on surface; bacterial cells maintain full rod-shaped appearance, indicating they remain viable and are not affected by Cu in solid solution",
+            "Cu_ion_release": {
+              "Value": null,
+              "Unit": "μg·L⁻¹",
+              "Note": "Below detection limit; no detectable Cu²⁺ ions from AQ sample (Section 4.2)",
+              "Data_Source": "text"
+            },
+            "Data_Source": "text",
+            "Note": "Section 4.2, Fig. 10"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "4",
+      "Sample_ID": "Cu-containing_steel_aged",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Nanomaterial"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 2.1-2.10, Section 3.1-3.5, Section 4.1-4.3, Figs. 1-13, Tables 1-3"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Ultra-high strength steel (UHSS)",
+          "Material_Name_Raw": "Cu-containing steel",
+          "Nominal_Design": "Fe-13Cr-7.0Ni-7.0Co-3.0Mo-1.5Ti with 1 wt.% Cu",
+          "Measured_Composition": {
+            "Unit": "wt%",
+            "Data_Nature": "Experimental",
+            "Elements": [
+              {
+                "Element": "Fe",
+                "Value": "Balance"
+              },
+              {
+                "Element": "Cr",
+                "Value": 12.71
+              },
+              {
+                "Element": "Ni",
+                "Value": 6.85
+              },
+              {
+                "Element": "Co",
+                "Value": 7.14
+              },
+              {
+                "Element": "Mo",
+                "Value": 2.94
+              },
+              {
+                "Element": "Ti",
+                "Value": 1.47
+              },
+              {
+                "Element": "Cu",
+                "Value": 0.97
+              }
+            ]
+          },
+          "Note": "Same measured composition as Item 3 (Table 1)"
+        },
+        "Processing": {
+          "Process_Category": "Melting + Hot Forging + Solution Treatment + Quenching + Aging",
+          "Process_Text": {
+            "original": "Fabricated using vacuum induction melting and cast into ingots (~10 kg). Homogenized at 1250 °C for 20 h, hot forged into square bars. Solution-treated at 1050 °C for 1 h, air cooled to room temperature, then quenched in liquid nitrogen for 1 h. Aged at 480 °C for 16 h.",
+            "simplified": "VIM → homogenization (1250 °C / 20 h) → hot forging → solution treatment (1050 °C / 1 h) → air cooling → LN2 quench (1 h) → aging (480 °C / 16 h)"
+          },
+          "Equipment": [
+            {
+              "Name": "Vacuum induction melting furnace",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Zeiss SEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Oxford EBSD system",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Talos F200X TEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "LEAP 5000XR APT",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Thermo Spectra 200 S-corrected TEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Thermofisher Scios2 FIB",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Gamry Reference 600+ potentiostat",
+              "Category": "Testing"
+            },
+            {
+              "Name": "ESCALAB 250 XPS (Thermo VG)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "ION-TOF ToF-SIMS",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Cypher S Oxford AFM (SKPFM)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Zeiss LSM 800 CLSM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Agilent 8900 ICP-MS",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "BacLight Live/Dead staining kit (CLSM)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Thermo-Calc software (TCFE7 database)",
+              "Category": "Software"
+            },
+            {
+              "Name": "AZtec-Crystal software",
+              "Category": "Software"
+            },
+            {
+              "Name": "APSuite software",
+              "Category": "Software"
+            },
+            {
+              "Name": "XPSPEAK software",
+              "Category": "Software"
+            }
+          ],
+          "Key_Params": [
+            {
+              "Stage": "Melting",
+              "Process": "Vacuum induction melting",
+              "Product": "Ingots (~10 kg)"
+            },
+            {
+              "Stage": "Homogenization",
+              "Temperature_Original": "1250 °C",
+              "Temperature_K": 1523,
+              "Time": "20 h"
+            },
+            {
+              "Stage": "Hot Forging",
+              "Product": "Square bars"
+            },
+            {
+              "Stage": "Solution Treatment",
+              "Temperature_Original": "1050 °C",
+              "Temperature_K": 1323,
+              "Time": "1 h",
+              "Cooling": "Air cooled to room temperature"
+            },
+            {
+              "Stage": "Quenching",
+              "Medium": "Liquid nitrogen",
+              "Time": "1 h"
+            },
+            {
+              "Stage": "Aging",
+              "Temperature_Original": "480 °C",
+              "Temperature_K": 753,
+              "Time": "16 h"
+            }
+          ],
+          "Shared_Process_Note": "Both Cu-free and Cu-containing steels underwent identical processing; shared per Section 2.1"
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Tempered martensite microstructure with average grain size ~60 μm. Austenite volume fraction 12.5 ± 1.3%, distributed along martensite laths (from phase reversion during aging). High density of Cu-rich (9R) and η-Ni₃Ti co-precipitates observed. Cu-rich precipitates have 9R crystal structure with two twins (~2 nm width × ~5 nm length).",
+            "simplified": "Tempered martensite matrix + reverted austenite (12.5 ± 1.3 vol%) + η-Ni₃Ti precipitates (DO24) + Cu-rich precipitates (9R). Co-precipitation of Cu-rich and Ni₃Ti observed."
+          },
+          "Main_Phase": {
+            "Phase_Name": "Tempered martensite (α')",
+            "Crystal_Structure": "BCT",
+            "Grain_Size": {
+              "Value": 60,
+              "Unit": "μm",
+              "Size_Type": "diameter",
+              "Note": "Estimated using EBSD software after prior austenite grain reconstruction; comparable for both steels"
+            }
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "Reverted austenite (γ)",
+              "Crystal_Structure": "FCC",
+              "Volume_Fraction": {
+                "Value": 12.5,
+                "Unit": "%",
+                "Value_StdDev": 1.3,
+                "Note": "Measured by EBSD; originates from phase reversion during aging. Discussion mentions 12.8%."
+              },
+              "Distribution": "Randomly distributed along martensite laths"
+            },
+            {
+              "Phase_Name": "η-Ni₃Ti precipitate",
+              "Crystal_Structure": "DO24",
+              "Average_Radius": {
+                "Value": 2.1,
+                "Unit": "nm",
+                "Size_Type": "radius",
+                "Measurement_Method": "APT"
+              },
+              "Number_Density": {
+                "Value": 9.8e+23,
+                "Unit": "m⁻³",
+                "Note": "More than four times that of Cu-free steel"
+              },
+              "Volume_Fraction": {
+                "Value": 3.8,
+                "Unit": "%"
+              },
+              "Orientation_Relationship": {
+                "Original": "(001)_α // (0001)_η and [-111]_α // [11-20]_η",
+                "Type": "Burgers relationship"
+              },
+              "APT_Core_Composition": {
+                "Unit": "at.%",
+                "Data_Nature": "Experimental",
+                "Note": "From APT 1D concentration profiles across Ni₃Ti precipitate (Fig. 3d)",
+                "Elements": [
+                  {
+                    "Element": "Ni",
+                    "Value": 45.7,
+                    "Value_StdDev": 5.1
+                  },
+                  {
+                    "Element": "Ti",
+                    "Value": 20.2,
+                    "Value_StdDev": 4.1
+                  },
+                  {
+                    "Element": "Fe",
+                    "Value": 16.9,
+                    "Value_StdDev": 4.2
+                  },
+                  {
+                    "Element": "Cr",
+                    "Value": 8.8,
+                    "Value_StdDev": 3.2
+                  },
+                  {
+                    "Element": "Co",
+                    "Value": 4.5,
+                    "Value_StdDev": 2.3
+                  },
+                  {
+                    "Element": "Cu",
+                    "Value": 2.1,
+                    "Value_StdDev": 0.9
+                  },
+                  {
+                    "Element": "Mo",
+                    "Value": 1.8,
+                    "Value_StdDev": 0.3
+                  }
+                ]
+              },
+              "Note": "From APT (Fig. 3b). Core composition from 1D concentration profiles across Ni₃Ti precipitate in a Cu-rich/Ni₃Ti co-precipitate (Fig. 3d). This composition is specific to the Cu-containing steel's co-precipitate."
+            },
+            {
+              "Phase_Name": "Cu-rich precipitate",
+              "Crystal_Structure": "9R",
+              "Average_Radius": {
+                "Value": 2.4,
+                "Unit": "nm",
+                "Size_Type": "radius",
+                "Measurement_Method": "APT"
+              },
+              "Number_Density": {
+                "Value": 5.1e+23,
+                "Unit": "m⁻³",
+                "Note": "Original unit in text says nm⁻³ but this is likely a typo; context indicates m⁻³"
+              },
+              "Volume_Fraction": {
+                "Value": 3.0,
+                "Unit": "%"
+              },
+              "Twin_Dimensions": {
+                "Width_nm": 2,
+                "Length_nm": 5,
+                "Note": "Approximate values; ~2 nm width and ~5 nm length for each twin in 9R structure"
+              },
+              "Orientation_Relationship": {
+                "Original": "(011)_α // (11-4)_9R and [-111]_α // [-110]_9R"
+              },
+              "APT_Core_Composition": {
+                "Unit": "at.%",
+                "Data_Nature": "Experimental",
+                "Note": "From APT 1D concentration profiles across Cu-rich precipitate (Fig. 3d)",
+                "Elements": [
+                  {
+                    "Element": "Fe",
+                    "Value": 57.0,
+                    "Value_StdDev": 3.5
+                  },
+                  {
+                    "Element": "Cu",
+                    "Value": 16.4,
+                    "Value_StdDev": 2.4
+                  },
+                  {
+                    "Element": "Ni",
+                    "Value": 11.5,
+                    "Value_StdDev": 2.2
+                  },
+                  {
+                    "Element": "Co",
+                    "Value": 6.3,
+                    "Value_StdDev": 1.6
+                  },
+                  {
+                    "Element": "Cr",
+                    "Value": 6.7,
+                    "Value_StdDev": 1.7
+                  },
+                  {
+                    "Element": "Mo",
+                    "Value": 0.4,
+                    "Value_StdDev": 0.1
+                  }
+                ]
+              },
+              "Initial_Structure": "BCC (similar to α matrix), cube-on-cube OR, then transforms to 9R"
+            }
+          ],
+          "Passive_Film": {
+            "Thickness_TofSIMS_nm": {
+              "Value": 6,
+              "Unit": "nm",
+              "Note": "~6 nm, estimated from ToF-SIMS sputtering time (400 s at 0.015 nm/s), after exposure to 3.5% NaCl at 0 V (vs. SCE) for 1 h"
+            },
+            "Thickness_STEM_EDS_nm": {
+              "Value": 6.34,
+              "Unit": "nm",
+              "Note": "From HAADF-STEM/EDS oxygen distribution (Fig. 12), in agreement with ToF-SIMS"
+            },
+            "Note": "Cu-containing steel forms thicker Cr-enriched passive film compared to Cu-free steel (4.5 nm)"
+          },
+          "Advanced_Quantitative_Features": {
+            "Austenite_Volume_Fraction_aged_pct": {
+              "Value": 12.5,
+              "Value_StdDev": 1.3
+            },
+            "EBSD_Scan_Step_Size_um": {
+              "Value": 0.05
+            },
+            "Electropolishing_Voltage_V": {
+              "Value": 25
+            },
+            "Electropolishing_Temperature_C": {
+              "Value": -25
+            },
+            "Electropolishing_Time_s": {
+              "Value": 60
+            },
+            "APT_Isoconcentration_Surface_Ni3Ti_at_pct": {
+              "Value": 30,
+              "Note": "30 at.% Ni for visualizing Ni₃Ti precipitates"
+            },
+            "APT_Isoconcentration_Surface_Cu_rich_at_pct": {
+              "Value": 5,
+              "Note": "5 at.% Cu for visualizing Cu-rich precipitates"
+            },
+            "APT_Temperature_K": {
+              "Value": 60
+            },
+            "APT_Pulse_Repetition_Rate_kHz": {
+              "Value": 200
+            },
+            "APT_Pulse_Fraction_pct": {
+              "Value": 20
+            },
+            "APT_Ion_Collection_Rate_pct": {
+              "Value": 0.3
+            },
+            "Gibbs_Formation_Energy_Austenite_kJ_per_mol": {
+              "Value": -35.3,
+              "Temperature_Original": "500 °C",
+              "Note": "1 wt.% Cu addition elevates from -34.9 to -35.3 kJ/mol; Thermo-Calc TCFE7"
+            },
+            "Strengthening_Delta_Sigma_order_Ni3Ti_MPa": {
+              "Value": 826
+            },
+            "Strengthening_Delta_Sigma_order_Cu_rich_MPa": {
+              "Value": 752
+            },
+            "Strengthening_Delta_Sigma_coherency_plus_modulus_Ni3Ti_MPa": {
+              "Value": 213
+            },
+            "Strengthening_Delta_Sigma_coherency_plus_modulus_Cu_rich_MPa": {
+              "Value": 197
+            },
+            "Strengthening_Delta_Sigma_total_MPa": {
+              "Value": 1117,
+              "Note": "Superposition: Δσ_total = (Δσ_Ni₃Ti² + Δσ_Cu²)^0.5"
+            },
+            "Strengthening_Experimental_Delta_sigma_MPa": {
+              "Value": 1062,
+              "Note": "Difference between YS in peak-aged and AQ conditions"
+            },
+            "Critical_Radius_Ni3Ti_nm": {
+              "Value": 3.6
+            },
+            "Critical_Radius_Cu_rich_nm": {
+              "Value": 3.9
+            },
+            "Shearing_Mechanism_Operative": true,
+            "Note": "Both Ni₃Ti (2.1 nm) and Cu-rich (2.4 nm) average radii are below critical radii for shearing-to-bypass transition"
+          }
+        },
+        "Properties": [
+          {
+            "Test_Type": "Tensile",
+            "Condition": "Aged (480 °C / 16 h)",
+            "Test_Temperature_Original": "Room temperature",
+            "Strain_Rate_s1": 0.002,
+            "Specimen_Geometry": "Cylindrical, diameter 5 mm, gauge length 25 mm",
+            "Yield_Strength": {
+              "Value": 1778,
+              "Unit": "MPa",
+              "Value_StdDev": 16,
+              "Data_Source": "text"
+            },
+            "Ultimate_Tensile_Strength": {
+              "Value": 1843,
+              "Unit": "MPa",
+              "Data_Source": "text"
+            },
+            "Elongation_Uniform": {
+              "Value": 8,
+              "Unit": "%",
+              "Data_Source": "text"
+            },
+            "Elongation_Total": {
+              "Value": 12,
+              "Unit": "%",
+              "Data_Source": "text",
+              "Note": "Approximate value from Discussion Section 4.1"
+            },
+            "Data_Source": "text",
+            "Note": "Section 3.3; aged condition. YS ~1.8 GPa."
+          },
+          {
+            "Test_Type": "Antibacterial (Live/Dead staining)",
+            "Condition": "Aged, 24 h immersion in SRB-inoculated solution",
+            "Test_Temperature_Original": "Room temperature",
+            "Result": "Nearly all bacteria on Cu-containing steel surface exhibit red fluorescence (dead), while Cu-free surface shows only green fluorescence (live)",
+            "Data_Source": "text",
+            "Note": "Section 3.4, Fig. 5a"
+          },
+          {
+            "Test_Type": "SKPFM (antibacterial)",
+            "Condition": "Aged, 24 h immersion in SRB-inoculated solution",
+            "SRB_Cell_Height_Cu_free_nm": {
+              "Value": 385,
+              "Note": "On Cu-free steel surface"
+            },
+            "SRB_Cell_Height_Cu_containing_nm": {
+              "Value": 107,
+              "Note": "Broken SRB cells on Cu-containing steel; approximately 107 nm"
+            },
+            "SRB_Potential_Difference_Cu_free_mV": {
+              "Value": 56,
+              "Note": "Average potential difference on Cu-free steel surface"
+            },
+            "SRB_Potential_Difference_Cu_containing": "No Volta potential contrast difference observed",
+            "Data_Source": "text",
+            "Note": "Section 3.4, Figs. 5b-d. SKPFM measurements cannot be directly quantified due to tip contamination and work function instability."
+          },
+          {
+            "Test_Type": "Cu ion release (ICP-MS)",
+            "Condition": "Aged, 24 h immersion in SRB solution",
+            "Measurement_Method": "ICP-MS (Agilent 8900, KED mode)",
+            "Cu_ion_Concentration": {
+              "Value": 3,
+              "Unit": "μg·L⁻¹",
+              "Value_StdDev": 0.8,
+              "Data_Source": "text"
+            },
+            "Data_Source": "text",
+            "Note": "Section 4.2. Three samples analyzed per case."
+          },
+          {
+            "Test_Type": "Weight loss corrosion",
+            "Condition": "Aged",
+            "Environment": "SRB-inoculated culture medium (Desulfovibrio vulgaris), 10⁶ cfu/mL initial concentration",
+            "Test_Temperature_Original": "25 °C",
+            "Test_Temperature_K": 298,
+            "Duration": "14 days",
+            "Weight_Loss": {
+              "Value": 0.05,
+              "Unit": "mg·cm⁻²",
+              "Value_StdDev": 0.01,
+              "Data_Source": "text"
+            },
+            "Data_Source": "text",
+            "Note": "Section 3.5.1, Fig. 6. Corrosion rate ~14 times lower than Cu-free steel."
+          },
+          {
+            "Test_Type": "Electrochemical corrosion",
+            "Condition": "Aged, 14 days immersion",
+            "Environment": "SRB-inoculated solution",
+            "Test_Temperature_Original": "30 ± 3 °C",
+            "Measurement_Method": "Cyclic potentiodynamic polarization (CPP)",
+            "Scan_Rate": "0.167 mV/s",
+            "Reference_Electrode": "SCE",
+            "Counter_Electrode": "Platinum mesh",
+            "E_corr": {
+              "Value": -0.64,
+              "Unit": "V vs. SCE",
+              "Data_Source": "table"
+            },
+            "i_corr": {
+              "Value": 3.8e-07,
+              "Unit": "A·cm⁻²",
+              "Data_Source": "table"
+            },
+            "E_p": {
+              "Value": 0.2,
+              "Unit": "V vs. SCE",
+              "Data_Source": "table"
+            },
+            "E_rep": {
+              "Value": -0.41,
+              "Unit": "V vs. SCE",
+              "Data_Source": "table"
+            },
+            "Data_Source": "table",
+            "Note": "Table 3; after 14 days of immersion. i_corr is half that of Cu-free steel."
+          },
+          {
+            "Test_Type": "EIS",
+            "Condition": "Aged, immersion in SRB-inoculated solution for different durations (up to 14 days)",
+            "Test_Temperature_Original": "30 ± 3 °C",
+            "Frequency_Range": "10⁸ to 10⁻² Hz",
+            "AC_Amplitude": "10 mV",
+            "Reference_Electrode": "SCE",
+            "Counter_Electrode": "Platinum mesh",
+            "Result": "R_ct values are higher in Cu-containing steel compared to Cu-free steel; passive film thickness is larger",
+            "Data_Source": "text",
+            "Note": "Section 3.5.3, Fig. 8, Supplementary Fig. S5, Supplementary Table S1"
+          },
+          {
+            "Test_Type": "Pitting analysis",
+            "Condition": "Aged, 14 days immersion in SRB solution",
+            "Maximum_Pit_Depth": {
+              "Value": 0.95,
+              "Unit": "μm",
+              "Value_StdDev": 0.3,
+              "Data_Source": "text"
+            },
+            "Average_Pit_Depth_10_largest": {
+              "Value": 0.68,
+              "Unit": "μm",
+              "Data_Source": "text"
+            },
+            "Surface_Morphology": "No significant localized pitting; polished scratches remained clearly visible",
+            "Measurement_Method": "CLSM (Zeiss LSM 800)",
+            "Data_Source": "text",
+            "Note": "Section 3.5.4, Fig. 9"
+          },
+          {
+            "Test_Type": "EDS analysis of corrosion product film",
+            "Condition": "Aged, 14 days immersion in SRB solution",
+            "Data_Source": "table",
+            "EDS_Composition": {
+              "Unit": "wt%",
+              "Elements": [
+                {
+                  "Element": "C",
+                  "Value": 9.3
+                },
+                {
+                  "Element": "O",
+                  "Value": 1.71
+                },
+                {
+                  "Element": "Si",
+                  "Value": null,
+                  "Note": "Not detected (marked as '-' in Table 2)"
+                },
+                {
+                  "Element": "S",
+                  "Value": 1.83
+                },
+                {
+                  "Element": "Cr",
+                  "Value": 11.63
+                },
+                {
+                  "Element": "Fe",
+                  "Value": 57.42
+                },
+                {
+                  "Element": "Co",
+                  "Value": 10.37
+                },
+                {
+                  "Element": "Ni",
+                  "Value": 7.75
+                }
+              ]
+            },
+            "Note": "Table 2"
+          }
+        ]
+      }
+    }
+  ]
+}

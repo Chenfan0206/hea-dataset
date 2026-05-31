@@ -1,0 +1,1401 @@
+{
+  "Paper_Metadata": {
+    "Paper_Title": "Multiscale modeling of hydrogen diffusion in iron: Effect of applied stresses and dislocations",
+    "DOI": "10.1016/j.actamat.2025.121842",
+    "Note": "DOI found in supplementary data link in OCR text."
+  },
+  "Paper_Routing": {
+    "base_material": "Metals",
+    "application": "Functional",
+    "research_paradigm": "Pure_Simulation",
+    "Supplements_Loaded": [
+      "/home/cs/.codex/skills/material-extractor/references/directions/base/Metals.txt",
+      "/home/cs/.codex/skills/material-extractor/references/directions/application/Functional.txt",
+      "/home/cs/.codex/skills/material-extractor/references/directions/paradigm/Pure_Simulation.txt"
+    ],
+    "Patch_Tags": [
+      "Hydrogen_Assisted",
+      "Directional_Anisotropy",
+      "Interface_Dominated"
+    ],
+    "Needs_Mixed_Routing_Check": false,
+    "Note": "No Battery, Coating, or Machining domain overlay trigger was present in the OCR text."
+  },
+  "items": [
+    {
+      "Item_ID": "Item-001",
+      "Sample_ID": "Pristine BCC alpha-Fe lattice with mobile H and vacancies",
+      "Role": "Target",
+      "Data_Nature": "Computed",
+      "base_material": "Metals",
+      "application": "Functional",
+      "research_paradigm": "Pure_Simulation",
+      "Patch_Tags": [
+        "Hydrogen_Assisted",
+        "Directional_Anisotropy"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "The diffusion coefficient has been evaluated for temperatures between 240 and 360 K and applied external simple stress states of up to 800 MPa.",
+        "All simulations shown are performed in a cubic cell with side, L = 463 a_alpha-Fe (L approximately 0.136 micrometers).",
+        "A hydrogen atomic concentration of 3e-6 and an iron vacancy concentration of 1e-7 are used."
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "iron",
+          "Material_Name_Raw": "alpha-iron; BCC-Fe",
+          "Model_System": {
+            "Host": "alpha-Fe",
+            "Interstitial_Species": "H",
+            "Point_Defects": "iron vacancies"
+          },
+          "Nominal_Composition": {
+            "Fe": {
+              "Value": "Balance",
+              "Original_Values": "BCC-Fe / alpha-iron"
+            },
+            "Hydrogen_Atomic_Concentration": {
+              "Value": 3e-06,
+              "Unit": "atomic fraction",
+              "Original_Values": "3·10^-6"
+            },
+            "Iron_Vacancy_Concentration": {
+              "Value": 1e-07,
+              "Unit": "atomic fraction",
+              "Original_Values": "1·10^-7"
+            }
+          }
+        },
+        "Processing": {
+          "Process_Category": "multiscale simulation",
+          "Process_Text": {
+            "original": "A multiscale approach which includes DFT simulations, object kinetic Monte Carlo code (OkMC), and phase-field dislocations is developed to study the movement of hydrogen atoms in alpha-iron under the effect of applied stress.",
+            "simplified": "DFT-derived energetics were used in lattice OkMC simulations of mobile hydrogen and vacancies in pristine BCC alpha-Fe under temperature and external stress conditions."
+          },
+          "Equipment": [
+            {
+              "Name": "DFT simulations",
+              "Category": "Software"
+            },
+            {
+              "Name": "object kinetic Monte Carlo code (OkMC)",
+              "Category": "Software"
+            },
+            {
+              "Name": "FFT-based approach",
+              "Category": "Software"
+            },
+            {
+              "Name": "Magerit Supercomputer",
+              "Category": "Preparation"
+            }
+          ],
+          "Simulation_Metadata": {
+            "Method_Category": "DFT-fed lattice OkMC with FFT-based elastic interactions",
+            "Software": "DFT simulations; object kinetic Monte Carlo code (OkMC); FFT-based approach",
+            "Simulation_Text": "At the nanoscale the interaction energies of hydrogen on different sites of the iron lattice are studied using DFT. At the microscale, this information is used to feed a lattice OkMC which evolves the arrangement of hydrogen atoms into the iron lattice considering point defects. The elastic interaction is obtained by an FFT-based approach.",
+            "OkMC": {
+              "Cell_Size": {
+                "Value": 0.136,
+                "Unit": "micrometer",
+                "Original_Values": "L = 463 a_alpha-Fe (L approximately 0.136 micrometers)"
+              },
+              "Temperature_Range": {
+                "Value_Range": {
+                  "Min": 240,
+                  "Max": 360,
+                  "Unit": "K"
+                },
+                "Original_Values": "temperatures between 240 and 360 K"
+              },
+              "External_Stress_Range": {
+                "Value_Range": {
+                  "Min": 0,
+                  "Max": 800,
+                  "Unit": "MPa"
+                },
+                "Original_Values": "applied external simple stress states of up to 800 MPa"
+              },
+              "Hydrogen_Attempt_Frequency": {
+                "Value": 1,
+                "Unit": "THz",
+                "Original_Values": "v0^H of 1 THz"
+              },
+              "Vacancy_Attempt_Frequency": {
+                "Value": 0.1,
+                "Unit": "THz",
+                "Original_Values": "attempt frequency for the movement of the vacancies was one order of magnitude lower"
+              },
+              "Diffusion_Evaluation_Time": {
+                "Value": 0.1,
+                "Unit": "ns",
+                "Original_Values": "at least 0.1 ns (until stabilization)"
+              },
+              "Replicates_For_Figure_3": {
+                "Value": 9,
+                "Unit": "simulations per case",
+                "Original_Values": "9 simulations for each case"
+              }
+            }
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "undistorted alpha-Fe lattice; zero stress in the absence of dislocations gives isotropic diffusivity and Arrhenius prefactor.",
+            "simplified": "Pristine cubic BCC alpha-Fe lattice with mobile interstitial hydrogen and iron vacancies; no dislocation array."
+          },
+          "Main_Phase": {
+            "Phase_Name": "alpha-Fe matrix",
+            "Crystal_Structure": "BCC"
+          },
+          "Defects": [
+            {
+              "Defect_Type": "iron vacancies",
+              "Concentration": {
+                "Value": 1e-07,
+                "Unit": "atomic fraction",
+                "Original_Values": "iron vacancy concentration of 1·10^-7"
+              }
+            },
+            {
+              "Defect_Type": "mobile interstitial hydrogen",
+              "Concentration": {
+                "Value": 3e-06,
+                "Unit": "atomic fraction",
+                "Original_Values": "hydrogen atomic concentration of 3·10^-6"
+              }
+            }
+          ],
+          "Advanced_Quantitative_Features": {
+            "Cubic_Cell_Side": {
+              "Value": 0.136,
+              "Unit": "micrometer",
+              "Original_Values": "L = 463 a_alpha-Fe (L approximately 0.136 micrometers)",
+              "Dimension_Type": "undefined"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Hydrogen diffusivity at 300 K",
+            "Value": 3.53e-09,
+            "Unit": "m^2/s",
+            "Original_Values": "D_(300 K) = 3.53 x 10^-9 m^2/s",
+            "Test_Condition": {
+              "Temperature_K": 300,
+              "External_Stress": "no external stress",
+              "Dislocations": "absent"
+            },
+            "Data_Source": "table",
+            "Note": "This study row in Table 2."
+          },
+          {
+            "Property_Name": "Arrhenius diffusivity prefactor",
+            "Value": 3.492e-08,
+            "Unit": "m^2/s",
+            "Original_Values": "D^0 = 34.92 x 10^-9 m^2/s",
+            "Test_Condition": {
+              "External_Stress": "no external stress",
+              "Dislocations": "absent"
+            },
+            "Data_Source": "table",
+            "Note": "This study row in Table 2."
+          },
+          {
+            "Property_Name": "Effective diffusion energy barrier",
+            "Value": 59.3,
+            "Unit": "meV",
+            "Original_Values": "Delta E^B = 59.3 meV",
+            "Test_Condition": {
+              "External_Stress": "no external stress",
+              "Dislocations": "absent"
+            },
+            "Data_Source": "table",
+            "Note": "This study row in Table 2."
+          },
+          {
+            "Property_Name": "Uniaxial-stress directional diffusivity ratio",
+            "Value": null,
+            "Unit": "dimensionless",
+            "Original_Values": "Table 3 ratios D(sigma,T)/D(0,T) at T = -100, 25, 200, 500, 800 degrees C and sigma = 200, 500, 800 MPa",
+            "Test_Condition": {
+              "Temperature_K": [
+                173.15,
+                298.15,
+                473.15,
+                773.15,
+                1073.15
+              ],
+              "Stress_Type": "uniaxial",
+              "Stress_MPa": [
+                200,
+                500,
+                800
+              ],
+              "Direction_Groups": [
+                "parallel",
+                "perpendicular"
+              ]
+            },
+            "Series_Data": [
+              {
+                "Direction_Group": "parallel",
+                "Stress_MPa": 200,
+                "Ratios": [
+                  1.03,
+                  1.02,
+                  1.01,
+                  1.01,
+                  1.01
+                ]
+              },
+              {
+                "Direction_Group": "parallel",
+                "Stress_MPa": 500,
+                "Ratios": [
+                  1.06,
+                  1.03,
+                  1.02,
+                  1.01,
+                  1.0
+                ]
+              },
+              {
+                "Direction_Group": "parallel",
+                "Stress_MPa": 800,
+                "Ratios": [
+                  1.07,
+                  1.02,
+                  1.0,
+                  0.98,
+                  0.98
+                ]
+              },
+              {
+                "Direction_Group": "perpendicular",
+                "Stress_MPa": 200,
+                "Ratios": [
+                  1.03,
+                  1.02,
+                  1.01,
+                  1.01,
+                  1.01
+                ]
+              },
+              {
+                "Direction_Group": "perpendicular",
+                "Stress_MPa": 500,
+                "Ratios": [
+                  1.1,
+                  1.07,
+                  1.06,
+                  1.05,
+                  1.04
+                ]
+              },
+              {
+                "Direction_Group": "perpendicular",
+                "Stress_MPa": 800,
+                "Ratios": [
+                  1.2,
+                  1.15,
+                  1.12,
+                  1.11,
+                  1.1
+                ]
+              }
+            ],
+            "Data_Source": "table",
+            "Note": "Temperature range extends beyond the directly simulated 240-360 K interval; paper states extrapolated results are informed approximations."
+          },
+          {
+            "Property_Name": "Shear-stress directional diffusivity ratio",
+            "Value": null,
+            "Unit": "dimensionless",
+            "Original_Values": "Table 4 ratios D(tau,T)/D(0,T) at T = -100, 25, 200, 500, 800 degrees C and tau = 200, 500, 800 MPa",
+            "Test_Condition": {
+              "Temperature_K": [
+                173.15,
+                298.15,
+                473.15,
+                773.15,
+                1073.15
+              ],
+              "Stress_Type": "shear",
+              "Stress_MPa": [
+                200,
+                500,
+                800
+              ],
+              "Direction_Groups": [
+                "parallel",
+                "perpendicular"
+              ]
+            },
+            "Series_Data": [
+              {
+                "Direction_Group": "parallel",
+                "Stress_MPa": 200,
+                "Ratios": [
+                  1.22,
+                  1.47,
+                  1.61,
+                  1.71,
+                  1.76
+                ]
+              },
+              {
+                "Direction_Group": "parallel",
+                "Stress_MPa": 500,
+                "Ratios": [
+                  1.45,
+                  2.27,
+                  2.86,
+                  3.34,
+                  3.57
+                ]
+              },
+              {
+                "Direction_Group": "parallel",
+                "Stress_MPa": 800,
+                "Ratios": [
+                  1.4,
+                  2.89,
+                  4.14,
+                  5.34,
+                  5.95
+                ]
+              },
+              {
+                "Direction_Group": "perpendicular",
+                "Stress_MPa": 200,
+                "Ratios": [
+                  0.78,
+                  0.94,
+                  1.03,
+                  1.1,
+                  1.13
+                ]
+              },
+              {
+                "Direction_Group": "perpendicular",
+                "Stress_MPa": 500,
+                "Ratios": [
+                  0.74,
+                  1.17,
+                  1.47,
+                  1.71,
+                  1.83
+                ]
+              },
+              {
+                "Direction_Group": "perpendicular",
+                "Stress_MPa": 800,
+                "Ratios": [
+                  0.71,
+                  1.45,
+                  2.11,
+                  2.69,
+                  3.0
+                ]
+              }
+            ],
+            "Data_Source": "table",
+            "Note": "Temperature range extends beyond the directly simulated 240-360 K interval; paper states extrapolated results are informed approximations."
+          },
+          {
+            "Property_Name": "Pristine Taylor expansion parameters",
+            "Value": null,
+            "Original_Values": "Appendix B.1: C_ij^0 = 10^-9 x [29.44 29.44 29.44 -2.34 -2.34 -2.34] m^2/s; a_kl^0 = 10^-12 x [-1.91 -1.91 -1.91 32.12 32.12 32.12] eV Pa^-1; b^0 = 10^-3 x 55.89 eV",
+            "Test_Condition": {
+              "Dislocations": "absent",
+              "Parameterization": "D_ij^0 = A_ijkl sigma_kl^2 + B_ijkl sigma_kl + C_ij; Delta E = a_kl sigma_kl + b"
+            },
+            "Data_Source": "text",
+            "Note": "Full A_ijkl^0 and B_ijkl^0 matrices are present in Appendix B.1; retained in original expression rather than expanded into many scalar fields."
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "Item-002",
+      "Sample_ID": "BCC alpha-Fe with periodic screw dislocation dipoles, density 2e14 m^-2",
+      "Role": "Variant",
+      "Data_Nature": "Computed",
+      "base_material": "Metals",
+      "application": "Functional",
+      "research_paradigm": "Pure_Simulation",
+      "Patch_Tags": [
+        "Hydrogen_Assisted",
+        "Directional_Anisotropy",
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "The effect of the presence of dislocations has been evaluated by including a periodic array of screw dislocation dipoles in the [1,1,1] direction with the Burgers vector b = +/- a/2 [1,1,1] alternating sign along the plane with normal n = [0,1,1].",
+        "with a total dislocation density of 2·10^14 m^-2.",
+        "Dislocations are represented by phase fields."
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "iron",
+          "Material_Name_Raw": "alpha-iron; BCC-Fe with dislocations",
+          "Model_System": {
+            "Host": "alpha-Fe",
+            "Interstitial_Species": "H",
+            "Point_Defects": "iron vacancies",
+            "Line_Defects": "periodic screw dislocation dipoles"
+          },
+          "Nominal_Composition": {
+            "Fe": {
+              "Value": "Balance",
+              "Original_Values": "BCC-Fe / alpha-iron"
+            },
+            "Hydrogen_Atomic_Concentration": {
+              "Value": 3e-06,
+              "Unit": "atomic fraction",
+              "Original_Values": "3·10^-6"
+            },
+            "Iron_Vacancy_Concentration": {
+              "Value": 1e-07,
+              "Unit": "atomic fraction",
+              "Original_Values": "1·10^-7"
+            },
+            "Bonded_Hydrogen_Atomic_Concentration": {
+              "Value": 7.5e-07,
+              "Unit": "atomic fraction",
+              "Original_Values": "approximately 0.75·10^-6",
+              "Note": "Approximate value stated for one atom per dislocation nm at dislocation density 2·10^14 m^-2."
+            }
+          }
+        },
+        "Processing": {
+          "Process_Category": "multiscale simulation with phase-field dislocations",
+          "Process_Text": {
+            "original": "Dislocations are represented by phase fields. A new set of OkMC simulations were performed, including the presence of the dislocations, sharing the same conditions used in the previous section.",
+            "simplified": "Phase-field dislocation representation was coupled to OkMC simulations of mobile hydrogen and vacancies in BCC alpha-Fe."
+          },
+          "Equipment": [
+            {
+              "Name": "DFT simulations",
+              "Category": "Software"
+            },
+            {
+              "Name": "object kinetic Monte Carlo code (OkMC)",
+              "Category": "Software"
+            },
+            {
+              "Name": "phase-field dislocation approach",
+              "Category": "Software"
+            },
+            {
+              "Name": "FFT-based approach",
+              "Category": "Software"
+            },
+            {
+              "Name": "Magerit Supercomputer",
+              "Category": "Preparation"
+            }
+          ],
+          "Simulation_Metadata": {
+            "Method_Category": "DFT-fed lattice OkMC with phase-field dislocations and FFT-based elastic interactions",
+            "Software": "DFT simulations; object kinetic Monte Carlo code (OkMC); phase-field dislocation approach; FFT-based approach",
+            "Simulation_Text": "At the continuum level, an array of dislocations is introduced using a phase-field approach to accurately consider their elastic fields and core regions. The OkMC model includes chemical energies of H and vacancies and elastic interactions between them and with the dislocations.",
+            "OkMC": {
+              "Temperature_Range": {
+                "Value_Range": {
+                  "Min": 240,
+                  "Max": 360,
+                  "Unit": "K"
+                },
+                "Original_Values": "temperatures between 240 and 360 K"
+              },
+              "External_Stress_Range": {
+                "Value_Range": {
+                  "Min": 0,
+                  "Max": 800,
+                  "Unit": "MPa"
+                },
+                "Original_Values": "sharing the same conditions used in the previous section; different levels of uniaxial and shear stresses"
+              },
+              "Dislocation_Assumption": "immobile during the simulation timescale; H-saturated dislocation cores",
+              "Simulation_Time_Range": {
+                "Value_Range": {
+                  "Min": 0.1,
+                  "Max": 3,
+                  "Unit": "ns"
+                },
+                "Original_Values": "0.1-3 ns"
+              }
+            }
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "periodic array of screw dislocation dipoles in the [1,1,1] direction with the Burgers vector b = +/- a/2 [1,1,1] alternating sign along the plane with normal n = [0,1,1].",
+            "simplified": "BCC alpha-Fe simulation cell containing a periodic array of screw dislocation dipoles; dislocation cores are treated as saturated and immobile."
+          },
+          "Main_Phase": {
+            "Phase_Name": "alpha-Fe matrix",
+            "Crystal_Structure": "BCC"
+          },
+          "Defects": [
+            {
+              "Defect_Type": "screw dislocation dipoles",
+              "Line_Direction": "[1,1,1]",
+              "Burgers_Vector": "+/- a/2 [1,1,1]",
+              "Plane_Normal": "[0,1,1]",
+              "Density": {
+                "Value": 2e14,
+                "Unit": "m^-2",
+                "Original_Values": "2·10^14 m^-2"
+              },
+              "Note": "OCR caption also shows m/m^3; body text later states m^-2."
+            },
+            {
+              "Defect_Type": "hydrogen trapping sites in dislocation cores",
+              "Trap_Energy_Range": {
+                "Value_Range": {
+                  "Min": 250,
+                  "Max": 400,
+                  "Unit": "meV"
+                },
+                "Original_Values": "250 to 400 meV"
+              },
+              "Mean_Residence_Time": {
+                "Value": 15,
+                "Unit": "ns",
+                "Original_Values": "approximately 15 ns at room temperature",
+                "Note": "Approximate value stated in text."
+              }
+            }
+          ],
+          "Advanced_Quantitative_Features": {
+            "Dislocation_Move_Distance_During_Simulation": {
+              "Value_Range": {
+                "Min": 0.1,
+                "Max": 3,
+                "Unit": "angstrom"
+              },
+              "Original_Values": "0.1-3 Å"
+            },
+            "Typical_Dislocation_Velocity": {
+              "Value_Range": {
+                "Min": 0.01,
+                "Max": 0.1,
+                "Unit": "m/s"
+              },
+              "Original_Values": "0.01-0.1 m/s"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Dislocation-induced diffusivity ratio",
+            "Value": null,
+            "Unit": "dimensionless",
+            "Original_Values": "Table 5 ratio D^m(rho,T)/D^m(0,T)",
+            "Test_Condition": {
+              "Dislocation_Density_m2": 2e14,
+              "External_Stress": "unstressed crystal",
+              "Temperature_K": [
+                173.15,
+                298.15,
+                473.15,
+                773.15,
+                1073.15
+              ],
+              "Additional_Column": "T -> infinity (D0)"
+            },
+            "Series_Data": [
+              {
+                "Direction": "isotropic",
+                "Ratios": [
+                  0.58,
+                  0.7,
+                  0.77,
+                  0.82,
+                  0.84,
+                  0.9
+                ]
+              },
+              {
+                "Direction": "[100]",
+                "Ratios": [
+                  0.61,
+                  0.72,
+                  0.79,
+                  0.83,
+                  0.85,
+                  0.91
+                ]
+              },
+              {
+                "Direction": "[010]",
+                "Ratios": [
+                  0.6,
+                  0.72,
+                  0.79,
+                  0.84,
+                  0.86,
+                  0.93
+                ]
+              },
+              {
+                "Direction": "[001]",
+                "Ratios": [
+                  0.53,
+                  0.65,
+                  0.73,
+                  0.78,
+                  0.8,
+                  0.87
+                ]
+              },
+              {
+                "Direction": "[111]",
+                "Ratios": [
+                  0.56,
+                  0.68,
+                  0.75,
+                  0.79,
+                  0.82,
+                  0.88
+                ]
+              },
+              {
+                "Direction": "[110]",
+                "Ratios": [
+                  0.64,
+                  0.76,
+                  0.83,
+                  0.88,
+                  0.9,
+                  0.96
+                ]
+              },
+              {
+                "Direction": "[211]",
+                "Ratios": [
+                  0.62,
+                  0.74,
+                  0.81,
+                  0.86,
+                  0.88,
+                  0.94
+                ]
+              }
+            ],
+            "Data_Source": "table",
+            "Note": "Ratios compare dislocated and pristine lattices."
+          },
+          {
+            "Property_Name": "Dislocated Taylor expansion parameters",
+            "Value": null,
+            "Original_Values": "Appendix B.2: C_ij^d = 10^-9 x [26.79 27.27 25.63 -0.06 -1.29 0.31] m^2/s; a_kl^d = 10^-12 x [1.28 2.38 -4.39 22.98 24.10 29.77] eV Pa^-1; b^d = 10^-3 x 61.74 eV",
+            "Test_Condition": {
+              "Dislocation_Density_m2": 2e14,
+              "Parameterization": "D_ij^d = A_ijkl sigma_kl^2 + B_ijkl sigma_kl + C_ij; Delta E = a_kl sigma_kl + b"
+            },
+            "Data_Source": "text",
+            "Note": "Full A_ijkl^d and B_ijkl^d matrices are present in Appendix B.2; retained in original expression rather than expanded into many scalar fields."
+          },
+          {
+            "Property_Name": "Difference from pristine Taylor expansion parameters",
+            "Value": null,
+            "Original_Values": "Appendix B.3: Delta C_ij = 10^-9 x [-2.65 -2.17 -3.81 2.28 1.06 2.66] m^2/s; Delta a_kl = 10^-12 x [3.18 4.29 -2.48 -9.14 -8.02 -2.35] eV Pa^-1; Delta b = 10^-3 x 5.85 eV",
+            "Test_Condition": {
+              "Comparison": "D^d - D^0 and Delta E^d - Delta E^0"
+            },
+            "Data_Source": "text",
+            "Note": "Full Delta A_ijkl and Delta B_ijkl matrices are present in Appendix B.3; retained in original expression rather than expanded into many scalar fields."
+          },
+          {
+            "Property_Name": "Gamma distribution parameters for hydrogen residence time",
+            "Value": null,
+            "Original_Values": "Table 8 shape k, scale theta, location x0, standard deviation sigma, and median x",
+            "Test_Condition": {
+              "Simulation_Box": "132^3 nanometer box",
+              "Simulation_Time": {
+                "Value": 3,
+                "Unit": "ns"
+              },
+              "Random_Seeds": 3,
+              "Individual_Runs_Per_Initial_H_Distribution": 6,
+              "Hydrogen_Atomic_Concentration": 3e-06,
+              "Iron_Vacancy_Concentration": 1e-07,
+              "Voxel_Grid": "(5 a_alpha-Fe)^3"
+            },
+            "Series_Data": [
+              {
+                "Residence_Time_Type": "tau_V^H",
+                "Dislocations": "without dislocations",
+                "k": 0.6168,
+                "theta": 0.217,
+                "x0": -1.02,
+                "sigma": 0.0134,
+                "median_x": 1.089
+              },
+              {
+                "Residence_Time_Type": "tau_V^H",
+                "Dislocations": "with dislocations",
+                "k": 0.645,
+                "theta": 0.188,
+                "x0": -1.08,
+                "sigma": 0.0121,
+                "median_x": 1.144
+              },
+              {
+                "Residence_Time_Type": "tau_A^H",
+                "Dislocations": "without dislocations",
+                "k": 0.1022,
+                "theta": 0.021,
+                "x0": -5.77,
+                "sigma": 0.00215,
+                "median_x": 5.774
+              },
+              {
+                "Residence_Time_Type": "tau_A^H",
+                "Dislocations": "with dislocations",
+                "k": 0.1376,
+                "theta": 0.028,
+                "x0": -5.72,
+                "sigma": 0.00385,
+                "median_x": 5.726
+              }
+            ],
+            "Data_Source": "table"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "Item-003",
+      "Sample_ID": "BCC alpha-Fe dislocation-system and density variants",
+      "Role": "Variant",
+      "Data_Nature": "Computed",
+      "base_material": "Metals",
+      "application": "Functional",
+      "research_paradigm": "Pure_Simulation",
+      "Patch_Tags": [
+        "Hydrogen_Assisted",
+        "Directional_Anisotropy",
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "We conducted additional KMC simulations varying both the dislocation density and the active slip system, between the three most active slip systems in alpha-Fe: <111>{011}, <111>{112}, <111>{123}.",
+        "For each configuration, nine simulations were performed across the temperature range of 240-360 K, without external macroscopic stresses."
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "iron",
+          "Material_Name_Raw": "alpha-Fe dislocation-system and density variants",
+          "Model_System": {
+            "Host": "alpha-Fe",
+            "Line_Defects": "screw dislocations in <111>{011}, <111>{112}, and <111>{123} systems"
+          },
+          "Nominal_Composition": {
+            "Fe": {
+              "Value": "Balance",
+              "Original_Values": "alpha-Fe"
+            }
+          }
+        },
+        "Processing": {
+          "Process_Category": "OkMC dislocation-system sweep",
+          "Process_Text": {
+            "original": "For each configuration, nine simulations were performed across the temperature range of 240-360 K, without external macroscopic stresses.",
+            "simplified": "Additional KMC simulations swept dislocation density and active slip system in alpha-Fe without external macroscopic stress."
+          },
+          "Equipment": [
+            {
+              "Name": "KMC simulations",
+              "Category": "Software"
+            }
+          ],
+          "Simulation_Metadata": {
+            "Method_Category": "KMC parameter sweep",
+            "Software": "KMC simulations",
+            "Simulation_Text": "Additional KMC simulations varied dislocation density and active slip system across the temperature range 240-360 K without external macroscopic stresses.",
+            "Replicates": {
+              "Value": 9,
+              "Unit": "simulations per configuration",
+              "Original_Values": "nine simulations"
+            },
+            "Temperature_Range": {
+              "Value_Range": {
+                "Min": 240,
+                "Max": 360,
+                "Unit": "K"
+              },
+              "Original_Values": "240-360 K"
+            }
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "active slip system, between the three most active slip systems in alpha-Fe: <111>{011}, <111>{112}, <111>{123}.",
+            "simplified": "BCC alpha-Fe variants with different <111> slip planes and dislocation densities."
+          },
+          "Main_Phase": {
+            "Phase_Name": "alpha-Fe matrix",
+            "Crystal_Structure": "BCC"
+          },
+          "Defects": [
+            {
+              "Defect_Type": "dislocation system variants",
+              "Slip_Systems": [
+                "<111>{011}",
+                "<111>{112}",
+                "<111>{123}"
+              ],
+              "Densities_m2": [
+                2e14,
+                8e14
+              ]
+            }
+          ]
+        },
+        "Properties": [
+          {
+            "Property_Name": "Change in diffusivity prefactor and effective barrier by dislocation system and density",
+            "Value": null,
+            "Original_Values": "Diffusion parameters for different dislocation systems and densities",
+            "Test_Condition": {
+              "Temperature_Range_K": {
+                "Min": 240,
+                "Max": 360
+              },
+              "External_Macroscopic_Stress": "none"
+            },
+            "Series_Data": [
+              {
+                "Dislocation_System": "<111>{011}",
+                "Dislocation_Density_m2": 2e14,
+                "Delta_D0": {
+                  "Value": -2.8e-09,
+                  "Unit": "m^2/s",
+                  "Original_Values": "-2.8 x 10^-9 m^2/s"
+                },
+                "Delta2_Eb": {
+                  "Value": 5.8,
+                  "Unit": "meV",
+                  "Original_Values": "5.8 meV"
+                }
+              },
+              {
+                "Dislocation_System": "<111>{011}",
+                "Dislocation_Density_m2": 8e14,
+                "Delta_D0": {
+                  "Value": -1.15e-08,
+                  "Unit": "m^2/s",
+                  "Original_Values": "-11.5 x 10^-9 m^2/s"
+                },
+                "Delta2_Eb": {
+                  "Value": 37.4,
+                  "Unit": "meV",
+                  "Original_Values": "37.4 meV"
+                }
+              },
+              {
+                "Dislocation_System": "<111>{112}",
+                "Dislocation_Density_m2": 8e14,
+                "Delta_D0": {
+                  "Value": -6e-09,
+                  "Unit": "m^2/s",
+                  "Original_Values": "-6.0 x 10^-9 m^2/s"
+                },
+                "Delta2_Eb": {
+                  "Value": 43.9,
+                  "Unit": "meV",
+                  "Original_Values": "43.9 meV"
+                }
+              },
+              {
+                "Dislocation_System": "<111>{123}",
+                "Dislocation_Density_m2": 8e14,
+                "Delta_D0": {
+                  "Value": -9.2e-09,
+                  "Unit": "m^2/s",
+                  "Original_Values": "-9.2 x 10^-9 m^2/s"
+                },
+                "Delta2_Eb": {
+                  "Value": 40.9,
+                  "Unit": "meV",
+                  "Original_Values": "40.9 meV"
+                }
+              }
+            ],
+            "Data_Source": "table",
+            "Note": "The OCR text labels the caption before this table as Table 7, while the body refers to Table 6."
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "Item-004",
+      "Sample_ID": "Random polycrystal homogenized alpha-Fe diffusion tensor",
+      "Role": "Demonstration",
+      "Data_Nature": "Computed",
+      "base_material": "Metals",
+      "application": "Functional",
+      "research_paradigm": "Pure_Simulation",
+      "Patch_Tags": [
+        "Hydrogen_Assisted",
+        "Directional_Anisotropy"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "The homogenization procedure has been performed numerically, by generating a large number (10^5) of grain orientations equally distributed in SO3.",
+        "The effective value, X^eff, is taken as the average between both bounds."
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "iron",
+          "Material_Name_Raw": "random polycrystal alpha-Fe",
+          "Nominal_Composition": {
+            "Fe": {
+              "Value": "Balance",
+              "Original_Values": "alpha-Fe"
+            }
+          }
+        },
+        "Processing": {
+          "Process_Category": "numerical homogenization",
+          "Process_Text": {
+            "original": "generating a large number (10^5) of grain orientations equally distributed in SO3, rotating the diffusivity and elasto-diffusivity tensors to that orientations, and obtaining the Voigt and Reuss bounds.",
+            "simplified": "Random orientation homogenization of dislocated single-crystal diffusivity and elasto-diffusivity tensors."
+          },
+          "Equipment": [
+            {
+              "Name": "numerical homogenization procedure",
+              "Category": "Software"
+            }
+          ],
+          "Simulation_Metadata": {
+            "Method_Category": "tensor homogenization",
+            "Software": "numerical homogenization procedure",
+            "Simulation_Text": "A large number of grain orientations equally distributed in SO3 were generated; diffusivity and elasto-diffusivity tensors were rotated; Voigt and Reuss bounds were calculated and Xeff was taken as their average.",
+            "Number_of_Grain_Orientations": {
+              "Value": 100000,
+              "Original_Values": "10^5"
+            }
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "polycrystal with a random orientation distribution; population of the different slip systems of the same family over multiple possible grain orientations with equal orientation probability.",
+            "simplified": "Randomly oriented polycrystalline alpha-Fe homogenization model."
+          },
+          "Main_Phase": {
+            "Phase_Name": "alpha-Fe matrix",
+            "Crystal_Structure": "BCC"
+          },
+          "Texture_or_Orientation": {
+            "Description": "random orientation distribution",
+            "Original_Values": "grain orientations equally distributed in SO3"
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Homogenized diffusion constants",
+            "Value": null,
+            "Original_Values": "Table 7 diffusion constants X^Voigt, X^eff, X^Reuss",
+            "Series_Data": [
+              {
+                "Diffusion_Constant": "D0^d",
+                "Unit": "x10^-9 m^2/s",
+                "X_Voigt": 26.56,
+                "X_eff": 26.53,
+                "X_Reuss": 26.5
+              },
+              {
+                "Diffusion_Constant": "A1111^d",
+                "Unit": "x10^-21 m^2 s^-1 Pa^-2",
+                "X_Voigt": -28.49,
+                "X_eff": -23.96,
+                "X_Reuss": -19.44
+              },
+              {
+                "Diffusion_Constant": "A1122^d",
+                "Unit": "x10^-21 m^2 s^-1 Pa^-2",
+                "X_Voigt": 12.39,
+                "X_eff": 9.42,
+                "X_Reuss": 6.46
+              },
+              {
+                "Diffusion_Constant": "A1212^d",
+                "Unit": "x10^-21 m^2 s^-1 Pa^-2",
+                "X_Voigt": -20.41,
+                "X_eff": -17.42,
+                "X_Reuss": -14.42
+              },
+              {
+                "Diffusion_Constant": "B1111^d",
+                "Unit": "x10^-18 m^2 s^-1 Pa^-1",
+                "X_Voigt": 25.2,
+                "X_eff": 100.51,
+                "X_Reuss": 175.81
+              },
+              {
+                "Diffusion_Constant": "alpha1122^d",
+                "Unit": "x10^-18 m^2 s^-1 Pa^-1",
+                "X_Voigt": -12.4,
+                "X_eff": -48.83,
+                "X_Reuss": -85.26
+              },
+              {
+                "Diffusion_Constant": "R1112^d",
+                "Unit": "x10^-18 m^2 s^-1 Pa^-1",
+                "X_Voigt": 18.79,
+                "X_eff": 13.73,
+                "X_Reuss": 8.67
+              }
+            ],
+            "Data_Source": "table"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "Item-005",
+      "Sample_ID": "Literature experimental BCC-Fe hydrogen diffusivity comparison",
+      "Role": "Reference",
+      "Data_Nature": "Literature_Experimental",
+      "base_material": "Metals",
+      "application": "Functional",
+      "research_paradigm": "Pure_Simulation",
+      "Patch_Tags": [
+        "Hydrogen_Assisted"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 2 Comparison of the diffusivity parameter with the literature. The method column includes Electrochemical permeation experiments (EC), Gas permeation experiments (G) and theoretical values obtained from simulations (Num)."
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "iron",
+          "Material_Name_Raw": "BCC-Fe literature experimental comparison",
+          "Nominal_Composition": {
+            "Fe": {
+              "Value": "Balance",
+              "Original_Values": "BCC-Fe"
+            }
+          }
+        },
+        "Processing": {
+          "Process_Category": "literature experimental comparison",
+          "Process_Text": {
+            "original": "The method column includes Electrochemical permeation experiments (EC), Gas permeation experiments (G).",
+            "simplified": "Literature electrochemical and gas permeation measurements of hydrogen diffusivity in BCC-Fe."
+          },
+          "Equipment": [
+            {
+              "Name": "electrochemical permeation experiments",
+              "Category": "Testing"
+            },
+            {
+              "Name": "gas permeation experiments",
+              "Category": "Testing"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "hydrogen diffusivity on BCC-Fe",
+            "simplified": "Literature BCC-Fe hydrogen diffusion reference systems."
+          },
+          "Main_Phase": {
+            "Phase_Name": "alpha-Fe matrix",
+            "Crystal_Structure": "BCC"
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Literature experimental hydrogen diffusivity parameters",
+            "Value": null,
+            "Original_Values": "Table 2",
+            "Series_Data": [
+              {
+                "Study": "Beck et al. [45]",
+                "Method": "EC",
+                "D_300K": {
+                  "Value": 6.46e-09,
+                  "Unit": "m^2/s"
+                },
+                "D0": {
+                  "Value": 6e-08,
+                  "Unit": "m^2/s"
+                },
+                "Delta_E": {
+                  "Value": 57.6,
+                  "Unit": "meV"
+                }
+              },
+              {
+                "Study": "Oriani et al. [46]",
+                "Method": "G",
+                "D_300K": {
+                  "Value": 3.23e-09,
+                  "Unit": "m^2/s"
+                },
+                "D0": {
+                  "Value": 7.8e-08,
+                  "Unit": "m^2/s"
+                },
+                "Delta_E": {
+                  "Value": 82,
+                  "Unit": "meV"
+                }
+              },
+              {
+                "Study": "Choi et al. [47]",
+                "Method": "EC",
+                "D_300K": {
+                  "Value": 1.21e-09,
+                  "Unit": "m^2/s"
+                },
+                "D0": {
+                  "Value": 2.2e-07,
+                  "Unit": "m^2/s"
+                },
+                "Delta_E": {
+                  "Value": 135,
+                  "Unit": "meV"
+                }
+              },
+              {
+                "Study": "Heumann & Domke [48]",
+                "Method": "G",
+                "D_300K": {
+                  "Value": 4.45e-09,
+                  "Unit": "m^2/s"
+                },
+                "D0": {
+                  "Value": 4.74e-08,
+                  "Unit": "m^2/s"
+                },
+                "Delta_E": {
+                  "Value": 61,
+                  "Unit": "meV"
+                }
+              },
+              {
+                "Study": "Asano et al. [49]",
+                "Method": "EC",
+                "D_300K": {
+                  "Value": 7.4e-09,
+                  "Unit": "m^2/s"
+                },
+                "D0": {
+                  "Value": 1.5e-07,
+                  "Unit": "m^2/s"
+                },
+                "Delta_E": {
+                  "Value": 78,
+                  "Unit": "meV"
+                }
+              },
+              {
+                "Study": "Quick & Johnson [50]",
+                "Method": "G",
+                "D_300K": {
+                  "Value": 9.5e-10,
+                  "Unit": "m^2/s"
+                },
+                "D0": {
+                  "Value": 1.61e-08,
+                  "Unit": "m^2/s"
+                },
+                "Delta_E": {
+                  "Value": 73,
+                  "Unit": "meV"
+                }
+              },
+              {
+                "Study": "Hagi et al. [51]",
+                "Method": "EC",
+                "D_300K": {
+                  "Value": 7.5e-09,
+                  "Unit": "m^2/s"
+                },
+                "D0": {
+                  "Value": 1.1e-07,
+                  "Unit": "m^2/s"
+                },
+                "Delta_E": {
+                  "Value": 69,
+                  "Unit": "meV"
+                }
+              },
+              {
+                "Study": "Nagano et al. [52]",
+                "Method": "EC",
+                "D_300K": {
+                  "Value": 9.1e-09,
+                  "Unit": "m^2/s"
+                },
+                "D0": {
+                  "Value": 2.2e-07,
+                  "Unit": "m^2/s"
+                },
+                "Delta_E": {
+                  "Value": 135,
+                  "Unit": "meV"
+                }
+              },
+              {
+                "Study": "Nagano et al. [53]",
+                "Method": "G & EC",
+                "D_300K": {
+                  "Value": 8.7e-09,
+                  "Unit": "m^2/s"
+                },
+                "D0": {
+                  "Value": 4.2e-08,
+                  "Unit": "m^2/s"
+                },
+                "Delta_E": {
+                  "Value": 40,
+                  "Unit": "meV"
+                }
+              },
+              {
+                "Study": "Hayashi et al. [54]",
+                "Method": "G + EC",
+                "D_300K": {
+                  "Value": 8.65e-09,
+                  "Unit": "m^2/s"
+                },
+                "D0": {
+                  "Value": 3.35e-08,
+                  "Unit": "m^2/s"
+                },
+                "Delta_E": {
+                  "Value": 35,
+                  "Unit": "meV"
+                }
+              },
+              {
+                "Study": "Hagi et al. [55]",
+                "Method": "G",
+                "D_300K": {
+                  "Value": 9.56e-09,
+                  "Unit": "m^2/s"
+                },
+                "D0": {
+                  "Value": 5.8e-08,
+                  "Unit": "m^2/s"
+                },
+                "Delta_E": {
+                  "Value": 46.6,
+                  "Unit": "meV"
+                }
+              }
+            ],
+            "Data_Source": "table"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "Item-006",
+      "Sample_ID": "Literature computed BCC-Fe hydrogen diffusivity comparison",
+      "Role": "Reference",
+      "Data_Nature": "Literature_Computed",
+      "base_material": "Metals",
+      "application": "Functional",
+      "research_paradigm": "Pure_Simulation",
+      "Patch_Tags": [
+        "Hydrogen_Assisted"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 2 Comparison of the diffusivity parameter with the literature. The method column includes theoretical values obtained from simulations (Num)."
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "iron",
+          "Material_Name_Raw": "BCC-Fe literature computed comparison",
+          "Nominal_Composition": {
+            "Fe": {
+              "Value": "Balance",
+              "Original_Values": "BCC-Fe"
+            }
+          }
+        },
+        "Processing": {
+          "Process_Category": "literature computed comparison",
+          "Process_Text": {
+            "original": "theoretical values obtained from simulations (Num)",
+            "simplified": "Literature numerical simulation values for hydrogen diffusivity in BCC-Fe."
+          },
+          "Equipment": [
+            {
+              "Name": "numerical simulations reported in literature",
+              "Category": "Software"
+            }
+          ],
+          "Simulation_Metadata": {
+            "Method_Category": "literature numerical simulation",
+            "Software": "not specified in Table 2",
+            "Simulation_Text": "Table 2 reports theoretical numerical values from Jiang et al. [56] for BCC-Fe hydrogen diffusivity comparison."
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "hydrogen diffusivity on BCC-Fe",
+            "simplified": "Literature BCC-Fe hydrogen diffusion computed reference systems."
+          },
+          "Main_Phase": {
+            "Phase_Name": "alpha-Fe matrix",
+            "Crystal_Structure": "BCC"
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Literature computed hydrogen diffusivity parameters",
+            "Value": null,
+            "Original_Values": "Table 2",
+            "Series_Data": [
+              {
+                "Study": "Jiang et al. [56]",
+                "Method": "Num, I0",
+                "D_300K": {
+                  "Value": 4.99e-09,
+                  "Unit": "m^2/s"
+                },
+                "D0": {
+                  "Value": 1.5e-07,
+                  "Unit": "m^2/s"
+                },
+                "Delta_E": {
+                  "Value": 88.0,
+                  "Unit": "meV"
+                }
+              },
+              {
+                "Study": "Jiang et al. [56]",
+                "Method": "Num, I0(T)",
+                "D_300K": {
+                  "Value": 8.66e-09,
+                  "Unit": "m^2/s"
+                },
+                "D0": {
+                  "Value": 4.4e-08,
+                  "Unit": "m^2/s"
+                },
+                "Delta_E": {
+                  "Value": 42.0,
+                  "Unit": "meV"
+                }
+              }
+            ],
+            "Data_Source": "table"
+          }
+        ]
+      }
+    }
+  ]
+}

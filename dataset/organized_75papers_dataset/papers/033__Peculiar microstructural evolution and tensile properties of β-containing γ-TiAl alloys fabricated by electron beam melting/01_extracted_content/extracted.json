@@ -1,0 +1,1153 @@
+{
+  "Paper_Metadata": {
+    "Paper_Title": "Peculiar microstructural evolution and tensile properties of β-containing γ-TiAl alloys fabricated by electron beam melting",
+    "DOI": null,
+    "Note": "DOI not found in OCR text"
+  },
+  "Paper_Routing": {
+    "base_material": "Metals",
+    "application": "Structural",
+    "research_paradigm": "Experimental",
+    "Supplements_Loaded": [
+      "directions/base/Metals.txt",
+      "directions/application/Structural.txt",
+      "directions/paradigm/Experimental.txt"
+    ],
+    "Patch_Tags": [
+      "Additive_Manufacturing",
+      "Directional_Anisotropy"
+    ],
+    "Needs_Mixed_Routing_Check": false,
+    "Mixed_Signals": []
+  },
+  "items": [
+    {
+      "Item_ID": "R1",
+      "Sample_ID": "R1",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing",
+        "Directional_Anisotropy"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 3.2",
+        "Section 3.3",
+        "Section 3.4",
+        "Section 4.1.1",
+        "Section 4.2",
+        "Section 4.3",
+        "Table 1",
+        "Table 2",
+        "Fig. 6",
+        "Fig. 7",
+        "Fig. 9",
+        "Fig. 10",
+        "Fig. 11",
+        "Fig. 12",
+        "Fig. 18",
+        "Fig. 19"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "β-containing γ-TiAl",
+          "Material_Name_Raw": "Ti-44Al-4Cr (44-4 alloy)",
+          "Nominal_Composition": [
+            {
+              "Element": "Ti",
+              "Value": "Balance",
+              "Unit": "at%",
+              "Data_Nature": "Nominal",
+              "Note": "Balance; normalized ≈ 52.0 at% (Computed)"
+            },
+            {
+              "Element": "Al",
+              "Value": 44,
+              "Unit": "at%",
+              "Data_Nature": "Nominal"
+            },
+            {
+              "Element": "Cr",
+              "Value": 4,
+              "Unit": "at%",
+              "Data_Nature": "Nominal"
+            },
+            {
+              "Element": "O",
+              "Value": 0,
+              "Unit": "at%",
+              "Data_Nature": "Nominal"
+            }
+          ],
+          "Note": "Table 1 reports measured rod composition for R4 (ED=2.0 J/mm²): Ti Bal., Al 43.9, Cr 4.0, O 0.18 at%. Raw powder composition (Table 1): Ti Bal., Al 44.8, Cr 4.0, O 0.15 at%. Al content difference between R1 and R5 is <0.3 at% (Section 3.3). Measured composition applies to R4 specifically; other rods not individually measured."
+        },
+        "Processing": {
+          "Process_Category": "Electron Beam Melting (EBM)",
+          "Process_Text": {
+            "original": "Rectangular rods of 44–4 alloy with dimensions of 10 × 10 × 15 mm and 10 × 10 × 30 mm were fabricated using an Arcam Q10 EBM system at an accelerating voltage of 60 kV and a preheating temperature of 1333 K. The layer thickness for each fed powder layer was 90 μm, and the building direction was parallel to the longitudinal direction of the rods. ED = 4.0 J/mm². The rods were not subjected to any post-annealing processes including HIP treatment.",
+            "simplified": "EBM fabrication of Ti-44Al-4Cr alloy rods; Arcam Q10; 60 kV; preheating 1333 K; layer thickness 90 μm; ED = 4.0 J/mm²; as-built (no HIP or annealing)"
+          },
+          "Equipment": [
+            {
+              "Name": "Ar gas atomization system (Osaka Yakin Kogyo Co., Ltd.)",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Arcam Q10 EBM system",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "SEM (with BSE detector)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "OM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "TEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "ICP-OES",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Inert gas fusion analyzer",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Laser diffraction particle size distribution analyzer",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Revolution powder analyzer",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Instron-type testing machine",
+              "Category": "Testing"
+            },
+            {
+              "Name": "Nano-indentation tester",
+              "Category": "Testing"
+            },
+            {
+              "Name": "ImageJ",
+              "Category": "Software"
+            }
+          ],
+          "Key_Params": {
+            "Stage": "EBM Fabrication",
+            "Accelerating_Voltage_kV": {
+              "Value": 60,
+              "Original_Values": "60 kV"
+            },
+            "Preheating_Temperature_K": {
+              "Value": 1333,
+              "Original_Values": "1333 K"
+            },
+            "Layer_Thickness_um": {
+              "Value": 90,
+              "Original_Values": "90 μm"
+            },
+            "Energy_Density_J_mm2": {
+              "Value": 4.0,
+              "Original_Values": "4.0 J/mm²"
+            },
+            "Beam_Current_Range_mA": "6–28 mA",
+            "Scanning_Speed_Range_mm_s": "800–5000 mm/s",
+            "Rod_Dimensions": "10 × 10 × 15 mm or 10 × 10 × 30 mm",
+            "Building_Direction": "parallel to longitudinal direction of rods",
+            "Post_Processing": "None (as-built, no HIP or annealing)",
+            "Dimensional_Error": "Ed < ±0.5 mm",
+            "Melt_Pool_Depth_um": {
+              "Value": 220,
+              "Original_Values": "approximately 220 μm",
+              "Note": "Approximate value; depth of melt pool at top surface (Section 4.1.1)"
+            }
+          },
+          "Raw_Powder": {
+            "Fabrication": "Ar gas atomization (Osaka Yakin Kogyo Co., Ltd.) from master ingots (Kobe Steel, Ltd.)",
+            "Circularity_K": {
+              "Value": 0.94,
+              "Original_Values": "K = 0.94"
+            },
+            "Mean_Diameter_um": {
+              "Value": 70.2,
+              "Original_Values": "dm = 70.2 μm"
+            },
+            "Angle_of_Repose_deg": {
+              "Value": 44.8,
+              "Original_Values": "approximately 44.8°",
+              "Note": "Approximate value"
+            }
+          },
+          "Note": "Base EBM parameters (system, voltage, preheating, layer thickness) shared across all rods per Section 2.2; only ED varies between rods."
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "A uniform α₂/β/γ mixed structure composed of two regions: the α₂/γ lamellar region and the β/γ dual phase region (HED microstructure). The microstructure is much finer than that of cast and forged alloys.",
+            "simplified": "HED microstructure: uniform α₂/β/γ mixed structure with α₂/γ lamellar region and β/γ dual phase region"
+          },
+          "Main_Phase": {
+            "Phase_Name": "γ-TiAl + α₂-Ti₃Al + β(B2) mixed structure",
+            "Crystal_Structure": "L1₀ + DO₁₉ + B2"
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "ω₀ phase",
+              "Crystal_Structure": "ordered hexagonal",
+              "Mean_Diameter_nm": {
+                "Value": 100,
+                "Original_Values": "approximately 100 nm",
+                "Note": "Approximate; diameter; precipitated in β phase during exposure at 1023 K during tensile test; confirmed by SAED with extra superlattice spots"
+              },
+              "Location": "within β phase",
+              "Formation_Condition": "Precipitated during isothermal exposure at 1023 K (temperature range 973–1098 K per refs [51,52])"
+            }
+          ],
+          "Phase_Details": [
+            {
+              "Phase_Name": "γ phase",
+              "Crystal_Structure": "L1₀",
+              "Location": "α₂/γ lamellar region and β/γ dual phase region",
+              "SEM_BSE_Contrast": "black"
+            },
+            {
+              "Phase_Name": "α₂ phase",
+              "Crystal_Structure": "DO₁₉",
+              "Location": "α₂/γ lamellar region",
+              "SEM_BSE_Contrast": "gray",
+              "Note": "α₂ plates alternating with γ plates; SAED B = [110]γ//[1120]α"
+            },
+            {
+              "Phase_Name": "β phase",
+              "Crystal_Structure": "B2 (ordered)",
+              "Location": "β/γ dual phase region",
+              "SEM_BSE_Contrast": "white",
+              "Volume_Fraction_in_Dual_Phase_Region": {
+                "Value": 50,
+                "Original_Values": "approximately 50%",
+                "Note": "Approximate; in β/γ dual phase region"
+              },
+              "Note": "Confirmed by SAED with superlattice 001 spot; B = [110]β"
+            }
+          ],
+          "Advanced_Quantitative_Features": {
+            "Lamellar_spacing_HED_nm": {
+              "Value": 62.1,
+              "Original_Values": "λ = 62.1 nm",
+              "Note": "Average lamellar spacing in α₂/γ lamellar region of HED microstructure (Section 3.3). Note: Section 4.3 also reports λ = 61.2 nm for the coarse lamellar region (Fig. 7(c)); this discrepancy exists in the original paper."
+            },
+            "Defect_volume_fraction_fd_pct": {
+              "Value": 0.1,
+              "Original_Values": "f_d = 0.1%",
+              "Data_Source": "table",
+              "Note": "Non-uniform defects; minimal at high ED"
+            },
+            "Porosity_fp_pct": {
+              "Value": 0.4,
+              "Original_Values": "f_p = 0.4%",
+              "Data_Source": "table",
+              "Note": "Circular pores with diameters less than 100 μm; attributed to Ar atomization gas trapped in raw powder"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Test_Type": "Tensile",
+            "Test_Temperature_K": null,
+            "Test_Temperature_Original": "RT (room temperature)",
+            "Loading_Mode": "Tension",
+            "Strain_Rate_s1": {
+              "Value": 0.00017,
+              "Original_Values": "1.7 × 10⁻⁴ s⁻¹"
+            },
+            "Environment": "vacuum",
+            "Specimen_Dimensions": "gauge section 5.0 × 1.5 × 0.5 mm, cut from center of as-built rods",
+            "Specimen_Preparation": "polished mechanically using SiC emery papers and colloidal SiO₂ suspensions",
+            "Orientation": "loading axis parallel to building direction (longitudinal direction of rods)",
+            "Ultimate_Tensile_Strength_MPa": {
+              "Value": 773,
+              "Original_Values": "773 MPa",
+              "Data_Source": "text"
+            },
+            "Elongation_At_Fracture_pct": {
+              "Value": null,
+              "Note": "原文: EL < 1%, regardless of process parameters;原文: plastic deformation observed at RT"
+            },
+            "Fracture_Mode": "brittle (fracture surfaces covered by facets; defects difficult to observe)",
+            "Data_Source": "text"
+          },
+          {
+            "Test_Type": "Tensile",
+            "Test_Temperature_K": 1023,
+            "Test_Temperature_Original": "1023 K",
+            "Loading_Mode": "Tension",
+            "Strain_Rate_s1": {
+              "Value": 0.00017,
+              "Original_Values": "1.7 × 10⁻⁴ s⁻¹"
+            },
+            "Environment": "vacuum",
+            "Specimen_Dimensions": "gauge section 5.0 × 1.5 × 0.5 mm, cut from center of as-built rods",
+            "Specimen_Preparation": "polished mechanically using SiC emery papers and colloidal SiO₂ suspensions",
+            "Orientation": "loading axis parallel to building direction (longitudinal direction of rods)",
+            "Ultimate_Tensile_Strength_MPa": {
+              "Value": 644,
+              "Original_Values": "644 MPa",
+              "Data_Source": "text"
+            },
+            "Elongation_At_Fracture_pct": {
+              "Value": 40,
+              "Original_Values": "approximately 40%",
+              "Note": "Approximate value; all samples exhibit large EL at 1023 K"
+            },
+            "Fracture_Mode": "ductile (dimples on fracture surface)",
+            "Data_Source": "text"
+          },
+          {
+            "Test_Type": "Nanoindentation",
+            "Test_Temperature_K": null,
+            "Test_Temperature_Original": "RT",
+            "Maximum_Load_mN": {
+              "Value": 4.9,
+              "Original_Values": "4.9 mN"
+            },
+            "Note": "Hardness of constituent phases measured; ultrafine α₂/γ lamellar grain > α₂/γ lamellar region > γ phase; β phase > γ phase. Specific numerical values only in Fig. 18 (not extractable from text)."
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "R5",
+      "Sample_ID": "R5",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing",
+        "Directional_Anisotropy"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 3.2",
+        "Section 3.3",
+        "Section 3.4",
+        "Section 4.1.2",
+        "Section 4.2",
+        "Section 4.3",
+        "Table 2",
+        "Fig. 6(b,d,e,f)",
+        "Fig. 7(e,f)",
+        "Fig. 9",
+        "Fig. 10",
+        "Fig. 11(f)",
+        "Fig. 15",
+        "Fig. 18",
+        "Fig. 19(a,c)"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "β-containing γ-TiAl",
+          "Material_Name_Raw": "Ti-44Al-4Cr (44-4 alloy)",
+          "Nominal_Composition": [
+            {
+              "Element": "Ti",
+              "Value": "Balance",
+              "Unit": "at%",
+              "Data_Nature": "Nominal",
+              "Note": "Balance; normalized ≈ 52.0 at% (Computed)"
+            },
+            {
+              "Element": "Al",
+              "Value": 44,
+              "Unit": "at%",
+              "Data_Nature": "Nominal"
+            },
+            {
+              "Element": "Cr",
+              "Value": 4,
+              "Unit": "at%",
+              "Data_Nature": "Nominal"
+            },
+            {
+              "Element": "O",
+              "Value": 0,
+              "Unit": "at%",
+              "Data_Nature": "Nominal"
+            }
+          ],
+          "Note": "Table 1 reports measured rod composition for R4 (ED=2.0 J/mm²): Ti Bal., Al 43.9, Cr 4.0, O 0.18 at%. Raw powder composition (Table 1): Ti Bal., Al 44.8, Cr 4.0, O 0.15 at%. Al content difference between R5 and R1 is <0.3 at% (Section 3.3). Measured composition applies to R4 specifically; other rods not individually measured."
+        },
+        "Processing": {
+          "Process_Category": "Electron Beam Melting (EBM)",
+          "Process_Text": {
+            "original": "Rectangular rods of 44–4 alloy fabricated using an Arcam Q10 EBM system at an accelerating voltage of 60 kV and a preheating temperature of 1333 K. Layer thickness 90 μm. ED = 1.4 J/mm². As-built, no post-annealing or HIP.",
+            "simplified": "EBM fabrication; Arcam Q10; 60 kV; preheating 1333 K; layer thickness 90 μm; ED = 1.4 J/mm²; as-built"
+          },
+          "Equipment": [
+            {
+              "Name": "Arcam Q10 EBM system",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "SEM (with BSE detector)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "OM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "TEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "ICP-OES",
+              "Category": "Characterization",
+              "Note": "Shared equipment per Section 2.1; used for composition analysis of powder and rods"
+            },
+            {
+              "Name": "Inert gas fusion analyzer",
+              "Category": "Characterization",
+              "Note": "Shared equipment per Section 2.1; used for O content analysis"
+            },
+            {
+              "Name": "Instron-type testing machine",
+              "Category": "Testing"
+            },
+            {
+              "Name": "Nano-indentation tester",
+              "Category": "Testing"
+            },
+            {
+              "Name": "ImageJ",
+              "Category": "Software"
+            }
+          ],
+          "Key_Params": {
+            "Stage": "EBM Fabrication",
+            "Accelerating_Voltage_kV": {
+              "Value": 60,
+              "Original_Values": "60 kV"
+            },
+            "Preheating_Temperature_K": {
+              "Value": 1333,
+              "Original_Values": "1333 K"
+            },
+            "Layer_Thickness_um": {
+              "Value": 90,
+              "Original_Values": "90 μm"
+            },
+            "Energy_Density_J_mm2": {
+              "Value": 1.4,
+              "Original_Values": "1.4 J/mm²"
+            },
+            "Rod_Dimensions": "10 × 10 × 15 mm or 10 × 10 × 30 mm",
+            "Building_Direction": "parallel to longitudinal direction of rods",
+            "Post_Processing": "None (as-built, no HIP or annealing)",
+            "Dimensional_Error": "Ed < ±0.5 mm",
+            "Melt_Pool_Depth_um": {
+              "Value": 160,
+              "Original_Values": "approximately 160 μm",
+              "Note": "Approximate; depth decreases from ~220 μm (R1, ED=4.0) to ~160 μm (R5, ED=1.4)"
+            }
+          },
+          "Note": "Base EBM parameters shared with R1 per Section 2.2."
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "A peculiar layered microstructure perpendicular to the building direction, consisting of an ultrafine α₂/γ lamellar grain layer (Layer A) and an α₂/β/γ mixed structure layer (Layer B) (LED microstructure).",
+            "simplified": "LED microstructure: layered structure perpendicular to building direction; Layer A = ultrafine α₂/γ lamellar grain + β/γ cell structure; Layer B = α₂/β/γ mixed structure"
+          },
+          "Main_Phase": {
+            "Phase_Name": "γ-TiAl + α₂-Ti₃Al + β(B2) mixed structure (layered)",
+            "Crystal_Structure": "L1₀ + DO₁₉ + B2"
+          },
+          "Phase_Details": [
+            {
+              "Phase_Name": "γ phase",
+              "Crystal_Structure": "L1₀",
+              "Location": "α₂/γ lamellar grain, β/γ cell structure, and α₂/β/γ mixed structure",
+              "Note": "In β/γ cell structure: γ phase volume fraction approximately 75%"
+            },
+            {
+              "Phase_Name": "α₂ phase",
+              "Crystal_Structure": "DO₁₉",
+              "Location": "ultrafine α₂/γ lamellar grain (Layer A) and α₂/γ lamellar region (Layer B)",
+              "Note": "Jagged grain boundaries in ultrafine lamellar grain (feature of massive α transformation)"
+            },
+            {
+              "Phase_Name": "β phase",
+              "Crystal_Structure": "B2 (ordered)",
+              "Location": "β/γ cell structure (Layer A) and β/γ dual phase region (Layer B)"
+            }
+          ],
+          "Layered_Structure": {
+            "Orientation": "perpendicular to building direction",
+            "Layers": [
+              {
+                "Layer_Name": "Layer A",
+                "Description": "ultrafine α₂/γ lamellar grain + β/γ cell structure",
+                "Width_um": {
+                  "Value": 45,
+                  "Original_Values": "approximately 45 μm",
+                  "Note": "Approximate"
+                }
+              },
+              {
+                "Layer_Name": "Layer B",
+                "Description": "α₂/β/γ mixed structure (α₂/γ lamellar region + β/γ dual phase region, similar to HED microstructure)",
+                "Width_um": {
+                  "Value": 45,
+                  "Original_Values": "approximately 45 μm",
+                  "Note": "Approximate; combined width of Layers A and B agrees with powder layer thickness (90 μm)"
+                }
+              }
+            ],
+            "Formation_Mechanism": "Associated with layer-on-layer process during EBM fabrication; massive α transformation from β phase due to rapid cooling under low ED conditions"
+          },
+          "Advanced_Quantitative_Features": {
+            "Lamellar_spacing_LED_nm": {
+              "Value": 32.5,
+              "Original_Values": "λ = 32.5 nm",
+              "Note": "Average lamellar spacing in ultrafine α₂/γ lamellar grain of LED microstructure"
+            },
+            "Defect_volume_fraction_fd_pct": {
+              "Value": 0.5,
+              "Original_Values": "f_d = 0.5%",
+              "Data_Source": "table"
+            },
+            "Porosity_fp_pct": {
+              "Value": 0.9,
+              "Original_Values": "f_p = 0.9%",
+              "Data_Source": "table"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Test_Type": "Tensile",
+            "Test_Temperature_K": null,
+            "Test_Temperature_Original": "RT",
+            "Loading_Mode": "Tension",
+            "Strain_Rate_s1": {
+              "Value": 0.00017,
+              "Original_Values": "1.7 × 10⁻⁴ s⁻¹"
+            },
+            "Environment": "vacuum",
+            "Specimen_Dimensions": "gauge section 5.0 × 1.5 × 0.5 mm",
+            "Specimen_Preparation": "polished mechanically using SiC emery papers and colloidal SiO₂ suspensions",
+            "Orientation": "loading axis parallel to building direction (longitudinal direction of rods)",
+            "Ultimate_Tensile_Strength_MPa": {
+              "Value": null,
+              "Note": "原文: σ_B exceeds 700 MPa for R5 at RT; specific value not reported in text (only in Fig. 9)"
+            },
+            "Elongation_At_Fracture_pct": {
+              "Value": null,
+              "Note": "原文: EL < 1%, regardless of process parameters"
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Test_Type": "Tensile",
+            "Test_Temperature_K": 1023,
+            "Test_Temperature_Original": "1023 K",
+            "Loading_Mode": "Tension",
+            "Strain_Rate_s1": {
+              "Value": 0.00017,
+              "Original_Values": "1.7 × 10⁻⁴ s⁻¹"
+            },
+            "Environment": "vacuum",
+            "Specimen_Dimensions": "gauge section 5.0 × 1.5 × 0.5 mm",
+            "Specimen_Preparation": "polished mechanically using SiC emery papers and colloidal SiO₂ suspensions",
+            "Orientation": "loading axis parallel to building direction (longitudinal direction of rods)",
+            "Ultimate_Tensile_Strength_MPa": {
+              "Value": null,
+              "Note": "原文: σ_B at 1023 K remains almost constant up to ED ≈ 3 J/mm² and then increases; specific value for R5 not reported in text"
+            },
+            "Elongation_At_Fracture_pct": {
+              "Value": 40,
+              "Original_Values": "approximately 40%",
+              "Note": "Approximate value"
+            },
+            "Data_Source": "text"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "R2",
+      "Sample_ID": "R2",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing",
+        "Directional_Anisotropy"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 3.2",
+        "Section 3.3",
+        "Section 3.4",
+        "Table 2",
+        "Fig. 9",
+        "Fig. 10"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "β-containing γ-TiAl",
+          "Material_Name_Raw": "Ti-44Al-4Cr (44-4 alloy)",
+          "Nominal_Composition": [
+            {
+              "Element": "Ti",
+              "Value": "Balance",
+              "Unit": "at%",
+              "Data_Nature": "Nominal"
+            },
+            {
+              "Element": "Al",
+              "Value": 44,
+              "Unit": "at%",
+              "Data_Nature": "Nominal"
+            },
+            {
+              "Element": "Cr",
+              "Value": 4,
+              "Unit": "at%",
+              "Data_Nature": "Nominal"
+            }
+          ],
+          "Note": "Same nominal composition as R1. Measured rod composition reported for R4 (ED=2.0) in Table 1."
+        },
+        "Processing": {
+          "Process_Category": "Electron Beam Melting (EBM)",
+          "Process_Text": {
+            "original": "Rectangular rods of 44–4 alloy fabricated using an Arcam Q10 EBM system at an accelerating voltage of 60 kV and a preheating temperature of 1333 K. Layer thickness 90 μm. ED = 3.0 J/mm². As-built, no post-annealing or HIP.",
+            "simplified": "EBM fabrication; ED = 3.0 J/mm²; as-built"
+          },
+          "Key_Params": {
+            "Stage": "EBM Fabrication",
+            "Energy_Density_J_mm2": {
+              "Value": 3.0,
+              "Original_Values": "3.0 J/mm²"
+            },
+            "Post_Processing": "None (as-built)"
+          },
+          "Note": "Base EBM parameters shared with R1 per Section 2.2. ED ≈ 3 J/mm² is the boundary between HED and LED microstructures."
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Transitional microstructure at the boundary between HED and LED microstructures. The morphology of the microstructure changes from the LED to HED microstructure at an ED of approximately 3 J/mm².",
+            "simplified": "Transitional microstructure between HED and LED at ED ≈ 3 J/mm²"
+          },
+          "Advanced_Quantitative_Features": {
+            "Defect_volume_fraction_fd_pct": {
+              "Value": 0.2,
+              "Original_Values": "f_d = 0.2%",
+              "Data_Source": "table"
+            },
+            "Porosity_fp_pct": {
+              "Value": 0.8,
+              "Original_Values": "f_p = 0.8%",
+              "Data_Source": "table"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Test_Type": "Tensile",
+            "Test_Temperature_K": null,
+            "Test_Temperature_Original": "RT",
+            "Loading_Mode": "Tension",
+            "Strain_Rate_s1": {
+              "Value": 0.00017,
+              "Original_Values": "1.7 × 10⁻⁴ s⁻¹"
+            },
+            "Environment": "vacuum",
+            "Specimen_Dimensions": "gauge section 5.0 × 1.5 × 0.5 mm",
+            "Specimen_Preparation": "polished mechanically using SiC emery papers and colloidal SiO₂ suspensions",
+            "Orientation": "loading axis parallel to building direction",
+            "Ultimate_Tensile_Strength_MPa": {
+              "Value": null,
+              "Note": "原文: σ_B exceeds 700 MPa at RT for R2; specific value not reported in text"
+            },
+            "Elongation_At_Fracture_pct": {
+              "Value": null,
+              "Note": "原文: EL < 1%"
+            },
+            "Data_Source": "text"
+          },
+          {
+            "Test_Type": "Tensile",
+            "Test_Temperature_K": 1023,
+            "Test_Temperature_Original": "1023 K",
+            "Loading_Mode": "Tension",
+            "Strain_Rate_s1": {
+              "Value": 0.00017,
+              "Original_Values": "1.7 × 10⁻⁴ s⁻¹"
+            },
+            "Environment": "vacuum",
+            "Specimen_Dimensions": "gauge section 5.0 × 1.5 × 0.5 mm",
+            "Specimen_Preparation": "polished mechanically using SiC emery papers and colloidal SiO₂ suspensions",
+            "Orientation": "loading axis parallel to building direction",
+            "Ultimate_Tensile_Strength_MPa": {
+              "Value": null,
+              "Note": "原文: σ_B at 1023 K remains almost constant up to ED ≈ 3 J/mm²; specific value for R2 not reported in text"
+            },
+            "Elongation_At_Fracture_pct": {
+              "Value": 40,
+              "Original_Values": "approximately 40%",
+              "Note": "Approximate value"
+            },
+            "Data_Source": "text"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "R3",
+      "Sample_ID": "R3",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing",
+        "Directional_Anisotropy"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 3.2",
+        "Section 3.3",
+        "Table 2",
+        "Fig. 8"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "β-containing γ-TiAl",
+          "Material_Name_Raw": "Ti-44Al-4Cr (44-4 alloy)",
+          "Nominal_Composition": [
+            {
+              "Element": "Ti",
+              "Value": "Balance",
+              "Unit": "at%",
+              "Data_Nature": "Nominal"
+            },
+            {
+              "Element": "Al",
+              "Value": 44,
+              "Unit": "at%",
+              "Data_Nature": "Nominal"
+            },
+            {
+              "Element": "Cr",
+              "Value": 4,
+              "Unit": "at%",
+              "Data_Nature": "Nominal"
+            }
+          ]
+        },
+        "Processing": {
+          "Process_Category": "Electron Beam Melting (EBM)",
+          "Process_Text": {
+            "original": "Rectangular rods of 44–4 alloy fabricated using an Arcam Q10 EBM system at an accelerating voltage of 60 kV and a preheating temperature of 1333 K. Layer thickness 90 μm. ED = 2.5 J/mm². As-built, no post-annealing or HIP.",
+            "simplified": "EBM fabrication; ED = 2.5 J/mm²; as-built"
+          },
+          "Key_Params": {
+            "Stage": "EBM Fabrication",
+            "Energy_Density_J_mm2": {
+              "Value": 2.5,
+              "Original_Values": "2.5 J/mm²"
+            },
+            "Post_Processing": "None (as-built)"
+          },
+          "Note": "Base EBM parameters shared with R1 per Section 2.2."
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "LED microstructure at ED = 2.5 J/mm² (below ~3 J/mm² boundary). Layered structure with ultrafine α₂/γ lamellar grain and α₂/β/γ mixed structure, as described for rods with ED < 3 J/mm² in Section 3.3.",
+            "simplified": "LED microstructure (ED < 3 J/mm²); layered structure with ultrafine α₂/γ lamellar grain"
+          },
+          "Advanced_Quantitative_Features": {
+            "Defect_volume_fraction_fd_pct": {
+              "Value": 0.2,
+              "Original_Values": "f_d = 0.2%",
+              "Data_Source": "table"
+            },
+            "Porosity_fp_pct": {
+              "Value": 0.7,
+              "Original_Values": "f_p = 0.7%",
+              "Data_Source": "table"
+            }
+          }
+        }
+      }
+    },
+    {
+      "Item_ID": "R4",
+      "Sample_ID": "R4",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing",
+        "Directional_Anisotropy"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 3.2",
+        "Section 3.3",
+        "Table 1",
+        "Table 2",
+        "Fig. 8"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "β-containing γ-TiAl",
+          "Material_Name_Raw": "Ti-44Al-4Cr (44-4 alloy)",
+          "Nominal_Composition": [
+            {
+              "Element": "Ti",
+              "Value": "Balance",
+              "Unit": "at%",
+              "Data_Nature": "Nominal"
+            },
+            {
+              "Element": "Al",
+              "Value": 44,
+              "Unit": "at%",
+              "Data_Nature": "Nominal"
+            },
+            {
+              "Element": "Cr",
+              "Value": 4,
+              "Unit": "at%",
+              "Data_Nature": "Nominal"
+            }
+          ],
+          "Measured_Composition": [
+            {
+              "Element": "Ti",
+              "Value": "Balance",
+              "Unit": "at%",
+              "Data_Nature": "Measured",
+              "Note": "Balance; normalized ≈ 51.92 at% (Computed)"
+            },
+            {
+              "Element": "Al",
+              "Value": 43.9,
+              "Unit": "at%",
+              "Data_Nature": "Measured",
+              "Original_Values": "43.9 at%",
+              "Data_Source": "table"
+            },
+            {
+              "Element": "Cr",
+              "Value": 4.0,
+              "Unit": "at%",
+              "Data_Nature": "Measured",
+              "Original_Values": "4.0 at%",
+              "Data_Source": "table"
+            },
+            {
+              "Element": "O",
+              "Value": 0.18,
+              "Unit": "at%",
+              "Data_Nature": "Measured",
+              "Original_Values": "0.18 at%",
+              "Data_Source": "table"
+            }
+          ],
+          "Note": "Measured composition from Table 1 'Rectangular rod (Actual)'. Al decreases by 0.9 at% from raw powder during fabrication; Cr unchanged; O increase is limited."
+        },
+        "Processing": {
+          "Process_Category": "Electron Beam Melting (EBM)",
+          "Process_Text": {
+            "original": "Rectangular rods of 44–4 alloy fabricated using an Arcam Q10 EBM system at an accelerating voltage of 60 kV and a preheating temperature of 1333 K. Layer thickness 90 μm. ED = 2.0 J/mm². As-built, no post-annealing or HIP.",
+            "simplified": "EBM fabrication; ED = 2.0 J/mm²; as-built"
+          },
+          "Key_Params": {
+            "Stage": "EBM Fabrication",
+            "Energy_Density_J_mm2": {
+              "Value": 2.0,
+              "Original_Values": "2.0 J/mm²"
+            },
+            "Post_Processing": "None (as-built)"
+          },
+          "Note": "Base EBM parameters shared with R1 per Section 2.2."
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "LED microstructure at ED = 2.0 J/mm² (below ~3 J/mm² boundary). Layered structure with ultrafine α₂/γ lamellar grain and α₂/β/γ mixed structure, as described for rods with ED < 3 J/mm² in Section 3.3.",
+            "simplified": "LED microstructure (ED < 3 J/mm²); layered structure with ultrafine α₂/γ lamellar grain"
+          },
+          "Advanced_Quantitative_Features": {
+            "Defect_volume_fraction_fd_pct": {
+              "Value": 0.2,
+              "Original_Values": "f_d = 0.2%",
+              "Data_Source": "table"
+            },
+            "Porosity_fp_pct": {
+              "Value": 0.5,
+              "Original_Values": "f_p = 0.5%",
+              "Data_Source": "table"
+            }
+          }
+        }
+      }
+    },
+    {
+      "Item_ID": "R6",
+      "Sample_ID": "R6",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing",
+        "Directional_Anisotropy"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 3.2",
+        "Table 2",
+        "Fig. 5(a,b)"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "β-containing γ-TiAl",
+          "Material_Name_Raw": "Ti-44Al-4Cr (44-4 alloy)",
+          "Nominal_Composition": [
+            {
+              "Element": "Ti",
+              "Value": "Balance",
+              "Unit": "at%",
+              "Data_Nature": "Nominal"
+            },
+            {
+              "Element": "Al",
+              "Value": 44,
+              "Unit": "at%",
+              "Data_Nature": "Nominal"
+            },
+            {
+              "Element": "Cr",
+              "Value": 4,
+              "Unit": "at%",
+              "Data_Nature": "Nominal"
+            }
+          ]
+        },
+        "Processing": {
+          "Process_Category": "Electron Beam Melting (EBM)",
+          "Process_Text": {
+            "original": "Rectangular rods of 44–4 alloy fabricated using an Arcam Q10 EBM system at an accelerating voltage of 60 kV and a preheating temperature of 1333 K. Layer thickness 90 μm. ED = 1.2 J/mm². As-built, no post-annealing or HIP.",
+            "simplified": "EBM fabrication; ED = 1.2 J/mm²; as-built"
+          },
+          "Key_Params": {
+            "Stage": "EBM Fabrication",
+            "Energy_Density_J_mm2": {
+              "Value": 1.2,
+              "Original_Values": "1.2 J/mm²"
+            },
+            "Post_Processing": "None (as-built)"
+          },
+          "Note": "Base EBM parameters shared with R1 per Section 2.2."
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "The rod fabricated at the lowest ED (R6, 1.2 J/mm²) exhibits a smooth surface and low Ed, but large non-uniform defects with a volume fraction (f_d) of 4.9% can be observed inside the sample. Many unmelted raw powder particles are found within the defects, suggesting that the defects are formed by a lack of fusion.",
+            "simplified": "Lowest ED rod; smooth surface but large internal non-uniform defects from lack of fusion; unmelted powder particles within defects"
+          },
+          "Advanced_Quantitative_Features": {
+            "Defect_volume_fraction_fd_pct": {
+              "Value": 4.9,
+              "Original_Values": "f_d = 4.9%",
+              "Data_Source": "table",
+              "Note": "Large non-uniform defects due to lack of fusion; unmelted raw powder particles within defects"
+            },
+            "Porosity_fp_pct": {
+              "Value": 0.3,
+              "Original_Values": "f_p = 0.3%",
+              "Data_Source": "table"
+            }
+          },
+          "Note": "Excluded from SEM microstructure observation and mechanical testing per Section 3.3."
+        }
+      }
+    },
+    {
+      "Item_ID": "Cast_48-2-2",
+      "Sample_ID": "Cast 48-2-2",
+      "Role": "Reference",
+      "Data_Nature": "Literature_Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 1",
+        "Section 3.4",
+        "Section 5",
+        "Refs [43, 45]"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "γ-TiAl",
+          "Material_Name_Raw": "Ti-48Al-2Cr-2Nb (48-2-2 alloy)",
+          "Nominal_Composition": [
+            {
+              "Element": "Ti",
+              "Value": "Balance",
+              "Unit": "at%",
+              "Data_Nature": "Nominal"
+            },
+            {
+              "Element": "Al",
+              "Value": 48,
+              "Unit": "at%",
+              "Data_Nature": "Nominal"
+            },
+            {
+              "Element": "Cr",
+              "Value": 2,
+              "Unit": "at%",
+              "Data_Nature": "Nominal"
+            },
+            {
+              "Element": "Nb",
+              "Value": 2,
+              "Unit": "at%",
+              "Data_Nature": "Nominal"
+            }
+          ],
+          "Note": "Typical γ-TiAl alloy; composition from paper text. Data from refs [43, 45]."
+        },
+        "Processing": {
+          "Process_Text": {
+            "simplified": "Cast alloy (literature data)"
+          }
+        },
+        "Properties": [
+          {
+            "Test_Type": "Tensile",
+            "Test_Temperature_K": null,
+            "Test_Temperature_Original": "RT",
+            "Loading_Mode": "Tension",
+            "Ultimate_Tensile_Strength_MPa": {
+              "Value": null,
+              "Value_Range": {
+                "Min": 450,
+                "Max": 550,
+                "Unit": "MPa"
+              },
+              "Original_Values": "450–550 MPa",
+              "Data_Source": "text"
+            },
+            "Note": "Literature data from refs [43, 45]"
+          },
+          {
+            "Test_Type": "Tensile",
+            "Test_Temperature_K": 1023,
+            "Test_Temperature_Original": "1023 K",
+            "Loading_Mode": "Tension",
+            "Ultimate_Tensile_Strength_MPa": {
+              "Value": 450,
+              "Original_Values": "~450 MPa",
+              "Data_Source": "text",
+              "Note": "Approximate value from literature (~450 MPa at 1023 K)"
+            },
+            "Elongation_At_Fracture_pct": {
+              "Value": 10,
+              "Original_Values": "10%",
+              "Data_Source": "text"
+            },
+            "Note": "Literature data from refs [43, 45]"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "Cast_TNM",
+      "Sample_ID": "Cast TNM alloy",
+      "Role": "Reference",
+      "Data_Nature": "Literature_Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 1",
+        "Section 3.4",
+        "Section 5",
+        "Refs [43, 45]"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "β-containing γ-TiAl (TNM)",
+          "Material_Name_Raw": "Ti-Al-Nb-Mo-B (TNM alloy)",
+          "Note": "β-containing γ-TiAl alloy for practical use, developed by Clemens et al. [8]. Exact composition not specified in this paper."
+        },
+        "Processing": {
+          "Process_Text": {
+            "simplified": "Cast alloy (literature data)"
+          }
+        },
+        "Properties": [
+          {
+            "Test_Type": "Tensile",
+            "Test_Temperature_K": null,
+            "Test_Temperature_Original": "RT",
+            "Loading_Mode": "Tension",
+            "Ultimate_Tensile_Strength_MPa": {
+              "Value": null,
+              "Value_Range": {
+                "Min": 700,
+                "Max": 800,
+                "Unit": "MPa"
+              },
+              "Original_Values": "700–800 MPa",
+              "Data_Source": "text"
+            },
+            "Note": "Literature data from refs [43, 45]"
+          },
+          {
+            "Test_Type": "Tensile",
+            "Test_Temperature_K": 1023,
+            "Test_Temperature_Original": "1023 K",
+            "Loading_Mode": "Tension",
+            "Ultimate_Tensile_Strength_MPa": {
+              "Value": 600,
+              "Original_Values": "~600 MPa",
+              "Data_Source": "text",
+              "Note": "Approximate value from literature (~600 MPa at 1023 K)"
+            },
+            "Elongation_At_Fracture_pct": {
+              "Value": 10,
+              "Original_Values": "10%",
+              "Data_Source": "text"
+            },
+            "Note": "Literature data from refs [43, 45]"
+          }
+        ]
+      }
+    }
+  ]
+}

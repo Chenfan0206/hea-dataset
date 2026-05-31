@@ -1,0 +1,376 @@
+{
+  "Paper_Metadata": {
+    "Paper_Title": "Investigation on the machinability of SiCp/Al composite by in-situ laser assisted diamond cutting",
+    "DOI": "10.1016/j.jmatprotec.2023.118044"
+  },
+  "items": [
+    {
+      "Sample_ID": "SiCpAl-ILADC-Exp1",
+      "Gradient_Material": false,
+      "Gradient_Group_ID": null,
+      "Composition_Info": {
+        "Role": "Target",
+        "Alloy_Name_Raw": "SiCp/Al Composite",
+        "Nominal_Composition": {
+          "Composition_Type": "vol%",
+          "Elements_Normalized": null
+        },
+        "Measured_Composition": {
+          "Composition_Type": "vol%",
+          "Elements_Normalized": {
+            "SiC": 45.0,
+            "Al": 55.0
+          },
+          "Measurement_Method": null
+        },
+        "Note": "45 vol% Silicon Carbide Particle Reinforced Aluminum Matrix Composite."
+      },
+      "Process_Info": {
+        "Process_Category": "Conventional Diamond Cutting",
+        "Process_Text": {
+          "original": "Experiment No.1: Laser Power 0W, Depth of Cut 1um, Feed 1um/r, Speed 60m/min",
+          "simplified": "Standard diamond turning without laser assistance."
+        },
+        "Equipment": "Precitech Nanoform X",
+        "Key_Params": {
+          "Laser_Power_W": 0,
+          "Spindle_Speed_rpm": 600,
+          "Depth_of_Cut_um": 1,
+          "Feed_Speed_um_r": 1,
+          "Cutting_Speed_m_min": 60,
+          "Tool_Rake_Angle_deg": -35,
+          "Tool_Clearance_Angle_deg": 10,
+          "Cutting_Edge_Radius_nm": 100,
+          "Spot_Diameter_um": null
+        }
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": "The main subsurface damages are SiC particle fracture... micro-crack...",
+          "simplified": "Cracking and fracture observed in conventional cutting."
+        },
+        "Main_Phase": "FCC (Al Matrix)",
+        "Precipitates": [
+          {
+            "Phase_Type": "6H-SiC",
+            "Volume_Fraction_pct": 45.0
+          }
+        ],
+        "Grain_Size_avg_um": null,
+        "Advanced_Quantitative_Features": {
+          "Amorphous_Layer_Thickness_nm": null
+        }
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Surface_Roughness_Sa",
+          "Test_Condition": "Conventional Process",
+          "Value_Numeric": 97.6,
+          "Unit": "nm",
+          "Test_Temperature_K": 298.15,
+          "Note": "Highest roughness observed in the experiment series."
+        },
+        {
+          "Property_Name": "Residual_Stress",
+          "Test_Condition": "Conventional Process",
+          "Value_Numeric": null,
+          "Unit": "MPa",
+          "Test_Temperature_K": 298.15,
+          "Note": "High tensile stress,When the laser power is 4 W, the residual stress value is 254.3 MPa, decreasing by 42% compared with the conventional diamond cutting."
+        },
+        {
+          "Property_Name": "Tool_Wear_Flank_Width",
+          "Test_Condition": "Conventional Process",
+          "Value_Numeric": 22.6,
+          "Unit": "µm",
+          "Test_Temperature_K": 298.15,
+          "Note": "Cumulative cutting distance ~628m."
+        }
+      ]
+    },
+    {
+      "Sample_ID": "SiCpAl-ILADC-Exp2",
+      "Gradient_Material": false,
+      "Gradient_Group_ID": null,
+      "Composition_Info": {
+        "Role": "Target",
+        "Alloy_Name_Raw": "SiCp/Al Composite",
+        "Measured_Composition": {
+          "Composition_Type": "vol%",
+          "Elements_Normalized": {
+            "SiC": 45.0,
+            "Al": 55.0
+          }
+        }
+      },
+      "Process_Info": {
+        "Process_Category": "Laser Assisted Diamond Cutting",
+        "Process_Text": {
+          "original": "Experiment No.2: Laser Power 2W, Depth of Cut 1um, Feed 1um/r, Speed 60m/min",
+          "simplified": "Low power laser assisted cutting."
+        },
+        "Equipment": "Precitech Nanoform X, YLM-50-AC produced by IPG Photonics",
+        "Key_Params": {
+          "Laser_Power_W": 2,
+          "Spindle_Speed_rpm": 600,
+          "Depth_of_Cut_um": 1,
+          "Feed_Speed_um_r": 1,
+          "Cutting_Speed_m_min": 60,
+          "Tool_Rake_Angle_deg": -35,
+          "Tool_Clearance_Angle_deg": 10,
+          "Cutting_Edge_Radius_nm": 100,
+          "Spot_Diameter_um": 80
+        }
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Surface_Roughness_Sa",
+          "Test_Condition": "Laser Assisted",
+          "Value_Numeric": null,
+          "Unit": "nm",
+          "Test_Temperature_K": 298.15,
+          "Note": "Value not explicitly stated in text."
+        }
+      ]
+    },
+    {
+      "Sample_ID": "SiCpAl-ILADC-Exp3",
+      "Gradient_Material": false,
+      "Gradient_Group_ID": null,
+      "Composition_Info": {
+        "Role": "Target",
+        "Alloy_Name_Raw": "SiCp/Al Composite",
+        "Measured_Composition": {
+          "Composition_Type": "vol%",
+          "Elements_Normalized": {
+            "SiC": 45.0,
+            "Al": 55.0
+          }
+        }
+      },
+      "Process_Info": {
+        "Process_Category": "Laser Assisted Diamond Cutting",
+        "Process_Text": {
+          "original": "Experiment No.3: Laser Power 4W, Depth of Cut 1um, Feed 1um/r, Speed 60m/min",
+          "simplified": "Optimized laser power for best surface finish."
+        },
+        "Equipment": "Precitech Nanoform X,YLM-50-AC produced by IPG Photonics",
+        "Key_Params": {
+          "Laser_Power_W": 4,
+          "Spindle_Speed_rpm": 600,
+          "Depth_of_Cut_um": 1,
+          "Feed_Speed_um_r": 1,
+          "Cutting_Speed_m_min": 60,
+          "Tool_Rake_Angle_deg": -35,
+          "Tool_Clearance_Angle_deg": 10,
+          "Cutting_Edge_Radius_nm": 100,
+          "Spot_Diameter_um": 80
+        }
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Surface_Roughness_Sa",
+          "Test_Condition": "Optimized Laser",
+          "Value_Numeric": 10.2,
+          "Unit": "nm",
+          "Test_Temperature_K": 298.15,
+          "Note": "Best surface quality achieved."
+        },
+        {
+          "Property_Name": "Residual_Stress",
+          "Test_Condition": "Optimized Laser",
+          "Value_Numeric": 254.3,
+          "Unit": "MPa",
+          "Test_Temperature_K": 298.15
+        },
+        {
+          "Property_Name": "Tool_Wear_Flank_Width",
+          "Test_Condition": "Optimized Laser",
+          "Value_Numeric": 24.8,
+          "Unit": "µm",
+          "Test_Temperature_K": 298.15,
+          "Note": "Cumulative cutting distance ~628m."
+        }
+      ]
+    },
+    {
+      "Sample_ID": "SiCpAl-ILADC-Exp4",
+      "Gradient_Material": false,
+      "Gradient_Group_ID": null,
+      "Composition_Info": {
+        "Role": "Target",
+        "Alloy_Name_Raw": "SiCp/Al Composite",
+        "Measured_Composition": {
+          "Composition_Type": "vol%",
+          "Elements_Normalized": {
+            "SiC": 45.0,
+            "Al": 55.0
+          }
+        }
+      },
+      "Process_Info": {
+        "Process_Category": "Laser Assisted Diamond Cutting",
+        "Key_Params": {
+          "Laser_Power_W": 6,
+          "Spindle_Speed_rpm": 600,
+          "Depth_of_Cut_um": 1,
+          "Feed_Speed_um_r": 1,
+          "Cutting_Speed_m_min": 60
+        }
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Surface_Roughness_Sa",
+          "Value_Numeric": null,
+          "Unit": "nm",
+          "Test_Temperature_K": 298.15,
+          "Note": "Value not explicitly stated in text."
+        }
+      ]
+    },
+    {
+      "Sample_ID": "SiCpAl-ILADC-Exp5",
+      "Gradient_Material": false,
+      "Gradient_Group_ID": null,
+      "Composition_Info": {
+        "Role": "Target",
+        "Alloy_Name_Raw": "SiCp/Al Composite",
+        "Measured_Composition": {
+          "Composition_Type": "vol%",
+          "Elements_Normalized": {
+            "SiC": 45.0,
+            "Al": 55.0
+          }
+        }
+      },
+      "Process_Info": {
+        "Process_Category": "Laser Assisted Diamond Cutting",
+        "Key_Params": {
+          "Laser_Power_W": 8,
+          "Spindle_Speed_rpm": 600,
+          "Depth_of_Cut_um": 1,
+          "Feed_Speed_um_r": 1,
+          "Cutting_Speed_m_min": 60
+        }
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Surface_Roughness_Sa",
+          "Value_Numeric": null,
+          "Unit": "nm",
+          "Test_Temperature_K": 298.15,
+          "Note": "Value not explicitly stated in text."
+        },
+        {
+          "Property_Name": "Residual_Stress",
+          "Value_Numeric": 434.64,
+          "Unit": "MPa",
+          "Test_Temperature_K": 298.15
+        }
+      ]
+    },
+    {
+      "Sample_ID": "SiCpAl-ILADC-Exp6",
+      "Gradient_Material": false,
+      "Gradient_Group_ID": null,
+      "Composition_Info": {
+        "Role": "Target",
+        "Alloy_Name_Raw": "SiCp/Al Composite",
+        "Measured_Composition": {
+          "Composition_Type": "vol%",
+          "Elements_Normalized": {
+            "SiC": 45.0,
+            "Al": 55.0
+          }
+        }
+      },
+      "Process_Info": {
+        "Process_Category": "Laser Assisted Diamond Cutting",
+        "Key_Params": {
+          "Laser_Power_W": 4,
+          "Spindle_Speed_rpm": 600,
+          "Depth_of_Cut_um": 3,
+          "Feed_Speed_um_r": 1,
+          "Cutting_Speed_m_min": 60
+        }
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Surface_Roughness_Sa",
+          "Value_Numeric": null,
+          "Unit": "nm",
+          "Test_Temperature_K": 298.15,          
+          "Note": "Value not explicitly stated in text."
+        }
+      ]
+    },
+    {
+      "Sample_ID": "SiCpAl-ILADC-Exp7",
+      "Gradient_Material": false,
+      "Gradient_Group_ID": null,
+      "Composition_Info": {
+        "Role": "Target",
+        "Alloy_Name_Raw": "SiCp/Al Composite",
+        "Measured_Composition": {
+          "Composition_Type": "vol%",
+          "Elements_Normalized": {
+            "SiC": 45.0,
+            "Al": 55.0
+          }
+        }
+      },
+      "Process_Info": {
+        "Process_Category": "Laser Assisted Diamond Cutting",
+        "Key_Params": {
+          "Laser_Power_W": 4,
+          "Spindle_Speed_rpm": 600,
+          "Depth_of_Cut_um": 1,
+          "Feed_Speed_um_r": 3,
+          "Cutting_Speed_m_min": 60
+        }
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Surface_Roughness_Sa",
+          "Value_Numeric": null,
+          "Unit": "nm",
+          "Note": "Value not explicitly stated in text, described as worse than No.3."
+        }
+      ]
+    },
+    {
+      "Sample_ID": "SiCpAl-ILADC-Exp8",
+      "Gradient_Material": false,
+      "Gradient_Group_ID": null,
+      "Composition_Info": {
+        "Role": "Target",
+        "Alloy_Name_Raw": "SiCp/Al Composite",
+        "Measured_Composition": {
+          "Composition_Type": "vol%",
+          "Elements_Normalized": {
+            "SiC": 45.0,
+            "Al": 55.0
+          }
+        }
+      },
+      "Process_Info": {
+        "Process_Category": "Laser Assisted Diamond Cutting",
+        "Key_Params": {
+          "Laser_Power_W": 4,
+          "Spindle_Speed_rpm": 600,
+          "Depth_of_Cut_um": 1,
+          "Feed_Speed_um_r": 1,
+          "Cutting_Speed_m_min": 120
+        }
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Surface_Roughness_Sa",
+          "Value_Numeric": null,
+          "Unit": "nm",
+          "Note": "Value not explicitly stated in text, described as worse than No.3."
+        }
+      ]
+    }
+  ]
+}

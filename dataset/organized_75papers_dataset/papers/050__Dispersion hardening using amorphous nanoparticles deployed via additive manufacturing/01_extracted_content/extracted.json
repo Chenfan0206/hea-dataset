@@ -1,0 +1,1083 @@
+{
+  "Paper_Metadata": {
+    "Paper_Title": "Dispersion hardening using amorphous nanoparticles deployed via additive manufacturing",
+    "DOI": "10.1038/s41467-025-58893-1",
+    "SI_Data_Note": "论文多次引用 Supplementary Table 1（LPBF扫描参数）、Supplementary Figs. 1-12、Supplementary Notes 1-5，但 OCR 文本中不包含这些补充数据的详细数值。"
+  },
+  "Paper_Routing": {
+    "base_material": "Metals",
+    "application": "Structural",
+    "research_paradigm": "Hybrid",
+    "Supplements_Loaded": [
+      "directions/base/Metals.txt",
+      "directions/application/Structural.txt",
+      "directions/paradigm/Hybrid.txt"
+    ],
+    "Patch_Tags": [
+      "Additive_Manufacturing",
+      "Nanomaterial"
+    ],
+    "Needs_Mixed_Routing_Check": false,
+    "Mixed_Signals": []
+  },
+  "items": [
+    {
+      "Item_ID": "Cu-12ANP-asbuilt",
+      "Sample_ID": "Cu-12%-ANP",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Additive_Manufacturing",
+        "Nanomaterial"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Cu-12%-ANP exhibits very high yield and tensile strengths of 729 ± 27 and 1036 ± 35 MPa, respectively, along with relatively large uniform and total elongations of 7.2% ± 0.4% and 9.7% ± 0.4%, respectively.",
+        "Porosity-free bulk composite (density: >99.8%)",
+        "equiaxed, with ultrafine grains averaging to 0.39 ± 0.14 μm",
+        "amorphous B₄C nanoparticles (~47 nm in average diameter, up to 12% volume fraction)"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Other",
+          "Material_Name_Raw": "Cu-12%-ANP (copper reinforced with amorphous B₄C nanoparticles, 12 vol.%)",
+          "Nominal_Composition": {
+            "Composition_Type": "vol%",
+            "Composition_Source_Type": "nominal_inferred",
+            "Elements": null,
+            "Note": "Paper reports composition as matrix (high-purity Cu) + reinforcement (B₄C 12 vol.%). Full elemental composition not tabulated."
+          },
+          "Measured_Composition": {
+            "Composition_Type": "at%",
+            "Composition_Source_Type": "measured_inferred",
+            "Elements": {
+              "Nanoparticle_formula_APT": "B₃.₈₉C",
+              "Cu_in_nanoparticle": 8
+            },
+            "Measurement_Method": "APT",
+            "Note": "APT measured nanoparticle composition: B₃.₈₉C with 8 at% Cu incorporated. This is local phase composition of nanoparticles, not bulk composition."
+          },
+          "Note": "Matrix is high-purity copper; reinforcement is B₄C nanoparticles at 12 vol.%. Gas-atomized copper powders (~30-35 μm) mixed with crystalline B₄C microparticles (2-4 μm)."
+        },
+        "Processing": {
+          "Process_Category": "AM_LPBF",
+          "Process_Text": {
+            "original": "Gas-atomized copper powders (average size of ~35 μm) were mixed with crystalline B₄C microparticles (average size of ~4 μm, 12 vol.%). A porosity-free bulk composite (density: >99.8%) was then built using L-PBF. The powder mixing was facilitated by using a high-shear dispersion facility (Nobilta, Hosokawa Micron Ltd., Japan) for 20 min at a rotation speed of 1600 rpm under the protection of argon. Composites were then built using a selective laser melting machine (S210, BLT, China) under high-purity argon to minimize oxidation (oxygen content: <50 ppm). This system was equipped with a single-mode fibre laser (500 W, 1064 nm wavelength) with a spot size of 60 μm. A cooling substrate system was designed in the printing machine to ensure a constant substrate temperature of ~20 °C during L-PBF to ensure a high cooling rate upon sample building, and a continuous scanning strategy involving a 67° rotation before scanning another layer was adopted.",
+            "simplified": "Cu (~35 μm) + B₄C (~4 μm, 12 vol.%) powder mixed at 1600 rpm for 20 min under Ar. L-PBF (BLT S210, 500 W, 1064 nm, 60 μm spot, substrate ~20 °C, 67° layer rotation) under Ar (<50 ppm O₂)."
+          },
+          "Equipment": [
+            {
+              "Instrument_Name": "Powder Mixer",
+              "Manufacturer": "Hosokawa Micron Ltd.",
+              "Model": "Nobilta"
+            },
+            {
+              "Instrument_Name": "L-PBF Machine",
+              "Manufacturer": "BLT",
+              "Model": "S210"
+            },
+            {
+              "Instrument_Name": "SEM",
+              "Manufacturer": "Thermo Fisher",
+              "Model": "Scios",
+              "Note": "equipped with EBSD: Oxford Symmetry S2"
+            },
+            {
+              "Instrument_Name": "HRTEM",
+              "Manufacturer": "Thermo Fisher",
+              "Model": "Spectra 300",
+              "Note": "equipped with HAADF-STEM; equipped with EDS: Bruker SuperX"
+            },
+            {
+              "Instrument_Name": "FIB",
+              "Note": "used for TEM sample preparation via standard lift-out method"
+            },
+            {
+              "Instrument_Name": "APT",
+              "Manufacturer": "CAMECA",
+              "Model": "LEAP 4000X SI"
+            },
+            {
+              "Instrument_Name": "XRD",
+              "Manufacturer": "Rigaku",
+              "Model": "D/Max-2500"
+            },
+            {
+              "Instrument_Name": "NMR Spectrometer",
+              "Manufacturer": "Bruker",
+              "Model": "Avance Neo 600 MHz"
+            },
+            {
+              "Instrument_Name": "Ion Milling System",
+              "Manufacturer": "Fischione",
+              "Model": "Model 1060"
+            },
+            {
+              "Instrument_Name": "Nanomill",
+              "Manufacturer": "Fischione",
+              "Model": "Nanomill 1040"
+            },
+            {
+              "Instrument_Name": "Universal Testing Machine",
+              "Manufacturer": "Instron",
+              "Model": "3344"
+            },
+            {
+              "Instrument_Name": "Extensometer",
+              "Manufacturer": "Instron",
+              "Model": "2630-101"
+            },
+            {
+              "Instrument_Name": "Fatigue Testing Machine",
+              "Manufacturer": "Care",
+              "Model": "M-6000"
+            },
+            {
+              "Instrument_Name": "Synchrotron XRD Beamline",
+              "Manufacturer": "Cornell High Energy Synchrotron Source",
+              "Model": "ID-3A",
+              "Note": "acceleration voltage 52 keV, Dexela flat panel detector"
+            },
+            {
+              "Instrument_Name": "Eddy Current Conductivity Meter",
+              "Note": "used for electrical conductivity measurement at room temperature"
+            },
+            {
+              "Instrument_Name": "Vickers Hardness Tester",
+              "Note": "load 294.2 N for 10 s"
+            }
+          ],
+          "Key_Params": {
+            "Powder_Size_Cu_avg_um": 35,
+            "Powder_Size_Cu_avg_um_Methods": 30,
+            "Reinforcement_Size_B4C_um": "2-4",
+            "Reinforcement_Size_B4C_avg_um": 4,
+            "Powder_Mixing_Time_min": 20,
+            "Powder_Mixing_Rotation_rpm": 1600,
+            "Protective_Atmosphere": "high-purity argon",
+            "Oxygen_Content_ppm": null,
+            "Oxygen_Content_Note": "原文: <50 ppm, 上限值",
+            "Laser_Power_W": 500,
+            "Laser_Wavelength_nm": 1064,
+            "Laser_Spot_Size_um": 60,
+            "Substrate_Temperature_C": 20,
+            "Layer_Rotation_deg": 67
+          },
+          "Original_Values": {
+            "Oxygen_Content": "<50 ppm",
+            "Powder_Size_Cu": "~35 μm (Results) / ~30 μm (Methods)",
+            "Substrate_Temperature": "~20 °C"
+          },
+          "Note": "As-built, no heat treatment applied. Oxygen content <50 ppm — upper bound, not exact. Exact scan speed, hatch spacing, layer thickness not in accessible text (referenced as Supplementary Table 1). Energy density for nanoscale refinement reported as 180.6 J/m³."
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "The as-built bulk composite is porosity-free to near-full density (>99.8%), with densely and uniformly dispersed quasi-amorphous B₄C nanoparticles in an equiaxed ultrafine Cu matrix. Nanoparticles are amorphous as indicated by XRD and NMR, with nanocrystals (~2.9 nm, Cu) inside the amorphous nanoparticles. Copper grains are equiaxed, averaging 0.39 ± 0.14 μm. Grain sizes decrease from 7.17 ± 4.48 μm to 0.39 ± 0.14 μm with increasing particle volume fraction. No obvious texture in as-built samples. APT shows nanoparticle composition B₃.₈₉C with 8 at% Cu, and very limited diffusion of B and C atoms into copper (~5 nm). As-built dislocation density estimated at (2.3 ± 0.3) × 10¹⁴ m⁻² via modified Williamson-Hall method.",
+            "simplified": "Equiaxed ultrafine Cu grains (0.39 ± 0.14 μm) with dense quasi-amorphous B₄C nanoparticles (~47 nm avg, 12 vol.%). Near-full density >99.8%. Nanocrystals (~2.9 nm Cu) inside nanoparticles. No obvious texture. As-built dislocation density ~2.3 × 10¹⁴ m⁻²."
+          },
+          "Main_Phase": "FCC",
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "amorphous B₄C nanoparticles (quasi-amorphous)",
+              "Size_nm": 47,
+              "Size_Type": "diameter",
+              "Volume_Fraction_pct": 12,
+              "Distribution": "dense and uniform intragranular dispersion",
+              "APT_Phase_Composition": {
+                "Formula": "B₃.₈₉C",
+                "Cu_at_pct": 8
+              },
+              "Note": "Quasi-amorphous: contain ~2.9 nm Cu nanocrystals. Formed by in situ nano-fragmentation and melt-quench of crystalline B₄C microparticles."
+            }
+          ],
+          "Grain_Size": {
+            "Grain_Size_avg_um": 0.39,
+            "Grain_Size_Type": "undefined",
+            "Grain_Size_StdDev_um": 0.14,
+            "Grain_Structure": "equiaxed"
+          },
+          "Relative_Density": {
+            "Relative_Density_pct": null,
+            "Note": "原文: >99.8%. 所有 as-built 样品的相对密度均 >99.8%，为不等式上限值。Porosity <0.2%."
+          },
+          "Porosity": {
+            "Porosity_pct": null,
+            "Note": "由 Relative_Density >99.8% 推断 Porosity <0.2%. 原文描述为 porosity-free."
+          },
+          "Texture_or_Orientation": "no obvious texture in as-built samples",
+          "Advanced_Quantitative_Features": {
+            "Nanocrystal_Size_Inside_ANP_avg_nm": 2.9,
+            "B_C_Diffusion_Length_Into_Cu_nm": 5,
+            "As_Built_Dislocation_Density_per_m2": {
+              "Value": "2.3e14",
+              "Value_StdDev": "0.3e14",
+              "Note": "原文: (2.3 ± 0.3) × 10¹⁴ m⁻², estimated via modified Williamson-Hall method"
+            },
+            "Deformed_Dislocation_Density_at_3pct_Strain_per_m2": "1.1e15",
+            "Point_to_Point_Misorientation_Across_Interface_deg": {
+              "Value": null,
+              "Note": "原文: less than 0.5°"
+            },
+            "Max_Temperature_Single_Track_K": 3800,
+            "Thermal_Gradient_K_per_m": "1e8",
+            "Cooling_Rate_K_per_s": "1e8",
+            "Grain_Size_at_4vol_pct_um": 7.17,
+            "Grain_Size_at_4vol_pct_StdDev_um": 4.48,
+            "Nanoparticle_Size_for_Orowan_Calculation_nm": {
+              "Value": 82.6,
+              "Data_Nature": "Computed",
+              "Note": "Particle size used in Orowan strengthening calculation"
+            },
+            "Laser_Absorptivity_Composite_pct": {
+              "Value": null,
+              "Note": "原文: >70% for composite powders (8 and 12 vol.%) at 1064 nm wavelength (Supplementary Fig. 7a)"
+            },
+            "Laser_Absorptivity_Improvement_Factor": {
+              "Value": null,
+              "Note": "原文: nearly fourfold improvement in absorptivity compared to pure copper"
+            },
+            "Grain_Size_at_8vol_pct_um": null,
+            "Grain_Size_Note": "原文仅给出 4 vol.% 时 7.17±4.48 μm 和 12 vol.% 时 0.39±0.14 μm，8 vol.% 的中间值未在正文中给出"
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Yield_Strength",
+            "Value": 729,
+            "Value_StdDev": 27,
+            "Unit": "MPa",
+            "Data_Nature": "Experimental",
+            "Test_Temperature_K": 298.15,
+            "Test_Temperature_Original": "room temperature",
+            "Loading_Mode": "Tension",
+            "Strain_Rate_s1": 0.0005,
+            "Data_Source": "text",
+            "Test_Specimen": {
+              "Specimen_Geometry": "dog-bone",
+              "Gauge_Length_mm": 10,
+              "Width_mm": 2,
+              "Thickness_mm": 0.9,
+              "Note": "原文: final thickness ~0.9 mm, 10-mm gauge length, 2-mm width"
+            },
+            "Original_Values": "729 ± 27 MPa",
+            "Note": "as-built Cu-12%-ANP; at least five tensile tests; tensile direction perpendicular to build direction"
+          },
+          {
+            "Property_Name": "Ultimate_Tensile_Strength",
+            "Value": 1036,
+            "Value_StdDev": 35,
+            "Unit": "MPa",
+            "Data_Nature": "Experimental",
+            "Test_Temperature_K": 298.15,
+            "Test_Temperature_Original": "room temperature",
+            "Loading_Mode": "Tension",
+            "Strain_Rate_s1": 0.0005,
+            "Data_Source": "text",
+            "Test_Specimen": {
+              "Specimen_Geometry": "dog-bone",
+              "Gauge_Length_mm": 10,
+              "Width_mm": 2,
+              "Thickness_mm": 0.9
+            },
+            "Original_Values": "1036 ± 35 MPa",
+            "Note": "as-built Cu-12%-ANP"
+          },
+          {
+            "Property_Name": "Elongation_Uniform",
+            "Value": 7.2,
+            "Value_StdDev": 0.4,
+            "Unit": "%",
+            "Data_Nature": "Experimental",
+            "Test_Temperature_K": 298.15,
+            "Test_Temperature_Original": "room temperature",
+            "Loading_Mode": "Tension",
+            "Strain_Rate_s1": 0.0005,
+            "Data_Source": "text",
+            "Original_Values": "7.2% ± 0.4%",
+            "Note": "as-built Cu-12%-ANP"
+          },
+          {
+            "Property_Name": "Elongation_Total",
+            "Value": 9.7,
+            "Value_StdDev": 0.4,
+            "Unit": "%",
+            "Data_Nature": "Experimental",
+            "Test_Temperature_K": 298.15,
+            "Test_Temperature_Original": "room temperature",
+            "Loading_Mode": "Tension",
+            "Strain_Rate_s1": 0.0005,
+            "Data_Source": "text",
+            "Original_Values": "9.7% ± 0.4%",
+            "Note": "as-built Cu-12%-ANP"
+          },
+          {
+            "Property_Name": "Fatigue_Limit",
+            "Value": null,
+            "Unit": "MPa",
+            "Data_Nature": "Experimental",
+            "Test_Temperature_K": 298.15,
+            "Stress_Ratio_R": 0.1,
+            "Loading_Frequency_Hz": 15,
+            "Cycle_Count": 10000000,
+            "Data_Source": "text",
+            "Loading_Mode": "Tension",
+            "Note": "原文: fatigue strength limit (at >10⁷ cycles) of more than 70% of the tensile strength. Exact fatigue limit not numerically given. >70% × 1036 MPa = >725 MPa."
+          },
+          {
+            "Property_Name": "Strength_Retention_after_Annealing",
+            "Value": 90,
+            "Unit": "%",
+            "Data_Nature": "Experimental",
+            "Test_Temperature_K": 298.15,
+            "Test_Method": "Vickers hardness retention after annealing at various temperatures for 1 h",
+            "Data_Source": "text",
+            "Note": "原文: L-PBF copper nanocomposites retain 90% of the initial strength to temperatures as high as 1173 K (or 0.87Tₘ, where Tₘ is the melting point of copper). Hardness measured at 294.2 N for 10 s."
+          },
+          {
+            "Property_Name": "Electrical_Conductivity",
+            "Value": null,
+            "Unit": "%IACS",
+            "Data_Nature": "Experimental",
+            "Test_Temperature_K": 298.15,
+            "Test_Method": "eddy current conductivity meter",
+            "Data_Source": "text",
+            "Note": "原文提到 high conductivity (Supplementary Fig. 12b) but exact numerical value not in accessible text. Rivals Cu-Ag alloys."
+          },
+          {
+            "Property_Name": "Vickers_Hardness",
+            "Value": null,
+            "Unit": "HV",
+            "Data_Nature": "Experimental",
+            "Hardness_Load_N": 294.2,
+            "Hardness_Dwell_Time_s": 10,
+            "Data_Source": "text",
+            "Note": "Hardness retention data shown in Fig. 3e but exact numerical values not in accessible text. Load 294.2 N for 10 s (from thermal stability measurements section)."
+          }
+        ]
+      },
+      "Experiment_Link": {
+        "Related_Item_IDs": [
+          "Cu-12ANP-asbuilt-MD",
+          "Cu-12ANP-asbuilt-CPFE"
+        ],
+        "Description": "MD and CPFE simulations model the deformation behavior of Cu-ANP nanocomposites",
+        "Validation_Target": "Lattice strain responses from in situ synchrotron XRD used to calibrate CPFE model"
+      }
+    },
+    {
+      "Item_ID": "Cu-8ANP-asbuilt",
+      "Sample_ID": "Cu-8%-ANP",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Additive_Manufacturing",
+        "Nanomaterial"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Cu-8%-ANP nanocomposite",
+        "lattice strain ε_hkd along the loading direction against the applied true stress (σ) for several representative {hkl} reflections of copper in different nanocomposites (hollow symbols, 8 vol.% of nanoparticles)"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Other",
+          "Material_Name_Raw": "Cu-8%-ANP (copper reinforced with amorphous B₄C nanoparticles, 8 vol.%)",
+          "Nominal_Composition": {
+            "Composition_Type": "vol%",
+            "Composition_Source_Type": "nominal_inferred",
+            "Elements": null,
+            "Note": "8 vol.% B₄C nanoparticles in copper matrix"
+          },
+          "Note": "Same preparation route as Cu-12%-ANP."
+        },
+        "Processing": {
+          "Process_Category": "AM_LPBF",
+          "Process_Text": {
+            "original": "Prepared by the same Cu/B₄C powder mixing and L-PBF route as the main Cu-ANP composites, with 8 vol.% B₄C.",
+            "simplified": "Same L-PBF route as Cu-12%-ANP, with 8 vol.% B₄C."
+          },
+          "Note": "As-built, no heat treatment applied. Same equipment as Cu-12%-ANP."
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Cu-8%-ANP nanocomposite used for in situ synchrotron XRD and CPFE analyses. Relative density >99.5%.",
+            "simplified": "Cu matrix with 8 vol.% amorphous B₄C nanoparticles, relative density >99.5%."
+          },
+          "Main_Phase": "FCC",
+          "Relative_Density": {
+            "Relative_Density_pct": null,
+            "Note": "原文: relative density of all our as-built samples is as high as >99.8%; processing window mentioned >99.5% threshold"
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Physical_Activation_Volume",
+            "Value": 20,
+            "Unit": "b³",
+            "Data_Nature": "Experimental",
+            "Test_Method": "multiple stress relaxation tests",
+            "Data_Source": "text",
+            "Note": "原文: ~20 b³ for the representative Cu-8%-ANP nanocomposite. Value is approximate. Four relaxation cycles at 1%, 2%, 3%, 4% engineering strain; holding time 90 s per cycle."
+          }
+        ]
+      },
+      "Experiment_Link": {
+        "Related_Item_IDs": [
+          "Cu-8ANP-synchrotron-XRD",
+          "Cu-8ANP-CPFE"
+        ],
+        "Description": "In situ synchrotron XRD experiments on Cu-8%-ANP used to calibrate CPFE model",
+        "Validation_Target": "Lattice strain responses for {111}, {200}, {220}, {311}, {222} reflections"
+      }
+    },
+    {
+      "Item_ID": "Cu-4ANP-asbuilt",
+      "Sample_ID": "Cu-4%-ANP",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Additive_Manufacturing",
+        "Nanomaterial"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "tensile responses of the as-printed copper reinforced with three volume fractions (12%, 8% and 4%) of the amorphous nanoparticles",
+        "Cu-4%-ANP and Cu-12%-ANP nanocomposites, along with references for the reported state-of-the-art copper materials"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Other",
+          "Material_Name_Raw": "Cu-4%-ANP (copper reinforced with amorphous B₄C nanoparticles, 4 vol.%)",
+          "Nominal_Composition": {
+            "Composition_Type": "vol%",
+            "Composition_Source_Type": "nominal_inferred",
+            "Elements": null,
+            "Note": "4 vol.% B₄C nanoparticles in copper matrix"
+          },
+          "Note": "Same preparation route as Cu-12%-ANP."
+        },
+        "Processing": {
+          "Process_Category": "AM_LPBF",
+          "Process_Text": {
+            "original": "Prepared by the same Cu/B₄C powder mixing and L-PBF route as the main Cu-ANP composites, with 4 vol.% B₄C.",
+            "simplified": "Same L-PBF route as Cu-12%-ANP, with 4 vol.% B₄C."
+          },
+          "Note": "As-built, no heat treatment applied."
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Cu-4%-ANP nanocomposite with grain size ~7.17 ± 4.48 μm (largest grain size among the three compositions). Used for cyclic deformation stability and fatigue testing.",
+            "simplified": "Cu matrix with 4 vol.% amorphous B₄C nanoparticles, grain size ~7.17 μm."
+          },
+          "Main_Phase": "FCC",
+          "Grain_Size": {
+            "Grain_Size_avg_um": 7.17,
+            "Grain_Size_Type": "undefined",
+            "Grain_Size_StdDev_um": 4.48
+          },
+          "Relative_Density": {
+            "Relative_Density_pct": null,
+            "Note": "原文: >99.8% for all as-built samples"
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Fatigue_Limit",
+            "Value": null,
+            "Unit": "MPa",
+            "Data_Nature": "Experimental",
+            "Test_Temperature_K": 298.15,
+            "Stress_Ratio_R": 0.1,
+            "Loading_Frequency_Hz": 15,
+            "Cycle_Count": 10000000,
+            "Data_Source": "text",
+            "Loading_Mode": "Tension",
+            "Note": "原文: fatigue strength limit (at >10⁷ cycles) of more than 70% of the tensile strength. Specific UTS for Cu-4%-ANP not given in text. Fig. 3d shows fatigue data but exact values from figure not accessible."
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "Cu-12CNP-annealed",
+      "Sample_ID": "Cu-12%-CNP",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Additive_Manufacturing",
+        "Nanomaterial"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "we annealed the as-built samples at 1173 K for 6 h, after which the amorphous B₄C became crystallized nanoparticles (CNPs) (referred to as Cu–CNPs)",
+        "Cu-12%–CNP shows a tensile elongation of only ~3%, followed by sudden failure"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Other",
+          "Material_Name_Raw": "Cu-12%-CNP (copper reinforced with crystallized B₄C nanoparticles, 12 vol.%)",
+          "Nominal_Composition": {
+            "Composition_Type": "vol%",
+            "Composition_Source_Type": "nominal_inferred",
+            "Elements": null,
+            "Note": "Same composition as Cu-12%-ANP but B₄C nanoparticles crystallized by annealing"
+          },
+          "Note": "Annealed comparator derived from as-built Cu-12%-ANP."
+        },
+        "Processing": {
+          "Process_Category": "AM_LPBF",
+          "Process_Text": {
+            "original": "As-built Cu-12%-ANP was annealed at 1173 K for 6 h to crystallize the B₄C nanoparticles, conducted in a glove box with oxygen and water contents of less than 0.5 ppm.",
+            "simplified": "L-PBF then annealed at 1173 K for 6 h to crystallize B₄C nanoparticles, in glove box (<0.5 ppm O₂/H₂O)."
+          },
+          "Key_Params": {
+            "Annealing_Temperature_K": 1173,
+            "Annealing_Time_h": 6,
+            "Atmosphere": "glove box (Ar, <0.5 ppm O₂, <0.5 ppm H₂O)"
+          },
+          "Original_Values": {
+            "Annealing_Temperature": "1173 K",
+            "Oxygen_and_Water_Content": "<0.5 ppm"
+          },
+          "Note": "Stage1: L-PBF (same as Cu-12%-ANP). Stage2: Annealing at 1173 K for 6 h for nanoparticle crystallization."
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "After annealing at 1173 K for 6 h, the amorphous B₄C nanoparticles became crystallized nanoparticles. Grain size remained almost unchanged because of strong nanoparticle pinning. Dislocation density higher than in ANP case, possibly attributed to thermal misfit upon cooling after heat treatment.",
+            "simplified": "ANP transformed to CNP after 1173 K/6 h annealing. Grain size nearly unchanged due to particle pinning."
+          },
+          "Main_Phase": "FCC",
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "crystallized B₄C nanoparticles",
+              "Volume_Fraction_pct": 12,
+              "Note": "Formerly amorphous B₄C nanoparticles crystallized by annealing"
+            }
+          ],
+          "Note": "Grain size almost unchanged after annealing (strong pinning by nanoparticles)."
+        },
+        "Properties": [
+          {
+            "Property_Name": "Elongation_Total",
+            "Value": 3,
+            "Unit": "%",
+            "Data_Nature": "Experimental",
+            "Test_Temperature_K": 298.15,
+            "Loading_Mode": "Tension",
+            "Strain_Rate_s1": 0.0005,
+            "Data_Source": "text",
+            "Note": "原文: ~3%. Approximate value. Followed by sudden failure. Cu-12%-CNP fractures before necking occurs."
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "ColdRolled-pure-Cu-reference",
+      "Sample_ID": "Cold-Rolled-Cu-400nm",
+      "Role": "Reference",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "A tensile curve (green) for conventional high-strength cold-rolled pure copper with a similar grain size to that of Cu-12%-ANP (i.e., ~400 nm) is presented for comparison.",
+        "Conventional high-strength copper was produced via cold rolling high-purity copper (70% thickness reduction)"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Other",
+          "Material_Name_Raw": "conventional high-strength pure copper (cold rolled)",
+          "Nominal_Composition": {
+            "Composition_Source_Type": "nominal_inferred",
+            "Note": "High-purity copper. No impurity table given."
+          }
+        },
+        "Processing": {
+          "Process_Category": "Wrought",
+          "Process_Text": {
+            "original": "Conventional high-strength copper was produced via cold rolling high-purity copper (70% thickness reduction), in which samples with grain sizes of ~400 nm were obtained.",
+            "simplified": "High-purity Cu cold rolled with 70% thickness reduction, grain size ~400 nm."
+          },
+          "Key_Params": {
+            "Rolling_Reduction_pct": 70
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Grain size ~400 nm, similar to Cu-12%-ANP.",
+            "simplified": "Fine-grained pure Cu with ~400 nm grain size."
+          },
+          "Main_Phase": "FCC",
+          "Grain_Size": {
+            "Grain_Size_avg_um": 0.4,
+            "Grain_Size_Type": "undefined"
+          }
+        }
+      },
+      "Note": "Reference material for comparison in Fig. 3a. Exact tensile values not given in text (only shown in figure curve)."
+    },
+    {
+      "Item_ID": "Al-B4C-ANP-demo",
+      "Sample_ID": "Al-B4C-ANP",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Additive_Manufacturing",
+        "Nanomaterial"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "we have achieved B₄C amorphous nanoparticles in pure aluminium using the same in situ nano-fragmentation strategy (Fig. 2f)",
+        "EDS mapping indicates that the composition of the nanoparticle is 78.7 ± 3.5 at% of B, 18.8 ± 3.6 at% of C and 2.5 ± 0.7% of Al"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Other",
+          "Material_Name_Raw": "Al-B₄C composite with ANPs",
+          "Measured_Composition": {
+            "Composition_Type": "at%",
+            "Composition_Source_Type": "measured_inferred",
+            "Elements": {
+              "B_at_pct": 78.7,
+              "B_at_pct_StdDev": 3.5,
+              "C_at_pct": 18.8,
+              "C_at_pct_StdDev": 3.6,
+              "Al_at_pct": 2.5,
+              "Al_at_pct_StdDev": 0.7
+            },
+            "Measurement_Method": "EDS",
+            "Note": "Local nanoparticle composition measured by EDS. Little elemental diffusion or reaction at the interface."
+          },
+          "Note": "Demonstration of generality of in situ nanofragmentation strategy in Al matrix."
+        },
+        "Processing": {
+          "Process_Category": "AM_LPBF",
+          "Process_Text": {
+            "original": "The same in situ nano-fragmentation strategy was applied in Al-B₄C, forming ANPs.",
+            "simplified": "Same L-PBF in situ nanofragmentation strategy applied to Al-B₄C."
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "SEM and HAADF-STEM showed B₄C amorphous nanoparticles in pure aluminium with sizes ~200 nm. Beam direction along [100] zone axis of aluminium.",
+            "simplified": "Al matrix with amorphous B₄C ANPs ~200 nm."
+          },
+          "Main_Phase": "FCC",
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "amorphous B₄C nanoparticles",
+              "Size_nm": 200,
+              "Size_Type": "undefined"
+            }
+          ]
+        }
+      },
+      "Note": "Generality demonstration. No mechanical property data reported."
+    },
+    {
+      "Item_ID": "Cu-CrB2-ANP-demo",
+      "Sample_ID": "Cu-CrB₂-ANP",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Additive_Manufacturing",
+        "Nanomaterial"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "CrB₂-copper nanocomposites, Fig. 2g",
+        "Micron-sized CrB₂ with diameters of ~10 μm were used as the starting reinforcing particles, which have been spontaneously turned into amorphous nanoparticles with sizes of ~40 nm"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Other",
+          "Material_Name_Raw": "Cu-CrB₂ composite with ANPs",
+          "Note": "Demonstration of generality in other ceramic-copper system."
+        },
+        "Processing": {
+          "Process_Category": "AM_LPBF",
+          "Process_Text": {
+            "original": "The same in situ nano-fragmentation strategy was applied in Cu-CrB₂, forming amorphous nanoparticles.",
+            "simplified": "Same L-PBF in situ nanofragmentation applied to Cu-CrB₂."
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Micron-sized CrB₂ particles (~10 μm diameter) transformed into amorphous nanoparticles with sizes of ~40 nm. Beam direction along [110] zone axis of copper.",
+            "simplified": "Cu matrix with amorphous CrB₂ nanoparticles ~40 nm (from ~10 μm starting particles)."
+          },
+          "Main_Phase": "FCC",
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "amorphous CrB₂ nanoparticles",
+              "Size_nm": 40,
+              "Size_Type": "undefined",
+              "Note": "Starting reinforcement size ~10 μm. No marked changes in composition after fragmentation."
+            }
+          ]
+        }
+      },
+      "Note": "Generality demonstration. No mechanical property data reported."
+    },
+    {
+      "Item_ID": "Cu-12ANP-asbuilt-MD",
+      "Sample_ID": "Cu-12%-ANP-MD",
+      "Role": "Target",
+      "Data_Nature": "Computed",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Nanomaterial"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Molecular dynamics simulations were performed using LAMMPS software to examine the interactions between dislocations and B₄C nanoparticles during deformation",
+        "The radii of the ANPs and CNPs were set to 3 nm"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Other",
+          "Material_Name_Raw": "MD simulation model: Cu + B₄C nanoparticle (ANP)"
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "MD simulations performed using LAMMPS. Cu-Cu: EAM potential; B-B, C-C, B-C: Stillinger-Weber potential; Cu-B, Cu-C: Lennard-Jones potential. Simulation cell: 38.2 × 22.1 × 25.0 nm, ~1.7 million atoms. Time step: 2 fs. Applied shear strain rate: 10⁷ s⁻¹.",
+            "simplified": "MD simulation with LAMMPS, ~1.7M atoms, shear strain rate 10⁷ s⁻¹."
+          },
+          "Equipment": [
+            {
+              "Instrument_Name": "MD Software",
+              "Manufacturer": "LAMMPS"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "ANP radius 3 nm embedded in Cu matrix with preexisting edge dislocations (b = a₀/2[101̄] on (111) plane). Simulation cell oriented X[101̄], Y[1̄2̄1], Z[111]. ANP generated by packing B₁₁C units and C-B-C chains.",
+            "simplified": "MD model: 3 nm radius ANP in Cu with edge dislocations on (111) plane."
+          },
+          "Main_Phase": "FCC",
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "amorphous B₄C nanoparticle",
+              "Size_nm": 6,
+              "Size_Type": "diameter",
+              "Note": "Radius = 3 nm in simulation"
+            }
+          ],
+          "Advanced_Quantitative_Features": {
+            "Simulation_Cell_Size_X_nm": 38.2,
+            "Simulation_Cell_Size_Y_nm": 22.1,
+            "Simulation_Cell_Size_Z_nm": 25.0,
+            "Atom_Count": 1700000,
+            "Time_Step_fs": 2,
+            "Applied_Shear_Strain_Rate_per_s": "1e7",
+            "ANP_Radius_nm": 3
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Potential_Energy_Change_During_Shearing",
+            "Value": null,
+            "Unit": "eV/atom",
+            "Data_Nature": "Computed",
+            "Data_Source": "image",
+            "Note": "原文: continuous decreases in configurational potential energy with applied strain (Fig. 4g). Exact values not accessible from text."
+          }
+        ],
+        "Simulation_Metadata": {
+          "Simulation_Type": "Molecular Dynamics",
+          "Software": "LAMMPS",
+          "Potentials": [
+            "EAM for Cu-Cu (Mishin et al.)",
+            "Stillinger-Weber for B-B, C-C, B-C",
+            "Lennard-Jones for Cu-B, Cu-C"
+          ],
+          "Cell_Dimensions_nm": "38.2 × 22.1 × 25.0",
+          "Number_of_Atoms": 1700000,
+          "Time_Step_fs": 2,
+          "Applied_Strain_Rate_per_s": "1e7"
+        }
+      },
+      "Experiment_Link": {
+        "Related_Item_IDs": [
+          "Cu-12ANP-asbuilt"
+        ],
+        "Description": "MD simulation models dislocation-ANP interactions observed experimentally",
+        "Validation_Target": "Dislocation absorption and stress delocalization at ANP interfaces"
+      }
+    },
+    {
+      "Item_ID": "Cu-8ANP-CPFE",
+      "Sample_ID": "Cu-8%-ANP-CPFE",
+      "Role": "Target",
+      "Data_Nature": "Computed",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Nanomaterial"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "in situ synchrotron XRD experiments with crystal plasticity finite element (CPFE) modelling",
+        "CPFE simulation results of the macroscopic stress–strain responses with the corresponding stress partitioning in the copper matrix and nanoparticles"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Other",
+          "Material_Name_Raw": "CPFE model: Cu + 12 vol.% B₄C nanoparticles",
+          "Note": "CPFE model for 12 vol.% nanoparticles, calibrated with in situ XRD data from 8 vol.% sample."
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "Dual-phase crystal plasticity model: rate-dependent finite strain crystal plasticity for Cu matrix (12 {111}<110> slip systems), rate-independent J2 plasticity for B₄C nanoparticles. Uniaxial tension simulation at 10⁻⁴ s⁻¹. Solved using VUMAT in Abaqus/Explicit.",
+            "simplified": "CPFE model: crystal plasticity for Cu + J2 plasticity for B₄C, in Abaqus/Explicit."
+          },
+          "Equipment": [
+            {
+              "Instrument_Name": "FEA Software",
+              "Manufacturer": "Dassault Systemes",
+              "Model": "Abaqus/Explicit"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Dual-phase model with Cu matrix and B₄C nanoparticles at 12 vol.%. Crystal plasticity constitutive model for Cu with power law hardening. Isotropic hardening plasticity for B₄C.",
+            "simplified": "CPFE dual-phase model: Cu matrix + 12 vol.% B₄C nanoparticles."
+          },
+          "Main_Phase": "FCC"
+        },
+        "Properties": [
+          {
+            "Property_Name": "ANP_Strain_Hardening_Contribution",
+            "Value": 61,
+            "Unit": "%",
+            "Data_Nature": "Computed",
+            "Data_Source": "text",
+            "Note": "原文: ANPs demonstrate remarkably improved strain hardening, contributing to most (61%) of the strain hardening magnitude of Cu-ANP (true strain range 1% to 7%)."
+          }
+        ],
+        "Simulation_Metadata": {
+          "Simulation_Type": "Crystal Plasticity Finite Element",
+          "Software": "Abaqus/Explicit",
+          "Constitutive_Model_Cu": "Rate-dependent finite strain crystal plasticity",
+          "Constitutive_Model_NP": "Rate-independent finite strain J2 plasticity",
+          "Slip_Systems_FCC": 12,
+          "Strain_Rate_per_s": "1e-4",
+          "Solver": "VUMAT"
+        }
+      },
+      "Experiment_Link": {
+        "Related_Item_IDs": [
+          "Cu-8ANP-asbuilt",
+          "Cu-12ANP-asbuilt"
+        ],
+        "Description": "CPFE model calibrated against in situ synchrotron XRD lattice strain data",
+        "Validation_Target": "Simulated lattice strain responses match experimental data (Supplementary Fig. 10a)"
+      }
+    },
+    {
+      "Item_ID": "Cu-12ANP-strengthening-estimation",
+      "Sample_ID": "Cu-12%-ANP-strength-model",
+      "Role": "Target",
+      "Data_Nature": "Computed",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Additive_Manufacturing",
+        "Nanomaterial"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Estimating the yield strength of the as-built nanocomposites",
+        "the calculated Δσ_Orowan was 318 MPa",
+        "the strengthening contribution from dislocations was 115.8 MPa",
+        "Δσ_HP is then calculated to be 249.2 MPa"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Other",
+          "Material_Name_Raw": "Cu-12%-ANP strengthening model"
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "Analytical estimation of yield strength contributions from Orowan strengthening, dislocation strengthening, and Hall-Petch grain refinement.",
+            "simplified": "Analytical strengthening model for Cu-12%-ANP."
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Model inputs: shear modulus G=47.7 GPa, Burgers vector b=0.256 nm, particle volume fraction f=0.12, particle size d_p=82.6 nm, dislocation density ρ=(2.3±0.3)×10¹⁴ m⁻², grain size D≈390 nm.",
+            "simplified": "Strengthening model using G=47.7 GPa, b=0.256 nm, f=0.12, d_p=82.6 nm, ρ=2.3×10¹⁴ m⁻², D=390 nm."
+          },
+          "Advanced_Quantitative_Features": {
+            "Shear_Modulus_GPa": 47.7,
+            "Burgers_Vector_nm": 0.256,
+            "Particle_Volume_Fraction_for_Orowan": 0.12,
+            "Particle_Size_for_Orowan_nm": 82.6,
+            "Hall_Petch_k_MPa_m0_5": {
+              "Value": 0.14,
+              "Data_Nature": "Literature_Experimental",
+              "Note": "from ref. 55 (Hansen 2004)"
+            },
+            "Lattice_Friction_Stress_MPa": {
+              "Value": 25,
+              "Data_Nature": "Literature_Experimental",
+              "Note": "from ref. 55"
+            },
+            "Taylor_Factor": {
+              "Value": 3.06,
+              "Data_Nature": "Literature_Experimental",
+              "Note": "for FCC metals with weak textures"
+            },
+            "Geometrical_Factor_alpha": 0.2
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Orowan_Strengthening_Contribution",
+            "Value": 318,
+            "Unit": "MPa",
+            "Data_Nature": "Computed",
+            "Data_Source": "text",
+            "Note": "Δσ_Orowan = φGb/d_p × (6f/π)^(1/3), φ=2"
+          },
+          {
+            "Property_Name": "Dislocation_Strengthening_Contribution",
+            "Value": 115.8,
+            "Unit": "MPa",
+            "Data_Nature": "Computed",
+            "Data_Source": "text",
+            "Note": "Δσ_Dis = αMGbρ^0.5"
+          },
+          {
+            "Property_Name": "Hall_Petch_Contribution",
+            "Value": 249.2,
+            "Unit": "MPa",
+            "Data_Nature": "Computed",
+            "Data_Source": "text",
+            "Note": "Δσ_HP = σ₀ + kD^(-1/2), D≈390 nm, k=0.14 MPa·m^0.5, σ₀≈25 MPa"
+          },
+          {
+            "Property_Name": "Estimated_Yield_Strength",
+            "Value": 730,
+            "Unit": "MPa",
+            "Data_Nature": "Computed",
+            "Data_Source": "text",
+            "Note": "原文: ~730 MPa, sum of strengthening contributions. Experimental value: 729 ± 27 MPa."
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "Mesoscale-PBF-simulation",
+      "Sample_ID": "Mesoscale-CFD-DEM",
+      "Role": "Target",
+      "Data_Nature": "Computed",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Additive_Manufacturing"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "An unresolved computational fluid dynamics (CFD) and discrete element method (DEM) coupling model was applied to elucidate the laser powder bed fusion process",
+        "high-fidelity simulations to track the changes in B₄C microparticles"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Other",
+          "Material_Name_Raw": "Mesoscale CFD-DEM simulation of Cu + B₄C L-PBF"
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "Unresolved CFD-DEM coupling model for L-PBF of mixed Cu and B₄C powders. Mesh size 5 μm, domain 2×0.5×0.5 mm³. Thermo-physical properties in Supplementary Tables 2-4.",
+            "simplified": "Mesoscale CFD-DEM simulation of L-PBF process, 5 μm mesh."
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Simulation tracks B₄C microparticle fragmentation. Temperature reaches max 3800 K, melting B₄C. Strong fluid flow (thermal gradient ~10⁸ K/m) tears ceramic droplets into nanoscale. Marangoni convection prevents agglomeration.",
+            "simplified": "Simulation shows B₄C melting at ~3800 K, fragmentation by melt flow into nanoparticles."
+          },
+          "Advanced_Quantitative_Features": {
+            "Mesoscale_Mesh_Size_um": 5,
+            "Domain_Size_mm": "2 × 0.5 × 0.5",
+            "Microscale_Mesh_Size_um": 0.025,
+            "Microscale_Rev_Size_um": "5.0 × 5.0 × 5.0"
+          }
+        },
+        "Simulation_Metadata": {
+          "Simulation_Type": "CFD-DEM Coupling",
+          "Domain_Size_mm": "2 × 0.5 × 0.5",
+          "Mesh_Size_um": 5,
+          "Thermophysical_Properties_Source": "Supplementary Tables 2-4"
+        }
+      }
+    },
+    {
+      "Item_ID": "Microscale-droplet-simulation",
+      "Sample_ID": "Microscale-CFD-droplet",
+      "Role": "Target",
+      "Data_Nature": "Computed",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "Additive_Manufacturing"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "A microscale model was developed to reveal the details of the fragmentation of B₄C from micro-sized to nano-sized droplets in the melt pool",
+        "The mesh size was set to 0.025 μm"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Other",
+          "Material_Name_Raw": "Microscale CFD model for B₄C droplet fragmentation"
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "Two-fluid CFD model with sharp interface identification for B₄C dispersion in Cu melt. REV (5×5×5 μm³) from mesoscale. Mesh size 0.025 μm. Submesh isolated droplets replaced with DEM particles.",
+            "simplified": "Microscale two-fluid CFD model, 0.025 μm mesh, for B₄C fragmentation."
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Tracks B₄C droplet size evolution during fragmentation. Particle size distribution as function of scanning time obtained from simulation.",
+            "simplified": "Simulation tracks B₄C particle size evolution during fragmentation."
+          }
+        },
+        "Simulation_Metadata": {
+          "Simulation_Type": "Two-fluid CFD with VoF",
+          "Rev_Size_um": "5.0 × 5.0 × 5.0",
+          "Mesh_Size_um": 0.025
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,1435 @@
+{
+"Paper_Metadata": {
+"Paper_Title": "High temperature performances of abradable sealing coating for ceramic matrix composites",
+"DOI": "10.1016/j.ceramint.2025.01.026"
+},
+"items": [
+{
+"Sample_ID": "Target-ZC20",
+"Gradient_Material": false,
+"Gradient_Group_ID": null,
+"Composition_Info": {
+"Role": "Target",
+"Alloy_Name_Raw": "ZC20 bi-layer ASC: Si bond layer + YSZ-20 vol% CaF2 top layer",
+"Nominal_Composition": {
+"Composition_Type": null,
+"Elements_Normalized": null
+},
+"Measured_Composition": {
+"Composition_Type": null,
+"Elements_Normalized": null,
+"Measurement_Method": "XRD, SEM-EDS"
+},
+"Note": "Top layer nominal composition is YSZ-20 vol% CaF2. Exact yttria content in YSZ was not reported. Coating system is a bi-layer ASC with Si bond layer on a SiC/CMC-type substrate for oxidation and thermal shock testing; wear tests were performed on graphite-disc-supported coatings."
+},
+"Process_Info": {
+"Process_Category": "Powder mixing, spray drying, pre-sintering, and APS bi-layer coating deposition",
+"Process_Text": {
+"original": "Commercially available YSZ (Oerlikon Metco Surface Technology Co., Ltd., Switzerland) and CaF2 (Shanghai Aladdin Biochemical Technology Co., Ltd., China) were used as plasma spray powders. The YSZ-20 vol% CaF2 powders were mixed in alcohol, spray dried by spray drier (LPG-5, Wuxi Chenying Machinery Technology Co., Ltd, China) and sintered using a furnace (KSL170, Hefei Kejing Material Technology Co., Ltd., China) at 1100 °C for the fabrication of coatings. The Si bonding and top layers were deposited by the APS system (A-2000, Sulzer Metco AG, Switzerland) and the parameters can be found in references [35,36].",
+"simplified": "Commercial YSZ and CaF2 were mixed to 20 vol% CaF2, spray dried, pre-sintered at 1100 °C, and deposited as a Si-bonded bi-layer coating by APS. Detailed APS spraying parameters were not reported in this paper and were referenced to prior work."
+},
+"Equipment": "Spray drier LPG-5 (Wuxi Chenying Machinery Technology Co., Ltd., China); furnace KSL170 (Hefei Kejing Material Technology Co., Ltd., China); APS system A-2000 (Sulzer Metco AG, Switzerland); XRD D8 ADVANCE (Bruker, Germany); SEM Magellan 400 (FEI, USA); Rockwell hardness gauge (SHIMADZU, Japan); tribometer UMT-2 (Bruker, Germany); probe profiler DektakXTL (Bruker, Germany); thermal shock furnace RZR1600 (Shanghai Junke Instrument Technology Co., Ltd., China)",
+"Key_Params": {
+"CaF2_Content_vol_pct": 20.0,
+"Annealing_Temperature_K": 1373.15
+}
+},
+"Microstructure_Info": {
+"Microstructure_Text": {
+"original": "The ZC20 powder was mainly composed of tetragonal ZrO2 and CaF2 phases. The main phases of the ZC20 coating were the same as the powder. The feedstock powders were uniformly distributed in terms of particle size and showed spherical and agglomerated shapes, which is the typical shape of spray-granulating suitable for APS technology. The surface of the coatings was in good molten state, and the molten particles were spread out and overlapped each other on the surface of the substrate, forming completely melted and partially melted regions. From the cross-sectional morphologies of the coatings, few pores and microcracks existed inside the coatings. There were different contrast differences within the coatings. Ca and F elements presented a strip-like aggregation, which was mainly distributed in the deep gray region, indicating that CaF2 was successfully deposited into the coating. More microcracks and micropores existed around it, which might be due to the volatilization of CaF2 during the spraying process. After oxidation at 1100 °C for 100 h, apparent microcracks and a large number of pores were present inside the coating. A TGO layer with a thickness of about 15 μm formed at the Si bond layer, and a new CaSiO3-rich layer appeared between TGO and the coating. After thermal shock, vertical penetrating cracks and interfacial cracks were observed.",
+"simplified": "As-sprayed ZC20 showed a dense APS lamellar coating with fully and partially melted splats, few pores and microcracks, and strip-like CaF2-rich regions. After oxidation, microcracks, pores, a ~15 μm TGO layer, and an interfacial CaSiO3 layer formed. Thermal shock generated penetrating and interfacial cracks."
+},
+"Main_Phase": "Tetragonal ZrO2",
+"Precipitates": [
+{
+"Phase_Type": "CaF2",
+"Volume_Fraction_pct": null
+},
+{
+"Phase_Type": "Ca0.15Zr0.85O1.85",
+"Volume_Fraction_pct": null
+},
+{
+"Phase_Type": "CaSiO3",
+"Volume_Fraction_pct": null
+}
+],
+"Porosity_pct": null,
+"Relative_Density_pct": null,
+"Grain_Size_avg_um": null,
+"Precipitate_Size_avg_nm": null,
+"Advanced_Quantitative_Features": {}
+},
+"Properties_Info": [
+{
+"Property_Name": "Hardness_HR45Y",
+"Test_Condition": "Rockwell hardness test on as-sprayed coating",
+"Value_Numeric": 89.3,
+"Value_Range": null,
+"Value_StdDev": 3.2,
+"Unit": "HR45Y",
+"Test_Temperature_K": 298.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": "45 kg",
+"Hardness_Dwell_Time_s": 10.0,
+"Data_Source": "text",
+"Test_Specimen": "As-sprayed ZC20 coating",
+"Note": null
+},
+{
+"Property_Name": "Porosity",
+"Test_Condition": "Image-analysis characterization of as-sprayed coating",
+"Value_Numeric": null,
+"Value_Range": "<10",
+"Value_StdDev": null,
+"Unit": "%",
+"Test_Temperature_K": 298.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": "As-sprayed ZC20 coating",
+"Note": "All three composite coatings had porosity lower than 10%."
+},
+{
+"Property_Name": "Average friction coefficient",
+"Test_Condition": "Image-analysis characterization of as-sprayed coating",
+"Value_Numeric": null,
+"Value_Range": "~0.67",
+"Value_StdDev": null,
+"Unit": "μ",
+"Test_Temperature_K": 298.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": "As-sprayed ZC20 coating",
+"Note": "Room temperature"
+},
+{
+"Property_Name": "Average friction coefficient",
+"Test_Condition": "Image-analysis characterization of as-sprayed coating",
+"Value_Numeric": null,
+"Value_Range": "~0.49",
+"Value_StdDev": null,
+"Unit": "μ",
+"Test_Temperature_K": 1198.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": "As-sprayed ZC20 coating",
+"Note": "900℃"
+},
+{
+"Property_Name": "Volume wear tate",
+"Test_Condition": "Image-analysis characterization of as-sprayed coating",
+"Value_Numeric": null,
+"Value_Range": "~0.13",
+"Value_StdDev": null,
+"Unit": "×10^-2mm^3/(N×m)",
+"Test_Temperature_K": 298.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": "As-sprayed ZC20 coating",
+"Note": "Room temperature"
+},
+{
+"Property_Name": "Volume wear tate",
+"Test_Condition": "Image-analysis characterization of as-sprayed coating",
+"Value_Numeric": null,
+"Value_Range": "~0.09",
+"Value_StdDev": null,
+"Unit": "×10^-2mm^3/(N×m)",
+"Test_Temperature_K": 1198.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": "As-sprayed ZC20 coating",
+"Note": "900℃"
+},
+{
+"Property_Name": "Elastic_Modulus",
+"Test_Condition": "Calculated composite-coating parameter used in thermal mismatch stress analysis",
+"Value_Numeric": 146.51,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "GPa",
+"Test_Temperature_K": 1373.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": "ZC20 coating in thermal shock analysis",
+"Note": "Composite-coating value derived in the paper."
+},
+{
+"Property_Name": "Coefficient_of_Thermal_Expansion",
+"Test_Condition": "Calculated composite-coating parameter used in thermal mismatch stress analysis",
+"Value_Numeric": 12.33,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "10^-6 K^-1",
+"Test_Temperature_K": 1373.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": "ZC20 coating in thermal shock analysis",
+"Note": "Composite-coating value derived in the paper."
+},
+{
+"Property_Name": "Poisson_Ratio",
+"Test_Condition": "Calculated composite-coating parameter used in thermal mismatch stress analysis",
+"Value_Numeric": 0.25,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "1",
+"Test_Temperature_K": 1373.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": "ZC20 coating in thermal shock analysis",
+"Note": "Composite-coating value derived in the paper."
+},
+{
+"Property_Name": "Thermal_Mismatch_Stress",
+"Test_Condition": "Calculated for coating layer after thermal shock at 1100 °C",
+"Value_Numeric": 1350.0,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "MPa",
+"Test_Temperature_K": 1373.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": "ZC20 coating in Si/SiC coating system",
+"Note": "Tensile thermal mismatch stress."
+},
+{
+"Property_Name": "Abradability",
+"Test_Condition": "Ball-on-disk wear test against Al2O3 ball at room temperature and 900 °C, load 15 N, linear velocity 0.5 m/s, wear time 300 s",
+"Value_Numeric": null,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "qualitative",
+"Test_Temperature_K": null,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": "Coating on graphite disc, Al2O3 counterpart ball, worn-track radius 16 mm",
+"Note": "ZC20 showed the highest average friction coefficients among the three coatings. Friction coefficients and wear rates decreased at 900 °C because of CaF2 lubrication, but its abradability was inferior to YC20."
+},
+{
+"Property_Name": "Long_Term_Oxidation_Resistance",
+"Test_Condition": "Oxidation in air at 1100 °C for 100 h; heating/cooling rate 5 °C/min",
+"Value_Numeric": null,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "qualitative",
+"Test_Temperature_K": 1373.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": "Si-bonded coating on SiC/CMC-type substrate",
+"Note": "Coating remained macroscopically intact after 100 h at 1100 °C, but microcracks and pores were present. Ca0.15Zr0.85O1.85 solid solution formed on the surface and CaSiO3 formed near the interface."
+},
+{
+"Property_Name": "TGO_Thickness",
+"Test_Condition": "After oxidation in air at 1100 °C for 100 h",
+"Value_Numeric": 15.0,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "μm",
+"Test_Temperature_K": 1373.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": "Si bond layer beneath ZC20 coating",
+"Note": "Thermally grown oxide at the Si bond-layer interface."
+},
+{
+"Property_Name": "Long_Term_Oxidation_Resistance",
+"Test_Condition": "Oxidation in air at 1200 °C for 100 h; heating/cooling rate 5 °C/min",
+"Value_Numeric": null,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "qualitative",
+"Test_Temperature_K": 1473.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": "Si-bonded coating on SiC/CMC-type substrate",
+"Note": "Coating cracked and peeled; coating system failed."
+},
+{
+"Property_Name": "Long_Term_Oxidation_Resistance",
+"Test_Condition": "Oxidation in air at 1300 °C for 100 h; heating/cooling rate 5 °C/min",
+"Value_Numeric": null,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "qualitative",
+"Test_Temperature_K": 1573.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": "Si-bonded coating on SiC/CMC-type substrate",
+"Note": "Coating cracked and spalled; macroscopic failure was more severe than at 1200 °C."
+},
+{
+"Property_Name": "Thermal_Shock_Resistance",
+"Test_Condition": "Wind-cooling thermal shock at 1100 °C, 20 cycles, 15 min hold + 15 min air cooling per cycle",
+"Value_Numeric": 20.0,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "cycles",
+"Test_Temperature_K": 1373.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": "Si-bonded coating on SiC/CMC-type substrate",
+"Note": "Surface cracks and edge spalling were observed; cross-sections showed vertical penetrating cracks and interfacial cracks."
+},
+{
+"Property_Name": "Thermal_Shock_Resistance",
+"Test_Condition": "Wind-cooling thermal shock at 1100 °C, 40 cycles, 15 min hold + 15 min air cooling per cycle",
+"Value_Numeric": 40.0,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "cycles",
+"Test_Temperature_K": 1373.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": "Si-bonded coating on SiC/CMC-type substrate",
+"Note": "The whole ZC20 coating peeled off and the coating system failed by 40 cycles."
+}
+]
+},
+{
+"Sample_ID": "Target-MC20",
+"Gradient_Material": false,
+"Gradient_Group_ID": null,
+"Composition_Info": {
+"Role": "Target",
+"Alloy_Name_Raw": "MC20 bi-layer ASC: Si bond layer + Yb2SiO5-20 vol% CaF2 top layer",
+"Nominal_Composition": {
+"Composition_Type": null,
+"Elements_Normalized": null
+},
+"Measured_Composition": {
+"Composition_Type": null,
+"Elements_Normalized": null,
+"Measurement_Method": "XRD, SEM-EDS"
+},
+"Note": "Top layer nominal composition is Yb2SiO5-20 vol% CaF2. The Yb2SiO5 powder was synthesized by solid-state reaction before composite powder preparation."
+},
+"Process_Info": {
+"Process_Category": "Yb2SiO5 powder synthesis, powder mixing, spray drying, pre-sintering, and APS bi-layer coating deposition",
+"Process_Text": {
+"original": "Yb2SiO5 powder was prepared by solid-state reaction, using SiO2 (Slno pharm Chemical Reagent Co., Ltd., China) and Yb2O3 (Shanghai Heli Rare Earth Material Co., Ltd., China) as raw materials. The Yb2SiO5-20 vol% CaF2 powders were mixed in alcohol, spray dried by spray drier (LPG-5, Wuxi Chenying Machinery Technology Co., Ltd, China) and sintered using a furnace (KSL170, Hefei Kejing Material Technology Co., Ltd., China) at 1100 °C for the fabrication of coatings. The Si bonding and top layers were deposited by the APS system (A-2000, Sulzer Metco AG, Switzerland) and the parameters can be found in references [35,36].",
+"simplified": "Yb2SiO5 feedstock was synthesized by solid-state reaction from SiO2 and Yb2O3, then blended with 20 vol% CaF2, spray dried, pre-sintered at 1100 °C, and deposited as a Si-bonded APS bi-layer coating. Detailed APS spraying parameters were not reported in this paper."
+},
+"Equipment": "Spray drier LPG-5 (Wuxi Chenying Machinery Technology Co., Ltd., China); furnace KSL170 (Hefei Kejing Material Technology Co., Ltd., China); APS system A-2000 (Sulzer Metco AG, Switzerland); XRD D8 ADVANCE (Bruker, Germany); SEM Magellan 400 (FEI, USA); Rockwell hardness gauge (SHIMADZU, Japan); tribometer UMT-2 (Bruker, Germany); probe profiler DektakXTL (Bruker, Germany); thermal shock furnace RZR1600 (Shanghai Junke Instrument Technology Co., Ltd., China)",
+"Key_Params": {
+"CaF2_Content_vol_pct": 20.0,
+"Annealing_Temperature_K": 1373.15
+}
+},
+"Microstructure_Info": {
+"Microstructure_Text": {
+"original": "The MC20 powder was mainly composed of Yb2SiO5 and CaF2 phases. In contrast to powders, the MC20 coating also contained the Yb2O3 phase. The feedstock powders were spherical and agglomerated. The surface of the coating was in good molten state and the cross-sectional morphologies showed few pores and microcracks inside the coatings. Different contrast differences could be attributed to different CaF2 content and decomposition of Yb2SiO5. After oxidation at 1100 °C for 100 h, significant regions of intensive porosity were present inside the coating, and different regions had apparent contrast differences. Region 1 was mainly Yb2O3, region 2 was Yb2SiO5, and regions 3 and 4 were CaF2-reacted regions yielding Ca2Yb8(SiO4)6O2. The Si bonding layer reacted to form a TGO layer with a thickness of about 20 μm. After oxidation at 1200 °C and 1300 °C for 100 h, penetrating cracks, horizontal cracks, intensive porosity regions, and finally a porous reaction layer in the upper region were observed. After thermal shock, vertical penetrating cracks and interfacial cracks formed.",
+"simplified": "As-sprayed MC20 was a dense APS lamellar coating based on Yb2SiO5 with CaF2 and a secondary Yb2O3 phase. Oxidation produced Ca2Yb8(SiO4)6O2 and a ~20 μm TGO layer, while higher-temperature oxidation generated penetrating and horizontal cracks and a porous upper reaction layer. Thermal shock caused penetrating and interfacial cracks."
+},
+"Main_Phase": "Yb2SiO5",
+"Precipitates": [
+{
+"Phase_Type": "CaF2",
+"Volume_Fraction_pct": null
+},
+{
+"Phase_Type": "Yb2O3",
+"Volume_Fraction_pct": null
+},
+{
+"Phase_Type": "Ca2Yb8(SiO4)6O2",
+"Volume_Fraction_pct": null
+}
+],
+"Porosity_pct": null,
+"Relative_Density_pct": null,
+"Grain_Size_avg_um": null,
+"Precipitate_Size_avg_nm": null,
+"Advanced_Quantitative_Features": {}
+},
+"Properties_Info": [
+{
+"Property_Name": "Hardness_HR45Y",
+"Test_Condition": "Rockwell hardness test on as-sprayed coating",
+"Value_Numeric": 97.0,
+"Value_Range": null,
+"Value_StdDev": 0.2,
+"Unit": "HR45Y",
+"Test_Temperature_K": 298.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": "45 kg",
+"Hardness_Dwell_Time_s": 10.0,
+"Data_Source": "text",
+"Test_Specimen": "As-sprayed MC20 coating",
+"Note": "The higher hardness was attributed in the paper to the intrinsic hardness of Yb2SiO5 and slightly lower porosity."
+},
+{
+"Property_Name": "Porosity",
+"Test_Condition": "Image-analysis characterization of as-sprayed coating",
+"Value_Numeric": null,
+"Value_Range": "<10",
+"Value_StdDev": null,
+"Unit": "%",
+"Test_Temperature_K": 298.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": "As-sprayed MC20 coating",
+"Note": "All three composite coatings had porosity lower than 10%."
+},
+{
+"Property_Name": "Average friction coefficient",
+"Test_Condition": "Image-analysis characterization of as-sprayed coating",
+"Value_Numeric": null,
+"Value_Range": "~0.54",
+"Value_StdDev": null,
+"Unit": "μ",
+"Test_Temperature_K": 298.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": "As-sprayed MC20 coating",
+"Note": "Room temperature"
+},
+{
+"Property_Name": "Average friction coefficient",
+"Test_Condition": "Image-analysis characterization of as-sprayed coating",
+"Value_Numeric": null,
+"Value_Range": "~0.48",
+"Value_StdDev": null,
+"Unit": "μ",
+"Test_Temperature_K": 1198.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": "As-sprayed MC20 coating",
+"Note": "900℃"
+},
+{
+"Property_Name": "Volume wear tate",
+"Test_Condition": "Image-analysis characterization of as-sprayed coating",
+"Value_Numeric": null,
+"Value_Range": "~0.12",
+"Value_StdDev": null,
+"Unit": "×10^-2mm^3/(N×m)",
+"Test_Temperature_K": 298.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": "As-sprayed MC20 coating",
+"Note": "Room temperature"
+},
+{
+"Property_Name": "Volume wear tate",
+"Test_Condition": "Image-analysis characterization of as-sprayed coating",
+"Value_Numeric": null,
+"Value_Range": "~0.08",
+"Value_StdDev": null,
+"Unit": "×10^-2mm^3/(N×m)",
+"Test_Temperature_K": 1198.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": "As-sprayed MC20 coating",
+"Note": "900℃"
+},
+{
+"Property_Name": "Elastic_Modulus",
+"Test_Condition": "Calculated composite-coating parameter used in thermal mismatch stress analysis",
+"Value_Numeric": 101.15,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "GPa",
+"Test_Temperature_K": 1373.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": "MC20 coating in thermal shock analysis",
+"Note": "Composite-coating value derived in the paper."
+},
+{
+"Property_Name": "Coefficient_of_Thermal_Expansion",
+"Test_Condition": "Calculated composite-coating parameter used in thermal mismatch stress analysis",
+"Value_Numeric": 9.56,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "10^-6 K^-1",
+"Test_Temperature_K": 1373.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": "MC20 coating in thermal shock analysis",
+"Note": "Composite-coating value derived in the paper."
+},
+{
+"Property_Name": "Poisson_Ratio",
+"Test_Condition": "Calculated composite-coating parameter used in thermal mismatch stress analysis",
+"Value_Numeric": 0.24,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "1",
+"Test_Temperature_K": 1373.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": "MC20 coating in thermal shock analysis",
+"Note": "Composite-coating value derived in the paper."
+},
+{
+"Property_Name": "Thermal_Mismatch_Stress",
+"Test_Condition": "Calculated for coating layer after thermal shock at 1100 °C",
+"Value_Numeric": 524.0,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "MPa",
+"Test_Temperature_K": 1373.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": "MC20 coating in Si/SiC coating system",
+"Note": "Tensile thermal mismatch stress."
+},
+{
+"Property_Name": "Abradability",
+"Test_Condition": "Ball-on-disk wear test against Al2O3 ball at room temperature and 900 °C, load 15 N, linear velocity 0.5 m/s, wear time 300 s",
+"Value_Numeric": null,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "qualitative",
+"Test_Temperature_K": null,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": "Coating on graphite disc, Al2O3 counterpart ball, worn-track radius 16 mm",
+"Note": "MC20 showed intermediate abradability between ZC20 and YC20. Friction coefficients and wear rates decreased at 900 °C due to CaF2 lubrication, but YC20 still showed better comprehensive abradability."
+},
+{
+"Property_Name": "Long_Term_Oxidation_Resistance",
+"Test_Condition": "Oxidation in air at 1100 °C for 100 h; heating/cooling rate 5 °C/min",
+"Value_Numeric": null,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "qualitative",
+"Test_Temperature_K": 1373.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": "Si-bonded coating on SiC/CMC-type substrate",
+"Note": "Coating remained macroscopically intact. Oxidation products included Yb2O3, Yb2SiO5, and Ca2Yb8(SiO4)6O2. No CaSiO3 phase was reported at the interface."
+},
+{
+"Property_Name": "TGO_Thickness",
+"Test_Condition": "After oxidation in air at 1100 °C for 100 h",
+"Value_Numeric": 20.0,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "μm",
+"Test_Temperature_K": 1373.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": "Si bond layer beneath MC20 coating",
+"Note": "Thermally grown oxide at the Si bond-layer interface."
+},
+{
+"Property_Name": "Long_Term_Oxidation_Resistance",
+"Test_Condition": "Oxidation in air at 1200 °C for 100 h; heating/cooling rate 5 °C/min",
+"Value_Numeric": null,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "qualitative",
+"Test_Temperature_K": 1473.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": "Si-bonded coating on SiC/CMC-type substrate",
+"Note": "Coating remained structurally intact macroscopically, but significant penetrating cracks, a thicker TGO layer, horizontal cracks, and intensive porosity regions were observed."
+},
+{
+"Property_Name": "Long_Term_Oxidation_Resistance",
+"Test_Condition": "Oxidation in air at 1300 °C for 100 h; heating/cooling rate 5 °C/min",
+"Value_Numeric": null,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "qualitative",
+"Test_Temperature_K": 1573.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": "Si-bonded coating on SiC/CMC-type substrate",
+"Note": "Coating remained structurally intact macroscopically; a porous reaction layer formed in the upper region of the MC20 coating."
+},
+{
+"Property_Name": "Thermal_Shock_Resistance",
+"Test_Condition": "Wind-cooling thermal shock at 1100 °C, 20 cycles, 15 min hold + 15 min air cooling per cycle",
+"Value_Numeric": 20.0,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "cycles",
+"Test_Temperature_K": 1373.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": "Si-bonded coating on SiC/CMC-type substrate",
+"Note": "Macroscopic morphology remained good, but cross-sections showed vertical penetrating cracks and interfacial cracks."
+},
+{
+"Property_Name": "Thermal_Shock_Resistance",
+"Test_Condition": "Wind-cooling thermal shock at 1100 °C, 40 cycles, 15 min hold + 15 min air cooling per cycle",
+"Value_Numeric": 40.0,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "cycles",
+"Test_Temperature_K": 1373.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": "Si-bonded coating on SiC/CMC-type substrate",
+"Note": "The MC20 coating was cracked and slightly peeled off at the edge position after 40 cycles."
+}
+]
+},
+{
+"Sample_ID": "Target-YC20",
+"Gradient_Material": false,
+"Gradient_Group_ID": null,
+"Composition_Info": {
+"Role": "Target",
+"Alloy_Name_Raw": "YC20 bi-layer ASC: Si bond layer + Yb2Si2O7-20 vol% CaF2 top layer",
+"Nominal_Composition": {
+"Composition_Type": null,
+"Elements_Normalized": null
+},
+"Measured_Composition": {
+"Composition_Type": null,
+"Elements_Normalized": null,
+"Measurement_Method": "XRD, SEM-EDS"
+},
+"Note": "Top layer nominal composition is Yb2Si2O7-20 vol% CaF2. The Yb2Si2O7 powder was synthesized by solid-state reaction before composite powder preparation."
+},
+"Process_Info": {
+"Process_Category": "Yb2Si2O7 powder synthesis, powder mixing, spray drying, pre-sintering, and APS bi-layer coating deposition",
+"Process_Text": {
+"original": "Yb2Si2O7 powder was prepared by solid-state reaction, using SiO2 (Slno pharm Chemical Reagent Co., Ltd., China) and Yb2O3 (Shanghai Heli Rare Earth Material Co., Ltd., China) as raw materials. The Yb2Si2O7-20 vol% CaF2 powders were mixed in alcohol, spray dried by spray drier (LPG-5, Wuxi Chenying Machinery Technology Co., Ltd, China) and sintered using a furnace (KSL170, Hefei Kejing Material Technology Co., Ltd., China) at 1100 °C for the fabrication of coatings. The Si bonding and top layers were deposited by the APS system (A-2000, Sulzer Metco AG, Switzerland) and the parameters can be found in references [35,36].",
+"simplified": "Yb2Si2O7 feedstock was synthesized by solid-state reaction from SiO2 and Yb2O3, then blended with 20 vol% CaF2, spray dried, pre-sintered at 1100 °C, and deposited as a Si-bonded APS bi-layer coating. Detailed APS spraying parameters were not reported in this paper."
+},
+"Equipment": "Spray drier LPG-5 (Wuxi Chenying Machinery Technology Co., Ltd., China); furnace KSL170 (Hefei Kejing Material Technology Co., Ltd., China); APS system A-2000 (Sulzer Metco AG, Switzerland); XRD D8 ADVANCE (Bruker, Germany); SEM Magellan 400 (FEI, USA); Rockwell hardness gauge (SHIMADZU, Japan); tribometer UMT-2 (Bruker, Germany); probe profiler DektakXTL (Bruker, Germany); thermal shock furnace RZR1600 (Shanghai Junke Instrument Technology Co., Ltd., China)",
+"Key_Params": {
+"CaF2_Content_vol_pct": 20.0,
+"Annealing_Temperature_K": 1373.15
+}
+},
+"Microstructure_Info": {
+"Microstructure_Text": {
+"original": "The YC20 powder was mainly composed of Yb2Si2O7 and CaF2 phases. In contrast to powders, the YC20 coating additionally possessed the Yb2SiO5 phase. The feedstock powders were spherical and agglomerated. The surface of the coating was in good molten state and the cross-sectional morphologies showed few pores and microcracks inside the coatings. Different contrast differences could be attributed to the different CaF2 content and the decomposition of Yb2Si2O7. After oxidation at 1100 °C for 100 h, more pores were observed inside the coating. Regions 5 and 6 mainly consisted of Ca2Yb8(SiO4)6O2 generated by reaction of CaF2 with Yb2Si2O7, and the coating/bond layer bonding was excellent. The Si bonding layer was oxidized to form a TGO layer with a thickness of about 20 μm, and significant microcracks existed inside the TGO. After oxidation at 1200 °C and 1300 °C for 100 h, the coating remained structurally intact macroscopically; penetrating cracks were seen at 1200 °C, and at 1300 °C a significant number of pores formed by the reaction were uniformly distributed throughout the coating, with horizontal cracks at the interface between the bonding layer and the substrate. After thermal shock, many microcracks and interfacial cracks were present but no large-area spalling occurred.",
+"simplified": "As-sprayed YC20 was a dense APS lamellar coating based on Yb2Si2O7 with CaF2 and some Yb2SiO5 secondary phase. Oxidation produced Ca2Yb8(SiO4)6O2 and a ~20 μm TGO layer, while higher-temperature oxidation created distributed pores and some cracking but preserved overall integrity. Thermal shock generated microcracks and interfacial cracks without large-area spalling."
+},
+"Main_Phase": "Yb2Si2O7",
+"Precipitates": [
+{
+"Phase_Type": "CaF2",
+"Volume_Fraction_pct": null
+},
+{
+"Phase_Type": "Yb2SiO5",
+"Volume_Fraction_pct": null
+},
+{
+"Phase_Type": "Ca2Yb8(SiO4)6O2",
+"Volume_Fraction_pct": null
+}
+],
+"Porosity_pct": null,
+"Relative_Density_pct": null,
+"Grain_Size_avg_um": null,
+"Precipitate_Size_avg_nm": null,
+"Advanced_Quantitative_Features": {}
+},
+"Properties_Info": [
+{
+"Property_Name": "Hardness_HR45Y",
+"Test_Condition": "Rockwell hardness test on as-sprayed coating",
+"Value_Numeric": 88.5,
+"Value_Range": null,
+"Value_StdDev": 0.9,
+"Unit": "HR45Y",
+"Test_Temperature_K": 298.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": "45 kg",
+"Hardness_Dwell_Time_s": 10.0,
+"Data_Source": "text",
+"Test_Specimen": "As-sprayed YC20 coating",
+"Note": "The paper states that YC20 and ZC20 had very similar Rockwell hardness, both lower than MC20."
+},
+{
+"Property_Name": "Porosity",
+"Test_Condition": "Image-analysis characterization of as-sprayed coating",
+"Value_Numeric": null,
+"Value_Range": "<10",
+"Value_StdDev": null,
+"Unit": "%",
+"Test_Temperature_K": 298.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": "As-sprayed YC20 coating",
+"Note": "All three composite coatings had porosity lower than 10%."
+},
+{
+"Property_Name": "Average friction coefficient",
+"Test_Condition": "Image-analysis characterization of as-sprayed coating",
+"Value_Numeric": null,
+"Value_Range": "~0.5",
+"Value_StdDev": null,
+"Unit": "μ",
+"Test_Temperature_K": 298.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": "As-sprayed YC20 coating",
+"Note": "Room temperature"
+},
+{
+"Property_Name": "Average friction coefficient",
+"Test_Condition": "Image-analysis characterization of as-sprayed coating",
+"Value_Numeric": null,
+"Value_Range": "~0.47",
+"Value_StdDev": null,
+"Unit": "μ",
+"Test_Temperature_K": 1198.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": "As-sprayed YC20 coating",
+"Note": "900℃"
+},
+{
+"Property_Name": "Volume wear tate",
+"Test_Condition": "Image-analysis characterization of as-sprayed coating",
+"Value_Numeric": null,
+"Value_Range": "~0.22",
+"Value_StdDev": null,
+"Unit": "×10^-2mm^3/(N×m)",
+"Test_Temperature_K": 298.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": "As-sprayed YC20 coating",
+"Note": "Room temperature"
+},
+{
+"Property_Name": "Volume wear tate",
+"Test_Condition": "Image-analysis characterization of as-sprayed coating",
+"Value_Numeric": null,
+"Value_Range": "~0.16",
+"Value_StdDev": null,
+"Unit": "×10^-2mm^3/(N×m)",
+"Test_Temperature_K": 1198.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": "As-sprayed YC20 coating",
+"Note": "900℃"
+},
+{
+"Property_Name": "Elastic_Modulus",
+"Test_Condition": "Calculated composite-coating parameter used in thermal mismatch stress analysis",
+"Value_Numeric": 77.3,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "GPa",
+"Test_Temperature_K": 1373.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": "YC20 coating in thermal shock analysis",
+"Note": "Composite-coating value derived in the paper."
+},
+{
+"Property_Name": "Coefficient_of_Thermal_Expansion",
+"Test_Condition": "Calculated composite-coating parameter used in thermal mismatch stress analysis",
+"Value_Numeric": 7.17,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "10^-6 K^-1",
+"Test_Temperature_K": 1373.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": "YC20 coating in thermal shock analysis",
+"Note": "Composite-coating value derived in the paper."
+},
+{
+"Property_Name": "Poisson_Ratio",
+"Test_Condition": "Calculated composite-coating parameter used in thermal mismatch stress analysis",
+"Value_Numeric": 0.29,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "1",
+"Test_Temperature_K": 1373.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": "YC20 coating in thermal shock analysis",
+"Note": "Composite-coating value derived in the paper."
+},
+{
+"Property_Name": "Thermal_Mismatch_Stress",
+"Test_Condition": "Calculated for coating layer after thermal shock at 1100 °C",
+"Value_Numeric": 149.0,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "MPa",
+"Test_Temperature_K": 1373.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": "YC20 coating in Si/SiC coating system",
+"Note": "Tensile thermal mismatch stress; lowest among the three composite coatings."
+},
+{
+"Property_Name": "Abradability",
+"Test_Condition": "Ball-on-disk wear test against Al2O3 ball at room temperature and 900 °C, load 15 N, linear velocity 0.5 m/s, wear time 300 s",
+"Value_Numeric": null,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "qualitative",
+"Test_Temperature_K": null,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": "Coating on graphite disc, Al2O3 counterpart ball, worn-track radius 16 mm",
+"Note": "YC20 showed the minimum Rockwell hardness, the lowest average friction coefficients, and the largest volume wear rates at room temperature and 900 °C, indicating the best abradability among the three coatings."
+},
+{
+"Property_Name": "Long_Term_Oxidation_Resistance",
+"Test_Condition": "Oxidation in air at 1100 °C for 100 h; heating/cooling rate 5 °C/min",
+"Value_Numeric": null,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "qualitative",
+"Test_Temperature_K": 1373.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": "Si-bonded coating on SiC/CMC-type substrate",
+"Note": "Coating remained macroscopically intact. Oxidation products included Yb2Si2O7 and Ca2Yb8(SiO4)6O2; no CaSiO3 phase was reported at the interface."
+},
+{
+"Property_Name": "TGO_Thickness",
+"Test_Condition": "After oxidation in air at 1100 °C for 100 h",
+"Value_Numeric": 20.0,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "μm",
+"Test_Temperature_K": 1373.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": "Si bond layer beneath YC20 coating",
+"Note": "Thermally grown oxide at the Si bond-layer interface."
+},
+{
+"Property_Name": "Long_Term_Oxidation_Resistance",
+"Test_Condition": "Oxidation in air at 1200 °C for 100 h; heating/cooling rate 5 °C/min",
+"Value_Numeric": null,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "qualitative",
+"Test_Temperature_K": 1473.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": "Si-bonded coating on SiC/CMC-type substrate",
+"Note": "Coating remained structurally intact macroscopically, though penetrating cracks and a thicker TGO layer were observed in cross-section."
+},
+{
+"Property_Name": "Long_Term_Oxidation_Resistance",
+"Test_Condition": "Oxidation in air at 1300 °C for 100 h; heating/cooling rate 5 °C/min",
+"Value_Numeric": null,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "qualitative",
+"Test_Temperature_K": 1573.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": "Si-bonded coating on SiC/CMC-type substrate",
+"Note": "Coating remained structurally intact macroscopically; pores formed by reaction were uniformly distributed through the coating and horizontal cracks appeared near the interface."
+},
+{
+"Property_Name": "Thermal_Shock_Resistance",
+"Test_Condition": "Wind-cooling thermal shock at 1100 °C, 20 cycles, 15 min hold + 15 min air cooling per cycle",
+"Value_Numeric": 20.0,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "cycles",
+"Test_Temperature_K": 1373.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": "Si-bonded coating on SiC/CMC-type substrate",
+"Note": "Macroscopic morphology remained good and structurally intact; cross-sections showed many microcracks and interfacial cracks but not the severe penetrating-crack pattern of ZC20."
+},
+{
+"Property_Name": "Thermal_Shock_Resistance",
+"Test_Condition": "Wind-cooling thermal shock at 1100 °C, 40 cycles, 15 min hold + 15 min air cooling per cycle",
+"Value_Numeric": 40.0,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "cycles",
+"Test_Temperature_K": 1373.15,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": "Si-bonded coating on SiC/CMC-type substrate",
+"Note": "The YC20 coating was cracked on the surface after 40 cycles but remained intact without large-area spalling, showing the best thermal shock resistance among the three coatings."
+}
+]
+},
+{
+"Sample_ID": "Reference-YSZ",
+"Gradient_Material": false,
+"Gradient_Group_ID": null,
+"Composition_Info": {
+"Role": "Reference",
+"Alloy_Name_Raw": "YSZ base material cited for thermal expansion comparison",
+"Nominal_Composition": {
+"Composition_Type": null,
+"Elements_Normalized": null
+},
+"Measured_Composition": {
+"Composition_Type": null,
+"Elements_Normalized": null,
+"Measurement_Method": null
+},
+"Note": "The exact yttria content was not specified in the current paper. The cited literature value was used to compare thermal-expansion mismatch with SiC substrate."
+},
+"Process_Info": {
+"Process_Category": "Reported in literature",
+"Process_Text": {
+"original": "The paper cites the thermal expansion coefficient range of YSZ as 10-11.8 × 10^-6 K^-1 when discussing the large thermal expansion mismatch between YSZ and the SiC substrate.",
+"simplified": "Reference YSZ thermal-expansion range cited for comparison in the current paper."
+},
+"Equipment": null,
+"Key_Params": {}
+},
+"Microstructure_Info": {
+"Microstructure_Text": {
+"original": "YSZ was discussed as the traditional ASC material with a large thermal expansion coefficient mismatch relative to CMCs and SiC substrates.",
+"simplified": "Reference traditional ASC ceramic used for thermal-expansion comparison."
+},
+"Main_Phase": "Tetragonal ZrO2",
+"Precipitates": [],
+"Porosity_pct": null,
+"Relative_Density_pct": null,
+"Grain_Size_avg_um": null,
+"Precipitate_Size_avg_nm": null,
+"Advanced_Quantitative_Features": {}
+},
+"Properties_Info": [
+{
+"Property_Name": "Coefficient_of_Thermal_Expansion",
+"Test_Condition": "Literature value cited in the current paper",
+"Value_Numeric": 10.9,
+"Value_Range": "10-11.8",
+"Value_StdDev": null,
+"Unit": "10^-6 K^-1",
+"Test_Temperature_K": null,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": null,
+"Note": "Value_Numeric is the midpoint of the cited range."
+}
+]
+},
+{
+"Sample_ID": "Reference-Yb2SiO5",
+"Gradient_Material": false,
+"Gradient_Group_ID": null,
+"Composition_Info": {
+"Role": "Reference",
+"Alloy_Name_Raw": "Yb2SiO5 base material cited for thermal expansion comparison",
+"Nominal_Composition": {
+"Composition_Type": "at%",
+"Elements_Normalized": {
+"Yb": 25.0,
+"Si": 12.5,
+"O": 62.5
+}
+},
+"Measured_Composition": {
+"Composition_Type": null,
+"Elements_Normalized": null,
+"Measurement_Method": null
+},
+"Note": "Reference value cited in the current paper for comparison with the composite coating and substrate."
+},
+"Process_Info": {
+"Process_Category": "Reported in literature",
+"Process_Text": {
+"original": "The paper cites the thermal expansion coefficient range of Yb2SiO5 as 6.9-7.6 × 10^-6 K^-1 when discussing thermal mismatch behavior.",
+"simplified": "Reference Yb2SiO5 thermal-expansion range cited for comparison in the current paper."
+},
+"Equipment": null,
+"Key_Params": {}
+},
+"Microstructure_Info": {
+"Microstructure_Text": {
+"original": "Yb2SiO5 was discussed as a rare-earth silicate with low thermal expansion coefficient, high melting point, and good compatibility with CMC systems.",
+"simplified": "Reference rare-earth silicate used for thermal-expansion comparison."
+},
+"Main_Phase": "Yb2SiO5",
+"Precipitates": [],
+"Porosity_pct": null,
+"Relative_Density_pct": null,
+"Grain_Size_avg_um": null,
+"Precipitate_Size_avg_nm": null,
+"Advanced_Quantitative_Features": {}
+},
+"Properties_Info": [
+{
+"Property_Name": "Coefficient_of_Thermal_Expansion",
+"Test_Condition": "Literature value cited in the current paper",
+"Value_Numeric": 7.25,
+"Value_Range": "6.9-7.6",
+"Value_StdDev": null,
+"Unit": "10^-6 K^-1",
+"Test_Temperature_K": null,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": null,
+"Note": "Value_Numeric is the midpoint of the cited range."
+}
+]
+},
+{
+"Sample_ID": "Reference-Yb2Si2O7",
+"Gradient_Material": false,
+"Gradient_Group_ID": null,
+"Composition_Info": {
+"Role": "Reference",
+"Alloy_Name_Raw": "Yb2Si2O7 base material cited for thermal expansion comparison",
+"Nominal_Composition": {
+"Composition_Type": "at%",
+"Elements_Normalized": {
+"Yb": 18.1818,
+"Si": 18.1818,
+"O": 63.6364
+}
+},
+"Measured_Composition": {
+"Composition_Type": null,
+"Elements_Normalized": null,
+"Measurement_Method": null
+},
+"Note": "Reference value cited in the current paper for comparison with the composite coating and substrate."
+},
+"Process_Info": {
+"Process_Category": "Reported in literature",
+"Process_Text": {
+"original": "The paper cites the thermal expansion coefficient range of Yb2Si2O7 as 3.3-5.2 × 10^-6 K^-1 when discussing thermal mismatch behavior.",
+"simplified": "Reference Yb2Si2O7 thermal-expansion range cited for comparison in the current paper."
+},
+"Equipment": null,
+"Key_Params": {}
+},
+"Microstructure_Info": {
+"Microstructure_Text": {
+"original": "Yb2Si2O7 was discussed as a rare-earth silicate with low thermal expansion coefficient and good compatibility with CMC systems.",
+"simplified": "Reference rare-earth silicate used for thermal-expansion comparison."
+},
+"Main_Phase": "Yb2Si2O7",
+"Precipitates": [],
+"Porosity_pct": null,
+"Relative_Density_pct": null,
+"Grain_Size_avg_um": null,
+"Precipitate_Size_avg_nm": null,
+"Advanced_Quantitative_Features": {}
+},
+"Properties_Info": [
+{
+"Property_Name": "Coefficient_of_Thermal_Expansion",
+"Test_Condition": "Literature value cited in the current paper",
+"Value_Numeric": 4.25,
+"Value_Range": "3.3-5.2",
+"Value_StdDev": null,
+"Unit": "10^-6 K^-1",
+"Test_Temperature_K": null,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": null,
+"Note": "Value_Numeric is the midpoint of the cited range."
+}
+]
+},
+{
+"Sample_ID": "Reference-SiC",
+"Gradient_Material": false,
+"Gradient_Group_ID": null,
+"Composition_Info": {
+"Role": "Reference",
+"Alloy_Name_Raw": "SiC substrate cited for thermal mismatch analysis",
+"Nominal_Composition": {
+"Composition_Type": "at%",
+"Elements_Normalized": {
+"Si": 50.0,
+"C": 50.0
+}
+},
+"Measured_Composition": {
+"Composition_Type": null,
+"Elements_Normalized": null,
+"Measurement_Method": null
+},
+"Note": "Reference substrate value cited in the current paper for thermal mismatch analysis."
+},
+"Process_Info": {
+"Process_Category": "Reported in literature",
+"Process_Text": {
+"original": "The current paper cites the thermal expansion coefficient of the SiC substrate as 5.9 × 10^-6 K^-1 for thermal mismatch stress calculations.",
+"simplified": "Reference SiC thermal-expansion value cited for stress calculations."
+},
+"Equipment": null,
+"Key_Params": {}
+},
+"Microstructure_Info": {
+"Microstructure_Text": {
+"original": "SiC was used as the substrate reference in the thermal mismatch analysis for coating thermal shock behavior.",
+"simplified": "Reference substrate material for thermal-expansion comparison."
+},
+"Main_Phase": "SiC",
+"Precipitates": [],
+"Porosity_pct": null,
+"Relative_Density_pct": null,
+"Grain_Size_avg_um": null,
+"Precipitate_Size_avg_nm": null,
+"Advanced_Quantitative_Features": {}
+},
+"Properties_Info": [
+{
+"Property_Name": "Coefficient_of_Thermal_Expansion",
+"Test_Condition": "Literature value cited in the current paper",
+"Value_Numeric": 5.9,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "10^-6 K^-1",
+"Test_Temperature_K": null,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": null,
+"Note": null
+}
+]
+},
+{
+"Sample_ID": "Reference-CaF2",
+"Gradient_Material": false,
+"Gradient_Group_ID": null,
+"Composition_Info": {
+"Role": "Reference",
+"Alloy_Name_Raw": "CaF2 lubricant phase cited for thermal mismatch analysis",
+"Nominal_Composition": {
+"Composition_Type": "at%",
+"Elements_Normalized": {
+"Ca": 33.3333,
+"F": 66.6667
+}
+},
+"Measured_Composition": {
+"Composition_Type": null,
+"Elements_Normalized": null,
+"Measurement_Method": null
+},
+"Note": "Reference material constants cited in the current paper."
+},
+"Process_Info": {
+"Process_Category": "Reported in literature",
+"Process_Text": {
+"original": "The paper cites the thermal expansion coefficient, elastic modulus, and Poisson ratio of CaF2 for composite property calculation and thermal mismatch analysis.",
+"simplified": "Reference CaF2 material constants cited for composite-property calculations."
+},
+"Equipment": null,
+"Key_Params": {}
+},
+"Microstructure_Info": {
+"Microstructure_Text": {
+"original": "CaF2 was used as the high-temperature solid lubricant phase in the composite coatings and its material constants were cited for calculations.",
+"simplified": "Reference lubricant phase for composite-property calculations."
+},
+"Main_Phase": "CaF2",
+"Precipitates": [],
+"Porosity_pct": null,
+"Relative_Density_pct": null,
+"Grain_Size_avg_um": null,
+"Precipitate_Size_avg_nm": null,
+"Advanced_Quantitative_Features": {}
+},
+"Properties_Info": [
+{
+"Property_Name": "Elastic_Modulus",
+"Test_Condition": "Literature value cited in the current paper",
+"Value_Numeric": 116.55,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "GPa",
+"Test_Temperature_K": null,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": null,
+"Note": null
+},
+{
+"Property_Name": "Coefficient_of_Thermal_Expansion",
+"Test_Condition": "Literature value cited in the current paper",
+"Value_Numeric": 18.85,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "10^-6 K^-1",
+"Test_Temperature_K": null,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": null,
+"Note": null
+},
+{
+"Property_Name": "Poisson_Ratio",
+"Test_Condition": "Literature value cited in the current paper",
+"Value_Numeric": 0.26,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "1",
+"Test_Temperature_K": null,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": null,
+"Note": null
+}
+]
+},
+{
+"Sample_ID": "Reference-Si",
+"Gradient_Material": false,
+"Gradient_Group_ID": null,
+"Composition_Info": {
+"Role": "Reference",
+"Alloy_Name_Raw": "Si bond-layer material cited for thermal mismatch analysis",
+"Nominal_Composition": {
+"Composition_Type": "at%",
+"Elements_Normalized": {
+"Si": 100.0
+}
+},
+"Measured_Composition": {
+"Composition_Type": null,
+"Elements_Normalized": null,
+"Measurement_Method": null
+},
+"Note": "Reference material constants cited in the current paper for Si bond-layer analysis."
+},
+"Process_Info": {
+"Process_Category": "Reported in literature",
+"Process_Text": {
+"original": "The paper cites the thermal expansion coefficient, elastic modulus, and Poisson ratio of Si in the thermal mismatch stress calculation for the Si bond layer.",
+"simplified": "Reference Si material constants cited for bond-layer thermal-stress calculation."
+},
+"Equipment": null,
+"Key_Params": {}
+},
+"Microstructure_Info": {
+"Microstructure_Text": {
+"original": "Si was used as the bond-layer material in the coating system and its material constants were cited for stress calculations.",
+"simplified": "Reference bond-layer material for thermal-stress calculation."
+},
+"Main_Phase": "Si",
+"Precipitates": [],
+"Porosity_pct": null,
+"Relative_Density_pct": null,
+"Grain_Size_avg_um": null,
+"Precipitate_Size_avg_nm": null,
+"Advanced_Quantitative_Features": {}
+},
+"Properties_Info": [
+{
+"Property_Name": "Elastic_Modulus",
+"Test_Condition": "Literature value cited in the current paper",
+"Value_Numeric": 82.0,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "GPa",
+"Test_Temperature_K": null,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": null,
+"Note": null
+},
+{
+"Property_Name": "Coefficient_of_Thermal_Expansion",
+"Test_Condition": "Literature value cited in the current paper",
+"Value_Numeric": 4.1,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "10^-6 K^-1",
+"Test_Temperature_K": null,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": null,
+"Note": null
+},
+{
+"Property_Name": "Poisson_Ratio",
+"Test_Condition": "Literature value cited in the current paper",
+"Value_Numeric": 0.22,
+"Value_Range": null,
+"Value_StdDev": null,
+"Unit": "1",
+"Test_Temperature_K": null,
+"Strain_Rate_s1": null,
+"Tensile_Speed_mm_min": null,
+"Hardness_Load": null,
+"Hardness_Dwell_Time_s": null,
+"Data_Source": "text",
+"Test_Specimen": null,
+"Note": null
+}
+]
+}
+]
+}

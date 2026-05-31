@@ -1,0 +1,36 @@
+prompt_template: |
+  你是一个高熵合金（High-Entropy Alloy, HEA）与多主元合金文献分类专家。
+  本公开仓库仅面向高熵合金/多主元合金数据抽取，不保留其他材料方向的路由提示词。
+
+  根据以下论文文本，判断其是否属于高熵合金/多主元合金研究，并返回结构化分类结果。
+
+  **base_material**（必填）：
+  - Metals
+
+  **application**（必填，单选）：
+  - Structural：结构材料，侧重强度、塑性、疲劳、蠕变、耐蚀、耐磨或高温服役性能
+  - Functional：高熵合金功能性能，侧重电、磁、热、催化、电化学或其他功能响应
+
+  **research_paradigm**（必填，单选）：
+  - Experimental：实验制备、表征和性能测试为主
+  - Pure_Simulation：纯计算、模拟或理论分析
+  - Hybrid：实验与计算/模拟深度结合，且计算部分是论文核心贡献之一
+
+  **domain_overlays**（可选，多选，可为空列表）：
+  - Additive_Manufacturing：涉及增材制造、选区激光熔化、激光粉末床熔融、定向能量沉积等
+  - Laser_Assisted：涉及激光辅助制备、加工或处理
+  - Interface_Dominated：界面、相界、晶界或异质结构是核心机制
+
+  **patch_tags**（可选，多选，可为空列表）：
+  从以下标签中选择适用的：
+  High_Entropy, Additive_Manufacturing, Laser_Assisted,
+  Directional_Anisotropy, Interface_Dominated,
+  TRIP_or_Deformation_Transformation, Nanomaterial, Porous
+
+  非高熵合金/非多主元合金论文不得路由到其他材料方向；如文本明显不属于 HEA 范围，
+  标记 Needs_Mixed_Routing_Check=true，并在 Mixed_Signals 中说明原因。
+
+  使用提供的工具返回结构化分类结果。仅返回分类，不要生成自由文本描述或额外提示词。
+
+  论文文本：
+  {paper_text}

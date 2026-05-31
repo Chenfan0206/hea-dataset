@@ -1,0 +1,1547 @@
+{
+  "Paper_Metadata": {
+    "Paper_Title": "In situ tuning of FCC-BCC dual phase and mechanical properties in multi-principal element alloys via laser-aided additive manufacturing",
+    "DOI": null
+  },
+  "Paper_Routing": {
+    "base_material": "Metals",
+    "application": "Structural",
+    "research_paradigm": "Experimental",
+    "Supplements_Loaded": [
+      "directions/base/Metals.txt",
+      "directions/application/Structural.txt",
+      "directions/paradigm/Experimental.txt"
+    ],
+    "Patch_Tags": [
+      "High_Entropy",
+      "Additive_Manufacturing",
+      "Laser_Assisted"
+    ],
+    "Needs_Mixed_Routing_Check": false
+  },
+  "items": [
+    {
+      "Item_ID": "01-CoCrNi",
+      "Sample_ID": "CoCrNi",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "High_Entropy",
+        "Additive_Manufacturing",
+        "Laser_Assisted"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 1: CoCrNi powder composition",
+        "Table 2: 100 wt% CoCrNi, 0 wt% CoCrNiAl0.6TiFe, Alloy code CoCrNi",
+        "Section 3.1: CoCrNi alloy microstructure",
+        "Section 3.2: CoCrNi mechanical properties"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Multi-principal element alloy",
+          "Material_Name_Raw": "CoCrNi",
+          "Nominal_Composition": {
+            "type": "wt%",
+            "source": "Table 1 (feedstock powder)",
+            "elements": {
+              "Co": 34.14,
+              "Cr": 30.14,
+              "Ni": 35.72
+            }
+          },
+          "Note": "Feedstock powder composition from Table 1. CoCrNi powder prepared via gas atomization, particle size 15–45 µm."
+        },
+        "Processing": {
+          "Process_Category": "Laser-aided additive manufacturing (LAAM)",
+          "Process_Text": {
+            "original": "CoCrNi powders were fed into the powder nozzle. By adjusting the feed rate ratios, 50 mm × 20 mm × 6 mm blocks were produced on 304 stainless steel substrates. Process parameters: 1.3 mm beam diameter, 570 W laser power, 5.4 g min⁻¹ total powder feed rate, 1200 mm min⁻¹ scan velocity. Deposit layer ~0.5 mm thickness, 90° rotation between adjacent layers, 50% overlap rate. Argon gas (purity ≥ 99.999%) for shielding and powder transport.",
+            "simplified": "LAAM with CoCrNi powder only; blocks deposited on 304 SS substrate; no post heat treatment (as-built)."
+          },
+          "Key_Params": {
+            "Beam_Diameter": {
+              "Value": 1.3,
+              "Unit": "mm",
+              "Original_Values": "1.3 mm"
+            },
+            "Laser_Power": {
+              "Value": 570,
+              "Unit": "W",
+              "Original_Values": "570 W"
+            },
+            "Total_Powder_Feed_Rate": {
+              "Value": 5.4,
+              "Unit": "g/min",
+              "Original_Values": "5.4 g min⁻¹"
+            },
+            "Scan_Velocity": {
+              "Value": 1200,
+              "Unit": "mm/min",
+              "Original_Values": "1200 mm min⁻¹"
+            },
+            "Layer_Thickness": {
+              "Value": 0.5,
+              "Unit": "mm",
+              "Original_Values": "~0.5 mm"
+            },
+            "Layer_Rotation": "90° between adjacent layers",
+            "Overlap_Rate": "50%",
+            "Shielding_Gas": "Argon, purity ≥ 99.999%",
+            "CoCrNi_Powder_WtPct": 100,
+            "CoCrNiAl0.6TiFe_Powder_WtPct": 0,
+            "Block_Dimensions": "50 mm × 20 mm × 6 mm",
+            "Substrate": "304 stainless steel"
+          },
+          "Equipment": [
+            {
+              "Name": "Kuka robotic system",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Precitec laser head",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Sulzer Metco twin powder feeder",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "IPG ytterbium fiber laser system",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Rigaku Smartlab XRD",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "FEI Apreo2S Lovac SEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "EBSD",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "EDS",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "FEI Talos F200X G2 TEM/STEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "MTS E45 servo-hydraulic testing system",
+              "Category": "Testing"
+            },
+            {
+              "Name": "Correlated Solutions optical strain measurement system with DIC",
+              "Category": "Testing"
+            },
+            {
+              "Name": "12MP camera (3000 × 4000 pixels)",
+              "Category": "Testing"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "The CoCrNi alloy exhibits single FCC phase structure. Round-shaped nanoparticles distributed sporadically in the alloys; nanoparticles are depleted in Co and Ni, rich in O and Cr, indicating chromium oxide. No elemental segregation observed. Lattice parameter = 0.3282 nm.",
+            "simplified": "Single FCC phase with sporadic Cr-oxide nanoparticles; no elemental segregation; no B2 phase."
+          },
+          "Main_Phase": {
+            "Phase_Name": "FCC matrix",
+            "Crystal_Structure": "FCC",
+            "Lattice_Parameter": {
+              "Value": 0.3282,
+              "Unit": "nm",
+              "Original_Values": "0.3282 nm",
+              "Data_Source": "text"
+            }
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "Chromium oxide nanoparticles",
+              "Crystal_Structure": null,
+              "Note": "Round-shaped nanoparticles, sporadically distributed, rich in O and Cr, depleted in Co and Ni. Phase identified via SAED and EDS in TEM.",
+              "Data_Source": "text"
+            }
+          ],
+          "Advanced_Quantitative_Features": {
+            "Lattice_Parameter_FCC": {
+              "Value": 0.3282,
+              "Unit": "nm",
+              "Original_Values": "0.3282 nm"
+            }
+          },
+          "Note": "No B2 phase, no σ phase detected experimentally."
+        },
+        "Properties": [
+          {
+            "Test_Type": "Tensile",
+            "Loading_Mode": "Uniaxial tension",
+            "Yield_Strength": {
+              "Value": 486.0,
+              "Unit": "MPa",
+              "Original_Values": "486 MPa",
+              "Data_Source": "text"
+            },
+            "Ultimate_Tensile_Strength": {
+              "Value": 781.2,
+              "Unit": "MPa",
+              "Original_Values": "781.2 MPa",
+              "Data_Source": "text"
+            },
+            "Elongation_At_Fracture": {
+              "Value": 42.2,
+              "Unit": "%",
+              "Original_Values": "42.2%",
+              "Data_Source": "text"
+            },
+            "Test_Condition": {
+              "Specimen_Dimensions": "25 mm × 6 mm × 4 mm",
+              "Specimen_Preparation": "Wire cut electrical discharge machining",
+              "Strain_Rate": {
+                "Value": 0.6,
+                "Unit": "mm/min",
+                "Original_Values": "0.6 mm min⁻¹"
+              },
+              "Strain_Measurement": "DIC at 2 Hz",
+              "Test_Temperature": "Room temperature (not explicitly stated)"
+            },
+            "Data_Source": "text",
+            "Note": "Yield strength and UTS values from Section 3.2 text: CoCrNi demonstrates a yield strength of 486 MPa, an ultimate tensile strength of 781 MPa, and an elongation at failure of 42.2%. Abstract gives YS as 486.0 MPa and UTS as 781.2 MPa."
+          },
+          {
+            "Test_Type": "Work-hardening rate",
+            "Loading_Mode": "Uniaxial tension",
+            "Test_Condition": {
+              "Strain_Level": "3.5%",
+              "Test_Temperature": "Room temperature (not explicitly stated)"
+            },
+            "Advanced_Metrics": {
+              "Work_Hardening_Rate": {
+                "Value": 2206,
+                "Unit": "MPa",
+                "Original_Values": "2206 MPa",
+                "Data_Source": "text"
+              }
+            },
+            "Data_Source": "text",
+            "Note": "At strain of 3.5%, work-hardening rate = 2206 MPa."
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "02-CoCrNiAl0.6TiFe-0.1",
+      "Sample_ID": "CoCrNi(Al0.6TiFe)0.1",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "High_Entropy",
+        "Additive_Manufacturing",
+        "Laser_Assisted"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 2: 90 wt% CoCrNi, 10 wt% CoCrNiAl0.6TiFe",
+        "Table 3: FCC phase composition, strengthening contributions",
+        "Section 4.2: experimental Δσ_yield = 69.1 MPa"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Multi-principal element alloy",
+          "Material_Name_Raw": "CoCrNi(Al0.6TiFe)0.1",
+          "Nominal_Composition": {
+            "type": "wt% feedstock blend",
+            "source": "Table 2",
+            "CoCrNi_Powder": 90,
+            "CoCrNiAl0.6TiFe_Powder": 10
+          },
+          "Note": "Composition expressed as weight percentage blend of two pre-alloyed powders. Feedstock powder compositions given in Table 1."
+        },
+        "Processing": {
+          "Process_Category": "Laser-aided additive manufacturing (LAAM)",
+          "Process_Text": {
+            "original": "CoCrNi and CoCrNiAl0.6TiFe powders simultaneously fed at 90:10 wt% ratio. Process parameters: 1.3 mm beam diameter, 570 W laser power, 5.4 g min⁻¹ total powder feed rate, 1200 mm min⁻¹ scan velocity. Deposit layer ~0.5 mm thickness, 90° rotation between adjacent layers, 50% overlap rate. Argon gas (purity ≥ 99.999%) for shielding and powder transport.",
+            "simplified": "LAAM with 90 wt% CoCrNi + 10 wt% CoCrNiAl0.6TiFe powder blend; as-built, no post heat treatment."
+          },
+          "Key_Params": {
+            "Beam_Diameter": {
+              "Value": 1.3,
+              "Unit": "mm",
+              "Original_Values": "1.3 mm"
+            },
+            "Laser_Power": {
+              "Value": 570,
+              "Unit": "W",
+              "Original_Values": "570 W"
+            },
+            "Total_Powder_Feed_Rate": {
+              "Value": 5.4,
+              "Unit": "g/min",
+              "Original_Values": "5.4 g min⁻¹"
+            },
+            "Scan_Velocity": {
+              "Value": 1200,
+              "Unit": "mm/min",
+              "Original_Values": "1200 mm min⁻¹"
+            },
+            "Layer_Thickness": {
+              "Value": 0.5,
+              "Unit": "mm",
+              "Original_Values": "~0.5 mm"
+            },
+            "CoCrNi_Powder_WtPct": 90,
+            "CoCrNiAl0.6TiFe_Powder_WtPct": 10
+          },
+          "Equipment": [
+            {
+              "Name": "Kuka robotic system",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Precitec laser head",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Sulzer Metco twin powder feeder",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "IPG ytterbium fiber laser system",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Rigaku Smartlab XRD",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "FEI Apreo2S Lovac SEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "EBSD",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "EDS",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "FEI Talos F200X G2 TEM/STEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "MTS E45 servo-hydraulic testing system",
+              "Category": "Testing"
+            },
+            {
+              "Name": "Correlated Solutions optical strain measurement system with DIC",
+              "Category": "Testing"
+            },
+            {
+              "Name": "12MP camera (3000 × 4000 pixels)",
+              "Category": "Testing"
+            }
+          ],
+          "Note": "Process parameters shared across all six alloy variants as per Section 2.1 description. Paper states 'Process optimization yielded the following parameters' applicable to all compositions."
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Single FCC phase structure. Lattice parameter = 0.3291 nm.",
+            "simplified": "Single FCC phase; no B2 or σ phase detected."
+          },
+          "Main_Phase": {
+            "Phase_Name": "FCC matrix",
+            "Crystal_Structure": "FCC",
+            "Lattice_Parameter": {
+              "Value": 0.3291,
+              "Unit": "nm",
+              "Original_Values": "0.3291 nm",
+              "Data_Source": "text"
+            }
+          },
+          "Advanced_Quantitative_Features": {
+            "Lattice_Parameter_FCC": {
+              "Value": 0.3291,
+              "Unit": "nm",
+              "Original_Values": "0.3291 nm"
+            },
+            "Dislocation_Density": {
+              "Value": 560000000000000.0,
+              "Unit": "m⁻²",
+              "Original_Values": "5.6 × 10¹⁴ m⁻²",
+              "Data_Source": "table",
+              "Data_Nature": "Computed"
+            },
+            "Solid_Solution_Strengthening_sigma_S": {
+              "Value": 3.29,
+              "Unit": "MPa",
+              "Original_Values": "3.29 MPa",
+              "Data_Source": "table",
+              "Data_Nature": "Computed"
+            },
+            "Delta_Grain_Boundary_Strengthening_delta_sigma_G": {
+              "Value": -7.82,
+              "Unit": "MPa",
+              "Original_Values": "-7.82 MPa",
+              "Data_Source": "table",
+              "Data_Nature": "Computed"
+            },
+            "Delta_Dislocation_Strengthening_delta_sigma_D": {
+              "Value": 76.29,
+              "Unit": "MPa",
+              "Original_Values": "76.29 MPa",
+              "Data_Source": "table",
+              "Data_Nature": "Computed"
+            }
+          },
+          "Note": "No precipitation strengthening (σ_P) applicable; single FCC phase."
+        },
+        "Properties": [
+          {
+            "Test_Type": "Tensile",
+            "Loading_Mode": "Uniaxial tension",
+            "Test_Condition": {
+              "Specimen_Dimensions": "25 mm × 6 mm × 4 mm",
+              "Specimen_Preparation": "Wire cut electrical discharge machining",
+              "Strain_Rate": {
+                "Value": 0.6,
+                "Unit": "mm/min"
+              },
+              "Test_Temperature": "Room temperature (not explicitly stated)"
+            },
+            "Advanced_Metrics": {
+              "Yield_Strength_Increase_vs_CoCrNi": {
+                "Value": 69.1,
+                "Unit": "MPa",
+                "Original_Values": "69.1 MPa",
+                "Data_Source": "text",
+                "Data_Nature": "Experimental"
+              }
+            },
+            "Data_Source": "text",
+            "Note": "Experimental Δσ_yield = 69.1 MPa relative to CoCrNi, from Section 4.2. Absolute YS and UTS values referenced as in Table S1 (supplementary, not available in OCR text)."
+          },
+          {
+            "Test_Type": "Work-hardening rate",
+            "Loading_Mode": "Uniaxial tension",
+            "Test_Condition": {
+              "Strain_Level": "3.5%",
+              "Test_Temperature": "Room temperature (not explicitly stated)"
+            },
+            "Advanced_Metrics": {
+              "Work_Hardening_Rate": {
+                "Value": 2535,
+                "Unit": "MPa",
+                "Original_Values": "2535 MPa",
+                "Data_Source": "text"
+              }
+            },
+            "Data_Source": "text"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "03-CoCrNiAl0.6TiFe-0.2",
+      "Sample_ID": "CoCrNi(Al0.6TiFe)0.2",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "High_Entropy",
+        "Additive_Manufacturing",
+        "Laser_Assisted"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 2: 80 wt% CoCrNi, 20 wt% CoCrNiAl0.6TiFe",
+        "Table 3: FCC phase composition, strengthening contributions",
+        "Fig. 3: TEM/STEM results",
+        "Fig. 7: EBSD during tensile deformation",
+        "Section 4.2: experimental Δσ_yield = 105 MPa"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Multi-principal element alloy",
+          "Material_Name_Raw": "CoCrNi(Al0.6TiFe)0.2",
+          "Nominal_Composition": {
+            "type": "wt% feedstock blend",
+            "source": "Table 2",
+            "CoCrNi_Powder": 80,
+            "CoCrNiAl0.6TiFe_Powder": 20
+          }
+        },
+        "Processing": {
+          "Process_Category": "Laser-aided additive manufacturing (LAAM)",
+          "Process_Text": {
+            "original": "CoCrNi and CoCrNiAl0.6TiFe powders simultaneously fed at 80:20 wt% ratio. Same process parameters as Section 2.1: 1.3 mm beam diameter, 570 W laser power, 5.4 g min⁻¹ total powder feed rate, 1200 mm min⁻¹ scan velocity. Deposit layer ~0.5 mm thickness, 90° rotation between adjacent layers, 50% overlap rate. Argon gas (purity ≥ 99.999%) for shielding and powder transport.",
+            "simplified": "LAAM with 80 wt% CoCrNi + 20 wt% CoCrNiAl0.6TiFe powder blend; as-built, no post heat treatment."
+          },
+          "Key_Params": {
+            "Beam_Diameter": {
+              "Value": 1.3,
+              "Unit": "mm",
+              "Original_Values": "1.3 mm"
+            },
+            "Laser_Power": {
+              "Value": 570,
+              "Unit": "W",
+              "Original_Values": "570 W"
+            },
+            "Total_Powder_Feed_Rate": {
+              "Value": 5.4,
+              "Unit": "g/min",
+              "Original_Values": "5.4 g min⁻¹"
+            },
+            "Scan_Velocity": {
+              "Value": 1200,
+              "Unit": "mm/min",
+              "Original_Values": "1200 mm min⁻¹"
+            },
+            "Layer_Thickness": {
+              "Value": 0.5,
+              "Unit": "mm",
+              "Original_Values": "~0.5 mm"
+            },
+            "CoCrNi_Powder_WtPct": 80,
+            "CoCrNiAl0.6TiFe_Powder_WtPct": 20
+          },
+          "Equipment": [
+            {
+              "Name": "Kuka robotic system",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Precitec laser head",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Sulzer Metco twin powder feeder",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "IPG ytterbium fiber laser system",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Rigaku Smartlab XRD",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "FEI Apreo2S Lovac SEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "EBSD",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "EDS",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "FEI Talos F200X G2 TEM/STEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "MTS E45 servo-hydraulic testing system",
+              "Category": "Testing"
+            },
+            {
+              "Name": "Correlated Solutions optical strain measurement system with DIC",
+              "Category": "Testing"
+            },
+            {
+              "Name": "12MP camera (3000 × 4000 pixels)",
+              "Category": "Testing"
+            }
+          ],
+          "Note": "Process parameters shared across all six alloy variants per Section 2.1."
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Single FCC phase. Nanoparticle clusters observed (Al-oxide nanoparticles from TEM/EDS). No elemental segregation. Lattice parameter = 0.3297 nm.",
+            "simplified": "Single FCC phase with Al-oxide nanoparticles; no B2 or σ phase; no elemental segregation."
+          },
+          "Main_Phase": {
+            "Phase_Name": "FCC matrix",
+            "Crystal_Structure": "FCC",
+            "Lattice_Parameter": {
+              "Value": 0.3297,
+              "Unit": "nm",
+              "Original_Values": "0.3297 nm",
+              "Data_Source": "text"
+            }
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "Aluminum oxide nanoparticles",
+              "Crystal_Structure": null,
+              "Note": "Nanoparticle clusters rich in Al and O, identified via TEM-EDS. Formed due to oxidation during LAAM under local inert gas shielding.",
+              "Data_Source": "text"
+            }
+          ],
+          "Advanced_Quantitative_Features": {
+            "Lattice_Parameter_FCC": {
+              "Value": 0.3297,
+              "Unit": "nm",
+              "Original_Values": "0.3297 nm"
+            },
+            "Dislocation_Density": {
+              "Value": 1700000000000000.0,
+              "Unit": "m⁻²",
+              "Original_Values": "1.7 × 10¹⁵ m⁻²",
+              "Data_Source": "table",
+              "Data_Nature": "Computed"
+            },
+            "Solid_Solution_Strengthening_sigma_S": {
+              "Value": 4.62,
+              "Unit": "MPa",
+              "Original_Values": "4.62 MPa",
+              "Data_Source": "table",
+              "Data_Nature": "Computed"
+            },
+            "Delta_Grain_Boundary_Strengthening_delta_sigma_G": {
+              "Value": 14.31,
+              "Unit": "MPa",
+              "Original_Values": "14.31 MPa",
+              "Data_Source": "table",
+              "Data_Nature": "Computed"
+            },
+            "Delta_Dislocation_Strengthening_delta_sigma_D": {
+              "Value": 94.29,
+              "Unit": "MPa",
+              "Original_Values": "94.29 MPa",
+              "Data_Source": "table",
+              "Data_Nature": "Computed"
+            }
+          },
+          "Note": "No precipitation strengthening (σ_P) applicable; single FCC phase."
+        },
+        "Properties": [
+          {
+            "Test_Type": "Tensile",
+            "Loading_Mode": "Uniaxial tension",
+            "Test_Condition": {
+              "Specimen_Dimensions": "25 mm × 6 mm × 4 mm",
+              "Specimen_Preparation": "Wire cut electrical discharge machining",
+              "Strain_Rate": {
+                "Value": 0.6,
+                "Unit": "mm/min"
+              },
+              "Test_Temperature": "Room temperature (not explicitly stated)"
+            },
+            "Advanced_Metrics": {
+              "Yield_Strength_Increase_vs_CoCrNi": {
+                "Value": 105.0,
+                "Unit": "MPa",
+                "Original_Values": "105 MPa",
+                "Data_Source": "text",
+                "Data_Nature": "Experimental"
+              }
+            },
+            "Data_Source": "text",
+            "Note": "Experimental Δσ_yield = 105 MPa relative to CoCrNi, from Section 4.2. Absolute YS and UTS values referenced as in Table S1 (supplementary, not available in OCR text)."
+          },
+          {
+            "Test_Type": "Work-hardening rate",
+            "Loading_Mode": "Uniaxial tension",
+            "Test_Condition": {
+              "Strain_Level": "3.5%",
+              "Test_Temperature": "Room temperature (not explicitly stated)"
+            },
+            "Advanced_Metrics": {
+              "Work_Hardening_Rate": {
+                "Value": 2637,
+                "Unit": "MPa",
+                "Original_Values": "2637 MPa",
+                "Data_Source": "text"
+              }
+            },
+            "Data_Source": "text"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "04-CoCrNiAl0.6TiFe-0.3",
+      "Sample_ID": "CoCrNi(Al0.6TiFe)0.3",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "High_Entropy",
+        "Additive_Manufacturing",
+        "Laser_Assisted"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 2: 70 wt% CoCrNi, 30 wt% CoCrNiAl0.6TiFe",
+        "Table 3: FCC phase, strengthening contributions",
+        "Abstract: characteristic dislocation density 2.5 × 10¹⁵ m⁻²",
+        "Section 4.2: experimental Δσ_yield = 203.3 MPa"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Multi-principal element alloy",
+          "Material_Name_Raw": "CoCrNi(Al0.6TiFe)0.3",
+          "Nominal_Composition": {
+            "type": "wt% feedstock blend",
+            "source": "Table 2",
+            "CoCrNi_Powder": 70,
+            "CoCrNiAl0.6TiFe_Powder": 30
+          }
+        },
+        "Processing": {
+          "Process_Category": "Laser-aided additive manufacturing (LAAM)",
+          "Process_Text": {
+            "original": "CoCrNi and CoCrNiAl0.6TiFe powders simultaneously fed at 70:30 wt% ratio. Same process parameters as Section 2.1: 1.3 mm beam diameter, 570 W laser power, 5.4 g min⁻¹ total powder feed rate, 1200 mm min⁻¹ scan velocity. Deposit layer ~0.5 mm thickness, 90° rotation between adjacent layers, 50% overlap rate. Argon gas (purity ≥ 99.999%) for shielding and powder transport.",
+            "simplified": "LAAM with 70 wt% CoCrNi + 30 wt% CoCrNiAl0.6TiFe powder blend; as-built, no post heat treatment."
+          },
+          "Key_Params": {
+            "Beam_Diameter": {
+              "Value": 1.3,
+              "Unit": "mm",
+              "Original_Values": "1.3 mm"
+            },
+            "Laser_Power": {
+              "Value": 570,
+              "Unit": "W",
+              "Original_Values": "570 W"
+            },
+            "Total_Powder_Feed_Rate": {
+              "Value": 5.4,
+              "Unit": "g/min",
+              "Original_Values": "5.4 g min⁻¹"
+            },
+            "Scan_Velocity": {
+              "Value": 1200,
+              "Unit": "mm/min",
+              "Original_Values": "1200 mm min⁻¹"
+            },
+            "Layer_Thickness": {
+              "Value": 0.5,
+              "Unit": "mm",
+              "Original_Values": "~0.5 mm"
+            },
+            "CoCrNi_Powder_WtPct": 70,
+            "CoCrNiAl0.6TiFe_Powder_WtPct": 30
+          },
+          "Equipment": [
+            {
+              "Name": "Kuka robotic system",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Precitec laser head",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Sulzer Metco twin powder feeder",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "IPG ytterbium fiber laser system",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Rigaku Smartlab XRD",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "FEI Apreo2S Lovac SEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "EBSD",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "EDS",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "FEI Talos F200X G2 TEM/STEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "MTS E45 servo-hydraulic testing system",
+              "Category": "Testing"
+            },
+            {
+              "Name": "Correlated Solutions optical strain measurement system with DIC",
+              "Category": "Testing"
+            },
+            {
+              "Name": "12MP camera (3000 × 4000 pixels)",
+              "Category": "Testing"
+            }
+          ],
+          "Note": "Process parameters shared across all six alloy variants per Section 2.1."
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Single FCC phase. Nanoparticle clusters similar to CoCrNi(Al0.6TiFe)0.2 alloy. SAED confirms FCC dominance. Some aluminum oxides present. No elemental segregation. Lattice parameter = 0.3303 nm.",
+            "simplified": "Single FCC phase with Al-oxide nanoparticles; no B2 or σ phase; no elemental segregation."
+          },
+          "Main_Phase": {
+            "Phase_Name": "FCC matrix",
+            "Crystal_Structure": "FCC",
+            "Lattice_Parameter": {
+              "Value": 0.3303,
+              "Unit": "nm",
+              "Original_Values": "0.3303 nm",
+              "Data_Source": "text"
+            }
+          },
+          "Advanced_Quantitative_Features": {
+            "Lattice_Parameter_FCC": {
+              "Value": 0.3303,
+              "Unit": "nm",
+              "Original_Values": "0.3303 nm"
+            },
+            "Dislocation_Density": {
+              "Value": 2500000000000000.0,
+              "Unit": "m⁻²",
+              "Original_Values": "2.5 × 10¹⁵ m⁻²",
+              "Data_Source": "table",
+              "Data_Nature": "Computed"
+            },
+            "Solid_Solution_Strengthening_sigma_S": {
+              "Value": 5.62,
+              "Unit": "MPa",
+              "Original_Values": "5.62 MPa",
+              "Data_Source": "table",
+              "Data_Nature": "Computed"
+            },
+            "Delta_Grain_Boundary_Strengthening_delta_sigma_G": {
+              "Value": 14.92,
+              "Unit": "MPa",
+              "Original_Values": "14.92 MPa",
+              "Data_Source": "table",
+              "Data_Nature": "Computed"
+            },
+            "Delta_Dislocation_Strengthening_delta_sigma_D": {
+              "Value": 210.0,
+              "Unit": "MPa",
+              "Original_Values": "210.00 MPa",
+              "Data_Source": "table",
+              "Data_Nature": "Computed"
+            }
+          },
+          "Note": "Dislocation strengthening contributes ~91% of total strength increase compared to CoCrNi (dominant mechanism). No precipitation strengthening (σ_P) applicable; single FCC phase."
+        },
+        "Properties": [
+          {
+            "Test_Type": "Tensile",
+            "Loading_Mode": "Uniaxial tension",
+            "Test_Condition": {
+              "Specimen_Dimensions": "25 mm × 6 mm × 4 mm",
+              "Specimen_Preparation": "Wire cut electrical discharge machining",
+              "Strain_Rate": {
+                "Value": 0.6,
+                "Unit": "mm/min"
+              },
+              "Test_Temperature": "Room temperature (not explicitly stated)"
+            },
+            "Advanced_Metrics": {
+              "Yield_Strength_Increase_vs_CoCrNi": {
+                "Value": 203.3,
+                "Unit": "MPa",
+                "Original_Values": "203.3 MPa",
+                "Data_Source": "text",
+                "Data_Nature": "Experimental"
+              },
+              "Calculated_Yield_Strength_Increase_vs_CoCrNi": {
+                "Value": 230.54,
+                "Unit": "MPa",
+                "Original_Values": "230.54 MPa",
+                "Data_Source": "table",
+                "Data_Nature": "Computed"
+              }
+            },
+            "Data_Source": "text",
+            "Note": "Experimental Δσ_yield = 203.3 MPa and calculated Δσ_yield = 230.54 MPa relative to CoCrNi, both from Section 4.2. Absolute YS and UTS values referenced as in Table S1 (supplementary, not available in OCR text)."
+          },
+          {
+            "Test_Type": "Work-hardening rate",
+            "Loading_Mode": "Uniaxial tension",
+            "Test_Condition": {
+              "Strain_Level": "3.5%",
+              "Test_Temperature": "Room temperature (not explicitly stated)"
+            },
+            "Advanced_Metrics": {
+              "Work_Hardening_Rate": {
+                "Value": 3035,
+                "Unit": "MPa",
+                "Original_Values": "3035 MPa",
+                "Data_Source": "text"
+              }
+            },
+            "Data_Source": "text"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "05-CoCrNiAl0.6TiFe-0.4",
+      "Sample_ID": "CoCrNi(Al0.6TiFe)0.4",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "High_Entropy",
+        "Additive_Manufacturing",
+        "Laser_Assisted"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 2: 60 wt% CoCrNi, 40 wt% CoCrNiAl0.6TiFe",
+        "Table 3: FCC + B2 phase composition, strengthening contributions",
+        "Fig. 4: TEM/STEM of B2 precipitates",
+        "Fig. 8: EBSD and TEM during deformation",
+        "Section 3.1: BCC phase volume fraction 0.5%"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Multi-principal element alloy",
+          "Material_Name_Raw": "CoCrNi(Al0.6TiFe)0.4",
+          "Nominal_Composition": {
+            "type": "wt% feedstock blend",
+            "source": "Table 2",
+            "CoCrNi_Powder": 60,
+            "CoCrNiAl0.6TiFe_Powder": 40
+          }
+        },
+        "Processing": {
+          "Process_Category": "Laser-aided additive manufacturing (LAAM)",
+          "Process_Text": {
+            "original": "CoCrNi and CoCrNiAl0.6TiFe powders simultaneously fed at 60:40 wt% ratio. Same process parameters as Section 2.1: 1.3 mm beam diameter, 570 W laser power, 5.4 g min⁻¹ total powder feed rate, 1200 mm min⁻¹ scan velocity. Deposit layer ~0.5 mm thickness, 90° rotation between adjacent layers, 50% overlap rate. Argon gas (purity ≥ 99.999%) for shielding and powder transport.",
+            "simplified": "LAAM with 60 wt% CoCrNi + 40 wt% CoCrNiAl0.6TiFe powder blend; as-built, no post heat treatment."
+          },
+          "Key_Params": {
+            "Beam_Diameter": {
+              "Value": 1.3,
+              "Unit": "mm",
+              "Original_Values": "1.3 mm"
+            },
+            "Laser_Power": {
+              "Value": 570,
+              "Unit": "W",
+              "Original_Values": "570 W"
+            },
+            "Total_Powder_Feed_Rate": {
+              "Value": 5.4,
+              "Unit": "g/min",
+              "Original_Values": "5.4 g min⁻¹"
+            },
+            "Scan_Velocity": {
+              "Value": 1200,
+              "Unit": "mm/min",
+              "Original_Values": "1200 mm min⁻¹"
+            },
+            "Layer_Thickness": {
+              "Value": 0.5,
+              "Unit": "mm",
+              "Original_Values": "~0.5 mm"
+            },
+            "CoCrNi_Powder_WtPct": 60,
+            "CoCrNiAl0.6TiFe_Powder_WtPct": 40
+          },
+          "Equipment": [
+            {
+              "Name": "Kuka robotic system",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Precitec laser head",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Sulzer Metco twin powder feeder",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "IPG ytterbium fiber laser system",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Rigaku Smartlab XRD",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "FEI Apreo2S Lovac SEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "EBSD",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "EDS",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "FEI Talos F200X G2 TEM/STEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "MTS E45 servo-hydraulic testing system",
+              "Category": "Testing"
+            },
+            {
+              "Name": "Correlated Solutions optical strain measurement system with DIC",
+              "Category": "Testing"
+            },
+            {
+              "Name": "12MP camera (3000 × 4000 pixels)",
+              "Category": "Testing"
+            }
+          ],
+          "Note": "Process parameters shared across all six alloy variants per Section 2.1."
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Dual FCC + B2 phase. Irregularly shaped B2 precipitates (~0.42 µm, undefined) with volume fraction 0.5%, randomly dispersed in FCC matrix. B2 precipitates rich in Al, Ti, and trace Ni; depleted in Co, Cr, Fe. Aluminum oxide nanoparticles also present. Lattice parameter = 0.3306 nm. B2 phase precipitated from mixed liquid alloy (in situ phase separation, not remnant BCC powder).",
+            "simplified": "Dual FCC + B2 phase; B2 precipitates ~0.42 µm, Vf = 0.5%; Al-oxide nanoparticles; B2 enriched in Ti and Al."
+          },
+          "Main_Phase": {
+            "Phase_Name": "FCC matrix",
+            "Crystal_Structure": "FCC",
+            "Lattice_Parameter": {
+              "Value": 0.3306,
+              "Unit": "nm",
+              "Original_Values": "0.3306 nm",
+              "Data_Source": "text"
+            }
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "B2 precipitate",
+              "Crystal_Structure": "B2",
+              "Size": {
+                "Value": 0.42,
+                "Unit": "µm",
+                "size_type": "undefined",
+                "Original_Values": "~0.42 µm",
+                "Data_Source": "text"
+              },
+              "Volume_Fraction": {
+                "Value": 0.005,
+                "Unit": "fraction",
+                "Original_Values": "0.5%",
+                "Data_Source": "text"
+              },
+              "Composition_Note": "Rich in Al and Ti with trace Ni; depleted in Co, Cr, Fe",
+              "Data_Source": "text"
+            },
+            {
+              "Phase_Name": "Aluminum oxide nanoparticles",
+              "Crystal_Structure": null,
+              "Note": "Rich in Al and O, distributed within cellular structure.",
+              "Data_Source": "text"
+            }
+          ],
+          "Advanced_Quantitative_Features": {
+            "Lattice_Parameter_FCC": {
+              "Value": 0.3306,
+              "Unit": "nm",
+              "Original_Values": "0.3306 nm"
+            },
+            "Dislocation_Density": {
+              "Value": 1600000000000000.0,
+              "Unit": "m⁻²",
+              "Original_Values": "1.6 × 10¹⁵ m⁻²",
+              "Data_Source": "table",
+              "Data_Nature": "Computed"
+            },
+            "B2_Volume_Fraction_Vp": {
+              "Value": 0.005,
+              "Unit": "fraction",
+              "Original_Values": "0.005",
+              "Data_Source": "text",
+              "Data_Nature": "Computed"
+            },
+            "B2_Average_Aspect_Ratio_Sp": {
+              "Value": 9,
+              "Unit": null,
+              "Original_Values": "9",
+              "Data_Source": "text",
+              "Data_Nature": "Computed"
+            },
+            "Solid_Solution_Strengthening_sigma_S": {
+              "Value": 6.45,
+              "Unit": "MPa",
+              "Original_Values": "6.45 MPa",
+              "Data_Source": "table",
+              "Data_Nature": "Computed"
+            },
+            "Delta_Grain_Boundary_Strengthening_delta_sigma_G": {
+              "Value": 15.06,
+              "Unit": "MPa",
+              "Original_Values": "15.06 MPa",
+              "Data_Source": "table",
+              "Data_Nature": "Computed"
+            },
+            "Delta_Dislocation_Strengthening_delta_sigma_D": {
+              "Value": 90.55,
+              "Unit": "MPa",
+              "Original_Values": "90.55 MPa",
+              "Data_Source": "table",
+              "Data_Nature": "Computed"
+            },
+            "Precipitation_Strengthening_sigma_P": {
+              "Value": 302.57,
+              "Unit": "MPa",
+              "Original_Values": "302.57 MPa",
+              "Data_Source": "table",
+              "Data_Nature": "Computed"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Test_Type": "Tensile",
+            "Loading_Mode": "Uniaxial tension",
+            "Test_Condition": {
+              "Specimen_Dimensions": "25 mm × 6 mm × 4 mm",
+              "Specimen_Preparation": "Wire cut electrical discharge machining",
+              "Strain_Rate": {
+                "Value": 0.6,
+                "Unit": "mm/min"
+              },
+              "Test_Temperature": "Room temperature (not explicitly stated)"
+            },
+            "Data_Source": "text",
+            "Note": "Quantitative tensile data referenced as in Table S1 (supplementary, not available in OCR text). Work-hardening rate curve shows only stage I and stage III (dislocation-governed deformation)."
+          },
+          {
+            "Test_Type": "Work-hardening rate",
+            "Loading_Mode": "Uniaxial tension",
+            "Test_Condition": {
+              "Strain_Level": "3.5%",
+              "Test_Temperature": "Room temperature (not explicitly stated)"
+            },
+            "Advanced_Metrics": {
+              "Work_Hardening_Rate": {
+                "Value": 4404,
+                "Unit": "MPa",
+                "Original_Values": "4404 MPa",
+                "Data_Source": "text"
+              }
+            },
+            "Data_Source": "text"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "06-CoCrNiAl0.6TiFe-0.5",
+      "Sample_ID": "CoCrNi(Al0.6TiFe)0.5",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "High_Entropy",
+        "Additive_Manufacturing",
+        "Laser_Assisted"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 2: 50 wt% CoCrNi, 50 wt% CoCrNiAl0.6TiFe",
+        "Table 3: FCC + B2 phase, strengthening contributions",
+        "Section 3.1: BCC phase volume fraction 5.7%",
+        "Section 3.2: yield strength 887.2 MPa, UTS 1165.2 MPa, elongation 4.0%"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Multi-principal element alloy",
+          "Material_Name_Raw": "CoCrNi(Al0.6TiFe)0.5",
+          "Nominal_Composition": {
+            "type": "wt% feedstock blend",
+            "source": "Table 2",
+            "CoCrNi_Powder": 50,
+            "CoCrNiAl0.6TiFe_Powder": 50
+          }
+        },
+        "Processing": {
+          "Process_Category": "Laser-aided additive manufacturing (LAAM)",
+          "Process_Text": {
+            "original": "CoCrNi and CoCrNiAl0.6TiFe powders simultaneously fed at 50:50 wt% ratio. Same process parameters as Section 2.1: 1.3 mm beam diameter, 570 W laser power, 5.4 g min⁻¹ total powder feed rate, 1200 mm min⁻¹ scan velocity. Deposit layer ~0.5 mm thickness, 90° rotation between adjacent layers, 50% overlap rate. Argon gas (purity ≥ 99.999%) for shielding and powder transport.",
+            "simplified": "LAAM with 50 wt% CoCrNi + 50 wt% CoCrNiAl0.6TiFe powder blend; as-built, no post heat treatment."
+          },
+          "Key_Params": {
+            "Beam_Diameter": {
+              "Value": 1.3,
+              "Unit": "mm",
+              "Original_Values": "1.3 mm"
+            },
+            "Laser_Power": {
+              "Value": 570,
+              "Unit": "W",
+              "Original_Values": "570 W"
+            },
+            "Total_Powder_Feed_Rate": {
+              "Value": 5.4,
+              "Unit": "g/min",
+              "Original_Values": "5.4 g min⁻¹"
+            },
+            "Scan_Velocity": {
+              "Value": 1200,
+              "Unit": "mm/min",
+              "Original_Values": "1200 mm min⁻¹"
+            },
+            "Layer_Thickness": {
+              "Value": 0.5,
+              "Unit": "mm",
+              "Original_Values": "~0.5 mm"
+            },
+            "CoCrNi_Powder_WtPct": 50,
+            "CoCrNiAl0.6TiFe_Powder_WtPct": 50
+          },
+          "Equipment": [
+            {
+              "Name": "Kuka robotic system",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Precitec laser head",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Sulzer Metco twin powder feeder",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "IPG ytterbium fiber laser system",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Rigaku Smartlab XRD",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "FEI Apreo2S Lovac SEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "EBSD",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "EDS",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "FEI Talos F200X G2 TEM/STEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "MTS E45 servo-hydraulic testing system",
+              "Category": "Testing"
+            },
+            {
+              "Name": "Correlated Solutions optical strain measurement system with DIC",
+              "Category": "Testing"
+            },
+            {
+              "Name": "12MP camera (3000 × 4000 pixels)",
+              "Category": "Testing"
+            }
+          ],
+          "Note": "Process parameters shared across all six alloy variants per Section 2.1."
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Dual FCC + B2 phase. B2 phase grows to ~2 µm and surrounds the FCC matrix, volume fraction 5.7%. More obvious cellular structures with FCC phase encircled by bright B2 precipitates. Precipitates depleted in Co, Cr, Fe; enriched in Ti, Al. Fe concentrates in FCC phase. Aluminum oxides detected within cellular structure. Lattice parameter = 0.3312 nm.",
+            "simplified": "Dual FCC + B2 phase; B2 precipitates ~2 µm, Vf = 5.7%, surrounding FCC matrix; Al-oxide nanoparticles present."
+          },
+          "Main_Phase": {
+            "Phase_Name": "FCC matrix",
+            "Crystal_Structure": "FCC",
+            "Lattice_Parameter": {
+              "Value": 0.3312,
+              "Unit": "nm",
+              "Original_Values": "0.3312 nm",
+              "Data_Source": "text"
+            }
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "B2 precipitate",
+              "Crystal_Structure": "B2",
+              "Size": {
+                "Value": 2.0,
+                "Unit": "µm",
+                "size_type": "undefined",
+                "Original_Values": "~2 µm",
+                "Data_Source": "text"
+              },
+              "Volume_Fraction": {
+                "Value": 0.057,
+                "Unit": "fraction",
+                "Original_Values": "5.7%",
+                "Data_Source": "text"
+              },
+              "Morphology": "Surrounds FCC matrix",
+              "Composition_Note": "Enriched in Ti and Al; depleted in Co, Cr, Fe. Fe concentrates in FCC phase.",
+              "Data_Source": "text"
+            },
+            {
+              "Phase_Name": "Aluminum oxide nanoparticles",
+              "Crystal_Structure": null,
+              "Note": "Mainly distributed within cellular structure.",
+              "Data_Source": "text"
+            }
+          ],
+          "Advanced_Quantitative_Features": {
+            "Lattice_Parameter_FCC": {
+              "Value": 0.3312,
+              "Unit": "nm",
+              "Original_Values": "0.3312 nm"
+            },
+            "Dislocation_Density": {
+              "Value": 550000000000000.0,
+              "Unit": "m⁻²",
+              "Original_Values": "5.5 × 10¹⁴ m⁻²",
+              "Data_Source": "table",
+              "Data_Nature": "Computed"
+            },
+            "B2_Volume_Fraction_Vp": {
+              "Value": 0.057,
+              "Unit": "fraction",
+              "Original_Values": "0.057",
+              "Data_Source": "text",
+              "Data_Nature": "Computed"
+            },
+            "B2_Average_Aspect_Ratio_Sp": {
+              "Value": 9,
+              "Unit": null,
+              "Original_Values": "9",
+              "Data_Source": "text",
+              "Data_Nature": "Computed"
+            },
+            "Solid_Solution_Strengthening_sigma_S": {
+              "Value": 7.16,
+              "Unit": "MPa",
+              "Original_Values": "7.16 MPa",
+              "Data_Source": "table",
+              "Data_Nature": "Computed"
+            },
+            "Delta_Grain_Boundary_Strengthening_delta_sigma_G": {
+              "Value": -1.57,
+              "Unit": "MPa",
+              "Original_Values": "-1.57 MPa",
+              "Data_Source": "table",
+              "Data_Nature": "Computed"
+            },
+            "Delta_Dislocation_Strengthening_delta_sigma_D": {
+              "Value": 115.12,
+              "Unit": "MPa",
+              "Original_Values": "115.12 MPa",
+              "Data_Source": "table",
+              "Data_Nature": "Computed"
+            },
+            "Precipitation_Strengthening_sigma_P": {
+              "Value": 371.81,
+              "Unit": "MPa",
+              "Original_Values": "371.81 MPa",
+              "Data_Source": "table",
+              "Data_Nature": "Computed"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Test_Type": "Tensile",
+            "Loading_Mode": "Uniaxial tension",
+            "Yield_Strength": {
+              "Value": 887.2,
+              "Unit": "MPa",
+              "Original_Values": "887.2 MPa",
+              "Data_Source": "text"
+            },
+            "Ultimate_Tensile_Strength": {
+              "Value": 1165.2,
+              "Unit": "MPa",
+              "Original_Values": "1165.2 MPa",
+              "Data_Source": "text"
+            },
+            "Elongation_At_Fracture": {
+              "Value": 4.0,
+              "Unit": "%",
+              "Original_Values": "4.0%",
+              "Data_Source": "text"
+            },
+            "Test_Condition": {
+              "Specimen_Dimensions": "25 mm × 6 mm × 4 mm",
+              "Specimen_Preparation": "Wire cut electrical discharge machining",
+              "Strain_Rate": {
+                "Value": 0.6,
+                "Unit": "mm/min"
+              },
+              "Test_Temperature": "Room temperature (not explicitly stated)"
+            },
+            "Data_Source": "text",
+            "Note": "CoCrNi(Al0.6TiFe)0.5 alloy experienced only stage I in work-hardening rate curve before fracturing due to lack of ductility (Section 3.2)."
+          },
+          {
+            "Test_Type": "Work-hardening rate",
+            "Loading_Mode": "Uniaxial tension",
+            "Test_Condition": {
+              "Strain_Level": "3.5%",
+              "Test_Temperature": "Room temperature (not explicitly stated)"
+            },
+            "Advanced_Metrics": {
+              "Work_Hardening_Rate": {
+                "Value": 6539,
+                "Unit": "MPa",
+                "Original_Values": "6539 MPa",
+                "Data_Source": "text"
+              }
+            },
+            "Data_Source": "text"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "07-CoCrNiAl0.6TiFe-feedstock",
+      "Sample_ID": "CoCrNiAl0.6TiFe powder",
+      "Role": "Comparator",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "High_Entropy",
+        "Additive_Manufacturing",
+        "Laser_Assisted"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 1: CoCrNiAl0.6TiFe powder elemental composition"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Multi-principal element alloy",
+          "Material_Name_Raw": "CoCrNiAl0.6TiFe",
+          "Nominal_Composition": {
+            "type": "wt%",
+            "source": "Table 1 (feedstock powder)",
+            "elements": {
+              "Co": 20.09,
+              "Cr": 17.12,
+              "Ni": 21.37,
+              "Al": 6.12,
+              "Ti": 15.69,
+              "Fe": 19.61
+            }
+          },
+          "Note": "Feedstock powder composition from Table 1. BCC-structured pre-alloyed powder prepared via gas atomization, particle size 15–45 µm."
+        },
+        "Processing": {
+          "Process_Category": "Gas atomization",
+          "Process_Text": {
+            "original": "Pre-alloyed CoCrNiAl0.6TiFe powder prepared via gas atomization to ensure high sphericity and uniform size distribution. Particle sizes ranging from 15 to 45 µm confirmed using a laser particle size analyzer.",
+            "simplified": "Gas atomized pre-alloyed powder, particle size 15–45 µm."
+          },
+          "Equipment": [
+            {
+              "Name": "Laser particle size analyzer",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Rigaku Smartlab XRD",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "FEI Apreo2S Lovac SEM",
+              "Category": "Characterization"
+            }
+          ],
+          "Note": "XRD and SEM confirmed spherical morphology and BCC phase. Gas atomization device not named in text."
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "BCC phase confirmed by XRD and SEM for CoCrNiAl0.6TiFe powder.",
+            "simplified": "BCC phase feedstock powder."
+          },
+          "Main_Phase": {
+            "Phase_Name": "BCC matrix",
+            "Crystal_Structure": "BCC",
+            "Note": "BCC phase confirmed via XRD and SEM for the feedstock powder."
+          }
+        }
+      }
+    },
+    {
+      "Item_ID": "08-CALPHAD-prediction",
+      "Sample_ID": "CALPHAD prediction",
+      "Role": "Reference",
+      "Data_Nature": "Computed",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "High_Entropy",
+        "Additive_Manufacturing",
+        "Laser_Assisted"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 4.1: CALPHAD phase predictions using Thermo-Calc TCHEA6",
+        "Fig. S5: calculated phase composition"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Multi-principal element alloy",
+          "Material_Name_Raw": "CoCrNi(Al0.6TiFe)x, CALPHAD equilibrium prediction",
+          "Note": "Equilibrium phase diagram calculated for the CoCrNi(Al0.6TiFe)x system (x = 0–0.5)."
+        },
+        "Processing": {
+          "Process_Text": {
+            "simplified": "CALPHAD calculation using Thermo-Calc software with TCHEA6 database for equilibrium phase prediction."
+          },
+          "Simulation_Metadata": {
+            "Method": "CALPHAD",
+            "Software": "Thermo-Calc",
+            "Database": "TCHEA6",
+            "Data_Nature": "Computed"
+          },
+          "Equipment": [
+            {
+              "Name": "Thermo-Calc software (TCHEA6 database)",
+              "Category": "Software"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "CALPHAD predictions: CoCrNi, CoCrNi(Al0.6TiFe)0.1 and CoCrNi(Al0.6TiFe)0.2 have FCC and σ phases. CoCrNi(Al0.6TiFe)0.3, 0.4, 0.5 have FCC, σ, and B2 phases. Experimentally, σ phase was not observed in any alloy, and B2 did not precipitate from CoCrNi(Al0.6TiFe)0.3. For CoCrNi(Al0.6TiFe)0.4 and 0.5, B2 increases to ~10% and ~20% in Thermo-Calc diagram.",
+            "simplified": "Equilibrium CALPHAD predictions differ from experimental observations: σ phase predicted but not observed; B2 predicted for x >= 0.3 but only observed for x >= 0.4."
+          },
+          "Note": "Discrepancy attributed to non-equilibrium AM process with high thermal gradient and high cooling rate inhibiting σ and B2 precipitation at lower x values."
+        },
+        "Note": "This item captures CALPHAD equilibrium predictions as a computed reference, distinct from experimental observations captured in items 01–06."
+      }
+    }
+  ]
+}

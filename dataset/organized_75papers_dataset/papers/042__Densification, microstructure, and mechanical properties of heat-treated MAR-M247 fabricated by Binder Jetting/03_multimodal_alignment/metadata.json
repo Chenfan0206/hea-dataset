@@ -1,0 +1,7 @@
+{
+  "paper_dir": "Densification_micros",
+  "figures": 21,
+  "direct_pairs": 21,
+  "topk_pairs": 105,
+  "sentences": 76
+}

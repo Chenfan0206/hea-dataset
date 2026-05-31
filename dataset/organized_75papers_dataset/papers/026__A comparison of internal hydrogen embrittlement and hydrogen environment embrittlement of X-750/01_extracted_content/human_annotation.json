@@ -1,0 +1,934 @@
+{
+  "Paper_Metadata": {
+    "Paper_Title": "A comparison of internal hydrogen embrittlement and hydrogen environment embrittlement of X-750",
+    "DOI": "10.1016/S0013-7944(00)00123-5"
+  },
+  "items": [
+    {
+      "Sample_ID": "X-750_Uncharged_0ppm",
+      "Gradient_Material": false,
+      "Composition_Info": {
+        "Role": "Target",
+        "Alloy_Name_Raw": "Alloy X-750",
+        "Nominal_Composition": null,
+        "Measured_Composition": {
+          "Composition_Type": "wt%",
+          "Elements_Normalized": {
+            "Ni": 71.17,
+            "Cr": 15.46,
+            "Nb": 1.0,
+            "Ti": 2.67,
+            "Al": 0.76,
+            "Fe": 8.33,
+            "C": 0.072,
+            "other": 0.538
+          },
+          "Measurement_Method": "Chemical analysis"
+        },
+        "Note": null
+      },
+      "Process_Info": {
+        "Process_Category": "Heat Treatment",
+        "Process_Text": {
+          "original": "from 6.35 cm diameter alloy X-750 bars heat treated to the HTH condition... consists of a solution anneal at 1094°C for 1-2 h with a rapid air cool followed by aging at 704°C for 20 h.",
+          "simplified": "Solution annealed at 1094°C for 1-2 hours, rapid air cooled, then aged at 704°C for 20 hours (HTH condition)."
+        },
+        "Equipment": null,
+        "Key_Params": {
+          "Solution_Temperature_K": "1367.15",
+          "Solution_Time_h": "1-2",
+          "Cooling_Medium": "rapid air cool",
+          "Aging_Temperature_K": 977.15,
+          "Aging_Time_h": 20.0
+        }
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": "The mean intercept grain size was 125 um with small discrete M23C6 carbide precipitates decorating the grain boundaries as shown in Fig. 1. The alloy was strengthened by ~20 nm γ' precipitates with a rounded cuboidal shape and a weight fraction of 0.126. Primary carbides and carbonitrides, M(C,N), were observed to be aligned along the rolling direction.",
+          "simplified": "Mean grain size of 125 um, with intergranular M23C6 carbides. Matrix strengthened by 20 nm gamma prime precipitates (12.6 wt%). M(C,N) carbonitrides aligned with rolling direction."
+        },
+        "Main_Phase": "Gamma (γ)",
+        "Precipitates": [
+          {
+            "Phase_Type": "Gamma Prime (γ')",
+            "Volume_Fraction_pct": null
+          },
+          {
+            "Phase_Type": "M23C6 Carbide",
+            "Volume_Fraction_pct": null
+          },
+          {
+            "Phase_Type": "M(C,N) Carbonitride",
+            "Volume_Fraction_pct": null
+          }
+        ],
+        "Porosity_pct": null,
+        "Relative_Density_pct": null,
+        "Grain_Size_avg_um": 125.0,
+        "Precipitate_Size_avg_nm": 20.0,
+        "Advanced_Quantitative_Features": {
+          "Gamma_Prime_Weight_Fraction_pct": 12.6
+        }
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Yield_Strength",
+          "Test_Condition": "Air environment",
+          "Value_Numeric": 814.0,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "MPa",
+          "Test_Temperature_K": 248.15,
+          "Strain_Rate_s1": "3.33e-4",
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": null
+        },
+        {
+          "Property_Name": "Yield_Strength",
+          "Test_Condition": "Air environment",
+          "Value_Numeric": 819.0,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "MPa",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": "3.33e-4",
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": null
+        },
+        {
+          "Property_Name": "Yield_Strength",
+          "Test_Condition": "Air environment",
+          "Value_Numeric": 809.0,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "MPa",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": "3.33e-5",
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": null
+        },
+        {
+          "Property_Name": "Yield_Strength",
+          "Test_Condition": "Air environment",
+          "Value_Numeric": 800.0,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "MPa",
+          "Test_Temperature_K": 338.15,
+          "Strain_Rate_s1": "3.33e-4",
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": null
+        },
+        {
+          "Property_Name": "Yield_Strength",
+          "Test_Condition": "Air environment",
+          "Value_Numeric": 766.0,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "MPa",
+          "Test_Temperature_K": 448.15,
+          "Strain_Rate_s1": "3.33e-4",
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": null
+        },
+        {
+          "Property_Name": "Yield_Strength",
+          "Test_Condition": "Air environment",
+          "Value_Numeric": 735.0,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "MPa",
+          "Test_Temperature_K": 558.15,
+          "Strain_Rate_s1": "3.33e-4",
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": null
+        },
+        {
+          "Property_Name": "Elongation_At_Fracture",
+          "Test_Condition": "Air environment",
+          "Value_Numeric": 23.0,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "%",
+          "Test_Temperature_K": 248.15,
+          "Strain_Rate_s1": "3.33e-4",
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": null
+        },
+        {
+          "Property_Name": "Elongation_At_Fracture",
+          "Test_Condition": "Air environment",
+          "Value_Numeric": 21.2,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "%",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": "3.33e-4",
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": null
+        },
+        {
+          "Property_Name": "Elongation_At_Fracture",
+          "Test_Condition": "Air environment",
+          "Value_Numeric": 22.0,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "%",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": "3.33e-5",
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": null
+        },
+        {
+          "Property_Name": "Elongation_At_Fracture",
+          "Test_Condition": "Air environment",
+          "Value_Numeric": 21.5,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "%",
+          "Test_Temperature_K": 338.15,
+          "Strain_Rate_s1": "3.33e-4",
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": null
+        },
+        {
+          "Property_Name": "Elongation_At_Fracture",
+          "Test_Condition": "Air environment",
+          "Value_Numeric": 23.0,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "%",
+          "Test_Temperature_K": 448.15,
+          "Strain_Rate_s1": "3.33e-4",
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": null
+        },
+        {
+          "Property_Name": "Elongation_At_Fracture",
+          "Test_Condition": "Air environment",
+          "Value_Numeric": 30.0,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "%",
+          "Test_Temperature_K": 558.15,
+          "Strain_Rate_s1": "3.33e-4",
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": null
+        },
+        {
+          "Property_Name": "Fracture_Toughness",
+          "Test_Condition": "Air environment, loading rate 420-1980 MPa·m^0.5/h",
+          "Value_Numeric": 147.0,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "MPa·m^0.5",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": "CT specimens 15.2 mm thick with 20% side grooves, width 30.5 mm",
+          "Note": "Measured as J_IC and converted to K_JC"
+        },
+        {
+          "Property_Name": "True_Fracture_Stress",
+          "Test_Condition": "Air environment",
+          "Value_Numeric": 1482.0,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "MPa",
+          "Test_Temperature_K": 248.15,
+          "Strain_Rate_s1": "3.33e-4",
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": null
+        },
+        {
+          "Property_Name": "True_Fracture_Stress",
+          "Test_Condition": "Air environment",
+          "Value_Numeric": 1375.0,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "MPa",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": "3.33e-4",
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": null
+        },
+        {
+          "Property_Name": "True_Fracture_Stress",
+          "Test_Condition": "Air environment",
+          "Value_Numeric": 1424.0,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "MPa",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": "3.33e-5",
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": null
+        },
+        {
+          "Property_Name": "True_Fracture_Stress",
+          "Test_Condition": "Air environment",
+          "Value_Numeric": 1385.0,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "MPa",
+          "Test_Temperature_K": 338.15,
+          "Strain_Rate_s1": "3.33e-4",
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": null
+        },
+        {
+          "Property_Name": "True_Fracture_Stress",
+          "Test_Condition": "Air environment",
+          "Value_Numeric": 1359.0,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "MPa",
+          "Test_Temperature_K": 448.15,
+          "Strain_Rate_s1": "3.33e-4",
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": null
+        },
+        {
+          "Property_Name": "True_Fracture_Stress",
+          "Test_Condition": "Air environment",
+          "Value_Numeric": 1378.0,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "MPa",
+          "Test_Temperature_K": 558.15,
+          "Strain_Rate_s1": "3.33e-4",
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": null
+        },
+        {
+          "Property_Name": "Reduction_of_Area_pct",
+          "Test_Condition": "Air environment",
+          "Value_Numeric": 24.0,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "%",
+          "Test_Temperature_K": 248.15,
+          "Strain_Rate_s1": "3.33e-4",
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": null
+        },
+        {
+          "Property_Name": "Reduction_of_Area_pct",
+          "Test_Condition": "Air environment",
+          "Value_Numeric": 22.1,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "%",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": "3.33e-4",
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": null
+        },
+        {
+          "Property_Name": "Reduction_of_Area_pct",
+          "Test_Condition": "Air environment",
+          "Value_Numeric": 24.0,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "%",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": "3.33e-5",
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": null
+        },
+        {
+          "Property_Name": "Reduction_of_Area_pct",
+          "Test_Condition": "Air environment",
+          "Value_Numeric": 26.0,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "%",
+          "Test_Temperature_K": 448.15,
+          "Strain_Rate_s1": "3.33e-4",
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": null
+        }
+      ]
+    },
+    {
+      "Sample_ID": "X-750_HEE",
+      "Gradient_Material": false,
+      "Composition_Info": {
+        "Role": "Target",
+        "Alloy_Name_Raw": "Alloy X-750",
+        "Nominal_Composition": null,
+        "Measured_Composition": {
+          "Composition_Type": "wt%",
+          "Elements_Normalized": {
+            "Ni": 71.17,
+            "Cr": 15.46,
+            "Nb": 1.0,
+            "Ti": 2.67,
+            "Al": 0.76,
+            "Fe": 8.33,
+            "C": 0.072,
+            "other": 0.538
+          },
+          "Measurement_Method": "Chemical analysis"
+        },
+        "Note": null
+      },
+      "Process_Info": {
+        "Process_Category": "Heat Treatment and Hydrogen Environment Test",
+        "Process_Text": {
+          "original": "heat treated to the HTH condition... testing was performed at 54°C... in hydrogen gas... at pressures of 0.14, 0.34, 3.4, and 34 MPa",
+          "simplified": "HTH condition, tested directly in external hydrogen gas environment (HEE) at various pressures and temperatures."
+        },
+        "Equipment": null,
+        "Key_Params": {
+          "Solution_Temperature_K": "1367.15",
+          "Solution_Time_h": "1-2",
+          "Cooling_Medium": "rapid air cool",
+          "Aging_Temperature_K": 977.15,
+          "Aging_Time_h": 20.0
+        }
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": "The mean intercept grain size was 125 um... alloy was strengthened by ~20 nm γ' precipitates",
+          "simplified": "Same microstructure as uncharged condition prior to testing."
+        },
+        "Main_Phase": "Gamma (γ)",
+        "Precipitates": [
+          {
+            "Phase_Type": "Gamma Prime (γ')",
+            "Volume_Fraction_pct": null
+          },
+          {
+            "Phase_Type": "M23C6 Carbide",
+            "Volume_Fraction_pct": null
+          },
+          {
+            "Phase_Type": "M(C,N) Carbonitride",
+            "Volume_Fraction_pct": null
+          }
+        ],
+        "Porosity_pct": null,
+        "Relative_Density_pct": null,
+        "Grain_Size_avg_um": 125.0,
+        "Precipitate_Size_avg_nm": 20.0,
+        "Advanced_Quantitative_Features": {}
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Fracture_Toughness",
+          "Test_Condition": "Hydrogen gas 0.14 MPa, loading rate 4.4 MPa·m^0.5/h",
+          "Value_Numeric": 43.0,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "MPa·m^0.5",
+          "Test_Temperature_K": 327.15,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": "CT specimens W=20.3 mm, B=10.1 mm",
+          "Note": "HEE condition"
+        },
+        {
+          "Property_Name": "Fracture_Toughness",
+          "Test_Condition": "Hydrogen gas 0.34 MPa, loading rate 4.4 MPa·m^0.5/h",
+          "Value_Numeric": 36.0,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "MPa·m^0.5",
+          "Test_Temperature_K": 327.15,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": "CT specimens W=20.3 mm, B=10.1 mm",
+          "Note": "HEE condition"
+        },
+        {
+          "Property_Name": "Fracture_Toughness",
+          "Test_Condition": "Hydrogen gas 0.34 MPa, loading rate 0.44 MPa·m^0.5/h",
+          "Value_Numeric": 36.0,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "MPa·m^0.5",
+          "Test_Temperature_K": 327.15,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": "CT specimens W=20.3 mm, B=10.1 mm",
+          "Note": "HEE condition"
+        },
+        {
+          "Property_Name": "Fracture_Toughness",
+          "Test_Condition": "Hydrogen gas 3.4 MPa, loading rate 4.4 MPa·m^0.5/h",
+          "Value_Numeric": 29.0,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "MPa·m^0.5",
+          "Test_Temperature_K": 327.15,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": "CT specimens W=20.3 mm, B=10.1 mm",
+          "Note": "HEE condition"
+        },
+        {
+          "Property_Name": "Fracture_Toughness",
+          "Test_Condition": "Hydrogen gas 34.4 MPa, loading rate 4.4 MPa·m^0.5/h",
+          "Value_Numeric": 22.0,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "MPa·m^0.5",
+          "Test_Temperature_K": 327.15,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": "CT specimens W=20.3 mm, B=10.1 mm",
+          "Note": "HEE condition"
+        },
+        {
+          "Property_Name": "Fracture_Toughness",
+          "Test_Condition": "Hydrogen gas 13.8 MPa",
+          "Value_Numeric": 68.0,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "MPa·m^0.5",
+          "Test_Temperature_K": 533.15,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": "HEE condition, previously reported data"
+        },
+        {
+          "Property_Name": "Fracture_Toughness",
+          "Test_Condition": "Hydrogen gas 13.8 MPa",
+          "Value_Numeric": 87.0,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "MPa·m^0.5",
+          "Test_Temperature_K": 611.15,
+          "Strain_Rate_s1": null,
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": "HEE condition, previously reported data"
+        }
+      ]
+    },
+    {
+      "Sample_ID": "X-750_IHE_5.7ppm",
+      "Gradient_Material": false,
+      "Composition_Info": {
+        "Role": "Target",
+        "Alloy_Name_Raw": "Alloy X-750",
+        "Nominal_Composition": null,
+        "Measured_Composition": {
+          "Composition_Type": "wt%",
+          "Elements_Normalized": {
+            "Ni": 71.17,
+            "Cr": 15.46,
+            "Nb": 1.0,
+            "Ti": 2.67,
+            "Al": 0.76,
+            "Fe": 8.33,
+            "C": 0.072,
+            "other": 0.538
+          },
+          "Measurement_Method": "Chemical analysis"
+        },
+        "Note": null
+      },
+      "Process_Info": {
+        "Process_Category": "Heat Treatment and Hydrogen Charging",
+        "Process_Text": {
+          "original": "heat treated to the HTH condition... precharged with hydrogen to 5.7 wppm",
+          "simplified": "HTH condition, subsequently precharged with hydrogen to 5.7 wppm."
+        },
+        "Equipment": "autoclave",
+        "Key_Params": {
+          "Solution_Temperature_K": "1367.15",
+          "Solution_Time_h": "1-2",
+          "Cooling_Medium": "rapid air cool",
+          "Aging_Temperature_K": 977.15,
+          "Aging_Time_h": 20.0
+        }
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": "The mean intercept grain size was 125 um... alloy was strengthened by ~20 nm γ' precipitates",
+          "simplified": "Similar microstructure as uncharged condition."
+        },
+        "Main_Phase": "Gamma (γ)",
+        "Precipitates": [
+          {
+            "Phase_Type": "Gamma Prime (γ')",
+            "Volume_Fraction_pct": null
+          }
+        ],
+        "Porosity_pct": null,
+        "Relative_Density_pct": null,
+        "Grain_Size_avg_um": 125.0,
+        "Precipitate_Size_avg_nm": 20.0,
+        "Advanced_Quantitative_Features": {}
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Yield_Strength",
+          "Test_Condition": "Air environment",
+          "Value_Numeric": 801.0,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "MPa",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": "3.33e-4",
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": "IHE specimen"
+        },
+        {
+          "Property_Name": "Elongation_At_Fracture",
+          "Test_Condition": "Air environment",
+          "Value_Numeric": 7.3,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "%",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": "3.33e-4",
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": "IHE specimen"
+        },
+        {
+          "Property_Name": "True_Fracture_Stress",
+          "Test_Condition": "Air environment",
+          "Value_Numeric": 1088.0,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "MPa",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": "3.33e-4",
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": "IHE specimen"
+        },
+        {
+          "Property_Name": "Reduction_of_Area_pct",
+          "Test_Condition": "Air environment",
+          "Value_Numeric": 13.9,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "%",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": "3.33e-4",
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": "IHE specimen"
+        }
+      ]
+    },
+    {
+      "Sample_ID": "X-750_IHE_18ppm",
+      "Gradient_Material": false,
+      "Composition_Info": {
+        "Role": "Target",
+        "Alloy_Name_Raw": "Alloy X-750",
+        "Nominal_Composition": null,
+        "Measured_Composition": {
+          "Composition_Type": "wt%",
+          "Elements_Normalized": {
+            "Ni": 71.17,
+            "Cr": 15.46,
+            "Nb": 1.0,
+            "Ti": 2.67,
+            "Al": 0.76,
+            "Fe": 8.33,
+            "C": 0.072,
+            "other": 0.538
+          },
+          "Measurement_Method": "Chemical analysis"
+        },
+        "Note": null
+      },
+      "Process_Info": {
+        "Process_Category": "Heat Treatment and Hydrogen Charging",
+        "Process_Text": {
+          "original": "heat treated to the HTH condition... precharged with hydrogen to 18 wppm",
+          "simplified": "HTH condition, subsequently precharged with hydrogen to 18 wppm."
+        },
+        "Equipment": "autoclave",
+        "Key_Params": {
+          "Solution_Temperature_K": "1367.15",
+          "Solution_Time_h": "1-2",
+          "Cooling_Medium": "rapid air cool",
+          "Aging_Temperature_K": 977.15,
+          "Aging_Time_h": 20.0
+        }
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": "The mean intercept grain size was 125 um... alloy was strengthened by ~20 nm γ' precipitates",
+          "simplified": "Similar microstructure as uncharged condition."
+        },
+        "Main_Phase": "Gamma (γ)",
+        "Precipitates": [
+          {
+            "Phase_Type": "Gamma Prime (γ')",
+            "Volume_Fraction_pct": null
+          }
+        ],
+        "Porosity_pct": null,
+        "Relative_Density_pct": null,
+        "Grain_Size_avg_um": 125.0,
+        "Precipitate_Size_avg_nm": 20.0,
+        "Advanced_Quantitative_Features": {}
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Yield_Strength",
+          "Test_Condition": "Air environment",
+          "Value_Numeric": 803.0,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "MPa",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": "3.33e-4",
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": "IHE specimen"
+        },
+        {
+          "Property_Name": "Elongation_At_Fracture",
+          "Test_Condition": "Air environment",
+          "Value_Numeric": 4.3,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "%",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": "3.33e-4",
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": "IHE specimen"
+        },
+        {
+          "Property_Name": "True_Fracture_Stress",
+          "Test_Condition": "Air environment",
+          "Value_Numeric": 1009.0,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "MPa",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": "3.33e-4",
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": "IHE specimen"
+        },
+        {
+          "Property_Name": "Reduction_of_Area_pct",
+          "Test_Condition": "Air environment",
+          "Value_Numeric": 11.5,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "%",
+          "Test_Temperature_K": 298.15,
+          "Strain_Rate_s1": "3.33e-4",
+          "Tensile_Speed_mm_min": null,
+          "Hardness_Load": null,
+          "Hardness_Dwell_Time_s": null,
+          "Data_Source": "text",
+          "Test_Specimen": null,
+          "Note": "IHE specimen"
+        }
+      ]
+    },
+    {
+      "Sample_ID": "X-750_IHE_40ppm",
+      "Gradient_Material": false,
+      "Composition_Info": {
+        "Role": "Target",
+        "Alloy_Name_Raw": "Alloy X-750",
+        "Nominal_Composition": null,
+        "Measured_Composition": {
+          "Composition_Type": "wt%",
+          "Elements_Normalized": {
+            "Ni": 71.17,
+            "Cr": 15.46,
+            "Nb": 1.0,
+            "Ti": 2.67,
+            "Al": 0.76,
+            "Fe": 8.33,
+            "C": 0.072,
+            "other": 0.538
+          },
+          "Measurement_Method": "Chemical analysis"
+        },
+        "Note": null
+      },
+      "Process_Info": {
+        "Process_Category": "Heat Treatment and Hydrogen Charging",
+        "Process_Text": {
+          "original": "charged in a high-pressure hydrogen autoclave... at 21 MPa and 315°C... for four weeks at 315°C. After hydrogen charging, the specimens were removed from the autoclave and stored below 0°C.",
+          "simplified": "HTH condition, followed by precharging in autoclave at 21 MPa hydrogen and 315°C for 4 weeks (40 wppm H)."
+        },
+        "Equipment": "high-pressure hydrogen autoclave",
+        "Key_Params": {
+          "Solution_Temperature_K": "1367.15",
+          "Solution_Time_h": "1-2",
+          "Aging_Temperature_K": 977.15,
+          "Aging_Time_h": 20.0,
+          "Hydrogen_Charging_Temperature_K": 588.15,
+          "Hydrogen_Charging_Time_h": 672.0
+        }
+      },
+      "Microstructure_Info": {
+        "Microstructure_Text": {
+          "original": "The mean intercept grain size was 125 um... alloy was strengthened by ~20 nm γ' precipitates",
+          "simplified": "Similar microstructure as uncharged condition."
+        },
+        "Main_Phase": "Gamma (γ)",
+        "Precipitates": [
+          {
+            "Phase_Type": "Gamma Prime (γ')",
+            "Volume_Fraction_pct": null
+          }
+        ],
+        "Porosity_pct": null,
+        "Relative_Density_pct": null,
+        "Grain_Size_avg_um": 125.0,
+        "Precipitate_Size_avg_nm": 20.0,
+        "Advanced_Quantitative_Features": {}
+      },
+      "Properties_Info": [
+        {
+          "Property_Name": "Fracture_Toughness",
+          "Test_Condition": "Air environment, loading rate 180 MPa·m^0.5/h",
+          "Value_Numeric": 53.0,
+          "Value_Range": null,
+          "Value_StdDev": null,
+          "Unit": "MPa·m^0.5",
+          "Test_Temperature_K": 298.15,

@@ -1,0 +1,1010 @@
+{
+  "Paper_Metadata": {
+    "Paper_Title": "A phase field model for hydrogen-assisted fatigue",
+    "DOI": null,
+    "Note": "DOI not found in OCR text"
+  },
+  "Paper_Routing": {
+    "base_material": "Metals",
+    "application": "Structural",
+    "research_paradigm": "Pure_Simulation",
+    "Supplements_Loaded": [
+      "directions/base/Metals.txt",
+      "directions/application/Structural.txt",
+      "directions/paradigm/Pure_Simulation.txt"
+    ],
+    "Patch_Tags": [
+      "Hydrogen_Assisted"
+    ],
+    "Needs_Mixed_Routing_Check": false,
+    "Mixed_Signals": []
+  },
+  "items": [
+    {
+      "Item_ID": "01",
+      "Sample_ID": "Cracked_Square_Plate_NoH2",
+      "Role": "Target",
+      "Data_Nature": "Computed",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Pure_Simulation",
+      "Patch_Tags": [],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 3.1: Cracked square plate subjected to fatigue in a hydrogenous environment"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Iron-based (generic)",
+          "Note": "Generic iron-based material with no specific alloy composition given; used for cracked square plate benchmark without hydrogen"
+        },
+        "Processing": {
+          "Process_Category": "Simulation",
+          "Simulation_Metadata": {
+            "Method_Category": "Phase_Field",
+            "Software": "Custom finite element implementation (staggered approach with residual norm control)",
+            "Element_Type": "Eight-node plane strain quadrilateral elements with reduced integration",
+            "Mesh_Params": {
+              "Total_Elements": 27410,
+              "Refinement": "Mesh refined in crack propagation region; characteristic element length h < ℓ/5.4"
+            },
+            "Governing_Equations": [
+              "Phase field equilibrium equation (Eq. 5)",
+              "Balance of linear momentum (Eq. 11)",
+              "Mass transport / hydrogen diffusion (Eq. 12)"
+            ],
+            "Key_Model_Parameters": {
+              "E": 210000,
+              "E_Unit": "MPa",
+              "nu": 0.3,
+              "Gc": 2.7,
+              "Gc_Unit": "kJ/m^2",
+              "ell": 0.004,
+              "ell_Unit": "mm",
+              "alpha_T": 56.25,
+              "alpha_T_Unit": "MPa",
+              "Fatigue_Degradation_Function": "Asymptotic (Eq. 8)",
+              "Tension_Compression_Split": "Volumetric-deviatoric (Amor et al.)",
+              "Damage_Irreversibility": "History field with Kuhn-Tucker conditions",
+              "Load_Frequency_Hz": 400,
+              "Load_Ratio_R": -1,
+              "Delta_u_mm": 0.004,
+              "Load_Type": "Piece-wise linear cyclic remote displacement"
+            },
+            "Numerical_Solvers": "Staggered approach converging to monolithic result via residual norm control",
+            "Original_Values": "E = 210 GPa, ν = 0.3, Gc = 2.7 kJ/m², ℓ = 0.004 mm, αT = 56.25 MPa, f = 400 Hz, R = −1, Δu = 4×10⁻³ mm"
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Cracked square plate with initial crack subjected to uniaxial tension; benchmark geometry",
+            "simplified": "2D cracked square plate benchmark model without hydrogen"
+          },
+          "Advanced_Quantitative_Features": {
+            "Geometry": "Square plate with initial edge crack",
+            "Loading": "Uniaxial tension (cyclic)",
+            "Validation_Targets": [
+              "Carrara et al. [52]",
+              "Kristensen and Martínez-Pañeda [58]"
+            ]
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Fatigue_Crack_Extension_vs_Cycles",
+            "Value": null,
+            "Unit": "mm",
+            "Data_Source": "image",
+            "Note": "Fig. 2: Crack extension Δa vs. number of cycles N for validation in inert environment; visual data from chart, not extracted as numerical values",
+            "Test_Condition": {
+              "Environment": "Inert (no hydrogen)",
+              "Load_Frequency_Hz": 400,
+              "Load_Ratio_R": -1,
+              "Delta_u_mm": 0.004
+            },
+            "Comparison": "Good agreement with Carrara et al. [52] and Kristensen and Martínez-Pañeda [58]"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "02",
+      "Sample_ID": "Cracked_Square_Plate_H2",
+      "Role": "Target",
+      "Data_Nature": "Computed",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Pure_Simulation",
+      "Patch_Tags": [
+        "Hydrogen_Assisted"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 3.1: Cracked square plate exposed to hydrogenous environment"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Iron-based (generic)",
+          "Note": "Generic iron-based material with diffusion coefficient D = 0.0127 mm²/s"
+        },
+        "Processing": {
+          "Process_Category": "Simulation",
+          "Simulation_Metadata": {
+            "Method_Category": "Phase_Field",
+            "Software": "Custom finite element implementation (staggered approach)",
+            "Element_Type": "Eight-node plane strain quadrilateral elements with reduced integration",
+            "Mesh_Params": {
+              "Total_Elements": 27410,
+              "Refinement": "h < ℓ/5.4"
+            },
+            "Governing_Equations": [
+              "Phase field equilibrium (Eq. 5)",
+              "Balance of linear momentum (Eq. 11)",
+              "Hydrogen mass transport (Eq. 12)",
+              "Hydrogen degradation function (Eq. 7)",
+              "Fatigue degradation function (Eq. 8)"
+            ],
+            "Key_Model_Parameters": {
+              "E": 210000,
+              "E_Unit": "MPa",
+              "nu": 0.3,
+              "Gc": 2.7,
+              "Gc_Unit": "kJ/m^2",
+              "ell": 0.004,
+              "ell_Unit": "mm",
+              "alpha_T": 56.25,
+              "alpha_T_Unit": "MPa",
+              "D": 0.0127,
+              "D_Unit": "mm^2/s",
+              "chi": 0.89,
+              "Delta_gb_0": 30,
+              "Delta_gb_0_Unit": "kJ/mol",
+              "V_H": 2000,
+              "V_H_Unit": "mm^3/mol",
+              "Load_Frequency_Hz": 400,
+              "Load_Ratio_R": -1,
+              "Delta_u_mm": 0.004,
+              "Initial_Condition": "Pre-charged: C(t=0) = C_env uniformly",
+              "Boundary_Condition_H2": "C(t) = C_env at all outer boundaries including crack faces"
+            },
+            "Numerical_Solvers": "Staggered approach with residual norm control; penalty approach for moving chemical boundary conditions",
+            "Original_Values": "E = 210 GPa, ν = 0.3, Gc = 2.7 kJ/m², ℓ = 0.004 mm, αT = 56.25 MPa, D = 0.0127 mm²/s, χ = 0.89, Δgb⁰ = 30 kJ/mol, VH = 2000 mm³/mol, f = 400 Hz, R = −1, Δu = 4×10⁻³ mm"
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Cracked square plate exposed to hydrogenous environment at room temperature; pre-charged with uniform hydrogen distribution",
+            "simplified": "2D cracked plate with coupled deformation-diffusion-fracture under cyclic loading in hydrogenous environment"
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Fatigue_Crack_Extension_vs_Cycles",
+            "Value": null,
+            "Unit": "mm",
+            "Data_Source": "image",
+            "Note": "Fig. 3: Crack extension Δa vs. N for C_env = 0.1, 0.5, 1 wt ppm H. Crack growth rates increase with increasing hydrogen content. Visual data not extracted as numerical values.",
+            "Test_Condition": {
+              "Environment": "Hydrogenous (pre-charged + exposed)",
+              "C_env_wt_ppm": [
+                0.1,
+                0.5,
+                1
+              ],
+              "Load_Frequency_Hz": 400,
+              "Load_Ratio_R": -1,
+              "Delta_u_mm": 0.004,
+              "Temperature": "Room temperature"
+            },
+            "Trend": "Fatigue crack growth rates increase with increasing hydrogen content"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "03",
+      "Sample_ID": "Boundary_Layer_Stationary_Crack",
+      "Role": "Target",
+      "Data_Nature": "Computed",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Pure_Simulation",
+      "Patch_Tags": [
+        "Hydrogen_Assisted"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 3.2: Boundary layer model, stationary crack analysis"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Iron-based (generic)",
+          "Note": "E = 210 GPa, ν = 0.3, D = 0.0127 mm²/s, V_H = 2000 mm³/mol"
+        },
+        "Processing": {
+          "Process_Category": "Simulation",
+          "Simulation_Metadata": {
+            "Method_Category": "Phase_Field",
+            "Software": "Custom finite element implementation",
+            "Element_Type": "Quadratic plane strain quadrilateral elements with reduced integration",
+            "Mesh_Params": {
+              "Total_Elements": 4572,
+              "Refinement": "Mesh refined along crack propagation region"
+            },
+            "Governing_Equations": [
+              "Phase field equilibrium (Eq. 5)",
+              "Balance of linear momentum (Eq. 11)",
+              "Hydrogen transport (Eq. 12)",
+              "Chemical potential with hydrostatic stress coupling (Eq. 13)"
+            ],
+            "Key_Model_Parameters": {
+              "E": 210000,
+              "E_Unit": "MPa",
+              "nu": 0.3,
+              "D": 0.0127,
+              "D_Unit": "mm^2/s",
+              "V_H": 2000,
+              "V_H_Unit": "mm^3/mol",
+              "C0": 0.5,
+              "C0_Unit": "wt ppm",
+              "Delta_K": 1,
+              "Delta_K_Unit": "MPa√m",
+              "Load_Frequency_Hz": 1,
+              "Load_Ratio_R": 0,
+              "Increments_Per_Cycle": "At least 20",
+              "Initial_Condition": "Pre-charged: C(t=0) = C0 = 0.5 wt ppm uniformly"
+            },
+            "Boundary_Conditions": "Remote KI field applied via Williams expansion displacements on outer boundary; hydrogen concentration C_env at boundaries",
+            "Original_Values": "E = 210 GPa, ν = 0.3, D = 0.0127 mm²/s, VH = 2000 mm³/mol, C0 = 0.5 wt ppm, ΔK = 1 MPa√m, f = 1 Hz, R = 0"
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Boundary layer model: circular domain with sharp crack, upper half modeled due to symmetry; stationary and propagating crack analyses",
+            "simplified": "Boundary layer formulation for small scale yielding; cracked circular domain under remote KI"
+          },
+          "Advanced_Quantitative_Features": {
+            "Geometry": "Circular domain, upper half (symmetry), with sharp crack",
+            "Normalization": "C/C0 = F(f_bar, t_bar, E*V_H/RT) per Buckingham Pi theorem",
+            "Length_Parameter_L0": "L0 = (Km/E)^2",
+            "Normalized_Frequency": "f_bar = f*L0^2/D",
+            "Normalized_Time": "t_bar = t*D/L0^2"
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Hydrogen_Concentration_Distribution_Ahead_of_Crack_Tip",
+            "Value": null,
+            "Data_Source": "image",
+            "Note": "Fig. 5: C/C0 ahead of stationary crack tip at Kmax, Km, Kmin stages of first load cycle under steady state. Hydrogen concentration increases with applied load, maximum near crack tip. Visual data not extracted.",
+            "Test_Condition": {
+              "Condition": "Steady state, stationary crack",
+              "Load_Ratio_R": 0,
+              "C0_wt_ppm": 0.5
+            }
+          },
+          {
+            "Property_Name": "Hydrogen_Concentration_vs_Time_at_Crack_Tip",
+            "Value": null,
+            "Data_Source": "image",
+            "Note": "Fig. 6: Time evolution of C/C0 at r/L0 ≈ 0.2×10^7 ahead of crack tip for various loading frequencies. At high f (10^3 Hz), concentration flattens ~5% below max at low frequencies. Visual data not extracted.",
+            "Test_Condition": {
+              "Location": "r/L0 ≈ 0.2×10^7 ahead of crack tip",
+              "Load_Ratio_R": 0,
+              "C0_wt_ppm": 0.5,
+              "Frequencies_Studied": "Multiple (f_bar = 2.5×10^-16 to 2.5×10^-12, i.e. f = 10^-1 to 10^3 Hz)"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "04",
+      "Sample_ID": "Boundary_Layer_Propagating_Crack",
+      "Role": "Target",
+      "Data_Nature": "Computed",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Pure_Simulation",
+      "Patch_Tags": [
+        "Hydrogen_Assisted"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 3.2: Boundary layer model, propagating crack, Paris law and frequency mapping"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Iron-based (generic)",
+          "Note": "Same base material properties as Item 03; additional fracture properties Gc = 2.7 kJ/m², ℓ = 0.0048 mm"
+        },
+        "Processing": {
+          "Process_Category": "Simulation",
+          "Simulation_Metadata": {
+            "Method_Category": "Phase_Field",
+            "Software": "Custom finite element implementation",
+            "Element_Type": "Quadratic plane strain quadrilateral elements with reduced integration",
+            "Mesh_Params": {
+              "Total_Elements": 4572,
+              "Refinement": "Mesh refined along crack propagation region"
+            },
+            "Governing_Equations": [
+              "Phase field equilibrium (Eq. 5)",
+              "Balance of linear momentum (Eq. 11)",
+              "Hydrogen transport (Eq. 12)",
+              "Hydrogen degradation function (Eq. 7)",
+              "Fatigue degradation function (Eq. 8)"
+            ],
+            "Key_Model_Parameters": {
+              "E": 210000,
+              "E_Unit": "MPa",
+              "nu": 0.3,
+              "Gc": 2.7,
+              "Gc_Unit": "kJ/m^2",
+              "ell": 0.0048,
+              "ell_Unit": "mm",
+              "D": 0.0127,
+              "D_Unit": "mm^2/s",
+              "chi": 0.89,
+              "Delta_gb_0": 30,
+              "Delta_gb_0_Unit": "kJ/mol",
+              "V_H": 2000,
+              "V_H_Unit": "mm^3/mol",
+              "K0_Derivation": "K0 = sqrt(Gc*E/(1-nu^2)) (Eq. 19)",
+              "Lf_Derivation": "Lf = Gc*(1-nu^2)/E (Eq. 20)",
+              "Delta_K_over_K0": 0.08,
+              "Load_Frequency_Hz": 1,
+              "Load_Ratio_R": 0.1,
+              "Initial_Condition": "Pre-charged: C(t=0) = C_env",
+              "Boundary_Condition_H2": "C(t) = C_env at boundaries during test"
+            },
+            "Numerical_Solvers": "Staggered approach; penalty approach for moving chemical boundary conditions",
+            "Original_Values": "E = 210 GPa, ν = 0.3, Gc = 2.7 kJ/m², ℓ = 0.0048 mm, D = 0.0127 mm²/s, χ = 0.89, Δgb⁰ = 30 kJ/mol, VH = 2000 mm³/mol, ΔK/K0 = 0.08, f = 1 Hz, R = 0.1"
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Boundary layer model with propagating fatigue crack under small scale yielding",
+            "simplified": "Boundary layer model for Paris law analysis and frequency regime mapping"
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Fatigue_Crack_Extension_vs_Cycles_H2",
+            "Value": null,
+            "Unit": "mm",
+            "Data_Source": "image",
+            "Note": "Fig. 7: Normalized crack extension vs. N for different C_env. Higher hydrogen concentration leads to larger crack extension. Visual data not extracted.",
+            "Test_Condition": {
+              "Delta_K_over_K0": 0.08,
+              "Load_Ratio_R": 0.1,
+              "Load_Frequency_Hz": 1,
+              "C_env_wt_ppm": "Various (0, 0.1, 0.5, 1)"
+            },
+            "Trend": "For a given number of cycles, higher hydrogen concentration yields larger crack extension"
+          },
+          {
+            "Property_Name": "Paris_Law_Behaviour",
+            "Value": null,
+            "Data_Source": "image",
+            "Note": "Fig. 8: da/dN vs. ΔK on log-log scale for different C_env. Paris regime is linear; Paris coefficient C increases with hydrogen content; Paris exponent m ≈ 3.2, relatively insensitive to environment.",
+            "Test_Condition": {
+              "Load_Ratio_R": 0.1,
+              "Load_Frequency_Hz": 1,
+              "C_env_wt_ppm": "Various"
+            },
+            "Paris_Exponent_m": 3.2,
+            "Paris_Exponent_m_Note": "Approximately 3.2; within range reported for metals in inert environments",
+            "Trend": "Paris coefficient C increases with hydrogen content; Paris exponent m appears less sensitive to environment"
+          },
+          {
+            "Property_Name": "Fatigue_Crack_Growth_Rate_vs_Frequency",
+            "Value": null,
+            "Data_Source": "image",
+            "Note": "Fig. 9: da/dN vs. normalized frequency f_bar = f*L0^2/D for ΔK/K0 = 0.24, R = 0, C0 = C_env = 0.1 wt ppm. Two limiting regimes captured: high f (diminished embrittlement) and low f (maximum embrittlement) with smooth transition.",
+            "Test_Condition": {
+              "Delta_K_over_K0": 0.24,
+              "Load_Ratio_R": 0,
+              "C0_wt_ppm": 0.1,
+              "Variable": "Normalized frequency f_bar = f*L0^2/D"
+            },
+            "Trend": "Crack growth rate sensitive to loading frequency; two limit states captured with smooth transition"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "05",
+      "Sample_ID": "Notched_Cylindrical_Bar",
+      "Role": "Target",
+      "Data_Nature": "Computed",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Pure_Simulation",
+      "Patch_Tags": [
+        "Hydrogen_Assisted"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 3.3: Notched cylindrical bar"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Iron-based (generic)",
+          "Note": "Generic iron-based material with E = 210 GPa, ν = 0.3, D = 0.0127 mm²/s"
+        },
+        "Processing": {
+          "Process_Category": "Simulation",
+          "Simulation_Metadata": {
+            "Method_Category": "Phase_Field",
+            "Software": "Custom finite element implementation",
+            "Element_Type": "Quadratic axisymmetric quadrilateral elements with reduced integration",
+            "Mesh_Params": {
+              "Total_Elements": 17003,
+              "Refinement": "Mesh refined ahead of notch tip; characteristic element size 6 times smaller than ℓ"
+            },
+            "Governing_Equations": [
+              "Phase field equilibrium (Eq. 5)",
+              "Balance of linear momentum (Eq. 11)",
+              "Hydrogen transport (Eq. 12)",
+              "Hydrogen degradation function (Eq. 7)",
+              "Fatigue degradation function (Eq. 8)"
+            ],
+            "Key_Model_Parameters": {
+              "E": 210000,
+              "E_Unit": "MPa",
+              "nu": 0.3,
+              "Gc": 64,
+              "Gc_Unit": "kJ/m^2",
+              "ell": 0.015,
+              "ell_Unit": "mm",
+              "D": 0.0127,
+              "D_Unit": "mm^2/s",
+              "alpha_T": 355.56,
+              "alpha_T_Unit": "MPa",
+              "chi": 0.89,
+              "Delta_gb_0": 30,
+              "Delta_gb_0_Unit": "kJ/mol",
+              "V_H": 2000,
+              "V_H_Unit": "mm^3/mol",
+              "Load_Frequency_Hz": 1,
+              "Load_Ratio_R": 0,
+              "Load_Type": "Piece-wise linear remote displacement",
+              "Initial_Condition": "Pre-charged: C(t=0) = C_env",
+              "Boundary_Condition_H2": "C(t) = C_env at all outer boundaries including notch faces",
+              "Stress_Concentration_Factor_Kt": 3.354
+            },
+            "Numerical_Solvers": "Staggered approach; penalty approach for moving chemical boundary conditions",
+            "Original_Values": "E = 210 GPa, ν = 0.3, Gc = 64 kJ/m², ℓ = 0.015 mm, D = 0.0127 mm²/s, αT = 355.56 MPa, f = 1 Hz, R = 0, Kt = 3.354"
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Cylindrical bar with a circumferential notch on its surface; axisymmetric conditions exploited; phase field and hydrogen concentration contours showing crack growth and environmental exposure",
+            "simplified": "Notched cylindrical bar under cyclic loading with hydrogen; axisymmetric model"
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "S-N_Curve_Virtual",
+            "Value": null,
+            "Data_Source": "image",
+            "Note": "Fig. 11: Virtual S-N curves for notched bar at C_env = 0.1, 0.5, 1 wt ppm. Shorter fatigue lives with higher hydrogen content. Slope of S-N curve appears insensitive to hydrogen content. Visual data not extracted.",
+            "Test_Condition": {
+              "Geometry": "Notched cylindrical bar (Kt = 3.354)",
+              "Environment": "Pre-charged + exposed to hydrogenous environment",
+              "C_env_wt_ppm": [
+                0.1,
+                0.5,
+                1
+              ],
+              "Load_Frequency_Hz": 1,
+              "Load_Ratio_R": 0
+            },
+            "Trend": "For a given stress amplitude, shorter fatigue lives with higher hydrogen content; slope relatively insensitive to H content"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "06",
+      "Sample_ID": "JIS_SCM435_Air",
+      "Role": "Demonstration",
+      "Data_Nature": "Computed",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Pure_Simulation",
+      "Patch_Tags": [],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 3.4: Comparison with experimental S-N curves, JIS-SCM435 in air"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Cr-Mo steel",
+          "Material_Name_Raw": "JIS-SCM435",
+          "Note": "Cr-Mo steel with tensile strength of 840 MPa per Matsunaga et al. [67]"
+        },
+        "Processing": {
+          "Process_Category": "Simulation",
+          "Simulation_Metadata": {
+            "Method_Category": "Phase_Field",
+            "Software": "Custom finite element implementation; semi-analytical 1D homogeneous solution to Eq. 5",
+            "Governing_Equations": [
+              "1D homogeneous phase field solution (Eq. 5)",
+              "Fatigue degradation function: Logarithmic (Eq. 9)"
+            ],
+            "Key_Model_Parameters": {
+              "E": 210000,
+              "E_Unit": "MPa",
+              "nu": 0.3,
+              "Gc": 60,
+              "Gc_Unit": "kJ/m^2",
+              "ell": 1.88,
+              "ell_Unit": "mm",
+              "alpha_T": 24,
+              "alpha_T_Unit": "MPa",
+              "kappa": 0.15,
+              "Tension_Compression_Split": "Spectral decomposition (Miehe et al. [53])",
+              "Load_Type": "Piece-wise cyclic linear remote stress",
+              "Load_Ratio_R": -1,
+              "Load_Frequency_Hz": 1,
+              "Environment": "Air (no hydrogen)"
+            },
+            "Calibration_Note": "αT = 24 MPa and κ = 0.15 chosen to provide best fit to experiments in air",
+            "Original_Values": "E = 210 GPa, ν = 0.3, Gc = 60 kJ/m², ℓ = 1.88 mm, αT = 24 MPa, κ = 0.15, R = −1, f = 1 Hz"
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Smooth sample under uniaxial tension-compression fatigue; 1D homogeneous solution",
+            "simplified": "Smooth sample, 1D semi-analytical model"
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "S-N_Curve_Virtual_Air",
+            "Value": null,
+            "Data_Source": "image",
+            "Note": "Fig. 13a: Virtual S-N curve for JIS-SCM435 in air. αT and κ calibrated to best fit experimental data in air.",
+            "Test_Condition": {
+              "Environment": "Laboratory air",
+              "Load_Ratio_R": -1,
+              "Load_Frequency_Hz": 1,
+              "Specimen": "Smooth sample, uniaxial tension-compression"
+            },
+            "Comparison_Reference": "Matsunaga et al. [67]"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "07",
+      "Sample_ID": "JIS_SCM435_H2",
+      "Role": "Demonstration",
+      "Data_Nature": "Computed",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Pure_Simulation",
+      "Patch_Tags": [
+        "Hydrogen_Assisted"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 3.4: JIS-SCM435 in 115 MPa hydrogen gas"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Cr-Mo steel",
+          "Material_Name_Raw": "JIS-SCM435",
+          "Note": "Cr-Mo steel; tensile strength 840 MPa. Similar to AISI 4130 per Ref. [70]."
+        },
+        "Processing": {
+          "Process_Category": "Simulation",
+          "Simulation_Metadata": {
+            "Method_Category": "Phase_Field",
+            "Software": "Custom finite element implementation; semi-analytical 1D homogeneous solution",
+            "Governing_Equations": [
+              "1D homogeneous phase field solution (Eq. 5)",
+              "Hydrogen degradation function (Eq. 7)",
+              "Fatigue degradation function: Logarithmic (Eq. 9)",
+              "Sievert's law (Eq. 21)",
+              "Abel-Noble equation for fugacity (Eq. 22)"
+            ],
+            "Key_Model_Parameters": {
+              "E": 210000,
+              "E_Unit": "MPa",
+              "nu": 0.3,
+              "Gc": 60,
+              "Gc_Unit": "kJ/m^2",
+              "ell": 1.88,
+              "ell_Unit": "mm",
+              "alpha_T": 24,
+              "alpha_T_Unit": "MPa",
+              "kappa": 0.15,
+              "chi": 0.89,
+              "Delta_gb_0": 30,
+              "Delta_gb_0_Unit": "kJ/mol",
+              "V_H": 2000,
+              "V_H_Unit": "mm^3/mol",
+              "Es": 27.2,
+              "Es_Unit": "kJ/mol",
+              "S0": 102,
+              "S0_Unit": "mol/m^3/√MPa",
+              "b_Abel_Noble": 15.84,
+              "b_Abel_Noble_Unit": "cm^3/mol",
+              "Tension_Compression_Split": "Spectral decomposition (Miehe et al. [53])",
+              "Load_Ratio_R": -1,
+              "Load_Frequency_Hz": 1,
+              "Environment": "115 MPa hydrogen gas"
+            },
+            "Calibration_Note": "Fatigue parameters calibrated to air data; hydrogen predictions are parameter-free",
+            "Original_Values": "E = 210 GPa, ν = 0.3, Gc = 60 kJ/m², ℓ = 1.88 mm, αT = 24 MPa, κ = 0.15, χ = 0.89, Δgb⁰ = 30 kJ/mol, VH = 2000 mm³/mol, Es = 27.2 kJ/mol, S0 = 102 mol/m³√MPa, b = 15.84 cm³/mol, fH₂ = 242.9 MPa, R = −1, f = 1 Hz"
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Smooth sample under uniaxial tension-compression fatigue in high pressure hydrogen gas",
+            "simplified": "Smooth sample, 1D semi-analytical model with hydrogen coupling"
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "S-N_Curve_Virtual_H2",
+            "Value": null,
+            "Data_Source": "image",
+            "Note": "Fig. 13a: Virtual S-N curve for JIS-SCM435 in 115 MPa H2 gas. Parameter-free prediction of hydrogen impact. Good agreement with experimental data despite scatter.",
+            "Test_Condition": {
+              "Environment": "115 MPa hydrogen gas",
+              "H_Concentration_wt_ppm": 0.00577,
+              "Load_Ratio_R": -1,
+              "Load_Frequency_Hz": 1,
+              "Specimen": "Smooth sample, uniaxial tension-compression"
+            },
+            "Comparison_Reference": "Matsunaga et al. [67]"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "08",
+      "Sample_ID": "JIS_SM490B_Air",
+      "Role": "Demonstration",
+      "Data_Nature": "Computed",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Pure_Simulation",
+      "Patch_Tags": [],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 3.4: JIS-SM490B in air"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Carbon steel",
+          "Material_Name_Raw": "JIS-SM490B",
+          "Note": "Carbon steel with tensile strength of 530 MPa per Matsunaga et al. [67]"
+        },
+        "Processing": {
+          "Process_Category": "Simulation",
+          "Simulation_Metadata": {
+            "Method_Category": "Phase_Field",
+            "Software": "Custom finite element implementation; semi-analytical 1D homogeneous solution",
+            "Governing_Equations": [
+              "1D homogeneous phase field solution (Eq. 5)",
+              "Fatigue degradation function: Logarithmic (Eq. 9)"
+            ],
+            "Key_Model_Parameters": {
+              "E": 210000,
+              "E_Unit": "MPa",
+              "nu": 0.3,
+              "Gc": 27,
+              "Gc_Unit": "kJ/m^2",
+              "ell": 2.13,
+              "ell_Unit": "mm",
+              "alpha_T": 24,
+              "alpha_T_Unit": "MPa",
+              "kappa": 0.15,
+              "Tension_Compression_Split": "Spectral decomposition (Miehe et al. [53])",
+              "Load_Ratio_R": -1,
+              "Load_Frequency_Hz": 1,
+              "Environment": "Air (no hydrogen)"
+            },
+            "Calibration_Note": "Same αT and κ as JIS-SCM435 (αT = 24 MPa, κ = 0.15); best fit to both steels in air",
+            "Original_Values": "E = 210 GPa, ν = 0.3, Gc = 27 kJ/m², ℓ = 2.13 mm, αT = 24 MPa, κ = 0.15, R = −1, f = 1 Hz"
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Smooth sample under uniaxial tension-compression fatigue in air",
+            "simplified": "Smooth sample, 1D semi-analytical model"
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "S-N_Curve_Virtual_Air",
+            "Value": null,
+            "Data_Source": "image",
+            "Note": "Fig. 13b: Virtual S-N curve for JIS-SM490B in air.",
+            "Test_Condition": {
+              "Environment": "Laboratory air",
+              "Load_Ratio_R": -1,
+              "Load_Frequency_Hz": 1,
+              "Specimen": "Smooth sample, uniaxial tension-compression"
+            },
+            "Comparison_Reference": "Matsunaga et al. [67]"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "09",
+      "Sample_ID": "JIS_SM490B_H2",
+      "Role": "Demonstration",
+      "Data_Nature": "Computed",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Pure_Simulation",
+      "Patch_Tags": [
+        "Hydrogen_Assisted"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 3.4: JIS-SM490B in 115 MPa hydrogen gas"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Carbon steel",
+          "Material_Name_Raw": "JIS-SM490B",
+          "Note": "Carbon steel; tensile strength 530 MPa. Similar to AISI 1020 per Ref. [70]. Higher hydrogen solubility than JIS-SCM435."
+        },
+        "Processing": {
+          "Process_Category": "Simulation",
+          "Simulation_Metadata": {
+            "Method_Category": "Phase_Field",
+            "Software": "Custom finite element implementation; semi-analytical 1D homogeneous solution",
+            "Governing_Equations": [
+              "1D homogeneous phase field solution (Eq. 5)",
+              "Hydrogen degradation function (Eq. 7)",
+              "Fatigue degradation function: Logarithmic (Eq. 9)",
+              "Sievert's law (Eq. 21)",
+              "Abel-Noble equation for fugacity (Eq. 22)"
+            ],
+            "Key_Model_Parameters": {
+              "E": 210000,
+              "E_Unit": "MPa",
+              "nu": 0.3,
+              "Gc": 27,
+              "Gc_Unit": "kJ/m^2",
+              "ell": 2.13,
+              "ell_Unit": "mm",
+              "alpha_T": 24,
+              "alpha_T_Unit": "MPa",
+              "kappa": 0.15,
+              "chi": 0.89,
+              "Delta_gb_0": 30,
+              "Delta_gb_0_Unit": "kJ/mol",
+              "V_H": 2000,
+              "V_H_Unit": "mm^3/mol",
+              "Es": 23.54,
+              "Es_Unit": "kJ/mol",
+              "S0": 159,
+              "S0_Unit": "mol/m^3/√MPa",
+              "b_Abel_Noble": 15.84,
+              "b_Abel_Noble_Unit": "cm^3/mol",
+              "Tension_Compression_Split": "Spectral decomposition (Miehe et al. [53])",
+              "Load_Ratio_R": -1,
+              "Load_Frequency_Hz": 1,
+              "Environment": "115 MPa hydrogen gas"
+            },
+            "Calibration_Note": "Fatigue parameters calibrated to air data; hydrogen predictions are parameter-free",
+            "Original_Values": "E = 210 GPa, ν = 0.3, Gc = 27 kJ/m², ℓ = 2.13 mm, αT = 24 MPa, κ = 0.15, χ = 0.89, Δgb⁰ = 30 kJ/mol, VH = 2000 mm³/mol, Es = 23.54 kJ/mol, S0 = 159 mol/m³√MPa, b = 15.84 cm³/mol, fH₂ = 242.9 MPa, R = −1, f = 1 Hz"
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Smooth sample under uniaxial tension-compression fatigue in high pressure hydrogen gas",
+            "simplified": "Smooth sample, 1D semi-analytical model with hydrogen coupling"
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "S-N_Curve_Virtual_H2",
+            "Value": null,
+            "Data_Source": "image",
+            "Note": "Fig. 13b: Virtual S-N curve for JIS-SM490B in 115 MPa H2 gas. Higher susceptibility to hydrogen-assisted fatigue than JIS-SCM435; hydrogen reduces cycles to failure by almost an order of magnitude. Good agreement with experiments.",
+            "Test_Condition": {
+              "Environment": "115 MPa hydrogen gas",
+              "H_Concentration_wt_ppm": 0.04042,
+              "Load_Ratio_R": -1,
+              "Load_Frequency_Hz": 1,
+              "Specimen": "Smooth sample, uniaxial tension-compression"
+            },
+            "Comparison_Reference": "Matsunaga et al. [67]",
+            "Trend": "Higher susceptibility to hydrogen-assisted fatigue compared to JIS-SCM435; hydrogen reduces cycles to failure by almost an order of magnitude"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "10",
+      "Sample_ID": "JIS_SCM435_Experimental_Air",
+      "Role": "Reference",
+      "Data_Nature": "Literature_Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Pure_Simulation",
+      "Patch_Tags": [],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 3.4: Matsunaga et al. [67], JIS-SCM435 in air"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Cr-Mo steel",
+          "Material_Name_Raw": "JIS-SCM435"
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "Uniaxial tension-compression fatigue experiments in laboratory air; constant stress amplitudes; stress ratio R = -1; test frequency f = 1 Hz (Matsunaga et al. [67])",
+            "simplified": "Fatigue testing in air at R = -1, f = 1 Hz"
+          },
+          "Key_Params": {
+            "Tensile_Strength_MPa": 840,
+            "Tensile_Strength_Source": "Reported by Matsunaga et al. [67]"
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "S-N_Curve_Experimental",
+            "Value": null,
+            "Data_Source": "image",
+            "Note": "Fig. 13a: Experimental S-N data from Matsunaga et al. [67] for JIS-SCM435 in air. Visual data not extracted.",
+            "Test_Condition": {
+              "Environment": "Laboratory air",
+              "Load_Ratio_R": -1,
+              "Load_Frequency_Hz": 1,
+              "Specimen": "Smooth sample, uniaxial tension-compression"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "11",
+      "Sample_ID": "JIS_SCM435_Experimental_H2",
+      "Role": "Reference",
+      "Data_Nature": "Literature_Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Pure_Simulation",
+      "Patch_Tags": [
+        "Hydrogen_Assisted"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 3.4: Matsunaga et al. [67], JIS-SCM435 in 115 MPa H2"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Cr-Mo steel",
+          "Material_Name_Raw": "JIS-SCM435"
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "Uniaxial tension-compression fatigue experiments in 115 MPa hydrogen gas; constant stress amplitudes; stress ratio R = -1; test frequency f = 1 Hz (Matsunaga et al. [67])",
+            "simplified": "Fatigue testing in 115 MPa H2 gas at R = -1, f = 1 Hz"
+          },
+          "Key_Params": {
+            "Tensile_Strength_MPa": 840,
+            "Tensile_Strength_Source": "Reported by Matsunaga et al. [67]"
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "S-N_Curve_Experimental",
+            "Value": null,
+            "Data_Source": "image",
+            "Note": "Fig. 13a: Experimental S-N data from Matsunaga et al. [67] for JIS-SCM435 in 115 MPa H2 gas. Visual data not extracted.",
+            "Test_Condition": {
+              "Environment": "115 MPa hydrogen gas",
+              "Load_Ratio_R": -1,
+              "Load_Frequency_Hz": 1,
+              "Specimen": "Smooth sample, uniaxial tension-compression"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "12",
+      "Sample_ID": "JIS_SM490B_Experimental_Air",
+      "Role": "Reference",
+      "Data_Nature": "Literature_Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Pure_Simulation",
+      "Patch_Tags": [],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 3.4: Matsunaga et al. [67], JIS-SM490B in air"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Carbon steel",
+          "Material_Name_Raw": "JIS-SM490B"
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "Uniaxial tension-compression fatigue experiments in laboratory air; constant stress amplitudes; stress ratio R = -1; test frequency f = 1 Hz (Matsunaga et al. [67])",
+            "simplified": "Fatigue testing in air at R = -1, f = 1 Hz"
+          },
+          "Key_Params": {
+            "Tensile_Strength_MPa": 530,
+            "Tensile_Strength_Source": "Reported by Matsunaga et al. [67]"
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "S-N_Curve_Experimental",
+            "Value": null,
+            "Data_Source": "image",
+            "Note": "Fig. 13b: Experimental S-N data from Matsunaga et al. [67] for JIS-SM490B in air. Visual data not extracted.",
+            "Test_Condition": {
+              "Environment": "Laboratory air",
+              "Load_Ratio_R": -1,
+              "Load_Frequency_Hz": 1,
+              "Specimen": "Smooth sample, uniaxial tension-compression"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "13",
+      "Sample_ID": "JIS_SM490B_Experimental_H2",
+      "Role": "Reference",
+      "Data_Nature": "Literature_Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Pure_Simulation",
+      "Patch_Tags": [
+        "Hydrogen_Assisted"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 3.4: Matsunaga et al. [67], JIS-SM490B in 115 MPa H2"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Carbon steel",
+          "Material_Name_Raw": "JIS-SM490B"
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "Uniaxial tension-compression fatigue experiments in 115 MPa hydrogen gas; constant stress amplitudes; stress ratio R = -1; test frequency f = 1 Hz (Matsunaga et al. [67])",
+            "simplified": "Fatigue testing in 115 MPa H2 gas at R = -1, f = 1 Hz"
+          },
+          "Key_Params": {
+            "Tensile_Strength_MPa": 530,
+            "Tensile_Strength_Source": "Reported by Matsunaga et al. [67]"
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "S-N_Curve_Experimental",
+            "Value": null,
+            "Data_Source": "image",
+            "Note": "Fig. 13b: Experimental S-N data from Matsunaga et al. [67] for JIS-SM490B in 115 MPa H2 gas. Visual data not extracted.",
+            "Test_Condition": {
+              "Environment": "115 MPa hydrogen gas",
+              "Load_Ratio_R": -1,
+              "Load_Frequency_Hz": 1,
+              "Specimen": "Smooth sample, uniaxial tension-compression"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

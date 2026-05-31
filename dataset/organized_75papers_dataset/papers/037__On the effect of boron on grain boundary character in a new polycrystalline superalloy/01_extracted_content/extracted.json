@@ -1,0 +1,1819 @@
+{
+  "Paper_Metadata": {
+    "Paper_Title": "On the effect of boron on grain boundary character in a new polycrystalline superalloy",
+    "DOI": null,
+    "DOI_Note": "DOI not found in OCR text"
+  },
+  "Paper_Routing": {
+    "base_material": "Metals",
+    "application": "Structural",
+    "research_paradigm": "Experimental",
+    "Supplements_Loaded": [
+      "directions/base/Metals.txt",
+      "directions/application/Structural.txt",
+      "directions/paradigm/Experimental.txt"
+    ],
+    "Patch_Tags": [
+      "Interface_Dominated"
+    ],
+    "Needs_Mixed_Routing_Check": false
+  },
+  "items": [
+    {
+      "Item_ID": "BF",
+      "Sample_ID": "STAL-15CC Boron-free",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 2",
+        "Section 3",
+        "Section 4.1",
+        "Section 4.2",
+        "Section 5.2"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Nickel-based superalloy",
+          "Material_Name_Raw": "STAL-15CC Boron-free",
+          "Measured_Composition": {
+            "Unit": "at.%",
+            "Method": "ICP-OES; LECO CS444 for C",
+            "Elements": [
+              {
+                "Element": "Ni",
+                "Value": "Balance",
+                "Note": "Balance; normalized ≈ 63.77 at.% (Data_Nature: Computed)"
+              },
+              {
+                "Element": "Cr",
+                "Value": 16.45
+              },
+              {
+                "Element": "Al",
+                "Value": 10.0
+              },
+              {
+                "Element": "Co",
+                "Value": 5.5
+              },
+              {
+                "Element": "Ta",
+                "Value": 2.41
+              },
+              {
+                "Element": "W",
+                "Value": 1.26
+              },
+              {
+                "Element": "Mo",
+                "Value": 0.61
+              },
+              {
+                "Element": "C",
+                "Value": 0.44
+              },
+              {
+                "Element": "B",
+                "Value": null,
+                "Original_Values": "<0.005 at.%",
+                "Note": "Below detection limit; not a precise value"
+              },
+              {
+                "Element": "Hf",
+                "Value": 0.02
+              }
+            ]
+          }
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "Castings in the form of tapered rods prepared at Doncasters Precision Castings Ltd., using casting stock melted by Ross & Catherall. Ceramic moulds de-waxed in steam furnace for 5 min, sintered at 1000 °C for 1 h. Casting under vacuum, mould temperature ~1000 °C. HIP at 1195 °C for 5 h under 175 MPa. Primary ageing at 1120 °C for 4 h, air-cooling. Secondary ageing at 845 °C for 24 h, air-cooling.",
+            "simplified": "Vacuum investment casting → HIP (1195 °C, 5 h, 175 MPa) → Primary ageing (1120 °C, 4 h, AC) → Secondary ageing (845 °C, 24 h, AC)"
+          },
+          "Stages": [
+            {
+              "Stage": "Stage1_Casting",
+              "Process": "Vacuum investment casting",
+              "Key_Params": {
+                "Mould_Preparation": {
+                  "Dewaxing": "Steam furnace, 5 min",
+                  "Sintering": "1000 °C, 1 h"
+                },
+                "Casting": {
+                  "Atmosphere": "Vacuum",
+                  "Mould_Temperature_Original": "~1000 °C",
+                  "Mould_Temperature_K": 1273.15
+                }
+              }
+            },
+            {
+              "Stage": "Stage2_HIP",
+              "Process": "Hot isostatic pressing",
+              "Key_Params": {
+                "Temperature_Original": "1195 °C",
+                "Temperature_K": 1468.15,
+                "Time": "5 h",
+                "Pressure": "175 MPa"
+              }
+            },
+            {
+              "Stage": "Stage3_Primary_Ageing",
+              "Process": "Primary ageing",
+              "Key_Params": {
+                "Temperature_Original": "1120 °C",
+                "Temperature_K": 1393.15,
+                "Time": "4 h",
+                "Cooling": "Air cooling"
+              }
+            },
+            {
+              "Stage": "Stage4_Secondary_Ageing",
+              "Process": "Secondary ageing",
+              "Key_Params": {
+                "Temperature_Original": "845 °C",
+                "Temperature_K": 1118.15,
+                "Time": "24 h",
+                "Cooling": "Air cooling"
+              }
+            }
+          ],
+          "Equipment": [
+            {
+              "Name": "Doncasters Precision Castings Ltd. casting facility",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Hot isostatic press (HIP)",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "JEOL 6500F FEGSEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "NVision 40 dual beam FIB",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "JEOL 2000FX TEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Cameca LEAP 3000X HR APT",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "CAMECA NanoSIMS 50",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "LECO CS444 carbon analyser",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "ICP-OES",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Thermocalc (TTNI8 database)",
+              "Category": "Software"
+            },
+            {
+              "Name": "DICTRA (MOBNI3 database)",
+              "Category": "Software"
+            },
+            {
+              "Name": "ImageJ with OpenMIMS plugin",
+              "Category": "Software"
+            }
+          ],
+          "Note": "Same heat treatment conditions applied to all four alloys; process parameters shared per explicit statement in paper."
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "In the boron-free alloy, particles along grain boundaries correspond to M₂₃C₆-type carbides. Combined SEM and TEM confirmed inter- and intragranular MC carbides. Cr-rich M₂₃C₆ carbides at grain boundaries. Nano-sized M₂₃C₆ carbides coherent with γ matrix observed near grain boundaries, plate-shaped, up to 200 nm in length and 30 nm in thickness. Continuous γ' layers not observed along grain boundaries.",
+            "simplified": "γ matrix + γ' precipitates + Cr-rich M₂₃C₆ carbides (intergranular) + Ta-rich MC carbides (inter- and intragranular). No grain boundary borides. No excessive γ' layers at GBs."
+          },
+          "Main_Phase": {
+            "Phase_Name": "γ (FCC matrix)",
+            "Crystal_Structure": "FCC"
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "γ'",
+              "Crystal_Structure": "L1₂",
+              "Location": "Intragranular",
+              "Note": "Secondary γ' precipitated in grain interiors"
+            },
+            {
+              "Phase_Name": "M₂₃C₆",
+              "Crystal_Structure": "FCC (cubic)",
+              "Location": "Grain boundaries",
+              "Morphology": "Particles along grain boundaries, lowest Z contrast in BSE",
+              "APT_Composition": {
+                "Unit": "at.%",
+                "Data_Source": "table",
+                "Elements": [
+                  {
+                    "Element": "Cr",
+                    "Value": 70.4,
+                    "Value_StdDev": 0.04
+                  },
+                  {
+                    "Element": "C",
+                    "Value": 19.7,
+                    "Value_StdDev": 0.02
+                  },
+                  {
+                    "Element": "Ni",
+                    "Value": 3.6,
+                    "Value_StdDev": 0.02
+                  },
+                  {
+                    "Element": "Mo",
+                    "Value": 2.5,
+                    "Value_StdDev": 0.02
+                  },
+                  {
+                    "Element": "W",
+                    "Value": 2.0,
+                    "Value_StdDev": 0.01
+                  },
+                  {
+                    "Element": "Co",
+                    "Value": 1.3,
+                    "Value_StdDev": 0.01
+                  },
+                  {
+                    "Element": "B",
+                    "Value": 0.5,
+                    "Value_StdDev": 0.01,
+                    "Note": "Trace B ascribed to impurities in melt stock"
+                  },
+                  {
+                    "Element": "Ta",
+                    "Value": 0.0
+                  },
+                  {
+                    "Element": "Al",
+                    "Value": 0.0
+                  }
+                ]
+              },
+              "Note": "Cr-rich; stoichiometry corresponds to M₂₃C₆. Trace boron substitutes for carbon."
+            },
+            {
+              "Phase_Name": "M₂₃C₆ (nano-sized, near GB)",
+              "Crystal_Structure": "FCC (cubic)",
+              "Location": "Vicinity of grain boundaries",
+              "Morphology": "Plate-shaped",
+              "Size": {
+                "Length": {
+                  "Value": null,
+                  "Original_Values": "up to 200 nm",
+                  "Size_Type": "undefined"
+                },
+                "Thickness": {
+                  "Value": 30,
+                  "Original_Values": "30 nm",
+                  "Size_Type": "undefined"
+                }
+              },
+              "Note": "Coherent with γ matrix; randomly distributed close to grain boundaries, not continuous"
+            },
+            {
+              "Phase_Name": "MC",
+              "Crystal_Structure": "FCC (cubic)",
+              "Location": "Inter- and intragranular",
+              "Morphology": "Elongated or blocky (intergranular); script-like (intragranular)",
+              "Note": "Ta-rich carbides; brightest Z contrast in BSE"
+            }
+          ],
+          "Grain_Boundary_Features": {
+            "Serration": "Non-serrated grain boundary character",
+            "Failure_Mode": "Intergranular creep failure dominant at 750 °C/455 MPa",
+            "Interface_Segregation": {
+              "Interface": "γ/M₂₃C₆",
+              "Enrichment": "Carbon enrichment zone ~3 nm wide at grain boundary interface",
+              "Note": "Co-segregation of trace B with C at γ/M₂₃C₆ interface confirmed by APT"
+            }
+          },
+          "Advanced_Quantitative_Features": {
+            "Gamma_Solvus_Temperature": {
+              "Value_Original": "1148 °C",
+              "Value_K": 1421.15,
+              "Note": "Thermocalc calculation with TTNI8 database; applies to STAL-15CC alloy system (shared across all variants)"
+            },
+            "Solidus_Temperature": {
+              "Value_Original": "1233 °C",
+              "Value_K": 1506.15,
+              "Note": "Thermocalc calculation with TTNI8 database; applies to STAL-15CC alloy system (shared across all variants)"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Type": "Creep",
+            "Test_Condition": {
+              "Test_Temperature_Original": "750 °C",
+              "Test_Temperature_K": 1023.15,
+              "Applied_Stress": "455 MPa",
+              "Loading_Mode": "Constant load",
+              "Specimen_State": "Fully heat treated"
+            },
+            "Creep_Rupture_Time": null,
+            "Note": "Creep strain vs. time curve shown in Fig. 14; worst creep performance among all variants (qualitative). No numerical values extractable from text or table.",
+            "Data_Source": "text",
+            "Failure_Mode": "Intergranular"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "LB",
+      "Sample_ID": "STAL-15CC Low boron",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 2",
+        "Section 3",
+        "Section 4.1",
+        "Section 4.2",
+        "Section 4.3",
+        "Section 5.2"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Nickel-based superalloy",
+          "Material_Name_Raw": "STAL-15CC Low boron",
+          "Measured_Composition": {
+            "Unit": "at.%",
+            "Method": "ICP-OES; LECO CS444 for C",
+            "Elements": [
+              {
+                "Element": "Ni",
+                "Value": "Balance",
+                "Note": "Balance; normalized ≈ 63.54 at.% (Data_Nature: Computed)"
+              },
+              {
+                "Element": "Cr",
+                "Value": 16.43
+              },
+              {
+                "Element": "Al",
+                "Value": 10.11
+              },
+              {
+                "Element": "Co",
+                "Value": 5.6
+              },
+              {
+                "Element": "Ta",
+                "Value": 2.41
+              },
+              {
+                "Element": "W",
+                "Value": 1.27
+              },
+              {
+                "Element": "Mo",
+                "Value": 0.58
+              },
+              {
+                "Element": "C",
+                "Value": 0.47
+              },
+              {
+                "Element": "B",
+                "Value": 0.03
+              },
+              {
+                "Element": "Hf",
+                "Value": 0.02
+              }
+            ]
+          }
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "Same processing as boron-free variant.",
+            "simplified": "Vacuum investment casting → HIP (1195 °C, 5 h, 175 MPa) → Primary ageing (1120 °C, 4 h, AC) → Secondary ageing (845 °C, 24 h, AC)"
+          },
+          "Note": "Same heat treatment conditions as BF; shared per explicit statement in paper.",
+          "Stages": [
+            {
+              "Stage": "Stage1_Casting",
+              "Process": "Vacuum investment casting",
+              "Key_Params": {
+                "Mould_Preparation": {
+                  "Dewaxing": "Steam furnace, 5 min",
+                  "Sintering": "1000 °C, 1 h"
+                },
+                "Casting": {
+                  "Atmosphere": "Vacuum",
+                  "Mould_Temperature_Original": "~1000 °C",
+                  "Mould_Temperature_K": 1273.15
+                }
+              }
+            },
+            {
+              "Stage": "Stage2_HIP",
+              "Process": "Hot isostatic pressing",
+              "Key_Params": {
+                "Temperature_Original": "1195 °C",
+                "Temperature_K": 1468.15,
+                "Time": "5 h",
+                "Pressure": "175 MPa"
+              }
+            },
+            {
+              "Stage": "Stage3_Primary_Ageing",
+              "Process": "Primary ageing",
+              "Key_Params": {
+                "Temperature_Original": "1120 °C",
+                "Temperature_K": 1393.15,
+                "Time": "4 h",
+                "Cooling": "Air cooling"
+              }
+            },
+            {
+              "Stage": "Stage4_Secondary_Ageing",
+              "Process": "Secondary ageing",
+              "Key_Params": {
+                "Temperature_Original": "845 °C",
+                "Temperature_K": 1118.15,
+                "Time": "24 h",
+                "Cooling": "Air cooling"
+              }
+            }
+          ],
+          "Equipment": [
+            {
+              "Name": "Doncasters Precision Castings Ltd. casting facility",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Hot isostatic press (HIP)",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "JEOL 6500F FEGSEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "NVision 40 dual beam FIB",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "JEOL 2000FX TEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Cameca LEAP 3000X HR APT",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "CAMECA NanoSIMS 50",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "LECO CS444 carbon analyser",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "ICP-OES",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Thermocalc (TTNI8 database)",
+              "Category": "Software"
+            },
+            {
+              "Name": "DICTRA (MOBNI3 database)",
+              "Category": "Software"
+            },
+            {
+              "Name": "ImageJ with OpenMIMS plugin",
+              "Category": "Software"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "In boron-containing alloys, particles along grain boundaries have tetragonal structure corresponding to M₅B₃-type boride. No intergranular M₂₃C₆ carbides found. Nano-sized M₂₃C₆ carbides observed near grain boundaries. Borides mainly enriched in chromium. γ' layers at grain boundaries near MC carbides.",
+            "simplified": "γ matrix + γ' precipitates + Cr-rich M₅B₃ borides (intergranular) + Ta-rich MC carbides (inter- and intragranular) + nano-sized M₂₃C₆ near GB. Grain boundaries decorated mostly by borides with large discrete γ' particles in vicinity."
+          },
+          "Main_Phase": {
+            "Phase_Name": "γ (FCC matrix)",
+            "Crystal_Structure": "FCC"
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "γ'",
+              "Crystal_Structure": "L1₂",
+              "Location": "Intragranular; also large discrete particles near grain boundaries"
+            },
+            {
+              "Phase_Name": "M₅B₃",
+              "Crystal_Structure": "Tetragonal",
+              "Location": "Grain boundaries",
+              "Morphology": "Particles along grain boundaries, lowest Z contrast in BSE",
+              "Size": {
+                "Length_along_GB": {
+                  "Value": null,
+                  "Original_Values": "up to 500 nm",
+                  "Size_Type": "undefined"
+                }
+              },
+              "APT_Composition": {
+                "Unit": "at.%",
+                "Data_Source": "table",
+                "Dataset": "M₅B₃ dataset 1 (from low boron alloy)",
+                "Elements": [
+                  {
+                    "Element": "B",
+                    "Value": 36.2,
+                    "Value_StdDev": 0.17
+                  },
+                  {
+                    "Element": "Cr",
+                    "Value": 60.6,
+                    "Value_StdDev": 0.17
+                  },
+                  {
+                    "Element": "Mo",
+                    "Value": 1.1,
+                    "Value_StdDev": 0.04
+                  },
+                  {
+                    "Element": "W",
+                    "Value": 1.4,
+                    "Value_StdDev": 0.04
+                  },
+                  {
+                    "Element": "Co",
+                    "Value": 0.5,
+                    "Value_StdDev": 0.02
+                  },
+                  {
+                    "Element": "Ni",
+                    "Value": 0.1,
+                    "Value_StdDev": 0.02
+                  },
+                  {
+                    "Element": "C",
+                    "Value": 0.0
+                  },
+                  {
+                    "Element": "Ta",
+                    "Value": 0.0
+                  },
+                  {
+                    "Element": "Al",
+                    "Value": 0.0
+                  }
+                ]
+              },
+              "Note": "Cr-rich boride; stoichiometry corresponds to M₅B₃"
+            },
+            {
+              "Phase_Name": "M₂₃C₆ (nano-sized, near GB)",
+              "Crystal_Structure": "FCC (cubic)",
+              "Location": "Vicinity of grain boundaries",
+              "Morphology": "Plate-shaped",
+              "Size": {
+                "Length": {
+                  "Value": null,
+                  "Original_Values": "up to 200 nm",
+                  "Size_Type": "undefined"
+                },
+                "Thickness": {
+                  "Value": 30,
+                  "Original_Values": "30 nm",
+                  "Size_Type": "undefined"
+                }
+              },
+              "Note": "Coherent with γ matrix; not continuous along grain boundaries"
+            },
+            {
+              "Phase_Name": "MC",
+              "Crystal_Structure": "FCC (cubic)",
+              "Location": "Inter- and intragranular",
+              "Morphology": "Elongated or blocky (intergranular); script-like (intragranular)",
+              "Note": "Ta-rich carbides"
+            }
+          ],
+          "Grain_Boundary_Features": {
+            "Interface_Segregation": {
+              "Interface": "γ/M₅B₃",
+              "Enrichment": "B-enriched zone ~3 nm wide; Co enrichment also observed",
+              "Note": "No carbon segregation at γ/M₅B₃ grain boundary interface"
+            }
+          },
+          "NanoSIMS_Findings": {
+            "Summary": "No boron detected in solid solution in matrix or segregated at grain boundaries; boron partitioned into Cr-rich borides along grain boundaries"
+          }
+        },
+        "Properties": [
+          {
+            "Property_Type": "Creep",
+            "Test_Condition": {
+              "Test_Temperature_Original": "750 °C",
+              "Test_Temperature_K": 1023.15,
+              "Applied_Stress": "455 MPa",
+              "Loading_Mode": "Constant load",
+              "Specimen_State": "Fully heat treated"
+            },
+            "Creep_Rupture_Time": null,
+            "Note": "Creep strain vs. time curve shown in Fig. 14; significant improvement over boron-free alloy (qualitative). No numerical values extractable from text or table.",
+            "Data_Source": "text"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "MB",
+      "Sample_ID": "STAL-15CC Medium boron",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 2",
+        "Section 3",
+        "Section 4.1",
+        "Section 4.2",
+        "Section 4.3",
+        "Section 5.2",
+        "Abstract"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Nickel-based superalloy",
+          "Material_Name_Raw": "STAL-15CC Medium boron",
+          "Measured_Composition": {
+            "Unit": "at.%",
+            "Method": "ICP-OES; LECO CS444 for C",
+            "Elements": [
+              {
+                "Element": "Ni",
+                "Value": "Balance",
+                "Note": "Balance; normalized ≈ 63.68 at.% (Data_Nature: Computed)"
+              },
+              {
+                "Element": "Cr",
+                "Value": 16.55
+              },
+              {
+                "Element": "Al",
+                "Value": 10.09
+              },
+              {
+                "Element": "Co",
+                "Value": 5.5
+              },
+              {
+                "Element": "Ta",
+                "Value": 2.4
+              },
+              {
+                "Element": "W",
+                "Value": 1.26
+              },
+              {
+                "Element": "Mo",
+                "Value": 0.59
+              },
+              {
+                "Element": "C",
+                "Value": 0.47
+              },
+              {
+                "Element": "B",
+                "Value": 0.05
+              },
+              {
+                "Element": "Hf",
+                "Value": 0.02
+              }
+            ]
+          }
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "Same processing as boron-free variant.",
+            "simplified": "Vacuum investment casting → HIP (1195 °C, 5 h, 175 MPa) → Primary ageing (1120 °C, 4 h, AC) → Secondary ageing (845 °C, 24 h, AC)"
+          },
+          "Note": "Same heat treatment conditions as BF; shared per explicit statement in paper.",
+          "Stages": [
+            {
+              "Stage": "Stage1_Casting",
+              "Process": "Vacuum investment casting",
+              "Key_Params": {
+                "Mould_Preparation": {
+                  "Dewaxing": "Steam furnace, 5 min",
+                  "Sintering": "1000 °C, 1 h"
+                },
+                "Casting": {
+                  "Atmosphere": "Vacuum",
+                  "Mould_Temperature_Original": "~1000 °C",
+                  "Mould_Temperature_K": 1273.15
+                }
+              }
+            },
+            {
+              "Stage": "Stage2_HIP",
+              "Process": "Hot isostatic pressing",
+              "Key_Params": {
+                "Temperature_Original": "1195 °C",
+                "Temperature_K": 1468.15,
+                "Time": "5 h",
+                "Pressure": "175 MPa"
+              }
+            },
+            {
+              "Stage": "Stage3_Primary_Ageing",
+              "Process": "Primary ageing",
+              "Key_Params": {
+                "Temperature_Original": "1120 °C",
+                "Temperature_K": 1393.15,
+                "Time": "4 h",
+                "Cooling": "Air cooling"
+              }
+            },
+            {
+              "Stage": "Stage4_Secondary_Ageing",
+              "Process": "Secondary ageing",
+              "Key_Params": {
+                "Temperature_Original": "845 °C",
+                "Temperature_K": 1118.15,
+                "Time": "24 h",
+                "Cooling": "Air cooling"
+              }
+            }
+          ],
+          "Equipment": [
+            {
+              "Name": "Doncasters Precision Castings Ltd. casting facility",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Hot isostatic press (HIP)",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "JEOL 6500F FEGSEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "NVision 40 dual beam FIB",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "JEOL 2000FX TEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Cameca LEAP 3000X HR APT",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "CAMECA NanoSIMS 50",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "LECO CS444 carbon analyser",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "ICP-OES",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Thermocalc (TTNI8 database)",
+              "Category": "Software"
+            },
+            {
+              "Name": "DICTRA (MOBNI3 database)",
+              "Category": "Software"
+            },
+            {
+              "Name": "ImageJ with OpenMIMS plugin",
+              "Category": "Software"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Grain boundary region contains M₅B₃ borides along grain boundaries. Serrated grain boundary character observed. γ' layers at grain boundaries near MC carbides. Mixed inter- and transgranular failure mechanism.",
+            "simplified": "γ matrix + γ' precipitates + Cr-rich M₅B₃ borides (intergranular) + Ta-rich MC carbides (inter- and intragranular) + nano-sized M₂₃C₆ near GB. Serrated GB character."
+          },
+          "Main_Phase": {
+            "Phase_Name": "γ (FCC matrix)",
+            "Crystal_Structure": "FCC"
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "γ'",
+              "Crystal_Structure": "L1₂",
+              "Location": "Intragranular; also near grain boundaries"
+            },
+            {
+              "Phase_Name": "M₅B₃",
+              "Crystal_Structure": "Tetragonal",
+              "Location": "Grain boundaries",
+              "Morphology": "Particles along grain boundaries",
+              "Size": {
+                "Length_along_GB": {
+                  "Value": null,
+                  "Original_Values": "up to 500 nm",
+                  "Size_Type": "undefined"
+                }
+              },
+              "APT_Composition": {
+                "Unit": "at.%",
+                "Data_Source": "table",
+                "Dataset": "M₅B₃ dataset 2 (from medium boron alloy)",
+                "Elements": [
+                  {
+                    "Element": "B",
+                    "Value": 36.6,
+                    "Value_StdDev": 0.14
+                  },
+                  {
+                    "Element": "Cr",
+                    "Value": 57.9,
+                    "Value_StdDev": 0.14
+                  },
+                  {
+                    "Element": "Mo",
+                    "Value": 2.3,
+                    "Value_StdDev": 0.04
+                  },
+                  {
+                    "Element": "W",
+                    "Value": 2.2,
+                    "Value_StdDev": 0.04
+                  },
+                  {
+                    "Element": "Co",
+                    "Value": 0.5,
+                    "Value_StdDev": 0.02
+                  },
+                  {
+                    "Element": "Ni",
+                    "Value": 0.3,
+                    "Value_StdDev": 0.02
+                  },
+                  {
+                    "Element": "C",
+                    "Value": 0.2,
+                    "Value_StdDev": 0.02
+                  },
+                  {
+                    "Element": "Ta",
+                    "Value": 0.0
+                  },
+                  {
+                    "Element": "Al",
+                    "Value": 0.0
+                  }
+                ]
+              },
+              "Note": "Cr-rich boride; stoichiometry corresponds to M₅B₃"
+            },
+            {
+              "Phase_Name": "M₂₃C₆ (nano-sized, near GB)",
+              "Crystal_Structure": "FCC (cubic)",
+              "Location": "Vicinity of grain boundaries",
+              "Morphology": "Plate-shaped",
+              "Size": {
+                "Length": {
+                  "Value": null,
+                  "Original_Values": "up to 200 nm",
+                  "Size_Type": "undefined"
+                },
+                "Thickness": {
+                  "Value": 30,
+                  "Original_Values": "30 nm",
+                  "Size_Type": "undefined"
+                }
+              },
+              "Note": "Coherent with γ matrix; size per general description in Section 4.1 for boron-containing alloys"
+            },
+            {
+              "Phase_Name": "MC",
+              "Crystal_Structure": "FCC (cubic)",
+              "Location": "Inter- and intragranular",
+              "Morphology": "Elongated or blocky (intergranular); script-like (intragranular)",
+              "APT_Composition": {
+                "Unit": "at.%",
+                "Data_Source": "table",
+                "Note": "MC carbide dataset from a boron-containing alloy, representative for all boron-doped variants",
+                "Elements": [
+                  {
+                    "Element": "C",
+                    "Value": 49.6,
+                    "Value_StdDev": 0.18
+                  },
+                  {
+                    "Element": "Ta",
+                    "Value": 48.3,
+                    "Value_StdDev": 0.18
+                  },
+                  {
+                    "Element": "Ni",
+                    "Value": 0.7,
+                    "Value_StdDev": 0.03
+                  },
+                  {
+                    "Element": "B",
+                    "Value": 0.3,
+                    "Value_StdDev": 0.02
+                  },
+                  {
+                    "Element": "Cr",
+                    "Value": 0.4,
+                    "Value_StdDev": 0.02
+                  },
+                  {
+                    "Element": "Mo",
+                    "Value": 0.2,
+                    "Value_StdDev": 0.02
+                  },
+                  {
+                    "Element": "Co",
+                    "Value": 0.2,
+                    "Value_StdDev": 0.02
+                  },
+                  {
+                    "Element": "W",
+                    "Value": 0.2,
+                    "Value_StdDev": 0.02
+                  },
+                  {
+                    "Element": "Al",
+                    "Value": 0.0
+                  }
+                ]
+              },
+              "Note": "Ta-rich MC carbide"
+            }
+          ],
+          "Grain_Boundary_Features": {
+            "Serration": "Serrated grain boundary character",
+            "Failure_Mode": "Mixed inter- and transgranular failure at 750 °C/455 MPa",
+            "Interface_Segregation": {
+              "Interface": "γ/M₅B₃",
+              "Enrichment": "B-enriched zone ~3 nm wide; Co enrichment also observed",
+              "Note": "No carbon segregation at γ/M₅B₃ grain boundary interface"
+            }
+          },
+          "NanoSIMS_Findings": {
+            "Summary": "No boron detected in solid solution in matrix or segregated at grain boundaries; boron partitioned into Cr-rich borides along grain boundaries"
+          }
+        },
+        "Properties": [
+          {
+            "Property_Type": "Creep",
+            "Test_Condition": {
+              "Test_Temperature_Original": "750 °C",
+              "Test_Temperature_K": 1023.15,
+              "Applied_Stress": "455 MPa",
+              "Loading_Mode": "Constant load",
+              "Specimen_State": "Fully heat treated"
+            },
+            "Creep_Rupture_Time": null,
+            "Note": "Best creep rupture time among all variants (qualitative); optimum boron content is 0.05 at.%. Creep curve in Fig. 14; no numerical values extractable from text or table.",
+            "Data_Source": "text",
+            "Failure_Mode": "Mixed inter- and transgranular"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "HB",
+      "Sample_ID": "STAL-15CC High boron",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 2",
+        "Section 3",
+        "Section 4.1",
+        "Section 4.2",
+        "Section 5.2"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Nickel-based superalloy",
+          "Material_Name_Raw": "STAL-15CC High boron",
+          "Measured_Composition": {
+            "Unit": "at.%",
+            "Method": "ICP-OES; LECO CS444 for C",
+            "Elements": [
+              {
+                "Element": "Ni",
+                "Value": "Balance",
+                "Note": "Balance; normalized ≈ 62.99 at.% (Data_Nature: Computed)"
+              },
+              {
+                "Element": "Cr",
+                "Value": 16.64
+              },
+              {
+                "Element": "Al",
+                "Value": 10.01
+              },
+              {
+                "Element": "Co",
+                "Value": 5.53
+              },
+              {
+                "Element": "Ta",
+                "Value": 2.43
+              },
+              {
+                "Element": "W",
+                "Value": 1.21
+              },
+              {
+                "Element": "Mo",
+                "Value": 0.6
+              },
+              {
+                "Element": "C",
+                "Value": 0.53
+              },
+              {
+                "Element": "B",
+                "Value": 0.08
+              },
+              {
+                "Element": "Hf",
+                "Value": 0.02
+              }
+            ]
+          }
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "Same processing as boron-free variant.",
+            "simplified": "Vacuum investment casting → HIP (1195 °C, 5 h, 175 MPa) → Primary ageing (1120 °C, 4 h, AC) → Secondary ageing (845 °C, 24 h, AC)"
+          },
+          "Note": "Same heat treatment conditions as BF; shared per explicit statement in paper.",
+          "Stages": [
+            {
+              "Stage": "Stage1_Casting",
+              "Process": "Vacuum investment casting",
+              "Key_Params": {
+                "Mould_Preparation": {
+                  "Dewaxing": "Steam furnace, 5 min",
+                  "Sintering": "1000 °C, 1 h"
+                },
+                "Casting": {
+                  "Atmosphere": "Vacuum",
+                  "Mould_Temperature_Original": "~1000 °C",
+                  "Mould_Temperature_K": 1273.15
+                }
+              }
+            },
+            {
+              "Stage": "Stage2_HIP",
+              "Process": "Hot isostatic pressing",
+              "Key_Params": {
+                "Temperature_Original": "1195 °C",
+                "Temperature_K": 1468.15,
+                "Time": "5 h",
+                "Pressure": "175 MPa"
+              }
+            },
+            {
+              "Stage": "Stage3_Primary_Ageing",
+              "Process": "Primary ageing",
+              "Key_Params": {
+                "Temperature_Original": "1120 °C",
+                "Temperature_K": 1393.15,
+                "Time": "4 h",
+                "Cooling": "Air cooling"
+              }
+            },
+            {
+              "Stage": "Stage4_Secondary_Ageing",
+              "Process": "Secondary ageing",
+              "Key_Params": {
+                "Temperature_Original": "845 °C",
+                "Temperature_K": 1118.15,
+                "Time": "24 h",
+                "Cooling": "Air cooling"
+              }
+            }
+          ],
+          "Equipment": [
+            {
+              "Name": "Doncasters Precision Castings Ltd. casting facility",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Hot isostatic press (HIP)",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "JEOL 6500F FEGSEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "NVision 40 dual beam FIB",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "JEOL 2000FX TEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Cameca LEAP 3000X HR APT",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "CAMECA NanoSIMS 50",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "LECO CS444 carbon analyser",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "ICP-OES",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Thermocalc (TTNI8 database)",
+              "Category": "Software"
+            },
+            {
+              "Name": "DICTRA (MOBNI3 database)",
+              "Category": "Software"
+            },
+            {
+              "Name": "ImageJ with OpenMIMS plugin",
+              "Category": "Software"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Grain boundary region contains M₅B₃ borides. Higher volume fraction of borides than LB and MB. When MC carbides dominate along boundaries, grain boundary γ' particles form nearly continuous layers. Nano-sized M₂₃C₆ near grain boundaries.",
+            "simplified": "γ matrix + γ' precipitates + Cr-rich M₅B₃ borides (intergranular, higher volume fraction) + Ta-rich MC carbides (inter- and intragranular) + nearly continuous γ' layers at GBs near MC carbides + nano-sized M₂₃C₆ near GB."
+          },
+          "Main_Phase": {
+            "Phase_Name": "γ (FCC matrix)",
+            "Crystal_Structure": "FCC"
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "γ'",
+              "Crystal_Structure": "L1₂",
+              "Location": "Intragranular; also forms nearly continuous layers along grain boundaries near MC carbides"
+            },
+            {
+              "Phase_Name": "M₅B₃",
+              "Crystal_Structure": "Tetragonal",
+              "Location": "Grain boundaries",
+              "Morphology": "Particles along grain boundaries",
+              "Size": {
+                "Length_along_GB": {
+                  "Value": null,
+                  "Original_Values": "up to 500 nm",
+                  "Size_Type": "undefined"
+                }
+              },
+              "Note": "Higher volume fraction of borides than LB/MB. Cr-rich; stoichiometry corresponds to M₅B₃"
+            },
+            {
+              "Phase_Name": "M₂₃C₆ (nano-sized, near GB)",
+              "Crystal_Structure": "FCC (cubic)",
+              "Location": "Vicinity of grain boundaries",
+              "Morphology": "Plate-shaped",
+              "Size": {
+                "Length": {
+                  "Value": null,
+                  "Original_Values": "up to 200 nm",
+                  "Size_Type": "undefined"
+                },
+                "Thickness": {
+                  "Value": 30,
+                  "Original_Values": "30 nm",
+                  "Size_Type": "undefined"
+                }
+              },
+              "Note": "Coherent with γ matrix; size per general description in Section 4.1 for boron-containing alloys"
+            },
+            {
+              "Phase_Name": "MC",
+              "Crystal_Structure": "FCC (cubic)",
+              "Location": "Inter- and intragranular",
+              "Morphology": "Elongated or blocky (intergranular); script-like (intragranular)",
+              "Note": "Ta-rich carbides; breakdown of MC near GBs leads to formation of γ' particles close to grain boundaries"
+            }
+          ],
+          "Grain_Boundary_Features": {
+            "Interface_Segregation": {
+              "Interface": "γ/M₅B₃",
+              "Enrichment": "B-enriched zone ~3 nm wide",
+              "Note": "No carbon segregation at γ/M₅B₃ grain boundary interface"
+            }
+          },
+          "NanoSIMS_Findings": {
+            "Summary": "No boron detected in solid solution in matrix or segregated at grain boundaries; boron partitioned into Cr-rich borides along grain boundaries"
+          }
+        },
+        "Properties": [
+          {
+            "Property_Type": "Creep",
+            "Test_Condition": {
+              "Test_Temperature_Original": "750 °C",
+              "Test_Temperature_K": 1023.15,
+              "Applied_Stress": "455 MPa",
+              "Loading_Mode": "Constant load",
+              "Specimen_State": "Fully heat treated"
+            },
+            "Creep_Rupture_Time": null,
+            "Note": "Shortest creep rupture time among boron-containing alloys, yet remarkably better than boron-free (qualitative). Excessive boron adversely affects creep resistance. Creep curve in Fig. 14; no numerical values extractable from text or table.",
+            "Data_Source": "text"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "REF_Tytko2012",
+      "Sample_ID": "Alloy 617B (Tytko 2012)",
+      "Role": "Reference",
+      "Data_Nature": "Literature_Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 1"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Name_Raw": "617B",
+          "Note": "Literature data from Tytko et al. 2012 [21]"
+        },
+        "Structure": {
+          "Boron_State": {
+            "Boron_Content": {
+              "Value": 0.02,
+              "Unit": "at.%"
+            },
+            "In_Solid_Solution": true,
+            "As_Boride": false,
+            "In_Carbide": true,
+            "Data_Source": "table"
+          }
+        }
+      }
+    },
+    {
+      "Item_ID": "REF_Hong2012",
+      "Sample_ID": "Alloy 263 (Hong 2012)",
+      "Role": "Reference",
+      "Data_Nature": "Literature_Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 1"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Name_Raw": "Alloy 263",
+          "Note": "Literature data from Hong et al. 2012 [22]"
+        },
+        "Structure": {
+          "Boron_State": {
+            "Boron_Content": {
+              "Value": 0.015,
+              "Unit": "at.%"
+            },
+            "In_Solid_Solution": true,
+            "As_Boride": false,
+            "In_Carbide": false,
+            "Data_Source": "table"
+          }
+        }
+      }
+    },
+    {
+      "Item_ID": "REF_Alam2012",
+      "Sample_ID": "WE971/G727 (Alam 2012)",
+      "Role": "Reference",
+      "Data_Nature": "Literature_Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 1"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Name_Raw": "(718) WE971/G727",
+          "Note": "Literature data from Alam et al. 2012 [23]"
+        },
+        "Structure": {
+          "Boron_State": {
+            "Boron_Content": {
+              "Value_Range": "0.059-0.064 at.%",
+              "Value": null,
+              "Unit": "at.%"
+            },
+            "In_Solid_Solution": true,
+            "As_Boride": false,
+            "In_Carbide": false,
+            "Data_Source": "table"
+          }
+        }
+      }
+    },
+    {
+      "Item_ID": "REF_Yan2008",
+      "Sample_ID": "Experimental (Yan 2008)",
+      "Role": "Reference",
+      "Data_Nature": "Literature_Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 1"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Name_Raw": "Experimental",
+          "Note": "Literature data from Yan et al. 2008 [24]"
+        },
+        "Structure": {
+          "Boron_State": {
+            "Boron_Content": {
+              "Value": 0.1,
+              "Unit": "at.%"
+            },
+            "In_Solid_Solution": false,
+            "As_Boride": true,
+            "In_Carbide": true,
+            "Data_Source": "table"
+          }
+        }
+      }
+    },
+    {
+      "Item_ID": "REF_Zhang2008a",
+      "Sample_ID": "Rene80 (Zhang 2008)",
+      "Role": "Reference",
+      "Data_Nature": "Literature_Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 1"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Name_Raw": "Rene80",
+          "Note": "Literature data from Zhang et al. 2008 [25]"
+        },
+        "Structure": {
+          "Boron_State": {
+            "Boron_Content": {
+              "Value": 0.065,
+              "Unit": "at.%"
+            },
+            "In_Solid_Solution": false,
+            "As_Boride": true,
+            "In_Carbide": false,
+            "Data_Source": "table"
+          }
+        }
+      }
+    },
+    {
+      "Item_ID": "REF_Zhang2008b",
+      "Sample_ID": "IN738 (Zhang 2008)",
+      "Role": "Reference",
+      "Data_Nature": "Literature_Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 1"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Name_Raw": "IN738",
+          "Note": "Literature data from Zhang et al. 2008 [26]"
+        },
+        "Structure": {
+          "Boron_State": {
+            "Boron_Content": {
+              "Value": 0.06,
+              "Unit": "at.%"
+            },
+            "In_Solid_Solution": false,
+            "As_Boride": true,
+            "In_Carbide": false,
+            "Data_Source": "table"
+          }
+        }
+      }
+    },
+    {
+      "Item_ID": "REF_Ojo2008",
+      "Sample_ID": "Rene80 (Ojo and Zhang 2008)",
+      "Role": "Reference",
+      "Data_Nature": "Literature_Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 1"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Name_Raw": "Rene80",
+          "Note": "Literature data from Ojo and Zhang 2008 [27]"
+        },
+        "Structure": {
+          "Boron_State": {
+            "Boron_Content": {
+              "Value": 0.065,
+              "Unit": "at.%"
+            },
+            "In_Solid_Solution": false,
+            "As_Boride": true,
+            "In_Carbide": false,
+            "Data_Source": "table"
+          }
+        }
+      }
+    },
+    {
+      "Item_ID": "REF_Lemarchand2002",
+      "Sample_ID": "N18 (Lemarchand 2002)",
+      "Role": "Reference",
+      "Data_Nature": "Literature_Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 1"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Name_Raw": "N18",
+          "Note": "Literature data from Lemarchand et al. 2002 [28]"
+        },
+        "Structure": {
+          "Boron_State": {
+            "Boron_Content": {
+              "Value": 0.083,
+              "Unit": "at.%"
+            },
+            "In_Solid_Solution": true,
+            "As_Boride": false,
+            "In_Carbide": false,
+            "Data_Source": "table"
+          }
+        }
+      }
+    },
+    {
+      "Item_ID": "REF_Cadel2002",
+      "Sample_ID": "N18 (Cadel 2002)",
+      "Role": "Reference",
+      "Data_Nature": "Literature_Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 1"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Name_Raw": "N18",
+          "Note": "Literature data from Cadel et al. 2002 [29]"
+        },
+        "Structure": {
+          "Boron_State": {
+            "Boron_Content": {
+              "Value": 0.083,
+              "Unit": "at.%"
+            },
+            "In_Solid_Solution": false,
+            "As_Boride": true,
+            "In_Carbide": false,
+            "Data_Source": "table"
+          }
+        }
+      }
+    },
+    {
+      "Item_ID": "REF_Chen1998",
+      "Sample_ID": "IN718 Low/High boron (Chen 1998)",
+      "Role": "Reference",
+      "Data_Nature": "Literature_Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 1"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Name_Raw": "IN718 - Low/High boron",
+          "Note": "Literature data from Chen et al. 1998 [30]"
+        },
+        "Structure": {
+          "Boron_State": {
+            "Boron_Content": {
+              "Value_Range": "0.006-0.023 at.%",
+              "Value": null,
+              "Unit": "at.%"
+            },
+            "In_Solid_Solution": true,
+            "As_Boride": false,
+            "In_Carbide": false,
+            "Data_Source": "table"
+          }
+        }
+      }
+    },
+    {
+      "Item_ID": "REF_Huang1997",
+      "Sample_ID": "IN718 (Huang 1997)",
+      "Role": "Reference",
+      "Data_Nature": "Literature_Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 1"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Name_Raw": "IN718",
+          "Note": "Literature data from Huang et al. 1997 [31]"
+        },
+        "Structure": {
+          "Boron_State": {
+            "Boron_Content": {
+              "Value": 0.016,
+              "Unit": "at.%"
+            },
+            "In_Solid_Solution": true,
+            "As_Boride": false,
+            "In_Carbide": false,
+            "Data_Source": "table"
+          }
+        }
+      }
+    },
+    {
+      "Item_ID": "REF_Blavette1996",
+      "Sample_ID": "Astroloy (Blavette 1996)",
+      "Role": "Reference",
+      "Data_Nature": "Literature_Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 1"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Name_Raw": "Astroloy",
+          "Note": "Literature data from Blavette et al. 1996 [32]"
+        },
+        "Structure": {
+          "Boron_State": {
+            "Boron_Content": {
+              "Value": 0.11,
+              "Unit": "at.%"
+            },
+            "In_Solid_Solution": true,
+            "As_Boride": true,
+            "In_Carbide": true,
+            "Data_Source": "table"
+          }
+        }
+      }
+    },
+    {
+      "Item_ID": "REF_Letellier1994",
+      "Sample_ID": "Astroloy (Letellier 1994)",
+      "Role": "Reference",
+      "Data_Nature": "Literature_Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 1"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Name_Raw": "Astroloy",
+          "Note": "Literature data from Letellier et al. 1994 [33]"
+        },
+        "Structure": {
+          "Boron_State": {
+            "Boron_Content": {
+              "Value": 0.11,
+              "Unit": "at.%"
+            },
+            "In_Solid_Solution": true,
+            "As_Boride": false,
+            "In_Carbide": false,
+            "Data_Source": "table"
+          }
+        }
+      }
+    },
+    {
+      "Item_ID": "REF_Letellier1993",
+      "Sample_ID": "Astroloy (Letellier 1993)",
+      "Role": "Reference",
+      "Data_Nature": "Literature_Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 1"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Name_Raw": "Astroloy",
+          "Note": "Literature data from Letellier et al. 1993 [34]"
+        },
+        "Structure": {
+          "Boron_State": {
+            "Boron_Content": {
+              "Value": 0.11,
+              "Unit": "at.%"
+            },
+            "In_Solid_Solution": true,
+            "As_Boride": false,
+            "In_Carbide": false,
+            "Data_Source": "table"
+          }
+        }
+      }
+    },
+    {
+      "Item_ID": "REF_Buchon1991",
+      "Sample_ID": "NA4 (Buchon 1991)",
+      "Role": "Reference",
+      "Data_Nature": "Literature_Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 1"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Name_Raw": "NA4",
+          "Note": "Literature data from Buchon et al. 1991 [35]"
+        },
+        "Structure": {
+          "Boron_State": {
+            "Boron_Content": {
+              "Value": 0.09,
+              "Unit": "at.%"
+            },
+            "In_Solid_Solution": true,
+            "As_Boride": false,
+            "In_Carbide": false,
+            "Data_Source": "table"
+          }
+        }
+      }
+    },
+    {
+      "Item_ID": "REF_Delargy1983",
+      "Sample_ID": "IN939 (Delargy 1983)",
+      "Role": "Reference",
+      "Data_Nature": "Literature_Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Interface_Dominated"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 1"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Name_Raw": "IN939",
+          "Note": "Literature data from Delargy and Smith 1983 [36]"
+        },
+        "Structure": {
+          "Boron_State": {
+            "Boron_Content": {
+              "Value": 0.05,
+              "Unit": "at.%"
+            },
+            "In_Solid_Solution": false,
+            "As_Boride": false,
+            "In_Carbide": true,
+            "Data_Source": "table"
+          }
+        }
+      }
+    }
+  ]
+}

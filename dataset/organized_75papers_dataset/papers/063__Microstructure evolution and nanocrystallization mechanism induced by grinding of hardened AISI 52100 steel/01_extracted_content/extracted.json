@@ -1,0 +1,589 @@
+{
+  "Paper_Metadata": {
+    "Paper_Title": "Microstructure evolution and nanocrystallization mechanism induced by grinding of hardened AISI 52100 steel",
+    "DOI": null,
+    "Note": "DOI not found in OCR text"
+  },
+  "Paper_Routing": {
+    "base_material": "Metals",
+    "application": "Structural",
+    "research_paradigm": "Experimental",
+    "Supplements_Loaded": [
+      "directions/base/Metals.txt",
+      "directions/application/Structural.txt",
+      "directions/paradigm/Experimental.txt",
+      "directions/domain/Machining.txt"
+    ],
+    "Patch_Tags": [],
+    "Needs_Mixed_Routing_Check": false,
+    "Mixed_Signals": []
+  },
+  "items": [
+    {
+      "Item_ID": "Item1",
+      "Sample_ID": "AISI52100_ground_surface_white_layer",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 2: Experimental conditions and methods",
+        "Section 3.2: Microstructure and morphology characteristics analysis of the white and dark layers under SEM",
+        "Section 3.3: Nanoscale morphology characteristics analysis of the white layer under TEM",
+        "Section 3.4: Phase and grain texture analysis of the white and dark layers under XRD and EBSD",
+        "Section 3.5: Hardness distribution curve on cross-section of the white and dark layers",
+        "Section 4.1: Formation mechanisms of the white and dark layers influenced by carbon redistribution",
+        "Section 4.2: Nanocrystallization mechanism of the white layer"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Workpiece_Material": {
+            "Material_Name_Raw": "AISI 52100 steel",
+            "Material_Family": "Fe-C bearing steel",
+            "Nominal_Composition": null,
+            "Note": "Standard AISI 52100 steel; no numerical composition given in paper. Trade name retained, no database composition added per rules."
+          },
+          "Tool_Material": {
+            "Material_Name_Raw": "Resin-bonded CBN grinding wheel",
+            "Tool_Designation": "CBN 160 N100B 200D-15T-32H-5X",
+            "Note": "CBN = cubic boron nitride"
+          }
+        },
+        "Processing": {
+          "Process_Category": "Grinding",
+          "Process_Text": {
+            "original": "The heat treatment process was as follows: heating to 850 °C and holding for 2 h, quenching in oil, and tempering at 180 °C for 4 h, according to the ISO 683–17 standard. The grinding experiment was performed on a precision horizontal axis surface grinding machine (MGK 7120 × 6, Hangzhou Machine Tool Co., Ltd., China). A resin-bonded CBN grinding wheel was employed. The experimental conditions were dry grinding, and the grinding process was completed in one pass. The grinding depth was set to 40 μm, and the speeds of the grinding wheel and worktable were maintained at 31.4 m/s and 0.1 m/s, respectively.",
+            "simplified": "AISI 52100 steel quenched (850°C/2h/oil) and tempered (180°C/4h), then surface ground in one pass under dry conditions at depth 40 μm, wheel speed 31.4 m/s, worktable speed 0.1 m/s."
+          },
+          "Key_Params": {
+            "Stage1_Heat_Treatment": {
+              "Stage_Name": "Quenching + Tempering (pre-grinding)",
+              "Quenching_Temperature": {
+                "Value": 1123.15,
+                "Unit": "K",
+                "Original_Values": "850 °C"
+              },
+              "Quenching_Hold_Time": {
+                "Value": 2,
+                "Unit": "h"
+              },
+              "Quenching_Medium": "oil",
+              "Tempering_Temperature": {
+                "Value": 453.15,
+                "Unit": "K",
+                "Original_Values": "180 °C"
+              },
+              "Tempering_Hold_Time": {
+                "Value": 4,
+                "Unit": "h"
+              },
+              "Reference_Standard": "ISO 683-17"
+            },
+            "Stage2_Grinding": {
+              "Stage_Name": "Surface grinding",
+              "Machining_Method": "Surface grinding (horizontal axis)",
+              "Depth_of_Cut": {
+                "Value": 40,
+                "Unit": "μm"
+              },
+              "Wheel_Speed": {
+                "Value": 31.4,
+                "Unit": "m/s"
+              },
+              "Worktable_Speed": {
+                "Value": 0.1,
+                "Unit": "m/s"
+              },
+              "Cooling_or_Lubrication": "dry grinding",
+              "Number_of_Passes": 1,
+              "Wheel_Runout": {
+                "Value": null,
+                "Original_Values": "<1 μm",
+                "Note": "Inequality value: circular runout reduced to less than 1 μm after dressing"
+              }
+            }
+          },
+          "Equipment": [
+            {
+              "Name": "MGK 7120 × 6 precision horizontal axis surface grinding machine",
+              "Manufacturer": "Hangzhou Machine Tool Co., Ltd.",
+              "Country": "China",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "9257B three-axis piezoelectric dynamometer",
+              "Manufacturer": "Kistler",
+              "Country": "Switzerland",
+              "Category": "Testing"
+            },
+            {
+              "Name": "Grindable K-type thermocouple (Ni-Cr wire, Ni-Si wire, mica sheets)",
+              "Category": "Testing",
+              "Note": "Temperature range 0-1300°C, thermal response time <0.1 s, junction size 0.2 mm × 0.04 mm"
+            },
+            {
+              "Name": "cDAQ-9171 data acquisition system",
+              "Manufacturer": "National Instruments",
+              "Country": "USA",
+              "Category": "Testing",
+              "Note": "Sampling frequency 5000 Hz"
+            },
+            {
+              "Name": "WEDM (wire electrical discharge machining)",
+              "Category": "Preparation",
+              "Note": "Used for sectioning workpiece from ground surface"
+            },
+            {
+              "Name": "JSM-7900F field emission scanning electron microscope (FE-SEM)",
+              "Manufacturer": "JEOL",
+              "Country": "Japan",
+              "Category": "Characterization",
+              "Note": "Accelerating voltage 15 kV"
+            },
+            {
+              "Name": "FIB (focused-ion beam)",
+              "Category": "Preparation",
+              "Note": "Used for TEM lamella preparation; thin section 9 μm × 6 μm × 40 nm extracted from ground surface center"
+            },
+            {
+              "Name": "Tecnai-G2-F30 TEM",
+              "Manufacturer": "FEI",
+              "Country": "USA",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Rapid-IIR microzone diffractometer (XRD)",
+              "Manufacturer": "Rigaku",
+              "Country": "Japan",
+              "Category": "Characterization",
+              "Note": "Cu target, scanning range 40°-100°, step 0.02°"
+            },
+            {
+              "Name": "VHX-7000 optical microscope (OM)",
+              "Manufacturer": "Keyence",
+              "Country": "Japan",
+              "Category": "Characterization",
+              "Note": "Used for white layer distribution observation on electropolished ground surface"
+            },
+            {
+              "Name": "Lumis EBSD system",
+              "Manufacturer": "Thermo Fisher Scientific",
+              "Country": "USA",
+              "Category": "Characterization",
+              "Note": "Scanning area 15 μm × 15 μm, step size 50 nm, accelerating voltage 26 kV, working distance 8 mm, tilt 70°"
+            },
+            {
+              "Name": "AZtechCrystal software",
+              "Manufacturer": "Oxford Instruments",
+              "Category": "Software",
+              "Note": "EBSD data acquisition"
+            },
+            {
+              "Name": "Fischione 1051 ion beam thinner",
+              "Category": "Preparation",
+              "Note": "Used to remove stress layer on sample surface for EBSD analysis"
+            },
+            {
+              "Name": "HVST-1000Z Vickers microhardness tester",
+              "Manufacturer": "Shenzhen Junda Times Co., Ltd.",
+              "Country": "China",
+              "Category": "Testing",
+              "Note": "Applied load 100 gf, indentation time 10 s"
+            },
+            {
+              "Name": "ImageJ",
+              "Category": "Software",
+              "Note": "Used for grain size distribution quantification of nanocrystalline layer"
+            }
+          ]
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "The microstructures of the heat-treated workpiece were composed of tempered martensite, spherical carbides, tempered carbides, and a small amount of residual austenite. After grinding, the ground surface cross-section shows a white layer and a dark layer. The white layer microstructure is greatly refined, tightly bonded, with flat and smooth morphology. At the top surface, cryptocrystalline region (3 μm depth) and rheological region (10 μm depth) exist. The white layer is predominantly acicular martensite with some elongated carbide particles and few corrosion pits. SAED pattern near ground surface shows α-BCC martensite and γ-FCC austenite, no ε or θ carbides detected. Nanocrystalline layer near ground surface with grain sizes 10-50 nm. At 6 μm depth: lamellar grains tilted/elongated with dislocation tangles and dislocation walls. At 3 μm depth: elongated lamellar grains split into dislocation cells. At 2 μm depth: nanoscale subgrains with strong texture. At 1 μm depth: mixed columnar and equiaxed nanocrystals. Near ground surface: equiaxed α-BCC nanocrystals with 20 nm recrystallization nuclei. Fe₃C carbide particles retained at various depths with HCP structure.",
+            "simplified": "Pre-grinding: tempered martensite + spherical carbides + tempered carbides + residual austenite. After grinding: white layer (surface, acicular martensite + retained austenite, carbide-depleted, nanocrystalline at top) and dark layer (subsurface, over-tempered martensite + ferrite, carbide-enriched). White layer shows depth-dependent grain refinement from DRV to cDRX+dDRX, grain sizes 10-50 nm near surface. Fe₃C (HCP) carbide particles retained undissolved at various depths."
+          },
+          "Main_Phase": {
+            "Phase_Name": "α-BCC martensite (acicular)",
+            "Crystal_Structure": "BCC",
+            "Note": "Acicular martensite dominant in white layer; formed by re-austenitization followed by rapid cooling"
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "γ-FCC austenite (retained)",
+              "Crystal_Structure": "FCC",
+              "Volume_Fraction": {
+                "Value": 22.6,
+                "Unit": "vol%",
+                "Data_Source": "text",
+                "Note": "Austenite volume fraction in white layer from XRD analysis"
+              }
+            },
+            {
+              "Phase_Name": "Fe₃C cementite",
+              "Crystal_Structure": "HCP",
+              "Note": "Retained microscale spherical carbides undissolved during grinding due to short contact duration. Reduced content compared to bulk. Fe₃C confirmed HCP by IFFT at 2 μm depth."
+            }
+          ],
+          "Affected_Zone_Depth": {
+            "White_Layer_Thickness": {
+              "Value": null,
+              "Note": "White layer thickness not explicitly stated as a single number; cryptocrystalline region ~3 μm, rheological region ~10 μm from top surface"
+            },
+            "Dark_Layer_Depth": {
+              "Value": null,
+              "Note": "Dark layer extends below white layer; exact boundary not given as a single numerical value"
+            }
+          },
+          "Grain_Size": {
+            "Nanocrystalline_Layer": {
+              "Depth_from_Surface": "near ground surface",
+              "Value_Range": {
+                "Min": 10,
+                "Max": 50,
+                "Unit": "nm",
+                "Dimension_Type": "undefined"
+              },
+              "Original_Values": "10 nm to 50 nm",
+              "Note": "Quantified using ImageJ"
+            },
+            "Recrystallization_Nucleus": {
+              "Depth_from_Surface": "near ground surface",
+              "Value": 20,
+              "Unit": "nm",
+              "Dimension_Type": "diameter"
+            }
+          },
+          "Texture_or_Orientation": {
+            "LAGB_Fraction_White_Layer": {
+              "Value": 37.7,
+              "Unit": "%",
+              "Data_Source": "text",
+              "Note": "Low-angle grain boundaries (2°-15° misorientation) in white layer from EBSD"
+            },
+            "Preferential_Orientation": "No preferential orientation in white layer or dark layer (from EBSD IPF maps)"
+          },
+          "Depth_Profile": [
+            {
+              "Depth_from_Top_Surface": "6 μm",
+              "Region": "Rheological region",
+              "Characteristics": "Lamellar grains tilted and elongated along grinding depth; high-density dislocation tangles (DTs); dislocation pile-ups forming dislocation walls (DWs); dislocation steps (DSs) formed"
+            },
+            {
+              "Depth_from_Top_Surface": "3 μm",
+              "Region": "Rheological-to-cryptocrystalline transition",
+              "Characteristics": "Elongated lamellar grains split into dislocation cells (DCs); dislocation annihilation and rearrangement near dislocation walls and steps; SAED shows discontinuous arc-shaped bright spots"
+            },
+            {
+              "Depth_from_Top_Surface": "2 μm",
+              "Region": "Cryptocrystalline region",
+              "Characteristics": "Nanoscale subgrains with strong texture; dislocation cells evolved into subgrains; Fe₃C carbide particles with HCP structure confirmed by IFFT; twisted nanocrystal ~30 nm diameter at two-phase interface"
+            },
+            {
+              "Depth_from_Top_Surface": "1 μm",
+              "Region": "Cryptocrystalline region",
+              "Characteristics": "Mixed columnar and equiaxed nanocrystals; columnar nanocrystals with nearly identical long-axis direction and parallel grain alignments; equiaxed nanocrystals arranged in chain-like manner; evidence of dDRX"
+            },
+            {
+              "Depth_from_Top_Surface": "Near ground surface",
+              "Region": "Cryptocrystalline region (nanocrystalline layer)",
+              "Characteristics": "Equiaxed α-BCC nanocrystals with regular morphology and low dislocation density; 20 nm recrystallization nuclei; SAED shows continuous ring pattern; grain sizes 10-50 nm; evidence of cDRX"
+            }
+          ],
+          "Advanced_Quantitative_Features": {
+            "Austenite_Volume_Fraction_White_Layer": {
+              "Value": 22.6,
+              "Unit": "vol%",
+              "Data_Source": "text",
+              "Note": "From XRD; increased from 8.4% in bulk due to grinding-induced re-austenitization"
+            },
+            "Grinding_Peak_Temperature": {
+              "Value": 1132,
+              "Unit": "°C",
+              "Original_Values": "1132 °C",
+              "Data_Source": "text",
+              "Note": "Peak grinding temperature, exceeded Ac_cm critical point (900 °C) for complete austenitization"
+            },
+            "Temperature_Rise_Rate": {
+              "Value": 130000.0,
+              "Unit": "°C/s",
+              "Original_Values": "1.3 × 10⁵ °C/s",
+              "Data_Source": "text"
+            },
+            "Cooling_Rate": {
+              "Value": 2100,
+              "Unit": "°C/s",
+              "Original_Values": "2.1 × 10³ °C/s",
+              "Data_Source": "text",
+              "Note": "From peak temperature to Ms (200 °C) during 0.3-0.75 s"
+            },
+            "Carbide_Size_At_Interface": {
+              "Value": 30,
+              "Unit": "nm",
+              "Dimension_Type": "diameter",
+              "Note": "Twisted nanocrystal at stress concentration area near carbide-matrix interface at 2 μm depth",
+              "Data_Source": "text"
+            }
+          },
+          "Surface_Integrity": {
+            "Nanocrystallization_Mechanism": "Grain refinement progressed from dynamic recovery (DRV) to predominantly continuous dynamic recrystallization (cDRX) with minor discontinuous dynamic recrystallization (dDRX). Carbide particles exerted pinning effect promoting dislocation multiplication and cross-slip."
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Microhardness",
+            "Value": 1027,
+            "Unit": "HV",
+            "Test_Condition": {
+              "Applied_Load": "100 gf",
+              "Indentation_Time": "10 s",
+              "Location": "White layer (near top surface)",
+              "Measurement_Method": "Vickers microhardness, interlaced measurement, 10 μm depth interval, 30 μm horizontal spacing"
+            },
+            "Data_Source": "text",
+            "Note": "Peak hardness in white layer; hardness distributed in gradient manner (higher closer to surface). Error bars represent 1 STDEV (n=3)."
+          },
+          {
+            "Property_Name": "Grinding_Force_Normal",
+            "Value": 25,
+            "Unit": "N/mm",
+            "Test_Condition": {
+              "Location": "Grinding zone",
+              "Measurement_Device": "Kistler 9257B piezoelectric dynamometer"
+            },
+            "Data_Source": "text",
+            "Note": "Approximately 25 N/mm; approximate value explicitly stated in text"
+          },
+          {
+            "Property_Name": "Grinding_Force_Tangential",
+            "Value": 10,
+            "Unit": "N/mm",
+            "Test_Condition": {
+              "Location": "Grinding zone",
+              "Measurement_Device": "Kistler 9257B piezoelectric dynamometer"
+            },
+            "Data_Source": "text",
+            "Note": "Approximately 10 N/mm; approximate value explicitly stated in text"
+          },
+          {
+            "Property_Name": "Cutting_Temperature_Peak",
+            "Value": 1132,
+            "Unit": "°C",
+            "Test_Condition": {
+              "Measurement_Device": "Grindable K-type thermocouple",
+              "Time_Window": "0.22 s to 0.3 s"
+            },
+            "Data_Source": "text"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "Item2",
+      "Sample_ID": "AISI52100_ground_subsurface_dark_layer",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 3.2: Microstructure and morphology characteristics analysis of the white and dark layers under SEM",
+        "Section 3.4: Phase and grain texture analysis of the white and dark layers under XRD and EBSD",
+        "Section 3.5: Hardness distribution curve on cross-section of the white and dark layers",
+        "Section 4.1: Formation mechanisms of the white and dark layers influenced by carbon redistribution"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Workpiece_Material": {
+            "Material_Name_Raw": "AISI 52100 steel",
+            "Material_Family": "Fe-C bearing steel",
+            "Note": "Same workpiece material as Item1; dark layer is the subsurface region of the same ground sample."
+          }
+        },
+        "Processing": {
+          "Process_Category": "Grinding-induced thermal effect (subsurface)",
+          "Process_Text": {
+            "original": "The subsurface experienced a slower cooling rate and longer holding time after grinding, and the temperature was not high enough for re-austenitization. As a result, the material underwent high-temperature tempering.",
+            "simplified": "Dark layer formed by grinding-induced high-temperature tempering of subsurface where temperature remained below Ac_cm; slower cooling and longer hold time than surface."
+          },
+          "Key_Params": {
+            "Thermal_Condition": {
+              "Temperature_Range": "Below Ac_cm (900 °C) but sufficient for high-temperature tempering",
+              "Note": "No austenite transformation; no austenite peaks detected in XRD"
+            }
+          },
+          "Note": "Grinding equipment and pre-grinding heat treatment shared with Item1 (same workpiece). Equipment for characterization listed in Item1."
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "The dark layer exhibited severe etching, as evidenced by its rough morphology with numerous irregular corrosion grooves. The density of carbide particles in the dark layer was higher than that of the bulk material, but the average particle size remained smaller than that of the bulk material. The dark layer showed contrast differences indicating carbon-depleted and carbon-enriched areas. XRD shows no austenite peaks. Martensite peaks were intensified and narrowed, indicating weakened lattice distortion. EBSD shows improved band contrast, fewer defects, reduced lattice distortions, and more regular grain boundaries compared to white layer. LAGB fraction 15.9%. KAM map shows low and uniformly distributed dislocation density.",
+            "simplified": "Dark layer: over-tempered martensite + ferrite, carbide-enriched, carbon segregation areas, no retained austenite, weakened lattice distortion, low dislocation density."
+          },
+          "Main_Phase": {
+            "Phase_Name": "Over-tempered martensite and ferrite",
+            "Crystal_Structure": "BCC",
+            "Note": "Dark layer consists of over-tempered martensite and ferrite composites; c/a ratio of α-Fe lattice restored to 1"
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "Fe₃C cementite",
+              "Crystal_Structure": "Orthorhombic",
+              "Note": "Significant amount of cementite precipitated along dislocation lines and grain boundaries; higher carbide content than bulk material and white layer"
+            }
+          ],
+          "Texture_or_Orientation": {
+            "LAGB_Fraction_Dark_Layer": {
+              "Value": 15.9,
+              "Unit": "%",
+              "Data_Source": "text",
+              "Note": "Lower than white layer (37.7%) and bulk (21.9%); indicates subgrain coalescence and boundary annihilation"
+            }
+          },
+          "Advanced_Quantitative_Features": {
+            "Austenite_Volume_Fraction_Dark_Layer": {
+              "Value": 0,
+              "Unit": "vol%",
+              "Data_Source": "text",
+              "Note": "No austenite peaks detected in XRD diffraction pattern of dark layer"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Microhardness",
+            "Value": 521,
+            "Unit": "HV",
+            "Test_Condition": {
+              "Applied_Load": "100 gf",
+              "Indentation_Time": "10 s",
+              "Location": "Dark layer (minimum hardness point)"
+            },
+            "Data_Source": "text",
+            "Note": "Minimum hardness in dark layer; approximately 70% of bulk material hardness (740 HV)"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "Item3",
+      "Sample_ID": "AISI52100_bulk_material",
+      "Role": "Comparator",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 2: Experimental conditions and methods",
+        "Section 3.4: Phase and grain texture analysis of the white and dark layers under XRD and EBSD",
+        "Section 3.5: Hardness distribution curve on cross-section of the white and dark layers"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Workpiece_Material": {
+            "Material_Name_Raw": "AISI 52100 steel",
+            "Material_Family": "Fe-C bearing steel"
+          }
+        },
+        "Processing": {
+          "Process_Category": "Heat treatment (pre-grinding baseline)",
+          "Process_Text": {
+            "original": "Heating to 850 °C and holding for 2 h, quenching in oil, and tempering at 180 °C for 4 h, according to the ISO 683–17 standard.",
+            "simplified": "Quenched from 850°C/2h in oil, tempered at 180°C/4h per ISO 683-17."
+          },
+          "Key_Params": {
+            "Quenching_Temperature": {
+              "Value": 1123.15,
+              "Unit": "K",
+              "Original_Values": "850 °C"
+            },
+            "Quenching_Hold_Time": {
+              "Value": 2,
+              "Unit": "h"
+            },
+            "Quenching_Medium": "oil",
+            "Tempering_Temperature": {
+              "Value": 453.15,
+              "Unit": "K",
+              "Original_Values": "180 °C"
+            },
+            "Tempering_Hold_Time": {
+              "Value": 4,
+              "Unit": "h"
+            }
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "The microstructures of the heat-treated workpiece were composed of tempered martensite, spherical carbides, tempered carbides, and a small amount of residual austenite. The bulk material contained a large amount of lathy martensite and a small amount of acicular martensite. EBSD shows intermediate dislocation characteristics between white and dark layers.",
+            "simplified": "Bulk material: tempered martensite (lathy + acicular) + spherical carbides + tempered carbides + residual austenite (8.4 vol%)."
+          },
+          "Main_Phase": {
+            "Phase_Name": "Tempered martensite (lathy + acicular)",
+            "Crystal_Structure": "BCC"
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "Retained austenite",
+              "Crystal_Structure": "FCC",
+              "Volume_Fraction": {
+                "Value": 8.4,
+                "Unit": "vol%",
+                "Data_Source": "text"
+              }
+            },
+            {
+              "Phase_Name": "Spherical carbides and tempered carbides",
+              "Crystal_Structure": "Orthorhombic",
+              "Note": "Fe₃C type"
+            }
+          ],
+          "Texture_or_Orientation": {
+            "LAGB_Fraction_Bulk": {
+              "Value": 21.9,
+              "Unit": "%",
+              "Data_Source": "text"
+            }
+          },
+          "Advanced_Quantitative_Features": {
+            "Austenite_Volume_Fraction_Bulk": {
+              "Value": 8.4,
+              "Unit": "vol%",
+              "Data_Source": "text"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Microhardness",
+            "Value": 740,
+            "Unit": "HV",
+            "Test_Condition": {
+              "Applied_Load": "100 gf",
+              "Indentation_Time": "10 s",
+              "Location": "Bulk material (far from ground surface)"
+            },
+            "Data_Source": "text",
+            "Note": "Baseline bulk hardness"
+          },
+          {
+            "Property_Name": "Surface_Hardness_PreGrinding",
+            "Value": 62,
+            "Value_StdDev": 1,
+            "Unit": "HRC",
+            "Test_Condition": {
+              "Specimen_State": "Heat-treated (quenched + tempered)"
+            },
+            "Data_Source": "text",
+            "Note": "Surface hardness of workpiece after heat treatment, before grinding"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,830 @@
+{
+  "Paper_Metadata": {
+    "Paper_Title": "Harnessing laser-induced in-situ nanowhiskers for high-strength aluminum alloys via additive manufacturing",
+    "DOI": "10.1016/j.actamat.2026.121987"
+  },
+  "Paper_Routing": {
+    "base_material": "Metals",
+    "application": "Structural",
+    "research_paradigm": "Experimental",
+    "Supplements_Loaded": [
+      "directions/base/Metals.txt",
+      "directions/application/Structural.txt",
+      "directions/paradigm/Experimental.txt"
+    ],
+    "Patch_Tags": [
+      "Additive_Manufacturing"
+    ],
+    "Needs_Mixed_Routing_Check": false,
+    "Mixed_Signals": []
+  },
+  "items": [
+    {
+      "Item_ID": "Item_1",
+      "Sample_ID": "LPBFed_AA2024",
+      "Role": "Comparator",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Fig. 1b-d; Fig. 2a-d; Fig. 4a"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Al-Cu-Mg (2xxx series)",
+          "Material_Name_Raw": "AA2024",
+          "Nominal_Composition": {
+            "Note": "Commercial AA2024 powder; exact composition not specified in text"
+          }
+        },
+        "Processing": {
+          "Process_Category": "LPBF",
+          "Process_Text": {
+            "original": "Pure AA2024 was prepared through the same optimized processing parameters on EP-M260 LPBF machine.",
+            "simplified": "LPBF of pure AA2024 powder with optimized parameters."
+          },
+          "Equipment": [
+            {
+              "Name": "EP-M260 LPBF machine (Eplus 3D Tech Co., Ltd.)",
+              "Category": "Preparation"
+            }
+          ],
+          "Key_Params": {
+            "Stage1_LPBF": {
+              "Process": "Laser Powder Bed Fusion",
+              "Laser_Power_W": 300,
+              "Scanning_Speed_mm_s": 1100,
+              "Hatch_Spacing_um": 100,
+              "Layer_Thickness_um": 40,
+              "Scanning_Strategy": "Stripes with 67° rotation between adjacent layers",
+              "Substrate_Preheat_C": 45,
+              "Atmosphere": "Argon",
+              "Laser_Wavelength_nm": 1070,
+              "Spot_Size_um": 75,
+              "Original_Values": "P = 300 W, v = 1100 mm/s, h = 100 μm, t = 40 μm, substrate preheated to 45 °C"
+            }
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "The microstructure was predominantly composed of coarse columnar grains, approximately tens of micrometers in wide, extending over several tens to hundreds of micrometers across multiple melt pools, with an average grain size of 18.2 μm. A strong <001> texture parallel to the build direction. Cracks were clearly observed along columnar GBs, propagating across several grains, while large pores were predominantly located near GBs.",
+            "simplified": "Coarse columnar grains with strong <001> texture parallel to BD; cracks along GBs; large pores near GBs."
+          },
+          "Main_Phase": {
+            "Phase_Name": "α-Al matrix",
+            "Crystal_Structure": "FCC"
+          },
+          "Grain_Size": {
+            "Value": 18.2,
+            "Unit": "μm",
+            "Type": "diameter",
+            "Note": "Average grain size from EBSD",
+            "Original_Values": "18.2 μm"
+          },
+          "Texture_or_Orientation": {
+            "Value": "Strong <001> texture parallel to build direction",
+            "Original_Values": "Strong <001> texture parallel to the build direction"
+          },
+          "Advanced_Quantitative_Features": {
+            "Defect_Volume_Fraction_Pct": {
+              "Value": 4.698,
+              "Unit": "%",
+              "Original_Values": "up to 4.698 %",
+              "Data_Source": "text",
+              "Note": "Original text uses \"up to\" qualifier"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Type": "Tensile",
+            "Ultimate_Tensile_Strength": {
+              "Value_MPa": null,
+              "Note": "UTS shown in stress-strain curve (Fig. 4a) but exact value not explicitly stated in text for LPBFed AA2024 alone; curve shown for comparison"
+            },
+            "Loading_Mode": "Tension",
+            "Test_Temperature_Original": "Room temperature",
+            "Test_Temperature_K": 298,
+            "Environment": "Air",
+            "Specimen_Description": "Dog-bone-shaped; total length 70 mm; gauge section 5 mm diameter × 30 mm length; fillet radii 6 mm",
+            "Crosshead_Speed": "0.5 mm/min",
+            "Data_Source": "text",
+            "Note": "LPBFed AA2024 serves as baseline comparator; exact YS/UTS/UE values not separately listed in text — only shown in Fig. 4a curve which cannot be visually estimated"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "Item_2",
+      "Sample_ID": "Un-ST_MgAlB4w_AA2024",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Fig. 4a; Fig. 4b; Section 3.3"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Al-Cu-Mg (2xxx series) + B addition",
+          "Material_Name_Raw": "MgAlB4w/AA2024",
+          "Nominal_Composition": {
+            "Base_Powder": "AA2024",
+            "Additive": "1.5 wt.% amorphous boron",
+            "Al": "Balance",
+            "B": 1.5,
+            "Unit": "wt.%",
+            "Original_Values": "Mixed AA2024-1.5 wt.% B powders",
+            "Note": "B added as amorphous boron powder; in-situ reaction forms MgAlB4 during LPBF"
+          }
+        },
+        "Processing": {
+          "Process_Category": "LPBF (as-built, no heat treatment)",
+          "Process_Text": {
+            "original": "The mixed AA2024-1.5 wt.% B powders were prepared by three-dimensional (3D) mixing dispersion with a rotation speed of 50 rpm for 10 h. Prior to the LPBF process, the mixed powders were dried in the vacuum dryer at 100 °C for 2 h. LPBF fabricated on EP-M260. Samples without ST were named as Un-ST MgAlB4w/AA2024.",
+            "simplified": "3D mixing of AA2024 + 1.5 wt.% B powders → drying → LPBF → no post heat treatment."
+          },
+          "Equipment": [
+            {
+              "Name": "EP-M260 LPBF machine (Eplus 3D Tech Co., Ltd.)",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "3D mixing dispersion equipment",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Vacuum dryer",
+              "Category": "Preparation"
+            }
+          ],
+          "Key_Params": {
+            "Stage1_Powder_Mixing": {
+              "Process": "3D mixing dispersion",
+              "Rotation_Speed_rpm": 50,
+              "Duration_h": 10,
+              "Original_Values": "50 rpm for 10 h"
+            },
+            "Stage2_Drying": {
+              "Process": "Vacuum drying",
+              "Temperature_C": 100,
+              "Duration_h": 2,
+              "Original_Values": "100 °C for 2 h"
+            },
+            "Stage3_LPBF": {
+              "Process": "Laser Powder Bed Fusion",
+              "Laser_Power_W": 300,
+              "Scanning_Speed_mm_s": 1100,
+              "Hatch_Spacing_um": 100,
+              "Layer_Thickness_um": 40,
+              "Scanning_Strategy": "Stripes with 67° rotation between adjacent layers; short line scanning strategy",
+              "Substrate_Preheat_C": 45,
+              "Atmosphere": "Argon",
+              "Original_Values": "P = 300 W, v = 1100 mm/s, h = 100 μm, t = 40 μm, substrate preheated to 45 °C"
+            }
+          },
+          "Note": "LPBF parameters shared with Item_1 and Item_3 as stated in paper: 'Both AA2024 and MgAlB4w/AA2024 were fabricated in an EP-M260 LPBF machine' with 'the same optimized processing parameters'. No heat treatment applied to this item."
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "XRD patterns confirmed the presence of MgAlB4 characteristic peaks in the Un-ST MgAlB4w/AA2024 alloy, with no residual boron peaks detected.",
+            "simplified": "As-built state; MgAlB4 phase present; no residual B."
+          },
+          "Main_Phase": {
+            "Phase_Name": "α-Al matrix",
+            "Crystal_Structure": "FCC"
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "MgAlB4",
+              "Crystal_Structure": "Hexagonal",
+              "Morphology": "Nano-whiskers",
+              "Note": "Confirmed by XRD; hexagonal crystal structure as previously reported for MgAlB4 [ref 26]"
+            },
+            {
+              "Phase_Name": "θ (Al2Cu)",
+              "Crystal_Structure": "Tetragonal (BCT)",
+              "Note": "Characteristic peaks observed by XRD"
+            }
+          ],
+          "Note": "S phase (Al2CuMg) was absent, attributed to Mg consumption by MgAlB4 formation and enhanced Mg volatilization. Detailed grain size and density data for Un-ST state not separately reported."
+        },
+        "Properties": [
+          {
+            "Property_Type": "Tensile",
+            "Yield_Strength": {
+              "Value_MPa": 393,
+              "Original_Values": "393 MPa",
+              "Data_Source": "text"
+            },
+            "Ultimate_Tensile_Strength": {
+              "Value_MPa": 536,
+              "Original_Values": "536 MPa",
+              "Data_Source": "text"
+            },
+            "Elongation_Uniform": {
+              "Value_Pct": 10.3,
+              "Original_Values": "10.3 %",
+              "Data_Source": "text"
+            },
+            "Loading_Mode": "Tension",
+            "Test_Temperature_Original": "Room temperature",
+            "Test_Temperature_K": 298,
+            "Environment": "Air",
+            "Specimen_Description": "Dog-bone-shaped; total length 70 mm; gauge section 5 mm diameter × 30 mm length; fillet radii 6 mm",
+            "Crosshead_Speed": "0.5 mm/min",
+            "Data_Source": "text",
+            "Note": "Values from Section 3.3 text; 'MgAlB4w/AA2024 and Un-ST MgAlB4w/AA2024 alloy exhibited yield strength (YS) of 445 MPa and 393 MPa, and UTS of 615 MPa and 536 MPa, respectively, with UE of 8.0% and 10.3%'"
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "Item_3",
+      "Sample_ID": "MgAlB4w_AA2024_ST",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Fig. 1e-g; Fig. 2e-h; Fig. 3; Fig. 4a-d; Fig. 7; Fig. 8; Fig. 9; Sections 3.1-3.3, 4.1-4.2"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Al-Cu-Mg (2xxx series) + B addition",
+          "Material_Name_Raw": "MgAlB4w/AA2024",
+          "Nominal_Composition": {
+            "Base_Powder": "AA2024",
+            "Additive": "1.5 wt.% amorphous boron",
+            "Al": "Balance",
+            "B": 1.5,
+            "Unit": "wt.%",
+            "Original_Values": "Mixed AA2024-1.5 wt.% B powders",
+            "Note": "AA2024 powder size 15–53 μm; amorphous boron powder average diameter <5 μm, purity >99.8%"
+          }
+        },
+        "Processing": {
+          "Process_Category": "LPBF + Solution Treatment + Natural Aging",
+          "Process_Text": {
+            "original": "The mixed AA2024-1.5 wt.% B powders were prepared by three-dimensional (3D) mixing dispersion with a rotation speed of 50 rpm for 10 h. Prior to the LPBF process, the mixed powders were dried in the vacuum dryer at 100 °C for 2 h. The as-built MgAlB4w/AA2024 was then subjected to a solution treatment (ST) at 505 °C for 1 h in a muffle furnace, followed by water quenching to room temperature. Subsequently, the as-quenched specimens were naturally aged at room temperature (25 °C) for 30 days before being subjected to tensile testing and microstructural analysis.",
+            "simplified": "3D mixing of AA2024 + 1.5 wt.% B → vacuum drying → LPBF → solution treatment 505°C/1h → water quench → natural aging 25°C/30 days."
+          },
+          "Equipment": [
+            {
+              "Name": "EP-M260 LPBF machine (Eplus 3D Tech Co., Ltd.)",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "3D mixing dispersion equipment",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Vacuum dryer",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Muffle furnace",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Lloyd EZ20 unidirectional tensile testing machine",
+              "Category": "Testing"
+            },
+            {
+              "Name": "LE5105 electronic universal testing machine",
+              "Category": "Testing"
+            },
+            {
+              "Name": "DMI-3000M optical microscope (OM)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "S-4800 and Zeiss Sigma 300 field emission SEM (FE-SEM)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "JEM-F200 TEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Thermo Fisher Themis Z aberration-corrected STEM with EELS",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "D8 Advanced XRD with Cu Kα radiation",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "UH4150 Spectrophotometer (DRS)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "ZEISS Sigma 300 FE-SEM with EBSD",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Nano Volex 4000 (X-ray μ-CT)",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Channel 5 software (EBSD analysis)",
+              "Category": "Software"
+            },
+            {
+              "Name": "Nano Measurer software",
+              "Category": "Software"
+            },
+            {
+              "Name": "Flow3D software (melt pool simulation)",
+              "Category": "Software"
+            }
+          ],
+          "Key_Params": {
+            "Stage1_Powder_Mixing": {
+              "Process": "3D mixing dispersion",
+              "Rotation_Speed_rpm": 50,
+              "Duration_h": 10,
+              "Original_Values": "50 rpm for 10 h"
+            },
+            "Stage2_Drying": {
+              "Process": "Vacuum drying",
+              "Temperature_C": 100,
+              "Duration_h": 2,
+              "Original_Values": "100 °C for 2 h"
+            },
+            "Stage3_LPBF": {
+              "Process": "Laser Powder Bed Fusion",
+              "Laser_Power_W": 300,
+              "Scanning_Speed_mm_s": 1100,
+              "Hatch_Spacing_um": 100,
+              "Layer_Thickness_um": 40,
+              "Scanning_Strategy": "Stripes with 67° rotation between adjacent layers; short line scanning strategy",
+              "Substrate_Preheat_C": 45,
+              "Atmosphere": "Argon",
+              "Laser_Wavelength_nm": 1070,
+              "Spot_Size_um": 75,
+              "Original_Values": "P = 300 W, v = 1100 mm/s, h = 100 μm, t = 40 μm, substrate preheated to 45 °C"
+            },
+            "Stage4_Solution_Treatment": {
+              "Process": "Solution treatment",
+              "Temperature_C": 505,
+              "Temperature_K": 778.15,
+              "Duration_h": 1,
+              "Cooling": "Water quench to room temperature",
+              "Original_Values": "505 °C for 1 h, followed by water quenching"
+            },
+            "Stage5_Natural_Aging": {
+              "Process": "Natural aging",
+              "Temperature_C": 25,
+              "Temperature_K": 298.15,
+              "Duration_days": 30,
+              "Original_Values": "Naturally aged at room temperature (25 °C) for 30 days"
+            }
+          },
+          "Note": "LPBF parameters shared with Item_1 and Item_2 as stated: 'Both AA2024 and MgAlB4w/AA2024 were fabricated' with 'the same optimized processing parameters'. Sample orientation: longitudinal axis perpendicular to build direction."
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "The MgAlB4w/AA2024 alloy exhibited a markedly refined equiaxed grain structure with an average grain size of 1.5 μm, which was <1/10 that of the LPBFed AA2024. These equiaxed grains exhibited random orientations, indicative of a nearly texture-free character, and no defects were detected within the Al matrix. The in-situ formed MgAlB4 phase displayed typical whisker morphology, with diameters of approximately 5–15 nm and lengths up to several hundred nanometers, yielding aspect ratios greater than 20. MgAlB4 whiskers are randomly oriented and uniformly distributed throughout the matrix. A coherent interface was identified between the (0112)w plane of the whisker and the (200)Al plane of the matrix, with a low lattice mismatch of 2.5%. Pronounced Cu segregation was observed along the whisker-matrix interfaces.",
+            "simplified": "Ultrafine equiaxed grains (~1.5 μm), nearly texture-free; dense MgAlB4 nano-whiskers (5-15 nm dia, AR>20) uniformly distributed; coherent whisker/Al interface with 2.5% lattice mismatch; Cu segregation at whisker-matrix interfaces."
+          },
+          "Main_Phase": {
+            "Phase_Name": "α-Al matrix",
+            "Crystal_Structure": "FCC"
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "MgAlB4",
+              "Crystal_Structure": "Hexagonal",
+              "Morphology": "Nano-whiskers",
+              "Diameter": {
+                "Value_Range": "5–15 nm",
+                "Unit": "nm",
+                "Type": "diameter",
+                "Original_Values": "5–15 nm"
+              },
+              "Length": {
+                "Value_Range": "up to several hundred nm",
+                "Original_Values": "lengths up to several hundred nanometers"
+              },
+              "Aspect_Ratio": {
+                "Value": null,
+                "Note": ">20 (inequality, not exact value)",
+                "Original_Values": "aspect ratios greater than 20"
+              },
+              "Distribution": "Randomly oriented and uniformly distributed throughout the matrix; ~54% in grain interior, ~46% along GBs",
+              "Crystallographic_Orientation": "Whisker sidewall = (0002) plane; growth perpendicular to (0002)",
+              "Original_Values": "diameters of approximately 5–15 nm, aspect ratios exceeding 20"
+            },
+            {
+              "Phase_Name": "θ (Al2Cu)",
+              "Crystal_Structure": "Tetragonal (BCT)",
+              "Morphology": "Interfacial precipitate",
+              "Note": "Formed at whisker-matrix interface; coherent (211)θ with (111)Al, mismatch ~1.3%. No S phase (Al2CuMg) detected."
+            }
+          ],
+          "Grain_Size": {
+            "Value": 1.5,
+            "Unit": "μm",
+            "Type": "diameter",
+            "Note": "Average equiaxed grain size from EBSD; <1/10 of LPBFed AA2024; abstract reports ~1.3 μm",
+            "Original_Values": "1.5 μm",
+            "Data_Source": "text"
+          },
+          "Relative_Density": {
+            "Value_Pct": 99.991,
+            "Unit": "%",
+            "Original_Values": "99.991 %",
+            "Data_Source": "text",
+            "Note": "From nano-CT analysis; near-full densification"
+          },
+          "Texture_or_Orientation": {
+            "Value": "Nearly texture-free; random orientations",
+            "Original_Values": "Random orientations, indicative of a nearly texture-free character"
+          },
+          "Interface_Characteristics": {
+            "Whisker_Al_Interface": {
+              "Whisker_Plane": "(0112)w",
+              "Matrix_Plane": "(200)Al",
+              "Lattice_Mismatch_Pct": 2.5,
+              "Coherency": "Coherent",
+              "Original_Values": "Coherent interface between (0112)w and (200)Al, δ1 = 2.5%"
+            },
+            "Whisker_Theta_Al_Interface": {
+              "Theta_Plane": "(211)θ",
+              "Al_Plane": "(111)Al",
+              "Lattice_Mismatch_Pct": 1.3,
+              "Original_Values": "(211)θ with (111)Al, mismatch of approximately 1.3%"
+            }
+          },
+          "Advanced_Quantitative_Features": {
+            "Whisker_Distribution_Intergranular_Pct": {
+              "Value": 46,
+              "Unit": "%",
+              "Original_Values": "~46% distributed along GBs",
+              "Note": "From statistical analysis of TKD results (Fig. 7k)",
+              "Data_Source": "text"
+            },
+            "Whisker_Distribution_Intragranular_Pct": {
+              "Value": 54,
+              "Unit": "%",
+              "Original_Values": "~54% located in the grain interior",
+              "Note": "From statistical analysis of TKD results (Fig. 7k)",
+              "Data_Source": "text"
+            },
+            "KAM_GB_0Pct_Strain": {
+              "Value": 1.72,
+              "Note": "Averaged KAM of GB zone at 0% strain",
+              "Original_Values": "1.72",
+              "Data_Source": "text"
+            },
+            "KAM_GB_4Pct_Strain": {
+              "Value": 1.9,
+              "Note": "Averaged KAM of GB zone at 4% strain",
+              "Original_Values": "1.90",
+              "Data_Source": "text"
+            },
+            "KAM_Intragranular_Increase_0_to_4Pct_Pct": {
+              "Value": 79,
+              "Unit": "%",
+              "Note": "KAM values in intragranular domains increased by 79% from 0% to 4% strain",
+              "Original_Values": "increasing by 79% from 0% to 4% strain",
+              "Data_Source": "text"
+            },
+            "Melt_Pool_Pressure_MPa": {
+              "Value": 40,
+              "Unit": "MPa",
+              "Note": "Recoil pressure; calculated from model; approximate value",
+              "Original_Values": "approximately 40 MPa"
+            },
+            "Cooling_Rate_LPBF": {
+              "Value": 10000000.0,
+              "Unit": "K/s",
+              "Note": "From Flow3D simulation (Fig. 5b-c); approximate value",
+              "Original_Values": "~10^7 K/s"
+            },
+            "MgAlB4_Axial_Cleavage_Energy": {
+              "Value": 0.275,
+              "Unit": "eV/Å²",
+              "Original_Values": "0.275 eV/Å²",
+              "Note": "Axial cleavage energy; lower than radial, favoring 1D growth",
+              "Data_Source": "text"
+            },
+            "MgAlB4_Radial_Cleavage_Energy": {
+              "Value": 0.314,
+              "Unit": "eV/Å²",
+              "Original_Values": "0.314 eV/Å²",
+              "Note": "Radial cleavage energy",
+              "Data_Source": "text"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Type": "Tensile",
+            "Yield_Strength": {
+              "Value_MPa": 445,
+              "Original_Values": "445 MPa",
+              "Data_Source": "text"
+            },
+            "Ultimate_Tensile_Strength": {
+              "Value_MPa": 615,
+              "Original_Values": "615 MPa",
+              "Data_Source": "text"
+            },
+            "Elongation_Uniform": {
+              "Value_Pct": 8.0,
+              "Original_Values": "8.0 %",
+              "Data_Source": "text"
+            },
+            "Loading_Mode": "Tension",
+            "Test_Temperature_Original": "Room temperature",
+            "Test_Temperature_K": 298.15,
+            "Environment": "Air",
+            "Specimen_Description": "Dog-bone-shaped; total length 70 mm; gauge section 5 mm diameter × 30 mm length; fillet radii 6 mm",
+            "Crosshead_Speed": "0.5 mm/min",
+            "Testing_Machine": "Lloyd EZ20",
+            "Data_Source": "text",
+            "Note": "Values from Section 3.3 text. UTS also reported as '~610 MPa' in abstract and 'above 600 MPa' in introduction; 615 MPa from results section used as primary value."
+          },
+          {
+            "Property_Type": "Tensile",
+            "Ultimate_Tensile_Strength": {
+              "Value_MPa": 482,
+              "Original_Values": "482 MPa",
+              "Data_Source": "text"
+            },
+            "Loading_Mode": "Tension",
+            "Test_Temperature_Original": "150 °C",
+            "Test_Temperature_K": 423.15,
+            "Environment": "Air",
+            "Specimen_Description": "Dog-bone-shaped; total length 70 mm; gauge section 5 mm diameter × 30 mm length; fillet radii 6 mm",
+            "Crosshead_Speed": "0.5 mm/min",
+            "Hold_Time_Before_Test": "15 mins at target temperature",
+            "Testing_Machine": "LE5105 electronic universal testing machine",
+            "Data_Source": "text",
+            "Note": "High-temperature tensile test. YS and elongation not explicitly stated for this temperature in text."
+          },
+          {
+            "Property_Type": "Tensile",
+            "Ultimate_Tensile_Strength": {
+              "Value_MPa": 445,
+              "Original_Values": "445 MPa",
+              "Data_Source": "text"
+            },
+            "Loading_Mode": "Tension",
+            "Test_Temperature_Original": "200 °C",
+            "Test_Temperature_K": 473.15,
+            "Environment": "Air",
+            "Specimen_Description": "Dog-bone-shaped; total length 70 mm; gauge section 5 mm diameter × 30 mm length; fillet radii 6 mm",
+            "Crosshead_Speed": "0.5 mm/min",
+            "Hold_Time_Before_Test": "15 mins at target temperature",
+            "Testing_Machine": "LE5105 electronic universal testing machine",
+            "Data_Source": "text",
+            "Note": "High-temperature tensile test."
+          },
+          {
+            "Property_Type": "Tensile",
+            "Ultimate_Tensile_Strength": {
+              "Value_MPa": 286,
+              "Original_Values": "286 MPa",
+              "Data_Source": "text"
+            },
+            "Loading_Mode": "Tension",
+            "Test_Temperature_Original": "250 °C",
+            "Test_Temperature_K": 523.15,
+            "Environment": "Air",
+            "Specimen_Description": "Dog-bone-shaped; total length 70 mm; gauge section 5 mm diameter × 30 mm length; fillet radii 6 mm",
+            "Crosshead_Speed": "0.5 mm/min",
+            "Hold_Time_Before_Test": "15 mins at target temperature",
+            "Testing_Machine": "LE5105 electronic universal testing machine",
+            "Data_Source": "text",
+            "Note": "High-temperature tensile test."
+          },
+          {
+            "Property_Type": "Tensile",
+            "Yield_Strength": {
+              "Value_MPa": null,
+              "Note": "Approximately 170 MPa (approximate value reported)",
+              "Original_Values": "approximately 170 MPa"
+            },
+            "Loading_Mode": "Tension",
+            "Test_Temperature_Original": "300 °C",
+            "Test_Temperature_K": 573.15,
+            "Environment": "Air",
+            "Specimen_Description": "Dog-bone-shaped; total length 70 mm; gauge section 5 mm diameter × 30 mm length; fillet radii 6 mm",
+            "Crosshead_Speed": "0.5 mm/min",
+            "Hold_Time_Before_Test": "15 mins at target temperature",
+            "Testing_Machine": "LE5105 electronic universal testing machine",
+            "Data_Source": "text",
+            "Note": "YS approximately 170 MPa; attributed to recrystallization temperature of Al-Cu matrix being typically below 300 °C. UTS not explicitly stated for 300 °C in text."
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "Item_4",
+      "Sample_ID": "MgAlB4w_AA2024_SlowCooling",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Fig. 6d; Fig. 6c; Section 4.1"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Al-Cu-Mg (2xxx series) + B addition",
+          "Material_Name_Raw": "MgAlB4w/AA2024",
+          "Nominal_Composition": {
+            "Base_Powder": "AA2024",
+            "Additive": "1.5 wt.% amorphous boron",
+            "Al": "Balance",
+            "B": 1.5,
+            "Unit": "wt.%",
+            "Original_Values": "Mixed AA2024-1.5 wt.% B powders",
+            "Note": "Same nominal composition as Item_3; shared powder feedstock"
+          }
+        },
+        "Processing": {
+          "Process_Category": "Melting + furnace slow cooling",
+          "Process_Text": {
+            "original": "Melting followed by slow furnace cooling",
+            "simplified": "In-situ synthesis experiment under furnace cooling condition."
+          },
+          "Note": "Cooling condition study to investigate cooling rate effect on whisker formation; no LPBF involved"
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Furnace cooling produced coarse MgAlB4 whiskers (~745.21 nm radial, ~6.62 μm axial) with lower whisker number density.",
+            "simplified": "Coarse MgAlB4 whiskers produced under slow furnace cooling."
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "MgAlB4",
+              "Crystal_Structure": "Hexagonal",
+              "Morphology": "Coarse whiskers",
+              "Diameter": {
+                "Value": 745.21,
+                "Unit": "nm",
+                "Type": "undefined",
+                "Original_Values": "~745.21 nm radial"
+              },
+              "Length": {
+                "Value": 6.62,
+                "Unit": "μm",
+                "Type": "undefined",
+                "Original_Values": "~6.62 μm axial"
+              },
+              "Note": "Lower whisker number density; approximate values from quantitative comparison (Fig. 6c)"
+            }
+          ],
+          "Advanced_Quantitative_Features": {
+            "Cooling_Condition": "Melting + slow furnace cooling"
+          }
+        }
+      }
+    },
+    {
+      "Item_ID": "Item_5",
+      "Sample_ID": "MgAlB4w_AA2024_AirCooling",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Fig. 6e; Fig. 6c; Section 4.1"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Al-Cu-Mg (2xxx series) + B addition",
+          "Material_Name_Raw": "MgAlB4w/AA2024",
+          "Nominal_Composition": {
+            "Base_Powder": "AA2024",
+            "Additive": "1.5 wt.% amorphous boron",
+            "Al": "Balance",
+            "B": 1.5,
+            "Unit": "wt.%",
+            "Note": "Same nominal composition as Item_3"
+          }
+        },
+        "Processing": {
+          "Process_Category": "Melting + air cooling",
+          "Process_Text": {
+            "original": "Melting followed by air cooling",
+            "simplified": "In-situ synthesis experiment under air cooling condition."
+          }
+        },
+        "Structure": {
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "MgAlB4",
+              "Crystal_Structure": "Hexagonal",
+              "Morphology": "Rod-like whiskers",
+              "Diameter": {
+                "Value": 548.59,
+                "Unit": "nm",
+                "Type": "undefined",
+                "Original_Values": "~548.59 nm radial"
+              },
+              "Length": {
+                "Value": 3.47,
+                "Unit": "μm",
+                "Type": "undefined",
+                "Original_Values": "~3.47 μm axial"
+              },
+              "Note": "Higher density of rod-like MgAlB4 compared to furnace cooling; approximate values from quantitative comparison (Fig. 6c)"
+            }
+          ],
+          "Advanced_Quantitative_Features": {
+            "Cooling_Condition": "Melting + air cooling"
+          }
+        }
+      }
+    },
+    {
+      "Item_ID": "Item_6",
+      "Sample_ID": "MgAlB4w_AA2024_MeltSpinning",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Fig. 6f; Fig. 6c; Section 4.1"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Al-Cu-Mg (2xxx series) + B addition",
+          "Material_Name_Raw": "MgAlB4w/AA2024",
+          "Nominal_Composition": {
+            "Base_Powder": "AA2024",
+            "Additive": "1.5 wt.% amorphous boron",
+            "Al": "Balance",
+            "B": 1.5,
+            "Unit": "wt.%",
+            "Note": "Same nominal composition as Item_3"
+          }
+        },
+        "Processing": {
+          "Process_Category": "Melt-spinning",
+          "Process_Text": {
+            "original": "Melting + spinning (melt-spinning)",
+            "simplified": "In-situ synthesis experiment via melt-spinning for higher cooling rate."
+          }
+        },
+        "Structure": {
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "MgAlB4",
+              "Crystal_Structure": "Hexagonal",
+              "Morphology": "Fine whiskers",
+              "Diameter": {
+                "Value": 31.65,
+                "Unit": "nm",
+                "Type": "undefined",
+                "Original_Values": "~31.65 nm radial"
+              },
+              "Length": {
+                "Value": 616.33,
+                "Unit": "nm",
+                "Type": "undefined",
+                "Original_Values": "~616.33 nm axial"
+              },
+              "Note": "Approximate values from quantitative comparison (Fig. 6c)"
+            }
+          ],
+          "Advanced_Quantitative_Features": {
+            "Cooling_Condition": "Melting + melt-spinning",
+            "Cooling_Rate": {
+              "Value": 100000000.0,
+              "Unit": "K/s",
+              "Original_Values": "~10^8 K/s",
+              "Note": "Higher than LPBF cooling rate"
+            }
+          }
+        }
+      }
+    }
+  ]
+}

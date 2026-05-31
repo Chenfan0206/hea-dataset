@@ -1,0 +1,1215 @@
+{
+  "Paper_Metadata": {
+    "Paper_Title": "The impact of surface orientation on surface roughness and fatigue life of laser-based powder bed fusion Ti-6Al-4V",
+    "DOI": "10.1016/j.addma.2024.104149"
+  },
+  "Paper_Routing": {
+    "base_material": "Metals",
+    "application": "Structural",
+    "research_paradigm": "Experimental",
+    "Supplements_Loaded": [
+      "directions/base/Metals.txt",
+      "directions/application/Structural.txt",
+      "directions/paradigm/Experimental.txt"
+    ],
+    "Patch_Tags": [
+      "Additive_Manufacturing",
+      "Directional_Anisotropy"
+    ],
+    "Needs_Mixed_Routing_Check": false,
+    "Mixed_Signals": []
+  },
+  "items": [
+    {
+      "Item_ID": "LBPBF_Ti64_0deg_NoHIP",
+      "Sample_ID": "Ti64_0deg_NoHIP",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing",
+        "Directional_Anisotropy"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 6: Tensile data for specimens with as-manufactured surfaces before and after HIP",
+        "0° (No-HIP): YS 1093 ± 7.5 MPa, UTS 1226 ± 3 MPa, Max. Elongation 2.09 ± 0.7%"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Ti_Alloy",
+          "Material_Name_Raw": "Ti-6Al-4V powder",
+          "Nominal_Composition": {
+            "Composition_Source_Type": "nominal_inferred",
+            "Note": "Commercial Ti-6Al-4V designation reported; no explicit numerical composition was provided in the paper."
+          }
+        },
+        "Processing": {
+          "Process_Category": "AM_LPBF",
+          "Process_Text": {
+            "original": "Fatigue and tensile specimens were produced using LB-PBF (SLM Solutions 250) with Ti-6Al-4V powder. Before using virgin Ti-6Al-4V powder, two drying runs were completed to remove any moisture present. After drying, the powder is sieved (~100µm) resulting in a Dv90 powder size distribution of 65.8 µm and Dv50 of 44.5 µm. Applied process parameters are: 30 µm layer height, 100 W laser power, 425 mm/s scan speed on borders and 375 mm/s scan speed on hatching. Fatigue specimens dimensions conform to subsize specimens in ASTM E466 and tensile specimens conform to subsize specimens specified in ASTM E8. Fatigue specimens were manufactured at six inclination angles from 90° down to 0°. Specimens manufactured at or above 40° did not require supports in the gauge section, only on the lower grip section. Specimens manufactured below 40° required supports for the gauge section. The support method adopted a thin-wall, edge support in contact with the perimeter of the gauge section and column supports separated by 100 µm from the downward-facing surface of the specimen gauge section to avoid mutual contact, thus no machining was required and an as-manufactured surface was achieved. No HIP was applied to this specimen group.",
+            "simplified": "Ti-6Al-4V 0° specimens built by LB-PBF on SLM Solutions 250. Powder Dv50=44.5 µm, Dv90=65.8 µm. Process: 30 µm layer, 100 W laser, 425 mm/s border scan, 375 mm/s hatching. As-manufactured surface, no HIP. Tensile specimens per ASTM E8 subsize."
+          },
+          "Equipment": [
+            {
+              "Instrument_Name": "LB-PBF system",
+              "Manufacturer": "SLM Solutions",
+              "Model": "250"
+            },
+            {
+              "Instrument_Name": "SEM",
+              "Manufacturer": "JEOL",
+              "Model": "7200F",
+              "Note": "Equipped with BSE and EBSD for microstructure evaluation"
+            },
+            {
+              "Instrument_Name": "Focus variation microscope",
+              "Manufacturer": "Alicona",
+              "Model": "Infinite Focus",
+              "Note": "Surface roughness characterisation, vertical resolution 0.5 µm, lateral resolution 3.5 µm"
+            },
+            {
+              "Instrument_Name": "Universal testing machine",
+              "Manufacturer": "Instron",
+              "Note": "50 kN load cell for tensile testing"
+            },
+            {
+              "Instrument_Name": "Universal testing machine",
+              "Manufacturer": "MTS",
+              "Note": "Hydraulic, 100 kN load cell for fatigue testing"
+            }
+          ],
+          "Key_Params": {
+            "Stage1_LPBF": {
+              "Laser_Power_W": 100,
+              "Scanning_Speed_Border_mm_s": 425,
+              "Scanning_Speed_Hatching_mm_s": 375,
+              "Layer_Thickness_um": 30,
+              "Powder_Size_Dv50_um": 44.5,
+              "Powder_Size_Dv90_um": 65.8,
+              "Powder_Sieving_Cutoff_um": 100,
+              "Specimen_Inclination_Angle_deg": 0,
+              "Support_Required": true,
+              "Support_Surface_Separation_um": 100,
+              "Support_Type": "Thin-wall edge support + column supports"
+            }
+          },
+          "Note": "As-built, no heat treatment applied."
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "The α′ martensite, typical of LB-PBF Ti-6Al-4V, is observed before HIP. Needle-like alpha laths are observed within the prior beta grains; prior beta grains exhibit epitaxial growth parallel to the build direction of the specimens. Backscatter and EBSD images of vertically built 90° specimens before HIP were used to approximate average lath statistics.",
+            "simplified": "Before HIP, as-manufactured LB-PBF Ti-6Al-4V shows α′ martensite with needle-like alpha laths inside prior beta grains. Prior beta grains grow epitaxially parallel to the build direction."
+          },
+          "Main_Phase": "HCP",
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "α′ martensite",
+              "Note": "Needle-like alpha laths within prior beta grains; typical of LB-PBF Ti-6Al-4V before HIP"
+            }
+          ],
+          "Advanced_Quantitative_Features": {
+            "EBSD_Solve_Rate_Min_pct": 83.95,
+            "EBSD_Solve_Rate_Max_pct": 97.7,
+            "Auto_Clean_Resolved_Percentage_Change_Min_pct": 2.2,
+            "Auto_Clean_Resolved_Percentage_Change_Max_pct": 8.37,
+            "Approximate_Average_Lath_Statistics_90deg_Before_HIP": {
+              "Area_um2": {
+                "Value": 3.25,
+                "Value_StdDev": 7.72
+              },
+              "Length_um": {
+                "Value": 4.04,
+                "Value_StdDev": 5.03
+              },
+              "Breadth_um": {
+                "Value": 1.19,
+                "Value_StdDev": 0.71
+              },
+              "Aspect_Ratio": {
+                "Value": 3.07,
+                "Value_StdDev": 1.73
+              }
+            },
+            "Prior_Beta_Grain_Epitaxial_Growth_Parallel_to_Build_Direction": true
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Yield_Strength",
+            "Value": 1093,
+            "Value_StdDev": 7.5,
+            "Unit": "MPa",
+            "Original_Values": "1093 ± 7.5 MPa",
+            "Test_Temperature_K": 298.15,
+            "Test_Temperature_Original": "room temperature",
+            "Loading_Mode": "Tension",
+            "Strain_Rate_s1": 0.00052,
+            "Tensile_Speed_mm_min": 1,
+            "Data_Source": "table",
+            "Data_Nature": "Experimental",
+            "Test_Specimen": {
+              "Specimen_Geometry": "flat",
+              "Test_Standard": "ASTM E8 subsize"
+            },
+            "Note": "YS0.2% for 0° inclination, as-manufactured surface, No-HIP."
+          },
+          {
+            "Property_Name": "Ultimate_Tensile_Strength",
+            "Value": 1226,
+            "Value_StdDev": 3,
+            "Unit": "MPa",
+            "Original_Values": "1226 ± 3 MPa",
+            "Test_Temperature_K": 298.15,
+            "Test_Temperature_Original": "room temperature",
+            "Loading_Mode": "Tension",
+            "Strain_Rate_s1": 0.00052,
+            "Tensile_Speed_mm_min": 1,
+            "Data_Source": "table",
+            "Data_Nature": "Experimental",
+            "Test_Specimen": {
+              "Specimen_Geometry": "flat",
+              "Test_Standard": "ASTM E8 subsize"
+            },
+            "Note": "UTS for 0° inclination, as-manufactured surface, No-HIP."
+          },
+          {
+            "Property_Name": "Elongation_Total",
+            "Value": 2.09,
+            "Value_StdDev": 0.7,
+            "Unit": "%",
+            "Original_Values": "2.09 ± 0.7%",
+            "Test_Temperature_K": 298.15,
+            "Test_Temperature_Original": "room temperature",
+            "Loading_Mode": "Tension",
+            "Strain_Rate_s1": 0.00052,
+            "Tensile_Speed_mm_min": 1,
+            "Data_Source": "table",
+            "Data_Nature": "Experimental",
+            "Test_Specimen": {
+              "Specimen_Geometry": "flat",
+              "Test_Standard": "ASTM E8 subsize"
+            },
+            "Note": "Maximum elongation for 0° inclination, as-manufactured surface, No-HIP."
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "LBPBF_Ti64_10deg_NoHIP",
+      "Sample_ID": "Ti64_10deg_NoHIP",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing",
+        "Directional_Anisotropy"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 6: Tensile data for specimens with as-manufactured surfaces before and after HIP",
+        "10° (No-HIP): YS 1175 ± 15 MPa, UTS 1382 ± 21 MPa, Max. Elongation 3.60 ± 1.1%"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Ti_Alloy",
+          "Material_Name_Raw": "Ti-6Al-4V powder",
+          "Nominal_Composition": {
+            "Composition_Source_Type": "nominal_inferred",
+            "Note": "Same commercial Ti-6Al-4V powder as other specimens; no explicit numerical composition provided."
+          }
+        },
+        "Processing": {
+          "Process_Category": "AM_LPBF",
+          "Process_Text": {
+            "original": "Same LB-PBF process as 0° specimens (SLM Solutions 250) with Ti-6Al-4V powder. Process parameters: 30 µm layer height, 100 W laser power, 425 mm/s scan speed on borders and 375 mm/s scan speed on hatching. 10° inclination angle. No HIP applied. As-manufactured surface.",
+            "simplified": "Ti-6Al-4V 10° specimens built by LB-PBF on SLM Solutions 250. Same process parameters. As-manufactured surface, no HIP. Tensile specimens per ASTM E8 subsize."
+          },
+          "Key_Params": {
+            "Stage1_LPBF": {
+              "Laser_Power_W": 100,
+              "Scanning_Speed_Border_mm_s": 425,
+              "Scanning_Speed_Hatching_mm_s": 375,
+              "Layer_Thickness_um": 30,
+              "Specimen_Inclination_Angle_deg": 10,
+              "Support_Required": true,
+              "Support_Surface_Separation_um": 100
+            }
+          },
+          "Note": "As-built, no heat treatment applied."
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "The α′ martensite, typical of LB-PBF Ti-6Al-4V, is observed before HIP. Needle-like alpha laths are observed within the prior beta grains. 10° specimens demonstrated the worst surface roughness consistent with stair stepping effects.",
+            "simplified": "Before HIP, α′ martensite with needle-like alpha laths. 10° specimens had highest surface roughness across all metrics."
+          },
+          "Main_Phase": "HCP",
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "α′ martensite",
+              "Note": "Needle-like alpha laths within prior beta grains before HIP"
+            }
+          ],
+          "Advanced_Quantitative_Features": {
+            "Stair_Step_Edge_Distance_10deg_um": 173,
+            "Worst_Surface_Roughness_All_Metrics": true
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Yield_Strength",
+            "Value": 1175,
+            "Value_StdDev": 15,
+            "Unit": "MPa",
+            "Original_Values": "1175 ± 15 MPa",
+            "Test_Temperature_K": 298.15,
+            "Test_Temperature_Original": "room temperature",
+            "Loading_Mode": "Tension",
+            "Strain_Rate_s1": 0.00052,
+            "Tensile_Speed_mm_min": 1,
+            "Data_Source": "table",
+            "Data_Nature": "Experimental",
+            "Test_Specimen": {
+              "Specimen_Geometry": "flat",
+              "Test_Standard": "ASTM E8 subsize"
+            },
+            "Note": "YS0.2% for 10° inclination, as-manufactured surface, No-HIP."
+          },
+          {
+            "Property_Name": "Ultimate_Tensile_Strength",
+            "Value": 1382,
+            "Value_StdDev": 21,
+            "Unit": "MPa",
+            "Original_Values": "1382 ± 21 MPa",
+            "Test_Temperature_K": 298.15,
+            "Test_Temperature_Original": "room temperature",
+            "Loading_Mode": "Tension",
+            "Strain_Rate_s1": 0.00052,
+            "Tensile_Speed_mm_min": 1,
+            "Data_Source": "table",
+            "Data_Nature": "Experimental",
+            "Test_Specimen": {
+              "Specimen_Geometry": "flat",
+              "Test_Standard": "ASTM E8 subsize"
+            },
+            "Note": "UTS for 10° inclination, as-manufactured surface, No-HIP."
+          },
+          {
+            "Property_Name": "Elongation_Total",
+            "Value": 3.6,
+            "Value_StdDev": 1.1,
+            "Unit": "%",
+            "Original_Values": "3.60 ± 1.1%",
+            "Test_Temperature_K": 298.15,
+            "Test_Temperature_Original": "room temperature",
+            "Loading_Mode": "Tension",
+            "Strain_Rate_s1": 0.00052,
+            "Tensile_Speed_mm_min": 1,
+            "Data_Source": "table",
+            "Data_Nature": "Experimental",
+            "Test_Specimen": {
+              "Specimen_Geometry": "flat",
+              "Test_Standard": "ASTM E8 subsize"
+            },
+            "Note": "Maximum elongation for 10° inclination, as-manufactured surface, No-HIP."
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "LBPBF_Ti64_0deg_HIP",
+      "Sample_ID": "Ti64_0deg_HIP",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing",
+        "Directional_Anisotropy"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 6: 0° (HIP): YS 1020 ± 10 MPa, UTS 1060 ± 13 MPa, Max. Elongation 3.21 ± 0.2%",
+        "Table 5: Approximate average lath size statistics after HIP, 0° Bulk/Edge",
+        "HIP conditions: 820 °C, 200 MPa, 2 h, pure argon"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Ti_Alloy",
+          "Material_Name_Raw": "Ti-6Al-4V powder",
+          "Nominal_Composition": {
+            "Composition_Source_Type": "nominal_inferred",
+            "Note": "Commercial Ti-6Al-4V designation; no explicit numerical composition provided."
+          }
+        },
+        "Processing": {
+          "Process_Category": "AM_LPBF",
+          "Process_Text": {
+            "original": "Same LB-PBF process as other specimens (SLM Solutions 250) with Ti-6Al-4V powder. Process parameters: 30 µm layer height, 100 W laser power, 425 mm/s scan speed on borders and 375 mm/s scan speed on hatching. 0° inclination angle. HIP applied: 820 °C, 200 MPa, 2 h hold time in pure argon atmosphere. All specimens were ultrasonically cleaned using de-ionised water prior to HIP to remove loose powder. As-manufactured surface.",
+            "simplified": "Ti-6Al-4V 0° specimens built by LB-PBF, then HIP at 820 °C / 200 MPa / 2 h in pure argon. As-manufactured surface retained."
+          },
+          "Key_Params": {
+            "Stage1_LPBF": {
+              "Laser_Power_W": 100,
+              "Scanning_Speed_Border_mm_s": 425,
+              "Scanning_Speed_Hatching_mm_s": 375,
+              "Layer_Thickness_um": 30,
+              "Specimen_Inclination_Angle_deg": 0,
+              "Support_Required": true,
+              "Support_Surface_Separation_um": 100
+            },
+            "Stage2_HIP": {
+              "Temperature_K": 1093.15,
+              "Pressure_MPa": 200,
+              "Hold_Time_h": 2,
+              "Atmosphere": "pure argon"
+            }
+          },
+          "Original_Values": {
+            "HIP_Temperature": "820 °C",
+            "HIP_Pressure": "200 MPa",
+            "HIP_Hold_Time": "2 h"
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "The effect of grain coarsening after HIP is visually evident in the backscatter and EBSD images. Based on approximations derived from EBSD data in vertically built 90° specimens before and after HIP, using equivalent ellipse fitting method, after HIP, the lath length and breadth increase by approximately two times. Approximate average lath statistics for specimens manufactured at 0° after HIP show that the average length and breadth is larger in the bulk region by less than 7%. The average lath area is larger in the bulk region by less than 19%. In regions close to the side and downward-facing surfaces, columnar growth of prior-beta grains parallel to build direction is not obvious. However, clear bands of similarly oriented laths can be seen within columnar prior beta grains in the bulk region.",
+            "simplified": "HIP causes lath coarsening; lath area, length and breadth approximately double. Bulk region has slightly larger laths than edge region (length/breadth <7% larger, area <19% larger). Columnar prior-beta growth is less obvious near surfaces."
+          },
+          "Main_Phase": "HCP",
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "α laths (coarsened after HIP)",
+              "Note": "Needle-like alpha laths coarsened by HIP treatment within prior beta grains"
+            }
+          ],
+          "Advanced_Quantitative_Features": {
+            "Approximate_Average_Lath_Size_After_HIP_0deg": {
+              "Bulk": {
+                "Area_um2": 10.8,
+                "Length_um": 7.92,
+                "Breadth_um": 2.14,
+                "Aspect_Ratio": 3.66
+              },
+              "Edge": {
+                "Area_um2": 9.94,
+                "Length_um": 7.66,
+                "Breadth_um": 2.13,
+                "Aspect_Ratio": 3.68
+              }
+            },
+            "Bulk_vs_Edge_Length_Breadth_Increase_Max_pct": 7,
+            "Bulk_vs_Edge_Area_Increase_Max_pct": 19,
+            "Columnar_Prior_Beta_Growth_Less_Obvious_Near_Surface": true
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Yield_Strength",
+            "Value": 1020,
+            "Value_StdDev": 10,
+            "Unit": "MPa",
+            "Original_Values": "1020 ± 10 MPa",
+            "Test_Temperature_K": 298.15,
+            "Test_Temperature_Original": "room temperature",
+            "Loading_Mode": "Tension",
+            "Strain_Rate_s1": 0.00052,
+            "Tensile_Speed_mm_min": 1,
+            "Data_Source": "table",
+            "Data_Nature": "Experimental",
+            "Test_Specimen": {
+              "Specimen_Geometry": "flat",
+              "Test_Standard": "ASTM E8 subsize"
+            },
+            "Note": "YS0.2% for 0° inclination, as-manufactured surface, HIP."
+          },
+          {
+            "Property_Name": "Ultimate_Tensile_Strength",
+            "Value": 1060,
+            "Value_StdDev": 13,
+            "Unit": "MPa",
+            "Original_Values": "1060 ± 13 MPa",
+            "Test_Temperature_K": 298.15,
+            "Test_Temperature_Original": "room temperature",
+            "Loading_Mode": "Tension",
+            "Strain_Rate_s1": 0.00052,
+            "Tensile_Speed_mm_min": 1,
+            "Data_Source": "table",
+            "Data_Nature": "Experimental",
+            "Test_Specimen": {
+              "Specimen_Geometry": "flat",
+              "Test_Standard": "ASTM E8 subsize"
+            },
+            "Note": "UTS for 0° inclination, as-manufactured surface, HIP."
+          },
+          {
+            "Property_Name": "Elongation_Total",
+            "Value": 3.21,
+            "Value_StdDev": 0.2,
+            "Unit": "%",
+            "Original_Values": "3.21 ± 0.2%",
+            "Test_Temperature_K": 298.15,
+            "Test_Temperature_Original": "room temperature",
+            "Loading_Mode": "Tension",
+            "Strain_Rate_s1": 0.00052,
+            "Tensile_Speed_mm_min": 1,
+            "Data_Source": "table",
+            "Data_Nature": "Experimental",
+            "Test_Specimen": {
+              "Specimen_Geometry": "flat",
+              "Test_Standard": "ASTM E8 subsize"
+            },
+            "Note": "Maximum elongation for 0° inclination, as-manufactured surface, HIP."
+          },
+          {
+            "Property_Name": "Surface_Roughness_Ra",
+            "Value": 0.7,
+            "Value_StdDev": 0.1,
+            "Unit": "µm",
+            "Original_Values": "0.7 ± 0.1 µm",
+            "Test_Temperature_K": 298.15,
+            "Data_Source": "text",
+            "Data_Nature": "Experimental",
+            "Test_Specimen": {
+              "Specimen_Geometry": "flat",
+              "Test_Standard": "ASTM E466 subsize"
+            },
+            "Note": "Polished surface finish after defined polishing process (Table 3)."
+          },
+          {
+            "Property_Name": "Surface_Roughness_Ra",
+            "Value": 6.4,
+            "Value_StdDev": 1.1,
+            "Unit": "µm",
+            "Original_Values": "6.4 ± 1.1 µm",
+            "Test_Temperature_K": 298.15,
+            "Data_Source": "text",
+            "Data_Nature": "Experimental",
+            "Test_Specimen": {
+              "Specimen_Geometry": "flat",
+              "Test_Standard": "ASTM E466 subsize"
+            },
+            "Note": "Horizontal (0°) upward-facing as-manufactured surface; lowest Ra among all as-manufactured surfaces in this research."
+          },
+          {
+            "Property_Name": "Material_Removal_Depth",
+            "Value": 260,
+            "Unit": "µm",
+            "Original_Values": "approximately 260 µm",
+            "Data_Source": "text",
+            "Data_Nature": "Experimental",
+            "Note": "Average material removed from downward-facing surface during polishing."
+          },
+          {
+            "Property_Name": "Material_Removal_Depth",
+            "Value": 210,
+            "Unit": "µm",
+            "Original_Values": "approximately 210 µm",
+            "Data_Source": "text",
+            "Data_Nature": "Experimental",
+            "Note": "Average material removed from upward-facing surface during polishing."
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "LBPBF_Ti64_10deg_HIP",
+      "Sample_ID": "Ti64_10deg_HIP",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing",
+        "Directional_Anisotropy"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 6: 10° (HIP): YS 1063 ± 35 MPa, UTS 1129 ± 33 MPa, Max. Elongation 5.13 ± 0.9%"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Ti_Alloy",
+          "Material_Name_Raw": "Ti-6Al-4V powder",
+          "Nominal_Composition": {
+            "Composition_Source_Type": "nominal_inferred",
+            "Note": "Same commercial Ti-6Al-4V powder."
+          }
+        },
+        "Processing": {
+          "Process_Category": "AM_LPBF",
+          "Process_Text": {
+            "original": "Same LB-PBF process as other specimens (SLM Solutions 250) with Ti-6Al-4V powder. Process parameters: 30 µm layer height, 100 W laser power, 425 mm/s scan speed on borders and 375 mm/s scan speed on hatching. 10° inclination angle. HIP applied: 820 °C, 200 MPa, 2 h hold time in pure argon atmosphere. As-manufactured surface.",
+            "simplified": "Ti-6Al-4V 10° specimens built by LB-PBF, then HIP at 820 °C / 200 MPa / 2 h in pure argon."
+          },
+          "Key_Params": {
+            "Stage1_LPBF": {
+              "Laser_Power_W": 100,
+              "Scanning_Speed_Border_mm_s": 425,
+              "Scanning_Speed_Hatching_mm_s": 375,
+              "Layer_Thickness_um": 30,
+              "Specimen_Inclination_Angle_deg": 10,
+              "Support_Required": true,
+              "Support_Surface_Separation_um": 100
+            },
+            "Stage2_HIP": {
+              "Temperature_K": 1093.15,
+              "Pressure_MPa": 200,
+              "Hold_Time_h": 2,
+              "Atmosphere": "pure argon"
+            }
+          },
+          "Original_Values": {
+            "HIP_Temperature": "820 °C",
+            "HIP_Pressure": "200 MPa",
+            "HIP_Hold_Time": "2 h"
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "After HIP, grain coarsening is observed. 10° specimens demonstrated the worst surface roughness across all metrics for both upward and downward-facing surfaces, consistent with stair stepping effects. Stair step edge distance for 10° is approximately 173 µm.",
+            "simplified": "HIP causes lath coarsening. 10° specimens had worst surface roughness for all metrics. Stair step edge distance ~173 µm."
+          },
+          "Main_Phase": "HCP",
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "α laths (coarsened after HIP)",
+              "Note": "Coarsened alpha laths within prior beta grains after HIP"
+            }
+          ],
+          "Advanced_Quantitative_Features": {
+            "Stair_Step_Edge_Distance_10deg_um": 173,
+            "Worst_Surface_Roughness_All_Metrics_Upward_and_Downward": true
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Yield_Strength",
+            "Value": 1063,
+            "Value_StdDev": 35,
+            "Unit": "MPa",
+            "Original_Values": "1063 ± 35 MPa",
+            "Test_Temperature_K": 298.15,
+            "Test_Temperature_Original": "room temperature",
+            "Loading_Mode": "Tension",
+            "Strain_Rate_s1": 0.00052,
+            "Tensile_Speed_mm_min": 1,
+            "Data_Source": "table",
+            "Data_Nature": "Experimental",
+            "Test_Specimen": {
+              "Specimen_Geometry": "flat",
+              "Test_Standard": "ASTM E8 subsize"
+            },
+            "Note": "YS0.2% for 10° inclination, as-manufactured surface, HIP."
+          },
+          {
+            "Property_Name": "Ultimate_Tensile_Strength",
+            "Value": 1129,
+            "Value_StdDev": 33,
+            "Unit": "MPa",
+            "Original_Values": "1129 ± 33 MPa",
+            "Test_Temperature_K": 298.15,
+            "Test_Temperature_Original": "room temperature",
+            "Loading_Mode": "Tension",
+            "Strain_Rate_s1": 0.00052,
+            "Tensile_Speed_mm_min": 1,
+            "Data_Source": "table",
+            "Data_Nature": "Experimental",
+            "Test_Specimen": {
+              "Specimen_Geometry": "flat",
+              "Test_Standard": "ASTM E8 subsize"
+            },
+            "Note": "UTS for 10° inclination, as-manufactured surface, HIP."
+          },
+          {
+            "Property_Name": "Elongation_Total",
+            "Value": 5.13,
+            "Value_StdDev": 0.9,
+            "Unit": "%",
+            "Original_Values": "5.13 ± 0.9%",
+            "Test_Temperature_K": 298.15,
+            "Test_Temperature_Original": "room temperature",
+            "Loading_Mode": "Tension",
+            "Strain_Rate_s1": 0.00052,
+            "Tensile_Speed_mm_min": 1,
+            "Data_Source": "table",
+            "Data_Nature": "Experimental",
+            "Test_Specimen": {
+              "Specimen_Geometry": "flat",
+              "Test_Standard": "ASTM E8 subsize"
+            },
+            "Note": "Maximum elongation for 10° inclination, as-manufactured surface, HIP."
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "LBPBF_Ti64_30deg_HIP",
+      "Sample_ID": "Ti64_30deg_HIP",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing",
+        "Directional_Anisotropy"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 5: Approximate average lath size statistics after HIP, 30° Bulk/Edge",
+        "Fig. 4: IPF figures for 30° specimen after HIP"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Ti_Alloy",
+          "Material_Name_Raw": "Ti-6Al-4V powder",
+          "Nominal_Composition": {
+            "Composition_Source_Type": "nominal_inferred",
+            "Note": "Commercial Ti-6Al-4V designation."
+          }
+        },
+        "Processing": {
+          "Process_Category": "AM_LPBF",
+          "Process_Text": {
+            "original": "Same LB-PBF process (SLM Solutions 250) with Ti-6Al-4V powder. 30° inclination angle. HIP applied: 820 °C, 200 MPa, 2 h, pure argon. Fatigue specimens at 30° inclination.",
+            "simplified": "Ti-6Al-4V 30° specimens built by LB-PBF, HIP at 820 °C / 200 MPa / 2 h in argon."
+          },
+          "Key_Params": {
+            "Stage1_LPBF": {
+              "Laser_Power_W": 100,
+              "Scanning_Speed_Border_mm_s": 425,
+              "Scanning_Speed_Hatching_mm_s": 375,
+              "Layer_Thickness_um": 30,
+              "Specimen_Inclination_Angle_deg": 30,
+              "Support_Required": true,
+              "Support_Surface_Separation_um": 100
+            },
+            "Stage2_HIP": {
+              "Temperature_K": 1093.15,
+              "Pressure_MPa": 200,
+              "Hold_Time_h": 2,
+              "Atmosphere": "pure argon"
+            }
+          },
+          "Original_Values": {
+            "HIP_Temperature": "820 °C"
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "After HIP, average lath length for 30° specimens is less than for 0° and 90° in both bulk and edge regions. Average lath breadth for 30° specimens is greater than 0° and 90° specimens in the bulk region. In regions close to the side and downward-facing surfaces, columnar growth of prior-beta grains parallel to build direction is not obvious. Clear bands of similarly oriented laths can be seen within columnar prior beta grains in the bulk region.",
+            "simplified": "HIP-treated 30° specimens show shorter but broader laths compared to 0° and 90°. Columnar prior-beta growth less obvious near surfaces."
+          },
+          "Main_Phase": "HCP",
+          "Advanced_Quantitative_Features": {
+            "Approximate_Average_Lath_Size_After_HIP_30deg": {
+              "Bulk": {
+                "Area_um2": 10.9,
+                "Length_um": 7.39,
+                "Breadth_um": 2.23,
+                "Aspect_Ratio": 3.23
+              },
+              "Edge": {
+                "Area_um2": 9.23,
+                "Length_um": 7.0,
+                "Breadth_um": 2.1,
+                "Aspect_Ratio": 3.35
+              }
+            },
+            "Stair_Step_Edge_Distance_30deg_um": 60,
+            "Columnar_Prior_Beta_Growth_Less_Obvious_Near_Surface": true
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Fatigue_Life",
+            "Value": null,
+            "Unit": "cycles",
+            "Test_Temperature_K": 298.15,
+            "Test_Temperature_Original": "room temperature",
+            "Loading_Mode": "Tension",
+            "Data_Source": "image",
+            "Data_Nature": "Experimental",
+            "Test_Specimen": {
+              "Specimen_Geometry": "flat",
+              "Test_Standard": "ASTM E466 subsize"
+            },
+            "Note": "Fatigue data for 30° specimens presented in S-N curve (Fig. 7) but individual data points not readable from OCR. Test conditions: R=0.1, f=20 Hz, runout at 1.5E6 cycles."
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "LBPBF_Ti64_50deg_HIP",
+      "Sample_ID": "Ti64_50deg_HIP",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing",
+        "Directional_Anisotropy"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 4.1: 50° upward-facing surface, focus variation Rt = 62.1 µm, CT Rt = 60.4 µm",
+        "Table 2: 50° fatigue test design, 8 tests per condition"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Ti_Alloy",
+          "Material_Name_Raw": "Ti-6Al-4V powder",
+          "Nominal_Composition": {
+            "Composition_Source_Type": "nominal_inferred",
+            "Note": "Commercial Ti-6Al-4V designation."
+          }
+        },
+        "Processing": {
+          "Process_Category": "AM_LPBF",
+          "Process_Text": {
+            "original": "Same LB-PBF process (SLM Solutions 250) with Ti-6Al-4V powder. 50° inclination angle. HIP applied: 820 °C, 200 MPa, 2 h, pure argon. Specimens at 50° did not require supports in the gauge section.",
+            "simplified": "Ti-6Al-4V 50° specimens built by LB-PBF, HIP at 820 °C / 200 MPa / 2 h in argon. No supports needed in gauge section at 50°."
+          },
+          "Key_Params": {
+            "Stage1_LPBF": {
+              "Laser_Power_W": 100,
+              "Scanning_Speed_Border_mm_s": 425,
+              "Scanning_Speed_Hatching_mm_s": 375,
+              "Layer_Thickness_um": 30,
+              "Specimen_Inclination_Angle_deg": 50,
+              "Support_Required_in_Gauge": false
+            },
+            "Stage2_HIP": {
+              "Temperature_K": 1093.15,
+              "Pressure_MPa": 200,
+              "Hold_Time_h": 2,
+              "Atmosphere": "pure argon"
+            }
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "The upward-facing surface of 50° inclined specimens has the lowest surface roughness across all analysed metrics compared to all other inclined specimens. Compared to all the inclined specimens, the upward-facing surface of 50° specimens has the lowest surface roughness across all analysed metrics.",
+            "simplified": "50° upward-facing surface has lowest roughness among all inclined specimens."
+          },
+          "Main_Phase": "HCP"
+        },
+        "Properties": [
+          {
+            "Property_Name": "Surface_Roughness_Rt",
+            "Value": 62.1,
+            "Unit": "µm",
+            "Original_Values": "62.1 µm",
+            "Test_Temperature_K": 298.15,
+            "Data_Source": "text",
+            "Data_Nature": "Experimental",
+            "Test_Specimen": {
+              "Specimen_Geometry": "flat",
+              "Test_Standard": "ASTM E466 subsize"
+            },
+            "Note": "50° upward-facing as-manufactured surface measured by focus variation microscopy."
+          },
+          {
+            "Property_Name": "Fatigue_Life",
+            "Value": null,
+            "Unit": "cycles",
+            "Test_Temperature_K": 298.15,
+            "Loading_Mode": "Tension",
+            "Data_Source": "image",
+            "Data_Nature": "Experimental",
+            "Note": "50° specimens reached runout for stress amplitudes below 300 MPa. Individual data points in S-N curve not readable from OCR."
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "LBPBF_Ti64_70deg_HIP",
+      "Sample_ID": "Ti64_70deg_HIP",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing",
+        "Directional_Anisotropy"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 2: 70° fatigue test design, 8 tests per condition",
+        "Only 50°, 70° and 90° specimens reached runout for stress amplitudes below 300 MPa"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Ti_Alloy",
+          "Material_Name_Raw": "Ti-6Al-4V powder",
+          "Nominal_Composition": {
+            "Composition_Source_Type": "nominal_inferred",
+            "Note": "Commercial Ti-6Al-4V designation."
+          }
+        },
+        "Processing": {
+          "Process_Category": "AM_LPBF",
+          "Process_Text": {
+            "original": "Same LB-PBF process (SLM Solutions 250) with Ti-6Al-4V powder. 70° inclination angle. HIP applied: 820 °C, 200 MPa, 2 h, pure argon. Specimens at 70° did not require supports in the gauge section.",
+            "simplified": "Ti-6Al-4V 70° specimens built by LB-PBF, HIP at 820 °C / 200 MPa / 2 h in argon. No supports needed in gauge section."
+          },
+          "Key_Params": {
+            "Stage1_LPBF": {
+              "Specimen_Inclination_Angle_deg": 70,
+              "Support_Required_in_Gauge": false
+            },
+            "Stage2_HIP": {
+              "Temperature_K": 1093.15,
+              "Pressure_MPa": 200,
+              "Hold_Time_h": 2,
+              "Atmosphere": "pure argon"
+            }
+          }
+        },
+        "Structure": {
+          "Main_Phase": "HCP"
+        },
+        "Properties": [
+          {
+            "Property_Name": "Fatigue_Life",
+            "Value": null,
+            "Unit": "cycles",
+            "Test_Temperature_K": 298.15,
+            "Loading_Mode": "Tension",
+            "Data_Source": "image",
+            "Data_Nature": "Experimental",
+            "Note": "70° specimens reached runout for stress amplitudes below 300 MPa. Individual data points in S-N curve not readable from OCR."
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "LBPBF_Ti64_90deg_HIP",
+      "Sample_ID": "Ti64_90deg_HIP",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing",
+        "Directional_Anisotropy"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Table 4: Approximate average lath statistics calculated from EBSD data of 90° specimens",
+        "Table 5: Approximate average lath size statistics after HIP, 90° Bulk/Edge",
+        "Fig. 3: Backscatter and EBSD images of 90° specimens before and after HIP"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Ti_Alloy",
+          "Material_Name_Raw": "Ti-6Al-4V powder",
+          "Nominal_Composition": {
+            "Composition_Source_Type": "nominal_inferred",
+            "Note": "Commercial Ti-6Al-4V designation."
+          }
+        },
+        "Processing": {
+          "Process_Category": "AM_LPBF",
+          "Process_Text": {
+            "original": "Same LB-PBF process (SLM Solutions 250) with Ti-6Al-4V powder. 90° inclination (vertical). HIP applied: 820 °C, 200 MPa, 2 h, pure argon. Side-facing surface for vertical specimens. Specimens at 90° did not require supports in the gauge section.",
+            "simplified": "Ti-6Al-4V 90° (vertical) specimens built by LB-PBF, HIP at 820 °C / 200 MPa / 2 h in argon. No supports needed in gauge section."
+          },
+          "Key_Params": {
+            "Stage1_LPBF": {
+              "Laser_Power_W": 100,
+              "Scanning_Speed_Border_mm_s": 425,
+              "Scanning_Speed_Hatching_mm_s": 375,
+              "Layer_Thickness_um": 30,
+              "Specimen_Inclination_Angle_deg": 90,
+              "Support_Required_in_Gauge": false
+            },
+            "Stage2_HIP": {
+              "Temperature_K": 1093.15,
+              "Pressure_MPa": 200,
+              "Hold_Time_h": 2,
+              "Atmosphere": "pure argon"
+            }
+          },
+          "Original_Values": {
+            "HIP_Temperature": "820 °C"
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "The effect of grain coarsening after HIP is visually evident in the backscatter and EBSD images. Based on approximations derived from EBSD data in vertically built 90° specimens before and after HIP, using equivalent ellipse fitting method, after HIP, the lath length and breadth increase by approximately two times. IPF figures show clear bands of similarly oriented laths within columnar prior beta grains in the bulk region.",
+            "simplified": "HIP causes significant lath coarsening in 90° specimens. Lath area, length, breadth and aspect ratio all increase. Columnar prior-beta growth is clear in bulk region."
+          },
+          "Main_Phase": "HCP",
+          "Advanced_Quantitative_Features": {
+            "Approximate_Average_Lath_Statistics_90deg_Before_HIP": {
+              "Area_um2": {
+                "Value": 3.25,
+                "Value_StdDev": 7.72
+              },
+              "Length_um": {
+                "Value": 4.04,
+                "Value_StdDev": 5.03
+              },
+              "Breadth_um": {
+                "Value": 1.19,
+                "Value_StdDev": 0.71
+              },
+              "Aspect_Ratio": {
+                "Value": 3.07,
+                "Value_StdDev": 1.73
+              }
+            },
+            "Approximate_Average_Lath_Statistics_90deg_After_HIP": {
+              "Area_um2": {
+                "Value": 10.7,
+                "Value_StdDev": 18.4
+              },
+              "Length_um": {
+                "Value": 7.86,
+                "Value_StdDev": 8.02
+              },
+              "Breadth_um": {
+                "Value": 2.16,
+                "Value_StdDev": 1.46
+              },
+              "Aspect_Ratio": {
+                "Value": 3.6,
+                "Value_StdDev": 2.12
+              }
+            },
+            "Approximate_Average_Lath_Size_After_HIP_90deg": {
+              "Bulk": {
+                "Area_um2": 10.7,
+                "Length_um": 7.86,
+                "Breadth_um": 2.16,
+                "Aspect_Ratio": 3.6
+              },
+              "Edge": {
+                "Area_um2": 9.56,
+                "Length_um": 7.46,
+                "Breadth_um": 2.11,
+                "Aspect_Ratio": 3.49
+              }
+            },
+            "Lath_Length_Breadth_Increase_After_HIP": "approximately two times",
+            "Prior_Beta_Grain_Epitaxial_Growth_Parallel_to_Build_Direction": true,
+            "Columnar_Prior_Beta_Growth_Less_Obvious_Near_Surface": true
+          }
+        },
+        "Properties": [
+          {
+            "Property_Name": "Fatigue_Life",
+            "Value": null,
+            "Unit": "cycles",
+            "Test_Temperature_K": 298.15,
+            "Test_Temperature_Original": "room temperature",
+            "Loading_Mode": "Tension",
+            "Data_Source": "image",
+            "Data_Nature": "Experimental",
+            "Test_Specimen": {
+              "Specimen_Geometry": "flat",
+              "Test_Standard": "ASTM E466 subsize"
+            },
+            "Note": "Fatigue data for 90° specimens in S-N curve (Fig. 7) but individual data points not readable from OCR. Test conditions: R=0.1, f=20 Hz, runout at 1.5E6 cycles. 90° specimens reached runout for stress amplitudes below 300 MPa."
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "LBPBF_Ti64_Fatigue_Regression_Analysis",
+      "Sample_ID": "Ti64_Fatigue_Regression_Analysis",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Experimental",
+      "Patch_Tags": [
+        "Additive_Manufacturing",
+        "Directional_Anisotropy"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Fig. 7: S-N curve for all samples",
+        "Fig. 10: Regression analysis between maximum applied stress and cycles to failure",
+        "Table 7: ANOVA for response variable Nf",
+        "Fig. 11/12/13: ΔKR regression analysis"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Ti_Alloy",
+          "Material_Name_Raw": "Ti-6Al-4V"
+        },
+        "Processing": {
+          "Process_Category": "AM_LPBF",
+          "Process_Text": {
+            "original": "LB-PBF Ti-6Al-4V with HIP at 820 °C, 200 MPa, 2 h in pure argon. Fatigue specimens at 0°, 10°, 30°, 50°, 70°, 90° inclination. Fully tensile uniaxial fatigue testing with R=0.1, f=20 Hz, runout at 1.5E6 cycles. 96 total fatigue tests. Either upward or downward-facing surface was polished.",
+            "simplified": "LB-PBF Ti-6Al-4V, HIP-treated, fatigue tested at R=0.1, 20 Hz, 6 inclination angles, 96 total tests."
+          },
+          "Key_Params": {
+            "Fatigue_Test_Conditions": {
+              "Stress_Ratio_R": 0.1,
+              "Test_Frequency_Hz": 20,
+              "Runout_Cycles": 1500000,
+              "Total_Tests": 96,
+              "Inclination_Angles_deg": [
+                0,
+                10,
+                30,
+                50,
+                70,
+                90
+              ]
+            }
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "After HIP, lath coarsening observed. Failure initiated at rough as-manufactured surface in almost all cases. Failure commonly originated at or near corners due to geometry-induced stress concentration.",
+            "simplified": "Post-HIP microstructure. Fatigue failure initiated at rough as-manufactured surfaces, typically near corners."
+          },
+          "Main_Phase": "HCP"
+        },
+        "Properties": [
+          {
+            "Property_Name": "Fatigue_Orientation_Effect",
+            "Value": null,
+            "Unit": "cycles",
+            "Test_Temperature_K": 298.15,
+            "Loading_Mode": "Tension",
+            "Data_Source": "text",
+            "Data_Nature": "Experimental",
+            "Test_Specimen": {
+              "Test_Standard": "ASTM E466 subsize"
+            },
+            "Stress_Ratio_R": 0.1,
+            "Test_Frequency_Hz": 20,
+            "DeltaE4_cycles": 4200,
+            "DeltaE5_cycles": 39000,
+            "DeltaE6_cycles": 360000,
+            "Equivalent_Downward_Cycles_at_Upward_1E4_Stress": 5800,
+            "Equivalent_Downward_Cycles_at_Upward_1E5_Stress": 61000,
+            "Equivalent_Downward_Cycles_at_Upward_1E6_Stress": 640000,
+            "Average_Improvement_in_Cycles_to_Failure_pct": 63,
+            "Note": "Difference in fatigue performance between upward and downward-facing surfaces. Average 63% improvement in cycles to failure by removing downward-facing surface roughness."
+          },
+          {
+            "Property_Name": "Fatigue_Orientation_Effect_without_10deg",
+            "Value": null,
+            "Unit": "cycles",
+            "Test_Temperature_K": 298.15,
+            "Loading_Mode": "Tension",
+            "Data_Source": "text",
+            "Data_Nature": "Experimental",
+            "Stress_Ratio_R": 0.1,
+            "Test_Frequency_Hz": 20,
+            "DeltaE4_cycles": 400,
+            "DeltaE5_cycles": 31000,
+            "DeltaE6_cycles": 500000,
+            "Equivalent_Downward_Cycles_at_Upward_1E4_Stress": 9600,
+            "Equivalent_Downward_Cycles_at_Upward_1E5_Stress": 69000,
+            "Equivalent_Downward_Cycles_at_Upward_1E6_Stress": 500000,
+            "Note": "Supplementary S-N regression with 10° specimens omitted due to their significant influence on curves."
+          },
+          {
+            "Property_Name": "ANOVA_Nf_Response",
+            "Value": 0.841,
+            "Unit": "R²",
+            "Original_Values": "R² = 0.841",
+            "Test_Temperature_K": 298.15,
+            "Data_Source": "table",
+            "Data_Nature": "Experimental",
+            "Regressor_Stress_F_Stat": 380.9,
+            "Regressor_Stress_P_Value": "<0.001",
+            "Regressor_Ra_F_Stat": 87.6,
+            "Regressor_Ra_P_Value": "<0.001",
+            "Regressor_Upward_Downward_Indicator_F_Stat": 5.252,
+            "Regressor_Upward_Downward_Indicator_P_Value": "0.02",
+            "Note": "ANOVA for Nf with regressors stress, Ra, and upward/downward-facing indicator. All three regressors statistically significant (P<0.05)."
+          },
+          {
+            "Property_Name": "DeltaKR_Regression_All_Data",
+            "Value": null,
+            "Unit": "adjusted R²",
+            "Test_Temperature_K": 298.15,
+            "Data_Source": "table",
+            "Data_Nature": "Experimental",
+            "Best_Roughness_Parameter": "Rt",
+            "Best_Adjusted_R2": 0.68,
+            "Worst_Roughness_Parameter": "Ra",
+            "Worst_Adjusted_R2": 0.61,
+            "Note": "Regression analysis between ΔKR and Nf for all fatigue data. Runout data excluded."
+          },
+          {
+            "Property_Name": "DeltaKR_Regression_Downward_Facing",
+            "Value": null,
+            "Unit": "adjusted R²",
+            "Test_Temperature_K": 298.15,
+            "Data_Source": "table",
+            "Data_Nature": "Experimental",
+            "Best_Roughness_Parameter": "Rp",
+            "Best_Adjusted_R2": 0.85,
+            "Worst_Roughness_Parameter": "Rv",
+            "Worst_Adjusted_R2": 0.68,
+            "Stress_vs_Nf_Adjusted_R2": 0.65,
+            "Note": "Downward-facing rough surface data only. Rp gave strongest ΔKR correlation to fatigue life."
+          },
+          {
+            "Property_Name": "DeltaKR_Regression_Upward_Facing",
+            "Value": null,
+            "Unit": "adjusted R²",
+            "Test_Temperature_K": 298.15,
+            "Data_Source": "table",
+            "Data_Nature": "Experimental",
+            "Best_Roughness_Parameter": "Rv",
+            "Best_Adjusted_R2": 0.87,
+            "Worst_Roughness_Parameter": "Rp",
+            "Worst_Adjusted_R2": 0.6,
+            "Stress_vs_Nf_Adjusted_R2": 0.76,
+            "Note": "Upward-facing rough surface data only. Rv gave strongest ΔKR correlation to fatigue life."
+          },
+          {
+            "Property_Name": "Fatigue_Regression_Stress_vs_Nf",
+            "Value": null,
+            "Unit": "adjusted R²",
+            "Test_Temperature_K": 298.15,
+            "Data_Source": "table",
+            "Data_Nature": "Experimental",
+            "Up_Adjusted_R2": 0.76,
+            "Up_P_Value": "<0.001",
+            "Up_F_Stat": 160.5,
+            "Down_Adjusted_R2": 0.65,
+            "Down_P_Value": "<0.001",
+            "Down_F_Stat": 72.95,
+            "All_Adjusted_R2": 0.67,
+            "All_P_Value": "<0.001",
+            "All_F_Stat": 184.4,
+            "Up_Sigma_at_1E4_cycles_MPa": 518,
+            "Up_Sigma_at_1E5_cycles_MPa": 334,
+            "Up_Sigma_at_1E6_cycles_MPa": 215,
+            "Down_Sigma_at_1E4_cycles_MPa": 468,
+            "Down_Sigma_at_1E5_cycles_MPa": 304,
+            "Down_Sigma_at_1E6_cycles_MPa": 198,
+            "Up_Nf_at_250MPa": "4.6E5",
+            "Up_Nf_at_350MPa": "7.8E4",
+            "Up_Nf_at_450MPa": "2.1E4",
+            "Down_Nf_at_250MPa": "2.9E5",
+            "Down_Nf_at_350MPa": "4.7E4",
+            "Down_Nf_at_450MPa": "1.2E4",
+            "Note": "Regression analysis between maximum applied stress and cycles to failure grouped by upward, downward, and all data (Fig. 10)."
+          }
+        ]
+      }
+    }
+  ]
+}

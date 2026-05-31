@@ -1,0 +1,1658 @@
+{
+  "Paper_Metadata": {
+    "Paper_Title": "Calphad-assisted design of high strength – ductility martensitic stainless-steels with reverted austenite",
+    "DOI": "10.1016/j.actamat.2023.119641"
+  },
+  "Paper_Routing": {
+    "base_material": "Metals",
+    "application": "Structural",
+    "research_paradigm": "Hybrid",
+    "Supplements_Loaded": [
+      "directions/base/Metals.txt",
+      "directions/application/Structural.txt",
+      "directions/paradigm/Hybrid.txt"
+    ],
+    "Patch_Tags": [
+      "TRIP_or_Deformation_Transformation"
+    ],
+    "Needs_Mixed_Routing_Check": false
+  },
+  "items": [
+    {
+      "Item_ID": "Item_01",
+      "Sample_ID": "8Ni_as-quenched",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "TRIP_or_Deformation_Transformation"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 2.4",
+        "Section 3.2",
+        "Fig. 4a",
+        "Fig. 9a",
+        "Table 1"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Martensitic stainless steel",
+          "Material_Name_Raw": "8Ni (Fe13Cr8Ni1Al)",
+          "Nominal_Composition": {
+            "Fe": "Balance",
+            "Cr": {
+              "Value": 13.0,
+              "Unit": "wt%",
+              "Original_Values": "13 wt.%"
+            },
+            "Ni": {
+              "Value": 8.0,
+              "Unit": "wt%",
+              "Original_Values": "8 wt.%"
+            },
+            "Al": {
+              "Value": 1.0,
+              "Unit": "wt%",
+              "Original_Values": "1 wt.%"
+            },
+            "Mo": {
+              "Value": 0.0,
+              "Unit": "wt%",
+              "Original_Values": "0 wt.%"
+            }
+          },
+          "Measured_Composition": {
+            "Fe": "Balance",
+            "Cr": {
+              "Value": 14.7,
+              "Unit": "wt%",
+              "Original_Values": "14.7 wt.%"
+            },
+            "Ni": {
+              "Value": 6.8,
+              "Unit": "wt%",
+              "Original_Values": "6.8 wt.%"
+            },
+            "Al": {
+              "Value": 1.8,
+              "Unit": "wt%",
+              "Original_Values": "1.8 wt.%"
+            },
+            "Mo": {
+              "Value": 0.0,
+              "Unit": "wt%",
+              "Original_Values": "0.0 wt.%"
+            }
+          },
+          "Note": "Measured by EDS (Table 1). Fe = Balance; normalized ≈ 76.7 wt% (Computed from measured values). Nominal designation Fe13Cr8Ni1Al."
+        },
+        "Processing": {
+          "Process_Category": "Casting + Rolling + Homogenization + Quenching",
+          "Process_Text": {
+            "original": "Samples with different compositions are produced by Edmund Buhler arc melting system AM500 with suction casting. Then the ingots are cold rolled or hot rolled to target thickness and homogenized at 1000 °C for 3 h with a water quench.",
+            "simplified": "Arc melting → suction casting → cold/hot rolling → homogenization at 1000 °C / 3 h / water quench"
+          },
+          "Equipment": [
+            {
+              "Name": "Edmund Buhler arc melting system AM500",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Bruker D8 with GADDS",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Tescan MIRA3 SEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "EDS",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "EBSD",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "FEI Tecnai TEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Titan Themis Z G3 TEM",
+              "Category": "Characterization"
+            },
+            {
+              "Name": "Fischone 1010 Ion Mill",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Fischone 1051 TEM Ion Mill",
+              "Category": "Preparation"
+            },
+            {
+              "Name": "Gatan MTEST2000 Uniaxial Testing stage",
+              "Category": "Testing"
+            },
+            {
+              "Name": "Vickers hardness tester",
+              "Category": "Testing"
+            },
+            {
+              "Name": "ThermoCalc",
+              "Category": "Software"
+            },
+            {
+              "Name": "GSAS-II",
+              "Category": "Software"
+            },
+            {
+              "Name": "MAUD",
+              "Category": "Software"
+            },
+            {
+              "Name": "ImageJ",
+              "Category": "Software"
+            },
+            {
+              "Name": "OriginPro 2022",
+              "Category": "Software"
+            }
+          ],
+          "Key_Params": {
+            "Homogenization": {
+              "Temperature": {
+                "Value": 1273.15,
+                "Unit": "K",
+                "Original_Values": "1000 °C"
+              },
+              "Time": "3 h",
+              "Cooling": "water quench"
+            }
+          },
+          "Note": "Equipment list covers all items in this paper. Rolling type (cold or hot) not specified per individual alloy. As-quenched state: no subsequent annealing applied."
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "All three alloys show martensitic microstructure with retained austenite fractions below 1%.",
+            "simplified": "Fully martensitic microstructure at as-quenched state with retained austenite < 1%"
+          },
+          "Main_Phase": {
+            "Phase_Name": "Martensite (α')",
+            "Crystal_Structure": "BCC",
+            "Volume_Fraction": null,
+            "Note": "EBSD confirms fully martensitic microstructure. Exact fraction not stated; retained austenite < 1%."
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "Retained austenite (γ)",
+              "Crystal_Structure": "FCC",
+              "Volume_Fraction": {
+                "Value": null,
+                "Note": "below 1%"
+              }
+            }
+          ],
+          "Advanced_Quantitative_Features": {
+            "BCC_Lattice_Parameter": {
+              "Value": 0.2872,
+              "Unit": "nm",
+              "Original_Values": "0.28720 nm",
+              "Data_Source": "text"
+            },
+            "Ms_Temperature_Computed": {
+              "Value": 553.15,
+              "Unit": "K",
+              "Original_Values": "280 °C",
+              "Note": "Ms calculated by ThermoCalc property model"
+            },
+            "Feq_fcc_1000C": {
+              "Value": 100,
+              "Unit": "%",
+              "Original_Values": "100%"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Type": "Mechanical",
+            "Property_Name": "Yield_Strength",
+            "Value": 613,
+            "Unit": "MPa",
+            "Original_Values": "613 MPa",
+            "Test_Condition": {
+              "Test_Temperature_K": null,
+              "Test_Temperature_Original": "RT",
+              "Loading_Mode": "Tension",
+              "Strain_Rate_s1": {
+                "Value": 0.001,
+                "Unit": "s⁻¹",
+                "Original_Values": "~10⁻³/s",
+                "Note": "Approximate value"
+              },
+              "Specimen_State": "as-quenched",
+              "Specimen_Geometry": "gauge length 4 mm, cross-section area 0.7 ± 0.2 mm², ASTM E8/E8M-22 standard",
+              "Strain_Measurement": "Digital Image Correlation (DIC)"
+            },
+            "Data_Source": "text",
+            "Note": "YS value stated in text; Fig. 9a arrow marks the reference."
+          },
+          {
+            "Property_Type": "Mechanical",
+            "Property_Name": "Total_Elongation",
+            "Value": 17.4,
+            "Unit": "%",
+            "Original_Values": "17.4%",
+            "Test_Condition": {
+              "Test_Temperature_K": null,
+              "Test_Temperature_Original": "RT",
+              "Loading_Mode": "Tension",
+              "Strain_Rate_s1": {
+                "Value": 0.001,
+                "Unit": "s⁻¹",
+                "Original_Values": "~10⁻³/s",
+                "Note": "Approximate value"
+              },
+              "Specimen_State": "as-quenched",
+              "Specimen_Geometry": "gauge length 4 mm, cross-section area 0.7 ± 0.2 mm², ASTM E8/E8M-22 standard",
+              "Strain_Measurement": "Digital Image Correlation (DIC)"
+            },
+            "Data_Source": "text",
+            "Note": "TE reported; original text uses 'TE' without distinguishing uniform vs total elongation."
+          },
+          {
+            "Property_Type": "Mechanical",
+            "Property_Name": "Hardness_Vickers",
+            "Value": null,
+            "Unit": "HV",
+            "Test_Condition": {
+              "Load": "100 g",
+              "Specimen_State": "as-quenched"
+            },
+            "Data_Source": "text",
+            "Note": "Hardness plotted in Fig. 6b as annealing time = 0; exact numerical value not given in text."
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "Item_02",
+      "Sample_ID": "8Ni4Mo_as-quenched",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "TRIP_or_Deformation_Transformation"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 2.4",
+        "Section 3.2",
+        "Fig. 4b",
+        "Fig. 9a",
+        "Table 1"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Martensitic stainless steel",
+          "Material_Name_Raw": "8Ni4Mo (Fe13Cr8Ni1Al4Mo)",
+          "Nominal_Composition": {
+            "Fe": "Balance",
+            "Cr": {
+              "Value": 13.0,
+              "Unit": "wt%",
+              "Original_Values": "13 wt.%"
+            },
+            "Ni": {
+              "Value": 8.0,
+              "Unit": "wt%",
+              "Original_Values": "8 wt.%"
+            },
+            "Al": {
+              "Value": 1.0,
+              "Unit": "wt%",
+              "Original_Values": "1 wt.%"
+            },
+            "Mo": {
+              "Value": 4.0,
+              "Unit": "wt%",
+              "Original_Values": "4 wt.%"
+            }
+          },
+          "Measured_Composition": {
+            "Fe": "Balance",
+            "Cr": {
+              "Value": 14.3,
+              "Unit": "wt%",
+              "Original_Values": "14.3 wt.%"
+            },
+            "Ni": {
+              "Value": 6.9,
+              "Unit": "wt%",
+              "Original_Values": "6.9 wt.%"
+            },
+            "Al": {
+              "Value": 1.0,
+              "Unit": "wt%",
+              "Original_Values": "1.0 wt.%"
+            },
+            "Mo": {
+              "Value": 2.8,
+              "Unit": "wt%",
+              "Original_Values": "2.8 wt.%"
+            }
+          },
+          "Note": "Measured by EDS (Table 1). Fe = Balance; normalized ≈ 75.1 wt% (Computed from measured values). 1-2 wt.% variation between nominal and cast compositions noted."
+        },
+        "Processing": {
+          "Process_Category": "Casting + Rolling + Homogenization + Quenching",
+          "Process_Text": {
+            "original": "Same as 8Ni: arc melting with suction casting, cold/hot rolling, homogenization at 1000 °C for 3 h, water quench.",
+            "simplified": "Arc melting → suction casting → cold/hot rolling → homogenization at 1000 °C / 3 h / water quench"
+          },
+          "Note": "Processing shared with 8Ni per paper statement that all samples follow same procedure."
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "8Ni4Mo has a smaller prior austenite grain size than the other two at the as-quenched state. Fully martensitic with retained austenite below 1%.",
+            "simplified": "Fully martensitic, finer prior austenite grain size than 8Ni and 10Ni4Mo, retained austenite < 1%"
+          },
+          "Main_Phase": {
+            "Phase_Name": "Martensite (α')",
+            "Crystal_Structure": "BCC",
+            "Volume_Fraction": null,
+            "Note": "Fully martensitic per EBSD (Fig. 4b)."
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "Retained austenite (γ)",
+              "Crystal_Structure": "FCC",
+              "Volume_Fraction": {
+                "Value": null,
+                "Note": "below 1%"
+              }
+            }
+          ],
+          "Advanced_Quantitative_Features": {
+            "BCC_Lattice_Parameter": {
+              "Value": 0.28802,
+              "Unit": "nm",
+              "Original_Values": "0.28802 nm",
+              "Data_Source": "text"
+            },
+            "Ms_Temperature_Computed": {
+              "Value": 463.15,
+              "Unit": "K",
+              "Original_Values": "190 °C",
+              "Note": "Ms calculated by ThermoCalc property model"
+            },
+            "Feq_fcc_1000C": {
+              "Value": 93.8,
+              "Unit": "%",
+              "Original_Values": "93.8%"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Type": "Mechanical",
+            "Property_Name": "Yield_Strength",
+            "Value": 744,
+            "Unit": "MPa",
+            "Original_Values": "744 MPa",
+            "Test_Condition": {
+              "Test_Temperature_K": null,
+              "Test_Temperature_Original": "RT",
+              "Loading_Mode": "Tension",
+              "Strain_Rate_s1": {
+                "Value": 0.001,
+                "Unit": "s⁻¹",
+                "Original_Values": "~10⁻³/s",
+                "Note": "Approximate value"
+              },
+              "Specimen_State": "as-quenched",
+              "Specimen_Geometry": "gauge length 4 mm, cross-section area 0.7 ± 0.2 mm², ASTM E8/E8M-22 standard",
+              "Strain_Measurement": "Digital Image Correlation (DIC)"
+            },
+            "Data_Source": "text",
+            "Note": "YS value stated in text; Fig. 9a arrow marks the reference. Higher than 8Ni due to finer grain size."
+          },
+          {
+            "Property_Type": "Mechanical",
+            "Property_Name": "Total_Elongation",
+            "Value": 14.0,
+            "Unit": "%",
+            "Original_Values": "14.0%",
+            "Test_Condition": {
+              "Test_Temperature_K": null,
+              "Test_Temperature_Original": "RT",
+              "Loading_Mode": "Tension",
+              "Strain_Rate_s1": {
+                "Value": 0.001,
+                "Unit": "s⁻¹",
+                "Original_Values": "~10⁻³/s",
+                "Note": "Approximate value"
+              },
+              "Specimen_State": "as-quenched",
+              "Specimen_Geometry": "gauge length 4 mm, cross-section area 0.7 ± 0.2 mm², ASTM E8/E8M-22 standard",
+              "Strain_Measurement": "Digital Image Correlation (DIC)"
+            },
+            "Data_Source": "text",
+            "Note": "TE reported; original text uses 'TE' without distinguishing uniform vs total elongation."
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "Item_03",
+      "Sample_ID": "10Ni4Mo_as-quenched",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "TRIP_or_Deformation_Transformation"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 2.4",
+        "Section 3.2",
+        "Fig. 4c",
+        "Fig. 9a",
+        "Table 1"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Martensitic stainless steel",
+          "Material_Name_Raw": "10Ni4Mo (Fe13Cr10Ni1Al4Mo)",
+          "Nominal_Composition": {
+            "Fe": "Balance",
+            "Cr": {
+              "Value": 13.0,
+              "Unit": "wt%",
+              "Original_Values": "13 wt.%"
+            },
+            "Ni": {
+              "Value": 10.0,
+              "Unit": "wt%",
+              "Original_Values": "10 wt.%"
+            },
+            "Al": {
+              "Value": 1.0,
+              "Unit": "wt%",
+              "Original_Values": "1 wt.%"
+            },
+            "Mo": {
+              "Value": 4.0,
+              "Unit": "wt%",
+              "Original_Values": "4 wt.%"
+            }
+          },
+          "Measured_Composition": {
+            "Fe": "Balance",
+            "Cr": {
+              "Value": 14.6,
+              "Unit": "wt%",
+              "Original_Values": "14.6 wt.%"
+            },
+            "Ni": {
+              "Value": 9.3,
+              "Unit": "wt%",
+              "Original_Values": "9.3 wt.%"
+            },
+            "Al": {
+              "Value": 0.9,
+              "Unit": "wt%",
+              "Original_Values": "0.9 wt.%"
+            },
+            "Mo": {
+              "Value": 2.7,
+              "Unit": "wt%",
+              "Original_Values": "2.7 wt.%"
+            }
+          },
+          "Note": "Measured by EDS (Table 1). Fe = Balance; normalized ≈ 72.4 wt% (Computed from measured values). 1-2 wt.% variation between nominal and cast compositions noted."
+        },
+        "Processing": {
+          "Process_Category": "Casting + Rolling + Homogenization + Quenching",
+          "Process_Text": {
+            "original": "Same as 8Ni: arc melting with suction casting, cold/hot rolling, homogenization at 1000 °C for 3 h, water quench.",
+            "simplified": "Arc melting → suction casting → cold/hot rolling → homogenization at 1000 °C / 3 h / water quench"
+          },
+          "Note": "Processing shared with 8Ni per paper statement that all samples follow same procedure."
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "10Ni4Mo has finer martensite than the other two alloys. Fully martensitic with 0.5% retained austenite.",
+            "simplified": "Fully martensitic, finer martensite, 0.5% retained austenite"
+          },
+          "Main_Phase": {
+            "Phase_Name": "Martensite (α')",
+            "Crystal_Structure": "BCC",
+            "Volume_Fraction": null,
+            "Note": "Fully martensitic per EBSD (Fig. 4c)."
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "Retained austenite (γ)",
+              "Crystal_Structure": "FCC",
+              "Volume_Fraction": {
+                "Value": 0.5,
+                "Unit": "%",
+                "Original_Values": "0.5%",
+                "Note": "Retained austenite from incomplete martensitic transformation during quenching"
+              }
+            }
+          ],
+          "Advanced_Quantitative_Features": {
+            "BCC_Lattice_Parameter": {
+              "Value": 0.28804,
+              "Unit": "nm",
+              "Original_Values": "0.28804 nm",
+              "Data_Source": "text"
+            },
+            "Ms_Temperature_Computed": {
+              "Value": 393.15,
+              "Unit": "K",
+              "Original_Values": "120 °C (lowest Ms)",
+              "Note": "Ms calculated by ThermoCalc property model"
+            },
+            "Feq_fcc_1000C": {
+              "Value": 100,
+              "Unit": "%",
+              "Original_Values": "100%"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Type": "Mechanical",
+            "Property_Name": "Yield_Strength",
+            "Value": 622,
+            "Unit": "MPa",
+            "Original_Values": "622 MPa",
+            "Test_Condition": {
+              "Test_Temperature_K": null,
+              "Test_Temperature_Original": "RT",
+              "Loading_Mode": "Tension",
+              "Strain_Rate_s1": {
+                "Value": 0.001,
+                "Unit": "s⁻¹",
+                "Original_Values": "~10⁻³/s",
+                "Note": "Approximate value"
+              },
+              "Specimen_State": "as-quenched",
+              "Specimen_Geometry": "gauge length 4 mm, cross-section area 0.7 ± 0.2 mm², ASTM E8/E8M-22 standard",
+              "Strain_Measurement": "Digital Image Correlation (DIC)"
+            },
+            "Data_Source": "text",
+            "Note": "YS value stated in text (Fig. 9a reference)."
+          },
+          {
+            "Property_Type": "Mechanical",
+            "Property_Name": "Total_Elongation",
+            "Value": 21.1,
+            "Unit": "%",
+            "Original_Values": "21.1%",
+            "Test_Condition": {
+              "Test_Temperature_K": null,
+              "Test_Temperature_Original": "RT",
+              "Loading_Mode": "Tension",
+              "Strain_Rate_s1": {
+                "Value": 0.001,
+                "Unit": "s⁻¹",
+                "Original_Values": "~10⁻³/s",
+                "Note": "Approximate value"
+              },
+              "Specimen_State": "as-quenched",
+              "Specimen_Geometry": "gauge length 4 mm, cross-section area 0.7 ± 0.2 mm², ASTM E8/E8M-22 standard",
+              "Strain_Measurement": "Digital Image Correlation (DIC)"
+            },
+            "Data_Source": "text",
+            "Note": "TE reported; original text uses 'TE' without distinguishing uniform vs total elongation."
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "Item_04",
+      "Sample_ID": "8Ni_530C_1h",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "TRIP_or_Deformation_Transformation"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 3.3",
+        "Fig. 9b",
+        "Fig. 10"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Martensitic stainless steel",
+          "Material_Name_Raw": "8Ni",
+          "Note": "Same composition as Item_01."
+        },
+        "Processing": {
+          "Process_Category": "Casting + Rolling + Homogenization + Quenching + Annealing",
+          "Process_Text": {
+            "original": "Homogenized at 1000 °C for 3 h with water quench, then annealed at 530 °C for 1 hour.",
+            "simplified": "Homogenization 1000 °C / 3 h / WQ → annealing 530 °C / 1 h"
+          },
+          "Key_Params": {
+            "Stage1_Homogenization": {
+              "Temperature": {
+                "Value": 1273.15,
+                "Unit": "K",
+                "Original_Values": "1000 °C"
+              },
+              "Time": "3 h",
+              "Cooling": "water quench"
+            },
+            "Stage2_Annealing": {
+              "Temperature": {
+                "Value": 803.15,
+                "Unit": "K",
+                "Original_Values": "530 °C"
+              },
+              "Time": "1 h"
+            }
+          },
+          "Note": "Equipment shared with Item_01."
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "No reverted austenite formation in 8Ni at 530 °C.",
+            "simplified": "Martensite with NiAl-B2 precipitates, no reverted austenite"
+          },
+          "Main_Phase": {
+            "Phase_Name": "Martensite (α')",
+            "Crystal_Structure": "BCC"
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "NiAl-B2 precipitates",
+              "Crystal_Structure": "B2",
+              "Morphology": "sphere, homogenous distribution",
+              "Size": {
+                "Value": null,
+                "Unit": "nm",
+                "Dimension_Type": "undefined",
+                "Note": "less than 0.1 μm measured by ImageJ from BSE image"
+              }
+            }
+          ]
+        },
+        "Properties": [
+          {
+            "Property_Type": "Mechanical",
+            "Property_Name": "Yield_Strength",
+            "Value": 1113,
+            "Unit": "MPa",
+            "Original_Values": "1113 MPa",
+            "Test_Condition": {
+              "Test_Temperature_K": null,
+              "Test_Temperature_Original": "RT",
+              "Loading_Mode": "Tension",
+              "Strain_Rate_s1": {
+                "Value": 0.001,
+                "Unit": "s⁻¹",
+                "Original_Values": "~10⁻³/s",
+                "Note": "Approximate value"
+              },
+              "Specimen_State": "annealed 530 °C / 1 h",
+              "Specimen_Geometry": "gauge length 4 mm, cross-section area 0.7 ± 0.2 mm², ASTM E8/E8M-22 standard",
+              "Strain_Measurement": "Digital Image Correlation (DIC)"
+            },
+            "Data_Source": "text",
+            "Note": "YS value stated in text; dYS from as-quenched = 500 MPa."
+          },
+          {
+            "Property_Type": "Mechanical",
+            "Property_Name": "Total_Elongation",
+            "Value": 11.9,
+            "Unit": "%",
+            "Original_Values": "11.9%",
+            "Test_Condition": {
+              "Test_Temperature_K": null,
+              "Test_Temperature_Original": "RT",
+              "Loading_Mode": "Tension",
+              "Strain_Rate_s1": {
+                "Value": 0.001,
+                "Unit": "s⁻¹",
+                "Original_Values": "~10⁻³/s",
+                "Note": "Approximate value"
+              },
+              "Specimen_State": "annealed 530 °C / 1 h",
+              "Specimen_Geometry": "gauge length 4 mm, cross-section area 0.7 ± 0.2 mm², ASTM E8/E8M-22 standard",
+              "Strain_Measurement": "Digital Image Correlation (DIC)"
+            },
+            "Data_Source": "text",
+            "Note": "TE decreased from 17.4% (as-quenched) to 11.9% after annealing."
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "Item_05",
+      "Sample_ID": "8Ni4Mo_530C_1h",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "TRIP_or_Deformation_Transformation"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 3.3",
+        "Fig. 9b",
+        "Fig. 10"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Martensitic stainless steel",
+          "Material_Name_Raw": "8Ni4Mo",
+          "Note": "Same composition as Item_02."
+        },
+        "Processing": {
+          "Process_Category": "Casting + Rolling + Homogenization + Quenching + Annealing",
+          "Process_Text": {
+            "original": "Homogenized at 1000 °C for 3 h with water quench, then annealed at 530 °C for 1 hour.",
+            "simplified": "Homogenization 1000 °C / 3 h / WQ → annealing 530 °C / 1 h"
+          },
+          "Key_Params": {
+            "Stage1_Homogenization": {
+              "Temperature": {
+                "Value": 1273.15,
+                "Unit": "K",
+                "Original_Values": "1000 °C"
+              },
+              "Time": "3 h",
+              "Cooling": "water quench"
+            },
+            "Stage2_Annealing": {
+              "Temperature": {
+                "Value": 803.15,
+                "Unit": "K",
+                "Original_Values": "530 °C"
+              },
+              "Time": "1 h"
+            }
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "No austenite formation even after 4 h of annealing at 580 °C for 8Ni4Mo. At 530 °C, no reverted austenite expected.",
+            "simplified": "Martensite with NiAl-B2 precipitates, no reverted austenite"
+          },
+          "Main_Phase": {
+            "Phase_Name": "Martensite (α')",
+            "Crystal_Structure": "BCC"
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "NiAl-B2 precipitates",
+              "Crystal_Structure": "B2",
+              "Morphology": "sphere, homogenous distribution",
+              "Interface": "semi-coherent with martensite matrix"
+            }
+          ]
+        },
+        "Properties": [
+          {
+            "Property_Type": "Mechanical",
+            "Property_Name": "Yield_Strength",
+            "Value": 1218,
+            "Unit": "MPa",
+            "Original_Values": "1218 MPa",
+            "Test_Condition": {
+              "Test_Temperature_K": null,
+              "Test_Temperature_Original": "RT",
+              "Loading_Mode": "Tension",
+              "Strain_Rate_s1": {
+                "Value": 0.001,
+                "Unit": "s⁻¹",
+                "Original_Values": "~10⁻³/s",
+                "Note": "Approximate value"
+              },
+              "Specimen_State": "annealed 530 °C / 1 h",
+              "Specimen_Geometry": "gauge length 4 mm, cross-section area 0.7 ± 0.2 mm², ASTM E8/E8M-22 standard",
+              "Strain_Measurement": "Digital Image Correlation (DIC)"
+            },
+            "Data_Source": "text",
+            "Note": "YS value stated in text; dYS from as-quenched = 474 MPa."
+          },
+          {
+            "Property_Type": "Mechanical",
+            "Property_Name": "Total_Elongation",
+            "Value": 10.9,
+            "Unit": "%",
+            "Original_Values": "10.9%",
+            "Test_Condition": {
+              "Test_Temperature_K": null,
+              "Test_Temperature_Original": "RT",
+              "Loading_Mode": "Tension",
+              "Strain_Rate_s1": {
+                "Value": 0.001,
+                "Unit": "s⁻¹",
+                "Original_Values": "~10⁻³/s",
+                "Note": "Approximate value"
+              },
+              "Specimen_State": "annealed 530 °C / 1 h",
+              "Specimen_Geometry": "gauge length 4 mm, cross-section area 0.7 ± 0.2 mm², ASTM E8/E8M-22 standard",
+              "Strain_Measurement": "Digital Image Correlation (DIC)"
+            },
+            "Data_Source": "text",
+            "Note": "TE decreased from 14.0% (as-quenched) to 10.9% after annealing."
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "Item_06",
+      "Sample_ID": "10Ni4Mo_530C_1h",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "TRIP_or_Deformation_Transformation"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 3.3",
+        "Section 4.2",
+        "Fig. 9b",
+        "Fig. 10",
+        "Fig. 12",
+        "Fig. S3",
+        "Fig. S5",
+        "Fig. S6"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Martensitic stainless steel",
+          "Material_Name_Raw": "10Ni4Mo",
+          "Note": "Same composition as Item_03."
+        },
+        "Processing": {
+          "Process_Category": "Casting + Rolling + Homogenization + Quenching + Annealing",
+          "Process_Text": {
+            "original": "Homogenized at 1000 °C for 3 h with water quench, then annealed at 530 °C for 1 hour.",
+            "simplified": "Homogenization 1000 °C / 3 h / WQ → annealing 530 °C / 1 h"
+          },
+          "Key_Params": {
+            "Stage1_Homogenization": {
+              "Temperature": {
+                "Value": 1273.15,
+                "Unit": "K",
+                "Original_Values": "1000 °C"
+              },
+              "Time": "3 h",
+              "Cooling": "water quench"
+            },
+            "Stage2_Annealing": {
+              "Temperature": {
+                "Value": 803.15,
+                "Unit": "K",
+                "Original_Values": "530 °C"
+              },
+              "Time": "1 h"
+            }
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Reverted austenite forms in 10Ni4Mo at 530 °C. After 1 h at 530 °C, austenite volume fraction is 12.2% (EBSD). Austenite grains nucleate at martensite boundaries as thin film and bulky morphologies. Thin film austenite thickness < 1 μm.",
+            "simplified": "Martensite with NiAl-B2 precipitates and ~12% reverted austenite; austenite nucleates at martensite boundaries"
+          },
+          "Main_Phase": {
+            "Phase_Name": "Martensite (α')",
+            "Crystal_Structure": "BCC",
+            "Volume_Fraction": null,
+            "Note": "Dominant phase; exact fraction not stated in text."
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "NiAl-B2 precipitates",
+              "Crystal_Structure": "B2",
+              "Morphology": "sphere, homogenous distribution",
+              "Size": {
+                "Value": null,
+                "Unit": "nm",
+                "Dimension_Type": "undefined",
+                "Note": "less than 100 nm from bright field TEM image"
+              },
+              "Interface": "semi-coherent with martensite matrix",
+              "Orientation_Relationship": "{100}bcc//{100}b2 and {110}bcc//{110}b2"
+            },
+            {
+              "Phase_Name": "Reverted austenite (γ)",
+              "Crystal_Structure": "FCC",
+              "Volume_Fraction": {
+                "Value": 12.2,
+                "Unit": "%",
+                "Original_Values": "12.2%",
+                "Note": "At 0% local strain (before deformation), measured by EBSD (Fig. S5, S6)"
+              },
+              "Morphology": "thin film at martensite boundaries and bulky grains",
+              "Note": "Thin film austenite thickness < 1 μm. Two types: thin film and bulky austenite observed."
+            }
+          ],
+          "Advanced_Quantitative_Features": {
+            "Austenite_grain_size_avg_0pct_strain": {
+              "Value": 2.9,
+              "Unit": "μm²",
+              "Original_Values": "2.9 ± 0.3 μm²",
+              "Note": "Average austenite grain area at 0% local strain (before deformation), bimodal distribution",
+              "Data_Source": "text"
+            },
+            "Austenite_vol_fraction_13pct_strain": {
+              "Value": 8.9,
+              "Unit": "%",
+              "Original_Values": "8.9%",
+              "Note": "At 13% local strain (max uniform strain); average grain size 0.7 ± 0.1 μm²",
+              "Data_Source": "text"
+            },
+            "Austenite_vol_fraction_91pct_strain": {
+              "Value": 0.1,
+              "Unit": "%",
+              "Original_Values": "0.1%",
+              "Note": "At 91% local strain (necking); most austenite transformed to martensite",
+              "Data_Source": "text"
+            },
+            "SFE_reverted_austenite_RT": {
+              "Value": 17,
+              "Unit": "mJ/m²",
+              "Original_Values": "17 mJ/m²",
+              "Note": "Room temperature SFE of reverted austenite calculated following procedures in references [96,97]"
+            },
+            "Ms_reverted_austenite_530C": {
+              "Value": 273.15,
+              "Unit": "K",
+              "Original_Values": "~0 °C",
+              "Note": "Ms of reverted austenite composition estimated from ThermoCalc equilibrium calculation"
+            },
+            "Dislocation_density_FCC_plateau": {
+              "Value": null,
+              "Unit": "m⁻²",
+              "Original_Values": "~4E14/m²",
+              "Note": "Approximate value; dislocation density in FCC phase maintained above 4% global strain"
+            },
+            "Max_von_Mises_stress_partitioned_to_austenite": {
+              "Value": 270,
+              "Unit": "MPa",
+              "Original_Values": "270 MPa",
+              "Note": "Calculated from lattice strain assuming E=183.2 GPa and Poisson ratio=0.3"
+            },
+            "Phase_transformation_onset_global_stress": {
+              "Value": 950,
+              "Unit": "MPa",
+              "Original_Values": "950 MPa",
+              "Note": "Austenite fraction does not decrease until global stress reaches 950 MPa"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Type": "Mechanical",
+            "Property_Name": "Yield_Strength",
+            "Value": 1081,
+            "Unit": "MPa",
+            "Original_Values": "1081 MPa",
+            "Test_Condition": {
+              "Test_Temperature_K": null,
+              "Test_Temperature_Original": "RT",
+              "Loading_Mode": "Tension",
+              "Strain_Rate_s1": {
+                "Value": 0.001,
+                "Unit": "s⁻¹",
+                "Original_Values": "~10⁻³/s",
+                "Note": "Approximate value"
+              },
+              "Specimen_State": "annealed 530 °C / 1 h",
+              "Specimen_Geometry": "gauge length 4 mm, cross-section area 0.7 ± 0.2 mm², ASTM E8/E8M-22 standard",
+              "Strain_Measurement": "Digital Image Correlation (DIC)"
+            },
+            "Data_Source": "text",
+            "Note": "YS value stated in text; dYS from as-quenched = 459 MPa."
+          },
+          {
+            "Property_Type": "Mechanical",
+            "Property_Name": "Total_Elongation",
+            "Value": 20.3,
+            "Unit": "%",
+            "Original_Values": "20.3%",
+            "Test_Condition": {
+              "Test_Temperature_K": null,
+              "Test_Temperature_Original": "RT",
+              "Loading_Mode": "Tension",
+              "Strain_Rate_s1": {
+                "Value": 0.001,
+                "Unit": "s⁻¹",
+                "Original_Values": "~10⁻³/s",
+                "Note": "Approximate value"
+              },
+              "Specimen_State": "annealed 530 °C / 1 h",
+              "Specimen_Geometry": "gauge length 4 mm, cross-section area 0.7 ± 0.2 mm², ASTM E8/E8M-22 standard",
+              "Strain_Measurement": "Digital Image Correlation (DIC)"
+            },
+            "Data_Source": "text",
+            "Note": "TE maintained at 20.3% after annealing (from 21.1% as-quenched). Highest ductility among three alloys after annealing."
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "Item_07",
+      "Sample_ID": "8Ni_580C_series",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "TRIP_or_Deformation_Transformation"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 3.2.1",
+        "Fig. 6b",
+        "Fig. 10"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Martensitic stainless steel",
+          "Material_Name_Raw": "8Ni",
+          "Note": "Same composition as Item_01."
+        },
+        "Processing": {
+          "Process_Category": "Casting + Rolling + Homogenization + Quenching + Annealing",
+          "Process_Text": {
+            "original": "Homogenized at 1000 °C for 3 h with water quench, then annealed at 580 °C for various times (15 min, 1 h, 4 h, 8 h).",
+            "simplified": "Homogenization 1000 °C / 3 h / WQ → annealing 580 °C / various times"
+          },
+          "Key_Params": {
+            "Stage1_Homogenization": {
+              "Temperature": {
+                "Value": 1273.15,
+                "Unit": "K",
+                "Original_Values": "1000 °C"
+              },
+              "Time": "3 h",
+              "Cooling": "water quench"
+            },
+            "Stage2_Annealing": {
+              "Temperature": {
+                "Value": 853.15,
+                "Unit": "K",
+                "Original_Values": "580 °C"
+              },
+              "Time": "15 min to 8 h"
+            }
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Hardness increases initially then decreases with annealing time at 580 °C, indicating overaging after 15 min. Softening behavior analyzed via Orowan mechanism.",
+            "simplified": "Overaged condition at 580 °C; precipitation coarsening dominant after 15 min"
+          },
+          "Main_Phase": {
+            "Phase_Name": "Martensite (α')",
+            "Crystal_Structure": "BCC"
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "NiAl-B2 precipitates",
+              "Crystal_Structure": "B2",
+              "Note": "Precipitate coarsening occurs during annealing at 580 °C"
+            }
+          ],
+          "Advanced_Quantitative_Features": {
+            "Overaging_onset": {
+              "Value": null,
+              "Note": "Softening starts after ~15 min annealing at 580 °C"
+            },
+            "Coarsening_rate_M": {
+              "Value": null,
+              "Note": "8Ni has higher coarsening rate constant M than 8Ni4Mo (from linear fit of ΔH^(-3) vs time, Fig. 6b inset)"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Type": "Mechanical",
+            "Property_Name": "Hardness_Vickers",
+            "Value": null,
+            "Unit": "HV",
+            "Test_Condition": {
+              "Load": "100 g",
+              "Specimen_State": "annealed 580 °C / various times"
+            },
+            "Data_Source": "text",
+            "Note": "Hardness values plotted in Fig. 6b; exact numerical values not given in text. Shows initial hardening (as-quenched to 15 min) then softening (overaging)."
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "Item_08",
+      "Sample_ID": "8Ni4Mo_580C_series",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "TRIP_or_Deformation_Transformation"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 3.2.1",
+        "Fig. 5c",
+        "Fig. 6b",
+        "Fig. 10"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Martensitic stainless steel",
+          "Material_Name_Raw": "8Ni4Mo",
+          "Note": "Same composition as Item_02."
+        },
+        "Processing": {
+          "Process_Category": "Casting + Rolling + Homogenization + Quenching + Annealing",
+          "Process_Text": {
+            "original": "Homogenized at 1000 °C for 3 h with water quench, then annealed at 580 °C for various times (15 min, 1 h, 4 h).",
+            "simplified": "Homogenization 1000 °C / 3 h / WQ → annealing 580 °C / various times"
+          },
+          "Key_Params": {
+            "Stage1_Homogenization": {
+              "Temperature": {
+                "Value": 1273.15,
+                "Unit": "K",
+                "Original_Values": "1000 °C"
+              },
+              "Time": "3 h",
+              "Cooling": "water quench"
+            },
+            "Stage2_Annealing": {
+              "Temperature": {
+                "Value": 853.15,
+                "Unit": "K",
+                "Original_Values": "580 °C"
+              },
+              "Time": "15 min to 4 h"
+            }
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "No austenite formation even after 4 h of annealing at 580 °C. NiAl-B2 precipitates maintain semi-coherent interface after 4 h at 580 °C.",
+            "simplified": "Martensite with NiAl-B2 precipitates (semi-coherent after 4 h at 580 °C), no reverted austenite"
+          },
+          "Main_Phase": {
+            "Phase_Name": "Martensite (α')",
+            "Crystal_Structure": "BCC"
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "NiAl-B2 precipitates",
+              "Crystal_Structure": "B2",
+              "Interface": "semi-coherent after 4 h at 580 °C",
+              "Orientation_Relationship": "{100}bcc//{100}b2 and {110}bcc//{110}b2",
+              "Note": "Confirmed by TEM diffraction (Fig. 5c); diffraction pattern from sample with 4 h annealing at 580 °C"
+            }
+          ],
+          "Advanced_Quantitative_Features": {
+            "Coarsening_rate_comparison": {
+              "Value": null,
+              "Note": "8Ni4Mo exhibits less softening than 8Ni, confirming lower coarsening rate due to Mo addition"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Type": "Mechanical",
+            "Property_Name": "Hardness_Vickers",
+            "Value": null,
+            "Unit": "HV",
+            "Test_Condition": {
+              "Load": "100 g",
+              "Specimen_State": "annealed 580 °C / various times"
+            },
+            "Data_Source": "text",
+            "Note": "Hardness values plotted in Fig. 6b; exact numerical values not given in text. 8Ni4Mo shows less softening than 8Ni."
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "Item_09",
+      "Sample_ID": "10Ni4Mo_580C_series",
+      "Role": "Variant",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "TRIP_or_Deformation_Transformation"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 3.2.2",
+        "Fig. 7",
+        "Fig. 8",
+        "Fig. 10"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Martensitic stainless steel",
+          "Material_Name_Raw": "10Ni4Mo",
+          "Note": "Same composition as Item_03."
+        },
+        "Processing": {
+          "Process_Category": "Casting + Rolling + Homogenization + Quenching + Annealing",
+          "Process_Text": {
+            "original": "Homogenized at 1000 °C for 3 h with water quench, then annealed at 580 °C for various times (15 min, 1 h, 4 h).",
+            "simplified": "Homogenization 1000 °C / 3 h / WQ → annealing 580 °C / various times"
+          },
+          "Key_Params": {
+            "Stage1_Homogenization": {
+              "Temperature": {
+                "Value": 1273.15,
+                "Unit": "K",
+                "Original_Values": "1000 °C"
+              },
+              "Time": "3 h",
+              "Cooling": "water quench"
+            },
+            "Stage2_Annealing": {
+              "Temperature": {
+                "Value": 853.15,
+                "Unit": "K",
+                "Original_Values": "580 °C"
+              },
+              "Time": "15 min to 4 h"
+            }
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "At 580 °C, 10Ni4Mo forms 11.4% austenite after 15 min, 18.6% after 1 hour, and 37.3% after 4 h. Austenite nucleates at martensite boundaries. Thin film austenite (thickness < 1 μm) and bulky austenite observed. Banded austenite structure along rolling normal direction due to dendritic segregation.",
+            "simplified": "Martensite with NiAl-B2 precipitates and increasing reverted austenite fraction with annealing time at 580 °C"
+          },
+          "Main_Phase": {
+            "Phase_Name": "Martensite (α')",
+            "Crystal_Structure": "BCC"
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "Reverted austenite (γ)",
+              "Crystal_Structure": "FCC",
+              "Volume_Fraction": [
+                {
+                  "Value": 11.4,
+                  "Unit": "%",
+                  "Original_Values": "11.4%",
+                  "Note": "After 15 min at 580 °C"
+                },
+                {
+                  "Value": 18.6,
+                  "Unit": "%",
+                  "Original_Values": "18.6%",
+                  "Note": "After 1 h at 580 °C"
+                },
+                {
+                  "Value": 37.3,
+                  "Unit": "%",
+                  "Original_Values": "37.3%",
+                  "Note": "After 4 h at 580 °C"
+                }
+              ],
+              "Morphology": "thin film at martensite boundaries and bulky grains",
+              "Note": "Thin film austenite thickness < 1 μm. Banded structure along normal direction of rolled sheet."
+            },
+            {
+              "Phase_Name": "NiAl-B2 precipitates",
+              "Crystal_Structure": "B2"
+            }
+          ],
+          "Advanced_Quantitative_Features": {
+            "Ni_segregation_variation": {
+              "Value": null,
+              "Unit": "at.%",
+              "Original_Values": "8-13 at.%",
+              "Note": "Ni concentration varies within 8-13 at.% along cross-section with ~13 μm length scale due to dendritic segregation (SEM-EDS line scan, low-pass FFT filtered)"
+            },
+            "Mo_segregation_variation": {
+              "Value": null,
+              "Unit": "at.%",
+              "Original_Values": "2-3 at.%",
+              "Note": "Mo concentration varies within 2-3 at.% along cross-section"
+            },
+            "Expected_eq_austenite_fraction_variation": {
+              "Value": null,
+              "Original_Values": "0.1-0.4",
+              "Note": "ThermoCalc-calculated equilibrium austenite fraction varies between 0.1 and 0.4 along cross-section due to segregation"
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Type": "Mechanical",
+            "Property_Name": "Hardness_Vickers",
+            "Value": null,
+            "Unit": "HV",
+            "Test_Condition": {
+              "Load": "100 g",
+              "Specimen_State": "annealed 580 °C / various times"
+            },
+            "Data_Source": "text",
+            "Note": "Hardness values plotted in Fig. 6b; exact numerical values not given in text."
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "Item_10",
+      "Sample_ID": "10Ni4Mo_530C_dislocation_evolution",
+      "Role": "Target",
+      "Data_Nature": "Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "TRIP_or_Deformation_Transformation"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 4.1",
+        "Fig. 11"
+      ],
+      "Experiment_Link": {
+        "Related_Item_IDs": [
+          "Item_06"
+        ],
+        "Description": "ECCI and synchrotron diffraction analysis of dislocation density evolution in 10Ni4Mo at 530 °C with different annealing times"
+      },
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Martensitic stainless steel",
+          "Material_Name_Raw": "10Ni4Mo",
+          "Note": "Same composition as Item_03."
+        },
+        "Processing": {
+          "Process_Category": "Casting + Rolling + Homogenization + Quenching + Annealing",
+          "Process_Text": {
+            "original": "Homogenized at 1000 °C for 3 h with water quench, then annealed at 530 °C for various times.",
+            "simplified": "Homogenization 1000 °C / 3 h / WQ → annealing 530 °C / various times"
+          },
+          "Key_Params": {
+            "Stage2_Annealing": {
+              "Temperature": {
+                "Value": 803.15,
+                "Unit": "K",
+                "Original_Values": "530 °C"
+              },
+              "Time": "various (short, 1 h, 8 h)"
+            }
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "Dislocation density of martensite significantly decreases after short annealing time, then becomes negligible decrease from 1 h to 8 h, suggesting precipitate pinning effect. BSE image shows dislocation bowing characteristics suggesting pinning by precipitates.",
+            "simplified": "Dislocation density decreases rapidly initially then stabilizes due to precipitate pinning"
+          },
+          "Main_Phase": {
+            "Phase_Name": "Martensite (α')",
+            "Crystal_Structure": "BCC"
+          },
+          "Secondary_Phases": [
+            {
+              "Phase_Name": "NiAl-B2 precipitates",
+              "Crystal_Structure": "B2",
+              "Note": "Dislocation bowing characteristics observed in ECCI imaging, suggesting precipitate pinning effect"
+            }
+          ],
+          "Advanced_Quantitative_Features": {
+            "Dislocation_density_evolution": {
+              "Value": null,
+              "Note": "Dislocation density in martensite significantly decreases after short annealing, negligible decrease from 1 h to 8 h (Fig. 11b). Precipitate pinning effect limits further dislocation annihilation."
+            }
+          }
+        },
+        "Properties": [
+          {
+            "Property_Type": "Mechanical",
+            "Property_Name": "Yield_Strength",
+            "Value": null,
+            "Unit": "MPa",
+            "Test_Condition": {
+              "Loading_Mode": "Tension",
+              "Specimen_State": "annealed 530 °C",
+              "Specimen_Geometry": "gauge length 4 mm, cross-section area 0.7 ± 0.2 mm², ASTM E8/E8M-22 standard",
+              "Strain_Measurement": "Digital Image Correlation (DIC)"
+            },
+            "Data_Source": "text",
+            "Note": "Peak YS achieved at 1 h annealing. Only 36 MPa drop from peak strength after 8 h annealing (Fig. 11c). Exact values from Fig. 11c not stated in text."
+          }
+        ]
+      }
+    },
+    {
+      "Item_ID": "Item_11",
+      "Sample_ID": "CALPHAD_alloy_design",
+      "Role": "Target",
+      "Data_Nature": "Computed",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Patch_Tags": [
+        "TRIP_or_Deformation_Transformation"
+      ],
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Section 2",
+        "Fig. 1",
+        "Fig. 2",
+        "Fig. 3",
+        "Table 1"
+      ],
+      "Simulation_Metadata": {
+        "Software": "ThermoCalc",
+        "Database": "TCFE10",
+        "Method": "CALPHAD",
+        "Note": "Thermodynamic and kinetic calculations for alloy design: equilibrium phase fractions, Ms temperature, lattice parameters, diffusivities, transformation driving forces."
+      },
+      "Experiment_Link": {
+        "Related_Item_IDs": [
+          "Item_01",
+          "Item_02",
+          "Item_03"
+        ],
+        "Description": "CALPHAD calculations directly guided selection of alloy compositions for experimental validation",
+        "Validation_Target": "Optimal precipitation and austenite reversion kinetics through composition modification"
+      },
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Martensitic stainless steel",
+          "Material_Name_Raw": "Fe-Cr-Ni-Al-Mo system",
+          "Note": "Base system Fe13Cr8Ni1Al (wt.%), equivalent to commercial PH13-8 MSS. All elements in TCFE10 database considered as candidates."
+        },
+        "Processing": {
+          "Process_Text": {
+            "original": "Boundary conditions: homogenization at 1000 °C, annealing temperature 500 °C for calculation. Requirements: feq(fcc) > 95% at 1000 °C and Ms > 200 °C.",
+            "simplified": "CALPHAD calculation at homogenization 1000 °C and annealing 500 °C; boundary conditions feq(fcc) > 95%, Ms > 200 °C"
+          },
+          "Key_Params": {
+            "Homogenization_Temperature": {
+              "Value": 1273.15,
+              "Unit": "K",
+              "Original_Values": "1000 °C"
+            },
+            "Calculation_Annealing_Temperature": {
+              "Value": 773.15,
+              "Unit": "K",
+              "Original_Values": "500 °C",
+              "Note": "Fixed for calculation; experimental validation uses 530 °C and 580 °C"
+            }
+          }
+        },
+        "Structure": {
+          "Structure_Text": {
+            "original": "CALPHAD predictions for lattice parameters, phase fractions, transformation driving forces, and diffusivities of candidate alloying elements.",
+            "simplified": "Computed thermodynamic and kinetic properties for alloy design"
+          },
+          "Advanced_Quantitative_Features": {
+            "Base_bcc_lattice_constant": {
+              "Value": 0.286,
+              "Unit": "nm",
+              "Original_Values": "0.2860 nm",
+              "Note": "Pure iron bcc structure at room temperature"
+            },
+            "Base_b2_lattice_constant": {
+              "Value": 0.2886,
+              "Unit": "nm",
+              "Original_Values": "0.2886 nm",
+              "Note": "Pure NiAl b2 precipitate at room temperature"
+            },
+            "Lattice_thermal_expansion_bcc": {
+              "Value": 1.47e-05,
+              "Unit": "1/K",
+              "Original_Values": "14.7E-6/K",
+              "Note": "Linear expansion coefficient of bcc-iron"
+            },
+            "Lattice_thermal_expansion_b2": {
+              "Value": 1.58e-05,
+              "Unit": "1/K",
+              "Original_Values": "15.8E-6/K",
+              "Note": "Linear expansion coefficient of b2-NiAl"
+            },
+            "Lattice_misfit_8Ni": {
+              "Original_Values": "-0.4% (RT), -0.3% (530 °C)",
+              "Note": "Lattice misfit (a_bcc - a_b2)/a_bcc; from Table 1"
+            },
+            "Lattice_misfit_8Ni4Mo": {
+              "Original_Values": "-0.01% (RT), -0.006% (530 °C)",
+              "Note": "From Table 1; significantly reduced by Mo addition"
+            },
+            "Lattice_misfit_10Ni4Mo": {
+              "Original_Values": "0.02% (RT), 0.03% (530 °C)",
+              "Note": "From Table 1"
+            },
+            "Coarsening_rate_constant_8Ni_530C": {
+              "Original_Values": "1.29E-20",
+              "Unit": "m³/s",
+              "Note": "From Table 1; weighted mobility based coarsening rate K"
+            },
+            "Coarsening_rate_constant_8Ni_580C": {
+              "Original_Values": "1.36E-19",
+              "Unit": "m³/s",
+              "Note": "From Table 1"
+            },
+            "Coarsening_rate_constant_8Ni4Mo_530C": {
+              "Original_Values": "1.17E-20",
+              "Unit": "m³/s",
+              "Note": "From Table 1"
+            },
+            "Coarsening_rate_constant_8Ni4Mo_580C": {
+              "Original_Values": "1.24E-10",
+              "Unit": "m³/s",
+              "Note": "From Table 1. source text corrupted (OCR reads 1.24E-10); value reconstructed from context to ~1.24E-19 based on consistency with other alloys at same temperature"
+            },
+            "Coarsening_rate_constant_10Ni4Mo_530C": {
+              "Original_Values": "1.21E-20",
+              "Unit": "m³/s",
+              "Note": "From Table 1"
+            },
+            "Coarsening_rate_constant_10Ni4Mo_580C": {
+              "Original_Values": "1.29E-19",
+              "Unit": "m³/s",
+              "Note": "From Table 1"
+            },
+            "Driving_force_dG_bcc_to_fcc_8Ni": {
+              "Original_Values": "0.09 (530 °C), 0.19 (580 °C)",
+              "Note": "Transformation driving force dG(bcc→fcc) from Table 1"
+            },
+            "Driving_force_dG_bcc_to_fcc_8Ni4Mo": {
+              "Original_Values": "0.14 (530 °C), 0.12 (580 °C)",
+              "Note": "From Table 1"
+            },
+            "Driving_force_dG_bcc_to_fcc_10Ni4Mo": {
+              "Original_Values": "0.20 (530 °C), 0.18 (580 °C)",
+              "Note": "From Table 1"
+            },
+            "Feq_fcc_8Ni": {
+              "Original_Values": "15.1% (530 °C), 25.7% (580 °C)",
+              "Note": "Equilibrium austenite fraction from Table 1"
+            },
+            "Feq_fcc_8Ni4Mo": {
+              "Original_Values": "19.1% (530 °C), 29.2% (580 °C)",
+              "Note": "From Table 1"
+            },
+            "Feq_fcc_10Ni4Mo": {
+              "Original_Values": "31.0% (530 °C), 44.9% (580 °C)",
+              "Note": "From Table 1"
+            }
+          }
+        }
+      }
+    },
+    {
+      "Item_ID": "Item_12",
+      "Sample_ID": "Literature_steels_reference",
+      "Role": "Reference",
+      "Data_Nature": "Literature_Experimental",
+      "base_material": "Metals",
+      "application": "Structural",
+      "research_paradigm": "Hybrid",
+      "Gradient_Material": false,
+      "Raw_Evidence_Span": [
+        "Fig. 10",
+        "Ref [83]"
+      ],
+      "Extracted_Data": {
+        "Composition": {
+          "Material_Family": "Maraging stainless steel",
+          "Note": "Literature reference steels from Ref [83] (Raabe et al.). UTS and TE plotted as grey circles in Fig. 10."
+        },
+        "Properties": [
+          {
+            "Property_Type": "Mechanical",
+            "Property_Name": "Ultimate_Tensile_Strength",
+            "Value": null,
+            "Unit": "MPa",
+            "Test_Condition": {
+              "Note": "Assumed to follow ASTM E8/E8M-22 standard per paper"
+            },
+            "Data_Source": "text",
+            "Note": "UTS and TE of literature steels plotted as grey circles in Fig. 10. Exact values not provided in text."
+          },
+          {
+            "Property_Type": "Mechanical",
+            "Property_Name": "Total_Elongation",
+            "Value": null,
+            "Unit": "%",
+            "Test_Condition": {
+              "Note": "Assumed to follow ASTM E8/E8M-22 standard per paper"
+            },
+            "Data_Source": "text",
+            "Note": "Exact values not provided in text; reference data from Ref [83]."
+          }
+        ]
+      }
+    }
+  ]
+}

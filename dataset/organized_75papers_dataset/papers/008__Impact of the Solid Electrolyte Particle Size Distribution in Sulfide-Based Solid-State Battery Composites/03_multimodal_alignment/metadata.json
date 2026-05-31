@@ -1,0 +1,7 @@
+{
+  "paper_dir": "固态电解质颗粒",
+  "figures": 6,
+  "direct_pairs": 6,
+  "topk_pairs": 30,
+  "sentences": 28
+}
